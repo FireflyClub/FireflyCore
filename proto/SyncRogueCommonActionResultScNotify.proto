@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueActionResult.proto";
+import "RogueCommonActionResultDisplayType.proto";
+
+message SyncRogueCommonActionResultScNotify { // ADBBKEPKAND
+    repeated RogueActionResult action_result_list = 5;
+    uint32 rogue_version_id = 8;
+    RogueCommonActionResultDisplayType display_type = 11;
+}

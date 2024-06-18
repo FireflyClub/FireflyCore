@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousStoryInfo.proto";
+import "ChessRogueAvatarInfo.proto";
+import "ChessRogueVirtualItemInfo.proto";
+import "RogueCommonPendingAction.proto";
+import "ChessRogueBuffInfo.proto";
+import "ChessRogueMiracleInfo.proto";
+import "ChessRogueNousDice.proto";
+import "ChessRogueNousValue.proto";
+
+message ChessRogueCurrentInfo {
+    ChessRogueNousStoryInfo story_info = 10;
+    ChessRogueAvatarInfo rogue_avatar_info = 9;
+    uint32 rogue_version_id = 6;
+    repeated ChessRogueVirtualItemInfo virtual_item_info = 4;
+    ChessRogueBuffInfo buff_info = 12;
+    RogueCommonPendingAction pending_action = 11;
+    ChessRogueNousValue nous_value = 1;
+    ChessRogueMiracleInfo miracle_info = 14;
+    ChessRogueNousDice dice_info = 15;
+}

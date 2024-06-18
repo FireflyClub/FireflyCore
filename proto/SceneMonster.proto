@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message SceneMonster {
+    uint32 monster_id = 2;
+    uint32 max_hp = 9;
+    uint32 cur_hp = 3;
+}

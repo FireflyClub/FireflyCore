@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueTalentStatus.proto";
+import "RogueUnlockProgress.proto";
+
+message RogueTalent {
+    RogueTalentStatus status = 13;
+    repeated RogueUnlockProgress unlock_progress_list = 15;
+    uint32 talent_id = 12;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FarmStageGachaInfo.proto";
+
+// Kiddllpkdhp
+message GetFarmStageGachaInfoScRsp {
+    repeated FarmStageGachaInfo farm_stage_gacha_info_list = 4; // pbgglfnokpo
+    uint32 retcode = 1;
+}

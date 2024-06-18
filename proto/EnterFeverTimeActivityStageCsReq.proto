@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FeverTimeAvatar.proto";
+
+// Aibibkegjbg
+message EnterFeverTimeActivityStageCsReq {
+	// uint32 nfbfjahfnne = 9;
+	// uint32 mgnmdcnnlbo = 10;
+	repeated FeverTimeAvatar avatar_list = 15;
+	uint32 id = 13;
+}

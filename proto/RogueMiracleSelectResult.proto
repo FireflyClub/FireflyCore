@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueMiracleSelectResult {
+    uint32 miracle_id = 9;
+}

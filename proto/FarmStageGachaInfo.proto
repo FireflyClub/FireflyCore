@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Oodnfjefboa
+message FarmStageGachaInfo {
+    uint32 gacha_id = 1;
+    int64 end_time = 2;
+    int64 begin_time = 11;
+}

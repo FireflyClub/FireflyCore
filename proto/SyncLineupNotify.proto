@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SyncReason.proto";
+import "LineupInfo.proto";
+
+message SyncLineupNotify {
+    repeated SyncReason reason_list = 4;
+    LineupInfo lineup = 9;
+}

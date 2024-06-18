@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "Chat.proto";
+
+message GetPrivateChatHistoryScRsp {
+    uint32 sender_uid = 7; //?
+    uint32 to_uid = 9;  //?
+    uint32 retcode = 6; //1
+    repeated Chat chat_list = 10; //1
+}

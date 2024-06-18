@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousSubStoryInfo.proto";
+import "ChessRogueNousMainStoryInfo.proto";
+
+message GetChessRogueNousStoryInfoScRsp {
+    uint32 retcode = 12;
+    repeated ChessRogueNousSubStoryInfo sub_story_info = 6;
+    repeated ChessRogueNousMainStoryInfo main_story_info = 10;
+}

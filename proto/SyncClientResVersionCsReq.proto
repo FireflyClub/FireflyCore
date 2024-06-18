@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message SyncClientResVersionCsReq {
+    uint32 client_res_version = 15;
+}

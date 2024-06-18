@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SceneEntityRefreshInfo.proto";
+import "SceneGroupRefreshType.proto";
+
+// Makfkmagkli
+message SceneGroupRefreshInfo {
+    repeated SceneEntityRefreshInfo refresh_entity = 15; // hdaiklkffjh
+    uint32 group_id = 6;
+    SceneGroupRefreshType group_refresh_type = 2; // kcbpdfengaa
+    uint32 state = 7;
+}

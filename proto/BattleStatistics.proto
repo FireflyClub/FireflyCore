@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AvatarBattleInfo.proto";
+import "BattleEndReason.proto";
+import "MonsterBattleInfo.proto";
+import "BattleTargetList.proto";
+// import "EvolveBuildBattleInfo.proto";
+// import "MNNLFKGIFMC.proto";
+// import "NIKCMGLOMPL.proto";
+// import "CFGPKDOBMBC.proto";
+// import "HBPLKCPLECE.proto";
+// import "FJBCPOONJBK.proto";
+// import "FFEJPHHHGPC.proto";
+// import "HALIKNNJKNM.proto";
+// import "HNHIMHPBACE.proto";
+
+message BattleStatistics {
+  uint32 total_battle_turns = 1;
+  uint32 total_auto_turns = 2;
+  repeated uint32 avatar_id_list = 3;
+  uint32 ultra_cnt = 4;
+  double total_delay_cumulate = 5;
+  double cost_time = 6;
+  repeated AvatarBattleInfo battle_avatar_list = 7;
+  repeated MonsterBattleInfo monster_list = 8;
+  uint32 round_cnt = 9;
+  uint32 cocoon_dead_wave = 10;
+  uint32 avatar_battle_turns = 11;
+  uint32 monster_battle_turns = 12;
+  map<string, float> custom_values = 13;
+  uint32 challenge_score = 14;
+	// repeated MNNLFKGIFMC PLEEHFNPHBI = 16;
+  BattleEndReason end_reason = 19;
+	// repeated NIKCMGLOMPL HNOJDIHIKIK = 21;
+	// repeated int32 HJPKJAMEBGL = 22;
+	// repeated CFGPKDOBMBC GAECGNBLPCO = 23;
+	// repeated HBPLKCPLECE MIDPBCDPBGF = 26;
+	// repeated FJBCPOONJBK NKPGAEDGBFN = 27;
+	map<uint32, BattleTargetList> battle_target_info = 28;
+	// repeated FFEJPHHHGPC CGHLBGLNBHF = 29;
+	// EvolveBuildBattleInfo GHLHHDHOODF = 30;
+	// HALIKNNJKNM CKMNCKGEFMP = 31;
+	// bool PDHGJDODHLJ = 32;
+	// repeated HNHIMHPBACE HMKPLAJNJPI = 33;
+
+}

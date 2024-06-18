@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueInfoData.proto";
+import "RogueCurrentInfo.proto";
+
+message RogueInfo {
+	RogueInfoData rogue_info_data = 806;
+	RogueCurrentInfo rogue_current_info = 1236;
+}

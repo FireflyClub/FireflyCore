@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SimpleInfo.proto";
+import "PlayingState.proto";
+
+message FriendListInfo {
+	SimpleInfo simple_info = 2;
+	PlayingState playing_state = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FriendApplyInfo.proto";
+
+message GetFriendApplyListInfoScRsp {
+	uint32 retcode = 13;
+	repeated FriendApplyInfo friend_apply_list = 15;
+	// repeated uint32 khnfpohanid = 9;
+}

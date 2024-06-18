@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "Quest.proto";
+
+// Nahgobmjpld
+message GetQuestDataScRsp {
+  repeated Quest quest_list = 2; //gbpfmlkagek
+  uint32 total_achievement_exp = 10;
+  uint32 retcode = 8;
+}

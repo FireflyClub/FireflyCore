@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Aeklimbakcl
+message Vector4 {
+    float x = 13;
+    float y = 9;
+    float z = 7;
+    float w = 15;
+}

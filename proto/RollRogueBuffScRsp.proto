@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuffSelectInfo.proto";
+
+message RollRogueBuffScRsp {
+	uint32 retcode = 1;
+	RogueBuffSelectInfo buff_select_info = 5;
+}

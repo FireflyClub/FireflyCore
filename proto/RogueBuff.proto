@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueBuff {
+	uint32 buff_id = 2;
+	uint32 level = 11;
+}

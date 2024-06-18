@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum BattleEndStatus {
+  BATTLE_END_NONE = 0;
+  BATTLE_END_WIN = 1;
+  BATTLE_END_LOSE = 2;
+  BATTLE_END_QUIT = 3;
+}

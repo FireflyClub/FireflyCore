@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "PropExtraInfo.proto";
+
+message ScenePropInfo {
+    uint32 life_time_ms = 6;
+    uint32 prop_id = 5;
+    uint32 prop_state = 11;
+    uint64 create_time_ms = 1;
+	PropExtraInfo extra_info = 15;
+}

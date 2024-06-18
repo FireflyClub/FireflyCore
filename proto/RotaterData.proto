@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Fjlegpafbjc
+message RotaterData {
+    // uint32 unk_int = 13;
+    // float ggafhkplkgl = 1;
+    uint32 group_id = 9;
+}

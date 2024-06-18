@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "GroupStateInfo.proto";
+
+// Ibklimbncaj
+message GroupStateChangeScNotify {
+    GroupStateInfo group_state_info = 3;
+}

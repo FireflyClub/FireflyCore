@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCostList.proto";
+
+// Ihoejbhjhpn
+message RogueReviveInfo {
+	uint32 IHCAKFFLLPP = 8; // hpmbddkndae
+	repeated uint32 EDBJAMDKANE = 12;
+	ItemCostList cost_data = 7;
+	uint32 LIEPDHFMFCG = 1; // nondkbojijd
+}

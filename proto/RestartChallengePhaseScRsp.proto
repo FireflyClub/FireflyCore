@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SceneInfo.proto";
+
+// Eobijbhdlbp
+message RestartChallengePhaseScRsp {
+    uint32 retcode = 2;
+    SceneInfo scene = 11;
+}

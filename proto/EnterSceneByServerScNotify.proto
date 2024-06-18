@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "LineupInfo.proto";
+import "EnterSceneReason.proto";
+import "SceneInfo.proto";
+
+message EnterSceneByServerScNotify {
+    EnterSceneReason reason = 5;
+    SceneInfo scene = 8;
+    LineupInfo lineup = 3;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum FightGameModeType {
+  FIGHT_GAME_MODE_NONE = 0;
+  FIGHT_GAME_MODE_MATCH3 = 1;
+}

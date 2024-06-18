@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "DisplayRecordType.proto";
+
+// Kbfenhoeolk
+message PlayerDisplaySettings {
+    // bool amgbjcgchle = 3;
+    DisplayRecordType display_record_type = 10;
+    // bool aokkoooodcn = 13;
+    // bool ljeelnkpifj = 1;
+    // bool idflcnjjldo = 8;
+    // bool feeelleaepc = 12;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SimpleInfo.proto";
+
+message FriendRecommendInfo {
+	SimpleInfo simple_info = 3;
+}

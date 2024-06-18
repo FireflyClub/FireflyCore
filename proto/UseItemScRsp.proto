@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemList.proto";
+
+// Ofiljjocjak
+message UseItemScRsp {
+    uint32 use_item_id = 6;
+    ItemList return_data = 4; //fghjlkadkpp
+    uint32 retcode = 9;
+    // uint64 jhfchkecgec = 14;
+    uint32 use_item_count = 13;
+    // uint32 hjcbkpakaja = 15;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Ojflcokojlp
+message TakePromotionRewardCsReq {
+    uint32 promotion = 2;
+    uint32 base_avatar_id = 1;
+}

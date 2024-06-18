@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "GachaInfo.proto";
+
+// Kcmaooicbbb
+message GetGachaInfoScRsp {
+    uint32 gacha_random = 7; //ghihlfpaejp
+    uint32 retcode = 4;
+    repeated GachaInfo gacha_info_list = 2;
+}

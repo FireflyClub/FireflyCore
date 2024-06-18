@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MotionInfo.proto";
+
+// Bldabflkhgd
+message ArchiveWolfBroGameCsReq {
+	uint32 id = 4;
+	MotionInfo motion = 12;
+}

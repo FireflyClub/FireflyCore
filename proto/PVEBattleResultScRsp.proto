@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "BattleEndStatus.proto";
+import "BattleAvatar.proto";
+import "ItemList.proto";
+
+message PVEBattleResultScRsp {
+	repeated BattleAvatar battle_avatar_list = 15;
+	uint32 event_id = 2;
+	bool check_identical = 8;
+	uint32 mismatch_turn_count = 14;// 6
+	uint32 retcode = 12;
+	uint32 battle_id = 4;
+	string bin_version = 13; //? affnalechoi
+	string res_version = 5; //? njaeinhfbem
+	BattleEndStatus end_status = 11;
+	uint32 stage_id = 7;
+	ItemList drop_data = 3; //? lplplklhcba
+	ItemList unk1 = 10; //? pdcecpocknh
+	ItemList unk2 = 253; //? dmmpidajeoo
+	ItemList unk3 = 1; //? lghlioedodo
+}

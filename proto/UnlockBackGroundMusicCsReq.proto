@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Giengjodplp
+message UnlockBackGroundMusicCsReq {
+    repeated uint32 unlock_ids = 5; // ibpoieflena
+}

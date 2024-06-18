@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueVirtualItemInfo.proto";
+
+message SyncRogueVirtualItemInfoScNotify {
+	RogueVirtualItemInfo rogue_virtual_item_info = 14;
+}

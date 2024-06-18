@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "GroupStateInfo.proto";
+import "MotionInfo.proto";
+
+// Mfmikggndbp
+message RestoreWolfBroGameArchiveCsReq {
+	MotionInfo motion = 1;
+	// bool bepdahkjhih = 9;
+	uint32 id = 14;
+	GroupStateInfo group_state_info = 12; // ecglaijolji
+}

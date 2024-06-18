@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Gmfbecbgnfn
+enum FeverTimeActivityType {
+	FEVER_TIME_BATTLE_RANK_C = 0;
+	FEVER_TIME_BATTLE_RANK_B = 1;
+	FEVER_TIME_BATTLE_RANK_A = 2;
+	FEVER_TIME_BATTLE_RANK_S = 3;
+	FEVER_TIME_BATTLE_RANK_SS = 4;
+}

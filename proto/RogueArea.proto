@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueArea {
+	uint32 cur_reach_room_num = 14;
+	uint32 map_id = 3;
+	bool has_taken_rewards = 9;
+	uint32 rogue_status = 5;
+	uint32 rogue_area_status = 2;
+	uint32 area_id = 8;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RelicAffix.proto";
+
+message Relic {
+    uint32 main_affix_id = 1;
+	uint32 equip_avatar_id = 15; //cmmegdchmlb
+    repeated RelicAffix sub_affix_list = 14;
+    uint32 unique_id = 3;
+    bool is_discarded = 5; //ongojjkjopd
+    bool is_protected = 11;
+    uint32 level = 9;
+    uint32 base_avatar_id = 7;
+    uint32 tid = 6;
+    uint32 exp = 2;
+}

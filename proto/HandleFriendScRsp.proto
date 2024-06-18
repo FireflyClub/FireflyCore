@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FriendListInfo.proto";
+
+// Kakegfmajch
+message HandleFriendScRsp {
+    FriendListInfo handle_friend_info = 10; // hngpllpmgld
+    uint32 retcode = 15;
+    bool handle_result = 2; // ffchkmgpfig
+    uint32 uid = 5;
+}

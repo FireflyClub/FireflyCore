@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Doipbglcoog
+enum MovieRacingType {
+	MOVIE_RACING_OVER_TAKE = 0;
+	MOVIE_RACING_OVER_TAKE_ENDLESS = 1;
+	MOVIE_RACING_SHOOTING = 2;
+	MOVIE_RACING_SHOOTING_ENDLESS = 3;
+}

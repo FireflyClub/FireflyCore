@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChallengeBossExtraInfo.proto";
+
+// Fbnihoejkpc
+message Challenge {
+    uint32 stars = 3; // ijjfhfincfd
+    ChallengeBossExtraInfo story_info = 7;
+    uint32 score = 4;
+    uint32 challenge_id = 13;
+    // uint32 igncekegblh = 11;
+    uint32 score_two = 15;
+    uint32 taken_reward = 10; // cpjbgfbhlpe
+    // bool oeeelifgfle = 1;
+}

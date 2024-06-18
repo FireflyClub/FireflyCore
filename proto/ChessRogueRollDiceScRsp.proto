@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousDice.proto";
+
+message ChessRogueRollDiceScRsp {
+    uint32 retcode = 10;
+    uint32 OHNDNDDKAEG = 11;
+    ChessRogueNousDice nous_dice = 6;
+}

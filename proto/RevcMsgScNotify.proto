@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MsgType.proto";
+import "ChatType.proto";
+// import "Bienebceiof.proto";
+
+message RevcMsgScNotify {
+	// Bienebceiof ggadmjhlomj = 12;
+  	uint32 to_uid = 11; // cmmildghfnl
+  	ChatType chat_type = 4;
+  	uint32 emote = 7;
+  	MsgType msg_type = 8;
+  	string text = 6;
+  	uint32 from_uid = 15; // ghojifhngmc
+}

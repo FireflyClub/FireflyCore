@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ArchiveData.proto";
+
+//? Jbpfmgokpkk
+message GetArchiveDataScRsp {
+    uint32 retcode = 4;
+    ArchiveData archive_data = 9; // bkcflgbcjmi
+}

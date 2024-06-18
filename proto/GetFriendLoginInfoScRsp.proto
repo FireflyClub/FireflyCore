@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Eiefpljcckb
+message GetFriendLoginInfoScRsp {
+	// bool gddgfedmkch = 6;
+	// bool pcoccjdlhap = 11;
+	repeated uint32 friend_uid_list = 5; // bannmihabpk
+	uint32 retcode = 1;
+	// repeated uint32 iaijiinnbdi = 7;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message TakeMailAttachmentCsReq {
+    uint32 optional_reward_id = 7; //mdcfgcppaof
+    repeated uint32 mail_id_list = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemList.proto";
+
+// Lnjpfnobckn
+message TakenChallengeRewardInfo {
+    uint32 star_count = 5; // gkfjeopccdp
+    ItemList reward = 3;
+}

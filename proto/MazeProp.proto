@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message MazeProp {
+    uint32 group_id = 6;
+    uint32 config_id = 3;
+    uint32 state = 1;
+}

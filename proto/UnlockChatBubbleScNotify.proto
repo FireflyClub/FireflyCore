@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message UnlockChatBubbleScNotify {
+    uint32 bubble_id = 12;
+}

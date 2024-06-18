@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueHandbookData {
+	uint32 rogue_current_version = 4;
+	bool is_miracle_unlock = 10;
+}

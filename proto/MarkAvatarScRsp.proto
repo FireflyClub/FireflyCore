@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// ABFGBCGNGPH
+message MarkAvatarScRsp {
+	bool is_marked = 2;
+	uint32 avatar_id = 8;
+	uint32 retcode = 4;
+}

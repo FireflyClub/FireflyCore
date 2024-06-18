@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueArea.proto";
+
+message RogueAreaInfo {
+	repeated RogueArea rogue_area = 15;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AssistMonsterWave.proto";
+import "MotionInfo.proto";
+import "DynamicValue.proto";
+
+message SceneCastSkillCsReq {
+	uint32 caster_id = 13; // dmkhognonbl
+	repeated AssistMonsterWave assist_monster_wave_list = 1; //lchclicihdm
+	// repeated uint32 legdombcfld = 15;
+	repeated DynamicValue dynamic_values = 5;
+	repeated uint32 assist_monster_entity_id_list = 2; // igkjjpeealc
+	MotionInfo target_motion = 6; //mabofealjld
+	uint32 attacked_group_id  = 12; // ecjeolnpgbk
+	// repeated SceneCastSkill bdcenahcdkg = 11;
+	repeated uint32 hit_target_entity_id_list = 7;
+	uint32 skill_index = 9;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "GachaCeiling.proto";
+
+// Dkddhjennfp
+message GachaInfo {
+	int64 end_time = 3;
+	GachaCeiling gacha_ceiling = 1; // eegijjhombi
+	repeated uint32 featured = 4; // hjefpibalip
+	uint32 gacha_id = 9; // dfdbmelhdpp
+	repeated uint32 up_info = 10; // ibomhpajoji
+	string detail_url = 7; //? fcleoobmbfn
+	int64 begin_time = 5;
+	string history_url = 2; //? mnnlngjlecd
+}

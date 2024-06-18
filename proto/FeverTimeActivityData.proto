@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FeverTimeActivityType.proto";
+
+// Emmdfkhifnc
+message FeverTimeActivityData {
+	// uint32 mknekdcpcek = 4;
+	// uint32 bhbecnkompb = 8;
+	FeverTimeActivityType activity_type = 10; // laagoebdffg
+}

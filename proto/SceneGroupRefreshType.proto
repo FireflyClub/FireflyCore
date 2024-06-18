@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum SceneGroupRefreshType {
+    SCENE_GROUP_REFRESH_TYPE_NONE = 0;
+    SCENE_GROUP_REFRESH_TYPE_LOADED = 1;
+    SCENE_GROUP_REFRESH_TYPE_UNLOAD = 2;
+}

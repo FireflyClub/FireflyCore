@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCostList.proto";
+
+// Fohclmckmfc
+message ExpUpEquipmentCsReq {
+    uint32 equipment_unique_id = 6;
+    ItemCostList item_cost_list = 8;
+}

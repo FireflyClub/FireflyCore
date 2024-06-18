@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueMiracleDataInfo.proto";
+
+message RogueMiracleInfoData {
+    repeated RogueMiracleDataInfo rogue_miracle_list = 2;
+	uint32 KHBDIKDDIIB = 15;
+	uint32 DMJLJNDFOGP = 12;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FightActivityGroup.proto";
+
+// Niojihmmmlj
+message GetFightActivityDataScRsp {
+    uint32 world_level = 11;
+    bool mgfbopciien = 2;
+    repeated FightActivityGroup anepmceolnc = 8;
+    map<uint32, uint32> kfkfjdekmnl = 13;
+    uint32 retcode = 14;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Enehbffiogh
+message ChallengeReward {
+    uint32 group_id = 13;
+    uint64 taken_challenge_reward = 12; // kamimbjhobi
+}

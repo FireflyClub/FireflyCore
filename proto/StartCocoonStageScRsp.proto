@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SceneBattleInfo.proto";
+
+message StartCocoonStageScRsp {
+    SceneBattleInfo battle_info = 3;
+    uint32 retcode = 7;
+    uint32 prop_entity_id = 12;
+    uint32 cocoon_id = 9;
+    uint32 wave = 15;
+}

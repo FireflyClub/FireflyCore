@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RotaterData.proto";
+import "RotatorEnergyInfo.proto";
+
+// Hceajjndgel
+message DeployRotaterScRsp {
+    uint32 retcode = 7;
+    RotatorEnergyInfo energy_info = 10;
+    RotaterData rotater_data = 6;
+}

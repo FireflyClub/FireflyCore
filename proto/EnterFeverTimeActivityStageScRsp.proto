@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SceneBattleInfo.proto";
+
+// Lhdccfkommh
+message EnterFeverTimeActivityStageScRsp {
+	uint32 id = 3;
+	uint32 retcode = 13;
+	SceneBattleInfo battle_info = 1;
+}

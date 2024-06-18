@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "EntityMotion.proto";
+import "ClientDownloadData.proto";
+
+message SceneEntityMoveScRsp {
+    uint32 retcode = 3;
+    repeated EntityMotion entity_motion_list = 12;
+    ClientDownloadData download_data = 7;
+}

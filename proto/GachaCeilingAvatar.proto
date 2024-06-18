@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message GachaCeilingAvatar {
+    uint32 repeated_cnt = 14;
+    uint32 avatar_id = 12;
+}

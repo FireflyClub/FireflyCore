@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Fjmnikjncdh
+message ReEnterLastElementStageCsReq {
+    uint32 stage_id = 1;
+}

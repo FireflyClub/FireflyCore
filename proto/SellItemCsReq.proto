@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCostList.proto";
+
+// Clihmfgjiac
+message SellItemCsReq {
+    bool to_material = 5; // anookalgihi
+    ItemCostList item_cost_list = 15; // hmambnipfcd
+}

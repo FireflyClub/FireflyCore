@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "Vector.proto";
+
+message MotionInfo {
+    Vector pos = 10;
+    Vector rot = 14;
+}

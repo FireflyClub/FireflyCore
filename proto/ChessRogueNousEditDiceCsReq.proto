@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousDiceInfo.proto";
+
+message ChessRogueNousEditDiceCsReq {
+    ChessRogueNousDiceInfo dice_info = 12;
+}

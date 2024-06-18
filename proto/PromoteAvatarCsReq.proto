@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCost.proto";
+
+message PromoteAvatarCsReq {
+    uint32 base_avatar_id = 9;
+    repeated ItemCost item_list = 7;
+}

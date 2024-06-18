@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueMiracleData.proto";
+
+message ChessRogueMiracleInfo {
+    ChessRogueMiracleData miracle_data = 13;
+}

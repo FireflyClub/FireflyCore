@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "BuffInfo.proto";
+import "SceneEntityBuffChangeType.proto";
+
+// Dolbeibmila
+message EntityBuffChangeInfo {
+    SceneEntityBuffChangeType reason = 1;
+    BuffInfo add_buff_info = 13; // cbkbpgicmbi
+    uint32 remove_buff_id = 15; // agceblafbco
+    uint32 entity_id = 12;
+}

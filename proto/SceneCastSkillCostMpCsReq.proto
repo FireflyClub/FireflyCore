@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message SceneCastSkillCostMpCsReq {
+    uint32 skill_index = 1;
+    uint32 caster_id = 4;
+    uint32 attacked_group_id = 12;
+}

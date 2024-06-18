@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "HeroBasicType.proto";
+
+//Nhbcfoiccmm
+message SetHeroBasicTypeCsReq {
+    HeroBasicType basic_type = 3;
+}

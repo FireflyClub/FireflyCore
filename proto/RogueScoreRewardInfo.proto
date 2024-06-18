@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueScoreRewardInfo {
+    repeated uint32 has_taken_reward = 7;
+    bool pool_refreshed = 13;
+    uint32 score = 4;
+    uint32 pool_id = 6;
+    bool has_taken_initial_score = 11;
+	int64 begin_time = 9;
+	int64 end_time = 15;
+}

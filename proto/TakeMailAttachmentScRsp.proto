@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemList.proto";
+import "ClientMailAttachmentItem.proto";
+
+message TakeMailAttachmentScRsp {
+    repeated ClientMailAttachmentItem fail_mail_list = 3;
+    repeated uint32 succ_mail_id_list = 11;
+    ItemList attachment = 4;
+    uint32 retcode = 5;
+}

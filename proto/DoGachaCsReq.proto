@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Akphefjekam
+message DoGachaCsReq {
+    uint32 gacha_id = 7;
+    uint32 gacha_num = 10; // dedelghmmje
+    uint32 simulate_magic = 13; // hfjddefdkfn
+    uint32 gacha_random = 9;
+}

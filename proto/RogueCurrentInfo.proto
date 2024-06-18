@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuffInfo.proto";
+import "RogueAvatarInfo.proto";
+import "RogueMapInfo.proto";
+import "RogueMiracleInfo.proto";
+import "RogueAeon.proto";
+import "RogueStatus.proto";
+import "RogueVirtualItemInfo.proto";
+import "RogueCommonPendingAction.proto";
+
+message RogueCurrentInfo {
+	RogueAvatarInfo rogue_avatar_info = 11;
+	RogueMapInfo room_map = 9;
+	RogueStatus status = 7;
+	RogueBuffInfo rogue_buff_info = 14;
+	RogueMiracleInfo rogue_miracle_info = 2;
+	RogueAeon rogue_aeon_info = 3;
+	RogueVirtualItemInfo rogue_virtual_item = 10;
+	RogueCommonPendingAction pending_action = 8;
+}

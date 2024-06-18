@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AvatarType.proto";
+
+// Fnhcbggnkfd
+message StarFightAvatar {
+    AvatarType avatar_type = 15;
+    uint32 avatar_id = 14;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueDialogueEvent.proto";
+
+message SyncRogueDialogueEventDataScNotify {
+    repeated RogueDialogueEvent rogue_dialogue_event = 13;
+}

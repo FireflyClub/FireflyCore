@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Lfgokccoamc
+message PlayBackGroundMusicCsReq {
+    uint32 play_music_id = 14;
+}

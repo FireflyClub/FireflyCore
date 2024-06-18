@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueMiracleInfoData.proto";
+
+message RogueMiracleInfo {
+	RogueMiracleInfoData rogue_miracle_info = 2;
+}

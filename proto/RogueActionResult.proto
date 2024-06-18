@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuffSource.proto";
+import "RogueActionResultData.proto";
+
+message RogueActionResult {
+    RogueBuffSource source = 10;
+    RogueActionResultData rogue_action = 5;
+}

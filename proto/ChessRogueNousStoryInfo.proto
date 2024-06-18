@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message ChessRogueNousStoryInfo {
+    repeated uint32 HCPCJBDBBGC = 1;
+    repeated uint32 INPDLILFOCO = 9;
+    uint32 sub_story_id = 7;
+    bool CKEKKMGIHKJ = 8;
+    bool AHOJIDMLFPE = 12;
+    repeated uint32 CMHLEEKNFKH = 4;
+    uint32 story_id = 3;
+    uint32 ACLGLHEFFON = 14;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "SimpleInfo.proto";
+
+// Knbccjihhph
+message SearchPlayerScRsp {
+    repeated SimpleInfo search_result_list = 9;
+    uint32 retcode = 14;
+    // repeated uint32 aopbnaamlbd = 5;
+}

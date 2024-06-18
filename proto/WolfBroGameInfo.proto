@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "Vector.proto";
+import "MotionInfo.proto";
+
+// Phhndkkbecc
+message WolfBroGameInfo {
+	MotionInfo motion = 11;
+	uint32 jebmddjcadh = 7;
+	repeated Vector jojfkijfeki = 6;
+	bool nmpeaingfpg = 4;
+}

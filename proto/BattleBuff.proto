@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message BattleBuff {
+    uint32 id = 1;
+    uint32 level = 2;
+    uint32 owner_id = 3;
+    uint32 wave_flag = 4;
+    repeated uint32 target_index_list = 5;
+    map<string, float> dynamic_values = 6;
+}

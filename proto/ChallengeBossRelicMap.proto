@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RelicAffix.proto";
+
+// Ipofinflfne
+message ChallengeBossRelicMap {
+    uint32 level = 3;
+    uint32 unique_id = 8;
+    uint32 tid = 12;
+    uint32 main_affix_id = 5;
+    repeated RelicAffix sub_affix_list = 10;
+}

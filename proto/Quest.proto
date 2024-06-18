@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "QuestStatus.proto";
+
+// Pcminmfongb
+message Quest {
+  int64 finish_time = 3; //cbbdfcbniln
+  // repeated uint32 ihmkpnpaipd = 4;
+  uint32 id = 1;
+  QuestStatus status = 13;
+  uint32 progress = 9;
+}

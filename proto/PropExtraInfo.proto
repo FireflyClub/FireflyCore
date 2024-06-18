@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "PropRogueInfo.proto";
+import "PropAeonInfo.proto";
+import "PropChessRogueInfo.proto";
+
+message PropExtraInfo {
+	PropRogueInfo rogue_info = 14;
+	PropAeonInfo aeon_info = 9;
+	PropChessRogueInfo chess_rogue_info = 3;
+}

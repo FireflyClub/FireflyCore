@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueMiracleSelectInfo.proto";
+import "RogueAchivedMiracleInfo.proto";
+
+message SelectRogueMiracleScRsp {
+	RogueAchivedMiracleInfo rogue_miracle_info = 11;
+	RogueMiracleSelectInfo miracle_select_info = 8;
+	uint32 retcode = 12;
+}

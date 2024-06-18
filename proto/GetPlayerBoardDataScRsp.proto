@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "HeadIcon.proto";
+import "DisplayAvatarVec.proto";
+
+// Aljaiaiabgj
+message GetPlayerBoardDataScRsp {
+    repeated HeadIcon unlocked_head_icon_list = 11;
+    uint32 retcode = 12;
+    uint32 current_head_icon_id = 5; // phijnicfnjk
+    DisplayAvatarVec display_avatar_vec = 15; // mfaioacpojf
+    string signature = 1;
+    repeated uint32 display_support_avatar_vec = 13; // jnkadmajeff
+}

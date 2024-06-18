@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "LineupInfo.proto";
+
+message GetAllLineupDataScRsp {
+    repeated LineupInfo lineup_list = 5;
+    uint32 cur_index = 3;
+    uint32 retcode = 10;
+}

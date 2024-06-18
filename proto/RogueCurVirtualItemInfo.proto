@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueCurVirtualItemInfo {
+    uint32 cur_rogue_coin = 1;
+    uint32 cur_talent_coin = 12;
+}

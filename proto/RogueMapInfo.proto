@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueRoom.proto";
+
+message RogueMapInfo {
+	uint32 map_id = 2;
+	uint32 area_id = 13;
+	uint32 cur_site_id = 11;
+	uint32 cur_room_id = 4;
+	repeated RogueRoom room_list = 3;
+}

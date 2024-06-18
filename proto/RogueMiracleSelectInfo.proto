@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueMiracleSelectInfo {
+	repeated uint32 miracle_info = 12; // 15
+	repeated uint32 miracle_info_remote = 15; // 12
+	// RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
+	uint32 JDDLGDNOIEC = 10;
+}

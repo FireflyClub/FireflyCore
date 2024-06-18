@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueMiracle.proto";
+
+message RogueAchivedMiracleInfo {
+	repeated RogueMiracle rogue_miracle_list = 13;
+}

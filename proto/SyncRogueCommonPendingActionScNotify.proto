@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueCommonPendingAction.proto";
+
+message SyncRogueCommonPendingActionScNotify {
+	RogueCommonPendingAction rogue_common_pending_action = 7;
+	uint32 rogue_version_id = 11;
+}

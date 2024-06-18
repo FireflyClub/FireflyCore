@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "DailyActivityInfo.proto";
+
+// Mcnjmfoakba
+message GetDailyActiveInfoScRsp {
+    repeated uint32 daily_active_quest_id_list = 14;
+    repeated DailyActivityInfo daily_active_level_list = 1;
+    uint32 daily_active_point = 3;
+    uint32 retcode = 15;
+}

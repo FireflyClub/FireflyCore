@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueAvatar.proto";
+import "RogueAvatarReviveCost.proto";
+
+message ChessRogueAvatarInfo {
+    RogueAvatarReviveCost revive_cost = 3;
+    repeated ChessRogueAvatar chess_rogue_avatar = 5;
+}

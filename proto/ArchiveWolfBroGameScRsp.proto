@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "WolfBroGameData.proto";
+
+// Bdbpifehleg
+message ArchiveWolfBroGameScRsp {
+	uint32 retcode = 12;
+	WolfBroGameData wolf_bro_game_data = 3;
+}

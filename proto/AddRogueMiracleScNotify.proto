@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueMiracleSource.proto";
+import "RogueMiracle.proto";
+
+message AddRogueMiracleScNotify {
+	RogueMiracleSource source = 15;
+	RogueMiracle rogue_miracle = 4;
+}

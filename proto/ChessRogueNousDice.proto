@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousDiceInfo.proto";
+
+message ChessRogueNousDice {
+    uint32 GFGCPJOHMEL = 9;  // 1
+    uint32 cur_surface_index = 13;
+    repeated uint32 NOGJMMEDGLL = 833;
+    //FEDEMDEEJML JLCEDGIHAFF = 12;
+    uint32 reroll_times = 2;  // 2
+    ChessRogueNousDiceInfo dice_info = 208;
+    uint32 dice_branch_id_remote = 14;  // idk
+    uint32 dice_branch_id = 1;
+    //NMNBNLMAJGC POHKHEGDOHO = 343;  // guess its about modifier
+    bool CHGLMLDAMJH = 1185;  // true
+    uint32 cheat_times = 4;  // 1
+    uint32 HIJBOPMGBAP = 5;  // 10
+    //sint32 PAOHKKNCNCD = 625;
+    bool BDENADDOCAC = 10;  // true
+    //NMNBNLMAJGC cur_surface_effect = 6;
+    uint32 cur_surface_id = 3;
+    //KIPGDFIPNPB KHDDLDDBLMI = 8;
+}

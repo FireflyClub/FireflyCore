@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "UnlockedMusic.proto";
+
+// Kjabnfancgf
+message UnlockBackGroundMusicScRsp {
+    uint32 retcode = 10;
+    repeated uint32 unlocked_ids = 14; // maafemkldll
+    repeated UnlockedMusic music_list = 15;
+}

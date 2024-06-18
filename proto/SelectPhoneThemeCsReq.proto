@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Fdimjhlfapm
+message SelectPhoneThemeCsReq {
+    uint32 theme_id = 1; // ihefcgoomem
+}

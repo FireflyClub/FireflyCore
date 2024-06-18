@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueSyncContextBoardEvent {
+    uint32 board_event_id = 15;
+    uint32 modifier_effect_type = 4;
+}

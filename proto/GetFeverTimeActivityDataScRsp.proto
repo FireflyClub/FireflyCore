@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FeverTimeActivityData.proto";
+
+// Pbgibklblmp
+message GetFeverTimeActivityDataScRsp {
+	repeated FeverTimeActivityData activity_data = 7; // dehehfcpanl
+	uint32 retcode = 10;
+}

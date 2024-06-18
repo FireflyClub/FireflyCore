@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueCurrentInfo.proto";
+import "LineupInfo.proto";
+import "ChessRogueCellInfo.proto";
+import "SceneInfo.proto";
+import "ChessRogueInfo.proto";
+
+
+message ChessRogueStartScRsp {
+    uint32 retcode = 2;
+    ChessRogueCurrentInfo current_info = 1;
+    LineupInfo lineup = 8;
+    ChessRogueCellInfo cell_info = 13;
+    SceneInfo scene = 15;
+    ChessRogueInfo chess_rogue_info = 14;
+    //PEEHMMLEDMP build_query = 3;
+}

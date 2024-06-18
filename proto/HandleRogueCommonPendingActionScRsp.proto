@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuffSelect.proto";
+import "RogueRerollBuff.proto";
+import "RogueMiracleSelect.proto";
+import "RogueBonusSelect.proto";
+
+message HandleRogueCommonPendingActionScRsp {
+    uint32 retcode = 9;
+    uint32 times = 7;
+    uint32 times2 = 14;
+    RogueBuffSelect rogue_buff_select = 1087;
+    RogueRerollBuff rogue_reroll_buff = 126;
+    RogueMiracleSelect miracle_select = 2029;
+    RogueBonusSelect bonus_select = 392;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "WolfBroGameData.proto";
+
+// Opbmfoooacc
+message WolfBroGameDataChangeScNotify {
+	WolfBroGameData wolf_bro_game_data = 7;
+}

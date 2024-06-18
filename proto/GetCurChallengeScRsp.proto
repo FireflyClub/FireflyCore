@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "LineupInfo.proto";
+import "ChallengeInfo.proto";
+
+// Kmooenidjll
+message GetCurChallengeScRsp {
+	uint32 retcode = 4;
+    repeated LineupInfo lineup_list = 6;
+	ChallengeInfo challenge_info = 15; // dggagjlffgl
+}

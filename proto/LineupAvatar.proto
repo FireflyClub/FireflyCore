@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AvatarType.proto";
+import "SpBarInfo.proto";
+
+message LineupAvatar {
+    uint32 slot = 13;
+    uint32 satiety = 8;
+    uint32 hp = 5;
+    SpBarInfo sp_bar = 11;
+    uint32 id = 15;
+    AvatarType avatar_type = 12;
+}

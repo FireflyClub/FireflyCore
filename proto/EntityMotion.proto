@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MotionInfo.proto";
+
+message EntityMotion {
+    uint32 map_layer = 14;
+    MotionInfo motion = 4;
+    // bool bocenohcdcm = 15;
+    uint32 entity_id = 10;
+}

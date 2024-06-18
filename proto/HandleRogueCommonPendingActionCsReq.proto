@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueCommonBuffSelectResult.proto";
+import "RogueBuffRollInfo.proto";
+import "RogueMiracleSelectResult.proto";
+import "RogueBonusSelectResult.proto";
+
+message HandleRogueCommonPendingActionCsReq {
+    oneof pending_action {
+        RogueCommonBuffSelectResult buff_select_result = 1586;
+        RogueBuffRollInfo roll_buff = 308;
+        RogueMiracleSelectResult miracle_select_result = 1209;
+        RogueBonusSelectResult bonus_select_result = 1156;
+    }
+}

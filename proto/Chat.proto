@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MsgType.proto";
+// import "Bienebceiof.proto";
+
+// Gnbekokccfc
+message Chat {
+    string text = 5; //1
+    MsgType msg_type = 10; //1
+    uint32 emote = 1;
+    uint64 sent_time = 2; //1 
+    uint32 sender_uid = 7;
+}

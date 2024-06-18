@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MotionInfo.proto";
+
+// Alnoccdimoo
+message RefreshTriggerByClientCsReq {
+    string trigger_name = 14; // hpjcegjfonl
+    uint32 trigger_entity_id = 9; // cacgcajplen
+    MotionInfo trigger_motion = 10; // gakgdpdjaon
+    repeated uint32 trigger_target_id_list = 1; // nihnniamfep
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// import "PDBKKNJFBAJ.proto";
+import "RogueInfo.proto";
+import "LineupInfo.proto";
+import "SceneInfo.proto";
+
+message EnterRogueScRsp {
+  	// PDBKKNJFBAJ FDAJEIDNMAK = 7;
+  	RogueInfo rogue_info = 10;
+  	LineupInfo lineup = 2;
+  	SceneInfo scene = 3;
+  	uint32 retcode = 11;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message SyncClientResVersionScRsp {
+    uint32 client_res_version = 2;
+    uint32 retcode = 5;
+}

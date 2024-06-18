@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "PlatformType.proto";
+import "PlayerRecordInfo.proto";
+import "PlayerDisplaySettings.proto";
+import "DisplayAvatarDetailInfo.proto";
+
+// Pplihjclmmk
+message PlayerDetailInfo {
+	PlayerDisplaySettings display_settings = 1964; //odhjhjdaeao
+	string signature = 2;
+	// string ejknhjgaibm = 1;
+	// string aionaipakjc = 6;
+	bool is_banned = 10;
+	repeated DisplayAvatarDetailInfo display_avatar_list = 7; //dkjoffbkonc
+	uint32 level = 11;
+	// uint32 gddndionkde = 4;
+	string nickname = 15;
+	uint32 uid = 3;
+	uint32 world_level = 5;
+	PlayerRecordInfo record_info = 14; //lblbpnnnkhg
+	// Npnocpakfpf imhcelnmonf = 1677;
+	repeated DisplayAvatarDetailInfo assist_avatar_list = 373; //eglililpgho
+	PlatformType platform_type = 9;
+	bool show_display_avatars = 8; // hkbddialajk
+	uint32 head_icon = 12;
+	// uint32 cjlfipacgpa = 13;
+}

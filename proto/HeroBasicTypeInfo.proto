@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "HeroBasicType.proto";
+import "AvatarSkillTree.proto";
+import "EquipRelic.proto";
+
+message HeroBasicTypeInfo {
+    uint32 rank = 14;
+    repeated AvatarSkillTree skill_tree_list = 6;
+    HeroBasicType basic_type = 4;
+    repeated EquipRelic equip_relic_list = 7;
+    // uint32 beldbmpokkn = 5;
+}

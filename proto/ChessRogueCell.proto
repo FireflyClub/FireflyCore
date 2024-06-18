@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message ChessRogueCell {
+    uint32 JLOBGDKNJLN = 10;  // 7, 4
+    uint32 NNMNHHPJBDB = 2;
+    bool is_unlocked = 8;  // true
+    uint32 PNKFAINKKCE = 7; // 5, 3
+    uint32 FOKKJJADPEA = 5;
+    uint32 NLBGDNLIONI = 3;
+    repeated uint32 IIJOCONHKND = 4;
+    uint32 entrance_id = 1;
+    uint32 new_room_id = 11;
+    uint32 cell_id = 9;
+    //AKNBDONHPPM chess_rogue_info = 14;
+    bool PMBLMGDFGAN = 6;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AnnounceData.proto";
+
+// Loalohddcbh
+message ServerAnnounceNotify {
+    repeated AnnounceData announce_data_list = 6; // locmfhbpakd
+}

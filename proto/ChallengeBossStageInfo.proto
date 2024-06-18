@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Gbmdggdknmb
+message ChallengeBossStageInfo {
+    uint32 daimooemhjf = 14;
+    bool is_win = 5;
+    uint32 kljpbaagnfn = 11;
+    bool nagjmpmhmmc = 7;
+}

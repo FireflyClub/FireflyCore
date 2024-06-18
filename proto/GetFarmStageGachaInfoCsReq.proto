@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Epjboobjmam
+message GetFarmStageGachaInfoCsReq {
+    repeated uint32 farm_stage_gacha_id_list = 12; // ilioofkdokp
+}

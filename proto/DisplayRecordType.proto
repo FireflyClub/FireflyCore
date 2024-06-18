@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum DisplayRecordType {
+	BATTLE_RECORD_NONE = 0;
+	BATTLE_RECORD_CHALLENGE = 1;
+	BATTLE_RECORD_ROGUE = 2;
+}

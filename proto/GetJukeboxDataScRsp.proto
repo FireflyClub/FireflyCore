@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "UnlockedMusic.proto";
+
+// Dmcbiefihgf
+message GetJukeboxDataScRsp {
+    repeated UnlockedMusic music_list = 2; // nlanglbdgpj
+    uint32 playing_id = 12; // mecnaihkejf
+    uint32 retcode = 4;
+}

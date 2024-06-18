@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AvatarSkillTree.proto";
+import "EquipRelic.proto";
+
+// CKMAGJIHLNB
+message Avatar {
+    uint32 promotion = 13;
+    uint32 equipment_unique_id = 5;
+    uint64 first_met_timestamp = 14;
+    uint32 dressed_skin_id = 15;
+    bool is_marked = 2; //niekopdjolm
+    uint32 base_avatar_id = 1;
+    repeated AvatarSkillTree skilltree_list = 12;
+    uint32 rank = 11;
+    repeated EquipRelic equip_relic_list = 7;
+    repeated uint32 taken_rewards = 6;
+    uint32 exp = 10;
+    uint32 level = 8;
+}

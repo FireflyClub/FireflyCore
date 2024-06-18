@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MazeMapData.proto";
+import "MazeGroup.proto";
+import "MazeChest.proto";
+import "MazeProp.proto";
+
+message GetSceneMapInfoScRsp {
+    // uint32 lafhcgjnphh = 13;
+    repeated MazeProp maze_prop_list = 7;
+    uint32 entry_id = 11;
+    uint32 retcode = 10;
+    repeated MazeChest unlocked_chest_list = 5;
+    repeated MazeGroup maze_group_list = 14;
+    repeated uint32 unlocked_teleport_list = 15;
+    // repeated uint32 opend_chest_num = 8;
+    repeated MazeMapData map_list = 4;
+    // bool hjajmoobhkp = 12;
+    uint32 cur_map_entry_id = 2;
+    repeated uint32 lighten_section_list = 1;
+}

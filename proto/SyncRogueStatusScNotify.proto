@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueStatus.proto";
+
+message SyncRogueStatusScNotify {
+    RogueStatus rogue_status = 15;
+}

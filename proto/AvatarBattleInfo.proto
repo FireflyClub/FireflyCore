@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "AvatarProperty.proto";
+import "AvatarType.proto";
+// import "AvatarSkillTree.proto";
+// import "EquipmentProperty.proto";
+// import "AttackDamageProperty.proto";
+// import "Flojplpfgih.proto";
+// import "SpAddSource.proto";
+
+message AvatarBattleInfo {
+    AvatarType avatar_type = 1;
+    uint32 id = 2;
+    uint32 avatar_level = 3;
+    uint32 avatar_rank = 4;
+    uint32 avatar_promotion = 5;
+    AvatarProperty avatar_status = 6;
+    // repeated AvatarSkillTree avatar_skill = 7;
+    // repeated EquipmentProperty avatar_equipment = 8;
+    // uint32 total_turns = 9;
+    // double total_damage = 10;
+    // double total_heal = 11;
+    // double total_damage_taken = 12;
+    // double total_hp_recover = 13;
+    // double total_sp_cost = 14;
+    // uint32 stage_id = 15;
+    // uint32 stage_type = 16;
+    // double total_break_damage = 17;
+    // repeated AttackDamageProperty attack_type_damage = 18;
+    // repeated AttackDamageProperty attack_type_break_damage = 19;
+    // repeated AttackDamageProperty attack_type_max_damage = 20;
+    // repeated FLOJPLPFGIH skill_times = 21;
+    // double delay_cumulate = 22;
+    // uint32 total_sp_add = 23;
+    // repeated SpAddSource sp_add_source = 24;
+    // uint32 total_bp_cost = 25;
+    // uint32 die_times = 26;
+    // uint32 revive_times = 27;
+    // uint32 break_times = 28;
+    // uint32 extra_turns = 29;
+    // double total_shield = 30;
+    // double total_shield_taken = 31;
+    // double total_shield_damage = 32;
+    // AvatarProperty initial_status = 33;
+	// repeated BattleRelic relics = 34;
+	// uint32 assist_uid = 35;
+	// repeated AttackDamageProperty BDHPBBPPOEN = 36;
+	// double CHDNAACFHII = 37;
+	// double AJLDLEEFKOK = 38;
+	// double PHPIEAMLHBA = 39;
+	// double IOJHINLIOFJ = 40;
+	// repeated AMOIPOEKONN OBKHMEDJHJD = 41;
+	// uint32 CIBNGGNKPPM = 42;
+	// uint32 CFDFPHCGGCH = 43;
+}

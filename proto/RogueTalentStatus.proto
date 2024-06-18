@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum RogueTalentStatus {
+	ROGUE_TALENT_STATUS_LOCK = 0;
+	ROGUE_TALENT_STATUS_UNLOCK = 1;
+	ROGUE_TALENT_STATUS_ENABLE = 2;
+}

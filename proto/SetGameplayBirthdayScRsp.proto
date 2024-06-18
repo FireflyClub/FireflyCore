@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Ngbplkoclli
+message SetGameplayBirthdayScRsp {
+    uint32 retcode = 12;
+    uint32 birthday = 8;
+}

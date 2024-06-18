@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuff.proto";
+import "RogueBuffSource.proto";
+
+message AddRogueBuffScNotify {
+	RogueBuffSource source = 4;
+	RogueBuff maze_buff_info = 1;
+}

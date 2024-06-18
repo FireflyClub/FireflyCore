@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "LineupInfo.proto";
+import "SceneInfo.proto";
+
+message ChessRogueInfo {
+    LineupInfo lineup = 7;
+    SceneInfo scene = 5;
+}

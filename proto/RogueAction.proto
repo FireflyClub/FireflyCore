@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueCommonBuffSelectInfo.proto";
+import "RogueMiracleSelectInfo.proto";
+import "RogueBonusSelectInfo.proto";
+
+
+message RogueAction {
+    oneof action {
+        RogueCommonBuffSelectInfo buff_select_info = 1454; // done
+        RogueMiracleSelectInfo miracle_select_info = 527; // done
+        RogueBonusSelectInfo bonus_select_info = 406;
+    }
+}

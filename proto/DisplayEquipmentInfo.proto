@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Kgfkeefclbk
+message DisplayEquipmentInfo {
+    uint32 exp = 10;
+    uint32 rank = 9;
+    uint32 tid = 11;
+    uint32 promotion = 4;
+    uint32 level = 8;
+}

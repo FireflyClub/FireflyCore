@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueBuffData.proto";
+
+message ChessRogueBuffInfo {
+    ChessRogueBuffData buff_data = 12;
+}

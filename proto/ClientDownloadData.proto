@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message ClientDownloadData {
+    uint32 version = 1;
+    int64 time = 2;
+    bytes data = 3;
+}

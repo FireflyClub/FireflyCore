@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Kldjgajnpgl
+message GetWolfBroGameDataCsReq {
+    uint32 id = 1;
+}

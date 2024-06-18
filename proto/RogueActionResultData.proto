@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueBuffData.proto";
+import "RogueMiracleData.proto";
+import "RogueVirtualItemData.proto";
+
+message RogueActionResultData {
+    RogueVirtualItemData add_item_list = 11;
+    RogueVirtualItemData remove_item_list = 14;
+    RogueBuffData add_buff_list = 1586;
+    RogueBuffData remove_buff_list = 1574;
+    RogueMiracleData add_miracle_list = 1194;
+}

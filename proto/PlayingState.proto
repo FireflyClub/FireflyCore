@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum PlayingState {
+  PLAYING_STATE_NONE = 0;
+  PLAYING_ROGUE_COSMOS = 1;
+  PLAYING_ROGUE_CHESS = 2;
+  PLAYING_ROGUE_CHESS_NOUS = 3;
+  PLAYING_CHALLENGE_MEMORY = 4;
+  PLAYING_CHALLENGE_STORY = 5;
+  PLAYING_CHALLENGE_BOSS = 6;
+  PLAYINGROGUE_TOURN = 7;
+}

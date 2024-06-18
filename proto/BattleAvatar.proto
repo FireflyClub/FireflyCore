@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "BattleEquipment.proto";
+import "AvatarSkillTree.proto";
+import "AvatarType.proto";
+import "BattleRelic.proto";
+import "SpBarInfo.proto";
+// import "GFNIHDMMLME.proto";
+
+message BattleAvatar {
+	AvatarType avatar_type = 1;
+	uint32 id = 2;
+	uint32 level = 3;
+	uint32 rank = 4;
+	uint32 index = 5;
+	repeated AvatarSkillTree skilltree_list = 6;
+	repeated BattleEquipment equipment_list = 7;
+	uint32 hp = 8;
+	uint32 promotion = 10;
+	repeated BattleRelic relic_list = 11;
+	uint32 world_level = 12;
+	uint32 assist_uid = 13;
+	// GFNIHDMMLME GDCGICEDOKK = 15;
+	SpBarInfo sp_bar = 16;
+	// uint32 EBOOMIMPHEF = 17;
+}

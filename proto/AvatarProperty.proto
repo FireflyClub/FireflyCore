@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message AvatarProperty {
+    double max_hp = 1;
+    double attack = 2;
+    double defence = 3;
+    double speed = 4;
+    double left_hp = 5;
+    double left_sp = 6;
+    double max_sp = 7;
+}

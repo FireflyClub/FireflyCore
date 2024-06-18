@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ExtraLineupType.proto";
+import "AvatarType.proto";
+
+message QuitLineupCsReq {
+    uint32 base_avatar_id = 5;
+    ExtraLineupType extra_lineup_type = 7;
+    AvatarType avatar_type = 6;
+    uint32 index = 10;
+    bool is_virtual = 14;
+    uint32 plane_id = 15;
+}

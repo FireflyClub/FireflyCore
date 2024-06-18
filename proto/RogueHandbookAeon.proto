@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueHandbookAeon {
+	uint32 exp = 1;
+	uint32 level = 13;
+	uint32 aeon_id = 8;
+	repeated uint32 taken_reward_list = 12; // JNOHODCLONM
+	uint32 max_level = 9;
+	repeated uint32 archive_unlock_list = 3; // IFCNJDJDNBL
+}

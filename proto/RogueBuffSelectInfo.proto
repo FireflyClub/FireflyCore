@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "RogueCommonBuffSelectSource.proto";
+import "ItemCostList.proto";
+import "RogueBuff.proto";
+
+message RogueBuffSelectInfo {
+	RogueCommonBuffSelectSource source = 14;
+	uint32 select_buff_source_hint = 2; //
+	ItemCostList roll_buffs_cost = 10;
+	bool can_roll = 6;
+	uint32 roll_buff_max_times = 11; //
+	uint32 select_buff_source_cur_count = 12; //
+	repeated uint32 select_first_buff_list = 8;
+	uint32 select_buff_source_total_count = 4; //
+	repeated RogueBuff maze_buff_list = 15;
+	uint32 roll_buff_times = 3; //
+	uint32 rogue_puman_coupon = 9;
+}

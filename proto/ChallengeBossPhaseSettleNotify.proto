@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "BattleTarget.proto";
+
+// Fppnhghkkpf
+message ChallengeBossPhaseSettleNotify {
+    bool jcjhnicmmcb = 12;
+    uint32 stars = 1;
+    uint32 phase = 7;
+    uint32 challenge_score = 14;
+    bool is_win = 4;
+    repeated BattleTarget battle_target_list = 2; // kmjbhkflnnf
+    bool jekaainpaph = 11;
+    uint32 score_two = 9;
+    uint32 challenge_id = 8;
+    uint32 kibkjoalook = 15;
+}

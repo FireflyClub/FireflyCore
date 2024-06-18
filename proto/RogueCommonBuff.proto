@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+//Nnckdapiopi
+message RogueCommonBuff {
+    uint32 buff_level = 5; // pojebpchnpn
+    uint32 buff_id = 3; // daimooemhjf
+}

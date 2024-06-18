@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+enum RogueStatus {
+	ROGUE_STATUS_NONE = 0;
+	ROGUE_STATUS_DOING = 1;
+	ROGUE_STATUS_PENDING = 2;
+	ROGUE_STATUS_ENDLESS = 3;
+	ROGUE_STATUS_FINISH = 4;
+}

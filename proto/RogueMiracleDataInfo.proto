@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RogueMiracleDataInfo {
+	uint32 DCLABPANBJG = 12; //?
+	map<uint32, uint32> KONAGCDHKKH = 15;
+	uint32 MMFONFFPNJM = 8; //?
+	uint32 NKBEHFHLPEF = 11; //?
+	uint32 miracle_id = 7;
+}

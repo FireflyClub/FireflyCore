@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCostList.proto";
+
+// Pbbnlgfdjhb
+message ExpUpRelicCsReq {
+    ItemCostList item_cost_list = 1; //hmambnipfcd
+    uint32 relic_unique_id = 11; //ekjochfepap
+}

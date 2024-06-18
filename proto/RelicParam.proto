@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// Jbcmopckhpe
+message RelicParam {
+    uint32 relic_type = 13; //menmcchlmnl
+    uint32 relic_unique_id = 14; //ekjochfepap
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemList.proto";
+
+// Hkcjfbafhmf
+message ComposeItemScRsp {
+    uint32 count = 6;
+    uint32 compose_id = 15;
+    uint32 retcode = 2;
+    ItemList return_item_list = 4;
+}

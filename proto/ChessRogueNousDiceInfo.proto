@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueNousDiceSurfaceInfo.proto";
+
+message ChessRogueNousDiceInfo {
+    uint32 max_difficulty = 14;
+    repeated ChessRogueNousDiceSurfaceInfo dice_surface = 2;
+    uint32 dice_branch_id = 5;
+    uint32 question_difficulty = 10;
+}

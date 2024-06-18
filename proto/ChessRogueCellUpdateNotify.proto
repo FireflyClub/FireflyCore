@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ChessRogueCell.proto";
+
+message ChessRogueCellUpdateNotify {
+    //LCMLACLKNDI HFBFDNEMJED = 6;
+    uint32 cell_room_id = 15;
+    //JGJCJHMAKKA reason = 11;
+    repeated ChessRogueCell cell_info = 3;
+}

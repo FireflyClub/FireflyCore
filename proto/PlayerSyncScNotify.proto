@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "Relic.proto";
+import "Equipment.proto";
+import "PlayerBasicInfo.proto";
+import "BoardDataSync.proto";
+import "Material.proto";
+import "AvatarSync.proto";
+import "HeroBasicTypeInfo.proto";
+
+// Pkbehgpoein
+message PlayerSyncScNotify {
+    BoardDataSync board_data_sync = 1665;
+    AvatarSync avatar_sync = 5;
+    repeated Equipment equipment_list = 3;
+    repeated Relic relic_list = 6;
+    PlayerBasicInfo basic_info = 4;
+    repeated Material material_list = 14; // macfjibhfad
+    uint32 total_achievement_exp = 1725;
+    repeated HeroBasicTypeInfo basic_type_info_list = 2;
+    repeated uint32 del_relic_list = 13;
+    repeated uint32 del_equipment_list = 1;
+}

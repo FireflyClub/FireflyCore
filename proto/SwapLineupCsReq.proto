@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ExtraLineupType.proto";
+
+message SwapLineupCsReq {
+    ExtraLineupType extra_lineup_type = 12;
+    uint32 plane_id = 8;
+    uint32 index = 4;
+    uint32 src_slot = 3;
+    bool is_virtual = 10;
+    uint32 dst_slot = 9;
+}

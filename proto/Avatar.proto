@@ -16,7 +16,7 @@ message Avatar {
     uint32 base_avatar_id = 13; //? OOLGGPJLNAF
     bool is_marked = 3; // DMCEMKPMKCL
     repeated AvatarSkillTree skilltree_list = 9; // IOJBPANFDBI
-    repeated uint32 taken_rewards = 6; // JCBMCAHFLMC
+    repeated uint32 taken_rewards = 11; // JCBMCAHFLMC
     uint32 level = 5; 
     uint32 dressed_skin_id = 6; //? PNCKNOLCDIP
 }

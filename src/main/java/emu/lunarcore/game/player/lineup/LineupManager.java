@@ -5,8 +5,6 @@ import java.util.List;
 import dev.morphia.annotations.Entity;
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
-import emu.lunarcore.data.GameData;
-import emu.lunarcore.data.excel.SpecialAvatarExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
@@ -314,12 +312,8 @@ public class LineupManager {
         // Add
         for (int avatarId : lineupList) {
             GameAvatar avatar = getPlayer().getAvatarById(avatarId);
-            SpecialAvatarExcel specialAvatar = GameData.getSpecialAvatarExcel(avatarId, getPlayer().getWorldLevel());
             if (avatar != null) {
                 lineup.getAvatars().add(avatarId);
-            }
-            if (specialAvatar != null) {
-                lineup.getAvatars().add(specialAvatar.getSpecialAvatarID());
             }
         }
 

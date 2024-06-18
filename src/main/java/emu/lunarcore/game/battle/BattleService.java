@@ -6,13 +6,11 @@ import java.util.List;
 import java.util.Set;
 
 import emu.lunarcore.GameConstants;
-import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.CocoonExcel;
 import emu.lunarcore.data.excel.StageExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.battle.skills.MazeSkill;
-import emu.lunarcore.game.enums.ActivityStarFightDifficultyLevel;
 import emu.lunarcore.game.enums.StageType;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.scene.entity.EntityMonster;
@@ -21,7 +19,6 @@ import emu.lunarcore.game.scene.entity.GameEntity;
 import emu.lunarcore.proto.AvatarPropertyOuterClass.AvatarProperty;
 import emu.lunarcore.proto.BattleEndStatusOuterClass.BattleEndStatus;
 import emu.lunarcore.proto.BattleStatisticsOuterClass.BattleStatistics;
-import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
 import emu.lunarcore.server.game.BaseGameService;
 import emu.lunarcore.server.game.GameServer;
 import emu.lunarcore.server.packet.send.*;
@@ -203,46 +200,6 @@ public class BattleService extends BaseGameService {
         
         // Send packet
         player.sendPacket(new PacketSceneEnterStageScRsp(battle));
-    }
-    
-    public void startStarFightBattle(Player player, int groupId, ActivityStarFightDifficultyLevel difficulty, List<Integer> avatar_ids) {
-        var config = GameData.getActivityStarFightStageConfigExcel(groupId, difficulty);
-
-        if (config == null) {
-            LunarCore.getLogger().error("Failed to obtain ActivityStarFightStageConfigExcel {} {} {}", groupId, difficulty, (groupId << 8) + difficulty.getVal());
-            player.sendPacket(new PacketStartStarFightLevelScRsp());
-            return;
-        }
-
-        var groupConfig = GameData.getActivityStarFightGroupExcelMap().get(config.getGroupID());
-
-        var planeEvent = GameData.getPlaneEventExcel(config.getEventID(), player.getWorldLevel());
-
-        if (planeEvent == null) {
-            LunarCore.getLogger().error("Failed to obtain PlaneEventExcel {} {}", config.getEventID(), player.getWorldLevel());
-            player.sendPacket(new PacketStartStarFightLevelScRsp());
-            return;
-        }
-
-        var stage = GameData.getStageExcelMap().get(planeEvent.getStageID());
-
-        if (stage == null) {
-            LunarCore.getLogger().error("Failed to obtain StageExcel {}", planeEvent.getStageID());
-            player.sendPacket(new PacketStartStarFightLevelScRsp());
-            return;
-        }
-
-        // Set Lineup
-        player.getLineupManager().replaceLineup(0, ExtraLineupType.LINEUP_ACTIVITY_VALUE, avatar_ids);
-        player.getLineupManager().setCurrentExtraLineup(ExtraLineupType.LINEUP_ACTIVITY, false);
-
-        // Create Battle Instance
-        var battle = new Battle(player, player.getLineupManager().getExtraLineupByType(ExtraLineupType.LINEUP_ACTIVITY_VALUE), stage);
-        battle.setRoundsLimit(groupConfig.getPerfectWave());
-        battle.addBuff(groupConfig.getMazeBuffID());
-        player.setBattle(battle);
-
-        player.sendPacket(new PacketStartStarFightLevelScRsp(groupId, difficulty, battle));
     }
     
     public void startCocoon(Player player, int cocoonId, int worldLevel, int wave) {

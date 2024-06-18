@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import emu.lunarcore.data.config.FloorInfo;
 import emu.lunarcore.data.excel.*;
 import emu.lunarcore.game.battle.MazeBuff;
-import emu.lunarcore.game.enums.ActivityStarFightDifficultyLevel;
-import emu.lunarcore.game.enums.AvatarPropertyType;
 import emu.lunarcore.util.Utils;
 import it.unimi.dsi.fastutil.ints.*;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
@@ -44,6 +42,8 @@ public class GameData {
     @Getter private static Int2ObjectMap<TextJoinExcel> textJoinExcelMap = new Int2ObjectLinkedOpenHashMap<>();
     @Getter private static Int2ObjectMap<ChatBubbleExcel> chatBubbleExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<PhoneThemeExcel> phoneThemeExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MainMissionExcel> mainMissionExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<ContentPackageExcel> contentPackageExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<AdventurePlayerExcel> adventurePlayerExcelMap = new Int2ObjectOpenHashMap<>();
 
     @Getter private static Int2ObjectMap<ChallengeGroupExcel> challengeGroupExcelMap = new Int2ObjectOpenHashMap<>();
@@ -85,25 +85,6 @@ public class GameData {
     private static Int2ObjectMap<RelicMainAffixExcel> relicMainAffixExcelMap = new Int2ObjectOpenHashMap<>();
     private static Int2ObjectMap<RelicSubAffixExcel> relicSubAffixExcelMap = new Int2ObjectOpenHashMap<>();
     private static Int2ObjectMap<RelicSetExcel> relicSetExcelMap = new Int2ObjectOpenHashMap<>();
-    
-    // Mission
-    @Getter private static Int2ObjectMap<MainMissionExcel> mainMissionExcelMap = new Int2ObjectOpenHashMap<>();
-
-    // Map (2.2.54)
-    @Getter private static Int2ObjectMap<ContentPackageExcel> contentPackageExcelMap = new Int2ObjectOpenHashMap<>();
-
-    // Activity
-    @Getter private static Int2ObjectMap<ActivityStarFightGroupExcel> activityStarFightGroupExcelMap = new Int2ObjectOpenHashMap<>();
-    private static Int2ObjectMap<ActivityStarFightStageConfigExcel> activityStarFightStageConfigExcelMap = new Int2ObjectOpenHashMap<>();
-
-    // Plane Event
-    @Getter private static Int2ObjectMap<PlaneEventExcel> planeEventExcelMap = new Int2ObjectOpenHashMap<>();
-
-    // Special Avatar
-    private static Int2ObjectMap<SpecialAvatarExcel> specialAvatarExcelMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static Int2ObjectMap<SpecialAvatarRelicExcel> specialAvatarRelicExcelMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static Int2ObjectMap<SpecialAvatarRelicMainValueExcel> specialAvatarRelicMainValueExcelMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static Int2ObjectMap<SpecialAvatarRelicSubValueExcel> specialAvatarRelicSubValueExcelMap = new Int2ObjectOpenHashMap<>();
     
     // Configs (Bin)
     @Getter private static Object2ObjectMap<String, FloorInfo> floorInfos = new Object2ObjectOpenHashMap<>();
@@ -205,44 +186,6 @@ public class GameData {
     public static RelicSubAffixExcel getRelicSubAffixExcel(int groupId, int affixId) {
         return relicSubAffixExcelMap.get((groupId << 16) + affixId);
     }
-
-    // Special Avatar Relic
-    public static RelicMainAffixExcel getRelicMainAffixExcel(int groupId, AvatarPropertyType propertyType) {
-        return relicMainAffixExcelMap
-            .values()
-            .stream()
-            .filter( p-> p.getProperty().equals(propertyType) && p.getGroupID() == groupId)
-            .findFirst()
-            .orElse(null);
-    }
-
-    public static RelicSubAffixExcel getRelicSubAffixExcel(int groupId, AvatarPropertyType propertyType) {
-        return relicSubAffixExcelMap
-            .values()
-            .stream()
-            .filter(p -> p.getProperty().equals(propertyType) && p.getGroupID() == groupId)
-            .findFirst().
-            orElse(null);
-    }
-    
-    // Activity
-    public static ActivityStarFightStageConfigExcel getActivityStarFightStageConfigExcel(int groupId, ActivityStarFightDifficultyLevel difficultyLevel) {
-        return activityStarFightStageConfigExcelMap.get((groupId << 8) + difficultyLevel.getVal());
-    }
-
-    // Plane Event
-    public static PlaneEventExcel getPlaneEventExcel(int eventId, int worldLevel) {
-        return getPlaneEventExcelMap().get((eventId << 8) + worldLevel);
-    }
-
-    // Special Avatar
-    public static SpecialAvatarExcel getSpecialAvatarExcel(int specialAvatarId, int worldLevel) {
-        return specialAvatarExcelMap.get((specialAvatarId << 8) + worldLevel);
-    }
-
-    public static boolean isSpecialAvatar(int specialAvatarId, int worldLevel) {
-        return specialAvatarExcelMap.containsKey((specialAvatarId << 8) + worldLevel);
-    }
     
     public static FloorInfo getFloorInfo(int planeId, int floorId) {
         return floorInfos.get("P" + planeId + "_F" + floorId);
@@ -272,7 +215,6 @@ public class GameData {
         return rogueBuffExcelMap.get((rogueBuffId << 4) + level);
     }
 
-    // Mission
     public static Int2ObjectMap<MainMissionExcel> getAllMainMissionExcel() {
         return mainMissionExcelMap;
     }

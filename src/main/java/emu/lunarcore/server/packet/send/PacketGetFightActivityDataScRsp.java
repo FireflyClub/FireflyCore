@@ -1,9 +1,7 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.data.GameData;
-import emu.lunarcore.game.enums.ActivityStarFightDifficultyLevel;
-import emu.lunarcore.proto.GetFightActivityDataScRspOuterClass.GetFightActivityDataScRsp;
-import emu.lunarcore.proto.FightActivityGroupOuterClass.FightActivityGroup;
+import emu.lunarcore.proto.FightActivityGroupOuterClass;
+import emu.lunarcore.proto.GetFightActivityDataScRspOuterClass;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdId;
 
@@ -12,21 +10,18 @@ public class PacketGetFightActivityDataScRsp extends BasePacket {
     public PacketGetFightActivityDataScRsp() {
         super(CmdId.GetFightActivityDataScRsp);
 
-        var data = GetFightActivityDataScRsp
+        FightActivityGroupOuterClass.FightActivityGroup fightActivityGroup = FightActivityGroupOuterClass.FightActivityGroup.newInstance();
+        fightActivityGroup.setGroupId(10006);
+        fightActivityGroup.setEndlessMaxWave(2);
+        fightActivityGroup.setPassedMaxDifficultyLevel(1);
+
+        var data = GetFightActivityDataScRspOuterClass
+            .GetFightActivityDataScRsp
             .newInstance()
             .setWorldLevel(6)
-            .setMgfbopciien(true);
-        
-        for (var config: GameData.getActivityStarFightGroupExcelMap().values()) {
-            data.getMutableAnepmceolnc().add(
-                FightActivityGroup
-                    .newInstance()
-                    .setGroupId(config.getGroupID())
-                    .setEndlessMaxWave(config.getPerfectWave())
-                    .setPassedMaxDifficultyLevel(ActivityStarFightDifficultyLevel.Hard.getVal())
-                    .setEndlessMaxWave(0)
-            );
-        }
+            .setMgfbopciien(true)
+            .addAllAnepmceolnc(fightActivityGroup)
+            .addKfkfjdekmnl(GetFightActivityDataScRspOuterClass.GetFightActivityDataScRsp.KfkfjdekmnlEntry.newInstance());
         
         this.setData(data);
     }

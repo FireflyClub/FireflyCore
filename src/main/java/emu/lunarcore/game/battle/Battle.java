@@ -237,16 +237,7 @@ public class Battle {
         
         // Avatars
         for (int i = 0; i < lineup.getAvatars().size(); i++) {
-            var avatarId = lineup.getAvatars().get(i);
-
-            // TODO: hacky fix for special avatar, only applied at battle
-            if (GameData.isSpecialAvatar(avatarId, getWorldLevel())) {
-                var excel = GameData.getSpecialAvatarExcel(avatarId, getPlayer().getWorldLevel());
-                proto.addBattleAvatarList(excel.toBattleAvatarProto(i));
-                continue;
-            }
-
-            GameAvatar avatar = getPlayer().getAvatarById(avatarId);
+            GameAvatar avatar = getPlayer().getAvatarById(lineup.getAvatars().get(i));
             if (avatar == null) continue;
             
             // Add to proto

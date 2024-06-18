@@ -1,5 +1,6 @@
 package emu.lunarcore.server.packet.send;
 
+import emu.lunarcore.proto.GenderOuterClass.Gender;
 import emu.lunarcore.proto.GetBasicInfoScRspOuterClass.GetBasicInfoScRsp;
 import emu.lunarcore.proto.PlayerSettingInfoOuterClass.PlayerSettingInfo;
 import emu.lunarcore.server.game.GameSession;
@@ -15,7 +16,9 @@ public class PacketGetBasicInfoScRsp extends BasePacket {
                 .setCurDay(1)
                 .setNextRecoverTime(session.getPlayer().getNextStaminaRecover() / 1000)
                 .setGameplayBirthday(session.getPlayer().getBirthday())
-                .setPlayerSettingInfo(PlayerSettingInfo.newInstance());
+                .setPlayerSettingInfo(PlayerSettingInfo.newInstance())
+                .setGender(Gender.GenderWoman_VALUE)
+                .setIsGenderSet(true);
 
         this.setData(data);
     }

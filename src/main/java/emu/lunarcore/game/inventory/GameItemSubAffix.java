@@ -24,26 +24,6 @@ public class GameItemSubAffix implements Comparable<GameItemSubAffix> {
         this(subAffix, 1);
     }
     
-    public GameItemSubAffix(RelicSubAffixExcel excel, double value) {
-        this(excel);
-
-        if (value < excel.getBaseValue()) value = excel.getBaseValue();
-
-        var a = value - excel.getBaseValue();
-        var count = 1;
-
-        while (a >= excel.getBaseValue()) {
-            count++;
-            a -= excel.getBaseValue();
-        }
-
-        this.setStep(
-            (int) Math.round(a/excel.getStepValue())
-        );
-
-        this.setCount(count);
-    }
-    
     public GameItemSubAffix(RelicSubAffixExcel subAffix, int count) {
         this.id = subAffix.getAffixID();
         this.count = count;

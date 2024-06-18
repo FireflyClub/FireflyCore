@@ -11,7 +11,6 @@ message Relic {
     uint32 exp = 7;
     uint32 base_avatar_id = 10; // ONCDNJIJKGA
     repeated RelicAffix sub_affix_list = 12;
-	uint32 equip_avatar_id = 15; //cmmegdchmlb
     bool is_discarded = 11; // HCGOBNDLDHJ
     bool is_protected = 8;
     uint32 tid = 13;

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MultiPathAvatarType.proto";
+import "AvatarSkillTree.proto";
+import "EquipRelic.proto";
+
+// PDLCDMEPDDJ
+message MultiPathAvatarTypeInfo {
+    uint32 rank = 12; //? 9
+    repeated AvatarSkillTree skill_tree_list = 5; //? 14
+
+	//uint32 IJHEIBNJOAO = 9;
+	MultiPathAvatarType avatar_id = 11;
+	//repeated AvatarSkillTree APEMKCLHBML = 5;
+    repeated EquipRelic equip_relic_list = 13; // IGEGKGAACEF
+	//repeated AvatarSkillTree PODGAIBLNCM = 14;
+	//uint32 GJLJMAGJDNK = 12;
+	repeated uint32 IBLJIJAPFFC = 15;
+}

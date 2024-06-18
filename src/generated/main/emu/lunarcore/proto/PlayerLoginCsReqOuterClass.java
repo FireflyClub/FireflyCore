@@ -10,7 +10,6 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.Utf8String;
 
 public final class PlayerLoginCsReqOuterClass {
   /**
@@ -21,59 +20,46 @@ public final class PlayerLoginCsReqOuterClass {
 
     /**
      * <pre>
-     *  string GHPAPNFEECA = 1458;
-     *  uint32 FOIOEEECJJH = 15;
+     *  string CMFNBBAJNHB = 8;
+     *  string IPCPPKNKJNB = 10;
+     *  string DAIBJNAHNFJ = 13;
+     *  string DLEGEAIGABF = 4;
+     *  uint32 LGJOFBFJNFJ = 1687;
+     *  string CANJPBPLPEJ = 12;
+     *  string NJFONABELFI = 5;
+     *  string DICMJNOAHJC = 188;
+     *  string KPNADFKMFBG = 2;
+     *  string IHJHMHIIIOB = 155;
+     *  string ACEINGOPHMG = 940;
+     *  string GIKHEBAEPAD = 11;
+     *  uint32 MKCCLNEENEC = 15;
+     *  uint32 NALHKEDFJNJ = 1;
+     *  string NKCONLNPGLM = 138;
+     *  ExtraDeviceInfo OBPAMOECFHG = 885;
+     *  string OJFDEFPFNCF = 6;
+     *  uint32 BLOFGANMIAH = 1630;
+     *  string IAJBIMACPNC = 2038;
+     *  string BCDPCNLLEOA = 14;
+     *  bool FEELDACNNAG = 801;
      * </pre>
      *
-     * <code>optional uint64 login_random = 4;</code>
+     * <code>optional uint64 login_random = 9;</code>
      */
     private long loginRandom;
 
     /**
-     * <pre>
-     *  string CKPOOFICBML = 1928;
-     *  string OFDPBNPCEPO = 1;
-     *  string COKKPENCFMP = 904;
-     * </pre>
-     *
-     * <code>optional uint32 res_version = 11;</code>
-     */
-    private int resVersion;
-
-    /**
-     * <pre>
-     *  string AIONAIPAKJC = 1032;
-     *  string EJKNHJGAIBM = 1133;
-     *  uint32 NAENFOLEDNM = 1208;
-     *  string signature = 5;
-     *  string FKOCPNHAJGF = 8;
-     *  string AMBIGOADLOF = 9;
-     *  string PIPECIGOLAH = 6;
-     *  string LNDLDONNANC = 13;
-     *  string APFCHJMJCCK = 10;
-     *  uint32 ELBHIKAHDPB = 794;
-     *  ExtraDeviceInfo PGMLKBGPAOL = 387;
-     *  string LBECBECGMNJ = 2;
-     * </pre>
-     *
-     * <code>optional .PlatformType platform_type = 7;</code>
+     * <code>optional .PlatformType platform_type = 3;</code>
      */
     private int platformType;
 
     /**
-     * <code>optional .LanguageType language = 14;</code>
-     */
-    private int language;
-
-    /**
      * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
+     *  PHLNJIOIFKD
      * </pre>
      *
-     * <code>optional string client_version = 12;</code>
+     * <code>optional .LanguageType language = 7;</code>
      */
-    private final Utf8String clientVersion = Utf8String.newEmptyInstance();
+    private int language;
 
     private PlayerLoginCsReq() {
     }
@@ -87,11 +73,30 @@ public final class PlayerLoginCsReqOuterClass {
 
     /**
      * <pre>
-     *  string GHPAPNFEECA = 1458;
-     *  uint32 FOIOEEECJJH = 15;
+     *  string CMFNBBAJNHB = 8;
+     *  string IPCPPKNKJNB = 10;
+     *  string DAIBJNAHNFJ = 13;
+     *  string DLEGEAIGABF = 4;
+     *  uint32 LGJOFBFJNFJ = 1687;
+     *  string CANJPBPLPEJ = 12;
+     *  string NJFONABELFI = 5;
+     *  string DICMJNOAHJC = 188;
+     *  string KPNADFKMFBG = 2;
+     *  string IHJHMHIIIOB = 155;
+     *  string ACEINGOPHMG = 940;
+     *  string GIKHEBAEPAD = 11;
+     *  uint32 MKCCLNEENEC = 15;
+     *  uint32 NALHKEDFJNJ = 1;
+     *  string NKCONLNPGLM = 138;
+     *  ExtraDeviceInfo OBPAMOECFHG = 885;
+     *  string OJFDEFPFNCF = 6;
+     *  uint32 BLOFGANMIAH = 1630;
+     *  string IAJBIMACPNC = 2038;
+     *  string BCDPCNLLEOA = 14;
+     *  bool FEELDACNNAG = 801;
      * </pre>
      *
-     * <code>optional uint64 login_random = 4;</code>
+     * <code>optional uint64 login_random = 9;</code>
      * @return whether the loginRandom field is set
      */
     public boolean hasLoginRandom() {
@@ -100,11 +105,30 @@ public final class PlayerLoginCsReqOuterClass {
 
     /**
      * <pre>
-     *  string GHPAPNFEECA = 1458;
-     *  uint32 FOIOEEECJJH = 15;
+     *  string CMFNBBAJNHB = 8;
+     *  string IPCPPKNKJNB = 10;
+     *  string DAIBJNAHNFJ = 13;
+     *  string DLEGEAIGABF = 4;
+     *  uint32 LGJOFBFJNFJ = 1687;
+     *  string CANJPBPLPEJ = 12;
+     *  string NJFONABELFI = 5;
+     *  string DICMJNOAHJC = 188;
+     *  string KPNADFKMFBG = 2;
+     *  string IHJHMHIIIOB = 155;
+     *  string ACEINGOPHMG = 940;
+     *  string GIKHEBAEPAD = 11;
+     *  uint32 MKCCLNEENEC = 15;
+     *  uint32 NALHKEDFJNJ = 1;
+     *  string NKCONLNPGLM = 138;
+     *  ExtraDeviceInfo OBPAMOECFHG = 885;
+     *  string OJFDEFPFNCF = 6;
+     *  uint32 BLOFGANMIAH = 1630;
+     *  string IAJBIMACPNC = 2038;
+     *  string BCDPCNLLEOA = 14;
+     *  bool FEELDACNNAG = 801;
      * </pre>
      *
-     * <code>optional uint64 login_random = 4;</code>
+     * <code>optional uint64 login_random = 9;</code>
      * @return this
      */
     public PlayerLoginCsReq clearLoginRandom() {
@@ -115,11 +139,30 @@ public final class PlayerLoginCsReqOuterClass {
 
     /**
      * <pre>
-     *  string GHPAPNFEECA = 1458;
-     *  uint32 FOIOEEECJJH = 15;
+     *  string CMFNBBAJNHB = 8;
+     *  string IPCPPKNKJNB = 10;
+     *  string DAIBJNAHNFJ = 13;
+     *  string DLEGEAIGABF = 4;
+     *  uint32 LGJOFBFJNFJ = 1687;
+     *  string CANJPBPLPEJ = 12;
+     *  string NJFONABELFI = 5;
+     *  string DICMJNOAHJC = 188;
+     *  string KPNADFKMFBG = 2;
+     *  string IHJHMHIIIOB = 155;
+     *  string ACEINGOPHMG = 940;
+     *  string GIKHEBAEPAD = 11;
+     *  uint32 MKCCLNEENEC = 15;
+     *  uint32 NALHKEDFJNJ = 1;
+     *  string NKCONLNPGLM = 138;
+     *  ExtraDeviceInfo OBPAMOECFHG = 885;
+     *  string OJFDEFPFNCF = 6;
+     *  uint32 BLOFGANMIAH = 1630;
+     *  string IAJBIMACPNC = 2038;
+     *  string BCDPCNLLEOA = 14;
+     *  bool FEELDACNNAG = 801;
      * </pre>
      *
-     * <code>optional uint64 login_random = 4;</code>
+     * <code>optional uint64 login_random = 9;</code>
      * @return the loginRandom
      */
     public long getLoginRandom() {
@@ -128,11 +171,30 @@ public final class PlayerLoginCsReqOuterClass {
 
     /**
      * <pre>
-     *  string GHPAPNFEECA = 1458;
-     *  uint32 FOIOEEECJJH = 15;
+     *  string CMFNBBAJNHB = 8;
+     *  string IPCPPKNKJNB = 10;
+     *  string DAIBJNAHNFJ = 13;
+     *  string DLEGEAIGABF = 4;
+     *  uint32 LGJOFBFJNFJ = 1687;
+     *  string CANJPBPLPEJ = 12;
+     *  string NJFONABELFI = 5;
+     *  string DICMJNOAHJC = 188;
+     *  string KPNADFKMFBG = 2;
+     *  string IHJHMHIIIOB = 155;
+     *  string ACEINGOPHMG = 940;
+     *  string GIKHEBAEPAD = 11;
+     *  uint32 MKCCLNEENEC = 15;
+     *  uint32 NALHKEDFJNJ = 1;
+     *  string NKCONLNPGLM = 138;
+     *  ExtraDeviceInfo OBPAMOECFHG = 885;
+     *  string OJFDEFPFNCF = 6;
+     *  uint32 BLOFGANMIAH = 1630;
+     *  string IAJBIMACPNC = 2038;
+     *  string BCDPCNLLEOA = 14;
+     *  bool FEELDACNNAG = 801;
      * </pre>
      *
-     * <code>optional uint64 login_random = 4;</code>
+     * <code>optional uint64 login_random = 9;</code>
      * @param value the loginRandom to set
      * @return this
      */
@@ -143,131 +205,25 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  string CKPOOFICBML = 1928;
-     *  string OFDPBNPCEPO = 1;
-     *  string COKKPENCFMP = 904;
-     * </pre>
-     *
-     * <code>optional uint32 res_version = 11;</code>
-     * @return whether the resVersion field is set
+     * <code>optional .PlatformType platform_type = 3;</code>
+     * @return whether the platformType field is set
      */
-    public boolean hasResVersion() {
+    public boolean hasPlatformType() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <pre>
-     *  string CKPOOFICBML = 1928;
-     *  string OFDPBNPCEPO = 1;
-     *  string COKKPENCFMP = 904;
-     * </pre>
-     *
-     * <code>optional uint32 res_version = 11;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearResVersion() {
-      bitField0_ &= ~0x00000002;
-      resVersion = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  string CKPOOFICBML = 1928;
-     *  string OFDPBNPCEPO = 1;
-     *  string COKKPENCFMP = 904;
-     * </pre>
-     *
-     * <code>optional uint32 res_version = 11;</code>
-     * @return the resVersion
-     */
-    public int getResVersion() {
-      return resVersion;
-    }
-
-    /**
-     * <pre>
-     *  string CKPOOFICBML = 1928;
-     *  string OFDPBNPCEPO = 1;
-     *  string COKKPENCFMP = 904;
-     * </pre>
-     *
-     * <code>optional uint32 res_version = 11;</code>
-     * @param value the resVersion to set
-     * @return this
-     */
-    public PlayerLoginCsReq setResVersion(final int value) {
-      bitField0_ |= 0x00000002;
-      resVersion = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  string AIONAIPAKJC = 1032;
-     *  string EJKNHJGAIBM = 1133;
-     *  uint32 NAENFOLEDNM = 1208;
-     *  string signature = 5;
-     *  string FKOCPNHAJGF = 8;
-     *  string AMBIGOADLOF = 9;
-     *  string PIPECIGOLAH = 6;
-     *  string LNDLDONNANC = 13;
-     *  string APFCHJMJCCK = 10;
-     *  uint32 ELBHIKAHDPB = 794;
-     *  ExtraDeviceInfo PGMLKBGPAOL = 387;
-     *  string LBECBECGMNJ = 2;
-     * </pre>
-     *
-     * <code>optional .PlatformType platform_type = 7;</code>
-     * @return whether the platformType field is set
-     */
-    public boolean hasPlatformType() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     *  string AIONAIPAKJC = 1032;
-     *  string EJKNHJGAIBM = 1133;
-     *  uint32 NAENFOLEDNM = 1208;
-     *  string signature = 5;
-     *  string FKOCPNHAJGF = 8;
-     *  string AMBIGOADLOF = 9;
-     *  string PIPECIGOLAH = 6;
-     *  string LNDLDONNANC = 13;
-     *  string APFCHJMJCCK = 10;
-     *  uint32 ELBHIKAHDPB = 794;
-     *  ExtraDeviceInfo PGMLKBGPAOL = 387;
-     *  string LBECBECGMNJ = 2;
-     * </pre>
-     *
-     * <code>optional .PlatformType platform_type = 7;</code>
+     * <code>optional .PlatformType platform_type = 3;</code>
      * @return this
      */
     public PlayerLoginCsReq clearPlatformType() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       platformType = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  string AIONAIPAKJC = 1032;
-     *  string EJKNHJGAIBM = 1133;
-     *  uint32 NAENFOLEDNM = 1208;
-     *  string signature = 5;
-     *  string FKOCPNHAJGF = 8;
-     *  string AMBIGOADLOF = 9;
-     *  string PIPECIGOLAH = 6;
-     *  string LNDLDONNANC = 13;
-     *  string APFCHJMJCCK = 10;
-     *  uint32 ELBHIKAHDPB = 794;
-     *  ExtraDeviceInfo PGMLKBGPAOL = 387;
-     *  string LBECBECGMNJ = 2;
-     * </pre>
-     *
-     * <code>optional .PlatformType platform_type = 7;</code>
+     * <code>optional .PlatformType platform_type = 3;</code>
      * @return the platformType
      */
     public PlatformTypeOuterClass.PlatformType getPlatformType() {
@@ -294,57 +250,54 @@ public final class PlayerLoginCsReqOuterClass {
      * @return this
      */
     public PlayerLoginCsReq setPlatformTypeValue(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       platformType = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  string AIONAIPAKJC = 1032;
-     *  string EJKNHJGAIBM = 1133;
-     *  uint32 NAENFOLEDNM = 1208;
-     *  string signature = 5;
-     *  string FKOCPNHAJGF = 8;
-     *  string AMBIGOADLOF = 9;
-     *  string PIPECIGOLAH = 6;
-     *  string LNDLDONNANC = 13;
-     *  string APFCHJMJCCK = 10;
-     *  uint32 ELBHIKAHDPB = 794;
-     *  ExtraDeviceInfo PGMLKBGPAOL = 387;
-     *  string LBECBECGMNJ = 2;
-     * </pre>
-     *
-     * <code>optional .PlatformType platform_type = 7;</code>
+     * <code>optional .PlatformType platform_type = 3;</code>
      * @param value the platformType to set
      * @return this
      */
     public PlayerLoginCsReq setPlatformType(final PlatformTypeOuterClass.PlatformType value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       platformType = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional .LanguageType language = 14;</code>
+     * <pre>
+     *  PHLNJIOIFKD
+     * </pre>
+     *
+     * <code>optional .LanguageType language = 7;</code>
      * @return whether the language field is set
      */
     public boolean hasLanguage() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .LanguageType language = 14;</code>
+     * <pre>
+     *  PHLNJIOIFKD
+     * </pre>
+     *
+     * <code>optional .LanguageType language = 7;</code>
      * @return this
      */
     public PlayerLoginCsReq clearLanguage() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       language = 0;
       return this;
     }
 
     /**
-     * <code>optional .LanguageType language = 14;</code>
+     * <pre>
+     *  PHLNJIOIFKD
+     * </pre>
+     *
+     * <code>optional .LanguageType language = 7;</code>
      * @return the language
      */
     public LanguageTypeOuterClass.LanguageType getLanguage() {
@@ -371,119 +324,23 @@ public final class PlayerLoginCsReqOuterClass {
      * @return this
      */
     public PlayerLoginCsReq setLanguageValue(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       language = value;
       return this;
     }
 
     /**
-     * <code>optional .LanguageType language = 14;</code>
+     * <pre>
+     *  PHLNJIOIFKD
+     * </pre>
+     *
+     * <code>optional .LanguageType language = 7;</code>
      * @param value the language to set
      * @return this
      */
     public PlayerLoginCsReq setLanguage(final LanguageTypeOuterClass.LanguageType value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       language = value.getNumber();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @return whether the clientVersion field is set
-     */
-    public boolean hasClientVersion() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearClientVersion() {
-      bitField0_ &= ~0x00000010;
-      clientVersion.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @return the clientVersion
-     */
-    public String getClientVersion() {
-      return clientVersion.getString();
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @return internal {@code Utf8String} representation of clientVersion for reading
-     */
-    public Utf8String getClientVersionBytes() {
-      return this.clientVersion;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @return internal {@code Utf8String} representation of clientVersion for modifications
-     */
-    public Utf8String getMutableClientVersionBytes() {
-      bitField0_ |= 0x00000010;
-      return this.clientVersion;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @param value the clientVersion to set
-     * @return this
-     */
-    public PlayerLoginCsReq setClientVersion(final CharSequence value) {
-      bitField0_ |= 0x00000010;
-      clientVersion.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  bool EKMBNFCBKMI = 1104;
-     *  string NKDLHMBMDMD = 3;
-     * </pre>
-     *
-     * <code>optional string client_version = 12;</code>
-     * @param value the clientVersion to set
-     * @return this
-     */
-    public PlayerLoginCsReq setClientVersion(final Utf8String value) {
-      bitField0_ |= 0x00000010;
-      clientVersion.copyFrom(value);
       return this;
     }
 
@@ -493,10 +350,8 @@ public final class PlayerLoginCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         loginRandom = other.loginRandom;
-        resVersion = other.resVersion;
         platformType = other.platformType;
         language = other.language;
-        clientVersion.copyFrom(other.clientVersion);
       }
       return this;
     }
@@ -510,17 +365,11 @@ public final class PlayerLoginCsReqOuterClass {
       if (other.hasLoginRandom()) {
         setLoginRandom(other.loginRandom);
       }
-      if (other.hasResVersion()) {
-        setResVersion(other.resVersion);
-      }
       if (other.hasPlatformType()) {
         setPlatformTypeValue(other.platformType);
       }
       if (other.hasLanguage()) {
         setLanguageValue(other.language);
-      }
-      if (other.hasClientVersion()) {
-        getMutableClientVersionBytes().copyFrom(other.clientVersion);
       }
       return this;
     }
@@ -533,10 +382,8 @@ public final class PlayerLoginCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       loginRandom = 0L;
-      resVersion = 0;
       platformType = 0;
       language = 0;
-      clientVersion.clear();
       return this;
     }
 
@@ -547,7 +394,6 @@ public final class PlayerLoginCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      clientVersion.clear();
       return this;
     }
 
@@ -562,33 +408,23 @@ public final class PlayerLoginCsReqOuterClass {
       PlayerLoginCsReq other = (PlayerLoginCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasLoginRandom() || loginRandom == other.loginRandom)
-        && (!hasResVersion() || resVersion == other.resVersion)
         && (!hasPlatformType() || platformType == other.platformType)
-        && (!hasLanguage() || language == other.language)
-        && (!hasClientVersion() || clientVersion.equals(other.clientVersion));
+        && (!hasLanguage() || language == other.language);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 72);
         output.writeUInt64NoTag(loginRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(resVersion);
+        output.writeRawByte((byte) 24);
+        output.writeEnumNoTag(platformType);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeEnumNoTag(platformType);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 112);
         output.writeEnumNoTag(language);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 98);
-        output.writeStringNoTag(clientVersion);
       }
     }
 
@@ -599,16 +435,10 @@ public final class PlayerLoginCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(loginRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(resVersion);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(platformType);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(language);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(clientVersion);
       }
       return size;
     }
@@ -620,52 +450,34 @@ public final class PlayerLoginCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 72: {
             // loginRandom
             loginRandom = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 24) {
               break;
             }
           }
-          case 88: {
-            // resVersion
-            resVersion = input.readUInt32();
-            bitField0_ |= 0x00000002;
+          case 24: {
+            // platformType
+            final int value = input.readInt32();
+            if (PlatformTypeOuterClass.PlatformType.forNumber(value) != null) {
+              platformType = value;
+              bitField0_ |= 0x00000002;
+            }
             tag = input.readTag();
             if (tag != 56) {
               break;
             }
           }
           case 56: {
-            // platformType
-            final int value = input.readInt32();
-            if (PlatformTypeOuterClass.PlatformType.forNumber(value) != null) {
-              platformType = value;
-              bitField0_ |= 0x00000004;
-            }
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
             // language
             final int value = input.readInt32();
             if (LanguageTypeOuterClass.LanguageType.forNumber(value) != null) {
               language = value;
-              bitField0_ |= 0x00000008;
+              bitField0_ |= 0x00000004;
             }
-            tag = input.readTag();
-            if (tag != 98) {
-              break;
-            }
-          }
-          case 98: {
-            // clientVersion
-            input.readString(clientVersion);
-            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -692,16 +504,10 @@ public final class PlayerLoginCsReqOuterClass {
         output.writeUInt64(FieldNames.loginRandom, loginRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.resVersion, resVersion);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeEnum(FieldNames.platformType, platformType, PlatformTypeOuterClass.PlatformType.converter());
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeEnum(FieldNames.language, language, LanguageTypeOuterClass.LanguageType.converter());
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeString(FieldNames.clientVersion, clientVersion);
       }
       output.endObject();
     }
@@ -725,18 +531,6 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 1778976792:
-          case -351019975: {
-            if (input.isAtField(FieldNames.resVersion)) {
-              if (!input.trySkipNullValue()) {
-                resVersion = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 155581005:
           case 538062726: {
             if (input.isAtField(FieldNames.platformType)) {
@@ -744,7 +538,7 @@ public final class PlayerLoginCsReqOuterClass {
                 final PlatformTypeOuterClass.PlatformType value = input.readEnum(PlatformTypeOuterClass.PlatformType.converter());
                 if (value != null) {
                   platformType = value.getNumber();
-                  bitField0_ |= 0x00000004;
+                  bitField0_ |= 0x00000002;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -760,22 +554,10 @@ public final class PlayerLoginCsReqOuterClass {
                 final LanguageTypeOuterClass.LanguageType value = input.readEnum(LanguageTypeOuterClass.LanguageType.converter());
                 if (value != null) {
                   language = value.getNumber();
-                  bitField0_ |= 0x00000008;
+                  bitField0_ |= 0x00000004;
                 } else {
                   input.skipUnknownEnumValue();
                 }
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 771880589:
-          case -1506231196: {
-            if (input.isAtField(FieldNames.clientVersion)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(clientVersion);
-                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -837,13 +619,9 @@ public final class PlayerLoginCsReqOuterClass {
     static class FieldNames {
       static final FieldName loginRandom = FieldName.forField("loginRandom", "login_random");
 
-      static final FieldName resVersion = FieldName.forField("resVersion", "res_version");
-
       static final FieldName platformType = FieldName.forField("platformType", "platform_type");
 
       static final FieldName language = FieldName.forField("language");
-
-      static final FieldName clientVersion = FieldName.forField("clientVersion", "client_version");
     }
   }
 }

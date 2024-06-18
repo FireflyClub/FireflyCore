@@ -5,10 +5,14 @@ option java_package = "emu.lunarcore.proto";
 import "PlayerBasicInfo.proto";
 
 message PlayerLoginScRsp {
-    uint32 retcode = 2;
-    uint64 server_timestamp_ms = 7;
-    uint64 login_random = 15;
-    PlayerBasicInfo basic_info = 9;
-    uint32 stamina = 1;
-    sint32 cur_timezone = 12;
+	uint32 stamina = 13; // IMIOPJKGOPD
+	uint32 retcode = 8;
+    uint64 login_random = 2; // CIFBHANCOPO
+    PlayerBasicInfo basic_info = 11; // ENGJLHMNHNJ
+    uint64 server_timestamp_ms = 14; // CCJGEPPGJCJ
+    int32 cur_timezone = 3; // EJIKCFFEPFH
+	// string BNFHBHCPBNE = 15;
+	// string EHEIFDPMFGL = 5;
+	// bool BFLPLOCKEBI = 9;
+	// bool LOHLMFENFHH = 6;
 }

@@ -4,7 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "Avatar.proto";
 
-// Gkjoiapbbne
+// LPPOPHNPFHH
 message AvatarSync {
-    repeated Avatar avatar_list = 7;
+    repeated Avatar avatar_list = 12;
 }

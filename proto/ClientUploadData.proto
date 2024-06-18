@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ClientUploadData {
-  string tag = 1;
-  string value = 2;
+  string tag = 1; // NGJICOENHLL
+  string value = 2; // HDHMNKHPKCK
 }

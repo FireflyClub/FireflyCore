@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// EOOAFDDNFCE
+enum MultiPathAvatarType {
+	MultiPathAvatarTypeNone = 0;
+	Mar_7thKnightType = 1001;
+	Mar_7thRogueType = 1224;
+	BoyWarriorType = 8001;
+	GirlWarriorType = 8002;
+	BoyKnightType = 8003;
+	GirlKnightType = 8004;
+	BoyShamanType = 8005;
+	GirlShamanType = 8006;
+}

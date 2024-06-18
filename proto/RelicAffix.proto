@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RelicAffix {
-    uint32 affix_id = 1;
-    uint32 cnt = 2;
-    uint32 step = 3;
+    uint32 affix_id = 1; // ACGJNLLPMDE
+    uint32 cnt = 2; // BCGHDEAKDCP
+    uint32 step = 3; // IMPFCDBGMNH
 }

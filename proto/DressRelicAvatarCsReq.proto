@@ -4,9 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "RelicParam.proto";
 
-// Gfmigicacfn
 message DressRelicAvatarCsReq {
-	uint32 dress_avatar_id = 2;
-  	uint32 base_avatar_id = 15;
-  	repeated RelicParam param_list = 1;
+  	repeated RelicParam param_list = 4; // ABNJCFBNEPC
+	uint32 avatar_id = 1;
 }

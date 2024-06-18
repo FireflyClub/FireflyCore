@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// ONOIFPCDKPJ
 message GetAvatarDataCsReq {
-    bool is_get_all = 1;
-    repeated uint32 base_avatar_id_list = 12;
+    bool if_is_get_all = 12; // PKHGIBGBGDM
+    repeated uint32 base_avatar_id_list = 10; // PCDLJHLGJJN
 }

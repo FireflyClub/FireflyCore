@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "ClientDownloadData.proto";
 
 message ClientDownloadDataScNotify {
-    ClientDownloadData download_data = 7;
+    ClientDownloadData download_data = 5;
 }

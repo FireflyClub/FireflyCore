@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PileItem {
-    uint32 item_id = 3;
-    uint32 item_num = 11;
+    uint32 item_num = 8;
+    uint32 item_id = 1;
 }

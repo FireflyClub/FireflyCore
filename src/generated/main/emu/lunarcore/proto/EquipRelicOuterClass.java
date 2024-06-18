@@ -13,18 +13,30 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class EquipRelicOuterClass {
   /**
+   * <pre>
+   *  HAMMEEAGHHP
+   * </pre>
+   *
    * Protobuf type {@code EquipRelic}
    */
   public static final class EquipRelic extends ProtoMessage<EquipRelic> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 relic_unique_id = 5;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 1;</code>
      */
     private int relicUniqueId;
 
     /**
-     * <code>optional uint32 slot = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 slot = 14;</code>
      */
     private int slot;
 
@@ -32,6 +44,10 @@ public final class EquipRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  HAMMEEAGHHP
+     * </pre>
+     *
      * @return a new empty instance of {@code EquipRelic}
      */
     public static EquipRelic newInstance() {
@@ -39,7 +55,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 5;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 1;</code>
      * @return whether the relicUniqueId field is set
      */
     public boolean hasRelicUniqueId() {
@@ -47,7 +67,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 5;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 1;</code>
      * @return this
      */
     public EquipRelic clearRelicUniqueId() {
@@ -57,7 +81,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 5;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 1;</code>
      * @return the relicUniqueId
      */
     public int getRelicUniqueId() {
@@ -65,7 +93,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 5;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 1;</code>
      * @param value the relicUniqueId to set
      * @return this
      */
@@ -76,7 +108,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 slot = 14;</code>
      * @return whether the slot field is set
      */
     public boolean hasSlot() {
@@ -84,7 +120,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 slot = 14;</code>
      * @return this
      */
     public EquipRelic clearSlot() {
@@ -94,7 +134,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 slot = 14;</code>
      * @return the slot
      */
     public int getSlot() {
@@ -102,7 +146,11 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 slot = 14;</code>
      * @param value the slot to set
      * @return this
      */
@@ -177,11 +225,11 @@ public final class EquipRelicOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(slot);
       }
     }
@@ -205,16 +253,16 @@ public final class EquipRelicOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 8: {
             // relicUniqueId
             relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 112) {
               break;
             }
           }
-          case 96: {
+          case 112: {
             // slot
             slot = input.readUInt32();
             bitField0_ |= 0x00000002;

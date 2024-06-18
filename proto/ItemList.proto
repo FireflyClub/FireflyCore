@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "Item.proto";
 
 message ItemList {
-    repeated Item item_list = 2;
+    repeated Item item_list = 15;
 }

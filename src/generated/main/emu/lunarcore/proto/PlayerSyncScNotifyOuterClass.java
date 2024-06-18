@@ -55,9 +55,9 @@ public final class PlayerSyncScNotifyOuterClass {
     private final RepeatedInt delRelicList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      */
-    private final RepeatedMessage<HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo> basicTypeInfoList = RepeatedMessage.newEmptyInstance(HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo.getFactory());
+    private final RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> basicTypeInfoList = RepeatedMessage.newEmptyInstance(MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.getFactory());
 
     /**
      * <code>repeated .Equipment equipment_list = 3;</code>
@@ -437,7 +437,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      * @return whether the basicTypeInfoList field is set
      */
     public boolean hasBasicTypeInfoList() {
@@ -445,7 +445,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      * @return this
      */
     public PlayerSyncScNotify clearBasicTypeInfoList() {
@@ -455,7 +455,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -464,12 +464,13 @@ public final class PlayerSyncScNotifyOuterClass {
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo> getBasicTypeInfoList() {
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getBasicTypeInfoList(
+        ) {
       return basicTypeInfoList;
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -477,31 +478,31 @@ public final class PlayerSyncScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo> getMutableBasicTypeInfoList(
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMutableBasicTypeInfoList(
         ) {
       bitField0_ |= 0x00000040;
       return basicTypeInfoList;
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      * @param value the basicTypeInfoList to add
      * @return this
      */
     public PlayerSyncScNotify addBasicTypeInfoList(
-        final HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo value) {
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo value) {
       bitField0_ |= 0x00000040;
       basicTypeInfoList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .HeroBasicTypeInfo basic_type_info_list = 2;</code>
+     * <code>repeated .MultiPathAvatarTypeInfo basic_type_info_list = 2;</code>
      * @param values the basicTypeInfoList to add
      * @return this
      */
     public PlayerSyncScNotify addAllBasicTypeInfoList(
-        final HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo... values) {
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo... values) {
       bitField0_ |= 0x00000040;
       basicTypeInfoList.addAll(values);
       return this;

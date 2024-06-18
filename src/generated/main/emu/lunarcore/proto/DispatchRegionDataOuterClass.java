@@ -15,6 +15,10 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class DispatchRegionDataOuterClass {
   /**
+   * <pre>
+   *  KFCADNEIPLI
+   * </pre>
+   *
    * Protobuf type {@code DispatchRegionData}
    */
   public static final class DispatchRegionData extends ProtoMessage<DispatchRegionData> implements Cloneable {
@@ -26,21 +30,37 @@ public final class DispatchRegionDataOuterClass {
     private int retcode;
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      */
     private final Utf8String msg = Utf8String.newEmptyInstance();
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      */
     private final Utf8String topSeverRegionName = Utf8String.newEmptyInstance();
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      */
     private final Utf8String stopDesc = Utf8String.newEmptyInstance();
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      */
     private final RepeatedMessage<RegionEntryOuterClass.RegionEntry> regionList = RepeatedMessage.newEmptyInstance(RegionEntryOuterClass.RegionEntry.getFactory());
@@ -49,6 +69,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  KFCADNEIPLI
+     * </pre>
+     *
      * @return a new empty instance of {@code DispatchRegionData}
      */
     public static DispatchRegionData newInstance() {
@@ -93,6 +117,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @return whether the msg field is set
      */
@@ -101,6 +129,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @return this
      */
@@ -111,6 +143,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @return the msg
      */
@@ -119,6 +155,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @return internal {@code Utf8String} representation of msg for reading
      */
@@ -127,6 +167,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @return internal {@code Utf8String} representation of msg for modifications
      */
@@ -136,6 +180,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @param value the msg to set
      * @return this
@@ -147,6 +195,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  JFCBJFEFNMO
+     * </pre>
+     *
      * <code>optional string msg = 2;</code>
      * @param value the msg to set
      * @return this
@@ -158,6 +210,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @return whether the topSeverRegionName field is set
      */
@@ -166,6 +222,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @return this
      */
@@ -176,6 +236,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @return the topSeverRegionName
      */
@@ -184,6 +248,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @return internal {@code Utf8String} representation of topSeverRegionName for reading
      */
@@ -192,6 +260,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @return internal {@code Utf8String} representation of topSeverRegionName for modifications
      */
@@ -201,6 +273,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @param value the topSeverRegionName to set
      * @return this
@@ -212,6 +288,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  PLCEEGINECB
+     * </pre>
+     *
      * <code>optional string top_sever_region_name = 3;</code>
      * @param value the topSeverRegionName to set
      * @return this
@@ -223,6 +303,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @return whether the stopDesc field is set
      */
@@ -231,6 +315,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @return this
      */
@@ -241,6 +329,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @return the stopDesc
      */
@@ -249,6 +341,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @return internal {@code Utf8String} representation of stopDesc for reading
      */
@@ -257,6 +353,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @return internal {@code Utf8String} representation of stopDesc for modifications
      */
@@ -266,6 +366,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @param value the stopDesc to set
      * @return this
@@ -277,6 +381,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  POGDONKFKJD
+     * </pre>
+     *
      * <code>optional string stop_desc = 5;</code>
      * @param value the stopDesc to set
      * @return this
@@ -288,6 +396,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      * @return whether the regionList field is set
      */
@@ -296,6 +408,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      * @return this
      */
@@ -306,6 +422,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -320,6 +440,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -334,6 +458,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      * @param value the regionList to add
      * @return this
@@ -345,6 +473,10 @@ public final class DispatchRegionDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CBKJJIAIEJP
+     * </pre>
+     *
      * <code>repeated .RegionEntry region_list = 4;</code>
      * @param values the regionList to add
      * @return this

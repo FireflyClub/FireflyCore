@@ -4,15 +4,16 @@ option java_package = "emu.lunarcore.proto";
 
 import "RelicAffix.proto";
 
+// DADJGGOCGJF
 message Relic {
-    uint32 main_affix_id = 1;
+    uint32 main_affix_id = 5;
+    uint32 unique_id = 9;
+    uint32 exp = 7;
+    uint32 base_avatar_id = 10; // ONCDNJIJKGA
+    repeated RelicAffix sub_affix_list = 12;
 	uint32 equip_avatar_id = 15; //cmmegdchmlb
-    repeated RelicAffix sub_affix_list = 14;
-    uint32 unique_id = 3;
-    bool is_discarded = 5; //ongojjkjopd
-    bool is_protected = 11;
-    uint32 level = 9;
-    uint32 base_avatar_id = 7;
-    uint32 tid = 6;
-    uint32 exp = 2;
+    bool is_discarded = 11; // HCGOBNDLDHJ
+    bool is_protected = 8;
+    uint32 tid = 13;
+    uint32 level = 15;
 }

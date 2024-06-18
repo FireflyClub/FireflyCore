@@ -13,7 +13,7 @@ public class HandlerDressAvatarCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = DressAvatarCsReq.parseFrom(data);
 
-        session.getPlayer().getInventory().equipItem(req.getEquipAvatarId(), req.getEquipmentUniqueId());
+        session.getPlayer().getInventory().equipItem(req.getAvatarId(), req.getEquipmentUniqueId());
         session.send(CmdId.DressAvatarScRsp);
     }
 

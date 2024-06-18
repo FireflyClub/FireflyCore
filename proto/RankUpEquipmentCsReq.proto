@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCostList.proto";
 
-// Hgncbehekhc
 message RankUpEquipmentCsReq {
-    ItemCostList item_cost_list = 9;
-    uint32 equipment_unique_id = 2;
+    ItemCostList item_cost_list = 4; // LLOHAMHGJFI
+    uint32 equipment_unique_id = 12;
 }

@@ -2,9 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Hgadhpfbnlj
+// DNBDEDJHHKP
 message Material0 {
-    uint32 tid = 6;
-    // uint64 pihjhfebhom = 12;
-    uint32 num = 2;
+    uint32 num = 5;
+    // uint64 MOIJHJJLOGJ = 7;
+    uint32 tid = 12;
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MultiPathAvatarType.proto";
+
+// BAFNNGCJMKL
+message SetAvatarPathScRsp {
+    MultiPathAvatarType avatar_id = 9;
+    uint32 retcode = 10;
+}

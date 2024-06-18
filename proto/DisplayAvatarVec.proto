@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "DisplayAvatar.proto";
 
-// Hgjlofeaemc
 message DisplayAvatarVec {
-    repeated DisplayAvatar display_avatar_list = 11;
-    bool is_display = 12;
+    bool is_display = 13; // FFAKEGGDOJG
+    repeated DisplayAvatar display_avatar_list = 8; // LFGELFNLHJO
 }

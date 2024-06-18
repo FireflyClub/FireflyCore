@@ -4,10 +4,11 @@ option java_package = "emu.lunarcore.proto";
 
 import "RegionEntry.proto";
 
+// KFCADNEIPLI
 message DispatchRegionData {
     uint32 retcode = 1;
-    string msg = 2;
-    string top_sever_region_name = 3;
-    repeated RegionEntry region_list = 4;
-    string stop_desc = 5;
+    string msg = 2; // JFCBJFEFNMO
+    string top_sever_region_name = 3; // PLCEEGINECB
+    repeated RegionEntry region_list = 4; // CBKJJIAIEJP
+    string stop_desc = 5; // POGDONKFKJD
 }

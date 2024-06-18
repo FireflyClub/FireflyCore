@@ -29,7 +29,10 @@ public class QueryGatewayHandler implements Handler {
             .setUnk4(true)
             .setUnk5(true)
             .setUnk6(true)
-            .setUnk7(true);
+            .setUnk7(true)
+            .setUnk8(true)
+            .setUnk9(true)
+            .setUnk10(true);
 
         // Check if hotfix data is available and update gateserver proto accordingly
         String versionQuery = ctx.queryParam("version");

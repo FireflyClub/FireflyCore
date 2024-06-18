@@ -7,10 +7,10 @@ import "RelicAffix.proto";
 message BattleRelic {
   	uint32 id = 1;
   	uint32 level = 2;
-  	uint32 main_affix_id = 3;
+  	uint32 main_affix_id = 3; // MNIFHJFEEPA
   	repeated RelicAffix sub_affix_list = 4;
-  	uint32 unique_id = 5;
-  	uint32 set_id = 6;
-  	uint32 type = 7;//iaglgkpdloe
-  	uint32 rarity = 8;
+  	uint32 unique_id = 5; // CPMIOJJCNHH
+  	uint32 set_id = 6; // PMOPKFLFGKO
+  	uint32 type = 7; // GNPPAEIDJIO
+  	uint32 rarity = 8; // NBJEIMOAAOK
 }

@@ -5,6 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "ClientUploadData.proto";
 
 message PlayerHeartbeatCsReq {
-  uint64 client_time_ms = 11;
-  ClientUploadData upload_data = 8;
+  uint64 client_time_ms = 10; // PBPEICMHAFE
+  // uint32 FKDKDLKNOAM = 14;
+  ClientUploadData upload_data = 4; // JBBBMAMJABA
 }

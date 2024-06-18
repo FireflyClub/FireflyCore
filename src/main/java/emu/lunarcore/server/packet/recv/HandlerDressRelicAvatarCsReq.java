@@ -14,7 +14,7 @@ public class HandlerDressRelicAvatarCsReq extends PacketHandler {
         var req = DressRelicAvatarCsReq.parseFrom(data);
 
         for (var param : req.getParamList()) {
-            session.getPlayer().getInventory().equipItem(req.getDressAvatarId(), param.getRelicUniqueId());
+            session.getPlayer().getInventory().equipItem(req.getAvatarId(), param.getRelicUniqueId());
         }
 
         session.send(CmdId.DressRelicAvatarScRsp);

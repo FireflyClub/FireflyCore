@@ -16,7 +16,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class AvatarOuterClass {
   /**
    * <pre>
-   *  CKMAGJIHLNB
+   *  HOGJCMPMHPF
    * </pre>
    *
    * Protobuf type {@code Avatar}
@@ -93,7 +93,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     *  CKMAGJIHLNB
+     *  HOGJCMPMHPF
      * </pre>
      *
      * @return a new empty instance of {@code Avatar}

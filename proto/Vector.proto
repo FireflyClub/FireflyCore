@@ -2,8 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// AGBHJCKFJJN
 message Vector {
-	sint32 x = 12;
-    sint32 y = 10;
-    sint32 z = 8;
+	int32 x = 6;
+    int32 y = 2;
+    int32 z = 15;
 }

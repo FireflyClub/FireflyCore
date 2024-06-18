@@ -4,10 +4,11 @@ option java_package = "emu.lunarcore.proto";
 
 import "BlackInfo.proto";
 
+// KADIEIMCCKI
 message PlayerGetTokenScRsp {
-    uint64 secret_key_seed = 15;
-    BlackInfo black_info = 2;
-    uint32 uid = 3;
-    string msg = 8;
-    uint32 retcode = 12;
+    uint32 retcode = 4;
+    string msg = 2;
+    BlackInfo black_info = 5; // FNMCHLPCFJD
+    uint32 uid = 1;
+    uint64 secret_key_seed = 15; // GDOEOGNBLOJ
 }

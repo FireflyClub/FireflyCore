@@ -4,12 +4,12 @@ option java_package = "emu.lunarcore.proto";
 
 import "RelicAffix.proto";
 
-// Jcenlpbmiph
+// CKNNOLLCDLF
 message DisplayRelicInfo {
-    uint32 exp = 4;
-    uint32 main_affix_id = 12;
-    repeated RelicAffix sub_affix_list = 9;
+    uint32 exp = 13; // CKFJDGHCLKF
+    uint32 type = 5;
+    uint32 main_affix_id = 15;
     uint32 tid = 8;
-    uint32 slot = 11; // iaglgkpdloe
-    uint32 level = 7;
+    repeated RelicAffix sub_affix_list = 10; // MIAENOALECC
+    uint32 level = 12;
 }

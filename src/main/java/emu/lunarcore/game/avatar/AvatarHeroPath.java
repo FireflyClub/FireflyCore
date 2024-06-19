@@ -10,7 +10,6 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.AvatarSkillTreeOuterClass.AvatarSkillTree;
-import emu.lunarcore.proto.HeroBasicTypeInfoOuterClass.HeroBasicTypeInfo;
 import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
 
 import lombok.Getter;
@@ -58,7 +57,7 @@ public class AvatarHeroPath {
     
     public MultiPathAvatarTypeInfo toProto() {
         var proto = MultiPathAvatarTypeInfo.newInstance()
-                .setBasicTypeValue(this.getId())
+                .setAvatarIdValue(this.getId())
                 .setRank(this.getRank());
         
         for (var skill : getSkills().entrySet()) {

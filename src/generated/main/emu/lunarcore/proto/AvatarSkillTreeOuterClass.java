@@ -19,6 +19,10 @@ public final class AvatarSkillTreeOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  NFEFAKDMAOC
+     * </pre>
+     *
      * <code>optional uint32 point_id = 1;</code>
      */
     private int pointId;
@@ -45,6 +49,10 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
+     * <pre>
+     *  NFEFAKDMAOC
+     * </pre>
+     *
      * <code>optional uint32 point_id = 1;</code>
      * @return whether the pointId field is set
      */
@@ -53,6 +61,10 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
+     * <pre>
+     *  NFEFAKDMAOC
+     * </pre>
+     *
      * <code>optional uint32 point_id = 1;</code>
      * @return this
      */
@@ -63,6 +75,10 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
+     * <pre>
+     *  NFEFAKDMAOC
+     * </pre>
+     *
      * <code>optional uint32 point_id = 1;</code>
      * @return the pointId
      */
@@ -71,6 +87,10 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
+     * <pre>
+     *  NFEFAKDMAOC
+     * </pre>
+     *
      * <code>optional uint32 point_id = 1;</code>
      * @param value the pointId to set
      * @return this

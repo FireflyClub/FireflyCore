@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class Material0OuterClass {
   /**
    * <pre>
-   *  Hgadhpfbnlj
+   *  DNBDEDJHHKP
    * </pre>
    *
    * Protobuf type {@code Material0}
@@ -24,15 +24,19 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 pihjhfebhom = 12;
+     *  uint64 MOIJHJJLOGJ = 2;
      * </pre>
      *
-     * <code>optional uint32 num = 2;</code>
+     * <code>optional uint32 num = 5;</code>
      */
     private int num;
 
     /**
-     * <code>optional uint32 tid = 6;</code>
+     * <pre>
+     *  uint64 MOIJHJJLOGJ = 7;
+     * </pre>
+     *
+     * <code>optional uint32 tid = 12;</code>
      */
     private int tid;
 
@@ -41,7 +45,7 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  Hgadhpfbnlj
+     *  DNBDEDJHHKP
      * </pre>
      *
      * @return a new empty instance of {@code Material0}
@@ -52,10 +56,10 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 pihjhfebhom = 12;
+     *  uint64 MOIJHJJLOGJ = 2;
      * </pre>
      *
-     * <code>optional uint32 num = 2;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -64,10 +68,10 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 pihjhfebhom = 12;
+     *  uint64 MOIJHJJLOGJ = 2;
      * </pre>
      *
-     * <code>optional uint32 num = 2;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return this
      */
     public Material0 clearNum() {
@@ -78,10 +82,10 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 pihjhfebhom = 12;
+     *  uint64 MOIJHJJLOGJ = 2;
      * </pre>
      *
-     * <code>optional uint32 num = 2;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return the num
      */
     public int getNum() {
@@ -90,10 +94,10 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 pihjhfebhom = 12;
+     *  uint64 MOIJHJJLOGJ = 2;
      * </pre>
      *
-     * <code>optional uint32 num = 2;</code>
+     * <code>optional uint32 num = 5;</code>
      * @param value the num to set
      * @return this
      */
@@ -104,7 +108,11 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 6;</code>
+     * <pre>
+     *  uint64 MOIJHJJLOGJ = 7;
+     * </pre>
+     *
+     * <code>optional uint32 tid = 12;</code>
      * @return whether the tid field is set
      */
     public boolean hasTid() {
@@ -112,7 +120,11 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 6;</code>
+     * <pre>
+     *  uint64 MOIJHJJLOGJ = 7;
+     * </pre>
+     *
+     * <code>optional uint32 tid = 12;</code>
      * @return this
      */
     public Material0 clearTid() {
@@ -122,7 +134,11 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 6;</code>
+     * <pre>
+     *  uint64 MOIJHJJLOGJ = 7;
+     * </pre>
+     *
+     * <code>optional uint32 tid = 12;</code>
      * @return the tid
      */
     public int getTid() {
@@ -130,7 +146,11 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 6;</code>
+     * <pre>
+     *  uint64 MOIJHJJLOGJ = 7;
+     * </pre>
+     *
+     * <code>optional uint32 tid = 12;</code>
      * @param value the tid to set
      * @return this
      */
@@ -205,11 +225,11 @@ public final class Material0OuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(tid);
       }
     }
@@ -233,16 +253,16 @@ public final class Material0OuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 40: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 96) {
               break;
             }
           }
-          case 48: {
+          case 96: {
             // tid
             tid = input.readUInt32();
             bitField0_ |= 0x00000002;

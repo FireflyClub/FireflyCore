@@ -30,6 +30,10 @@ public final class BattleAvatarOuterClass {
     private int level;
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      */
     private int rank;
@@ -173,6 +177,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return whether the rank field is set
      */
@@ -181,6 +189,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return this
      */
@@ -191,6 +203,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return the rank
      */
@@ -199,6 +215,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @param value the rank to set
      * @return this

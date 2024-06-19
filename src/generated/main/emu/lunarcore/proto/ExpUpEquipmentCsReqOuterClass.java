@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ExpUpEquipmentCsReqOuterClass {
   /**
-   * <pre>
-   *  Fohclmckmfc
-   * </pre>
-   *
    * Protobuf type {@code ExpUpEquipmentCsReq}
    */
   public static final class ExpUpEquipmentCsReq extends ProtoMessage<ExpUpEquipmentCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <code>optional uint32 equipment_unique_id = 5;</code>
      */
     private int equipmentUniqueId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -36,10 +32,6 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Fohclmckmfc
-     * </pre>
-     *
      * @return a new empty instance of {@code ExpUpEquipmentCsReq}
      */
     public static ExpUpEquipmentCsReq newInstance() {
@@ -47,7 +39,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <code>optional uint32 equipment_unique_id = 5;</code>
      * @return whether the equipmentUniqueId field is set
      */
     public boolean hasEquipmentUniqueId() {
@@ -55,7 +47,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <code>optional uint32 equipment_unique_id = 5;</code>
      * @return this
      */
     public ExpUpEquipmentCsReq clearEquipmentUniqueId() {
@@ -65,7 +57,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <code>optional uint32 equipment_unique_id = 5;</code>
      * @return the equipmentUniqueId
      */
     public int getEquipmentUniqueId() {
@@ -73,7 +65,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <code>optional uint32 equipment_unique_id = 5;</code>
      * @param value the equipmentUniqueId to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -92,7 +84,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @return this
      */
     public ExpUpEquipmentCsReq clearItemCostList() {
@@ -102,7 +94,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class ExpUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -206,11 +198,11 @@ public final class ExpUpEquipmentCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(equipmentUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -234,16 +226,16 @@ public final class ExpUpEquipmentCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 40: {
             // equipmentUniqueId
             equipmentUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 10) {
               break;
             }
           }
-          case 66: {
+          case 10: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

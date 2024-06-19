@@ -20,6 +20,10 @@ public final class PlayerBasicInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  CFNKFJKAIAJ
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
@@ -82,6 +86,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  CFNKFJKAIAJ
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -90,6 +98,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  CFNKFJKAIAJ
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -100,6 +112,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  CFNKFJKAIAJ
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -108,6 +124,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  CFNKFJKAIAJ
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this

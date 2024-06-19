@@ -40,6 +40,10 @@ public final class BattleEquipmentOuterClass {
     private int promotion;
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      */
     private int rank;
@@ -190,6 +194,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return whether the rank field is set
      */
@@ -198,6 +206,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return this
      */
@@ -208,6 +220,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @return the rank
      */
@@ -216,6 +232,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  GJLJMAGJDNK
+     * </pre>
+     *
      * <code>optional uint32 rank = 4;</code>
      * @param value the rank to set
      * @return this

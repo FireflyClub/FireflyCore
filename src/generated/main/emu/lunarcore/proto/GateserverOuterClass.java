@@ -84,9 +84,9 @@ public final class GateserverOuterClass {
      *  HLOPJNACFMO
      * </pre>
      *
-     * <code>optional bool unk6 = 452;</code>
+     * <code>optional bool unk5 = 452;</code>
      */
-    private boolean unk6;
+    private boolean unk5;
 
     /**
      * <pre>
@@ -94,9 +94,9 @@ public final class GateserverOuterClass {
      *  string msg = 383; //? AOHMMPBPIPO
      * </pre>
      *
-     * <code>optional bool unk7 = 737;</code>
+     * <code>optional bool unk6 = 737;</code>
      */
-    private boolean unk7;
+    private boolean unk6;
 
     /**
      * <pre>
@@ -105,9 +105,9 @@ public final class GateserverOuterClass {
      *  string KCEHHKDBFIB = 1470;
      * </pre>
      *
-     * <code>optional bool unk8 = 1037;</code>
+     * <code>optional bool unk7 = 1037;</code>
      */
-    private boolean unk8;
+    private boolean unk7;
 
     /**
      * <pre>
@@ -122,18 +122,18 @@ public final class GateserverOuterClass {
      *  uint32 MDIBAAKFKEA = 350; // unk
      * </pre>
      *
-     * <code>optional bool unk9 = 1401;</code>
+     * <code>optional bool unk8 = 1401;</code>
      */
-    private boolean unk9;
+    private boolean unk8;
 
     /**
      * <pre>
      *  LAKKMNCFKAH
      * </pre>
      *
-     * <code>optional bool unk10 = 1851;</code>
+     * <code>optional bool unk9 = 1851;</code>
      */
-    private boolean unk10;
+    private boolean unk9;
 
     /**
      * <pre>
@@ -577,10 +577,10 @@ public final class GateserverOuterClass {
      *  HLOPJNACFMO
      * </pre>
      *
-     * <code>optional bool unk6 = 452;</code>
-     * @return whether the unk6 field is set
+     * <code>optional bool unk5 = 452;</code>
+     * @return whether the unk5 field is set
      */
-    public boolean hasUnk6() {
+    public boolean hasUnk5() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
@@ -589,12 +589,12 @@ public final class GateserverOuterClass {
      *  HLOPJNACFMO
      * </pre>
      *
-     * <code>optional bool unk6 = 452;</code>
+     * <code>optional bool unk5 = 452;</code>
      * @return this
      */
-    public Gateserver clearUnk6() {
+    public Gateserver clearUnk5() {
       bitField0_ &= ~0x00000040;
-      unk6 = false;
+      unk5 = false;
       return this;
     }
 
@@ -603,11 +603,11 @@ public final class GateserverOuterClass {
      *  HLOPJNACFMO
      * </pre>
      *
-     * <code>optional bool unk6 = 452;</code>
-     * @return the unk6
+     * <code>optional bool unk5 = 452;</code>
+     * @return the unk5
      */
-    public boolean getUnk6() {
-      return unk6;
+    public boolean getUnk5() {
+      return unk5;
     }
 
     /**
@@ -615,13 +615,13 @@ public final class GateserverOuterClass {
      *  HLOPJNACFMO
      * </pre>
      *
-     * <code>optional bool unk6 = 452;</code>
-     * @param value the unk6 to set
+     * <code>optional bool unk5 = 452;</code>
+     * @param value the unk5 to set
      * @return this
      */
-    public Gateserver setUnk6(final boolean value) {
+    public Gateserver setUnk5(final boolean value) {
       bitField0_ |= 0x00000040;
-      unk6 = value;
+      unk5 = value;
       return this;
     }
 
@@ -631,10 +631,10 @@ public final class GateserverOuterClass {
      *  string msg = 383; //? AOHMMPBPIPO
      * </pre>
      *
-     * <code>optional bool unk7 = 737;</code>
-     * @return whether the unk7 field is set
+     * <code>optional bool unk6 = 737;</code>
+     * @return whether the unk6 field is set
      */
-    public boolean hasUnk7() {
+    public boolean hasUnk6() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
@@ -644,12 +644,12 @@ public final class GateserverOuterClass {
      *  string msg = 383; //? AOHMMPBPIPO
      * </pre>
      *
-     * <code>optional bool unk7 = 737;</code>
+     * <code>optional bool unk6 = 737;</code>
      * @return this
      */
-    public Gateserver clearUnk7() {
+    public Gateserver clearUnk6() {
       bitField0_ &= ~0x00000080;
-      unk7 = false;
+      unk6 = false;
       return this;
     }
 
@@ -659,11 +659,11 @@ public final class GateserverOuterClass {
      *  string msg = 383; //? AOHMMPBPIPO
      * </pre>
      *
-     * <code>optional bool unk7 = 737;</code>
-     * @return the unk7
+     * <code>optional bool unk6 = 737;</code>
+     * @return the unk6
      */
-    public boolean getUnk7() {
-      return unk7;
+    public boolean getUnk6() {
+      return unk6;
     }
 
     /**
@@ -672,13 +672,13 @@ public final class GateserverOuterClass {
      *  string msg = 383; //? AOHMMPBPIPO
      * </pre>
      *
-     * <code>optional bool unk7 = 737;</code>
-     * @param value the unk7 to set
+     * <code>optional bool unk6 = 737;</code>
+     * @param value the unk6 to set
      * @return this
      */
-    public Gateserver setUnk7(final boolean value) {
+    public Gateserver setUnk6(final boolean value) {
       bitField0_ |= 0x00000080;
-      unk7 = value;
+      unk6 = value;
       return this;
     }
 
@@ -689,10 +689,10 @@ public final class GateserverOuterClass {
      *  string KCEHHKDBFIB = 1470;
      * </pre>
      *
-     * <code>optional bool unk8 = 1037;</code>
-     * @return whether the unk8 field is set
+     * <code>optional bool unk7 = 1037;</code>
+     * @return whether the unk7 field is set
      */
-    public boolean hasUnk8() {
+    public boolean hasUnk7() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
@@ -703,12 +703,12 @@ public final class GateserverOuterClass {
      *  string KCEHHKDBFIB = 1470;
      * </pre>
      *
-     * <code>optional bool unk8 = 1037;</code>
+     * <code>optional bool unk7 = 1037;</code>
      * @return this
      */
-    public Gateserver clearUnk8() {
+    public Gateserver clearUnk7() {
       bitField0_ &= ~0x00000100;
-      unk8 = false;
+      unk7 = false;
       return this;
     }
 
@@ -719,11 +719,11 @@ public final class GateserverOuterClass {
      *  string KCEHHKDBFIB = 1470;
      * </pre>
      *
-     * <code>optional bool unk8 = 1037;</code>
-     * @return the unk8
+     * <code>optional bool unk7 = 1037;</code>
+     * @return the unk7
      */
-    public boolean getUnk8() {
-      return unk8;
+    public boolean getUnk7() {
+      return unk7;
     }
 
     /**
@@ -733,13 +733,13 @@ public final class GateserverOuterClass {
      *  string KCEHHKDBFIB = 1470;
      * </pre>
      *
-     * <code>optional bool unk8 = 1037;</code>
-     * @param value the unk8 to set
+     * <code>optional bool unk7 = 1037;</code>
+     * @param value the unk7 to set
      * @return this
      */
-    public Gateserver setUnk8(final boolean value) {
+    public Gateserver setUnk7(final boolean value) {
       bitField0_ |= 0x00000100;
-      unk8 = value;
+      unk7 = value;
       return this;
     }
 
@@ -756,10 +756,10 @@ public final class GateserverOuterClass {
      *  uint32 MDIBAAKFKEA = 350; // unk
      * </pre>
      *
-     * <code>optional bool unk9 = 1401;</code>
-     * @return whether the unk9 field is set
+     * <code>optional bool unk8 = 1401;</code>
+     * @return whether the unk8 field is set
      */
-    public boolean hasUnk9() {
+    public boolean hasUnk8() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
@@ -776,12 +776,12 @@ public final class GateserverOuterClass {
      *  uint32 MDIBAAKFKEA = 350; // unk
      * </pre>
      *
-     * <code>optional bool unk9 = 1401;</code>
+     * <code>optional bool unk8 = 1401;</code>
      * @return this
      */
-    public Gateserver clearUnk9() {
+    public Gateserver clearUnk8() {
       bitField0_ &= ~0x00000200;
-      unk9 = false;
+      unk8 = false;
       return this;
     }
 
@@ -798,11 +798,11 @@ public final class GateserverOuterClass {
      *  uint32 MDIBAAKFKEA = 350; // unk
      * </pre>
      *
-     * <code>optional bool unk9 = 1401;</code>
-     * @return the unk9
+     * <code>optional bool unk8 = 1401;</code>
+     * @return the unk8
      */
-    public boolean getUnk9() {
-      return unk9;
+    public boolean getUnk8() {
+      return unk8;
     }
 
     /**
@@ -818,13 +818,13 @@ public final class GateserverOuterClass {
      *  uint32 MDIBAAKFKEA = 350; // unk
      * </pre>
      *
-     * <code>optional bool unk9 = 1401;</code>
-     * @param value the unk9 to set
+     * <code>optional bool unk8 = 1401;</code>
+     * @param value the unk8 to set
      * @return this
      */
-    public Gateserver setUnk9(final boolean value) {
+    public Gateserver setUnk8(final boolean value) {
       bitField0_ |= 0x00000200;
-      unk9 = value;
+      unk8 = value;
       return this;
     }
 
@@ -833,10 +833,10 @@ public final class GateserverOuterClass {
      *  LAKKMNCFKAH
      * </pre>
      *
-     * <code>optional bool unk10 = 1851;</code>
-     * @return whether the unk10 field is set
+     * <code>optional bool unk9 = 1851;</code>
+     * @return whether the unk9 field is set
      */
-    public boolean hasUnk10() {
+    public boolean hasUnk9() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
@@ -845,12 +845,12 @@ public final class GateserverOuterClass {
      *  LAKKMNCFKAH
      * </pre>
      *
-     * <code>optional bool unk10 = 1851;</code>
+     * <code>optional bool unk9 = 1851;</code>
      * @return this
      */
-    public Gateserver clearUnk10() {
+    public Gateserver clearUnk9() {
       bitField0_ &= ~0x00000400;
-      unk10 = false;
+      unk9 = false;
       return this;
     }
 
@@ -859,11 +859,11 @@ public final class GateserverOuterClass {
      *  LAKKMNCFKAH
      * </pre>
      *
-     * <code>optional bool unk10 = 1851;</code>
-     * @return the unk10
+     * <code>optional bool unk9 = 1851;</code>
+     * @return the unk9
      */
-    public boolean getUnk10() {
-      return unk10;
+    public boolean getUnk9() {
+      return unk9;
     }
 
     /**
@@ -871,13 +871,13 @@ public final class GateserverOuterClass {
      *  LAKKMNCFKAH
      * </pre>
      *
-     * <code>optional bool unk10 = 1851;</code>
-     * @param value the unk10 to set
+     * <code>optional bool unk9 = 1851;</code>
+     * @param value the unk9 to set
      * @return this
      */
-    public Gateserver setUnk10(final boolean value) {
+    public Gateserver setUnk9(final boolean value) {
       bitField0_ |= 0x00000400;
-      unk10 = value;
+      unk9 = value;
       return this;
     }
 
@@ -1871,11 +1871,11 @@ public final class GateserverOuterClass {
         unk2 = other.unk2;
         unk3 = other.unk3;
         unk4 = other.unk4;
+        unk5 = other.unk5;
         unk6 = other.unk6;
         unk7 = other.unk7;
         unk8 = other.unk8;
         unk9 = other.unk9;
-        unk10 = other.unk10;
         ip.copyFrom(other.ip);
         luaUrl.copyFrom(other.luaUrl);
         msg.copyFrom(other.msg);
@@ -1914,6 +1914,9 @@ public final class GateserverOuterClass {
       if (other.hasUnk4()) {
         setUnk4(other.unk4);
       }
+      if (other.hasUnk5()) {
+        setUnk5(other.unk5);
+      }
       if (other.hasUnk6()) {
         setUnk6(other.unk6);
       }
@@ -1925,9 +1928,6 @@ public final class GateserverOuterClass {
       }
       if (other.hasUnk9()) {
         setUnk9(other.unk9);
-      }
-      if (other.hasUnk10()) {
-        setUnk10(other.unk10);
       }
       if (other.hasIp()) {
         getMutableIpBytes().copyFrom(other.ip);
@@ -1975,11 +1975,11 @@ public final class GateserverOuterClass {
       unk2 = false;
       unk3 = false;
       unk4 = false;
+      unk5 = false;
       unk6 = false;
       unk7 = false;
       unk8 = false;
       unk9 = false;
-      unk10 = false;
       ip.clear();
       luaUrl.clear();
       msg.clear();
@@ -2029,11 +2029,11 @@ public final class GateserverOuterClass {
         && (!hasUnk2() || unk2 == other.unk2)
         && (!hasUnk3() || unk3 == other.unk3)
         && (!hasUnk4() || unk4 == other.unk4)
+        && (!hasUnk5() || unk5 == other.unk5)
         && (!hasUnk6() || unk6 == other.unk6)
         && (!hasUnk7() || unk7 == other.unk7)
         && (!hasUnk8() || unk8 == other.unk8)
         && (!hasUnk9() || unk9 == other.unk9)
-        && (!hasUnk10() || unk10 == other.unk10)
         && (!hasIp() || ip.equals(other.ip))
         && (!hasLuaUrl() || luaUrl.equals(other.luaUrl))
         && (!hasMsg() || msg.equals(other.msg))
@@ -2074,23 +2074,23 @@ public final class GateserverOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawLittleEndian16((short) 7328);
-        output.writeBoolNoTag(unk6);
+        output.writeBoolNoTag(unk5);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawLittleEndian16((short) 11912);
-        output.writeBoolNoTag(unk7);
+        output.writeBoolNoTag(unk6);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawLittleEndian16((short) 16616);
-        output.writeBoolNoTag(unk8);
+        output.writeBoolNoTag(unk7);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawLittleEndian16((short) 22472);
-        output.writeBoolNoTag(unk9);
+        output.writeBoolNoTag(unk8);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawLittleEndian16((short) 29656);
-        output.writeBoolNoTag(unk10);
+        output.writeBoolNoTag(unk9);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawByte((byte) 10);
@@ -2265,8 +2265,8 @@ public final class GateserverOuterClass {
             }
           }
           case 3616: {
-            // unk6
-            unk6 = input.readBool();
+            // unk5
+            unk5 = input.readBool();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 5896) {
@@ -2274,8 +2274,8 @@ public final class GateserverOuterClass {
             }
           }
           case 5896: {
-            // unk7
-            unk7 = input.readBool();
+            // unk6
+            unk6 = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 8296) {
@@ -2283,8 +2283,8 @@ public final class GateserverOuterClass {
             }
           }
           case 8296: {
-            // unk8
-            unk8 = input.readBool();
+            // unk7
+            unk7 = input.readBool();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 11208) {
@@ -2292,8 +2292,8 @@ public final class GateserverOuterClass {
             }
           }
           case 11208: {
-            // unk9
-            unk9 = input.readBool();
+            // unk8
+            unk8 = input.readBool();
             bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 14808) {
@@ -2301,8 +2301,8 @@ public final class GateserverOuterClass {
             }
           }
           case 14808: {
-            // unk10
-            unk10 = input.readBool();
+            // unk9
+            unk9 = input.readBool();
             bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 10) {
@@ -2435,19 +2435,19 @@ public final class GateserverOuterClass {
         output.writeBool(FieldNames.unk4, unk4);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeBool(FieldNames.unk6, unk6);
+        output.writeBool(FieldNames.unk5, unk5);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeBool(FieldNames.unk7, unk7);
+        output.writeBool(FieldNames.unk6, unk6);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeBool(FieldNames.unk8, unk8);
+        output.writeBool(FieldNames.unk7, unk7);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeBool(FieldNames.unk9, unk9);
+        output.writeBool(FieldNames.unk8, unk8);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeBool(FieldNames.unk10, unk10);
+        output.writeBool(FieldNames.unk9, unk9);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeString(FieldNames.ip, ip);
@@ -2555,11 +2555,22 @@ public final class GateserverOuterClass {
             }
             break;
           }
+          case 3594627: {
+            if (input.isAtField(FieldNames.unk5)) {
+              if (!input.trySkipNullValue()) {
+                unk5 = input.readBool();
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 3594628: {
             if (input.isAtField(FieldNames.unk6)) {
               if (!input.trySkipNullValue()) {
                 unk6 = input.readBool();
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -2570,7 +2581,7 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.unk7)) {
               if (!input.trySkipNullValue()) {
                 unk7 = input.readBool();
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000100;
               }
             } else {
               input.skipUnknownField();
@@ -2581,7 +2592,7 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.unk8)) {
               if (!input.trySkipNullValue()) {
                 unk8 = input.readBool();
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -2592,17 +2603,6 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.unk9)) {
               if (!input.trySkipNullValue()) {
                 unk9 = input.readBool();
-                bitField0_ |= 0x00000200;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 111433361: {
-            if (input.isAtField(FieldNames.unk10)) {
-              if (!input.trySkipNullValue()) {
-                unk10 = input.readBool();
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -2792,6 +2792,8 @@ public final class GateserverOuterClass {
 
       static final FieldName unk4 = FieldName.forField("unk4");
 
+      static final FieldName unk5 = FieldName.forField("unk5");
+
       static final FieldName unk6 = FieldName.forField("unk6");
 
       static final FieldName unk7 = FieldName.forField("unk7");
@@ -2799,8 +2801,6 @@ public final class GateserverOuterClass {
       static final FieldName unk8 = FieldName.forField("unk8");
 
       static final FieldName unk9 = FieldName.forField("unk9");
-
-      static final FieldName unk10 = FieldName.forField("unk10");
 
       static final FieldName ip = FieldName.forField("ip");
 

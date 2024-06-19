@@ -36,23 +36,35 @@ public final class BattleRelicOuterClass {
     private int level;
 
     /**
+     * <pre>
+     *  MNIFHJFEEPA
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      */
     private int mainAffixId;
 
     /**
+     * <pre>
+     *  CPMIOJJCNHH
+     * </pre>
+     *
      * <code>optional uint32 unique_id = 5;</code>
      */
     private int uniqueId;
 
     /**
+     * <pre>
+     *  PMOPKFLFGKO
+     * </pre>
+     *
      * <code>optional uint32 set_id = 6;</code>
      */
     private int setId;
 
     /**
      * <pre>
-     * iaglgkpdloe
+     *  GNPPAEIDJIO
      * </pre>
      *
      * <code>optional uint32 type = 7;</code>
@@ -60,6 +72,10 @@ public final class BattleRelicOuterClass {
     private int type;
 
     /**
+     * <pre>
+     *  NBJEIMOAAOK
+     * </pre>
+     *
      * <code>optional uint32 rarity = 8;</code>
      */
     private int rarity;
@@ -178,6 +194,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  MNIFHJFEEPA
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return whether the mainAffixId field is set
      */
@@ -186,6 +206,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  MNIFHJFEEPA
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return this
      */
@@ -196,6 +220,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  MNIFHJFEEPA
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return the mainAffixId
      */
@@ -204,6 +232,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  MNIFHJFEEPA
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @param value the mainAffixId to set
      * @return this
@@ -215,6 +247,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  CPMIOJJCNHH
+     * </pre>
+     *
      * <code>optional uint32 unique_id = 5;</code>
      * @return whether the uniqueId field is set
      */
@@ -223,6 +259,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  CPMIOJJCNHH
+     * </pre>
+     *
      * <code>optional uint32 unique_id = 5;</code>
      * @return this
      */
@@ -233,6 +273,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  CPMIOJJCNHH
+     * </pre>
+     *
      * <code>optional uint32 unique_id = 5;</code>
      * @return the uniqueId
      */
@@ -241,6 +285,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  CPMIOJJCNHH
+     * </pre>
+     *
      * <code>optional uint32 unique_id = 5;</code>
      * @param value the uniqueId to set
      * @return this
@@ -252,6 +300,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  PMOPKFLFGKO
+     * </pre>
+     *
      * <code>optional uint32 set_id = 6;</code>
      * @return whether the setId field is set
      */
@@ -260,6 +312,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  PMOPKFLFGKO
+     * </pre>
+     *
      * <code>optional uint32 set_id = 6;</code>
      * @return this
      */
@@ -270,6 +326,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  PMOPKFLFGKO
+     * </pre>
+     *
      * <code>optional uint32 set_id = 6;</code>
      * @return the setId
      */
@@ -278,6 +338,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  PMOPKFLFGKO
+     * </pre>
+     *
      * <code>optional uint32 set_id = 6;</code>
      * @param value the setId to set
      * @return this
@@ -290,7 +354,7 @@ public final class BattleRelicOuterClass {
 
     /**
      * <pre>
-     * iaglgkpdloe
+     *  GNPPAEIDJIO
      * </pre>
      *
      * <code>optional uint32 type = 7;</code>
@@ -302,7 +366,7 @@ public final class BattleRelicOuterClass {
 
     /**
      * <pre>
-     * iaglgkpdloe
+     *  GNPPAEIDJIO
      * </pre>
      *
      * <code>optional uint32 type = 7;</code>
@@ -316,7 +380,7 @@ public final class BattleRelicOuterClass {
 
     /**
      * <pre>
-     * iaglgkpdloe
+     *  GNPPAEIDJIO
      * </pre>
      *
      * <code>optional uint32 type = 7;</code>
@@ -328,7 +392,7 @@ public final class BattleRelicOuterClass {
 
     /**
      * <pre>
-     * iaglgkpdloe
+     *  GNPPAEIDJIO
      * </pre>
      *
      * <code>optional uint32 type = 7;</code>
@@ -342,6 +406,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  NBJEIMOAAOK
+     * </pre>
+     *
      * <code>optional uint32 rarity = 8;</code>
      * @return whether the rarity field is set
      */
@@ -350,6 +418,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  NBJEIMOAAOK
+     * </pre>
+     *
      * <code>optional uint32 rarity = 8;</code>
      * @return this
      */
@@ -360,6 +432,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  NBJEIMOAAOK
+     * </pre>
+     *
      * <code>optional uint32 rarity = 8;</code>
      * @return the rarity
      */
@@ -368,6 +444,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *  NBJEIMOAAOK
+     * </pre>
+     *
      * <code>optional uint32 rarity = 8;</code>
      * @param value the rarity to set
      * @return this

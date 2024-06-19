@@ -19,16 +19,28 @@ public final class RelicAffixOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  ACGJNLLPMDE
+     * </pre>
+     *
      * <code>optional uint32 affix_id = 1;</code>
      */
     private int affixId;
 
     /**
+     * <pre>
+     *  BCGHDEAKDCP
+     * </pre>
+     *
      * <code>optional uint32 cnt = 2;</code>
      */
     private int cnt;
 
     /**
+     * <pre>
+     *  IMPFCDBGMNH
+     * </pre>
+     *
      * <code>optional uint32 step = 3;</code>
      */
     private int step;
@@ -44,6 +56,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  ACGJNLLPMDE
+     * </pre>
+     *
      * <code>optional uint32 affix_id = 1;</code>
      * @return whether the affixId field is set
      */
@@ -52,6 +68,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  ACGJNLLPMDE
+     * </pre>
+     *
      * <code>optional uint32 affix_id = 1;</code>
      * @return this
      */
@@ -62,6 +82,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  ACGJNLLPMDE
+     * </pre>
+     *
      * <code>optional uint32 affix_id = 1;</code>
      * @return the affixId
      */
@@ -70,6 +94,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  ACGJNLLPMDE
+     * </pre>
+     *
      * <code>optional uint32 affix_id = 1;</code>
      * @param value the affixId to set
      * @return this
@@ -81,6 +109,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCGHDEAKDCP
+     * </pre>
+     *
      * <code>optional uint32 cnt = 2;</code>
      * @return whether the cnt field is set
      */
@@ -89,6 +121,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCGHDEAKDCP
+     * </pre>
+     *
      * <code>optional uint32 cnt = 2;</code>
      * @return this
      */
@@ -99,6 +135,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCGHDEAKDCP
+     * </pre>
+     *
      * <code>optional uint32 cnt = 2;</code>
      * @return the cnt
      */
@@ -107,6 +147,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCGHDEAKDCP
+     * </pre>
+     *
      * <code>optional uint32 cnt = 2;</code>
      * @param value the cnt to set
      * @return this
@@ -118,6 +162,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  IMPFCDBGMNH
+     * </pre>
+     *
      * <code>optional uint32 step = 3;</code>
      * @return whether the step field is set
      */
@@ -126,6 +174,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  IMPFCDBGMNH
+     * </pre>
+     *
      * <code>optional uint32 step = 3;</code>
      * @return this
      */
@@ -136,6 +188,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  IMPFCDBGMNH
+     * </pre>
+     *
      * <code>optional uint32 step = 3;</code>
      * @return the step
      */
@@ -144,6 +200,10 @@ public final class RelicAffixOuterClass {
     }
 
     /**
+     * <pre>
+     *  IMPFCDBGMNH
+     * </pre>
+     *
      * <code>optional uint32 step = 3;</code>
      * @param value the step to set
      * @return this

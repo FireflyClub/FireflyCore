@@ -24,6 +24,10 @@ public final class MotionInfoOuterClass {
     private final VectorOuterClass.Vector pos = VectorOuterClass.Vector.newInstance();
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      */
     private final VectorOuterClass.Vector rot = VectorOuterClass.Vector.newInstance();
@@ -96,6 +100,10 @@ public final class MotionInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      * @return whether the rot field is set
      */
@@ -104,6 +112,10 @@ public final class MotionInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      * @return this
      */
@@ -114,6 +126,10 @@ public final class MotionInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -128,6 +144,10 @@ public final class MotionInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -142,6 +162,10 @@ public final class MotionInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  IAJHFDLJPNN
+     * </pre>
+     *
      * <code>optional .Vector rot = 14;</code>
      * @param value the rot to set
      * @return this

@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class PlayerSettingInfoOuterClass {
   /**
+   * <pre>
+   *  FCNJBGDEFEE
+   * </pre>
+   *
    * Protobuf type {@code PlayerSettingInfo}
    */
   public static final class PlayerSettingInfo extends ProtoMessage<PlayerSettingInfo> implements Cloneable {
@@ -20,21 +24,66 @@ public final class PlayerSettingInfoOuterClass {
 
     /**
      * <pre>
-     *  bool AMGBJCGCHLE = 10;
-     *  bool BFFEAEAEMIG = 4;
-     *  bool LJEELNKPIFJ = 12;
-     *  bool GGCDKFMMCCD = 8;
-     *  bool FEEELLEAEPC = 9;
+     *  ENMONIGFOEO
      * </pre>
      *
-     * <code>optional .DisplayRecordType display_record_type = 15;</code>
+     * <code>optional .DisplayRecordType display_record_type = 6;</code>
      */
     private int displayRecordType;
+
+    /**
+     * <code>optional bool DDDOAIJHMPB = 1;</code>
+     */
+    private boolean dDDOAIJHMPB;
+
+    /**
+     * <code>optional bool JCJCGHHHNGJ = 4;</code>
+     */
+    private boolean jCJCGHHHNGJ;
+
+    /**
+     * <code>optional bool BONNOPPHFJM = 5;</code>
+     */
+    private boolean bONNOPPHFJM;
+
+    /**
+     * <code>optional bool MPNPPPNIEBN = 7;</code>
+     */
+    private boolean mPNPPPNIEBN;
+
+    /**
+     * <code>optional bool DAHEPDDJJCD = 8;</code>
+     */
+    private boolean dAHEPDDJJCD;
+
+    /**
+     * <code>optional bool OABPEGPHJCP = 10;</code>
+     */
+    private boolean oABPEGPHJCP;
+
+    /**
+     * <code>optional bool PFCCJBIENCK = 11;</code>
+     */
+    private boolean pFCCJBIENCK;
+
+    /**
+     * <code>optional bool KBMNNNLACAE = 14;</code>
+     */
+    private boolean kBMNNNLACAE;
+
+    /**
+     * <code>optional bool HDEMABIFFFO = 15;</code>
+     */
+    private boolean hDEMABIFFFO;
 
     private PlayerSettingInfo() {
     }
 
     /**
+     * <pre>
+     *  FCNJBGDEFEE
+     * </pre>
+     *
      * @return a new empty instance of {@code PlayerSettingInfo}
      */
     public static PlayerSettingInfo newInstance() {
@@ -43,14 +92,10 @@ public final class PlayerSettingInfoOuterClass {
 
     /**
      * <pre>
-     *  bool AMGBJCGCHLE = 10;
-     *  bool BFFEAEAEMIG = 4;
-     *  bool LJEELNKPIFJ = 12;
-     *  bool GGCDKFMMCCD = 8;
-     *  bool FEEELLEAEPC = 9;
+     *  ENMONIGFOEO
      * </pre>
      *
-     * <code>optional .DisplayRecordType display_record_type = 15;</code>
+     * <code>optional .DisplayRecordType display_record_type = 6;</code>
      * @return whether the displayRecordType field is set
      */
     public boolean hasDisplayRecordType() {
@@ -59,14 +104,10 @@ public final class PlayerSettingInfoOuterClass {
 
     /**
      * <pre>
-     *  bool AMGBJCGCHLE = 10;
-     *  bool BFFEAEAEMIG = 4;
-     *  bool LJEELNKPIFJ = 12;
-     *  bool GGCDKFMMCCD = 8;
-     *  bool FEEELLEAEPC = 9;
+     *  ENMONIGFOEO
      * </pre>
      *
-     * <code>optional .DisplayRecordType display_record_type = 15;</code>
+     * <code>optional .DisplayRecordType display_record_type = 6;</code>
      * @return this
      */
     public PlayerSettingInfo clearDisplayRecordType() {
@@ -77,14 +118,10 @@ public final class PlayerSettingInfoOuterClass {
 
     /**
      * <pre>
-     *  bool AMGBJCGCHLE = 10;
-     *  bool BFFEAEAEMIG = 4;
-     *  bool LJEELNKPIFJ = 12;
-     *  bool GGCDKFMMCCD = 8;
-     *  bool FEEELLEAEPC = 9;
+     *  ENMONIGFOEO
      * </pre>
      *
-     * <code>optional .DisplayRecordType display_record_type = 15;</code>
+     * <code>optional .DisplayRecordType display_record_type = 6;</code>
      * @return the displayRecordType
      */
     public DisplayRecordTypeOuterClass.DisplayRecordType getDisplayRecordType() {
@@ -118,14 +155,10 @@ public final class PlayerSettingInfoOuterClass {
 
     /**
      * <pre>
-     *  bool AMGBJCGCHLE = 10;
-     *  bool BFFEAEAEMIG = 4;
-     *  bool LJEELNKPIFJ = 12;
-     *  bool GGCDKFMMCCD = 8;
-     *  bool FEEELLEAEPC = 9;
+     *  ENMONIGFOEO
      * </pre>
      *
-     * <code>optional .DisplayRecordType display_record_type = 15;</code>
+     * <code>optional .DisplayRecordType display_record_type = 6;</code>
      * @param value the displayRecordType to set
      * @return this
      */
@@ -136,12 +169,354 @@ public final class PlayerSettingInfoOuterClass {
       return this;
     }
 
+    /**
+     * <code>optional bool DDDOAIJHMPB = 1;</code>
+     * @return whether the dDDOAIJHMPB field is set
+     */
+    public boolean hasDDDOAIJHMPB() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional bool DDDOAIJHMPB = 1;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearDDDOAIJHMPB() {
+      bitField0_ &= ~0x00000002;
+      dDDOAIJHMPB = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool DDDOAIJHMPB = 1;</code>
+     * @return the dDDOAIJHMPB
+     */
+    public boolean getDDDOAIJHMPB() {
+      return dDDOAIJHMPB;
+    }
+
+    /**
+     * <code>optional bool DDDOAIJHMPB = 1;</code>
+     * @param value the dDDOAIJHMPB to set
+     * @return this
+     */
+    public PlayerSettingInfo setDDDOAIJHMPB(final boolean value) {
+      bitField0_ |= 0x00000002;
+      dDDOAIJHMPB = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool JCJCGHHHNGJ = 4;</code>
+     * @return whether the jCJCGHHHNGJ field is set
+     */
+    public boolean hasJCJCGHHHNGJ() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional bool JCJCGHHHNGJ = 4;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearJCJCGHHHNGJ() {
+      bitField0_ &= ~0x00000004;
+      jCJCGHHHNGJ = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool JCJCGHHHNGJ = 4;</code>
+     * @return the jCJCGHHHNGJ
+     */
+    public boolean getJCJCGHHHNGJ() {
+      return jCJCGHHHNGJ;
+    }
+
+    /**
+     * <code>optional bool JCJCGHHHNGJ = 4;</code>
+     * @param value the jCJCGHHHNGJ to set
+     * @return this
+     */
+    public PlayerSettingInfo setJCJCGHHHNGJ(final boolean value) {
+      bitField0_ |= 0x00000004;
+      jCJCGHHHNGJ = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool BONNOPPHFJM = 5;</code>
+     * @return whether the bONNOPPHFJM field is set
+     */
+    public boolean hasBONNOPPHFJM() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional bool BONNOPPHFJM = 5;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearBONNOPPHFJM() {
+      bitField0_ &= ~0x00000008;
+      bONNOPPHFJM = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool BONNOPPHFJM = 5;</code>
+     * @return the bONNOPPHFJM
+     */
+    public boolean getBONNOPPHFJM() {
+      return bONNOPPHFJM;
+    }
+
+    /**
+     * <code>optional bool BONNOPPHFJM = 5;</code>
+     * @param value the bONNOPPHFJM to set
+     * @return this
+     */
+    public PlayerSettingInfo setBONNOPPHFJM(final boolean value) {
+      bitField0_ |= 0x00000008;
+      bONNOPPHFJM = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool MPNPPPNIEBN = 7;</code>
+     * @return whether the mPNPPPNIEBN field is set
+     */
+    public boolean hasMPNPPPNIEBN() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional bool MPNPPPNIEBN = 7;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearMPNPPPNIEBN() {
+      bitField0_ &= ~0x00000010;
+      mPNPPPNIEBN = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool MPNPPPNIEBN = 7;</code>
+     * @return the mPNPPPNIEBN
+     */
+    public boolean getMPNPPPNIEBN() {
+      return mPNPPPNIEBN;
+    }
+
+    /**
+     * <code>optional bool MPNPPPNIEBN = 7;</code>
+     * @param value the mPNPPPNIEBN to set
+     * @return this
+     */
+    public PlayerSettingInfo setMPNPPPNIEBN(final boolean value) {
+      bitField0_ |= 0x00000010;
+      mPNPPPNIEBN = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool DAHEPDDJJCD = 8;</code>
+     * @return whether the dAHEPDDJJCD field is set
+     */
+    public boolean hasDAHEPDDJJCD() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional bool DAHEPDDJJCD = 8;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearDAHEPDDJJCD() {
+      bitField0_ &= ~0x00000020;
+      dAHEPDDJJCD = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool DAHEPDDJJCD = 8;</code>
+     * @return the dAHEPDDJJCD
+     */
+    public boolean getDAHEPDDJJCD() {
+      return dAHEPDDJJCD;
+    }
+
+    /**
+     * <code>optional bool DAHEPDDJJCD = 8;</code>
+     * @param value the dAHEPDDJJCD to set
+     * @return this
+     */
+    public PlayerSettingInfo setDAHEPDDJJCD(final boolean value) {
+      bitField0_ |= 0x00000020;
+      dAHEPDDJJCD = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool OABPEGPHJCP = 10;</code>
+     * @return whether the oABPEGPHJCP field is set
+     */
+    public boolean hasOABPEGPHJCP() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>optional bool OABPEGPHJCP = 10;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearOABPEGPHJCP() {
+      bitField0_ &= ~0x00000040;
+      oABPEGPHJCP = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool OABPEGPHJCP = 10;</code>
+     * @return the oABPEGPHJCP
+     */
+    public boolean getOABPEGPHJCP() {
+      return oABPEGPHJCP;
+    }
+
+    /**
+     * <code>optional bool OABPEGPHJCP = 10;</code>
+     * @param value the oABPEGPHJCP to set
+     * @return this
+     */
+    public PlayerSettingInfo setOABPEGPHJCP(final boolean value) {
+      bitField0_ |= 0x00000040;
+      oABPEGPHJCP = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool PFCCJBIENCK = 11;</code>
+     * @return whether the pFCCJBIENCK field is set
+     */
+    public boolean hasPFCCJBIENCK() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional bool PFCCJBIENCK = 11;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearPFCCJBIENCK() {
+      bitField0_ &= ~0x00000080;
+      pFCCJBIENCK = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool PFCCJBIENCK = 11;</code>
+     * @return the pFCCJBIENCK
+     */
+    public boolean getPFCCJBIENCK() {
+      return pFCCJBIENCK;
+    }
+
+    /**
+     * <code>optional bool PFCCJBIENCK = 11;</code>
+     * @param value the pFCCJBIENCK to set
+     * @return this
+     */
+    public PlayerSettingInfo setPFCCJBIENCK(final boolean value) {
+      bitField0_ |= 0x00000080;
+      pFCCJBIENCK = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KBMNNNLACAE = 14;</code>
+     * @return whether the kBMNNNLACAE field is set
+     */
+    public boolean hasKBMNNNLACAE() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional bool KBMNNNLACAE = 14;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearKBMNNNLACAE() {
+      bitField0_ &= ~0x00000100;
+      kBMNNNLACAE = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KBMNNNLACAE = 14;</code>
+     * @return the kBMNNNLACAE
+     */
+    public boolean getKBMNNNLACAE() {
+      return kBMNNNLACAE;
+    }
+
+    /**
+     * <code>optional bool KBMNNNLACAE = 14;</code>
+     * @param value the kBMNNNLACAE to set
+     * @return this
+     */
+    public PlayerSettingInfo setKBMNNNLACAE(final boolean value) {
+      bitField0_ |= 0x00000100;
+      kBMNNNLACAE = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool HDEMABIFFFO = 15;</code>
+     * @return whether the hDEMABIFFFO field is set
+     */
+    public boolean hasHDEMABIFFFO() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>optional bool HDEMABIFFFO = 15;</code>
+     * @return this
+     */
+    public PlayerSettingInfo clearHDEMABIFFFO() {
+      bitField0_ &= ~0x00000200;
+      hDEMABIFFFO = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool HDEMABIFFFO = 15;</code>
+     * @return the hDEMABIFFFO
+     */
+    public boolean getHDEMABIFFFO() {
+      return hDEMABIFFFO;
+    }
+
+    /**
+     * <code>optional bool HDEMABIFFFO = 15;</code>
+     * @param value the hDEMABIFFFO to set
+     * @return this
+     */
+    public PlayerSettingInfo setHDEMABIFFFO(final boolean value) {
+      bitField0_ |= 0x00000200;
+      hDEMABIFFFO = value;
+      return this;
+    }
+
     @Override
     public PlayerSettingInfo copyFrom(final PlayerSettingInfo other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         displayRecordType = other.displayRecordType;
+        dDDOAIJHMPB = other.dDDOAIJHMPB;
+        jCJCGHHHNGJ = other.jCJCGHHHNGJ;
+        bONNOPPHFJM = other.bONNOPPHFJM;
+        mPNPPPNIEBN = other.mPNPPPNIEBN;
+        dAHEPDDJJCD = other.dAHEPDDJJCD;
+        oABPEGPHJCP = other.oABPEGPHJCP;
+        pFCCJBIENCK = other.pFCCJBIENCK;
+        kBMNNNLACAE = other.kBMNNNLACAE;
+        hDEMABIFFFO = other.hDEMABIFFFO;
       }
       return this;
     }
@@ -155,6 +530,33 @@ public final class PlayerSettingInfoOuterClass {
       if (other.hasDisplayRecordType()) {
         setDisplayRecordTypeValue(other.displayRecordType);
       }
+      if (other.hasDDDOAIJHMPB()) {
+        setDDDOAIJHMPB(other.dDDOAIJHMPB);
+      }
+      if (other.hasJCJCGHHHNGJ()) {
+        setJCJCGHHHNGJ(other.jCJCGHHHNGJ);
+      }
+      if (other.hasBONNOPPHFJM()) {
+        setBONNOPPHFJM(other.bONNOPPHFJM);
+      }
+      if (other.hasMPNPPPNIEBN()) {
+        setMPNPPPNIEBN(other.mPNPPPNIEBN);
+      }
+      if (other.hasDAHEPDDJJCD()) {
+        setDAHEPDDJJCD(other.dAHEPDDJJCD);
+      }
+      if (other.hasOABPEGPHJCP()) {
+        setOABPEGPHJCP(other.oABPEGPHJCP);
+      }
+      if (other.hasPFCCJBIENCK()) {
+        setPFCCJBIENCK(other.pFCCJBIENCK);
+      }
+      if (other.hasKBMNNNLACAE()) {
+        setKBMNNNLACAE(other.kBMNNNLACAE);
+      }
+      if (other.hasHDEMABIFFFO()) {
+        setHDEMABIFFFO(other.hDEMABIFFFO);
+      }
       return this;
     }
 
@@ -166,6 +568,15 @@ public final class PlayerSettingInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       displayRecordType = 0;
+      dDDOAIJHMPB = false;
+      jCJCGHHHNGJ = false;
+      bONNOPPHFJM = false;
+      mPNPPPNIEBN = false;
+      dAHEPDDJJCD = false;
+      oABPEGPHJCP = false;
+      pFCCJBIENCK = false;
+      kBMNNNLACAE = false;
+      hDEMABIFFFO = false;
       return this;
     }
 
@@ -189,14 +600,59 @@ public final class PlayerSettingInfoOuterClass {
       }
       PlayerSettingInfo other = (PlayerSettingInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasDisplayRecordType() || displayRecordType == other.displayRecordType);
+        && (!hasDisplayRecordType() || displayRecordType == other.displayRecordType)
+        && (!hasDDDOAIJHMPB() || dDDOAIJHMPB == other.dDDOAIJHMPB)
+        && (!hasJCJCGHHHNGJ() || jCJCGHHHNGJ == other.jCJCGHHHNGJ)
+        && (!hasBONNOPPHFJM() || bONNOPPHFJM == other.bONNOPPHFJM)
+        && (!hasMPNPPPNIEBN() || mPNPPPNIEBN == other.mPNPPPNIEBN)
+        && (!hasDAHEPDDJJCD() || dAHEPDDJJCD == other.dAHEPDDJJCD)
+        && (!hasOABPEGPHJCP() || oABPEGPHJCP == other.oABPEGPHJCP)
+        && (!hasPFCCJBIENCK() || pFCCJBIENCK == other.pFCCJBIENCK)
+        && (!hasKBMNNNLACAE() || kBMNNNLACAE == other.kBMNNNLACAE)
+        && (!hasHDEMABIFFFO() || hDEMABIFFFO == other.hDEMABIFFFO);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 48);
         output.writeEnumNoTag(displayRecordType);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 8);
+        output.writeBoolNoTag(dDDOAIJHMPB);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 32);
+        output.writeBoolNoTag(jCJCGHHHNGJ);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 40);
+        output.writeBoolNoTag(bONNOPPHFJM);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeBoolNoTag(mPNPPPNIEBN);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawByte((byte) 64);
+        output.writeBoolNoTag(dAHEPDDJJCD);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeBoolNoTag(oABPEGPHJCP);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(pFCCJBIENCK);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeBoolNoTag(kBMNNNLACAE);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(hDEMABIFFFO);
       }
     }
 
@@ -205,6 +661,33 @@ public final class PlayerSettingInfoOuterClass {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(displayRecordType);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += 2;
       }
       return size;
     }
@@ -216,13 +699,94 @@ public final class PlayerSettingInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 48: {
             // displayRecordType
             final int value = input.readInt32();
             if (DisplayRecordTypeOuterClass.DisplayRecordType.forNumber(value) != null) {
               displayRecordType = value;
               bitField0_ |= 0x00000001;
             }
+            tag = input.readTag();
+            if (tag != 8) {
+              break;
+            }
+          }
+          case 8: {
+            // dDDOAIJHMPB
+            dDDOAIJHMPB = input.readBool();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 32) {
+              break;
+            }
+          }
+          case 32: {
+            // jCJCGHHHNGJ
+            jCJCGHHHNGJ = input.readBool();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
+          case 40: {
+            // bONNOPPHFJM
+            bONNOPPHFJM = input.readBool();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // mPNPPPNIEBN
+            mPNPPPNIEBN = input.readBool();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 64) {
+              break;
+            }
+          }
+          case 64: {
+            // dAHEPDDJJCD
+            dAHEPDDJJCD = input.readBool();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // oABPEGPHJCP
+            oABPEGPHJCP = input.readBool();
+            bitField0_ |= 0x00000040;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // pFCCJBIENCK
+            pFCCJBIENCK = input.readBool();
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // kBMNNNLACAE
+            kBMNNNLACAE = input.readBool();
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // hDEMABIFFFO
+            hDEMABIFFFO = input.readBool();
+            bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -248,6 +812,33 @@ public final class PlayerSettingInfoOuterClass {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeEnum(FieldNames.displayRecordType, displayRecordType, DisplayRecordTypeOuterClass.DisplayRecordType.converter());
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeBool(FieldNames.dDDOAIJHMPB, dDDOAIJHMPB);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeBool(FieldNames.jCJCGHHHNGJ, jCJCGHHHNGJ);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeBool(FieldNames.bONNOPPHFJM, bONNOPPHFJM);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeBool(FieldNames.mPNPPPNIEBN, mPNPPPNIEBN);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeBool(FieldNames.dAHEPDDJJCD, dAHEPDDJJCD);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeBool(FieldNames.oABPEGPHJCP, oABPEGPHJCP);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeBool(FieldNames.pFCCJBIENCK, pFCCJBIENCK);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeBool(FieldNames.kBMNNNLACAE, kBMNNNLACAE);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeBool(FieldNames.hDEMABIFFFO, hDEMABIFFFO);
+      }
       output.endObject();
     }
 
@@ -269,6 +860,105 @@ public final class PlayerSettingInfoOuterClass {
                 } else {
                   input.skipUnknownEnumValue();
                 }
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -802726290: {
+            if (input.isAtField(FieldNames.dDDOAIJHMPB)) {
+              if (!input.trySkipNullValue()) {
+                dDDOAIJHMPB = input.readBool();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 802880510: {
+            if (input.isAtField(FieldNames.jCJCGHHHNGJ)) {
+              if (!input.trySkipNullValue()) {
+                jCJCGHHHNGJ = input.readBool();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 2033097315: {
+            if (input.isAtField(FieldNames.bONNOPPHFJM)) {
+              if (!input.trySkipNullValue()) {
+                bONNOPPHFJM = input.readBool();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -673673359: {
+            if (input.isAtField(FieldNames.mPNPPPNIEBN)) {
+              if (!input.trySkipNullValue()) {
+                mPNPPPNIEBN = input.readBool();
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1177719543: {
+            if (input.isAtField(FieldNames.dAHEPDDJJCD)) {
+              if (!input.trySkipNullValue()) {
+                dAHEPDDJJCD = input.readBool();
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1761264701: {
+            if (input.isAtField(FieldNames.oABPEGPHJCP)) {
+              if (!input.trySkipNullValue()) {
+                oABPEGPHJCP = input.readBool();
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 280415948: {
+            if (input.isAtField(FieldNames.pFCCJBIENCK)) {
+              if (!input.trySkipNullValue()) {
+                pFCCJBIENCK = input.readBool();
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2136068070: {
+            if (input.isAtField(FieldNames.kBMNNNLACAE)) {
+              if (!input.trySkipNullValue()) {
+                kBMNNNLACAE = input.readBool();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -600099155: {
+            if (input.isAtField(FieldNames.hDEMABIFFFO)) {
+              if (!input.trySkipNullValue()) {
+                hDEMABIFFFO = input.readBool();
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -329,6 +1019,24 @@ public final class PlayerSettingInfoOuterClass {
      */
     static class FieldNames {
       static final FieldName displayRecordType = FieldName.forField("displayRecordType", "display_record_type");
+
+      static final FieldName dDDOAIJHMPB = FieldName.forField("DDDOAIJHMPB");
+
+      static final FieldName jCJCGHHHNGJ = FieldName.forField("JCJCGHHHNGJ");
+
+      static final FieldName bONNOPPHFJM = FieldName.forField("BONNOPPHFJM");
+
+      static final FieldName mPNPPPNIEBN = FieldName.forField("MPNPPPNIEBN");
+
+      static final FieldName dAHEPDDJJCD = FieldName.forField("DAHEPDDJJCD");
+
+      static final FieldName oABPEGPHJCP = FieldName.forField("OABPEGPHJCP");
+
+      static final FieldName pFCCJBIENCK = FieldName.forField("PFCCJBIENCK");
+
+      static final FieldName kBMNNNLACAE = FieldName.forField("KBMNNNLACAE");
+
+      static final FieldName hDEMABIFFFO = FieldName.forField("HDEMABIFFFO");
     }
   }
 }

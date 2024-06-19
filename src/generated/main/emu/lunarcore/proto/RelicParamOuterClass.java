@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RelicParamOuterClass {
   /**
-   * <pre>
-   *  Jbcmopckhpe
-   * </pre>
-   *
    * Protobuf type {@code RelicParam}
    */
   public static final class RelicParam extends ProtoMessage<RelicParam> implements Cloneable {
@@ -24,30 +20,26 @@ public final class RelicParamOuterClass {
 
     /**
      * <pre>
-     * menmcchlmnl
+     * ? 11
      * </pre>
      *
-     * <code>optional uint32 relic_type = 13;</code>
+     * <code>optional uint32 relic_unique_id = 10;</code>
      */
-    private int relicType;
+    private int relicUniqueId;
 
     /**
      * <pre>
-     * ekjochfepap
+     * ? 10
      * </pre>
      *
-     * <code>optional uint32 relic_unique_id = 14;</code>
+     * <code>optional uint32 relic_type = 11;</code>
      */
-    private int relicUniqueId;
+    private int relicType;
 
     private RelicParam() {
     }
 
     /**
-     * <pre>
-     *  Jbcmopckhpe
-     * </pre>
-     *
      * @return a new empty instance of {@code RelicParam}
      */
     public static RelicParam newInstance() {
@@ -56,89 +48,36 @@ public final class RelicParamOuterClass {
 
     /**
      * <pre>
-     * menmcchlmnl
+     * ? 11
      * </pre>
      *
-     * <code>optional uint32 relic_type = 13;</code>
-     * @return whether the relicType field is set
+     * <code>optional uint32 relic_unique_id = 10;</code>
+     * @return whether the relicUniqueId field is set
      */
-    public boolean hasRelicType() {
+    public boolean hasRelicUniqueId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     * menmcchlmnl
+     * ? 11
      * </pre>
      *
-     * <code>optional uint32 relic_type = 13;</code>
-     * @return this
-     */
-    public RelicParam clearRelicType() {
-      bitField0_ &= ~0x00000001;
-      relicType = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * menmcchlmnl
-     * </pre>
-     *
-     * <code>optional uint32 relic_type = 13;</code>
-     * @return the relicType
-     */
-    public int getRelicType() {
-      return relicType;
-    }
-
-    /**
-     * <pre>
-     * menmcchlmnl
-     * </pre>
-     *
-     * <code>optional uint32 relic_type = 13;</code>
-     * @param value the relicType to set
-     * @return this
-     */
-    public RelicParam setRelicType(final int value) {
-      bitField0_ |= 0x00000001;
-      relicType = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ekjochfepap
-     * </pre>
-     *
-     * <code>optional uint32 relic_unique_id = 14;</code>
-     * @return whether the relicUniqueId field is set
-     */
-    public boolean hasRelicUniqueId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ekjochfepap
-     * </pre>
-     *
-     * <code>optional uint32 relic_unique_id = 14;</code>
+     * <code>optional uint32 relic_unique_id = 10;</code>
      * @return this
      */
     public RelicParam clearRelicUniqueId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       relicUniqueId = 0;
       return this;
     }
 
     /**
      * <pre>
-     * ekjochfepap
+     * ? 11
      * </pre>
      *
-     * <code>optional uint32 relic_unique_id = 14;</code>
+     * <code>optional uint32 relic_unique_id = 10;</code>
      * @return the relicUniqueId
      */
     public int getRelicUniqueId() {
@@ -147,16 +86,69 @@ public final class RelicParamOuterClass {
 
     /**
      * <pre>
-     * ekjochfepap
+     * ? 11
      * </pre>
      *
-     * <code>optional uint32 relic_unique_id = 14;</code>
+     * <code>optional uint32 relic_unique_id = 10;</code>
      * @param value the relicUniqueId to set
      * @return this
      */
     public RelicParam setRelicUniqueId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       relicUniqueId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ? 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_type = 11;</code>
+     * @return whether the relicType field is set
+     */
+    public boolean hasRelicType() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     * ? 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_type = 11;</code>
+     * @return this
+     */
+    public RelicParam clearRelicType() {
+      bitField0_ &= ~0x00000002;
+      relicType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ? 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_type = 11;</code>
+     * @return the relicType
+     */
+    public int getRelicType() {
+      return relicType;
+    }
+
+    /**
+     * <pre>
+     * ? 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_type = 11;</code>
+     * @param value the relicType to set
+     * @return this
+     */
+    public RelicParam setRelicType(final int value) {
+      bitField0_ |= 0x00000002;
+      relicType = value;
       return this;
     }
 
@@ -165,8 +157,8 @@ public final class RelicParamOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        relicType = other.relicType;
         relicUniqueId = other.relicUniqueId;
+        relicType = other.relicType;
       }
       return this;
     }
@@ -177,11 +169,11 @@ public final class RelicParamOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRelicType()) {
-        setRelicType(other.relicType);
-      }
       if (other.hasRelicUniqueId()) {
         setRelicUniqueId(other.relicUniqueId);
+      }
+      if (other.hasRelicType()) {
+        setRelicType(other.relicType);
       }
       return this;
     }
@@ -193,8 +185,8 @@ public final class RelicParamOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      relicType = 0;
       relicUniqueId = 0;
+      relicType = 0;
       return this;
     }
 
@@ -218,19 +210,19 @@ public final class RelicParamOuterClass {
       }
       RelicParam other = (RelicParam) o;
       return bitField0_ == other.bitField0_
-        && (!hasRelicType() || relicType == other.relicType)
-        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId);
+        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId)
+        && (!hasRelicType() || relicType == other.relicType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(relicType);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(relicUniqueId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(relicType);
       }
     }
 
@@ -238,10 +230,10 @@ public final class RelicParamOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicType);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicType);
       }
       return size;
     }
@@ -253,18 +245,18 @@ public final class RelicParamOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
-            // relicType
-            relicType = input.readUInt32();
+          case 80: {
+            // relicUniqueId
+            relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 88) {
               break;
             }
           }
-          case 112: {
-            // relicUniqueId
-            relicUniqueId = input.readUInt32();
+          case 88: {
+            // relicType
+            relicType = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -289,10 +281,10 @@ public final class RelicParamOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.relicType, relicType);
+        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
+        output.writeUInt32(FieldNames.relicType, relicType);
       }
       output.endObject();
     }
@@ -304,11 +296,11 @@ public final class RelicParamOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 205067597:
-          case 2072147078: {
-            if (input.isAtField(FieldNames.relicType)) {
+          case -1966200481:
+          case 49648253: {
+            if (input.isAtField(FieldNames.relicUniqueId)) {
               if (!input.trySkipNullValue()) {
-                relicType = input.readUInt32();
+                relicUniqueId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -316,11 +308,11 @@ public final class RelicParamOuterClass {
             }
             break;
           }
-          case -1966200481:
-          case 49648253: {
-            if (input.isAtField(FieldNames.relicUniqueId)) {
+          case 205067597:
+          case 2072147078: {
+            if (input.isAtField(FieldNames.relicType)) {
               if (!input.trySkipNullValue()) {
-                relicUniqueId = input.readUInt32();
+                relicType = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -380,9 +372,9 @@ public final class RelicParamOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName relicType = FieldName.forField("relicType", "relic_type");
-
       static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
+
+      static final FieldName relicType = FieldName.forField("relicType", "relic_type");
     }
   }
 }

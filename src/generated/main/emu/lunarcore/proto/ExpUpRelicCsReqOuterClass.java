@@ -23,15 +23,15 @@ public final class ExpUpRelicCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * ekjochfepap
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 11;</code>
      */
     private int relicUniqueId;
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
@@ -51,6 +51,10 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * ekjochfepap
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 11;</code>
      * @return whether the relicUniqueId field is set
      */
@@ -59,6 +63,10 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * ekjochfepap
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 11;</code>
      * @return this
      */
@@ -69,6 +77,10 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * ekjochfepap
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 11;</code>
      * @return the relicUniqueId
      */
@@ -77,6 +89,10 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * ekjochfepap
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 11;</code>
      * @param value the relicUniqueId to set
      * @return this
@@ -88,10 +104,6 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @return whether the itemCostList field is set
      */
@@ -100,10 +112,6 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @return this
      */
@@ -114,10 +122,6 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -132,10 +136,6 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -150,10 +150,6 @@ public final class ExpUpRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * hmambnipfcd
-     * </pre>
-     *
      * <code>optional .ItemCostList item_cost_list = 1;</code>
      * @param value the itemCostList to set
      * @return this

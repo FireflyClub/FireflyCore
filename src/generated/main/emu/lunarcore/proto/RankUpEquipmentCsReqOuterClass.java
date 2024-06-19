@@ -13,22 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RankUpEquipmentCsReqOuterClass {
   /**
-   * <pre>
-   *  Hgncbehekhc
-   * </pre>
-   *
    * Protobuf type {@code RankUpEquipmentCsReq}
    */
   public static final class RankUpEquipmentCsReq extends ProtoMessage<RankUpEquipmentCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 equipment_unique_id = 2;</code>
+     * <code>optional uint32 equipment_unique_id = 12;</code>
      */
     private int equipmentUniqueId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -36,10 +36,6 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Hgncbehekhc
-     * </pre>
-     *
      * @return a new empty instance of {@code RankUpEquipmentCsReq}
      */
     public static RankUpEquipmentCsReq newInstance() {
@@ -47,7 +43,7 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 2;</code>
+     * <code>optional uint32 equipment_unique_id = 12;</code>
      * @return whether the equipmentUniqueId field is set
      */
     public boolean hasEquipmentUniqueId() {
@@ -55,7 +51,7 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 2;</code>
+     * <code>optional uint32 equipment_unique_id = 12;</code>
      * @return this
      */
     public RankUpEquipmentCsReq clearEquipmentUniqueId() {
@@ -65,7 +61,7 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 2;</code>
+     * <code>optional uint32 equipment_unique_id = 12;</code>
      * @return the equipmentUniqueId
      */
     public int getEquipmentUniqueId() {
@@ -73,7 +69,7 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 2;</code>
+     * <code>optional uint32 equipment_unique_id = 12;</code>
      * @param value the equipmentUniqueId to set
      * @return this
      */
@@ -84,7 +80,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -92,7 +92,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return this
      */
     public RankUpEquipmentCsReq clearItemCostList() {
@@ -102,7 +106,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +124,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +142,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 9;</code>
+     * <pre>
+     *  LLOHAMHGJFI
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -206,11 +222,11 @@ public final class RankUpEquipmentCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(equipmentUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -234,16 +250,16 @@ public final class RankUpEquipmentCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 96: {
             // equipmentUniqueId
             equipmentUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 34) {
               break;
             }
           }
-          case 74: {
+          case 34: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

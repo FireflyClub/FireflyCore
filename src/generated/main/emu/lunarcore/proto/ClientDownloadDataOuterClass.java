@@ -20,16 +20,28 @@ public final class ClientDownloadDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  BCLBBBIJLGC
+     * </pre>
+     *
      * <code>optional int64 time = 2;</code>
      */
     private long time;
 
     /**
+     * <pre>
+     *  IDFGMIDKPNG
+     * </pre>
+     *
      * <code>optional uint32 version = 1;</code>
      */
     private int version;
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      */
     private final RepeatedByte data = RepeatedByte.newEmptyInstance();
@@ -45,6 +57,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCLBBBIJLGC
+     * </pre>
+     *
      * <code>optional int64 time = 2;</code>
      * @return whether the time field is set
      */
@@ -53,6 +69,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCLBBBIJLGC
+     * </pre>
+     *
      * <code>optional int64 time = 2;</code>
      * @return this
      */
@@ -63,6 +83,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCLBBBIJLGC
+     * </pre>
+     *
      * <code>optional int64 time = 2;</code>
      * @return the time
      */
@@ -71,6 +95,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  BCLBBBIJLGC
+     * </pre>
+     *
      * <code>optional int64 time = 2;</code>
      * @param value the time to set
      * @return this
@@ -82,6 +110,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDFGMIDKPNG
+     * </pre>
+     *
      * <code>optional uint32 version = 1;</code>
      * @return whether the version field is set
      */
@@ -90,6 +122,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDFGMIDKPNG
+     * </pre>
+     *
      * <code>optional uint32 version = 1;</code>
      * @return this
      */
@@ -100,6 +136,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDFGMIDKPNG
+     * </pre>
+     *
      * <code>optional uint32 version = 1;</code>
      * @return the version
      */
@@ -108,6 +148,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDFGMIDKPNG
+     * </pre>
+     *
      * <code>optional uint32 version = 1;</code>
      * @param value the version to set
      * @return this
@@ -119,6 +163,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      * @return whether the data field is set
      */
@@ -127,6 +175,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      * @return this
      */
@@ -137,6 +189,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -151,6 +207,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -165,6 +225,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      * @param value the data to add
      * @return this
@@ -176,6 +240,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      * @param values the data to add
      * @return this
@@ -187,6 +255,10 @@ public final class ClientDownloadDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  MGCBDPHKOHG
+     * </pre>
+     *
      * <code>optional bytes data = 3;</code>
      * @param values the data to set
      * @return this

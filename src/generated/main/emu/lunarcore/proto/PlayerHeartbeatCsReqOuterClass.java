@@ -19,12 +19,20 @@ public final class PlayerHeartbeatCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 client_time_ms = 11;</code>
+     * <pre>
+     *  PBPEICMHAFE
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 10;</code>
      */
     private long clientTimeMs;
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      */
     private final ClientUploadDataOuterClass.ClientUploadData uploadData = ClientUploadDataOuterClass.ClientUploadData.newInstance();
 
@@ -39,7 +47,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 11;</code>
+     * <pre>
+     *  PBPEICMHAFE
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 10;</code>
      * @return whether the clientTimeMs field is set
      */
     public boolean hasClientTimeMs() {
@@ -47,7 +59,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 11;</code>
+     * <pre>
+     *  PBPEICMHAFE
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 10;</code>
      * @return this
      */
     public PlayerHeartbeatCsReq clearClientTimeMs() {
@@ -57,7 +73,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 11;</code>
+     * <pre>
+     *  PBPEICMHAFE
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 10;</code>
      * @return the clientTimeMs
      */
     public long getClientTimeMs() {
@@ -65,7 +85,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 11;</code>
+     * <pre>
+     *  PBPEICMHAFE
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 10;</code>
      * @param value the clientTimeMs to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      * @return whether the uploadData field is set
      */
     public boolean hasUploadData() {
@@ -84,7 +112,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      * @return this
      */
     public PlayerHeartbeatCsReq clearUploadData() {
@@ -94,7 +126,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ClientUploadData upload_data = 8;</code>
+     * <pre>
+     *  uint32 FKDKDLKNOAM = 14;
+     * </pre>
+     *
+     * <code>optional .ClientUploadData upload_data = 4;</code>
      * @param value the uploadData to set
      * @return this
      */
@@ -199,11 +243,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 80);
         output.writeUInt64NoTag(clientTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(uploadData);
       }
     }
@@ -227,16 +271,16 @@ public final class PlayerHeartbeatCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 80: {
             // clientTimeMs
             clientTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 34) {
               break;
             }
           }
-          case 66: {
+          case 34: {
             // uploadData
             input.readMessage(uploadData);
             bitField0_ |= 0x00000002;

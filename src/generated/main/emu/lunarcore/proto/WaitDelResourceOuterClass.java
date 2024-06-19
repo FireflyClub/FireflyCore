@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class WaitDelResourceOuterClass {
   /**
    * <pre>
-   *  Aahedljhoeb
+   *  GKKAKMDBGAD
    * </pre>
    *
    * Protobuf type {@code WaitDelResource}
@@ -23,21 +23,21 @@ public final class WaitDelResourceOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 num = 3;</code>
-     */
-    private int num;
-
-    /**
-     * <code>optional uint32 tid = 5;</code>
+     * <code>optional uint32 tid = 1;</code>
      */
     private int tid;
+
+    /**
+     * <code>optional uint32 num = 10;</code>
+     */
+    private int num;
 
     private WaitDelResource() {
     }
 
     /**
      * <pre>
-     *  Aahedljhoeb
+     *  GKKAKMDBGAD
      * </pre>
      *
      * @return a new empty instance of {@code WaitDelResource}
@@ -47,62 +47,25 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 3;</code>
-     * @return whether the num field is set
+     * <code>optional uint32 tid = 1;</code>
+     * @return whether the tid field is set
      */
-    public boolean hasNum() {
+    public boolean hasTid() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 num = 3;</code>
-     * @return this
-     */
-    public WaitDelResource clearNum() {
-      bitField0_ &= ~0x00000001;
-      num = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 num = 3;</code>
-     * @return the num
-     */
-    public int getNum() {
-      return num;
-    }
-
-    /**
-     * <code>optional uint32 num = 3;</code>
-     * @param value the num to set
-     * @return this
-     */
-    public WaitDelResource setNum(final int value) {
-      bitField0_ |= 0x00000001;
-      num = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 tid = 5;</code>
-     * @return whether the tid field is set
-     */
-    public boolean hasTid() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 tid = 5;</code>
+     * <code>optional uint32 tid = 1;</code>
      * @return this
      */
     public WaitDelResource clearTid() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       tid = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 tid = 5;</code>
+     * <code>optional uint32 tid = 1;</code>
      * @return the tid
      */
     public int getTid() {
@@ -110,13 +73,50 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 5;</code>
+     * <code>optional uint32 tid = 1;</code>
      * @param value the tid to set
      * @return this
      */
     public WaitDelResource setTid(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       tid = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 num = 10;</code>
+     * @return whether the num field is set
+     */
+    public boolean hasNum() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 num = 10;</code>
+     * @return this
+     */
+    public WaitDelResource clearNum() {
+      bitField0_ &= ~0x00000002;
+      num = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 num = 10;</code>
+     * @return the num
+     */
+    public int getNum() {
+      return num;
+    }
+
+    /**
+     * <code>optional uint32 num = 10;</code>
+     * @param value the num to set
+     * @return this
+     */
+    public WaitDelResource setNum(final int value) {
+      bitField0_ |= 0x00000002;
+      num = value;
       return this;
     }
 
@@ -125,8 +125,8 @@ public final class WaitDelResourceOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        num = other.num;
         tid = other.tid;
+        num = other.num;
       }
       return this;
     }
@@ -137,11 +137,11 @@ public final class WaitDelResourceOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasNum()) {
-        setNum(other.num);
-      }
       if (other.hasTid()) {
         setTid(other.tid);
+      }
+      if (other.hasNum()) {
+        setNum(other.num);
       }
       return this;
     }
@@ -153,8 +153,8 @@ public final class WaitDelResourceOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      num = 0;
       tid = 0;
+      num = 0;
       return this;
     }
 
@@ -178,19 +178,19 @@ public final class WaitDelResourceOuterClass {
       }
       WaitDelResource other = (WaitDelResource) o;
       return bitField0_ == other.bitField0_
-        && (!hasNum() || num == other.num)
-        && (!hasTid() || tid == other.tid);
+        && (!hasTid() || tid == other.tid)
+        && (!hasNum() || num == other.num);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(num);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(tid);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(num);
       }
     }
 
@@ -198,10 +198,10 @@ public final class WaitDelResourceOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
       }
       return size;
     }
@@ -213,18 +213,18 @@ public final class WaitDelResourceOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // num
-            num = input.readUInt32();
+          case 8: {
+            // tid
+            tid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 80) {
               break;
             }
           }
-          case 40: {
-            // tid
-            tid = input.readUInt32();
+          case 80: {
+            // num
+            num = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -249,10 +249,10 @@ public final class WaitDelResourceOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.num, num);
+        output.writeUInt32(FieldNames.tid, tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.tid, tid);
+        output.writeUInt32(FieldNames.num, num);
       }
       output.endObject();
     }
@@ -264,10 +264,10 @@ public final class WaitDelResourceOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 109446: {
-            if (input.isAtField(FieldNames.num)) {
+          case 114831: {
+            if (input.isAtField(FieldNames.tid)) {
               if (!input.trySkipNullValue()) {
-                num = input.readUInt32();
+                tid = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -275,10 +275,10 @@ public final class WaitDelResourceOuterClass {
             }
             break;
           }
-          case 114831: {
-            if (input.isAtField(FieldNames.tid)) {
+          case 109446: {
+            if (input.isAtField(FieldNames.num)) {
               if (!input.trySkipNullValue()) {
-                tid = input.readUInt32();
+                num = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -339,9 +339,9 @@ public final class WaitDelResourceOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName num = FieldName.forField("num");
-
       static final FieldName tid = FieldName.forField("tid");
+
+      static final FieldName num = FieldName.forField("num");
     }
   }
 }

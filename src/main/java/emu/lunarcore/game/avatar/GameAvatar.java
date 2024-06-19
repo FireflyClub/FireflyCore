@@ -300,7 +300,7 @@ public class GameAvatar implements GameEntity {
 
         for (var equip : this.getEquips().values()) {
             if (equip.getItemMainType() == ItemMainType.Relic) {
-                proto.addEquipRelicList(EquipRelic.newInstance().setSlot(equip.getEquipSlot()).setRelicUniqueId(equip.getInternalUid()));
+                proto.addEquipRelicList(EquipRelic.newInstance().setType(equip.getEquipSlot()).setRelicUniqueId(equip.getInternalUid()));
             } else if (equip.getItemMainType() == ItemMainType.Equipment) {
                 proto.setEquipmentUniqueId(equip.getInternalUid());
             }
@@ -410,7 +410,7 @@ public class GameAvatar implements GameEntity {
                         .setTid(equip.getItemId())
                         .setLevel(equip.getLevel())
                         .setExp(equip.getExp())
-                        .setSlot(equip.getEquipSlot())
+                        .setType(equip.getEquipSlot())
                         .setMainAffixId(equip.getMainAffix());
 
                 if (equip.getSubAffixes() != null) {

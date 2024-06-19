@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MapInfoChestTypeOuterClass {
   /**
+   * <pre>
+   *  HCAFMACKMJC
+   * </pre>
+   *
    * Protobuf enum {@code MapInfoChestType}
    */
   public enum MapInfoChestType implements ProtoEnum<MapInfoChestType> {

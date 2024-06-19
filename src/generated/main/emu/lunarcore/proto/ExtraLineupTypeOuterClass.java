@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class ExtraLineupTypeOuterClass {
   /**
+   * <pre>
+   *  EOOKPOABBOG
+   * </pre>
+   *
    * Protobuf enum {@code ExtraLineupType}
    */
   public enum ExtraLineupType implements ProtoEnum<ExtraLineupType> {

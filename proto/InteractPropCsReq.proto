@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// PMMJJMPACNE
 message InteractPropCsReq {
-    uint32 prop_entity_id = 9;
-    uint32 interact_id = 13;
+    uint32 interact_id = 13; // KHMKBMLJEIH
+    uint32 prop_entity_id = 15;
 }

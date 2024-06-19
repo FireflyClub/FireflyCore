@@ -440,9 +440,9 @@ public class Scene implements Tickable {
             group.addEntityList(entity.toSceneEntityProto());
         }
 
-        for (var group : groups.values()) {
+        /*for (var group : groups.values()) {
             proto.addEntityGroupList(group);
-        }
+        }*/
         
         // Add group states
         for (var entry : this.getGroupStates().int2IntEntrySet()) {

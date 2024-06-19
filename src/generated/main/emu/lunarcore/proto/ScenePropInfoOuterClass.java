@@ -10,43 +10,69 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedString;
 
 public final class ScenePropInfoOuterClass {
   /**
+   * <pre>
+   *  KFHIFAGJEFI
+   * </pre>
+   *
    * Protobuf type {@code ScenePropInfo}
    */
   public static final class ScenePropInfo extends ProtoMessage<ScenePropInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 create_time_ms = 1;</code>
+     * <pre>
+     *  LIAPHNJINKD
+     * </pre>
+     *
+     * <code>optional uint64 create_time_ms = 2;</code>
      */
     private long createTimeMs;
 
     /**
-     * <code>optional uint32 prop_id = 5;</code>
-     */
-    private int propId;
-
-    /**
-     * <code>optional uint32 life_time_ms = 6;</code>
+     * <pre>
+     *  CGLCAGGCCAG
+     * </pre>
+     *
+     * <code>optional uint32 life_time_ms = 4;</code>
      */
     private int lifeTimeMs;
 
     /**
-     * <code>optional uint32 prop_state = 11;</code>
+     * <pre>
+     *  GJOENIOJODJ
+     * </pre>
+     *
+     * <code>optional uint32 prop_id = 6;</code>
+     */
+    private int propId;
+
+    /**
+     * <code>optional uint32 prop_state = 9;</code>
      */
     private int propState;
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      */
     private final PropExtraInfoOuterClass.PropExtraInfo extraInfo = PropExtraInfoOuterClass.PropExtraInfo.newInstance();
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     */
+    private final RepeatedString triggerNameList = RepeatedString.newEmptyInstance();
 
     private ScenePropInfo() {
     }
 
     /**
+     * <pre>
+     *  KFHIFAGJEFI
+     * </pre>
+     *
      * @return a new empty instance of {@code ScenePropInfo}
      */
     public static ScenePropInfo newInstance() {
@@ -54,7 +80,11 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint64 create_time_ms = 1;</code>
+     * <pre>
+     *  LIAPHNJINKD
+     * </pre>
+     *
+     * <code>optional uint64 create_time_ms = 2;</code>
      * @return whether the createTimeMs field is set
      */
     public boolean hasCreateTimeMs() {
@@ -62,7 +92,11 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint64 create_time_ms = 1;</code>
+     * <pre>
+     *  LIAPHNJINKD
+     * </pre>
+     *
+     * <code>optional uint64 create_time_ms = 2;</code>
      * @return this
      */
     public ScenePropInfo clearCreateTimeMs() {
@@ -72,7 +106,11 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint64 create_time_ms = 1;</code>
+     * <pre>
+     *  LIAPHNJINKD
+     * </pre>
+     *
+     * <code>optional uint64 create_time_ms = 2;</code>
      * @return the createTimeMs
      */
     public long getCreateTimeMs() {
@@ -80,7 +118,11 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint64 create_time_ms = 1;</code>
+     * <pre>
+     *  LIAPHNJINKD
+     * </pre>
+     *
+     * <code>optional uint64 create_time_ms = 2;</code>
      * @param value the createTimeMs to set
      * @return this
      */
@@ -91,62 +133,37 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_id = 5;</code>
-     * @return whether the propId field is set
+     * <pre>
+     *  CGLCAGGCCAG
+     * </pre>
+     *
+     * <code>optional uint32 life_time_ms = 4;</code>
+     * @return whether the lifeTimeMs field is set
      */
-    public boolean hasPropId() {
+    public boolean hasLifeTimeMs() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 prop_id = 5;</code>
-     * @return this
-     */
-    public ScenePropInfo clearPropId() {
-      bitField0_ &= ~0x00000002;
-      propId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 prop_id = 5;</code>
-     * @return the propId
-     */
-    public int getPropId() {
-      return propId;
-    }
-
-    /**
-     * <code>optional uint32 prop_id = 5;</code>
-     * @param value the propId to set
-     * @return this
-     */
-    public ScenePropInfo setPropId(final int value) {
-      bitField0_ |= 0x00000002;
-      propId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 life_time_ms = 6;</code>
-     * @return whether the lifeTimeMs field is set
-     */
-    public boolean hasLifeTimeMs() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 life_time_ms = 6;</code>
+     * <pre>
+     *  CGLCAGGCCAG
+     * </pre>
+     *
+     * <code>optional uint32 life_time_ms = 4;</code>
      * @return this
      */
     public ScenePropInfo clearLifeTimeMs() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       lifeTimeMs = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 life_time_ms = 6;</code>
+     * <pre>
+     *  CGLCAGGCCAG
+     * </pre>
+     *
+     * <code>optional uint32 life_time_ms = 4;</code>
      * @return the lifeTimeMs
      */
     public int getLifeTimeMs() {
@@ -154,18 +171,75 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 life_time_ms = 6;</code>
+     * <pre>
+     *  CGLCAGGCCAG
+     * </pre>
+     *
+     * <code>optional uint32 life_time_ms = 4;</code>
      * @param value the lifeTimeMs to set
      * @return this
      */
     public ScenePropInfo setLifeTimeMs(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       lifeTimeMs = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 prop_state = 11;</code>
+     * <pre>
+     *  GJOENIOJODJ
+     * </pre>
+     *
+     * <code>optional uint32 prop_id = 6;</code>
+     * @return whether the propId field is set
+     */
+    public boolean hasPropId() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     *  GJOENIOJODJ
+     * </pre>
+     *
+     * <code>optional uint32 prop_id = 6;</code>
+     * @return this
+     */
+    public ScenePropInfo clearPropId() {
+      bitField0_ &= ~0x00000004;
+      propId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GJOENIOJODJ
+     * </pre>
+     *
+     * <code>optional uint32 prop_id = 6;</code>
+     * @return the propId
+     */
+    public int getPropId() {
+      return propId;
+    }
+
+    /**
+     * <pre>
+     *  GJOENIOJODJ
+     * </pre>
+     *
+     * <code>optional uint32 prop_id = 6;</code>
+     * @param value the propId to set
+     * @return this
+     */
+    public ScenePropInfo setPropId(final int value) {
+      bitField0_ |= 0x00000004;
+      propId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 prop_state = 9;</code>
      * @return whether the propState field is set
      */
     public boolean hasPropState() {
@@ -173,7 +247,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_state = 11;</code>
+     * <code>optional uint32 prop_state = 9;</code>
      * @return this
      */
     public ScenePropInfo clearPropState() {
@@ -183,7 +257,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_state = 11;</code>
+     * <code>optional uint32 prop_state = 9;</code>
      * @return the propState
      */
     public int getPropState() {
@@ -191,7 +265,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_state = 11;</code>
+     * <code>optional uint32 prop_state = 9;</code>
      * @param value the propState to set
      * @return this
      */
@@ -202,7 +276,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      * @return whether the extraInfo field is set
      */
     public boolean hasExtraInfo() {
@@ -210,7 +284,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      * @return this
      */
     public ScenePropInfo clearExtraInfo() {
@@ -220,7 +294,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -234,7 +308,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -248,7 +322,7 @@ public final class ScenePropInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropExtraInfo extra_info = 15;</code>
+     * <code>optional .PropExtraInfo extra_info = 7;</code>
      * @param value the extraInfo to set
      * @return this
      */
@@ -258,16 +332,85 @@ public final class ScenePropInfoOuterClass {
       return this;
     }
 
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     * @return whether the triggerNameList field is set
+     */
+    public boolean hasTriggerNameList() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     * @return this
+     */
+    public ScenePropInfo clearTriggerNameList() {
+      bitField0_ &= ~0x00000020;
+      triggerNameList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableTriggerNameList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedString getTriggerNameList() {
+      return triggerNameList;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedString getMutableTriggerNameList() {
+      bitField0_ |= 0x00000020;
+      return triggerNameList;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     * @param value the triggerNameList to add
+     * @return this
+     */
+    public ScenePropInfo addTriggerNameList(final CharSequence value) {
+      bitField0_ |= 0x00000020;
+      triggerNameList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 15;</code>
+     * @param values the triggerNameList to add
+     * @return this
+     */
+    public ScenePropInfo addAllTriggerNameList(final CharSequence... values) {
+      bitField0_ |= 0x00000020;
+      triggerNameList.addAll(values);
+      return this;
+    }
+
     @Override
     public ScenePropInfo copyFrom(final ScenePropInfo other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         createTimeMs = other.createTimeMs;
-        propId = other.propId;
         lifeTimeMs = other.lifeTimeMs;
+        propId = other.propId;
         propState = other.propState;
         extraInfo.copyFrom(other.extraInfo);
+        triggerNameList.copyFrom(other.triggerNameList);
       }
       return this;
     }
@@ -281,17 +424,20 @@ public final class ScenePropInfoOuterClass {
       if (other.hasCreateTimeMs()) {
         setCreateTimeMs(other.createTimeMs);
       }
-      if (other.hasPropId()) {
-        setPropId(other.propId);
-      }
       if (other.hasLifeTimeMs()) {
         setLifeTimeMs(other.lifeTimeMs);
+      }
+      if (other.hasPropId()) {
+        setPropId(other.propId);
       }
       if (other.hasPropState()) {
         setPropState(other.propState);
       }
       if (other.hasExtraInfo()) {
         getMutableExtraInfo().mergeFrom(other.extraInfo);
+      }
+      if (other.hasTriggerNameList()) {
+        getMutableTriggerNameList().addAll(other.triggerNameList);
       }
       return this;
     }
@@ -304,10 +450,11 @@ public final class ScenePropInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       createTimeMs = 0L;
-      propId = 0;
       lifeTimeMs = 0;
+      propId = 0;
       propState = 0;
       extraInfo.clear();
+      triggerNameList.clear();
       return this;
     }
 
@@ -319,6 +466,7 @@ public final class ScenePropInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       extraInfo.clearQuick();
+      triggerNameList.clear();
       return this;
     }
 
@@ -333,33 +481,40 @@ public final class ScenePropInfoOuterClass {
       ScenePropInfo other = (ScenePropInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasCreateTimeMs() || createTimeMs == other.createTimeMs)
-        && (!hasPropId() || propId == other.propId)
         && (!hasLifeTimeMs() || lifeTimeMs == other.lifeTimeMs)
+        && (!hasPropId() || propId == other.propId)
         && (!hasPropState() || propState == other.propState)
-        && (!hasExtraInfo() || extraInfo.equals(other.extraInfo));
+        && (!hasExtraInfo() || extraInfo.equals(other.extraInfo))
+        && (!hasTriggerNameList() || triggerNameList.equals(other.triggerNameList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 16);
         output.writeUInt64NoTag(createTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(propId);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(lifeTimeMs);
+        output.writeUInt32NoTag(propId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(propState);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(extraInfo);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        for (int i = 0; i < triggerNameList.length(); i++) {
+          output.writeRawByte((byte) 122);
+          output.writeStringNoTag(triggerNameList.get(i));
+        }
       }
     }
 
@@ -370,16 +525,19 @@ public final class ScenePropInfoOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(createTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(propId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(lifeTimeMs);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(propId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(propState);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(extraInfo);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        size += (1 * triggerNameList.length()) + ProtoSink.computeRepeatedStringSizeNoTag(triggerNameList);
       }
       return size;
     }
@@ -391,18 +549,18 @@ public final class ScenePropInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 16: {
             // createTimeMs
             createTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 32) {
               break;
             }
           }
-          case 40: {
-            // propId
-            propId = input.readUInt32();
+          case 32: {
+            // lifeTimeMs
+            lifeTimeMs = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 48) {
@@ -410,28 +568,36 @@ public final class ScenePropInfoOuterClass {
             }
           }
           case 48: {
-            // lifeTimeMs
-            lifeTimeMs = input.readUInt32();
+            // propId
+            propId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 72) {
               break;
             }
           }
-          case 88: {
+          case 72: {
             // propState
             propState = input.readUInt32();
             bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // extraInfo
+            input.readMessage(extraInfo);
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 122) {
               break;
             }
           }
           case 122: {
-            // extraInfo
-            input.readMessage(extraInfo);
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
+            // triggerNameList
+            tag = input.readRepeatedString(triggerNameList, tag);
+            bitField0_ |= 0x00000020;
             if (tag != 0) {
               break;
             }
@@ -457,16 +623,19 @@ public final class ScenePropInfoOuterClass {
         output.writeUInt64(FieldNames.createTimeMs, createTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.propId, propId);
+        output.writeUInt32(FieldNames.lifeTimeMs, lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.lifeTimeMs, lifeTimeMs);
+        output.writeUInt32(FieldNames.propId, propId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.propState, propState);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeMessage(FieldNames.extraInfo, extraInfo);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRepeatedString(FieldNames.triggerNameList, triggerNameList);
       }
       output.endObject();
     }
@@ -490,11 +659,11 @@ public final class ScenePropInfoOuterClass {
             }
             break;
           }
-          case -979804194:
-          case -309137545: {
-            if (input.isAtField(FieldNames.propId)) {
+          case -1226028177:
+          case 1665182229: {
+            if (input.isAtField(FieldNames.lifeTimeMs)) {
               if (!input.trySkipNullValue()) {
-                propId = input.readUInt32();
+                lifeTimeMs = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -502,11 +671,11 @@ public final class ScenePropInfoOuterClass {
             }
             break;
           }
-          case -1226028177:
-          case 1665182229: {
-            if (input.isAtField(FieldNames.lifeTimeMs)) {
+          case -979804194:
+          case -309137545: {
+            if (input.isAtField(FieldNames.propId)) {
               if (!input.trySkipNullValue()) {
-                lifeTimeMs = input.readUInt32();
+                propId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -532,6 +701,18 @@ public final class ScenePropInfoOuterClass {
               if (!input.trySkipNullValue()) {
                 input.readMessage(extraInfo);
                 bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -110500959:
+          case -107587573: {
+            if (input.isAtField(FieldNames.triggerNameList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedString(triggerNameList);
+                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -592,13 +773,15 @@ public final class ScenePropInfoOuterClass {
     static class FieldNames {
       static final FieldName createTimeMs = FieldName.forField("createTimeMs", "create_time_ms");
 
-      static final FieldName propId = FieldName.forField("propId", "prop_id");
-
       static final FieldName lifeTimeMs = FieldName.forField("lifeTimeMs", "life_time_ms");
+
+      static final FieldName propId = FieldName.forField("propId", "prop_id");
 
       static final FieldName propState = FieldName.forField("propState", "prop_state");
 
       static final FieldName extraInfo = FieldName.forField("extraInfo", "extra_info");
+
+      static final FieldName triggerNameList = FieldName.forField("triggerNameList", "trigger_name_list");
     }
   }
 }

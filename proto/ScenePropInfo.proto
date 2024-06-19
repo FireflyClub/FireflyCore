@@ -4,10 +4,12 @@ option java_package = "emu.lunarcore.proto";
 
 import "PropExtraInfo.proto";
 
+// KFHIFAGJEFI
 message ScenePropInfo {
-    uint32 life_time_ms = 6;
-    uint32 prop_id = 5;
-    uint32 prop_state = 11;
-    uint64 create_time_ms = 1;
-	PropExtraInfo extra_info = 15;
+	PropExtraInfo extra_info = 7;
+    uint32 prop_state = 9;
+    uint32 prop_id = 6; // GJOENIOJODJ
+    uint64 create_time_ms = 2; // LIAPHNJINKD
+	repeated string trigger_name_list = 15;
+    uint32 life_time_ms = 4; // CGLCAGGCCAG
 }

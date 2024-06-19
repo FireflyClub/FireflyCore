@@ -15,6 +15,10 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class MazeMapDataOuterClass {
   /**
+   * <pre>
+   *  GNIOCFIKGNE
+   * </pre>
+   *
    * Protobuf type {@code MazeMapData}
    */
   public static final class MazeMapData extends ProtoMessage<MazeMapData> implements Cloneable {
@@ -31,10 +35,6 @@ public final class MazeMapDataOuterClass {
     private int entryId;
 
     /**
-     * <pre>
-     * jkbgighlakf
-     * </pre>
-     *
      * <code>optional uint32 cur_map_entry_id = 11;</code>
      */
     private int curMapEntryId;
@@ -45,11 +45,6 @@ public final class MazeMapDataOuterClass {
     private final RepeatedInt unlockedTeleportList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      */
     private final RepeatedInt lightenSectionList = RepeatedInt.newEmptyInstance();
@@ -65,10 +60,6 @@ public final class MazeMapDataOuterClass {
     private final RepeatedMessage<MazeChestOuterClass.MazeChest> unlockedChestList = RepeatedMessage.newEmptyInstance(MazeChestOuterClass.MazeChest.getFactory());
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      */
     private final RepeatedMessage<MazeGroupOuterClass.MazeGroup> mazeGroupList = RepeatedMessage.newEmptyInstance(MazeGroupOuterClass.MazeGroup.getFactory());
@@ -77,6 +68,10 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  GNIOCFIKGNE
+     * </pre>
+     *
      * @return a new empty instance of {@code MazeMapData}
      */
     public static MazeMapData newInstance() {
@@ -158,10 +153,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     * jkbgighlakf
-     * </pre>
-     *
      * <code>optional uint32 cur_map_entry_id = 11;</code>
      * @return whether the curMapEntryId field is set
      */
@@ -170,10 +161,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     * jkbgighlakf
-     * </pre>
-     *
      * <code>optional uint32 cur_map_entry_id = 11;</code>
      * @return this
      */
@@ -184,10 +171,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     * jkbgighlakf
-     * </pre>
-     *
      * <code>optional uint32 cur_map_entry_id = 11;</code>
      * @return the curMapEntryId
      */
@@ -196,10 +179,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     * jkbgighlakf
-     * </pre>
-     *
      * <code>optional uint32 cur_map_entry_id = 11;</code>
      * @param value the curMapEntryId to set
      * @return this
@@ -279,11 +258,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      * @return whether the lightenSectionList field is set
      */
@@ -292,11 +266,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      * @return this
      */
@@ -307,11 +276,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -326,11 +290,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -345,11 +304,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      * @param value the lightenSectionList to add
      * @return this
@@ -361,11 +315,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 unk_scene = 13;
-     *  repeated Bgfmmoehjce jffklpbohgi = 4;
-     * </pre>
-     *
      * <code>repeated uint32 lighten_section_list = 12;</code>
      * @param values the lightenSectionList to add
      * @return this
@@ -513,10 +462,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @return whether the mazeGroupList field is set
      */
@@ -525,10 +470,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @return this
      */
@@ -539,10 +480,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -557,10 +494,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -575,10 +508,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @param value the mazeGroupList to add
      * @return this
@@ -590,10 +519,6 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @param values the mazeGroupList to add
      * @return this

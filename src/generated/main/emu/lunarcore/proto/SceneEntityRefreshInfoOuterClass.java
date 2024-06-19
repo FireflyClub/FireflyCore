@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SceneEntityRefreshInfoOuterClass {
   /**
    * <pre>
-   *  Kbikoelgpde
+   *  HFJEMBFAOCL
    * </pre>
    *
    * Protobuf type {@code SceneEntityRefreshInfo}
@@ -27,13 +27,13 @@ public final class SceneEntityRefreshInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 del_entity = 5;</code>
+     * <code>optional uint32 del_entity = 9;</code>
      */
     private int delEntity;
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -45,7 +45,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  Kbikoelgpde
+     *  HFJEMBFAOCL
      * </pre>
      *
      * @return a new empty instance of {@code SceneEntityRefreshInfo}
@@ -59,7 +59,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 del_entity = 5;</code>
+     * <code>optional uint32 del_entity = 9;</code>
      * @return whether the delEntity field is set
      */
     public boolean hasDelEntity() {
@@ -71,7 +71,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 del_entity = 5;</code>
+     * <code>optional uint32 del_entity = 9;</code>
      * @return this
      */
     public SceneEntityRefreshInfo clearDelEntity() {
@@ -85,7 +85,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 del_entity = 5;</code>
+     * <code>optional uint32 del_entity = 9;</code>
      * @return the delEntity
      */
     public int getDelEntity() {
@@ -97,7 +97,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 del_entity = 5;</code>
+     * <code>optional uint32 del_entity = 9;</code>
      * @param value the delEntity to set
      * @return this
      */
@@ -109,7 +109,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -121,7 +121,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -135,7 +135,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -153,7 +153,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -171,7 +171,7 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     *  gonncekbppg
+     *  KEOOGNDLBPE
      * </pre>
      *
      * <code>optional .SceneEntityInfo add_entity = 4;</code>
@@ -251,7 +251,7 @@ public final class SceneEntityRefreshInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(delEntity);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -279,7 +279,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 72: {
             // delEntity
             delEntity = input.readUInt32();
             bitField0_ |= 0x00000001;

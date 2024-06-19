@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "LineupInfo.proto";
 
 message GetAllLineupDataScRsp {
-    repeated LineupInfo lineup_list = 5;
-    uint32 cur_index = 3;
-    uint32 retcode = 10;
+    uint32 retcode = 15;
+    repeated LineupInfo lineup_list = 3; // LBMBMHADPNF
+    uint32 cur_index = 4; // FGAGAMPFABB
 }

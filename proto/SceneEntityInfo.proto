@@ -10,13 +10,13 @@ import "SceneNpcInfo.proto";
 import "ScenePropInfo.proto";
 
 message SceneEntityInfo {
-    uint32 entity_id = 6;
-    uint32 group_id = 2;
-    MotionInfo motion = 7;
-    uint32 inst_id = 15;
-    SceneActorInfo actor = 9;
-    SceneNpcMonsterInfo npc_monster = 5;
-    SceneNpcInfo npc = 12;
+    uint32 inst_id = 8;
+    MotionInfo motion = 13;
+    uint32 group_id = 14;
+    uint32 entity_id = 4;
+    SceneActorInfo actor = 6;
+    SceneNpcMonsterInfo npc_monster = 2;
+    SceneNpcInfo npc = 5;
     ScenePropInfo prop = 10;
-    SceneSummonUnitInfo summon_unit = 14;
+    SceneSummonUnitInfo summon_unit = 15;
 }

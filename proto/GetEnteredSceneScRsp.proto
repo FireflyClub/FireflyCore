@@ -6,6 +6,6 @@ import "EnteredSceneInfo.proto";
 
 // Fchnfpafjce
 message GetEnteredSceneScRsp {
-    repeated EnteredSceneInfo entered_scene_info = 15;
-    uint32 retcode = 8;
+    repeated EnteredSceneInfo entered_scene_info = 9; // BJNECAPDLNF
+    uint32 retcode = 6;
 }

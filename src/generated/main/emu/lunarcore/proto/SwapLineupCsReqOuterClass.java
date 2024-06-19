@@ -44,6 +44,10 @@ public final class SwapLineupCsReqOuterClass {
     private int extraLineupType;
 
     /**
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
      * <code>optional bool is_virtual = 10;</code>
      */
     private boolean isVirtual;
@@ -270,6 +274,10 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
      * <code>optional bool is_virtual = 10;</code>
      * @return whether the isVirtual field is set
      */
@@ -278,6 +286,10 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
      * <code>optional bool is_virtual = 10;</code>
      * @return this
      */
@@ -288,6 +300,10 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
      * <code>optional bool is_virtual = 10;</code>
      * @return the isVirtual
      */
@@ -296,6 +312,10 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
      * <code>optional bool is_virtual = 10;</code>
      * @param value the isVirtual to set
      * @return this

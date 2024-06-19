@@ -10,66 +10,99 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedInt;
 import us.hebi.quickbuf.RepeatedMessage;
 import us.hebi.quickbuf.Utf8String;
 
 public final class LineupInfoOuterClass {
   /**
+   * <pre>
+   *  JEPIBLEFLEO
+   * </pre>
+   *
    * Protobuf type {@code LineupInfo}
    */
   public static final class LineupInfo extends ProtoMessage<LineupInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  repeated uint32 acpjmbkckcl = 8;
-     * </pre>
-     *
      * <code>optional uint32 plane_id = 3;</code>
      */
     private int planeId;
 
     /**
-     * <code>optional uint32 max_mp = 9;</code>
-     */
-    private int maxMp;
-
-    /**
-     * <code>optional uint32 mp = 11;</code>
+     * <code>optional uint32 mp = 4;</code>
      */
     private int mp;
 
     /**
      * <pre>
-     *  bool njhblmbfmac = 6;
+     *  bool NIELAFGGLJB = 15;
      * </pre>
      *
-     * <code>optional uint32 leader_slot = 12;</code>
-     */
-    private int leaderSlot;
-
-    /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 index = 7;</code>
      */
     private int index;
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 10;</code>
+     * <code>optional uint32 leader_slot = 11;</code>
+     */
+    private int leaderSlot;
+
+    /**
+     * <code>optional uint32 GIBIDJKFBOK = 12;</code>
+     */
+    private int gIBIDJKFBOK;
+
+    /**
+     * <pre>
+     *  GHJGFOGMPGN
+     * </pre>
+     *
+     * <code>optional uint32 max_mp = 14;</code>
+     */
+    private int maxMp;
+
+    /**
+     * <code>optional .ExtraLineupType extra_lineup_type = 6;</code>
      */
     private int extraLineupType;
 
     /**
-     * <code>optional bool is_virtual = 2;</code>
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
+     * <code>optional bool is_virtual = 10;</code>
      */
     private boolean isVirtual;
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      */
     private final Utf8String name = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     */
+    private final RepeatedInt gLLFFBELFGC = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     */
+    private final RepeatedInt eAJMDIHNDCH = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     */
+    private final RepeatedInt jGDHJDIAJBD = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      */
     private final RepeatedMessage<LineupAvatarOuterClass.LineupAvatar> avatarList = RepeatedMessage.newEmptyInstance(LineupAvatarOuterClass.LineupAvatar.getFactory());
 
@@ -77,6 +110,10 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  JEPIBLEFLEO
+     * </pre>
+     *
      * @return a new empty instance of {@code LineupInfo}
      */
     public static LineupInfo newInstance() {
@@ -84,10 +121,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 acpjmbkckcl = 8;
-     * </pre>
-     *
      * <code>optional uint32 plane_id = 3;</code>
      * @return whether the planeId field is set
      */
@@ -96,10 +129,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 acpjmbkckcl = 8;
-     * </pre>
-     *
      * <code>optional uint32 plane_id = 3;</code>
      * @return this
      */
@@ -110,10 +139,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 acpjmbkckcl = 8;
-     * </pre>
-     *
      * <code>optional uint32 plane_id = 3;</code>
      * @return the planeId
      */
@@ -122,10 +147,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 acpjmbkckcl = 8;
-     * </pre>
-     *
      * <code>optional uint32 plane_id = 3;</code>
      * @param value the planeId to set
      * @return this
@@ -137,62 +158,25 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 max_mp = 9;</code>
-     * @return whether the maxMp field is set
+     * <code>optional uint32 mp = 4;</code>
+     * @return whether the mp field is set
      */
-    public boolean hasMaxMp() {
+    public boolean hasMp() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 max_mp = 9;</code>
-     * @return this
-     */
-    public LineupInfo clearMaxMp() {
-      bitField0_ &= ~0x00000002;
-      maxMp = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 max_mp = 9;</code>
-     * @return the maxMp
-     */
-    public int getMaxMp() {
-      return maxMp;
-    }
-
-    /**
-     * <code>optional uint32 max_mp = 9;</code>
-     * @param value the maxMp to set
-     * @return this
-     */
-    public LineupInfo setMaxMp(final int value) {
-      bitField0_ |= 0x00000002;
-      maxMp = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 mp = 11;</code>
-     * @return whether the mp field is set
-     */
-    public boolean hasMp() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 mp = 11;</code>
+     * <code>optional uint32 mp = 4;</code>
      * @return this
      */
     public LineupInfo clearMp() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       mp = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 mp = 11;</code>
+     * <code>optional uint32 mp = 4;</code>
      * @return the mp
      */
     public int getMp() {
@@ -200,22 +184,71 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 mp = 11;</code>
+     * <code>optional uint32 mp = 4;</code>
      * @param value the mp to set
      * @return this
      */
     public LineupInfo setMp(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       mp = value;
       return this;
     }
 
     /**
      * <pre>
-     *  bool njhblmbfmac = 6;
+     *  bool NIELAFGGLJB = 15;
      * </pre>
      *
-     * <code>optional uint32 leader_slot = 12;</code>
+     * <code>optional uint32 index = 7;</code>
+     * @return whether the index field is set
+     */
+    public boolean hasIndex() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     *  bool NIELAFGGLJB = 15;
+     * </pre>
+     *
+     * <code>optional uint32 index = 7;</code>
+     * @return this
+     */
+    public LineupInfo clearIndex() {
+      bitField0_ &= ~0x00000004;
+      index = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  bool NIELAFGGLJB = 15;
+     * </pre>
+     *
+     * <code>optional uint32 index = 7;</code>
+     * @return the index
+     */
+    public int getIndex() {
+      return index;
+    }
+
+    /**
+     * <pre>
+     *  bool NIELAFGGLJB = 15;
+     * </pre>
+     *
+     * <code>optional uint32 index = 7;</code>
+     * @param value the index to set
+     * @return this
+     */
+    public LineupInfo setIndex(final int value) {
+      bitField0_ |= 0x00000004;
+      index = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 leader_slot = 11;</code>
      * @return whether the leaderSlot field is set
      */
     public boolean hasLeaderSlot() {
@@ -223,11 +256,7 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool njhblmbfmac = 6;
-     * </pre>
-     *
-     * <code>optional uint32 leader_slot = 12;</code>
+     * <code>optional uint32 leader_slot = 11;</code>
      * @return this
      */
     public LineupInfo clearLeaderSlot() {
@@ -237,11 +266,7 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool njhblmbfmac = 6;
-     * </pre>
-     *
-     * <code>optional uint32 leader_slot = 12;</code>
+     * <code>optional uint32 leader_slot = 11;</code>
      * @return the leaderSlot
      */
     public int getLeaderSlot() {
@@ -249,11 +274,7 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool njhblmbfmac = 6;
-     * </pre>
-     *
-     * <code>optional uint32 leader_slot = 12;</code>
+     * <code>optional uint32 leader_slot = 11;</code>
      * @param value the leaderSlot to set
      * @return this
      */
@@ -264,62 +285,115 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
-     * @return whether the index field is set
+     * <code>optional uint32 GIBIDJKFBOK = 12;</code>
+     * @return whether the gIBIDJKFBOK field is set
      */
-    public boolean hasIndex() {
+    public boolean hasGIBIDJKFBOK() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 GIBIDJKFBOK = 12;</code>
      * @return this
      */
-    public LineupInfo clearIndex() {
+    public LineupInfo clearGIBIDJKFBOK() {
       bitField0_ &= ~0x00000010;
-      index = 0;
+      gIBIDJKFBOK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
-     * @return the index
+     * <code>optional uint32 GIBIDJKFBOK = 12;</code>
+     * @return the gIBIDJKFBOK
      */
-    public int getIndex() {
-      return index;
+    public int getGIBIDJKFBOK() {
+      return gIBIDJKFBOK;
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
-     * @param value the index to set
+     * <code>optional uint32 GIBIDJKFBOK = 12;</code>
+     * @param value the gIBIDJKFBOK to set
      * @return this
      */
-    public LineupInfo setIndex(final int value) {
+    public LineupInfo setGIBIDJKFBOK(final int value) {
       bitField0_ |= 0x00000010;
-      index = value;
+      gIBIDJKFBOK = value;
       return this;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 10;</code>
-     * @return whether the extraLineupType field is set
+     * <pre>
+     *  GHJGFOGMPGN
+     * </pre>
+     *
+     * <code>optional uint32 max_mp = 14;</code>
+     * @return whether the maxMp field is set
      */
-    public boolean hasExtraLineupType() {
+    public boolean hasMaxMp() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 10;</code>
+     * <pre>
+     *  GHJGFOGMPGN
+     * </pre>
+     *
+     * <code>optional uint32 max_mp = 14;</code>
+     * @return this
+     */
+    public LineupInfo clearMaxMp() {
+      bitField0_ &= ~0x00000020;
+      maxMp = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GHJGFOGMPGN
+     * </pre>
+     *
+     * <code>optional uint32 max_mp = 14;</code>
+     * @return the maxMp
+     */
+    public int getMaxMp() {
+      return maxMp;
+    }
+
+    /**
+     * <pre>
+     *  GHJGFOGMPGN
+     * </pre>
+     *
+     * <code>optional uint32 max_mp = 14;</code>
+     * @param value the maxMp to set
+     * @return this
+     */
+    public LineupInfo setMaxMp(final int value) {
+      bitField0_ |= 0x00000020;
+      maxMp = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .ExtraLineupType extra_lineup_type = 6;</code>
+     * @return whether the extraLineupType field is set
+     */
+    public boolean hasExtraLineupType() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>optional .ExtraLineupType extra_lineup_type = 6;</code>
      * @return this
      */
     public LineupInfo clearExtraLineupType() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000040;
       extraLineupType = 0;
       return this;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 10;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 6;</code>
      * @return the extraLineupType
      */
     public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
@@ -346,42 +420,54 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo setExtraLineupTypeValue(final int value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000040;
       extraLineupType = value;
       return this;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 10;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 6;</code>
      * @param value the extraLineupType to set
      * @return this
      */
     public LineupInfo setExtraLineupType(final ExtraLineupTypeOuterClass.ExtraLineupType value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000040;
       extraLineupType = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional bool is_virtual = 2;</code>
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
+     * <code>optional bool is_virtual = 10;</code>
      * @return whether the isVirtual field is set
      */
     public boolean hasIsVirtual() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional bool is_virtual = 2;</code>
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
+     * <code>optional bool is_virtual = 10;</code>
      * @return this
      */
     public LineupInfo clearIsVirtual() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000080;
       isVirtual = false;
       return this;
     }
 
     /**
-     * <code>optional bool is_virtual = 2;</code>
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
+     * <code>optional bool is_virtual = 10;</code>
      * @return the isVirtual
      */
     public boolean getIsVirtual() {
@@ -389,36 +475,40 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 2;</code>
+     * <pre>
+     *  LPIAFAAKJNO
+     * </pre>
+     *
+     * <code>optional bool is_virtual = 10;</code>
      * @param value the isVirtual to set
      * @return this
      */
     public LineupInfo setIsVirtual(final boolean value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000080;
       isVirtual = value;
       return this;
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @return whether the name field is set
      */
     public boolean hasName() {
-      return (bitField0_ & 0x00000080) != 0;
+      return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @return this
      */
     public LineupInfo clearName() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000100;
       name.clear();
       return this;
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @return the name
      */
     public String getName() {
@@ -426,7 +516,7 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @return internal {@code Utf8String} representation of name for reading
      */
     public Utf8String getNameBytes() {
@@ -434,56 +524,272 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @return internal {@code Utf8String} representation of name for modifications
      */
     public Utf8String getMutableNameBytes() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       return this.name;
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @param value the name to set
      * @return this
      */
     public LineupInfo setName(final CharSequence value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       name.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string name = 5;</code>
+     * <code>optional string name = 1;</code>
      * @param value the name to set
      * @return this
      */
     public LineupInfo setName(final Utf8String value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       name.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
-     * @return whether the avatarList field is set
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     * @return whether the gLLFFBELFGC field is set
      */
-    public boolean hasAvatarList() {
-      return (bitField0_ & 0x00000100) != 0;
+    public boolean hasGLLFFBELFGC() {
+      return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     * @return this
+     */
+    public LineupInfo clearGLLFFBELFGC() {
+      bitField0_ &= ~0x00000200;
+      gLLFFBELFGC.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableGLLFFBELFGC()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getGLLFFBELFGC() {
+      return gLLFFBELFGC;
+    }
+
+    /**
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableGLLFFBELFGC() {
+      bitField0_ |= 0x00000200;
+      return gLLFFBELFGC;
+    }
+
+    /**
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     * @param value the gLLFFBELFGC to add
+     * @return this
+     */
+    public LineupInfo addGLLFFBELFGC(final int value) {
+      bitField0_ |= 0x00000200;
+      gLLFFBELFGC.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 GLLFFBELFGC = 2;</code>
+     * @param values the gLLFFBELFGC to add
+     * @return this
+     */
+    public LineupInfo addAllGLLFFBELFGC(final int... values) {
+      bitField0_ |= 0x00000200;
+      gLLFFBELFGC.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     * @return whether the eAJMDIHNDCH field is set
+     */
+    public boolean hasEAJMDIHNDCH() {
+      return (bitField0_ & 0x00000400) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     * @return this
+     */
+    public LineupInfo clearEAJMDIHNDCH() {
+      bitField0_ &= ~0x00000400;
+      eAJMDIHNDCH.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableEAJMDIHNDCH()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getEAJMDIHNDCH() {
+      return eAJMDIHNDCH;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableEAJMDIHNDCH() {
+      bitField0_ |= 0x00000400;
+      return eAJMDIHNDCH;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     * @param value the eAJMDIHNDCH to add
+     * @return this
+     */
+    public LineupInfo addEAJMDIHNDCH(final int value) {
+      bitField0_ |= 0x00000400;
+      eAJMDIHNDCH.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 EAJMDIHNDCH = 9;</code>
+     * @param values the eAJMDIHNDCH to add
+     * @return this
+     */
+    public LineupInfo addAllEAJMDIHNDCH(final int... values) {
+      bitField0_ |= 0x00000400;
+      eAJMDIHNDCH.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     * @return whether the jGDHJDIAJBD field is set
+     */
+    public boolean hasJGDHJDIAJBD() {
+      return (bitField0_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     * @return this
+     */
+    public LineupInfo clearJGDHJDIAJBD() {
+      bitField0_ &= ~0x00000800;
+      jGDHJDIAJBD.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableJGDHJDIAJBD()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getJGDHJDIAJBD() {
+      return jGDHJDIAJBD;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableJGDHJDIAJBD() {
+      bitField0_ |= 0x00000800;
+      return jGDHJDIAJBD;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     * @param value the jGDHJDIAJBD to add
+     * @return this
+     */
+    public LineupInfo addJGDHJDIAJBD(final int value) {
+      bitField0_ |= 0x00000800;
+      jGDHJDIAJBD.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 JGDHJDIAJBD = 13;</code>
+     * @param values the jGDHJDIAJBD to add
+     * @return this
+     */
+    public LineupInfo addAllJGDHJDIAJBD(final int... values) {
+      bitField0_ |= 0x00000800;
+      jGDHJDIAJBD.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
+     * @return whether the avatarList field is set
+     */
+    public boolean hasAvatarList() {
+      return (bitField0_ & 0x00001000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      * @return this
      */
     public LineupInfo clearAvatarList() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00001000;
       avatarList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -497,7 +803,11 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -506,28 +816,36 @@ public final class LineupInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<LineupAvatarOuterClass.LineupAvatar> getMutableAvatarList() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00001000;
       return avatarList;
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      * @param value the avatarList to add
      * @return this
      */
     public LineupInfo addAvatarList(final LineupAvatarOuterClass.LineupAvatar value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00001000;
       avatarList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .LineupAvatar avatar_list = 7;</code>
+     * <pre>
+     *  EAIBJAPAPKP
+     * </pre>
+     *
+     * <code>repeated .LineupAvatar avatar_list = 5;</code>
      * @param values the avatarList to add
      * @return this
      */
     public LineupInfo addAllAvatarList(final LineupAvatarOuterClass.LineupAvatar... values) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00001000;
       avatarList.addAll(values);
       return this;
     }
@@ -538,13 +856,17 @@ public final class LineupInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         planeId = other.planeId;
-        maxMp = other.maxMp;
         mp = other.mp;
-        leaderSlot = other.leaderSlot;
         index = other.index;
+        leaderSlot = other.leaderSlot;
+        gIBIDJKFBOK = other.gIBIDJKFBOK;
+        maxMp = other.maxMp;
         extraLineupType = other.extraLineupType;
         isVirtual = other.isVirtual;
         name.copyFrom(other.name);
+        gLLFFBELFGC.copyFrom(other.gLLFFBELFGC);
+        eAJMDIHNDCH.copyFrom(other.eAJMDIHNDCH);
+        jGDHJDIAJBD.copyFrom(other.jGDHJDIAJBD);
         avatarList.copyFrom(other.avatarList);
       }
       return this;
@@ -559,17 +881,20 @@ public final class LineupInfoOuterClass {
       if (other.hasPlaneId()) {
         setPlaneId(other.planeId);
       }
-      if (other.hasMaxMp()) {
-        setMaxMp(other.maxMp);
-      }
       if (other.hasMp()) {
         setMp(other.mp);
+      }
+      if (other.hasIndex()) {
+        setIndex(other.index);
       }
       if (other.hasLeaderSlot()) {
         setLeaderSlot(other.leaderSlot);
       }
-      if (other.hasIndex()) {
-        setIndex(other.index);
+      if (other.hasGIBIDJKFBOK()) {
+        setGIBIDJKFBOK(other.gIBIDJKFBOK);
+      }
+      if (other.hasMaxMp()) {
+        setMaxMp(other.maxMp);
       }
       if (other.hasExtraLineupType()) {
         setExtraLineupTypeValue(other.extraLineupType);
@@ -579,6 +904,15 @@ public final class LineupInfoOuterClass {
       }
       if (other.hasName()) {
         getMutableNameBytes().copyFrom(other.name);
+      }
+      if (other.hasGLLFFBELFGC()) {
+        getMutableGLLFFBELFGC().addAll(other.gLLFFBELFGC);
+      }
+      if (other.hasEAJMDIHNDCH()) {
+        getMutableEAJMDIHNDCH().addAll(other.eAJMDIHNDCH);
+      }
+      if (other.hasJGDHJDIAJBD()) {
+        getMutableJGDHJDIAJBD().addAll(other.jGDHJDIAJBD);
       }
       if (other.hasAvatarList()) {
         getMutableAvatarList().addAll(other.avatarList);
@@ -594,13 +928,17 @@ public final class LineupInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       planeId = 0;
-      maxMp = 0;
       mp = 0;
-      leaderSlot = 0;
       index = 0;
+      leaderSlot = 0;
+      gIBIDJKFBOK = 0;
+      maxMp = 0;
       extraLineupType = 0;
       isVirtual = false;
       name.clear();
+      gLLFFBELFGC.clear();
+      eAJMDIHNDCH.clear();
+      jGDHJDIAJBD.clear();
       avatarList.clear();
       return this;
     }
@@ -613,6 +951,9 @@ public final class LineupInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       name.clear();
+      gLLFFBELFGC.clear();
+      eAJMDIHNDCH.clear();
+      jGDHJDIAJBD.clear();
       avatarList.clearQuick();
       return this;
     }
@@ -628,13 +969,17 @@ public final class LineupInfoOuterClass {
       LineupInfo other = (LineupInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasPlaneId() || planeId == other.planeId)
-        && (!hasMaxMp() || maxMp == other.maxMp)
         && (!hasMp() || mp == other.mp)
-        && (!hasLeaderSlot() || leaderSlot == other.leaderSlot)
         && (!hasIndex() || index == other.index)
+        && (!hasLeaderSlot() || leaderSlot == other.leaderSlot)
+        && (!hasGIBIDJKFBOK() || gIBIDJKFBOK == other.gIBIDJKFBOK)
+        && (!hasMaxMp() || maxMp == other.maxMp)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
         && (!hasIsVirtual() || isVirtual == other.isVirtual)
         && (!hasName() || name.equals(other.name))
+        && (!hasGLLFFBELFGC() || gLLFFBELFGC.equals(other.gLLFFBELFGC))
+        && (!hasEAJMDIHNDCH() || eAJMDIHNDCH.equals(other.eAJMDIHNDCH))
+        && (!hasJGDHJDIAJBD() || jGDHJDIAJBD.equals(other.jGDHJDIAJBD))
         && (!hasAvatarList() || avatarList.equals(other.avatarList));
     }
 
@@ -645,36 +990,58 @@ public final class LineupInfoOuterClass {
         output.writeUInt32NoTag(planeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(maxMp);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(mp);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(index);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(leaderSlot);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(index);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(gIBIDJKFBOK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeEnumNoTag(extraLineupType);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(maxMp);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeBoolNoTag(isVirtual);
+        output.writeRawByte((byte) 48);
+        output.writeEnumNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 42);
-        output.writeStringNoTag(name);
+        output.writeRawByte((byte) 80);
+        output.writeBoolNoTag(isVirtual);
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 10);
+        output.writeStringNoTag(name);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        for (int i = 0; i < gLLFFBELFGC.length(); i++) {
+          output.writeRawByte((byte) 16);
+          output.writeUInt32NoTag(gLLFFBELFGC.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        for (int i = 0; i < eAJMDIHNDCH.length(); i++) {
+          output.writeRawByte((byte) 72);
+          output.writeUInt32NoTag(eAJMDIHNDCH.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        for (int i = 0; i < jGDHJDIAJBD.length(); i++) {
+          output.writeRawByte((byte) 104);
+          output.writeUInt32NoTag(jGDHJDIAJBD.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         for (int i = 0; i < avatarList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 42);
           output.writeMessageNoTag(avatarList.get(i));
         }
       }
@@ -687,27 +1054,39 @@ public final class LineupInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxMp);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mp);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mp);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(leaderSlot);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gIBIDJKFBOK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxMp);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 2;
+        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(name);
+        size += 2;
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(name);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += (1 * gLLFFBELFGC.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gLLFFBELFGC);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        size += (1 * eAJMDIHNDCH.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(eAJMDIHNDCH);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        size += (1 * jGDHJDIAJBD.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(jGDHJDIAJBD);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         size += (1 * avatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarList);
       }
       return size;
@@ -725,80 +1104,116 @@ public final class LineupInfoOuterClass {
             planeId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 32) {
               break;
             }
           }
-          case 72: {
-            // maxMp
-            maxMp = input.readUInt32();
+          case 32: {
+            // mp
+            mp = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // index
+            index = input.readUInt32();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 88) {
               break;
             }
           }
           case 88: {
-            // mp
-            mp = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            // leaderSlot
+            leaderSlot = input.readUInt32();
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 96) {
               break;
             }
           }
           case 96: {
-            // leaderSlot
-            leaderSlot = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            // gIBIDJKFBOK
+            gIBIDJKFBOK = input.readUInt32();
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 112) {
               break;
             }
           }
-          case 104: {
-            // index
-            index = input.readUInt32();
-            bitField0_ |= 0x00000010;
+          case 112: {
+            // maxMp
+            maxMp = input.readUInt32();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // extraLineupType
+            final int value = input.readInt32();
+            if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
+              extraLineupType = value;
+              bitField0_ |= 0x00000040;
+            }
             tag = input.readTag();
             if (tag != 80) {
               break;
             }
           }
           case 80: {
-            // extraLineupType
-            final int value = input.readInt32();
-            if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
-              extraLineupType = value;
-              bitField0_ |= 0x00000020;
-            }
+            // isVirtual
+            isVirtual = input.readBool();
+            bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 10) {
               break;
             }
           }
-          case 16: {
-            // isVirtual
-            isVirtual = input.readBool();
-            bitField0_ |= 0x00000040;
+          case 10: {
+            // name
+            input.readString(name);
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 18) {
+              break;
+            }
+          }
+          case 18: {
+            // gLLFFBELFGC [packed=true]
+            input.readPackedUInt32(gLLFFBELFGC, tag);
+            bitField0_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
+            // eAJMDIHNDCH [packed=true]
+            input.readPackedUInt32(eAJMDIHNDCH, tag);
+            bitField0_ |= 0x00000400;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
+            // jGDHJDIAJBD [packed=true]
+            input.readPackedUInt32(jGDHJDIAJBD, tag);
+            bitField0_ |= 0x00000800;
             tag = input.readTag();
             if (tag != 42) {
               break;
             }
           }
           case 42: {
-            // name
-            input.readString(name);
-            bitField0_ |= 0x00000080;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
-            bitField0_ |= 0x00000100;
+            bitField0_ |= 0x00001000;
             if (tag != 0) {
               break;
             }
@@ -813,6 +1228,24 @@ public final class LineupInfoOuterClass {
             tag = input.readTag();
             break;
           }
+          case 16: {
+            // gLLFFBELFGC [packed=false]
+            tag = input.readRepeatedUInt32(gLLFFBELFGC, tag);
+            bitField0_ |= 0x00000200;
+            break;
+          }
+          case 72: {
+            // eAJMDIHNDCH [packed=false]
+            tag = input.readRepeatedUInt32(eAJMDIHNDCH, tag);
+            bitField0_ |= 0x00000400;
+            break;
+          }
+          case 104: {
+            // jGDHJDIAJBD [packed=false]
+            tag = input.readRepeatedUInt32(jGDHJDIAJBD, tag);
+            bitField0_ |= 0x00000800;
+            break;
+          }
         }
       }
     }
@@ -824,27 +1257,39 @@ public final class LineupInfoOuterClass {
         output.writeUInt32(FieldNames.planeId, planeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.maxMp, maxMp);
+        output.writeUInt32(FieldNames.mp, mp);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.mp, mp);
+        output.writeUInt32(FieldNames.index, index);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.leaderSlot, leaderSlot);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.index, index);
+        output.writeUInt32(FieldNames.gIBIDJKFBOK, gIBIDJKFBOK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
+        output.writeUInt32(FieldNames.maxMp, maxMp);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeBool(FieldNames.isVirtual, isVirtual);
+        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeString(FieldNames.name, name);
+        output.writeBool(FieldNames.isVirtual, isVirtual);
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        output.writeString(FieldNames.name, name);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRepeatedUInt32(FieldNames.gLLFFBELFGC, gLLFFBELFGC);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeRepeatedUInt32(FieldNames.eAJMDIHNDCH, eAJMDIHNDCH);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeRepeatedUInt32(FieldNames.jGDHJDIAJBD, jGDHJDIAJBD);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         output.writeRepeatedMessage(FieldNames.avatarList, avatarList);
       }
       output.endObject();
@@ -869,11 +1314,10 @@ public final class LineupInfoOuterClass {
             }
             break;
           }
-          case 103671335:
-          case -1081138594: {
-            if (input.isAtField(FieldNames.maxMp)) {
+          case 3491: {
+            if (input.isAtField(FieldNames.mp)) {
               if (!input.trySkipNullValue()) {
-                maxMp = input.readUInt32();
+                mp = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -881,10 +1325,10 @@ public final class LineupInfoOuterClass {
             }
             break;
           }
-          case 3491: {
-            if (input.isAtField(FieldNames.mp)) {
+          case 100346066: {
+            if (input.isAtField(FieldNames.index)) {
               if (!input.trySkipNullValue()) {
-                mp = input.readUInt32();
+                index = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -904,11 +1348,23 @@ public final class LineupInfoOuterClass {
             }
             break;
           }
-          case 100346066: {
-            if (input.isAtField(FieldNames.index)) {
+          case 1558794452: {
+            if (input.isAtField(FieldNames.gIBIDJKFBOK)) {
               if (!input.trySkipNullValue()) {
-                index = input.readUInt32();
+                gIBIDJKFBOK = input.readUInt32();
                 bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 103671335:
+          case -1081138594: {
+            if (input.isAtField(FieldNames.maxMp)) {
+              if (!input.trySkipNullValue()) {
+                maxMp = input.readUInt32();
+                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -922,7 +1378,7 @@ public final class LineupInfoOuterClass {
                 final ExtraLineupTypeOuterClass.ExtraLineupType value = input.readEnum(ExtraLineupTypeOuterClass.ExtraLineupType.converter());
                 if (value != null) {
                   extraLineupType = value.getNumber();
-                  bitField0_ |= 0x00000020;
+                  bitField0_ |= 0x00000040;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -937,7 +1393,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.isVirtual)) {
               if (!input.trySkipNullValue()) {
                 isVirtual = input.readBool();
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -948,7 +1404,40 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.name)) {
               if (!input.trySkipNullValue()) {
                 input.readString(name);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 681730144: {
+            if (input.isAtField(FieldNames.gLLFFBELFGC)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(gLLFFBELFGC);
+                bitField0_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -794748993: {
+            if (input.isAtField(FieldNames.eAJMDIHNDCH)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(eAJMDIHNDCH);
+                bitField0_ |= 0x00000400;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 649473881: {
+            if (input.isAtField(FieldNames.jGDHJDIAJBD)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(jGDHJDIAJBD);
+                bitField0_ |= 0x00000800;
               }
             } else {
               input.skipUnknownField();
@@ -960,7 +1449,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.avatarList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(avatarList);
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00001000;
               }
             } else {
               input.skipUnknownField();
@@ -1021,19 +1510,27 @@ public final class LineupInfoOuterClass {
     static class FieldNames {
       static final FieldName planeId = FieldName.forField("planeId", "plane_id");
 
-      static final FieldName maxMp = FieldName.forField("maxMp", "max_mp");
-
       static final FieldName mp = FieldName.forField("mp");
+
+      static final FieldName index = FieldName.forField("index");
 
       static final FieldName leaderSlot = FieldName.forField("leaderSlot", "leader_slot");
 
-      static final FieldName index = FieldName.forField("index");
+      static final FieldName gIBIDJKFBOK = FieldName.forField("GIBIDJKFBOK");
+
+      static final FieldName maxMp = FieldName.forField("maxMp", "max_mp");
 
       static final FieldName extraLineupType = FieldName.forField("extraLineupType", "extra_lineup_type");
 
       static final FieldName isVirtual = FieldName.forField("isVirtual", "is_virtual");
 
       static final FieldName name = FieldName.forField("name");
+
+      static final FieldName gLLFFBELFGC = FieldName.forField("GLLFFBELFGC");
+
+      static final FieldName eAJMDIHNDCH = FieldName.forField("EAJMDIHNDCH");
+
+      static final FieldName jGDHJDIAJBD = FieldName.forField("JGDHJDIAJBD");
 
       static final FieldName avatarList = FieldName.forField("avatarList", "avatar_list");
     }

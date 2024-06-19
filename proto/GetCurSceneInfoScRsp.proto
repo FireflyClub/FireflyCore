@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "SceneInfo.proto";
 
 message GetCurSceneInfoScRsp {
-    uint32 retcode = 14;
-    SceneInfo scene = 12;
+    SceneInfo scene = 3;
+    uint32 retcode = 5;
 }

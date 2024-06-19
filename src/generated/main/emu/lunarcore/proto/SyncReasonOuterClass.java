@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class SyncReasonOuterClass {
   /**
+   * <pre>
+   *  KFBNAOGGFDC
+   * </pre>
+   *
    * Protobuf enum {@code SyncReason}
    */
   public enum SyncReason implements ProtoEnum<SyncReason> {

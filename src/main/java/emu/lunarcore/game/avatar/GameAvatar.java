@@ -335,7 +335,7 @@ public class GameAvatar implements GameEntity {
         var proto = SceneEntityInfo.newInstance()
                 .setEntityId(this.getEntityId())
                 .setMotion(MotionInfo.newInstance().setPos(this.getPos().toProto()).setRot(this.getRot().toProto()))
-                .setActor(SceneActorInfo.newInstance().setBaseAvatarId(this.getAvatarId()).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
+                .setActor(SceneActorInfo.newInstance().setSceneAvatarId(this.getAvatarId()).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
 
         return proto;
     }

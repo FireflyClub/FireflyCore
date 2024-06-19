@@ -4,6 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "NpcRogueInfo.proto";
 
+// MCMFGNBEGMN
 message NpcExtraInfo {
-    NpcRogueInfo rogue_info = 5; // nleokpdbnjf
+	NpcRogueInfo rogue_info = 6; //?
+	// HIACMGHPPMI EMGDCFHDPDN = 7;
+	// ECHLHJALCKL CHIPFMIHANI = 6;
+	// AALAHNDEPBA OMBMBPGENKF = 14;
 }

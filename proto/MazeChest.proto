@@ -4,8 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "MapInfoChestType.proto";
 
+// IBAECMKPGBC
 message MazeChest {
-  	uint32 unlocked_amount_list = 12; // eliebjmijkb
-	uint32 total_amount_list = 7; // jnkdigdigoi
-	MapInfoChestType map_info_chest_type = 8; // fmangokfagc
+  	uint32 unlocked_amount_list = 12; //?
+	uint32 total_amount_list = 7; //?
+	MapInfoChestType map_info_chest_type = 8; // ILGDPFHEECL
 }

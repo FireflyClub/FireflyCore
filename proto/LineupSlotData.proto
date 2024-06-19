@@ -4,8 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "AvatarType.proto";
 
+// OMGGNKGPDCM
 message LineupSlotData {
-    AvatarType avatar_type = 12;
-    uint32 id = 3;
+    AvatarType avatar_type = 8;
+    uint32 id = 5;
     uint32 slot = 14;
 }

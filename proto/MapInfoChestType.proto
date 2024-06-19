@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// HCAFMACKMJC
 enum MapInfoChestType {
   MAP_INFO_CHEST_TYPE_NONE = 0;
   MAP_INFO_CHEST_TYPE_NORMAL = 101;

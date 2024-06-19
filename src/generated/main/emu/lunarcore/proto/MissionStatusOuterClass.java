@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MissionStatusOuterClass {
   /**
+   * <pre>
+   *  JNBIFJNNOLJ
+   * </pre>
+   *
    * Protobuf enum {@code MissionStatus}
    */
   public enum MissionStatus implements ProtoEnum<MissionStatus> {

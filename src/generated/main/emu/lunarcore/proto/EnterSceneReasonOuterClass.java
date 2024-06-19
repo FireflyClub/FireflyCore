@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class EnterSceneReasonOuterClass {
   /**
+   * <pre>
+   *  MOGLACHDHBJ
+   * </pre>
+   *
    * Protobuf enum {@code EnterSceneReason}
    */
   public enum EnterSceneReason implements ProtoEnum<EnterSceneReason> {

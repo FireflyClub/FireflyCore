@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// EOOKPOABBOG
 enum ExtraLineupType {
   LINEUP_NONE = 0;
   LINEUP_CHALLENGE = 1;

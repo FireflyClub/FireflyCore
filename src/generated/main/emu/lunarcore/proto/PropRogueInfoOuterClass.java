@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class PropRogueInfoOuterClass {
   /**
+   * <pre>
+   *  BHBNMCGBCFB
+   * </pre>
+   *
    * Protobuf type {@code PropRogueInfo}
    */
   public static final class PropRogueInfo extends ProtoMessage<PropRogueInfo> implements Cloneable {
@@ -32,6 +36,10 @@ public final class PropRogueInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BHBNMCGBCFB
+     * </pre>
+     *
      * @return a new empty instance of {@code PropRogueInfo}
      */
     public static PropRogueInfo newInstance() {

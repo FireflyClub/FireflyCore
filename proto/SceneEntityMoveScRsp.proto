@@ -6,7 +6,7 @@ import "EntityMotion.proto";
 import "ClientDownloadData.proto";
 
 message SceneEntityMoveScRsp {
-    uint32 retcode = 3;
-    repeated EntityMotion entity_motion_list = 12;
-    ClientDownloadData download_data = 7;
+    repeated EntityMotion entity_motion_list = 13; // IDIPCIEMHDM
+    ClientDownloadData download_data = 4;
+    uint32 retcode = 1;
 }

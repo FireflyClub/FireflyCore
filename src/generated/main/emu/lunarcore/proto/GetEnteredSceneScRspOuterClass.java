@@ -24,12 +24,16 @@ public final class GetEnteredSceneScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      */
     private final RepeatedMessage<EnteredSceneInfoOuterClass.EnteredSceneInfo> enteredSceneInfo = RepeatedMessage.newEmptyInstance(EnteredSceneInfoOuterClass.EnteredSceneInfo.getFactory());
 
@@ -48,7 +52,7 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -56,7 +60,7 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public GetEnteredSceneScRsp clearRetcode() {
@@ -66,7 +70,7 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -74,7 +78,7 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -85,7 +89,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      * @return whether the enteredSceneInfo field is set
      */
     public boolean hasEnteredSceneInfo() {
@@ -93,7 +101,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      * @return this
      */
     public GetEnteredSceneScRsp clearEnteredSceneInfo() {
@@ -103,7 +115,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -117,7 +133,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -132,7 +152,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      * @param value the enteredSceneInfo to add
      * @return this
      */
@@ -144,7 +168,11 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <code>repeated .EnteredSceneInfo entered_scene_info = 15;</code>
+     * <pre>
+     *  BJNECAPDLNF
+     * </pre>
+     *
+     * <code>repeated .EnteredSceneInfo entered_scene_info = 9;</code>
      * @param values the enteredSceneInfo to add
      * @return this
      */
@@ -221,12 +249,12 @@ public final class GetEnteredSceneScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < enteredSceneInfo.length(); i++) {
-          output.writeRawByte((byte) 122);
+          output.writeRawByte((byte) 74);
           output.writeMessageNoTag(enteredSceneInfo.get(i));
         }
       }
@@ -251,16 +279,16 @@ public final class GetEnteredSceneScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 74) {
               break;
             }
           }
-          case 122: {
+          case 74: {
             // enteredSceneInfo
             tag = input.readRepeatedMessage(enteredSceneInfo, tag);
             bitField0_ |= 0x00000002;

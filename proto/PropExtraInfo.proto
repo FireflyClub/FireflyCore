@@ -7,7 +7,11 @@ import "PropAeonInfo.proto";
 import "PropChessRogueInfo.proto";
 
 message PropExtraInfo {
-	PropRogueInfo rogue_info = 14;
+	PropRogueInfo rogue_info = 11;
 	PropAeonInfo aeon_info = 9;
 	PropChessRogueInfo chess_rogue_info = 3;
+	// BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+	// MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+	// BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+	// NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
 }

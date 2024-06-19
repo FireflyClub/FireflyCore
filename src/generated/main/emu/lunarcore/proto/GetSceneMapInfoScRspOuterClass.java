@@ -73,10 +73,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     private final RepeatedMessage<MazePropOuterClass.MazeProp> mazePropList = RepeatedMessage.newEmptyInstance(MazePropOuterClass.MazeProp.getFactory());
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      */
     private final RepeatedMessage<MazeGroupOuterClass.MazeGroup> mazeGroupList = RepeatedMessage.newEmptyInstance(MazeGroupOuterClass.MazeGroup.getFactory());
@@ -608,10 +604,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @return whether the mazeGroupList field is set
      */
@@ -620,10 +612,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @return this
      */
@@ -634,10 +622,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -652,10 +636,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -670,10 +650,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @param value the mazeGroupList to add
      * @return this
@@ -685,10 +661,6 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 opend_chest_num = 2;
-     * </pre>
-     *
      * <code>repeated .MazeGroup maze_group_list = 14;</code>
      * @param values the mazeGroupList to add
      * @return this

@@ -79,12 +79,13 @@ public class GameServerPacketHandler {
                 
                 // Handle packet
                 handler.handle(session, data);
+                // LunarCore.getLogger().info("Handled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
         }
 
-        // Log unhandled packets
-        //LunarCore.getLogger().info("Find packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
+        // Log packets
+        // LunarCore.getLogger().info("Find packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
     }
 }

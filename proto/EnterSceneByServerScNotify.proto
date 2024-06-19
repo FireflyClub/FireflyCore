@@ -6,8 +6,9 @@ import "LineupInfo.proto";
 import "EnterSceneReason.proto";
 import "SceneInfo.proto";
 
+// DMONNCPDANB
 message EnterSceneByServerScNotify {
-    EnterSceneReason reason = 5;
-    SceneInfo scene = 8;
-    LineupInfo lineup = 3;
+    EnterSceneReason reason = 1; // BMDCFGBDMFC
+    SceneInfo scene = 10; // PKBFHNLANEP
+    LineupInfo lineup = 7;
 }

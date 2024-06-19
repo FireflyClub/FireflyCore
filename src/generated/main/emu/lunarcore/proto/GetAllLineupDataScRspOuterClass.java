@@ -20,17 +20,25 @@ public final class GetAllLineupDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 cur_index = 3;</code>
+     * <pre>
+     *  FGAGAMPFABB
+     * </pre>
+     *
+     * <code>optional uint32 cur_index = 4;</code>
      */
     private int curIndex;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      */
     private final RepeatedMessage<LineupInfoOuterClass.LineupInfo> lineupList = RepeatedMessage.newEmptyInstance(LineupInfoOuterClass.LineupInfo.getFactory());
 
@@ -45,7 +53,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_index = 3;</code>
+     * <pre>
+     *  FGAGAMPFABB
+     * </pre>
+     *
+     * <code>optional uint32 cur_index = 4;</code>
      * @return whether the curIndex field is set
      */
     public boolean hasCurIndex() {
@@ -53,7 +65,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_index = 3;</code>
+     * <pre>
+     *  FGAGAMPFABB
+     * </pre>
+     *
+     * <code>optional uint32 cur_index = 4;</code>
      * @return this
      */
     public GetAllLineupDataScRsp clearCurIndex() {
@@ -63,7 +79,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_index = 3;</code>
+     * <pre>
+     *  FGAGAMPFABB
+     * </pre>
+     *
+     * <code>optional uint32 cur_index = 4;</code>
      * @return the curIndex
      */
     public int getCurIndex() {
@@ -71,7 +91,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_index = 3;</code>
+     * <pre>
+     *  FGAGAMPFABB
+     * </pre>
+     *
+     * <code>optional uint32 cur_index = 4;</code>
      * @param value the curIndex to set
      * @return this
      */
@@ -82,7 +106,7 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -90,7 +114,7 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
     public GetAllLineupDataScRsp clearRetcode() {
@@ -100,7 +124,7 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -108,7 +132,7 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -119,7 +143,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      * @return whether the lineupList field is set
      */
     public boolean hasLineupList() {
@@ -127,7 +155,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      * @return this
      */
     public GetAllLineupDataScRsp clearLineupList() {
@@ -137,7 +169,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +187,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +205,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      * @param value the lineupList to add
      * @return this
      */
@@ -176,7 +220,11 @@ public final class GetAllLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 5;</code>
+     * <pre>
+     *  LBMBMHADPNF
+     * </pre>
+     *
+     * <code>repeated .LineupInfo lineup_list = 3;</code>
      * @param values the lineupList to add
      * @return this
      */
@@ -258,16 +306,16 @@ public final class GetAllLineupDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(curIndex);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < lineupList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(lineupList.get(i));
         }
       }
@@ -295,25 +343,25 @@ public final class GetAllLineupDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 32: {
             // curIndex
             curIndex = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 120) {
               break;
             }
           }
-          case 80: {
+          case 120: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 26) {
               break;
             }
           }
-          case 42: {
+          case 26: {
             // lineupList
             tag = input.readRepeatedMessage(lineupList, tag);
             bitField0_ |= 0x00000004;

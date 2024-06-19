@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneUpdatePositionVersionNotifyOuterClass {
   /**
-   * <pre>
-   *  Amedhpnehca
-   * </pre>
-   *
    * Protobuf type {@code SceneUpdatePositionVersionNotify}
    */
   public static final class SceneUpdatePositionVersionNotify extends ProtoMessage<SceneUpdatePositionVersionNotify> implements Cloneable {
@@ -24,7 +20,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
 
     /**
      * <pre>
-     *  fenaeenhakc
+     *  LDEBGMDKOKP
      * </pre>
      *
      * <code>optional uint32 pos_version = 13;</code>
@@ -35,10 +31,6 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  Amedhpnehca
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneUpdatePositionVersionNotify}
      */
     public static SceneUpdatePositionVersionNotify newInstance() {
@@ -47,7 +39,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
 
     /**
      * <pre>
-     *  fenaeenhakc
+     *  LDEBGMDKOKP
      * </pre>
      *
      * <code>optional uint32 pos_version = 13;</code>
@@ -59,7 +51,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
 
     /**
      * <pre>
-     *  fenaeenhakc
+     *  LDEBGMDKOKP
      * </pre>
      *
      * <code>optional uint32 pos_version = 13;</code>
@@ -73,7 +65,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
 
     /**
      * <pre>
-     *  fenaeenhakc
+     *  LDEBGMDKOKP
      * </pre>
      *
      * <code>optional uint32 pos_version = 13;</code>
@@ -85,7 +77,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
 
     /**
      * <pre>
-     *  fenaeenhakc
+     *  LDEBGMDKOKP
      * </pre>
      *
      * <code>optional uint32 pos_version = 13;</code>

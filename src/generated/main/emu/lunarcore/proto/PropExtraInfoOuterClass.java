@@ -19,6 +19,13 @@ public final class PropExtraInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      */
     private final PropChessRogueInfoOuterClass.PropChessRogueInfo chessRogueInfo = PropChessRogueInfoOuterClass.PropChessRogueInfo.newInstance();
@@ -29,7 +36,7 @@ public final class PropExtraInfoOuterClass {
     private final PropAeonInfoOuterClass.PropAeonInfo aeonInfo = PropAeonInfoOuterClass.PropAeonInfo.newInstance();
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      */
     private final PropRogueInfoOuterClass.PropRogueInfo rogueInfo = PropRogueInfoOuterClass.PropRogueInfo.newInstance();
 
@@ -44,6 +51,13 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      * @return whether the chessRogueInfo field is set
      */
@@ -52,6 +66,13 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      * @return this
      */
@@ -62,6 +83,13 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -76,6 +104,13 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -90,6 +125,13 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  BILBOBBFAOP RogueTournDoorInfoFieldNumber = 13;
+     *  MFBMFHOKEME RogueTournWorkbenchInfoFieldNumber = 1;
+     *  BEJPOCFIJEN RogueGambleMachineInfoFieldNumber = 10;
+     *  NAAKAPMFELC RogueCurseChestInfoFieldNumber = 6;
+     * </pre>
+     *
      * <code>optional .PropChessRogueInfo chess_rogue_info = 3;</code>
      * @param value the chessRogueInfo to set
      * @return this
@@ -159,7 +201,7 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      * @return whether the rogueInfo field is set
      */
     public boolean hasRogueInfo() {
@@ -167,7 +209,7 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      * @return this
      */
     public PropExtraInfo clearRogueInfo() {
@@ -177,7 +219,7 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -191,7 +233,7 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -205,7 +247,7 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 14;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      * @param value the rogueInfo to set
      * @return this
      */
@@ -297,7 +339,7 @@ public final class PropExtraInfoOuterClass {
         output.writeMessageNoTag(aeonInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(rogueInfo);
       }
     }
@@ -338,11 +380,11 @@ public final class PropExtraInfoOuterClass {
             input.readMessage(aeonInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 90) {
               break;
             }
           }
-          case 114: {
+          case 90: {
             // rogueInfo
             input.readMessage(rogueInfo);
             bitField0_ |= 0x00000004;

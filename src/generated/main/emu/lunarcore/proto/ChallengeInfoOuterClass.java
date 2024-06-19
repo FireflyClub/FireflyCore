@@ -15,7 +15,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class ChallengeInfoOuterClass {
   /**
    * <pre>
-   *  Ekoofibmile
+   *  GKCKOMDIFLP
    * </pre>
    *
    * Protobuf type {@code ChallengeInfo}
@@ -56,14 +56,18 @@ public final class ChallengeInfoOuterClass {
     private int challengeId;
 
     /**
+     * <pre>
+     *  DBOFBCKCJAO
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     */
+    private int extraLineupType;
+
+    /**
      * <code>optional .ChallengeStatus status = 13;</code>
      */
     private int status;
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
-     */
-    private int extraLineupType;
 
     /**
      * <pre>
@@ -84,7 +88,7 @@ public final class ChallengeInfoOuterClass {
 
     /**
      * <pre>
-     *  Ekoofibmile
+     *  GKCKOMDIFLP
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeInfo}
@@ -290,11 +294,89 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  DBOFBCKCJAO
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * @return whether the extraLineupType field is set
+     */
+    public boolean hasExtraLineupType() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     *  DBOFBCKCJAO
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * @return this
+     */
+    public ChallengeInfo clearExtraLineupType() {
+      bitField0_ &= ~0x00000010;
+      extraLineupType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DBOFBCKCJAO
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * @return the extraLineupType
+     */
+    public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
+      return ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(extraLineupType);
+    }
+
+    /**
+     * Gets the value of the internal enum store. The result is
+     * equivalent to {@link ChallengeInfo#getExtraLineupType()}.getNumber().
+     *
+     * @return numeric wire representation
+     */
+    public int getExtraLineupTypeValue() {
+      return extraLineupType;
+    }
+
+    /**
+     * Sets the value of the internal enum store. This does not
+     * do any validity checks, so be sure to use appropriate value
+     * constants from {@link ExtraLineupTypeOuterClass.ExtraLineupType}. Setting an invalid value
+     * can cause {@link ChallengeInfo#getExtraLineupType()} to return null
+     *
+     * @param value the numeric wire value to set
+     * @return this
+     */
+    public ChallengeInfo setExtraLineupTypeValue(final int value) {
+      bitField0_ |= 0x00000010;
+      extraLineupType = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DBOFBCKCJAO
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * @param value the extraLineupType to set
+     * @return this
+     */
+    public ChallengeInfo setExtraLineupType(final ExtraLineupTypeOuterClass.ExtraLineupType value) {
+      bitField0_ |= 0x00000010;
+      extraLineupType = value.getNumber();
+      return this;
+    }
+
+    /**
      * <code>optional .ChallengeStatus status = 13;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
@@ -302,7 +384,7 @@ public final class ChallengeInfoOuterClass {
      * @return this
      */
     public ChallengeInfo clearStatus() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000020;
       status = 0;
       return this;
     }
@@ -335,7 +417,7 @@ public final class ChallengeInfoOuterClass {
      * @return this
      */
     public ChallengeInfo setStatusValue(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       status = value;
       return this;
     }
@@ -346,70 +428,8 @@ public final class ChallengeInfoOuterClass {
      * @return this
      */
     public ChallengeInfo setStatus(final ChallengeStatusOuterClass.ChallengeStatus value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       status = value.getNumber();
-      return this;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
-     * @return whether the extraLineupType field is set
-     */
-    public boolean hasExtraLineupType() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
-     * @return this
-     */
-    public ChallengeInfo clearExtraLineupType() {
-      bitField0_ &= ~0x00000020;
-      extraLineupType = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
-     * @return the extraLineupType
-     */
-    public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
-      return ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(extraLineupType);
-    }
-
-    /**
-     * Gets the value of the internal enum store. The result is
-     * equivalent to {@link ChallengeInfo#getExtraLineupType()}.getNumber().
-     *
-     * @return numeric wire representation
-     */
-    public int getExtraLineupTypeValue() {
-      return extraLineupType;
-    }
-
-    /**
-     * Sets the value of the internal enum store. This does not
-     * do any validity checks, so be sure to use appropriate value
-     * constants from {@link ExtraLineupTypeOuterClass.ExtraLineupType}. Setting an invalid value
-     * can cause {@link ChallengeInfo#getExtraLineupType()} to return null
-     *
-     * @param value the numeric wire value to set
-     * @return this
-     */
-    public ChallengeInfo setExtraLineupTypeValue(final int value) {
-      bitField0_ |= 0x00000020;
-      extraLineupType = value;
-      return this;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
-     * @param value the extraLineupType to set
-     * @return this
-     */
-    public ChallengeInfo setExtraLineupType(final ExtraLineupTypeOuterClass.ExtraLineupType value) {
-      bitField0_ |= 0x00000020;
-      extraLineupType = value.getNumber();
       return this;
     }
 
@@ -568,8 +588,8 @@ public final class ChallengeInfoOuterClass {
         roundCount = other.roundCount;
         scoreTwo = other.scoreTwo;
         challengeId = other.challengeId;
-        status = other.status;
         extraLineupType = other.extraLineupType;
+        status = other.status;
         storyInfo.copyFrom(other.storyInfo);
         archiveMonsterIdList.copyFrom(other.archiveMonsterIdList);
       }
@@ -594,11 +614,11 @@ public final class ChallengeInfoOuterClass {
       if (other.hasChallengeId()) {
         setChallengeId(other.challengeId);
       }
-      if (other.hasStatus()) {
-        setStatusValue(other.status);
-      }
       if (other.hasExtraLineupType()) {
         setExtraLineupTypeValue(other.extraLineupType);
+      }
+      if (other.hasStatus()) {
+        setStatusValue(other.status);
       }
       if (other.hasStoryInfo()) {
         getMutableStoryInfo().mergeFrom(other.storyInfo);
@@ -620,8 +640,8 @@ public final class ChallengeInfoOuterClass {
       roundCount = 0;
       scoreTwo = 0;
       challengeId = 0;
-      status = 0;
       extraLineupType = 0;
+      status = 0;
       storyInfo.clear();
       archiveMonsterIdList.clear();
       return this;
@@ -653,8 +673,8 @@ public final class ChallengeInfoOuterClass {
         && (!hasRoundCount() || roundCount == other.roundCount)
         && (!hasScoreTwo() || scoreTwo == other.scoreTwo)
         && (!hasChallengeId() || challengeId == other.challengeId)
-        && (!hasStatus() || status == other.status)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
+        && (!hasStatus() || status == other.status)
         && (!hasStoryInfo() || storyInfo.equals(other.storyInfo))
         && (!hasArchiveMonsterIdList() || archiveMonsterIdList.equals(other.archiveMonsterIdList));
     }
@@ -678,12 +698,12 @@ public final class ChallengeInfoOuterClass {
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeEnumNoTag(status);
+        output.writeRawByte((byte) 56);
+        output.writeEnumNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeEnumNoTag(extraLineupType);
+        output.writeRawByte((byte) 104);
+        output.writeEnumNoTag(status);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 34);
@@ -713,10 +733,10 @@ public final class ChallengeInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(status);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(status);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(storyInfo);
@@ -766,6 +786,18 @@ public final class ChallengeInfoOuterClass {
             challengeId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // extraLineupType
+            final int value = input.readInt32();
+            if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
+              extraLineupType = value;
+              bitField0_ |= 0x00000010;
+            }
+            tag = input.readTag();
             if (tag != 104) {
               break;
             }
@@ -775,18 +807,6 @@ public final class ChallengeInfoOuterClass {
             final int value = input.readInt32();
             if (ChallengeStatusOuterClass.ChallengeStatus.forNumber(value) != null) {
               status = value;
-              bitField0_ |= 0x00000010;
-            }
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
-            // extraLineupType
-            final int value = input.readInt32();
-            if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
-              extraLineupType = value;
               bitField0_ |= 0x00000020;
             }
             tag = input.readTag();
@@ -841,10 +861,10 @@ public final class ChallengeInfoOuterClass {
         output.writeUInt32(FieldNames.challengeId, challengeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeEnum(FieldNames.status, status, ChallengeStatusOuterClass.ChallengeStatus.converter());
+        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
+        output.writeEnum(FieldNames.status, status, ChallengeStatusOuterClass.ChallengeStatus.converter());
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeMessage(FieldNames.storyInfo, storyInfo);
@@ -909,12 +929,13 @@ public final class ChallengeInfoOuterClass {
             }
             break;
           }
-          case -892481550: {
-            if (input.isAtField(FieldNames.status)) {
+          case -468135527:
+          case -1144475077: {
+            if (input.isAtField(FieldNames.extraLineupType)) {
               if (!input.trySkipNullValue()) {
-                final ChallengeStatusOuterClass.ChallengeStatus value = input.readEnum(ChallengeStatusOuterClass.ChallengeStatus.converter());
+                final ExtraLineupTypeOuterClass.ExtraLineupType value = input.readEnum(ExtraLineupTypeOuterClass.ExtraLineupType.converter());
                 if (value != null) {
-                  status = value.getNumber();
+                  extraLineupType = value.getNumber();
                   bitField0_ |= 0x00000010;
                 } else {
                   input.skipUnknownEnumValue();
@@ -925,13 +946,12 @@ public final class ChallengeInfoOuterClass {
             }
             break;
           }
-          case -468135527:
-          case -1144475077: {
-            if (input.isAtField(FieldNames.extraLineupType)) {
+          case -892481550: {
+            if (input.isAtField(FieldNames.status)) {
               if (!input.trySkipNullValue()) {
-                final ExtraLineupTypeOuterClass.ExtraLineupType value = input.readEnum(ExtraLineupTypeOuterClass.ExtraLineupType.converter());
+                final ChallengeStatusOuterClass.ChallengeStatus value = input.readEnum(ChallengeStatusOuterClass.ChallengeStatus.converter());
                 if (value != null) {
-                  extraLineupType = value.getNumber();
+                  status = value.getNumber();
                   bitField0_ |= 0x00000020;
                 } else {
                   input.skipUnknownEnumValue();
@@ -1026,9 +1046,9 @@ public final class ChallengeInfoOuterClass {
 
       static final FieldName challengeId = FieldName.forField("challengeId", "challenge_id");
 
-      static final FieldName status = FieldName.forField("status");
-
       static final FieldName extraLineupType = FieldName.forField("extraLineupType", "extra_lineup_type");
+
+      static final FieldName status = FieldName.forField("status");
 
       static final FieldName storyInfo = FieldName.forField("storyInfo", "story_info");
 

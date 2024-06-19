@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SpBarInfo {
-    uint32 cur_sp = 1;
-    uint32 max_sp = 2;
+    uint32 cur_sp = 1; // MDLFNBOEBPO
+    uint32 max_sp = 2; // DBGPJBIBGGJ
 }

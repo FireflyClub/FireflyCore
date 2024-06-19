@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class PropChessRogueInfoOuterClass {
   /**
+   * <pre>
+   *  HOGOFOFOOHD
+   * </pre>
+   *
    * Protobuf type {@code PropChessRogueInfo}
    */
   public static final class PropChessRogueInfo extends ProtoMessage<PropChessRogueInfo> implements Cloneable {
@@ -32,6 +36,10 @@ public final class PropChessRogueInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  HOGOFOFOOHD
+     * </pre>
+     *
      * @return a new empty instance of {@code PropChessRogueInfo}
      */
     public static PropChessRogueInfo newInstance() {

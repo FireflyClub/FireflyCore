@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class MazeChestOuterClass {
   /**
+   * <pre>
+   *  IBAECMKPGBC
+   * </pre>
+   *
    * Protobuf type {@code MazeChest}
    */
   public static final class MazeChest extends ProtoMessage<MazeChest> implements Cloneable {
@@ -20,7 +24,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  jnkdigdigoi
+     * ?
      * </pre>
      *
      * <code>optional uint32 total_amount_list = 7;</code>
@@ -29,7 +33,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  eliebjmijkb
+     * ?
      * </pre>
      *
      * <code>optional uint32 unlocked_amount_list = 12;</code>
@@ -38,7 +42,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  fmangokfagc
+     *  ILGDPFHEECL
      * </pre>
      *
      * <code>optional .MapInfoChestType map_info_chest_type = 8;</code>
@@ -49,6 +53,10 @@ public final class MazeChestOuterClass {
     }
 
     /**
+     * <pre>
+     *  IBAECMKPGBC
+     * </pre>
+     *
      * @return a new empty instance of {@code MazeChest}
      */
     public static MazeChest newInstance() {
@@ -57,7 +65,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  jnkdigdigoi
+     * ?
      * </pre>
      *
      * <code>optional uint32 total_amount_list = 7;</code>
@@ -69,7 +77,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  jnkdigdigoi
+     * ?
      * </pre>
      *
      * <code>optional uint32 total_amount_list = 7;</code>
@@ -83,7 +91,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  jnkdigdigoi
+     * ?
      * </pre>
      *
      * <code>optional uint32 total_amount_list = 7;</code>
@@ -95,7 +103,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  jnkdigdigoi
+     * ?
      * </pre>
      *
      * <code>optional uint32 total_amount_list = 7;</code>
@@ -110,7 +118,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  eliebjmijkb
+     * ?
      * </pre>
      *
      * <code>optional uint32 unlocked_amount_list = 12;</code>
@@ -122,7 +130,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  eliebjmijkb
+     * ?
      * </pre>
      *
      * <code>optional uint32 unlocked_amount_list = 12;</code>
@@ -136,7 +144,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  eliebjmijkb
+     * ?
      * </pre>
      *
      * <code>optional uint32 unlocked_amount_list = 12;</code>
@@ -148,7 +156,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  eliebjmijkb
+     * ?
      * </pre>
      *
      * <code>optional uint32 unlocked_amount_list = 12;</code>
@@ -163,7 +171,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  fmangokfagc
+     *  ILGDPFHEECL
      * </pre>
      *
      * <code>optional .MapInfoChestType map_info_chest_type = 8;</code>
@@ -175,7 +183,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  fmangokfagc
+     *  ILGDPFHEECL
      * </pre>
      *
      * <code>optional .MapInfoChestType map_info_chest_type = 8;</code>
@@ -189,7 +197,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  fmangokfagc
+     *  ILGDPFHEECL
      * </pre>
      *
      * <code>optional .MapInfoChestType map_info_chest_type = 8;</code>
@@ -226,7 +234,7 @@ public final class MazeChestOuterClass {
 
     /**
      * <pre>
-     *  fmangokfagc
+     *  ILGDPFHEECL
      * </pre>
      *
      * <code>optional .MapInfoChestType map_info_chest_type = 8;</code>

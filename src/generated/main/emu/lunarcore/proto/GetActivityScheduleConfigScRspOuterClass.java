@@ -14,22 +14,22 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetActivityScheduleConfigScRspOuterClass {
   /**
-   * <pre>
-   *  Hpmcldlfnbp
-   * </pre>
-   *
    * Protobuf type {@code GetActivityScheduleConfigScRsp}
    */
   public static final class GetActivityScheduleConfigScRsp extends ProtoMessage<GetActivityScheduleConfigScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      */
     private final RepeatedMessage<ActivityScheduleInfoOuterClass.ActivityScheduleInfo> activityScheduleList = RepeatedMessage.newEmptyInstance(ActivityScheduleInfoOuterClass.ActivityScheduleInfo.getFactory());
 
@@ -37,10 +37,6 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Hpmcldlfnbp
-     * </pre>
-     *
      * @return a new empty instance of {@code GetActivityScheduleConfigScRsp}
      */
     public static GetActivityScheduleConfigScRsp newInstance() {
@@ -48,7 +44,7 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -56,7 +52,7 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public GetActivityScheduleConfigScRsp clearRetcode() {
@@ -66,7 +62,7 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -74,7 +70,7 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -85,7 +81,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      * @return whether the activityScheduleList field is set
      */
     public boolean hasActivityScheduleList() {
@@ -93,7 +93,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      * @return this
      */
     public GetActivityScheduleConfigScRsp clearActivityScheduleList() {
@@ -103,7 +107,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -118,7 +126,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -133,7 +145,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      * @param value the activityScheduleList to add
      * @return this
      */
@@ -145,7 +161,11 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 2;</code>
+     * <pre>
+     *  FNDOIALHKMJ
+     * </pre>
+     *
+     * <code>repeated .ActivityScheduleInfo activity_schedule_list = 15;</code>
      * @param values the activityScheduleList to add
      * @return this
      */
@@ -222,12 +242,12 @@ public final class GetActivityScheduleConfigScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < activityScheduleList.length(); i++) {
-          output.writeRawByte((byte) 18);
+          output.writeRawByte((byte) 122);
           output.writeMessageNoTag(activityScheduleList.get(i));
         }
       }
@@ -252,16 +272,16 @@ public final class GetActivityScheduleConfigScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 32: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 122) {
               break;
             }
           }
-          case 18: {
+          case 122: {
             // activityScheduleList
             tag = input.readRepeatedMessage(activityScheduleList, tag);
             bitField0_ |= 0x00000002;

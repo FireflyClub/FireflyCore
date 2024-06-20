@@ -6,14 +6,13 @@ import "GachaItem.proto";
 
 // Gfepbnpgejl
 message DoGachaScRsp {
-    uint32 ceiling_num = 13; //? 13 3 6 7
-    // uint32 giopaifpinl = 13;
+	uint32 HIBDIHGHEBK = 5;
     uint32 gacha_id = 10;
-    uint32 retcode = 8;
-    // uint32 jmdimikbkpp = 3;
-    // uint32 elfckbclpje = 6;
-    // uint32 is_claimed = 4;
-    repeated GachaItem gacha_item_list = 1; // gcejognjecl
-    uint32 gacha_num = 12;
-    // uint32 mbdhnchflhc = 7;
+    uint32 ceiling_num = 3;
+    uint32 retcode = 14;
+	uint32 AHGPHCGBHKB = 12;
+	uint32 FPOLCFHCKEK = 1;
+	uint32 FEEICAEKLNB = 7;
+    repeated GachaItem gacha_item_list = 2;
+    uint32 gacha_num = 8;
 }

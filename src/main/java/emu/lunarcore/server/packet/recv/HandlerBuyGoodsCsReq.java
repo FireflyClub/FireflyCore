@@ -1,5 +1,6 @@
 package emu.lunarcore.server.packet.recv;
 
+import emu.lunarcore.LunarCore;
 import emu.lunarcore.proto.BuyGoodsCsReqOuterClass.BuyGoodsCsReq;
 import emu.lunarcore.server.game.GameSession;
 import emu.lunarcore.server.packet.CmdId;
@@ -15,6 +16,8 @@ public class HandlerBuyGoodsCsReq extends PacketHandler {
         var req = BuyGoodsCsReq.parseFrom(data);
         
         var items = session.getServer().getShopService().buyGoods(session.getPlayer(), req.getShopId(), req.getGoodsId(), req.getGoodsNum());
+        LunarCore.getLogger().info(req.getShopId() + " " + req.getGoodsId() + " " + req.getGoodsNum());
+        
         session.send(new PacketBuyGoodsScRsp(req, items));
     }
 

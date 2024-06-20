@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// EHOJHJIJFOC
 enum Gender {
   GenderNone = 0;
   GenderMan = 1;

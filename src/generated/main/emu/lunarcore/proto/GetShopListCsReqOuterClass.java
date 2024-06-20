@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GetShopListCsReqOuterClass {
   /**
-   * <pre>
-   *  Ipljnkegfch
-   * </pre>
-   *
    * Protobuf type {@code GetShopListCsReq}
    */
   public static final class GetShopListCsReq extends ProtoMessage<GetShopListCsReq> implements Cloneable {
@@ -24,10 +20,10 @@ public final class GetShopListCsReqOuterClass {
 
     /**
      * <pre>
-     * edhoecbcbjo
+     *  EBNNHPMBILF
      * </pre>
      *
-     * <code>optional uint32 shop_type = 2;</code>
+     * <code>optional uint32 shop_type = 8;</code>
      */
     private int shopType;
 
@@ -35,10 +31,6 @@ public final class GetShopListCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ipljnkegfch
-     * </pre>
-     *
      * @return a new empty instance of {@code GetShopListCsReq}
      */
     public static GetShopListCsReq newInstance() {
@@ -47,10 +39,10 @@ public final class GetShopListCsReqOuterClass {
 
     /**
      * <pre>
-     * edhoecbcbjo
+     *  EBNNHPMBILF
      * </pre>
      *
-     * <code>optional uint32 shop_type = 2;</code>
+     * <code>optional uint32 shop_type = 8;</code>
      * @return whether the shopType field is set
      */
     public boolean hasShopType() {
@@ -59,10 +51,10 @@ public final class GetShopListCsReqOuterClass {
 
     /**
      * <pre>
-     * edhoecbcbjo
+     *  EBNNHPMBILF
      * </pre>
      *
-     * <code>optional uint32 shop_type = 2;</code>
+     * <code>optional uint32 shop_type = 8;</code>
      * @return this
      */
     public GetShopListCsReq clearShopType() {
@@ -73,10 +65,10 @@ public final class GetShopListCsReqOuterClass {
 
     /**
      * <pre>
-     * edhoecbcbjo
+     *  EBNNHPMBILF
      * </pre>
      *
-     * <code>optional uint32 shop_type = 2;</code>
+     * <code>optional uint32 shop_type = 8;</code>
      * @return the shopType
      */
     public int getShopType() {
@@ -85,10 +77,10 @@ public final class GetShopListCsReqOuterClass {
 
     /**
      * <pre>
-     * edhoecbcbjo
+     *  EBNNHPMBILF
      * </pre>
      *
-     * <code>optional uint32 shop_type = 2;</code>
+     * <code>optional uint32 shop_type = 8;</code>
      * @param value the shopType to set
      * @return this
      */
@@ -157,7 +149,7 @@ public final class GetShopListCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(shopType);
       }
     }
@@ -178,7 +170,7 @@ public final class GetShopListCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 64: {
             // shopType
             shopType = input.readUInt32();
             bitField0_ |= 0x00000001;

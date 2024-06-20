@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class GetFarmStageGachaInfoCsReqOuterClass {
   /**
-   * <pre>
-   *  Epjboobjmam
-   * </pre>
-   *
    * Protobuf type {@code GetFarmStageGachaInfoCsReq}
    */
   public static final class GetFarmStageGachaInfoCsReq extends ProtoMessage<GetFarmStageGachaInfoCsReq> implements Cloneable {
@@ -25,10 +21,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      */
     private final RepeatedInt farmStageGachaIdList = RepeatedInt.newEmptyInstance();
 
@@ -36,10 +32,6 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Epjboobjmam
-     * </pre>
-     *
      * @return a new empty instance of {@code GetFarmStageGachaInfoCsReq}
      */
     public static GetFarmStageGachaInfoCsReq newInstance() {
@@ -48,10 +40,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      * @return whether the farmStageGachaIdList field is set
      */
     public boolean hasFarmStageGachaIdList() {
@@ -60,10 +52,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      * @return this
      */
     public GetFarmStageGachaInfoCsReq clearFarmStageGachaIdList() {
@@ -74,10 +66,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,10 +84,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -110,10 +102,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      * @param value the farmStageGachaIdList to add
      * @return this
      */
@@ -125,10 +117,10 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  ilioofkdokp
+     *  LKAGGGNOGDM
      * </pre>
      *
-     * <code>repeated uint32 farm_stage_gacha_id_list = 12;</code>
+     * <code>repeated uint32 farm_stage_gacha_id_list = 5;</code>
      * @param values the farmStageGachaIdList to add
      * @return this
      */
@@ -199,7 +191,7 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < farmStageGachaIdList.length(); i++) {
-          output.writeRawByte((byte) 96);
+          output.writeRawByte((byte) 40);
           output.writeUInt32NoTag(farmStageGachaIdList.array()[i]);
         }
       }
@@ -221,7 +213,7 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 98: {
+          case 42: {
             // farmStageGachaIdList [packed=true]
             input.readPackedUInt32(farmStageGachaIdList, tag);
             bitField0_ |= 0x00000001;
@@ -240,7 +232,7 @@ public final class GetFarmStageGachaInfoCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 96: {
+          case 40: {
             // farmStageGachaIdList [packed=false]
             tag = input.readRepeatedUInt32(farmStageGachaIdList, tag);
             bitField0_ |= 0x00000001;

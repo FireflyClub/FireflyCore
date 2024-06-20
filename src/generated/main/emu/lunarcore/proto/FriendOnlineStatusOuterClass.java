@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class FriendOnlineStatusOuterClass {
   /**
+   * <pre>
+   *  BHOFBFFAJJK
+   * </pre>
+   *
    * Protobuf enum {@code FriendOnlineStatus}
    */
   public enum FriendOnlineStatus implements ProtoEnum<FriendOnlineStatus> {

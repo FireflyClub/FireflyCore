@@ -4,9 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "HeadIcon.proto";
 
-// Jaofedcebna
+// PIEPCJINODB
 message BoardDataSync {
-    // bool eaneldecgbg = 1;
-    string signature = 12;
-    repeated HeadIcon unlocked_head_icon_list = 13;//7
+	bool IBCEJMGKBCD = 12;
+    string signature = 6;
+    repeated HeadIcon unlocked_head_icon_list = 15;
 }

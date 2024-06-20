@@ -23,27 +23,19 @@ public final class DestroyItemCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  nakamomhjck
-     * </pre>
-     *
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 5;</code>
      */
     private int itemCount;
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
-     */
-    private int itemId;
-
-    /**
-     * <pre>
-     *  kgknhpdjmjg
-     * </pre>
-     *
-     * <code>optional uint32 cur_item_count = 12;</code>
+     * <code>optional uint32 cur_item_count = 8;</code>
      */
     private int curItemCount;
+
+    /**
+     * <code>optional uint32 item_id = 14;</code>
+     */
+    private int itemId;
 
     private DestroyItemCsReq() {
     }
@@ -60,11 +52,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  nakamomhjck
-     * </pre>
-     *
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 5;</code>
      * @return whether the itemCount field is set
      */
     public boolean hasItemCount() {
@@ -72,11 +60,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  nakamomhjck
-     * </pre>
-     *
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 5;</code>
      * @return this
      */
     public DestroyItemCsReq clearItemCount() {
@@ -86,11 +70,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  nakamomhjck
-     * </pre>
-     *
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 5;</code>
      * @return the itemCount
      */
     public int getItemCount() {
@@ -98,11 +78,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  nakamomhjck
-     * </pre>
-     *
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 5;</code>
      * @param value the itemCount to set
      * @return this
      */
@@ -113,74 +89,25 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
-     * @return whether the itemId field is set
+     * <code>optional uint32 cur_item_count = 8;</code>
+     * @return whether the curItemCount field is set
      */
-    public boolean hasItemId() {
+    public boolean hasCurItemCount() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
-     * @return this
-     */
-    public DestroyItemCsReq clearItemId() {
-      bitField0_ &= ~0x00000002;
-      itemId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 item_id = 11;</code>
-     * @return the itemId
-     */
-    public int getItemId() {
-      return itemId;
-    }
-
-    /**
-     * <code>optional uint32 item_id = 11;</code>
-     * @param value the itemId to set
-     * @return this
-     */
-    public DestroyItemCsReq setItemId(final int value) {
-      bitField0_ |= 0x00000002;
-      itemId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  kgknhpdjmjg
-     * </pre>
-     *
-     * <code>optional uint32 cur_item_count = 12;</code>
-     * @return whether the curItemCount field is set
-     */
-    public boolean hasCurItemCount() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     *  kgknhpdjmjg
-     * </pre>
-     *
-     * <code>optional uint32 cur_item_count = 12;</code>
+     * <code>optional uint32 cur_item_count = 8;</code>
      * @return this
      */
     public DestroyItemCsReq clearCurItemCount() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       curItemCount = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  kgknhpdjmjg
-     * </pre>
-     *
-     * <code>optional uint32 cur_item_count = 12;</code>
+     * <code>optional uint32 cur_item_count = 8;</code>
      * @return the curItemCount
      */
     public int getCurItemCount() {
@@ -188,17 +115,50 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  kgknhpdjmjg
-     * </pre>
-     *
-     * <code>optional uint32 cur_item_count = 12;</code>
+     * <code>optional uint32 cur_item_count = 8;</code>
      * @param value the curItemCount to set
      * @return this
      */
     public DestroyItemCsReq setCurItemCount(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       curItemCount = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 14;</code>
+     * @return whether the itemId field is set
+     */
+    public boolean hasItemId() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 14;</code>
+     * @return this
+     */
+    public DestroyItemCsReq clearItemId() {
+      bitField0_ &= ~0x00000004;
+      itemId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 14;</code>
+     * @return the itemId
+     */
+    public int getItemId() {
+      return itemId;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 14;</code>
+     * @param value the itemId to set
+     * @return this
+     */
+    public DestroyItemCsReq setItemId(final int value) {
+      bitField0_ |= 0x00000004;
+      itemId = value;
       return this;
     }
 
@@ -208,8 +168,8 @@ public final class DestroyItemCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         itemCount = other.itemCount;
-        itemId = other.itemId;
         curItemCount = other.curItemCount;
+        itemId = other.itemId;
       }
       return this;
     }
@@ -223,11 +183,11 @@ public final class DestroyItemCsReqOuterClass {
       if (other.hasItemCount()) {
         setItemCount(other.itemCount);
       }
-      if (other.hasItemId()) {
-        setItemId(other.itemId);
-      }
       if (other.hasCurItemCount()) {
         setCurItemCount(other.curItemCount);
+      }
+      if (other.hasItemId()) {
+        setItemId(other.itemId);
       }
       return this;
     }
@@ -240,8 +200,8 @@ public final class DestroyItemCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       itemCount = 0;
-      itemId = 0;
       curItemCount = 0;
+      itemId = 0;
       return this;
     }
 
@@ -266,23 +226,23 @@ public final class DestroyItemCsReqOuterClass {
       DestroyItemCsReq other = (DestroyItemCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasItemCount() || itemCount == other.itemCount)
-        && (!hasItemId() || itemId == other.itemId)
-        && (!hasCurItemCount() || curItemCount == other.curItemCount);
+        && (!hasCurItemCount() || curItemCount == other.curItemCount)
+        && (!hasItemId() || itemId == other.itemId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(itemCount);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(itemId);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(curItemCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(curItemCount);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(itemId);
       }
     }
 
@@ -293,10 +253,10 @@ public final class DestroyItemCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(itemCount);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(itemId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curItemCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(curItemCount);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(itemId);
       }
       return size;
     }
@@ -308,27 +268,27 @@ public final class DestroyItemCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 40: {
             // itemCount
             itemCount = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 64) {
               break;
             }
           }
-          case 88: {
-            // itemId
-            itemId = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
+          case 64: {
             // curItemCount
             curItemCount = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // itemId
+            itemId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -356,10 +316,10 @@ public final class DestroyItemCsReqOuterClass {
         output.writeUInt32(FieldNames.itemCount, itemCount);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.itemId, itemId);
+        output.writeUInt32(FieldNames.curItemCount, curItemCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.curItemCount, curItemCount);
+        output.writeUInt32(FieldNames.itemId, itemId);
       }
       output.endObject();
     }
@@ -383,11 +343,11 @@ public final class DestroyItemCsReqOuterClass {
             }
             break;
           }
-          case -1178662002:
-          case 2116204999: {
-            if (input.isAtField(FieldNames.itemId)) {
+          case -986513572:
+          case -1822146494: {
+            if (input.isAtField(FieldNames.curItemCount)) {
               if (!input.trySkipNullValue()) {
-                itemId = input.readUInt32();
+                curItemCount = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -395,11 +355,11 @@ public final class DestroyItemCsReqOuterClass {
             }
             break;
           }
-          case -986513572:
-          case -1822146494: {
-            if (input.isAtField(FieldNames.curItemCount)) {
+          case -1178662002:
+          case 2116204999: {
+            if (input.isAtField(FieldNames.itemId)) {
               if (!input.trySkipNullValue()) {
-                curItemCount = input.readUInt32();
+                itemId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -462,9 +422,9 @@ public final class DestroyItemCsReqOuterClass {
     static class FieldNames {
       static final FieldName itemCount = FieldName.forField("itemCount", "item_count");
 
-      static final FieldName itemId = FieldName.forField("itemId", "item_id");
-
       static final FieldName curItemCount = FieldName.forField("curItemCount", "cur_item_count");
+
+      static final FieldName itemId = FieldName.forField("itemId", "item_id");
     }
   }
 }

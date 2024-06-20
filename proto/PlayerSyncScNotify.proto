@@ -9,17 +9,31 @@ import "BoardDataSync.proto";
 import "Material.proto";
 import "AvatarSync.proto";
 import "MultiPathAvatarTypeInfo.proto";
+import "Quest.proto";
+import "WaitDelResource.proto";
+import "ItemList.proto";
 
 // Pkbehgpoein
 message PlayerSyncScNotify {
-    BoardDataSync board_data_sync = 1665;
-    AvatarSync avatar_sync = 5;
-    repeated Equipment equipment_list = 3;
-    repeated Relic relic_list = 6;
-    PlayerBasicInfo basic_info = 4;
-    repeated Material material_list = 14; // macfjibhfad
-    uint32 total_achievement_exp = 1725;
-    repeated MultiPathAvatarTypeInfo basic_type_info_list = 2;
-    repeated uint32 del_relic_list = 13;
-    repeated uint32 del_equipment_list = 1;
+	// repeated SectionStatus KCFHMKNMEFL = 1608;
+	// repeated GroupStatus MLMPBDHNFOP = 576;
+	repeated uint32 JMPCJNCOELE = 1310;
+    repeated Relic relic_list = 1; // PBBMHCJINDP
+    PlayerBasicInfo basic_info = 11;
+	// HAEFIKOHHBE NMKBMLFCCBA = 7;
+	repeated Material JFKKBHDOOKG = 935;
+	repeated WaitDelResource wait_del_resource_list = 10;
+    repeated Material material_list = 3; // DNGMMGGPHMF
+    repeated MultiPathAvatarTypeInfo basic_type_info_list = 1767;
+	// repeated ILDONLKCIDA FJMLPHPCBHD = 176;
+	// FJFLOACEAOL EHGOBOOMFJM = 12;
+	uint32 total_achievement_exp = 552;
+	ItemList BOMCAIFOIOC = 777;
+	repeated Quest EHMMJOOHAOJ = 5;
+    repeated Equipment equipment_list = 6; // GJMMEHNKKKP
+    repeated uint32 del_relic_list = 14; // FABBFHBIIPP
+	// JOABBLFOMLJ BKACEDKEGIC = 13;
+    AvatarSync avatar_sync = 9; // JNLLEHOOJFI
+    repeated uint32 del_equipment_list = 4; // HKGCEIANIKI
+    BoardDataSync board_data_sync = 1569; // JALPGEHEMGO
 }

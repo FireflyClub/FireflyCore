@@ -4,14 +4,15 @@ option java_package = "emu.lunarcore.proto";
 
 import "GachaCeiling.proto";
 
-// Dkddhjennfp
 message GachaInfo {
-	int64 end_time = 3;
-	GachaCeiling gacha_ceiling = 1; // eegijjhombi
-	repeated uint32 featured = 4; // hjefpibalip
-	uint32 gacha_id = 9; // dfdbmelhdpp
-	repeated uint32 up_info = 10; // ibomhpajoji
-	string detail_url = 7; //? fcleoobmbfn
-	int64 begin_time = 5;
-	string history_url = 2; //? mnnlngjlecd
+	repeated uint32 up_info = 4; // GHMLCKDCMCJ
+	string detail_url = 7; //?
+	string history_url = 14; //?
+	GachaCeiling gacha_ceiling = 10;
+	uint32 FPOLCFHCKEK = 3;
+	int64 end_time = 1; // PJKNPFGDPCL
+	uint32 gacha_id = 12;
+	repeated uint32 featured = 8; // NJLADJHFBAK
+	uint32 FEEICAEKLNB = 9;
+	int64 begin_time = 6; // DNAFLCAABIA
 }

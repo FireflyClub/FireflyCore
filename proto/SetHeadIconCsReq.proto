@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Liaoidnokcj
 message SetHeadIconCsReq {
-    uint32 id = 8;
+    uint32 id = 2;
 }

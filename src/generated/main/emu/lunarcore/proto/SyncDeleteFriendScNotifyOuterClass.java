@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SyncDeleteFriendScNotifyOuterClass {
   /**
-   * <pre>
-   *  Dnfhedkpdgg
-   * </pre>
-   *
    * Protobuf type {@code SyncDeleteFriendScNotify}
    */
   public static final class SyncDeleteFriendScNotify extends ProtoMessage<SyncDeleteFriendScNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 uid = 4;</code>
+     * <code>optional uint32 uid = 12;</code>
      */
     private int uid;
 
@@ -31,10 +27,6 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  Dnfhedkpdgg
-     * </pre>
-     *
      * @return a new empty instance of {@code SyncDeleteFriendScNotify}
      */
     public static SyncDeleteFriendScNotify newInstance() {
@@ -42,7 +34,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 4;</code>
+     * <code>optional uint32 uid = 12;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -50,7 +42,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 4;</code>
+     * <code>optional uint32 uid = 12;</code>
      * @return this
      */
     public SyncDeleteFriendScNotify clearUid() {
@@ -60,7 +52,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 4;</code>
+     * <code>optional uint32 uid = 12;</code>
      * @return the uid
      */
     public int getUid() {
@@ -68,7 +60,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 4;</code>
+     * <code>optional uint32 uid = 12;</code>
      * @param value the uid to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(uid);
       }
     }
@@ -158,7 +150,7 @@ public final class SyncDeleteFriendScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 96: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;

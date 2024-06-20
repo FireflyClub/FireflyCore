@@ -5,7 +5,11 @@ option java_package = "emu.lunarcore.proto";
 import "SimpleInfo.proto";
 import "PlayingState.proto";
 
+// MOAJBLNMOGO
 message FriendListInfo {
-	SimpleInfo simple_info = 2;
-	PlayingState playing_state = 9;
+	// OOHGAOBIIKP JIOMKAKHAJN = 2;
+	SimpleInfo simple_info = 1; // LCIPJDDICGF
+	PlayingState playing_state = 14; // JOGFEJBNEPC
+	string GAEGAAFPKFH = 13;
+	bool is_marked = 8;
 }

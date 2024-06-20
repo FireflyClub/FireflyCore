@@ -15,7 +15,7 @@ import us.hebi.quickbuf.Utf8String;
 public final class ChatOuterClass {
   /**
    * <pre>
-   *  Gnbekokccfc
+   *  IIBLKIBAAFA
    * </pre>
    *
    * Protobuf type {@code Chat}
@@ -25,47 +25,51 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1 
+     *  DHLFEFCEDOK
      * </pre>
      *
-     * <code>optional uint64 sent_time = 2;</code>
+     * <code>optional uint64 sent_time = 13;</code>
      */
     private long sentTime;
 
     /**
-     * <code>optional uint32 emote = 1;</code>
-     */
-    private int emote;
-
-    /**
-     * <code>optional uint32 sender_uid = 7;</code>
+     * <pre>
+     *  PNPLAPMKCMB
+     * </pre>
+     *
+     * <code>optional uint32 sender_uid = 5;</code>
      */
     private int senderUid;
 
     /**
+     * <code>optional uint32 emote = 11;</code>
+     */
+    private int emote;
+
+    /**
      * <pre>
-     * 1
+     *  JDKPHOFLFEN HHOGABOHHIO = 8;
      * </pre>
      *
-     * <code>optional .MsgType msg_type = 10;</code>
+     * <code>optional .MsgType msg_type = 15;</code>
      */
     private int msgType;
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
+     * <code>optional string word = 10;</code>
      */
-    private final Utf8String text = Utf8String.newEmptyInstance();
+    private final Utf8String word = Utf8String.newEmptyInstance();
 
     private Chat() {
     }
 
     /**
      * <pre>
-     *  Gnbekokccfc
+     *  IIBLKIBAAFA
      * </pre>
      *
      * @return a new empty instance of {@code Chat}
@@ -76,10 +80,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1 
+     *  DHLFEFCEDOK
      * </pre>
      *
-     * <code>optional uint64 sent_time = 2;</code>
+     * <code>optional uint64 sent_time = 13;</code>
      * @return whether the sentTime field is set
      */
     public boolean hasSentTime() {
@@ -88,10 +92,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1 
+     *  DHLFEFCEDOK
      * </pre>
      *
-     * <code>optional uint64 sent_time = 2;</code>
+     * <code>optional uint64 sent_time = 13;</code>
      * @return this
      */
     public Chat clearSentTime() {
@@ -102,10 +106,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1 
+     *  DHLFEFCEDOK
      * </pre>
      *
-     * <code>optional uint64 sent_time = 2;</code>
+     * <code>optional uint64 sent_time = 13;</code>
      * @return the sentTime
      */
     public long getSentTime() {
@@ -114,10 +118,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1 
+     *  DHLFEFCEDOK
      * </pre>
      *
-     * <code>optional uint64 sent_time = 2;</code>
+     * <code>optional uint64 sent_time = 13;</code>
      * @param value the sentTime to set
      * @return this
      */
@@ -128,62 +132,37 @@ public final class ChatOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 1;</code>
-     * @return whether the emote field is set
+     * <pre>
+     *  PNPLAPMKCMB
+     * </pre>
+     *
+     * <code>optional uint32 sender_uid = 5;</code>
+     * @return whether the senderUid field is set
      */
-    public boolean hasEmote() {
+    public boolean hasSenderUid() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 emote = 1;</code>
-     * @return this
-     */
-    public Chat clearEmote() {
-      bitField0_ &= ~0x00000002;
-      emote = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 emote = 1;</code>
-     * @return the emote
-     */
-    public int getEmote() {
-      return emote;
-    }
-
-    /**
-     * <code>optional uint32 emote = 1;</code>
-     * @param value the emote to set
-     * @return this
-     */
-    public Chat setEmote(final int value) {
-      bitField0_ |= 0x00000002;
-      emote = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 sender_uid = 7;</code>
-     * @return whether the senderUid field is set
-     */
-    public boolean hasSenderUid() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 sender_uid = 7;</code>
+     * <pre>
+     *  PNPLAPMKCMB
+     * </pre>
+     *
+     * <code>optional uint32 sender_uid = 5;</code>
      * @return this
      */
     public Chat clearSenderUid() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       senderUid = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 sender_uid = 7;</code>
+     * <pre>
+     *  PNPLAPMKCMB
+     * </pre>
+     *
+     * <code>optional uint32 sender_uid = 5;</code>
      * @return the senderUid
      */
     public int getSenderUid() {
@@ -191,22 +170,63 @@ public final class ChatOuterClass {
     }
 
     /**
-     * <code>optional uint32 sender_uid = 7;</code>
+     * <pre>
+     *  PNPLAPMKCMB
+     * </pre>
+     *
+     * <code>optional uint32 sender_uid = 5;</code>
      * @param value the senderUid to set
      * @return this
      */
     public Chat setSenderUid(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       senderUid = value;
       return this;
     }
 
     /**
+     * <code>optional uint32 emote = 11;</code>
+     * @return whether the emote field is set
+     */
+    public boolean hasEmote() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 emote = 11;</code>
+     * @return this
+     */
+    public Chat clearEmote() {
+      bitField0_ &= ~0x00000004;
+      emote = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 emote = 11;</code>
+     * @return the emote
+     */
+    public int getEmote() {
+      return emote;
+    }
+
+    /**
+     * <code>optional uint32 emote = 11;</code>
+     * @param value the emote to set
+     * @return this
+     */
+    public Chat setEmote(final int value) {
+      bitField0_ |= 0x00000004;
+      emote = value;
+      return this;
+    }
+
+    /**
      * <pre>
-     * 1
+     *  JDKPHOFLFEN HHOGABOHHIO = 8;
      * </pre>
      *
-     * <code>optional .MsgType msg_type = 10;</code>
+     * <code>optional .MsgType msg_type = 15;</code>
      * @return whether the msgType field is set
      */
     public boolean hasMsgType() {
@@ -215,10 +235,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1
+     *  JDKPHOFLFEN HHOGABOHHIO = 8;
      * </pre>
      *
-     * <code>optional .MsgType msg_type = 10;</code>
+     * <code>optional .MsgType msg_type = 15;</code>
      * @return this
      */
     public Chat clearMsgType() {
@@ -229,10 +249,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1
+     *  JDKPHOFLFEN HHOGABOHHIO = 8;
      * </pre>
      *
-     * <code>optional .MsgType msg_type = 10;</code>
+     * <code>optional .MsgType msg_type = 15;</code>
      * @return the msgType
      */
     public MsgTypeOuterClass.MsgType getMsgType() {
@@ -266,10 +286,10 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1
+     *  JDKPHOFLFEN HHOGABOHHIO = 8;
      * </pre>
      *
-     * <code>optional .MsgType msg_type = 10;</code>
+     * <code>optional .MsgType msg_type = 15;</code>
      * @param value the msgType to set
      * @return this
      */
@@ -281,94 +301,94 @@ public final class ChatOuterClass {
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @return whether the text field is set
+     * <code>optional string word = 10;</code>
+     * @return whether the word field is set
      */
-    public boolean hasText() {
+    public boolean hasWord() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
+     * <code>optional string word = 10;</code>
      * @return this
      */
-    public Chat clearText() {
+    public Chat clearWord() {
       bitField0_ &= ~0x00000010;
-      text.clear();
+      word.clear();
       return this;
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @return the text
+     * <code>optional string word = 10;</code>
+     * @return the word
      */
-    public String getText() {
-      return text.getString();
+    public String getWord() {
+      return word.getString();
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @return internal {@code Utf8String} representation of text for reading
+     * <code>optional string word = 10;</code>
+     * @return internal {@code Utf8String} representation of word for reading
      */
-    public Utf8String getTextBytes() {
-      return this.text;
+    public Utf8String getWordBytes() {
+      return this.word;
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @return internal {@code Utf8String} representation of text for modifications
+     * <code>optional string word = 10;</code>
+     * @return internal {@code Utf8String} representation of word for modifications
      */
-    public Utf8String getMutableTextBytes() {
+    public Utf8String getMutableWordBytes() {
       bitField0_ |= 0x00000010;
-      return this.text;
+      return this.word;
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @param value the text to set
+     * <code>optional string word = 10;</code>
+     * @param value the word to set
      * @return this
      */
-    public Chat setText(final CharSequence value) {
+    public Chat setWord(final CharSequence value) {
       bitField0_ |= 0x00000010;
-      text.copyFrom(value);
+      word.copyFrom(value);
       return this;
     }
 
     /**
      * <pre>
-     * 1
+     *  CIEFPABJMDO
      * </pre>
      *
-     * <code>optional string text = 5;</code>
-     * @param value the text to set
+     * <code>optional string word = 10;</code>
+     * @param value the word to set
      * @return this
      */
-    public Chat setText(final Utf8String value) {
+    public Chat setWord(final Utf8String value) {
       bitField0_ |= 0x00000010;
-      text.copyFrom(value);
+      word.copyFrom(value);
       return this;
     }
 
@@ -378,10 +398,10 @@ public final class ChatOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         sentTime = other.sentTime;
-        emote = other.emote;
         senderUid = other.senderUid;
+        emote = other.emote;
         msgType = other.msgType;
-        text.copyFrom(other.text);
+        word.copyFrom(other.word);
       }
       return this;
     }
@@ -395,17 +415,17 @@ public final class ChatOuterClass {
       if (other.hasSentTime()) {
         setSentTime(other.sentTime);
       }
-      if (other.hasEmote()) {
-        setEmote(other.emote);
-      }
       if (other.hasSenderUid()) {
         setSenderUid(other.senderUid);
+      }
+      if (other.hasEmote()) {
+        setEmote(other.emote);
       }
       if (other.hasMsgType()) {
         setMsgTypeValue(other.msgType);
       }
-      if (other.hasText()) {
-        getMutableTextBytes().copyFrom(other.text);
+      if (other.hasWord()) {
+        getMutableWordBytes().copyFrom(other.word);
       }
       return this;
     }
@@ -418,10 +438,10 @@ public final class ChatOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       sentTime = 0L;
-      emote = 0;
       senderUid = 0;
+      emote = 0;
       msgType = 0;
-      text.clear();
+      word.clear();
       return this;
     }
 
@@ -432,7 +452,7 @@ public final class ChatOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      text.clear();
+      word.clear();
       return this;
     }
 
@@ -447,33 +467,33 @@ public final class ChatOuterClass {
       Chat other = (Chat) o;
       return bitField0_ == other.bitField0_
         && (!hasSentTime() || sentTime == other.sentTime)
-        && (!hasEmote() || emote == other.emote)
         && (!hasSenderUid() || senderUid == other.senderUid)
+        && (!hasEmote() || emote == other.emote)
         && (!hasMsgType() || msgType == other.msgType)
-        && (!hasText() || text.equals(other.text));
+        && (!hasWord() || word.equals(other.word));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 104);
         output.writeUInt64NoTag(sentTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(emote);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(senderUid);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(emote);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 120);
         output.writeEnumNoTag(msgType);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 42);
-        output.writeStringNoTag(text);
+        output.writeRawByte((byte) 82);
+        output.writeStringNoTag(word);
       }
     }
 
@@ -484,16 +504,16 @@ public final class ChatOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(sentTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(emote);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(senderUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(senderUid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(emote);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(msgType);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(text);
+        size += 1 + ProtoSink.computeStringSizeNoTag(word);
       }
       return size;
     }
@@ -505,34 +525,34 @@ public final class ChatOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 104: {
             // sentTime
             sentTime = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 40) {
               break;
             }
           }
-          case 8: {
-            // emote
-            emote = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
+          case 40: {
             // senderUid
             senderUid = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 88) {
               break;
             }
           }
-          case 80: {
+          case 88: {
+            // emote
+            emote = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
             // msgType
             final int value = input.readInt32();
             if (MsgTypeOuterClass.MsgType.forNumber(value) != null) {
@@ -540,13 +560,13 @@ public final class ChatOuterClass {
               bitField0_ |= 0x00000008;
             }
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 82) {
               break;
             }
           }
-          case 42: {
-            // text
-            input.readString(text);
+          case 82: {
+            // word
+            input.readString(word);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
@@ -574,16 +594,16 @@ public final class ChatOuterClass {
         output.writeUInt64(FieldNames.sentTime, sentTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.emote, emote);
+        output.writeUInt32(FieldNames.senderUid, senderUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.senderUid, senderUid);
+        output.writeUInt32(FieldNames.emote, emote);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.msgType, msgType, MsgTypeOuterClass.MsgType.converter());
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeString(FieldNames.text, text);
+        output.writeString(FieldNames.word, word);
       }
       output.endObject();
     }
@@ -607,10 +627,11 @@ public final class ChatOuterClass {
             }
             break;
           }
-          case 96633208: {
-            if (input.isAtField(FieldNames.emote)) {
+          case 32180699:
+          case 997911366: {
+            if (input.isAtField(FieldNames.senderUid)) {
               if (!input.trySkipNullValue()) {
-                emote = input.readUInt32();
+                senderUid = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -618,11 +639,10 @@ public final class ChatOuterClass {
             }
             break;
           }
-          case 32180699:
-          case 997911366: {
-            if (input.isAtField(FieldNames.senderUid)) {
+          case 96633208: {
+            if (input.isAtField(FieldNames.emote)) {
               if (!input.trySkipNullValue()) {
-                senderUid = input.readUInt32();
+                emote = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -647,10 +667,10 @@ public final class ChatOuterClass {
             }
             break;
           }
-          case 3556653: {
-            if (input.isAtField(FieldNames.text)) {
+          case 3655434: {
+            if (input.isAtField(FieldNames.word)) {
               if (!input.trySkipNullValue()) {
-                input.readString(text);
+                input.readString(word);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -712,13 +732,13 @@ public final class ChatOuterClass {
     static class FieldNames {
       static final FieldName sentTime = FieldName.forField("sentTime", "sent_time");
 
-      static final FieldName emote = FieldName.forField("emote");
-
       static final FieldName senderUid = FieldName.forField("senderUid", "sender_uid");
+
+      static final FieldName emote = FieldName.forField("emote");
 
       static final FieldName msgType = FieldName.forField("msgType", "msg_type");
 
-      static final FieldName text = FieldName.forField("text");
+      static final FieldName word = FieldName.forField("word");
     }
   }
 }

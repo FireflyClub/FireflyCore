@@ -40,7 +40,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * kigphnbfmnj
+     *  CAGDKHDOBJH
      * </pre>
      *
      * <code>optional uint32 mcoin = 5;</code>
@@ -49,7 +49,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * ccdjcpkpmkb
+     *  MBJJADKBABA
      * </pre>
      *
      * <code>optional uint32 hcoin = 6;</code>
@@ -58,7 +58,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * dcolehkhjpn
+     *  AIDHPLNNKCD
      * </pre>
      *
      * <code>optional uint32 scoin = 7;</code>
@@ -214,7 +214,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * kigphnbfmnj
+     *  CAGDKHDOBJH
      * </pre>
      *
      * <code>optional uint32 mcoin = 5;</code>
@@ -226,7 +226,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * kigphnbfmnj
+     *  CAGDKHDOBJH
      * </pre>
      *
      * <code>optional uint32 mcoin = 5;</code>
@@ -240,7 +240,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * kigphnbfmnj
+     *  CAGDKHDOBJH
      * </pre>
      *
      * <code>optional uint32 mcoin = 5;</code>
@@ -252,7 +252,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * kigphnbfmnj
+     *  CAGDKHDOBJH
      * </pre>
      *
      * <code>optional uint32 mcoin = 5;</code>
@@ -267,7 +267,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * ccdjcpkpmkb
+     *  MBJJADKBABA
      * </pre>
      *
      * <code>optional uint32 hcoin = 6;</code>
@@ -279,7 +279,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * ccdjcpkpmkb
+     *  MBJJADKBABA
      * </pre>
      *
      * <code>optional uint32 hcoin = 6;</code>
@@ -293,7 +293,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * ccdjcpkpmkb
+     *  MBJJADKBABA
      * </pre>
      *
      * <code>optional uint32 hcoin = 6;</code>
@@ -305,7 +305,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * ccdjcpkpmkb
+     *  MBJJADKBABA
      * </pre>
      *
      * <code>optional uint32 hcoin = 6;</code>
@@ -320,7 +320,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * dcolehkhjpn
+     *  AIDHPLNNKCD
      * </pre>
      *
      * <code>optional uint32 scoin = 7;</code>
@@ -332,7 +332,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * dcolehkhjpn
+     *  AIDHPLNNKCD
      * </pre>
      *
      * <code>optional uint32 scoin = 7;</code>
@@ -346,7 +346,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * dcolehkhjpn
+     *  AIDHPLNNKCD
      * </pre>
      *
      * <code>optional uint32 scoin = 7;</code>
@@ -358,7 +358,7 @@ public final class PlayerBasicInfoOuterClass {
 
     /**
      * <pre>
-     * dcolehkhjpn
+     *  AIDHPLNNKCD
      * </pre>
      *
      * <code>optional uint32 scoin = 7;</code>

@@ -6,7 +6,7 @@ import "SceneEntityInfo.proto";
 
 // JKCPNOPMKFB
 message SceneEntityGroupInfo {
-    uint32 group_id = 2;
-    uint32 state = 6;
+    uint32 state = 6; // ECHEFCLPHBF
     repeated SceneEntityInfo entity_list = 12; // GNCPNAFNNEE
+    uint32 group_id = 2;
 }

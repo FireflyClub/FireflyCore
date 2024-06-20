@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MultiPathAvatarType.proto";
+import "ItemList.proto";
+
+// BAEMAIPJGJE
+message UnlockAvatarPathScRsp {
+	repeated uint32 GJKJLNLIEII = 7;
+	uint32 retcode = 8;
+	MultiPathAvatarType avatar_id = 6;
+	ItemList reward = 12;
+}

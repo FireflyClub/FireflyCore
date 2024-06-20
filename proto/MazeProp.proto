@@ -2,8 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// OMNCCAPFKLA
 message MazeProp {
-    uint32 group_id = 6;
-    uint32 config_id = 3;
-    uint32 state = 1;
+    uint32 config_id = 14; // JDGKOODKLOG
+    uint32 group_id = 15;
+    uint32 state = 8;
 }

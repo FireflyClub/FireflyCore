@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class PlayingStateOuterClass {
   /**
+   * <pre>
+   *  PAPHFBALEKJ
+   * </pre>
+   *
    * Protobuf enum {@code PlayingState}
    */
   public enum PlayingState implements ProtoEnum<PlayingState> {

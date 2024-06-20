@@ -2,14 +2,16 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// PMFLMKGEHMP
+// MDNJKGHICMH
 message BuffInfo {
-    uint32 count = 13;
-    // uint32 fjefhijkogp = 6;
-    float life_time = 3;
-    uint32 base_avatar_id = 9;
-    uint32 buff_id = 4; // daimooemhjf
-    map<string, float> dynamic_values = 5;
-    uint64 add_time_ms = 1;
-    uint32 level = 12;
+	// uint32 CMPGFJCGFAN = 8;
+    uint64 add_time_ms = 15; // EHODIBMNJOL
+    uint32 scene_avatar_id = 5;
+    map<string, float> dynamic_values = 4; // PFIFNDLINMC
+	// uint32 FIDELEDGGEH = 13;
+	// uint32 JGDMLOFCNCH = 3;
+    uint32 level = 7;
+    float life_time = 3; // EDINNBPPOGG
+    uint32 count = 13; //?
+    uint32 buff_id = 8; //?
 }

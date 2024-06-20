@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ExchangeGachaCeilingCsReqOuterClass {
   /**
-   * <pre>
-   *  Pfolepefdkj
-   * </pre>
-   *
    * Protobuf type {@code ExchangeGachaCeilingCsReq}
    */
   public static final class ExchangeGachaCeilingCsReq extends ProtoMessage<ExchangeGachaCeilingCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      */
     private int avatarId;
 
     /**
-     * <code>optional uint32 gacha_type = 15;</code>
+     * <code>optional uint32 gacha_type = 14;</code>
      */
     private int gachaType;
 
@@ -36,10 +32,6 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Pfolepefdkj
-     * </pre>
-     *
      * @return a new empty instance of {@code ExchangeGachaCeilingCsReq}
      */
     public static ExchangeGachaCeilingCsReq newInstance() {
@@ -47,7 +39,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -55,7 +47,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return this
      */
     public ExchangeGachaCeilingCsReq clearAvatarId() {
@@ -65,7 +57,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -73,7 +65,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_type = 15;</code>
+     * <code>optional uint32 gacha_type = 14;</code>
      * @return whether the gachaType field is set
      */
     public boolean hasGachaType() {
@@ -92,7 +84,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_type = 15;</code>
+     * <code>optional uint32 gacha_type = 14;</code>
      * @return this
      */
     public ExchangeGachaCeilingCsReq clearGachaType() {
@@ -102,7 +94,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_type = 15;</code>
+     * <code>optional uint32 gacha_type = 14;</code>
      * @return the gachaType
      */
     public int getGachaType() {
@@ -110,7 +102,7 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_type = 15;</code>
+     * <code>optional uint32 gacha_type = 14;</code>
      * @param value the gachaType to set
      * @return this
      */
@@ -185,11 +177,11 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(gachaType);
       }
     }
@@ -213,16 +205,16 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 88: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 112) {
               break;
             }
           }
-          case 120: {
+          case 112: {
             // gachaType
             gachaType = input.readUInt32();
             bitField0_ |= 0x00000002;

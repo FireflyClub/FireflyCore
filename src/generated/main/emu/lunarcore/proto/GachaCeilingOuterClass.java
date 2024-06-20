@@ -14,35 +14,23 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GachaCeilingOuterClass {
   /**
-   * <pre>
-   *  Ldhikjljmdc
-   * </pre>
-   *
    * Protobuf type {@code GachaCeiling}
    */
   public static final class GachaCeiling extends ProtoMessage<GachaCeiling> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * pdfinfdanea
-     * </pre>
-     *
-     * <code>optional uint32 ceiling_num = 14;</code>
+     * <code>optional uint32 ceiling_num = 5;</code>
      */
     private int ceilingNum;
 
     /**
-     * <pre>
-     * opfncplflcc
-     * </pre>
-     *
-     * <code>optional bool is_claimed = 9;</code>
+     * <code>optional bool is_claimed = 4;</code>
      */
     private boolean isClaimed;
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      */
     private final RepeatedMessage<GachaCeilingAvatarOuterClass.GachaCeilingAvatar> avatarList = RepeatedMessage.newEmptyInstance(GachaCeilingAvatarOuterClass.GachaCeilingAvatar.getFactory());
 
@@ -50,10 +38,6 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ldhikjljmdc
-     * </pre>
-     *
      * @return a new empty instance of {@code GachaCeiling}
      */
     public static GachaCeiling newInstance() {
@@ -61,11 +45,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * pdfinfdanea
-     * </pre>
-     *
-     * <code>optional uint32 ceiling_num = 14;</code>
+     * <code>optional uint32 ceiling_num = 5;</code>
      * @return whether the ceilingNum field is set
      */
     public boolean hasCeilingNum() {
@@ -73,11 +53,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * pdfinfdanea
-     * </pre>
-     *
-     * <code>optional uint32 ceiling_num = 14;</code>
+     * <code>optional uint32 ceiling_num = 5;</code>
      * @return this
      */
     public GachaCeiling clearCeilingNum() {
@@ -87,11 +63,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * pdfinfdanea
-     * </pre>
-     *
-     * <code>optional uint32 ceiling_num = 14;</code>
+     * <code>optional uint32 ceiling_num = 5;</code>
      * @return the ceilingNum
      */
     public int getCeilingNum() {
@@ -99,11 +71,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * pdfinfdanea
-     * </pre>
-     *
-     * <code>optional uint32 ceiling_num = 14;</code>
+     * <code>optional uint32 ceiling_num = 5;</code>
      * @param value the ceilingNum to set
      * @return this
      */
@@ -114,11 +82,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * opfncplflcc
-     * </pre>
-     *
-     * <code>optional bool is_claimed = 9;</code>
+     * <code>optional bool is_claimed = 4;</code>
      * @return whether the isClaimed field is set
      */
     public boolean hasIsClaimed() {
@@ -126,11 +90,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * opfncplflcc
-     * </pre>
-     *
-     * <code>optional bool is_claimed = 9;</code>
+     * <code>optional bool is_claimed = 4;</code>
      * @return this
      */
     public GachaCeiling clearIsClaimed() {
@@ -140,11 +100,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * opfncplflcc
-     * </pre>
-     *
-     * <code>optional bool is_claimed = 9;</code>
+     * <code>optional bool is_claimed = 4;</code>
      * @return the isClaimed
      */
     public boolean getIsClaimed() {
@@ -152,11 +108,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <pre>
-     * opfncplflcc
-     * </pre>
-     *
-     * <code>optional bool is_claimed = 9;</code>
+     * <code>optional bool is_claimed = 4;</code>
      * @param value the isClaimed to set
      * @return this
      */
@@ -167,7 +119,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      * @return whether the avatarList field is set
      */
     public boolean hasAvatarList() {
@@ -175,7 +127,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      * @return this
      */
     public GachaCeiling clearAvatarList() {
@@ -185,7 +137,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -199,7 +151,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -213,7 +165,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      * @param value the avatarList to add
      * @return this
      */
@@ -224,7 +176,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 5;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
      * @param values the avatarList to add
      * @return this
      */
@@ -307,16 +259,16 @@ public final class GachaCeilingOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(ceilingNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(isClaimed);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < avatarList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(avatarList.get(i));
         }
       }
@@ -344,25 +296,25 @@ public final class GachaCeilingOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 40: {
             // ceilingNum
             ceilingNum = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 32) {
               break;
             }
           }
-          case 72: {
+          case 32: {
             // isClaimed
             isClaimed = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 26) {
               break;
             }
           }
-          case 42: {
+          case 26: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
             bitField0_ |= 0x00000004;

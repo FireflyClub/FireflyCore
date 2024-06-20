@@ -6,16 +6,19 @@ import "AssistSimpleInfo.proto";
 import "FriendOnlineStatus.proto";
 import "PlatformType.proto";
 
+// HEGMPLCLOMG
 message SimpleInfo {
-	int64 last_active_time = 10;
-	uint32 level = 8;
-	uint32 chat_bubble_id = 2;
-	FriendOnlineStatus online_status = 7;
-	repeated AssistSimpleInfo assist_simple_info = 1;
+	bool is_banned = 5; // HJDGOMDHKGH
+	int64 last_active_time = 10; // IECEKOCFPEJ
+	uint32 head_icon = 9; // OJLDMFNBAOB
 	uint32 uid = 3;
-	bool is_banned = 5;
-	uint32 head_icon = 9;
-	PlatformType platform_type = 15;
 	string signature = 6;
+	uint32 chat_bubble_id = 2; // BJOEBMLIPIK
 	string nickname = 13;
+	uint32 level = 8;
+	repeated AssistSimpleInfo assist_simple_info = 1; // EJMDJIFBDEJ
+	string NKCONLNPGLM = 4;
+	FriendOnlineStatus online_status = 7; // MPOPKFDLKCK
+	string DICMJNOAHJC = 12;
+	PlatformType platform_type = 15;
 }

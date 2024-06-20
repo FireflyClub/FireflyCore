@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MsgTypeOuterClass {
   /**
+   * <pre>
+   *  EJIDBOKFBIJ
+   * </pre>
+   *
    * Protobuf enum {@code MsgType}
    */
   public enum MsgType implements ProtoEnum<MsgType> {
@@ -22,7 +26,12 @@ public final class MsgTypeOuterClass {
     /**
      * <code>MSG_TYPE_EMOJI = 2;</code>
      */
-    MSG_TYPE_EMOJI("MSG_TYPE_EMOJI", 2);
+    MSG_TYPE_EMOJI("MSG_TYPE_EMOJI", 2),
+
+    /**
+     * <code>MSG_TYPE_INVITE = 3;</code>
+     */
+    MSG_TYPE_INVITE("MSG_TYPE_INVITE", 3);
 
     /**
      * <code>MSG_TYPE_NONE = 0;</code>
@@ -38,6 +47,11 @@ public final class MsgTypeOuterClass {
      * <code>MSG_TYPE_EMOJI = 2;</code>
      */
     public static final int MSG_TYPE_EMOJI_VALUE = 2;
+
+    /**
+     * <code>MSG_TYPE_INVITE = 3;</code>
+     */
+    public static final int MSG_TYPE_INVITE_VALUE = 3;
 
     private final String name;
 
@@ -92,12 +106,13 @@ public final class MsgTypeOuterClass {
     enum MsgTypeConverter implements ProtoEnum.EnumConverter<MsgType> {
       INSTANCE;
 
-      private static final MsgType[] lookup = new MsgType[3];
+      private static final MsgType[] lookup = new MsgType[4];
 
       static {
         lookup[0] = MSG_TYPE_NONE;
         lookup[1] = MSG_TYPE_CUSTOM_TEXT;
         lookup[2] = MSG_TYPE_EMOJI;
+        lookup[3] = MSG_TYPE_INVITE;
       }
 
       @Override
@@ -110,19 +125,30 @@ public final class MsgTypeOuterClass {
 
       @Override
       public final MsgType forName(final CharSequence value) {
-        if (value.length() == 13) {
-          if (ProtoUtil.isEqual("MSG_TYPE_NONE", value)) {
-            return MSG_TYPE_NONE;
+        switch (value.length()) {
+          case 13: {
+            if (ProtoUtil.isEqual("MSG_TYPE_NONE", value)) {
+              return MSG_TYPE_NONE;
+            }
+            break;
           }
-        }
-        if (value.length() == 14) {
-          if (ProtoUtil.isEqual("MSG_TYPE_EMOJI", value)) {
-            return MSG_TYPE_EMOJI;
+          case 14: {
+            if (ProtoUtil.isEqual("MSG_TYPE_EMOJI", value)) {
+              return MSG_TYPE_EMOJI;
+            }
+            break;
           }
-        }
-        if (value.length() == 20) {
-          if (ProtoUtil.isEqual("MSG_TYPE_CUSTOM_TEXT", value)) {
-            return MSG_TYPE_CUSTOM_TEXT;
+          case 15: {
+            if (ProtoUtil.isEqual("MSG_TYPE_INVITE", value)) {
+              return MSG_TYPE_INVITE;
+            }
+            break;
+          }
+          case 20: {
+            if (ProtoUtil.isEqual("MSG_TYPE_CUSTOM_TEXT", value)) {
+              return MSG_TYPE_CUSTOM_TEXT;
+            }
+            break;
           }
         }
         return null;

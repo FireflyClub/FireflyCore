@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class GetRollShopInfoCsReqOuterClass {
   /**
    * <pre>
-   *  Mkkfcfmpdaf
+   *  KHLODLJFAEJ
    * </pre>
    *
    * Protobuf type {@code GetRollShopInfoCsReq}
@@ -23,7 +23,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 roll_shop_id = 12;</code>
+     * <code>optional uint32 roll_shop_id = 3;</code>
      */
     private int rollShopId;
 
@@ -32,7 +32,7 @@ public final class GetRollShopInfoCsReqOuterClass {
 
     /**
      * <pre>
-     *  Mkkfcfmpdaf
+     *  KHLODLJFAEJ
      * </pre>
      *
      * @return a new empty instance of {@code GetRollShopInfoCsReq}
@@ -42,7 +42,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 12;</code>
+     * <code>optional uint32 roll_shop_id = 3;</code>
      * @return whether the rollShopId field is set
      */
     public boolean hasRollShopId() {
@@ -50,7 +50,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 12;</code>
+     * <code>optional uint32 roll_shop_id = 3;</code>
      * @return this
      */
     public GetRollShopInfoCsReq clearRollShopId() {
@@ -60,7 +60,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 12;</code>
+     * <code>optional uint32 roll_shop_id = 3;</code>
      * @return the rollShopId
      */
     public int getRollShopId() {
@@ -68,7 +68,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 12;</code>
+     * <code>optional uint32 roll_shop_id = 3;</code>
      * @param value the rollShopId to set
      * @return this
      */
@@ -137,7 +137,7 @@ public final class GetRollShopInfoCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(rollShopId);
       }
     }
@@ -158,7 +158,7 @@ public final class GetRollShopInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 24: {
             // rollShopId
             rollShopId = input.readUInt32();
             bitField0_ |= 0x00000001;

@@ -41,7 +41,7 @@ public class ChatMessage {
                 .setEmote(this.getEmote());
         
         if (this.getText() != null) {
-            proto.setText(text);
+            proto.setWord(text);
         }
         
         return proto;

@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "BuffInfo.proto";
 
 message EntityBuffInfo {
-    uint32 entity_id = 10;
-    repeated BuffInfo buff_list = 4;
+    repeated BuffInfo buff_list = 1; // CPFHMDBNMJD
+    uint32 entity_id = 5;
 }

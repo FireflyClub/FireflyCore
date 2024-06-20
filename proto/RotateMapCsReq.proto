@@ -6,10 +6,9 @@ import "MotionInfo.proto";
 import "Vector.proto";
 import "NewMapRot.proto";
 
-// Cmhheamgpjc
 message RotateMapCsReq {
-    uint32 group_id = 4;
-    NewMapRot rogue_map = 12; // ookhlecbckf
-    MotionInfo motion = 15;
-    uint32 unk_int = 5; // onambfcpgol
+    uint32 group_id = 8;
+    uint32 rotate_int = 7; // MEHDHFLFEKK
+    NewMapRot rogue_map = 3; // NCIMLLJOLKB
+    MotionInfo motion = 13;
 }

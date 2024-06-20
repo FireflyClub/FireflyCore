@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneGroupStateOuterClass {
   /**
+   * <pre>
+   *  BFMGIPBNDKD
+   * </pre>
+   *
    * Protobuf type {@code SceneGroupState}
    */
   public static final class SceneGroupState extends ProtoMessage<SceneGroupState> implements Cloneable {
@@ -29,6 +33,10 @@ public final class SceneGroupStateOuterClass {
     private int groupId;
 
     /**
+     * <pre>
+     *  GKAELLBIPHD
+     * </pre>
+     *
      * <code>optional bool is_default = 2;</code>
      */
     private boolean isDefault;
@@ -37,6 +45,10 @@ public final class SceneGroupStateOuterClass {
     }
 
     /**
+     * <pre>
+     *  BFMGIPBNDKD
+     * </pre>
+     *
      * @return a new empty instance of {@code SceneGroupState}
      */
     public static SceneGroupState newInstance() {
@@ -118,6 +130,10 @@ public final class SceneGroupStateOuterClass {
     }
 
     /**
+     * <pre>
+     *  GKAELLBIPHD
+     * </pre>
+     *
      * <code>optional bool is_default = 2;</code>
      * @return whether the isDefault field is set
      */
@@ -126,6 +142,10 @@ public final class SceneGroupStateOuterClass {
     }
 
     /**
+     * <pre>
+     *  GKAELLBIPHD
+     * </pre>
+     *
      * <code>optional bool is_default = 2;</code>
      * @return this
      */
@@ -136,6 +156,10 @@ public final class SceneGroupStateOuterClass {
     }
 
     /**
+     * <pre>
+     *  GKAELLBIPHD
+     * </pre>
+     *
      * <code>optional bool is_default = 2;</code>
      * @return the isDefault
      */
@@ -144,6 +168,10 @@ public final class SceneGroupStateOuterClass {
     }
 
     /**
+     * <pre>
+     *  GKAELLBIPHD
+     * </pre>
+     *
      * <code>optional bool is_default = 2;</code>
      * @param value the isDefault to set
      * @return this

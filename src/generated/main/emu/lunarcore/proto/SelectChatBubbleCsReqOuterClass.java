@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SelectChatBubbleCsReqOuterClass {
   /**
-   * <pre>
-   *  Gfpfangcfap
-   * </pre>
-   *
    * Protobuf type {@code SelectChatBubbleCsReq}
    */
   public static final class SelectChatBubbleCsReq extends ProtoMessage<SelectChatBubbleCsReq> implements Cloneable {
@@ -24,10 +20,10 @@ public final class SelectChatBubbleCsReqOuterClass {
 
     /**
      * <pre>
-     *  bfeleinblee
+     *  OIDCKALFNKH
      * </pre>
      *
-     * <code>optional uint32 bubble_id = 10;</code>
+     * <code>optional uint32 bubble_id = 9;</code>
      */
     private int bubbleId;
 
@@ -35,10 +31,6 @@ public final class SelectChatBubbleCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Gfpfangcfap
-     * </pre>
-     *
      * @return a new empty instance of {@code SelectChatBubbleCsReq}
      */
     public static SelectChatBubbleCsReq newInstance() {
@@ -47,10 +39,10 @@ public final class SelectChatBubbleCsReqOuterClass {
 
     /**
      * <pre>
-     *  bfeleinblee
+     *  OIDCKALFNKH
      * </pre>
      *
-     * <code>optional uint32 bubble_id = 10;</code>
+     * <code>optional uint32 bubble_id = 9;</code>
      * @return whether the bubbleId field is set
      */
     public boolean hasBubbleId() {
@@ -59,10 +51,10 @@ public final class SelectChatBubbleCsReqOuterClass {
 
     /**
      * <pre>
-     *  bfeleinblee
+     *  OIDCKALFNKH
      * </pre>
      *
-     * <code>optional uint32 bubble_id = 10;</code>
+     * <code>optional uint32 bubble_id = 9;</code>
      * @return this
      */
     public SelectChatBubbleCsReq clearBubbleId() {
@@ -73,10 +65,10 @@ public final class SelectChatBubbleCsReqOuterClass {
 
     /**
      * <pre>
-     *  bfeleinblee
+     *  OIDCKALFNKH
      * </pre>
      *
-     * <code>optional uint32 bubble_id = 10;</code>
+     * <code>optional uint32 bubble_id = 9;</code>
      * @return the bubbleId
      */
     public int getBubbleId() {
@@ -85,10 +77,10 @@ public final class SelectChatBubbleCsReqOuterClass {
 
     /**
      * <pre>
-     *  bfeleinblee
+     *  OIDCKALFNKH
      * </pre>
      *
-     * <code>optional uint32 bubble_id = 10;</code>
+     * <code>optional uint32 bubble_id = 9;</code>
      * @param value the bubbleId to set
      * @return this
      */
@@ -157,7 +149,7 @@ public final class SelectChatBubbleCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(bubbleId);
       }
     }
@@ -178,7 +170,7 @@ public final class SelectChatBubbleCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 72: {
             // bubbleId
             bubbleId = input.readUInt32();
             bitField0_ |= 0x00000001;

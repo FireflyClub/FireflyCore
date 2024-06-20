@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// PAPHFBALEKJ
 enum PlayingState {
   PLAYING_STATE_NONE = 0;
   PLAYING_ROGUE_COSMOS = 1;

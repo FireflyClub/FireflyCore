@@ -13,7 +13,7 @@ public class PacketGetPrivateChatHistoryScRsp extends BasePacket {
         super(CmdId.GetPrivateChatHistoryScRsp);
         
         var data = GetPrivateChatHistoryScRsp.newInstance()
-                .setToUid(targetUid);
+                .setTargetUid(targetUid);
         
         if (messages != null) {
             for (var message : messages) {

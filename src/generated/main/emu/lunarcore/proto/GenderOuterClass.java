@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class GenderOuterClass {
   /**
+   * <pre>
+   *  EHOJHJIJFOC
+   * </pre>
+   *
    * Protobuf enum {@code Gender}
    */
   public enum Gender implements ProtoEnum<Gender> {

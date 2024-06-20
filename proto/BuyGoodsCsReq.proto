@@ -4,9 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 // Fggleeelkcn
 message BuyGoodsCsReq {
-    uint32 shop_id = 13; // hioldiglggj
-    // uint32 edahdalkobk = 5;
-    uint32 goods_num = 4; // pdgjhkmmclo
-    uint32 item_id = 3; // kongbcnifjk
-    uint32 goods_id = 6; // olbbmfeknhj
+    uint32 shop_id = 13;
+    // uint32 edahdalkobk = 3;
+    uint32 goods_num = 9;
+    uint32 item_id = 4; // NKOODOJEBHH
+    uint32 goods_id = 5;
 }

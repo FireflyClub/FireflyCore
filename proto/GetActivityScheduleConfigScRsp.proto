@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "ActivityScheduleInfo.proto";
 
-// Hpmcldlfnbp
 message GetActivityScheduleConfigScRsp {
-    uint32 retcode = 15;
-    repeated ActivityScheduleInfo activity_schedule_list = 2;
+    uint32 retcode = 4;
+    repeated ActivityScheduleInfo activity_schedule_list = 15; // FNDOIALHKMJ
 }

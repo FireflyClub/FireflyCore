@@ -2,8 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// BFMGIPBNDKD
 message SceneGroupState {
-    bool is_default = 2;
     uint32 state = 6;
+    bool is_default = 2; // GKAELLBIPHD
     uint32 group_id = 13;
 }

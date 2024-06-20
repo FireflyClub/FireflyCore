@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SceneEntityTeleportCsReqOuterClass {
   /**
    * <pre>
-   *  Fbanbpbaahl
+   *  OJGHKBPIJKN
    * </pre>
    *
    * Protobuf type {@code SceneEntityTeleportCsReq}
@@ -23,12 +23,12 @@ public final class SceneEntityTeleportCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      */
     private int entryId;
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      */
     private final EntityMotionOuterClass.EntityMotion entityMotion = EntityMotionOuterClass.EntityMotion.newInstance();
 
@@ -37,7 +37,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
 
     /**
      * <pre>
-     *  Fbanbpbaahl
+     *  OJGHKBPIJKN
      * </pre>
      *
      * @return a new empty instance of {@code SceneEntityTeleportCsReq}
@@ -47,7 +47,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -55,7 +55,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return this
      */
     public SceneEntityTeleportCsReq clearEntryId() {
@@ -65,7 +65,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -73,7 +73,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -84,7 +84,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      * @return whether the entityMotion field is set
      */
     public boolean hasEntityMotion() {
@@ -92,7 +92,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      * @return this
      */
     public SceneEntityTeleportCsReq clearEntityMotion() {
@@ -102,7 +102,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +116,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +130,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional .EntityMotion entity_motion = 13;</code>
+     * <code>optional .EntityMotion entity_motion = 11;</code>
      * @param value the entityMotion to set
      * @return this
      */
@@ -207,11 +207,11 @@ public final class SceneEntityTeleportCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(entityMotion);
       }
     }
@@ -235,16 +235,16 @@ public final class SceneEntityTeleportCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 32: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 90) {
               break;
             }
           }
-          case 106: {
+          case 90: {
             // entityMotion
             input.readMessage(entityMotion);
             bitField0_ |= 0x00000002;

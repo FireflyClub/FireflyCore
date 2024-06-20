@@ -13,26 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GetPlayerDetailInfoScRspOuterClass {
   /**
-   * <pre>
-   *  Jlfjneleoan
-   * </pre>
-   *
    * Protobuf type {@code GetPlayerDetailInfoScRsp}
    */
   public static final class GetPlayerDetailInfoScRsp extends ProtoMessage<GetPlayerDetailInfoScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      */
     private final PlayerDetailInfoOuterClass.PlayerDetailInfo playerDetailInfo = PlayerDetailInfoOuterClass.PlayerDetailInfo.newInstance();
 
@@ -40,10 +36,6 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Jlfjneleoan
-     * </pre>
-     *
      * @return a new empty instance of {@code GetPlayerDetailInfoScRsp}
      */
     public static GetPlayerDetailInfoScRsp newInstance() {
@@ -51,7 +43,7 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -59,7 +51,7 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public GetPlayerDetailInfoScRsp clearRetcode() {
@@ -69,7 +61,7 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -77,7 +69,7 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -89,10 +81,10 @@ public final class GetPlayerDetailInfoScRspOuterClass {
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      * @return whether the playerDetailInfo field is set
      */
     public boolean hasPlayerDetailInfo() {
@@ -101,10 +93,10 @@ public final class GetPlayerDetailInfoScRspOuterClass {
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      * @return this
      */
     public GetPlayerDetailInfoScRsp clearPlayerDetailInfo() {
@@ -115,10 +107,10 @@ public final class GetPlayerDetailInfoScRspOuterClass {
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -133,10 +125,10 @@ public final class GetPlayerDetailInfoScRspOuterClass {
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -151,10 +143,10 @@ public final class GetPlayerDetailInfoScRspOuterClass {
 
     /**
      * <pre>
-     * knmbdmpogkc
+     *  AJOJBKKCALL
      * </pre>
      *
-     * <code>optional .PlayerDetailInfo player_detail_info = 8;</code>
+     * <code>optional .PlayerDetailInfo player_detail_info = 14;</code>
      * @param value the playerDetailInfo to set
      * @return this
      */
@@ -231,11 +223,11 @@ public final class GetPlayerDetailInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(playerDetailInfo);
       }
     }
@@ -259,16 +251,16 @@ public final class GetPlayerDetailInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 114) {
               break;
             }
           }
-          case 66: {
+          case 114: {
             // playerDetailInfo
             input.readMessage(playerDetailInfo);
             bitField0_ |= 0x00000002;

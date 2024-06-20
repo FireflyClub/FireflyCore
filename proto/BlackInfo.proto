@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 message BlackInfo {
     int64 begin_time = 1;
     int64 end_time = 2;
-    uint32 limit_level = 3;
-    uint32 ban_type = 4;
+    uint32 limit_level = 3; // EAMPPBLEIHN
+    uint32 ban_type = 4; // PLENLGFHJIJ
 }

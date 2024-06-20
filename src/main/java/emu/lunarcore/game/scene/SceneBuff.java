@@ -54,7 +54,7 @@ public class SceneBuff {
         var proto = BuffInfo.newInstance()
                 .setBuffId(this.getBuffId())
                 .setLevel(this.getBuffLevel())
-                .setBaseAvatarId(this.getCasterAvatarId())
+                .setSceneAvatarId(this.getCasterAvatarId())
                 .setAddTimeMs(LunarCore.convertToServerTime(this.getCreateTime()))
                 .setLifeTime(this.getDuration())
                 .setCount(this.getCount());

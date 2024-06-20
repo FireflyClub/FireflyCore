@@ -24,7 +24,7 @@ public final class GachaCeilingAvatarOuterClass {
     private int avatarId;
 
     /**
-     * <code>optional uint32 repeated_cnt = 14;</code>
+     * <code>optional uint32 repeated_cnt = 13;</code>
      */
     private int repeatedCnt;
 
@@ -76,7 +76,7 @@ public final class GachaCeilingAvatarOuterClass {
     }
 
     /**
-     * <code>optional uint32 repeated_cnt = 14;</code>
+     * <code>optional uint32 repeated_cnt = 13;</code>
      * @return whether the repeatedCnt field is set
      */
     public boolean hasRepeatedCnt() {
@@ -84,7 +84,7 @@ public final class GachaCeilingAvatarOuterClass {
     }
 
     /**
-     * <code>optional uint32 repeated_cnt = 14;</code>
+     * <code>optional uint32 repeated_cnt = 13;</code>
      * @return this
      */
     public GachaCeilingAvatar clearRepeatedCnt() {
@@ -94,7 +94,7 @@ public final class GachaCeilingAvatarOuterClass {
     }
 
     /**
-     * <code>optional uint32 repeated_cnt = 14;</code>
+     * <code>optional uint32 repeated_cnt = 13;</code>
      * @return the repeatedCnt
      */
     public int getRepeatedCnt() {
@@ -102,7 +102,7 @@ public final class GachaCeilingAvatarOuterClass {
     }
 
     /**
-     * <code>optional uint32 repeated_cnt = 14;</code>
+     * <code>optional uint32 repeated_cnt = 13;</code>
      * @param value the repeatedCnt to set
      * @return this
      */
@@ -181,7 +181,7 @@ public final class GachaCeilingAvatarOuterClass {
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(repeatedCnt);
       }
     }
@@ -210,11 +210,11 @@ public final class GachaCeilingAvatarOuterClass {
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 104) {
               break;
             }
           }
-          case 112: {
+          case 104: {
             // repeatedCnt
             repeatedCnt = input.readUInt32();
             bitField0_ |= 0x00000002;

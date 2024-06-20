@@ -8,25 +8,25 @@ import "SceneEntityGroupInfo.proto";
 
 // GBFEAIFGOAI
 message SceneInfo {
-    repeated uint32 lighten_section_list = 8; // HJBDDJDCBNL
-    uint32 world_id = 14; // BGHHDPINODL
-    uint32 entry_id = 6; // HEFPEJEGDBO
-    uint32 leader_entity_id = 15; // PMHHHIACJHE
-    uint32 floor_id = 7; // BMHAPFCGNEJ
-    repeated SceneEntityInfo entity_list = 4; // GNCPNAFNNEE
-    repeated uint32 group_id_list = 1;
+    repeated uint32 lighten_section_list = 8;
+	// map<uint32, FKCHJEFEPNF> HLHNOLAIIHE = 3;
+	repeated SceneEntityInfo entity_list = 4;
+    uint32 leader_entity_id = 15; //?
+	uint32 map_entry_id = 739;
+	// repeated EntityBuffInfo KLBDOBGEAMA = 9;
+	// repeated BuffInfo MNLNDDDGEMC = 11;
+    uint32 world_id = 14; //?
+	map<string, int32> BEEIDEFKEKG = 317;
+    repeated uint32 group_id_list = 1; // EKOKBEPBJMK
+	uint32 GIBIDJKFBOK = 1997;
+    uint32 plane_id = 5;
+	// repeated OLKMPCJLPMI BEGABGKHAFO = 13;
+	// PFGPGKFEPHG MDBJCABNGMB = 622;
     uint32 game_mode_type = 10; // DMPMPEOHIEA
-    uint32 plane_id = 5; // OPCAGCKJPOJ
     uint32 client_pos_version = 12;
-    repeated SceneEntityGroupInfo entity_group_list = 203;// JKCPNOPMKFB PEKKFEADKBN
-    repeated SceneGroupState group_state_list = 1274;// BFMGIPBNDKD JEFBKJBEOFF
-    //map<string, int32> extra_data = 317;// BEEIDEFKEKG
-    // uint32 PKOIJBEDMEK = 267;// PKOIJBEDMEK
-    // repeated OLKMPCJLPMI BEGABGKHAFO = 13;// OLKMPCJLPMI BEGABGKHAFO
-    // PFGPGKFEPHG MDBJCABNGMB = 622;// PFGPGKFEPHG MDBJCABNGMB
-    // uint32 GIBIDJKFBOK = 1997;// GIBIDJKFBOK
-    // uint32 IGPEHMFKJKG = 739;// IGPEHMFKJKG 
-    // repeated EntityBuffInfo KLBDOBGEAMA = 9;// KLBDOBGEAMA
-    // repeated MDNJKGHICMH MNLNDDDGEMC = 11;// MDNJKGHICMH MNLNDDDGEMC
-    // map<uint32, FKCHJEFEPNF> HLHNOLAIIHE = 3;// FKCHJEFEPNF HLHNOLAIIHE
+    uint32 floor_id = 7;
+    repeated SceneEntityGroupInfo entity_group_list = 203; // PEKKFEADKBN
+    repeated SceneGroupState group_state_list = 1274; // JEFBKJBEOFF
+    uint32 entry_id = 6;
+	uint32 PKOIJBEDMEK = 267;
 }

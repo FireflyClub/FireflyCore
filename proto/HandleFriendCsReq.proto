@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Iondeoncfnb
+// MCIACMJCPHJ
 message HandleFriendCsReq {
-    uint32 uid = 4;
-    bool handle_result = 12;
+    bool handle_result = 15; // LBHBGCLIMCP
+    uint32 uid = 6;
 }

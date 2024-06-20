@@ -14,46 +14,50 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class RevcMsgScNotifyOuterClass {
   /**
+   * <pre>
+   *  DCLGNNHEBJJ
+   * </pre>
+   *
    * Protobuf type {@code RevcMsgScNotify}
    */
   public static final class RevcMsgScNotify extends ProtoMessage<RevcMsgScNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 emote = 7;</code>
-     */
-    private int emote;
-
-    /**
      * <pre>
-     *  Bienebceiof ggadmjhlomj = 12;
+     *  JDKPHOFLFEN HHOGABOHHIO = 14;
      * </pre>
      *
-     * <code>optional uint32 to_uid = 11;</code>
-     */
-    private int toUid;
-
-    /**
-     * <pre>
-     *  ghojifhngmc
-     * </pre>
-     *
-     * <code>optional uint32 from_uid = 15;</code>
+     * <code>optional uint32 from_uid = 4;</code>
      */
     private int fromUid;
 
     /**
-     * <code>optional .ChatType chat_type = 4;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 7;</code>
+     */
+    private int toUid;
+
+    /**
+     * <code>optional uint32 emote = 8;</code>
+     */
+    private int emote;
+
+    /**
+     * <code>optional .ChatType chat_type = 6;</code>
      */
     private int chatType;
 
     /**
-     * <code>optional .MsgType msg_type = 8;</code>
+     * <code>optional .MsgType msg_type = 11;</code>
      */
     private int msgType;
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      */
     private final Utf8String text = Utf8String.newEmptyInstance();
 
@@ -61,6 +65,10 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  DCLGNNHEBJJ
+     * </pre>
+     *
      * @return a new empty instance of {@code RevcMsgScNotify}
      */
     public static RevcMsgScNotify newInstance() {
@@ -68,48 +76,64 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 7;</code>
-     * @return whether the emote field is set
+     * <pre>
+     *  JDKPHOFLFEN HHOGABOHHIO = 14;
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 4;</code>
+     * @return whether the fromUid field is set
      */
-    public boolean hasEmote() {
+    public boolean hasFromUid() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 emote = 7;</code>
+     * <pre>
+     *  JDKPHOFLFEN HHOGABOHHIO = 14;
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 4;</code>
      * @return this
      */
-    public RevcMsgScNotify clearEmote() {
+    public RevcMsgScNotify clearFromUid() {
       bitField0_ &= ~0x00000001;
-      emote = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 emote = 7;</code>
-     * @return the emote
-     */
-    public int getEmote() {
-      return emote;
-    }
-
-    /**
-     * <code>optional uint32 emote = 7;</code>
-     * @param value the emote to set
-     * @return this
-     */
-    public RevcMsgScNotify setEmote(final int value) {
-      bitField0_ |= 0x00000001;
-      emote = value;
+      fromUid = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  Bienebceiof ggadmjhlomj = 12;
+     *  JDKPHOFLFEN HHOGABOHHIO = 14;
      * </pre>
      *
-     * <code>optional uint32 to_uid = 11;</code>
+     * <code>optional uint32 from_uid = 4;</code>
+     * @return the fromUid
+     */
+    public int getFromUid() {
+      return fromUid;
+    }
+
+    /**
+     * <pre>
+     *  JDKPHOFLFEN HHOGABOHHIO = 14;
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 4;</code>
+     * @param value the fromUid to set
+     * @return this
+     */
+    public RevcMsgScNotify setFromUid(final int value) {
+      bitField0_ |= 0x00000001;
+      fromUid = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 7;</code>
      * @return whether the toUid field is set
      */
     public boolean hasToUid() {
@@ -118,10 +142,10 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     *  Bienebceiof ggadmjhlomj = 12;
+     * ?
      * </pre>
      *
-     * <code>optional uint32 to_uid = 11;</code>
+     * <code>optional uint32 to_uid = 7;</code>
      * @return this
      */
     public RevcMsgScNotify clearToUid() {
@@ -132,10 +156,10 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     *  Bienebceiof ggadmjhlomj = 12;
+     * ?
      * </pre>
      *
-     * <code>optional uint32 to_uid = 11;</code>
+     * <code>optional uint32 to_uid = 7;</code>
      * @return the toUid
      */
     public int getToUid() {
@@ -144,10 +168,10 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     *  Bienebceiof ggadmjhlomj = 12;
+     * ?
      * </pre>
      *
-     * <code>optional uint32 to_uid = 11;</code>
+     * <code>optional uint32 to_uid = 7;</code>
      * @param value the toUid to set
      * @return this
      */
@@ -158,60 +182,44 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  ghojifhngmc
-     * </pre>
-     *
-     * <code>optional uint32 from_uid = 15;</code>
-     * @return whether the fromUid field is set
+     * <code>optional uint32 emote = 8;</code>
+     * @return whether the emote field is set
      */
-    public boolean hasFromUid() {
+    public boolean hasEmote() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     *  ghojifhngmc
-     * </pre>
-     *
-     * <code>optional uint32 from_uid = 15;</code>
+     * <code>optional uint32 emote = 8;</code>
      * @return this
      */
-    public RevcMsgScNotify clearFromUid() {
+    public RevcMsgScNotify clearEmote() {
       bitField0_ &= ~0x00000004;
-      fromUid = 0;
+      emote = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  ghojifhngmc
-     * </pre>
-     *
-     * <code>optional uint32 from_uid = 15;</code>
-     * @return the fromUid
+     * <code>optional uint32 emote = 8;</code>
+     * @return the emote
      */
-    public int getFromUid() {
-      return fromUid;
+    public int getEmote() {
+      return emote;
     }
 
     /**
-     * <pre>
-     *  ghojifhngmc
-     * </pre>
-     *
-     * <code>optional uint32 from_uid = 15;</code>
-     * @param value the fromUid to set
+     * <code>optional uint32 emote = 8;</code>
+     * @param value the emote to set
      * @return this
      */
-    public RevcMsgScNotify setFromUid(final int value) {
+    public RevcMsgScNotify setEmote(final int value) {
       bitField0_ |= 0x00000004;
-      fromUid = value;
+      emote = value;
       return this;
     }
 
     /**
-     * <code>optional .ChatType chat_type = 4;</code>
+     * <code>optional .ChatType chat_type = 6;</code>
      * @return whether the chatType field is set
      */
     public boolean hasChatType() {
@@ -219,7 +227,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChatType chat_type = 4;</code>
+     * <code>optional .ChatType chat_type = 6;</code>
      * @return this
      */
     public RevcMsgScNotify clearChatType() {
@@ -229,7 +237,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChatType chat_type = 4;</code>
+     * <code>optional .ChatType chat_type = 6;</code>
      * @return the chatType
      */
     public ChatTypeOuterClass.ChatType getChatType() {
@@ -262,7 +270,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChatType chat_type = 4;</code>
+     * <code>optional .ChatType chat_type = 6;</code>
      * @param value the chatType to set
      * @return this
      */
@@ -273,7 +281,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MsgType msg_type = 8;</code>
+     * <code>optional .MsgType msg_type = 11;</code>
      * @return whether the msgType field is set
      */
     public boolean hasMsgType() {
@@ -281,7 +289,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MsgType msg_type = 8;</code>
+     * <code>optional .MsgType msg_type = 11;</code>
      * @return this
      */
     public RevcMsgScNotify clearMsgType() {
@@ -291,7 +299,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MsgType msg_type = 8;</code>
+     * <code>optional .MsgType msg_type = 11;</code>
      * @return the msgType
      */
     public MsgTypeOuterClass.MsgType getMsgType() {
@@ -324,7 +332,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MsgType msg_type = 8;</code>
+     * <code>optional .MsgType msg_type = 11;</code>
      * @param value the msgType to set
      * @return this
      */
@@ -335,7 +343,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @return whether the text field is set
      */
     public boolean hasText() {
@@ -343,7 +351,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @return this
      */
     public RevcMsgScNotify clearText() {
@@ -353,7 +361,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @return the text
      */
     public String getText() {
@@ -361,7 +369,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @return internal {@code Utf8String} representation of text for reading
      */
     public Utf8String getTextBytes() {
@@ -369,7 +377,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @return internal {@code Utf8String} representation of text for modifications
      */
     public Utf8String getMutableTextBytes() {
@@ -378,7 +386,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @param value the text to set
      * @return this
      */
@@ -389,7 +397,7 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional string text = 6;</code>
+     * <code>optional string text = 10;</code>
      * @param value the text to set
      * @return this
      */
@@ -404,9 +412,9 @@ public final class RevcMsgScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        emote = other.emote;
-        toUid = other.toUid;
         fromUid = other.fromUid;
+        toUid = other.toUid;
+        emote = other.emote;
         chatType = other.chatType;
         msgType = other.msgType;
         text.copyFrom(other.text);
@@ -420,14 +428,14 @@ public final class RevcMsgScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEmote()) {
-        setEmote(other.emote);
+      if (other.hasFromUid()) {
+        setFromUid(other.fromUid);
       }
       if (other.hasToUid()) {
         setToUid(other.toUid);
       }
-      if (other.hasFromUid()) {
-        setFromUid(other.fromUid);
+      if (other.hasEmote()) {
+        setEmote(other.emote);
       }
       if (other.hasChatType()) {
         setChatTypeValue(other.chatType);
@@ -448,9 +456,9 @@ public final class RevcMsgScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      emote = 0;
-      toUid = 0;
       fromUid = 0;
+      toUid = 0;
+      emote = 0;
       chatType = 0;
       msgType = 0;
       text.clear();
@@ -478,9 +486,9 @@ public final class RevcMsgScNotifyOuterClass {
       }
       RevcMsgScNotify other = (RevcMsgScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasEmote() || emote == other.emote)
-        && (!hasToUid() || toUid == other.toUid)
         && (!hasFromUid() || fromUid == other.fromUid)
+        && (!hasToUid() || toUid == other.toUid)
+        && (!hasEmote() || emote == other.emote)
         && (!hasChatType() || chatType == other.chatType)
         && (!hasMsgType() || msgType == other.msgType)
         && (!hasText() || text.equals(other.text));
@@ -489,27 +497,27 @@ public final class RevcMsgScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(emote);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(fromUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(toUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(fromUid);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(emote);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 48);
         output.writeEnumNoTag(chatType);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeEnumNoTag(msgType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 82);
         output.writeStringNoTag(text);
       }
     }
@@ -518,13 +526,13 @@ public final class RevcMsgScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(emote);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fromUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(toUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(fromUid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(emote);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(chatType);
@@ -545,34 +553,34 @@ public final class RevcMsgScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // emote
-            emote = input.readUInt32();
+          case 32: {
+            // fromUid
+            fromUid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 56) {
               break;
             }
           }
-          case 88: {
+          case 56: {
             // toUid
             toUid = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 64) {
               break;
             }
           }
-          case 120: {
-            // fromUid
-            fromUid = input.readUInt32();
+          case 64: {
+            // emote
+            emote = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 48) {
               break;
             }
           }
-          case 32: {
+          case 48: {
             // chatType
             final int value = input.readInt32();
             if (ChatTypeOuterClass.ChatType.forNumber(value) != null) {
@@ -580,11 +588,11 @@ public final class RevcMsgScNotifyOuterClass {
               bitField0_ |= 0x00000008;
             }
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 88) {
               break;
             }
           }
-          case 64: {
+          case 88: {
             // msgType
             final int value = input.readInt32();
             if (MsgTypeOuterClass.MsgType.forNumber(value) != null) {
@@ -592,11 +600,11 @@ public final class RevcMsgScNotifyOuterClass {
               bitField0_ |= 0x00000010;
             }
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 82) {
               break;
             }
           }
-          case 50: {
+          case 82: {
             // text
             input.readString(text);
             bitField0_ |= 0x00000020;
@@ -623,13 +631,13 @@ public final class RevcMsgScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.emote, emote);
+        output.writeUInt32(FieldNames.fromUid, fromUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.toUid, toUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.fromUid, fromUid);
+        output.writeUInt32(FieldNames.emote, emote);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.chatType, chatType, ChatTypeOuterClass.ChatType.converter());
@@ -650,10 +658,11 @@ public final class RevcMsgScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 96633208: {
-            if (input.isAtField(FieldNames.emote)) {
+          case -594338746:
+          case -1244322245: {
+            if (input.isAtField(FieldNames.fromUid)) {
               if (!input.trySkipNullValue()) {
-                emote = input.readUInt32();
+                fromUid = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -673,11 +682,10 @@ public final class RevcMsgScNotifyOuterClass {
             }
             break;
           }
-          case -594338746:
-          case -1244322245: {
-            if (input.isAtField(FieldNames.fromUid)) {
+          case 96633208: {
+            if (input.isAtField(FieldNames.emote)) {
               if (!input.trySkipNullValue()) {
-                fromUid = input.readUInt32();
+                emote = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -783,11 +791,11 @@ public final class RevcMsgScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName emote = FieldName.forField("emote");
+      static final FieldName fromUid = FieldName.forField("fromUid", "from_uid");
 
       static final FieldName toUid = FieldName.forField("toUid", "to_uid");
 
-      static final FieldName fromUid = FieldName.forField("fromUid", "from_uid");
+      static final FieldName emote = FieldName.forField("emote");
 
       static final FieldName chatType = FieldName.forField("chatType", "chat_type");
 

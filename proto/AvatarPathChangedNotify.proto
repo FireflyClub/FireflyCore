@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MultiPathAvatarType.proto";
+
+// IFFEIGOPCKC
+message AvatarPathChangedNotify {
+	MultiPathAvatarType IPDLPAMOKLD = 9;
+	uint32 scene_avatar_id = 3;
+}

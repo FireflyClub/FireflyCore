@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 // Hiplimanmhm
 message GetRollShopInfoScRsp {
-  uint32 gacha_random = 9;
-  // repeated uint32 jphjpamhfkm = 5;
-  uint32 roll_shop_id = 4;
-  uint32 retcode = 13;
+	repeated uint32 LBDPANNEKBK = 15;
+  uint32 retcode = 14;
+  uint32 gacha_random = 9; // OEAHBPJOCAM
+  uint32 roll_shop_id = 7;
 }

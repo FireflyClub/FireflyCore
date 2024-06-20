@@ -4,12 +4,12 @@ option java_package = "emu.lunarcore.proto";
 
 import "DisplayRecordType.proto";
 
-// Kbfenhoeolk
+// DNCLPGJGHHK
 message PlayerDisplaySettings {
-    // bool amgbjcgchle = 3;
-    DisplayRecordType display_record_type = 10;
-    // bool aokkoooodcn = 13;
-    // bool ljeelnkpifj = 1;
-    // bool idflcnjjldo = 8;
-    // bool feeelleaepc = 12;
+	bool BONNOPPHFJM = 13;
+	bool KBMNNNLACAE = 8;
+	bool HDEMABIFFFO = 11;
+	bool PFCCJBIENCK = 7;
+	bool DAHEPDDJJCD = 5;
+    DisplayRecordType display_record_type = 15;
 }

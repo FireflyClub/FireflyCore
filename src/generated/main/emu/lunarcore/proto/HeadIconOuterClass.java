@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class HeadIconOuterClass {
   /**
    * <pre>
-   *  Khpnemhhlol
+   *  NPMIAKFMLDB
    * </pre>
    *
    * Protobuf type {@code HeadIcon}
@@ -23,7 +23,7 @@ public final class HeadIconOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 14;</code>
+     * <code>optional uint32 id = 5;</code>
      */
     private int id;
 
@@ -32,7 +32,7 @@ public final class HeadIconOuterClass {
 
     /**
      * <pre>
-     *  Khpnemhhlol
+     *  NPMIAKFMLDB
      * </pre>
      *
      * @return a new empty instance of {@code HeadIcon}
@@ -42,7 +42,7 @@ public final class HeadIconOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 14;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -50,7 +50,7 @@ public final class HeadIconOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 14;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return this
      */
     public HeadIcon clearId() {
@@ -60,7 +60,7 @@ public final class HeadIconOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 14;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return the id
      */
     public int getId() {
@@ -68,7 +68,7 @@ public final class HeadIconOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 14;</code>
+     * <code>optional uint32 id = 5;</code>
      * @param value the id to set
      * @return this
      */
@@ -137,7 +137,7 @@ public final class HeadIconOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(id);
       }
     }
@@ -158,7 +158,7 @@ public final class HeadIconOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 40: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;

@@ -8,7 +8,7 @@ import "MultiPathAvatarType.proto";
 // MOJFLMMBKKC
 message GetMultiPathAvatarInfoScRsp {
     uint32 retcode = 7;
-	// repeated MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;
+	repeated MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;
 	map<uint32, MultiPathAvatarType> DEKPBIGFNBE = 4;
 	repeated uint32 GJKJLNLIEII = 15;
 }

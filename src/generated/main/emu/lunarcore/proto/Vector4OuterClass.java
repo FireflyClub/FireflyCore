@@ -15,7 +15,7 @@ import us.hebi.quickbuf.ProtoUtil;
 public final class Vector4OuterClass {
   /**
    * <pre>
-   *  Aeklimbakcl
+   *  GPDFECLFNHM
    * </pre>
    *
    * Protobuf type {@code Vector4}
@@ -24,31 +24,31 @@ public final class Vector4OuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float z = 7;</code>
+     * <code>optional float w = 3;</code>
+     */
+    private float w;
+
+    /**
+     * <code>optional float z = 4;</code>
      */
     private float z;
 
     /**
-     * <code>optional float y = 9;</code>
+     * <code>optional float y = 13;</code>
      */
     private float y;
 
     /**
-     * <code>optional float x = 13;</code>
+     * <code>optional float x = 15;</code>
      */
     private float x;
-
-    /**
-     * <code>optional float w = 15;</code>
-     */
-    private float w;
 
     private Vector4() {
     }
 
     /**
      * <pre>
-     *  Aeklimbakcl
+     *  GPDFECLFNHM
      * </pre>
      *
      * @return a new empty instance of {@code Vector4}
@@ -58,136 +58,25 @@ public final class Vector4OuterClass {
     }
 
     /**
-     * <code>optional float z = 7;</code>
-     * @return whether the z field is set
+     * <code>optional float w = 3;</code>
+     * @return whether the w field is set
      */
-    public boolean hasZ() {
+    public boolean hasW() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional float z = 7;</code>
-     * @return this
-     */
-    public Vector4 clearZ() {
-      bitField0_ &= ~0x00000001;
-      z = 0F;
-      return this;
-    }
-
-    /**
-     * <code>optional float z = 7;</code>
-     * @return the z
-     */
-    public float getZ() {
-      return z;
-    }
-
-    /**
-     * <code>optional float z = 7;</code>
-     * @param value the z to set
-     * @return this
-     */
-    public Vector4 setZ(final float value) {
-      bitField0_ |= 0x00000001;
-      z = value;
-      return this;
-    }
-
-    /**
-     * <code>optional float y = 9;</code>
-     * @return whether the y field is set
-     */
-    public boolean hasY() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional float y = 9;</code>
-     * @return this
-     */
-    public Vector4 clearY() {
-      bitField0_ &= ~0x00000002;
-      y = 0F;
-      return this;
-    }
-
-    /**
-     * <code>optional float y = 9;</code>
-     * @return the y
-     */
-    public float getY() {
-      return y;
-    }
-
-    /**
-     * <code>optional float y = 9;</code>
-     * @param value the y to set
-     * @return this
-     */
-    public Vector4 setY(final float value) {
-      bitField0_ |= 0x00000002;
-      y = value;
-      return this;
-    }
-
-    /**
-     * <code>optional float x = 13;</code>
-     * @return whether the x field is set
-     */
-    public boolean hasX() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional float x = 13;</code>
-     * @return this
-     */
-    public Vector4 clearX() {
-      bitField0_ &= ~0x00000004;
-      x = 0F;
-      return this;
-    }
-
-    /**
-     * <code>optional float x = 13;</code>
-     * @return the x
-     */
-    public float getX() {
-      return x;
-    }
-
-    /**
-     * <code>optional float x = 13;</code>
-     * @param value the x to set
-     * @return this
-     */
-    public Vector4 setX(final float value) {
-      bitField0_ |= 0x00000004;
-      x = value;
-      return this;
-    }
-
-    /**
-     * <code>optional float w = 15;</code>
-     * @return whether the w field is set
-     */
-    public boolean hasW() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional float w = 15;</code>
+     * <code>optional float w = 3;</code>
      * @return this
      */
     public Vector4 clearW() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000001;
       w = 0F;
       return this;
     }
 
     /**
-     * <code>optional float w = 15;</code>
+     * <code>optional float w = 3;</code>
      * @return the w
      */
     public float getW() {
@@ -195,13 +84,124 @@ public final class Vector4OuterClass {
     }
 
     /**
-     * <code>optional float w = 15;</code>
+     * <code>optional float w = 3;</code>
      * @param value the w to set
      * @return this
      */
     public Vector4 setW(final float value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000001;
       w = value;
+      return this;
+    }
+
+    /**
+     * <code>optional float z = 4;</code>
+     * @return whether the z field is set
+     */
+    public boolean hasZ() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional float z = 4;</code>
+     * @return this
+     */
+    public Vector4 clearZ() {
+      bitField0_ &= ~0x00000002;
+      z = 0F;
+      return this;
+    }
+
+    /**
+     * <code>optional float z = 4;</code>
+     * @return the z
+     */
+    public float getZ() {
+      return z;
+    }
+
+    /**
+     * <code>optional float z = 4;</code>
+     * @param value the z to set
+     * @return this
+     */
+    public Vector4 setZ(final float value) {
+      bitField0_ |= 0x00000002;
+      z = value;
+      return this;
+    }
+
+    /**
+     * <code>optional float y = 13;</code>
+     * @return whether the y field is set
+     */
+    public boolean hasY() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional float y = 13;</code>
+     * @return this
+     */
+    public Vector4 clearY() {
+      bitField0_ &= ~0x00000004;
+      y = 0F;
+      return this;
+    }
+
+    /**
+     * <code>optional float y = 13;</code>
+     * @return the y
+     */
+    public float getY() {
+      return y;
+    }
+
+    /**
+     * <code>optional float y = 13;</code>
+     * @param value the y to set
+     * @return this
+     */
+    public Vector4 setY(final float value) {
+      bitField0_ |= 0x00000004;
+      y = value;
+      return this;
+    }
+
+    /**
+     * <code>optional float x = 15;</code>
+     * @return whether the x field is set
+     */
+    public boolean hasX() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional float x = 15;</code>
+     * @return this
+     */
+    public Vector4 clearX() {
+      bitField0_ &= ~0x00000008;
+      x = 0F;
+      return this;
+    }
+
+    /**
+     * <code>optional float x = 15;</code>
+     * @return the x
+     */
+    public float getX() {
+      return x;
+    }
+
+    /**
+     * <code>optional float x = 15;</code>
+     * @param value the x to set
+     * @return this
+     */
+    public Vector4 setX(final float value) {
+      bitField0_ |= 0x00000008;
+      x = value;
       return this;
     }
 
@@ -210,10 +210,10 @@ public final class Vector4OuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        w = other.w;
         z = other.z;
         y = other.y;
         x = other.x;
-        w = other.w;
       }
       return this;
     }
@@ -224,6 +224,9 @@ public final class Vector4OuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasW()) {
+        setW(other.w);
+      }
       if (other.hasZ()) {
         setZ(other.z);
       }
@@ -232,9 +235,6 @@ public final class Vector4OuterClass {
       }
       if (other.hasX()) {
         setX(other.x);
-      }
-      if (other.hasW()) {
-        setW(other.w);
       }
       return this;
     }
@@ -246,10 +246,10 @@ public final class Vector4OuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      w = 0F;
       z = 0F;
       y = 0F;
       x = 0F;
-      w = 0F;
       return this;
     }
 
@@ -273,29 +273,29 @@ public final class Vector4OuterClass {
       }
       Vector4 other = (Vector4) o;
       return bitField0_ == other.bitField0_
+        && (!hasW() || ProtoUtil.isEqual(w, other.w))
         && (!hasZ() || ProtoUtil.isEqual(z, other.z))
         && (!hasY() || ProtoUtil.isEqual(y, other.y))
-        && (!hasX() || ProtoUtil.isEqual(x, other.x))
-        && (!hasW() || ProtoUtil.isEqual(w, other.w));
+        && (!hasX() || ProtoUtil.isEqual(x, other.x));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 61);
-        output.writeFloatNoTag(z);
+        output.writeRawByte((byte) 29);
+        output.writeFloatNoTag(w);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 77);
-        output.writeFloatNoTag(y);
+        output.writeRawByte((byte) 37);
+        output.writeFloatNoTag(z);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 109);
-        output.writeFloatNoTag(x);
+        output.writeFloatNoTag(y);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 125);
-        output.writeFloatNoTag(w);
+        output.writeFloatNoTag(x);
       }
     }
 
@@ -324,18 +324,18 @@ public final class Vector4OuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 61: {
-            // z
-            z = input.readFloat();
+          case 29: {
+            // w
+            w = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 77) {
+            if (tag != 37) {
               break;
             }
           }
-          case 77: {
-            // y
-            y = input.readFloat();
+          case 37: {
+            // z
+            z = input.readFloat();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 109) {
@@ -343,8 +343,8 @@ public final class Vector4OuterClass {
             }
           }
           case 109: {
-            // x
-            x = input.readFloat();
+            // y
+            y = input.readFloat();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 125) {
@@ -352,8 +352,8 @@ public final class Vector4OuterClass {
             }
           }
           case 125: {
-            // w
-            w = input.readFloat();
+            // x
+            x = input.readFloat();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -378,16 +378,16 @@ public final class Vector4OuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeFloat(FieldNames.z, z);
+        output.writeFloat(FieldNames.w, w);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeFloat(FieldNames.y, y);
+        output.writeFloat(FieldNames.z, z);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeFloat(FieldNames.x, x);
+        output.writeFloat(FieldNames.y, y);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeFloat(FieldNames.w, w);
+        output.writeFloat(FieldNames.x, x);
       }
       output.endObject();
     }
@@ -399,11 +399,22 @@ public final class Vector4OuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 119: {
+            if (input.isAtField(FieldNames.w)) {
+              if (!input.trySkipNullValue()) {
+                w = input.readFloat();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 122: {
             if (input.isAtField(FieldNames.z)) {
               if (!input.trySkipNullValue()) {
                 z = input.readFloat();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -414,7 +425,7 @@ public final class Vector4OuterClass {
             if (input.isAtField(FieldNames.y)) {
               if (!input.trySkipNullValue()) {
                 y = input.readFloat();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -425,17 +436,6 @@ public final class Vector4OuterClass {
             if (input.isAtField(FieldNames.x)) {
               if (!input.trySkipNullValue()) {
                 x = input.readFloat();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 119: {
-            if (input.isAtField(FieldNames.w)) {
-              if (!input.trySkipNullValue()) {
-                w = input.readFloat();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -495,13 +495,13 @@ public final class Vector4OuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName w = FieldName.forField("w");
+
       static final FieldName z = FieldName.forField("z");
 
       static final FieldName y = FieldName.forField("y");
 
       static final FieldName x = FieldName.forField("x");
-
-      static final FieldName w = FieldName.forField("w");
     }
   }
 }

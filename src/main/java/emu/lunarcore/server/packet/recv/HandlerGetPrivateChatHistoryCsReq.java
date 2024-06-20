@@ -14,9 +14,9 @@ public class HandlerGetPrivateChatHistoryCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = GetPrivateChatHistoryCsReq.parseFrom(data);
         
-        var messages = session.getPlayer().getChatManager().getHistoryByUid(req.getToUid());
+        var messages = session.getPlayer().getChatManager().getHistoryByUid(req.getTargetUid());
         
-        session.send(new PacketGetPrivateChatHistoryScRsp(req.getToUid(), messages));
+        session.send(new PacketGetPrivateChatHistoryScRsp(req.getTargetUid(), messages));
     }
 
 }

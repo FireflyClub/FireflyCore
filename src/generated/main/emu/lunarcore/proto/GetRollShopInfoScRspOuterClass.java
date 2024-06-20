@@ -10,6 +10,7 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedInt;
 
 public final class GetRollShopInfoScRspOuterClass {
   /**
@@ -23,23 +24,28 @@ public final class GetRollShopInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  repeated uint32 jphjpamhfkm = 5;
-     * </pre>
-     *
-     * <code>optional uint32 roll_shop_id = 4;</code>
+     * <code>optional uint32 roll_shop_id = 7;</code>
      */
     private int rollShopId;
 
     /**
+     * <pre>
+     *  OEAHBPJOCAM
+     * </pre>
+     *
      * <code>optional uint32 gacha_random = 9;</code>
      */
     private int gachaRandom;
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     */
+    private final RepeatedInt lBDPANNEKBK = RepeatedInt.newEmptyInstance();
 
     private GetRollShopInfoScRsp() {
     }
@@ -56,11 +62,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 jphjpamhfkm = 5;
-     * </pre>
-     *
-     * <code>optional uint32 roll_shop_id = 4;</code>
+     * <code>optional uint32 roll_shop_id = 7;</code>
      * @return whether the rollShopId field is set
      */
     public boolean hasRollShopId() {
@@ -68,11 +70,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 jphjpamhfkm = 5;
-     * </pre>
-     *
-     * <code>optional uint32 roll_shop_id = 4;</code>
+     * <code>optional uint32 roll_shop_id = 7;</code>
      * @return this
      */
     public GetRollShopInfoScRsp clearRollShopId() {
@@ -82,11 +80,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 jphjpamhfkm = 5;
-     * </pre>
-     *
-     * <code>optional uint32 roll_shop_id = 4;</code>
+     * <code>optional uint32 roll_shop_id = 7;</code>
      * @return the rollShopId
      */
     public int getRollShopId() {
@@ -94,11 +88,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated uint32 jphjpamhfkm = 5;
-     * </pre>
-     *
-     * <code>optional uint32 roll_shop_id = 4;</code>
+     * <code>optional uint32 roll_shop_id = 7;</code>
      * @param value the rollShopId to set
      * @return this
      */
@@ -109,6 +99,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  OEAHBPJOCAM
+     * </pre>
+     *
      * <code>optional uint32 gacha_random = 9;</code>
      * @return whether the gachaRandom field is set
      */
@@ -117,6 +111,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  OEAHBPJOCAM
+     * </pre>
+     *
      * <code>optional uint32 gacha_random = 9;</code>
      * @return this
      */
@@ -127,6 +125,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  OEAHBPJOCAM
+     * </pre>
+     *
      * <code>optional uint32 gacha_random = 9;</code>
      * @return the gachaRandom
      */
@@ -135,6 +137,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  OEAHBPJOCAM
+     * </pre>
+     *
      * <code>optional uint32 gacha_random = 9;</code>
      * @param value the gachaRandom to set
      * @return this
@@ -146,7 +152,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -154,7 +160,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
     public GetRollShopInfoScRsp clearRetcode() {
@@ -164,7 +170,7 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -172,13 +178,81 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this
      */
     public GetRollShopInfoScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000004;
       retcode = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     * @return whether the lBDPANNEKBK field is set
+     */
+    public boolean hasLBDPANNEKBK() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     * @return this
+     */
+    public GetRollShopInfoScRsp clearLBDPANNEKBK() {
+      bitField0_ &= ~0x00000008;
+      lBDPANNEKBK.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableLBDPANNEKBK()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getLBDPANNEKBK() {
+      return lBDPANNEKBK;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableLBDPANNEKBK() {
+      bitField0_ |= 0x00000008;
+      return lBDPANNEKBK;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     * @param value the lBDPANNEKBK to add
+     * @return this
+     */
+    public GetRollShopInfoScRsp addLBDPANNEKBK(final int value) {
+      bitField0_ |= 0x00000008;
+      lBDPANNEKBK.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 LBDPANNEKBK = 15;</code>
+     * @param values the lBDPANNEKBK to add
+     * @return this
+     */
+    public GetRollShopInfoScRsp addAllLBDPANNEKBK(final int... values) {
+      bitField0_ |= 0x00000008;
+      lBDPANNEKBK.addAll(values);
       return this;
     }
 
@@ -190,6 +264,7 @@ public final class GetRollShopInfoScRspOuterClass {
         rollShopId = other.rollShopId;
         gachaRandom = other.gachaRandom;
         retcode = other.retcode;
+        lBDPANNEKBK.copyFrom(other.lBDPANNEKBK);
       }
       return this;
     }
@@ -209,6 +284,9 @@ public final class GetRollShopInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
+      if (other.hasLBDPANNEKBK()) {
+        getMutableLBDPANNEKBK().addAll(other.lBDPANNEKBK);
+      }
       return this;
     }
 
@@ -222,6 +300,7 @@ public final class GetRollShopInfoScRspOuterClass {
       rollShopId = 0;
       gachaRandom = 0;
       retcode = 0;
+      lBDPANNEKBK.clear();
       return this;
     }
 
@@ -232,6 +311,7 @@ public final class GetRollShopInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      lBDPANNEKBK.clear();
       return this;
     }
 
@@ -247,13 +327,14 @@ public final class GetRollShopInfoScRspOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasRollShopId() || rollShopId == other.rollShopId)
         && (!hasGachaRandom() || gachaRandom == other.gachaRandom)
-        && (!hasRetcode() || retcode == other.retcode);
+        && (!hasRetcode() || retcode == other.retcode)
+        && (!hasLBDPANNEKBK() || lBDPANNEKBK.equals(other.lBDPANNEKBK));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(rollShopId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -261,8 +342,14 @@ public final class GetRollShopInfoScRspOuterClass {
         output.writeUInt32NoTag(gachaRandom);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(retcode);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        for (int i = 0; i < lBDPANNEKBK.length(); i++) {
+          output.writeRawByte((byte) 120);
+          output.writeUInt32NoTag(lBDPANNEKBK.array()[i]);
+        }
       }
     }
 
@@ -278,6 +365,9 @@ public final class GetRollShopInfoScRspOuterClass {
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += (1 * lBDPANNEKBK.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lBDPANNEKBK);
+      }
       return size;
     }
 
@@ -288,7 +378,7 @@ public final class GetRollShopInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 56: {
             // rollShopId
             rollShopId = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -302,14 +392,23 @@ public final class GetRollShopInfoScRspOuterClass {
             gachaRandom = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 112) {
               break;
             }
           }
-          case 104: {
+          case 112: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 122) {
+              break;
+            }
+          }
+          case 122: {
+            // lBDPANNEKBK [packed=true]
+            input.readPackedUInt32(lBDPANNEKBK, tag);
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -323,6 +422,12 @@ public final class GetRollShopInfoScRspOuterClass {
               return this;
             }
             tag = input.readTag();
+            break;
+          }
+          case 120: {
+            // lBDPANNEKBK [packed=false]
+            tag = input.readRepeatedUInt32(lBDPANNEKBK, tag);
+            bitField0_ |= 0x00000008;
             break;
           }
         }
@@ -340,6 +445,9 @@ public final class GetRollShopInfoScRspOuterClass {
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRepeatedUInt32(FieldNames.lBDPANNEKBK, lBDPANNEKBK);
       }
       output.endObject();
     }
@@ -380,6 +488,17 @@ public final class GetRollShopInfoScRspOuterClass {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
                 bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -10849810: {
+            if (input.isAtField(FieldNames.lBDPANNEKBK)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(lBDPANNEKBK);
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -444,6 +563,8 @@ public final class GetRollShopInfoScRspOuterClass {
       static final FieldName gachaRandom = FieldName.forField("gachaRandom", "gacha_random");
 
       static final FieldName retcode = FieldName.forField("retcode");
+
+      static final FieldName lBDPANNEKBK = FieldName.forField("LBDPANNEKBK");
     }
   }
 }

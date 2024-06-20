@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SelectPhoneThemeCsReqOuterClass {
   /**
-   * <pre>
-   *  Fdimjhlfapm
-   * </pre>
-   *
    * Protobuf type {@code SelectPhoneThemeCsReq}
    */
   public static final class SelectPhoneThemeCsReq extends ProtoMessage<SelectPhoneThemeCsReq> implements Cloneable {
@@ -24,10 +20,10 @@ public final class SelectPhoneThemeCsReqOuterClass {
 
     /**
      * <pre>
-     *  ihefcgoomem
+     *  KNLGFCAEGFJ
      * </pre>
      *
-     * <code>optional uint32 theme_id = 1;</code>
+     * <code>optional uint32 theme_id = 8;</code>
      */
     private int themeId;
 
@@ -35,10 +31,6 @@ public final class SelectPhoneThemeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Fdimjhlfapm
-     * </pre>
-     *
      * @return a new empty instance of {@code SelectPhoneThemeCsReq}
      */
     public static SelectPhoneThemeCsReq newInstance() {
@@ -47,10 +39,10 @@ public final class SelectPhoneThemeCsReqOuterClass {
 
     /**
      * <pre>
-     *  ihefcgoomem
+     *  KNLGFCAEGFJ
      * </pre>
      *
-     * <code>optional uint32 theme_id = 1;</code>
+     * <code>optional uint32 theme_id = 8;</code>
      * @return whether the themeId field is set
      */
     public boolean hasThemeId() {
@@ -59,10 +51,10 @@ public final class SelectPhoneThemeCsReqOuterClass {
 
     /**
      * <pre>
-     *  ihefcgoomem
+     *  KNLGFCAEGFJ
      * </pre>
      *
-     * <code>optional uint32 theme_id = 1;</code>
+     * <code>optional uint32 theme_id = 8;</code>
      * @return this
      */
     public SelectPhoneThemeCsReq clearThemeId() {
@@ -73,10 +65,10 @@ public final class SelectPhoneThemeCsReqOuterClass {
 
     /**
      * <pre>
-     *  ihefcgoomem
+     *  KNLGFCAEGFJ
      * </pre>
      *
-     * <code>optional uint32 theme_id = 1;</code>
+     * <code>optional uint32 theme_id = 8;</code>
      * @return the themeId
      */
     public int getThemeId() {
@@ -85,10 +77,10 @@ public final class SelectPhoneThemeCsReqOuterClass {
 
     /**
      * <pre>
-     *  ihefcgoomem
+     *  KNLGFCAEGFJ
      * </pre>
      *
-     * <code>optional uint32 theme_id = 1;</code>
+     * <code>optional uint32 theme_id = 8;</code>
      * @param value the themeId to set
      * @return this
      */
@@ -157,7 +149,7 @@ public final class SelectPhoneThemeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(themeId);
       }
     }
@@ -178,7 +170,7 @@ public final class SelectPhoneThemeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 64: {
             // themeId
             themeId = input.readUInt32();
             bitField0_ |= 0x00000001;

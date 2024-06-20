@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// BHOFBFFAJJK
 enum FriendOnlineStatus {
   FRIEND_ONLINE_STATUS_OFFLINE = 0;
   FRIEND_ONLINE_STATUS_ONLINE = 1;

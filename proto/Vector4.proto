@@ -2,10 +2,10 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Aeklimbakcl
+// GPDFECLFNHM
 message Vector4 {
-    float x = 13;
-    float y = 9;
-    float z = 7;
-    float w = 15;
+    float x = 15;
+    float y = 13;
+    float z = 4;
+    float w = 3;
 }

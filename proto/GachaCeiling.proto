@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "GachaCeilingAvatar.proto";
 
-// Ldhikjljmdc
 message GachaCeiling {
-    uint32 ceiling_num = 14; //pdfinfdanea
-    repeated GachaCeilingAvatar avatar_list = 5;
-    bool is_claimed = 9; //opfncplflcc
+    repeated GachaCeilingAvatar avatar_list = 3;
+    uint32 ceiling_num = 5;
+    bool is_claimed = 4;
 }

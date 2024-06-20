@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class ChatTypeOuterClass {
   /**
+   * <pre>
+   *  OKPMFLJNGDH
+   * </pre>
+   *
    * Protobuf enum {@code ChatType}
    */
   public enum ChatType implements ProtoEnum<ChatType> {

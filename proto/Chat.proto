@@ -3,13 +3,13 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 import "MsgType.proto";
-// import "Bienebceiof.proto";
 
-// Gnbekokccfc
+// IIBLKIBAAFA
 message Chat {
-    string text = 5; //1
-    MsgType msg_type = 10; //1
-    uint32 emote = 1;
-    uint64 sent_time = 2; //1 
-    uint32 sender_uid = 7;
+    string word = 10; // CIEFPABJMDO
+    uint32 emote = 11;
+    uint64 sent_time = 13; // DHLFEFCEDOK
+    uint32 sender_uid = 5; // PNPLAPMKCMB
+	// JDKPHOFLFEN HHOGABOHHIO = 8;
+    MsgType msg_type = 15; // JGOPCJODAMN
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MultiPathAvatarType.proto";
+
+// OKGFNHEMPCN
+message SetGenderScRsp {
+	MultiPathAvatarType CEDHDHEPCFO = 1;
+	uint32 retcode = 4;
+}

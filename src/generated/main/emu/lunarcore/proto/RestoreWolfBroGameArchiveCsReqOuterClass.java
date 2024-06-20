@@ -23,6 +23,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  bool bepdahkjhih = 9;
+     * </pre>
+     *
      * <code>optional uint32 id = 14;</code>
      */
     private int id;
@@ -56,6 +60,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  bool bepdahkjhih = 9;
+     * </pre>
+     *
      * <code>optional uint32 id = 14;</code>
      * @return whether the id field is set
      */
@@ -64,6 +72,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  bool bepdahkjhih = 9;
+     * </pre>
+     *
      * <code>optional uint32 id = 14;</code>
      * @return this
      */
@@ -74,6 +86,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  bool bepdahkjhih = 9;
+     * </pre>
+     *
      * <code>optional uint32 id = 14;</code>
      * @return the id
      */
@@ -82,6 +98,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  bool bepdahkjhih = 9;
+     * </pre>
+     *
      * <code>optional uint32 id = 14;</code>
      * @param value the id to set
      * @return this

@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "PlayerDetailInfo.proto";
 
-// Jlfjneleoan
 message GetPlayerDetailInfoScRsp {
-    PlayerDetailInfo player_detail_info = 8; //knmbdmpogkc
-    uint32 retcode = 5;
+    PlayerDetailInfo player_detail_info = 14; // AJOJBKKCALL
+    uint32 retcode = 8;
 }

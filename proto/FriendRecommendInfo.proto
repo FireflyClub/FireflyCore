@@ -4,6 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SimpleInfo.proto";
 
+// MAOJKNNONOJ
 message FriendRecommendInfo {
-	SimpleInfo simple_info = 3;
+	bool OAAFIMCIONL = 8;
+	SimpleInfo simple_info = 10;
 }

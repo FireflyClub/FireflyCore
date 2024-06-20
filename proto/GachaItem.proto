@@ -5,10 +5,9 @@ option java_package = "emu.lunarcore.proto";
 import "Item.proto";
 import "ItemList.proto";
 
-// Afgjlphfbpn
 message GachaItem {
-    Item gacha_item = 13; // hjghnhljajl
-    ItemList token_item = 8; // fhfenbcnkei
-    bool is_new = 10; // cdhekghjjce
-    ItemList transfer_item_list = 15; // eginhhfhbbh
+    Item gacha_item = 3;
+    bool is_new = 9;
+    ItemList token_item = 12;
+    ItemList transfer_item_list = 13;
 }

@@ -13,8 +13,8 @@ public class PacketGetMultiPathAvatarInfoScRsp extends BasePacket {
         var data = GetMultiPathAvatarInfoScRsp.newInstance();
 
         data.addDEKPBIGFNBE(GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry.newInstance()
-            .setKey(1001)
-            .setValue(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.Mar_7thKnightType));
+            .setKey(1224)
+            .setValue(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.Mar_7thRogueType));
 
         this.setData(data);
     }

@@ -4,7 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 // Ijgnacmdkmn
 message DestroyItemCsReq {
-    uint32 cur_item_count = 12; // kgknhpdjmjg
-    uint32 item_id = 11;
-    uint32 item_count = 2; // nakamomhjck
+    uint32 cur_item_count = 8;
+    uint32 item_id = 14;
+    uint32 item_count = 5;
 }

@@ -10,7 +10,6 @@ public class PacketUnlockSkilltreeScRsp extends BasePacket {
         super(CmdId.UnlockSkilltreeScRsp);
 
         var data = UnlockSkilltreeScRsp.newInstance()
-                // .setAvatarId(avatarId)
                 .setPointId(pointId)
                 .setLevel(level);
 

@@ -30,6 +30,10 @@ public final class PVEBattleResultScRspOuterClass {
     private int pDJFOAHIKJH;
 
     /**
+     * <pre>
+     *  ItemList DBAGCMFKABI = 6;
+     * </pre>
+     *
      * <code>optional uint32 monster_id = 3;</code>
      */
     private int monsterId;
@@ -180,6 +184,10 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  ItemList DBAGCMFKABI = 6;
+     * </pre>
+     *
      * <code>optional uint32 monster_id = 3;</code>
      * @return whether the monsterId field is set
      */
@@ -188,6 +196,10 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  ItemList DBAGCMFKABI = 6;
+     * </pre>
+     *
      * <code>optional uint32 monster_id = 3;</code>
      * @return this
      */
@@ -198,6 +210,10 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  ItemList DBAGCMFKABI = 6;
+     * </pre>
+     *
      * <code>optional uint32 monster_id = 3;</code>
      * @return the monsterId
      */
@@ -206,6 +222,10 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *  ItemList DBAGCMFKABI = 6;
+     * </pre>
+     *
      * <code>optional uint32 monster_id = 3;</code>
      * @param value the monsterId to set
      * @return this

@@ -15,8 +15,6 @@ public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
         session.send(CmdId.PlayerLoginFinishScRsp);
         session.send(CmdId.GetArchiveDataScRsp);
         session.send(new PacketBattlePassInfoNotify());
-        session.send(CmdId.ContentPackageUnlockScRsp);
-        session.send(CmdId.ContentPackageGetDataScRsp);
         session.send(new PacketContentPackageSyncDataScNotify());
     }
 

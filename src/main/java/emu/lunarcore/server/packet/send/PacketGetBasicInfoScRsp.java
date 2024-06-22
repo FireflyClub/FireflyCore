@@ -1,6 +1,5 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.proto.GenderOuterClass.Gender;
 import emu.lunarcore.proto.GetBasicInfoScRspOuterClass.GetBasicInfoScRsp;
 import emu.lunarcore.proto.PlayerSettingInfoOuterClass.PlayerSettingInfo;
 import emu.lunarcore.server.game.GameSession;

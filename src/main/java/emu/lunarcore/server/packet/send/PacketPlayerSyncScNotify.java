@@ -44,7 +44,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         
         // Also update hero basic type info if were updating the main character
         if (avatar.getHeroPath() != null) {
-            //data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+            data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
         }
 
         this.setData(data);
@@ -82,7 +82,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
             
             // Also update hero basic type info if were updating the main character
             if (avatar.getHeroPath() != null) {
-                //data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+                data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
             }
         }
         

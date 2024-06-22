@@ -10,7 +10,6 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.RepeatedMessage;
 
 public final class ChallengeInfoOuterClass {
   /**
@@ -65,6 +64,10 @@ public final class ChallengeInfoOuterClass {
     private int extraLineupType;
 
     /**
+     * <pre>
+     *  repeated Jghjjfejplg archive_monster_id_list = 12;
+     * </pre>
+     *
      * <code>optional .ChallengeStatus status = 13;</code>
      */
     private int status;
@@ -77,11 +80,6 @@ public final class ChallengeInfoOuterClass {
      * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      */
     private final ChallengeStoryInfoOuterClass.ChallengeStoryInfo storyInfo = ChallengeStoryInfoOuterClass.ChallengeStoryInfo.newInstance();
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     */
-    private final RepeatedMessage<JghjjfejplgOuterClass.Jghjjfejplg> archiveMonsterIdList = RepeatedMessage.newEmptyInstance(JghjjfejplgOuterClass.Jghjjfejplg.getFactory());
 
     private ChallengeInfo() {
     }
@@ -372,6 +370,10 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  repeated Jghjjfejplg archive_monster_id_list = 12;
+     * </pre>
+     *
      * <code>optional .ChallengeStatus status = 13;</code>
      * @return whether the status field is set
      */
@@ -380,6 +382,10 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  repeated Jghjjfejplg archive_monster_id_list = 12;
+     * </pre>
+     *
      * <code>optional .ChallengeStatus status = 13;</code>
      * @return this
      */
@@ -390,6 +396,10 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  repeated Jghjjfejplg archive_monster_id_list = 12;
+     * </pre>
+     *
      * <code>optional .ChallengeStatus status = 13;</code>
      * @return the status
      */
@@ -423,6 +433,10 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  repeated Jghjjfejplg archive_monster_id_list = 12;
+     * </pre>
+     *
      * <code>optional .ChallengeStatus status = 13;</code>
      * @param value the status to set
      * @return this
@@ -510,75 +524,6 @@ public final class ChallengeInfoOuterClass {
       return this;
     }
 
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     * @return whether the archiveMonsterIdList field is set
-     */
-    public boolean hasArchiveMonsterIdList() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     * @return this
-     */
-    public ChallengeInfo clearArchiveMonsterIdList() {
-      bitField0_ &= ~0x00000080;
-      archiveMonsterIdList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableArchiveMonsterIdList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<JghjjfejplgOuterClass.Jghjjfejplg> getArchiveMonsterIdList() {
-      return archiveMonsterIdList;
-    }
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<JghjjfejplgOuterClass.Jghjjfejplg> getMutableArchiveMonsterIdList() {
-      bitField0_ |= 0x00000080;
-      return archiveMonsterIdList;
-    }
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     * @param value the archiveMonsterIdList to add
-     * @return this
-     */
-    public ChallengeInfo addArchiveMonsterIdList(final JghjjfejplgOuterClass.Jghjjfejplg value) {
-      bitField0_ |= 0x00000080;
-      archiveMonsterIdList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .Jghjjfejplg archive_monster_id_list = 12;</code>
-     * @param values the archiveMonsterIdList to add
-     * @return this
-     */
-    public ChallengeInfo addAllArchiveMonsterIdList(
-        final JghjjfejplgOuterClass.Jghjjfejplg... values) {
-      bitField0_ |= 0x00000080;
-      archiveMonsterIdList.addAll(values);
-      return this;
-    }
-
     @Override
     public ChallengeInfo copyFrom(final ChallengeInfo other) {
       cachedSize = other.cachedSize;
@@ -591,7 +536,6 @@ public final class ChallengeInfoOuterClass {
         extraLineupType = other.extraLineupType;
         status = other.status;
         storyInfo.copyFrom(other.storyInfo);
-        archiveMonsterIdList.copyFrom(other.archiveMonsterIdList);
       }
       return this;
     }
@@ -623,9 +567,6 @@ public final class ChallengeInfoOuterClass {
       if (other.hasStoryInfo()) {
         getMutableStoryInfo().mergeFrom(other.storyInfo);
       }
-      if (other.hasArchiveMonsterIdList()) {
-        getMutableArchiveMonsterIdList().addAll(other.archiveMonsterIdList);
-      }
       return this;
     }
 
@@ -643,7 +584,6 @@ public final class ChallengeInfoOuterClass {
       extraLineupType = 0;
       status = 0;
       storyInfo.clear();
-      archiveMonsterIdList.clear();
       return this;
     }
 
@@ -655,7 +595,6 @@ public final class ChallengeInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       storyInfo.clearQuick();
-      archiveMonsterIdList.clearQuick();
       return this;
     }
 
@@ -675,8 +614,7 @@ public final class ChallengeInfoOuterClass {
         && (!hasChallengeId() || challengeId == other.challengeId)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
         && (!hasStatus() || status == other.status)
-        && (!hasStoryInfo() || storyInfo.equals(other.storyInfo))
-        && (!hasArchiveMonsterIdList() || archiveMonsterIdList.equals(other.archiveMonsterIdList));
+        && (!hasStoryInfo() || storyInfo.equals(other.storyInfo));
     }
 
     @Override
@@ -709,12 +647,6 @@ public final class ChallengeInfoOuterClass {
         output.writeRawByte((byte) 34);
         output.writeMessageNoTag(storyInfo);
       }
-      if ((bitField0_ & 0x00000080) != 0) {
-        for (int i = 0; i < archiveMonsterIdList.length(); i++) {
-          output.writeRawByte((byte) 98);
-          output.writeMessageNoTag(archiveMonsterIdList.get(i));
-        }
-      }
     }
 
     @Override
@@ -740,9 +672,6 @@ public final class ChallengeInfoOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(storyInfo);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
-        size += (1 * archiveMonsterIdList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(archiveMonsterIdList);
       }
       return size;
     }
@@ -819,14 +748,6 @@ public final class ChallengeInfoOuterClass {
             input.readMessage(storyInfo);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 98) {
-              break;
-            }
-          }
-          case 98: {
-            // archiveMonsterIdList
-            tag = input.readRepeatedMessage(archiveMonsterIdList, tag);
-            bitField0_ |= 0x00000080;
             if (tag != 0) {
               break;
             }
@@ -868,9 +789,6 @@ public final class ChallengeInfoOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeMessage(FieldNames.storyInfo, storyInfo);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRepeatedMessage(FieldNames.archiveMonsterIdList, archiveMonsterIdList);
       }
       output.endObject();
     }
@@ -974,18 +892,6 @@ public final class ChallengeInfoOuterClass {
             }
             break;
           }
-          case 912174897:
-          case 1817787488: {
-            if (input.isAtField(FieldNames.archiveMonsterIdList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(archiveMonsterIdList);
-                bitField0_ |= 0x00000080;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           default: {
             input.skipUnknownField();
             break;
@@ -1051,8 +957,6 @@ public final class ChallengeInfoOuterClass {
       static final FieldName status = FieldName.forField("status");
 
       static final FieldName storyInfo = FieldName.forField("storyInfo", "story_info");
-
-      static final FieldName archiveMonsterIdList = FieldName.forField("archiveMonsterIdList", "archive_monster_id_list");
     }
   }
 }

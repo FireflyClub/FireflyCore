@@ -13,7 +13,7 @@ public class HandlerQuitLineupCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = QuitLineupCsReq.parseFrom(data);
 
-        session.getPlayer().getLineupManager().quitLineup(req.getIndex(), req.getBaseAvatarId());
+        session.getPlayer().getLineupManager().quitLineup(req.getIndex(), req.getSceneAvatarId());
         session.send(CmdId.QuitLineupScRsp);
     }
 

@@ -25,10 +25,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      */
     private final RepeatedMessage<SceneGroupRefreshInfoOuterClass.SceneGroupRefreshInfo> groupRefreshInfo = RepeatedMessage.newEmptyInstance(SceneGroupRefreshInfoOuterClass.SceneGroupRefreshInfo.getFactory());
 
@@ -48,10 +48,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      * @return whether the groupRefreshInfo field is set
      */
     public boolean hasGroupRefreshInfo() {
@@ -60,10 +60,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      * @return this
      */
     public SceneGroupRefreshScNotify clearGroupRefreshInfo() {
@@ -74,10 +74,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -93,10 +93,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -112,10 +112,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      * @param value the groupRefreshInfo to add
      * @return this
      */
@@ -128,10 +128,10 @@ public final class SceneGroupRefreshScNotifyOuterClass {
 
     /**
      * <pre>
-     *  kpjckjjpjhj
+     *  PBIFEAHGJMJ
      * </pre>
      *
-     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 1;</code>
+     * <code>repeated .SceneGroupRefreshInfo group_refresh_info = 2;</code>
      * @param values the groupRefreshInfo to add
      * @return this
      */
@@ -203,7 +203,7 @@ public final class SceneGroupRefreshScNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < groupRefreshInfo.length(); i++) {
-          output.writeRawByte((byte) 10);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(groupRefreshInfo.get(i));
         }
       }
@@ -225,7 +225,7 @@ public final class SceneGroupRefreshScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 10: {
+          case 18: {
             // groupRefreshInfo
             tag = input.readRepeatedMessage(groupRefreshInfo, tag);
             bitField0_ |= 0x00000001;

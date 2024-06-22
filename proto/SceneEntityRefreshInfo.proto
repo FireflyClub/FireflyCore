@@ -6,6 +6,9 @@ import "SceneEntityInfo.proto";
 
 // HFJEMBFAOCL
 message SceneEntityRefreshInfo {
-    SceneEntityInfo add_entity = 4; // KEOOGNDLBPE
-    uint32 del_entity = 9; //?
+    oneof refresh_type {
+        SceneEntityInfo add_entity = 6; // KEOOGNDLBPE
+        uint32 del_entity = 9;
+        uint32 GJLADLHAAMM = 4;
+    }
 }

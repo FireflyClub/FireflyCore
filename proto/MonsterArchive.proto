@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Gfdmodmlole
 message MonsterArchive {
-    uint32 monster_id = 2;
-    uint32 num = 3;
+    uint32 num = 2;
+    uint32 scene_event_id = 1;
 }

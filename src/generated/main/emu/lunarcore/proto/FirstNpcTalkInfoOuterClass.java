@@ -20,12 +20,21 @@ public final class FirstNpcTalkInfoOuterClass {
 
     /**
      * <pre>
-     *  bool finish_dialogue = 7;
+     *  FPCFJGELEBJ
      * </pre>
      *
-     * <code>optional uint32 npc_id = 11;</code>
+     * <code>optional uint32 first_npc_id = 6;</code>
      */
-    private int npcId;
+    private int firstNpcId;
+
+    /**
+     * <pre>
+     *  PHBEFLFGKKL
+     * </pre>
+     *
+     * <code>optional bool finish_dialogue = 7;</code>
+     */
+    private boolean finishDialogue;
 
     private FirstNpcTalkInfo() {
     }
@@ -39,54 +48,107 @@ public final class FirstNpcTalkInfoOuterClass {
 
     /**
      * <pre>
-     *  bool finish_dialogue = 7;
+     *  FPCFJGELEBJ
      * </pre>
      *
-     * <code>optional uint32 npc_id = 11;</code>
-     * @return whether the npcId field is set
+     * <code>optional uint32 first_npc_id = 6;</code>
+     * @return whether the firstNpcId field is set
      */
-    public boolean hasNpcId() {
+    public boolean hasFirstNpcId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  bool finish_dialogue = 7;
+     *  FPCFJGELEBJ
      * </pre>
      *
-     * <code>optional uint32 npc_id = 11;</code>
+     * <code>optional uint32 first_npc_id = 6;</code>
      * @return this
      */
-    public FirstNpcTalkInfo clearNpcId() {
+    public FirstNpcTalkInfo clearFirstNpcId() {
       bitField0_ &= ~0x00000001;
-      npcId = 0;
+      firstNpcId = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  bool finish_dialogue = 7;
+     *  FPCFJGELEBJ
      * </pre>
      *
-     * <code>optional uint32 npc_id = 11;</code>
-     * @return the npcId
+     * <code>optional uint32 first_npc_id = 6;</code>
+     * @return the firstNpcId
      */
-    public int getNpcId() {
-      return npcId;
+    public int getFirstNpcId() {
+      return firstNpcId;
     }
 
     /**
      * <pre>
-     *  bool finish_dialogue = 7;
+     *  FPCFJGELEBJ
      * </pre>
      *
-     * <code>optional uint32 npc_id = 11;</code>
-     * @param value the npcId to set
+     * <code>optional uint32 first_npc_id = 6;</code>
+     * @param value the firstNpcId to set
      * @return this
      */
-    public FirstNpcTalkInfo setNpcId(final int value) {
+    public FirstNpcTalkInfo setFirstNpcId(final int value) {
       bitField0_ |= 0x00000001;
-      npcId = value;
+      firstNpcId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PHBEFLFGKKL
+     * </pre>
+     *
+     * <code>optional bool finish_dialogue = 7;</code>
+     * @return whether the finishDialogue field is set
+     */
+    public boolean hasFinishDialogue() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  PHBEFLFGKKL
+     * </pre>
+     *
+     * <code>optional bool finish_dialogue = 7;</code>
+     * @return this
+     */
+    public FirstNpcTalkInfo clearFinishDialogue() {
+      bitField0_ &= ~0x00000002;
+      finishDialogue = false;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PHBEFLFGKKL
+     * </pre>
+     *
+     * <code>optional bool finish_dialogue = 7;</code>
+     * @return the finishDialogue
+     */
+    public boolean getFinishDialogue() {
+      return finishDialogue;
+    }
+
+    /**
+     * <pre>
+     *  PHBEFLFGKKL
+     * </pre>
+     *
+     * <code>optional bool finish_dialogue = 7;</code>
+     * @param value the finishDialogue to set
+     * @return this
+     */
+    public FirstNpcTalkInfo setFinishDialogue(final boolean value) {
+      bitField0_ |= 0x00000002;
+      finishDialogue = value;
       return this;
     }
 
@@ -95,7 +157,8 @@ public final class FirstNpcTalkInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        npcId = other.npcId;
+        firstNpcId = other.firstNpcId;
+        finishDialogue = other.finishDialogue;
       }
       return this;
     }
@@ -106,8 +169,11 @@ public final class FirstNpcTalkInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasNpcId()) {
-        setNpcId(other.npcId);
+      if (other.hasFirstNpcId()) {
+        setFirstNpcId(other.firstNpcId);
+      }
+      if (other.hasFinishDialogue()) {
+        setFinishDialogue(other.finishDialogue);
       }
       return this;
     }
@@ -119,7 +185,8 @@ public final class FirstNpcTalkInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      npcId = 0;
+      firstNpcId = 0;
+      finishDialogue = false;
       return this;
     }
 
@@ -143,14 +210,19 @@ public final class FirstNpcTalkInfoOuterClass {
       }
       FirstNpcTalkInfo other = (FirstNpcTalkInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasNpcId() || npcId == other.npcId);
+        && (!hasFirstNpcId() || firstNpcId == other.firstNpcId)
+        && (!hasFinishDialogue() || finishDialogue == other.finishDialogue);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(npcId);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(firstNpcId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeBoolNoTag(finishDialogue);
       }
     }
 
@@ -158,7 +230,10 @@ public final class FirstNpcTalkInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(npcId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(firstNpcId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 2;
       }
       return size;
     }
@@ -170,10 +245,19 @@ public final class FirstNpcTalkInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // npcId
-            npcId = input.readUInt32();
+          case 48: {
+            // firstNpcId
+            firstNpcId = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // finishDialogue
+            finishDialogue = input.readBool();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -197,7 +281,10 @@ public final class FirstNpcTalkInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.npcId, npcId);
+        output.writeUInt32(FieldNames.firstNpcId, firstNpcId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeBool(FieldNames.finishDialogue, finishDialogue);
       }
       output.endObject();
     }
@@ -209,12 +296,24 @@ public final class FirstNpcTalkInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 105021404:
-          case -1039282375: {
-            if (input.isAtField(FieldNames.npcId)) {
+          case -176624884:
+          case -74607704: {
+            if (input.isAtField(FieldNames.firstNpcId)) {
               if (!input.trySkipNullValue()) {
-                npcId = input.readUInt32();
+                firstNpcId = input.readUInt32();
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 552830859:
+          case 764736516: {
+            if (input.isAtField(FieldNames.finishDialogue)) {
+              if (!input.trySkipNullValue()) {
+                finishDialogue = input.readBool();
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -274,7 +373,9 @@ public final class FirstNpcTalkInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName npcId = FieldName.forField("npcId", "npc_id");
+      static final FieldName firstNpcId = FieldName.forField("firstNpcId", "first_npc_id");
+
+      static final FieldName finishDialogue = FieldName.forField("finishDialogue", "finish_dialogue");
     }
   }
 }

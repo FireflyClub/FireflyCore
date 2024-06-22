@@ -23,7 +23,7 @@ public class BattleMonsterWave {
     public SceneMonsterWave toProto() {
         var proto = SceneMonsterWave.newInstance()
                 .setWaveId(1) // Probably not named correctly
-                .setStageId(stage.getId());
+                .setMonsterStageId(stage.getId());
         
         // Set wave params
         proto.getMutableWaveParam();
@@ -33,7 +33,7 @@ public class BattleMonsterWave {
         }
         
         for (int monsterId : monsters) {
-            var monster = SceneMonster.newInstance().setMonsterId(monsterId);
+            var monster = SceneMonster.newInstance().setSceneEventId(monsterId);
             proto.addMonsterList(monster);
         }
         

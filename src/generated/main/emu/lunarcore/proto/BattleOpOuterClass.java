@@ -10,15 +10,24 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.Utf8String;
 
 public final class BattleOpOuterClass {
   /**
+   * <pre>
+   *  NOOKLEKBBAA
+   * </pre>
+   *
    * Protobuf type {@code BattleOp}
    */
   public static final class BattleOp extends ProtoMessage<BattleOp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  CDIJGFBOOAB
+     * </pre>
+     *
      * <code>optional uint32 turn_counter = 1;</code>
      */
     private int turnCounter;
@@ -29,38 +38,63 @@ public final class BattleOpOuterClass {
     private int state;
 
     /**
+     * <pre>
+     *  CLGDPDMKHGC
+     * </pre>
+     *
      * <code>optional uint32 action_entity_id = 3;</code>
      */
     private int actionEntityId;
 
     /**
+     * <pre>
+     *  GLIDOKAEJDO
+     * </pre>
+     *
      * <code>optional uint32 target_entity_id = 4;</code>
      */
     private int targetEntityId;
 
     /**
+     * <pre>
+     *  HLGDHAIHDJB
+     * </pre>
+     *
      * <code>optional uint32 op_type = 5;</code>
      */
     private int opType;
 
     /**
+     * <pre>
+     *  JJAIJFFIOCK
+     * </pre>
+     *
      * <code>optional uint32 skill_index = 6;</code>
      */
     private int skillIndex;
 
     /**
      * <pre>
-     *  string LEFCHEBPCCI = 8;
+     *  PPCJCFJFNBE
      * </pre>
      *
      * <code>optional uint32 operation_counter = 7;</code>
      */
     private int operationCounter;
 
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     */
+    private final Utf8String oBCGHENJNLA = Utf8String.newEmptyInstance();
+
     private BattleOp() {
     }
 
     /**
+     * <pre>
+     *  NOOKLEKBBAA
+     * </pre>
+     *
      * @return a new empty instance of {@code BattleOp}
      */
     public static BattleOp newInstance() {
@@ -68,6 +102,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CDIJGFBOOAB
+     * </pre>
+     *
      * <code>optional uint32 turn_counter = 1;</code>
      * @return whether the turnCounter field is set
      */
@@ -76,6 +114,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CDIJGFBOOAB
+     * </pre>
+     *
      * <code>optional uint32 turn_counter = 1;</code>
      * @return this
      */
@@ -86,6 +128,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CDIJGFBOOAB
+     * </pre>
+     *
      * <code>optional uint32 turn_counter = 1;</code>
      * @return the turnCounter
      */
@@ -94,6 +140,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CDIJGFBOOAB
+     * </pre>
+     *
      * <code>optional uint32 turn_counter = 1;</code>
      * @param value the turnCounter to set
      * @return this
@@ -142,6 +192,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CLGDPDMKHGC
+     * </pre>
+     *
      * <code>optional uint32 action_entity_id = 3;</code>
      * @return whether the actionEntityId field is set
      */
@@ -150,6 +204,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CLGDPDMKHGC
+     * </pre>
+     *
      * <code>optional uint32 action_entity_id = 3;</code>
      * @return this
      */
@@ -160,6 +218,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CLGDPDMKHGC
+     * </pre>
+     *
      * <code>optional uint32 action_entity_id = 3;</code>
      * @return the actionEntityId
      */
@@ -168,6 +230,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  CLGDPDMKHGC
+     * </pre>
+     *
      * <code>optional uint32 action_entity_id = 3;</code>
      * @param value the actionEntityId to set
      * @return this
@@ -179,6 +245,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  GLIDOKAEJDO
+     * </pre>
+     *
      * <code>optional uint32 target_entity_id = 4;</code>
      * @return whether the targetEntityId field is set
      */
@@ -187,6 +257,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  GLIDOKAEJDO
+     * </pre>
+     *
      * <code>optional uint32 target_entity_id = 4;</code>
      * @return this
      */
@@ -197,6 +271,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  GLIDOKAEJDO
+     * </pre>
+     *
      * <code>optional uint32 target_entity_id = 4;</code>
      * @return the targetEntityId
      */
@@ -205,6 +283,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  GLIDOKAEJDO
+     * </pre>
+     *
      * <code>optional uint32 target_entity_id = 4;</code>
      * @param value the targetEntityId to set
      * @return this
@@ -216,6 +298,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  HLGDHAIHDJB
+     * </pre>
+     *
      * <code>optional uint32 op_type = 5;</code>
      * @return whether the opType field is set
      */
@@ -224,6 +310,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  HLGDHAIHDJB
+     * </pre>
+     *
      * <code>optional uint32 op_type = 5;</code>
      * @return this
      */
@@ -234,6 +324,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  HLGDHAIHDJB
+     * </pre>
+     *
      * <code>optional uint32 op_type = 5;</code>
      * @return the opType
      */
@@ -242,6 +336,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  HLGDHAIHDJB
+     * </pre>
+     *
      * <code>optional uint32 op_type = 5;</code>
      * @param value the opType to set
      * @return this
@@ -253,6 +351,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  JJAIJFFIOCK
+     * </pre>
+     *
      * <code>optional uint32 skill_index = 6;</code>
      * @return whether the skillIndex field is set
      */
@@ -261,6 +363,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  JJAIJFFIOCK
+     * </pre>
+     *
      * <code>optional uint32 skill_index = 6;</code>
      * @return this
      */
@@ -271,6 +377,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  JJAIJFFIOCK
+     * </pre>
+     *
      * <code>optional uint32 skill_index = 6;</code>
      * @return the skillIndex
      */
@@ -279,6 +389,10 @@ public final class BattleOpOuterClass {
     }
 
     /**
+     * <pre>
+     *  JJAIJFFIOCK
+     * </pre>
+     *
      * <code>optional uint32 skill_index = 6;</code>
      * @param value the skillIndex to set
      * @return this
@@ -291,7 +405,7 @@ public final class BattleOpOuterClass {
 
     /**
      * <pre>
-     *  string LEFCHEBPCCI = 8;
+     *  PPCJCFJFNBE
      * </pre>
      *
      * <code>optional uint32 operation_counter = 7;</code>
@@ -303,7 +417,7 @@ public final class BattleOpOuterClass {
 
     /**
      * <pre>
-     *  string LEFCHEBPCCI = 8;
+     *  PPCJCFJFNBE
      * </pre>
      *
      * <code>optional uint32 operation_counter = 7;</code>
@@ -317,7 +431,7 @@ public final class BattleOpOuterClass {
 
     /**
      * <pre>
-     *  string LEFCHEBPCCI = 8;
+     *  PPCJCFJFNBE
      * </pre>
      *
      * <code>optional uint32 operation_counter = 7;</code>
@@ -329,7 +443,7 @@ public final class BattleOpOuterClass {
 
     /**
      * <pre>
-     *  string LEFCHEBPCCI = 8;
+     *  PPCJCFJFNBE
      * </pre>
      *
      * <code>optional uint32 operation_counter = 7;</code>
@@ -339,6 +453,71 @@ public final class BattleOpOuterClass {
     public BattleOp setOperationCounter(final int value) {
       bitField0_ |= 0x00000040;
       operationCounter = value;
+      return this;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @return whether the oBCGHENJNLA field is set
+     */
+    public boolean hasOBCGHENJNLA() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @return this
+     */
+    public BattleOp clearOBCGHENJNLA() {
+      bitField0_ &= ~0x00000080;
+      oBCGHENJNLA.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @return the oBCGHENJNLA
+     */
+    public String getOBCGHENJNLA() {
+      return oBCGHENJNLA.getString();
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @return internal {@code Utf8String} representation of oBCGHENJNLA for reading
+     */
+    public Utf8String getOBCGHENJNLABytes() {
+      return this.oBCGHENJNLA;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @return internal {@code Utf8String} representation of oBCGHENJNLA for modifications
+     */
+    public Utf8String getMutableOBCGHENJNLABytes() {
+      bitField0_ |= 0x00000080;
+      return this.oBCGHENJNLA;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @param value the oBCGHENJNLA to set
+     * @return this
+     */
+    public BattleOp setOBCGHENJNLA(final CharSequence value) {
+      bitField0_ |= 0x00000080;
+      oBCGHENJNLA.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OBCGHENJNLA = 8;</code>
+     * @param value the oBCGHENJNLA to set
+     * @return this
+     */
+    public BattleOp setOBCGHENJNLA(final Utf8String value) {
+      bitField0_ |= 0x00000080;
+      oBCGHENJNLA.copyFrom(value);
       return this;
     }
 
@@ -354,6 +533,7 @@ public final class BattleOpOuterClass {
         opType = other.opType;
         skillIndex = other.skillIndex;
         operationCounter = other.operationCounter;
+        oBCGHENJNLA.copyFrom(other.oBCGHENJNLA);
       }
       return this;
     }
@@ -385,6 +565,9 @@ public final class BattleOpOuterClass {
       if (other.hasOperationCounter()) {
         setOperationCounter(other.operationCounter);
       }
+      if (other.hasOBCGHENJNLA()) {
+        getMutableOBCGHENJNLABytes().copyFrom(other.oBCGHENJNLA);
+      }
       return this;
     }
 
@@ -402,6 +585,7 @@ public final class BattleOpOuterClass {
       opType = 0;
       skillIndex = 0;
       operationCounter = 0;
+      oBCGHENJNLA.clear();
       return this;
     }
 
@@ -412,6 +596,7 @@ public final class BattleOpOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      oBCGHENJNLA.clear();
       return this;
     }
 
@@ -431,7 +616,8 @@ public final class BattleOpOuterClass {
         && (!hasTargetEntityId() || targetEntityId == other.targetEntityId)
         && (!hasOpType() || opType == other.opType)
         && (!hasSkillIndex() || skillIndex == other.skillIndex)
-        && (!hasOperationCounter() || operationCounter == other.operationCounter);
+        && (!hasOperationCounter() || operationCounter == other.operationCounter)
+        && (!hasOBCGHENJNLA() || oBCGHENJNLA.equals(other.oBCGHENJNLA));
     }
 
     @Override
@@ -464,6 +650,10 @@ public final class BattleOpOuterClass {
         output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(operationCounter);
       }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeRawByte((byte) 66);
+        output.writeStringNoTag(oBCGHENJNLA);
+      }
     }
 
     @Override
@@ -489,6 +679,9 @@ public final class BattleOpOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(operationCounter);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(oBCGHENJNLA);
       }
       return size;
     }
@@ -559,6 +752,15 @@ public final class BattleOpOuterClass {
             operationCounter = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
+            if (tag != 66) {
+              break;
+            }
+          }
+          case 66: {
+            // oBCGHENJNLA
+            input.readString(oBCGHENJNLA);
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
             if (tag != 0) {
               break;
             }
@@ -600,6 +802,9 @@ public final class BattleOpOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeUInt32(FieldNames.operationCounter, operationCounter);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeString(FieldNames.oBCGHENJNLA, oBCGHENJNLA);
       }
       output.endObject();
     }
@@ -694,6 +899,17 @@ public final class BattleOpOuterClass {
             }
             break;
           }
+          case -439625005: {
+            if (input.isAtField(FieldNames.oBCGHENJNLA)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(oBCGHENJNLA);
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           default: {
             input.skipUnknownField();
             break;
@@ -759,6 +975,8 @@ public final class BattleOpOuterClass {
       static final FieldName skillIndex = FieldName.forField("skillIndex", "skill_index");
 
       static final FieldName operationCounter = FieldName.forField("operationCounter", "operation_counter");
+
+      static final FieldName oBCGHENJNLA = FieldName.forField("OBCGHENJNLA");
     }
   }
 }

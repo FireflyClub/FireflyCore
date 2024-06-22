@@ -13,40 +13,50 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class UseItemScRspOuterClass {
   /**
-   * <pre>
-   *  Ofiljjocjak
-   * </pre>
-   *
    * Protobuf type {@code UseItemScRsp}
    */
   public static final class UseItemScRsp extends ProtoMessage<UseItemScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 use_item_id = 6;</code>
+     * <code>optional uint64 NLJGPJDALCE = 10;</code>
      */
-    private int useItemId;
+    private long nLJGPJDALCE;
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  OHDKAPDOMKO
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_id = 7;</code>
+     */
+    private int useItemId;
+
+    /**
+     * <pre>
+     *  LBFKPJGFNNF
+     * </pre>
+     *
+     * <code>optional uint32 use_item_count = 9;</code>
      */
     private int useItemCount;
 
     /**
+     * <code>optional uint32 OCJJGJJMDGA = 14;</code>
+     */
+    private int oCJJGJJMDGA;
+
+    /**
      * <pre>
-     * fghjlkadkpp
+     *  JOLGKECNHIN
      * </pre>
      *
-     * <code>optional .ItemList return_data = 4;</code>
+     * <code>optional .ItemList return_data = 8;</code>
      */
     private final ItemListOuterClass.ItemList returnData = ItemListOuterClass.ItemList.newInstance();
 
@@ -54,10 +64,6 @@ public final class UseItemScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ofiljjocjak
-     * </pre>
-     *
      * @return a new empty instance of {@code UseItemScRsp}
      */
     public static UseItemScRsp newInstance() {
@@ -65,44 +71,44 @@ public final class UseItemScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 use_item_id = 6;</code>
-     * @return whether the useItemId field is set
+     * <code>optional uint64 NLJGPJDALCE = 10;</code>
+     * @return whether the nLJGPJDALCE field is set
      */
-    public boolean hasUseItemId() {
+    public boolean hasNLJGPJDALCE() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 use_item_id = 6;</code>
+     * <code>optional uint64 NLJGPJDALCE = 10;</code>
      * @return this
      */
-    public UseItemScRsp clearUseItemId() {
+    public UseItemScRsp clearNLJGPJDALCE() {
       bitField0_ &= ~0x00000001;
-      useItemId = 0;
+      nLJGPJDALCE = 0L;
       return this;
     }
 
     /**
-     * <code>optional uint32 use_item_id = 6;</code>
-     * @return the useItemId
+     * <code>optional uint64 NLJGPJDALCE = 10;</code>
+     * @return the nLJGPJDALCE
      */
-    public int getUseItemId() {
-      return useItemId;
+    public long getNLJGPJDALCE() {
+      return nLJGPJDALCE;
     }
 
     /**
-     * <code>optional uint32 use_item_id = 6;</code>
-     * @param value the useItemId to set
+     * <code>optional uint64 NLJGPJDALCE = 10;</code>
+     * @param value the nLJGPJDALCE to set
      * @return this
      */
-    public UseItemScRsp setUseItemId(final int value) {
+    public UseItemScRsp setNLJGPJDALCE(final long value) {
       bitField0_ |= 0x00000001;
-      useItemId = value;
+      nLJGPJDALCE = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -110,7 +116,7 @@ public final class UseItemScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public UseItemScRsp clearRetcode() {
@@ -120,7 +126,7 @@ public final class UseItemScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -128,7 +134,7 @@ public final class UseItemScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -140,36 +146,89 @@ public final class UseItemScRspOuterClass {
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  OHDKAPDOMKO
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
-     * @return whether the useItemCount field is set
+     * <code>optional uint32 use_item_id = 7;</code>
+     * @return whether the useItemId field is set
      */
-    public boolean hasUseItemCount() {
+    public boolean hasUseItemId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  OHDKAPDOMKO
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_id = 7;</code>
+     * @return this
+     */
+    public UseItemScRsp clearUseItemId() {
+      bitField0_ &= ~0x00000004;
+      useItemId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OHDKAPDOMKO
+     * </pre>
+     *
+     * <code>optional uint32 use_item_id = 7;</code>
+     * @return the useItemId
+     */
+    public int getUseItemId() {
+      return useItemId;
+    }
+
+    /**
+     * <pre>
+     *  OHDKAPDOMKO
+     * </pre>
+     *
+     * <code>optional uint32 use_item_id = 7;</code>
+     * @param value the useItemId to set
+     * @return this
+     */
+    public UseItemScRsp setUseItemId(final int value) {
+      bitField0_ |= 0x00000004;
+      useItemId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LBFKPJGFNNF
+     * </pre>
+     *
+     * <code>optional uint32 use_item_count = 9;</code>
+     * @return whether the useItemCount field is set
+     */
+    public boolean hasUseItemCount() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *  LBFKPJGFNNF
+     * </pre>
+     *
+     * <code>optional uint32 use_item_count = 9;</code>
      * @return this
      */
     public UseItemScRsp clearUseItemCount() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       useItemCount = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  LBFKPJGFNNF
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_count = 9;</code>
      * @return the useItemCount
      */
     public int getUseItemCount() {
@@ -178,51 +237,88 @@ public final class UseItemScRspOuterClass {
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  LBFKPJGFNNF
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_count = 9;</code>
      * @param value the useItemCount to set
      * @return this
      */
     public UseItemScRsp setUseItemCount(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       useItemCount = value;
       return this;
     }
 
     /**
-     * <pre>
-     * fghjlkadkpp
-     * </pre>
-     *
-     * <code>optional .ItemList return_data = 4;</code>
-     * @return whether the returnData field is set
+     * <code>optional uint32 OCJJGJJMDGA = 14;</code>
+     * @return whether the oCJJGJJMDGA field is set
      */
-    public boolean hasReturnData() {
-      return (bitField0_ & 0x00000008) != 0;
+    public boolean hasOCJJGJJMDGA() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 OCJJGJJMDGA = 14;</code>
+     * @return this
+     */
+    public UseItemScRsp clearOCJJGJJMDGA() {
+      bitField0_ &= ~0x00000010;
+      oCJJGJJMDGA = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 OCJJGJJMDGA = 14;</code>
+     * @return the oCJJGJJMDGA
+     */
+    public int getOCJJGJJMDGA() {
+      return oCJJGJJMDGA;
+    }
+
+    /**
+     * <code>optional uint32 OCJJGJJMDGA = 14;</code>
+     * @param value the oCJJGJJMDGA to set
+     * @return this
+     */
+    public UseItemScRsp setOCJJGJJMDGA(final int value) {
+      bitField0_ |= 0x00000010;
+      oCJJGJJMDGA = value;
+      return this;
     }
 
     /**
      * <pre>
-     * fghjlkadkpp
+     *  JOLGKECNHIN
      * </pre>
      *
-     * <code>optional .ItemList return_data = 4;</code>
+     * <code>optional .ItemList return_data = 8;</code>
+     * @return whether the returnData field is set
+     */
+    public boolean hasReturnData() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     *  JOLGKECNHIN
+     * </pre>
+     *
+     * <code>optional .ItemList return_data = 8;</code>
      * @return this
      */
     public UseItemScRsp clearReturnData() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000020;
       returnData.clear();
       return this;
     }
 
     /**
      * <pre>
-     * fghjlkadkpp
+     *  JOLGKECNHIN
      * </pre>
      *
-     * <code>optional .ItemList return_data = 4;</code>
+     * <code>optional .ItemList return_data = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -237,10 +333,10 @@ public final class UseItemScRspOuterClass {
 
     /**
      * <pre>
-     * fghjlkadkpp
+     *  JOLGKECNHIN
      * </pre>
      *
-     * <code>optional .ItemList return_data = 4;</code>
+     * <code>optional .ItemList return_data = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -249,21 +345,21 @@ public final class UseItemScRspOuterClass {
      * @return internal storage object for modifications
      */
     public ItemListOuterClass.ItemList getMutableReturnData() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000020;
       return returnData;
     }
 
     /**
      * <pre>
-     * fghjlkadkpp
+     *  JOLGKECNHIN
      * </pre>
      *
-     * <code>optional .ItemList return_data = 4;</code>
+     * <code>optional .ItemList return_data = 8;</code>
      * @param value the returnData to set
      * @return this
      */
     public UseItemScRsp setReturnData(final ItemListOuterClass.ItemList value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000020;
       returnData.copyFrom(value);
       return this;
     }
@@ -273,9 +369,11 @@ public final class UseItemScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        useItemId = other.useItemId;
+        nLJGPJDALCE = other.nLJGPJDALCE;
         retcode = other.retcode;
+        useItemId = other.useItemId;
         useItemCount = other.useItemCount;
+        oCJJGJJMDGA = other.oCJJGJJMDGA;
         returnData.copyFrom(other.returnData);
       }
       return this;
@@ -287,14 +385,20 @@ public final class UseItemScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasUseItemId()) {
-        setUseItemId(other.useItemId);
+      if (other.hasNLJGPJDALCE()) {
+        setNLJGPJDALCE(other.nLJGPJDALCE);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
+      if (other.hasUseItemId()) {
+        setUseItemId(other.useItemId);
+      }
       if (other.hasUseItemCount()) {
         setUseItemCount(other.useItemCount);
+      }
+      if (other.hasOCJJGJJMDGA()) {
+        setOCJJGJJMDGA(other.oCJJGJJMDGA);
       }
       if (other.hasReturnData()) {
         getMutableReturnData().mergeFrom(other.returnData);
@@ -309,9 +413,11 @@ public final class UseItemScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      useItemId = 0;
+      nLJGPJDALCE = 0L;
       retcode = 0;
+      useItemId = 0;
       useItemCount = 0;
+      oCJJGJJMDGA = 0;
       returnData.clear();
       return this;
     }
@@ -337,28 +443,38 @@ public final class UseItemScRspOuterClass {
       }
       UseItemScRsp other = (UseItemScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasUseItemId() || useItemId == other.useItemId)
+        && (!hasNLJGPJDALCE() || nLJGPJDALCE == other.nLJGPJDALCE)
         && (!hasRetcode() || retcode == other.retcode)
+        && (!hasUseItemId() || useItemId == other.useItemId)
         && (!hasUseItemCount() || useItemCount == other.useItemCount)
+        && (!hasOCJJGJJMDGA() || oCJJGJJMDGA == other.oCJJGJJMDGA)
         && (!hasReturnData() || returnData.equals(other.returnData));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(useItemId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt64NoTag(nLJGPJDALCE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(useItemCount);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(useItemId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(useItemCount);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(oCJJGJJMDGA);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(returnData);
       }
     }
@@ -367,15 +483,21 @@ public final class UseItemScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemId);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(nLJGPJDALCE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemCount);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemCount);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(oCJJGJJMDGA);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(returnData);
       }
       return size;
@@ -388,37 +510,55 @@ public final class UseItemScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 80: {
+            // nLJGPJDALCE
+            nLJGPJDALCE = input.readUInt64();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
           case 48: {
+            // retcode
+            retcode = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
             // useItemId
             useItemId = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 72) {
               break;
             }
           }
           case 72: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 104) {
-              break;
-            }
-          }
-          case 104: {
             // useItemCount
             useItemCount = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 112) {
               break;
             }
           }
-          case 34: {
+          case 112: {
+            // oCJJGJJMDGA
+            oCJJGJJMDGA = input.readUInt32();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 66) {
+              break;
+            }
+          }
+          case 66: {
             // returnData
             input.readMessage(returnData);
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -442,15 +582,21 @@ public final class UseItemScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.useItemId, useItemId);
+        output.writeUInt64(FieldNames.nLJGPJDALCE, nLJGPJDALCE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.useItemCount, useItemCount);
+        output.writeUInt32(FieldNames.useItemId, useItemId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.useItemCount, useItemCount);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.oCJJGJJMDGA, oCJJGJJMDGA);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
         output.writeMessage(FieldNames.returnData, returnData);
       }
       output.endObject();
@@ -463,11 +609,10 @@ public final class UseItemScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -815318027:
-          case 1396027151: {
-            if (input.isAtField(FieldNames.useItemId)) {
+          case -1731352964: {
+            if (input.isAtField(FieldNames.nLJGPJDALCE)) {
               if (!input.trySkipNullValue()) {
-                useItemId = input.readUInt32();
+                nLJGPJDALCE = input.readUInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -486,12 +631,35 @@ public final class UseItemScRspOuterClass {
             }
             break;
           }
+          case -815318027:
+          case 1396027151: {
+            if (input.isAtField(FieldNames.useItemId)) {
+              if (!input.trySkipNullValue()) {
+                useItemId = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1104380939:
           case 871430811: {
             if (input.isAtField(FieldNames.useItemCount)) {
               if (!input.trySkipNullValue()) {
                 useItemCount = input.readUInt32();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -217926556: {
+            if (input.isAtField(FieldNames.oCJJGJJMDGA)) {
+              if (!input.trySkipNullValue()) {
+                oCJJGJJMDGA = input.readUInt32();
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -503,7 +671,7 @@ public final class UseItemScRspOuterClass {
             if (input.isAtField(FieldNames.returnData)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(returnData);
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -562,11 +730,15 @@ public final class UseItemScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName useItemId = FieldName.forField("useItemId", "use_item_id");
+      static final FieldName nLJGPJDALCE = FieldName.forField("NLJGPJDALCE");
 
       static final FieldName retcode = FieldName.forField("retcode");
 
+      static final FieldName useItemId = FieldName.forField("useItemId", "use_item_id");
+
       static final FieldName useItemCount = FieldName.forField("useItemCount", "use_item_count");
+
+      static final FieldName oCJJGJJMDGA = FieldName.forField("OCJJGJJMDGA");
 
       static final FieldName returnData = FieldName.forField("returnData", "return_data");
     }

@@ -25,36 +25,32 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * ? 9
-     * </pre>
-     *
+     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     */
+    private int iJHEIBNJOAO;
+
+    /**
      * <code>optional uint32 rank = 12;</code>
      */
     private int rank;
 
     /**
-     * <pre>
-     * uint32 IJHEIBNJOAO = 9;
-     * </pre>
-     *
      * <code>optional .MultiPathAvatarType avatar_id = 11;</code>
      */
     private int avatarId;
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
      */
-    private final RepeatedInt iBLJIJAPFFC = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt allPathUnlockedSpecialPointIdList = RepeatedInt.newEmptyInstance();
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
@@ -63,12 +59,21 @@ public final class MultiPathAvatarTypeInfoOuterClass {
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
      */
     private final RepeatedMessage<EquipRelicOuterClass.EquipRelic> equipRelicList = RepeatedMessage.newEmptyInstance(EquipRelicOuterClass.EquipRelic.getFactory());
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     */
+    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> allPathSpecialSkilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
 
     private MultiPathAvatarTypeInfo() {
     }
@@ -85,36 +90,61 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ? 9
-     * </pre>
-     *
-     * <code>optional uint32 rank = 12;</code>
-     * @return whether the rank field is set
+     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * @return whether the iJHEIBNJOAO field is set
      */
-    public boolean hasRank() {
+    public boolean hasIJHEIBNJOAO() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     * ? 9
-     * </pre>
-     *
+     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * @return this
+     */
+    public MultiPathAvatarTypeInfo clearIJHEIBNJOAO() {
+      bitField0_ &= ~0x00000001;
+      iJHEIBNJOAO = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * @return the iJHEIBNJOAO
+     */
+    public int getIJHEIBNJOAO() {
+      return iJHEIBNJOAO;
+    }
+
+    /**
+     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * @param value the iJHEIBNJOAO to set
+     * @return this
+     */
+    public MultiPathAvatarTypeInfo setIJHEIBNJOAO(final int value) {
+      bitField0_ |= 0x00000001;
+      iJHEIBNJOAO = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rank = 12;</code>
+     * @return whether the rank field is set
+     */
+    public boolean hasRank() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
      * <code>optional uint32 rank = 12;</code>
      * @return this
      */
     public MultiPathAvatarTypeInfo clearRank() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       rank = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * ? 9
-     * </pre>
-     *
      * <code>optional uint32 rank = 12;</code>
      * @return the rank
      */
@@ -123,51 +153,35 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ? 9
-     * </pre>
-     *
      * <code>optional uint32 rank = 12;</code>
      * @param value the rank to set
      * @return this
      */
     public MultiPathAvatarTypeInfo setRank(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       rank = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 IJHEIBNJOAO = 9;
-     * </pre>
-     *
      * <code>optional .MultiPathAvatarType avatar_id = 11;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     * uint32 IJHEIBNJOAO = 9;
-     * </pre>
-     *
      * <code>optional .MultiPathAvatarType avatar_id = 11;</code>
      * @return this
      */
     public MultiPathAvatarTypeInfo clearAvatarId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       avatarId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 IJHEIBNJOAO = 9;
-     * </pre>
-     *
      * <code>optional .MultiPathAvatarType avatar_id = 11;</code>
      * @return the avatarId
      */
@@ -195,81 +209,73 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * @return this
      */
     public MultiPathAvatarTypeInfo setAvatarIdValue(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       avatarId = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 IJHEIBNJOAO = 9;
-     * </pre>
-     *
      * <code>optional .MultiPathAvatarType avatar_id = 11;</code>
      * @param value the avatarId to set
      * @return this
      */
     public MultiPathAvatarTypeInfo setAvatarId(
         final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       avatarId = value.getNumber();
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
-     * @return whether the iBLJIJAPFFC field is set
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
+     * @return whether the allPathUnlockedSpecialPointIdList field is set
      */
-    public boolean hasIBLJIJAPFFC() {
-      return (bitField0_ & 0x00000004) != 0;
+    public boolean hasAllPathUnlockedSpecialPointIdList() {
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
      * @return this
      */
-    public MultiPathAvatarTypeInfo clearIBLJIJAPFFC() {
-      bitField0_ &= ~0x00000004;
-      iBLJIJAPFFC.clear();
+    public MultiPathAvatarTypeInfo clearAllPathUnlockedSpecialPointIdList() {
+      bitField0_ &= ~0x00000008;
+      allPathUnlockedSpecialPointIdList.clear();
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableIBLJIJAPFFC()} if you want to modify it.
+     * Use {@link #getMutableAllPathUnlockedSpecialPointIdList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getIBLJIJAPFFC() {
-      return iBLJIJAPFFC;
+    public RepeatedInt getAllPathUnlockedSpecialPointIdList() {
+      return allPathUnlockedSpecialPointIdList;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -277,72 +283,70 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableIBLJIJAPFFC() {
-      bitField0_ |= 0x00000004;
-      return iBLJIJAPFFC;
+    public RepeatedInt getMutableAllPathUnlockedSpecialPointIdList() {
+      bitField0_ |= 0x00000008;
+      return allPathUnlockedSpecialPointIdList;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
-     * @param value the iBLJIJAPFFC to add
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
+     * @param value the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
-    public MultiPathAvatarTypeInfo addIBLJIJAPFFC(final int value) {
-      bitField0_ |= 0x00000004;
-      iBLJIJAPFFC.add(value);
+    public MultiPathAvatarTypeInfo addAllPathUnlockedSpecialPointIdList(final int value) {
+      bitField0_ |= 0x00000008;
+      allPathUnlockedSpecialPointIdList.add(value);
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree PODGAIBLNCM = 14;
-     * uint32 GJLJMAGJDNK = 12;
+     *  IBLJIJAPFFC
      * </pre>
      *
-     * <code>repeated uint32 IBLJIJAPFFC = 15;</code>
-     * @param values the iBLJIJAPFFC to add
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 15;</code>
+     * @param values the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
-    public MultiPathAvatarTypeInfo addAllIBLJIJAPFFC(final int... values) {
-      bitField0_ |= 0x00000004;
-      iBLJIJAPFFC.addAll(values);
+    public MultiPathAvatarTypeInfo addAllAllPathUnlockedSpecialPointIdList(final int... values) {
+      bitField0_ |= 0x00000008;
+      allPathUnlockedSpecialPointIdList.addAll(values);
       return this;
     }
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
      * @return whether the skillTreeList field is set
      */
     public boolean hasSkillTreeList() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
      * @return this
      */
     public MultiPathAvatarTypeInfo clearSkillTreeList() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000010;
       skillTreeList.clear();
       return this;
     }
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
@@ -360,7 +364,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
@@ -372,13 +376,13 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableSkillTreeList() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       return skillTreeList;
     }
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
@@ -387,14 +391,14 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      */
     public MultiPathAvatarTypeInfo addSkillTreeList(
         final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       skillTreeList.add(value);
       return this;
     }
 
     /**
      * <pre>
-     * ? 14
+     *  APEMKCLHBML
      * </pre>
      *
      * <code>repeated .AvatarSkillTree skill_tree_list = 5;</code>
@@ -403,40 +407,40 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      */
     public MultiPathAvatarTypeInfo addAllSkillTreeList(
         final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       skillTreeList.addAll(values);
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
      * @return whether the equipRelicList field is set
      */
     public boolean hasEquipRelicList() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
      * @return this
      */
     public MultiPathAvatarTypeInfo clearEquipRelicList() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000020;
       equipRelicList.clear();
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
@@ -454,7 +458,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
@@ -466,13 +470,13 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<EquipRelicOuterClass.EquipRelic> getMutableEquipRelicList() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       return equipRelicList;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
@@ -480,14 +484,14 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * @return this
      */
     public MultiPathAvatarTypeInfo addEquipRelicList(final EquipRelicOuterClass.EquipRelic value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       equipRelicList.add(value);
       return this;
     }
 
     /**
      * <pre>
-     * repeated AvatarSkillTree APEMKCLHBML = 5;
+     *  IGEGKGAACEF
      * </pre>
      *
      * <code>repeated .EquipRelic equip_relic_list = 13;</code>
@@ -496,8 +500,104 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      */
     public MultiPathAvatarTypeInfo addAllEquipRelicList(
         final EquipRelicOuterClass.EquipRelic... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       equipRelicList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     * @return whether the allPathSpecialSkilltreeList field is set
+     */
+    public boolean hasAllPathSpecialSkilltreeList() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     * @return this
+     */
+    public MultiPathAvatarTypeInfo clearAllPathSpecialSkilltreeList() {
+      bitField0_ &= ~0x00000040;
+      allPathSpecialSkilltreeList.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableAllPathSpecialSkilltreeList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getAllPathSpecialSkilltreeList(
+        ) {
+      return allPathSpecialSkilltreeList;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableAllPathSpecialSkilltreeList(
+        ) {
+      bitField0_ |= 0x00000040;
+      return allPathSpecialSkilltreeList;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     * @param value the allPathSpecialSkilltreeList to add
+     * @return this
+     */
+    public MultiPathAvatarTypeInfo addAllPathSpecialSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
+      bitField0_ |= 0x00000040;
+      allPathSpecialSkilltreeList.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PODGAIBLNCM
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 14;</code>
+     * @param values the allPathSpecialSkilltreeList to add
+     * @return this
+     */
+    public MultiPathAvatarTypeInfo addAllAllPathSpecialSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
+      bitField0_ |= 0x00000040;
+      allPathSpecialSkilltreeList.addAll(values);
       return this;
     }
 
@@ -506,11 +606,13 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        iJHEIBNJOAO = other.iJHEIBNJOAO;
         rank = other.rank;
         avatarId = other.avatarId;
-        iBLJIJAPFFC.copyFrom(other.iBLJIJAPFFC);
+        allPathUnlockedSpecialPointIdList.copyFrom(other.allPathUnlockedSpecialPointIdList);
         skillTreeList.copyFrom(other.skillTreeList);
         equipRelicList.copyFrom(other.equipRelicList);
+        allPathSpecialSkilltreeList.copyFrom(other.allPathSpecialSkilltreeList);
       }
       return this;
     }
@@ -521,20 +623,26 @@ public final class MultiPathAvatarTypeInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasIJHEIBNJOAO()) {
+        setIJHEIBNJOAO(other.iJHEIBNJOAO);
+      }
       if (other.hasRank()) {
         setRank(other.rank);
       }
       if (other.hasAvatarId()) {
         setAvatarIdValue(other.avatarId);
       }
-      if (other.hasIBLJIJAPFFC()) {
-        getMutableIBLJIJAPFFC().addAll(other.iBLJIJAPFFC);
+      if (other.hasAllPathUnlockedSpecialPointIdList()) {
+        getMutableAllPathUnlockedSpecialPointIdList().addAll(other.allPathUnlockedSpecialPointIdList);
       }
       if (other.hasSkillTreeList()) {
         getMutableSkillTreeList().addAll(other.skillTreeList);
       }
       if (other.hasEquipRelicList()) {
         getMutableEquipRelicList().addAll(other.equipRelicList);
+      }
+      if (other.hasAllPathSpecialSkilltreeList()) {
+        getMutableAllPathSpecialSkilltreeList().addAll(other.allPathSpecialSkilltreeList);
       }
       return this;
     }
@@ -546,11 +654,13 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      iJHEIBNJOAO = 0;
       rank = 0;
       avatarId = 0;
-      iBLJIJAPFFC.clear();
+      allPathUnlockedSpecialPointIdList.clear();
       skillTreeList.clear();
       equipRelicList.clear();
+      allPathSpecialSkilltreeList.clear();
       return this;
     }
 
@@ -561,9 +671,10 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iBLJIJAPFFC.clear();
+      allPathUnlockedSpecialPointIdList.clear();
       skillTreeList.clearQuick();
       equipRelicList.clearQuick();
+      allPathSpecialSkilltreeList.clearQuick();
       return this;
     }
 
@@ -577,39 +688,51 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       MultiPathAvatarTypeInfo other = (MultiPathAvatarTypeInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasIJHEIBNJOAO() || iJHEIBNJOAO == other.iJHEIBNJOAO)
         && (!hasRank() || rank == other.rank)
         && (!hasAvatarId() || avatarId == other.avatarId)
-        && (!hasIBLJIJAPFFC() || iBLJIJAPFFC.equals(other.iBLJIJAPFFC))
+        && (!hasAllPathUnlockedSpecialPointIdList() || allPathUnlockedSpecialPointIdList.equals(other.allPathUnlockedSpecialPointIdList))
         && (!hasSkillTreeList() || skillTreeList.equals(other.skillTreeList))
-        && (!hasEquipRelicList() || equipRelicList.equals(other.equipRelicList));
+        && (!hasEquipRelicList() || equipRelicList.equals(other.equipRelicList))
+        && (!hasAllPathSpecialSkilltreeList() || allPathSpecialSkilltreeList.equals(other.allPathSpecialSkilltreeList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(iJHEIBNJOAO);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(rank);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 88);
         output.writeEnumNoTag(avatarId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < iBLJIJAPFFC.length(); i++) {
+      if ((bitField0_ & 0x00000008) != 0) {
+        for (int i = 0; i < allPathUnlockedSpecialPointIdList.length(); i++) {
           output.writeRawByte((byte) 120);
-          output.writeUInt32NoTag(iBLJIJAPFFC.array()[i]);
+          output.writeUInt32NoTag(allPathUnlockedSpecialPointIdList.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < skillTreeList.length(); i++) {
           output.writeRawByte((byte) 42);
           output.writeMessageNoTag(skillTreeList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < equipRelicList.length(); i++) {
           output.writeRawByte((byte) 106);
           output.writeMessageNoTag(equipRelicList.get(i));
+        }
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        for (int i = 0; i < allPathSpecialSkilltreeList.length(); i++) {
+          output.writeRawByte((byte) 114);
+          output.writeMessageNoTag(allPathSpecialSkilltreeList.get(i));
         }
       }
     }
@@ -618,19 +741,25 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(iJHEIBNJOAO);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * iBLJIJAPFFC.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(iBLJIJAPFFC);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * skillTreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(skillTreeList);
+        size += (1 * allPathUnlockedSpecialPointIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(allPathUnlockedSpecialPointIdList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
+        size += (1 * skillTreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(skillTreeList);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * equipRelicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(equipRelicList);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        size += (1 * allPathSpecialSkilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(allPathSpecialSkilltreeList);
       }
       return size;
     }
@@ -642,10 +771,19 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 72: {
+            // iJHEIBNJOAO
+            iJHEIBNJOAO = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
           case 96: {
             // rank
             rank = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 88) {
               break;
@@ -656,7 +794,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
               avatarId = value;
-              bitField0_ |= 0x00000002;
+              bitField0_ |= 0x00000004;
             }
             tag = input.readTag();
             if (tag != 122) {
@@ -664,9 +802,9 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             }
           }
           case 122: {
-            // iBLJIJAPFFC [packed=true]
-            input.readPackedUInt32(iBLJIJAPFFC, tag);
-            bitField0_ |= 0x00000004;
+            // allPathUnlockedSpecialPointIdList [packed=true]
+            input.readPackedUInt32(allPathUnlockedSpecialPointIdList, tag);
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 42) {
               break;
@@ -675,7 +813,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
           case 42: {
             // skillTreeList
             tag = input.readRepeatedMessage(skillTreeList, tag);
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000010;
             if (tag != 106) {
               break;
             }
@@ -683,7 +821,15 @@ public final class MultiPathAvatarTypeInfoOuterClass {
           case 106: {
             // equipRelicList
             tag = input.readRepeatedMessage(equipRelicList, tag);
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000020;
+            if (tag != 114) {
+              break;
+            }
+          }
+          case 114: {
+            // allPathSpecialSkilltreeList
+            tag = input.readRepeatedMessage(allPathSpecialSkilltreeList, tag);
+            bitField0_ |= 0x00000040;
             if (tag != 0) {
               break;
             }
@@ -699,9 +845,9 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             break;
           }
           case 120: {
-            // iBLJIJAPFFC [packed=false]
-            tag = input.readRepeatedUInt32(iBLJIJAPFFC, tag);
-            bitField0_ |= 0x00000004;
+            // allPathUnlockedSpecialPointIdList [packed=false]
+            tag = input.readRepeatedUInt32(allPathUnlockedSpecialPointIdList, tag);
+            bitField0_ |= 0x00000008;
             break;
           }
         }
@@ -712,19 +858,25 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.rank, rank);
+        output.writeUInt32(FieldNames.iJHEIBNJOAO, iJHEIBNJOAO);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeEnum(FieldNames.avatarId, avatarId, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
+        output.writeUInt32(FieldNames.rank, rank);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedUInt32(FieldNames.iBLJIJAPFFC, iBLJIJAPFFC);
+        output.writeEnum(FieldNames.avatarId, avatarId, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.skillTreeList, skillTreeList);
+        output.writeRepeatedUInt32(FieldNames.allPathUnlockedSpecialPointIdList, allPathUnlockedSpecialPointIdList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRepeatedMessage(FieldNames.skillTreeList, skillTreeList);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedMessage(FieldNames.equipRelicList, equipRelicList);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeRepeatedMessage(FieldNames.allPathSpecialSkilltreeList, allPathSpecialSkilltreeList);
       }
       output.endObject();
     }
@@ -736,11 +888,22 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 1343666282: {
+            if (input.isAtField(FieldNames.iJHEIBNJOAO)) {
+              if (!input.trySkipNullValue()) {
+                iJHEIBNJOAO = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 3492908: {
             if (input.isAtField(FieldNames.rank)) {
               if (!input.trySkipNullValue()) {
                 rank = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -754,7 +917,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
                 final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value = input.readEnum(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
                 if (value != null) {
                   avatarId = value.getNumber();
-                  bitField0_ |= 0x00000002;
+                  bitField0_ |= 0x00000004;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -764,11 +927,12 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             }
             break;
           }
-          case 322238524: {
-            if (input.isAtField(FieldNames.iBLJIJAPFFC)) {
+          case -1970298407:
+          case -46072851: {
+            if (input.isAtField(FieldNames.allPathUnlockedSpecialPointIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(iBLJIJAPFFC);
-                bitField0_ |= 0x00000004;
+                input.readRepeatedUInt32(allPathUnlockedSpecialPointIdList);
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -780,7 +944,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             if (input.isAtField(FieldNames.skillTreeList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(skillTreeList);
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -792,7 +956,19 @@ public final class MultiPathAvatarTypeInfoOuterClass {
             if (input.isAtField(FieldNames.equipRelicList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(equipRelicList);
-                bitField0_ |= 0x00000010;
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1838433530:
+          case 1435588976: {
+            if (input.isAtField(FieldNames.allPathSpecialSkilltreeList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(allPathSpecialSkilltreeList);
+                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -852,15 +1028,19 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName iJHEIBNJOAO = FieldName.forField("IJHEIBNJOAO");
+
       static final FieldName rank = FieldName.forField("rank");
 
       static final FieldName avatarId = FieldName.forField("avatarId", "avatar_id");
 
-      static final FieldName iBLJIJAPFFC = FieldName.forField("IBLJIJAPFFC");
+      static final FieldName allPathUnlockedSpecialPointIdList = FieldName.forField("allPathUnlockedSpecialPointIdList", "all_path_unlocked_special_point_id_list");
 
       static final FieldName skillTreeList = FieldName.forField("skillTreeList", "skill_tree_list");
 
       static final FieldName equipRelicList = FieldName.forField("equipRelicList", "equip_relic_list");
+
+      static final FieldName allPathSpecialSkilltreeList = FieldName.forField("allPathSpecialSkilltreeList", "all_path_special_skilltree_list");
     }
   }
 }

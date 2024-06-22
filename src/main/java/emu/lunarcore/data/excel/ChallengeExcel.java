@@ -12,6 +12,7 @@ public class ChallengeExcel extends GameResource {
     private int ID;
     private int GroupID;
     private int MapEntranceID;
+    private int MapEntranceID2;
     private int StageNum;
     private int ChallengeCountDown;
     private int MazeBuffID;

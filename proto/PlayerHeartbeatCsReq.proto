@@ -6,6 +6,6 @@ import "ClientUploadData.proto";
 
 message PlayerHeartbeatCsReq {
   uint64 client_time_ms = 10; // PBPEICMHAFE
-  // uint32 FKDKDLKNOAM = 14;
+  uint32 FKDKDLKNOAM = 14;
   ClientUploadData upload_data = 4; // JBBBMAMJABA
 }

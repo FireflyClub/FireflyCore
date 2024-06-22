@@ -19,7 +19,11 @@ public final class EnterSectionCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 section_id = 3;</code>
+     * <pre>
+     *  CJDMEKOJFDG
+     * </pre>
+     *
+     * <code>optional uint32 section_id = 9;</code>
      */
     private int sectionId;
 
@@ -34,7 +38,11 @@ public final class EnterSectionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 section_id = 3;</code>
+     * <pre>
+     *  CJDMEKOJFDG
+     * </pre>
+     *
+     * <code>optional uint32 section_id = 9;</code>
      * @return whether the sectionId field is set
      */
     public boolean hasSectionId() {
@@ -42,7 +50,11 @@ public final class EnterSectionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 section_id = 3;</code>
+     * <pre>
+     *  CJDMEKOJFDG
+     * </pre>
+     *
+     * <code>optional uint32 section_id = 9;</code>
      * @return this
      */
     public EnterSectionCsReq clearSectionId() {
@@ -52,7 +64,11 @@ public final class EnterSectionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 section_id = 3;</code>
+     * <pre>
+     *  CJDMEKOJFDG
+     * </pre>
+     *
+     * <code>optional uint32 section_id = 9;</code>
      * @return the sectionId
      */
     public int getSectionId() {
@@ -60,7 +76,11 @@ public final class EnterSectionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 section_id = 3;</code>
+     * <pre>
+     *  CJDMEKOJFDG
+     * </pre>
+     *
+     * <code>optional uint32 section_id = 9;</code>
      * @param value the sectionId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class EnterSectionCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(sectionId);
       }
     }
@@ -150,7 +170,7 @@ public final class EnterSectionCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 72: {
             // sectionId
             sectionId = input.readUInt32();
             bitField0_ |= 0x00000001;

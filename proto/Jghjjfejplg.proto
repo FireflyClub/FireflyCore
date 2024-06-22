@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-// Shit
-message Jghjjfejplg {
-    uint32 monster_id = 3;
-    uint32 djdfgcndibo = 7;
-}

@@ -4,54 +4,52 @@ option java_package = "emu.lunarcore.proto";
 
 import "AvatarProperty.proto";
 import "AvatarType.proto";
-// import "AvatarSkillTree.proto";
-// import "EquipmentProperty.proto";
-// import "AttackDamageProperty.proto";
-// import "Flojplpfgih.proto";
-// import "SpAddSource.proto";
+import "AvatarSkillTree.proto";
+import "SpAddSource.proto";
+import "BattleRelic.proto";
 
 message AvatarBattleInfo {
     AvatarType avatar_type = 1;
     uint32 id = 2;
-    uint32 avatar_level = 3;
-    uint32 avatar_rank = 4;
-    uint32 avatar_promotion = 5;
-    AvatarProperty avatar_status = 6;
-    // repeated AvatarSkillTree avatar_skill = 7;
-    // repeated EquipmentProperty avatar_equipment = 8;
-    // uint32 total_turns = 9;
-    // double total_damage = 10;
-    // double total_heal = 11;
-    // double total_damage_taken = 12;
-    // double total_hp_recover = 13;
-    // double total_sp_cost = 14;
-    // uint32 stage_id = 15;
-    // uint32 stage_type = 16;
-    // double total_break_damage = 17;
-    // repeated AttackDamageProperty attack_type_damage = 18;
-    // repeated AttackDamageProperty attack_type_break_damage = 19;
-    // repeated AttackDamageProperty attack_type_max_damage = 20;
-    // repeated FLOJPLPFGIH skill_times = 21;
-    // double delay_cumulate = 22;
-    // uint32 total_sp_add = 23;
-    // repeated SpAddSource sp_add_source = 24;
-    // uint32 total_bp_cost = 25;
-    // uint32 die_times = 26;
-    // uint32 revive_times = 27;
-    // uint32 break_times = 28;
-    // uint32 extra_turns = 29;
-    // double total_shield = 30;
-    // double total_shield_taken = 31;
-    // double total_shield_damage = 32;
-    // AvatarProperty initial_status = 33;
-	// repeated BattleRelic relics = 34;
-	// uint32 assist_uid = 35;
-	// repeated AttackDamageProperty BDHPBBPPOEN = 36;
-	// double CHDNAACFHII = 37;
-	// double AJLDLEEFKOK = 38;
-	// double PHPIEAMLHBA = 39;
-	// double IOJHINLIOFJ = 40;
-	// repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-	// uint32 CIBNGGNKPPM = 42;
-	// uint32 CFDFPHCGGCH = 43;
+    uint32 avatar_level = 3; // CAFBLGHCLMN
+    uint32 avatar_rank = 4; // MELPINLHNMK
+    uint32 avatar_promotion = 5; // MCJFIEKGCLG
+    AvatarProperty avatar_status = 6; // CHIJEMDDLME
+    repeated AvatarSkillTree avatar_skill = 7; // CPIOFCGKLHB
+    // repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+    uint32 total_turns = 9; // NOAOGBKOGDN
+    double total_damage = 10; // FBOCNKPDIGE
+    double total_heal = 11; // BHBBGAFGHAJ
+    double total_damage_taken = 12; // BMOKIPOKAMG
+    double total_hp_recover = 13; // GIPLCCDKKKO
+    double total_sp_cost = 14; // MJOIOLPFHCA
+    uint32 stage_id = 15; // ECKBFIJDLNM
+    uint32 stage_type = 16; // BFMLOHFLIBO
+    double total_break_damage = 17; // OCAMJGICOKM
+    // repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+    // repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+    // repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+    // repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+    double delay_cumulate = 22; // ENIDLNOILOP
+    uint32 total_sp_add = 23; // NOIAEIOIJNH
+    repeated SpAddSource sp_add_source = 24; // LCDIFLOKKCL
+    uint32 total_bp_cost = 25; // HPEPNJOKFIK
+    uint32 die_times = 26; // BIJMNMKNCMH
+    uint32 revive_times = 27; // EFFLIHGLCIF
+    uint32 break_times = 28; // NCGIJAILOAJ
+    uint32 extra_turns = 29; // DAKDIJADJGC
+    double total_shield = 30; // LKMDCBDDEII
+    double total_shield_taken = 31; // HDNIKGNGHED
+    double total_shield_damage = 32; // IAFGHBGAMAD
+    AvatarProperty initial_status = 33; // FCCJDEFCJJK
+	repeated BattleRelic battle_relic_list = 34; // PINFLKMBLLK
+	uint32 assist_uid = 35; // HFLPMICEAEJ
+	// repeated AttackDamageProperty NFDNENMGLFC = 36;
+	// double PICIGEOKNKP = 37;
+	// double OCCHNLDAIDE = 38;
+	// double MCEPOJFNLAP = 39;
+	// double CCMBBIAJCBN = 40;
+	// repeated AbilityUseStt OPEEJJHIKJK = 41;
+	// uint32 DMLLELHIAMI = 42;
+	// uint32 DMFHLBKOAIH = 43;
 }

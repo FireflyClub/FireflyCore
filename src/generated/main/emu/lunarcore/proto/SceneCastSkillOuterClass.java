@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class SceneCastSkillOuterClass {
   /**
+   * <pre>
+   *  PNDDNMMCOOF
+   * </pre>
+   *
    * Protobuf enum {@code SceneCastSkill}
    */
   public enum SceneCastSkill implements ProtoEnum<SceneCastSkill> {

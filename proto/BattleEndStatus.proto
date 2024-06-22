@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// GFLHPCALMBM
 enum BattleEndStatus {
   BATTLE_END_NONE = 0;
   BATTLE_END_WIN = 1;

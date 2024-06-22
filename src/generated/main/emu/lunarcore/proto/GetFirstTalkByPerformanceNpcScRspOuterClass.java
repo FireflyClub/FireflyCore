@@ -14,22 +14,18 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
   /**
-   * <pre>
-   *  Jmpodfchomf
-   * </pre>
-   *
    * Protobuf type {@code GetFirstTalkByPerformanceNpcScRsp}
    */
   public static final class GetFirstTalkByPerformanceNpcScRsp extends ProtoMessage<GetFirstTalkByPerformanceNpcScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 13;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      */
     private final RepeatedMessage<NpcTalkInfoOuterClass.NpcTalkInfo> npcTalkInfoList = RepeatedMessage.newEmptyInstance(NpcTalkInfoOuterClass.NpcTalkInfo.getFactory());
 
@@ -37,10 +33,6 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Jmpodfchomf
-     * </pre>
-     *
      * @return a new empty instance of {@code GetFirstTalkByPerformanceNpcScRsp}
      */
     public static GetFirstTalkByPerformanceNpcScRsp newInstance() {
@@ -48,7 +40,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -56,7 +48,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return this
      */
     public GetFirstTalkByPerformanceNpcScRsp clearRetcode() {
@@ -66,7 +58,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -74,7 +66,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -85,7 +77,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      * @return whether the npcTalkInfoList field is set
      */
     public boolean hasNpcTalkInfoList() {
@@ -93,7 +85,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      * @return this
      */
     public GetFirstTalkByPerformanceNpcScRsp clearNpcTalkInfoList() {
@@ -103,7 +95,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -117,7 +109,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -131,7 +123,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      * @param value the npcTalkInfoList to add
      * @return this
      */
@@ -143,7 +135,7 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     }
 
     /**
-     * <code>repeated .NpcTalkInfo npc_talk_info_list = 15;</code>
+     * <code>repeated .NpcTalkInfo npc_talk_info_list = 9;</code>
      * @param values the npcTalkInfoList to add
      * @return this
      */
@@ -222,12 +214,12 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < npcTalkInfoList.length(); i++) {
-          output.writeRawByte((byte) 122);
+          output.writeRawByte((byte) 74);
           output.writeMessageNoTag(npcTalkInfoList.get(i));
         }
       }
@@ -252,16 +244,16 @@ public final class GetFirstTalkByPerformanceNpcScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 104: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 74) {
               break;
             }
           }
-          case 122: {
+          case 74: {
             // npcTalkInfoList
             tag = input.readRepeatedMessage(npcTalkInfoList, tag);
             bitField0_ |= 0x00000002;

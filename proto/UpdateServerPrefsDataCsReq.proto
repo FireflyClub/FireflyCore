@@ -6,5 +6,5 @@ import "ServerPrefs.proto";
 
 // Kiinnopdhco
 message UpdateServerPrefsDataCsReq {
-	ServerPrefs server_prefs = 14;
+	ServerPrefs server_prefs = 4; // DOJBPBDMEAO
 }

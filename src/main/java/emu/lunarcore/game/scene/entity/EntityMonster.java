@@ -174,7 +174,7 @@ public class EntityMonster implements GameEntity, Tickable {
         var monster = SceneNpcMonsterInfo.newInstance()
                 .setWorldLevel(this.getWorldLevel())
                 .setMonsterId(excel.getId())
-                .setEventId(this.getEventId());
+                .setSceneEventId(this.getEventId());
 
         var proto = SceneEntityInfo.newInstance()
                 .setEntityId(this.getEntityId())

@@ -63,18 +63,18 @@ public final class BuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_id = 8;</code>
+     * <code>optional uint32 count = 8;</code>
      */
-    private int buffId;
+    private int count;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 count = 13;</code>
+     * <code>optional uint32 buff_id = 13;</code>
      */
-    private int count;
+    private int buffId;
 
     /**
      * <pre>
@@ -304,10 +304,10 @@ public final class BuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_id = 8;</code>
-     * @return whether the buffId field is set
+     * <code>optional uint32 count = 8;</code>
+     * @return whether the count field is set
      */
-    public boolean hasBuffId() {
+    public boolean hasCount() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
@@ -316,64 +316,11 @@ public final class BuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_id = 8;</code>
-     * @return this
-     */
-    public BuffInfo clearBuffId() {
-      bitField0_ &= ~0x00000010;
-      buffId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 8;</code>
-     * @return the buffId
-     */
-    public int getBuffId() {
-      return buffId;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 8;</code>
-     * @param value the buffId to set
-     * @return this
-     */
-    public BuffInfo setBuffId(final int value) {
-      bitField0_ |= 0x00000010;
-      buffId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 count = 13;</code>
-     * @return whether the count field is set
-     */
-    public boolean hasCount() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 count = 13;</code>
+     * <code>optional uint32 count = 8;</code>
      * @return this
      */
     public BuffInfo clearCount() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000010;
       count = 0;
       return this;
     }
@@ -383,7 +330,7 @@ public final class BuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 count = 13;</code>
+     * <code>optional uint32 count = 8;</code>
      * @return the count
      */
     public int getCount() {
@@ -395,13 +342,66 @@ public final class BuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 count = 13;</code>
+     * <code>optional uint32 count = 8;</code>
      * @param value the count to set
      * @return this
      */
     public BuffInfo setCount(final int value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       count = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_id = 13;</code>
+     * @return whether the buffId field is set
+     */
+    public boolean hasBuffId() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_id = 13;</code>
+     * @return this
+     */
+    public BuffInfo clearBuffId() {
+      bitField0_ &= ~0x00000020;
+      buffId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_id = 13;</code>
+     * @return the buffId
+     */
+    public int getBuffId() {
+      return buffId;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_id = 13;</code>
+     * @param value the buffId to set
+     * @return this
+     */
+    public BuffInfo setBuffId(final int value) {
+      bitField0_ |= 0x00000020;
+      buffId = value;
       return this;
     }
 
@@ -506,8 +506,8 @@ public final class BuffInfoOuterClass {
         lifeTime = other.lifeTime;
         sceneAvatarId = other.sceneAvatarId;
         level = other.level;
-        buffId = other.buffId;
         count = other.count;
+        buffId = other.buffId;
         dynamicValues.copyFrom(other.dynamicValues);
       }
       return this;
@@ -531,11 +531,11 @@ public final class BuffInfoOuterClass {
       if (other.hasLevel()) {
         setLevel(other.level);
       }
-      if (other.hasBuffId()) {
-        setBuffId(other.buffId);
-      }
       if (other.hasCount()) {
         setCount(other.count);
+      }
+      if (other.hasBuffId()) {
+        setBuffId(other.buffId);
       }
       if (other.hasDynamicValues()) {
         getMutableDynamicValues().addAll(other.dynamicValues);
@@ -554,8 +554,8 @@ public final class BuffInfoOuterClass {
       lifeTime = 0F;
       sceneAvatarId = 0;
       level = 0;
-      buffId = 0;
       count = 0;
+      buffId = 0;
       dynamicValues.clear();
       return this;
     }
@@ -585,8 +585,8 @@ public final class BuffInfoOuterClass {
         && (!hasLifeTime() || ProtoUtil.isEqual(lifeTime, other.lifeTime))
         && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
         && (!hasLevel() || level == other.level)
-        && (!hasBuffId() || buffId == other.buffId)
         && (!hasCount() || count == other.count)
+        && (!hasBuffId() || buffId == other.buffId)
         && (!hasDynamicValues() || dynamicValues.equals(other.dynamicValues));
     }
 
@@ -610,11 +610,11 @@ public final class BuffInfoOuterClass {
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(buffId);
+        output.writeUInt32NoTag(count);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(count);
+        output.writeUInt32NoTag(buffId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         for (int i = 0; i < dynamicValues.length(); i++) {
@@ -640,10 +640,10 @@ public final class BuffInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(count);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(count);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += (1 * dynamicValues.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(dynamicValues);
@@ -695,8 +695,8 @@ public final class BuffInfoOuterClass {
             }
           }
           case 64: {
-            // buffId
-            buffId = input.readUInt32();
+            // count
+            count = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 104) {
@@ -704,8 +704,8 @@ public final class BuffInfoOuterClass {
             }
           }
           case 104: {
-            // count
-            count = input.readUInt32();
+            // buffId
+            buffId = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 34) {
@@ -750,10 +750,10 @@ public final class BuffInfoOuterClass {
         output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.buffId, buffId);
+        output.writeUInt32(FieldNames.count, count);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.count, count);
+        output.writeUInt32(FieldNames.buffId, buffId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRepeatedMessage(FieldNames.dynamicValues, dynamicValues);
@@ -815,11 +815,10 @@ public final class BuffInfoOuterClass {
             }
             break;
           }
-          case -1378119474:
-          case 227990663: {
-            if (input.isAtField(FieldNames.buffId)) {
+          case 94851343: {
+            if (input.isAtField(FieldNames.count)) {
               if (!input.trySkipNullValue()) {
-                buffId = input.readUInt32();
+                count = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -827,10 +826,11 @@ public final class BuffInfoOuterClass {
             }
             break;
           }
-          case 94851343: {
-            if (input.isAtField(FieldNames.count)) {
+          case -1378119474:
+          case 227990663: {
+            if (input.isAtField(FieldNames.buffId)) {
               if (!input.trySkipNullValue()) {
-                count = input.readUInt32();
+                buffId = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1264,9 +1264,9 @@ public final class BuffInfoOuterClass {
 
       static final FieldName level = FieldName.forField("level");
 
-      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
-
       static final FieldName count = FieldName.forField("count");
+
+      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
 
       static final FieldName dynamicValues = FieldName.forField("dynamicValues", "dynamic_values");
     }

@@ -7,7 +7,7 @@ import us.hebi.quickbuf.ProtoUtil;
 public final class QuestStatusOuterClass {
   /**
    * <pre>
-   *  Ibcjefpmhhn
+   *  PDAPGKFIKGA
    * </pre>
    *
    * Protobuf enum {@code QuestStatus}

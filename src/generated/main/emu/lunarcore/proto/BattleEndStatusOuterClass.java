@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class BattleEndStatusOuterClass {
   /**
+   * <pre>
+   *  GFLHPCALMBM
+   * </pre>
+   *
    * Protobuf enum {@code BattleEndStatus}
    */
   public enum BattleEndStatus implements ProtoEnum<BattleEndStatus> {

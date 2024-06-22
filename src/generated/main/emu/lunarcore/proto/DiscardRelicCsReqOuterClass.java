@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class DiscardRelicCsReqOuterClass {
   /**
    * <pre>
-   *  Pkmncakofkf
+   *  HHBEGOLFELK
    * </pre>
    *
    * Protobuf type {@code DiscardRelicCsReq}
@@ -23,12 +23,16 @@ public final class DiscardRelicCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 relic_unique_id = 3;</code>
+     * <code>optional uint32 relic_unique_id = 7;</code>
      */
     private int relicUniqueId;
 
     /**
-     * <code>optional bool is_discard = 5;</code>
+     * <pre>
+     *  KLLCHANCGPG
+     * </pre>
+     *
+     * <code>optional bool is_discard = 9;</code>
      */
     private boolean isDiscard;
 
@@ -37,7 +41,7 @@ public final class DiscardRelicCsReqOuterClass {
 
     /**
      * <pre>
-     *  Pkmncakofkf
+     *  HHBEGOLFELK
      * </pre>
      *
      * @return a new empty instance of {@code DiscardRelicCsReq}
@@ -47,7 +51,7 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 3;</code>
+     * <code>optional uint32 relic_unique_id = 7;</code>
      * @return whether the relicUniqueId field is set
      */
     public boolean hasRelicUniqueId() {
@@ -55,7 +59,7 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 3;</code>
+     * <code>optional uint32 relic_unique_id = 7;</code>
      * @return this
      */
     public DiscardRelicCsReq clearRelicUniqueId() {
@@ -65,7 +69,7 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 3;</code>
+     * <code>optional uint32 relic_unique_id = 7;</code>
      * @return the relicUniqueId
      */
     public int getRelicUniqueId() {
@@ -73,7 +77,7 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 3;</code>
+     * <code>optional uint32 relic_unique_id = 7;</code>
      * @param value the relicUniqueId to set
      * @return this
      */
@@ -84,7 +88,11 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_discard = 5;</code>
+     * <pre>
+     *  KLLCHANCGPG
+     * </pre>
+     *
+     * <code>optional bool is_discard = 9;</code>
      * @return whether the isDiscard field is set
      */
     public boolean hasIsDiscard() {
@@ -92,7 +100,11 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_discard = 5;</code>
+     * <pre>
+     *  KLLCHANCGPG
+     * </pre>
+     *
+     * <code>optional bool is_discard = 9;</code>
      * @return this
      */
     public DiscardRelicCsReq clearIsDiscard() {
@@ -102,7 +114,11 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_discard = 5;</code>
+     * <pre>
+     *  KLLCHANCGPG
+     * </pre>
+     *
+     * <code>optional bool is_discard = 9;</code>
      * @return the isDiscard
      */
     public boolean getIsDiscard() {
@@ -110,7 +126,11 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_discard = 5;</code>
+     * <pre>
+     *  KLLCHANCGPG
+     * </pre>
+     *
+     * <code>optional bool is_discard = 9;</code>
      * @param value the isDiscard to set
      * @return this
      */
@@ -185,11 +205,11 @@ public final class DiscardRelicCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 72);
         output.writeBoolNoTag(isDiscard);
       }
     }
@@ -213,16 +233,16 @@ public final class DiscardRelicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 56: {
             // relicUniqueId
             relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 72) {
               break;
             }
           }
-          case 40: {
+          case 72: {
             // isDiscard
             isDiscard = input.readBool();
             bitField0_ |= 0x00000002;

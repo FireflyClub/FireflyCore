@@ -1,114 +1,14 @@
 [
 	{
-		"activityId": 5001901,
-		"moduleId": 10043,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Come With Me, Take the Journey"
+	  "activityId": 50020,
+	  "beginTime": 1664308800,
+	  "endTime": 4294967295,
+	  "moduleId": 5002000
 	},
 	{
-		"activityId": 1005701,
-		"moduleId": 10057,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Gift of Odyssey"
-	},
-	{
-		"activityId": 1006201,
-		"moduleId": 10062,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Nether Puppet"
-	},
-	{
-		"activityId": 1006801,
-		"moduleId": 10068,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": ""
-	},
-	{
-		"activityId": 2003600,
-		"moduleId": 20036,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Aptitude Showcase"
-	},
-	{
-		"activityId": 8000701,
-		"moduleId": 80007,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Trailblaze Mission"
-	},
-	{
-		"activityId": 6001101,
-		"moduleId": 60011,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Divergent Universe: The Human Comedy"
-	},
-	{
-		"activityId": 5001400,
-		"moduleId": 50014,
-		"beginTime": 1664308800,
-		"endTime": 4294967295,
-		"tabName": "Origami Bird Clash"
-	},
-	{
-	"activityId": 5001601,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001602,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001603,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001604,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001605,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001606,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001607,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
-	},
-	{
-	"activityId": 5001608,
-	"moduleId": 50016,
-	"beginTime": 1664308800,
-	"endTime": 4294967295,
-	"tabName": "Stellar Shimmer"
+	  "activityId": 50015,
+	  "beginTime": 1664308800,
+	  "endTime": 4294967295,
+	  "moduleId": 5001501
 	}
 ]

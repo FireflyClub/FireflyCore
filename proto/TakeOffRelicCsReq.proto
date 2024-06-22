@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 // Nbmofdgfejk
 message TakeOffRelicCsReq {
-    repeated uint32 slot_list = 8; //lblnnlbgjpm
-	uint32 equip_avatar_id = 1;
-    uint32 base_avatar_id = 2;
+    repeated uint32 type_list = 5; // AGKAPPHJCEJ
+    uint32 avatar_id = 8;
 }

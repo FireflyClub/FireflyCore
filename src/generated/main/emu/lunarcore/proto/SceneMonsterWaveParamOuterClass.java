@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SceneMonsterWaveParamOuterClass {
   /**
    * <pre>
-   *  Kjfnknacfin
+   *  OHIHIIAJOMD
    * </pre>
    *
    * Protobuf type {@code SceneMonsterWaveParam}
@@ -23,22 +23,31 @@ public final class SceneMonsterWaveParamOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
-     * </pre>
-     *
-     * <code>optional uint32 level = 2;</code>
+     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     */
+    private int lJELBCAGIOD;
+
+    /**
+     * <code>optional uint32 level = 4;</code>
      */
     private int level;
+
+    /**
+     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     */
+    private int mLAAHAFOLGG;
+
+    /**
+     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     */
+    private int jLNKGLMINJE;
 
     private SceneMonsterWaveParam() {
     }
 
     /**
      * <pre>
-     *  Kjfnknacfin
+     *  OHIHIIAJOMD
      * </pre>
      *
      * @return a new empty instance of {@code SceneMonsterWaveParam}
@@ -48,43 +57,62 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
-     * </pre>
-     *
-     * <code>optional uint32 level = 2;</code>
-     * @return whether the level field is set
+     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * @return whether the lJELBCAGIOD field is set
      */
-    public boolean hasLevel() {
+    public boolean hasLJELBCAGIOD() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
-     * </pre>
-     *
-     * <code>optional uint32 level = 2;</code>
+     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * @return this
+     */
+    public SceneMonsterWaveParam clearLJELBCAGIOD() {
+      bitField0_ &= ~0x00000001;
+      lJELBCAGIOD = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * @return the lJELBCAGIOD
+     */
+    public int getLJELBCAGIOD() {
+      return lJELBCAGIOD;
+    }
+
+    /**
+     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * @param value the lJELBCAGIOD to set
+     * @return this
+     */
+    public SceneMonsterWaveParam setLJELBCAGIOD(final int value) {
+      bitField0_ |= 0x00000001;
+      lJELBCAGIOD = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
      * @return this
      */
     public SceneMonsterWaveParam clearLevel() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       level = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
-     * </pre>
-     *
-     * <code>optional uint32 level = 2;</code>
+     * <code>optional uint32 level = 4;</code>
      * @return the level
      */
     public int getLevel() {
@@ -92,19 +120,87 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
-     * </pre>
-     *
-     * <code>optional uint32 level = 2;</code>
+     * <code>optional uint32 level = 4;</code>
      * @param value the level to set
      * @return this
      */
     public SceneMonsterWaveParam setLevel(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       level = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * @return whether the mLAAHAFOLGG field is set
+     */
+    public boolean hasMLAAHAFOLGG() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * @return this
+     */
+    public SceneMonsterWaveParam clearMLAAHAFOLGG() {
+      bitField0_ &= ~0x00000004;
+      mLAAHAFOLGG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * @return the mLAAHAFOLGG
+     */
+    public int getMLAAHAFOLGG() {
+      return mLAAHAFOLGG;
+    }
+
+    /**
+     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * @param value the mLAAHAFOLGG to set
+     * @return this
+     */
+    public SceneMonsterWaveParam setMLAAHAFOLGG(final int value) {
+      bitField0_ |= 0x00000004;
+      mLAAHAFOLGG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * @return whether the jLNKGLMINJE field is set
+     */
+    public boolean hasJLNKGLMINJE() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * @return this
+     */
+    public SceneMonsterWaveParam clearJLNKGLMINJE() {
+      bitField0_ &= ~0x00000008;
+      jLNKGLMINJE = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * @return the jLNKGLMINJE
+     */
+    public int getJLNKGLMINJE() {
+      return jLNKGLMINJE;
+    }
+
+    /**
+     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * @param value the jLNKGLMINJE to set
+     * @return this
+     */
+    public SceneMonsterWaveParam setJLNKGLMINJE(final int value) {
+      bitField0_ |= 0x00000008;
+      jLNKGLMINJE = value;
       return this;
     }
 
@@ -113,7 +209,10 @@ public final class SceneMonsterWaveParamOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        lJELBCAGIOD = other.lJELBCAGIOD;
         level = other.level;
+        mLAAHAFOLGG = other.mLAAHAFOLGG;
+        jLNKGLMINJE = other.jLNKGLMINJE;
       }
       return this;
     }
@@ -124,8 +223,17 @@ public final class SceneMonsterWaveParamOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasLJELBCAGIOD()) {
+        setLJELBCAGIOD(other.lJELBCAGIOD);
+      }
       if (other.hasLevel()) {
         setLevel(other.level);
+      }
+      if (other.hasMLAAHAFOLGG()) {
+        setMLAAHAFOLGG(other.mLAAHAFOLGG);
+      }
+      if (other.hasJLNKGLMINJE()) {
+        setJLNKGLMINJE(other.jLNKGLMINJE);
       }
       return this;
     }
@@ -137,7 +245,10 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      lJELBCAGIOD = 0;
       level = 0;
+      mLAAHAFOLGG = 0;
+      jLNKGLMINJE = 0;
       return this;
     }
 
@@ -161,14 +272,29 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       SceneMonsterWaveParam other = (SceneMonsterWaveParam) o;
       return bitField0_ == other.bitField0_
-        && (!hasLevel() || level == other.level);
+        && (!hasLJELBCAGIOD() || lJELBCAGIOD == other.lJELBCAGIOD)
+        && (!hasLevel() || level == other.level)
+        && (!hasMLAAHAFOLGG() || mLAAHAFOLGG == other.mLAAHAFOLGG)
+        && (!hasJLNKGLMINJE() || jLNKGLMINJE == other.jLNKGLMINJE);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(lJELBCAGIOD);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(level);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(mLAAHAFOLGG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(jLNKGLMINJE);
       }
     }
 
@@ -176,7 +302,16 @@ public final class SceneMonsterWaveParamOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lJELBCAGIOD);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mLAAHAFOLGG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(jLNKGLMINJE);
       }
       return size;
     }
@@ -188,10 +323,37 @@ public final class SceneMonsterWaveParamOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 8: {
+            // lJELBCAGIOD
+            lJELBCAGIOD = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 32) {
+              break;
+            }
+          }
+          case 32: {
             // level
             level = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // mLAAHAFOLGG
+            mLAAHAFOLGG = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // jLNKGLMINJE
+            jLNKGLMINJE = input.readUInt32();
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -215,7 +377,16 @@ public final class SceneMonsterWaveParamOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeUInt32(FieldNames.lJELBCAGIOD, lJELBCAGIOD);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.level, level);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.mLAAHAFOLGG, mLAAHAFOLGG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.jLNKGLMINJE, jLNKGLMINJE);
       }
       output.endObject();
     }
@@ -227,11 +398,44 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -1211083758: {
+            if (input.isAtField(FieldNames.lJELBCAGIOD)) {
+              if (!input.trySkipNullValue()) {
+                lJELBCAGIOD = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 102865796: {
             if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
                 level = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1479601013: {
+            if (input.isAtField(FieldNames.mLAAHAFOLGG)) {
+              if (!input.trySkipNullValue()) {
+                mLAAHAFOLGG = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1571120585: {
+            if (input.isAtField(FieldNames.jLNKGLMINJE)) {
+              if (!input.trySkipNullValue()) {
+                jLNKGLMINJE = input.readUInt32();
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -291,7 +495,13 @@ public final class SceneMonsterWaveParamOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName lJELBCAGIOD = FieldName.forField("LJELBCAGIOD");
+
       static final FieldName level = FieldName.forField("level");
+
+      static final FieldName mLAAHAFOLGG = FieldName.forField("MLAAHAFOLGG");
+
+      static final FieldName jLNKGLMINJE = FieldName.forField("JLNKGLMINJE");
     }
   }
 }

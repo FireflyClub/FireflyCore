@@ -13,21 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class DeployRotaterCsReqOuterClass {
   /**
-   * <pre>
-   *  Pfmcjhkahlg
-   * </pre>
-   *
    * Protobuf type {@code DeployRotaterCsReq}
    */
   public static final class DeployRotaterCsReq extends ProtoMessage<DeployRotaterCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      */
     private final RotaterDataOuterClass.RotaterData rotaterData = RotaterDataOuterClass.RotaterData.newInstance();
 
@@ -35,10 +27,6 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Pfmcjhkahlg
-     * </pre>
-     *
      * @return a new empty instance of {@code DeployRotaterCsReq}
      */
     public static DeployRotaterCsReq newInstance() {
@@ -46,11 +34,7 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      * @return whether the rotaterData field is set
      */
     public boolean hasRotaterData() {
@@ -58,11 +42,7 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      * @return this
      */
     public DeployRotaterCsReq clearRotaterData() {
@@ -72,11 +52,7 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -90,11 +66,7 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -108,11 +80,7 @@ public final class DeployRotaterCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bihfpalnakm
-     * </pre>
-     *
-     * <code>optional .RotaterData rotater_data = 2;</code>
+     * <code>optional .RotaterData rotater_data = 8;</code>
      * @param value the rotaterData to set
      * @return this
      */
@@ -182,7 +150,7 @@ public final class DeployRotaterCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(rotaterData);
       }
     }
@@ -203,7 +171,7 @@ public final class DeployRotaterCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 18: {
+          case 66: {
             // rotaterData
             input.readMessage(rotaterData);
             bitField0_ |= 0x00000001;

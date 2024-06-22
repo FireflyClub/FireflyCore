@@ -55,6 +55,11 @@ public final class MazeMapDataOuterClass {
     private int pKOIJBEDMEK;
 
     /**
+     * <code>optional uint32 LMOKAPLPCFD = 15;</code>
+     */
+    private int lMOKAPLPCFD;
+
+    /**
      * <code>repeated uint32 lighten_section_list = 5;</code>
      */
     private final RepeatedInt lightenSectionList = RepeatedInt.newEmptyInstance();
@@ -316,11 +321,48 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
+     * <code>optional uint32 LMOKAPLPCFD = 15;</code>
+     * @return whether the lMOKAPLPCFD field is set
+     */
+    public boolean hasLMOKAPLPCFD() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional uint32 LMOKAPLPCFD = 15;</code>
+     * @return this
+     */
+    public MazeMapData clearLMOKAPLPCFD() {
+      bitField0_ &= ~0x00000020;
+      lMOKAPLPCFD = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 LMOKAPLPCFD = 15;</code>
+     * @return the lMOKAPLPCFD
+     */
+    public int getLMOKAPLPCFD() {
+      return lMOKAPLPCFD;
+    }
+
+    /**
+     * <code>optional uint32 LMOKAPLPCFD = 15;</code>
+     * @param value the lMOKAPLPCFD to set
+     * @return this
+     */
+    public MazeMapData setLMOKAPLPCFD(final int value) {
+      bitField0_ |= 0x00000020;
+      lMOKAPLPCFD = value;
+      return this;
+    }
+
+    /**
      * <code>repeated uint32 lighten_section_list = 5;</code>
      * @return whether the lightenSectionList field is set
      */
     public boolean hasLightenSectionList() {
-      return (bitField0_ & 0x00000020) != 0;
+      return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
@@ -328,7 +370,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearLightenSectionList() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000040;
       lightenSectionList.clear();
       return this;
     }
@@ -357,7 +399,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableLightenSectionList() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000040;
       return lightenSectionList;
     }
 
@@ -367,7 +409,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addLightenSectionList(final int value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000040;
       lightenSectionList.add(value);
       return this;
     }
@@ -378,7 +420,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllLightenSectionList(final int... values) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000040;
       lightenSectionList.addAll(values);
       return this;
     }
@@ -392,7 +434,7 @@ public final class MazeMapDataOuterClass {
      * @return whether the unlockedTeleportList field is set
      */
     public boolean hasUnlockedTeleportList() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
@@ -404,7 +446,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearUnlockedTeleportList() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000080;
       unlockedTeleportList.clear();
       return this;
     }
@@ -441,7 +483,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableUnlockedTeleportList() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000080;
       return unlockedTeleportList;
     }
 
@@ -455,7 +497,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addUnlockedTeleportList(final int value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000080;
       unlockedTeleportList.add(value);
       return this;
     }
@@ -470,7 +512,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllUnlockedTeleportList(final int... values) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000080;
       unlockedTeleportList.addAll(values);
       return this;
     }
@@ -484,7 +526,7 @@ public final class MazeMapDataOuterClass {
      * @return whether the unlockedChestList field is set
      */
     public boolean hasUnlockedChestList() {
-      return (bitField0_ & 0x00000080) != 0;
+      return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
@@ -496,7 +538,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearUnlockedChestList() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000100;
       unlockedChestList.clear();
       return this;
     }
@@ -533,7 +575,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MazeChestOuterClass.MazeChest> getMutableUnlockedChestList() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       return unlockedChestList;
     }
 
@@ -547,7 +589,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addUnlockedChestList(final MazeChestOuterClass.MazeChest value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       unlockedChestList.add(value);
       return this;
     }
@@ -562,7 +604,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllUnlockedChestList(final MazeChestOuterClass.MazeChest... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000100;
       unlockedChestList.addAll(values);
       return this;
     }
@@ -576,7 +618,7 @@ public final class MazeMapDataOuterClass {
      * @return whether the mazePropList field is set
      */
     public boolean hasMazePropList() {
-      return (bitField0_ & 0x00000100) != 0;
+      return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
@@ -588,7 +630,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearMazePropList() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00000200;
       mazePropList.clear();
       return this;
     }
@@ -625,7 +667,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MazePropOuterClass.MazeProp> getMutableMazePropList() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       return mazePropList;
     }
 
@@ -639,7 +681,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addMazePropList(final MazePropOuterClass.MazeProp value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       mazePropList.add(value);
       return this;
     }
@@ -654,7 +696,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllMazePropList(final MazePropOuterClass.MazeProp... values) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       mazePropList.addAll(values);
       return this;
     }
@@ -668,7 +710,7 @@ public final class MazeMapDataOuterClass {
      * @return whether the mazeGroupList field is set
      */
     public boolean hasMazeGroupList() {
-      return (bitField0_ & 0x00000200) != 0;
+      return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
@@ -680,7 +722,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearMazeGroupList() {
-      bitField0_ &= ~0x00000200;
+      bitField0_ &= ~0x00000400;
       mazeGroupList.clear();
       return this;
     }
@@ -717,7 +759,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MazeGroupOuterClass.MazeGroup> getMutableMazeGroupList() {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       return mazeGroupList;
     }
 
@@ -731,7 +773,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addMazeGroupList(final MazeGroupOuterClass.MazeGroup value) {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       mazeGroupList.add(value);
       return this;
     }
@@ -746,7 +788,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllMazeGroupList(final MazeGroupOuterClass.MazeGroup... values) {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       mazeGroupList.addAll(values);
       return this;
     }
@@ -756,7 +798,7 @@ public final class MazeMapDataOuterClass {
      * @return whether the bEEIDEFKEKG field is set
      */
     public boolean hasBEEIDEFKEKG() {
-      return (bitField0_ & 0x00000400) != 0;
+      return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
@@ -764,7 +806,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData clearBEEIDEFKEKG() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00000800;
       bEEIDEFKEKG.clear();
       return this;
     }
@@ -793,7 +835,7 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<BEEIDEFKEKGEntry> getMutableBEEIDEFKEKG() {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       return bEEIDEFKEKG;
     }
 
@@ -803,7 +845,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addBEEIDEFKEKG(final BEEIDEFKEKGEntry value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       bEEIDEFKEKG.add(value);
       return this;
     }
@@ -814,7 +856,7 @@ public final class MazeMapDataOuterClass {
      * @return this
      */
     public MazeMapData addAllBEEIDEFKEKG(final BEEIDEFKEKGEntry... values) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       bEEIDEFKEKG.addAll(values);
       return this;
     }
@@ -829,6 +871,7 @@ public final class MazeMapDataOuterClass {
         retcode = other.retcode;
         jNBDFDPIONG = other.jNBDFDPIONG;
         pKOIJBEDMEK = other.pKOIJBEDMEK;
+        lMOKAPLPCFD = other.lMOKAPLPCFD;
         lightenSectionList.copyFrom(other.lightenSectionList);
         unlockedTeleportList.copyFrom(other.unlockedTeleportList);
         unlockedChestList.copyFrom(other.unlockedChestList);
@@ -859,6 +902,9 @@ public final class MazeMapDataOuterClass {
       }
       if (other.hasPKOIJBEDMEK()) {
         setPKOIJBEDMEK(other.pKOIJBEDMEK);
+      }
+      if (other.hasLMOKAPLPCFD()) {
+        setLMOKAPLPCFD(other.lMOKAPLPCFD);
       }
       if (other.hasLightenSectionList()) {
         getMutableLightenSectionList().addAll(other.lightenSectionList);
@@ -893,6 +939,7 @@ public final class MazeMapDataOuterClass {
       retcode = 0;
       jNBDFDPIONG = 0;
       pKOIJBEDMEK = 0;
+      lMOKAPLPCFD = 0;
       lightenSectionList.clear();
       unlockedTeleportList.clear();
       unlockedChestList.clear();
@@ -933,6 +980,7 @@ public final class MazeMapDataOuterClass {
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasJNBDFDPIONG() || jNBDFDPIONG == other.jNBDFDPIONG)
         && (!hasPKOIJBEDMEK() || pKOIJBEDMEK == other.pKOIJBEDMEK)
+        && (!hasLMOKAPLPCFD() || lMOKAPLPCFD == other.lMOKAPLPCFD)
         && (!hasLightenSectionList() || lightenSectionList.equals(other.lightenSectionList))
         && (!hasUnlockedTeleportList() || unlockedTeleportList.equals(other.unlockedTeleportList))
         && (!hasUnlockedChestList() || unlockedChestList.equals(other.unlockedChestList))
@@ -964,36 +1012,40 @@ public final class MazeMapDataOuterClass {
         output.writeUInt32NoTag(pKOIJBEDMEK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(lMOKAPLPCFD);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
         for (int i = 0; i < lightenSectionList.length(); i++) {
           output.writeRawByte((byte) 40);
           output.writeUInt32NoTag(lightenSectionList.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000080) != 0) {
         for (int i = 0; i < unlockedTeleportList.length(); i++) {
           output.writeRawByte((byte) 112);
           output.writeUInt32NoTag(unlockedTeleportList.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000080) != 0) {
+      if ((bitField0_ & 0x00000100) != 0) {
         for (int i = 0; i < unlockedChestList.length(); i++) {
           output.writeRawByte((byte) 26);
           output.writeMessageNoTag(unlockedChestList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000100) != 0) {
+      if ((bitField0_ & 0x00000200) != 0) {
         for (int i = 0; i < mazePropList.length(); i++) {
           output.writeRawByte((byte) 50);
           output.writeMessageNoTag(mazePropList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000200) != 0) {
+      if ((bitField0_ & 0x00000400) != 0) {
         for (int i = 0; i < mazeGroupList.length(); i++) {
           output.writeRawByte((byte) 90);
           output.writeMessageNoTag(mazeGroupList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000400) != 0) {
+      if ((bitField0_ & 0x00000800) != 0) {
         for (int i = 0; i < bEEIDEFKEKG.length(); i++) {
           output.writeRawByte((byte) 98);
           output.writeMessageNoTag(bEEIDEFKEKG.get(i));
@@ -1020,21 +1072,24 @@ public final class MazeMapDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(pKOIJBEDMEK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * lightenSectionList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lightenSectionList);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lMOKAPLPCFD);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * unlockedTeleportList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockedTeleportList);
+        size += (1 * lightenSectionList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lightenSectionList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += (1 * unlockedChestList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(unlockedChestList);
+        size += (1 * unlockedTeleportList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockedTeleportList);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += (1 * mazePropList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazePropList);
+        size += (1 * unlockedChestList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(unlockedChestList);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += (1 * mazeGroupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazeGroupList);
+        size += (1 * mazePropList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazePropList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
+        size += (1 * mazeGroupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazeGroupList);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
         size += (1 * bEEIDEFKEKG.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(bEEIDEFKEKG);
       }
       return size;
@@ -1088,6 +1143,15 @@ public final class MazeMapDataOuterClass {
             pKOIJBEDMEK = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // lMOKAPLPCFD
+            lMOKAPLPCFD = input.readUInt32();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
             if (tag != 42) {
               break;
             }
@@ -1095,7 +1159,7 @@ public final class MazeMapDataOuterClass {
           case 42: {
             // lightenSectionList [packed=true]
             input.readPackedUInt32(lightenSectionList, tag);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 114) {
               break;
@@ -1104,7 +1168,7 @@ public final class MazeMapDataOuterClass {
           case 114: {
             // unlockedTeleportList [packed=true]
             input.readPackedUInt32(unlockedTeleportList, tag);
-            bitField0_ |= 0x00000040;
+            bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 26) {
               break;
@@ -1113,7 +1177,7 @@ public final class MazeMapDataOuterClass {
           case 26: {
             // unlockedChestList
             tag = input.readRepeatedMessage(unlockedChestList, tag);
-            bitField0_ |= 0x00000080;
+            bitField0_ |= 0x00000100;
             if (tag != 50) {
               break;
             }
@@ -1121,7 +1185,7 @@ public final class MazeMapDataOuterClass {
           case 50: {
             // mazePropList
             tag = input.readRepeatedMessage(mazePropList, tag);
-            bitField0_ |= 0x00000100;
+            bitField0_ |= 0x00000200;
             if (tag != 90) {
               break;
             }
@@ -1129,7 +1193,7 @@ public final class MazeMapDataOuterClass {
           case 90: {
             // mazeGroupList
             tag = input.readRepeatedMessage(mazeGroupList, tag);
-            bitField0_ |= 0x00000200;
+            bitField0_ |= 0x00000400;
             if (tag != 98) {
               break;
             }
@@ -1137,7 +1201,7 @@ public final class MazeMapDataOuterClass {
           case 98: {
             // bEEIDEFKEKG
             tag = input.readRepeatedMessage(bEEIDEFKEKG, tag);
-            bitField0_ |= 0x00000400;
+            bitField0_ |= 0x00000800;
             if (tag != 0) {
               break;
             }
@@ -1155,13 +1219,13 @@ public final class MazeMapDataOuterClass {
           case 40: {
             // lightenSectionList [packed=false]
             tag = input.readRepeatedUInt32(lightenSectionList, tag);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x00000040;
             break;
           }
           case 112: {
             // unlockedTeleportList [packed=false]
             tag = input.readRepeatedUInt32(unlockedTeleportList, tag);
-            bitField0_ |= 0x00000040;
+            bitField0_ |= 0x00000080;
             break;
           }
         }
@@ -1187,21 +1251,24 @@ public final class MazeMapDataOuterClass {
         output.writeUInt32(FieldNames.pKOIJBEDMEK, pKOIJBEDMEK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lightenSectionList, lightenSectionList);
+        output.writeUInt32(FieldNames.lMOKAPLPCFD, lMOKAPLPCFD);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.unlockedTeleportList, unlockedTeleportList);
+        output.writeRepeatedUInt32(FieldNames.lightenSectionList, lightenSectionList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRepeatedMessage(FieldNames.unlockedChestList, unlockedChestList);
+        output.writeRepeatedUInt32(FieldNames.unlockedTeleportList, unlockedTeleportList);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRepeatedMessage(FieldNames.mazePropList, mazePropList);
+        output.writeRepeatedMessage(FieldNames.unlockedChestList, unlockedChestList);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRepeatedMessage(FieldNames.mazeGroupList, mazeGroupList);
+        output.writeRepeatedMessage(FieldNames.mazePropList, mazePropList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
+        output.writeRepeatedMessage(FieldNames.mazeGroupList, mazeGroupList);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
         output.writeRepeatedMessage(FieldNames.bEEIDEFKEKG, bEEIDEFKEKG);
       }
       output.endObject();
@@ -1270,12 +1337,23 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
+          case -648046671: {
+            if (input.isAtField(FieldNames.lMOKAPLPCFD)) {
+              if (!input.trySkipNullValue()) {
+                lMOKAPLPCFD = input.readUInt32();
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1942343836:
           case 1328850360: {
             if (input.isAtField(FieldNames.lightenSectionList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(lightenSectionList);
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -1287,7 +1365,7 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.unlockedTeleportList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(unlockedTeleportList);
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -1299,7 +1377,7 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.unlockedChestList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(unlockedChestList);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000100;
               }
             } else {
               input.skipUnknownField();
@@ -1311,7 +1389,7 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.mazePropList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(mazePropList);
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -1323,7 +1401,7 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.mazeGroupList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(mazeGroupList);
-                bitField0_ |= 0x00000200;
+                bitField0_ |= 0x00000400;
               }
             } else {
               input.skipUnknownField();
@@ -1334,7 +1412,7 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.bEEIDEFKEKG)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(bEEIDEFKEKG);
-                bitField0_ |= 0x00000400;
+                bitField0_ |= 0x00000800;
               }
             } else {
               input.skipUnknownField();
@@ -1756,6 +1834,8 @@ public final class MazeMapDataOuterClass {
       static final FieldName jNBDFDPIONG = FieldName.forField("JNBDFDPIONG");
 
       static final FieldName pKOIJBEDMEK = FieldName.forField("PKOIJBEDMEK");
+
+      static final FieldName lMOKAPLPCFD = FieldName.forField("LMOKAPLPCFD");
 
       static final FieldName lightenSectionList = FieldName.forField("lightenSectionList", "lighten_section_list");
 

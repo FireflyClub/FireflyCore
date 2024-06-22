@@ -57,22 +57,22 @@ public final class SceneInfoOuterClass {
 
     /**
      * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 leader_entity_id = 14;</code>
+     */
+    private int leaderEntityId;
+
+    /**
+     * <pre>
      *  repeated EntityBuffInfo KLBDOBGEAMA = 9;
      *  repeated BuffInfo MNLNDDDGEMC = 11;
      * </pre>
      *
-     * <code>optional uint32 world_id = 14;</code>
+     * <code>optional uint32 world_id = 15;</code>
      */
     private int worldId;
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 leader_entity_id = 15;</code>
-     */
-    private int leaderEntityId;
 
     /**
      * <code>optional uint32 PKOIJBEDMEK = 267;</code>
@@ -356,15 +356,55 @@ public final class SceneInfoOuterClass {
 
     /**
      * <pre>
-     *  repeated EntityBuffInfo KLBDOBGEAMA = 9;
-     *  repeated BuffInfo MNLNDDDGEMC = 11;
+     * ?
      * </pre>
      *
-     * <code>optional uint32 world_id = 14;</code>
-     * @return whether the worldId field is set
+     * <code>optional uint32 leader_entity_id = 14;</code>
+     * @return whether the leaderEntityId field is set
      */
-    public boolean hasWorldId() {
+    public boolean hasLeaderEntityId() {
       return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 leader_entity_id = 14;</code>
+     * @return this
+     */
+    public SceneInfo clearLeaderEntityId() {
+      bitField0_ &= ~0x00000020;
+      leaderEntityId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 leader_entity_id = 14;</code>
+     * @return the leaderEntityId
+     */
+    public int getLeaderEntityId() {
+      return leaderEntityId;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 leader_entity_id = 14;</code>
+     * @param value the leaderEntityId to set
+     * @return this
+     */
+    public SceneInfo setLeaderEntityId(final int value) {
+      bitField0_ |= 0x00000020;
+      leaderEntityId = value;
+      return this;
     }
 
     /**
@@ -373,11 +413,24 @@ public final class SceneInfoOuterClass {
      *  repeated BuffInfo MNLNDDDGEMC = 11;
      * </pre>
      *
-     * <code>optional uint32 world_id = 14;</code>
+     * <code>optional uint32 world_id = 15;</code>
+     * @return whether the worldId field is set
+     */
+    public boolean hasWorldId() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *  repeated EntityBuffInfo KLBDOBGEAMA = 9;
+     *  repeated BuffInfo MNLNDDDGEMC = 11;
+     * </pre>
+     *
+     * <code>optional uint32 world_id = 15;</code>
      * @return this
      */
     public SceneInfo clearWorldId() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000040;
       worldId = 0;
       return this;
     }
@@ -388,7 +441,7 @@ public final class SceneInfoOuterClass {
      *  repeated BuffInfo MNLNDDDGEMC = 11;
      * </pre>
      *
-     * <code>optional uint32 world_id = 14;</code>
+     * <code>optional uint32 world_id = 15;</code>
      * @return the worldId
      */
     public int getWorldId() {
@@ -401,66 +454,13 @@ public final class SceneInfoOuterClass {
      *  repeated BuffInfo MNLNDDDGEMC = 11;
      * </pre>
      *
-     * <code>optional uint32 world_id = 14;</code>
+     * <code>optional uint32 world_id = 15;</code>
      * @param value the worldId to set
      * @return this
      */
     public SceneInfo setWorldId(final int value) {
-      bitField0_ |= 0x00000020;
-      worldId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 leader_entity_id = 15;</code>
-     * @return whether the leaderEntityId field is set
-     */
-    public boolean hasLeaderEntityId() {
-      return (bitField0_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 leader_entity_id = 15;</code>
-     * @return this
-     */
-    public SceneInfo clearLeaderEntityId() {
-      bitField0_ &= ~0x00000040;
-      leaderEntityId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 leader_entity_id = 15;</code>
-     * @return the leaderEntityId
-     */
-    public int getLeaderEntityId() {
-      return leaderEntityId;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 leader_entity_id = 15;</code>
-     * @param value the leaderEntityId to set
-     * @return this
-     */
-    public SceneInfo setLeaderEntityId(final int value) {
       bitField0_ |= 0x00000040;
-      leaderEntityId = value;
+      worldId = value;
       return this;
     }
 
@@ -1094,8 +1094,8 @@ public final class SceneInfoOuterClass {
         floorId = other.floorId;
         gameModeType = other.gameModeType;
         clientPosVersion = other.clientPosVersion;
-        worldId = other.worldId;
         leaderEntityId = other.leaderEntityId;
+        worldId = other.worldId;
         pKOIJBEDMEK = other.pKOIJBEDMEK;
         mapEntryId = other.mapEntryId;
         gIBIDJKFBOK = other.gIBIDJKFBOK;
@@ -1130,11 +1130,11 @@ public final class SceneInfoOuterClass {
       if (other.hasClientPosVersion()) {
         setClientPosVersion(other.clientPosVersion);
       }
-      if (other.hasWorldId()) {
-        setWorldId(other.worldId);
-      }
       if (other.hasLeaderEntityId()) {
         setLeaderEntityId(other.leaderEntityId);
+      }
+      if (other.hasWorldId()) {
+        setWorldId(other.worldId);
       }
       if (other.hasPKOIJBEDMEK()) {
         setPKOIJBEDMEK(other.pKOIJBEDMEK);
@@ -1178,8 +1178,8 @@ public final class SceneInfoOuterClass {
       floorId = 0;
       gameModeType = 0;
       clientPosVersion = 0;
-      worldId = 0;
       leaderEntityId = 0;
+      worldId = 0;
       pKOIJBEDMEK = 0;
       mapEntryId = 0;
       gIBIDJKFBOK = 0;
@@ -1223,8 +1223,8 @@ public final class SceneInfoOuterClass {
         && (!hasFloorId() || floorId == other.floorId)
         && (!hasGameModeType() || gameModeType == other.gameModeType)
         && (!hasClientPosVersion() || clientPosVersion == other.clientPosVersion)
-        && (!hasWorldId() || worldId == other.worldId)
         && (!hasLeaderEntityId() || leaderEntityId == other.leaderEntityId)
+        && (!hasWorldId() || worldId == other.worldId)
         && (!hasPKOIJBEDMEK() || pKOIJBEDMEK == other.pKOIJBEDMEK)
         && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
         && (!hasGIBIDJKFBOK() || gIBIDJKFBOK == other.gIBIDJKFBOK)
@@ -1260,11 +1260,11 @@ public final class SceneInfoOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(worldId);
+        output.writeUInt32NoTag(leaderEntityId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(leaderEntityId);
+        output.writeUInt32NoTag(worldId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawLittleEndian16((short) 4312);
@@ -1335,10 +1335,10 @@ public final class SceneInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(leaderEntityId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(leaderEntityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         size += 2 + ProtoSink.computeUInt32SizeNoTag(pKOIJBEDMEK);
@@ -1423,8 +1423,8 @@ public final class SceneInfoOuterClass {
             }
           }
           case 112: {
-            // worldId
-            worldId = input.readUInt32();
+            // leaderEntityId
+            leaderEntityId = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 120) {
@@ -1432,8 +1432,8 @@ public final class SceneInfoOuterClass {
             }
           }
           case 120: {
-            // leaderEntityId
-            leaderEntityId = input.readUInt32();
+            // worldId
+            worldId = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 2136) {
@@ -1562,10 +1562,10 @@ public final class SceneInfoOuterClass {
         output.writeUInt32(FieldNames.clientPosVersion, clientPosVersion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.worldId, worldId);
+        output.writeUInt32(FieldNames.leaderEntityId, leaderEntityId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.leaderEntityId, leaderEntityId);
+        output.writeUInt32(FieldNames.worldId, worldId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeUInt32(FieldNames.pKOIJBEDMEK, pKOIJBEDMEK);
@@ -1664,11 +1664,11 @@ public final class SceneInfoOuterClass {
             }
             break;
           }
-          case 1525188685:
-          case 36230376: {
-            if (input.isAtField(FieldNames.worldId)) {
+          case 1693061255:
+          case 794634049: {
+            if (input.isAtField(FieldNames.leaderEntityId)) {
               if (!input.trySkipNullValue()) {
-                worldId = input.readUInt32();
+                leaderEntityId = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1676,11 +1676,11 @@ public final class SceneInfoOuterClass {
             }
             break;
           }
-          case 1693061255:
-          case 794634049: {
-            if (input.isAtField(FieldNames.leaderEntityId)) {
+          case 1525188685:
+          case 36230376: {
+            if (input.isAtField(FieldNames.worldId)) {
               if (!input.trySkipNullValue()) {
-                leaderEntityId = input.readUInt32();
+                worldId = input.readUInt32();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -2209,9 +2209,9 @@ public final class SceneInfoOuterClass {
 
       static final FieldName clientPosVersion = FieldName.forField("clientPosVersion", "client_pos_version");
 
-      static final FieldName worldId = FieldName.forField("worldId", "world_id");
-
       static final FieldName leaderEntityId = FieldName.forField("leaderEntityId", "leader_entity_id");
+
+      static final FieldName worldId = FieldName.forField("worldId", "world_id");
 
       static final FieldName pKOIJBEDMEK = FieldName.forField("PKOIJBEDMEK");
 

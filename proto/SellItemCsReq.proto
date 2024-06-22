@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCostList.proto";
 
-// Clihmfgjiac
+// NDMIIJGPEIC
 message SellItemCsReq {
-    bool to_material = 5; // anookalgihi
-    ItemCostList item_cost_list = 15; // hmambnipfcd
+    bool to_material = 6; // FDJHEMOKECI
+    ItemCostList item_cost_list = 7;
 }

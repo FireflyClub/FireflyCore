@@ -238,6 +238,11 @@ public class ChallengeInstance {
             default:
                 // Determine challenge result
                 if ((this.isStory() || this.isBoss()) && stats.getEndReason() == BattleEndReason.BATTLE_END_REASON_TURN_LIMIT) {
+                    // kill monsters first before advancing
+                    for (EntityMonster npcMonster : battle.getNpcMonsters()) {
+                        getScene().removeEntity(npcMonster);
+                    }
+                    
                     this.advanceStage();
                 } else {
                     // Fail challenge
@@ -312,13 +317,21 @@ public class ChallengeInstance {
 
             // enter next phase (if boss challenge)
             if (this.isBoss() && this.currentBossStage == 2) {
+                // Change player lineup
                 this.setCurrentExtraLineup(ExtraLineupType.LINEUP_CHALLENGE_2);
-                this.savedMp = player.getCurrentLineup().getMp();
                 player.getLineupManager().setCurrentExtraLineup(this.getCurrentExtraLineup(), false);
                 player.sendPacket(new PacketChallengeLineupNotify(this.getCurrentExtraLineup()));
+                
+                // set mp
+                this.savedMp = player.getCurrentLineup().getMp();
+                
+                player.enterScene(excel.getMapEntranceID2(), 0, false);
+                this.getScene().getEntitiesByGroup(EntityMonster.class, excel.getMazeGroupID1()).forEach(e -> getScene().removeEntity(e));
                 this.getScene().loadGroup(excel.getMazeGroupID2());
+                
                 player.sendPacket(new PacketEnterChallengeNextPhaseScRsp(player.getScene().toProto()));
                 this.getScene().syncLineup();
+                
                 return;
             }
 
@@ -396,8 +409,8 @@ public class ChallengeInstance {
                 .setScore(this.getScoreStage1())
                 .setScoreTwo(this.getScoreStage2())
                 .setRoundCount(this.getRoundsElapsed())
-                .setExtraLineupTypeValue(this.getCurrentExtraLineup());;
-//                .setUnk(1);
+                .setExtraLineupTypeValue(this.getCurrentExtraLineup());
+                // .setUnk(1);
         
         if (this.getStoryBuffs() != null) {
             int buffId = this.getStoryBuffs().getInt(this.getCurrentStage() - 1);

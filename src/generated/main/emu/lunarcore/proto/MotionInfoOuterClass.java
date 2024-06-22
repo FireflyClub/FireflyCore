@@ -19,16 +19,12 @@ public final class MotionInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      */
     private final VectorOuterClass.Vector pos = VectorOuterClass.Vector.newInstance();
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      */
     private final VectorOuterClass.Vector rot = VectorOuterClass.Vector.newInstance();
 
@@ -43,7 +39,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      * @return whether the pos field is set
      */
     public boolean hasPos() {
@@ -51,7 +47,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      * @return this
      */
     public MotionInfo clearPos() {
@@ -61,7 +57,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -75,7 +71,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -89,7 +85,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <code>optional .Vector pos = 10;</code>
+     * <code>optional .Vector pos = 5;</code>
      * @param value the pos to set
      * @return this
      */
@@ -100,11 +96,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      * @return whether the rot field is set
      */
     public boolean hasRot() {
@@ -112,11 +104,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      * @return this
      */
     public MotionInfo clearRot() {
@@ -126,11 +114,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -144,11 +128,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -162,11 +142,7 @@ public final class MotionInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  IAJHFDLJPNN
-     * </pre>
-     *
-     * <code>optional .Vector rot = 14;</code>
+     * <code>optional .Vector rot = 11;</code>
      * @param value the rot to set
      * @return this
      */
@@ -243,11 +219,11 @@ public final class MotionInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(pos);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(rot);
       }
     }
@@ -271,16 +247,16 @@ public final class MotionInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
+          case 42: {
             // pos
             input.readMessage(pos);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 90) {
               break;
             }
           }
-          case 114: {
+          case 90: {
             // rot
             input.readMessage(rot);
             bitField0_ |= 0x00000002;

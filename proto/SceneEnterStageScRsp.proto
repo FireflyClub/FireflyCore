@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SceneBattleInfo.proto";
 
-// Fnjhffhobgl
+// CJMFCDMGKGO
 message SceneEnterStageScRsp {
-    uint32 retcode = 5;//15
-    SceneBattleInfo battle_info = 2;//13
+    uint32 retcode = 7;
+    SceneBattleInfo battle_info = 15;
 }

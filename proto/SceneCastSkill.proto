@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// PNDDNMMCOOF
 enum SceneCastSkill {
   SCENE_CAST_SKILL_NONE = 0;
   SCENE_CAST_SKILL_PROJECTILE_HIT = 1;

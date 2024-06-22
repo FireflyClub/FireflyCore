@@ -2,11 +2,10 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Fggleeelkcn
 message BuyGoodsCsReq {
-    uint32 shop_id = 13;
-    // uint32 edahdalkobk = 3;
-    uint32 goods_num = 9;
+    uint32 goods_num = 9; // DIAEEEEFLHG
+    uint32 shop_id = 13; // GNDLGHPHOLH
+    uint32 goods_id = 5; // LAOLNBMLBEM
     uint32 item_id = 4; // NKOODOJEBHH
-    uint32 goods_id = 5;
+	uint32 FJLKOHICJHG = 3;
 }

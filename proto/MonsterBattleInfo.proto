@@ -2,45 +2,38 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// import "MonsterProperty.proto";
-// import "AttackDamageProperty.proto";
-// import "FLOJPLPFGIH.proto";
-// import "GHBIABDNMFA.proto";
-// import "NDCIDEHCCAG.proto";
-// import "ELBDNIGGHOE.proto";
-// import "CNMOEJENDJO.proto";
-// import "HPGBMFAHHNE.proto";
+import "BattleSkillInfo.proto";
 
 message MonsterBattleInfo {
-	// uint32 entity_id = 1;
-	// uint32 monster_id = 2;
-	// uint32 monster_template_id = 3;
-	// uint32 monster_level = 4;
-	// MonsterProperty monster_status = 5;
-	// uint32 total_turns = 6;
-	// double total_damage = 7;
-	// double total_heal = 8;
-	// double total_damage_taken = 9;
-	// double total_stance_damage_taken = 10;
-	// double total_hp_recover = 11;
-	// uint32 stage_id = 12;
-	// uint32 battle_id = 13;
-	// uint32 monster_type = 14;
+	uint32 entity_id = 1;
+	uint32 scene_event_id = 2;
+	uint32 monster_template_id = 3; // DGIJLFEOGOO
+	uint32 monster_level = 4; // EILDJJMAADC
+	// MonsterProperty monster_status = 5; // IKDNJNGHLMG
+	uint32 total_turns = 6;
+	double total_damage = 7;
+	double total_heal = 8;
+	double total_damage_taken = 9;
+	double total_stance_damage_taken = 10; // MNFEAMFGGDA
+	double total_hp_recover = 11;
+	uint32 stage_id = 12;
+	uint32 battle_id = 13;
+	uint32 monster_type = 14; // GOKEMENDGOH
 	// repeated AttackDamageProperty attack_type_damage = 15;
-	// repeated FLOJPLPFGIH skill_times = 16;
-	// uint32 stage_type = 17;
-	// double total_break_damage_taken = 18;
-	// double delay_cumulate = 19;
-	// GHBIABDNMFA death_source = 20;
-	// uint32 wave = 21;
-	// int32 index_in_wave = 22;
-	// uint32 phase = 23;
-	// uint32 max_phase = 24;
-	// NDCIDEHCCAG battle_tag = 25;
-	// repeated ELBDNIGGHOE FNAMLLELMAO = 26;
-	// uint32 HHOMOKPIIPK = 27;
-	// repeated CNMOEJENDJO EIMIHBODEJN = 28;
-	// uint32 CGLIMCKBFJF = 29;
-	// uint32 DHKALNBKFLD = 30;
-	// HPGBMFAHHNE NLMHGAHHNCK = 31;
+	// repeated SkillUseProperty skill_times = 16;
+	uint32 stage_type = 17;
+	double total_break_damage_taken = 18; // EJPDEBGKOOD
+	double delay_cumulate = 19;
+	// BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+	uint32 monster_wave = 21; // KEEMECOIHGJ
+	int32 index_in_wave = 22; // OLOCGMGOFJB
+	uint32 phase = 23; // PPFLEEEOELE
+	uint32 max_phase = 24; // OHCBJOGCLKK
+	// GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+	repeated BattleSkillInfo NJODLNCNPNF = 26;
+	uint32 DLFCKLFGDNG = 27;
+	// repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+	uint32 KALBMDEDPCN = 29;
+	uint32 FNGCJKGIFCB = 30;
+	// DIKEHIIKNII FOGGPPANKIO = 31;
 }

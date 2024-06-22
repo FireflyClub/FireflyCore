@@ -16,9 +16,7 @@ public class PacketGetBasicInfoScRsp extends BasePacket {
                 .setCurDay(1)
                 .setNextRecoverTime(session.getPlayer().getNextStaminaRecover() / 1000)
                 .setGameplayBirthday(session.getPlayer().getBirthday())
-                .setPlayerSettingInfo(PlayerSettingInfo.newInstance())
-                .setGender(Gender.GenderWoman_VALUE)
-                .setIsGenderSet(true);
+                .setPlayerSettingInfo(PlayerSettingInfo.newInstance());
 
         this.setData(data);
     }

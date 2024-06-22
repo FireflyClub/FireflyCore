@@ -6,5 +6,5 @@ import "SceneGroupRefreshInfo.proto";
 
 // Kecnjlcjefm
 message SceneGroupRefreshScNotify {
-    repeated SceneGroupRefreshInfo group_refresh_info = 1; // kpjckjjpjhj
+    repeated SceneGroupRefreshInfo group_refresh_info = 2; // PBIFEAHGJMJ
 }

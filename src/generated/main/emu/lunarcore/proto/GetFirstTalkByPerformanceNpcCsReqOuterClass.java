@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
   /**
-   * <pre>
-   *  Peabfdfkmim
-   * </pre>
-   *
    * Protobuf type {@code GetFirstTalkByPerformanceNpcCsReq}
    */
   public static final class GetFirstTalkByPerformanceNpcCsReq extends ProtoMessage<GetFirstTalkByPerformanceNpcCsReq> implements Cloneable {
@@ -25,10 +21,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      */
     private final RepeatedInt npcTalkList = RepeatedInt.newEmptyInstance();
 
@@ -36,10 +32,6 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Peabfdfkmim
-     * </pre>
-     *
      * @return a new empty instance of {@code GetFirstTalkByPerformanceNpcCsReq}
      */
     public static GetFirstTalkByPerformanceNpcCsReq newInstance() {
@@ -48,10 +40,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      * @return whether the npcTalkList field is set
      */
     public boolean hasNpcTalkList() {
@@ -60,10 +52,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      * @return this
      */
     public GetFirstTalkByPerformanceNpcCsReq clearNpcTalkList() {
@@ -74,10 +66,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,10 +84,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -110,10 +102,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      * @param value the npcTalkList to add
      * @return this
      */
@@ -125,10 +117,10 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
 
     /**
      * <pre>
-     *  kajphbfibik
+     *  PEFPNAPIBBG
      * </pre>
      *
-     * <code>repeated uint32 npc_talk_list = 14;</code>
+     * <code>repeated uint32 npc_talk_list = 2;</code>
      * @param values the npcTalkList to add
      * @return this
      */
@@ -201,7 +193,7 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < npcTalkList.length(); i++) {
-          output.writeRawByte((byte) 112);
+          output.writeRawByte((byte) 16);
           output.writeUInt32NoTag(npcTalkList.array()[i]);
         }
       }
@@ -223,7 +215,7 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 114: {
+          case 18: {
             // npcTalkList [packed=true]
             input.readPackedUInt32(npcTalkList, tag);
             bitField0_ |= 0x00000001;
@@ -242,7 +234,7 @@ public final class GetFirstTalkByPerformanceNpcCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 112: {
+          case 16: {
             // npcTalkList [packed=false]
             tag = input.readRepeatedUInt32(npcTalkList, tag);
             bitField0_ |= 0x00000001;

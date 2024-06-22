@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class BattleEventInitedDataOuterClass {
   /**
-   * <pre>
-   *  Fmaobdmmcjb
-   * </pre>
-   *
    * Protobuf type {@code BattleEventInitedData}
    */
   public static final class BattleEventInitedData extends ProtoMessage<BattleEventInitedData> implements Cloneable {
@@ -31,10 +27,6 @@ public final class BattleEventInitedDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  Fmaobdmmcjb
-     * </pre>
-     *
      * @return a new empty instance of {@code BattleEventInitedData}
      */
     public static BattleEventInitedData newInstance() {

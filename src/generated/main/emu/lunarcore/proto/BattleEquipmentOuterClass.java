@@ -25,9 +25,7 @@ public final class BattleEquipmentOuterClass {
 
     /**
      * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
+     *  CFNKFJKAIAJ
      * </pre>
      *
      * <code>optional uint32 level = 2;</code>
@@ -97,9 +95,7 @@ public final class BattleEquipmentOuterClass {
 
     /**
      * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
+     *  CFNKFJKAIAJ
      * </pre>
      *
      * <code>optional uint32 level = 2;</code>
@@ -111,9 +107,7 @@ public final class BattleEquipmentOuterClass {
 
     /**
      * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
+     *  CFNKFJKAIAJ
      * </pre>
      *
      * <code>optional uint32 level = 2;</code>
@@ -127,9 +121,7 @@ public final class BattleEquipmentOuterClass {
 
     /**
      * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
+     *  CFNKFJKAIAJ
      * </pre>
      *
      * <code>optional uint32 level = 2;</code>
@@ -141,9 +133,7 @@ public final class BattleEquipmentOuterClass {
 
     /**
      * <pre>
-     *  uint32 igljlnabhnf = 3;
-     *  uint32 dkdmaeajipo = 5;
-     *  uint32 iocdidhahhj = 11;
+     *  CFNKFJKAIAJ
      * </pre>
      *
      * <code>optional uint32 level = 2;</code>

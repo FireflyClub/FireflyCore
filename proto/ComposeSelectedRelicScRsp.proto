@@ -4,9 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemList.proto";
 
-// Ffkmlbhgicd
+// PKNMDHGPGDJ
 message ComposeSelectedRelicScRsp {
-    uint32 retcode = 13;
-    ItemList return_item_list = 7;
-    uint32 compose_id = 10;
+    ItemList return_item_list = 5;
+    uint32 compose_id = 4; // LPPMAGNEEJP
+    uint32 retcode = 12;
 }

@@ -19,12 +19,12 @@ public class HandlerAvatarExpUpCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = AvatarExpUpCsReq.parseFrom(data);
 
-        List<ItemParam> items = new ArrayList<>(req.getItemCostList().getItemList().length());
-        for (ItemCost cost : req.getItemCostList().getItemList()) {
+        List<ItemParam> items = new ArrayList<>(req.getUseItemList().getItemList().length());
+        for (ItemCost cost : req.getUseItemList().getItemList()) {
             items.add(new ItemParam(cost));
         }
 
-        var returnItems = session.getServer().getInventoryService().levelUpAvatar(session.getPlayer(), req.getBaseAvatarId(), items);
+        var returnItems = session.getServer().getInventoryService().levelUpAvatar(session.getPlayer(), req.getSceneAvatarId(), items);
         session.send(new PacketAvatarExpUpScRsp(returnItems));
     }
 

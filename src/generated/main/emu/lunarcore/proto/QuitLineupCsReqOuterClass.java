@@ -13,18 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class QuitLineupCsReqOuterClass {
   /**
+   * <pre>
+   *  CJGDAEANOLF
+   * </pre>
+   *
    * Protobuf type {@code QuitLineupCsReq}
    */
   public static final class QuitLineupCsReq extends ProtoMessage<QuitLineupCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <code>optional uint32 scene_avatar_id = 6;</code>
      */
-    private int baseAvatarId;
+    private int sceneAvatarId;
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <code>optional uint32 index = 8;</code>
      */
     private int index;
 
@@ -34,17 +38,21 @@ public final class QuitLineupCsReqOuterClass {
     private int planeId;
 
     /**
-     * <code>optional .AvatarType avatar_type = 6;</code>
-     */
-    private int avatarType;
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 4;</code>
      */
     private int extraLineupType;
 
     /**
-     * <code>optional bool is_virtual = 14;</code>
+     * <pre>
+     *  LGIJBNJPNIN
+     * </pre>
+     *
+     * <code>optional .AvatarType avatar_type = 12;</code>
+     */
+    private int avatarType;
+
+    /**
+     * <code>optional bool is_virtual = 2;</code>
      */
     private boolean isVirtual;
 
@@ -52,6 +60,10 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  CJGDAEANOLF
+     * </pre>
+     *
      * @return a new empty instance of {@code QuitLineupCsReq}
      */
     public static QuitLineupCsReq newInstance() {
@@ -59,44 +71,44 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
-     * @return whether the baseAvatarId field is set
+     * <code>optional uint32 scene_avatar_id = 6;</code>
+     * @return whether the sceneAvatarId field is set
      */
-    public boolean hasBaseAvatarId() {
+    public boolean hasSceneAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <code>optional uint32 scene_avatar_id = 6;</code>
      * @return this
      */
-    public QuitLineupCsReq clearBaseAvatarId() {
+    public QuitLineupCsReq clearSceneAvatarId() {
       bitField0_ &= ~0x00000001;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
-     * @return the baseAvatarId
+     * <code>optional uint32 scene_avatar_id = 6;</code>
+     * @return the sceneAvatarId
      */
-    public int getBaseAvatarId() {
-      return baseAvatarId;
+    public int getSceneAvatarId() {
+      return sceneAvatarId;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
-     * @param value the baseAvatarId to set
+     * <code>optional uint32 scene_avatar_id = 6;</code>
+     * @param value the sceneAvatarId to set
      * @return this
      */
-    public QuitLineupCsReq setBaseAvatarId(final int value) {
+    public QuitLineupCsReq setSceneAvatarId(final int value) {
       bitField0_ |= 0x00000001;
-      baseAvatarId = value;
+      sceneAvatarId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <code>optional uint32 index = 8;</code>
      * @return whether the index field is set
      */
     public boolean hasIndex() {
@@ -104,7 +116,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <code>optional uint32 index = 8;</code>
      * @return this
      */
     public QuitLineupCsReq clearIndex() {
@@ -114,7 +126,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <code>optional uint32 index = 8;</code>
      * @return the index
      */
     public int getIndex() {
@@ -122,7 +134,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <code>optional uint32 index = 8;</code>
      * @param value the index to set
      * @return this
      */
@@ -170,87 +182,25 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 6;</code>
-     * @return whether the avatarType field is set
+     * <code>optional .ExtraLineupType extra_lineup_type = 4;</code>
+     * @return whether the extraLineupType field is set
      */
-    public boolean hasAvatarType() {
+    public boolean hasExtraLineupType() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 6;</code>
-     * @return this
-     */
-    public QuitLineupCsReq clearAvatarType() {
-      bitField0_ &= ~0x00000008;
-      avatarType = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional .AvatarType avatar_type = 6;</code>
-     * @return the avatarType
-     */
-    public AvatarTypeOuterClass.AvatarType getAvatarType() {
-      return AvatarTypeOuterClass.AvatarType.forNumber(avatarType);
-    }
-
-    /**
-     * Gets the value of the internal enum store. The result is
-     * equivalent to {@link QuitLineupCsReq#getAvatarType()}.getNumber().
-     *
-     * @return numeric wire representation
-     */
-    public int getAvatarTypeValue() {
-      return avatarType;
-    }
-
-    /**
-     * Sets the value of the internal enum store. This does not
-     * do any validity checks, so be sure to use appropriate value
-     * constants from {@link AvatarTypeOuterClass.AvatarType}. Setting an invalid value
-     * can cause {@link QuitLineupCsReq#getAvatarType()} to return null
-     *
-     * @param value the numeric wire value to set
-     * @return this
-     */
-    public QuitLineupCsReq setAvatarTypeValue(final int value) {
-      bitField0_ |= 0x00000008;
-      avatarType = value;
-      return this;
-    }
-
-    /**
-     * <code>optional .AvatarType avatar_type = 6;</code>
-     * @param value the avatarType to set
-     * @return this
-     */
-    public QuitLineupCsReq setAvatarType(final AvatarTypeOuterClass.AvatarType value) {
-      bitField0_ |= 0x00000008;
-      avatarType = value.getNumber();
-      return this;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
-     * @return whether the extraLineupType field is set
-     */
-    public boolean hasExtraLineupType() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 4;</code>
      * @return this
      */
     public QuitLineupCsReq clearExtraLineupType() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       extraLineupType = 0;
       return this;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 4;</code>
      * @return the extraLineupType
      */
     public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
@@ -277,25 +227,103 @@ public final class QuitLineupCsReqOuterClass {
      * @return this
      */
     public QuitLineupCsReq setExtraLineupTypeValue(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       extraLineupType = value;
       return this;
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 4;</code>
      * @param value the extraLineupType to set
      * @return this
      */
     public QuitLineupCsReq setExtraLineupType(
         final ExtraLineupTypeOuterClass.ExtraLineupType value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       extraLineupType = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional bool is_virtual = 14;</code>
+     * <pre>
+     *  LGIJBNJPNIN
+     * </pre>
+     *
+     * <code>optional .AvatarType avatar_type = 12;</code>
+     * @return whether the avatarType field is set
+     */
+    public boolean hasAvatarType() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     *  LGIJBNJPNIN
+     * </pre>
+     *
+     * <code>optional .AvatarType avatar_type = 12;</code>
+     * @return this
+     */
+    public QuitLineupCsReq clearAvatarType() {
+      bitField0_ &= ~0x00000010;
+      avatarType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LGIJBNJPNIN
+     * </pre>
+     *
+     * <code>optional .AvatarType avatar_type = 12;</code>
+     * @return the avatarType
+     */
+    public AvatarTypeOuterClass.AvatarType getAvatarType() {
+      return AvatarTypeOuterClass.AvatarType.forNumber(avatarType);
+    }
+
+    /**
+     * Gets the value of the internal enum store. The result is
+     * equivalent to {@link QuitLineupCsReq#getAvatarType()}.getNumber().
+     *
+     * @return numeric wire representation
+     */
+    public int getAvatarTypeValue() {
+      return avatarType;
+    }
+
+    /**
+     * Sets the value of the internal enum store. This does not
+     * do any validity checks, so be sure to use appropriate value
+     * constants from {@link AvatarTypeOuterClass.AvatarType}. Setting an invalid value
+     * can cause {@link QuitLineupCsReq#getAvatarType()} to return null
+     *
+     * @param value the numeric wire value to set
+     * @return this
+     */
+    public QuitLineupCsReq setAvatarTypeValue(final int value) {
+      bitField0_ |= 0x00000010;
+      avatarType = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LGIJBNJPNIN
+     * </pre>
+     *
+     * <code>optional .AvatarType avatar_type = 12;</code>
+     * @param value the avatarType to set
+     * @return this
+     */
+    public QuitLineupCsReq setAvatarType(final AvatarTypeOuterClass.AvatarType value) {
+      bitField0_ |= 0x00000010;
+      avatarType = value.getNumber();
+      return this;
+    }
+
+    /**
+     * <code>optional bool is_virtual = 2;</code>
      * @return whether the isVirtual field is set
      */
     public boolean hasIsVirtual() {
@@ -303,7 +331,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 14;</code>
+     * <code>optional bool is_virtual = 2;</code>
      * @return this
      */
     public QuitLineupCsReq clearIsVirtual() {
@@ -313,7 +341,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 14;</code>
+     * <code>optional bool is_virtual = 2;</code>
      * @return the isVirtual
      */
     public boolean getIsVirtual() {
@@ -321,7 +349,7 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 14;</code>
+     * <code>optional bool is_virtual = 2;</code>
      * @param value the isVirtual to set
      * @return this
      */
@@ -336,11 +364,11 @@ public final class QuitLineupCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        baseAvatarId = other.baseAvatarId;
+        sceneAvatarId = other.sceneAvatarId;
         index = other.index;
         planeId = other.planeId;
-        avatarType = other.avatarType;
         extraLineupType = other.extraLineupType;
+        avatarType = other.avatarType;
         isVirtual = other.isVirtual;
       }
       return this;
@@ -352,8 +380,8 @@ public final class QuitLineupCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBaseAvatarId()) {
-        setBaseAvatarId(other.baseAvatarId);
+      if (other.hasSceneAvatarId()) {
+        setSceneAvatarId(other.sceneAvatarId);
       }
       if (other.hasIndex()) {
         setIndex(other.index);
@@ -361,11 +389,11 @@ public final class QuitLineupCsReqOuterClass {
       if (other.hasPlaneId()) {
         setPlaneId(other.planeId);
       }
-      if (other.hasAvatarType()) {
-        setAvatarTypeValue(other.avatarType);
-      }
       if (other.hasExtraLineupType()) {
         setExtraLineupTypeValue(other.extraLineupType);
+      }
+      if (other.hasAvatarType()) {
+        setAvatarTypeValue(other.avatarType);
       }
       if (other.hasIsVirtual()) {
         setIsVirtual(other.isVirtual);
@@ -380,11 +408,11 @@ public final class QuitLineupCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       index = 0;
       planeId = 0;
-      avatarType = 0;
       extraLineupType = 0;
+      avatarType = 0;
       isVirtual = false;
       return this;
     }
@@ -409,22 +437,22 @@ public final class QuitLineupCsReqOuterClass {
       }
       QuitLineupCsReq other = (QuitLineupCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
+        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
         && (!hasIndex() || index == other.index)
         && (!hasPlaneId() || planeId == other.planeId)
-        && (!hasAvatarType() || avatarType == other.avatarType)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
+        && (!hasAvatarType() || avatarType == other.avatarType)
         && (!hasIsVirtual() || isVirtual == other.isVirtual);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(baseAvatarId);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(index);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -432,15 +460,15 @@ public final class QuitLineupCsReqOuterClass {
         output.writeUInt32NoTag(planeId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeEnumNoTag(avatarType);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 32);
         output.writeEnumNoTag(extraLineupType);
       }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeEnumNoTag(avatarType);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 16);
         output.writeBoolNoTag(isVirtual);
       }
     }
@@ -449,7 +477,7 @@ public final class QuitLineupCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
@@ -458,10 +486,10 @@ public final class QuitLineupCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += 2;
@@ -476,16 +504,16 @@ public final class QuitLineupCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // baseAvatarId
-            baseAvatarId = input.readUInt32();
+          case 48: {
+            // sceneAvatarId
+            sceneAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 64) {
               break;
             }
           }
-          case 80: {
+          case 64: {
             // index
             index = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -499,35 +527,35 @@ public final class QuitLineupCsReqOuterClass {
             planeId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 32) {
               break;
             }
           }
-          case 48: {
-            // avatarType
-            final int value = input.readInt32();
-            if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
-              avatarType = value;
-              bitField0_ |= 0x00000008;
-            }
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
+          case 32: {
             // extraLineupType
             final int value = input.readInt32();
             if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
               extraLineupType = value;
-              bitField0_ |= 0x00000010;
+              bitField0_ |= 0x00000008;
             }
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 96) {
               break;
             }
           }
-          case 112: {
+          case 96: {
+            // avatarType
+            final int value = input.readInt32();
+            if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
+              avatarType = value;
+              bitField0_ |= 0x00000010;
+            }
+            tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
+          case 16: {
             // isVirtual
             isVirtual = input.readBool();
             bitField0_ |= 0x00000020;
@@ -554,7 +582,7 @@ public final class QuitLineupCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
+        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.index, index);
@@ -563,10 +591,10 @@ public final class QuitLineupCsReqOuterClass {
         output.writeUInt32(FieldNames.planeId, planeId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
+        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
+        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeBool(FieldNames.isVirtual, isVirtual);
@@ -581,11 +609,11 @@ public final class QuitLineupCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 118022725:
-          case -1756826157: {
-            if (input.isAtField(FieldNames.baseAvatarId)) {
+          case -1044772608:
+          case 1783323086: {
+            if (input.isAtField(FieldNames.sceneAvatarId)) {
               if (!input.trySkipNullValue()) {
-                baseAvatarId = input.readUInt32();
+                sceneAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -616,13 +644,13 @@ public final class QuitLineupCsReqOuterClass {
             }
             break;
           }
-          case -403148749:
-          case 397309536: {
-            if (input.isAtField(FieldNames.avatarType)) {
+          case -468135527:
+          case -1144475077: {
+            if (input.isAtField(FieldNames.extraLineupType)) {
               if (!input.trySkipNullValue()) {
-                final AvatarTypeOuterClass.AvatarType value = input.readEnum(AvatarTypeOuterClass.AvatarType.converter());
+                final ExtraLineupTypeOuterClass.ExtraLineupType value = input.readEnum(ExtraLineupTypeOuterClass.ExtraLineupType.converter());
                 if (value != null) {
-                  avatarType = value.getNumber();
+                  extraLineupType = value.getNumber();
                   bitField0_ |= 0x00000008;
                 } else {
                   input.skipUnknownEnumValue();
@@ -633,13 +661,13 @@ public final class QuitLineupCsReqOuterClass {
             }
             break;
           }
-          case -468135527:
-          case -1144475077: {
-            if (input.isAtField(FieldNames.extraLineupType)) {
+          case -403148749:
+          case 397309536: {
+            if (input.isAtField(FieldNames.avatarType)) {
               if (!input.trySkipNullValue()) {
-                final ExtraLineupTypeOuterClass.ExtraLineupType value = input.readEnum(ExtraLineupTypeOuterClass.ExtraLineupType.converter());
+                final AvatarTypeOuterClass.AvatarType value = input.readEnum(AvatarTypeOuterClass.AvatarType.converter());
                 if (value != null) {
-                  extraLineupType = value.getNumber();
+                  avatarType = value.getNumber();
                   bitField0_ |= 0x00000010;
                 } else {
                   input.skipUnknownEnumValue();
@@ -715,15 +743,15 @@ public final class QuitLineupCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
+      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
 
       static final FieldName index = FieldName.forField("index");
 
       static final FieldName planeId = FieldName.forField("planeId", "plane_id");
 
-      static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
-
       static final FieldName extraLineupType = FieldName.forField("extraLineupType", "extra_lineup_type");
+
+      static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
 
       static final FieldName isVirtual = FieldName.forField("isVirtual", "is_virtual");
     }

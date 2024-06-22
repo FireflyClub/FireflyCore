@@ -23,7 +23,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
      *  LDEBGMDKOKP
      * </pre>
      *
-     * <code>optional uint32 pos_version = 13;</code>
+     * <code>optional uint32 pos_version = 10;</code>
      */
     private int posVersion;
 
@@ -42,7 +42,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
      *  LDEBGMDKOKP
      * </pre>
      *
-     * <code>optional uint32 pos_version = 13;</code>
+     * <code>optional uint32 pos_version = 10;</code>
      * @return whether the posVersion field is set
      */
     public boolean hasPosVersion() {
@@ -54,7 +54,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
      *  LDEBGMDKOKP
      * </pre>
      *
-     * <code>optional uint32 pos_version = 13;</code>
+     * <code>optional uint32 pos_version = 10;</code>
      * @return this
      */
     public SceneUpdatePositionVersionNotify clearPosVersion() {
@@ -68,7 +68,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
      *  LDEBGMDKOKP
      * </pre>
      *
-     * <code>optional uint32 pos_version = 13;</code>
+     * <code>optional uint32 pos_version = 10;</code>
      * @return the posVersion
      */
     public int getPosVersion() {
@@ -80,7 +80,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
      *  LDEBGMDKOKP
      * </pre>
      *
-     * <code>optional uint32 pos_version = 13;</code>
+     * <code>optional uint32 pos_version = 10;</code>
      * @param value the posVersion to set
      * @return this
      */
@@ -150,7 +150,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(posVersion);
       }
     }
@@ -171,7 +171,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 80: {
             // posVersion
             posVersion = input.readUInt32();
             bitField0_ |= 0x00000001;

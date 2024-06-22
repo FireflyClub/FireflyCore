@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "RotaterData.proto";
 
-// Pfmcjhkahlg
 message DeployRotaterCsReq {
-    RotaterData rotater_data = 2; // bihfpalnakm
+    RotaterData rotater_data = 8;
 }

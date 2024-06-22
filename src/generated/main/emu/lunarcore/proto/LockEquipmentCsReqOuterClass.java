@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class LockEquipmentCsReqOuterClass {
   /**
-   * <pre>
-   *  Nlmjbhhgplb
-   * </pre>
-   *
    * Protobuf type {@code LockEquipmentCsReq}
    */
   public static final class LockEquipmentCsReq extends ProtoMessage<LockEquipmentCsReq> implements Cloneable {
@@ -25,7 +21,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  dbnabobjooj
+     *  HGDOGNKBFAO
      * </pre>
      *
      * <code>optional bool is_protected = 6;</code>
@@ -34,7 +30,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -45,10 +41,6 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Nlmjbhhgplb
-     * </pre>
-     *
      * @return a new empty instance of {@code LockEquipmentCsReq}
      */
     public static LockEquipmentCsReq newInstance() {
@@ -57,7 +49,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  dbnabobjooj
+     *  HGDOGNKBFAO
      * </pre>
      *
      * <code>optional bool is_protected = 6;</code>
@@ -69,7 +61,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  dbnabobjooj
+     *  HGDOGNKBFAO
      * </pre>
      *
      * <code>optional bool is_protected = 6;</code>
@@ -83,7 +75,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  dbnabobjooj
+     *  HGDOGNKBFAO
      * </pre>
      *
      * <code>optional bool is_protected = 6;</code>
@@ -95,7 +87,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  dbnabobjooj
+     *  HGDOGNKBFAO
      * </pre>
      *
      * <code>optional bool is_protected = 6;</code>
@@ -110,7 +102,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -122,7 +114,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -136,7 +128,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -154,7 +146,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -172,7 +164,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>
@@ -187,7 +179,7 @@ public final class LockEquipmentCsReqOuterClass {
 
     /**
      * <pre>
-     *  boigoolhfhg
+     *  CINPNECFALD
      * </pre>
      *
      * <code>repeated uint32 equipment_id_list = 3;</code>

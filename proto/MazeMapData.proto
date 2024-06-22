@@ -20,4 +20,5 @@ message MazeMapData {
 	uint32 JNBDFDPIONG = 8;
 	uint32 IGPEHMFKJKG = 1;
     uint32 entry_id = 4;
+	uint32 LMOKAPLPCFD = 15;
 }

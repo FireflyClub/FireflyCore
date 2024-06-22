@@ -13,7 +13,7 @@ public class HandlerRankUpAvatarCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = RankUpAvatarCsReq.parseFrom(data);
 
-        session.getServer().getInventoryService().rankUpAvatar(session.getPlayer(), req.getEquipAvatarId());
+        session.getServer().getInventoryService().rankUpAvatar(session.getPlayer(), req.getAvatarId());
         session.send(CmdId.RankUpAvatarScRsp);
     }
 

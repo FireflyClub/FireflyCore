@@ -7,7 +7,7 @@ import "RelicAffix.proto";
 // CKNNOLLCDLF
 message DisplayRelicInfo {
     uint32 exp = 13; // CKFJDGHCLKF
-    uint32 type = 5;
+    uint32 slot = 5;
     uint32 main_affix_id = 15;
     uint32 tid = 8;
     repeated RelicAffix sub_affix_list = 10; // MIAENOALECC

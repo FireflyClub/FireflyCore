@@ -4,7 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "ContentInfo.proto";
 
+// CHAAMEOKIFJ
 message ContentPackageData {
-	repeated ContentInfo content_info_list = 9;
-	uint32 AGJBMHBMFIM = 10;
+	repeated ContentInfo content_info_list = 13; // CMKBEFCFANP
+	uint32 BDIKNBLIEJF = 11;
 }

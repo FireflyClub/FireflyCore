@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SellItemCsReqOuterClass {
   /**
    * <pre>
-   *  Clihmfgjiac
+   *  NDMIIJGPEIC
    * </pre>
    *
    * Protobuf type {@code SellItemCsReq}
@@ -24,19 +24,15 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  anookalgihi
+     *  FDJHEMOKECI
      * </pre>
      *
-     * <code>optional bool to_material = 5;</code>
+     * <code>optional bool to_material = 6;</code>
      */
     private boolean toMaterial;
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -45,7 +41,7 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  Clihmfgjiac
+     *  NDMIIJGPEIC
      * </pre>
      *
      * @return a new empty instance of {@code SellItemCsReq}
@@ -56,10 +52,10 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  anookalgihi
+     *  FDJHEMOKECI
      * </pre>
      *
-     * <code>optional bool to_material = 5;</code>
+     * <code>optional bool to_material = 6;</code>
      * @return whether the toMaterial field is set
      */
     public boolean hasToMaterial() {
@@ -68,10 +64,10 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  anookalgihi
+     *  FDJHEMOKECI
      * </pre>
      *
-     * <code>optional bool to_material = 5;</code>
+     * <code>optional bool to_material = 6;</code>
      * @return this
      */
     public SellItemCsReq clearToMaterial() {
@@ -82,10 +78,10 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  anookalgihi
+     *  FDJHEMOKECI
      * </pre>
      *
-     * <code>optional bool to_material = 5;</code>
+     * <code>optional bool to_material = 6;</code>
      * @return the toMaterial
      */
     public boolean getToMaterial() {
@@ -94,10 +90,10 @@ public final class SellItemCsReqOuterClass {
 
     /**
      * <pre>
-     *  anookalgihi
+     *  FDJHEMOKECI
      * </pre>
      *
-     * <code>optional bool to_material = 5;</code>
+     * <code>optional bool to_material = 6;</code>
      * @param value the toMaterial to set
      * @return this
      */
@@ -108,11 +104,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -120,11 +112,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      * @return this
      */
     public SellItemCsReq clearItemCostList() {
@@ -134,11 +122,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -152,11 +136,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -170,11 +150,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  hmambnipfcd
-     * </pre>
-     *
-     * <code>optional .ItemCostList item_cost_list = 15;</code>
+     * <code>optional .ItemCostList item_cost_list = 7;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -250,11 +226,11 @@ public final class SellItemCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 48);
         output.writeBoolNoTag(toMaterial);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -278,16 +254,16 @@ public final class SellItemCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 48: {
             // toMaterial
             toMaterial = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 58) {
               break;
             }
           }
-          case 122: {
+          case 58: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

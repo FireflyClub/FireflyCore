@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetClientPausedScRsp {
-    bool paused = 1;
-    uint32 retcode = 10;
+    bool paused = 8;
+    uint32 retcode = 11;
 }

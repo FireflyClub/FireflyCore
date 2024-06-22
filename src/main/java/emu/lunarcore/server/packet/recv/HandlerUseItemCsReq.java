@@ -17,7 +17,7 @@ public class HandlerUseItemCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = UseItemCsReq.parseFrom(data);
         
-        List<GameItem> returnItems = session.getPlayer().getInventory().useItem(req.getUseItemId(), req.getUseItemCount(), req.getBaseAvatarId());
+        List<GameItem> returnItems = session.getPlayer().getInventory().useItem(req.getUseItemId(), req.getUseItemCount(), req.getSceneAvatarId());
         session.send(new PacketUseItemScRsp(req.getUseItemId(), req.getUseItemCount(), returnItems));
     }
 

@@ -5,9 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "ChargerInfo.proto";
 import "RotatorEnergyInfo.proto";
 
-// Oopmnlcnbfi
 message InteractChargerScRsp {
-    uint32 retcode = 14;
-    ChargerInfo charger_info = 6;
-	RotatorEnergyInfo energy_info = 12;
+	RotatorEnergyInfo energy_info = 13;
+	uint32 retcode = 14;
+	ChargerInfo charger_info = 15;
 }

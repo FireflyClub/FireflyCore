@@ -29,11 +29,19 @@ public final class ActivityScheduleInfoOuterClass {
     private long beginTime;
 
     /**
+     * <pre>
+     *  OCCGBNFONLK
+     * </pre>
+     *
      * <code>optional uint32 activity_id = 6;</code>
      */
     private int activityId;
 
     /**
+     * <pre>
+     *  FFOJAFCKMOE
+     * </pre>
+     *
      * <code>optional uint32 module_id = 9;</code>
      */
     private int moduleId;
@@ -123,6 +131,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  OCCGBNFONLK
+     * </pre>
+     *
      * <code>optional uint32 activity_id = 6;</code>
      * @return whether the activityId field is set
      */
@@ -131,6 +143,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  OCCGBNFONLK
+     * </pre>
+     *
      * <code>optional uint32 activity_id = 6;</code>
      * @return this
      */
@@ -141,6 +157,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  OCCGBNFONLK
+     * </pre>
+     *
      * <code>optional uint32 activity_id = 6;</code>
      * @return the activityId
      */
@@ -149,6 +169,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  OCCGBNFONLK
+     * </pre>
+     *
      * <code>optional uint32 activity_id = 6;</code>
      * @param value the activityId to set
      * @return this
@@ -160,6 +184,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FFOJAFCKMOE
+     * </pre>
+     *
      * <code>optional uint32 module_id = 9;</code>
      * @return whether the moduleId field is set
      */
@@ -168,6 +196,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FFOJAFCKMOE
+     * </pre>
+     *
      * <code>optional uint32 module_id = 9;</code>
      * @return this
      */
@@ -178,6 +210,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FFOJAFCKMOE
+     * </pre>
+     *
      * <code>optional uint32 module_id = 9;</code>
      * @return the moduleId
      */
@@ -186,6 +222,10 @@ public final class ActivityScheduleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FFOJAFCKMOE
+     * </pre>
+     *
      * <code>optional uint32 module_id = 9;</code>
      * @param value the moduleId to set
      * @return this

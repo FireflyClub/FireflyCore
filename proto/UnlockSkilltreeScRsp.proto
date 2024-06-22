@@ -2,9 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// NLBDCOHFKIO
 message UnlockSkilltreeScRsp {
-    uint32 point_id = 5;
-    uint32 retcode = 1;
-    uint32 base_avatar_id = 6;
-    uint32 level = 8;
+    uint32 point_id = 15;
+    uint32 level = 2;
+    uint32 retcode = 11;
 }

@@ -6,7 +6,7 @@ import "MotionInfo.proto";
 
 // IMFKBPHJGGL
 message EntityMotion {
-    // bool JMDKFEHCPHA = 10;
+    bool JMDKFEHCPHA = 10;
     uint32 entity_id = 4; // DPDNHLGNIDA
     MotionInfo motion = 15;
     uint32 map_layer = 6;

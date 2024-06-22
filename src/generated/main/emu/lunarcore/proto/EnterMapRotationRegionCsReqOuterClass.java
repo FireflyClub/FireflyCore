@@ -13,17 +13,23 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class EnterMapRotationRegionCsReqOuterClass {
   /**
-   * <pre>
-   *  Bpjgmjnokgm
-   * </pre>
-   *
    * Protobuf type {@code EnterMapRotationRegionCsReq}
    */
   public static final class EnterMapRotationRegionCsReq extends ProtoMessage<EnterMapRotationRegionCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
+     * <code>optional uint32 GDMPINKFLHA = 3;</code>
+     */
+    private int gDMPINKFLHA;
+
+    /**
+     * <code>optional uint32 AHDGHBNGJIG = 6;</code>
+     */
+    private int aHDGHBNGJIG;
+
+    /**
+     * <code>optional .MotionInfo motion = 14;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -31,10 +37,6 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Bpjgmjnokgm
-     * </pre>
-     *
      * @return a new empty instance of {@code EnterMapRotationRegionCsReq}
      */
     public static EnterMapRotationRegionCsReq newInstance() {
@@ -42,25 +44,99 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
-     * @return whether the motion field is set
+     * <code>optional uint32 GDMPINKFLHA = 3;</code>
+     * @return whether the gDMPINKFLHA field is set
      */
-    public boolean hasMotion() {
+    public boolean hasGDMPINKFLHA() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
+     * <code>optional uint32 GDMPINKFLHA = 3;</code>
+     * @return this
+     */
+    public EnterMapRotationRegionCsReq clearGDMPINKFLHA() {
+      bitField0_ &= ~0x00000001;
+      gDMPINKFLHA = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GDMPINKFLHA = 3;</code>
+     * @return the gDMPINKFLHA
+     */
+    public int getGDMPINKFLHA() {
+      return gDMPINKFLHA;
+    }
+
+    /**
+     * <code>optional uint32 GDMPINKFLHA = 3;</code>
+     * @param value the gDMPINKFLHA to set
+     * @return this
+     */
+    public EnterMapRotationRegionCsReq setGDMPINKFLHA(final int value) {
+      bitField0_ |= 0x00000001;
+      gDMPINKFLHA = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 AHDGHBNGJIG = 6;</code>
+     * @return whether the aHDGHBNGJIG field is set
+     */
+    public boolean hasAHDGHBNGJIG() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 AHDGHBNGJIG = 6;</code>
+     * @return this
+     */
+    public EnterMapRotationRegionCsReq clearAHDGHBNGJIG() {
+      bitField0_ &= ~0x00000002;
+      aHDGHBNGJIG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 AHDGHBNGJIG = 6;</code>
+     * @return the aHDGHBNGJIG
+     */
+    public int getAHDGHBNGJIG() {
+      return aHDGHBNGJIG;
+    }
+
+    /**
+     * <code>optional uint32 AHDGHBNGJIG = 6;</code>
+     * @param value the aHDGHBNGJIG to set
+     * @return this
+     */
+    public EnterMapRotationRegionCsReq setAHDGHBNGJIG(final int value) {
+      bitField0_ |= 0x00000002;
+      aHDGHBNGJIG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 14;</code>
+     * @return whether the motion field is set
+     */
+    public boolean hasMotion() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 14;</code>
      * @return this
      */
     public EnterMapRotationRegionCsReq clearMotion() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000004;
       motion.clear();
       return this;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -74,7 +150,7 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -83,17 +159,17 @@ public final class EnterMapRotationRegionCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public MotionInfoOuterClass.MotionInfo getMutableMotion() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000004;
       return motion;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 11;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      * @param value the motion to set
      * @return this
      */
     public EnterMapRotationRegionCsReq setMotion(final MotionInfoOuterClass.MotionInfo value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000004;
       motion.copyFrom(value);
       return this;
     }
@@ -103,6 +179,8 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        gDMPINKFLHA = other.gDMPINKFLHA;
+        aHDGHBNGJIG = other.aHDGHBNGJIG;
         motion.copyFrom(other.motion);
       }
       return this;
@@ -114,6 +192,12 @@ public final class EnterMapRotationRegionCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasGDMPINKFLHA()) {
+        setGDMPINKFLHA(other.gDMPINKFLHA);
+      }
+      if (other.hasAHDGHBNGJIG()) {
+        setAHDGHBNGJIG(other.aHDGHBNGJIG);
+      }
       if (other.hasMotion()) {
         getMutableMotion().mergeFrom(other.motion);
       }
@@ -127,6 +211,8 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      gDMPINKFLHA = 0;
+      aHDGHBNGJIG = 0;
       motion.clear();
       return this;
     }
@@ -152,13 +238,23 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       }
       EnterMapRotationRegionCsReq other = (EnterMapRotationRegionCsReq) o;
       return bitField0_ == other.bitField0_
+        && (!hasGDMPINKFLHA() || gDMPINKFLHA == other.gDMPINKFLHA)
+        && (!hasAHDGHBNGJIG() || aHDGHBNGJIG == other.aHDGHBNGJIG)
         && (!hasMotion() || motion.equals(other.motion));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(gDMPINKFLHA);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(aHDGHBNGJIG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(motion);
       }
     }
@@ -167,6 +263,12 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gDMPINKFLHA);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(aHDGHBNGJIG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
       }
       return size;
@@ -179,10 +281,28 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 90: {
+          case 24: {
+            // gDMPINKFLHA
+            gDMPINKFLHA = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // aHDGHBNGJIG
+            aHDGHBNGJIG = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 114) {
+              break;
+            }
+          }
+          case 114: {
             // motion
             input.readMessage(motion);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -206,6 +326,12 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeUInt32(FieldNames.gDMPINKFLHA, gDMPINKFLHA);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.aHDGHBNGJIG, aHDGHBNGJIG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.motion, motion);
       }
       output.endObject();
@@ -218,11 +344,33 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -588920379: {
+            if (input.isAtField(FieldNames.gDMPINKFLHA)) {
+              if (!input.trySkipNullValue()) {
+                gDMPINKFLHA = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 170341291: {
+            if (input.isAtField(FieldNames.aHDGHBNGJIG)) {
+              if (!input.trySkipNullValue()) {
+                aHDGHBNGJIG = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1068318794: {
             if (input.isAtField(FieldNames.motion)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(motion);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -283,6 +431,10 @@ public final class EnterMapRotationRegionCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName gDMPINKFLHA = FieldName.forField("GDMPINKFLHA");
+
+      static final FieldName aHDGHBNGJIG = FieldName.forField("AHDGHBNGJIG");
+
       static final FieldName motion = FieldName.forField("motion");
     }
   }

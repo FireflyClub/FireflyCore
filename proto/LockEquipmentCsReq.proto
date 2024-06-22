@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Nlmjbhhgplb
 message LockEquipmentCsReq {
-    repeated uint32 equipment_id_list = 3; // boigoolhfhg
-    bool is_protected = 6; // dbnabobjooj
+    repeated uint32 equipment_id_list = 3; // CINPNECFALD
+    bool is_protected = 6; // HGDOGNKBFAO
 }

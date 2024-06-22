@@ -11,11 +11,11 @@ message SceneInfo {
     repeated uint32 lighten_section_list = 8;
 	// map<uint32, FKCHJEFEPNF> HLHNOLAIIHE = 3;
 	repeated SceneEntityInfo entity_list = 4;
-    uint32 leader_entity_id = 15; //?
+    uint32 leader_entity_id = 14; //?
 	uint32 map_entry_id = 739;
 	// repeated EntityBuffInfo KLBDOBGEAMA = 9;
 	// repeated BuffInfo MNLNDDDGEMC = 11;
-    uint32 world_id = 14; //?
+    uint32 world_id = 15; //?
 	map<string, int32> BEEIDEFKEKG = 317;
     repeated uint32 group_id_list = 1; // EKOKBEPBJMK
 	uint32 GIBIDJKFBOK = 1997;

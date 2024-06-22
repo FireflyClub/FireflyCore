@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-
-// Minjnchgadg
+// ABJCBAOKICE
 message DynamicValue {
-	float value = 13;
-	string key = 2;
+	float value = 8;
+	string key = 10; // MACAPPANAAJ
 }

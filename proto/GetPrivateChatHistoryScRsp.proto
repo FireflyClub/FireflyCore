@@ -6,7 +6,7 @@ import "Chat.proto";
 
 message GetPrivateChatHistoryScRsp {
     uint32 retcode = 5;
-    uint32 target_uid = 11;  //?
-    uint32 sender_uid = 2; //?
+    uint32 sender_uid = 11; // HFLCFKCGIPH
+    uint32 target_uid = 2;  // HJMKKIDODAK
     repeated Chat chat_list = 8; // FMKFIJNAAIG
 }

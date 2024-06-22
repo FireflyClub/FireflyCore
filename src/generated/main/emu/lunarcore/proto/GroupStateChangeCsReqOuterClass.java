@@ -13,17 +13,17 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GroupStateChangeCsReqOuterClass {
   /**
-   * <pre>
-   *  Afjioldjdac
-   * </pre>
-   *
    * Protobuf type {@code GroupStateChangeCsReq}
    */
   public static final class GroupStateChangeCsReq extends ProtoMessage<GroupStateChangeCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      */
     private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
 
@@ -31,10 +31,6 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Afjioldjdac
-     * </pre>
-     *
      * @return a new empty instance of {@code GroupStateChangeCsReq}
      */
     public static GroupStateChangeCsReq newInstance() {
@@ -42,7 +38,11 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      * @return whether the groupStateInfo field is set
      */
     public boolean hasGroupStateInfo() {
@@ -50,7 +50,11 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      * @return this
      */
     public GroupStateChangeCsReq clearGroupStateInfo() {
@@ -60,7 +64,11 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -74,7 +82,11 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -88,7 +100,11 @@ public final class GroupStateChangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 13;</code>
+     * <pre>
+     *  GEPHFEEKECN
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_state_info = 7;</code>
      * @param value the groupStateInfo to set
      * @return this
      */
@@ -159,7 +175,7 @@ public final class GroupStateChangeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(groupStateInfo);
       }
     }
@@ -180,7 +196,7 @@ public final class GroupStateChangeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 106: {
+          case 58: {
             // groupStateInfo
             input.readMessage(groupStateInfo);
             bitField0_ |= 0x00000001;

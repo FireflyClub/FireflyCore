@@ -2,28 +2,20 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-message BattlePassInfoNotify {
-    enum BpTierType {
-        BP_TIER_TYPE_NONE = 0;
-        BP_TIER_TYPE_FREE = 1;
-        BP_TIER_TYPE_PREMIUM_1 = 2;
-        BP_TIER_TYPE_PREMIUM_2 = 3;
-    }
-    uint64 taken_free_reward = 14; // hobadiadiif
-    uint64 taken_free_extended_reward = 2; // icjhnohkela
-    uint64 taken_premium_optional_reward = 4; // mendemjnfln
-    uint64 taken_premium_extended_reward = 3; // igfhfoeleem
-    uint32 exp = 1;
-    // uint64 hlphcaamilh = 9;
-    // uint32 lopmdkjmonf = 12;
-    uint64 taken_premium_reward2 = 15; // dobphldfkij
-    uint64 taken_premium_reward1 = 8; // lndmagbjdlo
-    // uint32 kppnnabjpkf = 5;
-    // uint64 aefkhdaklcl = 10;
-    BpTierType bp_tier_type = 11;
-    uint32 level = 13;
+import "BpTierType.proto";
 
-    uint32 cur_week_add_exp_sum = 12; //?
-    uint64 unkfield = 9; //?
-    uint32 cur_bp_id = 5; //?
+message BattlePassInfoNotify {
+    //? All 0xFFFFFFFFFFFFFFFFL
+    uint64 taken_free_reward = 15;
+    uint64 taken_premium_reward1 = 10;
+    uint64 taken_premium_reward2 = 9;
+    uint64 taken_premium_optional_reward = 11;
+    //? All 127
+    uint64 taken_premium_extended_reward = 2;
+    uint64 taken_free_extended_reward = 6;
+
+    BpTierType bp_tier_type = 5; // EPCBINJNMEN
+    uint32 exp = 12;
+    uint32 level = 4;
+    uint32 cur_week_add_exp_sum = 14; //?
 }

@@ -28,8 +28,13 @@ public final class PlayerHeartbeatCsReqOuterClass {
     private long clientTimeMs;
 
     /**
+     * <code>optional uint32 FKDKDLKNOAM = 14;</code>
+     */
+    private int fKDKDLKNOAM;
+
+    /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
@@ -100,34 +105,71 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
+     * <code>optional uint32 FKDKDLKNOAM = 14;</code>
+     * @return whether the fKDKDLKNOAM field is set
+     */
+    public boolean hasFKDKDLKNOAM() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 FKDKDLKNOAM = 14;</code>
+     * @return this
+     */
+    public PlayerHeartbeatCsReq clearFKDKDLKNOAM() {
+      bitField0_ &= ~0x00000002;
+      fKDKDLKNOAM = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 FKDKDLKNOAM = 14;</code>
+     * @return the fKDKDLKNOAM
+     */
+    public int getFKDKDLKNOAM() {
+      return fKDKDLKNOAM;
+    }
+
+    /**
+     * <code>optional uint32 FKDKDLKNOAM = 14;</code>
+     * @param value the fKDKDLKNOAM to set
+     * @return this
+     */
+    public PlayerHeartbeatCsReq setFKDKDLKNOAM(final int value) {
+      bitField0_ |= 0x00000002;
+      fKDKDLKNOAM = value;
+      return this;
+    }
+
+    /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
      * @return whether the uploadData field is set
      */
     public boolean hasUploadData() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
      * @return this
      */
     public PlayerHeartbeatCsReq clearUploadData() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       uploadData.clear();
       return this;
     }
 
     /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
@@ -145,7 +187,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
@@ -157,13 +199,13 @@ public final class PlayerHeartbeatCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public ClientUploadDataOuterClass.ClientUploadData getMutableUploadData() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       return uploadData;
     }
 
     /**
      * <pre>
-     *  uint32 FKDKDLKNOAM = 14;
+     *  JBBBMAMJABA
      * </pre>
      *
      * <code>optional .ClientUploadData upload_data = 4;</code>
@@ -172,7 +214,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
      */
     public PlayerHeartbeatCsReq setUploadData(
         final ClientUploadDataOuterClass.ClientUploadData value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       uploadData.copyFrom(value);
       return this;
     }
@@ -183,6 +225,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         clientTimeMs = other.clientTimeMs;
+        fKDKDLKNOAM = other.fKDKDLKNOAM;
         uploadData.copyFrom(other.uploadData);
       }
       return this;
@@ -196,6 +239,9 @@ public final class PlayerHeartbeatCsReqOuterClass {
       cachedSize = -1;
       if (other.hasClientTimeMs()) {
         setClientTimeMs(other.clientTimeMs);
+      }
+      if (other.hasFKDKDLKNOAM()) {
+        setFKDKDLKNOAM(other.fKDKDLKNOAM);
       }
       if (other.hasUploadData()) {
         getMutableUploadData().mergeFrom(other.uploadData);
@@ -211,6 +257,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       clientTimeMs = 0L;
+      fKDKDLKNOAM = 0;
       uploadData.clear();
       return this;
     }
@@ -237,6 +284,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
       PlayerHeartbeatCsReq other = (PlayerHeartbeatCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasClientTimeMs() || clientTimeMs == other.clientTimeMs)
+        && (!hasFKDKDLKNOAM() || fKDKDLKNOAM == other.fKDKDLKNOAM)
         && (!hasUploadData() || uploadData.equals(other.uploadData));
     }
 
@@ -247,6 +295,10 @@ public final class PlayerHeartbeatCsReqOuterClass {
         output.writeUInt64NoTag(clientTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(fKDKDLKNOAM);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 34);
         output.writeMessageNoTag(uploadData);
       }
@@ -259,6 +311,9 @@ public final class PlayerHeartbeatCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(clientTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fKDKDLKNOAM);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(uploadData);
       }
       return size;
@@ -276,6 +331,15 @@ public final class PlayerHeartbeatCsReqOuterClass {
             clientTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // fKDKDLKNOAM
+            fKDKDLKNOAM = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
             if (tag != 34) {
               break;
             }
@@ -283,7 +347,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
           case 34: {
             // uploadData
             input.readMessage(uploadData);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -310,6 +374,9 @@ public final class PlayerHeartbeatCsReqOuterClass {
         output.writeUInt64(FieldNames.clientTimeMs, clientTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.fKDKDLKNOAM, fKDKDLKNOAM);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.uploadData, uploadData);
       }
       output.endObject();
@@ -334,12 +401,23 @@ public final class PlayerHeartbeatCsReqOuterClass {
             }
             break;
           }
+          case -1404028060: {
+            if (input.isAtField(FieldNames.fKDKDLKNOAM)) {
+              if (!input.trySkipNullValue()) {
+                fKDKDLKNOAM = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -243562165:
           case 1064514344: {
             if (input.isAtField(FieldNames.uploadData)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(uploadData);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -400,6 +478,8 @@ public final class PlayerHeartbeatCsReqOuterClass {
      */
     static class FieldNames {
       static final FieldName clientTimeMs = FieldName.forField("clientTimeMs", "client_time_ms");
+
+      static final FieldName fKDKDLKNOAM = FieldName.forField("FKDKDLKNOAM");
 
       static final FieldName uploadData = FieldName.forField("uploadData", "upload_data");
     }

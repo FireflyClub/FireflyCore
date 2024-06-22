@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-// Enobjdfhceg
-message LockEquipmentScRsp {
-    uint32 retcode = 9;
-}

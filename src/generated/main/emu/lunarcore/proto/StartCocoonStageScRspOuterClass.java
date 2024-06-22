@@ -19,27 +19,31 @@ public final class StartCocoonStageScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 monster_wave = 1;</code>
+     */
+    private int monsterWave;
+
+    /**
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 cocoon_id = 9;</code>
+     * <pre>
+     *  ELHGNOEBCAC
+     * </pre>
+     *
+     * <code>optional uint32 cocoon_id = 14;</code>
      */
     private int cocoonId;
 
     /**
-     * <code>optional uint32 prop_entity_id = 12;</code>
+     * <code>optional uint32 prop_entity_id = 15;</code>
      */
     private int propEntityId;
 
     /**
-     * <code>optional uint32 wave = 15;</code>
-     */
-    private int wave;
-
-    /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      */
     private final SceneBattleInfoOuterClass.SceneBattleInfo battleInfo = SceneBattleInfoOuterClass.SceneBattleInfo.newInstance();
 
@@ -54,25 +58,62 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 monster_wave = 1;</code>
+     * @return whether the monsterWave field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasMonsterWave() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 monster_wave = 1;</code>
+     * @return this
+     */
+    public StartCocoonStageScRsp clearMonsterWave() {
+      bitField0_ &= ~0x00000001;
+      monsterWave = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 monster_wave = 1;</code>
+     * @return the monsterWave
+     */
+    public int getMonsterWave() {
+      return monsterWave;
+    }
+
+    /**
+     * <code>optional uint32 monster_wave = 1;</code>
+     * @param value the monsterWave to set
+     * @return this
+     */
+    public StartCocoonStageScRsp setMonsterWave(final int value) {
+      bitField0_ |= 0x00000001;
+      monsterWave = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 10;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public StartCocoonStageScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -80,36 +121,48 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
     public StartCocoonStageScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 cocoon_id = 9;</code>
+     * <pre>
+     *  ELHGNOEBCAC
+     * </pre>
+     *
+     * <code>optional uint32 cocoon_id = 14;</code>
      * @return whether the cocoonId field is set
      */
     public boolean hasCocoonId() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 cocoon_id = 9;</code>
+     * <pre>
+     *  ELHGNOEBCAC
+     * </pre>
+     *
+     * <code>optional uint32 cocoon_id = 14;</code>
      * @return this
      */
     public StartCocoonStageScRsp clearCocoonId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       cocoonId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 cocoon_id = 9;</code>
+     * <pre>
+     *  ELHGNOEBCAC
+     * </pre>
+     *
+     * <code>optional uint32 cocoon_id = 14;</code>
      * @return the cocoonId
      */
     public int getCocoonId() {
@@ -117,36 +170,40 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cocoon_id = 9;</code>
+     * <pre>
+     *  ELHGNOEBCAC
+     * </pre>
+     *
+     * <code>optional uint32 cocoon_id = 14;</code>
      * @param value the cocoonId to set
      * @return this
      */
     public StartCocoonStageScRsp setCocoonId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       cocoonId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 12;</code>
+     * <code>optional uint32 prop_entity_id = 15;</code>
      * @return whether the propEntityId field is set
      */
     public boolean hasPropEntityId() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 12;</code>
+     * <code>optional uint32 prop_entity_id = 15;</code>
      * @return this
      */
     public StartCocoonStageScRsp clearPropEntityId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       propEntityId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 12;</code>
+     * <code>optional uint32 prop_entity_id = 15;</code>
      * @return the propEntityId
      */
     public int getPropEntityId() {
@@ -154,55 +211,18 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 12;</code>
+     * <code>optional uint32 prop_entity_id = 15;</code>
      * @param value the propEntityId to set
      * @return this
      */
     public StartCocoonStageScRsp setPropEntityId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       propEntityId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 wave = 15;</code>
-     * @return whether the wave field is set
-     */
-    public boolean hasWave() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 wave = 15;</code>
-     * @return this
-     */
-    public StartCocoonStageScRsp clearWave() {
-      bitField0_ &= ~0x00000008;
-      wave = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 wave = 15;</code>
-     * @return the wave
-     */
-    public int getWave() {
-      return wave;
-    }
-
-    /**
-     * <code>optional uint32 wave = 15;</code>
-     * @param value the wave to set
-     * @return this
-     */
-    public StartCocoonStageScRsp setWave(final int value) {
-      bitField0_ |= 0x00000008;
-      wave = value;
-      return this;
-    }
-
-    /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @return whether the battleInfo field is set
      */
     public boolean hasBattleInfo() {
@@ -210,7 +230,7 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @return this
      */
     public StartCocoonStageScRsp clearBattleInfo() {
@@ -220,7 +240,7 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -234,7 +254,7 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -248,7 +268,7 @@ public final class StartCocoonStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 3;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @param value the battleInfo to set
      * @return this
      */
@@ -264,10 +284,10 @@ public final class StartCocoonStageScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        monsterWave = other.monsterWave;
         retcode = other.retcode;
         cocoonId = other.cocoonId;
         propEntityId = other.propEntityId;
-        wave = other.wave;
         battleInfo.copyFrom(other.battleInfo);
       }
       return this;
@@ -279,6 +299,9 @@ public final class StartCocoonStageScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasMonsterWave()) {
+        setMonsterWave(other.monsterWave);
+      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
@@ -287,9 +310,6 @@ public final class StartCocoonStageScRspOuterClass {
       }
       if (other.hasPropEntityId()) {
         setPropEntityId(other.propEntityId);
-      }
-      if (other.hasWave()) {
-        setWave(other.wave);
       }
       if (other.hasBattleInfo()) {
         getMutableBattleInfo().mergeFrom(other.battleInfo);
@@ -304,10 +324,10 @@ public final class StartCocoonStageScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      monsterWave = 0;
       retcode = 0;
       cocoonId = 0;
       propEntityId = 0;
-      wave = 0;
       battleInfo.clear();
       return this;
     }
@@ -333,33 +353,33 @@ public final class StartCocoonStageScRspOuterClass {
       }
       StartCocoonStageScRsp other = (StartCocoonStageScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasMonsterWave() || monsterWave == other.monsterWave)
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasCocoonId() || cocoonId == other.cocoonId)
         && (!hasPropEntityId() || propEntityId == other.propEntityId)
-        && (!hasWave() || wave == other.wave)
         && (!hasBattleInfo() || battleInfo.equals(other.battleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(monsterWave);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(cocoonId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(propEntityId);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(cocoonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(wave);
+        output.writeUInt32NoTag(propEntityId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 26);
+        output.writeRawByte((byte) 50);
         output.writeMessageNoTag(battleInfo);
       }
     }
@@ -368,16 +388,16 @@ public final class StartCocoonStageScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterWave);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(cocoonId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(propEntityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(cocoonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(wave);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(propEntityId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(battleInfo);
@@ -392,27 +412,27 @@ public final class StartCocoonStageScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // retcode
-            retcode = input.readUInt32();
+          case 8: {
+            // monsterWave
+            monsterWave = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 80) {
               break;
             }
           }
-          case 72: {
-            // cocoonId
-            cocoonId = input.readUInt32();
+          case 80: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 112) {
               break;
             }
           }
-          case 96: {
-            // propEntityId
-            propEntityId = input.readUInt32();
+          case 112: {
+            // cocoonId
+            cocoonId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 120) {
@@ -420,15 +440,15 @@ public final class StartCocoonStageScRspOuterClass {
             }
           }
           case 120: {
-            // wave
-            wave = input.readUInt32();
+            // propEntityId
+            propEntityId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 50) {
               break;
             }
           }
-          case 26: {
+          case 50: {
             // battleInfo
             input.readMessage(battleInfo);
             bitField0_ |= 0x00000010;
@@ -455,16 +475,16 @@ public final class StartCocoonStageScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.monsterWave, monsterWave);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.cocoonId, cocoonId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.propEntityId, propEntityId);
+        output.writeUInt32(FieldNames.cocoonId, cocoonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.wave, wave);
+        output.writeUInt32(FieldNames.propEntityId, propEntityId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeMessage(FieldNames.battleInfo, battleInfo);
@@ -479,11 +499,23 @@ public final class StartCocoonStageScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 1541591539:
+          case 552721470: {
+            if (input.isAtField(FieldNames.monsterWave)) {
+              if (!input.trySkipNullValue()) {
+                monsterWave = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1097936398: {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -495,7 +527,7 @@ public final class StartCocoonStageScRspOuterClass {
             if (input.isAtField(FieldNames.cocoonId)) {
               if (!input.trySkipNullValue()) {
                 cocoonId = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -507,17 +539,6 @@ public final class StartCocoonStageScRspOuterClass {
             if (input.isAtField(FieldNames.propEntityId)) {
               if (!input.trySkipNullValue()) {
                 propEntityId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3642105: {
-            if (input.isAtField(FieldNames.wave)) {
-              if (!input.trySkipNullValue()) {
-                wave = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -590,13 +611,13 @@ public final class StartCocoonStageScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName monsterWave = FieldName.forField("monsterWave", "monster_wave");
+
       static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName cocoonId = FieldName.forField("cocoonId", "cocoon_id");
 
       static final FieldName propEntityId = FieldName.forField("propEntityId", "prop_entity_id");
-
-      static final FieldName wave = FieldName.forField("wave");
 
       static final FieldName battleInfo = FieldName.forField("battleInfo", "battle_info");
     }

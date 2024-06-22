@@ -27,10 +27,6 @@ public final class GetPlayerBoardDataScRspOuterClass {
     private int currentHeadIconId;
 
     /**
-     * <pre>
-     *  repeated Nmlilpfiidn lpedbojeaid = 8;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
@@ -119,10 +115,6 @@ public final class GetPlayerBoardDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated Nmlilpfiidn lpedbojeaid = 8;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
@@ -131,10 +123,6 @@ public final class GetPlayerBoardDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated Nmlilpfiidn lpedbojeaid = 8;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
@@ -145,10 +133,6 @@ public final class GetPlayerBoardDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated Nmlilpfiidn lpedbojeaid = 8;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
@@ -157,10 +141,6 @@ public final class GetPlayerBoardDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated Nmlilpfiidn lpedbojeaid = 8;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this

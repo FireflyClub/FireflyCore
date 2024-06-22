@@ -9,9 +9,10 @@ import dev.morphia.annotations.Indexed;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.game.player.PlayerGender;
 import emu.lunarcore.proto.AvatarSkillTreeOuterClass.AvatarSkillTree;
-import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
 
+import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -55,10 +56,20 @@ public class AvatarHeroPath {
         return this.getData().getSkills();
     }
     
+    public PlayerGender getGender() {
+        if (this.getId() % 2 == 0) {
+            return PlayerGender.GENDER_WOMAN;
+        } else {
+            return PlayerGender.GENDER_MAN;
+            
+        }
+    }
+    
     public MultiPathAvatarTypeInfo toProto() {
         var proto = MultiPathAvatarTypeInfo.newInstance()
                 .setAvatarIdValue(this.getId())
-                .setRank(this.getRank());
+                .setRank(this.getRank())
+                .setIJHEIBNJOAO(8001);
         
         for (var skill : getSkills().entrySet()) {
             proto.addSkillTreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));

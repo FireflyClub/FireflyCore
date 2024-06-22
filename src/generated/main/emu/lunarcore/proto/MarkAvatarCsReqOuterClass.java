@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class MarkAvatarCsReqOuterClass {
   /**
    * <pre>
-   *  IBBHHKAGJGF
+   *  DMFCHPAGKFM
    * </pre>
    *
    * Protobuf type {@code MarkAvatarCsReq}
@@ -23,12 +23,12 @@ public final class MarkAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 avatar_id = 1;</code>
+     * <code>optional uint32 avatar_id = 6;</code>
      */
     private int avatarId;
 
     /**
-     * <code>optional bool is_marked = 2;</code>
+     * <code>optional bool is_marked = 8;</code>
      */
     private boolean isMarked;
 
@@ -37,7 +37,7 @@ public final class MarkAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     *  IBBHHKAGJGF
+     *  DMFCHPAGKFM
      * </pre>
      *
      * @return a new empty instance of {@code MarkAvatarCsReq}
@@ -47,7 +47,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 1;</code>
+     * <code>optional uint32 avatar_id = 6;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -55,7 +55,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 1;</code>
+     * <code>optional uint32 avatar_id = 6;</code>
      * @return this
      */
     public MarkAvatarCsReq clearAvatarId() {
@@ -65,7 +65,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 1;</code>
+     * <code>optional uint32 avatar_id = 6;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -73,7 +73,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 1;</code>
+     * <code>optional uint32 avatar_id = 6;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -84,7 +84,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 2;</code>
+     * <code>optional bool is_marked = 8;</code>
      * @return whether the isMarked field is set
      */
     public boolean hasIsMarked() {
@@ -92,7 +92,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 2;</code>
+     * <code>optional bool is_marked = 8;</code>
      * @return this
      */
     public MarkAvatarCsReq clearIsMarked() {
@@ -102,7 +102,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 2;</code>
+     * <code>optional bool is_marked = 8;</code>
      * @return the isMarked
      */
     public boolean getIsMarked() {
@@ -110,7 +110,7 @@ public final class MarkAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 2;</code>
+     * <code>optional bool is_marked = 8;</code>
      * @param value the isMarked to set
      * @return this
      */
@@ -185,11 +185,11 @@ public final class MarkAvatarCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 64);
         output.writeBoolNoTag(isMarked);
       }
     }
@@ -213,16 +213,16 @@ public final class MarkAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 48: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 64) {
               break;
             }
           }
-          case 16: {
+          case 64: {
             // isMarked
             isMarked = input.readBool();
             bitField0_ |= 0x00000002;

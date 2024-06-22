@@ -70,7 +70,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -478,7 +478,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -490,7 +490,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -504,7 +504,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -522,7 +522,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -540,7 +540,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     *  GFNIHDMMLME GDCGICEDOKK = 15;
+     *  PFNDMOJJMEC LFFIFJJOEAC = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>

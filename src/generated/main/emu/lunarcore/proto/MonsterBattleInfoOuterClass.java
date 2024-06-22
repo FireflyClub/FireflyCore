@@ -2,6 +2,7 @@
 package emu.lunarcore.proto;
 
 import java.io.IOException;
+import us.hebi.quickbuf.FieldName;
 import us.hebi.quickbuf.InvalidProtocolBufferException;
 import us.hebi.quickbuf.JsonSink;
 import us.hebi.quickbuf.JsonSource;
@@ -9,95 +10,1389 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.ProtoUtil;
+import us.hebi.quickbuf.RepeatedMessage;
 
 public final class MonsterBattleInfoOuterClass {
   /**
-   * <pre>
-   *  uint32 entity_id = 1;
-   *  uint32 monster_id = 2;
-   *  uint32 monster_template_id = 3;
-   *  uint32 monster_level = 4;
-   *  MonsterProperty monster_status = 5;
-   *  uint32 total_turns = 6;
-   *  double total_damage = 7;
-   *  double total_heal = 8;
-   *  double total_damage_taken = 9;
-   *  double total_stance_damage_taken = 10;
-   *  double total_hp_recover = 11;
-   *  uint32 stage_id = 12;
-   *  uint32 battle_id = 13;
-   *  uint32 monster_type = 14;
-   *  repeated AttackDamageProperty attack_type_damage = 15;
-   *  repeated FLOJPLPFGIH skill_times = 16;
-   *  uint32 stage_type = 17;
-   *  double total_break_damage_taken = 18;
-   *  double delay_cumulate = 19;
-   *  GHBIABDNMFA death_source = 20;
-   *  uint32 wave = 21;
-   *  int32 index_in_wave = 22;
-   *  uint32 phase = 23;
-   *  uint32 max_phase = 24;
-   *  NDCIDEHCCAG battle_tag = 25;
-   *  repeated ELBDNIGGHOE FNAMLLELMAO = 26;
-   *  uint32 HHOMOKPIIPK = 27;
-   *  repeated CNMOEJENDJO EIMIHBODEJN = 28;
-   *  uint32 CGLIMCKBFJF = 29;
-   *  uint32 DHKALNBKFLD = 30;
-   *  HPGBMFAHHNE NLMHGAHHNCK = 31;
-   * </pre>
-   *
    * Protobuf type {@code MonsterBattleInfo}
    */
   public static final class MonsterBattleInfo extends ProtoMessage<MonsterBattleInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
+    /**
+     * <code>optional double total_damage = 7;</code>
+     */
+    private double totalDamage;
+
+    /**
+     * <code>optional double total_heal = 8;</code>
+     */
+    private double totalHeal;
+
+    /**
+     * <code>optional double total_damage_taken = 9;</code>
+     */
+    private double totalDamageTaken;
+
+    /**
+     * <pre>
+     *  MNFEAMFGGDA
+     * </pre>
+     *
+     * <code>optional double total_stance_damage_taken = 10;</code>
+     */
+    private double totalStanceDamageTaken;
+
+    /**
+     * <code>optional double total_hp_recover = 11;</code>
+     */
+    private double totalHpRecover;
+
+    /**
+     * <pre>
+     *  EJPDEBGKOOD
+     * </pre>
+     *
+     * <code>optional double total_break_damage_taken = 18;</code>
+     */
+    private double totalBreakDamageTaken;
+
+    /**
+     * <code>optional double delay_cumulate = 19;</code>
+     */
+    private double delayCumulate;
+
+    /**
+     * <pre>
+     *  OLOCGMGOFJB
+     * </pre>
+     *
+     * <code>optional int32 index_in_wave = 22;</code>
+     */
+    private int indexInWave;
+
+    /**
+     * <code>optional uint32 entity_id = 1;</code>
+     */
+    private int entityId;
+
+    /**
+     * <code>optional uint32 scene_event_id = 2;</code>
+     */
+    private int sceneEventId;
+
+    /**
+     * <pre>
+     *  DGIJLFEOGOO
+     * </pre>
+     *
+     * <code>optional uint32 monster_template_id = 3;</code>
+     */
+    private int monsterTemplateId;
+
+    /**
+     * <pre>
+     *  EILDJJMAADC
+     * </pre>
+     *
+     * <code>optional uint32 monster_level = 4;</code>
+     */
+    private int monsterLevel;
+
+    /**
+     * <pre>
+     *  MonsterProperty monster_status = 5; // IKDNJNGHLMG
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 6;</code>
+     */
+    private int totalTurns;
+
+    /**
+     * <code>optional uint32 stage_id = 12;</code>
+     */
+    private int stageId;
+
+    /**
+     * <code>optional uint32 battle_id = 13;</code>
+     */
+    private int battleId;
+
+    /**
+     * <pre>
+     *  GOKEMENDGOH
+     * </pre>
+     *
+     * <code>optional uint32 monster_type = 14;</code>
+     */
+    private int monsterType;
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 15;
+     *  repeated SkillUseProperty skill_times = 16;
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 17;</code>
+     */
+    private int stageType;
+
+    /**
+     * <pre>
+     *  BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+     * </pre>
+     *
+     * <code>optional uint32 monster_wave = 21;</code>
+     */
+    private int monsterWave;
+
+    /**
+     * <pre>
+     *  PPFLEEEOELE
+     * </pre>
+     *
+     * <code>optional uint32 phase = 23;</code>
+     */
+    private int phase;
+
+    /**
+     * <pre>
+     *  OHCBJOGCLKK
+     * </pre>
+     *
+     * <code>optional uint32 max_phase = 24;</code>
+     */
+    private int maxPhase;
+
+    /**
+     * <code>optional uint32 DLFCKLFGDNG = 27;</code>
+     */
+    private int dLFCKLFGDNG;
+
+    /**
+     * <pre>
+     *  repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+     * </pre>
+     *
+     * <code>optional uint32 KALBMDEDPCN = 29;</code>
+     */
+    private int kALBMDEDPCN;
+
+    /**
+     * <pre>
+     *  DIKEHIIKNII FOGGPPANKIO = 31;
+     * </pre>
+     *
+     * <code>optional uint32 FNGCJKGIFCB = 30;</code>
+     */
+    private int fNGCJKGIFCB;
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     */
+    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> nJODLNCNPNF = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
+
     private MonsterBattleInfo() {
     }
 
     /**
-     * <pre>
-     *  uint32 entity_id = 1;
-     *  uint32 monster_id = 2;
-     *  uint32 monster_template_id = 3;
-     *  uint32 monster_level = 4;
-     *  MonsterProperty monster_status = 5;
-     *  uint32 total_turns = 6;
-     *  double total_damage = 7;
-     *  double total_heal = 8;
-     *  double total_damage_taken = 9;
-     *  double total_stance_damage_taken = 10;
-     *  double total_hp_recover = 11;
-     *  uint32 stage_id = 12;
-     *  uint32 battle_id = 13;
-     *  uint32 monster_type = 14;
-     *  repeated AttackDamageProperty attack_type_damage = 15;
-     *  repeated FLOJPLPFGIH skill_times = 16;
-     *  uint32 stage_type = 17;
-     *  double total_break_damage_taken = 18;
-     *  double delay_cumulate = 19;
-     *  GHBIABDNMFA death_source = 20;
-     *  uint32 wave = 21;
-     *  int32 index_in_wave = 22;
-     *  uint32 phase = 23;
-     *  uint32 max_phase = 24;
-     *  NDCIDEHCCAG battle_tag = 25;
-     *  repeated ELBDNIGGHOE FNAMLLELMAO = 26;
-     *  uint32 HHOMOKPIIPK = 27;
-     *  repeated CNMOEJENDJO EIMIHBODEJN = 28;
-     *  uint32 CGLIMCKBFJF = 29;
-     *  uint32 DHKALNBKFLD = 30;
-     *  HPGBMFAHHNE NLMHGAHHNCK = 31;
-     * </pre>
-     *
      * @return a new empty instance of {@code MonsterBattleInfo}
      */
     public static MonsterBattleInfo newInstance() {
       return new MonsterBattleInfo();
     }
 
+    /**
+     * <code>optional double total_damage = 7;</code>
+     * @return whether the totalDamage field is set
+     */
+    public boolean hasTotalDamage() {
+      return (bitField0_ & 0x00000001) != 0;
+    }
+
+    /**
+     * <code>optional double total_damage = 7;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalDamage() {
+      bitField0_ &= ~0x00000001;
+      totalDamage = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_damage = 7;</code>
+     * @return the totalDamage
+     */
+    public double getTotalDamage() {
+      return totalDamage;
+    }
+
+    /**
+     * <code>optional double total_damage = 7;</code>
+     * @param value the totalDamage to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalDamage(final double value) {
+      bitField0_ |= 0x00000001;
+      totalDamage = value;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_heal = 8;</code>
+     * @return whether the totalHeal field is set
+     */
+    public boolean hasTotalHeal() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional double total_heal = 8;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalHeal() {
+      bitField0_ &= ~0x00000002;
+      totalHeal = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_heal = 8;</code>
+     * @return the totalHeal
+     */
+    public double getTotalHeal() {
+      return totalHeal;
+    }
+
+    /**
+     * <code>optional double total_heal = 8;</code>
+     * @param value the totalHeal to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalHeal(final double value) {
+      bitField0_ |= 0x00000002;
+      totalHeal = value;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_damage_taken = 9;</code>
+     * @return whether the totalDamageTaken field is set
+     */
+    public boolean hasTotalDamageTaken() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional double total_damage_taken = 9;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalDamageTaken() {
+      bitField0_ &= ~0x00000004;
+      totalDamageTaken = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_damage_taken = 9;</code>
+     * @return the totalDamageTaken
+     */
+    public double getTotalDamageTaken() {
+      return totalDamageTaken;
+    }
+
+    /**
+     * <code>optional double total_damage_taken = 9;</code>
+     * @param value the totalDamageTaken to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalDamageTaken(final double value) {
+      bitField0_ |= 0x00000004;
+      totalDamageTaken = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MNFEAMFGGDA
+     * </pre>
+     *
+     * <code>optional double total_stance_damage_taken = 10;</code>
+     * @return whether the totalStanceDamageTaken field is set
+     */
+    public boolean hasTotalStanceDamageTaken() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *  MNFEAMFGGDA
+     * </pre>
+     *
+     * <code>optional double total_stance_damage_taken = 10;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalStanceDamageTaken() {
+      bitField0_ &= ~0x00000008;
+      totalStanceDamageTaken = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MNFEAMFGGDA
+     * </pre>
+     *
+     * <code>optional double total_stance_damage_taken = 10;</code>
+     * @return the totalStanceDamageTaken
+     */
+    public double getTotalStanceDamageTaken() {
+      return totalStanceDamageTaken;
+    }
+
+    /**
+     * <pre>
+     *  MNFEAMFGGDA
+     * </pre>
+     *
+     * <code>optional double total_stance_damage_taken = 10;</code>
+     * @param value the totalStanceDamageTaken to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalStanceDamageTaken(final double value) {
+      bitField0_ |= 0x00000008;
+      totalStanceDamageTaken = value;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_hp_recover = 11;</code>
+     * @return whether the totalHpRecover field is set
+     */
+    public boolean hasTotalHpRecover() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional double total_hp_recover = 11;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalHpRecover() {
+      bitField0_ &= ~0x00000010;
+      totalHpRecover = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double total_hp_recover = 11;</code>
+     * @return the totalHpRecover
+     */
+    public double getTotalHpRecover() {
+      return totalHpRecover;
+    }
+
+    /**
+     * <code>optional double total_hp_recover = 11;</code>
+     * @param value the totalHpRecover to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalHpRecover(final double value) {
+      bitField0_ |= 0x00000010;
+      totalHpRecover = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EJPDEBGKOOD
+     * </pre>
+     *
+     * <code>optional double total_break_damage_taken = 18;</code>
+     * @return whether the totalBreakDamageTaken field is set
+     */
+    public boolean hasTotalBreakDamageTaken() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     *  EJPDEBGKOOD
+     * </pre>
+     *
+     * <code>optional double total_break_damage_taken = 18;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalBreakDamageTaken() {
+      bitField0_ &= ~0x00000020;
+      totalBreakDamageTaken = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EJPDEBGKOOD
+     * </pre>
+     *
+     * <code>optional double total_break_damage_taken = 18;</code>
+     * @return the totalBreakDamageTaken
+     */
+    public double getTotalBreakDamageTaken() {
+      return totalBreakDamageTaken;
+    }
+
+    /**
+     * <pre>
+     *  EJPDEBGKOOD
+     * </pre>
+     *
+     * <code>optional double total_break_damage_taken = 18;</code>
+     * @param value the totalBreakDamageTaken to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalBreakDamageTaken(final double value) {
+      bitField0_ |= 0x00000020;
+      totalBreakDamageTaken = value;
+      return this;
+    }
+
+    /**
+     * <code>optional double delay_cumulate = 19;</code>
+     * @return whether the delayCumulate field is set
+     */
+    public boolean hasDelayCumulate() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>optional double delay_cumulate = 19;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearDelayCumulate() {
+      bitField0_ &= ~0x00000040;
+      delayCumulate = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double delay_cumulate = 19;</code>
+     * @return the delayCumulate
+     */
+    public double getDelayCumulate() {
+      return delayCumulate;
+    }
+
+    /**
+     * <code>optional double delay_cumulate = 19;</code>
+     * @param value the delayCumulate to set
+     * @return this
+     */
+    public MonsterBattleInfo setDelayCumulate(final double value) {
+      bitField0_ |= 0x00000040;
+      delayCumulate = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OLOCGMGOFJB
+     * </pre>
+     *
+     * <code>optional int32 index_in_wave = 22;</code>
+     * @return whether the indexInWave field is set
+     */
+    public boolean hasIndexInWave() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <pre>
+     *  OLOCGMGOFJB
+     * </pre>
+     *
+     * <code>optional int32 index_in_wave = 22;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearIndexInWave() {
+      bitField0_ &= ~0x00000080;
+      indexInWave = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OLOCGMGOFJB
+     * </pre>
+     *
+     * <code>optional int32 index_in_wave = 22;</code>
+     * @return the indexInWave
+     */
+    public int getIndexInWave() {
+      return indexInWave;
+    }
+
+    /**
+     * <pre>
+     *  OLOCGMGOFJB
+     * </pre>
+     *
+     * <code>optional int32 index_in_wave = 22;</code>
+     * @param value the indexInWave to set
+     * @return this
+     */
+    public MonsterBattleInfo setIndexInWave(final int value) {
+      bitField0_ |= 0x00000080;
+      indexInWave = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 entity_id = 1;</code>
+     * @return whether the entityId field is set
+     */
+    public boolean hasEntityId() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional uint32 entity_id = 1;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearEntityId() {
+      bitField0_ &= ~0x00000100;
+      entityId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 entity_id = 1;</code>
+     * @return the entityId
+     */
+    public int getEntityId() {
+      return entityId;
+    }
+
+    /**
+     * <code>optional uint32 entity_id = 1;</code>
+     * @param value the entityId to set
+     * @return this
+     */
+    public MonsterBattleInfo setEntityId(final int value) {
+      bitField0_ |= 0x00000100;
+      entityId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 scene_event_id = 2;</code>
+     * @return whether the sceneEventId field is set
+     */
+    public boolean hasSceneEventId() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>optional uint32 scene_event_id = 2;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearSceneEventId() {
+      bitField0_ &= ~0x00000200;
+      sceneEventId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 scene_event_id = 2;</code>
+     * @return the sceneEventId
+     */
+    public int getSceneEventId() {
+      return sceneEventId;
+    }
+
+    /**
+     * <code>optional uint32 scene_event_id = 2;</code>
+     * @param value the sceneEventId to set
+     * @return this
+     */
+    public MonsterBattleInfo setSceneEventId(final int value) {
+      bitField0_ |= 0x00000200;
+      sceneEventId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DGIJLFEOGOO
+     * </pre>
+     *
+     * <code>optional uint32 monster_template_id = 3;</code>
+     * @return whether the monsterTemplateId field is set
+     */
+    public boolean hasMonsterTemplateId() {
+      return (bitField0_ & 0x00000400) != 0;
+    }
+
+    /**
+     * <pre>
+     *  DGIJLFEOGOO
+     * </pre>
+     *
+     * <code>optional uint32 monster_template_id = 3;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearMonsterTemplateId() {
+      bitField0_ &= ~0x00000400;
+      monsterTemplateId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DGIJLFEOGOO
+     * </pre>
+     *
+     * <code>optional uint32 monster_template_id = 3;</code>
+     * @return the monsterTemplateId
+     */
+    public int getMonsterTemplateId() {
+      return monsterTemplateId;
+    }
+
+    /**
+     * <pre>
+     *  DGIJLFEOGOO
+     * </pre>
+     *
+     * <code>optional uint32 monster_template_id = 3;</code>
+     * @param value the monsterTemplateId to set
+     * @return this
+     */
+    public MonsterBattleInfo setMonsterTemplateId(final int value) {
+      bitField0_ |= 0x00000400;
+      monsterTemplateId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EILDJJMAADC
+     * </pre>
+     *
+     * <code>optional uint32 monster_level = 4;</code>
+     * @return whether the monsterLevel field is set
+     */
+    public boolean hasMonsterLevel() {
+      return (bitField0_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <pre>
+     *  EILDJJMAADC
+     * </pre>
+     *
+     * <code>optional uint32 monster_level = 4;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearMonsterLevel() {
+      bitField0_ &= ~0x00000800;
+      monsterLevel = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EILDJJMAADC
+     * </pre>
+     *
+     * <code>optional uint32 monster_level = 4;</code>
+     * @return the monsterLevel
+     */
+    public int getMonsterLevel() {
+      return monsterLevel;
+    }
+
+    /**
+     * <pre>
+     *  EILDJJMAADC
+     * </pre>
+     *
+     * <code>optional uint32 monster_level = 4;</code>
+     * @param value the monsterLevel to set
+     * @return this
+     */
+    public MonsterBattleInfo setMonsterLevel(final int value) {
+      bitField0_ |= 0x00000800;
+      monsterLevel = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MonsterProperty monster_status = 5; // IKDNJNGHLMG
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 6;</code>
+     * @return whether the totalTurns field is set
+     */
+    public boolean hasTotalTurns() {
+      return (bitField0_ & 0x00001000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  MonsterProperty monster_status = 5; // IKDNJNGHLMG
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 6;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearTotalTurns() {
+      bitField0_ &= ~0x00001000;
+      totalTurns = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MonsterProperty monster_status = 5; // IKDNJNGHLMG
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 6;</code>
+     * @return the totalTurns
+     */
+    public int getTotalTurns() {
+      return totalTurns;
+    }
+
+    /**
+     * <pre>
+     *  MonsterProperty monster_status = 5; // IKDNJNGHLMG
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 6;</code>
+     * @param value the totalTurns to set
+     * @return this
+     */
+    public MonsterBattleInfo setTotalTurns(final int value) {
+      bitField0_ |= 0x00001000;
+      totalTurns = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 12;</code>
+     * @return whether the stageId field is set
+     */
+    public boolean hasStageId() {
+      return (bitField0_ & 0x00002000) != 0;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 12;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearStageId() {
+      bitField0_ &= ~0x00002000;
+      stageId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 12;</code>
+     * @return the stageId
+     */
+    public int getStageId() {
+      return stageId;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 12;</code>
+     * @param value the stageId to set
+     * @return this
+     */
+    public MonsterBattleInfo setStageId(final int value) {
+      bitField0_ |= 0x00002000;
+      stageId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 battle_id = 13;</code>
+     * @return whether the battleId field is set
+     */
+    public boolean hasBattleId() {
+      return (bitField0_ & 0x00004000) != 0;
+    }
+
+    /**
+     * <code>optional uint32 battle_id = 13;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearBattleId() {
+      bitField0_ &= ~0x00004000;
+      battleId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 battle_id = 13;</code>
+     * @return the battleId
+     */
+    public int getBattleId() {
+      return battleId;
+    }
+
+    /**
+     * <code>optional uint32 battle_id = 13;</code>
+     * @param value the battleId to set
+     * @return this
+     */
+    public MonsterBattleInfo setBattleId(final int value) {
+      bitField0_ |= 0x00004000;
+      battleId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GOKEMENDGOH
+     * </pre>
+     *
+     * <code>optional uint32 monster_type = 14;</code>
+     * @return whether the monsterType field is set
+     */
+    public boolean hasMonsterType() {
+      return (bitField0_ & 0x00008000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  GOKEMENDGOH
+     * </pre>
+     *
+     * <code>optional uint32 monster_type = 14;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearMonsterType() {
+      bitField0_ &= ~0x00008000;
+      monsterType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GOKEMENDGOH
+     * </pre>
+     *
+     * <code>optional uint32 monster_type = 14;</code>
+     * @return the monsterType
+     */
+    public int getMonsterType() {
+      return monsterType;
+    }
+
+    /**
+     * <pre>
+     *  GOKEMENDGOH
+     * </pre>
+     *
+     * <code>optional uint32 monster_type = 14;</code>
+     * @param value the monsterType to set
+     * @return this
+     */
+    public MonsterBattleInfo setMonsterType(final int value) {
+      bitField0_ |= 0x00008000;
+      monsterType = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 15;
+     *  repeated SkillUseProperty skill_times = 16;
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 17;</code>
+     * @return whether the stageType field is set
+     */
+    public boolean hasStageType() {
+      return (bitField0_ & 0x00010000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 15;
+     *  repeated SkillUseProperty skill_times = 16;
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 17;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearStageType() {
+      bitField0_ &= ~0x00010000;
+      stageType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 15;
+     *  repeated SkillUseProperty skill_times = 16;
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 17;</code>
+     * @return the stageType
+     */
+    public int getStageType() {
+      return stageType;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 15;
+     *  repeated SkillUseProperty skill_times = 16;
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 17;</code>
+     * @param value the stageType to set
+     * @return this
+     */
+    public MonsterBattleInfo setStageType(final int value) {
+      bitField0_ |= 0x00010000;
+      stageType = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+     * </pre>
+     *
+     * <code>optional uint32 monster_wave = 21;</code>
+     * @return whether the monsterWave field is set
+     */
+    public boolean hasMonsterWave() {
+      return (bitField0_ & 0x00020000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+     * </pre>
+     *
+     * <code>optional uint32 monster_wave = 21;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearMonsterWave() {
+      bitField0_ &= ~0x00020000;
+      monsterWave = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+     * </pre>
+     *
+     * <code>optional uint32 monster_wave = 21;</code>
+     * @return the monsterWave
+     */
+    public int getMonsterWave() {
+      return monsterWave;
+    }
+
+    /**
+     * <pre>
+     *  BHHBCEIKADC death_source = 20; // PLAMHGOAAJP
+     * </pre>
+     *
+     * <code>optional uint32 monster_wave = 21;</code>
+     * @param value the monsterWave to set
+     * @return this
+     */
+    public MonsterBattleInfo setMonsterWave(final int value) {
+      bitField0_ |= 0x00020000;
+      monsterWave = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PPFLEEEOELE
+     * </pre>
+     *
+     * <code>optional uint32 phase = 23;</code>
+     * @return whether the phase field is set
+     */
+    public boolean hasPhase() {
+      return (bitField0_ & 0x00040000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  PPFLEEEOELE
+     * </pre>
+     *
+     * <code>optional uint32 phase = 23;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearPhase() {
+      bitField0_ &= ~0x00040000;
+      phase = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PPFLEEEOELE
+     * </pre>
+     *
+     * <code>optional uint32 phase = 23;</code>
+     * @return the phase
+     */
+    public int getPhase() {
+      return phase;
+    }
+
+    /**
+     * <pre>
+     *  PPFLEEEOELE
+     * </pre>
+     *
+     * <code>optional uint32 phase = 23;</code>
+     * @param value the phase to set
+     * @return this
+     */
+    public MonsterBattleInfo setPhase(final int value) {
+      bitField0_ |= 0x00040000;
+      phase = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OHCBJOGCLKK
+     * </pre>
+     *
+     * <code>optional uint32 max_phase = 24;</code>
+     * @return whether the maxPhase field is set
+     */
+    public boolean hasMaxPhase() {
+      return (bitField0_ & 0x00080000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  OHCBJOGCLKK
+     * </pre>
+     *
+     * <code>optional uint32 max_phase = 24;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearMaxPhase() {
+      bitField0_ &= ~0x00080000;
+      maxPhase = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OHCBJOGCLKK
+     * </pre>
+     *
+     * <code>optional uint32 max_phase = 24;</code>
+     * @return the maxPhase
+     */
+    public int getMaxPhase() {
+      return maxPhase;
+    }
+
+    /**
+     * <pre>
+     *  OHCBJOGCLKK
+     * </pre>
+     *
+     * <code>optional uint32 max_phase = 24;</code>
+     * @param value the maxPhase to set
+     * @return this
+     */
+    public MonsterBattleInfo setMaxPhase(final int value) {
+      bitField0_ |= 0x00080000;
+      maxPhase = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 DLFCKLFGDNG = 27;</code>
+     * @return whether the dLFCKLFGDNG field is set
+     */
+    public boolean hasDLFCKLFGDNG() {
+      return (bitField0_ & 0x00100000) != 0;
+    }
+
+    /**
+     * <code>optional uint32 DLFCKLFGDNG = 27;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearDLFCKLFGDNG() {
+      bitField0_ &= ~0x00100000;
+      dLFCKLFGDNG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 DLFCKLFGDNG = 27;</code>
+     * @return the dLFCKLFGDNG
+     */
+    public int getDLFCKLFGDNG() {
+      return dLFCKLFGDNG;
+    }
+
+    /**
+     * <code>optional uint32 DLFCKLFGDNG = 27;</code>
+     * @param value the dLFCKLFGDNG to set
+     * @return this
+     */
+    public MonsterBattleInfo setDLFCKLFGDNG(final int value) {
+      bitField0_ |= 0x00100000;
+      dLFCKLFGDNG = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+     * </pre>
+     *
+     * <code>optional uint32 KALBMDEDPCN = 29;</code>
+     * @return whether the kALBMDEDPCN field is set
+     */
+    public boolean hasKALBMDEDPCN() {
+      return (bitField0_ & 0x00200000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+     * </pre>
+     *
+     * <code>optional uint32 KALBMDEDPCN = 29;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearKALBMDEDPCN() {
+      bitField0_ &= ~0x00200000;
+      kALBMDEDPCN = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+     * </pre>
+     *
+     * <code>optional uint32 KALBMDEDPCN = 29;</code>
+     * @return the kALBMDEDPCN
+     */
+    public int getKALBMDEDPCN() {
+      return kALBMDEDPCN;
+    }
+
+    /**
+     * <pre>
+     *  repeated MonsterPhaseStt MLGPOGGOFLJ = 28;
+     * </pre>
+     *
+     * <code>optional uint32 KALBMDEDPCN = 29;</code>
+     * @param value the kALBMDEDPCN to set
+     * @return this
+     */
+    public MonsterBattleInfo setKALBMDEDPCN(final int value) {
+      bitField0_ |= 0x00200000;
+      kALBMDEDPCN = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DIKEHIIKNII FOGGPPANKIO = 31;
+     * </pre>
+     *
+     * <code>optional uint32 FNGCJKGIFCB = 30;</code>
+     * @return whether the fNGCJKGIFCB field is set
+     */
+    public boolean hasFNGCJKGIFCB() {
+      return (bitField0_ & 0x00400000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  DIKEHIIKNII FOGGPPANKIO = 31;
+     * </pre>
+     *
+     * <code>optional uint32 FNGCJKGIFCB = 30;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearFNGCJKGIFCB() {
+      bitField0_ &= ~0x00400000;
+      fNGCJKGIFCB = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DIKEHIIKNII FOGGPPANKIO = 31;
+     * </pre>
+     *
+     * <code>optional uint32 FNGCJKGIFCB = 30;</code>
+     * @return the fNGCJKGIFCB
+     */
+    public int getFNGCJKGIFCB() {
+      return fNGCJKGIFCB;
+    }
+
+    /**
+     * <pre>
+     *  DIKEHIIKNII FOGGPPANKIO = 31;
+     * </pre>
+     *
+     * <code>optional uint32 FNGCJKGIFCB = 30;</code>
+     * @param value the fNGCJKGIFCB to set
+     * @return this
+     */
+    public MonsterBattleInfo setFNGCJKGIFCB(final int value) {
+      bitField0_ |= 0x00400000;
+      fNGCJKGIFCB = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     * @return whether the nJODLNCNPNF field is set
+     */
+    public boolean hasNJODLNCNPNF() {
+      return (bitField0_ & 0x00800000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     * @return this
+     */
+    public MonsterBattleInfo clearNJODLNCNPNF() {
+      bitField0_ &= ~0x00800000;
+      nJODLNCNPNF.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableNJODLNCNPNF()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getNJODLNCNPNF() {
+      return nJODLNCNPNF;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableNJODLNCNPNF() {
+      bitField0_ |= 0x00800000;
+      return nJODLNCNPNF;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     * @param value the nJODLNCNPNF to add
+     * @return this
+     */
+    public MonsterBattleInfo addNJODLNCNPNF(final BattleSkillInfoOuterClass.BattleSkillInfo value) {
+      bitField0_ |= 0x00800000;
+      nJODLNCNPNF.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GKDMDMBOAOD battle_tag = 25; // FJAMOMDPGJE
+     * </pre>
+     *
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 26;</code>
+     * @param values the nJODLNCNPNF to add
+     * @return this
+     */
+    public MonsterBattleInfo addAllNJODLNCNPNF(
+        final BattleSkillInfoOuterClass.BattleSkillInfo... values) {
+      bitField0_ |= 0x00800000;
+      nJODLNCNPNF.addAll(values);
+      return this;
+    }
+
     @Override
     public MonsterBattleInfo copyFrom(final MonsterBattleInfo other) {
       cachedSize = other.cachedSize;
+      if ((bitField0_ | other.bitField0_) != 0) {
+        bitField0_ = other.bitField0_;
+        totalDamage = other.totalDamage;
+        totalHeal = other.totalHeal;
+        totalDamageTaken = other.totalDamageTaken;
+        totalStanceDamageTaken = other.totalStanceDamageTaken;
+        totalHpRecover = other.totalHpRecover;
+        totalBreakDamageTaken = other.totalBreakDamageTaken;
+        delayCumulate = other.delayCumulate;
+        indexInWave = other.indexInWave;
+        entityId = other.entityId;
+        sceneEventId = other.sceneEventId;
+        monsterTemplateId = other.monsterTemplateId;
+        monsterLevel = other.monsterLevel;
+        totalTurns = other.totalTurns;
+        stageId = other.stageId;
+        battleId = other.battleId;
+        monsterType = other.monsterType;
+        stageType = other.stageType;
+        monsterWave = other.monsterWave;
+        phase = other.phase;
+        maxPhase = other.maxPhase;
+        dLFCKLFGDNG = other.dLFCKLFGDNG;
+        kALBMDEDPCN = other.kALBMDEDPCN;
+        fNGCJKGIFCB = other.fNGCJKGIFCB;
+        nJODLNCNPNF.copyFrom(other.nJODLNCNPNF);
+      }
       return this;
     }
 
@@ -107,6 +1402,78 @@ public final class MonsterBattleInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasTotalDamage()) {
+        setTotalDamage(other.totalDamage);
+      }
+      if (other.hasTotalHeal()) {
+        setTotalHeal(other.totalHeal);
+      }
+      if (other.hasTotalDamageTaken()) {
+        setTotalDamageTaken(other.totalDamageTaken);
+      }
+      if (other.hasTotalStanceDamageTaken()) {
+        setTotalStanceDamageTaken(other.totalStanceDamageTaken);
+      }
+      if (other.hasTotalHpRecover()) {
+        setTotalHpRecover(other.totalHpRecover);
+      }
+      if (other.hasTotalBreakDamageTaken()) {
+        setTotalBreakDamageTaken(other.totalBreakDamageTaken);
+      }
+      if (other.hasDelayCumulate()) {
+        setDelayCumulate(other.delayCumulate);
+      }
+      if (other.hasIndexInWave()) {
+        setIndexInWave(other.indexInWave);
+      }
+      if (other.hasEntityId()) {
+        setEntityId(other.entityId);
+      }
+      if (other.hasSceneEventId()) {
+        setSceneEventId(other.sceneEventId);
+      }
+      if (other.hasMonsterTemplateId()) {
+        setMonsterTemplateId(other.monsterTemplateId);
+      }
+      if (other.hasMonsterLevel()) {
+        setMonsterLevel(other.monsterLevel);
+      }
+      if (other.hasTotalTurns()) {
+        setTotalTurns(other.totalTurns);
+      }
+      if (other.hasStageId()) {
+        setStageId(other.stageId);
+      }
+      if (other.hasBattleId()) {
+        setBattleId(other.battleId);
+      }
+      if (other.hasMonsterType()) {
+        setMonsterType(other.monsterType);
+      }
+      if (other.hasStageType()) {
+        setStageType(other.stageType);
+      }
+      if (other.hasMonsterWave()) {
+        setMonsterWave(other.monsterWave);
+      }
+      if (other.hasPhase()) {
+        setPhase(other.phase);
+      }
+      if (other.hasMaxPhase()) {
+        setMaxPhase(other.maxPhase);
+      }
+      if (other.hasDLFCKLFGDNG()) {
+        setDLFCKLFGDNG(other.dLFCKLFGDNG);
+      }
+      if (other.hasKALBMDEDPCN()) {
+        setKALBMDEDPCN(other.kALBMDEDPCN);
+      }
+      if (other.hasFNGCJKGIFCB()) {
+        setFNGCJKGIFCB(other.fNGCJKGIFCB);
+      }
+      if (other.hasNJODLNCNPNF()) {
+        getMutableNJODLNCNPNF().addAll(other.nJODLNCNPNF);
+      }
       return this;
     }
 
@@ -116,6 +1483,31 @@ public final class MonsterBattleInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      bitField0_ = 0;
+      totalDamage = 0D;
+      totalHeal = 0D;
+      totalDamageTaken = 0D;
+      totalStanceDamageTaken = 0D;
+      totalHpRecover = 0D;
+      totalBreakDamageTaken = 0D;
+      delayCumulate = 0D;
+      indexInWave = 0;
+      entityId = 0;
+      sceneEventId = 0;
+      monsterTemplateId = 0;
+      monsterLevel = 0;
+      totalTurns = 0;
+      stageId = 0;
+      battleId = 0;
+      monsterType = 0;
+      stageType = 0;
+      monsterWave = 0;
+      phase = 0;
+      maxPhase = 0;
+      dLFCKLFGDNG = 0;
+      kALBMDEDPCN = 0;
+      fNGCJKGIFCB = 0;
+      nJODLNCNPNF.clear();
       return this;
     }
 
@@ -125,6 +1517,8 @@ public final class MonsterBattleInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      bitField0_ = 0;
+      nJODLNCNPNF.clearQuick();
       return this;
     }
 
@@ -137,16 +1531,210 @@ public final class MonsterBattleInfoOuterClass {
         return false;
       }
       MonsterBattleInfo other = (MonsterBattleInfo) o;
-      return true;
+      return bitField0_ == other.bitField0_
+        && (!hasTotalDamage() || ProtoUtil.isEqual(totalDamage, other.totalDamage))
+        && (!hasTotalHeal() || ProtoUtil.isEqual(totalHeal, other.totalHeal))
+        && (!hasTotalDamageTaken() || ProtoUtil.isEqual(totalDamageTaken, other.totalDamageTaken))
+        && (!hasTotalStanceDamageTaken() || ProtoUtil.isEqual(totalStanceDamageTaken, other.totalStanceDamageTaken))
+        && (!hasTotalHpRecover() || ProtoUtil.isEqual(totalHpRecover, other.totalHpRecover))
+        && (!hasTotalBreakDamageTaken() || ProtoUtil.isEqual(totalBreakDamageTaken, other.totalBreakDamageTaken))
+        && (!hasDelayCumulate() || ProtoUtil.isEqual(delayCumulate, other.delayCumulate))
+        && (!hasIndexInWave() || indexInWave == other.indexInWave)
+        && (!hasEntityId() || entityId == other.entityId)
+        && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
+        && (!hasMonsterTemplateId() || monsterTemplateId == other.monsterTemplateId)
+        && (!hasMonsterLevel() || monsterLevel == other.monsterLevel)
+        && (!hasTotalTurns() || totalTurns == other.totalTurns)
+        && (!hasStageId() || stageId == other.stageId)
+        && (!hasBattleId() || battleId == other.battleId)
+        && (!hasMonsterType() || monsterType == other.monsterType)
+        && (!hasStageType() || stageType == other.stageType)
+        && (!hasMonsterWave() || monsterWave == other.monsterWave)
+        && (!hasPhase() || phase == other.phase)
+        && (!hasMaxPhase() || maxPhase == other.maxPhase)
+        && (!hasDLFCKLFGDNG() || dLFCKLFGDNG == other.dLFCKLFGDNG)
+        && (!hasKALBMDEDPCN() || kALBMDEDPCN == other.kALBMDEDPCN)
+        && (!hasFNGCJKGIFCB() || fNGCJKGIFCB == other.fNGCJKGIFCB)
+        && (!hasNJODLNCNPNF() || nJODLNCNPNF.equals(other.nJODLNCNPNF));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
+      if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 57);
+        output.writeDoubleNoTag(totalDamage);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 65);
+        output.writeDoubleNoTag(totalHeal);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 73);
+        output.writeDoubleNoTag(totalDamageTaken);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 81);
+        output.writeDoubleNoTag(totalStanceDamageTaken);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 89);
+        output.writeDoubleNoTag(totalHpRecover);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawLittleEndian16((short) 401);
+        output.writeDoubleNoTag(totalBreakDamageTaken);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeRawLittleEndian16((short) 409);
+        output.writeDoubleNoTag(delayCumulate);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeRawLittleEndian16((short) 432);
+        output.writeInt32NoTag(indexInWave);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(entityId);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(sceneEventId);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(monsterTemplateId);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(monsterLevel);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(totalTurns);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(stageId);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(battleId);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(monsterType);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        output.writeRawLittleEndian16((short) 392);
+        output.writeUInt32NoTag(stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        output.writeRawLittleEndian16((short) 424);
+        output.writeUInt32NoTag(monsterWave);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        output.writeRawLittleEndian16((short) 440);
+        output.writeUInt32NoTag(phase);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        output.writeRawLittleEndian16((short) 448);
+        output.writeUInt32NoTag(maxPhase);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        output.writeRawLittleEndian16((short) 472);
+        output.writeUInt32NoTag(dLFCKLFGDNG);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        output.writeRawLittleEndian16((short) 488);
+        output.writeUInt32NoTag(kALBMDEDPCN);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        output.writeRawLittleEndian16((short) 496);
+        output.writeUInt32NoTag(fNGCJKGIFCB);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        for (int i = 0; i < nJODLNCNPNF.length(); i++) {
+          output.writeRawLittleEndian16((short) 466);
+          output.writeMessageNoTag(nJODLNCNPNF.get(i));
+        }
+      }
     }
 
     @Override
     protected int computeSerializedSize() {
       int size = 0;
+      if ((bitField0_ & 0x00000001) != 0) {
+        size += 9;
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 9;
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 9;
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 9;
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 9;
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += 2 + ProtoSink.computeInt32SizeNoTag(indexInWave);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterTemplateId);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterLevel);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalTurns);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(battleId);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterType);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(monsterWave);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(phase);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(maxPhase);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(dLFCKLFGDNG);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(kALBMDEDPCN);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(fNGCJKGIFCB);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        size += (2 * nJODLNCNPNF.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(nJODLNCNPNF);
+      }
       return size;
     }
 
@@ -157,6 +1745,221 @@ public final class MonsterBattleInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 57: {
+            // totalDamage
+            totalDamage = input.readDouble();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 65) {
+              break;
+            }
+          }
+          case 65: {
+            // totalHeal
+            totalHeal = input.readDouble();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 73) {
+              break;
+            }
+          }
+          case 73: {
+            // totalDamageTaken
+            totalDamageTaken = input.readDouble();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 81) {
+              break;
+            }
+          }
+          case 81: {
+            // totalStanceDamageTaken
+            totalStanceDamageTaken = input.readDouble();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 89) {
+              break;
+            }
+          }
+          case 89: {
+            // totalHpRecover
+            totalHpRecover = input.readDouble();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 145) {
+              break;
+            }
+          }
+          case 145: {
+            // totalBreakDamageTaken
+            totalBreakDamageTaken = input.readDouble();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 153) {
+              break;
+            }
+          }
+          case 153: {
+            // delayCumulate
+            delayCumulate = input.readDouble();
+            bitField0_ |= 0x00000040;
+            tag = input.readTag();
+            if (tag != 176) {
+              break;
+            }
+          }
+          case 176: {
+            // indexInWave
+            indexInWave = input.readInt32();
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 8) {
+              break;
+            }
+          }
+          case 8: {
+            // entityId
+            entityId = input.readUInt32();
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
+          case 16: {
+            // sceneEventId
+            sceneEventId = input.readUInt32();
+            bitField0_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 24) {
+              break;
+            }
+          }
+          case 24: {
+            // monsterTemplateId
+            monsterTemplateId = input.readUInt32();
+            bitField0_ |= 0x00000400;
+            tag = input.readTag();
+            if (tag != 32) {
+              break;
+            }
+          }
+          case 32: {
+            // monsterLevel
+            monsterLevel = input.readUInt32();
+            bitField0_ |= 0x00000800;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // totalTurns
+            totalTurns = input.readUInt32();
+            bitField0_ |= 0x00001000;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // stageId
+            stageId = input.readUInt32();
+            bitField0_ |= 0x00002000;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // battleId
+            battleId = input.readUInt32();
+            bitField0_ |= 0x00004000;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // monsterType
+            monsterType = input.readUInt32();
+            bitField0_ |= 0x00008000;
+            tag = input.readTag();
+            if (tag != 136) {
+              break;
+            }
+          }
+          case 136: {
+            // stageType
+            stageType = input.readUInt32();
+            bitField0_ |= 0x00010000;
+            tag = input.readTag();
+            if (tag != 168) {
+              break;
+            }
+          }
+          case 168: {
+            // monsterWave
+            monsterWave = input.readUInt32();
+            bitField0_ |= 0x00020000;
+            tag = input.readTag();
+            if (tag != 184) {
+              break;
+            }
+          }
+          case 184: {
+            // phase
+            phase = input.readUInt32();
+            bitField0_ |= 0x00040000;
+            tag = input.readTag();
+            if (tag != 192) {
+              break;
+            }
+          }
+          case 192: {
+            // maxPhase
+            maxPhase = input.readUInt32();
+            bitField0_ |= 0x00080000;
+            tag = input.readTag();
+            if (tag != 216) {
+              break;
+            }
+          }
+          case 216: {
+            // dLFCKLFGDNG
+            dLFCKLFGDNG = input.readUInt32();
+            bitField0_ |= 0x00100000;
+            tag = input.readTag();
+            if (tag != 232) {
+              break;
+            }
+          }
+          case 232: {
+            // kALBMDEDPCN
+            kALBMDEDPCN = input.readUInt32();
+            bitField0_ |= 0x00200000;
+            tag = input.readTag();
+            if (tag != 240) {
+              break;
+            }
+          }
+          case 240: {
+            // fNGCJKGIFCB
+            fNGCJKGIFCB = input.readUInt32();
+            bitField0_ |= 0x00400000;
+            tag = input.readTag();
+            if (tag != 210) {
+              break;
+            }
+          }
+          case 210: {
+            // nJODLNCNPNF
+            tag = input.readRepeatedMessage(nJODLNCNPNF, tag);
+            bitField0_ |= 0x00800000;
+            if (tag != 0) {
+              break;
+            }
+          }
           case 0: {
             return this;
           }
@@ -174,6 +1977,78 @@ public final class MonsterBattleInfoOuterClass {
     @Override
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
+      if ((bitField0_ & 0x00000001) != 0) {
+        output.writeDouble(FieldNames.totalDamage, totalDamage);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeDouble(FieldNames.totalHeal, totalHeal);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeDouble(FieldNames.totalDamageTaken, totalDamageTaken);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeDouble(FieldNames.totalStanceDamageTaken, totalStanceDamageTaken);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeDouble(FieldNames.totalHpRecover, totalHpRecover);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeDouble(FieldNames.totalBreakDamageTaken, totalBreakDamageTaken);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeDouble(FieldNames.delayCumulate, delayCumulate);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeInt32(FieldNames.indexInWave, indexInWave);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeUInt32(FieldNames.entityId, entityId);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeUInt32(FieldNames.monsterTemplateId, monsterTemplateId);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeUInt32(FieldNames.monsterLevel, monsterLevel);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        output.writeUInt32(FieldNames.totalTurns, totalTurns);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
+        output.writeUInt32(FieldNames.stageId, stageId);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        output.writeUInt32(FieldNames.battleId, battleId);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        output.writeUInt32(FieldNames.monsterType, monsterType);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        output.writeUInt32(FieldNames.stageType, stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        output.writeUInt32(FieldNames.monsterWave, monsterWave);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        output.writeUInt32(FieldNames.phase, phase);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        output.writeUInt32(FieldNames.maxPhase, maxPhase);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        output.writeUInt32(FieldNames.dLFCKLFGDNG, dLFCKLFGDNG);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        output.writeUInt32(FieldNames.kALBMDEDPCN, kALBMDEDPCN);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        output.writeUInt32(FieldNames.fNGCJKGIFCB, fNGCJKGIFCB);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        output.writeRepeatedMessage(FieldNames.nJODLNCNPNF, nJODLNCNPNF);
+      }
       output.endObject();
     }
 
@@ -184,6 +2059,289 @@ public final class MonsterBattleInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -1182674989:
+          case 259733706: {
+            if (input.isAtField(FieldNames.totalDamage)) {
+              if (!input.trySkipNullValue()) {
+                totalDamage = input.readDouble();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -577643700:
+          case -705751549: {
+            if (input.isAtField(FieldNames.totalHeal)) {
+              if (!input.trySkipNullValue()) {
+                totalHeal = input.readDouble();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1222408012:
+          case 176732434: {
+            if (input.isAtField(FieldNames.totalDamageTaken)) {
+              if (!input.trySkipNullValue()) {
+                totalDamageTaken = input.readDouble();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1953950108:
+          case 1229896491: {
+            if (input.isAtField(FieldNames.totalStanceDamageTaken)) {
+              if (!input.trySkipNullValue()) {
+                totalStanceDamageTaken = input.readDouble();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2097926056:
+          case 1292755208: {
+            if (input.isAtField(FieldNames.totalHpRecover)) {
+              if (!input.trySkipNullValue()) {
+                totalHpRecover = input.readDouble();
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1260900221:
+          case 840900626: {
+            if (input.isAtField(FieldNames.totalBreakDamageTaken)) {
+              if (!input.trySkipNullValue()) {
+                totalBreakDamageTaken = input.readDouble();
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -961026589:
+          case -1812302212: {
+            if (input.isAtField(FieldNames.delayCumulate)) {
+              if (!input.trySkipNullValue()) {
+                delayCumulate = input.readDouble();
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1050847536:
+          case 748391270: {
+            if (input.isAtField(FieldNames.indexInWave)) {
+              if (!input.trySkipNullValue()) {
+                indexInWave = input.readInt32();
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2102099874:
+          case -740565257: {
+            if (input.isAtField(FieldNames.entityId)) {
+              if (!input.trySkipNullValue()) {
+                entityId = input.readUInt32();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 748898089:
+          case 765114163: {
+            if (input.isAtField(FieldNames.sceneEventId)) {
+              if (!input.trySkipNullValue()) {
+                sceneEventId = input.readUInt32();
+                bitField0_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1750350511:
+          case 419252763: {
+            if (input.isAtField(FieldNames.monsterTemplateId)) {
+              if (!input.trySkipNullValue()) {
+                monsterTemplateId = input.readUInt32();
+                bitField0_ |= 0x00000400;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 534657994:
+          case -55543073: {
+            if (input.isAtField(FieldNames.monsterLevel)) {
+              if (!input.trySkipNullValue()) {
+                monsterLevel = input.readUInt32();
+                bitField0_ |= 0x00000800;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -715510094:
+          case -391886117: {
+            if (input.isAtField(FieldNames.totalTurns)) {
+              if (!input.trySkipNullValue()) {
+                totalTurns = input.readUInt32();
+                bitField0_ |= 0x00001000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1897528135:
+          case 1306191356: {
+            if (input.isAtField(FieldNames.stageId)) {
+              if (!input.trySkipNullValue()) {
+                stageId = input.readUInt32();
+                bitField0_ |= 0x00002000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1678308365:
+          case -487930366: {
+            if (input.isAtField(FieldNames.battleId)) {
+              if (!input.trySkipNullValue()) {
+                battleId = input.readUInt32();
+                bitField0_ |= 0x00004000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1541525044:
+          case 552654975: {
+            if (input.isAtField(FieldNames.monsterType)) {
+              if (!input.trySkipNullValue()) {
+                monsterType = input.readUInt32();
+                bitField0_ |= 0x00008000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1836914520:
+          case 1119794139: {
+            if (input.isAtField(FieldNames.stageType)) {
+              if (!input.trySkipNullValue()) {
+                stageType = input.readUInt32();
+                bitField0_ |= 0x00010000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1541591539:
+          case 552721470: {
+            if (input.isAtField(FieldNames.monsterWave)) {
+              if (!input.trySkipNullValue()) {
+                monsterWave = input.readUInt32();
+                bitField0_ |= 0x00020000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 106629499: {
+            if (input.isAtField(FieldNames.phase)) {
+              if (!input.trySkipNullValue()) {
+                phase = input.readUInt32();
+                bitField0_ |= 0x00040000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 393884279:
+          case -237472032: {
+            if (input.isAtField(FieldNames.maxPhase)) {
+              if (!input.trySkipNullValue()) {
+                maxPhase = input.readUInt32();
+                bitField0_ |= 0x00080000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -766406410: {
+            if (input.isAtField(FieldNames.dLFCKLFGDNG)) {
+              if (!input.trySkipNullValue()) {
+                dLFCKLFGDNG = input.readUInt32();
+                bitField0_ |= 0x00100000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -751145543: {
+            if (input.isAtField(FieldNames.kALBMDEDPCN)) {
+              if (!input.trySkipNullValue()) {
+                kALBMDEDPCN = input.readUInt32();
+                bitField0_ |= 0x00200000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1113995838: {
+            if (input.isAtField(FieldNames.fNGCJKGIFCB)) {
+              if (!input.trySkipNullValue()) {
+                fNGCJKGIFCB = input.readUInt32();
+                bitField0_ |= 0x00400000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1860190262: {
+            if (input.isAtField(FieldNames.nJODLNCNPNF)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(nJODLNCNPNF);
+                bitField0_ |= 0x00800000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           default: {
             input.skipUnknownField();
             break;
@@ -237,6 +2395,53 @@ public final class MonsterBattleInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName totalDamage = FieldName.forField("totalDamage", "total_damage");
+
+      static final FieldName totalHeal = FieldName.forField("totalHeal", "total_heal");
+
+      static final FieldName totalDamageTaken = FieldName.forField("totalDamageTaken", "total_damage_taken");
+
+      static final FieldName totalStanceDamageTaken = FieldName.forField("totalStanceDamageTaken", "total_stance_damage_taken");
+
+      static final FieldName totalHpRecover = FieldName.forField("totalHpRecover", "total_hp_recover");
+
+      static final FieldName totalBreakDamageTaken = FieldName.forField("totalBreakDamageTaken", "total_break_damage_taken");
+
+      static final FieldName delayCumulate = FieldName.forField("delayCumulate", "delay_cumulate");
+
+      static final FieldName indexInWave = FieldName.forField("indexInWave", "index_in_wave");
+
+      static final FieldName entityId = FieldName.forField("entityId", "entity_id");
+
+      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
+
+      static final FieldName monsterTemplateId = FieldName.forField("monsterTemplateId", "monster_template_id");
+
+      static final FieldName monsterLevel = FieldName.forField("monsterLevel", "monster_level");
+
+      static final FieldName totalTurns = FieldName.forField("totalTurns", "total_turns");
+
+      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+
+      static final FieldName battleId = FieldName.forField("battleId", "battle_id");
+
+      static final FieldName monsterType = FieldName.forField("monsterType", "monster_type");
+
+      static final FieldName stageType = FieldName.forField("stageType", "stage_type");
+
+      static final FieldName monsterWave = FieldName.forField("monsterWave", "monster_wave");
+
+      static final FieldName phase = FieldName.forField("phase");
+
+      static final FieldName maxPhase = FieldName.forField("maxPhase", "max_phase");
+
+      static final FieldName dLFCKLFGDNG = FieldName.forField("DLFCKLFGDNG");
+
+      static final FieldName kALBMDEDPCN = FieldName.forField("KALBMDEDPCN");
+
+      static final FieldName fNGCJKGIFCB = FieldName.forField("FNGCJKGIFCB");
+
+      static final FieldName nJODLNCNPNF = FieldName.forField("NJODLNCNPNF");
     }
   }
 }

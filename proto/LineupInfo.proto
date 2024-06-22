@@ -18,7 +18,7 @@ message LineupInfo {
 	uint32 GIBIDJKFBOK = 12;
     uint32 max_mp = 14; // GHJGFOGMPGN
     uint32 mp = 4;
-    // bool NIELAFGGLJB = 15;
+    bool NIELAFGGLJB = 15;
     uint32 index = 7;
     bool is_virtual = 10; // LPIAFAAKJNO
 }

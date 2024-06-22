@@ -7,24 +7,25 @@ import "BattleAvatar.proto";
 import "BattleBuff.proto";
 import "BattleEventBattleInfo.proto";
 import "BattleTargetList.proto";
-// import "Lnifncaliom.proto"
-// import "EvolveBuildBattleInfo.proto"
 
+// DKKIOMOCDLO
 message SceneBattleInfo {
-    repeated SceneMonsterWave monster_wave_list = 7;
-    map<uint32, BattleTargetList> battle_target_info = 583;
-    uint32 battle_id = 15;
-    uint32 world_level = 1;
-    repeated BattleBuff buff_list = 6;
-    uint32 rounds_limit = 8;
-    // uint32 ohfkoaahoib = 8;
-    // uint32 cleheggdkal = 10;
-    // Lnifncaliom cchiiefgogb = 1604;
-    // EvolveBuildBattleInfo ghlhhdhoodf = 209;
-    uint32 logic_random_seed = 3;
-    repeated BattleAvatar battle_avatar_list = 4;
-    // bool aigefdalljf = 14;
-    repeated BattleEventBattleInfo event_battle_info_list = 413;
-    uint32 stage_id = 11;
+	//uint32 LKDEAOIJMGO = 12;
+    repeated BattleAvatar pve_avatar_list = 15;
+    repeated BattleEventBattleInfo event_battle_info_list = 1965; // AADJJDHAJKG
+    repeated BattleBuff buff_list = 3;
+	// EvolveBuildBattleInfo MONJOIMGLNA = 763;
+    uint32 stage_id = 4;
+	// OFHNBLOGEME KIELLILJENB = 854;
+	// AELAFNKGADP JBCCJMAMLOL = 63;
+    map<uint32, BattleTargetList> battle_target_info = 149;
+	bool NLLOLBFFPLK = 8;
+	//uint32 MAKAILBEICL = 2;
+    repeated SceneMonsterWave monster_wave_list = 1; // IJIFJEFEBLB
+    uint32 world_level = 6;
+	uint32 LDOPDINIKMG = 11;
+    uint32 battle_id = 14;
 
+    uint32 rounds_limit = 2; //?
+    uint32 logic_random_seed = 12; //?
 }

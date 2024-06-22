@@ -13,25 +13,37 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class AvatarExpUpCsReqOuterClass {
   /**
+   * <pre>
+   *  KKDKKCJJANF
+   * </pre>
+   *
    * Protobuf type {@code AvatarExpUpCsReq}
    */
   public static final class AvatarExpUpCsReq extends ProtoMessage<AvatarExpUpCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 base_avatar_id = 2;</code>
+     * <code>optional uint32 scene_avatar_id = 12;</code>
      */
-    private int baseAvatarId;
+    private int sceneAvatarId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
      */
-    private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
+    private final ItemCostListOuterClass.ItemCostList useItemList = ItemCostListOuterClass.ItemCostList.newInstance();
 
     private AvatarExpUpCsReq() {
     }
 
     /**
+     * <pre>
+     *  KKDKKCJJANF
+     * </pre>
+     *
      * @return a new empty instance of {@code AvatarExpUpCsReq}
      */
     public static AvatarExpUpCsReq newInstance() {
@@ -39,76 +51,92 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 2;</code>
-     * @return whether the baseAvatarId field is set
+     * <code>optional uint32 scene_avatar_id = 12;</code>
+     * @return whether the sceneAvatarId field is set
      */
-    public boolean hasBaseAvatarId() {
+    public boolean hasSceneAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 2;</code>
+     * <code>optional uint32 scene_avatar_id = 12;</code>
      * @return this
      */
-    public AvatarExpUpCsReq clearBaseAvatarId() {
+    public AvatarExpUpCsReq clearSceneAvatarId() {
       bitField0_ &= ~0x00000001;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 2;</code>
-     * @return the baseAvatarId
+     * <code>optional uint32 scene_avatar_id = 12;</code>
+     * @return the sceneAvatarId
      */
-    public int getBaseAvatarId() {
-      return baseAvatarId;
+    public int getSceneAvatarId() {
+      return sceneAvatarId;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 2;</code>
-     * @param value the baseAvatarId to set
+     * <code>optional uint32 scene_avatar_id = 12;</code>
+     * @param value the sceneAvatarId to set
      * @return this
      */
-    public AvatarExpUpCsReq setBaseAvatarId(final int value) {
+    public AvatarExpUpCsReq setSceneAvatarId(final int value) {
       bitField0_ |= 0x00000001;
-      baseAvatarId = value;
+      sceneAvatarId = value;
       return this;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
-     * @return whether the itemCostList field is set
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
+     * @return whether the useItemList field is set
      */
-    public boolean hasItemCostList() {
+    public boolean hasUseItemList() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
      * @return this
      */
-    public AvatarExpUpCsReq clearItemCostList() {
+    public AvatarExpUpCsReq clearUseItemList() {
       bitField0_ &= ~0x00000002;
-      itemCostList.clear();
+      useItemList.clear();
       return this;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableItemCostList()} if you want to modify it.
+     * Use {@link #getMutableUseItemList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ItemCostListOuterClass.ItemCostList getItemCostList() {
-      return itemCostList;
+    public ItemCostListOuterClass.ItemCostList getUseItemList() {
+      return useItemList;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -116,19 +144,23 @@ public final class AvatarExpUpCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ItemCostListOuterClass.ItemCostList getMutableItemCostList() {
+    public ItemCostListOuterClass.ItemCostList getMutableUseItemList() {
       bitField0_ |= 0x00000002;
-      return itemCostList;
+      return useItemList;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
-     * @param value the itemCostList to set
+     * <pre>
+     *  OKGNBPLGEBP
+     * </pre>
+     *
+     * <code>optional .ItemCostList use_item_list = 14;</code>
+     * @param value the useItemList to set
      * @return this
      */
-    public AvatarExpUpCsReq setItemCostList(final ItemCostListOuterClass.ItemCostList value) {
+    public AvatarExpUpCsReq setUseItemList(final ItemCostListOuterClass.ItemCostList value) {
       bitField0_ |= 0x00000002;
-      itemCostList.copyFrom(value);
+      useItemList.copyFrom(value);
       return this;
     }
 
@@ -137,8 +169,8 @@ public final class AvatarExpUpCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        baseAvatarId = other.baseAvatarId;
-        itemCostList.copyFrom(other.itemCostList);
+        sceneAvatarId = other.sceneAvatarId;
+        useItemList.copyFrom(other.useItemList);
       }
       return this;
     }
@@ -149,11 +181,11 @@ public final class AvatarExpUpCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBaseAvatarId()) {
-        setBaseAvatarId(other.baseAvatarId);
+      if (other.hasSceneAvatarId()) {
+        setSceneAvatarId(other.sceneAvatarId);
       }
-      if (other.hasItemCostList()) {
-        getMutableItemCostList().mergeFrom(other.itemCostList);
+      if (other.hasUseItemList()) {
+        getMutableUseItemList().mergeFrom(other.useItemList);
       }
       return this;
     }
@@ -165,8 +197,8 @@ public final class AvatarExpUpCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      baseAvatarId = 0;
-      itemCostList.clear();
+      sceneAvatarId = 0;
+      useItemList.clear();
       return this;
     }
 
@@ -177,7 +209,7 @@ public final class AvatarExpUpCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      itemCostList.clearQuick();
+      useItemList.clearQuick();
       return this;
     }
 
@@ -191,19 +223,19 @@ public final class AvatarExpUpCsReqOuterClass {
       }
       AvatarExpUpCsReq other = (AvatarExpUpCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
-        && (!hasItemCostList() || itemCostList.equals(other.itemCostList));
+        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
+        && (!hasUseItemList() || useItemList.equals(other.useItemList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(baseAvatarId);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
-        output.writeMessageNoTag(itemCostList);
+        output.writeRawByte((byte) 114);
+        output.writeMessageNoTag(useItemList);
       }
     }
 
@@ -211,10 +243,10 @@ public final class AvatarExpUpCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(itemCostList);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(useItemList);
       }
       return size;
     }
@@ -226,18 +258,18 @@ public final class AvatarExpUpCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // baseAvatarId
-            baseAvatarId = input.readUInt32();
+          case 96: {
+            // sceneAvatarId
+            sceneAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 114) {
               break;
             }
           }
-          case 66: {
-            // itemCostList
-            input.readMessage(itemCostList);
+          case 114: {
+            // useItemList
+            input.readMessage(useItemList);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -262,10 +294,10 @@ public final class AvatarExpUpCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
+        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.itemCostList, itemCostList);
+        output.writeMessage(FieldNames.useItemList, useItemList);
       }
       output.endObject();
     }
@@ -277,11 +309,11 @@ public final class AvatarExpUpCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 118022725:
-          case -1756826157: {
-            if (input.isAtField(FieldNames.baseAvatarId)) {
+          case -1044772608:
+          case 1783323086: {
+            if (input.isAtField(FieldNames.sceneAvatarId)) {
               if (!input.trySkipNullValue()) {
-                baseAvatarId = input.readUInt32();
+                sceneAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -289,11 +321,11 @@ public final class AvatarExpUpCsReqOuterClass {
             }
             break;
           }
-          case 203506238:
-          case -1124889692: {
-            if (input.isAtField(FieldNames.itemCostList)) {
+          case -1836478216:
+          case 1552393618: {
+            if (input.isAtField(FieldNames.useItemList)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(itemCostList);
+                input.readMessage(useItemList);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -354,9 +386,9 @@ public final class AvatarExpUpCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
+      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
 
-      static final FieldName itemCostList = FieldName.forField("itemCostList", "item_cost_list");
+      static final FieldName useItemList = FieldName.forField("useItemList", "use_item_list");
     }
   }
 }

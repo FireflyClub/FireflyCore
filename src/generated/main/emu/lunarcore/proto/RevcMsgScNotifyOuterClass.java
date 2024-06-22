@@ -34,7 +34,7 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     * ?
+     *  GFDIBHENKLG
      * </pre>
      *
      * <code>optional uint32 to_uid = 7;</code>
@@ -130,7 +130,7 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     * ?
+     *  GFDIBHENKLG
      * </pre>
      *
      * <code>optional uint32 to_uid = 7;</code>
@@ -142,7 +142,7 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     * ?
+     *  GFDIBHENKLG
      * </pre>
      *
      * <code>optional uint32 to_uid = 7;</code>
@@ -156,7 +156,7 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     * ?
+     *  GFDIBHENKLG
      * </pre>
      *
      * <code>optional uint32 to_uid = 7;</code>
@@ -168,7 +168,7 @@ public final class RevcMsgScNotifyOuterClass {
 
     /**
      * <pre>
-     * ?
+     *  GFDIBHENKLG
      * </pre>
      *
      * <code>optional uint32 to_uid = 7;</code>

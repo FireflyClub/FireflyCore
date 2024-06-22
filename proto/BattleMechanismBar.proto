@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message BattleMechanismBar {
-	uint32 mechainsm_bar_id = 1;
-	uint32 value = 2;
-}

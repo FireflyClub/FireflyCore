@@ -6,19 +6,26 @@ import "BattleEndStatus.proto";
 import "BattleAvatar.proto";
 import "ItemList.proto";
 
+// OIELBKOIOCF
 message PVEBattleResultScRsp {
-	repeated BattleAvatar battle_avatar_list = 15;
-	uint32 event_id = 2;
-	bool check_identical = 8;
-	uint32 mismatch_turn_count = 14;// 6
-	uint32 retcode = 12;
-	uint32 battle_id = 4;
-	string bin_version = 13; //? affnalechoi
-	string res_version = 5; //? njaeinhfbem
-	BattleEndStatus end_status = 11;
-	uint32 stage_id = 7;
-	ItemList drop_data = 3; //? lplplklhcba
-	ItemList unk1 = 10; //? pdcecpocknh
-	ItemList unk2 = 253; //? dmmpidajeoo
-	ItemList unk3 = 1; //? lghlioedodo
+	// ItemList DBAGCMFKABI = 6;
+	uint32 monster_id = 3;
+	repeated BattleAvatar pve_avatar_list = 11; // PMKOINDGNGH
+	ItemList KHMNINDBCEC = 1822;
+	ItemList NLKKIDOKMKG = 14;
+	bool check_identical = 1; // DMKDPNBAKKN
+	uint32 CILIOGNAKIC = 9;
+	uint32 retcode = 8;
+	// string KDNBJFIDMLJ = 12;
+	// ItemList ACCNGABCGNI = 5;
+	uint32 battle_id = 10;
+	uint32 PDJFOAHIKJH = 2;
+	// string OPAIBIIPFAA = 15;
+	BattleEndStatus end_status = 7;
+	uint32 MKBEKFAPHJE = 13;
+	uint32 stage_id = 4;
+
+	ItemList drop_data = 6; //?
+	string bin_version = 12; //?
+	string res_version = 15; //?
 }

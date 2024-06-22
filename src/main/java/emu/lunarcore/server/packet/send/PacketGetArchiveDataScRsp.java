@@ -34,7 +34,7 @@ public class PacketGetArchiveDataScRsp extends BasePacket {
 
         for (var monsterExcel : GameData.getMonsterExcelMap().values()) {
             MonsterArchive monsterinfo = MonsterArchive.newInstance()
-                .setMonsterId(monsterExcel.getId())
+                .setSceneEventId(monsterExcel.getId())
                 .setNum(1); // todo: add to db
 
             archiveData.addArchiveMonsterIdList(monsterinfo);

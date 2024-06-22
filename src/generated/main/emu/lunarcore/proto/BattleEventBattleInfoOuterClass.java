@@ -10,6 +10,7 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedMessage;
 
 public final class BattleEventBattleInfoOuterClass {
   /**
@@ -20,7 +21,7 @@ public final class BattleEventBattleInfoOuterClass {
 
     /**
      * <pre>
-     * ejilnblflii
+     *  FLDLEOPCEFM
      * </pre>
      *
      * <code>optional uint32 battle_event_id = 1;</code>
@@ -28,13 +29,14 @@ public final class BattleEventBattleInfoOuterClass {
     private int battleEventId;
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      */
     private final BattleEventInitedDataOuterClass.BattleEventInitedData status = BattleEventInitedDataOuterClass.BattleEventInitedData.newInstance();
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     */
+    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> nJODLNCNPNF = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
 
     private BattleEventBattleInfo() {
     }
@@ -48,7 +50,7 @@ public final class BattleEventBattleInfoOuterClass {
 
     /**
      * <pre>
-     * ejilnblflii
+     *  FLDLEOPCEFM
      * </pre>
      *
      * <code>optional uint32 battle_event_id = 1;</code>
@@ -60,7 +62,7 @@ public final class BattleEventBattleInfoOuterClass {
 
     /**
      * <pre>
-     * ejilnblflii
+     *  FLDLEOPCEFM
      * </pre>
      *
      * <code>optional uint32 battle_event_id = 1;</code>
@@ -74,7 +76,7 @@ public final class BattleEventBattleInfoOuterClass {
 
     /**
      * <pre>
-     * ejilnblflii
+     *  FLDLEOPCEFM
      * </pre>
      *
      * <code>optional uint32 battle_event_id = 1;</code>
@@ -86,7 +88,7 @@ public final class BattleEventBattleInfoOuterClass {
 
     /**
      * <pre>
-     * ejilnblflii
+     *  FLDLEOPCEFM
      * </pre>
      *
      * <code>optional uint32 battle_event_id = 1;</code>
@@ -100,10 +102,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      * @return whether the status field is set
      */
@@ -112,10 +110,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      * @return this
      */
@@ -126,10 +120,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -144,10 +134,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -162,10 +148,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated BattleSkillInfo fnamllelmao = 3;
-     * </pre>
-     *
      * <code>optional .BattleEventInitedData status = 2;</code>
      * @param value the status to set
      * @return this
@@ -177,6 +159,76 @@ public final class BattleEventBattleInfoOuterClass {
       return this;
     }
 
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * @return whether the nJODLNCNPNF field is set
+     */
+    public boolean hasNJODLNCNPNF() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * @return this
+     */
+    public BattleEventBattleInfo clearNJODLNCNPNF() {
+      bitField0_ &= ~0x00000004;
+      nJODLNCNPNF.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableNJODLNCNPNF()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getNJODLNCNPNF() {
+      return nJODLNCNPNF;
+    }
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableNJODLNCNPNF() {
+      bitField0_ |= 0x00000004;
+      return nJODLNCNPNF;
+    }
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * @param value the nJODLNCNPNF to add
+     * @return this
+     */
+    public BattleEventBattleInfo addNJODLNCNPNF(
+        final BattleSkillInfoOuterClass.BattleSkillInfo value) {
+      bitField0_ |= 0x00000004;
+      nJODLNCNPNF.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * @param values the nJODLNCNPNF to add
+     * @return this
+     */
+    public BattleEventBattleInfo addAllNJODLNCNPNF(
+        final BattleSkillInfoOuterClass.BattleSkillInfo... values) {
+      bitField0_ |= 0x00000004;
+      nJODLNCNPNF.addAll(values);
+      return this;
+    }
+
     @Override
     public BattleEventBattleInfo copyFrom(final BattleEventBattleInfo other) {
       cachedSize = other.cachedSize;
@@ -184,6 +236,7 @@ public final class BattleEventBattleInfoOuterClass {
         bitField0_ = other.bitField0_;
         battleEventId = other.battleEventId;
         status.copyFrom(other.status);
+        nJODLNCNPNF.copyFrom(other.nJODLNCNPNF);
       }
       return this;
     }
@@ -200,6 +253,9 @@ public final class BattleEventBattleInfoOuterClass {
       if (other.hasStatus()) {
         getMutableStatus().mergeFrom(other.status);
       }
+      if (other.hasNJODLNCNPNF()) {
+        getMutableNJODLNCNPNF().addAll(other.nJODLNCNPNF);
+      }
       return this;
     }
 
@@ -212,6 +268,7 @@ public final class BattleEventBattleInfoOuterClass {
       bitField0_ = 0;
       battleEventId = 0;
       status.clear();
+      nJODLNCNPNF.clear();
       return this;
     }
 
@@ -223,6 +280,7 @@ public final class BattleEventBattleInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       status.clearQuick();
+      nJODLNCNPNF.clearQuick();
       return this;
     }
 
@@ -237,7 +295,8 @@ public final class BattleEventBattleInfoOuterClass {
       BattleEventBattleInfo other = (BattleEventBattleInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasBattleEventId() || battleEventId == other.battleEventId)
-        && (!hasStatus() || status.equals(other.status));
+        && (!hasStatus() || status.equals(other.status))
+        && (!hasNJODLNCNPNF() || nJODLNCNPNF.equals(other.nJODLNCNPNF));
     }
 
     @Override
@@ -250,6 +309,12 @@ public final class BattleEventBattleInfoOuterClass {
         output.writeRawByte((byte) 18);
         output.writeMessageNoTag(status);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < nJODLNCNPNF.length(); i++) {
+          output.writeRawByte((byte) 26);
+          output.writeMessageNoTag(nJODLNCNPNF.get(i));
+        }
+      }
     }
 
     @Override
@@ -260,6 +325,9 @@ public final class BattleEventBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(status);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * nJODLNCNPNF.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(nJODLNCNPNF);
       }
       return size;
     }
@@ -285,6 +353,14 @@ public final class BattleEventBattleInfoOuterClass {
             input.readMessage(status);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
+            if (tag != 26) {
+              break;
+            }
+          }
+          case 26: {
+            // nJODLNCNPNF
+            tag = input.readRepeatedMessage(nJODLNCNPNF, tag);
+            bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
             }
@@ -311,6 +387,9 @@ public final class BattleEventBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.status, status);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedMessage(FieldNames.nJODLNCNPNF, nJODLNCNPNF);
       }
       output.endObject();
     }
@@ -339,6 +418,17 @@ public final class BattleEventBattleInfoOuterClass {
               if (!input.trySkipNullValue()) {
                 input.readMessage(status);
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1860190262: {
+            if (input.isAtField(FieldNames.nJODLNCNPNF)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(nJODLNCNPNF);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -401,6 +491,8 @@ public final class BattleEventBattleInfoOuterClass {
       static final FieldName battleEventId = FieldName.forField("battleEventId", "battle_event_id");
 
       static final FieldName status = FieldName.forField("status");
+
+      static final FieldName nJODLNCNPNF = FieldName.forField("NJODLNCNPNF");
     }
   }
 }

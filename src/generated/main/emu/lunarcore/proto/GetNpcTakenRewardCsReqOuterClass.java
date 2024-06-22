@@ -19,7 +19,11 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <pre>
+     *  MPLLACAPPME
+     * </pre>
+     *
+     * <code>optional uint32 npc_id = 15;</code>
      */
     private int npcId;
 
@@ -34,7 +38,11 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <pre>
+     *  MPLLACAPPME
+     * </pre>
+     *
+     * <code>optional uint32 npc_id = 15;</code>
      * @return whether the npcId field is set
      */
     public boolean hasNpcId() {
@@ -42,7 +50,11 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <pre>
+     *  MPLLACAPPME
+     * </pre>
+     *
+     * <code>optional uint32 npc_id = 15;</code>
      * @return this
      */
     public GetNpcTakenRewardCsReq clearNpcId() {
@@ -52,7 +64,11 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <pre>
+     *  MPLLACAPPME
+     * </pre>
+     *
+     * <code>optional uint32 npc_id = 15;</code>
      * @return the npcId
      */
     public int getNpcId() {
@@ -60,7 +76,11 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <pre>
+     *  MPLLACAPPME
+     * </pre>
+     *
+     * <code>optional uint32 npc_id = 15;</code>
      * @param value the npcId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class GetNpcTakenRewardCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(npcId);
       }
     }
@@ -150,7 +170,7 @@ public final class GetNpcTakenRewardCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 120: {
             // npcId
             npcId = input.readUInt32();
             bitField0_ |= 0x00000001;

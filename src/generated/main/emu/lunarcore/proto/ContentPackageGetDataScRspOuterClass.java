@@ -11,43 +11,43 @@ import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 
-public final class UnlockTutorialGuideScRspOuterClass {
+public final class ContentPackageGetDataScRspOuterClass {
   /**
-   * Protobuf type {@code UnlockTutorialGuideScRsp}
+   * <pre>
+   *  COKFGKFKELO
+   * </pre>
+   *
+   * Protobuf type {@code ContentPackageGetDataScRsp}
    */
-  public static final class UnlockTutorialGuideScRsp extends ProtoMessage<UnlockTutorialGuideScRsp> implements Cloneable {
+  public static final class ContentPackageGetDataScRsp extends ProtoMessage<ContentPackageGetDataScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  int64 ghhnodmgemk = 9;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 3;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
+     * <code>optional .ContentPackageData data = 7;</code>
      */
-    private final TutorialGuideOuterClass.TutorialGuide tutorialGuide = TutorialGuideOuterClass.TutorialGuide.newInstance();
+    private final ContentPackageDataOuterClass.ContentPackageData data = ContentPackageDataOuterClass.ContentPackageData.newInstance();
 
-    private UnlockTutorialGuideScRsp() {
-    }
-
-    /**
-     * @return a new empty instance of {@code UnlockTutorialGuideScRsp}
-     */
-    public static UnlockTutorialGuideScRsp newInstance() {
-      return new UnlockTutorialGuideScRsp();
+    private ContentPackageGetDataScRsp() {
     }
 
     /**
      * <pre>
-     *  int64 ghhnodmgemk = 9;
+     *  COKFGKFKELO
      * </pre>
      *
-     * <code>optional uint32 retcode = 12;</code>
+     * @return a new empty instance of {@code ContentPackageGetDataScRsp}
+     */
+    public static ContentPackageGetDataScRsp newInstance() {
+      return new ContentPackageGetDataScRsp();
+    }
+
+    /**
+     * <code>optional uint32 retcode = 3;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,25 +55,17 @@ public final class UnlockTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  int64 ghhnodmgemk = 9;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return this
      */
-    public UnlockTutorialGuideScRsp clearRetcode() {
+    public ContentPackageGetDataScRsp clearRetcode() {
       bitField0_ &= ~0x00000001;
       retcode = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  int64 ghhnodmgemk = 9;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -81,54 +73,50 @@ public final class UnlockTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  int64 ghhnodmgemk = 9;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @param value the retcode to set
      * @return this
      */
-    public UnlockTutorialGuideScRsp setRetcode(final int value) {
+    public ContentPackageGetDataScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000001;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
-     * @return whether the tutorialGuide field is set
+     * <code>optional .ContentPackageData data = 7;</code>
+     * @return whether the data field is set
      */
-    public boolean hasTutorialGuide() {
+    public boolean hasData() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
+     * <code>optional .ContentPackageData data = 7;</code>
      * @return this
      */
-    public UnlockTutorialGuideScRsp clearTutorialGuide() {
+    public ContentPackageGetDataScRsp clearData() {
       bitField0_ &= ~0x00000002;
-      tutorialGuide.clear();
+      data.clear();
       return this;
     }
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
+     * <code>optional .ContentPackageData data = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableTutorialGuide()} if you want to modify it.
+     * Use {@link #getMutableData()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public TutorialGuideOuterClass.TutorialGuide getTutorialGuide() {
-      return tutorialGuide;
+    public ContentPackageDataOuterClass.ContentPackageData getData() {
+      return data;
     }
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
+     * <code>optional .ContentPackageData data = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -136,36 +124,36 @@ public final class UnlockTutorialGuideScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public TutorialGuideOuterClass.TutorialGuide getMutableTutorialGuide() {
+    public ContentPackageDataOuterClass.ContentPackageData getMutableData() {
       bitField0_ |= 0x00000002;
-      return tutorialGuide;
+      return data;
     }
 
     /**
-     * <code>optional .TutorialGuide tutorial_guide = 8;</code>
-     * @param value the tutorialGuide to set
+     * <code>optional .ContentPackageData data = 7;</code>
+     * @param value the data to set
      * @return this
      */
-    public UnlockTutorialGuideScRsp setTutorialGuide(
-        final TutorialGuideOuterClass.TutorialGuide value) {
+    public ContentPackageGetDataScRsp setData(
+        final ContentPackageDataOuterClass.ContentPackageData value) {
       bitField0_ |= 0x00000002;
-      tutorialGuide.copyFrom(value);
+      data.copyFrom(value);
       return this;
     }
 
     @Override
-    public UnlockTutorialGuideScRsp copyFrom(final UnlockTutorialGuideScRsp other) {
+    public ContentPackageGetDataScRsp copyFrom(final ContentPackageGetDataScRsp other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        tutorialGuide.copyFrom(other.tutorialGuide);
+        data.copyFrom(other.data);
       }
       return this;
     }
 
     @Override
-    public UnlockTutorialGuideScRsp mergeFrom(final UnlockTutorialGuideScRsp other) {
+    public ContentPackageGetDataScRsp mergeFrom(final ContentPackageGetDataScRsp other) {
       if (other.isEmpty()) {
         return this;
       }
@@ -173,32 +161,32 @@ public final class UnlockTutorialGuideScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasTutorialGuide()) {
-        getMutableTutorialGuide().mergeFrom(other.tutorialGuide);
+      if (other.hasData()) {
+        getMutableData().mergeFrom(other.data);
       }
       return this;
     }
 
     @Override
-    public UnlockTutorialGuideScRsp clear() {
+    public ContentPackageGetDataScRsp clear() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      tutorialGuide.clear();
+      data.clear();
       return this;
     }
 
     @Override
-    public UnlockTutorialGuideScRsp clearQuick() {
+    public ContentPackageGetDataScRsp clearQuick() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
-      tutorialGuide.clearQuick();
+      data.clearQuick();
       return this;
     }
 
@@ -207,24 +195,24 @@ public final class UnlockTutorialGuideScRspOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof UnlockTutorialGuideScRsp)) {
+      if (!(o instanceof ContentPackageGetDataScRsp)) {
         return false;
       }
-      UnlockTutorialGuideScRsp other = (UnlockTutorialGuideScRsp) o;
+      ContentPackageGetDataScRsp other = (ContentPackageGetDataScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasTutorialGuide() || tutorialGuide.equals(other.tutorialGuide));
+        && (!hasData() || data.equals(other.data));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
-        output.writeMessageNoTag(tutorialGuide);
+        output.writeRawByte((byte) 58);
+        output.writeMessageNoTag(data);
       }
     }
 
@@ -235,30 +223,30 @@ public final class UnlockTutorialGuideScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(tutorialGuide);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(data);
       }
       return size;
     }
 
     @Override
     @SuppressWarnings("fallthrough")
-    public UnlockTutorialGuideScRsp mergeFrom(final ProtoSource input) throws IOException {
+    public ContentPackageGetDataScRsp mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 24: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 58) {
               break;
             }
           }
-          case 66: {
-            // tutorialGuide
-            input.readMessage(tutorialGuide);
+          case 58: {
+            // data
+            input.readMessage(data);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -286,13 +274,13 @@ public final class UnlockTutorialGuideScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.tutorialGuide, tutorialGuide);
+        output.writeMessage(FieldNames.data, data);
       }
       output.endObject();
     }
 
     @Override
-    public UnlockTutorialGuideScRsp mergeFrom(final JsonSource input) throws IOException {
+    public ContentPackageGetDataScRsp mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
@@ -309,11 +297,10 @@ public final class UnlockTutorialGuideScRspOuterClass {
             }
             break;
           }
-          case 1686407742:
-          case 1413565147: {
-            if (input.isAtField(FieldNames.tutorialGuide)) {
+          case 3076010: {
+            if (input.isAtField(FieldNames.data)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(tutorialGuide);
+                input.readMessage(data);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -332,8 +319,8 @@ public final class UnlockTutorialGuideScRspOuterClass {
     }
 
     @Override
-    public UnlockTutorialGuideScRsp clone() {
-      return new UnlockTutorialGuideScRsp().copyFrom(this);
+    public ContentPackageGetDataScRsp clone() {
+      return new ContentPackageGetDataScRsp().copyFrom(this);
     }
 
     @Override
@@ -341,32 +328,32 @@ public final class UnlockTutorialGuideScRspOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static UnlockTutorialGuideScRsp parseFrom(final byte[] data) throws
+    public static ContentPackageGetDataScRsp parseFrom(final byte[] data) throws
         InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialGuideScRsp(), data).checkInitialized();
+      return ProtoMessage.mergeFrom(new ContentPackageGetDataScRsp(), data).checkInitialized();
     }
 
-    public static UnlockTutorialGuideScRsp parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialGuideScRsp(), input).checkInitialized();
+    public static ContentPackageGetDataScRsp parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new ContentPackageGetDataScRsp(), input).checkInitialized();
     }
 
-    public static UnlockTutorialGuideScRsp parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialGuideScRsp(), input).checkInitialized();
+    public static ContentPackageGetDataScRsp parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new ContentPackageGetDataScRsp(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating UnlockTutorialGuideScRsp messages
+     * @return factory for creating ContentPackageGetDataScRsp messages
      */
-    public static MessageFactory<UnlockTutorialGuideScRsp> getFactory() {
-      return UnlockTutorialGuideScRspFactory.INSTANCE;
+    public static MessageFactory<ContentPackageGetDataScRsp> getFactory() {
+      return ContentPackageGetDataScRspFactory.INSTANCE;
     }
 
-    private enum UnlockTutorialGuideScRspFactory implements MessageFactory<UnlockTutorialGuideScRsp> {
+    private enum ContentPackageGetDataScRspFactory implements MessageFactory<ContentPackageGetDataScRsp> {
       INSTANCE;
 
       @Override
-      public UnlockTutorialGuideScRsp create() {
-        return UnlockTutorialGuideScRsp.newInstance();
+      public ContentPackageGetDataScRsp create() {
+        return ContentPackageGetDataScRsp.newInstance();
       }
     }
 
@@ -376,7 +363,7 @@ public final class UnlockTutorialGuideScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName tutorialGuide = FieldName.forField("tutorialGuide", "tutorial_guide");
+      static final FieldName data = FieldName.forField("data");
     }
   }
 }

@@ -110,7 +110,7 @@ public class GiveAllCommand implements CommandHandler {
                     // Get avatar id
                     GameAvatar avatar = target.getAvatarById(excel.getAvatarID());
                     
-                    if (excel.getAvatarID() > 2000 && excel.getAvatarID() < 8000) continue; // Skip probation avatars
+                    if (excel.getAvatarID() > 2000 && (excel.getAvatarID() < 8001 || excel.getAvatarID() > 8006)) continue; // Skip probation avatars
 
                     // Add avatar
                     if (avatar == null) {

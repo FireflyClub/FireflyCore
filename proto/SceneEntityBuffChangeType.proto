@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// LHBGFHFGDGL
 enum SceneEntityBuffChangeType {
     SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT = 0;
     SCENE_ENTITY_BUFF_CHANGE_TYPE_ADD_MAZEBUFF = 1;

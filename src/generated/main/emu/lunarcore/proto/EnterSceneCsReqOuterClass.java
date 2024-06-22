@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class EnterSceneCsReqOuterClass {
   /**
+   * <pre>
+   *  EDMMIKMDLKI
+   * </pre>
+   *
    * Protobuf type {@code EnterSceneCsReq}
    */
   public static final class EnterSceneCsReq extends ProtoMessage<EnterSceneCsReq> implements Cloneable {
@@ -20,22 +24,41 @@ public final class EnterSceneCsReqOuterClass {
 
     /**
      * <pre>
-     * dehbihbbbgo
+     *  GIBIDJKFBOK
      * </pre>
      *
-     * <code>optional uint32 teleport_id = 2;</code>
+     * <code>optional uint32 teleport_id = 3;</code>
      */
     private int teleportId;
 
     /**
-     * <code>optional uint32 entry_id = 5;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      */
     private int entryId;
+
+    /**
+     * <code>optional uint32 GBKOFBCGCCG = 10;</code>
+     */
+    private int gBKOFBCGCCG;
+
+    /**
+     * <code>optional uint32 map_entry_id = 13;</code>
+     */
+    private int mapEntryId;
+
+    /**
+     * <code>optional bool INNBPDKLCNJ = 6;</code>
+     */
+    private boolean iNNBPDKLCNJ;
 
     private EnterSceneCsReq() {
     }
 
     /**
+     * <pre>
+     *  EDMMIKMDLKI
+     * </pre>
+     *
      * @return a new empty instance of {@code EnterSceneCsReq}
      */
     public static EnterSceneCsReq newInstance() {
@@ -44,10 +67,10 @@ public final class EnterSceneCsReqOuterClass {
 
     /**
      * <pre>
-     * dehbihbbbgo
+     *  GIBIDJKFBOK
      * </pre>
      *
-     * <code>optional uint32 teleport_id = 2;</code>
+     * <code>optional uint32 teleport_id = 3;</code>
      * @return whether the teleportId field is set
      */
     public boolean hasTeleportId() {
@@ -56,10 +79,10 @@ public final class EnterSceneCsReqOuterClass {
 
     /**
      * <pre>
-     * dehbihbbbgo
+     *  GIBIDJKFBOK
      * </pre>
      *
-     * <code>optional uint32 teleport_id = 2;</code>
+     * <code>optional uint32 teleport_id = 3;</code>
      * @return this
      */
     public EnterSceneCsReq clearTeleportId() {
@@ -70,10 +93,10 @@ public final class EnterSceneCsReqOuterClass {
 
     /**
      * <pre>
-     * dehbihbbbgo
+     *  GIBIDJKFBOK
      * </pre>
      *
-     * <code>optional uint32 teleport_id = 2;</code>
+     * <code>optional uint32 teleport_id = 3;</code>
      * @return the teleportId
      */
     public int getTeleportId() {
@@ -82,10 +105,10 @@ public final class EnterSceneCsReqOuterClass {
 
     /**
      * <pre>
-     * dehbihbbbgo
+     *  GIBIDJKFBOK
      * </pre>
      *
-     * <code>optional uint32 teleport_id = 2;</code>
+     * <code>optional uint32 teleport_id = 3;</code>
      * @param value the teleportId to set
      * @return this
      */
@@ -96,7 +119,7 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 5;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -104,7 +127,7 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 5;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return this
      */
     public EnterSceneCsReq clearEntryId() {
@@ -114,7 +137,7 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 5;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -122,13 +145,124 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 5;</code>
+     * <code>optional uint32 entry_id = 4;</code>
      * @param value the entryId to set
      * @return this
      */
     public EnterSceneCsReq setEntryId(final int value) {
       bitField0_ |= 0x00000002;
       entryId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GBKOFBCGCCG = 10;</code>
+     * @return whether the gBKOFBCGCCG field is set
+     */
+    public boolean hasGBKOFBCGCCG() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 GBKOFBCGCCG = 10;</code>
+     * @return this
+     */
+    public EnterSceneCsReq clearGBKOFBCGCCG() {
+      bitField0_ &= ~0x00000004;
+      gBKOFBCGCCG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GBKOFBCGCCG = 10;</code>
+     * @return the gBKOFBCGCCG
+     */
+    public int getGBKOFBCGCCG() {
+      return gBKOFBCGCCG;
+    }
+
+    /**
+     * <code>optional uint32 GBKOFBCGCCG = 10;</code>
+     * @param value the gBKOFBCGCCG to set
+     * @return this
+     */
+    public EnterSceneCsReq setGBKOFBCGCCG(final int value) {
+      bitField0_ |= 0x00000004;
+      gBKOFBCGCCG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 13;</code>
+     * @return whether the mapEntryId field is set
+     */
+    public boolean hasMapEntryId() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 13;</code>
+     * @return this
+     */
+    public EnterSceneCsReq clearMapEntryId() {
+      bitField0_ &= ~0x00000008;
+      mapEntryId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 13;</code>
+     * @return the mapEntryId
+     */
+    public int getMapEntryId() {
+      return mapEntryId;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 13;</code>
+     * @param value the mapEntryId to set
+     * @return this
+     */
+    public EnterSceneCsReq setMapEntryId(final int value) {
+      bitField0_ |= 0x00000008;
+      mapEntryId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool INNBPDKLCNJ = 6;</code>
+     * @return whether the iNNBPDKLCNJ field is set
+     */
+    public boolean hasINNBPDKLCNJ() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional bool INNBPDKLCNJ = 6;</code>
+     * @return this
+     */
+    public EnterSceneCsReq clearINNBPDKLCNJ() {
+      bitField0_ &= ~0x00000010;
+      iNNBPDKLCNJ = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool INNBPDKLCNJ = 6;</code>
+     * @return the iNNBPDKLCNJ
+     */
+    public boolean getINNBPDKLCNJ() {
+      return iNNBPDKLCNJ;
+    }
+
+    /**
+     * <code>optional bool INNBPDKLCNJ = 6;</code>
+     * @param value the iNNBPDKLCNJ to set
+     * @return this
+     */
+    public EnterSceneCsReq setINNBPDKLCNJ(final boolean value) {
+      bitField0_ |= 0x00000010;
+      iNNBPDKLCNJ = value;
       return this;
     }
 
@@ -139,6 +273,9 @@ public final class EnterSceneCsReqOuterClass {
         bitField0_ = other.bitField0_;
         teleportId = other.teleportId;
         entryId = other.entryId;
+        gBKOFBCGCCG = other.gBKOFBCGCCG;
+        mapEntryId = other.mapEntryId;
+        iNNBPDKLCNJ = other.iNNBPDKLCNJ;
       }
       return this;
     }
@@ -155,6 +292,15 @@ public final class EnterSceneCsReqOuterClass {
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
       }
+      if (other.hasGBKOFBCGCCG()) {
+        setGBKOFBCGCCG(other.gBKOFBCGCCG);
+      }
+      if (other.hasMapEntryId()) {
+        setMapEntryId(other.mapEntryId);
+      }
+      if (other.hasINNBPDKLCNJ()) {
+        setINNBPDKLCNJ(other.iNNBPDKLCNJ);
+      }
       return this;
     }
 
@@ -167,6 +313,9 @@ public final class EnterSceneCsReqOuterClass {
       bitField0_ = 0;
       teleportId = 0;
       entryId = 0;
+      gBKOFBCGCCG = 0;
+      mapEntryId = 0;
+      iNNBPDKLCNJ = false;
       return this;
     }
 
@@ -191,18 +340,33 @@ public final class EnterSceneCsReqOuterClass {
       EnterSceneCsReq other = (EnterSceneCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasTeleportId() || teleportId == other.teleportId)
-        && (!hasEntryId() || entryId == other.entryId);
+        && (!hasEntryId() || entryId == other.entryId)
+        && (!hasGBKOFBCGCCG() || gBKOFBCGCCG == other.gBKOFBCGCCG)
+        && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
+        && (!hasINNBPDKLCNJ() || iNNBPDKLCNJ == other.iNNBPDKLCNJ);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(teleportId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(entryId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(gBKOFBCGCCG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(mapEntryId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeBoolNoTag(iNNBPDKLCNJ);
       }
     }
 
@@ -215,6 +379,15 @@ public final class EnterSceneCsReqOuterClass {
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gBKOFBCGCCG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 2;
+      }
       return size;
     }
 
@@ -225,19 +398,46 @@ public final class EnterSceneCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 24: {
             // teleportId
             teleportId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 32) {
               break;
             }
           }
-          case 40: {
+          case 32: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // gBKOFBCGCCG
+            gBKOFBCGCCG = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // mapEntryId
+            mapEntryId = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // iNNBPDKLCNJ
+            iNNBPDKLCNJ = input.readBool();
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -265,6 +465,15 @@ public final class EnterSceneCsReqOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.entryId, entryId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.gBKOFBCGCCG, gBKOFBCGCCG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeBool(FieldNames.iNNBPDKLCNJ, iNNBPDKLCNJ);
       }
       output.endObject();
     }
@@ -294,6 +503,40 @@ public final class EnterSceneCsReqOuterClass {
               if (!input.trySkipNullValue()) {
                 entryId = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1337222808: {
+            if (input.isAtField(FieldNames.gBKOFBCGCCG)) {
+              if (!input.trySkipNullValue()) {
+                gBKOFBCGCCG = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1475203023:
+          case 436670347: {
+            if (input.isAtField(FieldNames.mapEntryId)) {
+              if (!input.trySkipNullValue()) {
+                mapEntryId = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -658548975: {
+            if (input.isAtField(FieldNames.iNNBPDKLCNJ)) {
+              if (!input.trySkipNullValue()) {
+                iNNBPDKLCNJ = input.readBool();
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -356,6 +599,12 @@ public final class EnterSceneCsReqOuterClass {
       static final FieldName teleportId = FieldName.forField("teleportId", "teleport_id");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
+
+      static final FieldName gBKOFBCGCCG = FieldName.forField("GBKOFBCGCCG");
+
+      static final FieldName mapEntryId = FieldName.forField("mapEntryId", "map_entry_id");
+
+      static final FieldName iNNBPDKLCNJ = FieldName.forField("INNBPDKLCNJ");
     }
   }
 }

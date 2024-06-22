@@ -13,26 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GetArchiveDataScRspOuterClass {
   /**
-   * <pre>
-   * ? Jbpfmgokpkk
-   * </pre>
-   *
    * Protobuf type {@code GetArchiveDataScRsp}
    */
   public static final class GetArchiveDataScRsp extends ProtoMessage<GetArchiveDataScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      */
     private final ArchiveDataOuterClass.ArchiveData archiveData = ArchiveDataOuterClass.ArchiveData.newInstance();
 
@@ -40,10 +36,6 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ? Jbpfmgokpkk
-     * </pre>
-     *
      * @return a new empty instance of {@code GetArchiveDataScRsp}
      */
     public static GetArchiveDataScRsp newInstance() {
@@ -51,7 +43,7 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -59,7 +51,7 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
     public GetArchiveDataScRsp clearRetcode() {
@@ -69,7 +61,7 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -77,7 +69,7 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -89,10 +81,10 @@ public final class GetArchiveDataScRspOuterClass {
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      * @return whether the archiveData field is set
      */
     public boolean hasArchiveData() {
@@ -101,10 +93,10 @@ public final class GetArchiveDataScRspOuterClass {
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      * @return this
      */
     public GetArchiveDataScRsp clearArchiveData() {
@@ -115,10 +107,10 @@ public final class GetArchiveDataScRspOuterClass {
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -133,10 +125,10 @@ public final class GetArchiveDataScRspOuterClass {
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -151,10 +143,10 @@ public final class GetArchiveDataScRspOuterClass {
 
     /**
      * <pre>
-     *  bkcflgbcjmi
+     *  MKGJJAJNHCI
      * </pre>
      *
-     * <code>optional .ArchiveData archive_data = 9;</code>
+     * <code>optional .ArchiveData archive_data = 1;</code>
      * @param value the archiveData to set
      * @return this
      */
@@ -230,11 +222,11 @@ public final class GetArchiveDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(archiveData);
       }
     }
@@ -258,16 +250,16 @@ public final class GetArchiveDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 56: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 10) {
               break;
             }
           }
-          case 74: {
+          case 10: {
             // archiveData
             input.readMessage(archiveData);
             bitField0_ |= 0x00000002;

@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SceneEnterStageCsReqOuterClass {
   /**
    * <pre>
-   *  Oofcnheecnc
+   *  OGJHIILBFKI
    * </pre>
    *
    * Protobuf type {@code SceneEnterStageCsReq}
@@ -23,16 +23,25 @@ public final class SceneEnterStageCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 stage_id = 7;</code>
+     * <code>optional uint32 monster_id = 4;</code>
      */
-    private int stageId;
+    private int monsterId;
+
+    /**
+     * <pre>
+     *  OICCDGCAPKG DBHFNGKHKKE = 15;
+     * </pre>
+     *
+     * <code>optional bool NHIJPAMAACF = 7;</code>
+     */
+    private boolean nHIJPAMAACF;
 
     private SceneEnterStageCsReq() {
     }
 
     /**
      * <pre>
-     *  Oofcnheecnc
+     *  OGJHIILBFKI
      * </pre>
      *
      * @return a new empty instance of {@code SceneEnterStageCsReq}
@@ -42,39 +51,92 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 7;</code>
-     * @return whether the stageId field is set
+     * <code>optional uint32 monster_id = 4;</code>
+     * @return whether the monsterId field is set
      */
-    public boolean hasStageId() {
+    public boolean hasMonsterId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 stage_id = 7;</code>
+     * <code>optional uint32 monster_id = 4;</code>
      * @return this
      */
-    public SceneEnterStageCsReq clearStageId() {
+    public SceneEnterStageCsReq clearMonsterId() {
       bitField0_ &= ~0x00000001;
-      stageId = 0;
+      monsterId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 stage_id = 7;</code>
-     * @return the stageId
+     * <code>optional uint32 monster_id = 4;</code>
+     * @return the monsterId
      */
-    public int getStageId() {
-      return stageId;
+    public int getMonsterId() {
+      return monsterId;
     }
 
     /**
-     * <code>optional uint32 stage_id = 7;</code>
-     * @param value the stageId to set
+     * <code>optional uint32 monster_id = 4;</code>
+     * @param value the monsterId to set
      * @return this
      */
-    public SceneEnterStageCsReq setStageId(final int value) {
+    public SceneEnterStageCsReq setMonsterId(final int value) {
       bitField0_ |= 0x00000001;
-      stageId = value;
+      monsterId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OICCDGCAPKG DBHFNGKHKKE = 15;
+     * </pre>
+     *
+     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * @return whether the nHIJPAMAACF field is set
+     */
+    public boolean hasNHIJPAMAACF() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  OICCDGCAPKG DBHFNGKHKKE = 15;
+     * </pre>
+     *
+     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * @return this
+     */
+    public SceneEnterStageCsReq clearNHIJPAMAACF() {
+      bitField0_ &= ~0x00000002;
+      nHIJPAMAACF = false;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OICCDGCAPKG DBHFNGKHKKE = 15;
+     * </pre>
+     *
+     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * @return the nHIJPAMAACF
+     */
+    public boolean getNHIJPAMAACF() {
+      return nHIJPAMAACF;
+    }
+
+    /**
+     * <pre>
+     *  OICCDGCAPKG DBHFNGKHKKE = 15;
+     * </pre>
+     *
+     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * @param value the nHIJPAMAACF to set
+     * @return this
+     */
+    public SceneEnterStageCsReq setNHIJPAMAACF(final boolean value) {
+      bitField0_ |= 0x00000002;
+      nHIJPAMAACF = value;
       return this;
     }
 
@@ -83,7 +145,8 @@ public final class SceneEnterStageCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        stageId = other.stageId;
+        monsterId = other.monsterId;
+        nHIJPAMAACF = other.nHIJPAMAACF;
       }
       return this;
     }
@@ -94,8 +157,11 @@ public final class SceneEnterStageCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasStageId()) {
-        setStageId(other.stageId);
+      if (other.hasMonsterId()) {
+        setMonsterId(other.monsterId);
+      }
+      if (other.hasNHIJPAMAACF()) {
+        setNHIJPAMAACF(other.nHIJPAMAACF);
       }
       return this;
     }
@@ -107,7 +173,8 @@ public final class SceneEnterStageCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      stageId = 0;
+      monsterId = 0;
+      nHIJPAMAACF = false;
       return this;
     }
 
@@ -131,14 +198,19 @@ public final class SceneEnterStageCsReqOuterClass {
       }
       SceneEnterStageCsReq other = (SceneEnterStageCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasStageId() || stageId == other.stageId);
+        && (!hasMonsterId() || monsterId == other.monsterId)
+        && (!hasNHIJPAMAACF() || nHIJPAMAACF == other.nHIJPAMAACF);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(monsterId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(stageId);
+        output.writeBoolNoTag(nHIJPAMAACF);
       }
     }
 
@@ -146,7 +218,10 @@ public final class SceneEnterStageCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 2;
       }
       return size;
     }
@@ -158,10 +233,19 @@ public final class SceneEnterStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // stageId
-            stageId = input.readUInt32();
+          case 32: {
+            // monsterId
+            monsterId = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // nHIJPAMAACF
+            nHIJPAMAACF = input.readBool();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -185,7 +269,10 @@ public final class SceneEnterStageCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.stageId, stageId);
+        output.writeUInt32(FieldNames.monsterId, monsterId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeBool(FieldNames.nHIJPAMAACF, nHIJPAMAACF);
       }
       output.endObject();
     }
@@ -197,12 +284,23 @@ public final class SceneEnterStageCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1897528135:
-          case 1306191356: {
-            if (input.isAtField(FieldNames.stageId)) {
+          case -1316830571:
+          case 2127946656: {
+            if (input.isAtField(FieldNames.monsterId)) {
               if (!input.trySkipNullValue()) {
-                stageId = input.readUInt32();
+                monsterId = input.readUInt32();
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1546257988: {
+            if (input.isAtField(FieldNames.nHIJPAMAACF)) {
+              if (!input.trySkipNullValue()) {
+                nHIJPAMAACF = input.readBool();
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -262,7 +360,9 @@ public final class SceneEnterStageCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
+
+      static final FieldName nHIJPAMAACF = FieldName.forField("NHIJPAMAACF");
     }
   }
 }

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-// Ppomaoggpek
-message LockRelicScRsp {
-    uint32 retcode = 13;
-    uint32 relic_unique_id = 15;
-}

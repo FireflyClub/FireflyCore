@@ -20,7 +20,13 @@ public class SceneEntityLoader {
     public void onSceneLoad(Scene scene) {
         for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
             // Skip non-server groups
-            if (group.getLoadSide() != GroupLoadSide.Server || group.getOwnerMainMissionID() > 0) {
+            // 119 = candy crush event
+            // 153 battle event herta ss
+            if (group.getLoadSide() != GroupLoadSide.Server && group.getOwnerMainMissionID() != 8022202) {
+                continue;
+            }
+            
+            if (group.getOwnerMainMissionID() > 0) {
                 continue;
             }
             
@@ -78,12 +84,14 @@ public class SceneEntityLoader {
             } else {
                 return null;
             }
-        } else if (prop.getExcel().isDoor()) {
-            // Hacky fix to always open doors
+        } else if (prop.getExcel().isDoor() || prop.getExcel().isStaircase()) {
+            // Hacky fix to always open doors and stairs
             prop.setState(PropState.Open, false);
         } else if (prop.getExcel().getPropType() == PropType.PROP_SPRING) {
             // Cache teleport anchors
             scene.getHealingSprings().add(prop);
+        } else if (group.getOwnerMainMissionID() == 8022202 || prop.getPropId() == 100) {
+            // prop.setState(PropState.Open, false);
         }
         
         // Add trigger to scene

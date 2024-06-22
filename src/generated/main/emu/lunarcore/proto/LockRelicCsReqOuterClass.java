@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class LockRelicCsReqOuterClass {
   /**
    * <pre>
-   *  Gmkgijjjaof
+   *  JGBMMDNEBDB
    * </pre>
    *
    * Protobuf type {@code LockRelicCsReq}
@@ -23,12 +23,12 @@ public final class LockRelicCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 relic_unique_id = 9;</code>
+     * <code>optional uint32 relic_unique_id = 6;</code>
      */
     private int relicUniqueId;
 
     /**
-     * <code>optional bool is_protected = 7;</code>
+     * <code>optional bool is_protected = 4;</code>
      */
     private boolean isProtected;
 
@@ -37,7 +37,7 @@ public final class LockRelicCsReqOuterClass {
 
     /**
      * <pre>
-     *  Gmkgijjjaof
+     *  JGBMMDNEBDB
      * </pre>
      *
      * @return a new empty instance of {@code LockRelicCsReq}
@@ -47,7 +47,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 9;</code>
+     * <code>optional uint32 relic_unique_id = 6;</code>
      * @return whether the relicUniqueId field is set
      */
     public boolean hasRelicUniqueId() {
@@ -55,7 +55,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 9;</code>
+     * <code>optional uint32 relic_unique_id = 6;</code>
      * @return this
      */
     public LockRelicCsReq clearRelicUniqueId() {
@@ -65,7 +65,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 9;</code>
+     * <code>optional uint32 relic_unique_id = 6;</code>
      * @return the relicUniqueId
      */
     public int getRelicUniqueId() {
@@ -73,7 +73,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 9;</code>
+     * <code>optional uint32 relic_unique_id = 6;</code>
      * @param value the relicUniqueId to set
      * @return this
      */
@@ -84,7 +84,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_protected = 7;</code>
+     * <code>optional bool is_protected = 4;</code>
      * @return whether the isProtected field is set
      */
     public boolean hasIsProtected() {
@@ -92,7 +92,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_protected = 7;</code>
+     * <code>optional bool is_protected = 4;</code>
      * @return this
      */
     public LockRelicCsReq clearIsProtected() {
@@ -102,7 +102,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_protected = 7;</code>
+     * <code>optional bool is_protected = 4;</code>
      * @return the isProtected
      */
     public boolean getIsProtected() {
@@ -110,7 +110,7 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_protected = 7;</code>
+     * <code>optional bool is_protected = 4;</code>
      * @param value the isProtected to set
      * @return this
      */
@@ -185,11 +185,11 @@ public final class LockRelicCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(isProtected);
       }
     }
@@ -213,16 +213,16 @@ public final class LockRelicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 48: {
             // relicUniqueId
             relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 32) {
               break;
             }
           }
-          case 56: {
+          case 32: {
             // isProtected
             isProtected = input.readBool();
             bitField0_ |= 0x00000002;

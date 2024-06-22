@@ -5,12 +5,13 @@ option java_package = "emu.lunarcore.proto";
 import "ExtraLineupType.proto";
 import "AvatarType.proto";
 
+// KANKNAEKLKP
 message JoinLineupCsReq {
-    bool is_virtual = 1;
-    uint32 plane_id = 7;
-    uint32 base_avatar_id = 15;
-    AvatarType avatar_type = 2;
-    uint32 index = 5;
-    ExtraLineupType extra_lineup_type = 12;
-    uint32 slot = 4;
+	uint32 index = 11;
+	uint32 scene_avatar_id = 12;
+	bool is_virtual = 3;
+	uint32 slot = 6;
+	ExtraLineupType extra_lineup_type = 10;
+	AvatarType avatar_type = 7;
+	uint32 plane_id = 5;
 }

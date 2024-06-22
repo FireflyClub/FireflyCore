@@ -13,21 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class InteractChargerCsReqOuterClass {
   /**
-   * <pre>
-   *  Klofemcjjmf
-   * </pre>
-   *
    * Protobuf type {@code InteractChargerCsReq}
    */
   public static final class InteractChargerCsReq extends ProtoMessage<InteractChargerCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      */
     private final ChargerInfoOuterClass.ChargerInfo chargerInfo = ChargerInfoOuterClass.ChargerInfo.newInstance();
 
@@ -35,10 +27,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Klofemcjjmf
-     * </pre>
-     *
      * @return a new empty instance of {@code InteractChargerCsReq}
      */
     public static InteractChargerCsReq newInstance() {
@@ -46,11 +34,7 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      * @return whether the chargerInfo field is set
      */
     public boolean hasChargerInfo() {
@@ -58,11 +42,7 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      * @return this
      */
     public InteractChargerCsReq clearChargerInfo() {
@@ -72,11 +52,7 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -90,11 +66,7 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -108,11 +80,7 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  mffnflimain
-     * </pre>
-     *
-     * <code>optional .ChargerInfo charger_info = 2;</code>
+     * <code>optional .ChargerInfo charger_info = 8;</code>
      * @param value the chargerInfo to set
      * @return this
      */
@@ -182,7 +150,7 @@ public final class InteractChargerCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(chargerInfo);
       }
     }
@@ -203,7 +171,7 @@ public final class InteractChargerCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 18: {
+          case 66: {
             // chargerInfo
             input.readMessage(chargerInfo);
             bitField0_ |= 0x00000001;

@@ -4,6 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "BattleTarget.proto";
 
+// EOLPBMCFJDL
 message BattleTargetList {
-    repeated BattleTarget battle_target_list = 1;
+    repeated BattleTarget battle_target_list = 1; // LKHKOMLPNLF
 }

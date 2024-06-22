@@ -12,67 +12,122 @@ import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 import us.hebi.quickbuf.RepeatedByte;
 import us.hebi.quickbuf.RepeatedMessage;
+import us.hebi.quickbuf.Utf8String;
 
 public final class PVEBattleResultCsReqOuterClass {
   /**
+   * <pre>
+   *  HNLNNBAFNGE
+   * </pre>
+   *
    * Protobuf type {@code PVEBattleResultCsReq}
    */
   public static final class PVEBattleResultCsReq extends ProtoMessage<PVEBattleResultCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <code>optional uint32 DLEGEAIGABF = 2;</code>
+     */
+    private int dLEGEAIGABF;
+
+    /**
      * <pre>
-     *  13
+     *  HHHCKNNKFAH
      * </pre>
      *
-     * <code>optional uint32 cost_time = 2;</code>
-     */
-    private int costTime;
-
-    /**
-     * <code>optional uint32 client_res_version = 5;</code>
-     */
-    private int clientResVersion;
-
-    /**
-     * <code>optional uint32 stage_id = 8;</code>
-     */
-    private int stageId;
-
-    /**
-     * <code>optional uint32 battle_id = 11;</code>
+     * <code>optional uint32 battle_id = 3;</code>
      */
     private int battleId;
 
     /**
-     * <code>optional .BattleEndStatus end_status = 15;</code>
+     * <code>optional uint32 stage_id = 6;</code>
+     */
+    private int stageId;
+
+    /**
+     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     */
+    private int nALHKEDFJNJ;
+
+    /**
+     * <code>optional uint32 cost_time = 13;</code>
+     */
+    private int costTime;
+
+    /**
+     * <code>optional uint32 BONOKPNOLAC = 14;</code>
+     */
+    private int bONOKPNOLAC;
+
+    /**
+     * <pre>
+     *  BMAIPJJKCLC
+     * </pre>
+     *
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      */
     private int endStatus;
 
     /**
-     * <code>optional bool is_ai_consider_ultra_skill = 10;</code>
+     * <code>optional bool CCEPICANIJJ = 1;</code>
      */
-    private boolean isAiConsiderUltraSkill;
+    private boolean cCEPICANIJJ;
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <code>optional bool PMLBDODKKOA = 12;</code>
+     */
+    private boolean pMLBDODKKOA;
+
+    /**
+     * <code>optional bool NIMIHLJJNLH = 15;</code>
+     */
+    private boolean nIMIHLJJNLH;
+
+    /**
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      */
     private final BattleStatisticsOuterClass.BattleStatistics stt = BattleStatisticsOuterClass.BattleStatistics.newInstance();
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      */
     private final RepeatedByte turnSnapshotHash = RepeatedByte.newEmptyInstance();
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     */
+    private final Utf8String oAMBLPAANHG = Utf8String.newEmptyInstance();
+
+    /**
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      */
     private final RepeatedMessage<BattleOpOuterClass.BattleOp> opList = RepeatedMessage.newEmptyInstance(BattleOpOuterClass.BattleOp.getFactory());
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     */
+    private final RepeatedMessage<BADPNPCCIPLEntry> bADPNPCCIPL = RepeatedMessage.newEmptyInstance(BADPNPCCIPLEntry.getFactory());
 
     private PVEBattleResultCsReq() {
     }
 
     /**
+     * <pre>
+     *  HNLNNBAFNGE
+     * </pre>
+     *
      * @return a new empty instance of {@code PVEBattleResultCsReq}
      */
     public static PVEBattleResultCsReq newInstance() {
@@ -80,97 +135,97 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  13
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 2;</code>
-     * @return whether the costTime field is set
+     * <code>optional uint32 DLEGEAIGABF = 2;</code>
+     * @return whether the dLEGEAIGABF field is set
      */
-    public boolean hasCostTime() {
+    public boolean hasDLEGEAIGABF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  13
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 2;</code>
+     * <code>optional uint32 DLEGEAIGABF = 2;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearCostTime() {
+    public PVEBattleResultCsReq clearDLEGEAIGABF() {
       bitField0_ &= ~0x00000001;
-      costTime = 0;
+      dLEGEAIGABF = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  13
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 2;</code>
-     * @return the costTime
+     * <code>optional uint32 DLEGEAIGABF = 2;</code>
+     * @return the dLEGEAIGABF
      */
-    public int getCostTime() {
-      return costTime;
+    public int getDLEGEAIGABF() {
+      return dLEGEAIGABF;
     }
 
     /**
-     * <pre>
-     *  13
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 2;</code>
-     * @param value the costTime to set
+     * <code>optional uint32 DLEGEAIGABF = 2;</code>
+     * @param value the dLEGEAIGABF to set
      * @return this
      */
-    public PVEBattleResultCsReq setCostTime(final int value) {
+    public PVEBattleResultCsReq setDLEGEAIGABF(final int value) {
       bitField0_ |= 0x00000001;
-      costTime = value;
+      dLEGEAIGABF = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 client_res_version = 5;</code>
-     * @return whether the clientResVersion field is set
+     * <pre>
+     *  HHHCKNNKFAH
+     * </pre>
+     *
+     * <code>optional uint32 battle_id = 3;</code>
+     * @return whether the battleId field is set
      */
-    public boolean hasClientResVersion() {
+    public boolean hasBattleId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 client_res_version = 5;</code>
+     * <pre>
+     *  HHHCKNNKFAH
+     * </pre>
+     *
+     * <code>optional uint32 battle_id = 3;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearClientResVersion() {
+    public PVEBattleResultCsReq clearBattleId() {
       bitField0_ &= ~0x00000002;
-      clientResVersion = 0;
+      battleId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 client_res_version = 5;</code>
-     * @return the clientResVersion
+     * <pre>
+     *  HHHCKNNKFAH
+     * </pre>
+     *
+     * <code>optional uint32 battle_id = 3;</code>
+     * @return the battleId
      */
-    public int getClientResVersion() {
-      return clientResVersion;
+    public int getBattleId() {
+      return battleId;
     }
 
     /**
-     * <code>optional uint32 client_res_version = 5;</code>
-     * @param value the clientResVersion to set
+     * <pre>
+     *  HHHCKNNKFAH
+     * </pre>
+     *
+     * <code>optional uint32 battle_id = 3;</code>
+     * @param value the battleId to set
      * @return this
      */
-    public PVEBattleResultCsReq setClientResVersion(final int value) {
+    public PVEBattleResultCsReq setBattleId(final int value) {
       bitField0_ |= 0x00000002;
-      clientResVersion = value;
+      battleId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 stage_id = 8;</code>
+     * <code>optional uint32 stage_id = 6;</code>
      * @return whether the stageId field is set
      */
     public boolean hasStageId() {
@@ -178,7 +233,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 8;</code>
+     * <code>optional uint32 stage_id = 6;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearStageId() {
@@ -188,7 +243,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 8;</code>
+     * <code>optional uint32 stage_id = 6;</code>
      * @return the stageId
      */
     public int getStageId() {
@@ -196,7 +251,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 8;</code>
+     * <code>optional uint32 stage_id = 6;</code>
      * @param value the stageId to set
      * @return this
      */
@@ -207,62 +262,148 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 battle_id = 11;</code>
-     * @return whether the battleId field is set
+     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     * @return whether the nALHKEDFJNJ field is set
      */
-    public boolean hasBattleId() {
+    public boolean hasNALHKEDFJNJ() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 battle_id = 11;</code>
+     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearBattleId() {
+    public PVEBattleResultCsReq clearNALHKEDFJNJ() {
       bitField0_ &= ~0x00000008;
-      battleId = 0;
+      nALHKEDFJNJ = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 battle_id = 11;</code>
-     * @return the battleId
+     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     * @return the nALHKEDFJNJ
      */
-    public int getBattleId() {
-      return battleId;
+    public int getNALHKEDFJNJ() {
+      return nALHKEDFJNJ;
     }
 
     /**
-     * <code>optional uint32 battle_id = 11;</code>
-     * @param value the battleId to set
+     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     * @param value the nALHKEDFJNJ to set
      * @return this
      */
-    public PVEBattleResultCsReq setBattleId(final int value) {
+    public PVEBattleResultCsReq setNALHKEDFJNJ(final int value) {
       bitField0_ |= 0x00000008;
-      battleId = value;
+      nALHKEDFJNJ = value;
       return this;
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 15;</code>
-     * @return whether the endStatus field is set
+     * <code>optional uint32 cost_time = 13;</code>
+     * @return whether the costTime field is set
      */
-    public boolean hasEndStatus() {
+    public boolean hasCostTime() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 15;</code>
+     * <code>optional uint32 cost_time = 13;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearCostTime() {
+      bitField0_ &= ~0x00000010;
+      costTime = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 cost_time = 13;</code>
+     * @return the costTime
+     */
+    public int getCostTime() {
+      return costTime;
+    }
+
+    /**
+     * <code>optional uint32 cost_time = 13;</code>
+     * @param value the costTime to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setCostTime(final int value) {
+      bitField0_ |= 0x00000010;
+      costTime = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 BONOKPNOLAC = 14;</code>
+     * @return whether the bONOKPNOLAC field is set
+     */
+    public boolean hasBONOKPNOLAC() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional uint32 BONOKPNOLAC = 14;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearBONOKPNOLAC() {
+      bitField0_ &= ~0x00000020;
+      bONOKPNOLAC = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 BONOKPNOLAC = 14;</code>
+     * @return the bONOKPNOLAC
+     */
+    public int getBONOKPNOLAC() {
+      return bONOKPNOLAC;
+    }
+
+    /**
+     * <code>optional uint32 BONOKPNOLAC = 14;</code>
+     * @param value the bONOKPNOLAC to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setBONOKPNOLAC(final int value) {
+      bitField0_ |= 0x00000020;
+      bONOKPNOLAC = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BMAIPJJKCLC
+     * </pre>
+     *
+     * <code>optional .BattleEndStatus end_status = 9;</code>
+     * @return whether the endStatus field is set
+     */
+    public boolean hasEndStatus() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BMAIPJJKCLC
+     * </pre>
+     *
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearEndStatus() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000040;
       endStatus = 0;
       return this;
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 15;</code>
+     * <pre>
+     *  BMAIPJJKCLC
+     * </pre>
+     *
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @return the endStatus
      */
     public BattleEndStatusOuterClass.BattleEndStatus getEndStatus() {
@@ -289,80 +430,170 @@ public final class PVEBattleResultCsReqOuterClass {
      * @return this
      */
     public PVEBattleResultCsReq setEndStatusValue(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000040;
       endStatus = value;
       return this;
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 15;</code>
+     * <pre>
+     *  BMAIPJJKCLC
+     * </pre>
+     *
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @param value the endStatus to set
      * @return this
      */
     public PVEBattleResultCsReq setEndStatus(
         final BattleEndStatusOuterClass.BattleEndStatus value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000040;
       endStatus = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional bool is_ai_consider_ultra_skill = 10;</code>
-     * @return whether the isAiConsiderUltraSkill field is set
+     * <code>optional bool CCEPICANIJJ = 1;</code>
+     * @return whether the cCEPICANIJJ field is set
      */
-    public boolean hasIsAiConsiderUltraSkill() {
-      return (bitField0_ & 0x00000020) != 0;
+    public boolean hasCCEPICANIJJ() {
+      return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional bool is_ai_consider_ultra_skill = 10;</code>
+     * <code>optional bool CCEPICANIJJ = 1;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearIsAiConsiderUltraSkill() {
-      bitField0_ &= ~0x00000020;
-      isAiConsiderUltraSkill = false;
+    public PVEBattleResultCsReq clearCCEPICANIJJ() {
+      bitField0_ &= ~0x00000080;
+      cCEPICANIJJ = false;
       return this;
     }
 
     /**
-     * <code>optional bool is_ai_consider_ultra_skill = 10;</code>
-     * @return the isAiConsiderUltraSkill
+     * <code>optional bool CCEPICANIJJ = 1;</code>
+     * @return the cCEPICANIJJ
      */
-    public boolean getIsAiConsiderUltraSkill() {
-      return isAiConsiderUltraSkill;
+    public boolean getCCEPICANIJJ() {
+      return cCEPICANIJJ;
     }
 
     /**
-     * <code>optional bool is_ai_consider_ultra_skill = 10;</code>
-     * @param value the isAiConsiderUltraSkill to set
+     * <code>optional bool CCEPICANIJJ = 1;</code>
+     * @param value the cCEPICANIJJ to set
      * @return this
      */
-    public PVEBattleResultCsReq setIsAiConsiderUltraSkill(final boolean value) {
-      bitField0_ |= 0x00000020;
-      isAiConsiderUltraSkill = value;
+    public PVEBattleResultCsReq setCCEPICANIJJ(final boolean value) {
+      bitField0_ |= 0x00000080;
+      cCEPICANIJJ = value;
       return this;
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <code>optional bool PMLBDODKKOA = 12;</code>
+     * @return whether the pMLBDODKKOA field is set
+     */
+    public boolean hasPMLBDODKKOA() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional bool PMLBDODKKOA = 12;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearPMLBDODKKOA() {
+      bitField0_ &= ~0x00000100;
+      pMLBDODKKOA = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool PMLBDODKKOA = 12;</code>
+     * @return the pMLBDODKKOA
+     */
+    public boolean getPMLBDODKKOA() {
+      return pMLBDODKKOA;
+    }
+
+    /**
+     * <code>optional bool PMLBDODKKOA = 12;</code>
+     * @param value the pMLBDODKKOA to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setPMLBDODKKOA(final boolean value) {
+      bitField0_ |= 0x00000100;
+      pMLBDODKKOA = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool NIMIHLJJNLH = 15;</code>
+     * @return whether the nIMIHLJJNLH field is set
+     */
+    public boolean hasNIMIHLJJNLH() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>optional bool NIMIHLJJNLH = 15;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearNIMIHLJJNLH() {
+      bitField0_ &= ~0x00000200;
+      nIMIHLJJNLH = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool NIMIHLJJNLH = 15;</code>
+     * @return the nIMIHLJJNLH
+     */
+    public boolean getNIMIHLJJNLH() {
+      return nIMIHLJJNLH;
+    }
+
+    /**
+     * <code>optional bool NIMIHLJJNLH = 15;</code>
+     * @param value the nIMIHLJJNLH to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setNIMIHLJJNLH(final boolean value) {
+      bitField0_ |= 0x00000200;
+      nIMIHLJJNLH = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      * @return whether the stt field is set
      */
     public boolean hasStt() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearStt() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000400;
       stt.clear();
       return this;
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -376,7 +607,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -385,41 +620,57 @@ public final class PVEBattleResultCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public BattleStatisticsOuterClass.BattleStatistics getMutableStt() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000400;
       return stt;
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 14;</code>
+     * <pre>
+     *  DOHBEPLBCAE
+     * </pre>
+     *
+     * <code>optional .BattleStatistics stt = 5;</code>
      * @param value the stt to set
      * @return this
      */
     public PVEBattleResultCsReq setStt(final BattleStatisticsOuterClass.BattleStatistics value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000400;
       stt.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      * @return whether the turnSnapshotHash field is set
      */
     public boolean hasTurnSnapshotHash() {
-      return (bitField0_ & 0x00000080) != 0;
+      return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearTurnSnapshotHash() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000800;
       turnSnapshotHash.clear();
       return this;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -433,7 +684,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -442,63 +697,152 @@ public final class PVEBattleResultCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedByte getMutableTurnSnapshotHash() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000800;
       return turnSnapshotHash;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      * @param value the turnSnapshotHash to add
      * @return this
      */
     public PVEBattleResultCsReq addTurnSnapshotHash(final byte value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000800;
       turnSnapshotHash.add(value);
       return this;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      * @param values the turnSnapshotHash to add
      * @return this
      */
     public PVEBattleResultCsReq addAllTurnSnapshotHash(final byte... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000800;
       turnSnapshotHash.addAll(values);
       return this;
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 1;</code>
+     * <pre>
+     *  FMJJODAFANM
+     * </pre>
+     *
+     * <code>optional bytes turn_snapshot_hash = 11;</code>
      * @param values the turnSnapshotHash to set
      * @return this
      */
     public PVEBattleResultCsReq setTurnSnapshotHash(final byte... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000800;
       turnSnapshotHash.copyFrom(values);
       return this;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
-     * @return whether the opList field is set
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @return whether the oAMBLPAANHG field is set
      */
-    public boolean hasOpList() {
-      return (bitField0_ & 0x00000100) != 0;
+    public boolean hasOAMBLPAANHG() {
+      return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearOAMBLPAANHG() {
+      bitField0_ &= ~0x00001000;
+      oAMBLPAANHG.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @return the oAMBLPAANHG
+     */
+    public String getOAMBLPAANHG() {
+      return oAMBLPAANHG.getString();
+    }
+
+    /**
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @return internal {@code Utf8String} representation of oAMBLPAANHG for reading
+     */
+    public Utf8String getOAMBLPAANHGBytes() {
+      return this.oAMBLPAANHG;
+    }
+
+    /**
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @return internal {@code Utf8String} representation of oAMBLPAANHG for modifications
+     */
+    public Utf8String getMutableOAMBLPAANHGBytes() {
+      bitField0_ |= 0x00001000;
+      return this.oAMBLPAANHG;
+    }
+
+    /**
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @param value the oAMBLPAANHG to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setOAMBLPAANHG(final CharSequence value) {
+      bitField0_ |= 0x00001000;
+      oAMBLPAANHG.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OAMBLPAANHG = 4;</code>
+     * @param value the oAMBLPAANHG to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setOAMBLPAANHG(final Utf8String value) {
+      bitField0_ |= 0x00001000;
+      oAMBLPAANHG.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
+     * @return whether the opList field is set
+     */
+    public boolean hasOpList() {
+      return (bitField0_ & 0x00002000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearOpList() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00002000;
       opList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -512,7 +856,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -521,29 +869,105 @@ public final class PVEBattleResultCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<BattleOpOuterClass.BattleOp> getMutableOpList() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00002000;
       return opList;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      * @param value the opList to add
      * @return this
      */
     public PVEBattleResultCsReq addOpList(final BattleOpOuterClass.BattleOp value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00002000;
       opList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 12;</code>
+     * <pre>
+     *  HJKKPOPIANF
+     * </pre>
+     *
+     * <code>repeated .BattleOp op_list = 8;</code>
      * @param values the opList to add
      * @return this
      */
     public PVEBattleResultCsReq addAllOpList(final BattleOpOuterClass.BattleOp... values) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00002000;
       opList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     * @return whether the bADPNPCCIPL field is set
+     */
+    public boolean hasBADPNPCCIPL() {
+      return (bitField0_ & 0x00004000) != 0;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearBADPNPCCIPL() {
+      bitField0_ &= ~0x00004000;
+      bADPNPCCIPL.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableBADPNPCCIPL()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<BADPNPCCIPLEntry> getBADPNPCCIPL() {
+      return bADPNPCCIPL;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<BADPNPCCIPLEntry> getMutableBADPNPCCIPL() {
+      bitField0_ |= 0x00004000;
+      return bADPNPCCIPL;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     * @param value the bADPNPCCIPL to add
+     * @return this
+     */
+    public PVEBattleResultCsReq addBADPNPCCIPL(final BADPNPCCIPLEntry value) {
+      bitField0_ |= 0x00004000;
+      bADPNPCCIPL.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .PVEBattleResultCsReq.BADPNPCCIPLEntry BADPNPCCIPL = 10;</code>
+     * @param values the bADPNPCCIPL to add
+     * @return this
+     */
+    public PVEBattleResultCsReq addAllBADPNPCCIPL(final BADPNPCCIPLEntry... values) {
+      bitField0_ |= 0x00004000;
+      bADPNPCCIPL.addAll(values);
       return this;
     }
 
@@ -552,15 +976,21 @@ public final class PVEBattleResultCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        costTime = other.costTime;
-        clientResVersion = other.clientResVersion;
-        stageId = other.stageId;
+        dLEGEAIGABF = other.dLEGEAIGABF;
         battleId = other.battleId;
+        stageId = other.stageId;
+        nALHKEDFJNJ = other.nALHKEDFJNJ;
+        costTime = other.costTime;
+        bONOKPNOLAC = other.bONOKPNOLAC;
         endStatus = other.endStatus;
-        isAiConsiderUltraSkill = other.isAiConsiderUltraSkill;
+        cCEPICANIJJ = other.cCEPICANIJJ;
+        pMLBDODKKOA = other.pMLBDODKKOA;
+        nIMIHLJJNLH = other.nIMIHLJJNLH;
         stt.copyFrom(other.stt);
         turnSnapshotHash.copyFrom(other.turnSnapshotHash);
+        oAMBLPAANHG.copyFrom(other.oAMBLPAANHG);
         opList.copyFrom(other.opList);
+        bADPNPCCIPL.copyFrom(other.bADPNPCCIPL);
       }
       return this;
     }
@@ -571,23 +1001,35 @@ public final class PVEBattleResultCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasCostTime()) {
-        setCostTime(other.costTime);
-      }
-      if (other.hasClientResVersion()) {
-        setClientResVersion(other.clientResVersion);
-      }
-      if (other.hasStageId()) {
-        setStageId(other.stageId);
+      if (other.hasDLEGEAIGABF()) {
+        setDLEGEAIGABF(other.dLEGEAIGABF);
       }
       if (other.hasBattleId()) {
         setBattleId(other.battleId);
       }
+      if (other.hasStageId()) {
+        setStageId(other.stageId);
+      }
+      if (other.hasNALHKEDFJNJ()) {
+        setNALHKEDFJNJ(other.nALHKEDFJNJ);
+      }
+      if (other.hasCostTime()) {
+        setCostTime(other.costTime);
+      }
+      if (other.hasBONOKPNOLAC()) {
+        setBONOKPNOLAC(other.bONOKPNOLAC);
+      }
       if (other.hasEndStatus()) {
         setEndStatusValue(other.endStatus);
       }
-      if (other.hasIsAiConsiderUltraSkill()) {
-        setIsAiConsiderUltraSkill(other.isAiConsiderUltraSkill);
+      if (other.hasCCEPICANIJJ()) {
+        setCCEPICANIJJ(other.cCEPICANIJJ);
+      }
+      if (other.hasPMLBDODKKOA()) {
+        setPMLBDODKKOA(other.pMLBDODKKOA);
+      }
+      if (other.hasNIMIHLJJNLH()) {
+        setNIMIHLJJNLH(other.nIMIHLJJNLH);
       }
       if (other.hasStt()) {
         getMutableStt().mergeFrom(other.stt);
@@ -595,8 +1037,14 @@ public final class PVEBattleResultCsReqOuterClass {
       if (other.hasTurnSnapshotHash()) {
         getMutableTurnSnapshotHash().copyFrom(other.turnSnapshotHash);
       }
+      if (other.hasOAMBLPAANHG()) {
+        getMutableOAMBLPAANHGBytes().copyFrom(other.oAMBLPAANHG);
+      }
       if (other.hasOpList()) {
         getMutableOpList().addAll(other.opList);
+      }
+      if (other.hasBADPNPCCIPL()) {
+        getMutableBADPNPCCIPL().addAll(other.bADPNPCCIPL);
       }
       return this;
     }
@@ -608,15 +1056,21 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      costTime = 0;
-      clientResVersion = 0;
-      stageId = 0;
+      dLEGEAIGABF = 0;
       battleId = 0;
+      stageId = 0;
+      nALHKEDFJNJ = 0;
+      costTime = 0;
+      bONOKPNOLAC = 0;
       endStatus = 0;
-      isAiConsiderUltraSkill = false;
+      cCEPICANIJJ = false;
+      pMLBDODKKOA = false;
+      nIMIHLJJNLH = false;
       stt.clear();
       turnSnapshotHash.clear();
+      oAMBLPAANHG.clear();
       opList.clear();
+      bADPNPCCIPL.clear();
       return this;
     }
 
@@ -629,7 +1083,9 @@ public final class PVEBattleResultCsReqOuterClass {
       bitField0_ = 0;
       stt.clearQuick();
       turnSnapshotHash.clear();
+      oAMBLPAANHG.clear();
       opList.clearQuick();
+      bADPNPCCIPL.clearQuick();
       return this;
     }
 
@@ -643,55 +1099,87 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       PVEBattleResultCsReq other = (PVEBattleResultCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasCostTime() || costTime == other.costTime)
-        && (!hasClientResVersion() || clientResVersion == other.clientResVersion)
-        && (!hasStageId() || stageId == other.stageId)
+        && (!hasDLEGEAIGABF() || dLEGEAIGABF == other.dLEGEAIGABF)
         && (!hasBattleId() || battleId == other.battleId)
+        && (!hasStageId() || stageId == other.stageId)
+        && (!hasNALHKEDFJNJ() || nALHKEDFJNJ == other.nALHKEDFJNJ)
+        && (!hasCostTime() || costTime == other.costTime)
+        && (!hasBONOKPNOLAC() || bONOKPNOLAC == other.bONOKPNOLAC)
         && (!hasEndStatus() || endStatus == other.endStatus)
-        && (!hasIsAiConsiderUltraSkill() || isAiConsiderUltraSkill == other.isAiConsiderUltraSkill)
+        && (!hasCCEPICANIJJ() || cCEPICANIJJ == other.cCEPICANIJJ)
+        && (!hasPMLBDODKKOA() || pMLBDODKKOA == other.pMLBDODKKOA)
+        && (!hasNIMIHLJJNLH() || nIMIHLJJNLH == other.nIMIHLJJNLH)
         && (!hasStt() || stt.equals(other.stt))
         && (!hasTurnSnapshotHash() || turnSnapshotHash.equals(other.turnSnapshotHash))
-        && (!hasOpList() || opList.equals(other.opList));
+        && (!hasOAMBLPAANHG() || oAMBLPAANHG.equals(other.oAMBLPAANHG))
+        && (!hasOpList() || opList.equals(other.opList))
+        && (!hasBADPNPCCIPL() || bADPNPCCIPL.equals(other.bADPNPCCIPL));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(costTime);
+        output.writeUInt32NoTag(dLEGEAIGABF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(clientResVersion);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(battleId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(stageId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(battleId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(nALHKEDFJNJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeEnumNoTag(endStatus);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(costTime);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeBoolNoTag(isAiConsiderUltraSkill);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(bONOKPNOLAC);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeMessageNoTag(stt);
+        output.writeRawByte((byte) 72);
+        output.writeEnumNoTag(endStatus);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 10);
-        output.writeBytesNoTag(turnSnapshotHash);
+        output.writeRawByte((byte) 8);
+        output.writeBoolNoTag(cCEPICANIJJ);
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeBoolNoTag(pMLBDODKKOA);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(nIMIHLJJNLH);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeRawByte((byte) 42);
+        output.writeMessageNoTag(stt);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeRawByte((byte) 90);
+        output.writeBytesNoTag(turnSnapshotHash);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        output.writeRawByte((byte) 34);
+        output.writeStringNoTag(oAMBLPAANHG);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
         for (int i = 0; i < opList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(opList.get(i));
+        }
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        for (int i = 0; i < bADPNPCCIPL.length(); i++) {
+          output.writeRawByte((byte) 82);
+          output.writeMessageNoTag(bADPNPCCIPL.get(i));
         }
       }
     }
@@ -700,31 +1188,49 @@ public final class PVEBattleResultCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(costTime);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dLEGEAIGABF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientResVersion);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(battleId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(battleId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(nALHKEDFJNJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(endStatus);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(costTime);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 2;
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(bONOKPNOLAC);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(stt);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(endStatus);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeBytesSizeNoTag(turnSnapshotHash);
+        size += 2;
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(stt);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        size += 1 + ProtoSink.computeBytesSizeNoTag(turnSnapshotHash);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(oAMBLPAANHG);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
         size += (1 * opList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(opList);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        size += (1 * bADPNPCCIPL.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(bADPNPCCIPL);
       }
       return size;
     }
@@ -737,84 +1243,137 @@ public final class PVEBattleResultCsReqOuterClass {
       while (true) {
         switch (tag) {
           case 16: {
-            // costTime
-            costTime = input.readUInt32();
+            // dLEGEAIGABF
+            dLEGEAIGABF = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 24) {
               break;
             }
           }
-          case 40: {
-            // clientResVersion
-            clientResVersion = input.readUInt32();
+          case 24: {
+            // battleId
+            battleId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 48) {
               break;
             }
           }
-          case 64: {
+          case 48: {
             // stageId
             stageId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 56) {
               break;
             }
           }
-          case 88: {
-            // battleId
-            battleId = input.readUInt32();
+          case 56: {
+            // nALHKEDFJNJ
+            nALHKEDFJNJ = input.readUInt32();
             bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // costTime
+            costTime = input.readUInt32();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // bONOKPNOLAC
+            bONOKPNOLAC = input.readUInt32();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 72) {
+              break;
+            }
+          }
+          case 72: {
+            // endStatus
+            final int value = input.readInt32();
+            if (BattleEndStatusOuterClass.BattleEndStatus.forNumber(value) != null) {
+              endStatus = value;
+              bitField0_ |= 0x00000040;
+            }
+            tag = input.readTag();
+            if (tag != 8) {
+              break;
+            }
+          }
+          case 8: {
+            // cCEPICANIJJ
+            cCEPICANIJJ = input.readBool();
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // pMLBDODKKOA
+            pMLBDODKKOA = input.readBool();
+            bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 120) {
               break;
             }
           }
           case 120: {
-            // endStatus
-            final int value = input.readInt32();
-            if (BattleEndStatusOuterClass.BattleEndStatus.forNumber(value) != null) {
-              endStatus = value;
-              bitField0_ |= 0x00000010;
-            }
+            // nIMIHLJJNLH
+            nIMIHLJJNLH = input.readBool();
+            bitField0_ |= 0x00000200;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 42) {
               break;
             }
           }
-          case 80: {
-            // isAiConsiderUltraSkill
-            isAiConsiderUltraSkill = input.readBool();
-            bitField0_ |= 0x00000020;
-            tag = input.readTag();
-            if (tag != 114) {
-              break;
-            }
-          }
-          case 114: {
+          case 42: {
             // stt
             input.readMessage(stt);
-            bitField0_ |= 0x00000040;
+            bitField0_ |= 0x00000400;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 90) {
               break;
             }
           }
-          case 10: {
+          case 90: {
             // turnSnapshotHash
             input.readBytes(turnSnapshotHash);
-            bitField0_ |= 0x00000080;
+            bitField0_ |= 0x00000800;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 34) {
               break;
             }
           }
-          case 98: {
+          case 34: {
+            // oAMBLPAANHG
+            input.readString(oAMBLPAANHG);
+            bitField0_ |= 0x00001000;
+            tag = input.readTag();
+            if (tag != 66) {
+              break;
+            }
+          }
+          case 66: {
             // opList
             tag = input.readRepeatedMessage(opList, tag);
-            bitField0_ |= 0x00000100;
+            bitField0_ |= 0x00002000;
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // bADPNPCCIPL
+            tag = input.readRepeatedMessage(bADPNPCCIPL, tag);
+            bitField0_ |= 0x00004000;
             if (tag != 0) {
               break;
             }
@@ -837,31 +1396,49 @@ public final class PVEBattleResultCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.costTime, costTime);
+        output.writeUInt32(FieldNames.dLEGEAIGABF, dLEGEAIGABF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.clientResVersion, clientResVersion);
+        output.writeUInt32(FieldNames.battleId, battleId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.stageId, stageId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.battleId, battleId);
+        output.writeUInt32(FieldNames.nALHKEDFJNJ, nALHKEDFJNJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeEnum(FieldNames.endStatus, endStatus, BattleEndStatusOuterClass.BattleEndStatus.converter());
+        output.writeUInt32(FieldNames.costTime, costTime);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeBool(FieldNames.isAiConsiderUltraSkill, isAiConsiderUltraSkill);
+        output.writeUInt32(FieldNames.bONOKPNOLAC, bONOKPNOLAC);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeMessage(FieldNames.stt, stt);
+        output.writeEnum(FieldNames.endStatus, endStatus, BattleEndStatusOuterClass.BattleEndStatus.converter());
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeBytes(FieldNames.turnSnapshotHash, turnSnapshotHash);
+        output.writeBool(FieldNames.cCEPICANIJJ, cCEPICANIJJ);
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        output.writeBool(FieldNames.pMLBDODKKOA, pMLBDODKKOA);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeBool(FieldNames.nIMIHLJJNLH, nIMIHLJJNLH);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeMessage(FieldNames.stt, stt);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeBytes(FieldNames.turnSnapshotHash, turnSnapshotHash);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        output.writeString(FieldNames.oAMBLPAANHG, oAMBLPAANHG);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
         output.writeRepeatedMessage(FieldNames.opList, opList);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        output.writeRepeatedMessage(FieldNames.bADPNPCCIPL, bADPNPCCIPL);
       }
       output.endObject();
     }
@@ -873,11 +1450,10 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -424687558:
-          case -269929473: {
-            if (input.isAtField(FieldNames.costTime)) {
+          case -1919853343: {
+            if (input.isAtField(FieldNames.dLEGEAIGABF)) {
               if (!input.trySkipNullValue()) {
-                costTime = input.readUInt32();
+                dLEGEAIGABF = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -885,11 +1461,11 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case -2005674429:
-          case -349907515: {
-            if (input.isAtField(FieldNames.clientResVersion)) {
+          case -1678308365:
+          case -487930366: {
+            if (input.isAtField(FieldNames.battleId)) {
               if (!input.trySkipNullValue()) {
-                clientResVersion = input.readUInt32();
+                battleId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -909,12 +1485,34 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case -1678308365:
-          case -487930366: {
-            if (input.isAtField(FieldNames.battleId)) {
+          case -1727352485: {
+            if (input.isAtField(FieldNames.nALHKEDFJNJ)) {
               if (!input.trySkipNullValue()) {
-                battleId = input.readUInt32();
+                nALHKEDFJNJ = input.readUInt32();
                 bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -424687558:
+          case -269929473: {
+            if (input.isAtField(FieldNames.costTime)) {
+              if (!input.trySkipNullValue()) {
+                costTime = input.readUInt32();
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 224259898: {
+            if (input.isAtField(FieldNames.bONOKPNOLAC)) {
+              if (!input.trySkipNullValue()) {
+                bONOKPNOLAC = input.readUInt32();
+                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -928,7 +1526,7 @@ public final class PVEBattleResultCsReqOuterClass {
                 final BattleEndStatusOuterClass.BattleEndStatus value = input.readEnum(BattleEndStatusOuterClass.BattleEndStatus.converter());
                 if (value != null) {
                   endStatus = value.getNumber();
-                  bitField0_ |= 0x00000010;
+                  bitField0_ |= 0x00000040;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -938,12 +1536,33 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case -792003792:
-          case 524172826: {
-            if (input.isAtField(FieldNames.isAiConsiderUltraSkill)) {
+          case -543722569: {
+            if (input.isAtField(FieldNames.cCEPICANIJJ)) {
               if (!input.trySkipNullValue()) {
-                isAiConsiderUltraSkill = input.readBool();
-                bitField0_ |= 0x00000020;
+                cCEPICANIJJ = input.readBool();
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1707440184: {
+            if (input.isAtField(FieldNames.pMLBDODKKOA)) {
+              if (!input.trySkipNullValue()) {
+                pMLBDODKKOA = input.readBool();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1525580273: {
+            if (input.isAtField(FieldNames.nIMIHLJJNLH)) {
+              if (!input.trySkipNullValue()) {
+                nIMIHLJJNLH = input.readBool();
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -954,7 +1573,7 @@ public final class PVEBattleResultCsReqOuterClass {
             if (input.isAtField(FieldNames.stt)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(stt);
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000400;
               }
             } else {
               input.skipUnknownField();
@@ -966,7 +1585,18 @@ public final class PVEBattleResultCsReqOuterClass {
             if (input.isAtField(FieldNames.turnSnapshotHash)) {
               if (!input.trySkipNullValue()) {
                 input.readBytes(turnSnapshotHash);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000800;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1704209950: {
+            if (input.isAtField(FieldNames.oAMBLPAANHG)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(oAMBLPAANHG);
+                bitField0_ |= 0x00001000;
               }
             } else {
               input.skipUnknownField();
@@ -978,7 +1608,18 @@ public final class PVEBattleResultCsReqOuterClass {
             if (input.isAtField(FieldNames.opList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(opList);
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00002000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -325007432: {
+            if (input.isAtField(FieldNames.bADPNPCCIPL)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(bADPNPCCIPL);
+                bitField0_ |= 0x00004000;
               }
             } else {
               input.skipUnknownField();
@@ -1025,6 +1666,360 @@ public final class PVEBattleResultCsReqOuterClass {
       return PVEBattleResultCsReqFactory.INSTANCE;
     }
 
+    /**
+     * Protobuf type {@code BADPNPCCIPLEntry}
+     */
+    public static final class BADPNPCCIPLEntry extends ProtoMessage<BADPNPCCIPLEntry> implements Cloneable {
+      private static final long serialVersionUID = 0L;
+
+      /**
+       * <code>optional uint32 value = 2;</code>
+       */
+      private int value_;
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      private final Utf8String key = Utf8String.newEmptyInstance();
+
+      private BADPNPCCIPLEntry() {
+      }
+
+      /**
+       * @return a new empty instance of {@code BADPNPCCIPLEntry}
+       */
+      public static BADPNPCCIPLEntry newInstance() {
+        return new BADPNPCCIPLEntry();
+      }
+
+      /**
+       * <code>optional uint32 value = 2;</code>
+       * @return whether the value_ field is set
+       */
+      public boolean hasValue() {
+        return (bitField0_ & 0x00000001) != 0;
+      }
+
+      /**
+       * <code>optional uint32 value = 2;</code>
+       * @return this
+       */
+      public BADPNPCCIPLEntry clearValue() {
+        bitField0_ &= ~0x00000001;
+        value_ = 0;
+        return this;
+      }
+
+      /**
+       * <code>optional uint32 value = 2;</code>
+       * @return the value_
+       */
+      public int getValue() {
+        return value_;
+      }
+
+      /**
+       * <code>optional uint32 value = 2;</code>
+       * @param value the value_ to set
+       * @return this
+       */
+      public BADPNPCCIPLEntry setValue(final int value) {
+        bitField0_ |= 0x00000001;
+        value_ = value;
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return whether the key field is set
+       */
+      public boolean hasKey() {
+        return (bitField0_ & 0x00000002) != 0;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return this
+       */
+      public BADPNPCCIPLEntry clearKey() {
+        bitField0_ &= ~0x00000002;
+        key.clear();
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return the key
+       */
+      public String getKey() {
+        return key.getString();
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return internal {@code Utf8String} representation of key for reading
+       */
+      public Utf8String getKeyBytes() {
+        return this.key;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return internal {@code Utf8String} representation of key for modifications
+       */
+      public Utf8String getMutableKeyBytes() {
+        bitField0_ |= 0x00000002;
+        return this.key;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @param value the key to set
+       * @return this
+       */
+      public BADPNPCCIPLEntry setKey(final CharSequence value) {
+        bitField0_ |= 0x00000002;
+        key.copyFrom(value);
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @param value the key to set
+       * @return this
+       */
+      public BADPNPCCIPLEntry setKey(final Utf8String value) {
+        bitField0_ |= 0x00000002;
+        key.copyFrom(value);
+        return this;
+      }
+
+      @Override
+      public BADPNPCCIPLEntry copyFrom(final BADPNPCCIPLEntry other) {
+        cachedSize = other.cachedSize;
+        if ((bitField0_ | other.bitField0_) != 0) {
+          bitField0_ = other.bitField0_;
+          value_ = other.value_;
+          key.copyFrom(other.key);
+        }
+        return this;
+      }
+
+      @Override
+      public BADPNPCCIPLEntry mergeFrom(final BADPNPCCIPLEntry other) {
+        if (other.isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        if (other.hasValue()) {
+          setValue(other.value_);
+        }
+        if (other.hasKey()) {
+          getMutableKeyBytes().copyFrom(other.key);
+        }
+        return this;
+      }
+
+      @Override
+      public BADPNPCCIPLEntry clear() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        value_ = 0;
+        key.clear();
+        return this;
+      }
+
+      @Override
+      public BADPNPCCIPLEntry clearQuick() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        key.clear();
+        return this;
+      }
+
+      @Override
+      public boolean equals(Object o) {
+        if (o == this) {
+          return true;
+        }
+        if (!(o instanceof BADPNPCCIPLEntry)) {
+          return false;
+        }
+        BADPNPCCIPLEntry other = (BADPNPCCIPLEntry) o;
+        return bitField0_ == other.bitField0_
+          && (!hasValue() || value_ == other.value_)
+          && (!hasKey() || key.equals(other.key));
+      }
+
+      @Override
+      public void writeTo(final ProtoSink output) throws IOException {
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeRawByte((byte) 16);
+          output.writeUInt32NoTag(value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeRawByte((byte) 10);
+          output.writeStringNoTag(key);
+        }
+      }
+
+      @Override
+      protected int computeSerializedSize() {
+        int size = 0;
+        if ((bitField0_ & 0x00000001) != 0) {
+          size += 1 + ProtoSink.computeUInt32SizeNoTag(value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          size += 1 + ProtoSink.computeStringSizeNoTag(key);
+        }
+        return size;
+      }
+
+      @Override
+      @SuppressWarnings("fallthrough")
+      public BADPNPCCIPLEntry mergeFrom(final ProtoSource input) throws IOException {
+        // Enabled Fall-Through Optimization (QuickBuffers)
+        int tag = input.readTag();
+        while (true) {
+          switch (tag) {
+            case 16: {
+              // value_
+              value_ = input.readUInt32();
+              bitField0_ |= 0x00000001;
+              tag = input.readTag();
+              if (tag != 10) {
+                break;
+              }
+            }
+            case 10: {
+              // key
+              input.readString(key);
+              bitField0_ |= 0x00000002;
+              tag = input.readTag();
+              if (tag != 0) {
+                break;
+              }
+            }
+            case 0: {
+              return this;
+            }
+            default: {
+              if (!input.skipField(tag)) {
+                return this;
+              }
+              tag = input.readTag();
+              break;
+            }
+          }
+        }
+      }
+
+      @Override
+      public void writeTo(final JsonSink output) throws IOException {
+        output.beginObject();
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeUInt32(FieldNames.value_, value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeString(FieldNames.key, key);
+        }
+        output.endObject();
+      }
+
+      @Override
+      public BADPNPCCIPLEntry mergeFrom(final JsonSource input) throws IOException {
+        if (!input.beginObject()) {
+          return this;
+        }
+        while (!input.isAtEnd()) {
+          switch (input.readFieldHash()) {
+            case 111972721: {
+              if (input.isAtField(FieldNames.value_)) {
+                if (!input.trySkipNullValue()) {
+                  value_ = input.readUInt32();
+                  bitField0_ |= 0x00000001;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            case 106079: {
+              if (input.isAtField(FieldNames.key)) {
+                if (!input.trySkipNullValue()) {
+                  input.readString(key);
+                  bitField0_ |= 0x00000002;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            default: {
+              input.skipUnknownField();
+              break;
+            }
+          }
+        }
+        input.endObject();
+        return this;
+      }
+
+      @Override
+      public BADPNPCCIPLEntry clone() {
+        return new BADPNPCCIPLEntry().copyFrom(this);
+      }
+
+      @Override
+      public boolean isEmpty() {
+        return ((bitField0_) == 0);
+      }
+
+      public static BADPNPCCIPLEntry parseFrom(final byte[] data) throws
+          InvalidProtocolBufferException {
+        return ProtoMessage.mergeFrom(new BADPNPCCIPLEntry(), data).checkInitialized();
+      }
+
+      public static BADPNPCCIPLEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new BADPNPCCIPLEntry(), input).checkInitialized();
+      }
+
+      public static BADPNPCCIPLEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new BADPNPCCIPLEntry(), input).checkInitialized();
+      }
+
+      /**
+       * @return factory for creating BADPNPCCIPLEntry messages
+       */
+      public static MessageFactory<BADPNPCCIPLEntry> getFactory() {
+        return BADPNPCCIPLEntryFactory.INSTANCE;
+      }
+
+      private enum BADPNPCCIPLEntryFactory implements MessageFactory<BADPNPCCIPLEntry> {
+        INSTANCE;
+
+        @Override
+        public BADPNPCCIPLEntry create() {
+          return BADPNPCCIPLEntry.newInstance();
+        }
+      }
+
+      /**
+       * Contains name constants used for serializing JSON
+       */
+      static class FieldNames {
+        static final FieldName value_ = FieldName.forField("value");
+
+        static final FieldName key = FieldName.forField("key");
+      }
+    }
+
     private enum PVEBattleResultCsReqFactory implements MessageFactory<PVEBattleResultCsReq> {
       INSTANCE;
 
@@ -1038,23 +2033,35 @@ public final class PVEBattleResultCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName costTime = FieldName.forField("costTime", "cost_time");
-
-      static final FieldName clientResVersion = FieldName.forField("clientResVersion", "client_res_version");
-
-      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+      static final FieldName dLEGEAIGABF = FieldName.forField("DLEGEAIGABF");
 
       static final FieldName battleId = FieldName.forField("battleId", "battle_id");
 
+      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+
+      static final FieldName nALHKEDFJNJ = FieldName.forField("NALHKEDFJNJ");
+
+      static final FieldName costTime = FieldName.forField("costTime", "cost_time");
+
+      static final FieldName bONOKPNOLAC = FieldName.forField("BONOKPNOLAC");
+
       static final FieldName endStatus = FieldName.forField("endStatus", "end_status");
 
-      static final FieldName isAiConsiderUltraSkill = FieldName.forField("isAiConsiderUltraSkill", "is_ai_consider_ultra_skill");
+      static final FieldName cCEPICANIJJ = FieldName.forField("CCEPICANIJJ");
+
+      static final FieldName pMLBDODKKOA = FieldName.forField("PMLBDODKKOA");
+
+      static final FieldName nIMIHLJJNLH = FieldName.forField("NIMIHLJJNLH");
 
       static final FieldName stt = FieldName.forField("stt");
 
       static final FieldName turnSnapshotHash = FieldName.forField("turnSnapshotHash", "turn_snapshot_hash");
 
+      static final FieldName oAMBLPAANHG = FieldName.forField("OAMBLPAANHG");
+
       static final FieldName opList = FieldName.forField("opList", "op_list");
+
+      static final FieldName bADPNPCCIPL = FieldName.forField("BADPNPCCIPL");
     }
   }
 }

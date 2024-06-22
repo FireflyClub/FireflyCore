@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GroupStateChangeScRspOuterClass {
   /**
-   * <pre>
-   *  Adeloidmhaj
-   * </pre>
-   *
    * Protobuf type {@code GroupStateChangeScRsp}
    */
   public static final class GroupStateChangeScRsp extends ProtoMessage<GroupStateChangeScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      */
     private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
 
@@ -36,10 +32,6 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Adeloidmhaj
-     * </pre>
-     *
      * @return a new empty instance of {@code GroupStateChangeScRsp}
      */
     public static GroupStateChangeScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +47,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
     public GroupStateChangeScRsp clearRetcode() {
@@ -65,7 +57,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +65,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      * @return whether the groupStateInfo field is set
      */
     public boolean hasGroupStateInfo() {
@@ -92,7 +84,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      * @return this
      */
     public GroupStateChangeScRsp clearGroupStateInfo() {
@@ -102,7 +94,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 2;</code>
+     * <code>optional .GroupStateInfo group_state_info = 3;</code>
      * @param value the groupStateInfo to set
      * @return this
      */
@@ -207,11 +199,11 @@ public final class GroupStateChangeScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(groupStateInfo);
       }
     }
@@ -235,16 +227,16 @@ public final class GroupStateChangeScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 88: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 26) {
               break;
             }
           }
-          case 18: {
+          case 26: {
             // groupStateInfo
             input.readMessage(groupStateInfo);
             bitField0_ |= 0x00000002;

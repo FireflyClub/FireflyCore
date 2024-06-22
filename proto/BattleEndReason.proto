@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// GFNDHIBPPBA
 enum BattleEndReason {
   BATTLE_END_REASON_NONE = 0;
   BATTLE_END_REASON_ALL_DIE = 1;

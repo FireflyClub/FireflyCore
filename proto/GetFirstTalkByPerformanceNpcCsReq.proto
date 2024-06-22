@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Peabfdfkmim
 message GetFirstTalkByPerformanceNpcCsReq {
-    repeated uint32 npc_talk_list = 14; // kajphbfibik
+    repeated uint32 npc_talk_list = 2; // PEFPNAPIBBG
 }

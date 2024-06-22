@@ -13,18 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ContentInfoOuterClass {
   /**
+   * <pre>
+   *  FIEDMJCNIKO
+   * </pre>
+   *
    * Protobuf type {@code ContentInfo}
    */
   public static final class ContentInfo extends ProtoMessage<ContentInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 content_id = 12;</code>
+     * <code>optional uint32 map_entry_id = 8;</code>
      */
-    private int contentId;
+    private int mapEntryId;
 
     /**
-     * <code>optional .ContentPackageStatus status = 3;</code>
+     * <code>optional .ContentPackageStatus status = 7;</code>
      */
     private int status;
 
@@ -32,6 +36,10 @@ public final class ContentInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FIEDMJCNIKO
+     * </pre>
+     *
      * @return a new empty instance of {@code ContentInfo}
      */
     public static ContentInfo newInstance() {
@@ -39,44 +47,44 @@ public final class ContentInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 content_id = 12;</code>
-     * @return whether the contentId field is set
+     * <code>optional uint32 map_entry_id = 8;</code>
+     * @return whether the mapEntryId field is set
      */
-    public boolean hasContentId() {
+    public boolean hasMapEntryId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 content_id = 12;</code>
+     * <code>optional uint32 map_entry_id = 8;</code>
      * @return this
      */
-    public ContentInfo clearContentId() {
+    public ContentInfo clearMapEntryId() {
       bitField0_ &= ~0x00000001;
-      contentId = 0;
+      mapEntryId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 content_id = 12;</code>
-     * @return the contentId
+     * <code>optional uint32 map_entry_id = 8;</code>
+     * @return the mapEntryId
      */
-    public int getContentId() {
-      return contentId;
+    public int getMapEntryId() {
+      return mapEntryId;
     }
 
     /**
-     * <code>optional uint32 content_id = 12;</code>
-     * @param value the contentId to set
+     * <code>optional uint32 map_entry_id = 8;</code>
+     * @param value the mapEntryId to set
      * @return this
      */
-    public ContentInfo setContentId(final int value) {
+    public ContentInfo setMapEntryId(final int value) {
       bitField0_ |= 0x00000001;
-      contentId = value;
+      mapEntryId = value;
       return this;
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 3;</code>
+     * <code>optional .ContentPackageStatus status = 7;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -84,7 +92,7 @@ public final class ContentInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 3;</code>
+     * <code>optional .ContentPackageStatus status = 7;</code>
      * @return this
      */
     public ContentInfo clearStatus() {
@@ -94,7 +102,7 @@ public final class ContentInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 3;</code>
+     * <code>optional .ContentPackageStatus status = 7;</code>
      * @return the status
      */
     public ContentPackageStatusOuterClass.ContentPackageStatus getStatus() {
@@ -127,7 +135,7 @@ public final class ContentInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 3;</code>
+     * <code>optional .ContentPackageStatus status = 7;</code>
      * @param value the status to set
      * @return this
      */
@@ -142,7 +150,7 @@ public final class ContentInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        contentId = other.contentId;
+        mapEntryId = other.mapEntryId;
         status = other.status;
       }
       return this;
@@ -154,8 +162,8 @@ public final class ContentInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasContentId()) {
-        setContentId(other.contentId);
+      if (other.hasMapEntryId()) {
+        setMapEntryId(other.mapEntryId);
       }
       if (other.hasStatus()) {
         setStatusValue(other.status);
@@ -170,7 +178,7 @@ public final class ContentInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      contentId = 0;
+      mapEntryId = 0;
       status = 0;
       return this;
     }
@@ -195,18 +203,18 @@ public final class ContentInfoOuterClass {
       }
       ContentInfo other = (ContentInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasContentId() || contentId == other.contentId)
+        && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
         && (!hasStatus() || status == other.status);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(contentId);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(status);
       }
     }
@@ -215,7 +223,7 @@ public final class ContentInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(contentId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(status);
@@ -230,16 +238,16 @@ public final class ContentInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // contentId
-            contentId = input.readUInt32();
+          case 64: {
+            // mapEntryId
+            mapEntryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 56) {
               break;
             }
           }
-          case 24: {
+          case 56: {
             // status
             final int value = input.readInt32();
             if (ContentPackageStatusOuterClass.ContentPackageStatus.forNumber(value) != null) {
@@ -269,7 +277,7 @@ public final class ContentInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.contentId, contentId);
+        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeEnum(FieldNames.status, status, ContentPackageStatusOuterClass.ContentPackageStatus.converter());
@@ -284,11 +292,11 @@ public final class ContentInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -407108748:
-          case 264552097: {
-            if (input.isAtField(FieldNames.contentId)) {
+          case -1475203023:
+          case 436670347: {
+            if (input.isAtField(FieldNames.mapEntryId)) {
               if (!input.trySkipNullValue()) {
-                contentId = input.readUInt32();
+                mapEntryId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -364,7 +372,7 @@ public final class ContentInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName contentId = FieldName.forField("contentId", "content_id");
+      static final FieldName mapEntryId = FieldName.forField("mapEntryId", "map_entry_id");
 
       static final FieldName status = FieldName.forField("status");
     }

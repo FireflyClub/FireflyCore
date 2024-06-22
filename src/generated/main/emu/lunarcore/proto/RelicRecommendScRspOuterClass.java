@@ -11,35 +11,35 @@ import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 
-public final class UnlockTutorialScRspOuterClass {
+public final class RelicRecommendScRspOuterClass {
   /**
-   * Protobuf type {@code UnlockTutorialScRsp}
+   * Protobuf type {@code RelicRecommendScRsp}
    */
-  public static final class UnlockTutorialScRsp extends ProtoMessage<UnlockTutorialScRsp> implements Cloneable {
+  public static final class RelicRecommendScRsp extends ProtoMessage<RelicRecommendScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 11;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .Tutorial tutorial = 3;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      */
-    private final TutorialOuterClass.Tutorial tutorial = TutorialOuterClass.Tutorial.newInstance();
+    private int avatarId;
 
-    private UnlockTutorialScRsp() {
+    private RelicRecommendScRsp() {
     }
 
     /**
-     * @return a new empty instance of {@code UnlockTutorialScRsp}
+     * @return a new empty instance of {@code RelicRecommendScRsp}
      */
-    public static UnlockTutorialScRsp newInstance() {
-      return new UnlockTutorialScRsp();
+    public static RelicRecommendScRsp newInstance() {
+      return new RelicRecommendScRsp();
     }
 
     /**
-     * <code>optional uint32 retcode = 11;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,17 +47,17 @@ public final class UnlockTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 11;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
-    public UnlockTutorialScRsp clearRetcode() {
+    public RelicRecommendScRsp clearRetcode() {
       bitField0_ &= ~0x00000001;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 11;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,86 +65,66 @@ public final class UnlockTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 11;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
-    public UnlockTutorialScRsp setRetcode(final int value) {
+    public RelicRecommendScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000001;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional .Tutorial tutorial = 3;</code>
-     * @return whether the tutorial field is set
+     * <code>optional uint32 avatar_id = 11;</code>
+     * @return whether the avatarId field is set
      */
-    public boolean hasTutorial() {
+    public boolean hasAvatarId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .Tutorial tutorial = 3;</code>
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return this
      */
-    public UnlockTutorialScRsp clearTutorial() {
+    public RelicRecommendScRsp clearAvatarId() {
       bitField0_ &= ~0x00000002;
-      tutorial.clear();
+      avatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional .Tutorial tutorial = 3;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableTutorial()} if you want to modify it.
-     *
-     * @return internal storage object for reading
+     * <code>optional uint32 avatar_id = 11;</code>
+     * @return the avatarId
      */
-    public TutorialOuterClass.Tutorial getTutorial() {
-      return tutorial;
+    public int getAvatarId() {
+      return avatarId;
     }
 
     /**
-     * <code>optional .Tutorial tutorial = 3;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public TutorialOuterClass.Tutorial getMutableTutorial() {
-      bitField0_ |= 0x00000002;
-      return tutorial;
-    }
-
-    /**
-     * <code>optional .Tutorial tutorial = 3;</code>
-     * @param value the tutorial to set
+     * <code>optional uint32 avatar_id = 11;</code>
+     * @param value the avatarId to set
      * @return this
      */
-    public UnlockTutorialScRsp setTutorial(final TutorialOuterClass.Tutorial value) {
+    public RelicRecommendScRsp setAvatarId(final int value) {
       bitField0_ |= 0x00000002;
-      tutorial.copyFrom(value);
+      avatarId = value;
       return this;
     }
 
     @Override
-    public UnlockTutorialScRsp copyFrom(final UnlockTutorialScRsp other) {
+    public RelicRecommendScRsp copyFrom(final RelicRecommendScRsp other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        tutorial.copyFrom(other.tutorial);
+        avatarId = other.avatarId;
       }
       return this;
     }
 
     @Override
-    public UnlockTutorialScRsp mergeFrom(final UnlockTutorialScRsp other) {
+    public RelicRecommendScRsp mergeFrom(final RelicRecommendScRsp other) {
       if (other.isEmpty()) {
         return this;
       }
@@ -152,32 +132,31 @@ public final class UnlockTutorialScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasTutorial()) {
-        getMutableTutorial().mergeFrom(other.tutorial);
+      if (other.hasAvatarId()) {
+        setAvatarId(other.avatarId);
       }
       return this;
     }
 
     @Override
-    public UnlockTutorialScRsp clear() {
+    public RelicRecommendScRsp clear() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      tutorial.clear();
+      avatarId = 0;
       return this;
     }
 
     @Override
-    public UnlockTutorialScRsp clearQuick() {
+    public RelicRecommendScRsp clearQuick() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
-      tutorial.clearQuick();
       return this;
     }
 
@@ -186,24 +165,24 @@ public final class UnlockTutorialScRspOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof UnlockTutorialScRsp)) {
+      if (!(o instanceof RelicRecommendScRsp)) {
         return false;
       }
-      UnlockTutorialScRsp other = (UnlockTutorialScRsp) o;
+      RelicRecommendScRsp other = (RelicRecommendScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasTutorial() || tutorial.equals(other.tutorial));
+        && (!hasAvatarId() || avatarId == other.avatarId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 26);
-        output.writeMessageNoTag(tutorial);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(avatarId);
       }
     }
 
@@ -214,30 +193,30 @@ public final class UnlockTutorialScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(tutorial);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarId);
       }
       return size;
     }
 
     @Override
     @SuppressWarnings("fallthrough")
-    public UnlockTutorialScRsp mergeFrom(final ProtoSource input) throws IOException {
+    public RelicRecommendScRsp mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 88) {
               break;
             }
           }
-          case 26: {
-            // tutorial
-            input.readMessage(tutorial);
+          case 88: {
+            // avatarId
+            avatarId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -265,13 +244,13 @@ public final class UnlockTutorialScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.tutorial, tutorial);
+        output.writeUInt32(FieldNames.avatarId, avatarId);
       }
       output.endObject();
     }
 
     @Override
-    public UnlockTutorialScRsp mergeFrom(final JsonSource input) throws IOException {
+    public RelicRecommendScRsp mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
@@ -288,10 +267,11 @@ public final class UnlockTutorialScRspOuterClass {
             }
             break;
           }
-          case 193276766: {
-            if (input.isAtField(FieldNames.tutorial)) {
+          case 1787287636:
+          case -428636735: {
+            if (input.isAtField(FieldNames.avatarId)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(tutorial);
+                avatarId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -310,8 +290,8 @@ public final class UnlockTutorialScRspOuterClass {
     }
 
     @Override
-    public UnlockTutorialScRsp clone() {
-      return new UnlockTutorialScRsp().copyFrom(this);
+    public RelicRecommendScRsp clone() {
+      return new RelicRecommendScRsp().copyFrom(this);
     }
 
     @Override
@@ -319,32 +299,32 @@ public final class UnlockTutorialScRspOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static UnlockTutorialScRsp parseFrom(final byte[] data) throws
+    public static RelicRecommendScRsp parseFrom(final byte[] data) throws
         InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialScRsp(), data).checkInitialized();
+      return ProtoMessage.mergeFrom(new RelicRecommendScRsp(), data).checkInitialized();
     }
 
-    public static UnlockTutorialScRsp parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialScRsp(), input).checkInitialized();
+    public static RelicRecommendScRsp parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new RelicRecommendScRsp(), input).checkInitialized();
     }
 
-    public static UnlockTutorialScRsp parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new UnlockTutorialScRsp(), input).checkInitialized();
+    public static RelicRecommendScRsp parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new RelicRecommendScRsp(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating UnlockTutorialScRsp messages
+     * @return factory for creating RelicRecommendScRsp messages
      */
-    public static MessageFactory<UnlockTutorialScRsp> getFactory() {
-      return UnlockTutorialScRspFactory.INSTANCE;
+    public static MessageFactory<RelicRecommendScRsp> getFactory() {
+      return RelicRecommendScRspFactory.INSTANCE;
     }
 
-    private enum UnlockTutorialScRspFactory implements MessageFactory<UnlockTutorialScRsp> {
+    private enum RelicRecommendScRspFactory implements MessageFactory<RelicRecommendScRsp> {
       INSTANCE;
 
       @Override
-      public UnlockTutorialScRsp create() {
-        return UnlockTutorialScRsp.newInstance();
+      public RelicRecommendScRsp create() {
+        return RelicRecommendScRsp.newInstance();
       }
     }
 
@@ -354,7 +334,7 @@ public final class UnlockTutorialScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName tutorial = FieldName.forField("tutorial");
+      static final FieldName avatarId = FieldName.forField("avatarId", "avatar_id");
     }
   }
 }

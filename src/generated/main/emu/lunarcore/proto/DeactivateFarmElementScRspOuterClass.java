@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class DeactivateFarmElementScRspOuterClass {
   /**
-   * <pre>
-   *  Fmnggalhibo
-   * </pre>
-   *
    * Protobuf type {@code DeactivateFarmElementScRsp}
    */
   public static final class DeactivateFarmElementScRsp extends ProtoMessage<DeactivateFarmElementScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 5;</code>
      */
     private int retcode;
 
@@ -36,10 +32,6 @@ public final class DeactivateFarmElementScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Fmnggalhibo
-     * </pre>
-     *
      * @return a new empty instance of {@code DeactivateFarmElementScRsp}
      */
     public static DeactivateFarmElementScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class DeactivateFarmElementScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 5;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +47,7 @@ public final class DeactivateFarmElementScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 5;</code>
      * @return this
      */
     public DeactivateFarmElementScRsp clearRetcode() {
@@ -65,7 +57,7 @@ public final class DeactivateFarmElementScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 5;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +65,7 @@ public final class DeactivateFarmElementScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 5;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -185,7 +177,7 @@ public final class DeactivateFarmElementScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -213,7 +205,7 @@ public final class DeactivateFarmElementScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 40: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;

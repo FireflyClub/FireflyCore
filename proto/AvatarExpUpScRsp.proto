@@ -4,7 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "PileItem.proto";
 
+// AJHOKJEMJON
 message AvatarExpUpScRsp {
-    repeated PileItem return_item_list = 5;
-    uint32 retcode = 6;
+    uint32 retcode = 9;
+    repeated PileItem return_item_list = 12;
 }

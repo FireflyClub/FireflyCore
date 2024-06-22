@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetEnteredSceneScRspOuterClass {
   /**
-   * <pre>
-   *  Fchnfpafjce
-   * </pre>
-   *
    * Protobuf type {@code GetEnteredSceneScRsp}
    */
   public static final class GetEnteredSceneScRsp extends ProtoMessage<GetEnteredSceneScRsp> implements Cloneable {
@@ -41,10 +37,6 @@ public final class GetEnteredSceneScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Fchnfpafjce
-     * </pre>
-     *
      * @return a new empty instance of {@code GetEnteredSceneScRsp}
      */
     public static GetEnteredSceneScRsp newInstance() {

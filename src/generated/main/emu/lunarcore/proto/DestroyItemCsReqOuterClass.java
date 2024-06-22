@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class DestroyItemCsReqOuterClass {
   /**
-   * <pre>
-   *  Ijgnacmdkmn
-   * </pre>
-   *
    * Protobuf type {@code DestroyItemCsReq}
    */
   public static final class DestroyItemCsReq extends ProtoMessage<DestroyItemCsReq> implements Cloneable {
@@ -41,10 +37,6 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ijgnacmdkmn
-     * </pre>
-     *
      * @return a new empty instance of {@code DestroyItemCsReq}
      */
     public static DestroyItemCsReq newInstance() {

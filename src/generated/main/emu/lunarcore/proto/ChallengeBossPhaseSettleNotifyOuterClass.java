@@ -44,6 +44,10 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     private int scoreTwo;
 
     /**
+     * <pre>
+     *  HAHLJJFHGAD
+     * </pre>
+     *
      * <code>optional uint32 challenge_score = 14;</code>
      */
     private int challengeScore;
@@ -240,6 +244,10 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  HAHLJJFHGAD
+     * </pre>
+     *
      * <code>optional uint32 challenge_score = 14;</code>
      * @return whether the challengeScore field is set
      */
@@ -248,6 +256,10 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  HAHLJJFHGAD
+     * </pre>
+     *
      * <code>optional uint32 challenge_score = 14;</code>
      * @return this
      */
@@ -258,6 +270,10 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  HAHLJJFHGAD
+     * </pre>
+     *
      * <code>optional uint32 challenge_score = 14;</code>
      * @return the challengeScore
      */
@@ -266,6 +282,10 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  HAHLJJFHGAD
+     * </pre>
+     *
      * <code>optional uint32 challenge_score = 14;</code>
      * @param value the challengeScore to set
      * @return this

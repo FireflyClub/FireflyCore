@@ -10,6 +10,8 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.ProtoUtil;
+import us.hebi.quickbuf.RepeatedMessage;
 
 public final class AvatarBattleInfoOuterClass {
   /**
@@ -19,24 +21,219 @@ public final class AvatarBattleInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  FBOCNKPDIGE
+     * </pre>
+     *
+     * <code>optional double total_damage = 10;</code>
+     */
+    private double totalDamage;
+
+    /**
+     * <pre>
+     *  BHBBGAFGHAJ
+     * </pre>
+     *
+     * <code>optional double total_heal = 11;</code>
+     */
+    private double totalHeal;
+
+    /**
+     * <pre>
+     *  BMOKIPOKAMG
+     * </pre>
+     *
+     * <code>optional double total_damage_taken = 12;</code>
+     */
+    private double totalDamageTaken;
+
+    /**
+     * <pre>
+     *  GIPLCCDKKKO
+     * </pre>
+     *
+     * <code>optional double total_hp_recover = 13;</code>
+     */
+    private double totalHpRecover;
+
+    /**
+     * <pre>
+     *  MJOIOLPFHCA
+     * </pre>
+     *
+     * <code>optional double total_sp_cost = 14;</code>
+     */
+    private double totalSpCost;
+
+    /**
+     * <pre>
+     *  OCAMJGICOKM
+     * </pre>
+     *
+     * <code>optional double total_break_damage = 17;</code>
+     */
+    private double totalBreakDamage;
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+     *  repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+     *  repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+     *  repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+     * </pre>
+     *
+     * <code>optional double delay_cumulate = 22;</code>
+     */
+    private double delayCumulate;
+
+    /**
+     * <pre>
+     *  LKMDCBDDEII
+     * </pre>
+     *
+     * <code>optional double total_shield = 30;</code>
+     */
+    private double totalShield;
+
+    /**
+     * <pre>
+     *  HDNIKGNGHED
+     * </pre>
+     *
+     * <code>optional double total_shield_taken = 31;</code>
+     */
+    private double totalShieldTaken;
+
+    /**
+     * <pre>
+     *  IAFGHBGAMAD
+     * </pre>
+     *
+     * <code>optional double total_shield_damage = 32;</code>
+     */
+    private double totalShieldDamage;
+
+    /**
      * <code>optional uint32 id = 2;</code>
      */
     private int id;
 
     /**
+     * <pre>
+     *  CAFBLGHCLMN
+     * </pre>
+     *
      * <code>optional uint32 avatar_level = 3;</code>
      */
     private int avatarLevel;
 
     /**
+     * <pre>
+     *  MELPINLHNMK
+     * </pre>
+     *
      * <code>optional uint32 avatar_rank = 4;</code>
      */
     private int avatarRank;
 
     /**
+     * <pre>
+     *  MCJFIEKGCLG
+     * </pre>
+     *
      * <code>optional uint32 avatar_promotion = 5;</code>
      */
     private int avatarPromotion;
+
+    /**
+     * <pre>
+     *  repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 9;</code>
+     */
+    private int totalTurns;
+
+    /**
+     * <pre>
+     *  ECKBFIJDLNM
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 15;</code>
+     */
+    private int stageId;
+
+    /**
+     * <pre>
+     *  BFMLOHFLIBO
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 16;</code>
+     */
+    private int stageType;
+
+    /**
+     * <pre>
+     *  NOIAEIOIJNH
+     * </pre>
+     *
+     * <code>optional uint32 total_sp_add = 23;</code>
+     */
+    private int totalSpAdd;
+
+    /**
+     * <pre>
+     *  HPEPNJOKFIK
+     * </pre>
+     *
+     * <code>optional uint32 total_bp_cost = 25;</code>
+     */
+    private int totalBpCost;
+
+    /**
+     * <pre>
+     *  BIJMNMKNCMH
+     * </pre>
+     *
+     * <code>optional uint32 die_times = 26;</code>
+     */
+    private int dieTimes;
+
+    /**
+     * <pre>
+     *  EFFLIHGLCIF
+     * </pre>
+     *
+     * <code>optional uint32 revive_times = 27;</code>
+     */
+    private int reviveTimes;
+
+    /**
+     * <pre>
+     *  NCGIJAILOAJ
+     * </pre>
+     *
+     * <code>optional uint32 break_times = 28;</code>
+     */
+    private int breakTimes;
+
+    /**
+     * <pre>
+     *  DAKDIJADJGC
+     * </pre>
+     *
+     * <code>optional uint32 extra_turns = 29;</code>
+     */
+    private int extraTurns;
+
+    /**
+     * <pre>
+     *  HFLPMICEAEJ
+     * </pre>
+     *
+     * <code>optional uint32 assist_uid = 35;</code>
+     */
+    private int assistUid;
 
     /**
      * <code>optional .AvatarType avatar_type = 1;</code>
@@ -45,48 +242,48 @@ public final class AvatarBattleInfoOuterClass {
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
      */
     private final AvatarPropertyOuterClass.AvatarProperty avatarStatus = AvatarPropertyOuterClass.AvatarProperty.newInstance();
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     */
+    private final AvatarPropertyOuterClass.AvatarProperty initialStatus = AvatarPropertyOuterClass.AvatarProperty.newInstance();
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     */
+    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> avatarSkill = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     */
+    private final RepeatedMessage<SpAddSourceOuterClass.SpAddSource> spAddSource = RepeatedMessage.newEmptyInstance(SpAddSourceOuterClass.SpAddSource.getFactory());
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     */
+    private final RepeatedMessage<BattleRelicOuterClass.BattleRelic> battleRelicList = RepeatedMessage.newEmptyInstance(BattleRelicOuterClass.BattleRelic.getFactory());
 
     private AvatarBattleInfo() {
     }
@@ -99,11 +296,553 @@ public final class AvatarBattleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  FBOCNKPDIGE
+     * </pre>
+     *
+     * <code>optional double total_damage = 10;</code>
+     * @return whether the totalDamage field is set
+     */
+    public boolean hasTotalDamage() {
+      return (bitField0_ & 0x00000001) != 0;
+    }
+
+    /**
+     * <pre>
+     *  FBOCNKPDIGE
+     * </pre>
+     *
+     * <code>optional double total_damage = 10;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalDamage() {
+      bitField0_ &= ~0x00000001;
+      totalDamage = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  FBOCNKPDIGE
+     * </pre>
+     *
+     * <code>optional double total_damage = 10;</code>
+     * @return the totalDamage
+     */
+    public double getTotalDamage() {
+      return totalDamage;
+    }
+
+    /**
+     * <pre>
+     *  FBOCNKPDIGE
+     * </pre>
+     *
+     * <code>optional double total_damage = 10;</code>
+     * @param value the totalDamage to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalDamage(final double value) {
+      bitField0_ |= 0x00000001;
+      totalDamage = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BHBBGAFGHAJ
+     * </pre>
+     *
+     * <code>optional double total_heal = 11;</code>
+     * @return whether the totalHeal field is set
+     */
+    public boolean hasTotalHeal() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BHBBGAFGHAJ
+     * </pre>
+     *
+     * <code>optional double total_heal = 11;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalHeal() {
+      bitField0_ &= ~0x00000002;
+      totalHeal = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BHBBGAFGHAJ
+     * </pre>
+     *
+     * <code>optional double total_heal = 11;</code>
+     * @return the totalHeal
+     */
+    public double getTotalHeal() {
+      return totalHeal;
+    }
+
+    /**
+     * <pre>
+     *  BHBBGAFGHAJ
+     * </pre>
+     *
+     * <code>optional double total_heal = 11;</code>
+     * @param value the totalHeal to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalHeal(final double value) {
+      bitField0_ |= 0x00000002;
+      totalHeal = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BMOKIPOKAMG
+     * </pre>
+     *
+     * <code>optional double total_damage_taken = 12;</code>
+     * @return whether the totalDamageTaken field is set
+     */
+    public boolean hasTotalDamageTaken() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BMOKIPOKAMG
+     * </pre>
+     *
+     * <code>optional double total_damage_taken = 12;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalDamageTaken() {
+      bitField0_ &= ~0x00000004;
+      totalDamageTaken = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BMOKIPOKAMG
+     * </pre>
+     *
+     * <code>optional double total_damage_taken = 12;</code>
+     * @return the totalDamageTaken
+     */
+    public double getTotalDamageTaken() {
+      return totalDamageTaken;
+    }
+
+    /**
+     * <pre>
+     *  BMOKIPOKAMG
+     * </pre>
+     *
+     * <code>optional double total_damage_taken = 12;</code>
+     * @param value the totalDamageTaken to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalDamageTaken(final double value) {
+      bitField0_ |= 0x00000004;
+      totalDamageTaken = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GIPLCCDKKKO
+     * </pre>
+     *
+     * <code>optional double total_hp_recover = 13;</code>
+     * @return whether the totalHpRecover field is set
+     */
+    public boolean hasTotalHpRecover() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *  GIPLCCDKKKO
+     * </pre>
+     *
+     * <code>optional double total_hp_recover = 13;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalHpRecover() {
+      bitField0_ &= ~0x00000008;
+      totalHpRecover = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  GIPLCCDKKKO
+     * </pre>
+     *
+     * <code>optional double total_hp_recover = 13;</code>
+     * @return the totalHpRecover
+     */
+    public double getTotalHpRecover() {
+      return totalHpRecover;
+    }
+
+    /**
+     * <pre>
+     *  GIPLCCDKKKO
+     * </pre>
+     *
+     * <code>optional double total_hp_recover = 13;</code>
+     * @param value the totalHpRecover to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalHpRecover(final double value) {
+      bitField0_ |= 0x00000008;
+      totalHpRecover = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MJOIOLPFHCA
+     * </pre>
+     *
+     * <code>optional double total_sp_cost = 14;</code>
+     * @return whether the totalSpCost field is set
+     */
+    public boolean hasTotalSpCost() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     *  MJOIOLPFHCA
+     * </pre>
+     *
+     * <code>optional double total_sp_cost = 14;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalSpCost() {
+      bitField0_ &= ~0x00000010;
+      totalSpCost = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  MJOIOLPFHCA
+     * </pre>
+     *
+     * <code>optional double total_sp_cost = 14;</code>
+     * @return the totalSpCost
+     */
+    public double getTotalSpCost() {
+      return totalSpCost;
+    }
+
+    /**
+     * <pre>
+     *  MJOIOLPFHCA
+     * </pre>
+     *
+     * <code>optional double total_sp_cost = 14;</code>
+     * @param value the totalSpCost to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalSpCost(final double value) {
+      bitField0_ |= 0x00000010;
+      totalSpCost = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OCAMJGICOKM
+     * </pre>
+     *
+     * <code>optional double total_break_damage = 17;</code>
+     * @return whether the totalBreakDamage field is set
+     */
+    public boolean hasTotalBreakDamage() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     *  OCAMJGICOKM
+     * </pre>
+     *
+     * <code>optional double total_break_damage = 17;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalBreakDamage() {
+      bitField0_ &= ~0x00000020;
+      totalBreakDamage = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OCAMJGICOKM
+     * </pre>
+     *
+     * <code>optional double total_break_damage = 17;</code>
+     * @return the totalBreakDamage
+     */
+    public double getTotalBreakDamage() {
+      return totalBreakDamage;
+    }
+
+    /**
+     * <pre>
+     *  OCAMJGICOKM
+     * </pre>
+     *
+     * <code>optional double total_break_damage = 17;</code>
+     * @param value the totalBreakDamage to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalBreakDamage(final double value) {
+      bitField0_ |= 0x00000020;
+      totalBreakDamage = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+     *  repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+     *  repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+     *  repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+     * </pre>
+     *
+     * <code>optional double delay_cumulate = 22;</code>
+     * @return whether the delayCumulate field is set
+     */
+    public boolean hasDelayCumulate() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+     *  repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+     *  repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+     *  repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+     * </pre>
+     *
+     * <code>optional double delay_cumulate = 22;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearDelayCumulate() {
+      bitField0_ &= ~0x00000040;
+      delayCumulate = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+     *  repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+     *  repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+     *  repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+     * </pre>
+     *
+     * <code>optional double delay_cumulate = 22;</code>
+     * @return the delayCumulate
+     */
+    public double getDelayCumulate() {
+      return delayCumulate;
+    }
+
+    /**
+     * <pre>
+     *  repeated AttackDamageProperty attack_type_damage = 18; // DBJPGIBBANG
+     *  repeated AttackDamageProperty attack_type_break_damage = 19; // PMCNDLKPCAK
+     *  repeated AttackDamageProperty attack_type_max_damage = 20; // OKDHENNJHND
+     *  repeated SkillUseProperty skill_times = 21; // JNKBKDPDCOI
+     * </pre>
+     *
+     * <code>optional double delay_cumulate = 22;</code>
+     * @param value the delayCumulate to set
+     * @return this
+     */
+    public AvatarBattleInfo setDelayCumulate(final double value) {
+      bitField0_ |= 0x00000040;
+      delayCumulate = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LKMDCBDDEII
+     * </pre>
+     *
+     * <code>optional double total_shield = 30;</code>
+     * @return whether the totalShield field is set
+     */
+    public boolean hasTotalShield() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <pre>
+     *  LKMDCBDDEII
+     * </pre>
+     *
+     * <code>optional double total_shield = 30;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalShield() {
+      bitField0_ &= ~0x00000080;
+      totalShield = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LKMDCBDDEII
+     * </pre>
+     *
+     * <code>optional double total_shield = 30;</code>
+     * @return the totalShield
+     */
+    public double getTotalShield() {
+      return totalShield;
+    }
+
+    /**
+     * <pre>
+     *  LKMDCBDDEII
+     * </pre>
+     *
+     * <code>optional double total_shield = 30;</code>
+     * @param value the totalShield to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalShield(final double value) {
+      bitField0_ |= 0x00000080;
+      totalShield = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HDNIKGNGHED
+     * </pre>
+     *
+     * <code>optional double total_shield_taken = 31;</code>
+     * @return whether the totalShieldTaken field is set
+     */
+    public boolean hasTotalShieldTaken() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <pre>
+     *  HDNIKGNGHED
+     * </pre>
+     *
+     * <code>optional double total_shield_taken = 31;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalShieldTaken() {
+      bitField0_ &= ~0x00000100;
+      totalShieldTaken = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HDNIKGNGHED
+     * </pre>
+     *
+     * <code>optional double total_shield_taken = 31;</code>
+     * @return the totalShieldTaken
+     */
+    public double getTotalShieldTaken() {
+      return totalShieldTaken;
+    }
+
+    /**
+     * <pre>
+     *  HDNIKGNGHED
+     * </pre>
+     *
+     * <code>optional double total_shield_taken = 31;</code>
+     * @param value the totalShieldTaken to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalShieldTaken(final double value) {
+      bitField0_ |= 0x00000100;
+      totalShieldTaken = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  IAFGHBGAMAD
+     * </pre>
+     *
+     * <code>optional double total_shield_damage = 32;</code>
+     * @return whether the totalShieldDamage field is set
+     */
+    public boolean hasTotalShieldDamage() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <pre>
+     *  IAFGHBGAMAD
+     * </pre>
+     *
+     * <code>optional double total_shield_damage = 32;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalShieldDamage() {
+      bitField0_ &= ~0x00000200;
+      totalShieldDamage = 0D;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  IAFGHBGAMAD
+     * </pre>
+     *
+     * <code>optional double total_shield_damage = 32;</code>
+     * @return the totalShieldDamage
+     */
+    public double getTotalShieldDamage() {
+      return totalShieldDamage;
+    }
+
+    /**
+     * <pre>
+     *  IAFGHBGAMAD
+     * </pre>
+     *
+     * <code>optional double total_shield_damage = 32;</code>
+     * @param value the totalShieldDamage to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalShieldDamage(final double value) {
+      bitField0_ |= 0x00000200;
+      totalShieldDamage = value;
+      return this;
+    }
+
+    /**
      * <code>optional uint32 id = 2;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
-      return (bitField0_ & 0x00000001) != 0;
+      return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
@@ -111,7 +850,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearId() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000400;
       id = 0;
       return this;
     }
@@ -130,30 +869,42 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setId(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000400;
       id = value;
       return this;
     }
 
     /**
+     * <pre>
+     *  CAFBLGHCLMN
+     * </pre>
+     *
      * <code>optional uint32 avatar_level = 3;</code>
      * @return whether the avatarLevel field is set
      */
     public boolean hasAvatarLevel() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
+     * <pre>
+     *  CAFBLGHCLMN
+     * </pre>
+     *
      * <code>optional uint32 avatar_level = 3;</code>
      * @return this
      */
     public AvatarBattleInfo clearAvatarLevel() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000800;
       avatarLevel = 0;
       return this;
     }
 
     /**
+     * <pre>
+     *  CAFBLGHCLMN
+     * </pre>
+     *
      * <code>optional uint32 avatar_level = 3;</code>
      * @return the avatarLevel
      */
@@ -162,35 +913,51 @@ public final class AvatarBattleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  CAFBLGHCLMN
+     * </pre>
+     *
      * <code>optional uint32 avatar_level = 3;</code>
      * @param value the avatarLevel to set
      * @return this
      */
     public AvatarBattleInfo setAvatarLevel(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000800;
       avatarLevel = value;
       return this;
     }
 
     /**
+     * <pre>
+     *  MELPINLHNMK
+     * </pre>
+     *
      * <code>optional uint32 avatar_rank = 4;</code>
      * @return whether the avatarRank field is set
      */
     public boolean hasAvatarRank() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
+     * <pre>
+     *  MELPINLHNMK
+     * </pre>
+     *
      * <code>optional uint32 avatar_rank = 4;</code>
      * @return this
      */
     public AvatarBattleInfo clearAvatarRank() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00001000;
       avatarRank = 0;
       return this;
     }
 
     /**
+     * <pre>
+     *  MELPINLHNMK
+     * </pre>
+     *
      * <code>optional uint32 avatar_rank = 4;</code>
      * @return the avatarRank
      */
@@ -199,35 +966,51 @@ public final class AvatarBattleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  MELPINLHNMK
+     * </pre>
+     *
      * <code>optional uint32 avatar_rank = 4;</code>
      * @param value the avatarRank to set
      * @return this
      */
     public AvatarBattleInfo setAvatarRank(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00001000;
       avatarRank = value;
       return this;
     }
 
     /**
+     * <pre>
+     *  MCJFIEKGCLG
+     * </pre>
+     *
      * <code>optional uint32 avatar_promotion = 5;</code>
      * @return whether the avatarPromotion field is set
      */
     public boolean hasAvatarPromotion() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00002000) != 0;
     }
 
     /**
+     * <pre>
+     *  MCJFIEKGCLG
+     * </pre>
+     *
      * <code>optional uint32 avatar_promotion = 5;</code>
      * @return this
      */
     public AvatarBattleInfo clearAvatarPromotion() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00002000;
       avatarPromotion = 0;
       return this;
     }
 
     /**
+     * <pre>
+     *  MCJFIEKGCLG
+     * </pre>
+     *
      * <code>optional uint32 avatar_promotion = 5;</code>
      * @return the avatarPromotion
      */
@@ -236,13 +1019,547 @@ public final class AvatarBattleInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  MCJFIEKGCLG
+     * </pre>
+     *
      * <code>optional uint32 avatar_promotion = 5;</code>
      * @param value the avatarPromotion to set
      * @return this
      */
     public AvatarBattleInfo setAvatarPromotion(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00002000;
       avatarPromotion = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 9;</code>
+     * @return whether the totalTurns field is set
+     */
+    public boolean hasTotalTurns() {
+      return (bitField0_ & 0x00004000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 9;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalTurns() {
+      bitField0_ &= ~0x00004000;
+      totalTurns = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 9;</code>
+     * @return the totalTurns
+     */
+    public int getTotalTurns() {
+      return totalTurns;
+    }
+
+    /**
+     * <pre>
+     *  repeated EquipmentProperty avatar_equipment = 8; // PKJOELPMHEA
+     * </pre>
+     *
+     * <code>optional uint32 total_turns = 9;</code>
+     * @param value the totalTurns to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalTurns(final int value) {
+      bitField0_ |= 0x00004000;
+      totalTurns = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  ECKBFIJDLNM
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 15;</code>
+     * @return whether the stageId field is set
+     */
+    public boolean hasStageId() {
+      return (bitField0_ & 0x00008000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  ECKBFIJDLNM
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 15;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearStageId() {
+      bitField0_ &= ~0x00008000;
+      stageId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  ECKBFIJDLNM
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 15;</code>
+     * @return the stageId
+     */
+    public int getStageId() {
+      return stageId;
+    }
+
+    /**
+     * <pre>
+     *  ECKBFIJDLNM
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 15;</code>
+     * @param value the stageId to set
+     * @return this
+     */
+    public AvatarBattleInfo setStageId(final int value) {
+      bitField0_ |= 0x00008000;
+      stageId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BFMLOHFLIBO
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 16;</code>
+     * @return whether the stageType field is set
+     */
+    public boolean hasStageType() {
+      return (bitField0_ & 0x00010000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BFMLOHFLIBO
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 16;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearStageType() {
+      bitField0_ &= ~0x00010000;
+      stageType = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BFMLOHFLIBO
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 16;</code>
+     * @return the stageType
+     */
+    public int getStageType() {
+      return stageType;
+    }
+
+    /**
+     * <pre>
+     *  BFMLOHFLIBO
+     * </pre>
+     *
+     * <code>optional uint32 stage_type = 16;</code>
+     * @param value the stageType to set
+     * @return this
+     */
+    public AvatarBattleInfo setStageType(final int value) {
+      bitField0_ |= 0x00010000;
+      stageType = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  NOIAEIOIJNH
+     * </pre>
+     *
+     * <code>optional uint32 total_sp_add = 23;</code>
+     * @return whether the totalSpAdd field is set
+     */
+    public boolean hasTotalSpAdd() {
+      return (bitField0_ & 0x00020000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  NOIAEIOIJNH
+     * </pre>
+     *
+     * <code>optional uint32 total_sp_add = 23;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalSpAdd() {
+      bitField0_ &= ~0x00020000;
+      totalSpAdd = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  NOIAEIOIJNH
+     * </pre>
+     *
+     * <code>optional uint32 total_sp_add = 23;</code>
+     * @return the totalSpAdd
+     */
+    public int getTotalSpAdd() {
+      return totalSpAdd;
+    }
+
+    /**
+     * <pre>
+     *  NOIAEIOIJNH
+     * </pre>
+     *
+     * <code>optional uint32 total_sp_add = 23;</code>
+     * @param value the totalSpAdd to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalSpAdd(final int value) {
+      bitField0_ |= 0x00020000;
+      totalSpAdd = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HPEPNJOKFIK
+     * </pre>
+     *
+     * <code>optional uint32 total_bp_cost = 25;</code>
+     * @return whether the totalBpCost field is set
+     */
+    public boolean hasTotalBpCost() {
+      return (bitField0_ & 0x00040000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  HPEPNJOKFIK
+     * </pre>
+     *
+     * <code>optional uint32 total_bp_cost = 25;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearTotalBpCost() {
+      bitField0_ &= ~0x00040000;
+      totalBpCost = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HPEPNJOKFIK
+     * </pre>
+     *
+     * <code>optional uint32 total_bp_cost = 25;</code>
+     * @return the totalBpCost
+     */
+    public int getTotalBpCost() {
+      return totalBpCost;
+    }
+
+    /**
+     * <pre>
+     *  HPEPNJOKFIK
+     * </pre>
+     *
+     * <code>optional uint32 total_bp_cost = 25;</code>
+     * @param value the totalBpCost to set
+     * @return this
+     */
+    public AvatarBattleInfo setTotalBpCost(final int value) {
+      bitField0_ |= 0x00040000;
+      totalBpCost = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BIJMNMKNCMH
+     * </pre>
+     *
+     * <code>optional uint32 die_times = 26;</code>
+     * @return whether the dieTimes field is set
+     */
+    public boolean hasDieTimes() {
+      return (bitField0_ & 0x00080000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  BIJMNMKNCMH
+     * </pre>
+     *
+     * <code>optional uint32 die_times = 26;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearDieTimes() {
+      bitField0_ &= ~0x00080000;
+      dieTimes = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  BIJMNMKNCMH
+     * </pre>
+     *
+     * <code>optional uint32 die_times = 26;</code>
+     * @return the dieTimes
+     */
+    public int getDieTimes() {
+      return dieTimes;
+    }
+
+    /**
+     * <pre>
+     *  BIJMNMKNCMH
+     * </pre>
+     *
+     * <code>optional uint32 die_times = 26;</code>
+     * @param value the dieTimes to set
+     * @return this
+     */
+    public AvatarBattleInfo setDieTimes(final int value) {
+      bitField0_ |= 0x00080000;
+      dieTimes = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EFFLIHGLCIF
+     * </pre>
+     *
+     * <code>optional uint32 revive_times = 27;</code>
+     * @return whether the reviveTimes field is set
+     */
+    public boolean hasReviveTimes() {
+      return (bitField0_ & 0x00100000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  EFFLIHGLCIF
+     * </pre>
+     *
+     * <code>optional uint32 revive_times = 27;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearReviveTimes() {
+      bitField0_ &= ~0x00100000;
+      reviveTimes = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EFFLIHGLCIF
+     * </pre>
+     *
+     * <code>optional uint32 revive_times = 27;</code>
+     * @return the reviveTimes
+     */
+    public int getReviveTimes() {
+      return reviveTimes;
+    }
+
+    /**
+     * <pre>
+     *  EFFLIHGLCIF
+     * </pre>
+     *
+     * <code>optional uint32 revive_times = 27;</code>
+     * @param value the reviveTimes to set
+     * @return this
+     */
+    public AvatarBattleInfo setReviveTimes(final int value) {
+      bitField0_ |= 0x00100000;
+      reviveTimes = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  NCGIJAILOAJ
+     * </pre>
+     *
+     * <code>optional uint32 break_times = 28;</code>
+     * @return whether the breakTimes field is set
+     */
+    public boolean hasBreakTimes() {
+      return (bitField0_ & 0x00200000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  NCGIJAILOAJ
+     * </pre>
+     *
+     * <code>optional uint32 break_times = 28;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearBreakTimes() {
+      bitField0_ &= ~0x00200000;
+      breakTimes = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  NCGIJAILOAJ
+     * </pre>
+     *
+     * <code>optional uint32 break_times = 28;</code>
+     * @return the breakTimes
+     */
+    public int getBreakTimes() {
+      return breakTimes;
+    }
+
+    /**
+     * <pre>
+     *  NCGIJAILOAJ
+     * </pre>
+     *
+     * <code>optional uint32 break_times = 28;</code>
+     * @param value the breakTimes to set
+     * @return this
+     */
+    public AvatarBattleInfo setBreakTimes(final int value) {
+      bitField0_ |= 0x00200000;
+      breakTimes = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DAKDIJADJGC
+     * </pre>
+     *
+     * <code>optional uint32 extra_turns = 29;</code>
+     * @return whether the extraTurns field is set
+     */
+    public boolean hasExtraTurns() {
+      return (bitField0_ & 0x00400000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  DAKDIJADJGC
+     * </pre>
+     *
+     * <code>optional uint32 extra_turns = 29;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearExtraTurns() {
+      bitField0_ &= ~0x00400000;
+      extraTurns = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DAKDIJADJGC
+     * </pre>
+     *
+     * <code>optional uint32 extra_turns = 29;</code>
+     * @return the extraTurns
+     */
+    public int getExtraTurns() {
+      return extraTurns;
+    }
+
+    /**
+     * <pre>
+     *  DAKDIJADJGC
+     * </pre>
+     *
+     * <code>optional uint32 extra_turns = 29;</code>
+     * @param value the extraTurns to set
+     * @return this
+     */
+    public AvatarBattleInfo setExtraTurns(final int value) {
+      bitField0_ |= 0x00400000;
+      extraTurns = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HFLPMICEAEJ
+     * </pre>
+     *
+     * <code>optional uint32 assist_uid = 35;</code>
+     * @return whether the assistUid field is set
+     */
+    public boolean hasAssistUid() {
+      return (bitField0_ & 0x00800000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  HFLPMICEAEJ
+     * </pre>
+     *
+     * <code>optional uint32 assist_uid = 35;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearAssistUid() {
+      bitField0_ &= ~0x00800000;
+      assistUid = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  HFLPMICEAEJ
+     * </pre>
+     *
+     * <code>optional uint32 assist_uid = 35;</code>
+     * @return the assistUid
+     */
+    public int getAssistUid() {
+      return assistUid;
+    }
+
+    /**
+     * <pre>
+     *  HFLPMICEAEJ
+     * </pre>
+     *
+     * <code>optional uint32 assist_uid = 35;</code>
+     * @param value the assistUid to set
+     * @return this
+     */
+    public AvatarBattleInfo setAssistUid(final int value) {
+      bitField0_ |= 0x00800000;
+      assistUid = value;
       return this;
     }
 
@@ -251,7 +1568,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarType field is set
      */
     public boolean hasAvatarType() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x01000000) != 0;
     }
 
     /**
@@ -259,7 +1576,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarType() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x01000000;
       avatarType = 0;
       return this;
     }
@@ -292,7 +1609,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarTypeValue(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x01000000;
       avatarType = value;
       return this;
     }
@@ -303,148 +1620,40 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarType(final AvatarTypeOuterClass.AvatarType value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x01000000;
       avatarType = value.getNumber();
       return this;
     }
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
      * @return whether the avatarStatus field is set
      */
     public boolean hasAvatarStatus() {
-      return (bitField0_ & 0x00000020) != 0;
+      return (bitField0_ & 0x02000000) != 0;
     }
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
      * @return this
      */
     public AvatarBattleInfo clearAvatarStatus() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x02000000;
       avatarStatus.clear();
       return this;
     }
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
@@ -462,43 +1671,7 @@ public final class AvatarBattleInfoOuterClass {
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
@@ -510,49 +1683,13 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public AvatarPropertyOuterClass.AvatarProperty getMutableAvatarStatus() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x02000000;
       return avatarStatus;
     }
 
     /**
      * <pre>
-     *  repeated AvatarSkillTree avatar_skill = 7;
-     *  repeated EquipmentProperty avatar_equipment = 8;
-     *  uint32 total_turns = 9;
-     *  double total_damage = 10;
-     *  double total_heal = 11;
-     *  double total_damage_taken = 12;
-     *  double total_hp_recover = 13;
-     *  double total_sp_cost = 14;
-     *  uint32 stage_id = 15;
-     *  uint32 stage_type = 16;
-     *  double total_break_damage = 17;
-     *  repeated AttackDamageProperty attack_type_damage = 18;
-     *  repeated AttackDamageProperty attack_type_break_damage = 19;
-     *  repeated AttackDamageProperty attack_type_max_damage = 20;
-     *  repeated FLOJPLPFGIH skill_times = 21;
-     *  double delay_cumulate = 22;
-     *  uint32 total_sp_add = 23;
-     *  repeated SpAddSource sp_add_source = 24;
-     *  uint32 total_bp_cost = 25;
-     *  uint32 die_times = 26;
-     *  uint32 revive_times = 27;
-     *  uint32 break_times = 28;
-     *  uint32 extra_turns = 29;
-     *  double total_shield = 30;
-     *  double total_shield_taken = 31;
-     *  double total_shield_damage = 32;
-     *  AvatarProperty initial_status = 33;
-     *  repeated BattleRelic relics = 34;
-     *  uint32 assist_uid = 35;
-     *  repeated AttackDamageProperty BDHPBBPPOEN = 36;
-     *  double CHDNAACFHII = 37;
-     *  double AJLDLEEFKOK = 38;
-     *  double PHPIEAMLHBA = 39;
-     *  double IOJHINLIOFJ = 40;
-     *  repeated AMOIPOEKONN OBKHMEDJHJD = 41;
-     *  uint32 CIBNGGNKPPM = 42;
-     *  uint32 CFDFPHCGGCH = 43;
+     *  CHIJEMDDLME
      * </pre>
      *
      * <code>optional .AvatarProperty avatar_status = 6;</code>
@@ -560,8 +1697,363 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarStatus(final AvatarPropertyOuterClass.AvatarProperty value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x02000000;
       avatarStatus.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     * @return whether the initialStatus field is set
+     */
+    public boolean hasInitialStatus() {
+      return (bitField0_ & 0x04000000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearInitialStatus() {
+      bitField0_ &= ~0x04000000;
+      initialStatus.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableInitialStatus()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public AvatarPropertyOuterClass.AvatarProperty getInitialStatus() {
+      return initialStatus;
+    }
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public AvatarPropertyOuterClass.AvatarProperty getMutableInitialStatus() {
+      bitField0_ |= 0x04000000;
+      return initialStatus;
+    }
+
+    /**
+     * <pre>
+     *  FCCJDEFCJJK
+     * </pre>
+     *
+     * <code>optional .AvatarProperty initial_status = 33;</code>
+     * @param value the initialStatus to set
+     * @return this
+     */
+    public AvatarBattleInfo setInitialStatus(final AvatarPropertyOuterClass.AvatarProperty value) {
+      bitField0_ |= 0x04000000;
+      initialStatus.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     * @return whether the avatarSkill field is set
+     */
+    public boolean hasAvatarSkill() {
+      return (bitField0_ & 0x08000000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearAvatarSkill() {
+      bitField0_ &= ~0x08000000;
+      avatarSkill.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableAvatarSkill()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getAvatarSkill() {
+      return avatarSkill;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableAvatarSkill() {
+      bitField0_ |= 0x08000000;
+      return avatarSkill;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     * @param value the avatarSkill to add
+     * @return this
+     */
+    public AvatarBattleInfo addAvatarSkill(final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
+      bitField0_ |= 0x08000000;
+      avatarSkill.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  CPIOFCGKLHB
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree avatar_skill = 7;</code>
+     * @param values the avatarSkill to add
+     * @return this
+     */
+    public AvatarBattleInfo addAllAvatarSkill(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
+      bitField0_ |= 0x08000000;
+      avatarSkill.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     * @return whether the spAddSource field is set
+     */
+    public boolean hasSpAddSource() {
+      return (bitField0_ & 0x10000000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearSpAddSource() {
+      bitField0_ &= ~0x10000000;
+      spAddSource.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableSpAddSource()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<SpAddSourceOuterClass.SpAddSource> getSpAddSource() {
+      return spAddSource;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<SpAddSourceOuterClass.SpAddSource> getMutableSpAddSource() {
+      bitField0_ |= 0x10000000;
+      return spAddSource;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     * @param value the spAddSource to add
+     * @return this
+     */
+    public AvatarBattleInfo addSpAddSource(final SpAddSourceOuterClass.SpAddSource value) {
+      bitField0_ |= 0x10000000;
+      spAddSource.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  LCDIFLOKKCL
+     * </pre>
+     *
+     * <code>repeated .SpAddSource sp_add_source = 24;</code>
+     * @param values the spAddSource to add
+     * @return this
+     */
+    public AvatarBattleInfo addAllSpAddSource(final SpAddSourceOuterClass.SpAddSource... values) {
+      bitField0_ |= 0x10000000;
+      spAddSource.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     * @return whether the battleRelicList field is set
+     */
+    public boolean hasBattleRelicList() {
+      return (bitField0_ & 0x20000000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearBattleRelicList() {
+      bitField0_ &= ~0x20000000;
+      battleRelicList.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableBattleRelicList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<BattleRelicOuterClass.BattleRelic> getBattleRelicList() {
+      return battleRelicList;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<BattleRelicOuterClass.BattleRelic> getMutableBattleRelicList() {
+      bitField0_ |= 0x20000000;
+      return battleRelicList;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     * @param value the battleRelicList to add
+     * @return this
+     */
+    public AvatarBattleInfo addBattleRelicList(final BattleRelicOuterClass.BattleRelic value) {
+      bitField0_ |= 0x20000000;
+      battleRelicList.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  PINFLKMBLLK
+     * </pre>
+     *
+     * <code>repeated .BattleRelic battle_relic_list = 34;</code>
+     * @param values the battleRelicList to add
+     * @return this
+     */
+    public AvatarBattleInfo addAllBattleRelicList(
+        final BattleRelicOuterClass.BattleRelic... values) {
+      bitField0_ |= 0x20000000;
+      battleRelicList.addAll(values);
       return this;
     }
 
@@ -570,12 +2062,36 @@ public final class AvatarBattleInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        totalDamage = other.totalDamage;
+        totalHeal = other.totalHeal;
+        totalDamageTaken = other.totalDamageTaken;
+        totalHpRecover = other.totalHpRecover;
+        totalSpCost = other.totalSpCost;
+        totalBreakDamage = other.totalBreakDamage;
+        delayCumulate = other.delayCumulate;
+        totalShield = other.totalShield;
+        totalShieldTaken = other.totalShieldTaken;
+        totalShieldDamage = other.totalShieldDamage;
         id = other.id;
         avatarLevel = other.avatarLevel;
         avatarRank = other.avatarRank;
         avatarPromotion = other.avatarPromotion;
+        totalTurns = other.totalTurns;
+        stageId = other.stageId;
+        stageType = other.stageType;
+        totalSpAdd = other.totalSpAdd;
+        totalBpCost = other.totalBpCost;
+        dieTimes = other.dieTimes;
+        reviveTimes = other.reviveTimes;
+        breakTimes = other.breakTimes;
+        extraTurns = other.extraTurns;
+        assistUid = other.assistUid;
         avatarType = other.avatarType;
         avatarStatus.copyFrom(other.avatarStatus);
+        initialStatus.copyFrom(other.initialStatus);
+        avatarSkill.copyFrom(other.avatarSkill);
+        spAddSource.copyFrom(other.spAddSource);
+        battleRelicList.copyFrom(other.battleRelicList);
       }
       return this;
     }
@@ -586,6 +2102,36 @@ public final class AvatarBattleInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasTotalDamage()) {
+        setTotalDamage(other.totalDamage);
+      }
+      if (other.hasTotalHeal()) {
+        setTotalHeal(other.totalHeal);
+      }
+      if (other.hasTotalDamageTaken()) {
+        setTotalDamageTaken(other.totalDamageTaken);
+      }
+      if (other.hasTotalHpRecover()) {
+        setTotalHpRecover(other.totalHpRecover);
+      }
+      if (other.hasTotalSpCost()) {
+        setTotalSpCost(other.totalSpCost);
+      }
+      if (other.hasTotalBreakDamage()) {
+        setTotalBreakDamage(other.totalBreakDamage);
+      }
+      if (other.hasDelayCumulate()) {
+        setDelayCumulate(other.delayCumulate);
+      }
+      if (other.hasTotalShield()) {
+        setTotalShield(other.totalShield);
+      }
+      if (other.hasTotalShieldTaken()) {
+        setTotalShieldTaken(other.totalShieldTaken);
+      }
+      if (other.hasTotalShieldDamage()) {
+        setTotalShieldDamage(other.totalShieldDamage);
+      }
       if (other.hasId()) {
         setId(other.id);
       }
@@ -598,11 +2144,53 @@ public final class AvatarBattleInfoOuterClass {
       if (other.hasAvatarPromotion()) {
         setAvatarPromotion(other.avatarPromotion);
       }
+      if (other.hasTotalTurns()) {
+        setTotalTurns(other.totalTurns);
+      }
+      if (other.hasStageId()) {
+        setStageId(other.stageId);
+      }
+      if (other.hasStageType()) {
+        setStageType(other.stageType);
+      }
+      if (other.hasTotalSpAdd()) {
+        setTotalSpAdd(other.totalSpAdd);
+      }
+      if (other.hasTotalBpCost()) {
+        setTotalBpCost(other.totalBpCost);
+      }
+      if (other.hasDieTimes()) {
+        setDieTimes(other.dieTimes);
+      }
+      if (other.hasReviveTimes()) {
+        setReviveTimes(other.reviveTimes);
+      }
+      if (other.hasBreakTimes()) {
+        setBreakTimes(other.breakTimes);
+      }
+      if (other.hasExtraTurns()) {
+        setExtraTurns(other.extraTurns);
+      }
+      if (other.hasAssistUid()) {
+        setAssistUid(other.assistUid);
+      }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
       }
       if (other.hasAvatarStatus()) {
         getMutableAvatarStatus().mergeFrom(other.avatarStatus);
+      }
+      if (other.hasInitialStatus()) {
+        getMutableInitialStatus().mergeFrom(other.initialStatus);
+      }
+      if (other.hasAvatarSkill()) {
+        getMutableAvatarSkill().addAll(other.avatarSkill);
+      }
+      if (other.hasSpAddSource()) {
+        getMutableSpAddSource().addAll(other.spAddSource);
+      }
+      if (other.hasBattleRelicList()) {
+        getMutableBattleRelicList().addAll(other.battleRelicList);
       }
       return this;
     }
@@ -614,12 +2202,36 @@ public final class AvatarBattleInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      totalDamage = 0D;
+      totalHeal = 0D;
+      totalDamageTaken = 0D;
+      totalHpRecover = 0D;
+      totalSpCost = 0D;
+      totalBreakDamage = 0D;
+      delayCumulate = 0D;
+      totalShield = 0D;
+      totalShieldTaken = 0D;
+      totalShieldDamage = 0D;
       id = 0;
       avatarLevel = 0;
       avatarRank = 0;
       avatarPromotion = 0;
+      totalTurns = 0;
+      stageId = 0;
+      stageType = 0;
+      totalSpAdd = 0;
+      totalBpCost = 0;
+      dieTimes = 0;
+      reviveTimes = 0;
+      breakTimes = 0;
+      extraTurns = 0;
+      assistUid = 0;
       avatarType = 0;
       avatarStatus.clear();
+      initialStatus.clear();
+      avatarSkill.clear();
+      spAddSource.clear();
+      battleRelicList.clear();
       return this;
     }
 
@@ -631,6 +2243,10 @@ public final class AvatarBattleInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       avatarStatus.clearQuick();
+      initialStatus.clearQuick();
+      avatarSkill.clearQuick();
+      spAddSource.clearQuick();
+      battleRelicList.clearQuick();
       return this;
     }
 
@@ -644,39 +2260,165 @@ public final class AvatarBattleInfoOuterClass {
       }
       AvatarBattleInfo other = (AvatarBattleInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasTotalDamage() || ProtoUtil.isEqual(totalDamage, other.totalDamage))
+        && (!hasTotalHeal() || ProtoUtil.isEqual(totalHeal, other.totalHeal))
+        && (!hasTotalDamageTaken() || ProtoUtil.isEqual(totalDamageTaken, other.totalDamageTaken))
+        && (!hasTotalHpRecover() || ProtoUtil.isEqual(totalHpRecover, other.totalHpRecover))
+        && (!hasTotalSpCost() || ProtoUtil.isEqual(totalSpCost, other.totalSpCost))
+        && (!hasTotalBreakDamage() || ProtoUtil.isEqual(totalBreakDamage, other.totalBreakDamage))
+        && (!hasDelayCumulate() || ProtoUtil.isEqual(delayCumulate, other.delayCumulate))
+        && (!hasTotalShield() || ProtoUtil.isEqual(totalShield, other.totalShield))
+        && (!hasTotalShieldTaken() || ProtoUtil.isEqual(totalShieldTaken, other.totalShieldTaken))
+        && (!hasTotalShieldDamage() || ProtoUtil.isEqual(totalShieldDamage, other.totalShieldDamage))
         && (!hasId() || id == other.id)
         && (!hasAvatarLevel() || avatarLevel == other.avatarLevel)
         && (!hasAvatarRank() || avatarRank == other.avatarRank)
         && (!hasAvatarPromotion() || avatarPromotion == other.avatarPromotion)
+        && (!hasTotalTurns() || totalTurns == other.totalTurns)
+        && (!hasStageId() || stageId == other.stageId)
+        && (!hasStageType() || stageType == other.stageType)
+        && (!hasTotalSpAdd() || totalSpAdd == other.totalSpAdd)
+        && (!hasTotalBpCost() || totalBpCost == other.totalBpCost)
+        && (!hasDieTimes() || dieTimes == other.dieTimes)
+        && (!hasReviveTimes() || reviveTimes == other.reviveTimes)
+        && (!hasBreakTimes() || breakTimes == other.breakTimes)
+        && (!hasExtraTurns() || extraTurns == other.extraTurns)
+        && (!hasAssistUid() || assistUid == other.assistUid)
         && (!hasAvatarType() || avatarType == other.avatarType)
-        && (!hasAvatarStatus() || avatarStatus.equals(other.avatarStatus));
+        && (!hasAvatarStatus() || avatarStatus.equals(other.avatarStatus))
+        && (!hasInitialStatus() || initialStatus.equals(other.initialStatus))
+        && (!hasAvatarSkill() || avatarSkill.equals(other.avatarSkill))
+        && (!hasSpAddSource() || spAddSource.equals(other.spAddSource))
+        && (!hasBattleRelicList() || battleRelicList.equals(other.battleRelicList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 81);
+        output.writeDoubleNoTag(totalDamage);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 89);
+        output.writeDoubleNoTag(totalHeal);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 97);
+        output.writeDoubleNoTag(totalDamageTaken);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 105);
+        output.writeDoubleNoTag(totalHpRecover);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 113);
+        output.writeDoubleNoTag(totalSpCost);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawLittleEndian16((short) 393);
+        output.writeDoubleNoTag(totalBreakDamage);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeRawLittleEndian16((short) 433);
+        output.writeDoubleNoTag(delayCumulate);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeRawLittleEndian16((short) 497);
+        output.writeDoubleNoTag(totalShield);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawLittleEndian16((short) 505);
+        output.writeDoubleNoTag(totalShieldTaken);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRawLittleEndian16((short) 641);
+        output.writeDoubleNoTag(totalShieldDamage);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(id);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(avatarLevel);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00001000) != 0) {
         output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(avatarRank);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00002000) != 0) {
         output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(avatarPromotion);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00004000) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(totalTurns);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(stageId);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        output.writeRawLittleEndian16((short) 384);
+        output.writeUInt32NoTag(stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        output.writeRawLittleEndian16((short) 440);
+        output.writeUInt32NoTag(totalSpAdd);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        output.writeRawLittleEndian16((short) 456);
+        output.writeUInt32NoTag(totalBpCost);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        output.writeRawLittleEndian16((short) 464);
+        output.writeUInt32NoTag(dieTimes);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        output.writeRawLittleEndian16((short) 472);
+        output.writeUInt32NoTag(reviveTimes);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        output.writeRawLittleEndian16((short) 480);
+        output.writeUInt32NoTag(breakTimes);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        output.writeRawLittleEndian16((short) 488);
+        output.writeUInt32NoTag(extraTurns);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        output.writeRawLittleEndian16((short) 664);
+        output.writeUInt32NoTag(assistUid);
+      }
+      if ((bitField0_ & 0x01000000) != 0) {
         output.writeRawByte((byte) 8);
         output.writeEnumNoTag(avatarType);
       }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x02000000) != 0) {
         output.writeRawByte((byte) 50);
         output.writeMessageNoTag(avatarStatus);
+      }
+      if ((bitField0_ & 0x04000000) != 0) {
+        output.writeRawLittleEndian16((short) 650);
+        output.writeMessageNoTag(initialStatus);
+      }
+      if ((bitField0_ & 0x08000000) != 0) {
+        for (int i = 0; i < avatarSkill.length(); i++) {
+          output.writeRawByte((byte) 58);
+          output.writeMessageNoTag(avatarSkill.get(i));
+        }
+      }
+      if ((bitField0_ & 0x10000000) != 0) {
+        for (int i = 0; i < spAddSource.length(); i++) {
+          output.writeRawLittleEndian16((short) 450);
+          output.writeMessageNoTag(spAddSource.get(i));
+        }
+      }
+      if ((bitField0_ & 0x20000000) != 0) {
+        for (int i = 0; i < battleRelicList.length(); i++) {
+          output.writeRawLittleEndian16((short) 658);
+          output.writeMessageNoTag(battleRelicList.get(i));
+        }
       }
     }
 
@@ -684,22 +2426,94 @@ public final class AvatarBattleInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 9;
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarLevel);
+        size += 9;
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarRank);
+        size += 9;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarPromotion);
+        size += 9;
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
+        size += 9;
       }
       if ((bitField0_ & 0x00000020) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += 10;
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarLevel);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarRank);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarPromotion);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalTurns);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalSpAdd);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalBpCost);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(dieTimes);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(reviveTimes);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(breakTimes);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(extraTurns);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(assistUid);
+      }
+      if ((bitField0_ & 0x01000000) != 0) {
+        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
+      }
+      if ((bitField0_ & 0x02000000) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(avatarStatus);
+      }
+      if ((bitField0_ & 0x04000000) != 0) {
+        size += 2 + ProtoSink.computeMessageSizeNoTag(initialStatus);
+      }
+      if ((bitField0_ & 0x08000000) != 0) {
+        size += (1 * avatarSkill.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarSkill);
+      }
+      if ((bitField0_ & 0x10000000) != 0) {
+        size += (2 * spAddSource.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(spAddSource);
+      }
+      if ((bitField0_ & 0x20000000) != 0) {
+        size += (2 * battleRelicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(battleRelicList);
       }
       return size;
     }
@@ -711,10 +2525,100 @@ public final class AvatarBattleInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 81: {
+            // totalDamage
+            totalDamage = input.readDouble();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 89) {
+              break;
+            }
+          }
+          case 89: {
+            // totalHeal
+            totalHeal = input.readDouble();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 97) {
+              break;
+            }
+          }
+          case 97: {
+            // totalDamageTaken
+            totalDamageTaken = input.readDouble();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 105) {
+              break;
+            }
+          }
+          case 105: {
+            // totalHpRecover
+            totalHpRecover = input.readDouble();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 113) {
+              break;
+            }
+          }
+          case 113: {
+            // totalSpCost
+            totalSpCost = input.readDouble();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 137) {
+              break;
+            }
+          }
+          case 137: {
+            // totalBreakDamage
+            totalBreakDamage = input.readDouble();
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 177) {
+              break;
+            }
+          }
+          case 177: {
+            // delayCumulate
+            delayCumulate = input.readDouble();
+            bitField0_ |= 0x00000040;
+            tag = input.readTag();
+            if (tag != 241) {
+              break;
+            }
+          }
+          case 241: {
+            // totalShield
+            totalShield = input.readDouble();
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 249) {
+              break;
+            }
+          }
+          case 249: {
+            // totalShieldTaken
+            totalShieldTaken = input.readDouble();
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 257) {
+              break;
+            }
+          }
+          case 257: {
+            // totalShieldDamage
+            totalShieldDamage = input.readDouble();
+            bitField0_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
           case 16: {
             // id
             id = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 24) {
               break;
@@ -723,7 +2627,7 @@ public final class AvatarBattleInfoOuterClass {
           case 24: {
             // avatarLevel
             avatarLevel = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000800;
             tag = input.readTag();
             if (tag != 32) {
               break;
@@ -732,7 +2636,7 @@ public final class AvatarBattleInfoOuterClass {
           case 32: {
             // avatarRank
             avatarRank = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 40) {
               break;
@@ -741,7 +2645,97 @@ public final class AvatarBattleInfoOuterClass {
           case 40: {
             // avatarPromotion
             avatarPromotion = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00002000;
+            tag = input.readTag();
+            if (tag != 72) {
+              break;
+            }
+          }
+          case 72: {
+            // totalTurns
+            totalTurns = input.readUInt32();
+            bitField0_ |= 0x00004000;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // stageId
+            stageId = input.readUInt32();
+            bitField0_ |= 0x00008000;
+            tag = input.readTag();
+            if (tag != 128) {
+              break;
+            }
+          }
+          case 128: {
+            // stageType
+            stageType = input.readUInt32();
+            bitField0_ |= 0x00010000;
+            tag = input.readTag();
+            if (tag != 184) {
+              break;
+            }
+          }
+          case 184: {
+            // totalSpAdd
+            totalSpAdd = input.readUInt32();
+            bitField0_ |= 0x00020000;
+            tag = input.readTag();
+            if (tag != 200) {
+              break;
+            }
+          }
+          case 200: {
+            // totalBpCost
+            totalBpCost = input.readUInt32();
+            bitField0_ |= 0x00040000;
+            tag = input.readTag();
+            if (tag != 208) {
+              break;
+            }
+          }
+          case 208: {
+            // dieTimes
+            dieTimes = input.readUInt32();
+            bitField0_ |= 0x00080000;
+            tag = input.readTag();
+            if (tag != 216) {
+              break;
+            }
+          }
+          case 216: {
+            // reviveTimes
+            reviveTimes = input.readUInt32();
+            bitField0_ |= 0x00100000;
+            tag = input.readTag();
+            if (tag != 224) {
+              break;
+            }
+          }
+          case 224: {
+            // breakTimes
+            breakTimes = input.readUInt32();
+            bitField0_ |= 0x00200000;
+            tag = input.readTag();
+            if (tag != 232) {
+              break;
+            }
+          }
+          case 232: {
+            // extraTurns
+            extraTurns = input.readUInt32();
+            bitField0_ |= 0x00400000;
+            tag = input.readTag();
+            if (tag != 280) {
+              break;
+            }
+          }
+          case 280: {
+            // assistUid
+            assistUid = input.readUInt32();
+            bitField0_ |= 0x00800000;
             tag = input.readTag();
             if (tag != 8) {
               break;
@@ -752,7 +2746,7 @@ public final class AvatarBattleInfoOuterClass {
             final int value = input.readInt32();
             if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
               avatarType = value;
-              bitField0_ |= 0x00000010;
+              bitField0_ |= 0x01000000;
             }
             tag = input.readTag();
             if (tag != 50) {
@@ -762,8 +2756,41 @@ public final class AvatarBattleInfoOuterClass {
           case 50: {
             // avatarStatus
             input.readMessage(avatarStatus);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x02000000;
             tag = input.readTag();
+            if (tag != 266) {
+              break;
+            }
+          }
+          case 266: {
+            // initialStatus
+            input.readMessage(initialStatus);
+            bitField0_ |= 0x04000000;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // avatarSkill
+            tag = input.readRepeatedMessage(avatarSkill, tag);
+            bitField0_ |= 0x08000000;
+            if (tag != 194) {
+              break;
+            }
+          }
+          case 194: {
+            // spAddSource
+            tag = input.readRepeatedMessage(spAddSource, tag);
+            bitField0_ |= 0x10000000;
+            if (tag != 274) {
+              break;
+            }
+          }
+          case 274: {
+            // battleRelicList
+            tag = input.readRepeatedMessage(battleRelicList, tag);
+            bitField0_ |= 0x20000000;
             if (tag != 0) {
               break;
             }
@@ -786,22 +2813,94 @@ public final class AvatarBattleInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeDouble(FieldNames.totalDamage, totalDamage);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.avatarLevel, avatarLevel);
+        output.writeDouble(FieldNames.totalHeal, totalHeal);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.avatarRank, avatarRank);
+        output.writeDouble(FieldNames.totalDamageTaken, totalDamageTaken);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.avatarPromotion, avatarPromotion);
+        output.writeDouble(FieldNames.totalHpRecover, totalHpRecover);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
+        output.writeDouble(FieldNames.totalSpCost, totalSpCost);
       }
       if ((bitField0_ & 0x00000020) != 0) {
+        output.writeDouble(FieldNames.totalBreakDamage, totalBreakDamage);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeDouble(FieldNames.delayCumulate, delayCumulate);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeDouble(FieldNames.totalShield, totalShield);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeDouble(FieldNames.totalShieldTaken, totalShieldTaken);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeDouble(FieldNames.totalShieldDamage, totalShieldDamage);
+      }
+      if ((bitField0_ & 0x00000400) != 0) {
+        output.writeUInt32(FieldNames.id, id);
+      }
+      if ((bitField0_ & 0x00000800) != 0) {
+        output.writeUInt32(FieldNames.avatarLevel, avatarLevel);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
+        output.writeUInt32(FieldNames.avatarRank, avatarRank);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
+        output.writeUInt32(FieldNames.avatarPromotion, avatarPromotion);
+      }
+      if ((bitField0_ & 0x00004000) != 0) {
+        output.writeUInt32(FieldNames.totalTurns, totalTurns);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
+        output.writeUInt32(FieldNames.stageId, stageId);
+      }
+      if ((bitField0_ & 0x00010000) != 0) {
+        output.writeUInt32(FieldNames.stageType, stageType);
+      }
+      if ((bitField0_ & 0x00020000) != 0) {
+        output.writeUInt32(FieldNames.totalSpAdd, totalSpAdd);
+      }
+      if ((bitField0_ & 0x00040000) != 0) {
+        output.writeUInt32(FieldNames.totalBpCost, totalBpCost);
+      }
+      if ((bitField0_ & 0x00080000) != 0) {
+        output.writeUInt32(FieldNames.dieTimes, dieTimes);
+      }
+      if ((bitField0_ & 0x00100000) != 0) {
+        output.writeUInt32(FieldNames.reviveTimes, reviveTimes);
+      }
+      if ((bitField0_ & 0x00200000) != 0) {
+        output.writeUInt32(FieldNames.breakTimes, breakTimes);
+      }
+      if ((bitField0_ & 0x00400000) != 0) {
+        output.writeUInt32(FieldNames.extraTurns, extraTurns);
+      }
+      if ((bitField0_ & 0x00800000) != 0) {
+        output.writeUInt32(FieldNames.assistUid, assistUid);
+      }
+      if ((bitField0_ & 0x01000000) != 0) {
+        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
+      }
+      if ((bitField0_ & 0x02000000) != 0) {
         output.writeMessage(FieldNames.avatarStatus, avatarStatus);
+      }
+      if ((bitField0_ & 0x04000000) != 0) {
+        output.writeMessage(FieldNames.initialStatus, initialStatus);
+      }
+      if ((bitField0_ & 0x08000000) != 0) {
+        output.writeRepeatedMessage(FieldNames.avatarSkill, avatarSkill);
+      }
+      if ((bitField0_ & 0x10000000) != 0) {
+        output.writeRepeatedMessage(FieldNames.spAddSource, spAddSource);
+      }
+      if ((bitField0_ & 0x20000000) != 0) {
+        output.writeRepeatedMessage(FieldNames.battleRelicList, battleRelicList);
       }
       output.endObject();
     }
@@ -813,11 +2912,131 @@ public final class AvatarBattleInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -1182674989:
+          case 259733706: {
+            if (input.isAtField(FieldNames.totalDamage)) {
+              if (!input.trySkipNullValue()) {
+                totalDamage = input.readDouble();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -577643700:
+          case -705751549: {
+            if (input.isAtField(FieldNames.totalHeal)) {
+              if (!input.trySkipNullValue()) {
+                totalHeal = input.readDouble();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1222408012:
+          case 176732434: {
+            if (input.isAtField(FieldNames.totalDamageTaken)) {
+              if (!input.trySkipNullValue()) {
+                totalDamageTaken = input.readDouble();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2097926056:
+          case 1292755208: {
+            if (input.isAtField(FieldNames.totalHpRecover)) {
+              if (!input.trySkipNullValue()) {
+                totalHpRecover = input.readDouble();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -740622290:
+          case 306039412: {
+            if (input.isAtField(FieldNames.totalSpCost)) {
+              if (!input.trySkipNullValue()) {
+                totalSpCost = input.readDouble();
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1071861910:
+          case -1515528246: {
+            if (input.isAtField(FieldNames.totalBreakDamage)) {
+              if (!input.trySkipNullValue()) {
+                totalBreakDamage = input.readDouble();
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -961026589:
+          case -1812302212: {
+            if (input.isAtField(FieldNames.delayCumulate)) {
+              if (!input.trySkipNullValue()) {
+                delayCumulate = input.readDouble();
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -746888243:
+          case 695520452: {
+            if (input.isAtField(FieldNames.totalShield)) {
+              if (!input.trySkipNullValue()) {
+                totalShield = input.readDouble();
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1942577402:
+          case -492967540: {
+            if (input.isAtField(FieldNames.totalShieldTaken)) {
+              if (!input.trySkipNullValue()) {
+                totalShieldTaken = input.readDouble();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -367653476:
+          case 1439864650: {
+            if (input.isAtField(FieldNames.totalShieldDamage)) {
+              if (!input.trySkipNullValue()) {
+                totalShieldDamage = input.readDouble();
+                bitField0_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 3355: {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000400;
               }
             } else {
               input.skipUnknownField();
@@ -829,7 +3048,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarLevel)) {
               if (!input.trySkipNullValue()) {
                 avatarLevel = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000800;
               }
             } else {
               input.skipUnknownField();
@@ -841,7 +3060,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarRank)) {
               if (!input.trySkipNullValue()) {
                 avatarRank = input.readUInt32();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00001000;
               }
             } else {
               input.skipUnknownField();
@@ -853,7 +3072,127 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarPromotion)) {
               if (!input.trySkipNullValue()) {
                 avatarPromotion = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00002000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -715510094:
+          case -391886117: {
+            if (input.isAtField(FieldNames.totalTurns)) {
+              if (!input.trySkipNullValue()) {
+                totalTurns = input.readUInt32();
+                bitField0_ |= 0x00004000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1897528135:
+          case 1306191356: {
+            if (input.isAtField(FieldNames.stageId)) {
+              if (!input.trySkipNullValue()) {
+                stageId = input.readUInt32();
+                bitField0_ |= 0x00008000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1836914520:
+          case 1119794139: {
+            if (input.isAtField(FieldNames.stageType)) {
+              if (!input.trySkipNullValue()) {
+                stageType = input.readUInt32();
+                bitField0_ |= 0x00010000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -716629984:
+          case 702606618: {
+            if (input.isAtField(FieldNames.totalSpAdd)) {
+              if (!input.trySkipNullValue()) {
+                totalSpAdd = input.readUInt32();
+                bitField0_ |= 0x00020000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1227317857:
+          case -1896621277: {
+            if (input.isAtField(FieldNames.totalBpCost)) {
+              if (!input.trySkipNullValue()) {
+                totalBpCost = input.readUInt32();
+                bitField0_ |= 0x00040000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -141663578:
+          case 228363975: {
+            if (input.isAtField(FieldNames.dieTimes)) {
+              if (!input.trySkipNullValue()) {
+                dieTimes = input.readUInt32();
+                bitField0_ |= 0x00080000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1258181903:
+          case -23965732: {
+            if (input.isAtField(FieldNames.reviveTimes)) {
+              if (!input.trySkipNullValue()) {
+                reviveTimes = input.readUInt32();
+                bitField0_ |= 0x00100000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1292993927:
+          case 1753073670: {
+            if (input.isAtField(FieldNames.breakTimes)) {
+              if (!input.trySkipNullValue()) {
+                breakTimes = input.readUInt32();
+                bitField0_ |= 0x00200000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 737744230:
+          case 1709324967: {
+            if (input.isAtField(FieldNames.extraTurns)) {
+              if (!input.trySkipNullValue()) {
+                extraTurns = input.readUInt32();
+                bitField0_ |= 0x00400000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1429816615:
+          case 1374951802: {
+            if (input.isAtField(FieldNames.assistUid)) {
+              if (!input.trySkipNullValue()) {
+                assistUid = input.readUInt32();
+                bitField0_ |= 0x00800000;
               }
             } else {
               input.skipUnknownField();
@@ -867,7 +3206,7 @@ public final class AvatarBattleInfoOuterClass {
                 final AvatarTypeOuterClass.AvatarType value = input.readEnum(AvatarTypeOuterClass.AvatarType.converter());
                 if (value != null) {
                   avatarType = value.getNumber();
-                  bitField0_ |= 0x00000010;
+                  bitField0_ |= 0x01000000;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -882,7 +3221,55 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarStatus)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(avatarStatus);
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x02000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -153186218:
+          case 1594655053: {
+            if (input.isAtField(FieldNames.initialStatus)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(initialStatus);
+                bitField0_ |= 0x04000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 385943672:
+          case -569653269: {
+            if (input.isAtField(FieldNames.avatarSkill)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(avatarSkill);
+                bitField0_ |= 0x08000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 974649919:
+          case 1039646875: {
+            if (input.isAtField(FieldNames.spAddSource)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(spAddSource);
+                bitField0_ |= 0x10000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1073894617:
+          case -839813167: {
+            if (input.isAtField(FieldNames.battleRelicList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(battleRelicList);
+                bitField0_ |= 0x20000000;
               }
             } else {
               input.skipUnknownField();
@@ -942,6 +3329,26 @@ public final class AvatarBattleInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName totalDamage = FieldName.forField("totalDamage", "total_damage");
+
+      static final FieldName totalHeal = FieldName.forField("totalHeal", "total_heal");
+
+      static final FieldName totalDamageTaken = FieldName.forField("totalDamageTaken", "total_damage_taken");
+
+      static final FieldName totalHpRecover = FieldName.forField("totalHpRecover", "total_hp_recover");
+
+      static final FieldName totalSpCost = FieldName.forField("totalSpCost", "total_sp_cost");
+
+      static final FieldName totalBreakDamage = FieldName.forField("totalBreakDamage", "total_break_damage");
+
+      static final FieldName delayCumulate = FieldName.forField("delayCumulate", "delay_cumulate");
+
+      static final FieldName totalShield = FieldName.forField("totalShield", "total_shield");
+
+      static final FieldName totalShieldTaken = FieldName.forField("totalShieldTaken", "total_shield_taken");
+
+      static final FieldName totalShieldDamage = FieldName.forField("totalShieldDamage", "total_shield_damage");
+
       static final FieldName id = FieldName.forField("id");
 
       static final FieldName avatarLevel = FieldName.forField("avatarLevel", "avatar_level");
@@ -950,9 +3357,37 @@ public final class AvatarBattleInfoOuterClass {
 
       static final FieldName avatarPromotion = FieldName.forField("avatarPromotion", "avatar_promotion");
 
+      static final FieldName totalTurns = FieldName.forField("totalTurns", "total_turns");
+
+      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+
+      static final FieldName stageType = FieldName.forField("stageType", "stage_type");
+
+      static final FieldName totalSpAdd = FieldName.forField("totalSpAdd", "total_sp_add");
+
+      static final FieldName totalBpCost = FieldName.forField("totalBpCost", "total_bp_cost");
+
+      static final FieldName dieTimes = FieldName.forField("dieTimes", "die_times");
+
+      static final FieldName reviveTimes = FieldName.forField("reviveTimes", "revive_times");
+
+      static final FieldName breakTimes = FieldName.forField("breakTimes", "break_times");
+
+      static final FieldName extraTurns = FieldName.forField("extraTurns", "extra_turns");
+
+      static final FieldName assistUid = FieldName.forField("assistUid", "assist_uid");
+
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
 
       static final FieldName avatarStatus = FieldName.forField("avatarStatus", "avatar_status");
+
+      static final FieldName initialStatus = FieldName.forField("initialStatus", "initial_status");
+
+      static final FieldName avatarSkill = FieldName.forField("avatarSkill", "avatar_skill");
+
+      static final FieldName spAddSource = FieldName.forField("spAddSource", "sp_add_source");
+
+      static final FieldName battleRelicList = FieldName.forField("battleRelicList", "battle_relic_list");
     }
   }
 }

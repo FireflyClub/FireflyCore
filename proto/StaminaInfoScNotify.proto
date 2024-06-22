@@ -2,10 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Nhlibpjejkk
+// EIEJAAOFNFB
 message StaminaInfoScNotify {
-    uint32 stamina = 1;
-    // int64 onnmlhmnbbb = 11;
-    int64 next_recover_time = 15; // akildbckhgj
-    uint32 reserve_stamina = 2; // gimjlllinid
+	//int64 GKEIJPFGDJN = 11;
+    uint32 reserve_stamina = 12; // NELCGENAHFO
+    uint32 stamina = 2;
+	//int64 HMKCHODJOEO = 14;
+
+    int64 next_recover_time = 11; //?
 }

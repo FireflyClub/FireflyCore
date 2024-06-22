@@ -23,9 +23,9 @@ public final class EquipRelicOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 type = 1;</code>
+     * <code>optional uint32 slot = 1;</code>
      */
-    private int type;
+    private int slot;
 
     /**
      * <code>optional uint32 relic_unique_id = 14;</code>
@@ -47,39 +47,39 @@ public final class EquipRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 type = 1;</code>
-     * @return whether the type field is set
+     * <code>optional uint32 slot = 1;</code>
+     * @return whether the slot field is set
      */
-    public boolean hasType() {
+    public boolean hasSlot() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 type = 1;</code>
+     * <code>optional uint32 slot = 1;</code>
      * @return this
      */
-    public EquipRelic clearType() {
+    public EquipRelic clearSlot() {
       bitField0_ &= ~0x00000001;
-      type = 0;
+      slot = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 type = 1;</code>
-     * @return the type
+     * <code>optional uint32 slot = 1;</code>
+     * @return the slot
      */
-    public int getType() {
-      return type;
+    public int getSlot() {
+      return slot;
     }
 
     /**
-     * <code>optional uint32 type = 1;</code>
-     * @param value the type to set
+     * <code>optional uint32 slot = 1;</code>
+     * @param value the slot to set
      * @return this
      */
-    public EquipRelic setType(final int value) {
+    public EquipRelic setSlot(final int value) {
       bitField0_ |= 0x00000001;
-      type = value;
+      slot = value;
       return this;
     }
 
@@ -125,7 +125,7 @@ public final class EquipRelicOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        type = other.type;
+        slot = other.slot;
         relicUniqueId = other.relicUniqueId;
       }
       return this;
@@ -137,8 +137,8 @@ public final class EquipRelicOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasType()) {
-        setType(other.type);
+      if (other.hasSlot()) {
+        setSlot(other.slot);
       }
       if (other.hasRelicUniqueId()) {
         setRelicUniqueId(other.relicUniqueId);
@@ -153,7 +153,7 @@ public final class EquipRelicOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      type = 0;
+      slot = 0;
       relicUniqueId = 0;
       return this;
     }
@@ -178,7 +178,7 @@ public final class EquipRelicOuterClass {
       }
       EquipRelic other = (EquipRelic) o;
       return bitField0_ == other.bitField0_
-        && (!hasType() || type == other.type)
+        && (!hasSlot() || slot == other.slot)
         && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId);
     }
 
@@ -186,7 +186,7 @@ public final class EquipRelicOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(type);
+        output.writeUInt32NoTag(slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 112);
@@ -198,7 +198,7 @@ public final class EquipRelicOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(type);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
@@ -214,8 +214,8 @@ public final class EquipRelicOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // type
-            type = input.readUInt32();
+            // slot
+            slot = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 112) {
@@ -249,7 +249,7 @@ public final class EquipRelicOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.type, type);
+        output.writeUInt32(FieldNames.slot, slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
@@ -264,10 +264,10 @@ public final class EquipRelicOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3575610: {
-            if (input.isAtField(FieldNames.type)) {
+          case 3533310: {
+            if (input.isAtField(FieldNames.slot)) {
               if (!input.trySkipNullValue()) {
-                type = input.readUInt32();
+                slot = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -339,7 +339,7 @@ public final class EquipRelicOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName type = FieldName.forField("type");
+      static final FieldName slot = FieldName.forField("slot");
 
       static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
     }

@@ -13,52 +13,57 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class UseItemCsReqOuterClass {
   /**
-   * <pre>
-   *  Fnahflfngln
-   * </pre>
-   *
    * Protobuf type {@code UseItemCsReq}
    */
   public static final class UseItemCsReq extends ProtoMessage<UseItemCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 optional_reward_id = 4;</code>
+     * <pre>
+     *  LIDONMAAKOH
+     * </pre>
+     *
+     * <code>optional uint32 optional_reward_id = 5;</code>
      */
     private int optionalRewardId;
 
     /**
-     * <code>optional uint32 use_item_id = 7;</code>
+     * <code>optional uint32 use_item_id = 10;</code>
      */
     private int useItemId;
 
     /**
-     * <code>optional uint32 base_avatar_id = 10;</code>
-     */
-    private int baseAvatarId;
-
-    /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  OOLGGPJLNAF
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 scene_avatar_id = 11;</code>
+     */
+    private int sceneAvatarId;
+
+    /**
+     * <code>optional uint32 use_item_count = 15;</code>
      */
     private int useItemCount;
 
     /**
+     * <pre>
+     *  JDDNLJJANAL
+     * </pre>
+     *
      * <code>optional .AvatarType use_avatar_type = 8;</code>
      */
     private int useAvatarType;
+
+    /**
+     * <code>optional bool BCCFBCFIAMB = 1;</code>
+     */
+    private boolean bCCFBCFIAMB;
 
     private UseItemCsReq() {
     }
 
     /**
-     * <pre>
-     *  Fnahflfngln
-     * </pre>
-     *
      * @return a new empty instance of {@code UseItemCsReq}
      */
     public static UseItemCsReq newInstance() {
@@ -66,7 +71,11 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 optional_reward_id = 4;</code>
+     * <pre>
+     *  LIDONMAAKOH
+     * </pre>
+     *
+     * <code>optional uint32 optional_reward_id = 5;</code>
      * @return whether the optionalRewardId field is set
      */
     public boolean hasOptionalRewardId() {
@@ -74,7 +83,11 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 optional_reward_id = 4;</code>
+     * <pre>
+     *  LIDONMAAKOH
+     * </pre>
+     *
+     * <code>optional uint32 optional_reward_id = 5;</code>
      * @return this
      */
     public UseItemCsReq clearOptionalRewardId() {
@@ -84,7 +97,11 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 optional_reward_id = 4;</code>
+     * <pre>
+     *  LIDONMAAKOH
+     * </pre>
+     *
+     * <code>optional uint32 optional_reward_id = 5;</code>
      * @return the optionalRewardId
      */
     public int getOptionalRewardId() {
@@ -92,7 +109,11 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 optional_reward_id = 4;</code>
+     * <pre>
+     *  LIDONMAAKOH
+     * </pre>
+     *
+     * <code>optional uint32 optional_reward_id = 5;</code>
      * @param value the optionalRewardId to set
      * @return this
      */
@@ -103,7 +124,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 use_item_id = 7;</code>
+     * <code>optional uint32 use_item_id = 10;</code>
      * @return whether the useItemId field is set
      */
     public boolean hasUseItemId() {
@@ -111,7 +132,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 use_item_id = 7;</code>
+     * <code>optional uint32 use_item_id = 10;</code>
      * @return this
      */
     public UseItemCsReq clearUseItemId() {
@@ -121,7 +142,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 use_item_id = 7;</code>
+     * <code>optional uint32 use_item_id = 10;</code>
      * @return the useItemId
      */
     public int getUseItemId() {
@@ -129,7 +150,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 use_item_id = 7;</code>
+     * <code>optional uint32 use_item_id = 10;</code>
      * @param value the useItemId to set
      * @return this
      */
@@ -140,48 +161,60 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 10;</code>
-     * @return whether the baseAvatarId field is set
+     * <pre>
+     *  OOLGGPJLNAF
+     * </pre>
+     *
+     * <code>optional uint32 scene_avatar_id = 11;</code>
+     * @return whether the sceneAvatarId field is set
      */
-    public boolean hasBaseAvatarId() {
+    public boolean hasSceneAvatarId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 10;</code>
+     * <pre>
+     *  OOLGGPJLNAF
+     * </pre>
+     *
+     * <code>optional uint32 scene_avatar_id = 11;</code>
      * @return this
      */
-    public UseItemCsReq clearBaseAvatarId() {
+    public UseItemCsReq clearSceneAvatarId() {
       bitField0_ &= ~0x00000004;
-      baseAvatarId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 base_avatar_id = 10;</code>
-     * @return the baseAvatarId
-     */
-    public int getBaseAvatarId() {
-      return baseAvatarId;
-    }
-
-    /**
-     * <code>optional uint32 base_avatar_id = 10;</code>
-     * @param value the baseAvatarId to set
-     * @return this
-     */
-    public UseItemCsReq setBaseAvatarId(final int value) {
-      bitField0_ |= 0x00000004;
-      baseAvatarId = value;
+      sceneAvatarId = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  bool jgapgfhdjjj = 9;
+     *  OOLGGPJLNAF
      * </pre>
      *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 scene_avatar_id = 11;</code>
+     * @return the sceneAvatarId
+     */
+    public int getSceneAvatarId() {
+      return sceneAvatarId;
+    }
+
+    /**
+     * <pre>
+     *  OOLGGPJLNAF
+     * </pre>
+     *
+     * <code>optional uint32 scene_avatar_id = 11;</code>
+     * @param value the sceneAvatarId to set
+     * @return this
+     */
+    public UseItemCsReq setSceneAvatarId(final int value) {
+      bitField0_ |= 0x00000004;
+      sceneAvatarId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 use_item_count = 15;</code>
      * @return whether the useItemCount field is set
      */
     public boolean hasUseItemCount() {
@@ -189,11 +222,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool jgapgfhdjjj = 9;
-     * </pre>
-     *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_count = 15;</code>
      * @return this
      */
     public UseItemCsReq clearUseItemCount() {
@@ -203,11 +232,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool jgapgfhdjjj = 9;
-     * </pre>
-     *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_count = 15;</code>
      * @return the useItemCount
      */
     public int getUseItemCount() {
@@ -215,11 +240,7 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool jgapgfhdjjj = 9;
-     * </pre>
-     *
-     * <code>optional uint32 use_item_count = 13;</code>
+     * <code>optional uint32 use_item_count = 15;</code>
      * @param value the useItemCount to set
      * @return this
      */
@@ -230,6 +251,10 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  JDDNLJJANAL
+     * </pre>
+     *
      * <code>optional .AvatarType use_avatar_type = 8;</code>
      * @return whether the useAvatarType field is set
      */
@@ -238,6 +263,10 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  JDDNLJJANAL
+     * </pre>
+     *
      * <code>optional .AvatarType use_avatar_type = 8;</code>
      * @return this
      */
@@ -248,6 +277,10 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  JDDNLJJANAL
+     * </pre>
+     *
      * <code>optional .AvatarType use_avatar_type = 8;</code>
      * @return the useAvatarType
      */
@@ -281,6 +314,10 @@ public final class UseItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  JDDNLJJANAL
+     * </pre>
+     *
      * <code>optional .AvatarType use_avatar_type = 8;</code>
      * @param value the useAvatarType to set
      * @return this
@@ -291,6 +328,43 @@ public final class UseItemCsReqOuterClass {
       return this;
     }
 
+    /**
+     * <code>optional bool BCCFBCFIAMB = 1;</code>
+     * @return whether the bCCFBCFIAMB field is set
+     */
+    public boolean hasBCCFBCFIAMB() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional bool BCCFBCFIAMB = 1;</code>
+     * @return this
+     */
+    public UseItemCsReq clearBCCFBCFIAMB() {
+      bitField0_ &= ~0x00000020;
+      bCCFBCFIAMB = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool BCCFBCFIAMB = 1;</code>
+     * @return the bCCFBCFIAMB
+     */
+    public boolean getBCCFBCFIAMB() {
+      return bCCFBCFIAMB;
+    }
+
+    /**
+     * <code>optional bool BCCFBCFIAMB = 1;</code>
+     * @param value the bCCFBCFIAMB to set
+     * @return this
+     */
+    public UseItemCsReq setBCCFBCFIAMB(final boolean value) {
+      bitField0_ |= 0x00000020;
+      bCCFBCFIAMB = value;
+      return this;
+    }
+
     @Override
     public UseItemCsReq copyFrom(final UseItemCsReq other) {
       cachedSize = other.cachedSize;
@@ -298,9 +372,10 @@ public final class UseItemCsReqOuterClass {
         bitField0_ = other.bitField0_;
         optionalRewardId = other.optionalRewardId;
         useItemId = other.useItemId;
-        baseAvatarId = other.baseAvatarId;
+        sceneAvatarId = other.sceneAvatarId;
         useItemCount = other.useItemCount;
         useAvatarType = other.useAvatarType;
+        bCCFBCFIAMB = other.bCCFBCFIAMB;
       }
       return this;
     }
@@ -317,14 +392,17 @@ public final class UseItemCsReqOuterClass {
       if (other.hasUseItemId()) {
         setUseItemId(other.useItemId);
       }
-      if (other.hasBaseAvatarId()) {
-        setBaseAvatarId(other.baseAvatarId);
+      if (other.hasSceneAvatarId()) {
+        setSceneAvatarId(other.sceneAvatarId);
       }
       if (other.hasUseItemCount()) {
         setUseItemCount(other.useItemCount);
       }
       if (other.hasUseAvatarType()) {
         setUseAvatarTypeValue(other.useAvatarType);
+      }
+      if (other.hasBCCFBCFIAMB()) {
+        setBCCFBCFIAMB(other.bCCFBCFIAMB);
       }
       return this;
     }
@@ -338,9 +416,10 @@ public final class UseItemCsReqOuterClass {
       bitField0_ = 0;
       optionalRewardId = 0;
       useItemId = 0;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       useItemCount = 0;
       useAvatarType = 0;
+      bCCFBCFIAMB = false;
       return this;
     }
 
@@ -366,32 +445,37 @@ public final class UseItemCsReqOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasOptionalRewardId() || optionalRewardId == other.optionalRewardId)
         && (!hasUseItemId() || useItemId == other.useItemId)
-        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
+        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
         && (!hasUseItemCount() || useItemCount == other.useItemCount)
-        && (!hasUseAvatarType() || useAvatarType == other.useAvatarType);
+        && (!hasUseAvatarType() || useAvatarType == other.useAvatarType)
+        && (!hasBCCFBCFIAMB() || bCCFBCFIAMB == other.bCCFBCFIAMB);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(optionalRewardId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(useItemId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(baseAvatarId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(useItemCount);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 64);
         output.writeEnumNoTag(useAvatarType);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawByte((byte) 8);
+        output.writeBoolNoTag(bCCFBCFIAMB);
       }
     }
 
@@ -405,13 +489,16 @@ public final class UseItemCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(useItemCount);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(useAvatarType);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        size += 2;
       }
       return size;
     }
@@ -423,34 +510,34 @@ public final class UseItemCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 40: {
             // optionalRewardId
             optionalRewardId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
-            // useItemId
-            useItemId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 80) {
               break;
             }
           }
           case 80: {
-            // baseAvatarId
-            baseAvatarId = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            // useItemId
+            useItemId = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 88) {
               break;
             }
           }
-          case 104: {
+          case 88: {
+            // sceneAvatarId
+            sceneAvatarId = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
             // useItemCount
             useItemCount = input.readUInt32();
             bitField0_ |= 0x00000008;
@@ -466,6 +553,15 @@ public final class UseItemCsReqOuterClass {
               useAvatarType = value;
               bitField0_ |= 0x00000010;
             }
+            tag = input.readTag();
+            if (tag != 8) {
+              break;
+            }
+          }
+          case 8: {
+            // bCCFBCFIAMB
+            bCCFBCFIAMB = input.readBool();
+            bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -495,13 +591,16 @@ public final class UseItemCsReqOuterClass {
         output.writeUInt32(FieldNames.useItemId, useItemId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
+        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.useItemCount, useItemCount);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeEnum(FieldNames.useAvatarType, useAvatarType, AvatarTypeOuterClass.AvatarType.converter());
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeBool(FieldNames.bCCFBCFIAMB, bCCFBCFIAMB);
       }
       output.endObject();
     }
@@ -537,11 +636,11 @@ public final class UseItemCsReqOuterClass {
             }
             break;
           }
-          case 118022725:
-          case -1756826157: {
-            if (input.isAtField(FieldNames.baseAvatarId)) {
+          case -1044772608:
+          case 1783323086: {
+            if (input.isAtField(FieldNames.sceneAvatarId)) {
               if (!input.trySkipNullValue()) {
-                baseAvatarId = input.readUInt32();
+                sceneAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -572,6 +671,17 @@ public final class UseItemCsReqOuterClass {
                 } else {
                   input.skipUnknownEnumValue();
                 }
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1588161170: {
+            if (input.isAtField(FieldNames.bCCFBCFIAMB)) {
+              if (!input.trySkipNullValue()) {
+                bCCFBCFIAMB = input.readBool();
+                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -634,11 +744,13 @@ public final class UseItemCsReqOuterClass {
 
       static final FieldName useItemId = FieldName.forField("useItemId", "use_item_id");
 
-      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
+      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
 
       static final FieldName useItemCount = FieldName.forField("useItemCount", "use_item_count");
 
       static final FieldName useAvatarType = FieldName.forField("useAvatarType", "use_avatar_type");
+
+      static final FieldName bCCFBCFIAMB = FieldName.forField("BCCFBCFIAMB");
     }
   }
 }

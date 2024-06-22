@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class GroupStateChangeScNotifyOuterClass {
   /**
-   * <pre>
-   *  Ibklimbncaj
-   * </pre>
-   *
    * Protobuf type {@code GroupStateChangeScNotify}
    */
   public static final class GroupStateChangeScNotify extends ProtoMessage<GroupStateChangeScNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      */
     private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
 
@@ -31,10 +27,6 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ibklimbncaj
-     * </pre>
-     *
      * @return a new empty instance of {@code GroupStateChangeScNotify}
      */
     public static GroupStateChangeScNotify newInstance() {
@@ -42,7 +34,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      * @return whether the groupStateInfo field is set
      */
     public boolean hasGroupStateInfo() {
@@ -50,7 +42,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      * @return this
      */
     public GroupStateChangeScNotify clearGroupStateInfo() {
@@ -60,7 +52,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -74,7 +66,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -88,7 +80,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 3;</code>
+     * <code>optional .GroupStateInfo group_state_info = 8;</code>
      * @param value the groupStateInfo to set
      * @return this
      */
@@ -159,7 +151,7 @@ public final class GroupStateChangeScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 26);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(groupStateInfo);
       }
     }
@@ -180,7 +172,7 @@ public final class GroupStateChangeScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 26: {
+          case 66: {
             // groupStateInfo
             input.readMessage(groupStateInfo);
             bitField0_ |= 0x00000001;

@@ -2,10 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Mffaehngkmk
 message GroupStateInfo {
-    // uint32 kafjddmebpi = 14;
-    uint32 entry_id = 7;
-    uint32 group_state = 2; //? kfclhlpeclf
-    uint32 group_id = 5;
+    uint32 entry_id = 5;
+    uint32 player_uid = 13; //?
+    uint32 group_id = 8;
+    uint32 group_state = 7; //?
 }

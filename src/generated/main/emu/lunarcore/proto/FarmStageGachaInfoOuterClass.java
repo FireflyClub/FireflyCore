@@ -19,19 +19,11 @@ public final class FarmStageGachaInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 begin_time = 7;</code>
      */
     private long beginTime;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 end_time = 12;</code>
      */
     private long endTime;
@@ -56,10 +48,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 begin_time = 7;</code>
      * @return whether the beginTime field is set
      */
@@ -68,10 +56,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 begin_time = 7;</code>
      * @return this
      */
@@ -82,10 +66,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 begin_time = 7;</code>
      * @return the beginTime
      */
@@ -94,10 +74,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 begin_time = 7;</code>
      * @param value the beginTime to set
      * @return this
@@ -109,10 +85,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 end_time = 12;</code>
      * @return whether the endTime field is set
      */
@@ -121,10 +93,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 end_time = 12;</code>
      * @return this
      */
@@ -135,10 +103,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 end_time = 12;</code>
      * @return the endTime
      */
@@ -147,10 +111,6 @@ public final class FarmStageGachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 end_time = 12;</code>
      * @param value the endTime to set
      * @return this

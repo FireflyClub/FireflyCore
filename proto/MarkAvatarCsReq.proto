@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// IBBHHKAGJGF
+// DMFCHPAGKFM
 message MarkAvatarCsReq {
-	bool is_marked = 2;
-	uint32 avatar_id = 1;
+	uint32 avatar_id = 6;
+	bool is_marked = 8;
 }

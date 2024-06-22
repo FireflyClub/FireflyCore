@@ -33,6 +33,11 @@ public final class EntityMotionOuterClass {
     private int mapLayer;
 
     /**
+     * <code>optional bool JMDKFEHCPHA = 10;</code>
+     */
+    private boolean jMDKFEHCPHA;
+
+    /**
      * <code>optional .MotionInfo motion = 15;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
@@ -126,11 +131,48 @@ public final class EntityMotionOuterClass {
     }
 
     /**
+     * <code>optional bool JMDKFEHCPHA = 10;</code>
+     * @return whether the jMDKFEHCPHA field is set
+     */
+    public boolean hasJMDKFEHCPHA() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional bool JMDKFEHCPHA = 10;</code>
+     * @return this
+     */
+    public EntityMotion clearJMDKFEHCPHA() {
+      bitField0_ &= ~0x00000004;
+      jMDKFEHCPHA = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool JMDKFEHCPHA = 10;</code>
+     * @return the jMDKFEHCPHA
+     */
+    public boolean getJMDKFEHCPHA() {
+      return jMDKFEHCPHA;
+    }
+
+    /**
+     * <code>optional bool JMDKFEHCPHA = 10;</code>
+     * @param value the jMDKFEHCPHA to set
+     * @return this
+     */
+    public EntityMotion setJMDKFEHCPHA(final boolean value) {
+      bitField0_ |= 0x00000004;
+      jMDKFEHCPHA = value;
+      return this;
+    }
+
+    /**
      * <code>optional .MotionInfo motion = 15;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
@@ -138,7 +180,7 @@ public final class EntityMotionOuterClass {
      * @return this
      */
     public EntityMotion clearMotion() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       motion.clear();
       return this;
     }
@@ -167,7 +209,7 @@ public final class EntityMotionOuterClass {
      * @return internal storage object for modifications
      */
     public MotionInfoOuterClass.MotionInfo getMutableMotion() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       return motion;
     }
 
@@ -177,7 +219,7 @@ public final class EntityMotionOuterClass {
      * @return this
      */
     public EntityMotion setMotion(final MotionInfoOuterClass.MotionInfo value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       motion.copyFrom(value);
       return this;
     }
@@ -189,6 +231,7 @@ public final class EntityMotionOuterClass {
         bitField0_ = other.bitField0_;
         entityId = other.entityId;
         mapLayer = other.mapLayer;
+        jMDKFEHCPHA = other.jMDKFEHCPHA;
         motion.copyFrom(other.motion);
       }
       return this;
@@ -206,6 +249,9 @@ public final class EntityMotionOuterClass {
       if (other.hasMapLayer()) {
         setMapLayer(other.mapLayer);
       }
+      if (other.hasJMDKFEHCPHA()) {
+        setJMDKFEHCPHA(other.jMDKFEHCPHA);
+      }
       if (other.hasMotion()) {
         getMutableMotion().mergeFrom(other.motion);
       }
@@ -221,6 +267,7 @@ public final class EntityMotionOuterClass {
       bitField0_ = 0;
       entityId = 0;
       mapLayer = 0;
+      jMDKFEHCPHA = false;
       motion.clear();
       return this;
     }
@@ -248,6 +295,7 @@ public final class EntityMotionOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasEntityId() || entityId == other.entityId)
         && (!hasMapLayer() || mapLayer == other.mapLayer)
+        && (!hasJMDKFEHCPHA() || jMDKFEHCPHA == other.jMDKFEHCPHA)
         && (!hasMotion() || motion.equals(other.motion));
     }
 
@@ -262,6 +310,10 @@ public final class EntityMotionOuterClass {
         output.writeUInt32NoTag(mapLayer);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeBoolNoTag(jMDKFEHCPHA);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 122);
         output.writeMessageNoTag(motion);
       }
@@ -277,6 +329,9 @@ public final class EntityMotionOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(mapLayer);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
       }
       return size;
@@ -303,6 +358,15 @@ public final class EntityMotionOuterClass {
             mapLayer = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // jMDKFEHCPHA
+            jMDKFEHCPHA = input.readBool();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
             if (tag != 122) {
               break;
             }
@@ -310,7 +374,7 @@ public final class EntityMotionOuterClass {
           case 122: {
             // motion
             input.readMessage(motion);
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -340,6 +404,9 @@ public final class EntityMotionOuterClass {
         output.writeUInt32(FieldNames.mapLayer, mapLayer);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        output.writeBool(FieldNames.jMDKFEHCPHA, jMDKFEHCPHA);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeMessage(FieldNames.motion, motion);
       }
       output.endObject();
@@ -376,11 +443,22 @@ public final class EntityMotionOuterClass {
             }
             break;
           }
+          case 1176580293: {
+            if (input.isAtField(FieldNames.jMDKFEHCPHA)) {
+              if (!input.trySkipNullValue()) {
+                jMDKFEHCPHA = input.readBool();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1068318794: {
             if (input.isAtField(FieldNames.motion)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(motion);
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -442,6 +520,8 @@ public final class EntityMotionOuterClass {
       static final FieldName entityId = FieldName.forField("entityId", "entity_id");
 
       static final FieldName mapLayer = FieldName.forField("mapLayer", "map_layer");
+
+      static final FieldName jMDKFEHCPHA = FieldName.forField("JMDKFEHCPHA");
 
       static final FieldName motion = FieldName.forField("motion");
     }

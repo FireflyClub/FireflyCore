@@ -12,6 +12,6 @@ message BuffInfo {
 	// uint32 JGDMLOFCNCH = 3;
     uint32 level = 7;
     float life_time = 3; // EDINNBPPOGG
-    uint32 count = 13; //?
-    uint32 buff_id = 8; //?
+    uint32 buff_id = 13; //?
+    uint32 count = 8; //?
 }

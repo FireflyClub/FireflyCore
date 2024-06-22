@@ -14,18 +14,26 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class ContentPackageDataOuterClass {
   /**
+   * <pre>
+   *  CHAAMEOKIFJ
+   * </pre>
+   *
    * Protobuf type {@code ContentPackageData}
    */
   public static final class ContentPackageData extends ProtoMessage<ContentPackageData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 AGJBMHBMFIM = 10;</code>
+     * <code>optional uint32 BDIKNBLIEJF = 11;</code>
      */
-    private int aGJBMHBMFIM;
+    private int bDIKNBLIEJF;
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      */
     private final RepeatedMessage<ContentInfoOuterClass.ContentInfo> contentInfoList = RepeatedMessage.newEmptyInstance(ContentInfoOuterClass.ContentInfo.getFactory());
 
@@ -33,6 +41,10 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
+     * <pre>
+     *  CHAAMEOKIFJ
+     * </pre>
+     *
      * @return a new empty instance of {@code ContentPackageData}
      */
     public static ContentPackageData newInstance() {
@@ -40,44 +52,48 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 AGJBMHBMFIM = 10;</code>
-     * @return whether the aGJBMHBMFIM field is set
+     * <code>optional uint32 BDIKNBLIEJF = 11;</code>
+     * @return whether the bDIKNBLIEJF field is set
      */
-    public boolean hasAGJBMHBMFIM() {
+    public boolean hasBDIKNBLIEJF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 AGJBMHBMFIM = 10;</code>
+     * <code>optional uint32 BDIKNBLIEJF = 11;</code>
      * @return this
      */
-    public ContentPackageData clearAGJBMHBMFIM() {
+    public ContentPackageData clearBDIKNBLIEJF() {
       bitField0_ &= ~0x00000001;
-      aGJBMHBMFIM = 0;
+      bDIKNBLIEJF = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 AGJBMHBMFIM = 10;</code>
-     * @return the aGJBMHBMFIM
+     * <code>optional uint32 BDIKNBLIEJF = 11;</code>
+     * @return the bDIKNBLIEJF
      */
-    public int getAGJBMHBMFIM() {
-      return aGJBMHBMFIM;
+    public int getBDIKNBLIEJF() {
+      return bDIKNBLIEJF;
     }
 
     /**
-     * <code>optional uint32 AGJBMHBMFIM = 10;</code>
-     * @param value the aGJBMHBMFIM to set
+     * <code>optional uint32 BDIKNBLIEJF = 11;</code>
+     * @param value the bDIKNBLIEJF to set
      * @return this
      */
-    public ContentPackageData setAGJBMHBMFIM(final int value) {
+    public ContentPackageData setBDIKNBLIEJF(final int value) {
       bitField0_ |= 0x00000001;
-      aGJBMHBMFIM = value;
+      bDIKNBLIEJF = value;
       return this;
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      * @return whether the contentInfoList field is set
      */
     public boolean hasContentInfoList() {
@@ -85,7 +101,11 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      * @return this
      */
     public ContentPackageData clearContentInfoList() {
@@ -95,7 +115,11 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +133,11 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +151,11 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      * @param value the contentInfoList to add
      * @return this
      */
@@ -134,7 +166,11 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentInfo content_info_list = 9;</code>
+     * <pre>
+     *  CMKBEFCFANP
+     * </pre>
+     *
+     * <code>repeated .ContentInfo content_info_list = 13;</code>
      * @param values the contentInfoList to add
      * @return this
      */
@@ -150,7 +186,7 @@ public final class ContentPackageDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        aGJBMHBMFIM = other.aGJBMHBMFIM;
+        bDIKNBLIEJF = other.bDIKNBLIEJF;
         contentInfoList.copyFrom(other.contentInfoList);
       }
       return this;
@@ -162,8 +198,8 @@ public final class ContentPackageDataOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasAGJBMHBMFIM()) {
-        setAGJBMHBMFIM(other.aGJBMHBMFIM);
+      if (other.hasBDIKNBLIEJF()) {
+        setBDIKNBLIEJF(other.bDIKNBLIEJF);
       }
       if (other.hasContentInfoList()) {
         getMutableContentInfoList().addAll(other.contentInfoList);
@@ -178,7 +214,7 @@ public final class ContentPackageDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      aGJBMHBMFIM = 0;
+      bDIKNBLIEJF = 0;
       contentInfoList.clear();
       return this;
     }
@@ -204,19 +240,19 @@ public final class ContentPackageDataOuterClass {
       }
       ContentPackageData other = (ContentPackageData) o;
       return bitField0_ == other.bitField0_
-        && (!hasAGJBMHBMFIM() || aGJBMHBMFIM == other.aGJBMHBMFIM)
+        && (!hasBDIKNBLIEJF() || bDIKNBLIEJF == other.bDIKNBLIEJF)
         && (!hasContentInfoList() || contentInfoList.equals(other.contentInfoList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(aGJBMHBMFIM);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(bDIKNBLIEJF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < contentInfoList.length(); i++) {
-          output.writeRawByte((byte) 74);
+          output.writeRawByte((byte) 106);
           output.writeMessageNoTag(contentInfoList.get(i));
         }
       }
@@ -226,7 +262,7 @@ public final class ContentPackageDataOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(aGJBMHBMFIM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(bDIKNBLIEJF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += (1 * contentInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(contentInfoList);
@@ -241,16 +277,16 @@ public final class ContentPackageDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
-            // aGJBMHBMFIM
-            aGJBMHBMFIM = input.readUInt32();
+          case 88: {
+            // bDIKNBLIEJF
+            bDIKNBLIEJF = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 106) {
               break;
             }
           }
-          case 74: {
+          case 106: {
             // contentInfoList
             tag = input.readRepeatedMessage(contentInfoList, tag);
             bitField0_ |= 0x00000002;
@@ -276,7 +312,7 @@ public final class ContentPackageDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.aGJBMHBMFIM, aGJBMHBMFIM);
+        output.writeUInt32(FieldNames.bDIKNBLIEJF, bDIKNBLIEJF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedMessage(FieldNames.contentInfoList, contentInfoList);
@@ -291,10 +327,10 @@ public final class ContentPackageDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1708635802: {
-            if (input.isAtField(FieldNames.aGJBMHBMFIM)) {
+          case -1878324468: {
+            if (input.isAtField(FieldNames.bDIKNBLIEJF)) {
               if (!input.trySkipNullValue()) {
-                aGJBMHBMFIM = input.readUInt32();
+                bDIKNBLIEJF = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -367,7 +403,7 @@ public final class ContentPackageDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName aGJBMHBMFIM = FieldName.forField("AGJBMHBMFIM");
+      static final FieldName bDIKNBLIEJF = FieldName.forField("BDIKNBLIEJF");
 
       static final FieldName contentInfoList = FieldName.forField("contentInfoList", "content_info_list");
     }

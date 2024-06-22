@@ -24,18 +24,19 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 MOIJHJJLOGJ = 2;
+     *  MOIJHJJLOGJ
      * </pre>
      *
+     * <code>optional uint64 expire_time = 7;</code>
+     */
+    private long expireTime;
+
+    /**
      * <code>optional uint32 num = 5;</code>
      */
     private int num;
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 7;
-     * </pre>
-     *
      * <code>optional uint32 tid = 12;</code>
      */
     private int tid;
@@ -56,35 +57,76 @@ public final class Material0OuterClass {
 
     /**
      * <pre>
-     *  uint64 MOIJHJJLOGJ = 2;
+     *  MOIJHJJLOGJ
      * </pre>
      *
-     * <code>optional uint32 num = 5;</code>
-     * @return whether the num field is set
+     * <code>optional uint64 expire_time = 7;</code>
+     * @return whether the expireTime field is set
      */
-    public boolean hasNum() {
+    public boolean hasExpireTime() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  uint64 MOIJHJJLOGJ = 2;
+     *  MOIJHJJLOGJ
      * </pre>
      *
-     * <code>optional uint32 num = 5;</code>
+     * <code>optional uint64 expire_time = 7;</code>
      * @return this
      */
-    public Material0 clearNum() {
+    public Material0 clearExpireTime() {
       bitField0_ &= ~0x00000001;
-      num = 0;
+      expireTime = 0L;
       return this;
     }
 
     /**
      * <pre>
-     *  uint64 MOIJHJJLOGJ = 2;
+     *  MOIJHJJLOGJ
      * </pre>
      *
+     * <code>optional uint64 expire_time = 7;</code>
+     * @return the expireTime
+     */
+    public long getExpireTime() {
+      return expireTime;
+    }
+
+    /**
+     * <pre>
+     *  MOIJHJJLOGJ
+     * </pre>
+     *
+     * <code>optional uint64 expire_time = 7;</code>
+     * @param value the expireTime to set
+     * @return this
+     */
+    public Material0 setExpireTime(final long value) {
+      bitField0_ |= 0x00000001;
+      expireTime = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 num = 5;</code>
+     * @return whether the num field is set
+     */
+    public boolean hasNum() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 num = 5;</code>
+     * @return this
+     */
+    public Material0 clearNum() {
+      bitField0_ &= ~0x00000002;
+      num = 0;
+      return this;
+    }
+
+    /**
      * <code>optional uint32 num = 5;</code>
      * @return the num
      */
@@ -93,51 +135,35 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 2;
-     * </pre>
-     *
      * <code>optional uint32 num = 5;</code>
      * @param value the num to set
      * @return this
      */
     public Material0 setNum(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       num = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 7;
-     * </pre>
-     *
      * <code>optional uint32 tid = 12;</code>
      * @return whether the tid field is set
      */
     public boolean hasTid() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 7;
-     * </pre>
-     *
      * <code>optional uint32 tid = 12;</code>
      * @return this
      */
     public Material0 clearTid() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       tid = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 7;
-     * </pre>
-     *
      * <code>optional uint32 tid = 12;</code>
      * @return the tid
      */
@@ -146,16 +172,12 @@ public final class Material0OuterClass {
     }
 
     /**
-     * <pre>
-     *  uint64 MOIJHJJLOGJ = 7;
-     * </pre>
-     *
      * <code>optional uint32 tid = 12;</code>
      * @param value the tid to set
      * @return this
      */
     public Material0 setTid(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       tid = value;
       return this;
     }
@@ -165,6 +187,7 @@ public final class Material0OuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        expireTime = other.expireTime;
         num = other.num;
         tid = other.tid;
       }
@@ -177,6 +200,9 @@ public final class Material0OuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasExpireTime()) {
+        setExpireTime(other.expireTime);
+      }
       if (other.hasNum()) {
         setNum(other.num);
       }
@@ -193,6 +219,7 @@ public final class Material0OuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      expireTime = 0L;
       num = 0;
       tid = 0;
       return this;
@@ -218,6 +245,7 @@ public final class Material0OuterClass {
       }
       Material0 other = (Material0) o;
       return bitField0_ == other.bitField0_
+        && (!hasExpireTime() || expireTime == other.expireTime)
         && (!hasNum() || num == other.num)
         && (!hasTid() || tid == other.tid);
     }
@@ -225,10 +253,14 @@ public final class Material0OuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeUInt64NoTag(expireTime);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(num);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(tid);
       }
@@ -238,9 +270,12 @@ public final class Material0OuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(expireTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
       }
       return size;
@@ -253,10 +288,19 @@ public final class Material0OuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 56: {
+            // expireTime
+            expireTime = input.readUInt64();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
           case 40: {
             // num
             num = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
               break;
@@ -265,7 +309,7 @@ public final class Material0OuterClass {
           case 96: {
             // tid
             tid = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -289,9 +333,12 @@ public final class Material0OuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.num, num);
+        output.writeUInt64(FieldNames.expireTime, expireTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.num, num);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.tid, tid);
       }
       output.endObject();
@@ -304,11 +351,23 @@ public final class Material0OuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -834724724:
+          case -96179731: {
+            if (input.isAtField(FieldNames.expireTime)) {
+              if (!input.trySkipNullValue()) {
+                expireTime = input.readUInt64();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 109446: {
             if (input.isAtField(FieldNames.num)) {
               if (!input.trySkipNullValue()) {
                 num = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -319,7 +378,7 @@ public final class Material0OuterClass {
             if (input.isAtField(FieldNames.tid)) {
               if (!input.trySkipNullValue()) {
                 tid = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -378,6 +437,8 @@ public final class Material0OuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName expireTime = FieldName.forField("expireTime", "expire_time");
+
       static final FieldName num = FieldName.forField("num");
 
       static final FieldName tid = FieldName.forField("tid");

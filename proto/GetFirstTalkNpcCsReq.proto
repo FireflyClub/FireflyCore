@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetFirstTalkNpcCsReq {
-    repeated uint32 npc_id_list = 1;
+    repeated uint32 npc_id_list = 13; // IHHDFBKEOMB
 }

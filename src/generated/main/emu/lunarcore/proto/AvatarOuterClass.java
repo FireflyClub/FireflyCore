@@ -77,10 +77,6 @@ public final class AvatarOuterClass {
     private int exp;
 
     /**
-     * <pre>
-     *  DMCEMKPMKCL
-     * </pre>
-     *
      * <code>optional bool is_marked = 3;</code>
      */
     private boolean isMarked;
@@ -467,10 +463,6 @@ public final class AvatarOuterClass {
     }
 
     /**
-     * <pre>
-     *  DMCEMKPMKCL
-     * </pre>
-     *
      * <code>optional bool is_marked = 3;</code>
      * @return whether the isMarked field is set
      */
@@ -479,10 +471,6 @@ public final class AvatarOuterClass {
     }
 
     /**
-     * <pre>
-     *  DMCEMKPMKCL
-     * </pre>
-     *
      * <code>optional bool is_marked = 3;</code>
      * @return this
      */
@@ -493,10 +481,6 @@ public final class AvatarOuterClass {
     }
 
     /**
-     * <pre>
-     *  DMCEMKPMKCL
-     * </pre>
-     *
      * <code>optional bool is_marked = 3;</code>
      * @return the isMarked
      */
@@ -505,10 +489,6 @@ public final class AvatarOuterClass {
     }
 
     /**
-     * <pre>
-     *  DMCEMKPMKCL
-     * </pre>
-     *
      * <code>optional bool is_marked = 3;</code>
      * @param value the isMarked to set
      * @return this

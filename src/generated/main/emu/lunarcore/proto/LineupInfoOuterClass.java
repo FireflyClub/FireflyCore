@@ -36,10 +36,6 @@ public final class LineupInfoOuterClass {
     private int mp;
 
     /**
-     * <pre>
-     *  bool NIELAFGGLJB = 15;
-     * </pre>
-     *
      * <code>optional uint32 index = 7;</code>
      */
     private int index;
@@ -76,6 +72,11 @@ public final class LineupInfoOuterClass {
      * <code>optional bool is_virtual = 10;</code>
      */
     private boolean isVirtual;
+
+    /**
+     * <code>optional bool NIELAFGGLJB = 15;</code>
+     */
+    private boolean nIELAFGGLJB;
 
     /**
      * <code>optional string name = 1;</code>
@@ -195,10 +196,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool NIELAFGGLJB = 15;
-     * </pre>
-     *
      * <code>optional uint32 index = 7;</code>
      * @return whether the index field is set
      */
@@ -207,10 +204,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool NIELAFGGLJB = 15;
-     * </pre>
-     *
      * <code>optional uint32 index = 7;</code>
      * @return this
      */
@@ -221,10 +214,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool NIELAFGGLJB = 15;
-     * </pre>
-     *
      * <code>optional uint32 index = 7;</code>
      * @return the index
      */
@@ -233,10 +222,6 @@ public final class LineupInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  bool NIELAFGGLJB = 15;
-     * </pre>
-     *
      * <code>optional uint32 index = 7;</code>
      * @param value the index to set
      * @return this
@@ -490,11 +475,48 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <code>optional bool NIELAFGGLJB = 15;</code>
+     * @return whether the nIELAFGGLJB field is set
+     */
+    public boolean hasNIELAFGGLJB() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional bool NIELAFGGLJB = 15;</code>
+     * @return this
+     */
+    public LineupInfo clearNIELAFGGLJB() {
+      bitField0_ &= ~0x00000100;
+      nIELAFGGLJB = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool NIELAFGGLJB = 15;</code>
+     * @return the nIELAFGGLJB
+     */
+    public boolean getNIELAFGGLJB() {
+      return nIELAFGGLJB;
+    }
+
+    /**
+     * <code>optional bool NIELAFGGLJB = 15;</code>
+     * @param value the nIELAFGGLJB to set
+     * @return this
+     */
+    public LineupInfo setNIELAFGGLJB(final boolean value) {
+      bitField0_ |= 0x00000100;
+      nIELAFGGLJB = value;
+      return this;
+    }
+
+    /**
      * <code>optional string name = 1;</code>
      * @return whether the name field is set
      */
     public boolean hasName() {
-      return (bitField0_ & 0x00000100) != 0;
+      return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
@@ -502,7 +524,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo clearName() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00000200;
       name.clear();
       return this;
     }
@@ -528,7 +550,7 @@ public final class LineupInfoOuterClass {
      * @return internal {@code Utf8String} representation of name for modifications
      */
     public Utf8String getMutableNameBytes() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       return this.name;
     }
 
@@ -538,7 +560,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo setName(final CharSequence value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       name.copyFrom(value);
       return this;
     }
@@ -549,7 +571,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo setName(final Utf8String value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000200;
       name.copyFrom(value);
       return this;
     }
@@ -559,7 +581,7 @@ public final class LineupInfoOuterClass {
      * @return whether the gLLFFBELFGC field is set
      */
     public boolean hasGLLFFBELFGC() {
-      return (bitField0_ & 0x00000200) != 0;
+      return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
@@ -567,7 +589,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo clearGLLFFBELFGC() {
-      bitField0_ &= ~0x00000200;
+      bitField0_ &= ~0x00000400;
       gLLFFBELFGC.clear();
       return this;
     }
@@ -596,7 +618,7 @@ public final class LineupInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableGLLFFBELFGC() {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       return gLLFFBELFGC;
     }
 
@@ -606,7 +628,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addGLLFFBELFGC(final int value) {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       gLLFFBELFGC.add(value);
       return this;
     }
@@ -617,7 +639,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addAllGLLFFBELFGC(final int... values) {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000400;
       gLLFFBELFGC.addAll(values);
       return this;
     }
@@ -627,7 +649,7 @@ public final class LineupInfoOuterClass {
      * @return whether the eAJMDIHNDCH field is set
      */
     public boolean hasEAJMDIHNDCH() {
-      return (bitField0_ & 0x00000400) != 0;
+      return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
@@ -635,7 +657,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo clearEAJMDIHNDCH() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00000800;
       eAJMDIHNDCH.clear();
       return this;
     }
@@ -664,7 +686,7 @@ public final class LineupInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableEAJMDIHNDCH() {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       return eAJMDIHNDCH;
     }
 
@@ -674,7 +696,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addEAJMDIHNDCH(final int value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       eAJMDIHNDCH.add(value);
       return this;
     }
@@ -685,7 +707,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addAllEAJMDIHNDCH(final int... values) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       eAJMDIHNDCH.addAll(values);
       return this;
     }
@@ -695,7 +717,7 @@ public final class LineupInfoOuterClass {
      * @return whether the jGDHJDIAJBD field is set
      */
     public boolean hasJGDHJDIAJBD() {
-      return (bitField0_ & 0x00000800) != 0;
+      return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
@@ -703,7 +725,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo clearJGDHJDIAJBD() {
-      bitField0_ &= ~0x00000800;
+      bitField0_ &= ~0x00001000;
       jGDHJDIAJBD.clear();
       return this;
     }
@@ -732,7 +754,7 @@ public final class LineupInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableJGDHJDIAJBD() {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       return jGDHJDIAJBD;
     }
 
@@ -742,7 +764,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addJGDHJDIAJBD(final int value) {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       jGDHJDIAJBD.add(value);
       return this;
     }
@@ -753,7 +775,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addAllJGDHJDIAJBD(final int... values) {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       jGDHJDIAJBD.addAll(values);
       return this;
     }
@@ -767,7 +789,7 @@ public final class LineupInfoOuterClass {
      * @return whether the avatarList field is set
      */
     public boolean hasAvatarList() {
-      return (bitField0_ & 0x00001000) != 0;
+      return (bitField0_ & 0x00002000) != 0;
     }
 
     /**
@@ -779,7 +801,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo clearAvatarList() {
-      bitField0_ &= ~0x00001000;
+      bitField0_ &= ~0x00002000;
       avatarList.clear();
       return this;
     }
@@ -816,7 +838,7 @@ public final class LineupInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<LineupAvatarOuterClass.LineupAvatar> getMutableAvatarList() {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00002000;
       return avatarList;
     }
 
@@ -830,7 +852,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addAvatarList(final LineupAvatarOuterClass.LineupAvatar value) {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00002000;
       avatarList.add(value);
       return this;
     }
@@ -845,7 +867,7 @@ public final class LineupInfoOuterClass {
      * @return this
      */
     public LineupInfo addAllAvatarList(final LineupAvatarOuterClass.LineupAvatar... values) {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00002000;
       avatarList.addAll(values);
       return this;
     }
@@ -863,6 +885,7 @@ public final class LineupInfoOuterClass {
         maxMp = other.maxMp;
         extraLineupType = other.extraLineupType;
         isVirtual = other.isVirtual;
+        nIELAFGGLJB = other.nIELAFGGLJB;
         name.copyFrom(other.name);
         gLLFFBELFGC.copyFrom(other.gLLFFBELFGC);
         eAJMDIHNDCH.copyFrom(other.eAJMDIHNDCH);
@@ -902,6 +925,9 @@ public final class LineupInfoOuterClass {
       if (other.hasIsVirtual()) {
         setIsVirtual(other.isVirtual);
       }
+      if (other.hasNIELAFGGLJB()) {
+        setNIELAFGGLJB(other.nIELAFGGLJB);
+      }
       if (other.hasName()) {
         getMutableNameBytes().copyFrom(other.name);
       }
@@ -935,6 +961,7 @@ public final class LineupInfoOuterClass {
       maxMp = 0;
       extraLineupType = 0;
       isVirtual = false;
+      nIELAFGGLJB = false;
       name.clear();
       gLLFFBELFGC.clear();
       eAJMDIHNDCH.clear();
@@ -976,6 +1003,7 @@ public final class LineupInfoOuterClass {
         && (!hasMaxMp() || maxMp == other.maxMp)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
         && (!hasIsVirtual() || isVirtual == other.isVirtual)
+        && (!hasNIELAFGGLJB() || nIELAFGGLJB == other.nIELAFGGLJB)
         && (!hasName() || name.equals(other.name))
         && (!hasGLLFFBELFGC() || gLLFFBELFGC.equals(other.gLLFFBELFGC))
         && (!hasEAJMDIHNDCH() || eAJMDIHNDCH.equals(other.eAJMDIHNDCH))
@@ -1018,28 +1046,32 @@ public final class LineupInfoOuterClass {
         output.writeBoolNoTag(isVirtual);
       }
       if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(nIELAFGGLJB);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 10);
         output.writeStringNoTag(name);
       }
-      if ((bitField0_ & 0x00000200) != 0) {
+      if ((bitField0_ & 0x00000400) != 0) {
         for (int i = 0; i < gLLFFBELFGC.length(); i++) {
           output.writeRawByte((byte) 16);
           output.writeUInt32NoTag(gLLFFBELFGC.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000400) != 0) {
+      if ((bitField0_ & 0x00000800) != 0) {
         for (int i = 0; i < eAJMDIHNDCH.length(); i++) {
           output.writeRawByte((byte) 72);
           output.writeUInt32NoTag(eAJMDIHNDCH.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000800) != 0) {
+      if ((bitField0_ & 0x00001000) != 0) {
         for (int i = 0; i < jGDHJDIAJBD.length(); i++) {
           output.writeRawByte((byte) 104);
           output.writeUInt32NoTag(jGDHJDIAJBD.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00001000) != 0) {
+      if ((bitField0_ & 0x00002000) != 0) {
         for (int i = 0; i < avatarList.length(); i++) {
           output.writeRawByte((byte) 42);
           output.writeMessageNoTag(avatarList.get(i));
@@ -1075,18 +1107,21 @@ public final class LineupInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(name);
+        size += 2;
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += (1 * gLLFFBELFGC.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gLLFFBELFGC);
+        size += 1 + ProtoSink.computeStringSizeNoTag(name);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += (1 * eAJMDIHNDCH.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(eAJMDIHNDCH);
+        size += (1 * gLLFFBELFGC.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gLLFFBELFGC);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        size += (1 * jGDHJDIAJBD.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(jGDHJDIAJBD);
+        size += (1 * eAJMDIHNDCH.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(eAJMDIHNDCH);
       }
       if ((bitField0_ & 0x00001000) != 0) {
+        size += (1 * jGDHJDIAJBD.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(jGDHJDIAJBD);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
         size += (1 * avatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarList);
       }
       return size;
@@ -1170,6 +1205,15 @@ public final class LineupInfoOuterClass {
             isVirtual = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // nIELAFGGLJB
+            nIELAFGGLJB = input.readBool();
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
             if (tag != 10) {
               break;
             }
@@ -1177,7 +1221,7 @@ public final class LineupInfoOuterClass {
           case 10: {
             // name
             input.readString(name);
-            bitField0_ |= 0x00000100;
+            bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 18) {
               break;
@@ -1186,7 +1230,7 @@ public final class LineupInfoOuterClass {
           case 18: {
             // gLLFFBELFGC [packed=true]
             input.readPackedUInt32(gLLFFBELFGC, tag);
-            bitField0_ |= 0x00000200;
+            bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 74) {
               break;
@@ -1195,7 +1239,7 @@ public final class LineupInfoOuterClass {
           case 74: {
             // eAJMDIHNDCH [packed=true]
             input.readPackedUInt32(eAJMDIHNDCH, tag);
-            bitField0_ |= 0x00000400;
+            bitField0_ |= 0x00000800;
             tag = input.readTag();
             if (tag != 106) {
               break;
@@ -1204,7 +1248,7 @@ public final class LineupInfoOuterClass {
           case 106: {
             // jGDHJDIAJBD [packed=true]
             input.readPackedUInt32(jGDHJDIAJBD, tag);
-            bitField0_ |= 0x00000800;
+            bitField0_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 42) {
               break;
@@ -1213,7 +1257,7 @@ public final class LineupInfoOuterClass {
           case 42: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
-            bitField0_ |= 0x00001000;
+            bitField0_ |= 0x00002000;
             if (tag != 0) {
               break;
             }
@@ -1231,19 +1275,19 @@ public final class LineupInfoOuterClass {
           case 16: {
             // gLLFFBELFGC [packed=false]
             tag = input.readRepeatedUInt32(gLLFFBELFGC, tag);
-            bitField0_ |= 0x00000200;
+            bitField0_ |= 0x00000400;
             break;
           }
           case 72: {
             // eAJMDIHNDCH [packed=false]
             tag = input.readRepeatedUInt32(eAJMDIHNDCH, tag);
-            bitField0_ |= 0x00000400;
+            bitField0_ |= 0x00000800;
             break;
           }
           case 104: {
             // jGDHJDIAJBD [packed=false]
             tag = input.readRepeatedUInt32(jGDHJDIAJBD, tag);
-            bitField0_ |= 0x00000800;
+            bitField0_ |= 0x00001000;
             break;
           }
         }
@@ -1278,18 +1322,21 @@ public final class LineupInfoOuterClass {
         output.writeBool(FieldNames.isVirtual, isVirtual);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeString(FieldNames.name, name);
+        output.writeBool(FieldNames.nIELAFGGLJB, nIELAFGGLJB);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRepeatedUInt32(FieldNames.gLLFFBELFGC, gLLFFBELFGC);
+        output.writeString(FieldNames.name, name);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRepeatedUInt32(FieldNames.eAJMDIHNDCH, eAJMDIHNDCH);
+        output.writeRepeatedUInt32(FieldNames.gLLFFBELFGC, gLLFFBELFGC);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeRepeatedUInt32(FieldNames.jGDHJDIAJBD, jGDHJDIAJBD);
+        output.writeRepeatedUInt32(FieldNames.eAJMDIHNDCH, eAJMDIHNDCH);
       }
       if ((bitField0_ & 0x00001000) != 0) {
+        output.writeRepeatedUInt32(FieldNames.jGDHJDIAJBD, jGDHJDIAJBD);
+      }
+      if ((bitField0_ & 0x00002000) != 0) {
         output.writeRepeatedMessage(FieldNames.avatarList, avatarList);
       }
       output.endObject();
@@ -1400,11 +1447,22 @@ public final class LineupInfoOuterClass {
             }
             break;
           }
+          case -1109578051: {
+            if (input.isAtField(FieldNames.nIELAFGGLJB)) {
+              if (!input.trySkipNullValue()) {
+                nIELAFGGLJB = input.readBool();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 3373707: {
             if (input.isAtField(FieldNames.name)) {
               if (!input.trySkipNullValue()) {
                 input.readString(name);
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -1415,7 +1473,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.gLLFFBELFGC)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(gLLFFBELFGC);
-                bitField0_ |= 0x00000200;
+                bitField0_ |= 0x00000400;
               }
             } else {
               input.skipUnknownField();
@@ -1426,7 +1484,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.eAJMDIHNDCH)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(eAJMDIHNDCH);
-                bitField0_ |= 0x00000400;
+                bitField0_ |= 0x00000800;
               }
             } else {
               input.skipUnknownField();
@@ -1437,7 +1495,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.jGDHJDIAJBD)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(jGDHJDIAJBD);
-                bitField0_ |= 0x00000800;
+                bitField0_ |= 0x00001000;
               }
             } else {
               input.skipUnknownField();
@@ -1449,7 +1507,7 @@ public final class LineupInfoOuterClass {
             if (input.isAtField(FieldNames.avatarList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(avatarList);
-                bitField0_ |= 0x00001000;
+                bitField0_ |= 0x00002000;
               }
             } else {
               input.skipUnknownField();
@@ -1523,6 +1581,8 @@ public final class LineupInfoOuterClass {
       static final FieldName extraLineupType = FieldName.forField("extraLineupType", "extra_lineup_type");
 
       static final FieldName isVirtual = FieldName.forField("isVirtual", "is_virtual");
+
+      static final FieldName nIELAFGGLJB = FieldName.forField("NIELAFGGLJB");
 
       static final FieldName name = FieldName.forField("name");
 

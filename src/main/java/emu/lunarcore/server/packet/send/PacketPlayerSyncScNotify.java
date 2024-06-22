@@ -44,7 +44,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         
         // Also update hero basic type info if were updating the main character
         if (avatar.getHeroPath() != null) {
-            data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+            //data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
         }
 
         this.setData(data);
@@ -82,7 +82,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
             
             // Also update hero basic type info if were updating the main character
             if (avatar.getHeroPath() != null) {
-                data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+                //data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
             }
         }
         
@@ -129,8 +129,8 @@ public class PacketPlayerSyncScNotify extends BasePacket {
     public PacketPlayerSyncScNotify(AvatarHeroPath heroPath) {
         this();
 
-        var data = PlayerSyncScNotify.newInstance()
-                .addBasicTypeInfoList(heroPath.toProto());
+        var data = PlayerSyncScNotify.newInstance();
+                //.addBasicTypeInfoList(heroPath.toProto());
 
         this.setData(data);
     }

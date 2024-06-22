@@ -5,11 +5,12 @@ option java_package = "emu.lunarcore.proto";
 import "RelicArchive.proto";
 import "MonsterArchive.proto";
 
-// Lccaialoael
 message ArchiveData {
-	repeated uint32 archive_avatar_id_list = 14; //?
-	repeated uint32 archive_missing_equipment_id_list = 1; //?
-	repeated MonsterArchive archive_monster_id_list = 3; // cdihbhlbgap
-	repeated uint32 archive_equipment_id_list = 10; //?
-	repeated RelicArchive relic_list = 11;
+	//repeated uint32 IKCAJOOLDEM = 10;
+	repeated RelicArchive relic_list = 12;
+	repeated MonsterArchive archive_monster_id_list = 11; // AIPNNAKFKPB
+	//repeated uint32 OGNECMIJJHC = 8;
+	//repeated uint32 MMPCPEFBLLK = 2;
+
+	repeated uint32 archive_equipment_id_list = 10;
 }

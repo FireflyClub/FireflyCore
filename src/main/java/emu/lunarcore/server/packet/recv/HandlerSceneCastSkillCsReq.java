@@ -28,6 +28,10 @@ public class HandlerSceneCastSkillCsReq extends PacketHandler {
         if (player.getScene().getAvatarEntityIds().contains(req.getCasterId())) {
             // Get casting avatar
             GameAvatar caster = player.getCurrentLeaderAvatar();
+            var casterEntity = player.getScene().getEntityById(req.getCasterId());
+            if (casterEntity instanceof GameAvatar) {
+                caster = ((GameAvatar) casterEntity);
+            }
             
             // Sanity check, but should never happen
             if (caster == null) {

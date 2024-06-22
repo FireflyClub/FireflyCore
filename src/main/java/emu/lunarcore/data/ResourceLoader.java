@@ -117,6 +117,10 @@ public class ResourceLoader {
             @SuppressWarnings("rawtypes")
             Int2ObjectMap map = ResourceLoader.getMapForExcel(type.gameDataClass(), resourceDefinition);
 
+            if (map == null) {
+                LunarCore.getLogger().warn("Resources not loaded because it has invalid field name on GameData {}", resourceDefinition.getName()  );
+            }
+
             try {
                 loadFromResource(resourceDefinition, type, map);
             } catch (FileNotFoundException e) {

@@ -418,6 +418,11 @@ public class Scene implements Tickable {
         PlayerLineup lineup = getPlayer().getCurrentLineup();
         int leaderAvatarId = lineup.getAvatars().get(lineup.getLeader());
 
+        // TODO: hacky way to get leaderAvatarId if avatar is multi type
+        if (GameData.getMultiplePathAvatarConfigExcelMap().containsKey(leaderAvatarId)) {
+            leaderAvatarId = getPlayer().getCurrentMultiPathAvatarType().getOrDefault(leaderAvatarId, leaderAvatarId);
+        }
+
         // Sort entities into groups
         var groups = new Int2ObjectOpenHashMap<SceneEntityGroupInfo>();
         

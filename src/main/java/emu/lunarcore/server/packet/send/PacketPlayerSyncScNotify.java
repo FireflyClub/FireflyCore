@@ -3,7 +3,6 @@ package emu.lunarcore.server.packet.send;
 import java.util.Collection;
 
 import emu.lunarcore.game.avatar.GameAvatar;
-import emu.lunarcore.game.avatar.AvatarHeroPath;
 import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.BoardDataSyncOuterClass.BoardDataSync;
@@ -40,11 +39,12 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         this();
 
         var data = PlayerSyncScNotify.newInstance();
-        data.getMutableAvatarSync().addAvatarList(avatar.toProto());
         
-        // Also update hero basic type info if were updating the main character
-        if (avatar.getHeroPath() != null) {
-            data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+        if (avatar.isMultiplePath()) {
+            data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+            data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
+        } else {
+            data.getMutableAvatarSync().addAvatarList(avatar.toProto());
         }
 
         this.setData(data);
@@ -54,7 +54,13 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         this();
 
         var data = PlayerSyncScNotify.newInstance();
-        data.getMutableAvatarSync().addAvatarList(avatar.toProto());
+        
+        if(avatar.isMultiplePath()) {
+            data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+            data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
+        } else {
+            data.getMutableAvatarSync().addAvatarList(avatar.toProto());
+        }
 
         this.addItemToProto(data, item);
 
@@ -77,12 +83,13 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         var data = PlayerSyncScNotify.newInstance();
         
         for (var avatar : avatars) {
-            // Sync avatar
-            data.getMutableAvatarSync().addAvatarList(avatar.toProto());
-            
             // Also update hero basic type info if were updating the main character
-            if (avatar.getHeroPath() != null) {
-                data.getMutableBasicTypeInfoList().add(avatar.getHeroPath().toProto());
+            if (avatar.isMultiplePath()) {
+                data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+                data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
+            } else {
+                // Sync avatar
+                data.getMutableAvatarSync().addAvatarList(avatar.toProto());
             }
         }
         
@@ -125,13 +132,5 @@ public class PacketPlayerSyncScNotify extends BasePacket {
             }
         }
     }
-    
-    public PacketPlayerSyncScNotify(AvatarHeroPath heroPath) {
-        this();
 
-        var data = PlayerSyncScNotify.newInstance();
-                //.addBasicTypeInfoList(heroPath.toProto());
-
-        this.setData(data);
-    }
 }

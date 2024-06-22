@@ -30,19 +30,31 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
      */
-    private final RepeatedInt gJKJLNLIEII = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt multiAvatarTypeIdList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
      */
-    private final RepeatedMessage<DEKPBIGFNBEEntry> dEKPBIGFNBE = RepeatedMessage.newEmptyInstance(DEKPBIGFNBEEntry.getFactory());
+    private final RepeatedMessage<CurrentMultiAvatarIdEntry> currentMultiAvatarId = RepeatedMessage.newEmptyInstance(CurrentMultiAvatarIdEntry.getFactory());
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
      */
-    private final RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> gEJMKNPDGEM = RepeatedMessage.newEmptyInstance(MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.getFactory());
+    private final RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> multiAvatarTypeInfoList = RepeatedMessage.newEmptyInstance(MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.getFactory());
 
     private GetMultiPathAvatarInfoScRsp() {
     }
@@ -96,39 +108,55 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
-     * @return whether the gJKJLNLIEII field is set
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
+     * @return whether the multiAvatarTypeIdList field is set
      */
-    public boolean hasGJKJLNLIEII() {
+    public boolean hasMultiAvatarTypeIdList() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp clearGJKJLNLIEII() {
+    public GetMultiPathAvatarInfoScRsp clearMultiAvatarTypeIdList() {
       bitField0_ &= ~0x00000002;
-      gJKJLNLIEII.clear();
+      multiAvatarTypeIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGJKJLNLIEII()} if you want to modify it.
+     * Use {@link #getMutableMultiAvatarTypeIdList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getGJKJLNLIEII() {
-      return gJKJLNLIEII;
+    public RepeatedInt getMultiAvatarTypeIdList() {
+      return multiAvatarTypeIdList;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -136,67 +164,91 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableGJKJLNLIEII() {
+    public RepeatedInt getMutableMultiAvatarTypeIdList() {
       bitField0_ |= 0x00000002;
-      return gJKJLNLIEII;
+      return multiAvatarTypeIdList;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
-     * @param value the gJKJLNLIEII to add
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
+     * @param value the multiAvatarTypeIdList to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addGJKJLNLIEII(final int value) {
+    public GetMultiPathAvatarInfoScRsp addMultiAvatarTypeIdList(final int value) {
       bitField0_ |= 0x00000002;
-      gJKJLNLIEII.add(value);
+      multiAvatarTypeIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 15;</code>
-     * @param values the gJKJLNLIEII to add
+     * <pre>
+     *  GJKJLNLIEII
+     * </pre>
+     *
+     * <code>repeated uint32 multi_avatar_type_id_list = 15;</code>
+     * @param values the multiAvatarTypeIdList to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addAllGJKJLNLIEII(final int... values) {
+    public GetMultiPathAvatarInfoScRsp addAllMultiAvatarTypeIdList(final int... values) {
       bitField0_ |= 0x00000002;
-      gJKJLNLIEII.addAll(values);
+      multiAvatarTypeIdList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
-     * @return whether the dEKPBIGFNBE field is set
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
+     * @return whether the currentMultiAvatarId field is set
      */
-    public boolean hasDEKPBIGFNBE() {
+    public boolean hasCurrentMultiAvatarId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp clearDEKPBIGFNBE() {
+    public GetMultiPathAvatarInfoScRsp clearCurrentMultiAvatarId() {
       bitField0_ &= ~0x00000004;
-      dEKPBIGFNBE.clear();
+      currentMultiAvatarId.clear();
       return this;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableDEKPBIGFNBE()} if you want to modify it.
+     * Use {@link #getMutableCurrentMultiAvatarId()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<DEKPBIGFNBEEntry> getDEKPBIGFNBE() {
-      return dEKPBIGFNBE;
+    public RepeatedMessage<CurrentMultiAvatarIdEntry> getCurrentMultiAvatarId() {
+      return currentMultiAvatarId;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -204,68 +256,94 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<DEKPBIGFNBEEntry> getMutableDEKPBIGFNBE() {
+    public RepeatedMessage<CurrentMultiAvatarIdEntry> getMutableCurrentMultiAvatarId() {
       bitField0_ |= 0x00000004;
-      return dEKPBIGFNBE;
+      return currentMultiAvatarId;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
-     * @param value the dEKPBIGFNBE to add
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
+     * @param value the currentMultiAvatarId to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addDEKPBIGFNBE(final DEKPBIGFNBEEntry value) {
+    public GetMultiPathAvatarInfoScRsp addCurrentMultiAvatarId(
+        final CurrentMultiAvatarIdEntry value) {
       bitField0_ |= 0x00000004;
-      dEKPBIGFNBE.add(value);
+      currentMultiAvatarId.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry DEKPBIGFNBE = 4;</code>
-     * @param values the dEKPBIGFNBE to add
+     * <pre>
+     *  DEKPBIGFNBE
+     * </pre>
+     *
+     * <code>repeated .GetMultiPathAvatarInfoScRsp.CurrentMultiAvatarIdEntry current_multi_avatar_id = 4;</code>
+     * @param values the currentMultiAvatarId to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addAllDEKPBIGFNBE(final DEKPBIGFNBEEntry... values) {
+    public GetMultiPathAvatarInfoScRsp addAllCurrentMultiAvatarId(
+        final CurrentMultiAvatarIdEntry... values) {
       bitField0_ |= 0x00000004;
-      dEKPBIGFNBE.addAll(values);
+      currentMultiAvatarId.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
-     * @return whether the gEJMKNPDGEM field is set
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
+     * @return whether the multiAvatarTypeInfoList field is set
      */
-    public boolean hasGEJMKNPDGEM() {
+    public boolean hasMultiAvatarTypeInfoList() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp clearGEJMKNPDGEM() {
+    public GetMultiPathAvatarInfoScRsp clearMultiAvatarTypeInfoList() {
       bitField0_ &= ~0x00000008;
-      gEJMKNPDGEM.clear();
+      multiAvatarTypeInfoList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGEJMKNPDGEM()} if you want to modify it.
+     * Use {@link #getMutableMultiAvatarTypeInfoList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getGEJMKNPDGEM(
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMultiAvatarTypeInfoList(
         ) {
-      return gEJMKNPDGEM;
+      return multiAvatarTypeInfoList;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -273,33 +351,41 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMutableGEJMKNPDGEM(
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMutableMultiAvatarTypeInfoList(
         ) {
       bitField0_ |= 0x00000008;
-      return gEJMKNPDGEM;
+      return multiAvatarTypeInfoList;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
-     * @param value the gEJMKNPDGEM to add
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
+     * @param value the multiAvatarTypeInfoList to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addGEJMKNPDGEM(
+    public GetMultiPathAvatarInfoScRsp addMultiAvatarTypeInfoList(
         final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo value) {
       bitField0_ |= 0x00000008;
-      gEJMKNPDGEM.add(value);
+      multiAvatarTypeInfoList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .MultiPathAvatarTypeInfo GEJMKNPDGEM = 13;</code>
-     * @param values the gEJMKNPDGEM to add
+     * <pre>
+     *  GEJMKNPDGEM
+     * </pre>
+     *
+     * <code>repeated .MultiPathAvatarTypeInfo multi_avatar_type_info_list = 13;</code>
+     * @param values the multiAvatarTypeInfoList to add
      * @return this
      */
-    public GetMultiPathAvatarInfoScRsp addAllGEJMKNPDGEM(
+    public GetMultiPathAvatarInfoScRsp addAllMultiAvatarTypeInfoList(
         final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo... values) {
       bitField0_ |= 0x00000008;
-      gEJMKNPDGEM.addAll(values);
+      multiAvatarTypeInfoList.addAll(values);
       return this;
     }
 
@@ -309,9 +395,9 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        gJKJLNLIEII.copyFrom(other.gJKJLNLIEII);
-        dEKPBIGFNBE.copyFrom(other.dEKPBIGFNBE);
-        gEJMKNPDGEM.copyFrom(other.gEJMKNPDGEM);
+        multiAvatarTypeIdList.copyFrom(other.multiAvatarTypeIdList);
+        currentMultiAvatarId.copyFrom(other.currentMultiAvatarId);
+        multiAvatarTypeInfoList.copyFrom(other.multiAvatarTypeInfoList);
       }
       return this;
     }
@@ -325,14 +411,14 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasGJKJLNLIEII()) {
-        getMutableGJKJLNLIEII().addAll(other.gJKJLNLIEII);
+      if (other.hasMultiAvatarTypeIdList()) {
+        getMutableMultiAvatarTypeIdList().addAll(other.multiAvatarTypeIdList);
       }
-      if (other.hasDEKPBIGFNBE()) {
-        getMutableDEKPBIGFNBE().addAll(other.dEKPBIGFNBE);
+      if (other.hasCurrentMultiAvatarId()) {
+        getMutableCurrentMultiAvatarId().addAll(other.currentMultiAvatarId);
       }
-      if (other.hasGEJMKNPDGEM()) {
-        getMutableGEJMKNPDGEM().addAll(other.gEJMKNPDGEM);
+      if (other.hasMultiAvatarTypeInfoList()) {
+        getMutableMultiAvatarTypeInfoList().addAll(other.multiAvatarTypeInfoList);
       }
       return this;
     }
@@ -345,9 +431,9 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      gJKJLNLIEII.clear();
-      dEKPBIGFNBE.clear();
-      gEJMKNPDGEM.clear();
+      multiAvatarTypeIdList.clear();
+      currentMultiAvatarId.clear();
+      multiAvatarTypeInfoList.clear();
       return this;
     }
 
@@ -358,9 +444,9 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      gJKJLNLIEII.clear();
-      dEKPBIGFNBE.clearQuick();
-      gEJMKNPDGEM.clearQuick();
+      multiAvatarTypeIdList.clear();
+      currentMultiAvatarId.clearQuick();
+      multiAvatarTypeInfoList.clearQuick();
       return this;
     }
 
@@ -375,9 +461,9 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       GetMultiPathAvatarInfoScRsp other = (GetMultiPathAvatarInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasGJKJLNLIEII() || gJKJLNLIEII.equals(other.gJKJLNLIEII))
-        && (!hasDEKPBIGFNBE() || dEKPBIGFNBE.equals(other.dEKPBIGFNBE))
-        && (!hasGEJMKNPDGEM() || gEJMKNPDGEM.equals(other.gEJMKNPDGEM));
+        && (!hasMultiAvatarTypeIdList() || multiAvatarTypeIdList.equals(other.multiAvatarTypeIdList))
+        && (!hasCurrentMultiAvatarId() || currentMultiAvatarId.equals(other.currentMultiAvatarId))
+        && (!hasMultiAvatarTypeInfoList() || multiAvatarTypeInfoList.equals(other.multiAvatarTypeInfoList));
     }
 
     @Override
@@ -387,21 +473,21 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < gJKJLNLIEII.length(); i++) {
+        for (int i = 0; i < multiAvatarTypeIdList.length(); i++) {
           output.writeRawByte((byte) 120);
-          output.writeUInt32NoTag(gJKJLNLIEII.array()[i]);
+          output.writeUInt32NoTag(multiAvatarTypeIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < dEKPBIGFNBE.length(); i++) {
+        for (int i = 0; i < currentMultiAvatarId.length(); i++) {
           output.writeRawByte((byte) 34);
-          output.writeMessageNoTag(dEKPBIGFNBE.get(i));
+          output.writeMessageNoTag(currentMultiAvatarId.get(i));
         }
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < gEJMKNPDGEM.length(); i++) {
+        for (int i = 0; i < multiAvatarTypeInfoList.length(); i++) {
           output.writeRawByte((byte) 106);
-          output.writeMessageNoTag(gEJMKNPDGEM.get(i));
+          output.writeMessageNoTag(multiAvatarTypeInfoList.get(i));
         }
       }
     }
@@ -413,13 +499,13 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * gJKJLNLIEII.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gJKJLNLIEII);
+        size += (1 * multiAvatarTypeIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(multiAvatarTypeIdList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * dEKPBIGFNBE.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(dEKPBIGFNBE);
+        size += (1 * currentMultiAvatarId.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(currentMultiAvatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * gEJMKNPDGEM.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(gEJMKNPDGEM);
+        size += (1 * multiAvatarTypeInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(multiAvatarTypeInfoList);
       }
       return size;
     }
@@ -441,8 +527,8 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             }
           }
           case 122: {
-            // gJKJLNLIEII [packed=true]
-            input.readPackedUInt32(gJKJLNLIEII, tag);
+            // multiAvatarTypeIdList [packed=true]
+            input.readPackedUInt32(multiAvatarTypeIdList, tag);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 34) {
@@ -450,16 +536,16 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             }
           }
           case 34: {
-            // dEKPBIGFNBE
-            tag = input.readRepeatedMessage(dEKPBIGFNBE, tag);
+            // currentMultiAvatarId
+            tag = input.readRepeatedMessage(currentMultiAvatarId, tag);
             bitField0_ |= 0x00000004;
             if (tag != 106) {
               break;
             }
           }
           case 106: {
-            // gEJMKNPDGEM
-            tag = input.readRepeatedMessage(gEJMKNPDGEM, tag);
+            // multiAvatarTypeInfoList
+            tag = input.readRepeatedMessage(multiAvatarTypeInfoList, tag);
             bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
@@ -476,8 +562,8 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             break;
           }
           case 120: {
-            // gJKJLNLIEII [packed=false]
-            tag = input.readRepeatedUInt32(gJKJLNLIEII, tag);
+            // multiAvatarTypeIdList [packed=false]
+            tag = input.readRepeatedUInt32(multiAvatarTypeIdList, tag);
             bitField0_ |= 0x00000002;
             break;
           }
@@ -492,13 +578,13 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedUInt32(FieldNames.gJKJLNLIEII, gJKJLNLIEII);
+        output.writeRepeatedUInt32(FieldNames.multiAvatarTypeIdList, multiAvatarTypeIdList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.dEKPBIGFNBE, dEKPBIGFNBE);
+        output.writeRepeatedMessage(FieldNames.currentMultiAvatarId, currentMultiAvatarId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.gEJMKNPDGEM, gEJMKNPDGEM);
+        output.writeRepeatedMessage(FieldNames.multiAvatarTypeInfoList, multiAvatarTypeInfoList);
       }
       output.endObject();
     }
@@ -521,10 +607,11 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             }
             break;
           }
-          case -1651469948: {
-            if (input.isAtField(FieldNames.gJKJLNLIEII)) {
+          case -948118075:
+          case 1948884573: {
+            if (input.isAtField(FieldNames.multiAvatarTypeIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(gJKJLNLIEII);
+                input.readRepeatedUInt32(multiAvatarTypeIdList);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -532,10 +619,11 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             }
             break;
           }
-          case 1860965253: {
-            if (input.isAtField(FieldNames.dEKPBIGFNBE)) {
+          case -63723596:
+          case 59630453: {
+            if (input.isAtField(FieldNames.currentMultiAvatarId)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(dEKPBIGFNBE);
+                input.readRepeatedMessage(currentMultiAvatarId);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -543,10 +631,11 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
             }
             break;
           }
-          case 1188058999: {
-            if (input.isAtField(FieldNames.gEJMKNPDGEM)) {
+          case 425429208:
+          case -1780404246: {
+            if (input.isAtField(FieldNames.multiAvatarTypeInfoList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(gEJMKNPDGEM);
+                input.readRepeatedMessage(multiAvatarTypeInfoList);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -596,9 +685,9 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
     }
 
     /**
-     * Protobuf type {@code DEKPBIGFNBEEntry}
+     * Protobuf type {@code CurrentMultiAvatarIdEntry}
      */
-    public static final class DEKPBIGFNBEEntry extends ProtoMessage<DEKPBIGFNBEEntry> implements Cloneable {
+    public static final class CurrentMultiAvatarIdEntry extends ProtoMessage<CurrentMultiAvatarIdEntry> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -611,14 +700,14 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        */
       private int value_;
 
-      private DEKPBIGFNBEEntry() {
+      private CurrentMultiAvatarIdEntry() {
       }
 
       /**
-       * @return a new empty instance of {@code DEKPBIGFNBEEntry}
+       * @return a new empty instance of {@code CurrentMultiAvatarIdEntry}
        */
-      public static DEKPBIGFNBEEntry newInstance() {
-        return new DEKPBIGFNBEEntry();
+      public static CurrentMultiAvatarIdEntry newInstance() {
+        return new CurrentMultiAvatarIdEntry();
       }
 
       /**
@@ -633,7 +722,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        * <code>optional uint32 key = 1;</code>
        * @return this
        */
-      public DEKPBIGFNBEEntry clearKey() {
+      public CurrentMultiAvatarIdEntry clearKey() {
         bitField0_ &= ~0x00000001;
         key = 0;
         return this;
@@ -652,7 +741,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        * @param value the key to set
        * @return this
        */
-      public DEKPBIGFNBEEntry setKey(final int value) {
+      public CurrentMultiAvatarIdEntry setKey(final int value) {
         bitField0_ |= 0x00000001;
         key = value;
         return this;
@@ -670,7 +759,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        * <code>optional .MultiPathAvatarType value = 2;</code>
        * @return this
        */
-      public DEKPBIGFNBEEntry clearValue() {
+      public CurrentMultiAvatarIdEntry clearValue() {
         bitField0_ &= ~0x00000002;
         value_ = 0;
         return this;
@@ -686,7 +775,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
 
       /**
        * Gets the value of the internal enum store. The result is
-       * equivalent to {@link DEKPBIGFNBEEntry#getValue()}.getNumber().
+       * equivalent to {@link CurrentMultiAvatarIdEntry#getValue()}.getNumber().
        *
        * @return numeric wire representation
        */
@@ -698,12 +787,12 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        * Sets the value of the internal enum store. This does not
        * do any validity checks, so be sure to use appropriate value
        * constants from {@link MultiPathAvatarTypeOuterClass.MultiPathAvatarType}. Setting an invalid value
-       * can cause {@link DEKPBIGFNBEEntry#getValue()} to return null
+       * can cause {@link CurrentMultiAvatarIdEntry#getValue()} to return null
        *
        * @param value the numeric wire value to set
        * @return this
        */
-      public DEKPBIGFNBEEntry setValueValue(final int value) {
+      public CurrentMultiAvatarIdEntry setValueValue(final int value) {
         bitField0_ |= 0x00000002;
         value_ = value;
         return this;
@@ -714,7 +803,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
        * @param value the value_ to set
        * @return this
        */
-      public DEKPBIGFNBEEntry setValue(
+      public CurrentMultiAvatarIdEntry setValue(
           final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value) {
         bitField0_ |= 0x00000002;
         value_ = value.getNumber();
@@ -722,7 +811,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry copyFrom(final DEKPBIGFNBEEntry other) {
+      public CurrentMultiAvatarIdEntry copyFrom(final CurrentMultiAvatarIdEntry other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
@@ -733,7 +822,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry mergeFrom(final DEKPBIGFNBEEntry other) {
+      public CurrentMultiAvatarIdEntry mergeFrom(final CurrentMultiAvatarIdEntry other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -748,7 +837,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry clear() {
+      public CurrentMultiAvatarIdEntry clear() {
         if (isEmpty()) {
           return this;
         }
@@ -760,7 +849,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry clearQuick() {
+      public CurrentMultiAvatarIdEntry clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -774,10 +863,10 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof DEKPBIGFNBEEntry)) {
+        if (!(o instanceof CurrentMultiAvatarIdEntry)) {
           return false;
         }
-        DEKPBIGFNBEEntry other = (DEKPBIGFNBEEntry) o;
+        CurrentMultiAvatarIdEntry other = (CurrentMultiAvatarIdEntry) o;
         return bitField0_ == other.bitField0_
           && (!hasKey() || key == other.key)
           && (!hasValue() || value_ == other.value_);
@@ -809,7 +898,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public DEKPBIGFNBEEntry mergeFrom(final ProtoSource input) throws IOException {
+      public CurrentMultiAvatarIdEntry mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -862,7 +951,7 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry mergeFrom(final JsonSource input) throws IOException {
+      public CurrentMultiAvatarIdEntry mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -906,8 +995,8 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
       }
 
       @Override
-      public DEKPBIGFNBEEntry clone() {
-        return new DEKPBIGFNBEEntry().copyFrom(this);
+      public CurrentMultiAvatarIdEntry clone() {
+        return new CurrentMultiAvatarIdEntry().copyFrom(this);
       }
 
       @Override
@@ -915,32 +1004,33 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static DEKPBIGFNBEEntry parseFrom(final byte[] data) throws
+      public static CurrentMultiAvatarIdEntry parseFrom(final byte[] data) throws
           InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new DEKPBIGFNBEEntry(), data).checkInitialized();
+        return ProtoMessage.mergeFrom(new CurrentMultiAvatarIdEntry(), data).checkInitialized();
       }
 
-      public static DEKPBIGFNBEEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new DEKPBIGFNBEEntry(), input).checkInitialized();
+      public static CurrentMultiAvatarIdEntry parseFrom(final ProtoSource input) throws
+          IOException {
+        return ProtoMessage.mergeFrom(new CurrentMultiAvatarIdEntry(), input).checkInitialized();
       }
 
-      public static DEKPBIGFNBEEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new DEKPBIGFNBEEntry(), input).checkInitialized();
+      public static CurrentMultiAvatarIdEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new CurrentMultiAvatarIdEntry(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating DEKPBIGFNBEEntry messages
+       * @return factory for creating CurrentMultiAvatarIdEntry messages
        */
-      public static MessageFactory<DEKPBIGFNBEEntry> getFactory() {
-        return DEKPBIGFNBEEntryFactory.INSTANCE;
+      public static MessageFactory<CurrentMultiAvatarIdEntry> getFactory() {
+        return CurrentMultiAvatarIdEntryFactory.INSTANCE;
       }
 
-      private enum DEKPBIGFNBEEntryFactory implements MessageFactory<DEKPBIGFNBEEntry> {
+      private enum CurrentMultiAvatarIdEntryFactory implements MessageFactory<CurrentMultiAvatarIdEntry> {
         INSTANCE;
 
         @Override
-        public DEKPBIGFNBEEntry create() {
-          return DEKPBIGFNBEEntry.newInstance();
+        public CurrentMultiAvatarIdEntry create() {
+          return CurrentMultiAvatarIdEntry.newInstance();
         }
       }
 
@@ -969,11 +1059,11 @@ public final class GetMultiPathAvatarInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName gJKJLNLIEII = FieldName.forField("GJKJLNLIEII");
+      static final FieldName multiAvatarTypeIdList = FieldName.forField("multiAvatarTypeIdList", "multi_avatar_type_id_list");
 
-      static final FieldName dEKPBIGFNBE = FieldName.forField("DEKPBIGFNBE");
+      static final FieldName currentMultiAvatarId = FieldName.forField("currentMultiAvatarId", "current_multi_avatar_id");
 
-      static final FieldName gEJMKNPDGEM = FieldName.forField("GEJMKNPDGEM");
+      static final FieldName multiAvatarTypeInfoList = FieldName.forField("multiAvatarTypeInfoList", "multi_avatar_type_info_list");
     }
   }
 }

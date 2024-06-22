@@ -1,21 +1,31 @@
 package emu.lunarcore.server.packet.send;
 
 import emu.lunarcore.proto.GetMultiPathAvatarInfoScRspOuterClass.GetMultiPathAvatarInfoScRsp;
-import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass;
+import emu.lunarcore.game.player.Player;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdId;
 
 public class PacketGetMultiPathAvatarInfoScRsp extends BasePacket {
 
-    public PacketGetMultiPathAvatarInfoScRsp() {
+    public PacketGetMultiPathAvatarInfoScRsp(Player player) {
         super(CmdId.GetMissionStatusScRsp);
 
         var data = GetMultiPathAvatarInfoScRsp.newInstance();
-
-        data.addDEKPBIGFNBE(GetMultiPathAvatarInfoScRsp.DEKPBIGFNBEEntry.newInstance()
-            .setKey(1224)
-            .setValue(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.Mar_7thRogueType));
-
+        
+        for  (var path : player.getCurrentMultiPathAvatarType().int2IntEntrySet()) {
+            data.addCurrentMultiAvatarId(
+                GetMultiPathAvatarInfoScRsp
+                    .CurrentMultiAvatarIdEntry
+                    .newInstance()
+                    .setKey(path.getIntKey())
+                    .setValueValue(path.getIntValue())
+            );
+        }
+        
+        for (var path : player.getAvatars().getMultiplePathAvatars()) {
+            data.addAllMultiAvatarTypeInfoList(path.toMultiPathAvatarProto());
+        }
+        
         this.setData(data);
     }
 

@@ -3,6 +3,9 @@ package emu.lunarcore.game.player;
 import java.util.ArrayList;
 import java.util.List;
 
+import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass;
+import it.unimi.dsi.fastutil.ints.Int2IntMap;
+import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 import org.bson.types.ObjectId;
 
 import com.mongodb.client.model.Filters;
@@ -24,7 +27,6 @@ import emu.lunarcore.data.excel.MazePlaneExcel;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.avatar.AvatarStorage;
 import emu.lunarcore.game.avatar.GameAvatar;
-import emu.lunarcore.game.avatar.AvatarHeroPath;
 import emu.lunarcore.game.battle.Battle;
 import emu.lunarcore.game.challenge.ChallengeGroupReward;
 import emu.lunarcore.game.challenge.ChallengeHistory;
@@ -84,7 +86,7 @@ public class Player implements Tickable {
     private String name;
     private String signature;
     private int birthday;
-    private int curBasicType;
+    private Int2IntMap currentMultiPathAvatarType;
     private int headIcon;
     private int phoneTheme;
     private int chatBubble;
@@ -145,7 +147,11 @@ public class Player implements Tickable {
     
     @Deprecated // Morphia only
     public Player() {
-        this.curBasicType = GameConstants.TRAILBLAZER_AVATAR_ID;
+        this.currentMultiPathAvatarType = new Int2IntOpenHashMap();
+        this.currentMultiPathAvatarType.put(
+            GameConstants.TRAILBLAZER_AVATAR_ID, GameConstants.TRAILBLAZER_AVATAR_ID
+        );
+        
         this.gender = PlayerGender.GENDER_MAN;
         this.foodBuffs = new Int2ObjectOpenHashMap<>();
         this.assistAvatars = new ArrayList<>();
@@ -188,9 +194,6 @@ public class Player implements Tickable {
         if (GameConstants.DEFAULT_HEAD_ICONS.length > 0) {
             this.headIcon = GameConstants.DEFAULT_HEAD_ICONS[0];
         }
-        
-        // Setup hero paths
-        this.getAvatars().validateHeroPaths();
 
         // Give us the main character
         // TODO script tutorial
@@ -340,12 +343,18 @@ public class Player implements Tickable {
     }
 
     public GameAvatar getAvatarById(int avatarId) {
-        // Check if we are trying to retrieve the hero character
-        if (GameData.getHeroExcelMap().containsKey(avatarId)) {
-            avatarId = GameConstants.TRAILBLAZER_AVATAR_ID;
+        return getAvatarById(avatarId, true);
+    }
+    
+    public GameAvatar getAvatarById(int avatarId, boolean handleMultiAvatar) {
+        var newAvatarId = avatarId;
+        
+        // handle multi path avatar
+        if (GameData.getMultiplePathAvatarConfigExcelMap().containsKey(avatarId) && handleMultiAvatar) {
+            newAvatarId = this.getCurrentMultiPathAvatarType().getOrDefault(avatarId, avatarId);
         }
         
-        return getAvatars().getAvatarById(avatarId);
+        return getAvatars().getAvatarById(newAvatarId);
     }
     
     public GameAvatar getAvatarById(ObjectId id) {
@@ -464,20 +473,25 @@ public class Player implements Tickable {
         return this.exp - GameData.getPlayerExpRequired(this.level);
     }
     
-    public AvatarHeroPath getCurHeroPath() {
-        return this.getAvatars().getHeroPathById(this.getCurBasicType());
-    }
     
-    public void setHeroBasicType(int heroType) {
-        AvatarHeroPath path = this.getAvatars().getHeroPathById(heroType);
-        if (path == null) return;
+    public void setMultiAvatarType(MultiPathAvatarTypeOuterClass.MultiPathAvatarType avatarType) {
+        var multiPathExcel = GameData.getMultiplePathAvatarConfigExcelMap().get(avatarType.getNumber());
         
-        GameAvatar mainCharacter = this.getAvatarById(GameConstants.TRAILBLAZER_AVATAR_ID);
-        if (mainCharacter == null) return;
+        GameAvatar newAvatar = this.getAvatarById(avatarType.getNumber(), false);
+        if (newAvatar == null || multiPathExcel == null) return;
+        var currentAvatarId = currentMultiPathAvatarType.get(multiPathExcel.getBaseAvatarID());
+        var currentAvatar = this.getAvatarById(currentAvatarId);
         
-        // Set new hero and cur basic type
-        mainCharacter.setHeroPath(path);
-        this.curBasicType = heroType;
+        this.getCurrentMultiPathAvatarType().put(multiPathExcel.getBaseAvatarID(), avatarType.getNumber());
+        
+        sendPacket(new PacketAvatarPathChangedNotify(multiPathExcel.getBaseAvatarID(),avatarType));
+        sendPacket(new PacketPlayerSyncScNotify(newAvatar));
+        
+        // Refresh entity
+        getScene().removeEntity(currentAvatar.getEntityId());
+        getScene().addEntity(currentAvatar);
+        
+        this.save();
     }
     
     public int getNextBattleId() {
@@ -971,7 +985,6 @@ public class Player implements Tickable {
         datastore.getCollection(GameAvatar.class).deleteMany(filter);
         datastore.getCollection(ChallengeHistory.class).deleteMany(filter);
         datastore.getCollection(ChallengeGroupReward.class).deleteMany(filter);
-        datastore.getCollection(AvatarHeroPath.class).deleteMany(filter);
         datastore.getCollection(GameItem.class).deleteMany(filter);
         datastore.getCollection(PlayerLineup.class).deleteMany(filter);
         datastore.getCollection(PlayerExtraLineup.class).deleteMany(filter);

@@ -25,9 +25,13 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * <pre>
+     *  IJHEIBNJOAO
+     * </pre>
+     *
+     * <code>optional uint32 path_equipment_id = 9;</code>
      */
-    private int iJHEIBNJOAO;
+    private int pathEquipmentId;
 
     /**
      * <code>optional uint32 rank = 12;</code>
@@ -90,39 +94,55 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
-     * @return whether the iJHEIBNJOAO field is set
+     * <pre>
+     *  IJHEIBNJOAO
+     * </pre>
+     *
+     * <code>optional uint32 path_equipment_id = 9;</code>
+     * @return whether the pathEquipmentId field is set
      */
-    public boolean hasIJHEIBNJOAO() {
+    public boolean hasPathEquipmentId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
+     * <pre>
+     *  IJHEIBNJOAO
+     * </pre>
+     *
+     * <code>optional uint32 path_equipment_id = 9;</code>
      * @return this
      */
-    public MultiPathAvatarTypeInfo clearIJHEIBNJOAO() {
+    public MultiPathAvatarTypeInfo clearPathEquipmentId() {
       bitField0_ &= ~0x00000001;
-      iJHEIBNJOAO = 0;
+      pathEquipmentId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
-     * @return the iJHEIBNJOAO
+     * <pre>
+     *  IJHEIBNJOAO
+     * </pre>
+     *
+     * <code>optional uint32 path_equipment_id = 9;</code>
+     * @return the pathEquipmentId
      */
-    public int getIJHEIBNJOAO() {
-      return iJHEIBNJOAO;
+    public int getPathEquipmentId() {
+      return pathEquipmentId;
     }
 
     /**
-     * <code>optional uint32 IJHEIBNJOAO = 9;</code>
-     * @param value the iJHEIBNJOAO to set
+     * <pre>
+     *  IJHEIBNJOAO
+     * </pre>
+     *
+     * <code>optional uint32 path_equipment_id = 9;</code>
+     * @param value the pathEquipmentId to set
      * @return this
      */
-    public MultiPathAvatarTypeInfo setIJHEIBNJOAO(final int value) {
+    public MultiPathAvatarTypeInfo setPathEquipmentId(final int value) {
       bitField0_ |= 0x00000001;
-      iJHEIBNJOAO = value;
+      pathEquipmentId = value;
       return this;
     }
 
@@ -606,7 +626,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        iJHEIBNJOAO = other.iJHEIBNJOAO;
+        pathEquipmentId = other.pathEquipmentId;
         rank = other.rank;
         avatarId = other.avatarId;
         allPathUnlockedSpecialPointIdList.copyFrom(other.allPathUnlockedSpecialPointIdList);
@@ -623,8 +643,8 @@ public final class MultiPathAvatarTypeInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasIJHEIBNJOAO()) {
-        setIJHEIBNJOAO(other.iJHEIBNJOAO);
+      if (other.hasPathEquipmentId()) {
+        setPathEquipmentId(other.pathEquipmentId);
       }
       if (other.hasRank()) {
         setRank(other.rank);
@@ -654,7 +674,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iJHEIBNJOAO = 0;
+      pathEquipmentId = 0;
       rank = 0;
       avatarId = 0;
       allPathUnlockedSpecialPointIdList.clear();
@@ -688,7 +708,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       MultiPathAvatarTypeInfo other = (MultiPathAvatarTypeInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasIJHEIBNJOAO() || iJHEIBNJOAO == other.iJHEIBNJOAO)
+        && (!hasPathEquipmentId() || pathEquipmentId == other.pathEquipmentId)
         && (!hasRank() || rank == other.rank)
         && (!hasAvatarId() || avatarId == other.avatarId)
         && (!hasAllPathUnlockedSpecialPointIdList() || allPathUnlockedSpecialPointIdList.equals(other.allPathUnlockedSpecialPointIdList))
@@ -701,7 +721,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(iJHEIBNJOAO);
+        output.writeUInt32NoTag(pathEquipmentId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 96);
@@ -741,7 +761,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(iJHEIBNJOAO);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pathEquipmentId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
@@ -772,8 +792,8 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       while (true) {
         switch (tag) {
           case 72: {
-            // iJHEIBNJOAO
-            iJHEIBNJOAO = input.readUInt32();
+            // pathEquipmentId
+            pathEquipmentId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 96) {
@@ -858,7 +878,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.iJHEIBNJOAO, iJHEIBNJOAO);
+        output.writeUInt32(FieldNames.pathEquipmentId, pathEquipmentId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.rank, rank);
@@ -888,10 +908,11 @@ public final class MultiPathAvatarTypeInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1343666282: {
-            if (input.isAtField(FieldNames.iJHEIBNJOAO)) {
+          case 1371565540:
+          case -1584422074: {
+            if (input.isAtField(FieldNames.pathEquipmentId)) {
               if (!input.trySkipNullValue()) {
-                iJHEIBNJOAO = input.readUInt32();
+                pathEquipmentId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -1028,7 +1049,7 @@ public final class MultiPathAvatarTypeInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName iJHEIBNJOAO = FieldName.forField("IJHEIBNJOAO");
+      static final FieldName pathEquipmentId = FieldName.forField("pathEquipmentId", "path_equipment_id");
 
       static final FieldName rank = FieldName.forField("rank");
 

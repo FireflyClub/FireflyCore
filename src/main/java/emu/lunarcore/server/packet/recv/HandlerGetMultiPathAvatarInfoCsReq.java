@@ -11,7 +11,7 @@ public class HandlerGetMultiPathAvatarInfoCsReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
-        session.send(new PacketGetMultiPathAvatarInfoScRsp());
+        session.send(new PacketGetMultiPathAvatarInfoScRsp(session.getPlayer()));
     }
 
 }

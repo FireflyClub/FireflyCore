@@ -86,6 +86,6 @@ public class GameServerPacketHandler {
         }
 
         // Log packets
-        // LunarCore.getLogger().info("Find packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
+        LunarCore.getLogger().info("Find packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
     }
 }

@@ -16,21 +16,6 @@ public class PacketGetArchiveDataScRsp extends BasePacket {
         
         var data = GetArchiveDataScRsp.newInstance();
         var archiveData = data.getMutableArchiveData();
-        //var allRelicSetIds = GameData.getRelicExcelMap().values().stream().map(RelicExcel::getSetId).collect(Collectors.toSet());
-        
-        //for (var avatarExcel : GameData.getAvatarExcelMap().values()) {
-            //archiveData.addArchiveAvatarIdList(avatarExcel.getAvatarID());
-        //}
-
-        /*
-        for (int relicSetId : allRelicSetIds) {
-            int setType = GameData.getTypeValueFromSetID(relicSetId);
-            var relicSetInstance = RelicArchive.newInstance()
-                .setRelicId(relicSetId);
-                .setSlot(setType);
-            archiveData.addRelicList(relicSetInstance);
-        }
-        */
 
         for (var monsterExcel : GameData.getMonsterExcelMap().values()) {
             MonsterArchive monsterinfo = MonsterArchive.newInstance()
@@ -47,7 +32,7 @@ public class PacketGetArchiveDataScRsp extends BasePacket {
             archiveData.addRelicList(relicInfo);
         }
         
-        for (var equipmentExcel : GameData.getEquipExcelMap().values()) {
+        for (var equipmentExcel : GameData.getEquipmentExcelMap().values()) {
             archiveData.addAllArchiveEquipmentIdList(equipmentExcel.getId());
         }
         

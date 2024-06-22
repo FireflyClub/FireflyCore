@@ -8,7 +8,7 @@ import "EquipRelic.proto";
 
 // PDLCDMEPDDJ
 message MultiPathAvatarTypeInfo {
-	uint32 IJHEIBNJOAO = 9;
+	uint32 path_equipment_id = 9; // IJHEIBNJOAO
 	MultiPathAvatarType avatar_id = 11;
     repeated AvatarSkillTree skill_tree_list = 5; // APEMKCLHBML
     repeated EquipRelic equip_relic_list = 13; // IGEGKGAACEF

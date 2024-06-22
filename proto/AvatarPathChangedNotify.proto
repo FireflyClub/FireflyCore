@@ -6,6 +6,6 @@ import "MultiPathAvatarType.proto";
 
 // IFFEIGOPCKC
 message AvatarPathChangedNotify {
-	MultiPathAvatarType IPDLPAMOKLD = 9;
+	MultiPathAvatarType multi_path_avatar_type = 9; // IPDLPAMOKLD
 	uint32 scene_avatar_id = 3;
 }

@@ -326,7 +326,7 @@ public class ChallengeInstance {
                 this.savedMp = player.getCurrentLineup().getMp();
                 
                 player.enterScene(excel.getMapEntranceID2(), 0, false);
-                this.getScene().getEntitiesByGroup(EntityMonster.class, excel.getMazeGroupID1()).forEach(e -> getScene().removeEntity(e));
+                // this.getScene().getEntitiesByGroup(EntityMonster.class, excel.getMazeGroupID1()).forEach(e -> getScene().removeEntity(e));
                 this.getScene().loadGroup(excel.getMazeGroupID2());
                 
                 player.sendPacket(new PacketEnterChallengeNextPhaseScRsp(player.getScene().toProto()));

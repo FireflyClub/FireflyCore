@@ -1,6 +1,8 @@
 package emu.lunarcore.game.avatar;
 
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.bson.types.ObjectId;
 import dev.morphia.annotations.Entity;
@@ -10,9 +12,11 @@ import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.AvatarExcel;
+import emu.lunarcore.data.excel.MultiplePathAvatarConfigExcel;
 import emu.lunarcore.game.enums.ItemMainType;
 import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.game.player.PlayerGender;
 import emu.lunarcore.game.player.lineup.PlayerLineup;
 import emu.lunarcore.game.scene.Scene;
 import emu.lunarcore.game.scene.entity.GameEntity;
@@ -29,6 +33,7 @@ import emu.lunarcore.proto.DisplayRelicInfoOuterClass.DisplayRelicInfo;
 import emu.lunarcore.proto.EquipRelicOuterClass.EquipRelic;
 import emu.lunarcore.proto.LineupAvatarOuterClass.LineupAvatar;
 import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
+import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass;
 import emu.lunarcore.proto.SceneActorInfoOuterClass.SceneActorInfo;
 import emu.lunarcore.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.lunarcore.proto.SpBarInfoOuterClass.SpBarInfo;
@@ -67,7 +72,6 @@ public class GameAvatar implements GameEntity {
     private transient int entityId;
     private transient Int2ObjectMap<GameItem> equips;
     private transient Int2LongMap buffs;
-    private transient AvatarHeroPath heroPath;
 
     @Deprecated // Morphia only
     public GameAvatar() {
@@ -89,18 +93,27 @@ public class GameAvatar implements GameEntity {
         this.setExcel(excel);
     }
     
-    public GameAvatar(AvatarHeroPath path) {
-        this();
-        this.avatarId = GameConstants.TRAILBLAZER_AVATAR_ID;
-        this.timestamp = System.currentTimeMillis() / 1000;
-        this.setHeroPath(path);
-    }
-    
     @Override
     public Scene getScene() {
         return this.getOwner().getScene();
     }
+
+    public PlayerGender getGender() {
+        if(!isHero()) {
+            return PlayerGender.GENDER_NONE;
+        }
+        
+        if(getAvatarId() % 2 == 0) {
+            return PlayerGender.GENDER_WOMAN;
+        } else {
+            return PlayerGender.GENDER_MAN;
+        }
+    }
     
+    public MultiplePathAvatarConfigExcel getMultiPathExcel() {
+        return GameData.getMultiplePathAvatarConfigExcelMap().get(this.avatarId);
+    }
+
     public void setExcel(AvatarExcel excel) {
         if (this.excel == null) {
             this.excel = excel;
@@ -133,7 +146,11 @@ public class GameAvatar implements GameEntity {
     public int getHeadIconId() {
         return 200000 + this.getAvatarId();
     }
-    
+
+    public boolean isMultiplePath() {
+        return GameData.getMultiplePathAvatarConfigExcelMap().containsKey(this.getAvatarId());
+    }
+
     public boolean isHero() {
         return GameData.getHeroExcelMap().containsKey(this.getAvatarId());
     }
@@ -188,17 +205,7 @@ public class GameAvatar implements GameEntity {
         return this.getData().getSkills();
     }
     
-    public void setHeroPath(AvatarHeroPath heroPath) {
-        // Clear prev set hero path from avatar
-        if (this.getHeroPath() != null) {
-            this.getHeroPath().setAvatar(null);
-        }
-        
-        this.data = heroPath.getData();
-        this.excel = heroPath.getExcel(); // DO NOT USE GameAvatar::setExcel for this
-        this.heroPath = heroPath;
-        this.heroPath.setAvatar(this);
-    }
+
     
     // Rewards
     
@@ -233,6 +240,10 @@ public class GameAvatar implements GameEntity {
 
     public GameItem getEquipment() {
         return this.getEquips().get(GameConstants.EQUIPMENT_SLOT_ID);
+    }
+
+    public List<GameItem> getRelics() {
+        return this.getEquips().values().stream().filter(p -> p.getEquipSlot() != GameConstants.EQUIPMENT_SLOT_ID).collect(Collectors.toList());
     }
 
     public boolean equipItem(GameItem item) {
@@ -289,8 +300,12 @@ public class GameAvatar implements GameEntity {
     // Proto
 
     public Avatar toProto() {
+        return this.toProto(this.getAvatarId());
+    }
+    
+    public Avatar toProto(int baseAvatarId) {
         var proto = Avatar.newInstance()
-                .setBaseAvatarId(this.getAvatarId())
+                .setBaseAvatarId(baseAvatarId)
                 .setLevel(this.getLevel())
                 .setExp(this.getExp())
                 .setPromotion(this.getPromotion())
@@ -332,10 +347,12 @@ public class GameAvatar implements GameEntity {
 
     @Override
     public SceneEntityInfo toSceneEntityProto() {
+        //  TODO: Hacky way to set avatarId for avatar that has multi type
+        var avatarId = this.isMultiplePath() ? this.getMultiPathExcel().getBaseAvatarID() : this.getAvatarId();
         var proto = SceneEntityInfo.newInstance()
                 .setEntityId(this.getEntityId())
                 .setMotion(MotionInfo.newInstance().setPos(this.getPos().toProto()).setRot(this.getRot().toProto()))
-                .setActor(SceneActorInfo.newInstance().setSceneAvatarId(this.getAvatarId()).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
+                .setActor(SceneActorInfo.newInstance().setSceneAvatarId(avatarId).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
 
         return proto;
     }
@@ -444,14 +461,33 @@ public class GameAvatar implements GameEntity {
         return proto;
     }
 
+    public MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo toMultiPathAvatarProto() {
+        var equipmentInternalUid = getEquipment() == null ? 0 : getEquipment().getInternalUid();
+        var proto = MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.newInstance()
+            .setAvatarIdValue(this.getAvatarId())
+            .setRank(this.getRank())
+            .setPathEquipmentId(equipmentInternalUid);
+
+        for (var skill : getSkills().entrySet()) {
+            proto.addSkillTreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));
+        }
+
+        for (var relic : getRelics()) {
+            var equipRelic = EquipRelic.newInstance()
+                .setRelicUniqueId(relic.getInternalUid())
+                .setSlot(relic.getEquipSlot()) ;
+
+            proto.addEquipRelicList(equipRelic);
+        }
+
+        return proto;
+    }
+
     // Database
 
     public void save() {
         // Save avatar
         LunarCore.getGameDatabase().save(this);
-        // Save hero path
-        if (this.getHeroPath() != null) {
-            this.getHeroPath().save();
-        }
     }
+    
 }

@@ -28,9 +28,13 @@ public final class AvatarPathChangedNotifyOuterClass {
     private int sceneAvatarId;
 
     /**
-     * <code>optional .MultiPathAvatarType IPDLPAMOKLD = 9;</code>
+     * <pre>
+     *  IPDLPAMOKLD
+     * </pre>
+     *
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
      */
-    private int iPDLPAMOKLD;
+    private int multiPathAvatarType;
 
     private AvatarPathChangedNotify() {
     }
@@ -84,65 +88,81 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType IPDLPAMOKLD = 9;</code>
-     * @return whether the iPDLPAMOKLD field is set
+     * <pre>
+     *  IPDLPAMOKLD
+     * </pre>
+     *
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * @return whether the multiPathAvatarType field is set
      */
-    public boolean hasIPDLPAMOKLD() {
+    public boolean hasMultiPathAvatarType() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType IPDLPAMOKLD = 9;</code>
+     * <pre>
+     *  IPDLPAMOKLD
+     * </pre>
+     *
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
      * @return this
      */
-    public AvatarPathChangedNotify clearIPDLPAMOKLD() {
+    public AvatarPathChangedNotify clearMultiPathAvatarType() {
       bitField0_ &= ~0x00000002;
-      iPDLPAMOKLD = 0;
+      multiPathAvatarType = 0;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType IPDLPAMOKLD = 9;</code>
-     * @return the iPDLPAMOKLD
+     * <pre>
+     *  IPDLPAMOKLD
+     * </pre>
+     *
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * @return the multiPathAvatarType
      */
-    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getIPDLPAMOKLD() {
-      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(iPDLPAMOKLD);
+    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getMultiPathAvatarType() {
+      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(multiPathAvatarType);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link AvatarPathChangedNotify#getIPDLPAMOKLD()}.getNumber().
+     * equivalent to {@link AvatarPathChangedNotify#getMultiPathAvatarType()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getIPDLPAMOKLDValue() {
-      return iPDLPAMOKLD;
+    public int getMultiPathAvatarTypeValue() {
+      return multiPathAvatarType;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link MultiPathAvatarTypeOuterClass.MultiPathAvatarType}. Setting an invalid value
-     * can cause {@link AvatarPathChangedNotify#getIPDLPAMOKLD()} to return null
+     * can cause {@link AvatarPathChangedNotify#getMultiPathAvatarType()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public AvatarPathChangedNotify setIPDLPAMOKLDValue(final int value) {
+    public AvatarPathChangedNotify setMultiPathAvatarTypeValue(final int value) {
       bitField0_ |= 0x00000002;
-      iPDLPAMOKLD = value;
+      multiPathAvatarType = value;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType IPDLPAMOKLD = 9;</code>
-     * @param value the iPDLPAMOKLD to set
+     * <pre>
+     *  IPDLPAMOKLD
+     * </pre>
+     *
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * @param value the multiPathAvatarType to set
      * @return this
      */
-    public AvatarPathChangedNotify setIPDLPAMOKLD(
+    public AvatarPathChangedNotify setMultiPathAvatarType(
         final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value) {
       bitField0_ |= 0x00000002;
-      iPDLPAMOKLD = value.getNumber();
+      multiPathAvatarType = value.getNumber();
       return this;
     }
 
@@ -152,7 +172,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         sceneAvatarId = other.sceneAvatarId;
-        iPDLPAMOKLD = other.iPDLPAMOKLD;
+        multiPathAvatarType = other.multiPathAvatarType;
       }
       return this;
     }
@@ -166,8 +186,8 @@ public final class AvatarPathChangedNotifyOuterClass {
       if (other.hasSceneAvatarId()) {
         setSceneAvatarId(other.sceneAvatarId);
       }
-      if (other.hasIPDLPAMOKLD()) {
-        setIPDLPAMOKLDValue(other.iPDLPAMOKLD);
+      if (other.hasMultiPathAvatarType()) {
+        setMultiPathAvatarTypeValue(other.multiPathAvatarType);
       }
       return this;
     }
@@ -180,7 +200,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       sceneAvatarId = 0;
-      iPDLPAMOKLD = 0;
+      multiPathAvatarType = 0;
       return this;
     }
 
@@ -205,7 +225,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       AvatarPathChangedNotify other = (AvatarPathChangedNotify) o;
       return bitField0_ == other.bitField0_
         && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
-        && (!hasIPDLPAMOKLD() || iPDLPAMOKLD == other.iPDLPAMOKLD);
+        && (!hasMultiPathAvatarType() || multiPathAvatarType == other.multiPathAvatarType);
     }
 
     @Override
@@ -216,7 +236,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 72);
-        output.writeEnumNoTag(iPDLPAMOKLD);
+        output.writeEnumNoTag(multiPathAvatarType);
       }
     }
 
@@ -227,7 +247,7 @@ public final class AvatarPathChangedNotifyOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(iPDLPAMOKLD);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(multiPathAvatarType);
       }
       return size;
     }
@@ -249,10 +269,10 @@ public final class AvatarPathChangedNotifyOuterClass {
             }
           }
           case 72: {
-            // iPDLPAMOKLD
+            // multiPathAvatarType
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
-              iPDLPAMOKLD = value;
+              multiPathAvatarType = value;
               bitField0_ |= 0x00000002;
             }
             tag = input.readTag();
@@ -281,7 +301,7 @@ public final class AvatarPathChangedNotifyOuterClass {
         output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeEnum(FieldNames.iPDLPAMOKLD, iPDLPAMOKLD, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
+        output.writeEnum(FieldNames.multiPathAvatarType, multiPathAvatarType, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
       }
       output.endObject();
     }
@@ -305,12 +325,13 @@ public final class AvatarPathChangedNotifyOuterClass {
             }
             break;
           }
-          case 7390209: {
-            if (input.isAtField(FieldNames.iPDLPAMOKLD)) {
+          case -836825135:
+          case 1836822412: {
+            if (input.isAtField(FieldNames.multiPathAvatarType)) {
               if (!input.trySkipNullValue()) {
                 final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value = input.readEnum(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
                 if (value != null) {
-                  iPDLPAMOKLD = value.getNumber();
+                  multiPathAvatarType = value.getNumber();
                   bitField0_ |= 0x00000002;
                 } else {
                   input.skipUnknownEnumValue();
@@ -376,7 +397,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     static class FieldNames {
       static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
 
-      static final FieldName iPDLPAMOKLD = FieldName.forField("IPDLPAMOKLD");
+      static final FieldName multiPathAvatarType = FieldName.forField("multiPathAvatarType", "multi_path_avatar_type");
     }
   }
 }

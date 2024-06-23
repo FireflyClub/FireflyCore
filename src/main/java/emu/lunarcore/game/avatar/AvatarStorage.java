@@ -61,10 +61,20 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<GameAva
         if (avatar.getExcel() == null || this.hasAvatar(avatar.getAvatarId())) {
             return false;
         }
-
+        // Don't add different gender
+        if(avatar.isHero() && avatar.getGender() != getPlayer().getGender()) {
+            return false;
+        }
+        
         // Add avatar that has multiple type into player.
         if(avatar.isMultiplePath()) {
-            getPlayer().getCurrentMultiPathAvatarType().put(avatar.getMultiPathExcel().getBaseAvatarID(), avatar.getAvatarId());
+            int baseAvatarId = avatar.getMultiPathExcel().getBaseAvatarID();
+            
+            // first time having multi path avatar, set to db
+            if(!getPlayer().getCurrentMultiPathAvatarType().containsKey(baseAvatarId) && baseAvatarId == avatar.getAvatarId()) {
+                getPlayer().getCurrentMultiPathAvatarType().put(avatar.getMultiPathExcel().getBaseAvatarID(), avatar.getAvatarId());
+                getPlayer().save();
+            }
         }
 
         // Set owner first

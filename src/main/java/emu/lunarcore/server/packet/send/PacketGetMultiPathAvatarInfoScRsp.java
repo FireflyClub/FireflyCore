@@ -8,7 +8,7 @@ import emu.lunarcore.server.packet.CmdId;
 public class PacketGetMultiPathAvatarInfoScRsp extends BasePacket {
 
     public PacketGetMultiPathAvatarInfoScRsp(Player player) {
-        super(CmdId.GetMissionStatusScRsp);
+        super(CmdId.GetMultiPathAvatarInfoScRsp);
 
         var data = GetMultiPathAvatarInfoScRsp.newInstance();
         

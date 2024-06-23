@@ -166,7 +166,7 @@ public class PlayerLineup {
         }
 
         for (int slot = 0; slot < this.getAvatars().size(); slot++) {
-            GameAvatar avatar = owner.getAvatars().getAvatarById(getAvatars().get(slot));
+            GameAvatar avatar = owner.getAvatarById(getAvatars().get(slot));
             if (avatar == null) continue;
 
             proto.addAvatarList(avatar.toLineupAvatarProto(this, slot));

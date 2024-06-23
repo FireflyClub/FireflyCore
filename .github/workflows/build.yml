@@ -40,5 +40,5 @@ jobs:
         - name: Upload build
           uses: actions/upload-artifact@v3
           with:
-            name: ZenithSR
-            path: ZenithSR.jar
+            name: JokerSR-LC
+            path: JokerSR-LC.jar

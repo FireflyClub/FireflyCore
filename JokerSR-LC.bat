@@ -22,12 +22,12 @@ set JAVA_EXE="java"
     goto execute
 
 :execute
-    choice /c yn /m "Do you want to run ZenthSR ? "
+    choice /c yn /m "Do you want to run Jar ? "
     if errorlevel 2 goto end
     if errorlevel 1 goto process_execute
 
 :process_execute
-    %JAVA_EXE% -jar ZenithSR.jar
+    %JAVA_EXE% -jar JokerSR-LC.jar
     echo Press any key to exit...
     pause > nul
     goto end

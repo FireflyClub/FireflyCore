@@ -98,9 +98,9 @@ public class Config {
 
     @Getter
     public static class GameServerConfig extends ServerConfig {
-        public String id = "zenith";
-        public String name = "ZenithSR-LC";
-        public String description = "By ZenithDevLab";
+        public String id = "Joker";
+        public String name = "Joker-Server";
+        public String description = "JokerSR-LC";
         public int kcpInterval = 40;
         public Integer kcpTimeout = 30;
 
@@ -157,7 +157,7 @@ public class Config {
     
     @Getter
     public static class ServerProfile {
-        public String name = "ZenithSR-LC";
+        public String name = "JokerSR-Console";
         public String signature = "Type /help for a list of the modified commands.";
         public int level = 70;
         public int headIcon = 202007;
@@ -168,7 +168,7 @@ public class Config {
 
     @Getter
     public static class ServerChatProfile {
-        public String name = "ZenithSR-Chat";
+        public String name = "JokerSR-Chat";
         public String signature = "Be free chating here!";
         public int level = 70;
         public int headIcon = 202016;
@@ -185,9 +185,9 @@ public class Config {
         public List<ItemParam> attachments;
         
         public WelcomeMail() {
-            this.title = "Welcome to a ZenithSR-LC";
-            this.sender = "Zenith";
-            this.content = "Welcome to ZenithSR-LC, a LunarCore server modified by ZenithDevLab.";
+            this.title = "Welcome to a JokerSR-Server";
+            this.sender = "Joker";
+            this.content = "Welcome to JokerSR-Server, a modified version of LunarCore.";
             this.attachments = List.of(
                 new ItemParam(2, 1000000),
                 new ItemParam(101, 1000),

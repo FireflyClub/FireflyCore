@@ -73,7 +73,7 @@ public class LunarCore {
 
     public static void main(String[] args) {
         // Start Server
-        LunarCore.getLogger().info("Starting ZenithSR-LC " + getJarVersion());
+        LunarCore.getLogger().info("Starting JokerSR-LC " + getJarVersion());
         LunarCore.getLogger().info("Git hash: " + getGitHash());
         LunarCore.getLogger().info("Game version: " + GameConstants.VERSION);
         boolean generateHandbook = true;

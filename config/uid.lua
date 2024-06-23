@@ -5,7 +5,7 @@ local function beta_text(obj)
         local textComponent = gameObject:GetComponentInChildren(typeof(CS.RPG.Client.LocalizedText))
 
         if textComponent then
-            -- textComponent.text = "<size=30><color=#FFC0CB>ZenithSR-LC By ZenithDevLab</color></size>"
+            textComponent.text = "<size=25><color=#FFC0CB>JokerSR - LC</color></size>"
         else
             -- log:write("No Text component found on the game object")
         end

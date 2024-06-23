@@ -60,25 +60,25 @@ tmp/
 .DS_Store
 .directory
 
-# Lunar Core generated/resource/log/plugins folders
+# generated/resource/log/plugins folders
 /resources*
 /logs
 # /proto
 /plugins
 /lua
 
-# Lunar Core compiled
+# compiled
 /*.jar
 /*.sh
 
-# Lunar Core extra
-Lunar Core Handbook.txt
+# extra
+Handbook.txt
 config.json
 hotfix.json
 tag.json
 remote.json
 
-# Lunar Core Build
+# Build
 *.mv
 *.exe
 BuildConfig.java

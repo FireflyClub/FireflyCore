@@ -36,7 +36,7 @@ public class Handbook {
         }
 
         // Save to file
-        String file = "./Lunar Core Handbook.txt";
+        String file = "./config/Handbook.txt";
 
         try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8), true)) {
             // Format date for header
@@ -44,7 +44,7 @@ public class Handbook {
             LocalDateTime now = LocalDateTime.now();
 
             // Header
-            writer.println("# Lunar Core " + GameConstants.VERSION + " Handbook");
+            writer.println("# Handbook " + "Version " + GameConstants.VERSION);
             writer.println("# Created " + dtf.format(now));
 
             // Dump commands

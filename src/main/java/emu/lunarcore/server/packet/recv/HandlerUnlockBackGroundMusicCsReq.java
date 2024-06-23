@@ -16,7 +16,7 @@ public class HandlerUnlockBackGroundMusicCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = UnlockBackGroundMusicCsReq.parseFrom(data);
 
-        var unlockIds = req.getUnlockIds();
+        var unlockIds = req.getReqUnlockIds();
         List<Integer> unlockIdsList = new ArrayList<>();
         for (int unlockId : unlockIds) {
             unlockIdsList.add(unlockId);

@@ -106,14 +106,14 @@ public class ChallengeManager extends BasePlayerManager {
         
         // Set story buffs
         if (excel.isStory() && storyBuffs != null) {
-            instance.addStoryBuff(storyBuffs.getStoryBuffOne());
-            instance.addStoryBuff(storyBuffs.getStoryBuffTwo());
+            instance.addStoryBuff(storyBuffs.getBuffOne());
+            instance.addStoryBuff(storyBuffs.getBuffTwo());
         }
         
         // Set boss buffs
         if (bossBuffs != null) {
-            instance.addBossBuff(bossBuffs.getBossBuffOne());
-            instance.addBossBuff(bossBuffs.getBossBuffTwo());
+            instance.addBossBuff(bossBuffs.getBuffOne());
+            instance.addBossBuff(bossBuffs.getBuffTwo());
             
             // Hacky way to trigger entering scene
             getPlayer().enterScene(excel.getMapEntranceID(), 0, true);

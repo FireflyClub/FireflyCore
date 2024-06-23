@@ -14,13 +14,13 @@ public class PacketGetChessRogueNousStoryInfoScRsp extends BasePacket {
         var proto = GetChessRogueNousStoryInfoScRsp.newInstance();
 
         for (var entry : GameData.getRogueNousMainStoryExcelMap().keySet()) {
-            proto.addMainStoryInfo(ChessRogueNousMainStoryInfo.newInstance()
+            proto.addMainStartInfo(ChessRogueNousMainStoryInfo.newInstance()
                     .setStoryId(entry)
                     .setStatus(2));
         }
 
         for (var entry : GameData.getRogueNousSubStoryExcelMap().keySet()) {
-            proto.addSubStoryInfo(ChessRogueNousSubStoryInfo.newInstance()
+            proto.addSubStartInfo(ChessRogueNousSubStoryInfo.newInstance()
                     .setSubStoryId(entry));
         }
         

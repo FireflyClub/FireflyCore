@@ -13,42 +13,30 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class PlayBackGroundMusicScRspOuterClass {
   /**
-   * <pre>
-   *  Ccgalkjnhbh
-   * </pre>
-   *
    * Protobuf type {@code PlayBackGroundMusicScRsp}
    */
   public static final class PlayBackGroundMusicScRsp extends ProtoMessage<PlayBackGroundMusicScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 playing_id = 4;</code>
+     * <code>optional uint32 play_music_id = 7;</code>
+     */
+    private int playMusicId;
+
+    /**
+     * <code>optional uint32 playing_id = 10;</code>
      */
     private int playingId;
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
-
-    /**
-     * <pre>
-     *  gneoomfncle
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 15;</code>
-     */
-    private int playMusicId;
 
     private PlayBackGroundMusicScRsp() {
     }
 
     /**
-     * <pre>
-     *  Ccgalkjnhbh
-     * </pre>
-     *
      * @return a new empty instance of {@code PlayBackGroundMusicScRsp}
      */
     public static PlayBackGroundMusicScRsp newInstance() {
@@ -56,111 +44,25 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 playing_id = 4;</code>
-     * @return whether the playingId field is set
+     * <code>optional uint32 play_music_id = 7;</code>
+     * @return whether the playMusicId field is set
      */
-    public boolean hasPlayingId() {
+    public boolean hasPlayMusicId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 playing_id = 4;</code>
-     * @return this
-     */
-    public PlayBackGroundMusicScRsp clearPlayingId() {
-      bitField0_ &= ~0x00000001;
-      playingId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 playing_id = 4;</code>
-     * @return the playingId
-     */
-    public int getPlayingId() {
-      return playingId;
-    }
-
-    /**
-     * <code>optional uint32 playing_id = 4;</code>
-     * @param value the playingId to set
-     * @return this
-     */
-    public PlayBackGroundMusicScRsp setPlayingId(final int value) {
-      bitField0_ |= 0x00000001;
-      playingId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
-     * @return this
-     */
-    public PlayBackGroundMusicScRsp clearRetcode() {
-      bitField0_ &= ~0x00000002;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public PlayBackGroundMusicScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000002;
-      retcode = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  gneoomfncle
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 15;</code>
-     * @return whether the playMusicId field is set
-     */
-    public boolean hasPlayMusicId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     *  gneoomfncle
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 15;</code>
+     * <code>optional uint32 play_music_id = 7;</code>
      * @return this
      */
     public PlayBackGroundMusicScRsp clearPlayMusicId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       playMusicId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  gneoomfncle
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 15;</code>
+     * <code>optional uint32 play_music_id = 7;</code>
      * @return the playMusicId
      */
     public int getPlayMusicId() {
@@ -168,17 +70,87 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  gneoomfncle
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 15;</code>
+     * <code>optional uint32 play_music_id = 7;</code>
      * @param value the playMusicId to set
      * @return this
      */
     public PlayBackGroundMusicScRsp setPlayMusicId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       playMusicId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 playing_id = 10;</code>
+     * @return whether the playingId field is set
+     */
+    public boolean hasPlayingId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 playing_id = 10;</code>
+     * @return this
+     */
+    public PlayBackGroundMusicScRsp clearPlayingId() {
+      bitField0_ &= ~0x00000002;
+      playingId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 playing_id = 10;</code>
+     * @return the playingId
+     */
+    public int getPlayingId() {
+      return playingId;
+    }
+
+    /**
+     * <code>optional uint32 playing_id = 10;</code>
+     * @param value the playingId to set
+     * @return this
+     */
+    public PlayBackGroundMusicScRsp setPlayingId(final int value) {
+      bitField0_ |= 0x00000002;
+      playingId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 11;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 11;</code>
+     * @return this
+     */
+    public PlayBackGroundMusicScRsp clearRetcode() {
+      bitField0_ &= ~0x00000004;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 11;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 11;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public PlayBackGroundMusicScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000004;
+      retcode = value;
       return this;
     }
 
@@ -187,9 +159,9 @@ public final class PlayBackGroundMusicScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        playMusicId = other.playMusicId;
         playingId = other.playingId;
         retcode = other.retcode;
-        playMusicId = other.playMusicId;
       }
       return this;
     }
@@ -200,14 +172,14 @@ public final class PlayBackGroundMusicScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPlayMusicId()) {
+        setPlayMusicId(other.playMusicId);
+      }
       if (other.hasPlayingId()) {
         setPlayingId(other.playingId);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
-      }
-      if (other.hasPlayMusicId()) {
-        setPlayMusicId(other.playMusicId);
       }
       return this;
     }
@@ -219,9 +191,9 @@ public final class PlayBackGroundMusicScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      playMusicId = 0;
       playingId = 0;
       retcode = 0;
-      playMusicId = 0;
       return this;
     }
 
@@ -245,24 +217,24 @@ public final class PlayBackGroundMusicScRspOuterClass {
       }
       PlayBackGroundMusicScRsp other = (PlayBackGroundMusicScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasPlayMusicId() || playMusicId == other.playMusicId)
         && (!hasPlayingId() || playingId == other.playingId)
-        && (!hasRetcode() || retcode == other.retcode)
-        && (!hasPlayMusicId() || playMusicId == other.playMusicId);
+        && (!hasRetcode() || retcode == other.retcode);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(playingId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(playMusicId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(playingId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(playMusicId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(retcode);
       }
     }
 
@@ -270,13 +242,13 @@ public final class PlayBackGroundMusicScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(playingId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(playMusicId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(playingId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(playMusicId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       return size;
     }
@@ -288,27 +260,27 @@ public final class PlayBackGroundMusicScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // playingId
-            playingId = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 120) {
-              break;
-            }
-          }
-          case 120: {
+          case 56: {
             // playMusicId
             playMusicId = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // playingId
+            playingId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -333,13 +305,13 @@ public final class PlayBackGroundMusicScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.playingId, playingId);
+        output.writeUInt32(FieldNames.playMusicId, playMusicId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.playingId, playingId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.playMusicId, playMusicId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       output.endObject();
     }
@@ -351,12 +323,24 @@ public final class PlayBackGroundMusicScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 835898444:
+          case -1319856608: {
+            if (input.isAtField(FieldNames.playMusicId)) {
+              if (!input.trySkipNullValue()) {
+                playMusicId = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1868462615:
           case -2087744820: {
             if (input.isAtField(FieldNames.playingId)) {
               if (!input.trySkipNullValue()) {
                 playingId = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -367,18 +351,6 @@ public final class PlayBackGroundMusicScRspOuterClass {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 835898444:
-          case -1319856608: {
-            if (input.isAtField(FieldNames.playMusicId)) {
-              if (!input.trySkipNullValue()) {
-                playMusicId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -439,11 +411,11 @@ public final class PlayBackGroundMusicScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName playMusicId = FieldName.forField("playMusicId", "play_music_id");
+
       static final FieldName playingId = FieldName.forField("playingId", "playing_id");
 
       static final FieldName retcode = FieldName.forField("retcode");
-
-      static final FieldName playMusicId = FieldName.forField("playMusicId", "play_music_id");
     }
   }
 }

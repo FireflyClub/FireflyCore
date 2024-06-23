@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Pghekcopokm
 message NpcTalkInfo {
-    uint32 npc_talk_id = 14; // ldcaeblnbco
-    // bool finish_dialogue = 4;
+    uint32 npc_talk_id = 3; // HECNHOKJJDA
+    bool finish_dialogue = 7;
 }

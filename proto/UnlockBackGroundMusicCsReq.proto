@@ -4,5 +4,5 @@ option java_package = "emu.lunarcore.proto";
 
 // Giengjodplp
 message UnlockBackGroundMusicCsReq {
-    repeated uint32 unlock_ids = 5; // ibpoieflena
+    repeated uint32 req_unlock_ids = 3; // LOHKAIIIOHJ
 }

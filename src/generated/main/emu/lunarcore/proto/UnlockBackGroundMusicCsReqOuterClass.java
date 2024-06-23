@@ -25,12 +25,12 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
      */
-    private final RepeatedInt unlockIds = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt reqUnlockIds = RepeatedInt.newEmptyInstance();
 
     private UnlockBackGroundMusicCsReq() {
     }
@@ -48,54 +48,54 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
-     * @return whether the unlockIds field is set
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
+     * @return whether the reqUnlockIds field is set
      */
-    public boolean hasUnlockIds() {
+    public boolean hasReqUnlockIds() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
      * @return this
      */
-    public UnlockBackGroundMusicCsReq clearUnlockIds() {
+    public UnlockBackGroundMusicCsReq clearReqUnlockIds() {
       bitField0_ &= ~0x00000001;
-      unlockIds.clear();
+      reqUnlockIds.clear();
       return this;
     }
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableUnlockIds()} if you want to modify it.
+     * Use {@link #getMutableReqUnlockIds()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getUnlockIds() {
-      return unlockIds;
+    public RepeatedInt getReqUnlockIds() {
+      return reqUnlockIds;
     }
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -103,38 +103,38 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableUnlockIds() {
+    public RepeatedInt getMutableReqUnlockIds() {
       bitField0_ |= 0x00000001;
-      return unlockIds;
+      return reqUnlockIds;
     }
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
-     * @param value the unlockIds to add
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
+     * @param value the reqUnlockIds to add
      * @return this
      */
-    public UnlockBackGroundMusicCsReq addUnlockIds(final int value) {
+    public UnlockBackGroundMusicCsReq addReqUnlockIds(final int value) {
       bitField0_ |= 0x00000001;
-      unlockIds.add(value);
+      reqUnlockIds.add(value);
       return this;
     }
 
     /**
      * <pre>
-     *  ibpoieflena
+     *  LOHKAIIIOHJ
      * </pre>
      *
-     * <code>repeated uint32 unlock_ids = 5;</code>
-     * @param values the unlockIds to add
+     * <code>repeated uint32 req_unlock_ids = 3;</code>
+     * @param values the reqUnlockIds to add
      * @return this
      */
-    public UnlockBackGroundMusicCsReq addAllUnlockIds(final int... values) {
+    public UnlockBackGroundMusicCsReq addAllReqUnlockIds(final int... values) {
       bitField0_ |= 0x00000001;
-      unlockIds.addAll(values);
+      reqUnlockIds.addAll(values);
       return this;
     }
 
@@ -143,7 +143,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        unlockIds.copyFrom(other.unlockIds);
+        reqUnlockIds.copyFrom(other.reqUnlockIds);
       }
       return this;
     }
@@ -154,8 +154,8 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasUnlockIds()) {
-        getMutableUnlockIds().addAll(other.unlockIds);
+      if (other.hasReqUnlockIds()) {
+        getMutableReqUnlockIds().addAll(other.reqUnlockIds);
       }
       return this;
     }
@@ -167,7 +167,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      unlockIds.clear();
+      reqUnlockIds.clear();
       return this;
     }
 
@@ -178,7 +178,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      unlockIds.clear();
+      reqUnlockIds.clear();
       return this;
     }
 
@@ -192,15 +192,15 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       }
       UnlockBackGroundMusicCsReq other = (UnlockBackGroundMusicCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasUnlockIds() || unlockIds.equals(other.unlockIds));
+        && (!hasReqUnlockIds() || reqUnlockIds.equals(other.reqUnlockIds));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        for (int i = 0; i < unlockIds.length(); i++) {
-          output.writeRawByte((byte) 40);
-          output.writeUInt32NoTag(unlockIds.array()[i]);
+        for (int i = 0; i < reqUnlockIds.length(); i++) {
+          output.writeRawByte((byte) 24);
+          output.writeUInt32NoTag(reqUnlockIds.array()[i]);
         }
       }
     }
@@ -209,7 +209,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += (1 * unlockIds.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockIds);
+        size += (1 * reqUnlockIds.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(reqUnlockIds);
       }
       return size;
     }
@@ -221,9 +221,9 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
-            // unlockIds [packed=true]
-            input.readPackedUInt32(unlockIds, tag);
+          case 26: {
+            // reqUnlockIds [packed=true]
+            input.readPackedUInt32(reqUnlockIds, tag);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -240,9 +240,9 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 40: {
-            // unlockIds [packed=false]
-            tag = input.readRepeatedUInt32(unlockIds, tag);
+          case 24: {
+            // reqUnlockIds [packed=false]
+            tag = input.readRepeatedUInt32(reqUnlockIds, tag);
             bitField0_ |= 0x00000001;
             break;
           }
@@ -254,7 +254,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRepeatedUInt32(FieldNames.unlockIds, unlockIds);
+        output.writeRepeatedUInt32(FieldNames.reqUnlockIds, reqUnlockIds);
       }
       output.endObject();
     }
@@ -266,11 +266,11 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 2050476244:
-          case -859086019: {
-            if (input.isAtField(FieldNames.unlockIds)) {
+          case -244645418:
+          case 562631038: {
+            if (input.isAtField(FieldNames.reqUnlockIds)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(unlockIds);
+                input.readRepeatedUInt32(reqUnlockIds);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -331,7 +331,7 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName unlockIds = FieldName.forField("unlockIds", "unlock_ids");
+      static final FieldName reqUnlockIds = FieldName.forField("reqUnlockIds", "req_unlock_ids");
     }
   }
 }

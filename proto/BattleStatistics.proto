@@ -23,7 +23,7 @@ message BattleStatistics {
   uint32 avatar_battle_turns = 11; // JMENJONJLAH
   uint32 monster_battle_turns = 12; // AIFFPNFLMHK
   map<string, float> custom_values = 13; // FNLKAHKOENJ
-  uint32 challenge_score = 14; // HAHLJJFHGAD
+  uint32 battle_score = 14; // HAHLJJFHGAD
 	repeated BattleEventBattleInfo CKHOAMNMKAJ = 16;
   BattleEndReason end_reason = 19; // ICKNHPGIPAJ
 	// repeated LGFELGLKHJB PPGFLMFFHID = 21;

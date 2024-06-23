@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class StartChallengeStoryInfoOuterClass {
   /**
    * <pre>
-   *  Cbfiakcjcad
+   *  DKBCKMJKFPO
    * </pre>
    *
    * Protobuf type {@code StartChallengeStoryInfo}
@@ -24,28 +24,24 @@ public final class StartChallengeStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  efocfephghg
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     */
-    private final StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo bossBuffInfo = StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo.newInstance();
-
-    /**
-     * <pre>
-     *  fdghhllajjp
-     * </pre>
-     *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
      */
     private final StartChallengeStoryBuffInfoOuterClass.StartChallengeStoryBuffInfo storyBuffInfo = StartChallengeStoryBuffInfoOuterClass.StartChallengeStoryBuffInfo.newInstance();
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     */
+    private final StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo bossBuffInfo = StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo.newInstance();
 
     private StartChallengeStoryInfo() {
     }
 
     /**
      * <pre>
-     *  Cbfiakcjcad
+     *  DKBCKMJKFPO
      * </pre>
      *
      * @return a new empty instance of {@code StartChallengeStoryInfo}
@@ -56,115 +52,36 @@ public final class StartChallengeStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  efocfephghg
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     * @return whether the bossBuffInfo field is set
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
+     * @return whether the storyBuffInfo field is set
      */
-    public boolean hasBossBuffInfo() {
+    public boolean hasStoryBuffInfo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  efocfephghg
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     * @return this
-     */
-    public StartChallengeStoryInfo clearBossBuffInfo() {
-      bitField0_ &= ~0x00000001;
-      bossBuffInfo.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  efocfephghg
-     * </pre>
-     *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableBossBuffInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo getBossBuffInfo() {
-      return bossBuffInfo;
-    }
-
-    /**
-     * <pre>
-     *  efocfephghg
-     * </pre>
-     *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo getMutableBossBuffInfo(
-        ) {
-      bitField0_ |= 0x00000001;
-      return bossBuffInfo;
-    }
-
-    /**
-     * <pre>
-     *  efocfephghg
-     * </pre>
-     *
-     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 14;</code>
-     * @param value the bossBuffInfo to set
-     * @return this
-     */
-    public StartChallengeStoryInfo setBossBuffInfo(
-        final StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo value) {
-      bitField0_ |= 0x00000001;
-      bossBuffInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  fdghhllajjp
-     * </pre>
-     *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
-     * @return whether the storyBuffInfo field is set
-     */
-    public boolean hasStoryBuffInfo() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     *  fdghhllajjp
-     * </pre>
-     *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
      * @return this
      */
     public StartChallengeStoryInfo clearStoryBuffInfo() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       storyBuffInfo.clear();
       return this;
     }
 
     /**
      * <pre>
-     *  fdghhllajjp
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -179,10 +96,10 @@ public final class StartChallengeStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  fdghhllajjp
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -192,23 +109,82 @@ public final class StartChallengeStoryInfoOuterClass {
      */
     public StartChallengeStoryBuffInfoOuterClass.StartChallengeStoryBuffInfo getMutableStoryBuffInfo(
         ) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       return storyBuffInfo;
     }
 
     /**
      * <pre>
-     *  fdghhllajjp
+     *  KEOHDCNHFPJ
      * </pre>
      *
-     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 15;</code>
+     * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 6;</code>
      * @param value the storyBuffInfo to set
      * @return this
      */
     public StartChallengeStoryInfo setStoryBuffInfo(
         final StartChallengeStoryBuffInfoOuterClass.StartChallengeStoryBuffInfo value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       storyBuffInfo.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     * @return whether the bossBuffInfo field is set
+     */
+    public boolean hasBossBuffInfo() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     * @return this
+     */
+    public StartChallengeStoryInfo clearBossBuffInfo() {
+      bitField0_ &= ~0x00000002;
+      bossBuffInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableBossBuffInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo getBossBuffInfo() {
+      return bossBuffInfo;
+    }
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo getMutableBossBuffInfo(
+        ) {
+      bitField0_ |= 0x00000002;
+      return bossBuffInfo;
+    }
+
+    /**
+     * <code>optional .StartChallengeBossBuffInfo boss_buff_info = 13;</code>
+     * @param value the bossBuffInfo to set
+     * @return this
+     */
+    public StartChallengeStoryInfo setBossBuffInfo(
+        final StartChallengeBossBuffInfoOuterClass.StartChallengeBossBuffInfo value) {
+      bitField0_ |= 0x00000002;
+      bossBuffInfo.copyFrom(value);
       return this;
     }
 
@@ -217,8 +193,8 @@ public final class StartChallengeStoryInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        bossBuffInfo.copyFrom(other.bossBuffInfo);
         storyBuffInfo.copyFrom(other.storyBuffInfo);
+        bossBuffInfo.copyFrom(other.bossBuffInfo);
       }
       return this;
     }
@@ -229,11 +205,11 @@ public final class StartChallengeStoryInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBossBuffInfo()) {
-        getMutableBossBuffInfo().mergeFrom(other.bossBuffInfo);
-      }
       if (other.hasStoryBuffInfo()) {
         getMutableStoryBuffInfo().mergeFrom(other.storyBuffInfo);
+      }
+      if (other.hasBossBuffInfo()) {
+        getMutableBossBuffInfo().mergeFrom(other.bossBuffInfo);
       }
       return this;
     }
@@ -245,8 +221,8 @@ public final class StartChallengeStoryInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      bossBuffInfo.clear();
       storyBuffInfo.clear();
+      bossBuffInfo.clear();
       return this;
     }
 
@@ -257,8 +233,8 @@ public final class StartChallengeStoryInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      bossBuffInfo.clearQuick();
       storyBuffInfo.clearQuick();
+      bossBuffInfo.clearQuick();
       return this;
     }
 
@@ -272,19 +248,19 @@ public final class StartChallengeStoryInfoOuterClass {
       }
       StartChallengeStoryInfo other = (StartChallengeStoryInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBossBuffInfo() || bossBuffInfo.equals(other.bossBuffInfo))
-        && (!hasStoryBuffInfo() || storyBuffInfo.equals(other.storyBuffInfo));
+        && (!hasStoryBuffInfo() || storyBuffInfo.equals(other.storyBuffInfo))
+        && (!hasBossBuffInfo() || bossBuffInfo.equals(other.bossBuffInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeMessageNoTag(bossBuffInfo);
+        output.writeRawByte((byte) 50);
+        output.writeMessageNoTag(storyBuffInfo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
-        output.writeMessageNoTag(storyBuffInfo);
+        output.writeRawByte((byte) 106);
+        output.writeMessageNoTag(bossBuffInfo);
       }
     }
 
@@ -292,10 +268,10 @@ public final class StartChallengeStoryInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(bossBuffInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(storyBuffInfo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(storyBuffInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(bossBuffInfo);
       }
       return size;
     }
@@ -307,18 +283,18 @@ public final class StartChallengeStoryInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 114: {
-            // bossBuffInfo
-            input.readMessage(bossBuffInfo);
+          case 50: {
+            // storyBuffInfo
+            input.readMessage(storyBuffInfo);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 106) {
               break;
             }
           }
-          case 122: {
-            // storyBuffInfo
-            input.readMessage(storyBuffInfo);
+          case 106: {
+            // bossBuffInfo
+            input.readMessage(bossBuffInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -343,10 +319,10 @@ public final class StartChallengeStoryInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.bossBuffInfo, bossBuffInfo);
+        output.writeMessage(FieldNames.storyBuffInfo, storyBuffInfo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.storyBuffInfo, storyBuffInfo);
+        output.writeMessage(FieldNames.bossBuffInfo, bossBuffInfo);
       }
       output.endObject();
     }
@@ -358,11 +334,11 @@ public final class StartChallengeStoryInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2114213330:
-          case -472671544: {
-            if (input.isAtField(FieldNames.bossBuffInfo)) {
+          case -1230610506:
+          case -1733882288: {
+            if (input.isAtField(FieldNames.storyBuffInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(bossBuffInfo);
+                input.readMessage(storyBuffInfo);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -370,11 +346,11 @@ public final class StartChallengeStoryInfoOuterClass {
             }
             break;
           }
-          case -1230610506:
-          case -1733882288: {
-            if (input.isAtField(FieldNames.storyBuffInfo)) {
+          case -2114213330:
+          case -472671544: {
+            if (input.isAtField(FieldNames.bossBuffInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(storyBuffInfo);
+                input.readMessage(bossBuffInfo);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -435,9 +411,9 @@ public final class StartChallengeStoryInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName bossBuffInfo = FieldName.forField("bossBuffInfo", "boss_buff_info");
-
       static final FieldName storyBuffInfo = FieldName.forField("storyBuffInfo", "story_buff_info");
+
+      static final FieldName bossBuffInfo = FieldName.forField("bossBuffInfo", "boss_buff_info");
     }
   }
 }

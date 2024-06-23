@@ -168,7 +168,7 @@ public class ChallengeInstance {
         // Add challenge score
         if (this.isStory()) {
             // Calculate score for current stage
-            int stageScore = stats.getChallengeScore() - this.getTotalScore();
+            int stageScore = stats.getBattleScore() - this.getTotalScore();
             // Set score
             if (this.getCurrentStage() == 1) {
                 this.scoreStage1 = stageScore;
@@ -178,7 +178,7 @@ public class ChallengeInstance {
         }
         
         if (this.isBoss()) {
-            var score = stats.getChallengeScore();
+            var score = stats.getBattleScore();
             var scores = new LinkedList<BattleTarget>();
             var bt = stats.getBattleTargetInfo().get(0);
             if (bt != null) {
@@ -414,16 +414,16 @@ public class ChallengeInstance {
         
         if (this.getStoryBuffs() != null) {
             int buffId = this.getStoryBuffs().getInt(this.getCurrentStage() - 1);
-            proto.getMutableStoryInfo().getMutableCurStoryBuffs().addBuffList(buffId);
+            proto.getMutableStartInfo().getMutableCurStoryBuffs().addBuffList(buffId);
         }
         
         if (this.getBossBuffs() != null) {
             int buffId = this.getBossBuffs().getInt(this.getCurrentStage() - 1);
             proto
-                .getMutableStoryInfo()
+                .getMutableStartInfo()
                 .getMutableCurBossBuffs()
                 .addBuffList(buffId)
-                .setIhnfpaokkba(1);
+                .setPKGLMGHDPNJ(1);
         }
         
         return proto;

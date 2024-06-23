@@ -17,9 +17,9 @@ public class PacketChallengeBossPhaseSettleNotify extends BasePacket {
             .setScoreTwo(challenge.getScoreStage2())
             .setIsWin(challenge.isWin()) // if is win == false, the AV battle target not shown
             .setStars(challenge.getStars())
-            .setJekaainpaph(false) // show completion reward
-            .setJcjhnicmmcb(true) // if false, the AV battle target not shown
-            .setKibkjoalook(1); // if the value is not 1, will show stars
+            .setGIPCBILIPIP(false) // show completion reward
+            .setKJFDFGLCJPB(true) // if false, the AV battle target not shown
+            .setCPJOLGJDICK(1); // if the value is not 1, will show stars
         
         if (challenge.getBossTarget1() != null && challenge.getCurrentStage() == 1) {
             for (var target: challenge.getBossTarget1()) {

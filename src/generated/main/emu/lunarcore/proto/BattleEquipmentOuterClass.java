@@ -33,6 +33,10 @@ public final class BattleEquipmentOuterClass {
     private int level;
 
     /**
+     * <pre>
+     *  HOAAGPBKFKG
+     * </pre>
+     *
      * <code>optional uint32 promotion = 3;</code>
      */
     private int promotion;
@@ -147,6 +151,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  HOAAGPBKFKG
+     * </pre>
+     *
      * <code>optional uint32 promotion = 3;</code>
      * @return whether the promotion field is set
      */
@@ -155,6 +163,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  HOAAGPBKFKG
+     * </pre>
+     *
      * <code>optional uint32 promotion = 3;</code>
      * @return this
      */
@@ -165,6 +177,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  HOAAGPBKFKG
+     * </pre>
+     *
      * <code>optional uint32 promotion = 3;</code>
      * @return the promotion
      */
@@ -173,6 +189,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     *  HOAAGPBKFKG
+     * </pre>
+     *
      * <code>optional uint32 promotion = 3;</code>
      * @param value the promotion to set
      * @return this

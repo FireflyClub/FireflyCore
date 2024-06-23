@@ -15,7 +15,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class ChallengeBossRelicOuterClass {
   /**
    * <pre>
-   *  Fmgcmmojnph
+   *  JBDNIEFPHLE
    * </pre>
    *
    * Protobuf type {@code ChallengeBossRelic}
@@ -25,10 +25,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      */
     private final RepeatedMessage<RelicMapEntry> relicMap = RepeatedMessage.newEmptyInstance(RelicMapEntry.getFactory());
 
@@ -37,7 +37,7 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  Fmgcmmojnph
+     *  JBDNIEFPHLE
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeBossRelic}
@@ -48,10 +48,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      * @return whether the relicMap field is set
      */
     public boolean hasRelicMap() {
@@ -60,10 +60,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      * @return this
      */
     public ChallengeBossRelic clearRelicMap() {
@@ -74,10 +74,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,10 +92,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -110,10 +110,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      * @param value the relicMap to add
      * @return this
      */
@@ -125,10 +125,10 @@ public final class ChallengeBossRelicOuterClass {
 
     /**
      * <pre>
-     *  pbceiaobico
+     *  GIPCKBJAHAA
      * </pre>
      *
-     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 9;</code>
+     * <code>repeated .ChallengeBossRelic.RelicMapEntry relic_map = 10;</code>
      * @param values the relicMap to add
      * @return this
      */
@@ -199,7 +199,7 @@ public final class ChallengeBossRelicOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < relicMap.length(); i++) {
-          output.writeRawByte((byte) 74);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(relicMap.get(i));
         }
       }
@@ -221,7 +221,7 @@ public final class ChallengeBossRelicOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 74: {
+          case 82: {
             // relicMap
             tag = input.readRepeatedMessage(relicMap, tag);
             bitField0_ |= 0x00000001;

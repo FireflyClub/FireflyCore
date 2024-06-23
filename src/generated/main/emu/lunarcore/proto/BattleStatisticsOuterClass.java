@@ -112,9 +112,9 @@ public final class BattleStatisticsOuterClass {
      *  HAHLJJFHGAD
      * </pre>
      *
-     * <code>optional uint32 challenge_score = 14;</code>
+     * <code>optional uint32 battle_score = 14;</code>
      */
-    private int challengeScore;
+    private int battleScore;
 
     /**
      * <pre>
@@ -703,10 +703,10 @@ public final class BattleStatisticsOuterClass {
      *  HAHLJJFHGAD
      * </pre>
      *
-     * <code>optional uint32 challenge_score = 14;</code>
-     * @return whether the challengeScore field is set
+     * <code>optional uint32 battle_score = 14;</code>
+     * @return whether the battleScore field is set
      */
-    public boolean hasChallengeScore() {
+    public boolean hasBattleScore() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
@@ -715,12 +715,12 @@ public final class BattleStatisticsOuterClass {
      *  HAHLJJFHGAD
      * </pre>
      *
-     * <code>optional uint32 challenge_score = 14;</code>
+     * <code>optional uint32 battle_score = 14;</code>
      * @return this
      */
-    public BattleStatistics clearChallengeScore() {
+    public BattleStatistics clearBattleScore() {
       bitField0_ &= ~0x00000200;
-      challengeScore = 0;
+      battleScore = 0;
       return this;
     }
 
@@ -729,11 +729,11 @@ public final class BattleStatisticsOuterClass {
      *  HAHLJJFHGAD
      * </pre>
      *
-     * <code>optional uint32 challenge_score = 14;</code>
-     * @return the challengeScore
+     * <code>optional uint32 battle_score = 14;</code>
+     * @return the battleScore
      */
-    public int getChallengeScore() {
-      return challengeScore;
+    public int getBattleScore() {
+      return battleScore;
     }
 
     /**
@@ -741,13 +741,13 @@ public final class BattleStatisticsOuterClass {
      *  HAHLJJFHGAD
      * </pre>
      *
-     * <code>optional uint32 challenge_score = 14;</code>
-     * @param value the challengeScore to set
+     * <code>optional uint32 battle_score = 14;</code>
+     * @param value the battleScore to set
      * @return this
      */
-    public BattleStatistics setChallengeScore(final int value) {
+    public BattleStatistics setBattleScore(final int value) {
       bitField0_ |= 0x00000200;
-      challengeScore = value;
+      battleScore = value;
       return this;
     }
 
@@ -1602,7 +1602,7 @@ public final class BattleStatisticsOuterClass {
         cocoonDeadWave = other.cocoonDeadWave;
         avatarBattleTurns = other.avatarBattleTurns;
         monsterBattleTurns = other.monsterBattleTurns;
-        challengeScore = other.challengeScore;
+        battleScore = other.battleScore;
         fCHHFDFHPBG = other.fCHHFDFHPBG;
         endReason = other.endReason;
         fMGPIJEGCHL = other.fMGPIJEGCHL;
@@ -1650,8 +1650,8 @@ public final class BattleStatisticsOuterClass {
       if (other.hasMonsterBattleTurns()) {
         setMonsterBattleTurns(other.monsterBattleTurns);
       }
-      if (other.hasChallengeScore()) {
-        setChallengeScore(other.challengeScore);
+      if (other.hasBattleScore()) {
+        setBattleScore(other.battleScore);
       }
       if (other.hasFCHHFDFHPBG()) {
         setFCHHFDFHPBG(other.fCHHFDFHPBG);
@@ -1702,7 +1702,7 @@ public final class BattleStatisticsOuterClass {
       cocoonDeadWave = 0;
       avatarBattleTurns = 0;
       monsterBattleTurns = 0;
-      challengeScore = 0;
+      battleScore = 0;
       fCHHFDFHPBG = 0;
       endReason = 0;
       fMGPIJEGCHL = false;
@@ -1752,7 +1752,7 @@ public final class BattleStatisticsOuterClass {
         && (!hasCocoonDeadWave() || cocoonDeadWave == other.cocoonDeadWave)
         && (!hasAvatarBattleTurns() || avatarBattleTurns == other.avatarBattleTurns)
         && (!hasMonsterBattleTurns() || monsterBattleTurns == other.monsterBattleTurns)
-        && (!hasChallengeScore() || challengeScore == other.challengeScore)
+        && (!hasBattleScore() || battleScore == other.battleScore)
         && (!hasFCHHFDFHPBG() || fCHHFDFHPBG == other.fCHHFDFHPBG)
         && (!hasEndReason() || endReason == other.endReason)
         && (!hasFMGPIJEGCHL() || fMGPIJEGCHL == other.fMGPIJEGCHL)
@@ -1805,7 +1805,7 @@ public final class BattleStatisticsOuterClass {
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(challengeScore);
+        output.writeUInt32NoTag(battleScore);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawLittleEndian16((short) 664);
@@ -1894,7 +1894,7 @@ public final class BattleStatisticsOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterBattleTurns);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeScore);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(battleScore);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         size += 2 + ProtoSink.computeUInt32SizeNoTag(fCHHFDFHPBG);
@@ -2018,8 +2018,8 @@ public final class BattleStatisticsOuterClass {
             }
           }
           case 112: {
-            // challengeScore
-            challengeScore = input.readUInt32();
+            // battleScore
+            battleScore = input.readUInt32();
             bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 280) {
@@ -2171,7 +2171,7 @@ public final class BattleStatisticsOuterClass {
         output.writeUInt32(FieldNames.monsterBattleTurns, monsterBattleTurns);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeUInt32(FieldNames.challengeScore, challengeScore);
+        output.writeUInt32(FieldNames.battleScore, battleScore);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeUInt32(FieldNames.fCHHFDFHPBG, fCHHFDFHPBG);
@@ -2321,11 +2321,11 @@ public final class BattleStatisticsOuterClass {
             }
             break;
           }
-          case 591599599:
-          case 1517684662: {
-            if (input.isAtField(FieldNames.challengeScore)) {
+          case -760893254:
+          case -1754888117: {
+            if (input.isAtField(FieldNames.battleScore)) {
               if (!input.trySkipNullValue()) {
-                challengeScore = input.readUInt32();
+                battleScore = input.readUInt32();
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -3226,7 +3226,7 @@ public final class BattleStatisticsOuterClass {
 
       static final FieldName monsterBattleTurns = FieldName.forField("monsterBattleTurns", "monster_battle_turns");
 
-      static final FieldName challengeScore = FieldName.forField("challengeScore", "challenge_score");
+      static final FieldName battleScore = FieldName.forField("battleScore", "battle_score");
 
       static final FieldName fCHHFDFHPBG = FieldName.forField("FCHHFDFHPBG");
 

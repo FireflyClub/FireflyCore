@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Plminjlicdd
+// DGNHNMBDGDP
 message StartChallengeStoryBuffInfo {
-	uint32 story_buff_two = 10;
-	uint32 story_buff_one = 7;
+	uint32 buff_one = 10;
+	uint32 buff_two = 7;
 }

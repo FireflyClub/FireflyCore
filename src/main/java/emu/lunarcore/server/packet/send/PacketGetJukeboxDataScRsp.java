@@ -20,7 +20,7 @@ public class PacketGetJukeboxDataScRsp extends BasePacket {
         for (int musicId : allmusicids) {
             UnlockedMusic musicListEntry = UnlockedMusic.newInstance()
                 .setId(musicId)
-                .setUnkbool(true)
+                .setMusicUnkbool(true)
                 .setGroupId(GameData.getMusicGroupId(musicId));
 
             data.addMusicList(musicListEntry);

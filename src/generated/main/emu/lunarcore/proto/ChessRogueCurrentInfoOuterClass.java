@@ -35,9 +35,9 @@ public final class ChessRogueCurrentInfoOuterClass {
     private final ChessRogueAvatarInfoOuterClass.ChessRogueAvatarInfo rogueAvatarInfo = ChessRogueAvatarInfoOuterClass.ChessRogueAvatarInfo.newInstance();
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
      */
-    private final ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo storyInfo = ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo.newInstance();
+    private final ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo startInfo = ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo.newInstance();
 
     /**
      * <code>optional .RogueCommonPendingAction pending_action = 11;</code>
@@ -228,39 +228,39 @@ public final class ChessRogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
-     * @return whether the storyInfo field is set
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
+     * @return whether the startInfo field is set
      */
-    public boolean hasStoryInfo() {
+    public boolean hasStartInfo() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
      * @return this
      */
-    public ChessRogueCurrentInfo clearStoryInfo() {
+    public ChessRogueCurrentInfo clearStartInfo() {
       bitField0_ &= ~0x00000008;
-      storyInfo.clear();
+      startInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableStoryInfo()} if you want to modify it.
+     * Use {@link #getMutableStartInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo getStoryInfo() {
-      return storyInfo;
+    public ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo getStartInfo() {
+      return startInfo;
     }
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -268,20 +268,20 @@ public final class ChessRogueCurrentInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo getMutableStoryInfo() {
+    public ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo getMutableStartInfo() {
       bitField0_ |= 0x00000008;
-      return storyInfo;
+      return startInfo;
     }
 
     /**
-     * <code>optional .ChessRogueNousStoryInfo story_info = 10;</code>
-     * @param value the storyInfo to set
+     * <code>optional .ChessRogueNousStoryInfo start_info = 10;</code>
+     * @param value the startInfo to set
      * @return this
      */
-    public ChessRogueCurrentInfo setStoryInfo(
+    public ChessRogueCurrentInfo setStartInfo(
         final ChessRogueNousStoryInfoOuterClass.ChessRogueNousStoryInfo value) {
       bitField0_ |= 0x00000008;
-      storyInfo.copyFrom(value);
+      startInfo.copyFrom(value);
       return this;
     }
 
@@ -597,7 +597,7 @@ public final class ChessRogueCurrentInfoOuterClass {
         rogueVersionId = other.rogueVersionId;
         nousValue.copyFrom(other.nousValue);
         rogueAvatarInfo.copyFrom(other.rogueAvatarInfo);
-        storyInfo.copyFrom(other.storyInfo);
+        startInfo.copyFrom(other.startInfo);
         pendingAction.copyFrom(other.pendingAction);
         buffInfo.copyFrom(other.buffInfo);
         miracleInfo.copyFrom(other.miracleInfo);
@@ -622,8 +622,8 @@ public final class ChessRogueCurrentInfoOuterClass {
       if (other.hasRogueAvatarInfo()) {
         getMutableRogueAvatarInfo().mergeFrom(other.rogueAvatarInfo);
       }
-      if (other.hasStoryInfo()) {
-        getMutableStoryInfo().mergeFrom(other.storyInfo);
+      if (other.hasStartInfo()) {
+        getMutableStartInfo().mergeFrom(other.startInfo);
       }
       if (other.hasPendingAction()) {
         getMutablePendingAction().mergeFrom(other.pendingAction);
@@ -653,7 +653,7 @@ public final class ChessRogueCurrentInfoOuterClass {
       rogueVersionId = 0;
       nousValue.clear();
       rogueAvatarInfo.clear();
-      storyInfo.clear();
+      startInfo.clear();
       pendingAction.clear();
       buffInfo.clear();
       miracleInfo.clear();
@@ -671,7 +671,7 @@ public final class ChessRogueCurrentInfoOuterClass {
       bitField0_ = 0;
       nousValue.clearQuick();
       rogueAvatarInfo.clearQuick();
-      storyInfo.clearQuick();
+      startInfo.clearQuick();
       pendingAction.clearQuick();
       buffInfo.clearQuick();
       miracleInfo.clearQuick();
@@ -693,7 +693,7 @@ public final class ChessRogueCurrentInfoOuterClass {
         && (!hasRogueVersionId() || rogueVersionId == other.rogueVersionId)
         && (!hasNousValue() || nousValue.equals(other.nousValue))
         && (!hasRogueAvatarInfo() || rogueAvatarInfo.equals(other.rogueAvatarInfo))
-        && (!hasStoryInfo() || storyInfo.equals(other.storyInfo))
+        && (!hasStartInfo() || startInfo.equals(other.startInfo))
         && (!hasPendingAction() || pendingAction.equals(other.pendingAction))
         && (!hasBuffInfo() || buffInfo.equals(other.buffInfo))
         && (!hasMiracleInfo() || miracleInfo.equals(other.miracleInfo))
@@ -717,7 +717,7 @@ public final class ChessRogueCurrentInfoOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 82);
-        output.writeMessageNoTag(storyInfo);
+        output.writeMessageNoTag(startInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 90);
@@ -756,7 +756,7 @@ public final class ChessRogueCurrentInfoOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAvatarInfo);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(storyInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(startInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(pendingAction);
@@ -811,8 +811,8 @@ public final class ChessRogueCurrentInfoOuterClass {
             }
           }
           case 82: {
-            // storyInfo
-            input.readMessage(storyInfo);
+            // startInfo
+            input.readMessage(startInfo);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 90) {
@@ -890,7 +890,7 @@ public final class ChessRogueCurrentInfoOuterClass {
         output.writeMessage(FieldNames.rogueAvatarInfo, rogueAvatarInfo);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.storyInfo, storyInfo);
+        output.writeMessage(FieldNames.startInfo, startInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeMessage(FieldNames.pendingAction, pendingAction);
@@ -953,11 +953,11 @@ public final class ChessRogueCurrentInfoOuterClass {
             }
             break;
           }
-          case 1710116675:
-          case 1494185400: {
-            if (input.isAtField(FieldNames.storyInfo)) {
+          case -2129617872:
+          case -1573468565: {
+            if (input.isAtField(FieldNames.startInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(storyInfo);
+                input.readMessage(startInfo);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -1084,7 +1084,7 @@ public final class ChessRogueCurrentInfoOuterClass {
 
       static final FieldName rogueAvatarInfo = FieldName.forField("rogueAvatarInfo", "rogue_avatar_info");
 
-      static final FieldName storyInfo = FieldName.forField("storyInfo", "story_info");
+      static final FieldName startInfo = FieldName.forField("startInfo", "start_info");
 
       static final FieldName pendingAction = FieldName.forField("pendingAction", "pending_action");
 

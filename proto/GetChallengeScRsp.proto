@@ -5,10 +5,11 @@ option java_package = "emu.lunarcore.proto";
 import "Challenge.proto";
 import "ChallengeReward.proto";
 
+// FKEDBNMDBOG
 message GetChallengeScRsp {
-    repeated ChallengeReward challenge_reward_list = 7; // obnffngnkfm
-    // uint32 knipkmeghia = 4;
-    repeated Challenge challenge_list = 2; // elfejgoegcj
-    uint32 retcode = 9;
-    // repeated Nmlilpfiidn lpedbojeaid = 8;
+    repeated ChallengeReward challenge_reward_list = 4; // FIHHBBOAJNA
+    repeated Challenge challenge_list = 9; // PBIFCNFMCCL
+	uint32 DBJNGANEGPF = 8;
+	// repeated NMHNANJAINM GCNMBBOEHOC = 2;
+    uint32 retcode = 14;
 }

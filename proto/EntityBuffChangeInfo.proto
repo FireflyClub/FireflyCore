@@ -5,10 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "BuffInfo.proto";
 import "SceneEntityBuffChangeType.proto";
 
-// Dolbeibmila
+// DFMJJAPBDIJ
 message EntityBuffChangeInfo {
-    SceneEntityBuffChangeType reason = 1;
-    BuffInfo add_buff_info = 13; // cbkbpgicmbi
-    uint32 remove_buff_id = 15; // agceblafbco
+    SceneEntityBuffChangeType reason = 4;
+    BuffInfo add_buff_info = 5; // CPLMAPMBCML
+    uint32 remove_buff_id = 15; // BMDCPBGHCPE
     uint32 entity_id = 12;
 }

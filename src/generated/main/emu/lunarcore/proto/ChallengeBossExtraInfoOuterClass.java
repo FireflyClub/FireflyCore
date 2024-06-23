@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class ChallengeBossExtraInfoOuterClass {
   /**
    * <pre>
-   *  Nlfkoddiafa
+   *  LMJLNMPCJJA
    * </pre>
    *
    * Protobuf type {@code ChallengeBossExtraInfo}
@@ -23,7 +23,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      */
     private final ChallengeBossInfoOuterClass.ChallengeBossInfo bossBuffInfo = ChallengeBossInfoOuterClass.ChallengeBossInfo.newInstance();
 
@@ -32,7 +36,7 @@ public final class ChallengeBossExtraInfoOuterClass {
 
     /**
      * <pre>
-     *  Nlfkoddiafa
+     *  LMJLNMPCJJA
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeBossExtraInfo}
@@ -42,7 +46,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      * @return whether the bossBuffInfo field is set
      */
     public boolean hasBossBuffInfo() {
@@ -50,7 +58,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      * @return this
      */
     public ChallengeBossExtraInfo clearBossBuffInfo() {
@@ -60,7 +72,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -74,7 +90,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -88,7 +108,11 @@ public final class ChallengeBossExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossInfo boss_buff_info = 7;</code>
+     * <pre>
+     *  PIPLIDBCCPA
+     * </pre>
+     *
+     * <code>optional .ChallengeBossInfo boss_buff_info = 11;</code>
      * @param value the bossBuffInfo to set
      * @return this
      */
@@ -159,7 +183,7 @@ public final class ChallengeBossExtraInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 58);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(bossBuffInfo);
       }
     }
@@ -180,7 +204,7 @@ public final class ChallengeBossExtraInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 58: {
+          case 90: {
             // bossBuffInfo
             input.readMessage(bossBuffInfo);
             bitField0_ |= 0x00000001;

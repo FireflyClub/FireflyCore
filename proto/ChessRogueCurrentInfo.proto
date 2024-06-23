@@ -12,7 +12,7 @@ import "ChessRogueNousDice.proto";
 import "ChessRogueNousValue.proto";
 
 message ChessRogueCurrentInfo {
-    ChessRogueNousStoryInfo story_info = 10;
+    ChessRogueNousStoryInfo start_info = 10;
     ChessRogueAvatarInfo rogue_avatar_info = 9;
     uint32 rogue_version_id = 6;
     repeated ChessRogueVirtualItemInfo virtual_item_info = 4;

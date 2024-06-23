@@ -36,22 +36,22 @@ public class PacketStartChallengeScRsp extends BasePacket {
             if (player.getChallengeInstance().isBoss()) {
                 var info =  ChallengeBossInfo
                     .newInstance()
-                    .setPpnagbnioao(false)
-                    .setCKIOKLMJCBG(
+                    .setNILMFPFBCNJ(false)
+                    .setLFINNEDDCAJ(
                         ChallengeBossStageInfo
                             .newInstance()
                             .setIsWin(false)
-                            .setDaimooemhjf(0)
-                            .setNagjmpmhmmc(false)
-                            .setKljpbaagnfn(0)
+                            .setCKNGEMPPIGE(0)
+                            .setKJCEEICMKEE(false)
+                            .setJGDMLOFCNCH(0)
                     )
-                    .setPJJOCDBJOFO(
+                    .setLHDMIOKHDAJ(
                         ChallengeBossStageInfo
                             .newInstance()
                             .setIsWin(false)
-                            .setDaimooemhjf(0)
-                            .setNagjmpmhmmc(false)
-                            .setKljpbaagnfn(0)
+                            .setCKNGEMPPIGE(0)
+                            .setKJCEEICMKEE(false)
+                            .setJGDMLOFCNCH(0)
                     );
                 
                 for (var avatarId: lineup1.getAvatars()) {
@@ -66,7 +66,7 @@ public class PacketStartChallengeScRsp extends BasePacket {
                     .newInstance()
                     .setBossBuffInfo(info);
                 
-                data.setStoryInfo(extraInfo);
+                data.setStartInfo(extraInfo);
             }
 
             player.sendPacket(new PacketEnterSceneByServerScNotify(player));

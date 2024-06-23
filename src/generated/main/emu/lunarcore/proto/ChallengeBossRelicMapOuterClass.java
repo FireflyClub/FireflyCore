@@ -15,7 +15,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class ChallengeBossRelicMapOuterClass {
   /**
    * <pre>
-   *  Ipofinflfne
+   *  MGCIMMMLHDM
    * </pre>
    *
    * Protobuf type {@code ChallengeBossRelicMap}
@@ -24,27 +24,27 @@ public final class ChallengeBossRelicMapOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 3;</code>
-     */
-    private int level;
-
-    /**
-     * <code>optional uint32 main_affix_id = 5;</code>
-     */
-    private int mainAffixId;
-
-    /**
-     * <code>optional uint32 unique_id = 8;</code>
+     * <code>optional uint32 unique_id = 7;</code>
      */
     private int uniqueId;
 
     /**
-     * <code>optional uint32 tid = 12;</code>
+     * <code>optional uint32 tid = 8;</code>
      */
     private int tid;
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>optional uint32 level = 9;</code>
+     */
+    private int level;
+
+    /**
+     * <code>optional uint32 main_affix_id = 10;</code>
+     */
+    private int mainAffixId;
+
+    /**
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      */
     private final RepeatedMessage<RelicAffixOuterClass.RelicAffix> subAffixList = RepeatedMessage.newEmptyInstance(RelicAffixOuterClass.RelicAffix.getFactory());
 
@@ -53,7 +53,7 @@ public final class ChallengeBossRelicMapOuterClass {
 
     /**
      * <pre>
-     *  Ipofinflfne
+     *  MGCIMMMLHDM
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeBossRelicMap}
@@ -63,99 +63,25 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 3;</code>
-     * @return whether the level field is set
+     * <code>optional uint32 unique_id = 7;</code>
+     * @return whether the uniqueId field is set
      */
-    public boolean hasLevel() {
+    public boolean hasUniqueId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 level = 3;</code>
-     * @return this
-     */
-    public ChallengeBossRelicMap clearLevel() {
-      bitField0_ &= ~0x00000001;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 3;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 3;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public ChallengeBossRelicMap setLevel(final int value) {
-      bitField0_ |= 0x00000001;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 main_affix_id = 5;</code>
-     * @return whether the mainAffixId field is set
-     */
-    public boolean hasMainAffixId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 main_affix_id = 5;</code>
-     * @return this
-     */
-    public ChallengeBossRelicMap clearMainAffixId() {
-      bitField0_ &= ~0x00000002;
-      mainAffixId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 main_affix_id = 5;</code>
-     * @return the mainAffixId
-     */
-    public int getMainAffixId() {
-      return mainAffixId;
-    }
-
-    /**
-     * <code>optional uint32 main_affix_id = 5;</code>
-     * @param value the mainAffixId to set
-     * @return this
-     */
-    public ChallengeBossRelicMap setMainAffixId(final int value) {
-      bitField0_ |= 0x00000002;
-      mainAffixId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 unique_id = 8;</code>
-     * @return whether the uniqueId field is set
-     */
-    public boolean hasUniqueId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 unique_id = 8;</code>
+     * <code>optional uint32 unique_id = 7;</code>
      * @return this
      */
     public ChallengeBossRelicMap clearUniqueId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       uniqueId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 unique_id = 8;</code>
+     * <code>optional uint32 unique_id = 7;</code>
      * @return the uniqueId
      */
     public int getUniqueId() {
@@ -163,36 +89,36 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>optional uint32 unique_id = 8;</code>
+     * <code>optional uint32 unique_id = 7;</code>
      * @param value the uniqueId to set
      * @return this
      */
     public ChallengeBossRelicMap setUniqueId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       uniqueId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 tid = 12;</code>
+     * <code>optional uint32 tid = 8;</code>
      * @return whether the tid field is set
      */
     public boolean hasTid() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 tid = 12;</code>
+     * <code>optional uint32 tid = 8;</code>
      * @return this
      */
     public ChallengeBossRelicMap clearTid() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000002;
       tid = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 tid = 12;</code>
+     * <code>optional uint32 tid = 8;</code>
      * @return the tid
      */
     public int getTid() {
@@ -200,18 +126,92 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 12;</code>
+     * <code>optional uint32 tid = 8;</code>
      * @param value the tid to set
      * @return this
      */
     public ChallengeBossRelicMap setTid(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       tid = value;
       return this;
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>optional uint32 level = 9;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 9;</code>
+     * @return this
+     */
+    public ChallengeBossRelicMap clearLevel() {
+      bitField0_ &= ~0x00000004;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 9;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <code>optional uint32 level = 9;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public ChallengeBossRelicMap setLevel(final int value) {
+      bitField0_ |= 0x00000004;
+      level = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 main_affix_id = 10;</code>
+     * @return whether the mainAffixId field is set
+     */
+    public boolean hasMainAffixId() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 main_affix_id = 10;</code>
+     * @return this
+     */
+    public ChallengeBossRelicMap clearMainAffixId() {
+      bitField0_ &= ~0x00000008;
+      mainAffixId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 main_affix_id = 10;</code>
+     * @return the mainAffixId
+     */
+    public int getMainAffixId() {
+      return mainAffixId;
+    }
+
+    /**
+     * <code>optional uint32 main_affix_id = 10;</code>
+     * @param value the mainAffixId to set
+     * @return this
+     */
+    public ChallengeBossRelicMap setMainAffixId(final int value) {
+      bitField0_ |= 0x00000008;
+      mainAffixId = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      * @return whether the subAffixList field is set
      */
     public boolean hasSubAffixList() {
@@ -219,7 +219,7 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      * @return this
      */
     public ChallengeBossRelicMap clearSubAffixList() {
@@ -229,7 +229,7 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -243,7 +243,7 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -257,7 +257,7 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      * @param value the subAffixList to add
      * @return this
      */
@@ -268,7 +268,7 @@ public final class ChallengeBossRelicMapOuterClass {
     }
 
     /**
-     * <code>repeated .RelicAffix sub_affix_list = 10;</code>
+     * <code>repeated .RelicAffix sub_affix_list = 5;</code>
      * @param values the subAffixList to add
      * @return this
      */
@@ -284,10 +284,10 @@ public final class ChallengeBossRelicMapOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        level = other.level;
-        mainAffixId = other.mainAffixId;
         uniqueId = other.uniqueId;
         tid = other.tid;
+        level = other.level;
+        mainAffixId = other.mainAffixId;
         subAffixList.copyFrom(other.subAffixList);
       }
       return this;
@@ -299,17 +299,17 @@ public final class ChallengeBossRelicMapOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasLevel()) {
-        setLevel(other.level);
-      }
-      if (other.hasMainAffixId()) {
-        setMainAffixId(other.mainAffixId);
-      }
       if (other.hasUniqueId()) {
         setUniqueId(other.uniqueId);
       }
       if (other.hasTid()) {
         setTid(other.tid);
+      }
+      if (other.hasLevel()) {
+        setLevel(other.level);
+      }
+      if (other.hasMainAffixId()) {
+        setMainAffixId(other.mainAffixId);
       }
       if (other.hasSubAffixList()) {
         getMutableSubAffixList().addAll(other.subAffixList);
@@ -324,10 +324,10 @@ public final class ChallengeBossRelicMapOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      level = 0;
-      mainAffixId = 0;
       uniqueId = 0;
       tid = 0;
+      level = 0;
+      mainAffixId = 0;
       subAffixList.clear();
       return this;
     }
@@ -353,34 +353,34 @@ public final class ChallengeBossRelicMapOuterClass {
       }
       ChallengeBossRelicMap other = (ChallengeBossRelicMap) o;
       return bitField0_ == other.bitField0_
-        && (!hasLevel() || level == other.level)
-        && (!hasMainAffixId() || mainAffixId == other.mainAffixId)
         && (!hasUniqueId() || uniqueId == other.uniqueId)
         && (!hasTid() || tid == other.tid)
+        && (!hasLevel() || level == other.level)
+        && (!hasMainAffixId() || mainAffixId == other.mainAffixId)
         && (!hasSubAffixList() || subAffixList.equals(other.subAffixList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(level);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(mainAffixId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(uniqueId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 96);
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(tid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(level);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(mainAffixId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < subAffixList.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 42);
           output.writeMessageNoTag(subAffixList.get(i));
         }
       }
@@ -390,16 +390,16 @@ public final class ChallengeBossRelicMapOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mainAffixId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(uniqueId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mainAffixId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += (1 * subAffixList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(subAffixList);
@@ -414,43 +414,43 @@ public final class ChallengeBossRelicMapOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // level
-            level = input.readUInt32();
+          case 56: {
+            // uniqueId
+            uniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // mainAffixId
-            mainAffixId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 64) {
               break;
             }
           }
           case 64: {
-            // uniqueId
-            uniqueId = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
             // tid
             tid = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 72) {
               break;
             }
           }
-          case 82: {
+          case 72: {
+            // level
+            level = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // mainAffixId
+            mainAffixId = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
             // subAffixList
             tag = input.readRepeatedMessage(subAffixList, tag);
             bitField0_ |= 0x00000010;
@@ -476,16 +476,16 @@ public final class ChallengeBossRelicMapOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.level, level);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.mainAffixId, mainAffixId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.uniqueId, uniqueId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.tid, tid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.level, level);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.mainAffixId, mainAffixId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRepeatedMessage(FieldNames.subAffixList, subAffixList);
@@ -500,11 +500,34 @@ public final class ChallengeBossRelicMapOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -294460212:
+          case -538310583: {
+            if (input.isAtField(FieldNames.uniqueId)) {
+              if (!input.trySkipNullValue()) {
+                uniqueId = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 114831: {
+            if (input.isAtField(FieldNames.tid)) {
+              if (!input.trySkipNullValue()) {
+                tid = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 102865796: {
             if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
                 level = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -516,29 +539,6 @@ public final class ChallengeBossRelicMapOuterClass {
             if (input.isAtField(FieldNames.mainAffixId)) {
               if (!input.trySkipNullValue()) {
                 mainAffixId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -294460212:
-          case -538310583: {
-            if (input.isAtField(FieldNames.uniqueId)) {
-              if (!input.trySkipNullValue()) {
-                uniqueId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 114831: {
-            if (input.isAtField(FieldNames.tid)) {
-              if (!input.trySkipNullValue()) {
-                tid = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -611,13 +611,13 @@ public final class ChallengeBossRelicMapOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName level = FieldName.forField("level");
-
-      static final FieldName mainAffixId = FieldName.forField("mainAffixId", "main_affix_id");
-
       static final FieldName uniqueId = FieldName.forField("uniqueId", "unique_id");
 
       static final FieldName tid = FieldName.forField("tid");
+
+      static final FieldName level = FieldName.forField("level");
+
+      static final FieldName mainAffixId = FieldName.forField("mainAffixId", "main_affix_id");
 
       static final FieldName subAffixList = FieldName.forField("subAffixList", "sub_affix_list");
     }

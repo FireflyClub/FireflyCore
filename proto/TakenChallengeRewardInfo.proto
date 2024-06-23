@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemList.proto";
 
-// Lnjpfnobckn
+// BPANBELGANL
 message TakenChallengeRewardInfo {
-    uint32 star_count = 5; // gkfjeopccdp
-    ItemList reward = 3;
+    uint32 star_count = 11; // LCJNJMKEAHD
+    ItemList reward = 1;
 }

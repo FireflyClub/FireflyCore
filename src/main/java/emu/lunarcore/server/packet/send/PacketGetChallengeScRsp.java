@@ -39,7 +39,7 @@ public class PacketGetChallengeScRsp extends BasePacket {
                     // add extra infos for bosses to trigger challenge unlock
                     if (challengeExcel.isBoss()) {
                         challenge
-                            .setStoryInfo(
+                            .setStartInfo(
                                 ChallengeBossExtraInfoOuterClass
                                     .ChallengeBossExtraInfo
                                     .newInstance()
@@ -47,8 +47,8 @@ public class PacketGetChallengeScRsp extends BasePacket {
                                         ChallengeBossInfoOuterClass
                                             .ChallengeBossInfo
                                             .newInstance()
-                                            .setPJJOCDBJOFO(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
-                                            .setCKIOKLMJCBG(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
+                                            .setLFINNEDDCAJ(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
+                                            .setLHDMIOKHDAJ(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
                                     )
                         );
                     }

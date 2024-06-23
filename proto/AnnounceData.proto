@@ -2,15 +2,21 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Dlmlgpgaojp
+// DFIAIOHDCDM
 message AnnounceData {
-    int64 end_time = 9;
+    int64 begin_time = 13;
+    //9
+    //4
+    //10
+    bool unkbool = 14; // LLPPPMOKLNE
     uint32 config_id = 11;
-    uint32 center_system_frequency = 10; // ilkolkbcpfm
-    string unkstring = 1; // oejbakandhh
-    string emergency_text = 13; // agofnmckpgb
-    int64 begin_time = 15;
-    string banner_text = 4; // elcflljcbdo
-    uint32 banner_frequency = 3; // ajncaloomad
-    bool unkbool = 6;
+    //3
+    //8
+    int64 end_time = 6;
+
+    uint32 center_system_frequency = 9;
+    string unkstring = 3;
+    string emergency_text = 10;
+    string banner_text = 4;
+    uint32 banner_frequency = 8;
 }

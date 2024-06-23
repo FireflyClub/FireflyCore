@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class ChallengeRewardOuterClass {
   /**
    * <pre>
-   *  Enehbffiogh
+   *  EANDEHFDNOJ
    * </pre>
    *
    * Protobuf type {@code ChallengeReward}
@@ -24,15 +24,15 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  kamimbjhobi
+     *  EONLIBILOOE
      * </pre>
      *
-     * <code>optional uint64 taken_challenge_reward = 12;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      */
     private long takenChallengeReward;
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 6;</code>
      */
     private int groupId;
 
@@ -41,7 +41,7 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  Enehbffiogh
+     *  EANDEHFDNOJ
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeReward}
@@ -52,10 +52,10 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  kamimbjhobi
+     *  EONLIBILOOE
      * </pre>
      *
-     * <code>optional uint64 taken_challenge_reward = 12;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return whether the takenChallengeReward field is set
      */
     public boolean hasTakenChallengeReward() {
@@ -64,10 +64,10 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  kamimbjhobi
+     *  EONLIBILOOE
      * </pre>
      *
-     * <code>optional uint64 taken_challenge_reward = 12;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return this
      */
     public ChallengeReward clearTakenChallengeReward() {
@@ -78,10 +78,10 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  kamimbjhobi
+     *  EONLIBILOOE
      * </pre>
      *
-     * <code>optional uint64 taken_challenge_reward = 12;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return the takenChallengeReward
      */
     public long getTakenChallengeReward() {
@@ -90,10 +90,10 @@ public final class ChallengeRewardOuterClass {
 
     /**
      * <pre>
-     *  kamimbjhobi
+     *  EONLIBILOOE
      * </pre>
      *
-     * <code>optional uint64 taken_challenge_reward = 12;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @param value the takenChallengeReward to set
      * @return this
      */
@@ -104,7 +104,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 6;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -112,7 +112,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 6;</code>
      * @return this
      */
     public ChallengeReward clearGroupId() {
@@ -122,7 +122,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 6;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -130,7 +130,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 6;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -205,11 +205,11 @@ public final class ChallengeRewardOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 40);
         output.writeUInt64NoTag(takenChallengeReward);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(groupId);
       }
     }
@@ -233,16 +233,16 @@ public final class ChallengeRewardOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 40: {
             // takenChallengeReward
             takenChallengeReward = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 48) {
               break;
             }
           }
-          case 104: {
+          case 48: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000002;

@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ChallengeLineupNotifyOuterClass {
   /**
+   * <pre>
+   *  PPFCEMJEFKA
+   * </pre>
+   *
    * Protobuf type {@code ChallengeLineupNotify}
    */
   public static final class ChallengeLineupNotify extends ProtoMessage<ChallengeLineupNotify> implements Cloneable {
@@ -27,6 +31,10 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *  PPFCEMJEFKA
+     * </pre>
+     *
      * @return a new empty instance of {@code ChallengeLineupNotify}
      */
     public static ChallengeLineupNotify newInstance() {

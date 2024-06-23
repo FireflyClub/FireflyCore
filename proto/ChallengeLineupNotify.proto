@@ -4,6 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "ExtraLineupType.proto";
 
+// PPFCEMJEFKA
 message ChallengeLineupNotify {
     ExtraLineupType extra_lineup_type = 12;
 }

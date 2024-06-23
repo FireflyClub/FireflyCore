@@ -7,6 +7,6 @@ import "ChessRogueNousMainStoryInfo.proto";
 
 message GetChessRogueNousStoryInfoScRsp {
     uint32 retcode = 12;
-    repeated ChessRogueNousSubStoryInfo sub_story_info = 6;
-    repeated ChessRogueNousMainStoryInfo main_story_info = 10;
+    repeated ChessRogueNousSubStoryInfo sub_start_info = 6;
+    repeated ChessRogueNousMainStoryInfo main_start_info = 10;
 }

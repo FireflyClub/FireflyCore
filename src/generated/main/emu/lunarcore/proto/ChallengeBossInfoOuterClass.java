@@ -16,7 +16,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class ChallengeBossInfoOuterClass {
   /**
    * <pre>
-   *  Pdeaocdjmag
+   *  NBGPGDMLKAD
    * </pre>
    *
    * Protobuf type {@code ChallengeBossInfo}
@@ -25,45 +25,53 @@ public final class ChallengeBossInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool ppnagbnioao = 10;</code>
+     * <code>optional bool NILMFPFBCNJ = 14;</code>
      */
-    private boolean ppnagbnioao;
+    private boolean nILMFPFBCNJ;
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
      */
-    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo pJJOCDBJOFO = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
+    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo lFINNEDDCAJ = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
      */
-    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo cKIOKLMJCBG = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
+    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo lHDMIOKHDAJ = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
-     * <code>repeated uint32 team_two = 2;</code>
-     */
-    private final RepeatedInt teamTwo = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
      */
     private final RepeatedInt teamOne = RepeatedInt.newEmptyInstance();
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  DIHEALDBBFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated uint32 team_two = 11;</code>
+     */
+    private final RepeatedInt teamTwo = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <pre>
+     *  JJMBDNBBNFI
+     * </pre>
+     *
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      */
     private final RepeatedMessage<RelicsEntry> relics = RepeatedMessage.newEmptyInstance(RelicsEntry.getFactory());
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      */
     private final RepeatedMessage<EquipmentsEntry> equipments = RepeatedMessage.newEmptyInstance(EquipmentsEntry.getFactory());
 
@@ -72,7 +80,7 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  Pdeaocdjmag
+     *  NBGPGDMLKAD
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeBossInfo}
@@ -82,76 +90,76 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <code>optional bool ppnagbnioao = 10;</code>
-     * @return whether the ppnagbnioao field is set
+     * <code>optional bool NILMFPFBCNJ = 14;</code>
+     * @return whether the nILMFPFBCNJ field is set
      */
-    public boolean hasPpnagbnioao() {
+    public boolean hasNILMFPFBCNJ() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool ppnagbnioao = 10;</code>
+     * <code>optional bool NILMFPFBCNJ = 14;</code>
      * @return this
      */
-    public ChallengeBossInfo clearPpnagbnioao() {
+    public ChallengeBossInfo clearNILMFPFBCNJ() {
       bitField0_ &= ~0x00000001;
-      ppnagbnioao = false;
+      nILMFPFBCNJ = false;
       return this;
     }
 
     /**
-     * <code>optional bool ppnagbnioao = 10;</code>
-     * @return the ppnagbnioao
+     * <code>optional bool NILMFPFBCNJ = 14;</code>
+     * @return the nILMFPFBCNJ
      */
-    public boolean getPpnagbnioao() {
-      return ppnagbnioao;
+    public boolean getNILMFPFBCNJ() {
+      return nILMFPFBCNJ;
     }
 
     /**
-     * <code>optional bool ppnagbnioao = 10;</code>
-     * @param value the ppnagbnioao to set
+     * <code>optional bool NILMFPFBCNJ = 14;</code>
+     * @param value the nILMFPFBCNJ to set
      * @return this
      */
-    public ChallengeBossInfo setPpnagbnioao(final boolean value) {
+    public ChallengeBossInfo setNILMFPFBCNJ(final boolean value) {
       bitField0_ |= 0x00000001;
-      ppnagbnioao = value;
+      nILMFPFBCNJ = value;
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
-     * @return whether the pJJOCDBJOFO field is set
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * @return whether the lFINNEDDCAJ field is set
      */
-    public boolean hasPJJOCDBJOFO() {
+    public boolean hasLFINNEDDCAJ() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
      * @return this
      */
-    public ChallengeBossInfo clearPJJOCDBJOFO() {
+    public ChallengeBossInfo clearLFINNEDDCAJ() {
       bitField0_ &= ~0x00000002;
-      pJJOCDBJOFO.clear();
+      lFINNEDDCAJ.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutablePJJOCDBJOFO()} if you want to modify it.
+     * Use {@link #getMutableLFINNEDDCAJ()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getPJJOCDBJOFO() {
-      return pJJOCDBJOFO;
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getLFINNEDDCAJ() {
+      return lFINNEDDCAJ;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -159,57 +167,57 @@ public final class ChallengeBossInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutablePJJOCDBJOFO() {
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableLFINNEDDCAJ() {
       bitField0_ |= 0x00000002;
-      return pJJOCDBJOFO;
+      return lFINNEDDCAJ;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo PJJOCDBJOFO = 12;</code>
-     * @param value the pJJOCDBJOFO to set
+     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * @param value the lFINNEDDCAJ to set
      * @return this
      */
-    public ChallengeBossInfo setPJJOCDBJOFO(
+    public ChallengeBossInfo setLFINNEDDCAJ(
         final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
       bitField0_ |= 0x00000002;
-      pJJOCDBJOFO.copyFrom(value);
+      lFINNEDDCAJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
-     * @return whether the cKIOKLMJCBG field is set
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * @return whether the lHDMIOKHDAJ field is set
      */
-    public boolean hasCKIOKLMJCBG() {
+    public boolean hasLHDMIOKHDAJ() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
      * @return this
      */
-    public ChallengeBossInfo clearCKIOKLMJCBG() {
+    public ChallengeBossInfo clearLHDMIOKHDAJ() {
       bitField0_ &= ~0x00000004;
-      cKIOKLMJCBG.clear();
+      lHDMIOKHDAJ.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableCKIOKLMJCBG()} if you want to modify it.
+     * Use {@link #getMutableLHDMIOKHDAJ()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getCKIOKLMJCBG() {
-      return cKIOKLMJCBG;
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getLHDMIOKHDAJ() {
+      return lHDMIOKHDAJ;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -217,111 +225,55 @@ public final class ChallengeBossInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableCKIOKLMJCBG() {
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableLHDMIOKHDAJ() {
       bitField0_ |= 0x00000004;
-      return cKIOKLMJCBG;
+      return lHDMIOKHDAJ;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo CKIOKLMJCBG = 15;</code>
-     * @param value the cKIOKLMJCBG to set
+     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * @param value the lHDMIOKHDAJ to set
      * @return this
      */
-    public ChallengeBossInfo setCKIOKLMJCBG(
+    public ChallengeBossInfo setLHDMIOKHDAJ(
         final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
       bitField0_ |= 0x00000004;
-      cKIOKLMJCBG.copyFrom(value);
+      lHDMIOKHDAJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 team_two = 2;</code>
-     * @return whether the teamTwo field is set
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
+     * @return whether the teamOne field is set
      */
-    public boolean hasTeamTwo() {
+    public boolean hasTeamOne() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated uint32 team_two = 2;</code>
-     * @return this
-     */
-    public ChallengeBossInfo clearTeamTwo() {
-      bitField0_ &= ~0x00000008;
-      teamTwo.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 team_two = 2;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
      *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableTeamTwo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getTeamTwo() {
-      return teamTwo;
-    }
-
-    /**
-     * <code>repeated uint32 team_two = 2;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableTeamTwo() {
-      bitField0_ |= 0x00000008;
-      return teamTwo;
-    }
-
-    /**
-     * <code>repeated uint32 team_two = 2;</code>
-     * @param value the teamTwo to add
-     * @return this
-     */
-    public ChallengeBossInfo addTeamTwo(final int value) {
-      bitField0_ |= 0x00000008;
-      teamTwo.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 team_two = 2;</code>
-     * @param values the teamTwo to add
-     * @return this
-     */
-    public ChallengeBossInfo addAllTeamTwo(final int... values) {
-      bitField0_ |= 0x00000008;
-      teamTwo.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 team_one = 13;</code>
-     * @return whether the teamOne field is set
-     */
-    public boolean hasTeamOne() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <code>repeated uint32 team_one = 2;</code>
      * @return this
      */
     public ChallengeBossInfo clearTeamOne() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       teamOne.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -335,7 +287,11 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -344,38 +300,138 @@ public final class ChallengeBossInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableTeamOne() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       return teamOne;
     }
 
     /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
      * @param value the teamOne to add
      * @return this
      */
     public ChallengeBossInfo addTeamOne(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       teamOne.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 team_one = 13;</code>
+     * <pre>
+     *  KBHGJGHNKGJ
+     * </pre>
+     *
+     * <code>repeated uint32 team_one = 2;</code>
      * @param values the teamOne to add
      * @return this
      */
     public ChallengeBossInfo addAllTeamOne(final int... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       teamOne.addAll(values);
       return this;
     }
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  DIHEALDBBFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated uint32 team_two = 11;</code>
+     * @return whether the teamTwo field is set
+     */
+    public boolean hasTeamTwo() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     *  DIHEALDBBFI
+     * </pre>
+     *
+     * <code>repeated uint32 team_two = 11;</code>
+     * @return this
+     */
+    public ChallengeBossInfo clearTeamTwo() {
+      bitField0_ &= ~0x00000010;
+      teamTwo.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DIHEALDBBFI
+     * </pre>
+     *
+     * <code>repeated uint32 team_two = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableTeamTwo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getTeamTwo() {
+      return teamTwo;
+    }
+
+    /**
+     * <pre>
+     *  DIHEALDBBFI
+     * </pre>
+     *
+     * <code>repeated uint32 team_two = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableTeamTwo() {
+      bitField0_ |= 0x00000010;
+      return teamTwo;
+    }
+
+    /**
+     * <pre>
+     *  DIHEALDBBFI
+     * </pre>
+     *
+     * <code>repeated uint32 team_two = 11;</code>
+     * @param value the teamTwo to add
+     * @return this
+     */
+    public ChallengeBossInfo addTeamTwo(final int value) {
+      bitField0_ |= 0x00000010;
+      teamTwo.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  DIHEALDBBFI
+     * </pre>
+     *
+     * <code>repeated uint32 team_two = 11;</code>
+     * @param values the teamTwo to add
+     * @return this
+     */
+    public ChallengeBossInfo addAllTeamTwo(final int... values) {
+      bitField0_ |= 0x00000010;
+      teamTwo.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  JJMBDNBBNFI
+     * </pre>
+     *
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      * @return whether the relics field is set
      */
     public boolean hasRelics() {
@@ -384,10 +440,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  JJMBDNBBNFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      * @return this
      */
     public ChallengeBossInfo clearRelics() {
@@ -398,10 +454,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  JJMBDNBBNFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -416,10 +472,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  JJMBDNBBNFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -434,10 +490,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  JJMBDNBBNFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      * @param value the relics to add
      * @return this
      */
@@ -449,10 +505,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  padhagkggpb
+     *  JJMBDNBBNFI
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 7;</code>
+     * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 3;</code>
      * @param values the relics to add
      * @return this
      */
@@ -464,10 +520,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      * @return whether the equipments field is set
      */
     public boolean hasEquipments() {
@@ -476,10 +532,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      * @return this
      */
     public ChallengeBossInfo clearEquipments() {
@@ -490,10 +546,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -508,10 +564,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -526,10 +582,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      * @param value the equipments to add
      * @return this
      */
@@ -541,10 +597,10 @@ public final class ChallengeBossInfoOuterClass {
 
     /**
      * <pre>
-     *  kckmgdgifif
+     *  NKOODOOIEBF
      * </pre>
      *
-     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 8;</code>
+     * <code>repeated .ChallengeBossInfo.EquipmentsEntry equipments = 12;</code>
      * @param values the equipments to add
      * @return this
      */
@@ -559,11 +615,11 @@ public final class ChallengeBossInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        ppnagbnioao = other.ppnagbnioao;
-        pJJOCDBJOFO.copyFrom(other.pJJOCDBJOFO);
-        cKIOKLMJCBG.copyFrom(other.cKIOKLMJCBG);
-        teamTwo.copyFrom(other.teamTwo);
+        nILMFPFBCNJ = other.nILMFPFBCNJ;
+        lFINNEDDCAJ.copyFrom(other.lFINNEDDCAJ);
+        lHDMIOKHDAJ.copyFrom(other.lHDMIOKHDAJ);
         teamOne.copyFrom(other.teamOne);
+        teamTwo.copyFrom(other.teamTwo);
         relics.copyFrom(other.relics);
         equipments.copyFrom(other.equipments);
       }
@@ -576,20 +632,20 @@ public final class ChallengeBossInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPpnagbnioao()) {
-        setPpnagbnioao(other.ppnagbnioao);
+      if (other.hasNILMFPFBCNJ()) {
+        setNILMFPFBCNJ(other.nILMFPFBCNJ);
       }
-      if (other.hasPJJOCDBJOFO()) {
-        getMutablePJJOCDBJOFO().mergeFrom(other.pJJOCDBJOFO);
+      if (other.hasLFINNEDDCAJ()) {
+        getMutableLFINNEDDCAJ().mergeFrom(other.lFINNEDDCAJ);
       }
-      if (other.hasCKIOKLMJCBG()) {
-        getMutableCKIOKLMJCBG().mergeFrom(other.cKIOKLMJCBG);
-      }
-      if (other.hasTeamTwo()) {
-        getMutableTeamTwo().addAll(other.teamTwo);
+      if (other.hasLHDMIOKHDAJ()) {
+        getMutableLHDMIOKHDAJ().mergeFrom(other.lHDMIOKHDAJ);
       }
       if (other.hasTeamOne()) {
         getMutableTeamOne().addAll(other.teamOne);
+      }
+      if (other.hasTeamTwo()) {
+        getMutableTeamTwo().addAll(other.teamTwo);
       }
       if (other.hasRelics()) {
         getMutableRelics().addAll(other.relics);
@@ -607,11 +663,11 @@ public final class ChallengeBossInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      ppnagbnioao = false;
-      pJJOCDBJOFO.clear();
-      cKIOKLMJCBG.clear();
-      teamTwo.clear();
+      nILMFPFBCNJ = false;
+      lFINNEDDCAJ.clear();
+      lHDMIOKHDAJ.clear();
       teamOne.clear();
+      teamTwo.clear();
       relics.clear();
       equipments.clear();
       return this;
@@ -624,10 +680,10 @@ public final class ChallengeBossInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pJJOCDBJOFO.clearQuick();
-      cKIOKLMJCBG.clearQuick();
-      teamTwo.clear();
+      lFINNEDDCAJ.clearQuick();
+      lHDMIOKHDAJ.clearQuick();
       teamOne.clear();
+      teamTwo.clear();
       relics.clearQuick();
       equipments.clearQuick();
       return this;
@@ -643,11 +699,11 @@ public final class ChallengeBossInfoOuterClass {
       }
       ChallengeBossInfo other = (ChallengeBossInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasPpnagbnioao() || ppnagbnioao == other.ppnagbnioao)
-        && (!hasPJJOCDBJOFO() || pJJOCDBJOFO.equals(other.pJJOCDBJOFO))
-        && (!hasCKIOKLMJCBG() || cKIOKLMJCBG.equals(other.cKIOKLMJCBG))
-        && (!hasTeamTwo() || teamTwo.equals(other.teamTwo))
+        && (!hasNILMFPFBCNJ() || nILMFPFBCNJ == other.nILMFPFBCNJ)
+        && (!hasLFINNEDDCAJ() || lFINNEDDCAJ.equals(other.lFINNEDDCAJ))
+        && (!hasLHDMIOKHDAJ() || lHDMIOKHDAJ.equals(other.lHDMIOKHDAJ))
         && (!hasTeamOne() || teamOne.equals(other.teamOne))
+        && (!hasTeamTwo() || teamTwo.equals(other.teamTwo))
         && (!hasRelics() || relics.equals(other.relics))
         && (!hasEquipments() || equipments.equals(other.equipments));
     }
@@ -655,38 +711,38 @@ public final class ChallengeBossInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeBoolNoTag(ppnagbnioao);
+        output.writeRawByte((byte) 112);
+        output.writeBoolNoTag(nILMFPFBCNJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 98);
-        output.writeMessageNoTag(pJJOCDBJOFO);
+        output.writeRawByte((byte) 10);
+        output.writeMessageNoTag(lFINNEDDCAJ);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 122);
-        output.writeMessageNoTag(cKIOKLMJCBG);
+        output.writeRawByte((byte) 42);
+        output.writeMessageNoTag(lHDMIOKHDAJ);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < teamTwo.length(); i++) {
+        for (int i = 0; i < teamOne.length(); i++) {
           output.writeRawByte((byte) 16);
-          output.writeUInt32NoTag(teamTwo.array()[i]);
+          output.writeUInt32NoTag(teamOne.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < teamOne.length(); i++) {
-          output.writeRawByte((byte) 104);
-          output.writeUInt32NoTag(teamOne.array()[i]);
+        for (int i = 0; i < teamTwo.length(); i++) {
+          output.writeRawByte((byte) 88);
+          output.writeUInt32NoTag(teamTwo.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < relics.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(relics.get(i));
         }
       }
       if ((bitField0_ & 0x00000040) != 0) {
         for (int i = 0; i < equipments.length(); i++) {
-          output.writeRawByte((byte) 66);
+          output.writeRawByte((byte) 98);
           output.writeMessageNoTag(equipments.get(i));
         }
       }
@@ -699,16 +755,16 @@ public final class ChallengeBossInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(pJJOCDBJOFO);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(lFINNEDDCAJ);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(cKIOKLMJCBG);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(lHDMIOKHDAJ);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * teamTwo.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(teamTwo);
+        size += (1 * teamOne.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(teamOne);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * teamOne.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(teamOne);
+        size += (1 * teamTwo.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(teamTwo);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * relics.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(relics);
@@ -726,27 +782,27 @@ public final class ChallengeBossInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
-            // ppnagbnioao
-            ppnagbnioao = input.readBool();
+          case 112: {
+            // nILMFPFBCNJ
+            nILMFPFBCNJ = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 10) {
               break;
             }
           }
-          case 98: {
-            // pJJOCDBJOFO
-            input.readMessage(pJJOCDBJOFO);
+          case 10: {
+            // lFINNEDDCAJ
+            input.readMessage(lFINNEDDCAJ);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 42) {
               break;
             }
           }
-          case 122: {
-            // cKIOKLMJCBG
-            input.readMessage(cKIOKLMJCBG);
+          case 42: {
+            // lHDMIOKHDAJ
+            input.readMessage(lHDMIOKHDAJ);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 18) {
@@ -754,32 +810,32 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 18: {
-            // teamTwo [packed=true]
-            input.readPackedUInt32(teamTwo, tag);
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 106) {
-              break;
-            }
-          }
-          case 106: {
             // teamOne [packed=true]
             input.readPackedUInt32(teamOne, tag);
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 90) {
               break;
             }
           }
-          case 58: {
+          case 90: {
+            // teamTwo [packed=true]
+            input.readPackedUInt32(teamTwo, tag);
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 26) {
+              break;
+            }
+          }
+          case 26: {
             // relics
             tag = input.readRepeatedMessage(relics, tag);
             bitField0_ |= 0x00000020;
-            if (tag != 66) {
+            if (tag != 98) {
               break;
             }
           }
-          case 66: {
+          case 98: {
             // equipments
             tag = input.readRepeatedMessage(equipments, tag);
             bitField0_ |= 0x00000040;
@@ -798,14 +854,14 @@ public final class ChallengeBossInfoOuterClass {
             break;
           }
           case 16: {
-            // teamTwo [packed=false]
-            tag = input.readRepeatedUInt32(teamTwo, tag);
+            // teamOne [packed=false]
+            tag = input.readRepeatedUInt32(teamOne, tag);
             bitField0_ |= 0x00000008;
             break;
           }
-          case 104: {
-            // teamOne [packed=false]
-            tag = input.readRepeatedUInt32(teamOne, tag);
+          case 88: {
+            // teamTwo [packed=false]
+            tag = input.readRepeatedUInt32(teamTwo, tag);
             bitField0_ |= 0x00000010;
             break;
           }
@@ -817,19 +873,19 @@ public final class ChallengeBossInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.ppnagbnioao, ppnagbnioao);
+        output.writeBool(FieldNames.nILMFPFBCNJ, nILMFPFBCNJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.pJJOCDBJOFO, pJJOCDBJOFO);
+        output.writeMessage(FieldNames.lFINNEDDCAJ, lFINNEDDCAJ);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.cKIOKLMJCBG, cKIOKLMJCBG);
+        output.writeMessage(FieldNames.lHDMIOKHDAJ, lHDMIOKHDAJ);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.teamTwo, teamTwo);
+        output.writeRepeatedUInt32(FieldNames.teamOne, teamOne);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.teamOne, teamOne);
+        output.writeRepeatedUInt32(FieldNames.teamTwo, teamTwo);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedMessage(FieldNames.relics, relics);
@@ -847,10 +903,10 @@ public final class ChallengeBossInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 201697844: {
-            if (input.isAtField(FieldNames.ppnagbnioao)) {
+          case 1293714557: {
+            if (input.isAtField(FieldNames.nILMFPFBCNJ)) {
               if (!input.trySkipNullValue()) {
-                ppnagbnioao = input.readBool();
+                nILMFPFBCNJ = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -858,10 +914,10 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case 1594322608: {
-            if (input.isAtField(FieldNames.pJJOCDBJOFO)) {
+          case -2049184042: {
+            if (input.isAtField(FieldNames.lFINNEDDCAJ)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(pJJOCDBJOFO);
+                input.readMessage(lFINNEDDCAJ);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -869,23 +925,11 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case -454897412: {
-            if (input.isAtField(FieldNames.cKIOKLMJCBG)) {
+          case 707608805: {
+            if (input.isAtField(FieldNames.lHDMIOKHDAJ)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(cKIOKLMJCBG);
+                input.readMessage(lHDMIOKHDAJ);
                 bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1439297873:
-          case -1668235926: {
-            if (input.isAtField(FieldNames.teamTwo)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(teamTwo);
-                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -897,6 +941,18 @@ public final class ChallengeBossInfoOuterClass {
             if (input.isAtField(FieldNames.teamOne)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(teamOne);
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1439297873:
+          case -1668235926: {
+            if (input.isAtField(FieldNames.teamTwo)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(teamTwo);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -964,6 +1020,351 @@ public final class ChallengeBossInfoOuterClass {
      */
     public static MessageFactory<ChallengeBossInfo> getFactory() {
       return ChallengeBossInfoFactory.INSTANCE;
+    }
+
+    /**
+     * Protobuf type {@code RelicsEntry}
+     */
+    public static final class RelicsEntry extends ProtoMessage<RelicsEntry> implements Cloneable {
+      private static final long serialVersionUID = 0L;
+
+      /**
+       * <code>optional uint32 key = 1;</code>
+       */
+      private int key;
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       */
+      private final ChallengeBossRelicOuterClass.ChallengeBossRelic value_ = ChallengeBossRelicOuterClass.ChallengeBossRelic.newInstance();
+
+      private RelicsEntry() {
+      }
+
+      /**
+       * @return a new empty instance of {@code RelicsEntry}
+       */
+      public static RelicsEntry newInstance() {
+        return new RelicsEntry();
+      }
+
+      /**
+       * <code>optional uint32 key = 1;</code>
+       * @return whether the key field is set
+       */
+      public boolean hasKey() {
+        return (bitField0_ & 0x00000001) != 0;
+      }
+
+      /**
+       * <code>optional uint32 key = 1;</code>
+       * @return this
+       */
+      public RelicsEntry clearKey() {
+        bitField0_ &= ~0x00000001;
+        key = 0;
+        return this;
+      }
+
+      /**
+       * <code>optional uint32 key = 1;</code>
+       * @return the key
+       */
+      public int getKey() {
+        return key;
+      }
+
+      /**
+       * <code>optional uint32 key = 1;</code>
+       * @param value the key to set
+       * @return this
+       */
+      public RelicsEntry setKey(final int value) {
+        bitField0_ |= 0x00000001;
+        key = value;
+        return this;
+      }
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       * @return whether the value_ field is set
+       */
+      public boolean hasValue() {
+        return (bitField0_ & 0x00000002) != 0;
+      }
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       * @return this
+       */
+      public RelicsEntry clearValue() {
+        bitField0_ &= ~0x00000002;
+        value_.clear();
+        return this;
+      }
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       *
+       * This method returns the internal storage object without modifying any has state.
+       * The returned object should not be modified and be treated as read-only.
+       *
+       * Use {@link #getMutableValue()} if you want to modify it.
+       *
+       * @return internal storage object for reading
+       */
+      public ChallengeBossRelicOuterClass.ChallengeBossRelic getValue() {
+        return value_;
+      }
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       *
+       * This method returns the internal storage object and sets the corresponding
+       * has state. The returned object will become part of this message and its
+       * contents may be modified as long as the has state is not cleared.
+       *
+       * @return internal storage object for modifications
+       */
+      public ChallengeBossRelicOuterClass.ChallengeBossRelic getMutableValue() {
+        bitField0_ |= 0x00000002;
+        return value_;
+      }
+
+      /**
+       * <code>optional .ChallengeBossRelic value = 2;</code>
+       * @param value the value_ to set
+       * @return this
+       */
+      public RelicsEntry setValue(final ChallengeBossRelicOuterClass.ChallengeBossRelic value) {
+        bitField0_ |= 0x00000002;
+        value_.copyFrom(value);
+        return this;
+      }
+
+      @Override
+      public RelicsEntry copyFrom(final RelicsEntry other) {
+        cachedSize = other.cachedSize;
+        if ((bitField0_ | other.bitField0_) != 0) {
+          bitField0_ = other.bitField0_;
+          key = other.key;
+          value_.copyFrom(other.value_);
+        }
+        return this;
+      }
+
+      @Override
+      public RelicsEntry mergeFrom(final RelicsEntry other) {
+        if (other.isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        if (other.hasKey()) {
+          setKey(other.key);
+        }
+        if (other.hasValue()) {
+          getMutableValue().mergeFrom(other.value_);
+        }
+        return this;
+      }
+
+      @Override
+      public RelicsEntry clear() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        key = 0;
+        value_.clear();
+        return this;
+      }
+
+      @Override
+      public RelicsEntry clearQuick() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        value_.clearQuick();
+        return this;
+      }
+
+      @Override
+      public boolean equals(Object o) {
+        if (o == this) {
+          return true;
+        }
+        if (!(o instanceof RelicsEntry)) {
+          return false;
+        }
+        RelicsEntry other = (RelicsEntry) o;
+        return bitField0_ == other.bitField0_
+          && (!hasKey() || key == other.key)
+          && (!hasValue() || value_.equals(other.value_));
+      }
+
+      @Override
+      public void writeTo(final ProtoSink output) throws IOException {
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeRawByte((byte) 8);
+          output.writeUInt32NoTag(key);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeRawByte((byte) 18);
+          output.writeMessageNoTag(value_);
+        }
+      }
+
+      @Override
+      protected int computeSerializedSize() {
+        int size = 0;
+        if ((bitField0_ & 0x00000001) != 0) {
+          size += 1 + ProtoSink.computeUInt32SizeNoTag(key);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          size += 1 + ProtoSink.computeMessageSizeNoTag(value_);
+        }
+        return size;
+      }
+
+      @Override
+      @SuppressWarnings("fallthrough")
+      public RelicsEntry mergeFrom(final ProtoSource input) throws IOException {
+        // Enabled Fall-Through Optimization (QuickBuffers)
+        int tag = input.readTag();
+        while (true) {
+          switch (tag) {
+            case 8: {
+              // key
+              key = input.readUInt32();
+              bitField0_ |= 0x00000001;
+              tag = input.readTag();
+              if (tag != 18) {
+                break;
+              }
+            }
+            case 18: {
+              // value_
+              input.readMessage(value_);
+              bitField0_ |= 0x00000002;
+              tag = input.readTag();
+              if (tag != 0) {
+                break;
+              }
+            }
+            case 0: {
+              return this;
+            }
+            default: {
+              if (!input.skipField(tag)) {
+                return this;
+              }
+              tag = input.readTag();
+              break;
+            }
+          }
+        }
+      }
+
+      @Override
+      public void writeTo(final JsonSink output) throws IOException {
+        output.beginObject();
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeUInt32(FieldNames.key, key);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeMessage(FieldNames.value_, value_);
+        }
+        output.endObject();
+      }
+
+      @Override
+      public RelicsEntry mergeFrom(final JsonSource input) throws IOException {
+        if (!input.beginObject()) {
+          return this;
+        }
+        while (!input.isAtEnd()) {
+          switch (input.readFieldHash()) {
+            case 106079: {
+              if (input.isAtField(FieldNames.key)) {
+                if (!input.trySkipNullValue()) {
+                  key = input.readUInt32();
+                  bitField0_ |= 0x00000001;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            case 111972721: {
+              if (input.isAtField(FieldNames.value_)) {
+                if (!input.trySkipNullValue()) {
+                  input.readMessage(value_);
+                  bitField0_ |= 0x00000002;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            default: {
+              input.skipUnknownField();
+              break;
+            }
+          }
+        }
+        input.endObject();
+        return this;
+      }
+
+      @Override
+      public RelicsEntry clone() {
+        return new RelicsEntry().copyFrom(this);
+      }
+
+      @Override
+      public boolean isEmpty() {
+        return ((bitField0_) == 0);
+      }
+
+      public static RelicsEntry parseFrom(final byte[] data) throws InvalidProtocolBufferException {
+        return ProtoMessage.mergeFrom(new RelicsEntry(), data).checkInitialized();
+      }
+
+      public static RelicsEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new RelicsEntry(), input).checkInitialized();
+      }
+
+      public static RelicsEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new RelicsEntry(), input).checkInitialized();
+      }
+
+      /**
+       * @return factory for creating RelicsEntry messages
+       */
+      public static MessageFactory<RelicsEntry> getFactory() {
+        return RelicsEntryFactory.INSTANCE;
+      }
+
+      private enum RelicsEntryFactory implements MessageFactory<RelicsEntry> {
+        INSTANCE;
+
+        @Override
+        public RelicsEntry create() {
+          return RelicsEntry.newInstance();
+        }
+      }
+
+      /**
+       * Contains name constants used for serializing JSON
+       */
+      static class FieldNames {
+        static final FieldName key = FieldName.forField("key");
+
+        static final FieldName value_ = FieldName.forField("value");
+      }
     }
 
     /**
@@ -1313,351 +1714,6 @@ public final class ChallengeBossInfoOuterClass {
       }
     }
 
-    /**
-     * Protobuf type {@code RelicsEntry}
-     */
-    public static final class RelicsEntry extends ProtoMessage<RelicsEntry> implements Cloneable {
-      private static final long serialVersionUID = 0L;
-
-      /**
-       * <code>optional uint32 key = 1;</code>
-       */
-      private int key;
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       */
-      private final ChallengeBossRelicOuterClass.ChallengeBossRelic value_ = ChallengeBossRelicOuterClass.ChallengeBossRelic.newInstance();
-
-      private RelicsEntry() {
-      }
-
-      /**
-       * @return a new empty instance of {@code RelicsEntry}
-       */
-      public static RelicsEntry newInstance() {
-        return new RelicsEntry();
-      }
-
-      /**
-       * <code>optional uint32 key = 1;</code>
-       * @return whether the key field is set
-       */
-      public boolean hasKey() {
-        return (bitField0_ & 0x00000001) != 0;
-      }
-
-      /**
-       * <code>optional uint32 key = 1;</code>
-       * @return this
-       */
-      public RelicsEntry clearKey() {
-        bitField0_ &= ~0x00000001;
-        key = 0;
-        return this;
-      }
-
-      /**
-       * <code>optional uint32 key = 1;</code>
-       * @return the key
-       */
-      public int getKey() {
-        return key;
-      }
-
-      /**
-       * <code>optional uint32 key = 1;</code>
-       * @param value the key to set
-       * @return this
-       */
-      public RelicsEntry setKey(final int value) {
-        bitField0_ |= 0x00000001;
-        key = value;
-        return this;
-      }
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       * @return whether the value_ field is set
-       */
-      public boolean hasValue() {
-        return (bitField0_ & 0x00000002) != 0;
-      }
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       * @return this
-       */
-      public RelicsEntry clearValue() {
-        bitField0_ &= ~0x00000002;
-        value_.clear();
-        return this;
-      }
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       *
-       * This method returns the internal storage object without modifying any has state.
-       * The returned object should not be modified and be treated as read-only.
-       *
-       * Use {@link #getMutableValue()} if you want to modify it.
-       *
-       * @return internal storage object for reading
-       */
-      public ChallengeBossRelicOuterClass.ChallengeBossRelic getValue() {
-        return value_;
-      }
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       *
-       * This method returns the internal storage object and sets the corresponding
-       * has state. The returned object will become part of this message and its
-       * contents may be modified as long as the has state is not cleared.
-       *
-       * @return internal storage object for modifications
-       */
-      public ChallengeBossRelicOuterClass.ChallengeBossRelic getMutableValue() {
-        bitField0_ |= 0x00000002;
-        return value_;
-      }
-
-      /**
-       * <code>optional .ChallengeBossRelic value = 2;</code>
-       * @param value the value_ to set
-       * @return this
-       */
-      public RelicsEntry setValue(final ChallengeBossRelicOuterClass.ChallengeBossRelic value) {
-        bitField0_ |= 0x00000002;
-        value_.copyFrom(value);
-        return this;
-      }
-
-      @Override
-      public RelicsEntry copyFrom(final RelicsEntry other) {
-        cachedSize = other.cachedSize;
-        if ((bitField0_ | other.bitField0_) != 0) {
-          bitField0_ = other.bitField0_;
-          key = other.key;
-          value_.copyFrom(other.value_);
-        }
-        return this;
-      }
-
-      @Override
-      public RelicsEntry mergeFrom(final RelicsEntry other) {
-        if (other.isEmpty()) {
-          return this;
-        }
-        cachedSize = -1;
-        if (other.hasKey()) {
-          setKey(other.key);
-        }
-        if (other.hasValue()) {
-          getMutableValue().mergeFrom(other.value_);
-        }
-        return this;
-      }
-
-      @Override
-      public RelicsEntry clear() {
-        if (isEmpty()) {
-          return this;
-        }
-        cachedSize = -1;
-        bitField0_ = 0;
-        key = 0;
-        value_.clear();
-        return this;
-      }
-
-      @Override
-      public RelicsEntry clearQuick() {
-        if (isEmpty()) {
-          return this;
-        }
-        cachedSize = -1;
-        bitField0_ = 0;
-        value_.clearQuick();
-        return this;
-      }
-
-      @Override
-      public boolean equals(Object o) {
-        if (o == this) {
-          return true;
-        }
-        if (!(o instanceof RelicsEntry)) {
-          return false;
-        }
-        RelicsEntry other = (RelicsEntry) o;
-        return bitField0_ == other.bitField0_
-          && (!hasKey() || key == other.key)
-          && (!hasValue() || value_.equals(other.value_));
-      }
-
-      @Override
-      public void writeTo(final ProtoSink output) throws IOException {
-        if ((bitField0_ & 0x00000001) != 0) {
-          output.writeRawByte((byte) 8);
-          output.writeUInt32NoTag(key);
-        }
-        if ((bitField0_ & 0x00000002) != 0) {
-          output.writeRawByte((byte) 18);
-          output.writeMessageNoTag(value_);
-        }
-      }
-
-      @Override
-      protected int computeSerializedSize() {
-        int size = 0;
-        if ((bitField0_ & 0x00000001) != 0) {
-          size += 1 + ProtoSink.computeUInt32SizeNoTag(key);
-        }
-        if ((bitField0_ & 0x00000002) != 0) {
-          size += 1 + ProtoSink.computeMessageSizeNoTag(value_);
-        }
-        return size;
-      }
-
-      @Override
-      @SuppressWarnings("fallthrough")
-      public RelicsEntry mergeFrom(final ProtoSource input) throws IOException {
-        // Enabled Fall-Through Optimization (QuickBuffers)
-        int tag = input.readTag();
-        while (true) {
-          switch (tag) {
-            case 8: {
-              // key
-              key = input.readUInt32();
-              bitField0_ |= 0x00000001;
-              tag = input.readTag();
-              if (tag != 18) {
-                break;
-              }
-            }
-            case 18: {
-              // value_
-              input.readMessage(value_);
-              bitField0_ |= 0x00000002;
-              tag = input.readTag();
-              if (tag != 0) {
-                break;
-              }
-            }
-            case 0: {
-              return this;
-            }
-            default: {
-              if (!input.skipField(tag)) {
-                return this;
-              }
-              tag = input.readTag();
-              break;
-            }
-          }
-        }
-      }
-
-      @Override
-      public void writeTo(final JsonSink output) throws IOException {
-        output.beginObject();
-        if ((bitField0_ & 0x00000001) != 0) {
-          output.writeUInt32(FieldNames.key, key);
-        }
-        if ((bitField0_ & 0x00000002) != 0) {
-          output.writeMessage(FieldNames.value_, value_);
-        }
-        output.endObject();
-      }
-
-      @Override
-      public RelicsEntry mergeFrom(final JsonSource input) throws IOException {
-        if (!input.beginObject()) {
-          return this;
-        }
-        while (!input.isAtEnd()) {
-          switch (input.readFieldHash()) {
-            case 106079: {
-              if (input.isAtField(FieldNames.key)) {
-                if (!input.trySkipNullValue()) {
-                  key = input.readUInt32();
-                  bitField0_ |= 0x00000001;
-                }
-              } else {
-                input.skipUnknownField();
-              }
-              break;
-            }
-            case 111972721: {
-              if (input.isAtField(FieldNames.value_)) {
-                if (!input.trySkipNullValue()) {
-                  input.readMessage(value_);
-                  bitField0_ |= 0x00000002;
-                }
-              } else {
-                input.skipUnknownField();
-              }
-              break;
-            }
-            default: {
-              input.skipUnknownField();
-              break;
-            }
-          }
-        }
-        input.endObject();
-        return this;
-      }
-
-      @Override
-      public RelicsEntry clone() {
-        return new RelicsEntry().copyFrom(this);
-      }
-
-      @Override
-      public boolean isEmpty() {
-        return ((bitField0_) == 0);
-      }
-
-      public static RelicsEntry parseFrom(final byte[] data) throws InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new RelicsEntry(), data).checkInitialized();
-      }
-
-      public static RelicsEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new RelicsEntry(), input).checkInitialized();
-      }
-
-      public static RelicsEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new RelicsEntry(), input).checkInitialized();
-      }
-
-      /**
-       * @return factory for creating RelicsEntry messages
-       */
-      public static MessageFactory<RelicsEntry> getFactory() {
-        return RelicsEntryFactory.INSTANCE;
-      }
-
-      private enum RelicsEntryFactory implements MessageFactory<RelicsEntry> {
-        INSTANCE;
-
-        @Override
-        public RelicsEntry create() {
-          return RelicsEntry.newInstance();
-        }
-      }
-
-      /**
-       * Contains name constants used for serializing JSON
-       */
-      static class FieldNames {
-        static final FieldName key = FieldName.forField("key");
-
-        static final FieldName value_ = FieldName.forField("value");
-      }
-    }
-
     private enum ChallengeBossInfoFactory implements MessageFactory<ChallengeBossInfo> {
       INSTANCE;
 
@@ -1671,15 +1727,15 @@ public final class ChallengeBossInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName ppnagbnioao = FieldName.forField("ppnagbnioao");
+      static final FieldName nILMFPFBCNJ = FieldName.forField("NILMFPFBCNJ");
 
-      static final FieldName pJJOCDBJOFO = FieldName.forField("PJJOCDBJOFO");
+      static final FieldName lFINNEDDCAJ = FieldName.forField("LFINNEDDCAJ");
 
-      static final FieldName cKIOKLMJCBG = FieldName.forField("CKIOKLMJCBG");
-
-      static final FieldName teamTwo = FieldName.forField("teamTwo", "team_two");
+      static final FieldName lHDMIOKHDAJ = FieldName.forField("LHDMIOKHDAJ");
 
       static final FieldName teamOne = FieldName.forField("teamOne", "team_one");
+
+      static final FieldName teamTwo = FieldName.forField("teamTwo", "team_two");
 
       static final FieldName relics = FieldName.forField("relics");
 

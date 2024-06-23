@@ -8,13 +8,13 @@ import "ChallengeStoryInfo.proto";
 
 // GKCKOMDIFLP
 message ChallengeInfo {
-    uint32 challenge_id = 15; //odbjkadmlpk
-    ChallengeStoryInfo story_info = 4; //leiglhbeaan
-    uint32 score = 3; //oggklhikobo
-    // uint32 ogahmedokne = 10;
-    uint32 round_count = 5; //kmjmkghelki
-    uint32 score_two = 9; //hlfjjlgkjci
-    ExtraLineupType extra_lineup_type = 7; // DBOFBCKCJAO
-    // repeated Jghjjfejplg archive_monster_id_list = 12;
+    uint32 score = 3;
     ChallengeStatus status = 13;
+    ChallengeStoryInfo start_info = 9;
+    uint32 score_two = 12;
+    ExtraLineupType extra_lineup_type = 7;
+    uint32 challenge_id = 5;
+    uint32 round_count = 14; // CLEOKCHEJGO
+	// repeated BCBMBCACCLM archive_monster_id_list = 15;
+	uint32 GJDOPCDDJEA = 11;
 }

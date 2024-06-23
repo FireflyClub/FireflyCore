@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class ChallengeBossStageInfoOuterClass {
   /**
    * <pre>
-   *  Gbmdggdknmb
+   *  OKCMCGEKIFG
    * </pre>
    *
    * Protobuf type {@code ChallengeBossStageInfo}
@@ -23,31 +23,35 @@ public final class ChallengeBossStageInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 kljpbaagnfn = 11;</code>
+     * <code>optional uint32 CKNGEMPPIGE = 2;</code>
      */
-    private int kljpbaagnfn;
+    private int cKNGEMPPIGE;
 
     /**
-     * <code>optional uint32 daimooemhjf = 14;</code>
+     * <code>optional uint32 JGDMLOFCNCH = 9;</code>
      */
-    private int daimooemhjf;
+    private int jGDMLOFCNCH;
 
     /**
-     * <code>optional bool is_win = 5;</code>
+     * <code>optional bool KJCEEICMKEE = 1;</code>
+     */
+    private boolean kJCEEICMKEE;
+
+    /**
+     * <pre>
+     *  NNJCJEODEPK
+     * </pre>
+     *
+     * <code>optional bool is_win = 7;</code>
      */
     private boolean isWin;
-
-    /**
-     * <code>optional bool nagjmpmhmmc = 7;</code>
-     */
-    private boolean nagjmpmhmmc;
 
     private ChallengeBossStageInfo() {
     }
 
     /**
      * <pre>
-     *  Gbmdggdknmb
+     *  OKCMCGEKIFG
      * </pre>
      *
      * @return a new empty instance of {@code ChallengeBossStageInfo}
@@ -57,99 +61,148 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 kljpbaagnfn = 11;</code>
-     * @return whether the kljpbaagnfn field is set
+     * <code>optional uint32 CKNGEMPPIGE = 2;</code>
+     * @return whether the cKNGEMPPIGE field is set
      */
-    public boolean hasKljpbaagnfn() {
+    public boolean hasCKNGEMPPIGE() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 kljpbaagnfn = 11;</code>
+     * <code>optional uint32 CKNGEMPPIGE = 2;</code>
      * @return this
      */
-    public ChallengeBossStageInfo clearKljpbaagnfn() {
+    public ChallengeBossStageInfo clearCKNGEMPPIGE() {
       bitField0_ &= ~0x00000001;
-      kljpbaagnfn = 0;
+      cKNGEMPPIGE = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 kljpbaagnfn = 11;</code>
-     * @return the kljpbaagnfn
+     * <code>optional uint32 CKNGEMPPIGE = 2;</code>
+     * @return the cKNGEMPPIGE
      */
-    public int getKljpbaagnfn() {
-      return kljpbaagnfn;
+    public int getCKNGEMPPIGE() {
+      return cKNGEMPPIGE;
     }
 
     /**
-     * <code>optional uint32 kljpbaagnfn = 11;</code>
-     * @param value the kljpbaagnfn to set
+     * <code>optional uint32 CKNGEMPPIGE = 2;</code>
+     * @param value the cKNGEMPPIGE to set
      * @return this
      */
-    public ChallengeBossStageInfo setKljpbaagnfn(final int value) {
+    public ChallengeBossStageInfo setCKNGEMPPIGE(final int value) {
       bitField0_ |= 0x00000001;
-      kljpbaagnfn = value;
+      cKNGEMPPIGE = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 daimooemhjf = 14;</code>
-     * @return whether the daimooemhjf field is set
+     * <code>optional uint32 JGDMLOFCNCH = 9;</code>
+     * @return whether the jGDMLOFCNCH field is set
      */
-    public boolean hasDaimooemhjf() {
+    public boolean hasJGDMLOFCNCH() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 daimooemhjf = 14;</code>
+     * <code>optional uint32 JGDMLOFCNCH = 9;</code>
      * @return this
      */
-    public ChallengeBossStageInfo clearDaimooemhjf() {
+    public ChallengeBossStageInfo clearJGDMLOFCNCH() {
       bitField0_ &= ~0x00000002;
-      daimooemhjf = 0;
+      jGDMLOFCNCH = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 daimooemhjf = 14;</code>
-     * @return the daimooemhjf
+     * <code>optional uint32 JGDMLOFCNCH = 9;</code>
+     * @return the jGDMLOFCNCH
      */
-    public int getDaimooemhjf() {
-      return daimooemhjf;
+    public int getJGDMLOFCNCH() {
+      return jGDMLOFCNCH;
     }
 
     /**
-     * <code>optional uint32 daimooemhjf = 14;</code>
-     * @param value the daimooemhjf to set
+     * <code>optional uint32 JGDMLOFCNCH = 9;</code>
+     * @param value the jGDMLOFCNCH to set
      * @return this
      */
-    public ChallengeBossStageInfo setDaimooemhjf(final int value) {
+    public ChallengeBossStageInfo setJGDMLOFCNCH(final int value) {
       bitField0_ |= 0x00000002;
-      daimooemhjf = value;
+      jGDMLOFCNCH = value;
       return this;
     }
 
     /**
-     * <code>optional bool is_win = 5;</code>
-     * @return whether the isWin field is set
+     * <code>optional bool KJCEEICMKEE = 1;</code>
+     * @return whether the kJCEEICMKEE field is set
      */
-    public boolean hasIsWin() {
+    public boolean hasKJCEEICMKEE() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool is_win = 5;</code>
+     * <code>optional bool KJCEEICMKEE = 1;</code>
+     * @return this
+     */
+    public ChallengeBossStageInfo clearKJCEEICMKEE() {
+      bitField0_ &= ~0x00000004;
+      kJCEEICMKEE = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KJCEEICMKEE = 1;</code>
+     * @return the kJCEEICMKEE
+     */
+    public boolean getKJCEEICMKEE() {
+      return kJCEEICMKEE;
+    }
+
+    /**
+     * <code>optional bool KJCEEICMKEE = 1;</code>
+     * @param value the kJCEEICMKEE to set
+     * @return this
+     */
+    public ChallengeBossStageInfo setKJCEEICMKEE(final boolean value) {
+      bitField0_ |= 0x00000004;
+      kJCEEICMKEE = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  NNJCJEODEPK
+     * </pre>
+     *
+     * <code>optional bool is_win = 7;</code>
+     * @return whether the isWin field is set
+     */
+    public boolean hasIsWin() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *  NNJCJEODEPK
+     * </pre>
+     *
+     * <code>optional bool is_win = 7;</code>
      * @return this
      */
     public ChallengeBossStageInfo clearIsWin() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       isWin = false;
       return this;
     }
 
     /**
-     * <code>optional bool is_win = 5;</code>
+     * <pre>
+     *  NNJCJEODEPK
+     * </pre>
+     *
+     * <code>optional bool is_win = 7;</code>
      * @return the isWin
      */
     public boolean getIsWin() {
@@ -157,50 +210,17 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 5;</code>
+     * <pre>
+     *  NNJCJEODEPK
+     * </pre>
+     *
+     * <code>optional bool is_win = 7;</code>
      * @param value the isWin to set
      * @return this
      */
     public ChallengeBossStageInfo setIsWin(final boolean value) {
-      bitField0_ |= 0x00000004;
-      isWin = value;
-      return this;
-    }
-
-    /**
-     * <code>optional bool nagjmpmhmmc = 7;</code>
-     * @return whether the nagjmpmhmmc field is set
-     */
-    public boolean hasNagjmpmhmmc() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional bool nagjmpmhmmc = 7;</code>
-     * @return this
-     */
-    public ChallengeBossStageInfo clearNagjmpmhmmc() {
-      bitField0_ &= ~0x00000008;
-      nagjmpmhmmc = false;
-      return this;
-    }
-
-    /**
-     * <code>optional bool nagjmpmhmmc = 7;</code>
-     * @return the nagjmpmhmmc
-     */
-    public boolean getNagjmpmhmmc() {
-      return nagjmpmhmmc;
-    }
-
-    /**
-     * <code>optional bool nagjmpmhmmc = 7;</code>
-     * @param value the nagjmpmhmmc to set
-     * @return this
-     */
-    public ChallengeBossStageInfo setNagjmpmhmmc(final boolean value) {
       bitField0_ |= 0x00000008;
-      nagjmpmhmmc = value;
+      isWin = value;
       return this;
     }
 
@@ -209,10 +229,10 @@ public final class ChallengeBossStageInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        kljpbaagnfn = other.kljpbaagnfn;
-        daimooemhjf = other.daimooemhjf;
+        cKNGEMPPIGE = other.cKNGEMPPIGE;
+        jGDMLOFCNCH = other.jGDMLOFCNCH;
+        kJCEEICMKEE = other.kJCEEICMKEE;
         isWin = other.isWin;
-        nagjmpmhmmc = other.nagjmpmhmmc;
       }
       return this;
     }
@@ -223,17 +243,17 @@ public final class ChallengeBossStageInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasKljpbaagnfn()) {
-        setKljpbaagnfn(other.kljpbaagnfn);
+      if (other.hasCKNGEMPPIGE()) {
+        setCKNGEMPPIGE(other.cKNGEMPPIGE);
       }
-      if (other.hasDaimooemhjf()) {
-        setDaimooemhjf(other.daimooemhjf);
+      if (other.hasJGDMLOFCNCH()) {
+        setJGDMLOFCNCH(other.jGDMLOFCNCH);
+      }
+      if (other.hasKJCEEICMKEE()) {
+        setKJCEEICMKEE(other.kJCEEICMKEE);
       }
       if (other.hasIsWin()) {
         setIsWin(other.isWin);
-      }
-      if (other.hasNagjmpmhmmc()) {
-        setNagjmpmhmmc(other.nagjmpmhmmc);
       }
       return this;
     }
@@ -245,10 +265,10 @@ public final class ChallengeBossStageInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      kljpbaagnfn = 0;
-      daimooemhjf = 0;
+      cKNGEMPPIGE = 0;
+      jGDMLOFCNCH = 0;
+      kJCEEICMKEE = false;
       isWin = false;
-      nagjmpmhmmc = false;
       return this;
     }
 
@@ -272,29 +292,29 @@ public final class ChallengeBossStageInfoOuterClass {
       }
       ChallengeBossStageInfo other = (ChallengeBossStageInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasKljpbaagnfn() || kljpbaagnfn == other.kljpbaagnfn)
-        && (!hasDaimooemhjf() || daimooemhjf == other.daimooemhjf)
-        && (!hasIsWin() || isWin == other.isWin)
-        && (!hasNagjmpmhmmc() || nagjmpmhmmc == other.nagjmpmhmmc);
+        && (!hasCKNGEMPPIGE() || cKNGEMPPIGE == other.cKNGEMPPIGE)
+        && (!hasJGDMLOFCNCH() || jGDMLOFCNCH == other.jGDMLOFCNCH)
+        && (!hasKJCEEICMKEE() || kJCEEICMKEE == other.kJCEEICMKEE)
+        && (!hasIsWin() || isWin == other.isWin);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(kljpbaagnfn);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(cKNGEMPPIGE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(daimooemhjf);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(jGDMLOFCNCH);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeBoolNoTag(isWin);
+        output.writeRawByte((byte) 8);
+        output.writeBoolNoTag(kJCEEICMKEE);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeBoolNoTag(nagjmpmhmmc);
+        output.writeBoolNoTag(isWin);
       }
     }
 
@@ -302,10 +322,10 @@ public final class ChallengeBossStageInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(kljpbaagnfn);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(cKNGEMPPIGE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(daimooemhjf);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(jGDMLOFCNCH);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
@@ -323,27 +343,27 @@ public final class ChallengeBossStageInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // kljpbaagnfn
-            kljpbaagnfn = input.readUInt32();
+          case 16: {
+            // cKNGEMPPIGE
+            cKNGEMPPIGE = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 72) {
               break;
             }
           }
-          case 112: {
-            // daimooemhjf
-            daimooemhjf = input.readUInt32();
+          case 72: {
+            // jGDMLOFCNCH
+            jGDMLOFCNCH = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 8) {
               break;
             }
           }
-          case 40: {
-            // isWin
-            isWin = input.readBool();
+          case 8: {
+            // kJCEEICMKEE
+            kJCEEICMKEE = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 56) {
@@ -351,8 +371,8 @@ public final class ChallengeBossStageInfoOuterClass {
             }
           }
           case 56: {
-            // nagjmpmhmmc
-            nagjmpmhmmc = input.readBool();
+            // isWin
+            isWin = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -377,16 +397,16 @@ public final class ChallengeBossStageInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.kljpbaagnfn, kljpbaagnfn);
+        output.writeUInt32(FieldNames.cKNGEMPPIGE, cKNGEMPPIGE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.daimooemhjf, daimooemhjf);
+        output.writeUInt32(FieldNames.jGDMLOFCNCH, jGDMLOFCNCH);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.isWin, isWin);
+        output.writeBool(FieldNames.kJCEEICMKEE, kJCEEICMKEE);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeBool(FieldNames.nagjmpmhmmc, nagjmpmhmmc);
+        output.writeBool(FieldNames.isWin, isWin);
       }
       output.endObject();
     }
@@ -398,10 +418,10 @@ public final class ChallengeBossStageInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 211562154: {
-            if (input.isAtField(FieldNames.kljpbaagnfn)) {
+          case 1336680958: {
+            if (input.isAtField(FieldNames.cKNGEMPPIGE)) {
               if (!input.trySkipNullValue()) {
-                kljpbaagnfn = input.readUInt32();
+                cKNGEMPPIGE = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -409,11 +429,22 @@ public final class ChallengeBossStageInfoOuterClass {
             }
             break;
           }
-          case 1998280347: {
-            if (input.isAtField(FieldNames.daimooemhjf)) {
+          case -1434155411: {
+            if (input.isAtField(FieldNames.jGDMLOFCNCH)) {
               if (!input.trySkipNullValue()) {
-                daimooemhjf = input.readUInt32();
+                jGDMLOFCNCH = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -867615172: {
+            if (input.isAtField(FieldNames.kJCEEICMKEE)) {
+              if (!input.trySkipNullValue()) {
+                kJCEEICMKEE = input.readBool();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -425,17 +456,6 @@ public final class ChallengeBossStageInfoOuterClass {
             if (input.isAtField(FieldNames.isWin)) {
               if (!input.trySkipNullValue()) {
                 isWin = input.readBool();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -2144020241: {
-            if (input.isAtField(FieldNames.nagjmpmhmmc)) {
-              if (!input.trySkipNullValue()) {
-                nagjmpmhmmc = input.readBool();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -496,13 +516,13 @@ public final class ChallengeBossStageInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName kljpbaagnfn = FieldName.forField("kljpbaagnfn");
+      static final FieldName cKNGEMPPIGE = FieldName.forField("CKNGEMPPIGE");
 
-      static final FieldName daimooemhjf = FieldName.forField("daimooemhjf");
+      static final FieldName jGDMLOFCNCH = FieldName.forField("JGDMLOFCNCH");
+
+      static final FieldName kJCEEICMKEE = FieldName.forField("KJCEEICMKEE");
 
       static final FieldName isWin = FieldName.forField("isWin", "is_win");
-
-      static final FieldName nagjmpmhmmc = FieldName.forField("nagjmpmhmmc");
     }
   }
 }

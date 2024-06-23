@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Ofoekmkibeh
+// DOEHHELMJMJ
 message StartChallengeBossBuffInfo {
-    uint32 boss_buff_two = 2;
-    uint32 boss_buff_one = 1;
+    uint32 buff_one = 13; // NFHDGFBDKIG
+    uint32 buff_two = 12; // GHODKGCMEGJ
 }

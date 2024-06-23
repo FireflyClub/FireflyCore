@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class StartChallengeBossBuffInfoOuterClass {
   /**
    * <pre>
-   *  Ofoekmkibeh
+   *  DOEHHELMJMJ
    * </pre>
    *
    * Protobuf type {@code StartChallengeBossBuffInfo}
@@ -23,21 +23,29 @@ public final class StartChallengeBossBuffInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 boss_buff_one = 1;</code>
+     * <pre>
+     *  GHODKGCMEGJ
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 12;</code>
      */
-    private int bossBuffOne;
+    private int buffTwo;
 
     /**
-     * <code>optional uint32 boss_buff_two = 2;</code>
+     * <pre>
+     *  NFHDGFBDKIG
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 13;</code>
      */
-    private int bossBuffTwo;
+    private int buffOne;
 
     private StartChallengeBossBuffInfo() {
     }
 
     /**
      * <pre>
-     *  Ofoekmkibeh
+     *  DOEHHELMJMJ
      * </pre>
      *
      * @return a new empty instance of {@code StartChallengeBossBuffInfo}
@@ -47,76 +55,108 @@ public final class StartChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 boss_buff_one = 1;</code>
-     * @return whether the bossBuffOne field is set
+     * <pre>
+     *  GHODKGCMEGJ
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 12;</code>
+     * @return whether the buffTwo field is set
      */
-    public boolean hasBossBuffOne() {
+    public boolean hasBuffTwo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 boss_buff_one = 1;</code>
+     * <pre>
+     *  GHODKGCMEGJ
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 12;</code>
      * @return this
      */
-    public StartChallengeBossBuffInfo clearBossBuffOne() {
+    public StartChallengeBossBuffInfo clearBuffTwo() {
       bitField0_ &= ~0x00000001;
-      bossBuffOne = 0;
+      buffTwo = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 boss_buff_one = 1;</code>
-     * @return the bossBuffOne
+     * <pre>
+     *  GHODKGCMEGJ
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 12;</code>
+     * @return the buffTwo
      */
-    public int getBossBuffOne() {
-      return bossBuffOne;
+    public int getBuffTwo() {
+      return buffTwo;
     }
 
     /**
-     * <code>optional uint32 boss_buff_one = 1;</code>
-     * @param value the bossBuffOne to set
+     * <pre>
+     *  GHODKGCMEGJ
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 12;</code>
+     * @param value the buffTwo to set
      * @return this
      */
-    public StartChallengeBossBuffInfo setBossBuffOne(final int value) {
+    public StartChallengeBossBuffInfo setBuffTwo(final int value) {
       bitField0_ |= 0x00000001;
-      bossBuffOne = value;
+      buffTwo = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 boss_buff_two = 2;</code>
-     * @return whether the bossBuffTwo field is set
+     * <pre>
+     *  NFHDGFBDKIG
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 13;</code>
+     * @return whether the buffOne field is set
      */
-    public boolean hasBossBuffTwo() {
+    public boolean hasBuffOne() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 boss_buff_two = 2;</code>
+     * <pre>
+     *  NFHDGFBDKIG
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 13;</code>
      * @return this
      */
-    public StartChallengeBossBuffInfo clearBossBuffTwo() {
+    public StartChallengeBossBuffInfo clearBuffOne() {
       bitField0_ &= ~0x00000002;
-      bossBuffTwo = 0;
+      buffOne = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 boss_buff_two = 2;</code>
-     * @return the bossBuffTwo
+     * <pre>
+     *  NFHDGFBDKIG
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 13;</code>
+     * @return the buffOne
      */
-    public int getBossBuffTwo() {
-      return bossBuffTwo;
+    public int getBuffOne() {
+      return buffOne;
     }
 
     /**
-     * <code>optional uint32 boss_buff_two = 2;</code>
-     * @param value the bossBuffTwo to set
+     * <pre>
+     *  NFHDGFBDKIG
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 13;</code>
+     * @param value the buffOne to set
      * @return this
      */
-    public StartChallengeBossBuffInfo setBossBuffTwo(final int value) {
+    public StartChallengeBossBuffInfo setBuffOne(final int value) {
       bitField0_ |= 0x00000002;
-      bossBuffTwo = value;
+      buffOne = value;
       return this;
     }
 
@@ -125,8 +165,8 @@ public final class StartChallengeBossBuffInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        bossBuffOne = other.bossBuffOne;
-        bossBuffTwo = other.bossBuffTwo;
+        buffTwo = other.buffTwo;
+        buffOne = other.buffOne;
       }
       return this;
     }
@@ -137,11 +177,11 @@ public final class StartChallengeBossBuffInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBossBuffOne()) {
-        setBossBuffOne(other.bossBuffOne);
+      if (other.hasBuffTwo()) {
+        setBuffTwo(other.buffTwo);
       }
-      if (other.hasBossBuffTwo()) {
-        setBossBuffTwo(other.bossBuffTwo);
+      if (other.hasBuffOne()) {
+        setBuffOne(other.buffOne);
       }
       return this;
     }
@@ -153,8 +193,8 @@ public final class StartChallengeBossBuffInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      bossBuffOne = 0;
-      bossBuffTwo = 0;
+      buffTwo = 0;
+      buffOne = 0;
       return this;
     }
 
@@ -178,19 +218,19 @@ public final class StartChallengeBossBuffInfoOuterClass {
       }
       StartChallengeBossBuffInfo other = (StartChallengeBossBuffInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBossBuffOne() || bossBuffOne == other.bossBuffOne)
-        && (!hasBossBuffTwo() || bossBuffTwo == other.bossBuffTwo);
+        && (!hasBuffTwo() || buffTwo == other.buffTwo)
+        && (!hasBuffOne() || buffOne == other.buffOne);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(bossBuffOne);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(buffTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(bossBuffTwo);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(buffOne);
       }
     }
 
@@ -198,10 +238,10 @@ public final class StartChallengeBossBuffInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bossBuffOne);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bossBuffTwo);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffOne);
       }
       return size;
     }
@@ -213,18 +253,18 @@ public final class StartChallengeBossBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // bossBuffOne
-            bossBuffOne = input.readUInt32();
+          case 96: {
+            // buffTwo
+            buffTwo = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 104) {
               break;
             }
           }
-          case 16: {
-            // bossBuffTwo
-            bossBuffTwo = input.readUInt32();
+          case 104: {
+            // buffOne
+            buffOne = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -249,10 +289,10 @@ public final class StartChallengeBossBuffInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.bossBuffOne, bossBuffOne);
+        output.writeUInt32(FieldNames.buffTwo, buffTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.bossBuffTwo, bossBuffTwo);
+        output.writeUInt32(FieldNames.buffOne, buffOne);
       }
       output.endObject();
     }
@@ -264,11 +304,11 @@ public final class StartChallengeBossBuffInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1592215322:
-          case -292336372: {
-            if (input.isAtField(FieldNames.bossBuffOne)) {
+          case 227980537:
+          case -1522212768: {
+            if (input.isAtField(FieldNames.buffTwo)) {
               if (!input.trySkipNullValue()) {
-                bossBuffOne = input.readUInt32();
+                buffTwo = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -276,11 +316,11 @@ public final class StartChallengeBossBuffInfoOuterClass {
             }
             break;
           }
-          case -1592210228:
-          case -292331278: {
-            if (input.isAtField(FieldNames.bossBuffTwo)) {
+          case 227975443:
+          case -1522217862: {
+            if (input.isAtField(FieldNames.buffOne)) {
               if (!input.trySkipNullValue()) {
-                bossBuffTwo = input.readUInt32();
+                buffOne = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -341,9 +381,9 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName bossBuffOne = FieldName.forField("bossBuffOne", "boss_buff_one");
+      static final FieldName buffTwo = FieldName.forField("buffTwo", "buff_two");
 
-      static final FieldName bossBuffTwo = FieldName.forField("bossBuffTwo", "boss_buff_two");
+      static final FieldName buffOne = FieldName.forField("buffOne", "buff_one");
     }
   }
 }

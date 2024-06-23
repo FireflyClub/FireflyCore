@@ -4,7 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCost.proto";
 
+// HNPPJNNGJNP
 message PromoteAvatarCsReq {
-    uint32 base_avatar_id = 9;
-    repeated ItemCost item_list = 7;
+    repeated ItemCost item_list = 4;
+    uint32 scene_avatar_id = 11;
 }

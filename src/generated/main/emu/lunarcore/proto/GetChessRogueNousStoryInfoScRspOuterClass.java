@@ -25,14 +25,14 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
      */
-    private final RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> subStoryInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo.getFactory());
+    private final RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> subStartInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo.getFactory());
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
      */
-    private final RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> mainStoryInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo.getFactory());
+    private final RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> mainStartInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo.getFactory());
 
     private GetChessRogueNousStoryInfoScRsp() {
     }
@@ -82,40 +82,40 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
-     * @return whether the subStoryInfo field is set
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
+     * @return whether the subStartInfo field is set
      */
-    public boolean hasSubStoryInfo() {
+    public boolean hasSubStartInfo() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp clearSubStoryInfo() {
+    public GetChessRogueNousStoryInfoScRsp clearSubStartInfo() {
       bitField0_ &= ~0x00000002;
-      subStoryInfo.clear();
+      subStartInfo.clear();
       return this;
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableSubStoryInfo()} if you want to modify it.
+     * Use {@link #getMutableSubStartInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> getSubStoryInfo(
+    public RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> getSubStartInfo(
         ) {
-      return subStoryInfo;
+      return subStartInfo;
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,71 +123,71 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> getMutableSubStoryInfo(
+    public RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> getMutableSubStartInfo(
         ) {
       bitField0_ |= 0x00000002;
-      return subStoryInfo;
+      return subStartInfo;
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
-     * @param value the subStoryInfo to add
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
+     * @param value the subStartInfo to add
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp addSubStoryInfo(
+    public GetChessRogueNousStoryInfoScRsp addSubStartInfo(
         final ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo value) {
       bitField0_ |= 0x00000002;
-      subStoryInfo.add(value);
+      subStartInfo.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
-     * @param values the subStoryInfo to add
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_start_info = 6;</code>
+     * @param values the subStartInfo to add
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp addAllSubStoryInfo(
+    public GetChessRogueNousStoryInfoScRsp addAllSubStartInfo(
         final ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo... values) {
       bitField0_ |= 0x00000002;
-      subStoryInfo.addAll(values);
+      subStartInfo.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
-     * @return whether the mainStoryInfo field is set
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
+     * @return whether the mainStartInfo field is set
      */
-    public boolean hasMainStoryInfo() {
+    public boolean hasMainStartInfo() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp clearMainStoryInfo() {
+    public GetChessRogueNousStoryInfoScRsp clearMainStartInfo() {
       bitField0_ &= ~0x00000004;
-      mainStoryInfo.clear();
+      mainStartInfo.clear();
       return this;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableMainStoryInfo()} if you want to modify it.
+     * Use {@link #getMutableMainStartInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> getMainStoryInfo(
+    public RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> getMainStartInfo(
         ) {
-      return mainStoryInfo;
+      return mainStartInfo;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -195,33 +195,33 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> getMutableMainStoryInfo(
+    public RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> getMutableMainStartInfo(
         ) {
       bitField0_ |= 0x00000004;
-      return mainStoryInfo;
+      return mainStartInfo;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
-     * @param value the mainStoryInfo to add
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
+     * @param value the mainStartInfo to add
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp addMainStoryInfo(
+    public GetChessRogueNousStoryInfoScRsp addMainStartInfo(
         final ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo value) {
       bitField0_ |= 0x00000004;
-      mainStoryInfo.add(value);
+      mainStartInfo.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
-     * @param values the mainStoryInfo to add
+     * <code>repeated .ChessRogueNousMainStoryInfo main_start_info = 10;</code>
+     * @param values the mainStartInfo to add
      * @return this
      */
-    public GetChessRogueNousStoryInfoScRsp addAllMainStoryInfo(
+    public GetChessRogueNousStoryInfoScRsp addAllMainStartInfo(
         final ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo... values) {
       bitField0_ |= 0x00000004;
-      mainStoryInfo.addAll(values);
+      mainStartInfo.addAll(values);
       return this;
     }
 
@@ -231,8 +231,8 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        subStoryInfo.copyFrom(other.subStoryInfo);
-        mainStoryInfo.copyFrom(other.mainStoryInfo);
+        subStartInfo.copyFrom(other.subStartInfo);
+        mainStartInfo.copyFrom(other.mainStartInfo);
       }
       return this;
     }
@@ -246,11 +246,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasSubStoryInfo()) {
-        getMutableSubStoryInfo().addAll(other.subStoryInfo);
+      if (other.hasSubStartInfo()) {
+        getMutableSubStartInfo().addAll(other.subStartInfo);
       }
-      if (other.hasMainStoryInfo()) {
-        getMutableMainStoryInfo().addAll(other.mainStoryInfo);
+      if (other.hasMainStartInfo()) {
+        getMutableMainStartInfo().addAll(other.mainStartInfo);
       }
       return this;
     }
@@ -263,8 +263,8 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      subStoryInfo.clear();
-      mainStoryInfo.clear();
+      subStartInfo.clear();
+      mainStartInfo.clear();
       return this;
     }
 
@@ -275,8 +275,8 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      subStoryInfo.clearQuick();
-      mainStoryInfo.clearQuick();
+      subStartInfo.clearQuick();
+      mainStartInfo.clearQuick();
       return this;
     }
 
@@ -291,8 +291,8 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       GetChessRogueNousStoryInfoScRsp other = (GetChessRogueNousStoryInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasSubStoryInfo() || subStoryInfo.equals(other.subStoryInfo))
-        && (!hasMainStoryInfo() || mainStoryInfo.equals(other.mainStoryInfo));
+        && (!hasSubStartInfo() || subStartInfo.equals(other.subStartInfo))
+        && (!hasMainStartInfo() || mainStartInfo.equals(other.mainStartInfo));
     }
 
     @Override
@@ -302,15 +302,15 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < subStoryInfo.length(); i++) {
+        for (int i = 0; i < subStartInfo.length(); i++) {
           output.writeRawByte((byte) 50);
-          output.writeMessageNoTag(subStoryInfo.get(i));
+          output.writeMessageNoTag(subStartInfo.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < mainStoryInfo.length(); i++) {
+        for (int i = 0; i < mainStartInfo.length(); i++) {
           output.writeRawByte((byte) 82);
-          output.writeMessageNoTag(mainStoryInfo.get(i));
+          output.writeMessageNoTag(mainStartInfo.get(i));
         }
       }
     }
@@ -322,10 +322,10 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * subStoryInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(subStoryInfo);
+        size += (1 * subStartInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(subStartInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * mainStoryInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mainStoryInfo);
+        size += (1 * mainStartInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mainStartInfo);
       }
       return size;
     }
@@ -347,16 +347,16 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
             }
           }
           case 50: {
-            // subStoryInfo
-            tag = input.readRepeatedMessage(subStoryInfo, tag);
+            // subStartInfo
+            tag = input.readRepeatedMessage(subStartInfo, tag);
             bitField0_ |= 0x00000002;
             if (tag != 82) {
               break;
             }
           }
           case 82: {
-            // mainStoryInfo
-            tag = input.readRepeatedMessage(mainStoryInfo, tag);
+            // mainStartInfo
+            tag = input.readRepeatedMessage(mainStartInfo, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -383,10 +383,10 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedMessage(FieldNames.subStoryInfo, subStoryInfo);
+        output.writeRepeatedMessage(FieldNames.subStartInfo, subStartInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.mainStoryInfo, mainStoryInfo);
+        output.writeRepeatedMessage(FieldNames.mainStartInfo, mainStartInfo);
       }
       output.endObject();
     }
@@ -409,11 +409,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
             }
             break;
           }
-          case -489637661:
-          case 74622231: {
-            if (input.isAtField(FieldNames.subStoryInfo)) {
+          case -34404912:
+          case 1301935562: {
+            if (input.isAtField(FieldNames.subStartInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(subStoryInfo);
+                input.readRepeatedMessage(subStartInfo);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -421,11 +421,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
             }
             break;
           }
-          case 1591069066:
-          case -1820973058: {
-            if (input.isAtField(FieldNames.mainStoryInfo)) {
+          case 2046301815:
+          case -593659727: {
+            if (input.isAtField(FieldNames.mainStartInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(mainStoryInfo);
+                input.readRepeatedMessage(mainStartInfo);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -490,9 +490,9 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName subStoryInfo = FieldName.forField("subStoryInfo", "sub_story_info");
+      static final FieldName subStartInfo = FieldName.forField("subStartInfo", "sub_start_info");
 
-      static final FieldName mainStoryInfo = FieldName.forField("mainStoryInfo", "main_story_info");
+      static final FieldName mainStartInfo = FieldName.forField("mainStartInfo", "main_start_info");
     }
   }
 }

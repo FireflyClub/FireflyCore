@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Pcmiggaggmc
+// OAEBHGPHCBL
 message ChallengeStoryBuffInfo {
-    repeated uint32 buff_list = 15;
+	repeated uint32 buff_list = 3;
 }

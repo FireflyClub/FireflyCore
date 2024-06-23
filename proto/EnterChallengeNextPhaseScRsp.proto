@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SceneInfo.proto";
 
-// Cjdbiheodfa
+// AGNJKFMJGMP
 message EnterChallengeNextPhaseScRsp {
-    uint32 retcode = 3;
-    SceneInfo scene = 15;
+    SceneInfo scene = 11;
+    uint32 retcode = 10;
 }

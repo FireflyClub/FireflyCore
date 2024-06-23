@@ -13,7 +13,7 @@ public class HandlerPromoteAvatarCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = PromoteAvatarCsReq.parseFrom(data);
 
-        session.getServer().getInventoryService().promoteAvatar(session.getPlayer(), req.getBaseAvatarId());
+        session.getServer().getInventoryService().promoteAvatar(session.getPlayer(), req.getSceneAvatarId());
         session.send(CmdId.PromoteAvatarScRsp);
     }
 

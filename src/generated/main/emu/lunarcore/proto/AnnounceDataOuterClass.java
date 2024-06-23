@@ -15,7 +15,7 @@ import us.hebi.quickbuf.Utf8String;
 public final class AnnounceDataOuterClass {
   /**
    * <pre>
-   *  Dlmlgpgaojp
+   *  DFIAIOHDCDM
    * </pre>
    *
    * Protobuf type {@code AnnounceData}
@@ -24,30 +24,27 @@ public final class AnnounceDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 end_time = 9;</code>
+     * <pre>
+     * 3
+     * 8
+     * </pre>
+     *
+     * <code>optional int64 end_time = 6;</code>
      */
     private long endTime;
 
     /**
-     * <code>optional int64 begin_time = 15;</code>
+     * <code>optional int64 begin_time = 13;</code>
      */
     private long beginTime;
 
     /**
-     * <pre>
-     *  ajncaloomad
-     * </pre>
-     *
-     * <code>optional uint32 banner_frequency = 3;</code>
+     * <code>optional uint32 banner_frequency = 8;</code>
      */
     private int bannerFrequency;
 
     /**
-     * <pre>
-     *  ilkolkbcpfm
-     * </pre>
-     *
-     * <code>optional uint32 center_system_frequency = 10;</code>
+     * <code>optional uint32 center_system_frequency = 9;</code>
      */
     private int centerSystemFrequency;
 
@@ -57,34 +54,28 @@ public final class AnnounceDataOuterClass {
     private int configId;
 
     /**
-     * <code>optional bool unkbool = 6;</code>
+     * <pre>
+     * 9
+     * 4
+     * 10
+     * </pre>
+     *
+     * <code>optional bool unkbool = 14;</code>
      */
     private boolean unkbool;
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      */
     private final Utf8String unkstring = Utf8String.newEmptyInstance();
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      */
     private final Utf8String bannerText = Utf8String.newEmptyInstance();
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      */
     private final Utf8String emergencyText = Utf8String.newEmptyInstance();
 
@@ -93,7 +84,7 @@ public final class AnnounceDataOuterClass {
 
     /**
      * <pre>
-     *  Dlmlgpgaojp
+     *  DFIAIOHDCDM
      * </pre>
      *
      * @return a new empty instance of {@code AnnounceData}
@@ -103,7 +94,12 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 end_time = 9;</code>
+     * <pre>
+     * 3
+     * 8
+     * </pre>
+     *
+     * <code>optional int64 end_time = 6;</code>
      * @return whether the endTime field is set
      */
     public boolean hasEndTime() {
@@ -111,7 +107,12 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 end_time = 9;</code>
+     * <pre>
+     * 3
+     * 8
+     * </pre>
+     *
+     * <code>optional int64 end_time = 6;</code>
      * @return this
      */
     public AnnounceData clearEndTime() {
@@ -121,7 +122,12 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 end_time = 9;</code>
+     * <pre>
+     * 3
+     * 8
+     * </pre>
+     *
+     * <code>optional int64 end_time = 6;</code>
      * @return the endTime
      */
     public long getEndTime() {
@@ -129,7 +135,12 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 end_time = 9;</code>
+     * <pre>
+     * 3
+     * 8
+     * </pre>
+     *
+     * <code>optional int64 end_time = 6;</code>
      * @param value the endTime to set
      * @return this
      */
@@ -140,7 +151,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 begin_time = 15;</code>
+     * <code>optional int64 begin_time = 13;</code>
      * @return whether the beginTime field is set
      */
     public boolean hasBeginTime() {
@@ -148,7 +159,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 begin_time = 15;</code>
+     * <code>optional int64 begin_time = 13;</code>
      * @return this
      */
     public AnnounceData clearBeginTime() {
@@ -158,7 +169,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 begin_time = 15;</code>
+     * <code>optional int64 begin_time = 13;</code>
      * @return the beginTime
      */
     public long getBeginTime() {
@@ -166,7 +177,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional int64 begin_time = 15;</code>
+     * <code>optional int64 begin_time = 13;</code>
      * @param value the beginTime to set
      * @return this
      */
@@ -177,11 +188,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ajncaloomad
-     * </pre>
-     *
-     * <code>optional uint32 banner_frequency = 3;</code>
+     * <code>optional uint32 banner_frequency = 8;</code>
      * @return whether the bannerFrequency field is set
      */
     public boolean hasBannerFrequency() {
@@ -189,11 +196,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ajncaloomad
-     * </pre>
-     *
-     * <code>optional uint32 banner_frequency = 3;</code>
+     * <code>optional uint32 banner_frequency = 8;</code>
      * @return this
      */
     public AnnounceData clearBannerFrequency() {
@@ -203,11 +206,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ajncaloomad
-     * </pre>
-     *
-     * <code>optional uint32 banner_frequency = 3;</code>
+     * <code>optional uint32 banner_frequency = 8;</code>
      * @return the bannerFrequency
      */
     public int getBannerFrequency() {
@@ -215,11 +214,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ajncaloomad
-     * </pre>
-     *
-     * <code>optional uint32 banner_frequency = 3;</code>
+     * <code>optional uint32 banner_frequency = 8;</code>
      * @param value the bannerFrequency to set
      * @return this
      */
@@ -230,11 +225,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ilkolkbcpfm
-     * </pre>
-     *
-     * <code>optional uint32 center_system_frequency = 10;</code>
+     * <code>optional uint32 center_system_frequency = 9;</code>
      * @return whether the centerSystemFrequency field is set
      */
     public boolean hasCenterSystemFrequency() {
@@ -242,11 +233,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ilkolkbcpfm
-     * </pre>
-     *
-     * <code>optional uint32 center_system_frequency = 10;</code>
+     * <code>optional uint32 center_system_frequency = 9;</code>
      * @return this
      */
     public AnnounceData clearCenterSystemFrequency() {
@@ -256,11 +243,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ilkolkbcpfm
-     * </pre>
-     *
-     * <code>optional uint32 center_system_frequency = 10;</code>
+     * <code>optional uint32 center_system_frequency = 9;</code>
      * @return the centerSystemFrequency
      */
     public int getCenterSystemFrequency() {
@@ -268,11 +251,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  ilkolkbcpfm
-     * </pre>
-     *
-     * <code>optional uint32 center_system_frequency = 10;</code>
+     * <code>optional uint32 center_system_frequency = 9;</code>
      * @param value the centerSystemFrequency to set
      * @return this
      */
@@ -320,7 +299,13 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional bool unkbool = 6;</code>
+     * <pre>
+     * 9
+     * 4
+     * 10
+     * </pre>
+     *
+     * <code>optional bool unkbool = 14;</code>
      * @return whether the unkbool field is set
      */
     public boolean hasUnkbool() {
@@ -328,7 +313,13 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional bool unkbool = 6;</code>
+     * <pre>
+     * 9
+     * 4
+     * 10
+     * </pre>
+     *
+     * <code>optional bool unkbool = 14;</code>
      * @return this
      */
     public AnnounceData clearUnkbool() {
@@ -338,7 +329,13 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional bool unkbool = 6;</code>
+     * <pre>
+     * 9
+     * 4
+     * 10
+     * </pre>
+     *
+     * <code>optional bool unkbool = 14;</code>
      * @return the unkbool
      */
     public boolean getUnkbool() {
@@ -346,7 +343,13 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional bool unkbool = 6;</code>
+     * <pre>
+     * 9
+     * 4
+     * 10
+     * </pre>
+     *
+     * <code>optional bool unkbool = 14;</code>
      * @param value the unkbool to set
      * @return this
      */
@@ -357,11 +360,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @return whether the unkstring field is set
      */
     public boolean hasUnkstring() {
@@ -369,11 +368,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @return this
      */
     public AnnounceData clearUnkstring() {
@@ -383,11 +378,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @return the unkstring
      */
     public String getUnkstring() {
@@ -395,11 +386,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @return internal {@code Utf8String} representation of unkstring for reading
      */
     public Utf8String getUnkstringBytes() {
@@ -407,11 +394,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @return internal {@code Utf8String} representation of unkstring for modifications
      */
     public Utf8String getMutableUnkstringBytes() {
@@ -420,11 +403,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @param value the unkstring to set
      * @return this
      */
@@ -435,11 +414,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  oejbakandhh
-     * </pre>
-     *
-     * <code>optional string unkstring = 1;</code>
+     * <code>optional string unkstring = 3;</code>
      * @param value the unkstring to set
      * @return this
      */
@@ -450,10 +425,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @return whether the bannerText field is set
      */
@@ -462,10 +433,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @return this
      */
@@ -476,10 +443,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @return the bannerText
      */
@@ -488,10 +451,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @return internal {@code Utf8String} representation of bannerText for reading
      */
@@ -500,10 +459,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @return internal {@code Utf8String} representation of bannerText for modifications
      */
@@ -513,10 +468,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @param value the bannerText to set
      * @return this
@@ -528,10 +479,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  elcflljcbdo
-     * </pre>
-     *
      * <code>optional string banner_text = 4;</code>
      * @param value the bannerText to set
      * @return this
@@ -543,11 +490,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @return whether the emergencyText field is set
      */
     public boolean hasEmergencyText() {
@@ -555,11 +498,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @return this
      */
     public AnnounceData clearEmergencyText() {
@@ -569,11 +508,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @return the emergencyText
      */
     public String getEmergencyText() {
@@ -581,11 +516,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @return internal {@code Utf8String} representation of emergencyText for reading
      */
     public Utf8String getEmergencyTextBytes() {
@@ -593,11 +524,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @return internal {@code Utf8String} representation of emergencyText for modifications
      */
     public Utf8String getMutableEmergencyTextBytes() {
@@ -606,11 +533,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @param value the emergencyText to set
      * @return this
      */
@@ -621,11 +544,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  agofnmckpgb
-     * </pre>
-     *
-     * <code>optional string emergency_text = 13;</code>
+     * <code>optional string emergency_text = 10;</code>
      * @param value the emergencyText to set
      * @return this
      */
@@ -745,19 +664,19 @@ public final class AnnounceDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 48);
         output.writeInt64NoTag(endTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 104);
         output.writeInt64NoTag(beginTime);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(bannerFrequency);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(centerSystemFrequency);
       }
       if ((bitField0_ & 0x00000010) != 0) {
@@ -765,11 +684,11 @@ public final class AnnounceDataOuterClass {
         output.writeUInt32NoTag(configId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 112);
         output.writeBoolNoTag(unkbool);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 10);
+        output.writeRawByte((byte) 26);
         output.writeStringNoTag(unkstring);
       }
       if ((bitField0_ & 0x00000080) != 0) {
@@ -777,7 +696,7 @@ public final class AnnounceDataOuterClass {
         output.writeStringNoTag(bannerText);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 82);
         output.writeStringNoTag(emergencyText);
       }
     }
@@ -822,34 +741,34 @@ public final class AnnounceDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 48: {
             // endTime
             endTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 104) {
               break;
             }
           }
-          case 120: {
+          case 104: {
             // beginTime
             beginTime = input.readInt64();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 64) {
               break;
             }
           }
-          case 24: {
+          case 64: {
             // bannerFrequency
             bannerFrequency = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 72) {
               break;
             }
           }
-          case 80: {
+          case 72: {
             // centerSystemFrequency
             centerSystemFrequency = input.readUInt32();
             bitField0_ |= 0x00000008;
@@ -863,20 +782,20 @@ public final class AnnounceDataOuterClass {
             configId = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 112) {
               break;
             }
           }
-          case 48: {
+          case 112: {
             // unkbool
             unkbool = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 26) {
               break;
             }
           }
-          case 10: {
+          case 26: {
             // unkstring
             input.readString(unkstring);
             bitField0_ |= 0x00000040;
@@ -890,11 +809,11 @@ public final class AnnounceDataOuterClass {
             input.readString(bannerText);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 82) {
               break;
             }
           }
-          case 106: {
+          case 82: {
             // emergencyText
             input.readString(emergencyText);
             bitField0_ |= 0x00000100;

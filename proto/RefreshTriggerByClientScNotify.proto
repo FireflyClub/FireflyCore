@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Bdkgcjiojgp
 message RefreshTriggerByClientScNotify {
-    uint32 trigger_entity_id = 13;
-    repeated uint32 trigger_target_id_list = 4;
-    string trigger_name = 9;
+	uint32 trigger_entity_id = 13;
+	string trigger_name = 11;
+	repeated uint32 trigger_target_id_list = 12;
 }

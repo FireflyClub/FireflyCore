@@ -19,9 +19,9 @@ public final class MonsterArchiveOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 scene_event_id = 1;</code>
+     * <code>optional uint32 monster_id = 1;</code>
      */
-    private int sceneEventId;
+    private int monsterId;
 
     /**
      * <code>optional uint32 num = 2;</code>
@@ -39,39 +39,39 @@ public final class MonsterArchiveOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 1;</code>
-     * @return whether the sceneEventId field is set
+     * <code>optional uint32 monster_id = 1;</code>
+     * @return whether the monsterId field is set
      */
-    public boolean hasSceneEventId() {
+    public boolean hasMonsterId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 1;</code>
+     * <code>optional uint32 monster_id = 1;</code>
      * @return this
      */
-    public MonsterArchive clearSceneEventId() {
+    public MonsterArchive clearMonsterId() {
       bitField0_ &= ~0x00000001;
-      sceneEventId = 0;
+      monsterId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 1;</code>
-     * @return the sceneEventId
+     * <code>optional uint32 monster_id = 1;</code>
+     * @return the monsterId
      */
-    public int getSceneEventId() {
-      return sceneEventId;
+    public int getMonsterId() {
+      return monsterId;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 1;</code>
-     * @param value the sceneEventId to set
+     * <code>optional uint32 monster_id = 1;</code>
+     * @param value the monsterId to set
      * @return this
      */
-    public MonsterArchive setSceneEventId(final int value) {
+    public MonsterArchive setMonsterId(final int value) {
       bitField0_ |= 0x00000001;
-      sceneEventId = value;
+      monsterId = value;
       return this;
     }
 
@@ -117,7 +117,7 @@ public final class MonsterArchiveOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        sceneEventId = other.sceneEventId;
+        monsterId = other.monsterId;
         num = other.num;
       }
       return this;
@@ -129,8 +129,8 @@ public final class MonsterArchiveOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSceneEventId()) {
-        setSceneEventId(other.sceneEventId);
+      if (other.hasMonsterId()) {
+        setMonsterId(other.monsterId);
       }
       if (other.hasNum()) {
         setNum(other.num);
@@ -145,7 +145,7 @@ public final class MonsterArchiveOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      sceneEventId = 0;
+      monsterId = 0;
       num = 0;
       return this;
     }
@@ -170,7 +170,7 @@ public final class MonsterArchiveOuterClass {
       }
       MonsterArchive other = (MonsterArchive) o;
       return bitField0_ == other.bitField0_
-        && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
+        && (!hasMonsterId() || monsterId == other.monsterId)
         && (!hasNum() || num == other.num);
     }
 
@@ -178,7 +178,7 @@ public final class MonsterArchiveOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(sceneEventId);
+        output.writeUInt32NoTag(monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 16);
@@ -190,7 +190,7 @@ public final class MonsterArchiveOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
@@ -206,8 +206,8 @@ public final class MonsterArchiveOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // sceneEventId
-            sceneEventId = input.readUInt32();
+            // monsterId
+            monsterId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 16) {
@@ -241,7 +241,7 @@ public final class MonsterArchiveOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
+        output.writeUInt32(FieldNames.monsterId, monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.num, num);
@@ -256,11 +256,11 @@ public final class MonsterArchiveOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 748898089:
-          case 765114163: {
-            if (input.isAtField(FieldNames.sceneEventId)) {
+          case -1316830571:
+          case 2127946656: {
+            if (input.isAtField(FieldNames.monsterId)) {
               if (!input.trySkipNullValue()) {
-                sceneEventId = input.readUInt32();
+                monsterId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -332,7 +332,7 @@ public final class MonsterArchiveOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
+      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
 
       static final FieldName num = FieldName.forField("num");
     }

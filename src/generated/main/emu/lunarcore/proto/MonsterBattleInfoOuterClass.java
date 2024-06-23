@@ -78,9 +78,9 @@ public final class MonsterBattleInfoOuterClass {
     private int entityId;
 
     /**
-     * <code>optional uint32 scene_event_id = 2;</code>
+     * <code>optional uint32 monster_id = 2;</code>
      */
-    private int sceneEventId;
+    private int monsterId;
 
     /**
      * <pre>
@@ -589,39 +589,39 @@ public final class MonsterBattleInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 2;</code>
-     * @return whether the sceneEventId field is set
+     * <code>optional uint32 monster_id = 2;</code>
+     * @return whether the monsterId field is set
      */
-    public boolean hasSceneEventId() {
+    public boolean hasMonsterId() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 2;</code>
+     * <code>optional uint32 monster_id = 2;</code>
      * @return this
      */
-    public MonsterBattleInfo clearSceneEventId() {
+    public MonsterBattleInfo clearMonsterId() {
       bitField0_ &= ~0x00000200;
-      sceneEventId = 0;
+      monsterId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 2;</code>
-     * @return the sceneEventId
+     * <code>optional uint32 monster_id = 2;</code>
+     * @return the monsterId
      */
-    public int getSceneEventId() {
-      return sceneEventId;
+    public int getMonsterId() {
+      return monsterId;
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 2;</code>
-     * @param value the sceneEventId to set
+     * <code>optional uint32 monster_id = 2;</code>
+     * @param value the monsterId to set
      * @return this
      */
-    public MonsterBattleInfo setSceneEventId(final int value) {
+    public MonsterBattleInfo setMonsterId(final int value) {
       bitField0_ |= 0x00000200;
-      sceneEventId = value;
+      monsterId = value;
       return this;
     }
 
@@ -1377,7 +1377,7 @@ public final class MonsterBattleInfoOuterClass {
         delayCumulate = other.delayCumulate;
         indexInWave = other.indexInWave;
         entityId = other.entityId;
-        sceneEventId = other.sceneEventId;
+        monsterId = other.monsterId;
         monsterTemplateId = other.monsterTemplateId;
         monsterLevel = other.monsterLevel;
         totalTurns = other.totalTurns;
@@ -1429,8 +1429,8 @@ public final class MonsterBattleInfoOuterClass {
       if (other.hasEntityId()) {
         setEntityId(other.entityId);
       }
-      if (other.hasSceneEventId()) {
-        setSceneEventId(other.sceneEventId);
+      if (other.hasMonsterId()) {
+        setMonsterId(other.monsterId);
       }
       if (other.hasMonsterTemplateId()) {
         setMonsterTemplateId(other.monsterTemplateId);
@@ -1493,7 +1493,7 @@ public final class MonsterBattleInfoOuterClass {
       delayCumulate = 0D;
       indexInWave = 0;
       entityId = 0;
-      sceneEventId = 0;
+      monsterId = 0;
       monsterTemplateId = 0;
       monsterLevel = 0;
       totalTurns = 0;
@@ -1541,7 +1541,7 @@ public final class MonsterBattleInfoOuterClass {
         && (!hasDelayCumulate() || ProtoUtil.isEqual(delayCumulate, other.delayCumulate))
         && (!hasIndexInWave() || indexInWave == other.indexInWave)
         && (!hasEntityId() || entityId == other.entityId)
-        && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
+        && (!hasMonsterId() || monsterId == other.monsterId)
         && (!hasMonsterTemplateId() || monsterTemplateId == other.monsterTemplateId)
         && (!hasMonsterLevel() || monsterLevel == other.monsterLevel)
         && (!hasTotalTurns() || totalTurns == other.totalTurns)
@@ -1598,7 +1598,7 @@ public final class MonsterBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(sceneEventId);
+        output.writeUInt32NoTag(monsterId);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawByte((byte) 24);
@@ -1691,7 +1691,7 @@ public final class MonsterBattleInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterTemplateId);
@@ -1827,8 +1827,8 @@ public final class MonsterBattleInfoOuterClass {
             }
           }
           case 16: {
-            // sceneEventId
-            sceneEventId = input.readUInt32();
+            // monsterId
+            monsterId = input.readUInt32();
             bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 24) {
@@ -2005,7 +2005,7 @@ public final class MonsterBattleInfoOuterClass {
         output.writeUInt32(FieldNames.entityId, entityId);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
+        output.writeUInt32(FieldNames.monsterId, monsterId);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeUInt32(FieldNames.monsterTemplateId, monsterTemplateId);
@@ -2167,11 +2167,11 @@ public final class MonsterBattleInfoOuterClass {
             }
             break;
           }
-          case 748898089:
-          case 765114163: {
-            if (input.isAtField(FieldNames.sceneEventId)) {
+          case -1316830571:
+          case 2127946656: {
+            if (input.isAtField(FieldNames.monsterId)) {
               if (!input.trySkipNullValue()) {
-                sceneEventId = input.readUInt32();
+                monsterId = input.readUInt32();
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -2413,7 +2413,7 @@ public final class MonsterBattleInfoOuterClass {
 
       static final FieldName entityId = FieldName.forField("entityId", "entity_id");
 
-      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
+      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
 
       static final FieldName monsterTemplateId = FieldName.forField("monsterTemplateId", "monster_template_id");
 

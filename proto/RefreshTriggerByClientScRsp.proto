@@ -2,10 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Acmnhhbiohi
 message RefreshTriggerByClientScRsp {
-    string trigger_name = 11;
-    uint32 retcode = 9;
-    bool refresh_trigger = 5; // icapgcmdeeg
-    uint32 trigger_entity_id = 4;
+    bool refresh_trigger = 2; // OPJGMDDABCG
+    uint32 retcode = 7;
+    string trigger_name = 13;
+    uint32 trigger_entity_id = 3;
 }

@@ -12,6 +12,6 @@ public class HandlerSceneEnterStageCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = SceneEnterStageCsReq.parseFrom(data);
         
-        session.getPlayer().getServer().getBattleService().startBattle(session.getPlayer(), req.getMonsterId());
+        session.getPlayer().getServer().getBattleService().startBattle(session.getPlayer(), req.getSceneEventId());
     }
 }

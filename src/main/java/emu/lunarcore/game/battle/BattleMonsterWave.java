@@ -33,7 +33,7 @@ public class BattleMonsterWave {
         }
         
         for (int monsterId : monsters) {
-            var monster = SceneMonster.newInstance().setSceneEventId(monsterId);
+            var monster = SceneMonster.newInstance().setMonsterId(monsterId);
             proto.addMonsterList(monster);
         }
         

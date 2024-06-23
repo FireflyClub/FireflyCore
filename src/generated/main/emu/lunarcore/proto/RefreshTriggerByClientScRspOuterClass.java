@@ -14,36 +14,36 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class RefreshTriggerByClientScRspOuterClass {
   /**
-   * <pre>
-   *  Acmnhhbiohi
-   * </pre>
-   *
    * Protobuf type {@code RefreshTriggerByClientScRsp}
    */
   public static final class RefreshTriggerByClientScRsp extends ProtoMessage<RefreshTriggerByClientScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 trigger_entity_id = 4;</code>
+     * <code>optional uint32 trigger_entity_id = 3;</code>
      */
     private int triggerEntityId;
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     *  icapgcmdeeg
+     *  OPJGMDDABCG
      * </pre>
      *
-     * <code>optional bool refresh_trigger = 5;</code>
+     * <code>optional bool refresh_trigger = 2;</code>
      */
     private boolean refreshTrigger;
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      */
     private final Utf8String triggerName = Utf8String.newEmptyInstance();
 
@@ -51,10 +51,6 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Acmnhhbiohi
-     * </pre>
-     *
      * @return a new empty instance of {@code RefreshTriggerByClientScRsp}
      */
     public static RefreshTriggerByClientScRsp newInstance() {
@@ -62,7 +58,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 trigger_entity_id = 4;</code>
+     * <code>optional uint32 trigger_entity_id = 3;</code>
      * @return whether the triggerEntityId field is set
      */
     public boolean hasTriggerEntityId() {
@@ -70,7 +66,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 trigger_entity_id = 4;</code>
+     * <code>optional uint32 trigger_entity_id = 3;</code>
      * @return this
      */
     public RefreshTriggerByClientScRsp clearTriggerEntityId() {
@@ -80,7 +76,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 trigger_entity_id = 4;</code>
+     * <code>optional uint32 trigger_entity_id = 3;</code>
      * @return the triggerEntityId
      */
     public int getTriggerEntityId() {
@@ -88,7 +84,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 trigger_entity_id = 4;</code>
+     * <code>optional uint32 trigger_entity_id = 3;</code>
      * @param value the triggerEntityId to set
      * @return this
      */
@@ -99,7 +95,11 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -107,7 +107,11 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
     public RefreshTriggerByClientScRsp clearRetcode() {
@@ -117,7 +121,11 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -125,7 +133,11 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -137,10 +149,10 @@ public final class RefreshTriggerByClientScRspOuterClass {
 
     /**
      * <pre>
-     *  icapgcmdeeg
+     *  OPJGMDDABCG
      * </pre>
      *
-     * <code>optional bool refresh_trigger = 5;</code>
+     * <code>optional bool refresh_trigger = 2;</code>
      * @return whether the refreshTrigger field is set
      */
     public boolean hasRefreshTrigger() {
@@ -149,10 +161,10 @@ public final class RefreshTriggerByClientScRspOuterClass {
 
     /**
      * <pre>
-     *  icapgcmdeeg
+     *  OPJGMDDABCG
      * </pre>
      *
-     * <code>optional bool refresh_trigger = 5;</code>
+     * <code>optional bool refresh_trigger = 2;</code>
      * @return this
      */
     public RefreshTriggerByClientScRsp clearRefreshTrigger() {
@@ -163,10 +175,10 @@ public final class RefreshTriggerByClientScRspOuterClass {
 
     /**
      * <pre>
-     *  icapgcmdeeg
+     *  OPJGMDDABCG
      * </pre>
      *
-     * <code>optional bool refresh_trigger = 5;</code>
+     * <code>optional bool refresh_trigger = 2;</code>
      * @return the refreshTrigger
      */
     public boolean getRefreshTrigger() {
@@ -175,10 +187,10 @@ public final class RefreshTriggerByClientScRspOuterClass {
 
     /**
      * <pre>
-     *  icapgcmdeeg
+     *  OPJGMDDABCG
      * </pre>
      *
-     * <code>optional bool refresh_trigger = 5;</code>
+     * <code>optional bool refresh_trigger = 2;</code>
      * @param value the refreshTrigger to set
      * @return this
      */
@@ -189,7 +201,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @return whether the triggerName field is set
      */
     public boolean hasTriggerName() {
@@ -197,7 +209,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @return this
      */
     public RefreshTriggerByClientScRsp clearTriggerName() {
@@ -207,7 +219,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @return the triggerName
      */
     public String getTriggerName() {
@@ -215,7 +227,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @return internal {@code Utf8String} representation of triggerName for reading
      */
     public Utf8String getTriggerNameBytes() {
@@ -223,7 +235,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @return internal {@code Utf8String} representation of triggerName for modifications
      */
     public Utf8String getMutableTriggerNameBytes() {
@@ -232,7 +244,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @param value the triggerName to set
      * @return this
      */
@@ -243,7 +255,7 @@ public final class RefreshTriggerByClientScRspOuterClass {
     }
 
     /**
-     * <code>optional string trigger_name = 11;</code>
+     * <code>optional string trigger_name = 13;</code>
      * @param value the triggerName to set
      * @return this
      */
@@ -331,19 +343,19 @@ public final class RefreshTriggerByClientScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(triggerEntityId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 16);
         output.writeBoolNoTag(refreshTrigger);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 106);
         output.writeStringNoTag(triggerName);
       }
     }
@@ -373,34 +385,34 @@ public final class RefreshTriggerByClientScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 24: {
             // triggerEntityId
             triggerEntityId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 56) {
               break;
             }
           }
-          case 72: {
+          case 56: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 16) {
               break;
             }
           }
-          case 40: {
+          case 16: {
             // refreshTrigger
             refreshTrigger = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 106) {
               break;
             }
           }
-          case 90: {
+          case 106: {
             // triggerName
             input.readString(triggerName);
             bitField0_ |= 0x00000008;

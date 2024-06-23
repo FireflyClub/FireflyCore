@@ -50,9 +50,9 @@ public class ChallengeEntityLoader extends SceneEntityLoader {
         
         // Get current stage monster infos
         Int2ObjectMap<ChallengeMonsterInfo> challengeMonsters = null;
-        if (instance.getExcel().getMazeGroupID1() == group.getId()) {
+        if (instance.getCurrentStage() == 1) {
             challengeMonsters = instance.getExcel().getChallengeMonsters1();
-        } else if (instance.getExcel().getMazeGroupID2() == group.getId()) {
+        } else if (instance.getCurrentStage() == 2) {
             challengeMonsters = instance.getExcel().getChallengeMonsters2();
         } else {
             return null;

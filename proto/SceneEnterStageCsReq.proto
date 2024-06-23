@@ -4,7 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 // OGJHIILBFKI
 message SceneEnterStageCsReq {
-	uint32 monster_id = 4;
+	uint32 scene_event_id = 4;
 	// OICCDGCAPKG DBHFNGKHKKE = 15;
 	bool NHIJPAMAACF = 7;
 }

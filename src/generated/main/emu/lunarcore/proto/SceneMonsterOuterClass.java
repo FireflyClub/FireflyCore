@@ -27,9 +27,9 @@ public final class SceneMonsterOuterClass {
      *  JFMPCFKIFEN
      * </pre>
      *
-     * <code>optional uint32 scene_event_id = 10;</code>
+     * <code>optional uint32 monster_id = 10;</code>
      */
-    private int sceneEventId;
+    private int monsterId;
 
     /**
      * <code>optional uint32 max_hp = 14;</code>
@@ -64,10 +64,10 @@ public final class SceneMonsterOuterClass {
      *  JFMPCFKIFEN
      * </pre>
      *
-     * <code>optional uint32 scene_event_id = 10;</code>
-     * @return whether the sceneEventId field is set
+     * <code>optional uint32 monster_id = 10;</code>
+     * @return whether the monsterId field is set
      */
-    public boolean hasSceneEventId() {
+    public boolean hasMonsterId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
@@ -76,12 +76,12 @@ public final class SceneMonsterOuterClass {
      *  JFMPCFKIFEN
      * </pre>
      *
-     * <code>optional uint32 scene_event_id = 10;</code>
+     * <code>optional uint32 monster_id = 10;</code>
      * @return this
      */
-    public SceneMonster clearSceneEventId() {
+    public SceneMonster clearMonsterId() {
       bitField0_ &= ~0x00000001;
-      sceneEventId = 0;
+      monsterId = 0;
       return this;
     }
 
@@ -90,11 +90,11 @@ public final class SceneMonsterOuterClass {
      *  JFMPCFKIFEN
      * </pre>
      *
-     * <code>optional uint32 scene_event_id = 10;</code>
-     * @return the sceneEventId
+     * <code>optional uint32 monster_id = 10;</code>
+     * @return the monsterId
      */
-    public int getSceneEventId() {
-      return sceneEventId;
+    public int getMonsterId() {
+      return monsterId;
     }
 
     /**
@@ -102,13 +102,13 @@ public final class SceneMonsterOuterClass {
      *  JFMPCFKIFEN
      * </pre>
      *
-     * <code>optional uint32 scene_event_id = 10;</code>
-     * @param value the sceneEventId to set
+     * <code>optional uint32 monster_id = 10;</code>
+     * @param value the monsterId to set
      * @return this
      */
-    public SceneMonster setSceneEventId(final int value) {
+    public SceneMonster setMonsterId(final int value) {
       bitField0_ |= 0x00000001;
-      sceneEventId = value;
+      monsterId = value;
       return this;
     }
 
@@ -207,7 +207,7 @@ public final class SceneMonsterOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        sceneEventId = other.sceneEventId;
+        monsterId = other.monsterId;
         maxHp = other.maxHp;
         curHp = other.curHp;
       }
@@ -220,8 +220,8 @@ public final class SceneMonsterOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSceneEventId()) {
-        setSceneEventId(other.sceneEventId);
+      if (other.hasMonsterId()) {
+        setMonsterId(other.monsterId);
       }
       if (other.hasMaxHp()) {
         setMaxHp(other.maxHp);
@@ -239,7 +239,7 @@ public final class SceneMonsterOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      sceneEventId = 0;
+      monsterId = 0;
       maxHp = 0;
       curHp = 0;
       return this;
@@ -265,7 +265,7 @@ public final class SceneMonsterOuterClass {
       }
       SceneMonster other = (SceneMonster) o;
       return bitField0_ == other.bitField0_
-        && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
+        && (!hasMonsterId() || monsterId == other.monsterId)
         && (!hasMaxHp() || maxHp == other.maxHp)
         && (!hasCurHp() || curHp == other.curHp);
     }
@@ -274,7 +274,7 @@ public final class SceneMonsterOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(sceneEventId);
+        output.writeUInt32NoTag(monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 112);
@@ -290,7 +290,7 @@ public final class SceneMonsterOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(maxHp);
@@ -309,8 +309,8 @@ public final class SceneMonsterOuterClass {
       while (true) {
         switch (tag) {
           case 80: {
-            // sceneEventId
-            sceneEventId = input.readUInt32();
+            // monsterId
+            monsterId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 112) {
@@ -353,7 +353,7 @@ public final class SceneMonsterOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
+        output.writeUInt32(FieldNames.monsterId, monsterId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.maxHp, maxHp);
@@ -371,11 +371,11 @@ public final class SceneMonsterOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 748898089:
-          case 765114163: {
-            if (input.isAtField(FieldNames.sceneEventId)) {
+          case -1316830571:
+          case 2127946656: {
+            if (input.isAtField(FieldNames.monsterId)) {
               if (!input.trySkipNullValue()) {
-                sceneEventId = input.readUInt32();
+                monsterId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -459,7 +459,7 @@ public final class SceneMonsterOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
+      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
 
       static final FieldName maxHp = FieldName.forField("maxHp", "max_hp");
 

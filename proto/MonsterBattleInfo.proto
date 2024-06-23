@@ -6,7 +6,7 @@ import "BattleSkillInfo.proto";
 
 message MonsterBattleInfo {
 	uint32 entity_id = 1;
-	uint32 scene_event_id = 2;
+	uint32 monster_id = 2;
 	uint32 monster_template_id = 3; // DGIJLFEOGOO
 	uint32 monster_level = 4; // EILDJJMAADC
 	// MonsterProperty monster_status = 5; // IKDNJNGHLMG

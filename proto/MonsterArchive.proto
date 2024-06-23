@@ -4,5 +4,5 @@ option java_package = "emu.lunarcore.proto";
 
 message MonsterArchive {
     uint32 num = 2;
-    uint32 scene_event_id = 1;
+    uint32 monster_id = 1;
 }

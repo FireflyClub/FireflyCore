@@ -24,9 +24,9 @@ public final class EnterRogueCsReqOuterClass {
     private int areaId;
 
     /**
-     * <code>optional uint32 monster_id = 15;</code>
+     * <code>optional uint32 scene_event_id = 15;</code>
      */
-    private int monsterId;
+    private int sceneEventId;
 
     private EnterRogueCsReq() {
     }
@@ -76,39 +76,39 @@ public final class EnterRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 monster_id = 15;</code>
-     * @return whether the monsterId field is set
+     * <code>optional uint32 scene_event_id = 15;</code>
+     * @return whether the sceneEventId field is set
      */
-    public boolean hasMonsterId() {
+    public boolean hasSceneEventId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 monster_id = 15;</code>
+     * <code>optional uint32 scene_event_id = 15;</code>
      * @return this
      */
-    public EnterRogueCsReq clearMonsterId() {
+    public EnterRogueCsReq clearSceneEventId() {
       bitField0_ &= ~0x00000002;
-      monsterId = 0;
+      sceneEventId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 monster_id = 15;</code>
-     * @return the monsterId
+     * <code>optional uint32 scene_event_id = 15;</code>
+     * @return the sceneEventId
      */
-    public int getMonsterId() {
-      return monsterId;
+    public int getSceneEventId() {
+      return sceneEventId;
     }
 
     /**
-     * <code>optional uint32 monster_id = 15;</code>
-     * @param value the monsterId to set
+     * <code>optional uint32 scene_event_id = 15;</code>
+     * @param value the sceneEventId to set
      * @return this
      */
-    public EnterRogueCsReq setMonsterId(final int value) {
+    public EnterRogueCsReq setSceneEventId(final int value) {
       bitField0_ |= 0x00000002;
-      monsterId = value;
+      sceneEventId = value;
       return this;
     }
 
@@ -118,7 +118,7 @@ public final class EnterRogueCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         areaId = other.areaId;
-        monsterId = other.monsterId;
+        sceneEventId = other.sceneEventId;
       }
       return this;
     }
@@ -132,8 +132,8 @@ public final class EnterRogueCsReqOuterClass {
       if (other.hasAreaId()) {
         setAreaId(other.areaId);
       }
-      if (other.hasMonsterId()) {
-        setMonsterId(other.monsterId);
+      if (other.hasSceneEventId()) {
+        setSceneEventId(other.sceneEventId);
       }
       return this;
     }
@@ -146,7 +146,7 @@ public final class EnterRogueCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       areaId = 0;
-      monsterId = 0;
+      sceneEventId = 0;
       return this;
     }
 
@@ -171,7 +171,7 @@ public final class EnterRogueCsReqOuterClass {
       EnterRogueCsReq other = (EnterRogueCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasAreaId() || areaId == other.areaId)
-        && (!hasMonsterId() || monsterId == other.monsterId);
+        && (!hasSceneEventId() || sceneEventId == other.sceneEventId);
     }
 
     @Override
@@ -182,7 +182,7 @@ public final class EnterRogueCsReqOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(monsterId);
+        output.writeUInt32NoTag(sceneEventId);
       }
     }
 
@@ -193,7 +193,7 @@ public final class EnterRogueCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(areaId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
       }
       return size;
     }
@@ -215,8 +215,8 @@ public final class EnterRogueCsReqOuterClass {
             }
           }
           case 120: {
-            // monsterId
-            monsterId = input.readUInt32();
+            // sceneEventId
+            sceneEventId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -244,7 +244,7 @@ public final class EnterRogueCsReqOuterClass {
         output.writeUInt32(FieldNames.areaId, areaId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.monsterId, monsterId);
+        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
       }
       output.endObject();
     }
@@ -268,11 +268,11 @@ public final class EnterRogueCsReqOuterClass {
             }
             break;
           }
-          case -1316830571:
-          case 2127946656: {
-            if (input.isAtField(FieldNames.monsterId)) {
+          case 748898089:
+          case 765114163: {
+            if (input.isAtField(FieldNames.sceneEventId)) {
               if (!input.trySkipNullValue()) {
-                monsterId = input.readUInt32();
+                sceneEventId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -335,7 +335,7 @@ public final class EnterRogueCsReqOuterClass {
     static class FieldNames {
       static final FieldName areaId = FieldName.forField("areaId", "area_id");
 
-      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
+      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
     }
   }
 }

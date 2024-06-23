@@ -34,9 +34,9 @@ public final class PVEBattleResultScRspOuterClass {
      *  ItemList DBAGCMFKABI = 6;
      * </pre>
      *
-     * <code>optional uint32 monster_id = 3;</code>
+     * <code>optional uint32 scene_event_id = 3;</code>
      */
-    private int monsterId;
+    private int sceneEventId;
 
     /**
      * <code>optional uint32 stage_id = 4;</code>
@@ -188,10 +188,10 @@ public final class PVEBattleResultScRspOuterClass {
      *  ItemList DBAGCMFKABI = 6;
      * </pre>
      *
-     * <code>optional uint32 monster_id = 3;</code>
-     * @return whether the monsterId field is set
+     * <code>optional uint32 scene_event_id = 3;</code>
+     * @return whether the sceneEventId field is set
      */
-    public boolean hasMonsterId() {
+    public boolean hasSceneEventId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
@@ -200,12 +200,12 @@ public final class PVEBattleResultScRspOuterClass {
      *  ItemList DBAGCMFKABI = 6;
      * </pre>
      *
-     * <code>optional uint32 monster_id = 3;</code>
+     * <code>optional uint32 scene_event_id = 3;</code>
      * @return this
      */
-    public PVEBattleResultScRsp clearMonsterId() {
+    public PVEBattleResultScRsp clearSceneEventId() {
       bitField0_ &= ~0x00000002;
-      monsterId = 0;
+      sceneEventId = 0;
       return this;
     }
 
@@ -214,11 +214,11 @@ public final class PVEBattleResultScRspOuterClass {
      *  ItemList DBAGCMFKABI = 6;
      * </pre>
      *
-     * <code>optional uint32 monster_id = 3;</code>
-     * @return the monsterId
+     * <code>optional uint32 scene_event_id = 3;</code>
+     * @return the sceneEventId
      */
-    public int getMonsterId() {
-      return monsterId;
+    public int getSceneEventId() {
+      return sceneEventId;
     }
 
     /**
@@ -226,13 +226,13 @@ public final class PVEBattleResultScRspOuterClass {
      *  ItemList DBAGCMFKABI = 6;
      * </pre>
      *
-     * <code>optional uint32 monster_id = 3;</code>
-     * @param value the monsterId to set
+     * <code>optional uint32 scene_event_id = 3;</code>
+     * @param value the sceneEventId to set
      * @return this
      */
-    public PVEBattleResultScRsp setMonsterId(final int value) {
+    public PVEBattleResultScRsp setSceneEventId(final int value) {
       bitField0_ |= 0x00000002;
-      monsterId = value;
+      sceneEventId = value;
       return this;
     }
 
@@ -1049,7 +1049,7 @@ public final class PVEBattleResultScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         pDJFOAHIKJH = other.pDJFOAHIKJH;
-        monsterId = other.monsterId;
+        sceneEventId = other.sceneEventId;
         stageId = other.stageId;
         retcode = other.retcode;
         cILIOGNAKIC = other.cILIOGNAKIC;
@@ -1076,8 +1076,8 @@ public final class PVEBattleResultScRspOuterClass {
       if (other.hasPDJFOAHIKJH()) {
         setPDJFOAHIKJH(other.pDJFOAHIKJH);
       }
-      if (other.hasMonsterId()) {
-        setMonsterId(other.monsterId);
+      if (other.hasSceneEventId()) {
+        setSceneEventId(other.sceneEventId);
       }
       if (other.hasStageId()) {
         setStageId(other.stageId);
@@ -1129,7 +1129,7 @@ public final class PVEBattleResultScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       pDJFOAHIKJH = 0;
-      monsterId = 0;
+      sceneEventId = 0;
       stageId = 0;
       retcode = 0;
       cILIOGNAKIC = 0;
@@ -1173,7 +1173,7 @@ public final class PVEBattleResultScRspOuterClass {
       PVEBattleResultScRsp other = (PVEBattleResultScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasPDJFOAHIKJH() || pDJFOAHIKJH == other.pDJFOAHIKJH)
-        && (!hasMonsterId() || monsterId == other.monsterId)
+        && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
         && (!hasStageId() || stageId == other.stageId)
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasCILIOGNAKIC() || cILIOGNAKIC == other.cILIOGNAKIC)
@@ -1197,7 +1197,7 @@ public final class PVEBattleResultScRspOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(monsterId);
+        output.writeUInt32NoTag(sceneEventId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 32);
@@ -1262,7 +1262,7 @@ public final class PVEBattleResultScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(pDJFOAHIKJH);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneEventId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
@@ -1323,8 +1323,8 @@ public final class PVEBattleResultScRspOuterClass {
             }
           }
           case 24: {
-            // monsterId
-            monsterId = input.readUInt32();
+            // sceneEventId
+            sceneEventId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 32) {
@@ -1471,7 +1471,7 @@ public final class PVEBattleResultScRspOuterClass {
         output.writeUInt32(FieldNames.pDJFOAHIKJH, pDJFOAHIKJH);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.monsterId, monsterId);
+        output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.stageId, stageId);
@@ -1533,11 +1533,11 @@ public final class PVEBattleResultScRspOuterClass {
             }
             break;
           }
-          case -1316830571:
-          case 2127946656: {
-            if (input.isAtField(FieldNames.monsterId)) {
+          case 748898089:
+          case 765114163: {
+            if (input.isAtField(FieldNames.sceneEventId)) {
               if (!input.trySkipNullValue()) {
-                monsterId = input.readUInt32();
+                sceneEventId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -1756,7 +1756,7 @@ public final class PVEBattleResultScRspOuterClass {
     static class FieldNames {
       static final FieldName pDJFOAHIKJH = FieldName.forField("PDJFOAHIKJH");
 
-      static final FieldName monsterId = FieldName.forField("monsterId", "monster_id");
+      static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
 
       static final FieldName stageId = FieldName.forField("stageId", "stage_id");
 

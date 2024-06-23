@@ -15,10 +15,6 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class RefreshTriggerByClientCsReqOuterClass {
   /**
-   * <pre>
-   *  Alnoccdimoo
-   * </pre>
-   *
    * Protobuf type {@code RefreshTriggerByClientCsReq}
    */
   public static final class RefreshTriggerByClientCsReq extends ProtoMessage<RefreshTriggerByClientCsReq> implements Cloneable {
@@ -26,19 +22,19 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  cacgcajplen
+     *  FHCDOLDBFCJ
      * </pre>
      *
-     * <code>optional uint32 trigger_entity_id = 9;</code>
+     * <code>optional uint32 trigger_entity_id = 4;</code>
      */
     private int triggerEntityId;
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      */
     private final MotionInfoOuterClass.MotionInfo triggerMotion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -47,16 +43,16 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      */
     private final Utf8String triggerName = Utf8String.newEmptyInstance();
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      */
     private final RepeatedInt triggerTargetIdList = RepeatedInt.newEmptyInstance();
 
@@ -64,10 +60,6 @@ public final class RefreshTriggerByClientCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Alnoccdimoo
-     * </pre>
-     *
      * @return a new empty instance of {@code RefreshTriggerByClientCsReq}
      */
     public static RefreshTriggerByClientCsReq newInstance() {
@@ -76,10 +68,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  cacgcajplen
+     *  FHCDOLDBFCJ
      * </pre>
      *
-     * <code>optional uint32 trigger_entity_id = 9;</code>
+     * <code>optional uint32 trigger_entity_id = 4;</code>
      * @return whether the triggerEntityId field is set
      */
     public boolean hasTriggerEntityId() {
@@ -88,10 +80,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  cacgcajplen
+     *  FHCDOLDBFCJ
      * </pre>
      *
-     * <code>optional uint32 trigger_entity_id = 9;</code>
+     * <code>optional uint32 trigger_entity_id = 4;</code>
      * @return this
      */
     public RefreshTriggerByClientCsReq clearTriggerEntityId() {
@@ -102,10 +94,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  cacgcajplen
+     *  FHCDOLDBFCJ
      * </pre>
      *
-     * <code>optional uint32 trigger_entity_id = 9;</code>
+     * <code>optional uint32 trigger_entity_id = 4;</code>
      * @return the triggerEntityId
      */
     public int getTriggerEntityId() {
@@ -114,10 +106,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  cacgcajplen
+     *  FHCDOLDBFCJ
      * </pre>
      *
-     * <code>optional uint32 trigger_entity_id = 9;</code>
+     * <code>optional uint32 trigger_entity_id = 4;</code>
      * @param value the triggerEntityId to set
      * @return this
      */
@@ -129,10 +121,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      * @return whether the triggerMotion field is set
      */
     public boolean hasTriggerMotion() {
@@ -141,10 +133,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      * @return this
      */
     public RefreshTriggerByClientCsReq clearTriggerMotion() {
@@ -155,10 +147,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -173,10 +165,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -191,10 +183,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  gakgdpdjaon
+     *  LMNAFFHCNEA
      * </pre>
      *
-     * <code>optional .MotionInfo trigger_motion = 10;</code>
+     * <code>optional .MotionInfo trigger_motion = 5;</code>
      * @param value the triggerMotion to set
      * @return this
      */
@@ -210,7 +202,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @return whether the triggerName field is set
      */
     public boolean hasTriggerName() {
@@ -222,7 +214,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @return this
      */
     public RefreshTriggerByClientCsReq clearTriggerName() {
@@ -236,7 +228,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @return the triggerName
      */
     public String getTriggerName() {
@@ -248,7 +240,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @return internal {@code Utf8String} representation of triggerName for reading
      */
     public Utf8String getTriggerNameBytes() {
@@ -260,7 +252,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @return internal {@code Utf8String} representation of triggerName for modifications
      */
     public Utf8String getMutableTriggerNameBytes() {
@@ -273,7 +265,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @param value the triggerName to set
      * @return this
      */
@@ -288,7 +280,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
      *  hpjcegjfonl
      * </pre>
      *
-     * <code>optional string trigger_name = 14;</code>
+     * <code>optional string trigger_name = 10;</code>
      * @param value the triggerName to set
      * @return this
      */
@@ -300,10 +292,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      * @return whether the triggerTargetIdList field is set
      */
     public boolean hasTriggerTargetIdList() {
@@ -312,10 +304,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      * @return this
      */
     public RefreshTriggerByClientCsReq clearTriggerTargetIdList() {
@@ -326,10 +318,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -344,10 +336,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -362,10 +354,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      * @param value the triggerTargetIdList to add
      * @return this
      */
@@ -377,10 +369,10 @@ public final class RefreshTriggerByClientCsReqOuterClass {
 
     /**
      * <pre>
-     *  nihnniamfep
+     *  HKDNEKDFIGP
      * </pre>
      *
-     * <code>repeated uint32 trigger_target_id_list = 1;</code>
+     * <code>repeated uint32 trigger_target_id_list = 7;</code>
      * @param values the triggerTargetIdList to add
      * @return this
      */
@@ -470,20 +462,20 @@ public final class RefreshTriggerByClientCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(triggerEntityId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(triggerMotion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 82);
         output.writeStringNoTag(triggerName);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < triggerTargetIdList.length(); i++) {
-          output.writeRawByte((byte) 8);
+          output.writeRawByte((byte) 56);
           output.writeUInt32NoTag(triggerTargetIdList.array()[i]);
         }
       }
@@ -514,34 +506,34 @@ public final class RefreshTriggerByClientCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 32: {
             // triggerEntityId
             triggerEntityId = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
+            // triggerMotion
+            input.readMessage(triggerMotion);
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 82) {
               break;
             }
           }
           case 82: {
-            // triggerMotion
-            input.readMessage(triggerMotion);
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 114) {
-              break;
-            }
-          }
-          case 114: {
             // triggerName
             input.readString(triggerName);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 58) {
               break;
             }
           }
-          case 10: {
+          case 58: {
             // triggerTargetIdList [packed=true]
             input.readPackedUInt32(triggerTargetIdList, tag);
             bitField0_ |= 0x00000008;
@@ -560,7 +552,7 @@ public final class RefreshTriggerByClientCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 8: {
+          case 56: {
             // triggerTargetIdList [packed=false]
             tag = input.readRepeatedUInt32(triggerTargetIdList, tag);
             bitField0_ |= 0x00000008;

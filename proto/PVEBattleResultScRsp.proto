@@ -9,7 +9,7 @@ import "ItemList.proto";
 // OIELBKOIOCF
 message PVEBattleResultScRsp {
 	// ItemList DBAGCMFKABI = 6;
-	uint32 monster_id = 3;
+	uint32 scene_event_id = 3;
 	repeated BattleAvatar pve_avatar_list = 11; // PMKOINDGNGH
 	ItemList KHMNINDBCEC = 1822;
 	ItemList NLKKIDOKMKG = 14;

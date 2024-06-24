@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class QuitWolfBroGameCsReqOuterClass {
   /**
-   * <pre>
-   *  Biibefpgfeo
-   * </pre>
-   *
    * Protobuf type {@code QuitWolfBroGameCsReq}
    */
   public static final class QuitWolfBroGameCsReq extends ProtoMessage<QuitWolfBroGameCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 2;</code>
      */
     private int id;
 
@@ -31,10 +27,6 @@ public final class QuitWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Biibefpgfeo
-     * </pre>
-     *
      * @return a new empty instance of {@code QuitWolfBroGameCsReq}
      */
     public static QuitWolfBroGameCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 2;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -50,7 +42,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 2;</code>
      * @return this
      */
     public QuitWolfBroGameCsReq clearId() {
@@ -60,7 +52,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 2;</code>
      * @return the id
      */
     public int getId() {
@@ -68,7 +60,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 2;</code>
      * @param value the id to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(id);
       }
     }
@@ -158,7 +150,7 @@ public final class QuitWolfBroGameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 16: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;

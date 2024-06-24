@@ -13,13 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class FriendApplyInfoOuterClass {
   /**
+   * <pre>
+   *  MFPFLKBHFCB
+   * </pre>
+   *
    * Protobuf type {@code FriendApplyInfo}
    */
   public static final class FriendApplyInfo extends ProtoMessage<FriendApplyInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
+     * <code>optional int64 BIDBCBGACID = 1;</code>
+     */
+    private long bIDBCBGACID;
+
+    /**
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
@@ -27,6 +36,10 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  MFPFLKBHFCB
+     * </pre>
+     *
      * @return a new empty instance of {@code FriendApplyInfo}
      */
     public static FriendApplyInfo newInstance() {
@@ -34,25 +47,62 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
-     * @return whether the simpleInfo field is set
+     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * @return whether the bIDBCBGACID field is set
      */
-    public boolean hasSimpleInfo() {
+    public boolean hasBIDBCBGACID() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
+     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * @return this
+     */
+    public FriendApplyInfo clearBIDBCBGACID() {
+      bitField0_ &= ~0x00000001;
+      bIDBCBGACID = 0L;
+      return this;
+    }
+
+    /**
+     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * @return the bIDBCBGACID
+     */
+    public long getBIDBCBGACID() {
+      return bIDBCBGACID;
+    }
+
+    /**
+     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * @param value the bIDBCBGACID to set
+     * @return this
+     */
+    public FriendApplyInfo setBIDBCBGACID(final long value) {
+      bitField0_ |= 0x00000001;
+      bIDBCBGACID = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * @return whether the simpleInfo field is set
+     */
+    public boolean hasSimpleInfo() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      * @return this
      */
     public FriendApplyInfo clearSimpleInfo() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       simpleInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +116,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -75,17 +125,17 @@ public final class FriendApplyInfoOuterClass {
      * @return internal storage object for modifications
      */
     public SimpleInfoOuterClass.SimpleInfo getMutableSimpleInfo() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       return simpleInfo;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 12;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      * @param value the simpleInfo to set
      * @return this
      */
     public FriendApplyInfo setSimpleInfo(final SimpleInfoOuterClass.SimpleInfo value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       simpleInfo.copyFrom(value);
       return this;
     }
@@ -95,6 +145,7 @@ public final class FriendApplyInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        bIDBCBGACID = other.bIDBCBGACID;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -106,6 +157,9 @@ public final class FriendApplyInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasBIDBCBGACID()) {
+        setBIDBCBGACID(other.bIDBCBGACID);
+      }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
       }
@@ -119,6 +173,7 @@ public final class FriendApplyInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      bIDBCBGACID = 0L;
       simpleInfo.clear();
       return this;
     }
@@ -144,13 +199,18 @@ public final class FriendApplyInfoOuterClass {
       }
       FriendApplyInfo other = (FriendApplyInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasBIDBCBGACID() || bIDBCBGACID == other.bIDBCBGACID)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 8);
+        output.writeInt64NoTag(bIDBCBGACID);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(simpleInfo);
       }
     }
@@ -159,6 +219,9 @@ public final class FriendApplyInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeInt64SizeNoTag(bIDBCBGACID);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(simpleInfo);
       }
       return size;
@@ -171,10 +234,19 @@ public final class FriendApplyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 98: {
+          case 8: {
+            // bIDBCBGACID
+            bIDBCBGACID = input.readInt64();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
             // simpleInfo
             input.readMessage(simpleInfo);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -198,6 +270,9 @@ public final class FriendApplyInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeInt64(FieldNames.bIDBCBGACID, bIDBCBGACID);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
       }
       output.endObject();
@@ -210,12 +285,23 @@ public final class FriendApplyInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -2096441888: {
+            if (input.isAtField(FieldNames.bIDBCBGACID)) {
+              if (!input.trySkipNullValue()) {
+                bIDBCBGACID = input.readInt64();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1431903872:
           case -1419171045: {
             if (input.isAtField(FieldNames.simpleInfo)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(simpleInfo);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -275,6 +361,8 @@ public final class FriendApplyInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName bIDBCBGACID = FieldName.forField("BIDBCBGACID");
+
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }
   }

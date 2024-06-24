@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SimpleInfo.proto";
 
-// Knbccjihhph
 message SearchPlayerScRsp {
-    repeated SimpleInfo search_result_list = 9;
-    uint32 retcode = 14;
-    // repeated uint32 aopbnaamlbd = 5;
+    uint32 retcode = 7;
+	repeated uint32 NGIMLFDLBDG = 14;
+    repeated SimpleInfo search_result_list = 15; // PEFPNPCFFMI
 }

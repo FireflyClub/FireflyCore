@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Phkmnkdmpjl
 message SetSignatureScRsp {
-    string signature = 4;
-    uint32 retcode = 9;
+	string signature = 7;
+	uint32 retcode = 10;
 }

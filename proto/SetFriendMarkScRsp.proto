@@ -2,9 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Bmlfcagfngn
+// ODFCEEGNNNI
 message SetFriendMarkScRsp {
-    bool is_set_mark = 14;
-    uint32 retcode = 1;
-    uint32 uid = 11;
+	bool is_set_mark = 4;
+	uint32 retcode = 12;
+	uint32 uid = 8;
 }

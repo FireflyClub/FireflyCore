@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Iagdimihefo
+// KJNLMGJEFHE
 message ReserveStaminaExchangeCsReq {
-    uint32 num = 13;
+    uint32 num = 6;
 }

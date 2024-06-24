@@ -13,26 +13,22 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class TakePromotionRewardScRspOuterClass {
   /**
-   * <pre>
-   *  Igmfggcgfof
-   * </pre>
-   *
    * Protobuf type {@code TakePromotionRewardScRsp}
    */
   public static final class TakePromotionRewardScRsp extends ProtoMessage<TakePromotionRewardScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      */
     private final ItemListOuterClass.ItemList rewardList = ItemListOuterClass.ItemList.newInstance();
 
@@ -40,10 +36,6 @@ public final class TakePromotionRewardScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Igmfggcgfof
-     * </pre>
-     *
      * @return a new empty instance of {@code TakePromotionRewardScRsp}
      */
     public static TakePromotionRewardScRsp newInstance() {
@@ -51,7 +43,7 @@ public final class TakePromotionRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -59,7 +51,7 @@ public final class TakePromotionRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
     public TakePromotionRewardScRsp clearRetcode() {
@@ -69,7 +61,7 @@ public final class TakePromotionRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -77,7 +69,7 @@ public final class TakePromotionRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -89,10 +81,10 @@ public final class TakePromotionRewardScRspOuterClass {
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      * @return whether the rewardList field is set
      */
     public boolean hasRewardList() {
@@ -101,10 +93,10 @@ public final class TakePromotionRewardScRspOuterClass {
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      * @return this
      */
     public TakePromotionRewardScRsp clearRewardList() {
@@ -115,10 +107,10 @@ public final class TakePromotionRewardScRspOuterClass {
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -133,10 +125,10 @@ public final class TakePromotionRewardScRspOuterClass {
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -151,10 +143,10 @@ public final class TakePromotionRewardScRspOuterClass {
 
     /**
      * <pre>
-     *  iineebblofp
+     *  OIBPBEEBFNA
      * </pre>
      *
-     * <code>optional .ItemList reward_list = 13;</code>
+     * <code>optional .ItemList reward_list = 1;</code>
      * @param value the rewardList to set
      * @return this
      */
@@ -230,11 +222,11 @@ public final class TakePromotionRewardScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(rewardList);
       }
     }
@@ -258,16 +250,16 @@ public final class TakePromotionRewardScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 72: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 10) {
               break;
             }
           }
-          case 106: {
+          case 10: {
             // rewardList
             input.readMessage(rewardList);
             bitField0_ |= 0x00000002;

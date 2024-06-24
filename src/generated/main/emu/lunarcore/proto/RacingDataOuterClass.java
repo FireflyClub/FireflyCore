@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RacingDataOuterClass {
   /**
-   * <pre>
-   * ? Mpggdjcjcef
-   * </pre>
-   *
    * Protobuf type {@code RacingData}
    */
   public static final class RacingData extends ProtoMessage<RacingData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 7;</code>
+     * <code>optional uint32 level = 8;</code>
      */
     private int level;
 
@@ -32,12 +28,12 @@ public final class RacingDataOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_score = 12;</code>
+     * <code>optional uint32 max_score = 11;</code>
      */
     private int maxScore;
 
     /**
-     * <code>optional .MovieRacingType type = 10;</code>
+     * <code>optional .MovieRacingType type = 5;</code>
      */
     private int type;
 
@@ -45,10 +41,6 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ? Mpggdjcjcef
-     * </pre>
-     *
      * @return a new empty instance of {@code RacingData}
      */
     public static RacingData newInstance() {
@@ -56,7 +48,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 7;</code>
+     * <code>optional uint32 level = 8;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -64,7 +56,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 7;</code>
+     * <code>optional uint32 level = 8;</code>
      * @return this
      */
     public RacingData clearLevel() {
@@ -74,7 +66,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 7;</code>
+     * <code>optional uint32 level = 8;</code>
      * @return the level
      */
     public int getLevel() {
@@ -82,7 +74,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 7;</code>
+     * <code>optional uint32 level = 8;</code>
      * @param value the level to set
      * @return this
      */
@@ -97,7 +89,7 @@ public final class RacingDataOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_score = 12;</code>
+     * <code>optional uint32 max_score = 11;</code>
      * @return whether the maxScore field is set
      */
     public boolean hasMaxScore() {
@@ -109,7 +101,7 @@ public final class RacingDataOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_score = 12;</code>
+     * <code>optional uint32 max_score = 11;</code>
      * @return this
      */
     public RacingData clearMaxScore() {
@@ -123,7 +115,7 @@ public final class RacingDataOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_score = 12;</code>
+     * <code>optional uint32 max_score = 11;</code>
      * @return the maxScore
      */
     public int getMaxScore() {
@@ -135,7 +127,7 @@ public final class RacingDataOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_score = 12;</code>
+     * <code>optional uint32 max_score = 11;</code>
      * @param value the maxScore to set
      * @return this
      */
@@ -146,7 +138,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional .MovieRacingType type = 10;</code>
+     * <code>optional .MovieRacingType type = 5;</code>
      * @return whether the type field is set
      */
     public boolean hasType() {
@@ -154,7 +146,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional .MovieRacingType type = 10;</code>
+     * <code>optional .MovieRacingType type = 5;</code>
      * @return this
      */
     public RacingData clearType() {
@@ -164,7 +156,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional .MovieRacingType type = 10;</code>
+     * <code>optional .MovieRacingType type = 5;</code>
      * @return the type
      */
     public MovieRacingTypeOuterClass.MovieRacingType getType() {
@@ -197,7 +189,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional .MovieRacingType type = 10;</code>
+     * <code>optional .MovieRacingType type = 5;</code>
      * @param value the type to set
      * @return this
      */
@@ -278,15 +270,15 @@ public final class RacingDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(maxScore);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 40);
         output.writeEnumNoTag(type);
       }
     }
@@ -313,25 +305,25 @@ public final class RacingDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 64: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 88) {
               break;
             }
           }
-          case 96: {
+          case 88: {
             // maxScore
             maxScore = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 40) {
               break;
             }
           }
-          case 80: {
+          case 40: {
             // type
             final int value = input.readInt32();
             if (MovieRacingTypeOuterClass.MovieRacingType.forNumber(value) != null) {

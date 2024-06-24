@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+// FNAIBDHKPEI
 enum MailType {
   MAIL_TYPE_NORMAL = 0;
   MAIL_TYPE_STAR = 1;

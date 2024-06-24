@@ -4,10 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "FeverTimeAvatar.proto";
 
-// Aibibkegjbg
+// BHCNIGIKHMN
 message EnterFeverTimeActivityStageCsReq {
-	// uint32 nfbfjahfnne = 9;
-	// uint32 mgnmdcnnlbo = 10;
-	repeated FeverTimeAvatar avatar_list = 15;
-	uint32 id = 13;
+	repeated FeverTimeAvatar avatar_list = 13;
+	uint32 AOGOLEIEOKG = 5;
+	uint32 GLLKFHKKKBG = 2;
+	uint32 id = 11;
 }

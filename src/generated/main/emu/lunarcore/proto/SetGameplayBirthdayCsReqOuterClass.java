@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SetGameplayBirthdayCsReqOuterClass {
   /**
-   * <pre>
-   *  Lpaemppnflj
-   * </pre>
-   *
    * Protobuf type {@code SetGameplayBirthdayCsReq}
    */
   public static final class SetGameplayBirthdayCsReq extends ProtoMessage<SetGameplayBirthdayCsReq> implements Cloneable {
@@ -24,10 +20,10 @@ public final class SetGameplayBirthdayCsReqOuterClass {
 
     /**
      * <pre>
-     *  digjkibgfpf
+     *  DEMNHEMHEBD
      * </pre>
      *
-     * <code>optional uint32 birthday = 2;</code>
+     * <code>optional uint32 birthday = 3;</code>
      */
     private int birthday;
 
@@ -35,10 +31,6 @@ public final class SetGameplayBirthdayCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Lpaemppnflj
-     * </pre>
-     *
      * @return a new empty instance of {@code SetGameplayBirthdayCsReq}
      */
     public static SetGameplayBirthdayCsReq newInstance() {
@@ -47,10 +39,10 @@ public final class SetGameplayBirthdayCsReqOuterClass {
 
     /**
      * <pre>
-     *  digjkibgfpf
+     *  DEMNHEMHEBD
      * </pre>
      *
-     * <code>optional uint32 birthday = 2;</code>
+     * <code>optional uint32 birthday = 3;</code>
      * @return whether the birthday field is set
      */
     public boolean hasBirthday() {
@@ -59,10 +51,10 @@ public final class SetGameplayBirthdayCsReqOuterClass {
 
     /**
      * <pre>
-     *  digjkibgfpf
+     *  DEMNHEMHEBD
      * </pre>
      *
-     * <code>optional uint32 birthday = 2;</code>
+     * <code>optional uint32 birthday = 3;</code>
      * @return this
      */
     public SetGameplayBirthdayCsReq clearBirthday() {
@@ -73,10 +65,10 @@ public final class SetGameplayBirthdayCsReqOuterClass {
 
     /**
      * <pre>
-     *  digjkibgfpf
+     *  DEMNHEMHEBD
      * </pre>
      *
-     * <code>optional uint32 birthday = 2;</code>
+     * <code>optional uint32 birthday = 3;</code>
      * @return the birthday
      */
     public int getBirthday() {
@@ -85,10 +77,10 @@ public final class SetGameplayBirthdayCsReqOuterClass {
 
     /**
      * <pre>
-     *  digjkibgfpf
+     *  DEMNHEMHEBD
      * </pre>
      *
-     * <code>optional uint32 birthday = 2;</code>
+     * <code>optional uint32 birthday = 3;</code>
      * @param value the birthday to set
      * @return this
      */
@@ -157,7 +149,7 @@ public final class SetGameplayBirthdayCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(birthday);
       }
     }
@@ -178,7 +170,7 @@ public final class SetGameplayBirthdayCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 24: {
             // birthday
             birthday = input.readUInt32();
             bitField0_ |= 0x00000001;

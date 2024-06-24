@@ -19,16 +19,16 @@ public final class ClientMailAttachmentItemOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 1;</code>
      */
     private int itemId;
 
     /**
      * <pre>
-     *  kpjkofoacgp
+     *  GCLKLBHLMFM
      * </pre>
      *
-     * <code>optional uint32 mail_id = 12;</code>
+     * <code>optional uint32 mail_id = 6;</code>
      */
     private int mailId;
 
@@ -43,7 +43,7 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 1;</code>
      * @return whether the itemId field is set
      */
     public boolean hasItemId() {
@@ -51,7 +51,7 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 1;</code>
      * @return this
      */
     public ClientMailAttachmentItem clearItemId() {
@@ -61,7 +61,7 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 1;</code>
      * @return the itemId
      */
     public int getItemId() {
@@ -69,7 +69,7 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 1;</code>
      * @param value the itemId to set
      * @return this
      */
@@ -81,10 +81,10 @@ public final class ClientMailAttachmentItemOuterClass {
 
     /**
      * <pre>
-     *  kpjkofoacgp
+     *  GCLKLBHLMFM
      * </pre>
      *
-     * <code>optional uint32 mail_id = 12;</code>
+     * <code>optional uint32 mail_id = 6;</code>
      * @return whether the mailId field is set
      */
     public boolean hasMailId() {
@@ -93,10 +93,10 @@ public final class ClientMailAttachmentItemOuterClass {
 
     /**
      * <pre>
-     *  kpjkofoacgp
+     *  GCLKLBHLMFM
      * </pre>
      *
-     * <code>optional uint32 mail_id = 12;</code>
+     * <code>optional uint32 mail_id = 6;</code>
      * @return this
      */
     public ClientMailAttachmentItem clearMailId() {
@@ -107,10 +107,10 @@ public final class ClientMailAttachmentItemOuterClass {
 
     /**
      * <pre>
-     *  kpjkofoacgp
+     *  GCLKLBHLMFM
      * </pre>
      *
-     * <code>optional uint32 mail_id = 12;</code>
+     * <code>optional uint32 mail_id = 6;</code>
      * @return the mailId
      */
     public int getMailId() {
@@ -119,10 +119,10 @@ public final class ClientMailAttachmentItemOuterClass {
 
     /**
      * <pre>
-     *  kpjkofoacgp
+     *  GCLKLBHLMFM
      * </pre>
      *
-     * <code>optional uint32 mail_id = 12;</code>
+     * <code>optional uint32 mail_id = 6;</code>
      * @param value the mailId to set
      * @return this
      */
@@ -197,11 +197,11 @@ public final class ClientMailAttachmentItemOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(itemId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(mailId);
       }
     }
@@ -225,16 +225,16 @@ public final class ClientMailAttachmentItemOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 8: {
             // itemId
             itemId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 48) {
               break;
             }
           }
-          case 96: {
+          case 48: {
             // mailId
             mailId = input.readUInt32();
             bitField0_ |= 0x00000002;

@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MailTypeOuterClass {
   /**
+   * <pre>
+   *  FNAIBDHKPEI
+   * </pre>
+   *
    * Protobuf enum {@code MailType}
    */
   public enum MailType implements ProtoEnum<MailType> {

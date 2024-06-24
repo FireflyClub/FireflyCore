@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class FeverTimeAvatarOuterClass {
   /**
    * <pre>
-   *  Elobjommkdo
+   *  LNAPBOJEOLH
    * </pre>
    *
    * Protobuf type {@code FeverTimeAvatar}
@@ -37,7 +37,7 @@ public final class FeverTimeAvatarOuterClass {
 
     /**
      * <pre>
-     *  Elobjommkdo
+     *  LNAPBOJEOLH
      * </pre>
      *
      * @return a new empty instance of {@code FeverTimeAvatar}

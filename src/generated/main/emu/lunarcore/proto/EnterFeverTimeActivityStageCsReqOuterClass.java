@@ -15,7 +15,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class EnterFeverTimeActivityStageCsReqOuterClass {
   /**
    * <pre>
-   *  Aibibkegjbg
+   *  BHCNIGIKHMN
    * </pre>
    *
    * Protobuf type {@code EnterFeverTimeActivityStageCsReq}
@@ -24,17 +24,22 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     */
+    private int gLLKFHKKKBG;
+
+    /**
+     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     */
+    private int aOGOLEIEOKG;
+
+    /**
+     * <code>optional uint32 id = 11;</code>
      */
     private int id;
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      */
     private final RepeatedMessage<FeverTimeAvatarOuterClass.FeverTimeAvatar> avatarList = RepeatedMessage.newEmptyInstance(FeverTimeAvatarOuterClass.FeverTimeAvatar.getFactory());
 
@@ -43,7 +48,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
 
     /**
      * <pre>
-     *  Aibibkegjbg
+     *  BHCNIGIKHMN
      * </pre>
      *
      * @return a new empty instance of {@code EnterFeverTimeActivityStageCsReq}
@@ -53,25 +58,99 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
-     * @return whether the id field is set
+     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * @return whether the gLLKFHKKKBG field is set
      */
-    public boolean hasId() {
+    public boolean hasGLLKFHKKKBG() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * @return this
+     */
+    public EnterFeverTimeActivityStageCsReq clearGLLKFHKKKBG() {
+      bitField0_ &= ~0x00000001;
+      gLLKFHKKKBG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * @return the gLLKFHKKKBG
+     */
+    public int getGLLKFHKKKBG() {
+      return gLLKFHKKKBG;
+    }
+
+    /**
+     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * @param value the gLLKFHKKKBG to set
+     * @return this
+     */
+    public EnterFeverTimeActivityStageCsReq setGLLKFHKKKBG(final int value) {
+      bitField0_ |= 0x00000001;
+      gLLKFHKKKBG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * @return whether the aOGOLEIEOKG field is set
+     */
+    public boolean hasAOGOLEIEOKG() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * @return this
+     */
+    public EnterFeverTimeActivityStageCsReq clearAOGOLEIEOKG() {
+      bitField0_ &= ~0x00000002;
+      aOGOLEIEOKG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * @return the aOGOLEIEOKG
+     */
+    public int getAOGOLEIEOKG() {
+      return aOGOLEIEOKG;
+    }
+
+    /**
+     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * @param value the aOGOLEIEOKG to set
+     * @return this
+     */
+    public EnterFeverTimeActivityStageCsReq setAOGOLEIEOKG(final int value) {
+      bitField0_ |= 0x00000002;
+      aOGOLEIEOKG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 id = 11;</code>
+     * @return whether the id field is set
+     */
+    public boolean hasId() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 id = 11;</code>
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq clearId() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000004;
       id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 11;</code>
      * @return the id
      */
     public int getId() {
@@ -79,51 +158,36 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 11;</code>
      * @param value the id to set
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq setId(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000004;
       id = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      * @return whether the avatarList field is set
      */
     public boolean hasAvatarList() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq clearAvatarList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000008;
       avatarList.clear();
       return this;
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -137,12 +201,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -151,40 +210,30 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<FeverTimeAvatarOuterClass.FeverTimeAvatar> getMutableAvatarList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000008;
       return avatarList;
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      * @param value the avatarList to add
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq addAvatarList(
         final FeverTimeAvatarOuterClass.FeverTimeAvatar value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000008;
       avatarList.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     *  uint32 nfbfjahfnne = 9;
-     *  uint32 mgnmdcnnlbo = 10;
-     * </pre>
-     *
-     * <code>repeated .FeverTimeAvatar avatar_list = 15;</code>
+     * <code>repeated .FeverTimeAvatar avatar_list = 13;</code>
      * @param values the avatarList to add
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq addAllAvatarList(
         final FeverTimeAvatarOuterClass.FeverTimeAvatar... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000008;
       avatarList.addAll(values);
       return this;
     }
@@ -194,6 +243,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        gLLKFHKKKBG = other.gLLKFHKKKBG;
+        aOGOLEIEOKG = other.aOGOLEIEOKG;
         id = other.id;
         avatarList.copyFrom(other.avatarList);
       }
@@ -207,6 +258,12 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasGLLKFHKKKBG()) {
+        setGLLKFHKKKBG(other.gLLKFHKKKBG);
+      }
+      if (other.hasAOGOLEIEOKG()) {
+        setAOGOLEIEOKG(other.aOGOLEIEOKG);
+      }
       if (other.hasId()) {
         setId(other.id);
       }
@@ -223,6 +280,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      gLLKFHKKKBG = 0;
+      aOGOLEIEOKG = 0;
       id = 0;
       avatarList.clear();
       return this;
@@ -249,6 +308,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       EnterFeverTimeActivityStageCsReq other = (EnterFeverTimeActivityStageCsReq) o;
       return bitField0_ == other.bitField0_
+        && (!hasGLLKFHKKKBG() || gLLKFHKKKBG == other.gLLKFHKKKBG)
+        && (!hasAOGOLEIEOKG() || aOGOLEIEOKG == other.aOGOLEIEOKG)
         && (!hasId() || id == other.id)
         && (!hasAvatarList() || avatarList.equals(other.avatarList));
     }
@@ -256,12 +317,20 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(id);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(gLLKFHKKKBG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(aOGOLEIEOKG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(id);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < avatarList.length(); i++) {
-          output.writeRawByte((byte) 122);
+          output.writeRawByte((byte) 106);
           output.writeMessageNoTag(avatarList.get(i));
         }
       }
@@ -271,9 +340,15 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gLLKFHKKKBG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(aOGOLEIEOKG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * avatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarList);
       }
       return size;
@@ -286,19 +361,37 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
-            // id
-            id = input.readUInt32();
+          case 16: {
+            // gLLKFHKKKBG
+            gLLKFHKKKBG = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 40) {
               break;
             }
           }
-          case 122: {
+          case 40: {
+            // aOGOLEIEOKG
+            aOGOLEIEOKG = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // id
+            id = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
             }
@@ -321,9 +414,15 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.gLLKFHKKKBG, gLLKFHKKKBG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.aOGOLEIEOKG, aOGOLEIEOKG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.id, id);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.avatarList, avatarList);
       }
       output.endObject();
@@ -336,11 +435,33 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 983138122: {
+            if (input.isAtField(FieldNames.gLLKFHKKKBG)) {
+              if (!input.trySkipNullValue()) {
+                gLLKFHKKKBG = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1938805984: {
+            if (input.isAtField(FieldNames.aOGOLEIEOKG)) {
+              if (!input.trySkipNullValue()) {
+                aOGOLEIEOKG = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 3355: {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -352,7 +473,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
             if (input.isAtField(FieldNames.avatarList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(avatarList);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -414,6 +535,10 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName gLLKFHKKKBG = FieldName.forField("GLLKFHKKKBG");
+
+      static final FieldName aOGOLEIEOKG = FieldName.forField("AOGOLEIEOKG");
+
       static final FieldName id = FieldName.forField("id");
 
       static final FieldName avatarList = FieldName.forField("avatarList", "avatar_list");

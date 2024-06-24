@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ExchangeHcoinScRsp {
-    uint32 retcode = 6;
-    uint32 num = 11;
+    uint32 num = 4;
+    uint32 retcode = 12;
 }

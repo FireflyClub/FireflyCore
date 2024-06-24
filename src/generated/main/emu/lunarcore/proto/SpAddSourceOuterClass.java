@@ -20,11 +20,19 @@ public final class SpAddSourceOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  IDIBPHLJGBF
+     * </pre>
+     *
      * <code>optional uint32 sp_add = 2;</code>
      */
     private int spAdd;
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      */
     private final Utf8String source = Utf8String.newEmptyInstance();
@@ -40,6 +48,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDIBPHLJGBF
+     * </pre>
+     *
      * <code>optional uint32 sp_add = 2;</code>
      * @return whether the spAdd field is set
      */
@@ -48,6 +60,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDIBPHLJGBF
+     * </pre>
+     *
      * <code>optional uint32 sp_add = 2;</code>
      * @return this
      */
@@ -58,6 +74,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDIBPHLJGBF
+     * </pre>
+     *
      * <code>optional uint32 sp_add = 2;</code>
      * @return the spAdd
      */
@@ -66,6 +86,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  IDIBPHLJGBF
+     * </pre>
+     *
      * <code>optional uint32 sp_add = 2;</code>
      * @param value the spAdd to set
      * @return this
@@ -77,6 +101,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @return whether the source field is set
      */
@@ -85,6 +113,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @return this
      */
@@ -95,6 +127,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @return the source
      */
@@ -103,6 +139,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @return internal {@code Utf8String} representation of source for reading
      */
@@ -111,6 +151,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @return internal {@code Utf8String} representation of source for modifications
      */
@@ -120,6 +164,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @param value the source to set
      * @return this
@@ -131,6 +179,10 @@ public final class SpAddSourceOuterClass {
     }
 
     /**
+     * <pre>
+     *  JOKHNEEFPOP
+     * </pre>
+     *
      * <code>optional string source = 1;</code>
      * @param value the source to set
      * @return this

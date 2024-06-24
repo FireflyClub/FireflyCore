@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SetFriendMarkCsReqOuterClass {
   /**
    * <pre>
-   *  Blkkadengbd
+   *  MOJIHIGKFCN
    * </pre>
    *
    * Protobuf type {@code SetFriendMarkCsReq}
@@ -23,16 +23,16 @@ public final class SetFriendMarkCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 7;</code>
      */
     private int uid;
 
     /**
      * <pre>
-     *  khebcpipadb
+     *  HHDMJFGDKMM
      * </pre>
      *
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 1;</code>
      */
     private boolean isSetMark;
 
@@ -41,7 +41,7 @@ public final class SetFriendMarkCsReqOuterClass {
 
     /**
      * <pre>
-     *  Blkkadengbd
+     *  MOJIHIGKFCN
      * </pre>
      *
      * @return a new empty instance of {@code SetFriendMarkCsReq}
@@ -51,7 +51,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 7;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -59,7 +59,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 7;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearUid() {
@@ -69,7 +69,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 7;</code>
      * @return the uid
      */
     public int getUid() {
@@ -77,7 +77,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 7;</code>
      * @param value the uid to set
      * @return this
      */
@@ -89,10 +89,10 @@ public final class SetFriendMarkCsReqOuterClass {
 
     /**
      * <pre>
-     *  khebcpipadb
+     *  HHDMJFGDKMM
      * </pre>
      *
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 1;</code>
      * @return whether the isSetMark field is set
      */
     public boolean hasIsSetMark() {
@@ -101,10 +101,10 @@ public final class SetFriendMarkCsReqOuterClass {
 
     /**
      * <pre>
-     *  khebcpipadb
+     *  HHDMJFGDKMM
      * </pre>
      *
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 1;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearIsSetMark() {
@@ -115,10 +115,10 @@ public final class SetFriendMarkCsReqOuterClass {
 
     /**
      * <pre>
-     *  khebcpipadb
+     *  HHDMJFGDKMM
      * </pre>
      *
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 1;</code>
      * @return the isSetMark
      */
     public boolean getIsSetMark() {
@@ -127,10 +127,10 @@ public final class SetFriendMarkCsReqOuterClass {
 
     /**
      * <pre>
-     *  khebcpipadb
+     *  HHDMJFGDKMM
      * </pre>
      *
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 1;</code>
      * @param value the isSetMark to set
      * @return this
      */
@@ -205,11 +205,11 @@ public final class SetFriendMarkCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 8);
         output.writeBoolNoTag(isSetMark);
       }
     }
@@ -233,16 +233,16 @@ public final class SetFriendMarkCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 56: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 8) {
               break;
             }
           }
-          case 88: {
+          case 8: {
             // isSetMark
             isSetMark = input.readBool();
             bitField0_ |= 0x00000002;

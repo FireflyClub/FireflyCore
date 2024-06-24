@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class TakePromotionRewardCsReqOuterClass {
   /**
-   * <pre>
-   *  Ojflcokojlp
-   * </pre>
-   *
    * Protobuf type {@code TakePromotionRewardCsReq}
    */
   public static final class TakePromotionRewardCsReq extends ProtoMessage<TakePromotionRewardCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 base_avatar_id = 1;</code>
+     * <code>optional uint32 scene_avatar_id = 7;</code>
      */
-    private int baseAvatarId;
+    private int sceneAvatarId;
 
     /**
-     * <code>optional uint32 promotion = 2;</code>
+     * <code>optional uint32 promotion = 15;</code>
      */
     private int promotion;
 
@@ -36,10 +32,6 @@ public final class TakePromotionRewardCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ojflcokojlp
-     * </pre>
-     *
      * @return a new empty instance of {@code TakePromotionRewardCsReq}
      */
     public static TakePromotionRewardCsReq newInstance() {
@@ -47,44 +39,44 @@ public final class TakePromotionRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 1;</code>
-     * @return whether the baseAvatarId field is set
+     * <code>optional uint32 scene_avatar_id = 7;</code>
+     * @return whether the sceneAvatarId field is set
      */
-    public boolean hasBaseAvatarId() {
+    public boolean hasSceneAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 1;</code>
+     * <code>optional uint32 scene_avatar_id = 7;</code>
      * @return this
      */
-    public TakePromotionRewardCsReq clearBaseAvatarId() {
+    public TakePromotionRewardCsReq clearSceneAvatarId() {
       bitField0_ &= ~0x00000001;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 1;</code>
-     * @return the baseAvatarId
+     * <code>optional uint32 scene_avatar_id = 7;</code>
+     * @return the sceneAvatarId
      */
-    public int getBaseAvatarId() {
-      return baseAvatarId;
+    public int getSceneAvatarId() {
+      return sceneAvatarId;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 1;</code>
-     * @param value the baseAvatarId to set
+     * <code>optional uint32 scene_avatar_id = 7;</code>
+     * @param value the sceneAvatarId to set
      * @return this
      */
-    public TakePromotionRewardCsReq setBaseAvatarId(final int value) {
+    public TakePromotionRewardCsReq setSceneAvatarId(final int value) {
       bitField0_ |= 0x00000001;
-      baseAvatarId = value;
+      sceneAvatarId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 promotion = 2;</code>
+     * <code>optional uint32 promotion = 15;</code>
      * @return whether the promotion field is set
      */
     public boolean hasPromotion() {
@@ -92,7 +84,7 @@ public final class TakePromotionRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 promotion = 2;</code>
+     * <code>optional uint32 promotion = 15;</code>
      * @return this
      */
     public TakePromotionRewardCsReq clearPromotion() {
@@ -102,7 +94,7 @@ public final class TakePromotionRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 promotion = 2;</code>
+     * <code>optional uint32 promotion = 15;</code>
      * @return the promotion
      */
     public int getPromotion() {
@@ -110,7 +102,7 @@ public final class TakePromotionRewardCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 promotion = 2;</code>
+     * <code>optional uint32 promotion = 15;</code>
      * @param value the promotion to set
      * @return this
      */
@@ -125,7 +117,7 @@ public final class TakePromotionRewardCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        baseAvatarId = other.baseAvatarId;
+        sceneAvatarId = other.sceneAvatarId;
         promotion = other.promotion;
       }
       return this;
@@ -137,8 +129,8 @@ public final class TakePromotionRewardCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBaseAvatarId()) {
-        setBaseAvatarId(other.baseAvatarId);
+      if (other.hasSceneAvatarId()) {
+        setSceneAvatarId(other.sceneAvatarId);
       }
       if (other.hasPromotion()) {
         setPromotion(other.promotion);
@@ -153,7 +145,7 @@ public final class TakePromotionRewardCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      baseAvatarId = 0;
+      sceneAvatarId = 0;
       promotion = 0;
       return this;
     }
@@ -178,18 +170,18 @@ public final class TakePromotionRewardCsReqOuterClass {
       }
       TakePromotionRewardCsReq other = (TakePromotionRewardCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
+        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
         && (!hasPromotion() || promotion == other.promotion);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(baseAvatarId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(promotion);
       }
     }
@@ -198,7 +190,7 @@ public final class TakePromotionRewardCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(promotion);
@@ -213,16 +205,16 @@ public final class TakePromotionRewardCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // baseAvatarId
-            baseAvatarId = input.readUInt32();
+          case 56: {
+            // sceneAvatarId
+            sceneAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 120) {
               break;
             }
           }
-          case 16: {
+          case 120: {
             // promotion
             promotion = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -249,7 +241,7 @@ public final class TakePromotionRewardCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
+        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.promotion, promotion);
@@ -264,11 +256,11 @@ public final class TakePromotionRewardCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 118022725:
-          case -1756826157: {
-            if (input.isAtField(FieldNames.baseAvatarId)) {
+          case -1044772608:
+          case 1783323086: {
+            if (input.isAtField(FieldNames.sceneAvatarId)) {
               if (!input.trySkipNullValue()) {
-                baseAvatarId = input.readUInt32();
+                sceneAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -340,7 +332,7 @@ public final class TakePromotionRewardCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
+      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
 
       static final FieldName promotion = FieldName.forField("promotion");
     }

@@ -6,7 +6,7 @@ import "FeverTimeActivityType.proto";
 
 // Emmdfkhifnc
 message FeverTimeActivityData {
-	// uint32 mknekdcpcek = 4;
-	// uint32 bhbecnkompb = 8;
-	FeverTimeActivityType activity_type = 10; // laagoebdffg
+	uint32 BOCMDBMJBJP = 13;
+	FeverTimeActivityType activity_data_type = 4; // EMAEKKJJLNP
+	uint32 DFGOPDJPKNA = 12;
 }

@@ -14,7 +14,7 @@ public class HandlerTakeOffEquipmentCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = TakeOffEquipmentCsReq.parseFrom(data);
 
-        session.getPlayer().getInventory().unequipItem(req.getEquipAvatarId(), GameConstants.EQUIPMENT_SLOT_ID);
+        session.getPlayer().getInventory().unequipItem(req.getAvatarId(), GameConstants.EQUIPMENT_SLOT_ID);
         session.send(CmdId.TakeOffEquipmentScRsp);
     }
 

@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "WolfBroGameData.proto";
 
-// Ohffcbbgfai
 message QuitWolfBroGameScRsp {
-	uint32 retcode = 1;
-	WolfBroGameData wolf_bro_game_data = 6;
+	uint32 retcode = 8;
+	WolfBroGameData wolf_bro_game_data = 11;
 }

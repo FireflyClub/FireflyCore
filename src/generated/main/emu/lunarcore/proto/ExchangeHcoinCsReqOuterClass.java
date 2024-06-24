@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ExchangeHcoinCsReqOuterClass {
   /**
-   * <pre>
-   *  Pknfpedjhkm
-   * </pre>
-   *
    * Protobuf type {@code ExchangeHcoinCsReq}
    */
   public static final class ExchangeHcoinCsReq extends ProtoMessage<ExchangeHcoinCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 5;</code>
      */
     private int num;
 
@@ -31,10 +27,6 @@ public final class ExchangeHcoinCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Pknfpedjhkm
-     * </pre>
-     *
      * @return a new empty instance of {@code ExchangeHcoinCsReq}
      */
     public static ExchangeHcoinCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class ExchangeHcoinCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -50,7 +42,7 @@ public final class ExchangeHcoinCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return this
      */
     public ExchangeHcoinCsReq clearNum() {
@@ -60,7 +52,7 @@ public final class ExchangeHcoinCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 5;</code>
      * @return the num
      */
     public int getNum() {
@@ -68,7 +60,7 @@ public final class ExchangeHcoinCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 5;</code>
      * @param value the num to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class ExchangeHcoinCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(num);
       }
     }
@@ -158,7 +150,7 @@ public final class ExchangeHcoinCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 40: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000001;

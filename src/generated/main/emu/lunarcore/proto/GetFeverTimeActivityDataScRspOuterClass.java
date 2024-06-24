@@ -15,7 +15,7 @@ import us.hebi.quickbuf.RepeatedMessage;
 public final class GetFeverTimeActivityDataScRspOuterClass {
   /**
    * <pre>
-   *  Pbgibklblmp
+   *  IOFFGCPMKDE
    * </pre>
    *
    * Protobuf type {@code GetFeverTimeActivityDataScRsp}
@@ -24,13 +24,13 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -42,7 +42,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  Pbgibklblmp
+     *  IOFFGCPMKDE
      * </pre>
      *
      * @return a new empty instance of {@code GetFeverTimeActivityDataScRsp}
@@ -52,7 +52,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -60,7 +60,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public GetFeverTimeActivityDataScRsp clearRetcode() {
@@ -70,7 +70,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -78,7 +78,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -90,7 +90,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -102,7 +102,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -116,7 +116,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -135,7 +135,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -154,7 +154,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -170,7 +170,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
 
     /**
      * <pre>
-     *  dehehfcpanl
+     *  GKPELLBBJFB
      * </pre>
      *
      * <code>repeated .FeverTimeActivityData activity_data = 7;</code>
@@ -250,7 +250,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -280,7 +280,7 @@ public final class GetFeverTimeActivityDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 32: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;

@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ArchiveWolfBroGameCsReqOuterClass {
   /**
-   * <pre>
-   *  Bldabflkhgd
-   * </pre>
-   *
    * Protobuf type {@code ArchiveWolfBroGameCsReq}
    */
   public static final class ArchiveWolfBroGameCsReq extends ProtoMessage<ArchiveWolfBroGameCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 4;</code>
+     * <code>optional uint32 id = 6;</code>
      */
     private int id;
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -36,10 +32,6 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Bldabflkhgd
-     * </pre>
-     *
      * @return a new empty instance of {@code ArchiveWolfBroGameCsReq}
      */
     public static ArchiveWolfBroGameCsReq newInstance() {
@@ -47,7 +39,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 4;</code>
+     * <code>optional uint32 id = 6;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -55,7 +47,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 4;</code>
+     * <code>optional uint32 id = 6;</code>
      * @return this
      */
     public ArchiveWolfBroGameCsReq clearId() {
@@ -65,7 +57,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 4;</code>
+     * <code>optional uint32 id = 6;</code>
      * @return the id
      */
     public int getId() {
@@ -73,7 +65,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 4;</code>
+     * <code>optional uint32 id = 6;</code>
      * @param value the id to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -92,7 +84,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      * @return this
      */
     public ArchiveWolfBroGameCsReq clearMotion() {
@@ -102,7 +94,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 12;</code>
+     * <code>optional .MotionInfo motion = 8;</code>
      * @param value the motion to set
      * @return this
      */
@@ -206,11 +198,11 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(motion);
       }
     }
@@ -234,16 +226,16 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 48: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 66) {
               break;
             }
           }
-          case 98: {
+          case 66: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000002;

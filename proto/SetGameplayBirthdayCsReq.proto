@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Lpaemppnflj
 message SetGameplayBirthdayCsReq {
-    uint32 birthday = 2; // digjkibgfpf
+    uint32 birthday = 3; // DEMNHEMHEBD
 }

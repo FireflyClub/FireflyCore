@@ -1,14 +1,42 @@
 [
 	{
-	  "activityId": 50020,
-	  "beginTime": 1664308800,
-	  "endTime": 4294967295,
-	  "moduleId": 5002000
+		"activityId": 1005801,
+		"moduleId": 10058,
+		"beginTime": 1664308800,
+		"endTime": 4294967295,
+		"tabName": "Gift of Odyssey",
+		"contentId": 0
 	},
 	{
-	  "activityId": 50015,
-	  "beginTime": 1664308800,
-	  "endTime": 4294967295,
-	  "moduleId": 5001501
+		"activityId": 2003900,
+		"moduleId": 20039,
+		"beginTime": 1664308800,
+		"endTime": 4294967295,
+		"tabName": "Aptitude Showcase",
+		"contentId": 0
+	},
+	{
+		"activityId": 5001500,
+		"moduleId": 50015,
+		"beginTime": 1664308800,
+		"endTime": 4294967295,
+		"tabName": "Saga of Primaveral Blade",
+		"contentId": 150015
+	},
+	{
+		"activityId": 5001701,
+		"moduleId": 50017,
+		"beginTime": 1664308800,
+		"endTime": 4294967295,
+		"tabName": "Operation Memoria Snapshot",
+		"contentId": 150017
+	},
+	{
+		"activityId": 5002001,
+		"moduleId": 50020,
+		"beginTime": 1664308800,
+		"endTime": 4294967295,
+		"tabName": "Trailblaze: Friendship Is Magic!",
+		"contentId": 0
 	}
 ]

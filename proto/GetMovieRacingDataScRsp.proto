@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "RacingData.proto";
 
-// Lepnladjina
 message GetMovieRacingDataScRsp {
-	repeated RacingData racing_data = 8;
-	uint32 retcode = 9;
+	repeated RacingData racing_data = 14; // JPJEFOIFEKC
+	uint32 retcode = 1;
 }

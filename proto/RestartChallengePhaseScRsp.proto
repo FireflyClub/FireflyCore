@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SceneInfo.proto";
 
-// Eobijbhdlbp
+// AOCLGEBPHNJ
 message RestartChallengePhaseScRsp {
-    uint32 retcode = 2;
-    SceneInfo scene = 11;
+    uint32 retcode = 1;
+    SceneInfo scene = 8;
 }

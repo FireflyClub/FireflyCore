@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RestoreWolfBroGameArchiveScRspOuterClass {
   /**
-   * <pre>
-   *  Amindjonjpm
-   * </pre>
-   *
    * Protobuf type {@code RestoreWolfBroGameArchiveScRsp}
    */
   public static final class RestoreWolfBroGameArchiveScRsp extends ProtoMessage<RestoreWolfBroGameArchiveScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      */
     private final WolfBroGameDataOuterClass.WolfBroGameData wolfBroGameData = WolfBroGameDataOuterClass.WolfBroGameData.newInstance();
 
@@ -36,10 +32,6 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Amindjonjpm
-     * </pre>
-     *
      * @return a new empty instance of {@code RestoreWolfBroGameArchiveScRsp}
      */
     public static RestoreWolfBroGameArchiveScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +47,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public RestoreWolfBroGameArchiveScRsp clearRetcode() {
@@ -65,7 +57,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +65,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      * @return whether the wolfBroGameData field is set
      */
     public boolean hasWolfBroGameData() {
@@ -92,7 +84,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      * @return this
      */
     public RestoreWolfBroGameArchiveScRsp clearWolfBroGameData() {
@@ -102,7 +94,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 11;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 12;</code>
      * @param value the wolfBroGameData to set
      * @return this
      */
@@ -207,11 +199,11 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 98);
         output.writeMessageNoTag(wolfBroGameData);
       }
     }
@@ -235,16 +227,16 @@ public final class RestoreWolfBroGameArchiveScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 98) {
               break;
             }
           }
-          case 90: {
+          case 98: {
             // wolfBroGameData
             input.readMessage(wolfBroGameData);
             bitField0_ |= 0x00000002;

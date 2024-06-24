@@ -6,6 +6,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class FriendApplySourceOuterClass {
   /**
+   * <pre>
+   *  KAMMNBKBEOL
+   * </pre>
+   *
    * Protobuf enum {@code FriendApplySource}
    */
   public enum FriendApplySource implements ProtoEnum<FriendApplySource> {

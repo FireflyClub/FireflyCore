@@ -7,7 +7,7 @@ import us.hebi.quickbuf.ProtoUtil;
 public final class MovieRacingTypeOuterClass {
   /**
    * <pre>
-   *  Doipbglcoog
+   *  HBHPONEOFGF
    * </pre>
    *
    * Protobuf enum {@code MovieRacingType}

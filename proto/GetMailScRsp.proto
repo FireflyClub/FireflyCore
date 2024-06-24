@@ -5,10 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "ClientMail.proto";
 
 message GetMailScRsp {
-    repeated ClientMail mail_list = 2;
-    bool is_end = 1;
-    uint32 retcode = 3;
-    uint32 start = 13;
-    uint32 total_num = 14;
-    repeated ClientMail notice_mail_list = 5;
+    uint32 start = 11;
+    repeated ClientMail mail_list = 12;
+    uint32 total_num = 7;
+    bool is_end = 13;
+    uint32 retcode = 2;
+    repeated ClientMail notice_mail_list = 9;
 }

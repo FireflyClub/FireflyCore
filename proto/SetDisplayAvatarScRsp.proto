@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "DisplayAvatar.proto";
 
-// Heoaghiaggn
 message SetDisplayAvatarScRsp {
-    repeated DisplayAvatar display_avatar_list = 15;
-    uint32 retcode = 13;
+	repeated DisplayAvatar display_avatar_list = 2;
+	uint32 retcode = 3;
 }

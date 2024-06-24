@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "FeverTimeActivityData.proto";
 
-// Pbgibklblmp
+// IOFFGCPMKDE
 message GetFeverTimeActivityDataScRsp {
-	repeated FeverTimeActivityData activity_data = 7; // dehehfcpanl
-	uint32 retcode = 10;
+	repeated FeverTimeActivityData activity_data = 7; // GKPELLBBJFB
+	uint32 retcode = 4;
 }

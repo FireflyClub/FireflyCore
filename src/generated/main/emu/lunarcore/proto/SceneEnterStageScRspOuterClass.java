@@ -23,10 +23,6 @@ public final class SceneEnterStageScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
@@ -51,10 +47,6 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
@@ -63,10 +55,6 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
@@ -77,10 +65,6 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
@@ -89,10 +73,6 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this

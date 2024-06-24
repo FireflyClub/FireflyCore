@@ -4,7 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "FriendApplyInfo.proto";
 
-// Dpdamcllohd
+// ALILNGBFPJP
 message SyncApplyFriendScNotify {
-    FriendApplyInfo friend_apply_info = 4; // dgjcbnojmga
+    FriendApplyInfo friend_apply_info = 15; // MHGNMDLLJLM
 }

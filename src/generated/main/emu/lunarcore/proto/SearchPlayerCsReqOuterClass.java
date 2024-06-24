@@ -14,21 +14,22 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class SearchPlayerCsReqOuterClass {
   /**
-   * <pre>
-   *  Eolackigamn
-   * </pre>
-   *
    * Protobuf type {@code SearchPlayerCsReq}
    */
   public static final class SearchPlayerCsReq extends ProtoMessage<SearchPlayerCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     */
+    private boolean hBKFAMAFCGB;
+
+    /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
      */
     private final RepeatedInt searchUidList = RepeatedInt.newEmptyInstance();
 
@@ -36,10 +37,6 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Eolackigamn
-     * </pre>
-     *
      * @return a new empty instance of {@code SearchPlayerCsReq}
      */
     public static SearchPlayerCsReq newInstance() {
@@ -47,37 +44,74 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  flfkkbbiaan
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 6;</code>
-     * @return whether the searchUidList field is set
+     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * @return whether the hBKFAMAFCGB field is set
      */
-    public boolean hasSearchUidList() {
+    public boolean hasHBKFAMAFCGB() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
+     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * @return this
+     */
+    public SearchPlayerCsReq clearHBKFAMAFCGB() {
+      bitField0_ &= ~0x00000001;
+      hBKFAMAFCGB = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * @return the hBKFAMAFCGB
+     */
+    public boolean getHBKFAMAFCGB() {
+      return hBKFAMAFCGB;
+    }
+
+    /**
+     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * @param value the hBKFAMAFCGB to set
+     * @return this
+     */
+    public SearchPlayerCsReq setHBKFAMAFCGB(final boolean value) {
+      bitField0_ |= 0x00000001;
+      hBKFAMAFCGB = value;
+      return this;
+    }
+
+    /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
+     * @return whether the searchUidList field is set
+     */
+    public boolean hasSearchUidList() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  PFKNLFKIJHD
+     * </pre>
+     *
+     * <code>repeated uint32 search_uid_list = 7;</code>
      * @return this
      */
     public SearchPlayerCsReq clearSearchUidList() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       searchUidList.clear();
       return this;
     }
 
     /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,10 +126,10 @@ public final class SearchPlayerCsReqOuterClass {
 
     /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -104,36 +138,36 @@ public final class SearchPlayerCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableSearchUidList() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       return searchUidList;
     }
 
     /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
      * @param value the searchUidList to add
      * @return this
      */
     public SearchPlayerCsReq addSearchUidList(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       searchUidList.add(value);
       return this;
     }
 
     /**
      * <pre>
-     *  flfkkbbiaan
+     *  PFKNLFKIJHD
      * </pre>
      *
-     * <code>repeated uint32 search_uid_list = 6;</code>
+     * <code>repeated uint32 search_uid_list = 7;</code>
      * @param values the searchUidList to add
      * @return this
      */
     public SearchPlayerCsReq addAllSearchUidList(final int... values) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       searchUidList.addAll(values);
       return this;
     }
@@ -143,6 +177,7 @@ public final class SearchPlayerCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        hBKFAMAFCGB = other.hBKFAMAFCGB;
         searchUidList.copyFrom(other.searchUidList);
       }
       return this;
@@ -154,6 +189,9 @@ public final class SearchPlayerCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasHBKFAMAFCGB()) {
+        setHBKFAMAFCGB(other.hBKFAMAFCGB);
+      }
       if (other.hasSearchUidList()) {
         getMutableSearchUidList().addAll(other.searchUidList);
       }
@@ -167,6 +205,7 @@ public final class SearchPlayerCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      hBKFAMAFCGB = false;
       searchUidList.clear();
       return this;
     }
@@ -192,14 +231,19 @@ public final class SearchPlayerCsReqOuterClass {
       }
       SearchPlayerCsReq other = (SearchPlayerCsReq) o;
       return bitField0_ == other.bitField0_
+        && (!hasHBKFAMAFCGB() || hBKFAMAFCGB == other.hBKFAMAFCGB)
         && (!hasSearchUidList() || searchUidList.equals(other.searchUidList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 64);
+        output.writeBoolNoTag(hBKFAMAFCGB);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < searchUidList.length(); i++) {
-          output.writeRawByte((byte) 48);
+          output.writeRawByte((byte) 56);
           output.writeUInt32NoTag(searchUidList.array()[i]);
         }
       }
@@ -209,6 +253,9 @@ public final class SearchPlayerCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         size += (1 * searchUidList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(searchUidList);
       }
       return size;
@@ -221,10 +268,19 @@ public final class SearchPlayerCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 50: {
+          case 64: {
+            // hBKFAMAFCGB
+            hBKFAMAFCGB = input.readBool();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
             // searchUidList [packed=true]
             input.readPackedUInt32(searchUidList, tag);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -240,10 +296,10 @@ public final class SearchPlayerCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
+          case 56: {
             // searchUidList [packed=false]
             tag = input.readRepeatedUInt32(searchUidList, tag);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             break;
           }
         }
@@ -254,6 +310,9 @@ public final class SearchPlayerCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeBool(FieldNames.hBKFAMAFCGB, hBKFAMAFCGB);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedUInt32(FieldNames.searchUidList, searchUidList);
       }
       output.endObject();
@@ -266,12 +325,23 @@ public final class SearchPlayerCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -1469105160: {
+            if (input.isAtField(FieldNames.hBKFAMAFCGB)) {
+              if (!input.trySkipNullValue()) {
+                hBKFAMAFCGB = input.readBool();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 881018438:
           case -85426204: {
             if (input.isAtField(FieldNames.searchUidList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(searchUidList);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -331,6 +401,8 @@ public final class SearchPlayerCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName hBKFAMAFCGB = FieldName.forField("HBKFAMAFCGB");
+
       static final FieldName searchUidList = FieldName.forField("searchUidList", "search_uid_list");
     }
   }

@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemList.proto";
 
-// Igmfggcgfof
 message TakePromotionRewardScRsp {
-    uint32 retcode = 6;
-    ItemList reward_list = 13; // iineebblofp
+    ItemList reward_list = 1; // OIBPBEEBFNA
+    uint32 retcode = 9;
 }

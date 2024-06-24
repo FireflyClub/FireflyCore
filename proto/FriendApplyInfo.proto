@@ -4,6 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "SimpleInfo.proto";
 
+// MFPFLKBHFCB
 message FriendApplyInfo {
-	SimpleInfo simple_info = 12;
+	SimpleInfo simple_info = 9;
+	int64 BIDBCBGACID = 1;
 }

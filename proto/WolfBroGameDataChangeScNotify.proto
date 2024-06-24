@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "WolfBroGameData.proto";
 
-// Opbmfoooacc
 message WolfBroGameDataChangeScNotify {
-	WolfBroGameData wolf_bro_game_data = 7;
+	WolfBroGameData wolf_bro_game_data = 3;
 }

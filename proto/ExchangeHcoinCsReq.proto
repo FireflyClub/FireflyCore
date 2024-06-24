@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Pknfpedjhkm
 message ExchangeHcoinCsReq {
-    uint32 num = 11;
+    uint32 num = 5;
 }

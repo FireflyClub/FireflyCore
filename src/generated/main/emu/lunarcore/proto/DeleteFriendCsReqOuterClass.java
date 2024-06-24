@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class DeleteFriendCsReqOuterClass {
   /**
    * <pre>
-   *  Apbkmnlcknn
+   *  KDALEEMPHKM
    * </pre>
    *
    * Protobuf type {@code DeleteFriendCsReq}
@@ -24,10 +24,10 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 kjpnhekkpnf = 3;
+     *  uint32 EBMFGJFOBMA = 6;
      * </pre>
      *
-     * <code>optional uint32 uid = 10;</code>
+     * <code>optional uint32 uid = 11;</code>
      */
     private int uid;
 
@@ -36,7 +36,7 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  Apbkmnlcknn
+     *  KDALEEMPHKM
      * </pre>
      *
      * @return a new empty instance of {@code DeleteFriendCsReq}
@@ -47,10 +47,10 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 kjpnhekkpnf = 3;
+     *  uint32 EBMFGJFOBMA = 6;
      * </pre>
      *
-     * <code>optional uint32 uid = 10;</code>
+     * <code>optional uint32 uid = 11;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -59,10 +59,10 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 kjpnhekkpnf = 3;
+     *  uint32 EBMFGJFOBMA = 6;
      * </pre>
      *
-     * <code>optional uint32 uid = 10;</code>
+     * <code>optional uint32 uid = 11;</code>
      * @return this
      */
     public DeleteFriendCsReq clearUid() {
@@ -73,10 +73,10 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 kjpnhekkpnf = 3;
+     *  uint32 EBMFGJFOBMA = 6;
      * </pre>
      *
-     * <code>optional uint32 uid = 10;</code>
+     * <code>optional uint32 uid = 11;</code>
      * @return the uid
      */
     public int getUid() {
@@ -85,10 +85,10 @@ public final class DeleteFriendCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 kjpnhekkpnf = 3;
+     *  uint32 EBMFGJFOBMA = 6;
      * </pre>
      *
-     * <code>optional uint32 uid = 10;</code>
+     * <code>optional uint32 uid = 11;</code>
      * @param value the uid to set
      * @return this
      */
@@ -157,7 +157,7 @@ public final class DeleteFriendCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(uid);
       }
     }
@@ -178,7 +178,7 @@ public final class DeleteFriendCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 88: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;

@@ -14,7 +14,7 @@ import us.hebi.quickbuf.ProtoSource;
 public final class SyncApplyFriendScNotifyOuterClass {
   /**
    * <pre>
-   *  Dpdamcllohd
+   *  ALILNGBFPJP
    * </pre>
    *
    * Protobuf type {@code SyncApplyFriendScNotify}
@@ -24,10 +24,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      */
     private final FriendApplyInfoOuterClass.FriendApplyInfo friendApplyInfo = FriendApplyInfoOuterClass.FriendApplyInfo.newInstance();
 
@@ -36,7 +36,7 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  Dpdamcllohd
+     *  ALILNGBFPJP
      * </pre>
      *
      * @return a new empty instance of {@code SyncApplyFriendScNotify}
@@ -47,10 +47,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      * @return whether the friendApplyInfo field is set
      */
     public boolean hasFriendApplyInfo() {
@@ -59,10 +59,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      * @return this
      */
     public SyncApplyFriendScNotify clearFriendApplyInfo() {
@@ -73,10 +73,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -91,10 +91,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -109,10 +109,10 @@ public final class SyncApplyFriendScNotifyOuterClass {
 
     /**
      * <pre>
-     *  dgjcbnojmga
+     *  MHGNMDLLJLM
      * </pre>
      *
-     * <code>optional .FriendApplyInfo friend_apply_info = 4;</code>
+     * <code>optional .FriendApplyInfo friend_apply_info = 15;</code>
      * @param value the friendApplyInfo to set
      * @return this
      */
@@ -183,7 +183,7 @@ public final class SyncApplyFriendScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(friendApplyInfo);
       }
     }
@@ -204,7 +204,7 @@ public final class SyncApplyFriendScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 34: {
+          case 122: {
             // friendApplyInfo
             input.readMessage(friendApplyInfo);
             bitField0_ |= 0x00000001;

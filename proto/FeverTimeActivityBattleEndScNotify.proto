@@ -4,10 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "FeverTimeActivityType.proto";
 
-// Pehklafgcji
+// HAKDEPGCKPN
 message FeverTimeActivityBattleEndScNotify {
-	// uint32 bckigkkgpnc = 5;
-	FeverTimeActivityType activity_type = 3; // clmceanidla
-	uint32 id = 8;
-	// uint32 hmdmpebfilj = 15;
+	uint32 MJBJDIJEIHJ = 7;
+	uint32 BJINJOGKCIA = 5;
+	uint32 id = 1;
+	FeverTimeActivityType activity_type = 2; // BGENINKHNKM
 }

@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "RotatorEnergyInfo.proto";
 
-// Dnhcbllmhnc
 message UpdateEnergyScNotify {
-    RotatorEnergyInfo energy_info = 11; // lonlfnidbjn
+	RotatorEnergyInfo energy_info = 5;
 }

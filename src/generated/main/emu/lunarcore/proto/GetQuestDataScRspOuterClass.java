@@ -14,31 +14,27 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetQuestDataScRspOuterClass {
   /**
-   * <pre>
-   *  Nahgobmjpld
-   * </pre>
-   *
    * Protobuf type {@code GetQuestDataScRsp}
    */
   public static final class GetQuestDataScRsp extends ProtoMessage<GetQuestDataScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 total_achievement_exp = 10;</code>
+     * <code>optional uint32 total_achievement_exp = 15;</code>
      */
     private int totalAchievementExp;
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      */
     private final RepeatedMessage<QuestOuterClass.Quest> questList = RepeatedMessage.newEmptyInstance(QuestOuterClass.Quest.getFactory());
 
@@ -46,10 +42,6 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  Nahgobmjpld
-     * </pre>
-     *
      * @return a new empty instance of {@code GetQuestDataScRsp}
      */
     public static GetQuestDataScRsp newInstance() {
@@ -57,7 +49,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -65,7 +57,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
     public GetQuestDataScRsp clearRetcode() {
@@ -75,7 +67,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -83,7 +75,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -94,7 +86,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 10;</code>
+     * <code>optional uint32 total_achievement_exp = 15;</code>
      * @return whether the totalAchievementExp field is set
      */
     public boolean hasTotalAchievementExp() {
@@ -102,7 +94,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 10;</code>
+     * <code>optional uint32 total_achievement_exp = 15;</code>
      * @return this
      */
     public GetQuestDataScRsp clearTotalAchievementExp() {
@@ -112,7 +104,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 10;</code>
+     * <code>optional uint32 total_achievement_exp = 15;</code>
      * @return the totalAchievementExp
      */
     public int getTotalAchievementExp() {
@@ -120,7 +112,7 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 10;</code>
+     * <code>optional uint32 total_achievement_exp = 15;</code>
      * @param value the totalAchievementExp to set
      * @return this
      */
@@ -132,10 +124,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      * @return whether the questList field is set
      */
     public boolean hasQuestList() {
@@ -144,10 +136,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      * @return this
      */
     public GetQuestDataScRsp clearQuestList() {
@@ -158,10 +150,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -176,10 +168,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -194,10 +186,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      * @param value the questList to add
      * @return this
      */
@@ -209,10 +201,10 @@ public final class GetQuestDataScRspOuterClass {
 
     /**
      * <pre>
-     * gbpfmlkagek
+     *  EHMMJOOHAOJ
      * </pre>
      *
-     * <code>repeated .Quest quest_list = 2;</code>
+     * <code>repeated .Quest quest_list = 10;</code>
      * @param values the questList to add
      * @return this
      */
@@ -294,16 +286,16 @@ public final class GetQuestDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(totalAchievementExp);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < questList.length(); i++) {
-          output.writeRawByte((byte) 18);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(questList.get(i));
         }
       }
@@ -331,25 +323,25 @@ public final class GetQuestDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 88: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 120) {
               break;
             }
           }
-          case 80: {
+          case 120: {
             // totalAchievementExp
             totalAchievementExp = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 82) {
               break;
             }
           }
-          case 18: {
+          case 82: {
             // questList
             tag = input.readRepeatedMessage(questList, tag);
             bitField0_ |= 0x00000004;

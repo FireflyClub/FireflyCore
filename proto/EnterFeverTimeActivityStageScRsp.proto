@@ -4,9 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "SceneBattleInfo.proto";
 
-// Lhdccfkommh
+// MKGOKJBNNAJ
 message EnterFeverTimeActivityStageScRsp {
-	uint32 id = 3;
-	uint32 retcode = 13;
-	SceneBattleInfo battle_info = 1;
+	uint32 id = 5;
+	SceneBattleInfo battle_info = 2;
+	uint32 retcode = 1;
 }

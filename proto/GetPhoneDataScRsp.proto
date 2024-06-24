@@ -4,8 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 message GetPhoneDataScRsp {
 	uint32 cur_phone_theme = 14;
-    repeated uint32 owned_chat_bubbles = 5; //?
+    repeated uint32 owned_phone_themes = 13; // JDFJKILIAGN
     uint32 cur_chat_bubble = 15; // DKPEMOBPLFH
-    repeated uint32 owned_phone_themes = 13; //?
+    repeated uint32 owned_chat_bubbles = 5; // BHPHCDEEOMA
     uint32 retcode = 1;
 }

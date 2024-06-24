@@ -27,18 +27,18 @@ public final class MazeChestOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 total_amount_list = 3;</code>
+     * <code>optional uint32 unlocked_amount_list = 3;</code>
      */
-    private int totalAmountList;
+    private int unlockedAmountList;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 unlocked_amount_list = 7;</code>
+     * <code>optional uint32 total_amount_list = 7;</code>
      */
-    private int unlockedAmountList;
+    private int totalAmountList;
 
     /**
      * <pre>
@@ -68,10 +68,10 @@ public final class MazeChestOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 total_amount_list = 3;</code>
-     * @return whether the totalAmountList field is set
+     * <code>optional uint32 unlocked_amount_list = 3;</code>
+     * @return whether the unlockedAmountList field is set
      */
-    public boolean hasTotalAmountList() {
+    public boolean hasUnlockedAmountList() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
@@ -80,64 +80,11 @@ public final class MazeChestOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 total_amount_list = 3;</code>
-     * @return this
-     */
-    public MazeChest clearTotalAmountList() {
-      bitField0_ &= ~0x00000001;
-      totalAmountList = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 total_amount_list = 3;</code>
-     * @return the totalAmountList
-     */
-    public int getTotalAmountList() {
-      return totalAmountList;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 total_amount_list = 3;</code>
-     * @param value the totalAmountList to set
-     * @return this
-     */
-    public MazeChest setTotalAmountList(final int value) {
-      bitField0_ |= 0x00000001;
-      totalAmountList = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 unlocked_amount_list = 7;</code>
-     * @return whether the unlockedAmountList field is set
-     */
-    public boolean hasUnlockedAmountList() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 unlocked_amount_list = 7;</code>
+     * <code>optional uint32 unlocked_amount_list = 3;</code>
      * @return this
      */
     public MazeChest clearUnlockedAmountList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       unlockedAmountList = 0;
       return this;
     }
@@ -147,7 +94,7 @@ public final class MazeChestOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 unlocked_amount_list = 7;</code>
+     * <code>optional uint32 unlocked_amount_list = 3;</code>
      * @return the unlockedAmountList
      */
     public int getUnlockedAmountList() {
@@ -159,13 +106,66 @@ public final class MazeChestOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 unlocked_amount_list = 7;</code>
+     * <code>optional uint32 unlocked_amount_list = 3;</code>
      * @param value the unlockedAmountList to set
      * @return this
      */
     public MazeChest setUnlockedAmountList(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       unlockedAmountList = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 total_amount_list = 7;</code>
+     * @return whether the totalAmountList field is set
+     */
+    public boolean hasTotalAmountList() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 total_amount_list = 7;</code>
+     * @return this
+     */
+    public MazeChest clearTotalAmountList() {
+      bitField0_ &= ~0x00000002;
+      totalAmountList = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 total_amount_list = 7;</code>
+     * @return the totalAmountList
+     */
+    public int getTotalAmountList() {
+      return totalAmountList;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 total_amount_list = 7;</code>
+     * @param value the totalAmountList to set
+     * @return this
+     */
+    public MazeChest setTotalAmountList(final int value) {
+      bitField0_ |= 0x00000002;
+      totalAmountList = value;
       return this;
     }
 
@@ -252,8 +252,8 @@ public final class MazeChestOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        totalAmountList = other.totalAmountList;
         unlockedAmountList = other.unlockedAmountList;
+        totalAmountList = other.totalAmountList;
         mapInfoChestType = other.mapInfoChestType;
       }
       return this;
@@ -265,11 +265,11 @@ public final class MazeChestOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasTotalAmountList()) {
-        setTotalAmountList(other.totalAmountList);
-      }
       if (other.hasUnlockedAmountList()) {
         setUnlockedAmountList(other.unlockedAmountList);
+      }
+      if (other.hasTotalAmountList()) {
+        setTotalAmountList(other.totalAmountList);
       }
       if (other.hasMapInfoChestType()) {
         setMapInfoChestTypeValue(other.mapInfoChestType);
@@ -284,8 +284,8 @@ public final class MazeChestOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      totalAmountList = 0;
       unlockedAmountList = 0;
+      totalAmountList = 0;
       mapInfoChestType = 0;
       return this;
     }
@@ -310,8 +310,8 @@ public final class MazeChestOuterClass {
       }
       MazeChest other = (MazeChest) o;
       return bitField0_ == other.bitField0_
-        && (!hasTotalAmountList() || totalAmountList == other.totalAmountList)
         && (!hasUnlockedAmountList() || unlockedAmountList == other.unlockedAmountList)
+        && (!hasTotalAmountList() || totalAmountList == other.totalAmountList)
         && (!hasMapInfoChestType() || mapInfoChestType == other.mapInfoChestType);
     }
 
@@ -319,11 +319,11 @@ public final class MazeChestOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(totalAmountList);
+        output.writeUInt32NoTag(unlockedAmountList);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(unlockedAmountList);
+        output.writeUInt32NoTag(totalAmountList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 32);
@@ -335,10 +335,10 @@ public final class MazeChestOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalAmountList);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(unlockedAmountList);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(unlockedAmountList);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalAmountList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(mapInfoChestType);
@@ -354,8 +354,8 @@ public final class MazeChestOuterClass {
       while (true) {
         switch (tag) {
           case 24: {
-            // totalAmountList
-            totalAmountList = input.readUInt32();
+            // unlockedAmountList
+            unlockedAmountList = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 56) {
@@ -363,8 +363,8 @@ public final class MazeChestOuterClass {
             }
           }
           case 56: {
-            // unlockedAmountList
-            unlockedAmountList = input.readUInt32();
+            // totalAmountList
+            totalAmountList = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 32) {
@@ -401,10 +401,10 @@ public final class MazeChestOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.totalAmountList, totalAmountList);
+        output.writeUInt32(FieldNames.unlockedAmountList, unlockedAmountList);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.unlockedAmountList, unlockedAmountList);
+        output.writeUInt32(FieldNames.totalAmountList, totalAmountList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeEnum(FieldNames.mapInfoChestType, mapInfoChestType, MapInfoChestTypeOuterClass.MapInfoChestType.converter());
@@ -419,11 +419,11 @@ public final class MazeChestOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1767834758:
-          case -642776150: {
-            if (input.isAtField(FieldNames.totalAmountList)) {
+          case -47476647:
+          case -941040439: {
+            if (input.isAtField(FieldNames.unlockedAmountList)) {
               if (!input.trySkipNullValue()) {
-                totalAmountList = input.readUInt32();
+                unlockedAmountList = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -431,11 +431,11 @@ public final class MazeChestOuterClass {
             }
             break;
           }
-          case -47476647:
-          case -941040439: {
-            if (input.isAtField(FieldNames.unlockedAmountList)) {
+          case -1767834758:
+          case -642776150: {
+            if (input.isAtField(FieldNames.totalAmountList)) {
               if (!input.trySkipNullValue()) {
-                unlockedAmountList = input.readUInt32();
+                totalAmountList = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -512,9 +512,9 @@ public final class MazeChestOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName totalAmountList = FieldName.forField("totalAmountList", "total_amount_list");
-
       static final FieldName unlockedAmountList = FieldName.forField("unlockedAmountList", "unlocked_amount_list");
+
+      static final FieldName totalAmountList = FieldName.forField("totalAmountList", "total_amount_list");
 
       static final FieldName mapInfoChestType = FieldName.forField("mapInfoChestType", "map_info_chest_type");
     }

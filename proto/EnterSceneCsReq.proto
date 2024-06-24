@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 // EDMMIKMDLKI
 message EnterSceneCsReq {
 	uint32 entry_id = 4;
-	uint32 teleport_id = 3; // GIBIDJKFBOK
-	uint32 GBKOFBCGCCG = 10;
+	uint32 GIBIDJKFBOK = 3;
+	uint32 teleport_id = 10; // GBKOFBCGCCG
 	uint32 map_entry_id = 13;
 	bool INNBPDKLCNJ = 6;
 }

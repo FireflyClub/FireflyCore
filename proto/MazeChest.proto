@@ -6,7 +6,7 @@ import "MapInfoChestType.proto";
 
 // IBAECMKPGBC
 message MazeChest {
-  	uint32 unlocked_amount_list = 7; //?
-	uint32 total_amount_list = 3; //?
+  	uint32 unlocked_amount_list = 3; //?
+	uint32 total_amount_list = 7; //?
 	MapInfoChestType map_info_chest_type = 4; // ILGDPFHEECL
 }

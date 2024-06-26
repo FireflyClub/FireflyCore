@@ -15,19 +15,13 @@ import lombok.Setter;
 public class MazeSkillAddBuff extends MazeSkillAction {
     private int buffId;
     private int duration;
-    private int skillIndex;
     
     @Setter
     private boolean sendBuffPacket;
     
     public MazeSkillAddBuff(int buffId, int duration) {
-                this(buffId, duration, 0);
-    }
-
-    public MazeSkillAddBuff(int buffId, int duration, int skillIndex) {
         this.buffId = buffId;
         this.duration = duration;
-        this.skillIndex = skillIndex;
     }
     
     @Override
@@ -56,10 +50,7 @@ public class MazeSkillAddBuff extends MazeSkillAction {
         for (GameEntity target : targets) {
             if (target instanceof EntityMonster monster) {
                 // Set as temp buff
-                var buff = new SceneBuff(caster.getAvatarId(), buffId);
-                buff.setSkillIndex(skillIndex);
-
-                monster.addTempBuffs(buff);
+                monster.addTempBuff(new SceneBuff(caster.getAvatarId(), buffId));
             }
         }
     }

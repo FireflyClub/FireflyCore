@@ -1,7 +1,7 @@
 package emu.lunarcore.server.packet.send;
 
 import emu.lunarcore.game.player.Player;
-import emu.lunarcore.proto.ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo;
+import emu.lunarcore.proto.ChallengeExtInfoOuterClass.ChallengeExtInfo;
 import emu.lunarcore.proto.ChallengeBossInfoOuterClass.ChallengeBossInfo;
 import emu.lunarcore.proto.ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo;
 import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
@@ -37,7 +37,7 @@ public class PacketStartChallengeScRsp extends BasePacket {
                 var info =  ChallengeBossInfo
                     .newInstance()
                     .setNILMFPFBCNJ(false)
-                    .setLFINNEDDCAJ(
+                    .setFirstNode(
                         ChallengeBossStageInfo
                             .newInstance()
                             .setIsWin(false)
@@ -45,7 +45,7 @@ public class PacketStartChallengeScRsp extends BasePacket {
                             .setKJCEEICMKEE(false)
                             .setJGDMLOFCNCH(0)
                     )
-                    .setLHDMIOKHDAJ(
+                    .setSecondNode(
                         ChallengeBossStageInfo
                             .newInstance()
                             .setIsWin(false)
@@ -62,9 +62,9 @@ public class PacketStartChallengeScRsp extends BasePacket {
                     info.addTeamTwo(avatarId);
                 }
                 
-                var extraInfo = ChallengeBossExtraInfo
+                var extraInfo = ChallengeExtInfo
                     .newInstance()
-                    .setBossBuffInfo(info);
+                    .setBossInfo(info);
                 
                 data.setStartInfo(extraInfo);
             }

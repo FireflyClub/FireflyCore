@@ -30,14 +30,22 @@ public final class ChallengeBossInfoOuterClass {
     private boolean nILMFPFBCNJ;
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
      */
-    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo lFINNEDDCAJ = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
+    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo firstNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
      */
-    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo lHDMIOKHDAJ = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
+    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo secondNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
      * <pre>
@@ -127,39 +135,55 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
-     * @return whether the lFINNEDDCAJ field is set
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
+     * @return whether the firstNode field is set
      */
-    public boolean hasLFINNEDDCAJ() {
+    public boolean hasFirstNode() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
      * @return this
      */
-    public ChallengeBossInfo clearLFINNEDDCAJ() {
+    public ChallengeBossInfo clearFirstNode() {
       bitField0_ &= ~0x00000002;
-      lFINNEDDCAJ.clear();
+      firstNode.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableLFINNEDDCAJ()} if you want to modify it.
+     * Use {@link #getMutableFirstNode()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getLFINNEDDCAJ() {
-      return lFINNEDDCAJ;
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getFirstNode() {
+      return firstNode;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -167,57 +191,77 @@ public final class ChallengeBossInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableLFINNEDDCAJ() {
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableFirstNode() {
       bitField0_ |= 0x00000002;
-      return lFINNEDDCAJ;
+      return firstNode;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LFINNEDDCAJ = 1;</code>
-     * @param value the lFINNEDDCAJ to set
+     * <pre>
+     *  LFINNEDDCAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 1;</code>
+     * @param value the firstNode to set
      * @return this
      */
-    public ChallengeBossInfo setLFINNEDDCAJ(
+    public ChallengeBossInfo setFirstNode(
         final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
       bitField0_ |= 0x00000002;
-      lFINNEDDCAJ.copyFrom(value);
+      firstNode.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
-     * @return whether the lHDMIOKHDAJ field is set
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
+     * @return whether the secondNode field is set
      */
-    public boolean hasLHDMIOKHDAJ() {
+    public boolean hasSecondNode() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
      * @return this
      */
-    public ChallengeBossInfo clearLHDMIOKHDAJ() {
+    public ChallengeBossInfo clearSecondNode() {
       bitField0_ &= ~0x00000004;
-      lHDMIOKHDAJ.clear();
+      secondNode.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableLHDMIOKHDAJ()} if you want to modify it.
+     * Use {@link #getMutableSecondNode()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getLHDMIOKHDAJ() {
-      return lHDMIOKHDAJ;
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getSecondNode() {
+      return secondNode;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -225,20 +269,24 @@ public final class ChallengeBossInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableLHDMIOKHDAJ() {
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableSecondNode() {
       bitField0_ |= 0x00000004;
-      return lHDMIOKHDAJ;
+      return secondNode;
     }
 
     /**
-     * <code>optional .ChallengeBossStageInfo LHDMIOKHDAJ = 5;</code>
-     * @param value the lHDMIOKHDAJ to set
+     * <pre>
+     *  LHDMIOKHDAJ
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo second_node = 5;</code>
+     * @param value the secondNode to set
      * @return this
      */
-    public ChallengeBossInfo setLHDMIOKHDAJ(
+    public ChallengeBossInfo setSecondNode(
         final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
       bitField0_ |= 0x00000004;
-      lHDMIOKHDAJ.copyFrom(value);
+      secondNode.copyFrom(value);
       return this;
     }
 
@@ -616,8 +664,8 @@ public final class ChallengeBossInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         nILMFPFBCNJ = other.nILMFPFBCNJ;
-        lFINNEDDCAJ.copyFrom(other.lFINNEDDCAJ);
-        lHDMIOKHDAJ.copyFrom(other.lHDMIOKHDAJ);
+        firstNode.copyFrom(other.firstNode);
+        secondNode.copyFrom(other.secondNode);
         teamOne.copyFrom(other.teamOne);
         teamTwo.copyFrom(other.teamTwo);
         relics.copyFrom(other.relics);
@@ -635,11 +683,11 @@ public final class ChallengeBossInfoOuterClass {
       if (other.hasNILMFPFBCNJ()) {
         setNILMFPFBCNJ(other.nILMFPFBCNJ);
       }
-      if (other.hasLFINNEDDCAJ()) {
-        getMutableLFINNEDDCAJ().mergeFrom(other.lFINNEDDCAJ);
+      if (other.hasFirstNode()) {
+        getMutableFirstNode().mergeFrom(other.firstNode);
       }
-      if (other.hasLHDMIOKHDAJ()) {
-        getMutableLHDMIOKHDAJ().mergeFrom(other.lHDMIOKHDAJ);
+      if (other.hasSecondNode()) {
+        getMutableSecondNode().mergeFrom(other.secondNode);
       }
       if (other.hasTeamOne()) {
         getMutableTeamOne().addAll(other.teamOne);
@@ -664,8 +712,8 @@ public final class ChallengeBossInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       nILMFPFBCNJ = false;
-      lFINNEDDCAJ.clear();
-      lHDMIOKHDAJ.clear();
+      firstNode.clear();
+      secondNode.clear();
       teamOne.clear();
       teamTwo.clear();
       relics.clear();
@@ -680,8 +728,8 @@ public final class ChallengeBossInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      lFINNEDDCAJ.clearQuick();
-      lHDMIOKHDAJ.clearQuick();
+      firstNode.clearQuick();
+      secondNode.clearQuick();
       teamOne.clear();
       teamTwo.clear();
       relics.clearQuick();
@@ -700,8 +748,8 @@ public final class ChallengeBossInfoOuterClass {
       ChallengeBossInfo other = (ChallengeBossInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasNILMFPFBCNJ() || nILMFPFBCNJ == other.nILMFPFBCNJ)
-        && (!hasLFINNEDDCAJ() || lFINNEDDCAJ.equals(other.lFINNEDDCAJ))
-        && (!hasLHDMIOKHDAJ() || lHDMIOKHDAJ.equals(other.lHDMIOKHDAJ))
+        && (!hasFirstNode() || firstNode.equals(other.firstNode))
+        && (!hasSecondNode() || secondNode.equals(other.secondNode))
         && (!hasTeamOne() || teamOne.equals(other.teamOne))
         && (!hasTeamTwo() || teamTwo.equals(other.teamTwo))
         && (!hasRelics() || relics.equals(other.relics))
@@ -716,11 +764,11 @@ public final class ChallengeBossInfoOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 10);
-        output.writeMessageNoTag(lFINNEDDCAJ);
+        output.writeMessageNoTag(firstNode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 42);
-        output.writeMessageNoTag(lHDMIOKHDAJ);
+        output.writeMessageNoTag(secondNode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < teamOne.length(); i++) {
@@ -755,10 +803,10 @@ public final class ChallengeBossInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(lFINNEDDCAJ);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(firstNode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(lHDMIOKHDAJ);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(secondNode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * teamOne.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(teamOne);
@@ -792,8 +840,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 10: {
-            // lFINNEDDCAJ
-            input.readMessage(lFINNEDDCAJ);
+            // firstNode
+            input.readMessage(firstNode);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 42) {
@@ -801,8 +849,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 42: {
-            // lHDMIOKHDAJ
-            input.readMessage(lHDMIOKHDAJ);
+            // secondNode
+            input.readMessage(secondNode);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 18) {
@@ -876,10 +924,10 @@ public final class ChallengeBossInfoOuterClass {
         output.writeBool(FieldNames.nILMFPFBCNJ, nILMFPFBCNJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.lFINNEDDCAJ, lFINNEDDCAJ);
+        output.writeMessage(FieldNames.firstNode, firstNode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.lHDMIOKHDAJ, lHDMIOKHDAJ);
+        output.writeMessage(FieldNames.secondNode, secondNode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedUInt32(FieldNames.teamOne, teamOne);
@@ -914,10 +962,11 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case -2049184042: {
-            if (input.isAtField(FieldNames.lFINNEDDCAJ)) {
+          case 132848850:
+          case -160972239: {
+            if (input.isAtField(FieldNames.firstNode)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(lFINNEDDCAJ);
+                input.readMessage(firstNode);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -925,10 +974,11 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case 707608805: {
-            if (input.isAtField(FieldNames.lHDMIOKHDAJ)) {
+          case 423693462:
+          case 265276141: {
+            if (input.isAtField(FieldNames.secondNode)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(lHDMIOKHDAJ);
+                input.readMessage(secondNode);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -1729,9 +1779,9 @@ public final class ChallengeBossInfoOuterClass {
     static class FieldNames {
       static final FieldName nILMFPFBCNJ = FieldName.forField("NILMFPFBCNJ");
 
-      static final FieldName lFINNEDDCAJ = FieldName.forField("LFINNEDDCAJ");
+      static final FieldName firstNode = FieldName.forField("firstNode", "first_node");
 
-      static final FieldName lHDMIOKHDAJ = FieldName.forField("LHDMIOKHDAJ");
+      static final FieldName secondNode = FieldName.forField("secondNode", "second_node");
 
       static final FieldName teamOne = FieldName.forField("teamOne", "team_one");
 

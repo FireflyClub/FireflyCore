@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MissionCustomValueData.proto";
+
+message FinishTalkMissionCsReq {
+	uint32 sub_mission_id = 15; // JLOPCKLMLNH
+	repeated MissionCustomValueData custom_value_list = 9; // PFBFMLCBLLM
+	string talk_str = 1; // AIDNPNKOBOJ
+}

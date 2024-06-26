@@ -8,5 +8,5 @@ import "StartChallengeBossBuffInfo.proto";
 // DKBCKMJKFPO
 message StartChallengeStoryInfo {
     StartChallengeStoryBuffInfo story_buff_info = 6; // KEOHDCNHFPJ
-    StartChallengeBossBuffInfo boss_buff_info = 13;
+    StartChallengeBossBuffInfo boss_info = 13;
 }

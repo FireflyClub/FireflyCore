@@ -117,10 +117,6 @@ public class ResourceLoader {
             @SuppressWarnings("rawtypes")
             Int2ObjectMap map = ResourceLoader.getMapForExcel(type.gameDataClass(), resourceDefinition);
 
-            if (map == null) {
-                LunarCore.getLogger().warn("Resources not loaded because it has invalid field name on GameData {}", resourceDefinition.getName()  );
-            }
-
             try {
                 loadFromResource(resourceDefinition, type, map);
             } catch (FileNotFoundException e) {
@@ -257,6 +253,7 @@ public class ResourceLoader {
                     GroupInfo group = gson.fromJson(reader, GroupInfo.class);
                     group.setId(simpleGroup.getID());
                     
+                    floor.getGroupList().add(group);
                     floor.getGroups().put(simpleGroup.getID(), group);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -275,7 +272,7 @@ public class ResourceLoader {
         
         // Notify the server owner if we are missing any files
         if (missingGroupInfos) {
-            LunarCore.getLogger().warn("Group infos are missing, please check your resources folder: {resources}/Config/LevelOutput/Group. Teleports, monster battles, and natural world spawns may not work!");
+            LunarCore.getLogger().warn("Group infos are missing, please check your resources folder: {resources}/Config/LevelOutput/SharedRuntimeGroup. Teleports, monster battles, and natural world spawns may not work!");
         }
         
         // Done

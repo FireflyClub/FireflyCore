@@ -66,9 +66,9 @@ public final class ChallengeOuterClass {
     private boolean bIALOEHENPF;
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      */
-    private final ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo startInfo = ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo.newInstance();
+    private final ChallengeExtInfoOuterClass.ChallengeExtInfo startInfo = ChallengeExtInfoOuterClass.ChallengeExtInfo.newInstance();
 
     private Challenge() {
     }
@@ -376,7 +376,7 @@ public final class ChallengeOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      * @return whether the startInfo field is set
      */
     public boolean hasStartInfo() {
@@ -384,7 +384,7 @@ public final class ChallengeOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      * @return this
      */
     public Challenge clearStartInfo() {
@@ -394,7 +394,7 @@ public final class ChallengeOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -403,12 +403,12 @@ public final class ChallengeOuterClass {
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo getStartInfo() {
+    public ChallengeExtInfoOuterClass.ChallengeExtInfo getStartInfo() {
       return startInfo;
     }
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -416,18 +416,17 @@ public final class ChallengeOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo getMutableStartInfo() {
+    public ChallengeExtInfoOuterClass.ChallengeExtInfo getMutableStartInfo() {
       bitField0_ |= 0x00000080;
       return startInfo;
     }
 
     /**
-     * <code>optional .ChallengeBossExtraInfo start_info = 3;</code>
+     * <code>optional .ChallengeExtInfo start_info = 3;</code>
      * @param value the startInfo to set
      * @return this
      */
-    public Challenge setStartInfo(
-        final ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo value) {
+    public Challenge setStartInfo(final ChallengeExtInfoOuterClass.ChallengeExtInfo value) {
       bitField0_ |= 0x00000080;
       startInfo.copyFrom(value);
       return this;

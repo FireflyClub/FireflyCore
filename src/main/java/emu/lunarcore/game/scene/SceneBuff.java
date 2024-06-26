@@ -15,7 +15,6 @@ public class SceneBuff {
     private float duration;
     private long createTime;
     private long expiry;
-    @Setter private int skillIndex; // Skill index, only for avatar maze buff
     
     public SceneBuff(int buffId) {
         this.buffId = buffId;
@@ -23,7 +22,6 @@ public class SceneBuff {
         this.count = 1;
         this.createTime = System.currentTimeMillis();
         this.duration = -1;
-        this.skillIndex = 0;
     }
     
     public SceneBuff(int casterAvatarId, int buffId) {

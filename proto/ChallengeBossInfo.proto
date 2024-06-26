@@ -8,8 +8,8 @@ import "ChallengeBossRelic.proto";
 
 // NBGPGDMLKAD
 message ChallengeBossInfo {
-	ChallengeBossStageInfo LFINNEDDCAJ = 1;
-	ChallengeBossStageInfo LHDMIOKHDAJ = 5;
+	ChallengeBossStageInfo first_node = 1; // LFINNEDDCAJ
+	ChallengeBossStageInfo second_node = 5; // LHDMIOKHDAJ
     repeated uint32 team_two = 11; // DIHEALDBBFI
     map<uint32, ChallengeBossRelic> relics = 3; // JJMBDNBBNFI
 	bool NILMFPFBCNJ = 14;

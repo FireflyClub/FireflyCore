@@ -451,18 +451,23 @@ public class Player implements Tickable {
     public void addExp(int amount) {
         // Setup
         int oldLevel = this.level;
-        int reqExp = GameData.getPlayerExpRequired(level + 1);
+        int expRequired = GameData.getPlayerExpRequired(level + 1);
 
         // Add exp
         this.exp += amount;
 
-        while (this.exp >= reqExp && reqExp > 0) {
+        // Check for level ups
+        while (this.exp >= expRequired && expRequired > 0) {
             this.level += 1;
-            reqExp = GameData.getPlayerExpRequired(this.level + 1);
+            expRequired = GameData.getPlayerExpRequired(this.level + 1);
         }
 
         // Update level and change property
-        this.onLevelChange(oldLevel, this.level);
+        if (oldLevel != this.level) {
+            this.onLevelChange(oldLevel, this.level);
+        }
+        
+        // Save to database
         this.save();
 
         // Send packet
@@ -754,7 +759,10 @@ public class Player implements Tickable {
                 anchorId = teleport.getAnchorID();
             }
         } else if (anchorId == 0) {
-            startGroup = floor.getStartGroupID();
+            var group = floor.getGroupInfoByIndex(floor.getStartGroupIndex());
+            if (group == null) return false;
+
+            startGroup = group.getId();
             anchorId = floor.getStartAnchorID();
         }
         

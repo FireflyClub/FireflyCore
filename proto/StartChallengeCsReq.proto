@@ -8,6 +8,6 @@ import "StartChallengeStoryInfo.proto";
 message StartChallengeCsReq {
     uint32 challenge_id = 3; // EMJCNIBGHCH
     StartChallengeStoryInfo start_info = 2;
-    repeated uint32 team_one = 5;
-    repeated uint32 team_two = 12;
+	repeated uint32 lineup1 = 5;
+	repeated uint32 lineup2 = 12;
 }

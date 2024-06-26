@@ -11,15 +11,15 @@ import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 
-public final class ContentInfoOuterClass {
+public final class ContentPackageInfoOuterClass {
   /**
    * <pre>
    *  FIEDMJCNIKO
    * </pre>
    *
-   * Protobuf type {@code ContentInfo}
+   * Protobuf type {@code ContentPackageInfo}
    */
-  public static final class ContentInfo extends ProtoMessage<ContentInfo> implements Cloneable {
+  public static final class ContentPackageInfo extends ProtoMessage<ContentPackageInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
@@ -32,7 +32,7 @@ public final class ContentInfoOuterClass {
      */
     private int status;
 
-    private ContentInfo() {
+    private ContentPackageInfo() {
     }
 
     /**
@@ -40,10 +40,10 @@ public final class ContentInfoOuterClass {
      *  FIEDMJCNIKO
      * </pre>
      *
-     * @return a new empty instance of {@code ContentInfo}
+     * @return a new empty instance of {@code ContentPackageInfo}
      */
-    public static ContentInfo newInstance() {
-      return new ContentInfo();
+    public static ContentPackageInfo newInstance() {
+      return new ContentPackageInfo();
     }
 
     /**
@@ -58,7 +58,7 @@ public final class ContentInfoOuterClass {
      * <code>optional uint32 map_entry_id = 8;</code>
      * @return this
      */
-    public ContentInfo clearMapEntryId() {
+    public ContentPackageInfo clearMapEntryId() {
       bitField0_ &= ~0x00000001;
       mapEntryId = 0;
       return this;
@@ -77,7 +77,7 @@ public final class ContentInfoOuterClass {
      * @param value the mapEntryId to set
      * @return this
      */
-    public ContentInfo setMapEntryId(final int value) {
+    public ContentPackageInfo setMapEntryId(final int value) {
       bitField0_ |= 0x00000001;
       mapEntryId = value;
       return this;
@@ -95,7 +95,7 @@ public final class ContentInfoOuterClass {
      * <code>optional .ContentPackageStatus status = 7;</code>
      * @return this
      */
-    public ContentInfo clearStatus() {
+    public ContentPackageInfo clearStatus() {
       bitField0_ &= ~0x00000002;
       status = 0;
       return this;
@@ -111,7 +111,7 @@ public final class ContentInfoOuterClass {
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link ContentInfo#getStatus()}.getNumber().
+     * equivalent to {@link ContentPackageInfo#getStatus()}.getNumber().
      *
      * @return numeric wire representation
      */
@@ -123,12 +123,12 @@ public final class ContentInfoOuterClass {
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link ContentPackageStatusOuterClass.ContentPackageStatus}. Setting an invalid value
-     * can cause {@link ContentInfo#getStatus()} to return null
+     * can cause {@link ContentPackageInfo#getStatus()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public ContentInfo setStatusValue(final int value) {
+    public ContentPackageInfo setStatusValue(final int value) {
       bitField0_ |= 0x00000002;
       status = value;
       return this;
@@ -139,14 +139,15 @@ public final class ContentInfoOuterClass {
      * @param value the status to set
      * @return this
      */
-    public ContentInfo setStatus(final ContentPackageStatusOuterClass.ContentPackageStatus value) {
+    public ContentPackageInfo setStatus(
+        final ContentPackageStatusOuterClass.ContentPackageStatus value) {
       bitField0_ |= 0x00000002;
       status = value.getNumber();
       return this;
     }
 
     @Override
-    public ContentInfo copyFrom(final ContentInfo other) {
+    public ContentPackageInfo copyFrom(final ContentPackageInfo other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
@@ -157,7 +158,7 @@ public final class ContentInfoOuterClass {
     }
 
     @Override
-    public ContentInfo mergeFrom(final ContentInfo other) {
+    public ContentPackageInfo mergeFrom(final ContentPackageInfo other) {
       if (other.isEmpty()) {
         return this;
       }
@@ -172,7 +173,7 @@ public final class ContentInfoOuterClass {
     }
 
     @Override
-    public ContentInfo clear() {
+    public ContentPackageInfo clear() {
       if (isEmpty()) {
         return this;
       }
@@ -184,7 +185,7 @@ public final class ContentInfoOuterClass {
     }
 
     @Override
-    public ContentInfo clearQuick() {
+    public ContentPackageInfo clearQuick() {
       if (isEmpty()) {
         return this;
       }
@@ -198,10 +199,10 @@ public final class ContentInfoOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof ContentInfo)) {
+      if (!(o instanceof ContentPackageInfo)) {
         return false;
       }
-      ContentInfo other = (ContentInfo) o;
+      ContentPackageInfo other = (ContentPackageInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
         && (!hasStatus() || status == other.status);
@@ -233,7 +234,7 @@ public final class ContentInfoOuterClass {
 
     @Override
     @SuppressWarnings("fallthrough")
-    public ContentInfo mergeFrom(final ProtoSource input) throws IOException {
+    public ContentPackageInfo mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
@@ -286,7 +287,7 @@ public final class ContentInfoOuterClass {
     }
 
     @Override
-    public ContentInfo mergeFrom(final JsonSource input) throws IOException {
+    public ContentPackageInfo mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
@@ -331,8 +332,8 @@ public final class ContentInfoOuterClass {
     }
 
     @Override
-    public ContentInfo clone() {
-      return new ContentInfo().copyFrom(this);
+    public ContentPackageInfo clone() {
+      return new ContentPackageInfo().copyFrom(this);
     }
 
     @Override
@@ -340,31 +341,32 @@ public final class ContentInfoOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static ContentInfo parseFrom(final byte[] data) throws InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new ContentInfo(), data).checkInitialized();
+    public static ContentPackageInfo parseFrom(final byte[] data) throws
+        InvalidProtocolBufferException {
+      return ProtoMessage.mergeFrom(new ContentPackageInfo(), data).checkInitialized();
     }
 
-    public static ContentInfo parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new ContentInfo(), input).checkInitialized();
+    public static ContentPackageInfo parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new ContentPackageInfo(), input).checkInitialized();
     }
 
-    public static ContentInfo parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new ContentInfo(), input).checkInitialized();
+    public static ContentPackageInfo parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new ContentPackageInfo(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating ContentInfo messages
+     * @return factory for creating ContentPackageInfo messages
      */
-    public static MessageFactory<ContentInfo> getFactory() {
-      return ContentInfoFactory.INSTANCE;
+    public static MessageFactory<ContentPackageInfo> getFactory() {
+      return ContentPackageInfoFactory.INSTANCE;
     }
 
-    private enum ContentInfoFactory implements MessageFactory<ContentInfo> {
+    private enum ContentPackageInfoFactory implements MessageFactory<ContentPackageInfo> {
       INSTANCE;
 
       @Override
-      public ContentInfo create() {
-        return ContentInfo.newInstance();
+      public ContentPackageInfo create() {
+        return ContentPackageInfo.newInstance();
       }
     }
 

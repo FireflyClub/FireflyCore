@@ -7,7 +7,6 @@ import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.send.PacketBattlePassInfoNotify;
 import emu.lunarcore.server.packet.send.PacketContentPackageSyncDataScNotify;
 import emu.lunarcore.server.packet.send.PacketServerAnnounceNotify;
-import emu.lunarcore.server.packet.send.PacketStaminaInfoScNotify;
 
 @Opcodes(CmdId.PlayerLoginFinishCsReq)
 public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
@@ -16,10 +15,9 @@ public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         session.send(CmdId.PlayerLoginFinishScRsp);
         session.send(CmdId.GetArchiveDataScRsp);
-        session.send(new PacketStaminaInfoScNotify(session.getPlayer()));
-        session.send(new PacketServerAnnounceNotify(session.getPlayer()));
         session.send(new PacketBattlePassInfoNotify());
         session.send(new PacketContentPackageSyncDataScNotify());
+        session.send(new PacketServerAnnounceNotify(session.getPlayer()));
     }
 
 }

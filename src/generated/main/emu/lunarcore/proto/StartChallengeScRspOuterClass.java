@@ -43,9 +43,9 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      */
-    private final ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo startInfo = ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo.newInstance();
+    private final ChallengeExtInfoOuterClass.ChallengeExtInfo startInfo = ChallengeExtInfoOuterClass.ChallengeExtInfo.newInstance();
 
     /**
      * <code>repeated .LineupInfo lineup_list = 14;</code>
@@ -222,7 +222,7 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      * @return whether the startInfo field is set
      */
     public boolean hasStartInfo() {
@@ -234,7 +234,7 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      * @return this
      */
     public StartChallengeScRsp clearStartInfo() {
@@ -248,7 +248,7 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -257,7 +257,7 @@ public final class StartChallengeScRspOuterClass {
      *
      * @return internal storage object for reading
      */
-    public ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo getStartInfo() {
+    public ChallengeExtInfoOuterClass.ChallengeExtInfo getStartInfo() {
       return startInfo;
     }
 
@@ -266,7 +266,7 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -274,7 +274,7 @@ public final class StartChallengeScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo getMutableStartInfo() {
+    public ChallengeExtInfoOuterClass.ChallengeExtInfo getMutableStartInfo() {
       bitField0_ |= 0x00000008;
       return startInfo;
     }
@@ -284,12 +284,12 @@ public final class StartChallengeScRspOuterClass {
      *  KLMLLEFMJKJ
      * </pre>
      *
-     * <code>optional .ChallengeBossExtraInfo start_info = 12;</code>
+     * <code>optional .ChallengeExtInfo start_info = 12;</code>
      * @param value the startInfo to set
      * @return this
      */
     public StartChallengeScRsp setStartInfo(
-        final ChallengeBossExtraInfoOuterClass.ChallengeBossExtraInfo value) {
+        final ChallengeExtInfoOuterClass.ChallengeExtInfo value) {
       bitField0_ |= 0x00000008;
       startInfo.copyFrom(value);
       return this;

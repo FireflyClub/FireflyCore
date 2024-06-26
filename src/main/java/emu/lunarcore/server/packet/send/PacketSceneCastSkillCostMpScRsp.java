@@ -8,8 +8,8 @@ public class PacketSceneCastSkillCostMpScRsp extends BasePacket {
 
     public PacketSceneCastSkillCostMpScRsp(int attackedGroupId) {
         super(CmdId.SceneCastSkillCostMpScRsp);
-        var data = SceneCastSkillCostMpScRsp
-            .newInstance()
+        
+        var data = SceneCastSkillCostMpScRsp.newInstance()
             .setAttackedGroupId(attackedGroupId);
 
         this.setData(data);

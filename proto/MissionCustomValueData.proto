@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+// DIAAMFMFBBE
+message MissionCustomValueData {
+	uint32 index = 15;
+	uint32 custom_value = 9; // AKNJKDONIIF
+}

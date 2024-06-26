@@ -2,11 +2,13 @@ package emu.lunarcore.game.battle.skills;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.scene.entity.GameEntity;
 import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
+import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +18,7 @@ public class MazeSkill {
     private int index;
     private List<MazeSkillAction> castActions;
     private List<MazeSkillAction> attackActions;
+    private Set<String> adventureModifiers;
     
     @Setter private boolean triggerBattle;
     
@@ -25,6 +28,20 @@ public class MazeSkill {
         this.triggerBattle = true;
         this.castActions = new ArrayList<>();
         this.attackActions = new ArrayList<>();
+    }
+    
+    public void addAdventureModifier(String modifier) {
+        if (modifier == null) return;
+        
+        if (this.adventureModifiers == null) {
+            this.adventureModifiers = new ObjectOpenHashSet<>();
+        }
+        
+        this.adventureModifiers.add(modifier);
+    }
+    
+    public boolean hasAdventureModifier(String modifier) {
+        return this.adventureModifiers != null && this.adventureModifiers.contains(modifier);
     }
     
     /**

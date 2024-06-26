@@ -8,6 +8,7 @@ import emu.lunarcore.server.packet.Opcodes;
 import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.send.PacketSelectRogueDialogueEventScRsp;
 
+//@Opcodes(CmdId.SelectRogueDialogueEventCsReq)
 @Opcodes(CmdId.NONE)
 public class HandlerSelectRogueDialogueEventCsReq extends PacketHandler {
 

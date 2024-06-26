@@ -20,10 +20,7 @@ import emu.lunarcore.proto.BattleTargetOuterClass.BattleTarget;
 import emu.lunarcore.proto.SceneBattleInfoOuterClass.SceneBattleInfo;
 import emu.lunarcore.proto.SceneBattleInfoOuterClass.SceneBattleInfo.BattleTargetInfoEntry;
 import emu.lunarcore.util.Utils;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
-import it.unimi.dsi.fastutil.ints.IntArrayList;
-import it.unimi.dsi.fastutil.ints.IntList;
+import it.unimi.dsi.fastutil.ints.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,9 +30,9 @@ public class Battle {
     private final Player player;
     private final PlayerLineup lineup;
     private final List<EntityMonster> npcMonsters;
-    private final List<MazeBuff> buffs;
     private final List<BattleMonsterWave> waves;
     private final List<GameItem> drops;
+    private final Int2ObjectMap<MazeBuff> buffs;
     private final long timestamp;
     
     private BattleStage stage; // Main battle stage
@@ -60,7 +57,7 @@ public class Battle {
         this.player = player;
         this.lineup = lineup;
         this.npcMonsters = new ArrayList<>();
-        this.buffs = new ArrayList<>();
+        this.buffs = new Int2ObjectLinkedOpenHashMap<>();
         this.waves = new ArrayList<>();
         this.drops = new ArrayList<>();
         this.timestamp = System.currentTimeMillis();
@@ -160,15 +157,10 @@ public class Battle {
     }
     
     public void addBattleTarget(int key, int targetId, int progress) {
-        this.addBattleTarget(key, targetId, progress, 0);
-    }
-    
-    public void addBattleTarget(int key, int targetId, int progress, int totalProgress) {
         var list = getBattleTargets().computeIfAbsent(key, i -> BattleTargetList.newInstance());
         var battleTarget = BattleTarget.newInstance()
                 .setId(targetId)
-                .setProgress(progress)
-                .setTotalProgress(totalProgress);
+                .setProgress(progress);
         
         list.addBattleTargetList(battleTarget);
     }
@@ -190,29 +182,17 @@ public class Battle {
     }
     
     public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag) {
-        return addBuff(buffId, ownerIndex, waveFlag, 0);
-    }
-
-    public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag, int skillIndex) {
         MazeBuff buff = new MazeBuff(buffId, 1, ownerIndex, waveFlag);
-        
-        if(skillIndex > 0) {
-            buff.addDynamicValue("SkillIndex", skillIndex);
-        }
-
         return addBuff(buff);
     }
     
     public MazeBuff addBuff(MazeBuff buff) {
-        if (!this.hasBuff(buff.getId())) {
-            this.buffs.add(buff);
-        }
+        this.buffs.put(buff.getId(), buff);
         return buff;
     }
     
     public boolean hasBuff(int buffId) {
-        return this.buffs.stream().anyMatch(buff -> buff.getId() == buffId);
-
+        return this.buffs.containsKey(buffId);
     }
     
     public void clearBuffs() {
@@ -267,8 +247,8 @@ public class Battle {
         }
         
         // Buffs
-        for (MazeBuff buff : this.getBuffs()) {
-            proto.addBuffList(buff.toProto());
+        for (var entry : this.getBuffs().int2ObjectEntrySet()) {
+            proto.addBuffList(entry.getValue().toProto());
         }
         
         // Client turn snapshots

@@ -5,12 +5,12 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeInfo.proto";
 import "LineupInfo.proto";
 import "SceneInfo.proto";
-import "ChallengeBossExtraInfo.proto";
+import "ChallengeExtInfo.proto";
 
 // HLLACCBLIJF
 message StartChallengeScRsp {
 	SceneInfo scene = 11;
-	ChallengeBossExtraInfo start_info = 12; // KLMLLEFMJKJ
+	ChallengeExtInfo start_info = 12; // KLMLLEFMJKJ
 	repeated LineupInfo lineup_list = 14;
 	ChallengeInfo challenge_info = 8;
 	uint32 retcode = 7;

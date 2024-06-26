@@ -2,12 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "ChallengeBossExtraInfo.proto";
+import "ChallengeExtInfo.proto";
 
 // OEKIEIHHJBC
 message Challenge {
 	uint32 BPPEIKJFFKN = 4;
-    ChallengeBossExtraInfo start_info = 3;
+    ChallengeExtInfo start_info = 3;
     uint32 score_two = 6;
     uint32 stars = 14;
 	bool BIALOEHENPF = 13;

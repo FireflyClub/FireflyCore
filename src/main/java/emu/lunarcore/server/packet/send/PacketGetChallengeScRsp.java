@@ -3,8 +3,8 @@ package emu.lunarcore.server.packet.send;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.player.Player;
-import emu.lunarcore.proto.ChallengeBossExtraInfoOuterClass;
-import emu.lunarcore.proto.ChallengeBossInfoOuterClass;
+import emu.lunarcore.proto.ChallengeExtInfoOuterClass.ChallengeExtInfo;
+import emu.lunarcore.proto.ChallengeBossInfoOuterClass.ChallengeBossInfo;
 import emu.lunarcore.proto.ChallengeBossStageInfoOuterClass;
 import emu.lunarcore.proto.ChallengeOuterClass.Challenge;
 import emu.lunarcore.proto.GetChallengeScRspOuterClass.GetChallengeScRsp;
@@ -40,15 +40,13 @@ public class PacketGetChallengeScRsp extends BasePacket {
                     if (challengeExcel.isBoss()) {
                         challenge
                             .setStartInfo(
-                                ChallengeBossExtraInfoOuterClass
-                                    .ChallengeBossExtraInfo
+                                ChallengeExtInfo
                                     .newInstance()
-                                    .setBossBuffInfo(
-                                        ChallengeBossInfoOuterClass
-                                            .ChallengeBossInfo
+                                    .setBossInfo(
+                                        ChallengeBossInfo
                                             .newInstance()
-                                            .setLFINNEDDCAJ(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
-                                            .setLHDMIOKHDAJ(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
+                                            .setFirstNode(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
+                                            .setSecondNode(ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance())
                                     )
                         );
                     }

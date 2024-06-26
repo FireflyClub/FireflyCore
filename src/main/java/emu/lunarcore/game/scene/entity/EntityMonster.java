@@ -1,5 +1,8 @@
 package emu.lunarcore.game.scene.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.GroupInfo;
 import emu.lunarcore.data.config.MonsterInfo;
@@ -20,9 +23,6 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.LinkedList;
-import java.util.List;
 
 @Getter
 public class EntityMonster implements GameEntity, Tickable {
@@ -91,14 +91,14 @@ public class EntityMonster implements GameEntity, Tickable {
         return buff;
     }
     
-    public synchronized void addTempBuffs(SceneBuff buff) {
+    public synchronized void addTempBuff(SceneBuff tempBuff) {
         if (this.tempBuffs == null) {
-            this.tempBuffs = new LinkedList<>();
+            this.tempBuffs = new ArrayList<>();
         }
         
-        this.tempBuffs.add(buff);
+        this.tempBuffs.add(tempBuff);
     }
-
+    
     public synchronized void applyBuffs(Battle battle, int waveIndex) {
         if (this.buffs != null) {
             for (var entry : this.buffs.int2ObjectEntrySet()) {
@@ -112,11 +112,12 @@ public class EntityMonster implements GameEntity, Tickable {
             }
         }
         
-        if (this.tempBuffs != null) {
-            for (var value: this.tempBuffs) {
-                this.applyBuff(battle, value, waveIndex);
+        if (this.getTempBuffs() != null) {
+            for (var tempBuff : this.getTempBuffs()) {
+                this.applyBuff(battle, tempBuff, waveIndex);
             }
-            this.tempBuffs.clear();
+            
+            this.tempBuffs = null;
         }
     }
     
@@ -126,7 +127,7 @@ public class EntityMonster implements GameEntity, Tickable {
         
         // Add buff to battle if owner exists
         if (ownerIndex != -1) {
-            battle.addBuff(buff.getBuffId(), ownerIndex, 1 << waveIndex, buff.getSkillIndex());
+            battle.addBuff(buff.getBuffId(), ownerIndex, 1 << waveIndex);
             return true;
         }
         

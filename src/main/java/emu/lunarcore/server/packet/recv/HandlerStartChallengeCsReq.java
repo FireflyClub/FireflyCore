@@ -15,7 +15,7 @@ public class HandlerStartChallengeCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = StartChallengeCsReq.parseFrom(data);
         var storyBuffs = req.getStartInfo().getStoryBuffInfo();
-        var bossBuffs = req.getStartInfo().getBossBuffInfo();
+        var bossBuffs = req.getStartInfo().getBossInfo();
         if (bossBuffs != null && bossBuffs.getBuffOne() == 0) {
             bossBuffs = null;
         }
@@ -27,8 +27,8 @@ public class HandlerStartChallengeCsReq extends PacketHandler {
                 req.getChallengeId(), 
                 storyBuffs, 
                 bossBuffs, 
-                Arrays.stream(req.getTeamOne().toArray()).boxed().toList(),
-                Arrays.stream(req.getTeamTwo().toArray()).boxed().toList()
+                Arrays.stream(req.getLineup1().toArray()).boxed().toList(),
+                Arrays.stream(req.getLineup2().toArray()).boxed().toList()
             );
     }
 

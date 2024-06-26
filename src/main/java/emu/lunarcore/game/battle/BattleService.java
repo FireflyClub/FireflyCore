@@ -138,11 +138,22 @@ public class BattleService extends BaseGameService {
             
             // Add buffs to battle
             if (castingAvatar != null) {
-                // Add elemental weakness debuff to enemies
-                MazeBuff buff = battle.addBuff(castingAvatar.getExcel().getDamageType().getEnterBattleBuff(), battle.getLineup().getLeader());
-                if (buff != null) {
-                    buff.addTargetIndex(battle.getLineup().getLeader());
-                    buff.addDynamicValue("SkillIndex", castedSkill.getIndex());
+                // The player is the one attacking
+                if (castedSkill != null) {
+                    // Get elemental weakness debuff id
+                    int buffId = castingAvatar.getExcel().getDamageType().getEnterBattleBuff();
+                    
+                    // Replace with a special debuff that ignores all toughness
+                    if (castedSkill.hasAdventureModifier("ADV_StageAbility_Maze_IgnoreWeakness_MazeSkillMark")) {
+                        buffId = 1000119;
+                    }
+                    
+                    // Add buff to battle
+                    MazeBuff buff = battle.addBuff(buffId, battle.getLineup().getLeader());
+                    if (buff != null) {
+                        buff.addTargetIndex(battle.getLineup().getLeader());
+                        buff.addDynamicValue("SkillIndex", castedSkill.getIndex());
+                    }
                 }
             } else {
                 // Ambush debuff (from monsters)

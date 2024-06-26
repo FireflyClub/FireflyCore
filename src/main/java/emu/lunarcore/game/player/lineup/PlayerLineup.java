@@ -119,6 +119,35 @@ public class PlayerLineup {
         this.getOwner().sendPacket(new PacketSyncLineupNotify(this));
     }
     
+    public void replace(List<Integer> lineupList) {
+        // Clear
+        this.getAvatars().clear();
+
+        // Add
+        for (int avatarId : lineupList) {
+            GameAvatar avatar = getOwner().getAvatarById(avatarId);
+            if (avatar != null) {
+                this.getAvatars().add(avatarId);
+            }
+        }
+
+        // Validate leader slot
+        if (this.getLeader() >= this.size()) {
+            this.setLeader(0);
+        }
+
+        // Save
+        this.save();
+        
+        // Sync lineup with scene if its active
+        if (this == getOwner().getCurrentLineup()) {
+            getOwner().getScene().syncLineup();
+        }
+        
+        // Sync lineup data with player
+        getOwner().sendPacket(new PacketSyncLineupNotify(this));
+    }
+    
     public void forEachAvatar(Consumer<GameAvatar> consumer) {
         for (int avatarId : this.getAvatars()) {
             GameAvatar avatar = this.getOwner().getAvatarById(avatarId);
@@ -166,7 +195,7 @@ public class PlayerLineup {
         }
 
         for (int slot = 0; slot < this.getAvatars().size(); slot++) {
-            GameAvatar avatar = owner.getAvatarById(getAvatars().get(slot));
+            GameAvatar avatar = owner.getAvatars().getAvatarById(getAvatars().get(slot));
             if (avatar == null) continue;
 
             proto.addAvatarList(avatar.toLineupAvatarProto(this, slot));

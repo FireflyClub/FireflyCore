@@ -12,7 +12,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.*;
-import java.util.jar.JarFile;
 
 /** Manages the server's plugins and the event system. */
 @Getter
@@ -106,18 +105,6 @@ public final class PluginManager {
                 } else if (!pluginConfig.validate()) {
                     this.getLogger().warn("Plugin {} has an invalid config file.", pluginFile.getName());
                     return;
-                }
-
-                // Load all classes in the plugin's JAR file.
-                var pluginJar = new JarFile(pluginFile);
-                var entries = pluginJar.entries();
-                while (entries.hasMoreElements()) {
-                    var entry = entries.nextElement();
-                    if (entry.isDirectory() || !entry.getName().endsWith(".class")) continue;
-
-                    var className = entry.getName().substring(0, entry.getName().length() - 6);
-                    className = className.replace('/', '.');
-                    classLoader.loadClass(className);
                 }
 
                 // Instantiate the plugin.

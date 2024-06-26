@@ -8,7 +8,8 @@ import emu.lunarcore.server.packet.Opcodes;
 import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.send.PacketSceneGroupRefreshScNotify;
 
-@Opcodes(CmdId.FinishRogueCommonDialogueCsReq)
+//@Opcodes(CmdId.FinishRogueDialogueGroupCsReq)
+@Opcodes(CmdId.NONE)
 public class HandlerFinishRogueDialogueGroupCsReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
@@ -19,6 +20,6 @@ public class HandlerFinishRogueDialogueGroupCsReq extends PacketHandler {
         npc.setDialogueFinished(true);
         session.send(new PacketSceneGroupRefreshScNotify(npc, null));
         
-        session.send(CmdId.FinishRogueCommonDialogueScRsp);
+        //session.send(CmdId.FinishRogueDialogueGroupScRsp);
     }
 }

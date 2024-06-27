@@ -277,7 +277,7 @@ public class RogueInstance {
         
         var data = HandleRogueCommonPendingActionScRsp.newInstance();
         data.getMutableRogueBuffSelect();
-        data.setTimes(this.actionUniqueId - 2);
+        data.setActionUniqueId(this.actionUniqueId - 2);
         this.getPlayer().sendPacket(new PacketHandleRogueCommonPendingActionScRsp(data));
         return buff;
     }
@@ -300,7 +300,7 @@ public class RogueInstance {
     public synchronized RogueBuff enhanceBuff(int buffId) {
         var buff = this.getBuffs().get(buffId);
         if (buff == null) return null;
-        var cost = 100 + (buff.getExcel().getRogueBuffRarity() - 1) * 30;
+        var cost = 100 + (buff.getExcel().getRogueBuffCategory().getVal() - 1) * 30;
         if (this.getCoin() < cost) return null;
         this.removeCoin(cost);
         this.getBuffs().remove(buffId);
@@ -355,7 +355,7 @@ public class RogueInstance {
         
         var data = HandleRogueCommonPendingActionScRsp.newInstance();
         data.getMutableMiracleSelect();
-        data.setTimes(this.actionUniqueId - 2);
+        data.setActionUniqueId(this.actionUniqueId - 2);
         this.getPlayer().sendPacket(new PacketHandleRogueCommonPendingActionScRsp(data));
         return miracle;
     }
@@ -402,7 +402,7 @@ public class RogueInstance {
         // TODO: add event
         var data = HandleRogueCommonPendingActionScRsp.newInstance();
         data.getMutableBonusSelect();
-        data.setTimes(this.actionUniqueId - 2);
+        data.setActionUniqueId(this.actionUniqueId - 2);
         this.getPlayer().sendPacket(new PacketHandleRogueCommonPendingActionScRsp(data));
         try {
             this.onSelectDialogue(bonus.getEventId(), 0);
@@ -410,7 +410,7 @@ public class RogueInstance {
         }
         return bonus;
     }
-
+    
     /**
      * Sets the amount of coins the player has without showing any tooltip
      */
@@ -418,20 +418,20 @@ public class RogueInstance {
         this.coin = Math.max(amount, 0);
         this.getPlayer().sendPacket(new PacketSyncRogueVirtualItemInfoScNotify(this.getPlayer()));
     }
-
+    
     public void addCoin(int count) {
         this.getPlayer().getInventory().addItem(GameConstants.ROGUE_COIN_ID, count, true);
     }
-
+    
     public void removeCoin(int count) {
         this.getPlayer().getInventory().addItem(GameConstants.ROGUE_COIN_ID, -count, true);
     }
-
+    
     public void addDialogueCoin(int count) {
         this.addCoin(count);
         this.getPlayer().sendPacket(new PacketSyncRogueCommonActionResultScNotify(RogueBuffSource.ROGUE_BUFF_SOURCE_TYPE_DIALOGUE, count));
     }
-
+    
     public synchronized void pickAvatar(RepeatedInt avatarId) {
         var newAvatarIds = new HashSet<Integer>();
         for (int id : avatarId) {

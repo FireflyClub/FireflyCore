@@ -28,6 +28,14 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         // Set account object for session
         session.setAccount(account);
 
+        // If playerCount reach the set maxPlayers, newly logged-in players will be kicked out
+        int maxPlayers = LunarCore.getConfig().getServerOptions().maxPlayers;
+        int playerCount = LunarCore.getGameServer().getPlayerCount();
+        if (maxPlayers > -1 &&  playerCount >= maxPlayers) {
+            session.close();
+            return;
+        }
+
         // Get player from database, if it doesnt exist, we create it
         Player player = LunarCore.getGameDatabase().getObjectByField(Player.class, "accountUid", account.getUid());
 

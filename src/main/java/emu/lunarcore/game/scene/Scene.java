@@ -249,13 +249,6 @@ public class Scene implements Tickable {
         if (this.getPlayerSummon() != null) {
             this.removeEntity(this.getPlayerSummon());
         }
-
-        for (var entity: entities.values()) {
-            if (entity instanceof  EntitySummonUnit) {
-                this.removeEntity(entity);
-                // TODO: remove any maze buff from the summon
-            }
-        }
     }
 
     public void handleSummonUnitTriggers(int entityId, String name, MotionInfo motion, RepeatedInt targetIds) {

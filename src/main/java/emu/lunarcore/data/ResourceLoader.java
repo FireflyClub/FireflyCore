@@ -252,7 +252,13 @@ public class ResourceLoader {
                 try (FileReader reader = new FileReader(file)) {
                     GroupInfo group = gson.fromJson(reader, GroupInfo.class);
                     group.setId(simpleGroup.getID());
+
+                    // Hacky way to load only groups that arent required for main missions
+                    if (group.getOwnerMainMissionID() > 0 && group.getOwnerMainMissionID() < 2000000) {
+                        continue;
+                    }
                     
+                    // Load groups into the floor info
                     floor.getGroupList().add(group);
                     floor.getGroups().put(simpleGroup.getID(), group);
                 } catch (Exception e) {
@@ -315,11 +321,9 @@ public class ResourceLoader {
         count = 0;
 
         // Load maze abilities
-        for (var adventureExcel : GameData.getAdventurePlayerExcelMap().values()) {
-            var avatarExcel = GameData.getAvatarExcelMap().get(adventureExcel.getAvatarID());
+        for (var avatarExcel : GameData.getAvatarExcelMap().values()) {
             // Get file
-            File file = new File(LunarCore.getConfig().getResourceDir() + "/" + 
-                adventureExcel.getPlayerJsonPath().replace("ConfigCharacter", "ConfigAdventureAbility").replace("_Config.json", "_Ability.json"));
+            File file = new File(LunarCore.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + avatarExcel.getNameKey() + "_Ability.json");
             if (!file.exists()) continue;
 
             try (FileReader reader = new FileReader(file)) {
@@ -334,7 +338,7 @@ public class ResourceLoader {
         }
         
         // Notify the server owner if we are missing any files
-        if (count < GameData.getAdventurePlayerExcelMap().size()) {
+        if (count < GameData.getAvatarExcelMap().size()) {
             LunarCore.getLogger().warn("Maze abilities are missing, please check your resources folder: {resources}/Config/ConfigAdventureAbility/LocalPlayer. Character techniques may not work!");
         }
 

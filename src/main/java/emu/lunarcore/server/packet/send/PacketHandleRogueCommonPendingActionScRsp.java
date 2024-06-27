@@ -15,12 +15,12 @@ public class PacketHandleRogueCommonPendingActionScRsp extends BasePacket {
     
     public PacketHandleRogueCommonPendingActionScRsp(int id) {
         this(HandleRogueCommonPendingActionScRsp.newInstance()
-            .setTimes(id));
+            .setActionUniqueId(id));
     }
     
     public PacketHandleRogueCommonPendingActionScRsp(RogueRerollBuff rogueRerollBuff, int id) {
         this(HandleRogueCommonPendingActionScRsp.newInstance()
-            .setTimes(id)
+            .setActionUniqueId(id)
             .setRogueRerollBuff(rogueRerollBuff));
     }
     

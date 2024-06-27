@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.GameDepot;
 import emu.lunarcore.data.excel.RogueBuffExcel;
 import emu.lunarcore.proto.ItemCostOuterClass.ItemCost;
@@ -32,7 +31,7 @@ public class RogueBuffSelectMenu {
     public RogueBuffSelectMenu() {}
     
     public RogueBuffSelectMenu(RogueInstance rogue) {
-        this(rogue, false, GameData.getRogueBuffGroupExcelMap().get(110002).getRogueBuffList());
+        this(rogue, false, new HashSet<>());
     }
     
     public RogueBuffSelectMenu(RogueInstance rogue, boolean generateAeonBuffs, Set<RogueBuffData> buffs) {
@@ -76,7 +75,7 @@ public class RogueBuffSelectMenu {
                 }
                 
                 // Calculate buff weights
-                double weight = 10.0 / excel.getExcel().getRogueBuffRarity();
+                double weight = 10.0 / excel.getExcel().getRogueBuffCategory().getVal();
                 
                 if (getRogue().getAeonBuffType() == excel.getExcel().getRogueBuffType()) {
                     weight *= 2;

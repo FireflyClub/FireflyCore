@@ -17,5 +17,6 @@ message BattlePassInfoNotify {
     BpTierType bp_tier_type = 5; // EPCBINJNMEN
     uint32 exp = 12;
     uint32 level = 4;
+    uint32 cur_bp_id = 1; //?
     uint32 cur_week_add_exp_sum = 14; //?
 }

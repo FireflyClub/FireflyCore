@@ -45,9 +45,9 @@ public final class PVEBattleResultCsReqOuterClass {
     private int stageId;
 
     /**
-     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     * <code>optional uint32 client_res_version = 7;</code>
      */
-    private int nALHKEDFJNJ;
+    private int clientResVersion;
 
     /**
      * <code>optional uint32 cost_time = 13;</code>
@@ -262,39 +262,39 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
-     * @return whether the nALHKEDFJNJ field is set
+     * <code>optional uint32 client_res_version = 7;</code>
+     * @return whether the clientResVersion field is set
      */
-    public boolean hasNALHKEDFJNJ() {
+    public boolean hasClientResVersion() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
+     * <code>optional uint32 client_res_version = 7;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearNALHKEDFJNJ() {
+    public PVEBattleResultCsReq clearClientResVersion() {
       bitField0_ &= ~0x00000008;
-      nALHKEDFJNJ = 0;
+      clientResVersion = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
-     * @return the nALHKEDFJNJ
+     * <code>optional uint32 client_res_version = 7;</code>
+     * @return the clientResVersion
      */
-    public int getNALHKEDFJNJ() {
-      return nALHKEDFJNJ;
+    public int getClientResVersion() {
+      return clientResVersion;
     }
 
     /**
-     * <code>optional uint32 NALHKEDFJNJ = 7;</code>
-     * @param value the nALHKEDFJNJ to set
+     * <code>optional uint32 client_res_version = 7;</code>
+     * @param value the clientResVersion to set
      * @return this
      */
-    public PVEBattleResultCsReq setNALHKEDFJNJ(final int value) {
+    public PVEBattleResultCsReq setClientResVersion(final int value) {
       bitField0_ |= 0x00000008;
-      nALHKEDFJNJ = value;
+      clientResVersion = value;
       return this;
     }
 
@@ -979,7 +979,7 @@ public final class PVEBattleResultCsReqOuterClass {
         dLEGEAIGABF = other.dLEGEAIGABF;
         battleId = other.battleId;
         stageId = other.stageId;
-        nALHKEDFJNJ = other.nALHKEDFJNJ;
+        clientResVersion = other.clientResVersion;
         costTime = other.costTime;
         bONOKPNOLAC = other.bONOKPNOLAC;
         endStatus = other.endStatus;
@@ -1010,8 +1010,8 @@ public final class PVEBattleResultCsReqOuterClass {
       if (other.hasStageId()) {
         setStageId(other.stageId);
       }
-      if (other.hasNALHKEDFJNJ()) {
-        setNALHKEDFJNJ(other.nALHKEDFJNJ);
+      if (other.hasClientResVersion()) {
+        setClientResVersion(other.clientResVersion);
       }
       if (other.hasCostTime()) {
         setCostTime(other.costTime);
@@ -1059,7 +1059,7 @@ public final class PVEBattleResultCsReqOuterClass {
       dLEGEAIGABF = 0;
       battleId = 0;
       stageId = 0;
-      nALHKEDFJNJ = 0;
+      clientResVersion = 0;
       costTime = 0;
       bONOKPNOLAC = 0;
       endStatus = 0;
@@ -1102,7 +1102,7 @@ public final class PVEBattleResultCsReqOuterClass {
         && (!hasDLEGEAIGABF() || dLEGEAIGABF == other.dLEGEAIGABF)
         && (!hasBattleId() || battleId == other.battleId)
         && (!hasStageId() || stageId == other.stageId)
-        && (!hasNALHKEDFJNJ() || nALHKEDFJNJ == other.nALHKEDFJNJ)
+        && (!hasClientResVersion() || clientResVersion == other.clientResVersion)
         && (!hasCostTime() || costTime == other.costTime)
         && (!hasBONOKPNOLAC() || bONOKPNOLAC == other.bONOKPNOLAC)
         && (!hasEndStatus() || endStatus == other.endStatus)
@@ -1132,7 +1132,7 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(nALHKEDFJNJ);
+        output.writeUInt32NoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 104);
@@ -1197,7 +1197,7 @@ public final class PVEBattleResultCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(nALHKEDFJNJ);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(costTime);
@@ -1270,8 +1270,8 @@ public final class PVEBattleResultCsReqOuterClass {
             }
           }
           case 56: {
-            // nALHKEDFJNJ
-            nALHKEDFJNJ = input.readUInt32();
+            // clientResVersion
+            clientResVersion = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 104) {
@@ -1405,7 +1405,7 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeUInt32(FieldNames.stageId, stageId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.nALHKEDFJNJ, nALHKEDFJNJ);
+        output.writeUInt32(FieldNames.clientResVersion, clientResVersion);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.costTime, costTime);
@@ -1485,10 +1485,11 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case -1727352485: {
-            if (input.isAtField(FieldNames.nALHKEDFJNJ)) {
+          case -2005674429:
+          case -349907515: {
+            if (input.isAtField(FieldNames.clientResVersion)) {
               if (!input.trySkipNullValue()) {
-                nALHKEDFJNJ = input.readUInt32();
+                clientResVersion = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -2039,7 +2040,7 @@ public final class PVEBattleResultCsReqOuterClass {
 
       static final FieldName stageId = FieldName.forField("stageId", "stage_id");
 
-      static final FieldName nALHKEDFJNJ = FieldName.forField("NALHKEDFJNJ");
+      static final FieldName clientResVersion = FieldName.forField("clientResVersion", "client_res_version");
 
       static final FieldName costTime = FieldName.forField("costTime", "cost_time");
 

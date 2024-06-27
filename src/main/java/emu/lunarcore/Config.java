@@ -18,7 +18,7 @@ public class Config {
 
     public KeystoreInfo keystore = new KeystoreInfo();
 
-    public HttpServerConfig httpServer = new HttpServerConfig(443);
+    public HttpServerConfig httpServer = new HttpServerConfig(80);
     public GameServerConfig gameServer = new GameServerConfig(23301);
     
     public ServerOptions serverOptions = new ServerOptions();
@@ -47,7 +47,7 @@ public class Config {
     @Getter
     public static class KeystoreInfo {
         public String path = "./keystore.p12";
-        public String password = "lunar";
+        public String password = "";
     }
 
     @Getter
@@ -84,7 +84,7 @@ public class Config {
     
     @Getter
     public static class HttpServerConfig extends ServerConfig {
-        public boolean useSSL = true;
+        public boolean useSSL = false;
         public long regionListRefresh = 60_000; // Time in milliseconds to wait before refreshing region list cache again
 
         public HttpServerConfig(int port) {
@@ -132,7 +132,7 @@ public class Config {
         public boolean autoUpgradeWorldLevel = true; // Automatically upgrades world level when the player reaches a certain TB level
         public String language = "CHS";
         public Set<String> defaultPermissions = Set.of("player");
-        
+        public int maxPlayers = -1;
         public ServerProfile serverFriendInfo = new ServerProfile();
         public ServerChatProfile serverChatFriendInfo = new ServerChatProfile();
         public WelcomeMail welcomeMail = new WelcomeMail();
@@ -162,8 +162,18 @@ public class Config {
         public int level = 70;
         public int headIcon = 202007;
         public int chatBubbleId = 0;
-        public int displayAvatarId = 1310;
-        public int displayAvatarLevel = 80;
+        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1218, 80), new ServerDisplayAvatar(1221, 80));
+        
+        @Getter
+        public static class ServerDisplayAvatar {
+            public int avatarId;
+            public int level;
+            
+            public ServerDisplayAvatar(int avatarId, int level) {
+                this.avatarId = avatarId;
+                this.level = level;
+            }
+        }
     }
 
     @Getter
@@ -173,8 +183,18 @@ public class Config {
         public int level = 70;
         public int headIcon = 202016;
         public int chatBubbleId = 0;
-        public int displayAvatarId = 1314;
-        public int displayAvatarLevel = 80;
+        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1224, 1));
+        
+        @Getter
+        public static class ServerDisplayAvatar {
+            public int avatarId;
+            public int level;
+            
+            public ServerDisplayAvatar(int avatarId, int level) {
+                this.avatarId = avatarId;
+                this.level = level;
+            }
+        }
     }
     
     @Getter

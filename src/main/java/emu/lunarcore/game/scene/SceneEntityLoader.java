@@ -19,7 +19,8 @@ public class SceneEntityLoader {
     
     public void onSceneLoad(Scene scene) {
         for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
-            if ((group.getLoadSide() != GroupLoadSide.Server && group.getOwnerMainMissionID() != 8022202) || group.getOwnerMainMissionID() > 0) {
+            // Skip non-server groups
+            if (group.getLoadSide() != GroupLoadSide.Server) {
                 continue;
             }
             
@@ -70,15 +71,8 @@ public class SceneEntityLoader {
                 // Skip tutorial simulated universe
                 return null;
             }
-        } else if (prop.getPropId() == 1025) {
-            // Hacky fix to open simulated divergent universe
-            if (propInfo.getMappingInfoID() == 2421) {
-                prop.setState(PropState.Open, false);
-            } else {
-                return null;
-            }
         } else if (prop.getExcel().isDoor() || prop.getExcel().isStaircase()) {
-            // Hacky fix to always open doors and stairs
+            // Hacky fix to always open doors
             prop.setState(PropState.Open, false);
         } else if (prop.getExcel().getPropType() == PropType.PROP_SPRING) {
             // Cache teleport anchors

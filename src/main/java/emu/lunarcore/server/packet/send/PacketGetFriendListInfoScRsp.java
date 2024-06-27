@@ -31,8 +31,20 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
                 .setChatBubbleId(serverFriendInfo.getChatBubbleId())
                 .setOnlineStatus(FriendOnlineStatus.FRIEND_ONLINE_STATUS_ONLINE)
                 .setPlatformType(PlatformType.PC)
-                .addAssistSimpleInfo(AssistSimpleInfo.newInstance().setAvatarId(serverFriendInfo.getDisplayAvatarId()).setLevel(serverFriendInfo.getDisplayAvatarLevel()))
                 .setHeadIcon(serverFriendInfo.getHeadIcon());
+        // Add server display avatars
+        if (serverFriendInfo.getDisplayAvatars() != null) {
+            for (int pos = 0; pos < serverFriendInfo.getDisplayAvatars().size(); pos++) {
+                var displayAvatar = serverFriendInfo.getDisplayAvatars().get(pos);
+                
+                var info = AssistSimpleInfo.newInstance()
+                        .setAvatarId(displayAvatar.getAvatarId())
+                        .setLevel(displayAvatar.getLevel())
+                        .setPos(pos);
+                
+                consoleFriend.addAssistSimpleInfo(info);
+            }
+        }
 
         // Server Chat
         var chatFriend = SimpleInfo.newInstance()
@@ -43,12 +55,25 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
                 .setChatBubbleId(serverChatFriendInfo.getChatBubbleId())
                 .setOnlineStatus(FriendOnlineStatus.FRIEND_ONLINE_STATUS_ONLINE)
                 .setPlatformType(PlatformType.PC)
-                .addAssistSimpleInfo(AssistSimpleInfo.newInstance().setAvatarId(serverChatFriendInfo.getDisplayAvatarId()).setLevel(serverChatFriendInfo.getDisplayAvatarLevel()))
                 .setHeadIcon(serverChatFriendInfo.getHeadIcon());
+        // Add server display avatars
+        if (serverChatFriendInfo.getDisplayAvatars() != null) {
+            for (int pos = 0; pos < serverChatFriendInfo.getDisplayAvatars().size(); pos++) {
+                var displayAvatar = serverChatFriendInfo.getDisplayAvatars().get(pos);
+                
+                var info = AssistSimpleInfo.newInstance()
+                        .setAvatarId(displayAvatar.getAvatarId())
+                        .setLevel(displayAvatar.getLevel())
+                        .setPos(pos);
+                
+                chatFriend.addAssistSimpleInfo(info);
+            }
+        }
 
         var data = GetFriendListInfoScRsp.newInstance();
-        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(consoleFriend));
+        // Make sure server console is the first friend
         data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(chatFriend));
+        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(consoleFriend));
 
         for (var friendship : friendList.getFriends().values()) {
             var friend = friendList.getServer().getPlayerByUid(friendship.getFriendUid(), true);

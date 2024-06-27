@@ -32,7 +32,7 @@ public class PacketGetRogueBuffEnhanceInfoScRsp extends BasePacket {
     }
     
     public ItemCostList getItemCostList(RogueBuffExcel excel) {
-        int cost = 100 + (excel.getRogueBuffRarity() - 1) * 30;
+        int cost = 100 + (excel.getRogueBuffCategory().getVal() - 1) * 30;
         return ItemCostList.newInstance()
             .addItemList(ItemCost.newInstance()
                 .setPileItem(PileItem.newInstance()

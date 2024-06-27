@@ -21,7 +21,7 @@ public class PacketBattlePassInfoNotify extends BasePacket {
             .setLevel(70)
             .setCurWeekAddExpSum(8000)
             .setExp(800)
-            // .setCurBpId(5) // doesn't matter
+            .setCurBpId(5) // doesn't matter
             .setBpTierType(BpTierType.BP_TIER_TYPE_PREMIUM_2);
         
         this.setData(data);

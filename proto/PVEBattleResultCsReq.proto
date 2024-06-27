@@ -8,7 +8,7 @@ import "BattleStatistics.proto";
 
 // HNLNNBAFNGE
 message PVEBattleResultCsReq {
-	uint32 NALHKEDFJNJ = 7;
+	uint32 client_res_version = 7;
     BattleStatistics stt = 5; // DOHBEPLBCAE
     repeated BattleOp op_list = 8; // HJKKPOPIANF
     BattleEndStatus end_status = 9; // BMAIPJJKCLC

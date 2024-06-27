@@ -8,6 +8,7 @@ import emu.lunarcore.data.GameResource;
 import emu.lunarcore.data.ResourceType;
 import emu.lunarcore.data.ResourceType.LoadPriority;
 import emu.lunarcore.game.enums.RogueBuffAeonType;
+import emu.lunarcore.game.enums.RogueBuffCategory;
 import lombok.Getter;
 
 @Getter
@@ -16,9 +17,9 @@ public class RogueBuffExcel extends GameResource {
     private int MazeBuffID;
     private int MazeBuffLevel;
     private int RogueBuffType;
-    private int RogueBuffRarity;
     private int RogueBuffTag;
     private int AeonID;
+    private RogueBuffCategory RogueBuffCategory = emu.lunarcore.game.enums.RogueBuffCategory.None;
     private RogueBuffAeonType BattleEventBuffType = RogueBuffAeonType.Normal;
 
     @Override
@@ -33,7 +34,7 @@ public class RogueBuffExcel extends GameResource {
     @Override
     public void onLoad() {
         // Add to random buff list
-        if (RogueBuffType >= 120 && RogueBuffType <= 128 && RogueBuffRarity >= 1 && RogueBuffRarity <= 3 && MazeBuffLevel == 1 && AeonID == 0) {
+        if (RogueBuffType >= 120 && RogueBuffType <= 128 && RogueBuffCategory.getVal() >= 1 && RogueBuffCategory.getVal() <= 3 && MazeBuffLevel == 1 && AeonID == 0) {
             GameDepot.getRogueRandomBuffList().add(this);
         }
 

@@ -26,8 +26,8 @@ import emu.lunarcore.server.packet.CmdId;
 import emu.lunarcore.server.packet.Retcode;
 import emu.lunarcore.server.packet.send.PacketLeaveRogueScRsp;
 import emu.lunarcore.server.packet.send.PacketStartRogueScRsp;
-import emu.lunarcore.server.packet.send.PacketSyncRogueVirtualItemInfoScNotify;
 import emu.lunarcore.server.packet.send.PacketSyncRogueFinishScNotify;
+import emu.lunarcore.server.packet.send.PacketSyncRogueVirtualItemInfoScNotify;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
@@ -77,7 +77,7 @@ public class RogueManager extends BasePlayerManager {
             getPlayer().sendPacket(new PacketStartRogueScRsp(Retcode.ROGUE_AREA_INVALID.getVal()));
             return;
         }
-
+        
         // Make sure player already isnt in a rogue instance
         if (getPlayer().getRogueInstance() != null) {
             getPlayer().sendPacket(new PacketStartRogueScRsp());

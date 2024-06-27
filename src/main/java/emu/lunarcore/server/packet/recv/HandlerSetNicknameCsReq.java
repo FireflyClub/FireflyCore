@@ -5,7 +5,6 @@ import emu.lunarcore.server.game.GameSession;
 import emu.lunarcore.server.packet.CmdId;
 import emu.lunarcore.server.packet.Opcodes;
 import emu.lunarcore.server.packet.PacketHandler;
-import emu.lunarcore.server.packet.send.PacketSetNicknameScRsp;
 
 @Opcodes(CmdId.SetNicknameCsReq)
 public class HandlerSetNicknameCsReq extends PacketHandler {
@@ -18,7 +17,7 @@ public class HandlerSetNicknameCsReq extends PacketHandler {
             session.getPlayer().setNickname(req.getNickname());
         }
         
-        session.send(new PacketSetNicknameScRsp());
+        session.send(CmdId.SetNicknameScRsp);
     }
 
 }

@@ -11,8 +11,8 @@ message PVEBattleResultScRsp {
 	// ItemList DBAGCMFKABI = 6;
 	uint32 scene_event_id = 3;
 	repeated BattleAvatar pve_avatar_list = 11; // PMKOINDGNGH
-	ItemList KHMNINDBCEC = 1822;
-	ItemList NLKKIDOKMKG = 14;
+	//ItemList KHMNINDBCEC = 1822;
+	//ItemList NLKKIDOKMKG = 14;
 	bool check_identical = 1; // DMKDPNBAKKN
 	uint32 CILIOGNAKIC = 9;
 	uint32 retcode = 8;
@@ -26,6 +26,9 @@ message PVEBattleResultScRsp {
 	uint32 stage_id = 4;
 
 	ItemList drop_data = 6; //?
+	ItemList unk1 = 5; //?
+	ItemList unk2 = 14; //?
+	ItemList unk3 = 1822; //?
 	string bin_version = 12; //?
 	string res_version = 15; //?
 }

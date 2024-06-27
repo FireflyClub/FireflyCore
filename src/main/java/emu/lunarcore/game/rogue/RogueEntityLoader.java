@@ -17,7 +17,7 @@ import emu.lunarcore.game.scene.entity.EntityMonster;
 import emu.lunarcore.game.scene.entity.EntityNpc;
 import emu.lunarcore.game.scene.entity.EntityProp;
 import emu.lunarcore.game.scene.entity.extra.PropRogueData;
-// import emu.lunarcore.server.packet.send.PacketSyncRogueDialogueEventDataScNotify;
+import emu.lunarcore.server.packet.send.PacketSyncRogueDialogueEventDataScNotify;
 import emu.lunarcore.util.Utils;
 
 public class RogueEntityLoader extends SceneEntityLoader {
@@ -74,7 +74,7 @@ public class RogueEntityLoader extends SceneEntityLoader {
         PropState state = propInfo.getState();
         PropRogueData propExtra = null;
         
-        // Rogue Door id is 1000
+        // Rogue portal id is 1000
         if (propId == 1000 || propId == 1021 || propId == 1022 || propId == 1023) {
             // Site index
             int index = 0;
@@ -108,12 +108,12 @@ public class RogueEntityLoader extends SceneEntityLoader {
         // Get prop excel
         PropExcel propExcel = GameData.getPropExcelMap().get(propId);
         if (propExcel == null) return null;
-
+        
         // Hacky fix to always open doors
         if (propExcel.isDoor()) {
             state = PropState.Open;
         }
-
+        
         // Create prop from prop info
         EntityProp prop = new EntityProp(scene, propExcel, group, propInfo);
         prop.setState(state, false);
@@ -149,8 +149,8 @@ public class RogueEntityLoader extends SceneEntityLoader {
             instance.getEventManager().setNowPercentage(0);
             npc.setRogueNpcId(npcId);
             npc.setEventId(++instance.eventUniqueId);
-            // scene.getPlayer().sendPacket(new PacketSyncRogueDialogueEventDataScNotify(npcId, instance.curDialogueParams.get(npcId),
-                // instance.eventUniqueId));
+            scene.getPlayer().sendPacket(new PacketSyncRogueDialogueEventDataScNotify(npcId, instance.curDialogueParams.get(npcId),
+                instance.eventUniqueId));
         }
         
         return npc;

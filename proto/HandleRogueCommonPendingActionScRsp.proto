@@ -9,8 +9,7 @@ import "RogueBonusSelect.proto";
 
 message HandleRogueCommonPendingActionScRsp {
     uint32 retcode = 9;
-    uint32 times = 7;
-    uint32 times2 = 14;
+    uint32 action_unique_id = 1;
     RogueBuffSelect rogue_buff_select = 1087;
     RogueRerollBuff rogue_reroll_buff = 126;
     RogueMiracleSelect miracle_select = 2029;

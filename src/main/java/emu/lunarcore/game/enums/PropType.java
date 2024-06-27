@@ -32,8 +32,7 @@ public enum PropType {
     PROP_MAP_ROTATION_CHARGER (25),
     PROP_MAP_ROTATION_VOLUME (26),
     PROP_MAP_ROTATION_SWITCHER (27),
-    PROP_BOXMAN_BINDED (28),
-    PROP_MAZE_JIGSAW(29);
+    PROP_BOXMAN_BINDED (28);
 
     private final int val;
 

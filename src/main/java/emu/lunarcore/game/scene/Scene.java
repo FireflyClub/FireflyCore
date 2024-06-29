@@ -443,6 +443,11 @@ public class Scene implements Tickable {
             leaderAvatarId = getPlayer().getCurrentMultiPathAvatarType().getOrDefault(leaderAvatarId, leaderAvatarId);
         }
         
+        // TODO: save latest valid world_id to database
+        if(proto.getWorldId() == 100) {
+            proto.setWorldId(401);
+        }
+        
         // Sort entities into groups
         var groups = new Int2ObjectOpenHashMap<SceneEntityGroupInfo>();
         

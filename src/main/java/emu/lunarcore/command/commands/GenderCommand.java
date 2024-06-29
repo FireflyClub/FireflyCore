@@ -4,7 +4,6 @@ import emu.lunarcore.GameConstants;
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
-import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.player.PlayerGender;
 import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass.MultiPathAvatarType;

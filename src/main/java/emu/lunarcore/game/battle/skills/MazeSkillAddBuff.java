@@ -8,6 +8,7 @@ import emu.lunarcore.game.scene.entity.EntityMonster;
 import emu.lunarcore.game.scene.entity.GameEntity;
 import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
 import emu.lunarcore.server.packet.send.PacketSyncEntityBuffChangeListScNotify;
+import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,17 +16,23 @@ import lombok.Setter;
 public class MazeSkillAddBuff extends MazeSkillAction {
     private int buffId;
     private int duration;
+    private int skillIndex;
     
     @Setter
     private boolean sendBuffPacket;
     
     public MazeSkillAddBuff(int buffId, int duration) {
+        this(buffId, duration, 0);
+    }
+    
+    public MazeSkillAddBuff(int buffId, int duration, int skillIndex) {
         this.buffId = buffId;
         this.duration = duration;
+        this.skillIndex = skillIndex;
     }
     
     @Override
-    public void onCast(GameAvatar caster, MotionInfo castPosition) {
+    public void onCast(GameAvatar caster, MotionInfo castPosition, IntSet hitTargets) {
         caster.addBuff(buffId, duration);
     }
     
@@ -50,7 +57,10 @@ public class MazeSkillAddBuff extends MazeSkillAction {
         for (GameEntity target : targets) {
             if (target instanceof EntityMonster monster) {
                 // Set as temp buff
-                monster.addTempBuff(new SceneBuff(caster.getAvatarId(), buffId));
+                var buff = new SceneBuff(caster.getAvatarId(), buffId);
+                buff.setSkillIndex(skillIndex);
+                
+                monster.addTempBuff(buff);
             }
         }
     }

@@ -15,8 +15,8 @@ message SceneCastSkillCsReq {
 	repeated DynamicValue dynamic_values = 11;
 	uint32 skill_index = 15;
 	MotionInfo target_motion = 12; // KMCPCJJFIKH
-	repeated uint32 hit_target_entity_id_list = 8; //?
+	repeated uint32 hit_target_entity_id_list = 2;
 	uint32 caster_id = 13; // GFJOJDILCEA
 	repeated SceneCastSkill DIBENGPJLGG = 5;
-	repeated uint32 assist_monster_entity_id_list = 2; //?
+	repeated uint32 assist_monster_entity_id_list = 8;
 }

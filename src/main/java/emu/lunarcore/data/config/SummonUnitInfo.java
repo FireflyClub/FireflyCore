@@ -7,6 +7,7 @@ import emu.lunarcore.game.battle.skills.MazeSkillAction;
 import emu.lunarcore.game.battle.skills.MazeSkillAddBuff;
 import emu.lunarcore.game.battle.skills.MazeSkillHitProp;
 import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Original name: SummonUnitConfig
@@ -15,6 +16,9 @@ import lombok.Getter;
 public class SummonUnitInfo {
     private String AttachPoint;
     private SummonUnitTriggers TriggerConfig;
+    
+    // When this value is true, it will prevent removing other summon unit after spawning this object
+    @Setter private transient boolean canCoexistWithOther;
     
     public List<SummonUnitCustomTrigger> getCustomTriggers() {
         return TriggerConfig.getCustomTriggers();
@@ -29,7 +33,8 @@ public class SummonUnitInfo {
     
     public void buildMazeSkillActions() {
         for (var customTrigger : getCustomTriggers()) {
-            customTrigger.buildMazeSkillActions();
+            var canCoexist = customTrigger.buildMazeSkillActions();
+            this.setCanCoexistWithOther(canCoexist);
         }
     }
     
@@ -51,12 +56,14 @@ public class SummonUnitInfo {
         
         private transient List<MazeSkillAction> actions;
         
-        public void buildMazeSkillActions() {
+        public boolean buildMazeSkillActions() {
+            var canCoexistWithOtherBuff = false;
+            
             // Create actions list
             this.actions = new ArrayList<>();
             
             // Sanity check
-            if (this.OnTriggerEnter == null) return;
+            if (this.OnTriggerEnter == null) return false;
             
             // Build maze actions
             for (var task : this.OnTriggerEnter) {
@@ -66,10 +73,24 @@ public class SummonUnitInfo {
                     actionAddBuff.setSendBuffPacket(true);
                     
                     actions.add(actionAddBuff);
-                } else if (task.getType().contains("TriggerHitProp")) {
+                }  else if (task.getType().contains("TriggerHitProp")) {
                     actions.add(new MazeSkillHitProp());
                 }
+                
+                if(task.getSuccessTaskList() != null) {
+                    for (var successTask: task.getSuccessTaskList()) {
+                        if(successTask.getType().contains("AddMazeBuff")) {
+                            canCoexistWithOtherBuff = true;
+                            var actionAddBuff = new MazeSkillAddBuff(successTask.getID(), 5);
+                            actionAddBuff.setSendBuffPacket(true);
+                            actions.add(actionAddBuff);
+                        }
+                    }
+                }
+                
             }
+            
+            return canCoexistWithOtherBuff;
         }
     }
 

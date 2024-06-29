@@ -36,7 +36,7 @@ public class Battle {
     private final long timestamp;
     
     private BattleStage stage; // Main battle stage
-    private IntList battleEvents; // TODO maybe turn it into a map?
+    @Setter private IntList battleEvents; // TODO maybe turn it into a map?
     private Int2ObjectMap<BattleTargetList> battleTargets; // TODO use custom battle target object as value type in case we need to save battles to the db
     
     // Internal battle data
@@ -157,10 +157,15 @@ public class Battle {
     }
     
     public void addBattleTarget(int key, int targetId, int progress) {
+        this.addBattleTarget(key, targetId, progress, 0);
+    }
+    
+    public void addBattleTarget(int key, int targetId, int progress, int totalProgress) {
         var list = getBattleTargets().computeIfAbsent(key, i -> BattleTargetList.newInstance());
         var battleTarget = BattleTarget.newInstance()
                 .setId(targetId)
-                .setProgress(progress);
+                .setProgress(progress)
+                .setTotalProgress(totalProgress);
         
         list.addBattleTargetList(battleTarget);
     }
@@ -182,7 +187,16 @@ public class Battle {
     }
     
     public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag) {
+        return addBuff(buffId, ownerIndex, waveFlag, 0);
+    }
+
+    public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag, int skillIndex) {
         MazeBuff buff = new MazeBuff(buffId, 1, ownerIndex, waveFlag);
+        
+        if(skillIndex > 0) {
+            buff.addDynamicValue("SkillIndex", skillIndex);
+        }
+        
         return addBuff(buff);
     }
     

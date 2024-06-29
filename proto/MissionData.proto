@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MissionCustomValueData.proto";
+import "MissionStatus.proto";
+
+// LOOOCBGENKE
+message MissionData {
+	repeated MissionCustomValueData custom_value_list = 9;
+	MissionStatus status = 15;
+	uint32 id = 12;
+}

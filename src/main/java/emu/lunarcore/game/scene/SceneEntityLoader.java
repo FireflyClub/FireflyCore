@@ -19,8 +19,14 @@ public class SceneEntityLoader {
     
     public void onSceneLoad(Scene scene) {
         for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
-            // Skip non-server groups
-            if (group.getLoadSide() != GroupLoadSide.Server) {
+            var isEventMission = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
+            
+            // Skip non-server & non-event groups
+            if (group.getLoadSide() != GroupLoadSide.Server && !isEventMission) {
+                continue;
+            }
+            
+            if (group.getOwnerMainMissionID() > 0 && group.getOwnerMainMissionID() < 2000000) {
                 continue;
             }
             
@@ -48,8 +54,10 @@ public class SceneEntityLoader {
     }
     
     public EntityProp loadProp(Scene scene, GroupInfo group, PropInfo propInfo) {
+        var isEventProp = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
+        
         // Don't spawn entity if they have certain flags in their info
-        if (propInfo.isIsDelete() || propInfo.isIsClientOnly()) {
+        if (!isEventProp && (propInfo.isIsDelete() || propInfo.isIsClientOnly())) {
             return null;
         }
         
@@ -71,12 +79,21 @@ public class SceneEntityLoader {
                 // Skip tutorial simulated universe
                 return null;
             }
+        } else if (prop.getPropId() == 1025) {
+            // Hacky fix to open simulated divergent universe
+            if (propInfo.getMappingInfoID() == 2421) {
+                prop.setState(PropState.Open, false);
+            } else {
+                return null;
+            }
         } else if (prop.getExcel().isDoor() || prop.getExcel().isStaircase()) {
-            // Hacky fix to always open doors
+            // Hacky fix to always open doors and stairs
             prop.setState(PropState.Open, false);
         } else if (prop.getExcel().getPropType() == PropType.PROP_SPRING) {
             // Cache teleport anchors
             scene.getHealingSprings().add(prop);
+        } else if (isEventProp) {
+            prop.setState(PropState.Open, false);
         }
         
         // Add trigger to scene
@@ -88,8 +105,10 @@ public class SceneEntityLoader {
     }
     
     public EntityNpc loadNpc(Scene scene, GroupInfo group, NpcInfo npcInfo) {
+        var isEventGroup = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
+        
         // Don't spawn entity if they have certain flags in their info
-        if (npcInfo.isIsDelete() || npcInfo.isIsClientOnly()) {
+        if ((npcInfo.isIsDelete() || npcInfo.isIsClientOnly()) && !isEventGroup) {
             return null;
         }
         

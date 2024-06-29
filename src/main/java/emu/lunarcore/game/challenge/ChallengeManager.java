@@ -114,9 +114,6 @@ public class ChallengeManager extends BasePlayerManager {
         if (bossBuffs != null) {
             instance.addBossBuff(bossBuffs.getBuffOne());
             instance.addBossBuff(bossBuffs.getBuffTwo());
-            
-            // Hacky way to trigger entering scene
-            getPlayer().enterScene(excel.getMapEntranceID(), 0, true);
         }
 
         // Send packet

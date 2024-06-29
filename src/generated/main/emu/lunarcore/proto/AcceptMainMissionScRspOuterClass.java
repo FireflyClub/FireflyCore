@@ -11,80 +11,92 @@ import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 
-public final class MarkReadMailScRspOuterClass {
+public final class AcceptMainMissionScRspOuterClass {
   /**
-   * Protobuf type {@code MarkReadMailScRsp}
+   * Protobuf type {@code AcceptMainMissionScRsp}
    */
-  public static final class MarkReadMailScRsp extends ProtoMessage<MarkReadMailScRsp> implements Cloneable {
+  public static final class AcceptMainMissionScRsp extends ProtoMessage<AcceptMainMissionScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 6;</code>
-     */
-    private int id;
-
-    /**
      * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     *  PMNNABLLDBA
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 main_mission_id = 1;</code>
+     */
+    private int mainMissionId;
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
-    private MarkReadMailScRsp() {
+    private AcceptMainMissionScRsp() {
     }
 
     /**
-     * @return a new empty instance of {@code MarkReadMailScRsp}
+     * @return a new empty instance of {@code AcceptMainMissionScRsp}
      */
-    public static MarkReadMailScRsp newInstance() {
-      return new MarkReadMailScRsp();
+    public static AcceptMainMissionScRsp newInstance() {
+      return new AcceptMainMissionScRsp();
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
-     * @return whether the id field is set
+     * <pre>
+     *  PMNNABLLDBA
+     * </pre>
+     *
+     * <code>optional uint32 main_mission_id = 1;</code>
+     * @return whether the mainMissionId field is set
      */
-    public boolean hasId() {
+    public boolean hasMainMissionId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
+     * <pre>
+     *  PMNNABLLDBA
+     * </pre>
+     *
+     * <code>optional uint32 main_mission_id = 1;</code>
      * @return this
      */
-    public MarkReadMailScRsp clearId() {
+    public AcceptMainMissionScRsp clearMainMissionId() {
       bitField0_ &= ~0x00000001;
-      id = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 id = 6;</code>
-     * @return the id
-     */
-    public int getId() {
-      return id;
-    }
-
-    /**
-     * <code>optional uint32 id = 6;</code>
-     * @param value the id to set
-     * @return this
-     */
-    public MarkReadMailScRsp setId(final int value) {
-      bitField0_ |= 0x00000001;
-      id = value;
+      mainMissionId = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
+     *  PMNNABLLDBA
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 main_mission_id = 1;</code>
+     * @return the mainMissionId
+     */
+    public int getMainMissionId() {
+      return mainMissionId;
+    }
+
+    /**
+     * <pre>
+     *  PMNNABLLDBA
+     * </pre>
+     *
+     * <code>optional uint32 main_mission_id = 1;</code>
+     * @param value the mainMissionId to set
+     * @return this
+     */
+    public AcceptMainMissionScRsp setMainMissionId(final int value) {
+      bitField0_ |= 0x00000001;
+      mainMissionId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -92,25 +104,17 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
-    public MarkReadMailScRsp clearRetcode() {
+    public AcceptMainMissionScRsp clearRetcode() {
       bitField0_ &= ~0x00000002;
       retcode = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -118,39 +122,35 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
-    public MarkReadMailScRsp setRetcode(final int value) {
+    public AcceptMainMissionScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000002;
       retcode = value;
       return this;
     }
 
     @Override
-    public MarkReadMailScRsp copyFrom(final MarkReadMailScRsp other) {
+    public AcceptMainMissionScRsp copyFrom(final AcceptMainMissionScRsp other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        id = other.id;
+        mainMissionId = other.mainMissionId;
         retcode = other.retcode;
       }
       return this;
     }
 
     @Override
-    public MarkReadMailScRsp mergeFrom(final MarkReadMailScRsp other) {
+    public AcceptMainMissionScRsp mergeFrom(final AcceptMainMissionScRsp other) {
       if (other.isEmpty()) {
         return this;
       }
       cachedSize = -1;
-      if (other.hasId()) {
-        setId(other.id);
+      if (other.hasMainMissionId()) {
+        setMainMissionId(other.mainMissionId);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
@@ -159,19 +159,19 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     @Override
-    public MarkReadMailScRsp clear() {
+    public AcceptMainMissionScRsp clear() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
-      id = 0;
+      mainMissionId = 0;
       retcode = 0;
       return this;
     }
 
     @Override
-    public MarkReadMailScRsp clearQuick() {
+    public AcceptMainMissionScRsp clearQuick() {
       if (isEmpty()) {
         return this;
       }
@@ -185,23 +185,23 @@ public final class MarkReadMailScRspOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof MarkReadMailScRsp)) {
+      if (!(o instanceof AcceptMainMissionScRsp)) {
         return false;
       }
-      MarkReadMailScRsp other = (MarkReadMailScRsp) o;
+      AcceptMainMissionScRsp other = (AcceptMainMissionScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasId() || id == other.id)
+        && (!hasMainMissionId() || mainMissionId == other.mainMissionId)
         && (!hasRetcode() || retcode == other.retcode);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(id);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(mainMissionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(retcode);
       }
     }
@@ -210,7 +210,7 @@ public final class MarkReadMailScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mainMissionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -220,21 +220,21 @@ public final class MarkReadMailScRspOuterClass {
 
     @Override
     @SuppressWarnings("fallthrough")
-    public MarkReadMailScRsp mergeFrom(final ProtoSource input) throws IOException {
+    public AcceptMainMissionScRsp mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // id
-            id = input.readUInt32();
+          case 8: {
+            // mainMissionId
+            mainMissionId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 72) {
               break;
             }
           }
-          case 56: {
+          case 72: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -261,7 +261,7 @@ public final class MarkReadMailScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.mainMissionId, mainMissionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
@@ -270,16 +270,17 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     @Override
-    public MarkReadMailScRsp mergeFrom(final JsonSource input) throws IOException {
+    public AcceptMainMissionScRsp mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3355: {
-            if (input.isAtField(FieldNames.id)) {
+          case 1124848142:
+          case 885892852: {
+            if (input.isAtField(FieldNames.mainMissionId)) {
               if (!input.trySkipNullValue()) {
-                id = input.readUInt32();
+                mainMissionId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -309,8 +310,8 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     @Override
-    public MarkReadMailScRsp clone() {
-      return new MarkReadMailScRsp().copyFrom(this);
+    public AcceptMainMissionScRsp clone() {
+      return new AcceptMainMissionScRsp().copyFrom(this);
     }
 
     @Override
@@ -318,32 +319,32 @@ public final class MarkReadMailScRspOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static MarkReadMailScRsp parseFrom(final byte[] data) throws
+    public static AcceptMainMissionScRsp parseFrom(final byte[] data) throws
         InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new MarkReadMailScRsp(), data).checkInitialized();
+      return ProtoMessage.mergeFrom(new AcceptMainMissionScRsp(), data).checkInitialized();
     }
 
-    public static MarkReadMailScRsp parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new MarkReadMailScRsp(), input).checkInitialized();
+    public static AcceptMainMissionScRsp parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new AcceptMainMissionScRsp(), input).checkInitialized();
     }
 
-    public static MarkReadMailScRsp parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new MarkReadMailScRsp(), input).checkInitialized();
+    public static AcceptMainMissionScRsp parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new AcceptMainMissionScRsp(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating MarkReadMailScRsp messages
+     * @return factory for creating AcceptMainMissionScRsp messages
      */
-    public static MessageFactory<MarkReadMailScRsp> getFactory() {
-      return MarkReadMailScRspFactory.INSTANCE;
+    public static MessageFactory<AcceptMainMissionScRsp> getFactory() {
+      return AcceptMainMissionScRspFactory.INSTANCE;
     }
 
-    private enum MarkReadMailScRspFactory implements MessageFactory<MarkReadMailScRsp> {
+    private enum AcceptMainMissionScRspFactory implements MessageFactory<AcceptMainMissionScRsp> {
       INSTANCE;
 
       @Override
-      public MarkReadMailScRsp create() {
-        return MarkReadMailScRsp.newInstance();
+      public AcceptMainMissionScRsp create() {
+        return AcceptMainMissionScRsp.newInstance();
       }
     }
 
@@ -351,7 +352,7 @@ public final class MarkReadMailScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName id = FieldName.forField("id");
+      static final FieldName mainMissionId = FieldName.forField("mainMissionId", "main_mission_id");
 
       static final FieldName retcode = FieldName.forField("retcode");
     }

@@ -1,6 +1,5 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.data.GameData;
 import emu.lunarcore.proto.GetMissionStatusCsReqOuterClass.GetMissionStatusCsReq;
 import emu.lunarcore.proto.GetMissionStatusScRspOuterClass.GetMissionStatusScRsp;
 import emu.lunarcore.proto.MissionOuterClass.Mission;
@@ -15,13 +14,9 @@ public class PacketGetMissionStatusScRsp extends BasePacket {
 
         var data = GetMissionStatusScRsp.newInstance();
 
-        for (var mission : GameData.getMainMissionExcelMap().values()) {
-            data.addFinishedMainMissionIdList(mission.getMainMissionID());
-        }
-        
-        /*for (int missionId : req.getMainMissionIdList()) {
+        for (int missionId : req.getMainMissionIdList()) {
             data.addFinishedMainMissionIdList(missionId);
-        }*/
+        }
 
         for (int missionId : req.getSubMissionIdList()) {
             var mission = Mission.newInstance()

@@ -59,22 +59,14 @@ public final class SceneCastSkillCsReqOuterClass {
     private final MotionInfoOuterClass.MotionInfo targetMotion = MotionInfoOuterClass.MotionInfo.newInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     */
-    private final RepeatedInt assistMonsterEntityIdList = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      */
     private final RepeatedInt hitTargetEntityIdList = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     */
+    private final RepeatedInt assistMonsterEntityIdList = RepeatedInt.newEmptyInstance();
 
     /**
      * <code>repeated .SceneCastSkill DIBENGPJLGG = 5;</code>
@@ -351,129 +343,25 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     * @return whether the assistMonsterEntityIdList field is set
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
+     * @return whether the hitTargetEntityIdList field is set
      */
-    public boolean hasAssistMonsterEntityIdList() {
+    public boolean hasHitTargetEntityIdList() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     * @return this
-     */
-    public SceneCastSkillCsReq clearAssistMonsterEntityIdList() {
-      bitField0_ &= ~0x00000020;
-      assistMonsterEntityIdList.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableAssistMonsterEntityIdList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getAssistMonsterEntityIdList() {
-      return assistMonsterEntityIdList;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableAssistMonsterEntityIdList() {
-      bitField0_ |= 0x00000020;
-      return assistMonsterEntityIdList;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     * @param value the assistMonsterEntityIdList to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addAssistMonsterEntityIdList(final int value) {
-      bitField0_ |= 0x00000020;
-      assistMonsterEntityIdList.add(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 assist_monster_entity_id_list = 2;</code>
-     * @param values the assistMonsterEntityIdList to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addAllAssistMonsterEntityIdList(final int... values) {
-      bitField0_ |= 0x00000020;
-      assistMonsterEntityIdList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
-     * @return whether the hitTargetEntityIdList field is set
-     */
-    public boolean hasHitTargetEntityIdList() {
-      return (bitField0_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearHitTargetEntityIdList() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000020;
       hitTargetEntityIdList.clear();
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -487,11 +375,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -500,37 +384,97 @@ public final class SceneCastSkillCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableHitTargetEntityIdList() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       return hitTargetEntityIdList;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      * @param value the hitTargetEntityIdList to add
      * @return this
      */
     public SceneCastSkillCsReq addHitTargetEntityIdList(final int value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       hitTargetEntityIdList.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 hit_target_entity_id_list = 8;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 2;</code>
      * @param values the hitTargetEntityIdList to add
      * @return this
      */
     public SceneCastSkillCsReq addAllHitTargetEntityIdList(final int... values) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       hitTargetEntityIdList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     * @return whether the assistMonsterEntityIdList field is set
+     */
+    public boolean hasAssistMonsterEntityIdList() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     * @return this
+     */
+    public SceneCastSkillCsReq clearAssistMonsterEntityIdList() {
+      bitField0_ &= ~0x00000040;
+      assistMonsterEntityIdList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableAssistMonsterEntityIdList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getAssistMonsterEntityIdList() {
+      return assistMonsterEntityIdList;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableAssistMonsterEntityIdList() {
+      bitField0_ |= 0x00000040;
+      return assistMonsterEntityIdList;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     * @param value the assistMonsterEntityIdList to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addAssistMonsterEntityIdList(final int value) {
+      bitField0_ |= 0x00000040;
+      assistMonsterEntityIdList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 8;</code>
+     * @param values the assistMonsterEntityIdList to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addAllAssistMonsterEntityIdList(final int... values) {
+      bitField0_ |= 0x00000040;
+      assistMonsterEntityIdList.addAll(values);
       return this;
     }
 
@@ -778,8 +722,8 @@ public final class SceneCastSkillCsReqOuterClass {
         casterId = other.casterId;
         skillIndex = other.skillIndex;
         targetMotion.copyFrom(other.targetMotion);
-        assistMonsterEntityIdList.copyFrom(other.assistMonsterEntityIdList);
         hitTargetEntityIdList.copyFrom(other.hitTargetEntityIdList);
+        assistMonsterEntityIdList.copyFrom(other.assistMonsterEntityIdList);
         dIBENGPJLGG.copyFrom(other.dIBENGPJLGG);
         assistMonsterWaveList.copyFrom(other.assistMonsterWaveList);
         dynamicValues.copyFrom(other.dynamicValues);
@@ -808,11 +752,11 @@ public final class SceneCastSkillCsReqOuterClass {
       if (other.hasTargetMotion()) {
         getMutableTargetMotion().mergeFrom(other.targetMotion);
       }
-      if (other.hasAssistMonsterEntityIdList()) {
-        getMutableAssistMonsterEntityIdList().addAll(other.assistMonsterEntityIdList);
-      }
       if (other.hasHitTargetEntityIdList()) {
         getMutableHitTargetEntityIdList().addAll(other.hitTargetEntityIdList);
+      }
+      if (other.hasAssistMonsterEntityIdList()) {
+        getMutableAssistMonsterEntityIdList().addAll(other.assistMonsterEntityIdList);
       }
       if (other.hasDIBENGPJLGG()) {
         getMutableDIBENGPJLGG().addAll(other.dIBENGPJLGG);
@@ -838,8 +782,8 @@ public final class SceneCastSkillCsReqOuterClass {
       casterId = 0;
       skillIndex = 0;
       targetMotion.clear();
-      assistMonsterEntityIdList.clear();
       hitTargetEntityIdList.clear();
+      assistMonsterEntityIdList.clear();
       dIBENGPJLGG.clear();
       assistMonsterWaveList.clear();
       dynamicValues.clear();
@@ -854,8 +798,8 @@ public final class SceneCastSkillCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       targetMotion.clearQuick();
-      assistMonsterEntityIdList.clear();
       hitTargetEntityIdList.clear();
+      assistMonsterEntityIdList.clear();
       dIBENGPJLGG.clear();
       assistMonsterWaveList.clearQuick();
       dynamicValues.clearQuick();
@@ -877,8 +821,8 @@ public final class SceneCastSkillCsReqOuterClass {
         && (!hasCasterId() || casterId == other.casterId)
         && (!hasSkillIndex() || skillIndex == other.skillIndex)
         && (!hasTargetMotion() || targetMotion.equals(other.targetMotion))
-        && (!hasAssistMonsterEntityIdList() || assistMonsterEntityIdList.equals(other.assistMonsterEntityIdList))
         && (!hasHitTargetEntityIdList() || hitTargetEntityIdList.equals(other.hitTargetEntityIdList))
+        && (!hasAssistMonsterEntityIdList() || assistMonsterEntityIdList.equals(other.assistMonsterEntityIdList))
         && (!hasDIBENGPJLGG() || dIBENGPJLGG.equals(other.dIBENGPJLGG))
         && (!hasAssistMonsterWaveList() || assistMonsterWaveList.equals(other.assistMonsterWaveList))
         && (!hasDynamicValues() || dynamicValues.equals(other.dynamicValues));
@@ -907,15 +851,15 @@ public final class SceneCastSkillCsReqOuterClass {
         output.writeMessageNoTag(targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < assistMonsterEntityIdList.length(); i++) {
+        for (int i = 0; i < hitTargetEntityIdList.length(); i++) {
           output.writeRawByte((byte) 16);
-          output.writeUInt32NoTag(assistMonsterEntityIdList.array()[i]);
+          output.writeUInt32NoTag(hitTargetEntityIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < hitTargetEntityIdList.length(); i++) {
+        for (int i = 0; i < assistMonsterEntityIdList.length(); i++) {
           output.writeRawByte((byte) 64);
-          output.writeUInt32NoTag(hitTargetEntityIdList.array()[i]);
+          output.writeUInt32NoTag(assistMonsterEntityIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000080) != 0) {
@@ -957,10 +901,10 @@ public final class SceneCastSkillCsReqOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * assistMonsterEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(assistMonsterEntityIdList);
+        size += (1 * hitTargetEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hitTargetEntityIdList);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * hitTargetEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hitTargetEntityIdList);
+        size += (1 * assistMonsterEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(assistMonsterEntityIdList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         size += (1 * dIBENGPJLGG.length()) + ProtoSink.computeRepeatedEnumSizeNoTag(dIBENGPJLGG);
@@ -1027,8 +971,8 @@ public final class SceneCastSkillCsReqOuterClass {
             }
           }
           case 18: {
-            // assistMonsterEntityIdList [packed=true]
-            input.readPackedUInt32(assistMonsterEntityIdList, tag);
+            // hitTargetEntityIdList [packed=true]
+            input.readPackedUInt32(hitTargetEntityIdList, tag);
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 66) {
@@ -1036,8 +980,8 @@ public final class SceneCastSkillCsReqOuterClass {
             }
           }
           case 66: {
-            // hitTargetEntityIdList [packed=true]
-            input.readPackedUInt32(hitTargetEntityIdList, tag);
+            // assistMonsterEntityIdList [packed=true]
+            input.readPackedUInt32(assistMonsterEntityIdList, tag);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 42) {
@@ -1080,14 +1024,14 @@ public final class SceneCastSkillCsReqOuterClass {
             break;
           }
           case 16: {
-            // assistMonsterEntityIdList [packed=false]
-            tag = input.readRepeatedUInt32(assistMonsterEntityIdList, tag);
+            // hitTargetEntityIdList [packed=false]
+            tag = input.readRepeatedUInt32(hitTargetEntityIdList, tag);
             bitField0_ |= 0x00000020;
             break;
           }
           case 64: {
-            // hitTargetEntityIdList [packed=false]
-            tag = input.readRepeatedUInt32(hitTargetEntityIdList, tag);
+            // assistMonsterEntityIdList [packed=false]
+            tag = input.readRepeatedUInt32(assistMonsterEntityIdList, tag);
             bitField0_ |= 0x00000040;
             break;
           }
@@ -1120,10 +1064,10 @@ public final class SceneCastSkillCsReqOuterClass {
         output.writeMessage(FieldNames.targetMotion, targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedUInt32(FieldNames.assistMonsterEntityIdList, assistMonsterEntityIdList);
+        output.writeRepeatedUInt32(FieldNames.hitTargetEntityIdList, hitTargetEntityIdList);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.hitTargetEntityIdList, hitTargetEntityIdList);
+        output.writeRepeatedUInt32(FieldNames.assistMonsterEntityIdList, assistMonsterEntityIdList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRepeatedEnum(FieldNames.dIBENGPJLGG, dIBENGPJLGG);
@@ -1203,11 +1147,11 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case -1391993363:
-          case -1507247487: {
-            if (input.isAtField(FieldNames.assistMonsterEntityIdList)) {
+          case 1319168832:
+          case -35493464: {
+            if (input.isAtField(FieldNames.hitTargetEntityIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(assistMonsterEntityIdList);
+                input.readRepeatedUInt32(hitTargetEntityIdList);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1215,11 +1159,11 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case 1319168832:
-          case -35493464: {
-            if (input.isAtField(FieldNames.hitTargetEntityIdList)) {
+          case -1391993363:
+          case -1507247487: {
+            if (input.isAtField(FieldNames.assistMonsterEntityIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(hitTargetEntityIdList);
+                input.readRepeatedUInt32(assistMonsterEntityIdList);
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -1325,9 +1269,9 @@ public final class SceneCastSkillCsReqOuterClass {
 
       static final FieldName targetMotion = FieldName.forField("targetMotion", "target_motion");
 
-      static final FieldName assistMonsterEntityIdList = FieldName.forField("assistMonsterEntityIdList", "assist_monster_entity_id_list");
-
       static final FieldName hitTargetEntityIdList = FieldName.forField("hitTargetEntityIdList", "hit_target_entity_id_list");
+
+      static final FieldName assistMonsterEntityIdList = FieldName.forField("assistMonsterEntityIdList", "assist_monster_entity_id_list");
 
       static final FieldName dIBENGPJLGG = FieldName.forField("DIBENGPJLGG");
 

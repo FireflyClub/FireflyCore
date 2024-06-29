@@ -58,7 +58,7 @@ public class SkillAbilityInfo {
     private void parseTask(MazeSkill skill, List<MazeSkillAction> actionList, TaskInfo task) {
         if (task.getType().contains("AddMazeBuff")) {
             // TODO get duration from params if buff duration is dynamic
-            actionList.add(new MazeSkillAddBuff(task.getID(), 20));
+            actionList.add(new MazeSkillAddBuff(task.getID(), 20, skill.getIndex()));
         } else if (task.getType().contains("RemoveMazeBuff")) {
             actionList.removeIf(action -> action instanceof MazeSkillAddBuff actionAdd && actionAdd.getBuffId() == task.getID());
         } else if (task.getType().contains("AdventureModifyTeamPlayerHP")) {
@@ -69,17 +69,17 @@ public class SkillAbilityInfo {
             actionList.add(new MazeSkillModifySP(50));
         } else if (task.getType().contains("CreateSummonUnit")) {
             skill.setTriggerBattle(false);
-        } else if (task.getType().contains("AddAdventureModifier")) {
-            skill.addAdventureModifier(task.getModifierName());
         } else if (task.getType().contains("AdventureSetAttackTargetMonsterDie")) {
             actionList.add(new MazeSkillSetAttackTargetMonsterDie());
+            skill.setTriggerBattle(true);
         } else if (task.getSuccessTaskList() != null) {
             for (TaskInfo t : task.getSuccessTaskList()) {
                 parseTask(skill, actionList, t);
             }
         } else if (task.getType().contains("AdventureTriggerAttack")) {
             if (skill.getIndex() == 2) {
-                skill.setTriggerBattle(task.isTriggerBattle());
+                var isSummonUnit = skill.getCastActions().stream().anyMatch(p -> p instanceof MazeSkillSummonUnit);
+                skill.setTriggerBattle(!isSummonUnit && task.isTriggerBattle());
             }
             if (task.getOnAttack() != null) {
                 for (TaskInfo t : task.getOnAttack()) {
@@ -102,6 +102,14 @@ public class SkillAbilityInfo {
                     parseTask(skill, skill.getAttackActions(), t);
                 }
             }
+        } 
+        // TODO: Hardcoded toughness reduce on skill cast (Acheron & SilverWolf)
+        else if (
+            task.getType().contains("AddAdventureModifier") &&
+            "ADV_StageAbility_Maze_IgnoreWeakness_MazeSkillMark".equals(task.getModifierName())
+        ) {
+            // Modifier Name: ADV_StageAbility_MazeCommon_EnterBattle_IgnoreWeakness
+            skill.getAttackActions().add(new MazeSkillAddBuff(1000119, 20, skill.getIndex()));
         }
     }
     

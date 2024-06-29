@@ -12,6 +12,8 @@ public class PacketGetNpcTakenRewardScRsp extends BasePacket {
         var data = GetNpcTakenRewardScRsp.newInstance()
                 .setNpcId(npcId);
         
+        data.getMutableTalkEventList();
+        
         this.setData(data);
     }
 }

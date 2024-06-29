@@ -127,7 +127,8 @@ public class EntityMonster implements GameEntity, Tickable {
         
         // Add buff to battle if owner exists
         if (ownerIndex != -1) {
-            battle.addBuff(buff.getBuffId(), ownerIndex, 1 << waveIndex);
+            // battle.addBuff(buff.getBuffId(), ownerIndex, 1 << waveIndex);
+            battle.addBuff(buff.getBuffId(), ownerIndex, 0xffffffff, buff.getSkillIndex());
             return true;
         }
         

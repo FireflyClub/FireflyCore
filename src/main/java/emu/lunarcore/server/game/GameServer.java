@@ -14,6 +14,7 @@ import emu.lunarcore.game.gacha.GachaService;
 import emu.lunarcore.game.inventory.InventoryService;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.shop.ShopService;
+import emu.lunarcore.server.packet.send.PacketPlayerKickOutScNotify;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import kcp.highway.ChannelConfig;
@@ -202,7 +203,16 @@ public class GameServer extends KcpServer {
         }
     }
 
-    public void onShutdown() {
+    public void onShutdown() {        
+        // Kick all players
+        List<Integer> playerUIDs = this.getAllPlayerUIDs();
+        for (Integer uid : playerUIDs) {
+            Player player = this.getOnlinePlayerByUid(uid);
+            if (player!= null) {
+                player.sendPacket(new PacketPlayerKickOutScNotify());
+            }
+        }
+
         // Close server socket
         this.stop();
         
@@ -210,12 +220,9 @@ public class GameServer extends KcpServer {
         this.info.setUp(false);
         this.info.save();
         
-        // Kick and save all players
+        // Save all players
         List<Player> list = new ArrayList<>(players.size());
         list.addAll(players.values());
-        
-        for (Player player : list) {
-            player.getSession().close();
-        }
+
     }
 }

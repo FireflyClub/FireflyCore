@@ -14,7 +14,7 @@ public class BanManager {
             return false;
         }
         
-        account.setBannedStatus(true);
+        account.setBanned(true);
         account.save();
         return true;
     }
@@ -26,7 +26,7 @@ public class BanManager {
             return false;
         }
         
-        account.setBannedStatus(false);
+        account.setBanned(false);
         account.save();
         return true;
     }

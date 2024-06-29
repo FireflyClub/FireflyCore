@@ -24,11 +24,6 @@ public final class AnnounceDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * 3
-     * 8
-     * </pre>
-     *
      * <code>optional int64 end_time = 6;</code>
      */
     private long endTime;
@@ -55,29 +50,27 @@ public final class AnnounceDataOuterClass {
 
     /**
      * <pre>
-     * 9
-     * 4
-     * 10
+     *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool unkbool = 14;</code>
+     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
      */
-    private boolean unkbool;
+    private boolean isCenterSystemLast5EveryMinutes;
 
     /**
-     * <code>optional string unkstring = 3;</code>
-     */
-    private final Utf8String unkstring = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      */
     private final Utf8String bannerText = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      */
     private final Utf8String emergencyText = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     */
+    private final Utf8String countDownText = Utf8String.newEmptyInstance();
 
     private AnnounceData() {
     }
@@ -94,11 +87,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * 3
-     * 8
-     * </pre>
-     *
      * <code>optional int64 end_time = 6;</code>
      * @return whether the endTime field is set
      */
@@ -107,11 +95,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * 3
-     * 8
-     * </pre>
-     *
      * <code>optional int64 end_time = 6;</code>
      * @return this
      */
@@ -122,11 +105,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * 3
-     * 8
-     * </pre>
-     *
      * <code>optional int64 end_time = 6;</code>
      * @return the endTime
      */
@@ -135,11 +113,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * 3
-     * 8
-     * </pre>
-     *
      * <code>optional int64 end_time = 6;</code>
      * @param value the endTime to set
      * @return this
@@ -300,150 +273,77 @@ public final class AnnounceDataOuterClass {
 
     /**
      * <pre>
-     * 9
-     * 4
-     * 10
+     *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool unkbool = 14;</code>
-     * @return whether the unkbool field is set
+     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
+     * @return whether the isCenterSystemLast5EveryMinutes field is set
      */
-    public boolean hasUnkbool() {
+    public boolean hasIsCenterSystemLast5EveryMinutes() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
      * <pre>
-     * 9
-     * 4
-     * 10
+     *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool unkbool = 14;</code>
+     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
      * @return this
      */
-    public AnnounceData clearUnkbool() {
+    public AnnounceData clearIsCenterSystemLast5EveryMinutes() {
       bitField0_ &= ~0x00000020;
-      unkbool = false;
+      isCenterSystemLast5EveryMinutes = false;
       return this;
     }
 
     /**
      * <pre>
-     * 9
-     * 4
-     * 10
+     *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool unkbool = 14;</code>
-     * @return the unkbool
+     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
+     * @return the isCenterSystemLast5EveryMinutes
      */
-    public boolean getUnkbool() {
-      return unkbool;
+    public boolean getIsCenterSystemLast5EveryMinutes() {
+      return isCenterSystemLast5EveryMinutes;
     }
 
     /**
      * <pre>
-     * 9
-     * 4
-     * 10
+     *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool unkbool = 14;</code>
-     * @param value the unkbool to set
+     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
+     * @param value the isCenterSystemLast5EveryMinutes to set
      * @return this
      */
-    public AnnounceData setUnkbool(final boolean value) {
+    public AnnounceData setIsCenterSystemLast5EveryMinutes(final boolean value) {
       bitField0_ |= 0x00000020;
-      unkbool = value;
+      isCenterSystemLast5EveryMinutes = value;
       return this;
     }
 
     /**
-     * <code>optional string unkstring = 3;</code>
-     * @return whether the unkstring field is set
+     * <code>optional string banner_text = 3;</code>
+     * @return whether the bannerText field is set
      */
-    public boolean hasUnkstring() {
+    public boolean hasBannerText() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional string unkstring = 3;</code>
-     * @return this
-     */
-    public AnnounceData clearUnkstring() {
-      bitField0_ &= ~0x00000040;
-      unkstring.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string unkstring = 3;</code>
-     * @return the unkstring
-     */
-    public String getUnkstring() {
-      return unkstring.getString();
-    }
-
-    /**
-     * <code>optional string unkstring = 3;</code>
-     * @return internal {@code Utf8String} representation of unkstring for reading
-     */
-    public Utf8String getUnkstringBytes() {
-      return this.unkstring;
-    }
-
-    /**
-     * <code>optional string unkstring = 3;</code>
-     * @return internal {@code Utf8String} representation of unkstring for modifications
-     */
-    public Utf8String getMutableUnkstringBytes() {
-      bitField0_ |= 0x00000040;
-      return this.unkstring;
-    }
-
-    /**
-     * <code>optional string unkstring = 3;</code>
-     * @param value the unkstring to set
-     * @return this
-     */
-    public AnnounceData setUnkstring(final CharSequence value) {
-      bitField0_ |= 0x00000040;
-      unkstring.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string unkstring = 3;</code>
-     * @param value the unkstring to set
-     * @return this
-     */
-    public AnnounceData setUnkstring(final Utf8String value) {
-      bitField0_ |= 0x00000040;
-      unkstring.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string banner_text = 4;</code>
-     * @return whether the bannerText field is set
-     */
-    public boolean hasBannerText() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @return this
      */
     public AnnounceData clearBannerText() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000040;
       bannerText.clear();
       return this;
     }
 
     /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @return the bannerText
      */
     public String getBannerText() {
@@ -451,7 +351,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @return internal {@code Utf8String} representation of bannerText for reading
      */
     public Utf8String getBannerTextBytes() {
@@ -459,56 +359,56 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @return internal {@code Utf8String} representation of bannerText for modifications
      */
     public Utf8String getMutableBannerTextBytes() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       return this.bannerText;
     }
 
     /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @param value the bannerText to set
      * @return this
      */
     public AnnounceData setBannerText(final CharSequence value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       bannerText.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string banner_text = 4;</code>
+     * <code>optional string banner_text = 3;</code>
      * @param value the bannerText to set
      * @return this
      */
     public AnnounceData setBannerText(final Utf8String value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       bannerText.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @return whether the emergencyText field is set
      */
     public boolean hasEmergencyText() {
-      return (bitField0_ & 0x00000100) != 0;
+      return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @return this
      */
     public AnnounceData clearEmergencyText() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00000080;
       emergencyText.clear();
       return this;
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @return the emergencyText
      */
     public String getEmergencyText() {
@@ -516,7 +416,7 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @return internal {@code Utf8String} representation of emergencyText for reading
      */
     public Utf8String getEmergencyTextBytes() {
@@ -524,33 +424,98 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @return internal {@code Utf8String} representation of emergencyText for modifications
      */
     public Utf8String getMutableEmergencyTextBytes() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       return this.emergencyText;
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @param value the emergencyText to set
      * @return this
      */
     public AnnounceData setEmergencyText(final CharSequence value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       emergencyText.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string emergency_text = 10;</code>
+     * <code>optional string emergency_text = 4;</code>
      * @param value the emergencyText to set
      * @return this
      */
     public AnnounceData setEmergencyText(final Utf8String value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       emergencyText.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @return whether the countDownText field is set
+     */
+    public boolean hasCountDownText() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @return this
+     */
+    public AnnounceData clearCountDownText() {
+      bitField0_ &= ~0x00000100;
+      countDownText.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @return the countDownText
+     */
+    public String getCountDownText() {
+      return countDownText.getString();
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @return internal {@code Utf8String} representation of countDownText for reading
+     */
+    public Utf8String getCountDownTextBytes() {
+      return this.countDownText;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @return internal {@code Utf8String} representation of countDownText for modifications
+     */
+    public Utf8String getMutableCountDownTextBytes() {
+      bitField0_ |= 0x00000100;
+      return this.countDownText;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @param value the countDownText to set
+     * @return this
+     */
+    public AnnounceData setCountDownText(final CharSequence value) {
+      bitField0_ |= 0x00000100;
+      countDownText.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string count_down_text = 10;</code>
+     * @param value the countDownText to set
+     * @return this
+     */
+    public AnnounceData setCountDownText(final Utf8String value) {
+      bitField0_ |= 0x00000100;
+      countDownText.copyFrom(value);
       return this;
     }
 
@@ -564,10 +529,10 @@ public final class AnnounceDataOuterClass {
         bannerFrequency = other.bannerFrequency;
         centerSystemFrequency = other.centerSystemFrequency;
         configId = other.configId;
-        unkbool = other.unkbool;
-        unkstring.copyFrom(other.unkstring);
+        isCenterSystemLast5EveryMinutes = other.isCenterSystemLast5EveryMinutes;
         bannerText.copyFrom(other.bannerText);
         emergencyText.copyFrom(other.emergencyText);
+        countDownText.copyFrom(other.countDownText);
       }
       return this;
     }
@@ -593,17 +558,17 @@ public final class AnnounceDataOuterClass {
       if (other.hasConfigId()) {
         setConfigId(other.configId);
       }
-      if (other.hasUnkbool()) {
-        setUnkbool(other.unkbool);
-      }
-      if (other.hasUnkstring()) {
-        getMutableUnkstringBytes().copyFrom(other.unkstring);
+      if (other.hasIsCenterSystemLast5EveryMinutes()) {
+        setIsCenterSystemLast5EveryMinutes(other.isCenterSystemLast5EveryMinutes);
       }
       if (other.hasBannerText()) {
         getMutableBannerTextBytes().copyFrom(other.bannerText);
       }
       if (other.hasEmergencyText()) {
         getMutableEmergencyTextBytes().copyFrom(other.emergencyText);
+      }
+      if (other.hasCountDownText()) {
+        getMutableCountDownTextBytes().copyFrom(other.countDownText);
       }
       return this;
     }
@@ -620,10 +585,10 @@ public final class AnnounceDataOuterClass {
       bannerFrequency = 0;
       centerSystemFrequency = 0;
       configId = 0;
-      unkbool = false;
-      unkstring.clear();
+      isCenterSystemLast5EveryMinutes = false;
       bannerText.clear();
       emergencyText.clear();
+      countDownText.clear();
       return this;
     }
 
@@ -634,9 +599,9 @@ public final class AnnounceDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      unkstring.clear();
       bannerText.clear();
       emergencyText.clear();
+      countDownText.clear();
       return this;
     }
 
@@ -655,10 +620,10 @@ public final class AnnounceDataOuterClass {
         && (!hasBannerFrequency() || bannerFrequency == other.bannerFrequency)
         && (!hasCenterSystemFrequency() || centerSystemFrequency == other.centerSystemFrequency)
         && (!hasConfigId() || configId == other.configId)
-        && (!hasUnkbool() || unkbool == other.unkbool)
-        && (!hasUnkstring() || unkstring.equals(other.unkstring))
+        && (!hasIsCenterSystemLast5EveryMinutes() || isCenterSystemLast5EveryMinutes == other.isCenterSystemLast5EveryMinutes)
         && (!hasBannerText() || bannerText.equals(other.bannerText))
-        && (!hasEmergencyText() || emergencyText.equals(other.emergencyText));
+        && (!hasEmergencyText() || emergencyText.equals(other.emergencyText))
+        && (!hasCountDownText() || countDownText.equals(other.countDownText));
     }
 
     @Override
@@ -685,19 +650,19 @@ public final class AnnounceDataOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeBoolNoTag(unkbool);
+        output.writeBoolNoTag(isCenterSystemLast5EveryMinutes);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 26);
-        output.writeStringNoTag(unkstring);
+        output.writeStringNoTag(bannerText);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 34);
-        output.writeStringNoTag(bannerText);
+        output.writeStringNoTag(emergencyText);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawByte((byte) 82);
-        output.writeStringNoTag(emergencyText);
+        output.writeStringNoTag(countDownText);
       }
     }
 
@@ -723,13 +688,13 @@ public final class AnnounceDataOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(unkstring);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         size += 1 + ProtoSink.computeStringSizeNoTag(bannerText);
       }
-      if ((bitField0_ & 0x00000100) != 0) {
+      if ((bitField0_ & 0x00000080) != 0) {
         size += 1 + ProtoSink.computeStringSizeNoTag(emergencyText);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(countDownText);
       }
       return size;
     }
@@ -787,8 +752,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 112: {
-            // unkbool
-            unkbool = input.readBool();
+            // isCenterSystemLast5EveryMinutes
+            isCenterSystemLast5EveryMinutes = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 26) {
@@ -796,8 +761,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 26: {
-            // unkstring
-            input.readString(unkstring);
+            // bannerText
+            input.readString(bannerText);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 34) {
@@ -805,8 +770,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 34: {
-            // bannerText
-            input.readString(bannerText);
+            // emergencyText
+            input.readString(emergencyText);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 82) {
@@ -814,8 +779,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 82: {
-            // emergencyText
-            input.readString(emergencyText);
+            // countDownText
+            input.readString(countDownText);
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 0) {
@@ -855,16 +820,16 @@ public final class AnnounceDataOuterClass {
         output.writeUInt32(FieldNames.configId, configId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeBool(FieldNames.unkbool, unkbool);
+        output.writeBool(FieldNames.isCenterSystemLast5EveryMinutes, isCenterSystemLast5EveryMinutes);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeString(FieldNames.unkstring, unkstring);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         output.writeString(FieldNames.bannerText, bannerText);
       }
-      if ((bitField0_ & 0x00000100) != 0) {
+      if ((bitField0_ & 0x00000080) != 0) {
         output.writeString(FieldNames.emergencyText, emergencyText);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeString(FieldNames.countDownText, countDownText);
       }
       output.endObject();
     }
@@ -936,22 +901,12 @@ public final class AnnounceDataOuterClass {
             }
             break;
           }
-          case -285198628: {
-            if (input.isAtField(FieldNames.unkbool)) {
+          case -68660299:
+          case -630028317: {
+            if (input.isAtField(FieldNames.isCenterSystemLast5EveryMinutes)) {
               if (!input.trySkipNullValue()) {
-                unkbool = input.readBool();
+                isCenterSystemLast5EveryMinutes = input.readBool();
                 bitField0_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1293428611: {
-            if (input.isAtField(FieldNames.unkstring)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(unkstring);
-                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -963,7 +918,7 @@ public final class AnnounceDataOuterClass {
             if (input.isAtField(FieldNames.bannerText)) {
               if (!input.trySkipNullValue()) {
                 input.readString(bannerText);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -975,6 +930,18 @@ public final class AnnounceDataOuterClass {
             if (input.isAtField(FieldNames.emergencyText)) {
               if (!input.trySkipNullValue()) {
                 input.readString(emergencyText);
+                bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 515044126:
+          case 1806103418: {
+            if (input.isAtField(FieldNames.countDownText)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(countDownText);
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1044,13 +1011,13 @@ public final class AnnounceDataOuterClass {
 
       static final FieldName configId = FieldName.forField("configId", "config_id");
 
-      static final FieldName unkbool = FieldName.forField("unkbool");
-
-      static final FieldName unkstring = FieldName.forField("unkstring");
+      static final FieldName isCenterSystemLast5EveryMinutes = FieldName.forField("isCenterSystemLast5EveryMinutes", "is_center_system_last_5_every_minutes");
 
       static final FieldName bannerText = FieldName.forField("bannerText", "banner_text");
 
       static final FieldName emergencyText = FieldName.forField("emergencyText", "emergency_text");
+
+      static final FieldName countDownText = FieldName.forField("countDownText", "count_down_text");
     }
   }
 }

@@ -20,11 +20,26 @@ public class PacketServerAnnounceNotify extends BasePacket {
                     .setBannerFrequency(LunarCore.getConfig().getAnnounceData().getBannerFrequency())
                     .setBeginTime(0)
                     .setEndTime(Integer.MAX_VALUE)
-                    .setUnkbool(false)
+                    .setIsCenterSystemLast5EveryMinutes(false)
                 );
  
             this.setData(announce);
         }
+    }
+
+    public PacketServerAnnounceNotify(String centerText) {
+        super(CmdId.ServerAnnounceNotify);
+
+        var announce = ServerAnnounceNotify.newInstance()
+                .addAnnounceDataList(AnnounceData.newInstance()
+                    .setConfigId(0)
+                    .setEmergencyText(centerText)
+                    .setBeginTime(0)
+                    .setEndTime((int)(System.currentTimeMillis() / 1000 + 1))
+                    .setIsCenterSystemLast5EveryMinutes(false)
+                );
+
+        this.setData(announce);
     }
     
 }

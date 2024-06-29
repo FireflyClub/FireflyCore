@@ -10,6 +10,7 @@ import emu.lunarcore.util.Crypto;
 import emu.lunarcore.util.Snowflake32;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @AccountDatabaseOnly
@@ -29,7 +30,7 @@ public class Account {
 
     private Set<String> permissions;
 
-    private boolean isBanned;
+    @Setter public boolean isBanned;
 
     @Deprecated
     public Account() {
@@ -49,13 +50,6 @@ public class Account {
     
     public void setReservedPlayerUid(int uid) {
         this.reservedPlayerUid = uid;
-    }
-
-    public void setBannedStatus(boolean isBanned) {
-        this.isBanned = isBanned;
-        if (isBanned) {
-            this.dispatchToken = null;
-        }
     }
 
     // Permissions

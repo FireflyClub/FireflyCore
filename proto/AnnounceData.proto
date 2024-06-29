@@ -5,18 +5,12 @@ option java_package = "emu.lunarcore.proto";
 // DFIAIOHDCDM
 message AnnounceData {
     int64 begin_time = 13;
-    //9
-    //4
-    //10
-    bool unkbool = 14; // LLPPPMOKLNE
-    uint32 config_id = 11;
-    //3
-    //8
-    int64 end_time = 6;
-
     uint32 center_system_frequency = 9;
-    string unkstring = 3;
-    string emergency_text = 10;
-    string banner_text = 4;
+    string emergency_text = 4;
+    string count_down_text = 10;
+    bool is_center_system_last_5_every_minutes = 14; // LLPPPMOKLNE
+    uint32 config_id = 11;
+    string banner_text = 3;
     uint32 banner_frequency = 8;
+    int64 end_time = 6;
 }

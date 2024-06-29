@@ -982,7 +982,7 @@ public class Player implements Tickable {
     public void delete() {
         // Close session first
         if (this.getSession() != null) {
-            this.getSession().close();
+            this.getSession().getPlayer().sendPacket(new PacketPlayerKickOutScNotify());
         }
         
         // Cache filter object so we can reuse it for our delete queries

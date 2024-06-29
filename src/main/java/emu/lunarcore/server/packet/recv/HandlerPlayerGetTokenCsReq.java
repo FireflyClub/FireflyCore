@@ -10,6 +10,7 @@ import emu.lunarcore.server.packet.Opcodes;
 import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.SessionState;
 import emu.lunarcore.server.packet.send.PacketPlayerGetTokenScRsp;
+import emu.lunarcore.server.packet.send.PacketPlayerKickOutScNotify;
 
 @Opcodes(CmdId.PlayerGetTokenCsReq)
 public class HandlerPlayerGetTokenCsReq extends PacketHandler {
@@ -32,7 +33,7 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         int maxPlayers = LunarCore.getConfig().getServerOptions().maxPlayers;
         int playerCount = LunarCore.getGameServer().getPlayerCount();
         if (maxPlayers > -1 &&  playerCount >= maxPlayers) {
-            session.close();
+            session.getPlayer().sendPacket(new PacketPlayerKickOutScNotify());
             return;
         }
 
@@ -47,7 +48,7 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         // Dont let people log on to the same player at the same time
         Player prevPlayer = session.getServer().getOnlinePlayerByUid(player.getUid());
         if (prevPlayer != null) {
-            prevPlayer.getSession().close();
+            prevPlayer.sendPacket(new PacketPlayerKickOutScNotify());
         }
 
         // Set player object for session

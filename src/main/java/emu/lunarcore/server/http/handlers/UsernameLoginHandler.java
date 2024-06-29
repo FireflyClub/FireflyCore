@@ -47,15 +47,8 @@ public class UsernameLoginHandler implements Handler {
             }
 
         }
-
-        // Check if account is banned
-        if (account.isBanned()) {
-            res.retcode = -500;
-            res.message = "Account is banned.";
-
-        }
         
-        if (account != null && !account.isBanned()) {
+        if (account != null) {
             res.message = "OK";
             res.data = new VerifyData(account.getUid(), account.getEmail(), account.generateDispatchToken());
         }

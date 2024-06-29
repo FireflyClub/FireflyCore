@@ -178,7 +178,7 @@ public class Config {
 
     @Getter
     public static class ServerChatProfile {
-        public String name = "JokerSR-Chat";
+        public String name = "JokerSR-World";
         public String signature = "Be free chating here!";
         public int level = 70;
         public int headIcon = 202016;
@@ -227,7 +227,7 @@ public class Config {
     @Getter
     public static class AnnounceData {
         public boolean useBanner = false;
-        public String bannerText = "";
+        public String bannerText = "JokerSR-LC By Lethe";
         public int bannerFrequency = 0;
     }
 

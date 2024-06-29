@@ -4,6 +4,7 @@ import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 import emu.lunarcore.game.account.BanManager;
+import emu.lunarcore.server.packet.send.PacketPlayerKickOutScNotify;
 
 @Command(label = "ban", permission = {"admin"}, requireTarget = true, desc = "/ban [player]. Bans a player from the server.")
 public class BanCommand implements CommandHandler {
@@ -14,8 +15,7 @@ public class BanCommand implements CommandHandler {
 
         if (BanManager.ban(targetUid) == true) {
             if (args.getOnlineTarget() != null) {
-                // TODO: Use packet to make a window and kick player at once.
-                args.getOnlineTarget().getSession().close();
+                args.getOnlineTarget().sendPacket(new PacketPlayerKickOutScNotify());
             }
 
             args.sendMessage("Successfully Banned: " + targetUid);

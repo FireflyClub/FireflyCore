@@ -29,11 +29,16 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         // Set account object for session
         session.setAccount(account);
 
+        // Check if account is banned
+        if (session.getAccount().isBanned()) {
+            session.send(new PacketPlayerKickOutScNotify(4));
+        }
+
         // If playerCount reach the set maxPlayers, newly logged-in players will be kicked out
         int maxPlayers = LunarCore.getConfig().getServerOptions().maxPlayers;
         int playerCount = LunarCore.getGameServer().getPlayerCount();
         if (maxPlayers > -1 &&  playerCount >= maxPlayers) {
-            session.getPlayer().sendPacket(new PacketPlayerKickOutScNotify());
+            session.getPlayer().sendPacket(new PacketPlayerKickOutScNotify(5));
             return;
         }
 
@@ -48,7 +53,7 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         // Dont let people log on to the same player at the same time
         Player prevPlayer = session.getServer().getOnlinePlayerByUid(player.getUid());
         if (prevPlayer != null) {
-            prevPlayer.sendPacket(new PacketPlayerKickOutScNotify());
+            prevPlayer.sendPacket(new PacketPlayerKickOutScNotify(0));
         }
 
         // Set player object for session

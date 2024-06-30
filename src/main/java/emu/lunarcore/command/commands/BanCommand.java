@@ -15,7 +15,7 @@ public class BanCommand implements CommandHandler {
 
         if (BanManager.ban(targetUid) == true) {
             if (args.getOnlineTarget() != null) {
-                args.getOnlineTarget().sendPacket(new PacketPlayerKickOutScNotify());
+                args.getOnlineTarget().sendPacket(new PacketPlayerKickOutScNotify(4));
             }
 
             args.sendMessage("Successfully Banned: " + targetUid);

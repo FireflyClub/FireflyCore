@@ -7,11 +7,9 @@ import us.hebi.quickbuf.InvalidProtocolBufferException;
 import us.hebi.quickbuf.JsonSink;
 import us.hebi.quickbuf.JsonSource;
 import us.hebi.quickbuf.MessageFactory;
-import us.hebi.quickbuf.ProtoEnum;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.ProtoUtil;
 
 public final class PlayerKickOutScNotifyOuterClass {
   /**
@@ -21,12 +19,12 @@ public final class PlayerKickOutScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 10;</code>
+     * <code>optional .KickType kick_type = 12;</code>
      */
     private int kickType;
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      */
     private final BlackInfoOuterClass.BlackInfo blackInfo = BlackInfoOuterClass.BlackInfo.newInstance();
 
@@ -40,8 +38,32 @@ public final class PlayerKickOutScNotifyOuterClass {
       return new PlayerKickOutScNotify();
     }
 
+    public boolean hasKickInfo() {
+      return (((bitField0_ & 0x00000003)) != 0);
+    }
+
+    public PlayerKickOutScNotify clearKickInfo() {
+      if (hasKickInfo()) {
+        clearKickType();
+        clearBlackInfo();
+      }
+      return this;
+    }
+
+    private void clearKickInfoOtherKickType() {
+      if ((((bitField0_ & 0x00000002)) != 0)) {
+        clearBlackInfo();
+      }
+    }
+
+    private void clearKickInfoOtherBlackInfo() {
+      if ((((bitField0_ & 0x00000001)) != 0)) {
+        clearKickType();
+      }
+    }
+
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 10;</code>
+     * <code>optional .KickType kick_type = 12;</code>
      * @return whether the kickType field is set
      */
     public boolean hasKickType() {
@@ -49,7 +71,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 10;</code>
+     * <code>optional .KickType kick_type = 12;</code>
      * @return this
      */
     public PlayerKickOutScNotify clearKickType() {
@@ -59,11 +81,11 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 10;</code>
+     * <code>optional .KickType kick_type = 12;</code>
      * @return the kickType
      */
-    public KickType getKickType() {
-      return KickType.forNumber(kickType);
+    public KickTypeOuterClass.KickType getKickType() {
+      return KickTypeOuterClass.KickType.forNumber(kickType);
     }
 
     /**
@@ -79,7 +101,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
-     * constants from {@link KickType}. Setting an invalid value
+     * constants from {@link KickTypeOuterClass.KickType}. Setting an invalid value
      * can cause {@link PlayerKickOutScNotify#getKickType()} to return null
      *
      * @param value the numeric wire value to set
@@ -92,18 +114,19 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 10;</code>
+     * <code>optional .KickType kick_type = 12;</code>
      * @param value the kickType to set
      * @return this
      */
-    public PlayerKickOutScNotify setKickType(final KickType value) {
+    public PlayerKickOutScNotify setKickType(final KickTypeOuterClass.KickType value) {
+      clearKickInfoOtherKickType();
       bitField0_ |= 0x00000001;
       kickType = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      * @return whether the blackInfo field is set
      */
     public boolean hasBlackInfo() {
@@ -111,7 +134,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      * @return this
      */
     public PlayerKickOutScNotify clearBlackInfo() {
@@ -121,7 +144,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -135,7 +158,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -144,16 +167,18 @@ public final class PlayerKickOutScNotifyOuterClass {
      * @return internal storage object for modifications
      */
     public BlackInfoOuterClass.BlackInfo getMutableBlackInfo() {
+      clearKickInfoOtherBlackInfo();
       bitField0_ |= 0x00000002;
       return blackInfo;
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 12;</code>
+     * <code>optional .BlackInfo black_info = 5;</code>
      * @param value the blackInfo to set
      * @return this
      */
     public PlayerKickOutScNotify setBlackInfo(final BlackInfoOuterClass.BlackInfo value) {
+      clearKickInfoOtherBlackInfo();
       bitField0_ |= 0x00000002;
       blackInfo.copyFrom(value);
       return this;
@@ -225,11 +250,11 @@ public final class PlayerKickOutScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 96);
         output.writeEnumNoTag(kickType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(blackInfo);
       }
     }
@@ -253,20 +278,22 @@ public final class PlayerKickOutScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 96: {
             // kickType
+            clearKickInfoOtherKickType();
             final int value = input.readInt32();
-            if (KickType.forNumber(value) != null) {
+            if (KickTypeOuterClass.KickType.forNumber(value) != null) {
               kickType = value;
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 42) {
               break;
             }
           }
-          case 98: {
+          case 42: {
             // blackInfo
+            clearKickInfoOtherBlackInfo();
             input.readMessage(blackInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
@@ -292,7 +319,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeEnum(FieldNames.kickType, kickType, KickType.converter());
+        output.writeEnum(FieldNames.kickType, kickType, KickTypeOuterClass.KickType.converter());
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.blackInfo, blackInfo);
@@ -311,7 +338,8 @@ public final class PlayerKickOutScNotifyOuterClass {
           case -989427309: {
             if (input.isAtField(FieldNames.kickType)) {
               if (!input.trySkipNullValue()) {
-                final KickType value = input.readEnum(KickType.converter());
+                clearKickInfoOtherKickType();
+                final KickTypeOuterClass.KickType value = input.readEnum(KickTypeOuterClass.KickType.converter());
                 if (value != null) {
                   kickType = value.getNumber();
                   bitField0_ |= 0x00000001;
@@ -328,6 +356,7 @@ public final class PlayerKickOutScNotifyOuterClass {
           case -1638288146: {
             if (input.isAtField(FieldNames.blackInfo)) {
               if (!input.trySkipNullValue()) {
+                clearKickInfoOtherBlackInfo();
                 input.readMessage(blackInfo);
                 bitField0_ |= 0x00000002;
               }
@@ -374,184 +403,6 @@ public final class PlayerKickOutScNotifyOuterClass {
      */
     public static MessageFactory<PlayerKickOutScNotify> getFactory() {
       return PlayerKickOutScNotifyFactory.INSTANCE;
-    }
-
-    /**
-     * Protobuf enum {@code KickType}
-     */
-    public enum KickType implements ProtoEnum<KickType> {
-      /**
-       * <code>KICK_SQUEEZED = 0;</code>
-       */
-      KICK_SQUEEZED("KICK_SQUEEZED", 0),
-
-      /**
-       * <code>KICK_BLACK = 1;</code>
-       */
-      KICK_BLACK("KICK_BLACK", 1),
-
-      /**
-       * <code>KICK_CHANGE_PWD = 2;</code>
-       */
-      KICK_CHANGE_PWD("KICK_CHANGE_PWD", 2),
-
-      /**
-       * <code>KICK_LOGIN_WHITE_TIMEOUT = 3;</code>
-       */
-      KICK_LOGIN_WHITE_TIMEOUT("KICK_LOGIN_WHITE_TIMEOUT", 3),
-
-      /**
-       * <code>KICK_ACE_ANTI_CHEATER = 4;</code>
-       */
-      KICK_ACE_ANTI_CHEATER("KICK_ACE_ANTI_CHEATER", 4),
-
-      /**
-       * <code>KICK_BY_GM = 5;</code>
-       */
-      KICK_BY_GM("KICK_BY_GM", 5);
-
-      /**
-       * <code>KICK_SQUEEZED = 0;</code>
-       */
-      public static final int KICK_SQUEEZED_VALUE = 0;
-
-      /**
-       * <code>KICK_BLACK = 1;</code>
-       */
-      public static final int KICK_BLACK_VALUE = 1;
-
-      /**
-       * <code>KICK_CHANGE_PWD = 2;</code>
-       */
-      public static final int KICK_CHANGE_PWD_VALUE = 2;
-
-      /**
-       * <code>KICK_LOGIN_WHITE_TIMEOUT = 3;</code>
-       */
-      public static final int KICK_LOGIN_WHITE_TIMEOUT_VALUE = 3;
-
-      /**
-       * <code>KICK_ACE_ANTI_CHEATER = 4;</code>
-       */
-      public static final int KICK_ACE_ANTI_CHEATER_VALUE = 4;
-
-      /**
-       * <code>KICK_BY_GM = 5;</code>
-       */
-      public static final int KICK_BY_GM_VALUE = 5;
-
-      private final String name;
-
-      private final int number;
-
-      private KickType(String name, int number) {
-        this.name = name;
-        this.number = number;
-      }
-
-      /**
-       * @return the string representation of enum entry
-       */
-      @Override
-      public String getName() {
-        return name;
-      }
-
-      /**
-       * @return the numeric wire value of this enum entry
-       */
-      @Override
-      public int getNumber() {
-        return number;
-      }
-
-      /**
-       * @return a converter that maps between this enum's numeric and text representations
-       */
-      public static ProtoEnum.EnumConverter<KickType> converter() {
-        return KickTypeConverter.INSTANCE;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value, or null if unknown.
-       */
-      public static KickType forNumber(int value) {
-        return KickTypeConverter.INSTANCE.forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @param other Fallback value in case the value is not known.
-       * @return The enum associated with the given numeric wire value, or the fallback value if unknown.
-       */
-      public static KickType forNumberOr(int number, KickType other) {
-        KickType value = forNumber(number);
-        return value == null ? other : value;
-      }
-
-      enum KickTypeConverter implements ProtoEnum.EnumConverter<KickType> {
-        INSTANCE;
-
-        private static final KickType[] lookup = new KickType[6];
-
-        static {
-          lookup[0] = KICK_SQUEEZED;
-          lookup[1] = KICK_BLACK;
-          lookup[2] = KICK_CHANGE_PWD;
-          lookup[3] = KICK_LOGIN_WHITE_TIMEOUT;
-          lookup[4] = KICK_ACE_ANTI_CHEATER;
-          lookup[5] = KICK_BY_GM;
-        }
-
-        @Override
-        public final KickType forNumber(final int value) {
-          if (value >= 0 && value < lookup.length) {
-            return lookup[value];
-          }
-          return null;
-        }
-
-        @Override
-        public final KickType forName(final CharSequence value) {
-          switch (value.length()) {
-            case 10: {
-              if (ProtoUtil.isEqual("KICK_BLACK", value)) {
-                return KICK_BLACK;
-              }
-              if (ProtoUtil.isEqual("KICK_BY_GM", value)) {
-                return KICK_BY_GM;
-              }
-              break;
-            }
-            case 13: {
-              if (ProtoUtil.isEqual("KICK_SQUEEZED", value)) {
-                return KICK_SQUEEZED;
-              }
-              break;
-            }
-            case 15: {
-              if (ProtoUtil.isEqual("KICK_CHANGE_PWD", value)) {
-                return KICK_CHANGE_PWD;
-              }
-              break;
-            }
-            case 21: {
-              if (ProtoUtil.isEqual("KICK_ACE_ANTI_CHEATER", value)) {
-                return KICK_ACE_ANTI_CHEATER;
-              }
-              break;
-            }
-            case 24: {
-              if (ProtoUtil.isEqual("KICK_LOGIN_WHITE_TIMEOUT", value)) {
-                return KICK_LOGIN_WHITE_TIMEOUT;
-              }
-              break;
-            }
-          }
-          return null;
-        }
-      }
     }
 
     private enum PlayerKickOutScNotifyFactory implements MessageFactory<PlayerKickOutScNotify> {

@@ -19,7 +19,11 @@ public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
         session.send(new PacketBattlePassInfoNotify());
         session.send(new PacketContentPackageSyncDataScNotify());
         session.send(new PacketStaminaInfoScNotify(session.getPlayer()));
-        session.send(new PacketServerAnnounceNotify(session.getPlayer()));
-    }
 
+        if (session.getAccount().hasPermission("admin")) {
+            session.send(new PacketServerAnnounceNotify(true));
+        } else {
+            session.send(new PacketServerAnnounceNotify(false));
+        }
+    }
 }

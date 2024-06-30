@@ -366,21 +366,25 @@ public class LunarCore {
     // Server console
 
     private static void startConsole() {
-        try {
-            while (true) {
-                String input = reader.readLine("> ");
-                if (input == null || input.length() == 0) {
-                    continue;
-                }
-
+        var isLastInterrupted = false;
+        while (true) {
+            try {
+                String input = reader.readLine("[JokerSR-LC] > ");
+                if (input == null || input.length() == 0) continue;
                 LunarCore.getCommandManager().invoke(null, input);
-            }
-        } catch (UserInterruptException | EndOfFileException e) {
-            // CTRL + C / CTRL + D
-            System.exit(0);
-        } catch (Exception e) {
-            LunarCore.getLogger().error("Terminal error: ", e);
-        }
+
+            } catch (UserInterruptException | EndOfFileException e) {
+                if (!isLastInterrupted) {
+                    isLastInterrupted = true;
+                    LunarCore.getLogger().info("Press Ctrl-C/Ctrl-D again to shutdown.");
+                    continue;
+                } else {
+                    onShutdown();
+                    Runtime.getRuntime().exit(0);
+                }
+            } catch (Exception e) {
+                LunarCore.getLogger().error("Terminal error: ", e);
+        }}
     }
 
     // Shutdown event

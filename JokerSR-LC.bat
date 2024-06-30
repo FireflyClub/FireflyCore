@@ -27,9 +27,7 @@ set JAVA_EXE="java"
     if errorlevel 1 goto process_execute
 
 :process_execute
-    %JAVA_EXE% -jar JokerSR-LC.jar
-    echo Press any key to exit...
-    pause > nul
+    start "" %JAVA_EXE% -jar JokerSR-LC.jar
     goto end
 
 :end

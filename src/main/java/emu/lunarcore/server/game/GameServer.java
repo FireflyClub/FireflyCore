@@ -203,19 +203,16 @@ public class GameServer extends KcpServer {
         }
     }
 
-    public void onShutdown() {        
+    public void onShutdown() {
         // Kick all players
         List<Integer> playerUIDs = this.getAllPlayerUIDs();
         for (Integer uid : playerUIDs) {
             Player player = this.getOnlinePlayerByUid(uid);
             if (player!= null) {
-                player.sendPacket(new PacketPlayerKickOutScNotify(3));
+                player.sendPacket(new PacketPlayerKickOutScNotify(5));
             }
         }
 
-        // Close server socket
-        this.stop();
-        
         // Set region info
         this.info.setUp(false);
         this.info.save();
@@ -224,5 +221,7 @@ public class GameServer extends KcpServer {
         List<Player> list = new ArrayList<>(players.size());
         list.addAll(players.values());
 
+        // Close server socket
+        this.stop();
     }
 }

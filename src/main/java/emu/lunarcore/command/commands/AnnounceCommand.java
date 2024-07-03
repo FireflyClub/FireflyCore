@@ -2,6 +2,7 @@ package emu.lunarcore.command.commands;
 
 import java.util.List;
 
+import emu.lunarcore.LunarCore;
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
@@ -17,17 +18,19 @@ public class AnnounceCommand implements CommandHandler {
         String centerText = args.get(0);
 
         // Send to all players, except the sender
-        List<Integer> allUids = sender.getServer().getAllPlayerUIDs();
+        List<Integer> allUids = LunarCore.getGameServer().getAllPlayerUIDs();
         for (Integer eachUid : allUids) {
             // Check if UID is not the sender's UID
             if (sender != null && eachUid == sender.getUid()) {
                 continue;
             }
 
-            Player player = sender.getServer().getOnlinePlayerByUid(eachUid);
+            Player player = LunarCore.getGameServer().getOnlinePlayerByUid(eachUid);
             player.sendPacket(new PacketServerAnnounceNotify(centerText));
 
         };
+
+        args.sendMessage("Announce sent to all players.");
     }
 
 }

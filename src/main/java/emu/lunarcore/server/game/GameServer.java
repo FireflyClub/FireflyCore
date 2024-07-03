@@ -209,7 +209,7 @@ public class GameServer extends KcpServer {
         for (Integer uid : playerUIDs) {
             Player player = this.getOnlinePlayerByUid(uid);
             if (player!= null) {
-                player.sendPacket(new PacketPlayerKickOutScNotify(5));
+                player.sendPacket(new PacketPlayerKickOutScNotify(3));
             }
         }
 

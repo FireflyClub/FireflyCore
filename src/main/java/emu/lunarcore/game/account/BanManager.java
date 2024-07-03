@@ -7,6 +7,10 @@ import emu.lunarcore.game.player.Player;
  */
 public class BanManager {
     
+    public static boolean checkBanPerm(Player player) {
+        return player.getAccount().hasPermission("admin");
+    }
+
     public static boolean ban(int playerUid) {
         Account account = Player.getAccountByDatabase(playerUid);
 

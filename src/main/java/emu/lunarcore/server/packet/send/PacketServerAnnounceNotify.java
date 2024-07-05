@@ -45,7 +45,7 @@ public class PacketServerAnnounceNotify extends BasePacket {
                     .setConfigId(0)
                     .setEmergencyText(centerText)
                     .setBeginTime(0)
-                    .setEndTime((int)(System.currentTimeMillis() / 1000 + 1))
+                    .setEndTime((int)(System.currentTimeMillis() / 1000 + 2))
                     .setIsCenterSystemLast5EveryMinutes(false)
                 );
 

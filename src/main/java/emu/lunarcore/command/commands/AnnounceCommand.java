@@ -9,22 +9,16 @@ import emu.lunarcore.command.CommandHandler;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.server.packet.send.PacketServerAnnounceNotify;
 
-@Command(label = "announce", aliases = {"anno"}, permission = {"admin"}, desc = "/ban [player]. Bans a player from the server.")
+@Command(label = "announce", aliases = {"anno"}, permission = {"admin"}, desc = "/anno [text]. Sends a message to all players on the server.")
 public class AnnounceCommand implements CommandHandler {
 
     @Override
     public void execute(CommandArgs args) {
-        Player sender = args.getSender();
         String centerText = args.get(0);
 
         // Send to all players, except the sender
         List<Integer> allUids = LunarCore.getGameServer().getAllPlayerUIDs();
         for (Integer eachUid : allUids) {
-            // Check if UID is not the sender's UID
-            if (sender != null && eachUid == sender.getUid()) {
-                continue;
-            }
-
             Player player = LunarCore.getGameServer().getOnlinePlayerByUid(eachUid);
             player.sendPacket(new PacketServerAnnounceNotify(centerText));
 

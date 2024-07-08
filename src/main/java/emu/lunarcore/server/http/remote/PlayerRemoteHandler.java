@@ -11,7 +11,7 @@ import io.javalin.http.Handler;
 
 import org.jetbrains.annotations.NotNull;
 
-public final class RemoteHandler implements Handler {
+public final class PlayerRemoteHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
         RemoteReqJson req = JsonUtils.decode(ctx.body(), RemoteReqJson.class);

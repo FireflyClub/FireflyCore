@@ -204,9 +204,10 @@ public class HttpServer {
 
     private void addRemoteRoutes() {
         // Remote handler
-        getApp().post("/api/apply", new ApplyHandler());
-        getApp().post("/api/verify", new VerifyHandler());
-        getApp().post("/api/remote", new RemoteHandler());
+        getApp().post("/api/papply", new ApplyHandler());
+        getApp().post("/api/pverify", new VerifyHandler());
+        getApp().post("/api/premote", new PlayerRemoteHandler());
+        getApp().post("/api/cremote", new ConsoleRemoteHandler());
     }
 
     private void notFoundHandler(Context ctx) {

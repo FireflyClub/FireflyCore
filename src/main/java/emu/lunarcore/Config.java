@@ -121,6 +121,7 @@ public class Config {
     
     @Getter
     public static class ServerOptions {
+        public String consoleRemoteKey = "";
         public boolean useMission = false; // Seems to be stuck in mission scene
         public boolean autoCreateAccount = true;
         public int sceneMaxEntites = 500;

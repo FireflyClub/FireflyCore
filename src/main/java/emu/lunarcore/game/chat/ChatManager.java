@@ -58,7 +58,7 @@ public class ChatManager extends BasePlayerManager {
 
             // Invoke command
             if (text.charAt(0) == '/') {
-                LunarCore.getCommandManager().invoke(getPlayer(), text);
+                LunarCore.getCommandManager().invoke(getPlayer(), text, null);
                 return;
             }
 

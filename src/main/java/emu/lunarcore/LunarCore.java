@@ -371,7 +371,7 @@ public class LunarCore {
             try {
                 String input = reader.readLine("[JokerSR-LC] > ");
                 if (input == null || input.length() == 0) continue;
-                LunarCore.getCommandManager().invoke(null, input);
+                LunarCore.getCommandManager().invoke(null, input, null);
 
             } catch (UserInterruptException | EndOfFileException e) {
                 if (!isLastInterrupted) {

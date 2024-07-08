@@ -1,4 +1,4 @@
-package emu.lunarcore.server.http.handlers;
+package emu.lunarcore.server.http.remote;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -16,7 +16,7 @@ import java.io.File;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class PasswordHandler {
+public class PasswordManager {
     private static File remoteFile = LunarCore.remoteFile;
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private static final Type PASSWORD_DATA_LIST_TYPE = new TypeToken<ArrayList<PasswordData>>() {}.getType();

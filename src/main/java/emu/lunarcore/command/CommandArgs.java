@@ -2,13 +2,17 @@ package emu.lunarcore.command;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.inventory.GameItemSubAffix;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.Utils;
+import io.javalin.http.Context;
 import it.unimi.dsi.fastutil.ints.Int2IntMap;
 import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
@@ -32,11 +36,13 @@ public class CommandArgs {
     
     private Int2IntMap map;
     private ObjectSet<String> flags;
+    private Context ctx;
 
-    public CommandArgs(Player sender, List<String> args) {
+    public CommandArgs(Player sender, List<String> args, @Nullable Context ctx) {
         this.sender = sender;
         this.raw = String.join(" ", args);
         this.list = args;
+        this.ctx = ctx;
         
         // Parse args. Maybe regex is better.
         var it = this.list.iterator();
@@ -125,6 +131,9 @@ public class CommandArgs {
     public void sendMessage(String message) {
         if (sender != null) {
             sender.sendMessage(message);
+            if (this.ctx != null) {
+                this.ctx.json(new RemoteRspJson(200, message));
+            }
         } else {
             LunarCore.getLogger().info(message);
         }

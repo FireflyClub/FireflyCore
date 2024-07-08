@@ -16,6 +16,8 @@ import emu.lunarcore.LunarCore.ServerType;
 import emu.lunarcore.proto.DispatchRegionDataOuterClass.DispatchRegionData;
 import emu.lunarcore.server.game.RegionInfo;
 import emu.lunarcore.server.http.handlers.*;
+import emu.lunarcore.server.http.objects.HttpJsonResponse;
+import emu.lunarcore.server.http.remote.*;
 import emu.lunarcore.util.Utils;
 import io.javalin.Javalin;
 import io.javalin.http.ContentType;
@@ -203,9 +205,9 @@ public class HttpServer {
 
     private void addRemoteRoutes() {
         // Remote handler
-        getApp().get("/api/apply", new ApplyHandler());
-        getApp().get("/api/verify", new VerifyHandler());
-        getApp().get("/api/remote", new RemoteHandler());
+        getApp().post("/api/apply", new ApplyHandler());
+        getApp().post("/api/verify", new VerifyHandler());
+        getApp().post("/api/remote", new RemoteHandler());
     }
 
     private void notFoundHandler(Context ctx) {

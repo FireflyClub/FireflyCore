@@ -5,10 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.annotation.Nullable;
+
 import org.reflections.Reflections;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.player.Player;
+import io.javalin.http.Context;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import lombok.Getter;
@@ -115,8 +118,8 @@ public class CommandManager {
         // Make sure admin has all perms
         return sender.getAccount().hasPermission("admin");
     }
-    
-    public void invoke(Player sender, String message) {
+
+    public void invoke(Player sender, String message, @Nullable Context ctx) {
         // Parse message into arguments
         List<String> args = Arrays.stream(message.split(" ")).collect(Collectors.toCollection(ArrayList::new));
         
@@ -124,7 +127,7 @@ public class CommandManager {
         String label = args.remove(0).toLowerCase();
         
         // Filter out command prefixes
-        if (label.startsWith("/") || label.startsWith("!")) {
+        if (label.startsWith("/")) {
             label = label.substring(1);
         }
         
@@ -144,7 +147,7 @@ public class CommandManager {
             }
             
             // Build command arguments
-            CommandArgs cmdArgs = new CommandArgs(sender, args);
+            CommandArgs cmdArgs = new CommandArgs(sender, args, ctx);
 
             // Check targeted permission
             if (sender != cmdArgs.getTarget() && !this.checkTargetPermission(sender, command)) {

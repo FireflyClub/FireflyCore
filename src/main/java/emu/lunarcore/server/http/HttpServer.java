@@ -138,7 +138,6 @@ public class HttpServer {
 
         // Fallback handler
         getApp().error(404, this::notFoundHandler);
-        getApp().get("/status/server", new StatusServerHandler()::handle);
     }
 
     private void addDispatchRoutes() {

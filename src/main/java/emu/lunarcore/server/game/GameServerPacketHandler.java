@@ -79,13 +79,17 @@ public class GameServerPacketHandler {
                 
                 // Handle packet
                 handler.handle(session, data);
-                // LunarCore.getLogger().info("Handled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
+
+                if (LunarCore.getConfig().getLogOptions().easyPackets && !CmdIdUtils.IGNORED_LOG_PACKETS.contains(cmdId)) {
+                    LunarCore.getLogger().info("Handled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
+                }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
+        } else {
+            if (LunarCore.getConfig().getLogOptions().easyPackets) {
+                LunarCore.getLogger().info("Unhandled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
+            }
         }
-
-        // Log packets
-        LunarCore.getLogger().info("Find packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
     }
 }

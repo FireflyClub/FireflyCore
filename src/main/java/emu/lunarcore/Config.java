@@ -222,6 +222,7 @@ public class Config {
     public static class LogOptions {
         public boolean commands = true;
         public boolean connections = true;
+        public boolean easyPackets = false;
         public boolean packets = false;
         public boolean filterLoopingPackets = false;
     }

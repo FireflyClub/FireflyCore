@@ -369,7 +369,7 @@ public class LunarCore {
         var isLastInterrupted = false;
         while (true) {
             try {
-                String input = reader.readLine("[JokerSR-LC] > ");
+                String input = reader.readLine("\u001B[38;2;255;192;203m[JOKERSR-LC]\u001B[0m" + " > ");
                 if (input == null || input.length() == 0) continue;
                 LunarCore.getCommandManager().invoke(null, input, null);
 

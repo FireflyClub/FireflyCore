@@ -140,7 +140,7 @@ public class CommandArgs {
         if (sender != null) {
             sender.sendMessage(message);
         } else {
-            LunarCore.getLogger().info(message);
+            LunarCore.getLogger().info("\u001B[38;2;0;255;234m" + message + "\u001B[0m");
         }
     }
 

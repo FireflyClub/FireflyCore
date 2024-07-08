@@ -10,10 +10,10 @@ public class HelpCommand implements CommandHandler {
 
     @Override
     public void execute(CommandArgs args) {
-        args.sendMessage("Displaying list of commands:");
-        
         // Sort command names
         var labels = LunarCore.getCommandManager().getLabels().keySet().stream().sorted().toList();
+
+        String messages = "";
         for (var label : labels) {
             // Get command
             Command command = LunarCore.getCommandManager().getLabels().get(label).getClass().getAnnotation(Command.class);
@@ -21,8 +21,10 @@ public class HelpCommand implements CommandHandler {
             
             // Only send command description if the sender has permission to use the command
             if (LunarCore.getCommandManager().checkPermission(args.getSender(), command)) {
-                args.sendMessage(command.desc());
+                args.sendMessage(command.desc(), false);
+                messages += "\n" + command.desc();
             }
+            args.sendRemoteMessage(messages);
         }
     }
 }

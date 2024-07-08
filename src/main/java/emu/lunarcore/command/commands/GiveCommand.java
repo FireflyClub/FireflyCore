@@ -15,7 +15,6 @@ import emu.lunarcore.util.Utils;
 
 @Command(
         label = "give",
-        aliases = {"g"},
         permission = {"vip"},
         requireTargetOnline = true,
         desc = "/give [item id] x(amount) lv(level) r(rank) p(promotion). Gives the targeted player an item."

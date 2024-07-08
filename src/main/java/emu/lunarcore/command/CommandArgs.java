@@ -129,13 +129,24 @@ public class CommandArgs {
      * @param message
      */
     public void sendMessage(String message) {
+        this.sendMessage(message, true);
+    }
+    
+     public void sendMessage(String message, boolean needRemote) {
+
+        // For remote command
+        if (needRemote) this.sendRemoteMessage(message);
+
         if (sender != null) {
             sender.sendMessage(message);
-            if (this.ctx != null) {
-                this.ctx.json(new RemoteRspJson(200, message));
-            }
         } else {
             LunarCore.getLogger().info(message);
+        }
+    }
+
+    public void sendRemoteMessage(String message) {
+        if (this.ctx != null) {
+            this.ctx.json(new RemoteRspJson(200, message));
         }
     }
     

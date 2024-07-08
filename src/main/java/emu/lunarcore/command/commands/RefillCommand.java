@@ -6,7 +6,7 @@ import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 
 @Command(label = "refill", aliases = {"rf"}, permission = {"player"}, requireTargetOnline = true, desc = "/refill - refill your skill points in open world.")
-public class RefillMPCommand implements CommandHandler {
+public class RefillCommand implements CommandHandler {
 
     @Override
     public void execute(CommandArgs args) {

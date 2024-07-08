@@ -35,8 +35,5 @@ public final class KickCommand implements CommandHandler {
         
         args.sendMessage(" kicked " + target.getName() + " from the server" + (reason.isEmpty() ? "" : " for reason: " + reason));
         target.sendPacket(new PacketPlayerKickOutScNotify(kickType));
-
-        // Send message
-        args.sendMessage("Player kicked successfully");
     }
 }

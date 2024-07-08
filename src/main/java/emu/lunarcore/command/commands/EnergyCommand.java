@@ -6,7 +6,7 @@ import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 
 @Command(label = "energy", permission = {"player"}, requireTargetOnline = true, desc = "/energy. Refills all characters energy in current lineup.")
-public class RefillSPCommand implements CommandHandler {
+public class EnergyCommand implements CommandHandler {
 
     @Override
     public void execute(CommandArgs args) {

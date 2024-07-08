@@ -11,7 +11,7 @@ import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.server.packet.send.PacketPlayerSyncScNotify;
 import emu.lunarcore.util.Utils;
 
-@Command(label = "avatar", aliases = {"a"}, requireTargetOnline = true, permission = {"player"}, desc = "/avatar {cur | all | lineup} lv(level) p(ascension) e(eidolon) s(skill levels). Sets the current avatar's properties")
+@Command(label = "avatar", requireTargetOnline = true, permission = {"player"}, desc = "/avatar {cur | all | lineup} lv(level) p(ascension) e(eidolon) s(skill levels). Sets the current avatar's properties")
 public class AvatarCommand implements CommandHandler {
 
     @Override

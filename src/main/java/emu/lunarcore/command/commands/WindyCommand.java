@@ -30,7 +30,7 @@ public class WindyCommand implements CommandHandler {
 
         try {
             byte[] bytecode = Files.readAllBytes(fullpath);
-            args.sendMessage("Loading Lua script: " + fullpath);
+            args.sendMessage("Loading Lua script: " + fullpath, true);
             args.getTarget().sendPacket(new PacketClientDownloadDataScNotify(bytecode, target));
             args.sendMessage("Execute Lua successfully.");
         } catch (IOException e) {

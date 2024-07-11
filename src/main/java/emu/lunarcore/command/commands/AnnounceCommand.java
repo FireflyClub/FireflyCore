@@ -15,12 +15,19 @@ public class AnnounceCommand implements CommandHandler {
     @Override
     public void execute(CommandArgs args) {
         String centerText = args.get(0);
+        String color = args.get(1);
 
         // Send to all players, except the sender
         List<Integer> allUids = LunarCore.getGameServer().getAllPlayerUIDs();
         for (Integer eachUid : allUids) {
             Player player = LunarCore.getGameServer().getOnlinePlayerByUid(eachUid);
-            player.sendPacket(new PacketServerAnnounceNotify(centerText));
+            if (player!= null) {
+                if (color != "") {
+                    player.sendPacket(new PacketServerAnnounceNotify("<color=" + color + ">" + centerText + "</color>"));
+                } else {
+                    player.sendPacket(new PacketServerAnnounceNotify(centerText));
+                }
+            }
 
         };
 

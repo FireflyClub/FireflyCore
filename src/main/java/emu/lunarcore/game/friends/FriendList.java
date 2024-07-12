@@ -65,6 +65,14 @@ public class FriendList extends BasePlayerManager {
         getPendingFriends().remove(uid);
         this.applyFriendListCooldown = 0;
     }
+
+    public void markFriendship(int uid, boolean isSetMark) {
+        Friendship friendship = this.getFriendById(uid);
+        if (friendship != null) {
+            friendship.setMarked(isSetMark);
+            friendship.save();
+        }
+    }
     
     /**
      * Gets total amount of potential friends

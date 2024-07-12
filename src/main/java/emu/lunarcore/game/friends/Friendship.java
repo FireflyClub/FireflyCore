@@ -18,6 +18,7 @@ public class Friendship {
     @Indexed private int friendUid;
     
     @Setter private boolean isFriend;
+    @Setter private boolean isMarked;
     private int askerUid;
     
     @Setter private transient Player owner;
@@ -32,6 +33,7 @@ public class Friendship {
         this.ownerUid = owner.getUid();
         this.friendUid = friend.getUid();
         this.askerUid = asker.getUid();
+        this.isMarked = false;
     }
     
     // Database functions

@@ -72,8 +72,8 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
 
         var data = GetFriendListInfoScRsp.newInstance();
         // Make sure server console is the first friend
-        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(chatFriend));
-        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(consoleFriend));
+        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(chatFriend).setIsMarked(true));
+        data.addFriendList(FriendListInfo.newInstance().setSimpleInfo(consoleFriend).setIsMarked(true));
 
         for (var friendship : friendList.getFriends().values()) {
             var friend = friendList.getServer().getPlayerByUid(friendship.getFriendUid(), true);
@@ -81,7 +81,8 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
             
             // Create friend info
             var friendInfo = FriendListInfo.newInstance()
-                    .setSimpleInfo(friend.toSimpleInfo());
+                    .setSimpleInfo(friend.toSimpleInfo())
+                    .setIsMarked(friendship.isMarked());
             
             // Set playing state
             if (friend.isOnline()) {

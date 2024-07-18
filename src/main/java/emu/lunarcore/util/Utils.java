@@ -1,13 +1,5 @@
 package emu.lunarcore.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import emu.lunarcore.LunarCore;
-import io.javalin.http.Context;
-
 import java.io.File;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -235,39 +227,4 @@ public class Utils {
             return false;
         }
     }
-      public static JsonNode stringToJSONObject(String jsonString) {
-        ObjectMapper jacksonObjMapper = new ObjectMapper();
-        try {
-            return jacksonObjMapper.readTree(jsonString);
-        } catch (JsonMappingException e) {
-            LunarCore.getLogger().debug("Error JsonMappingException:", e);
-        } catch (JsonProcessingException e) {
-            LunarCore.getLogger().debug("Error JsonProcessingException:", e);
-        }
-        return null;
-    }
-    private static final String[] HEADERS_TO_TRY = {
-        "X-Forwarded-For",
-        "Proxy-Client-IP",
-        "WL-Proxy-Client-IP",
-        "HTTP_X_FORWARDED_FOR",
-        "HTTP_X_FORWARDED",
-        "HTTP_X_CLUSTER_CLIENT_IP",
-        "HTTP_CLIENT_IP",
-        "HTTP_FORWARDED_FOR",
-        "HTTP_FORWARDED",
-        "HTTP_VIA",
-        "REMOTE_ADDR"
-    };
-
-    public static String getClientIpAddress(Context ctx) {
-        for (String header : HEADERS_TO_TRY) {
-            String ip = ctx.header(header);
-            if (ip != null && ip.length() != 0 && !"unknown".equalsIgnoreCase(ip)) {
-                return ip;
-            }
-        }
-        return ctx.ip();
-    }
-
 }

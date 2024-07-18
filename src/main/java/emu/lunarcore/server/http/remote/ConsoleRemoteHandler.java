@@ -4,7 +4,6 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
-import emu.lunarcore.util.Utils;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
@@ -19,7 +18,7 @@ public final class ConsoleRemoteHandler implements Handler {
 
         String reqKey = req.key;
         String cmd = req.cmd;
-        String ipAddress = Utils.getClientIpAddress(ctx);
+        String ipAddress = IpAddressManager.getClientIpAddress(ctx);
 
         // Check if key is correct (allow null)
         String consoleRemoteKey = LunarCore.getConfig().getServerOptions().getConsoleRemoteKey();

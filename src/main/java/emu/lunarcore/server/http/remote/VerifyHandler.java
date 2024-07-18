@@ -5,7 +5,6 @@ import emu.lunarcore.game.player.Player;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
-import emu.lunarcore.util.Utils;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
@@ -19,7 +18,7 @@ public final class VerifyHandler implements Handler {
         int uid = req.uid;
         int reqCode = req.code;
         String key = req.key;
-        String ipAddress = Utils.getClientIpAddress(ctx);
+        String ipAddress = IpAddressManager.getClientIpAddress(ctx);
 
         // Check req formats
         if (uid == 0) {

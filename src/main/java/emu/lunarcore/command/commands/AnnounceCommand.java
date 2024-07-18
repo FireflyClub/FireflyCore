@@ -23,7 +23,7 @@ public class AnnounceCommand implements CommandHandler {
             Player player = LunarCore.getGameServer().getOnlinePlayerByUid(eachUid);
             if (player!= null) {
                 if (color != "") {
-                    player.sendPacket(new PacketServerAnnounceNotify("<color=" + color + ">" + centerText + "</color>"));
+                    player.sendPacket(new PacketServerAnnounceNotify(centerText, color));
                 } else {
                     player.sendPacket(new PacketServerAnnounceNotify(centerText));
                 }

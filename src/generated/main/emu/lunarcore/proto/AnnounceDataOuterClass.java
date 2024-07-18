@@ -39,9 +39,9 @@ public final class AnnounceDataOuterClass {
     private int bannerFrequency;
 
     /**
-     * <code>optional uint32 center_system_frequency = 9;</code>
+     * <code>optional uint32 nouse_center_system_frequency = 9;</code>
      */
-    private int centerSystemFrequency;
+    private int nouseCenterSystemFrequency;
 
     /**
      * <code>optional uint32 config_id = 11;</code>
@@ -53,9 +53,9 @@ public final class AnnounceDataOuterClass {
      *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
+     * <code>optional bool nouse_is_center_system_last_5_every_minutes = 14;</code>
      */
-    private boolean isCenterSystemLast5EveryMinutes;
+    private boolean nouseIsCenterSystemLast5EveryMinutes;
 
     /**
      * <code>optional string banner_text = 3;</code>
@@ -68,9 +68,9 @@ public final class AnnounceDataOuterClass {
     private final Utf8String emergencyText = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string count_down_text = 10;</code>
+     * <code>optional string nouse_count_down_text = 10;</code>
      */
-    private final Utf8String countDownText = Utf8String.newEmptyInstance();
+    private final Utf8String nouseCountDownText = Utf8String.newEmptyInstance();
 
     private AnnounceData() {
     }
@@ -198,39 +198,39 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 center_system_frequency = 9;</code>
-     * @return whether the centerSystemFrequency field is set
+     * <code>optional uint32 nouse_center_system_frequency = 9;</code>
+     * @return whether the nouseCenterSystemFrequency field is set
      */
-    public boolean hasCenterSystemFrequency() {
+    public boolean hasNouseCenterSystemFrequency() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 center_system_frequency = 9;</code>
+     * <code>optional uint32 nouse_center_system_frequency = 9;</code>
      * @return this
      */
-    public AnnounceData clearCenterSystemFrequency() {
+    public AnnounceData clearNouseCenterSystemFrequency() {
       bitField0_ &= ~0x00000008;
-      centerSystemFrequency = 0;
+      nouseCenterSystemFrequency = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 center_system_frequency = 9;</code>
-     * @return the centerSystemFrequency
+     * <code>optional uint32 nouse_center_system_frequency = 9;</code>
+     * @return the nouseCenterSystemFrequency
      */
-    public int getCenterSystemFrequency() {
-      return centerSystemFrequency;
+    public int getNouseCenterSystemFrequency() {
+      return nouseCenterSystemFrequency;
     }
 
     /**
-     * <code>optional uint32 center_system_frequency = 9;</code>
-     * @param value the centerSystemFrequency to set
+     * <code>optional uint32 nouse_center_system_frequency = 9;</code>
+     * @param value the nouseCenterSystemFrequency to set
      * @return this
      */
-    public AnnounceData setCenterSystemFrequency(final int value) {
+    public AnnounceData setNouseCenterSystemFrequency(final int value) {
       bitField0_ |= 0x00000008;
-      centerSystemFrequency = value;
+      nouseCenterSystemFrequency = value;
       return this;
     }
 
@@ -276,10 +276,10 @@ public final class AnnounceDataOuterClass {
      *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
-     * @return whether the isCenterSystemLast5EveryMinutes field is set
+     * <code>optional bool nouse_is_center_system_last_5_every_minutes = 14;</code>
+     * @return whether the nouseIsCenterSystemLast5EveryMinutes field is set
      */
-    public boolean hasIsCenterSystemLast5EveryMinutes() {
+    public boolean hasNouseIsCenterSystemLast5EveryMinutes() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
@@ -288,12 +288,12 @@ public final class AnnounceDataOuterClass {
      *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
+     * <code>optional bool nouse_is_center_system_last_5_every_minutes = 14;</code>
      * @return this
      */
-    public AnnounceData clearIsCenterSystemLast5EveryMinutes() {
+    public AnnounceData clearNouseIsCenterSystemLast5EveryMinutes() {
       bitField0_ &= ~0x00000020;
-      isCenterSystemLast5EveryMinutes = false;
+      nouseIsCenterSystemLast5EveryMinutes = false;
       return this;
     }
 
@@ -302,11 +302,11 @@ public final class AnnounceDataOuterClass {
      *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
-     * @return the isCenterSystemLast5EveryMinutes
+     * <code>optional bool nouse_is_center_system_last_5_every_minutes = 14;</code>
+     * @return the nouseIsCenterSystemLast5EveryMinutes
      */
-    public boolean getIsCenterSystemLast5EveryMinutes() {
-      return isCenterSystemLast5EveryMinutes;
+    public boolean getNouseIsCenterSystemLast5EveryMinutes() {
+      return nouseIsCenterSystemLast5EveryMinutes;
     }
 
     /**
@@ -314,13 +314,13 @@ public final class AnnounceDataOuterClass {
      *  LLPPPMOKLNE
      * </pre>
      *
-     * <code>optional bool is_center_system_last_5_every_minutes = 14;</code>
-     * @param value the isCenterSystemLast5EveryMinutes to set
+     * <code>optional bool nouse_is_center_system_last_5_every_minutes = 14;</code>
+     * @param value the nouseIsCenterSystemLast5EveryMinutes to set
      * @return this
      */
-    public AnnounceData setIsCenterSystemLast5EveryMinutes(final boolean value) {
+    public AnnounceData setNouseIsCenterSystemLast5EveryMinutes(final boolean value) {
       bitField0_ |= 0x00000020;
-      isCenterSystemLast5EveryMinutes = value;
+      nouseIsCenterSystemLast5EveryMinutes = value;
       return this;
     }
 
@@ -455,67 +455,67 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @return whether the countDownText field is set
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @return whether the nouseCountDownText field is set
      */
-    public boolean hasCountDownText() {
+    public boolean hasNouseCountDownText() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
+     * <code>optional string nouse_count_down_text = 10;</code>
      * @return this
      */
-    public AnnounceData clearCountDownText() {
+    public AnnounceData clearNouseCountDownText() {
       bitField0_ &= ~0x00000100;
-      countDownText.clear();
+      nouseCountDownText.clear();
       return this;
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @return the countDownText
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @return the nouseCountDownText
      */
-    public String getCountDownText() {
-      return countDownText.getString();
+    public String getNouseCountDownText() {
+      return nouseCountDownText.getString();
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @return internal {@code Utf8String} representation of countDownText for reading
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @return internal {@code Utf8String} representation of nouseCountDownText for reading
      */
-    public Utf8String getCountDownTextBytes() {
-      return this.countDownText;
+    public Utf8String getNouseCountDownTextBytes() {
+      return this.nouseCountDownText;
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @return internal {@code Utf8String} representation of countDownText for modifications
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @return internal {@code Utf8String} representation of nouseCountDownText for modifications
      */
-    public Utf8String getMutableCountDownTextBytes() {
+    public Utf8String getMutableNouseCountDownTextBytes() {
       bitField0_ |= 0x00000100;
-      return this.countDownText;
+      return this.nouseCountDownText;
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @param value the countDownText to set
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @param value the nouseCountDownText to set
      * @return this
      */
-    public AnnounceData setCountDownText(final CharSequence value) {
+    public AnnounceData setNouseCountDownText(final CharSequence value) {
       bitField0_ |= 0x00000100;
-      countDownText.copyFrom(value);
+      nouseCountDownText.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string count_down_text = 10;</code>
-     * @param value the countDownText to set
+     * <code>optional string nouse_count_down_text = 10;</code>
+     * @param value the nouseCountDownText to set
      * @return this
      */
-    public AnnounceData setCountDownText(final Utf8String value) {
+    public AnnounceData setNouseCountDownText(final Utf8String value) {
       bitField0_ |= 0x00000100;
-      countDownText.copyFrom(value);
+      nouseCountDownText.copyFrom(value);
       return this;
     }
 
@@ -527,12 +527,12 @@ public final class AnnounceDataOuterClass {
         endTime = other.endTime;
         beginTime = other.beginTime;
         bannerFrequency = other.bannerFrequency;
-        centerSystemFrequency = other.centerSystemFrequency;
+        nouseCenterSystemFrequency = other.nouseCenterSystemFrequency;
         configId = other.configId;
-        isCenterSystemLast5EveryMinutes = other.isCenterSystemLast5EveryMinutes;
+        nouseIsCenterSystemLast5EveryMinutes = other.nouseIsCenterSystemLast5EveryMinutes;
         bannerText.copyFrom(other.bannerText);
         emergencyText.copyFrom(other.emergencyText);
-        countDownText.copyFrom(other.countDownText);
+        nouseCountDownText.copyFrom(other.nouseCountDownText);
       }
       return this;
     }
@@ -552,14 +552,14 @@ public final class AnnounceDataOuterClass {
       if (other.hasBannerFrequency()) {
         setBannerFrequency(other.bannerFrequency);
       }
-      if (other.hasCenterSystemFrequency()) {
-        setCenterSystemFrequency(other.centerSystemFrequency);
+      if (other.hasNouseCenterSystemFrequency()) {
+        setNouseCenterSystemFrequency(other.nouseCenterSystemFrequency);
       }
       if (other.hasConfigId()) {
         setConfigId(other.configId);
       }
-      if (other.hasIsCenterSystemLast5EveryMinutes()) {
-        setIsCenterSystemLast5EveryMinutes(other.isCenterSystemLast5EveryMinutes);
+      if (other.hasNouseIsCenterSystemLast5EveryMinutes()) {
+        setNouseIsCenterSystemLast5EveryMinutes(other.nouseIsCenterSystemLast5EveryMinutes);
       }
       if (other.hasBannerText()) {
         getMutableBannerTextBytes().copyFrom(other.bannerText);
@@ -567,8 +567,8 @@ public final class AnnounceDataOuterClass {
       if (other.hasEmergencyText()) {
         getMutableEmergencyTextBytes().copyFrom(other.emergencyText);
       }
-      if (other.hasCountDownText()) {
-        getMutableCountDownTextBytes().copyFrom(other.countDownText);
+      if (other.hasNouseCountDownText()) {
+        getMutableNouseCountDownTextBytes().copyFrom(other.nouseCountDownText);
       }
       return this;
     }
@@ -583,12 +583,12 @@ public final class AnnounceDataOuterClass {
       endTime = 0L;
       beginTime = 0L;
       bannerFrequency = 0;
-      centerSystemFrequency = 0;
+      nouseCenterSystemFrequency = 0;
       configId = 0;
-      isCenterSystemLast5EveryMinutes = false;
+      nouseIsCenterSystemLast5EveryMinutes = false;
       bannerText.clear();
       emergencyText.clear();
-      countDownText.clear();
+      nouseCountDownText.clear();
       return this;
     }
 
@@ -601,7 +601,7 @@ public final class AnnounceDataOuterClass {
       bitField0_ = 0;
       bannerText.clear();
       emergencyText.clear();
-      countDownText.clear();
+      nouseCountDownText.clear();
       return this;
     }
 
@@ -618,12 +618,12 @@ public final class AnnounceDataOuterClass {
         && (!hasEndTime() || endTime == other.endTime)
         && (!hasBeginTime() || beginTime == other.beginTime)
         && (!hasBannerFrequency() || bannerFrequency == other.bannerFrequency)
-        && (!hasCenterSystemFrequency() || centerSystemFrequency == other.centerSystemFrequency)
+        && (!hasNouseCenterSystemFrequency() || nouseCenterSystemFrequency == other.nouseCenterSystemFrequency)
         && (!hasConfigId() || configId == other.configId)
-        && (!hasIsCenterSystemLast5EveryMinutes() || isCenterSystemLast5EveryMinutes == other.isCenterSystemLast5EveryMinutes)
+        && (!hasNouseIsCenterSystemLast5EveryMinutes() || nouseIsCenterSystemLast5EveryMinutes == other.nouseIsCenterSystemLast5EveryMinutes)
         && (!hasBannerText() || bannerText.equals(other.bannerText))
         && (!hasEmergencyText() || emergencyText.equals(other.emergencyText))
-        && (!hasCountDownText() || countDownText.equals(other.countDownText));
+        && (!hasNouseCountDownText() || nouseCountDownText.equals(other.nouseCountDownText));
     }
 
     @Override
@@ -642,7 +642,7 @@ public final class AnnounceDataOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(centerSystemFrequency);
+        output.writeUInt32NoTag(nouseCenterSystemFrequency);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 88);
@@ -650,7 +650,7 @@ public final class AnnounceDataOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeBoolNoTag(isCenterSystemLast5EveryMinutes);
+        output.writeBoolNoTag(nouseIsCenterSystemLast5EveryMinutes);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 26);
@@ -662,7 +662,7 @@ public final class AnnounceDataOuterClass {
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawByte((byte) 82);
-        output.writeStringNoTag(countDownText);
+        output.writeStringNoTag(nouseCountDownText);
       }
     }
 
@@ -679,7 +679,7 @@ public final class AnnounceDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(bannerFrequency);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(centerSystemFrequency);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(nouseCenterSystemFrequency);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(configId);
@@ -694,7 +694,7 @@ public final class AnnounceDataOuterClass {
         size += 1 + ProtoSink.computeStringSizeNoTag(emergencyText);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(countDownText);
+        size += 1 + ProtoSink.computeStringSizeNoTag(nouseCountDownText);
       }
       return size;
     }
@@ -734,8 +734,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 72: {
-            // centerSystemFrequency
-            centerSystemFrequency = input.readUInt32();
+            // nouseCenterSystemFrequency
+            nouseCenterSystemFrequency = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 88) {
@@ -752,8 +752,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 112: {
-            // isCenterSystemLast5EveryMinutes
-            isCenterSystemLast5EveryMinutes = input.readBool();
+            // nouseIsCenterSystemLast5EveryMinutes
+            nouseIsCenterSystemLast5EveryMinutes = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 26) {
@@ -779,8 +779,8 @@ public final class AnnounceDataOuterClass {
             }
           }
           case 82: {
-            // countDownText
-            input.readString(countDownText);
+            // nouseCountDownText
+            input.readString(nouseCountDownText);
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 0) {
@@ -814,13 +814,13 @@ public final class AnnounceDataOuterClass {
         output.writeUInt32(FieldNames.bannerFrequency, bannerFrequency);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.centerSystemFrequency, centerSystemFrequency);
+        output.writeUInt32(FieldNames.nouseCenterSystemFrequency, nouseCenterSystemFrequency);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.configId, configId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeBool(FieldNames.isCenterSystemLast5EveryMinutes, isCenterSystemLast5EveryMinutes);
+        output.writeBool(FieldNames.nouseIsCenterSystemLast5EveryMinutes, nouseIsCenterSystemLast5EveryMinutes);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeString(FieldNames.bannerText, bannerText);
@@ -829,7 +829,7 @@ public final class AnnounceDataOuterClass {
         output.writeString(FieldNames.emergencyText, emergencyText);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeString(FieldNames.countDownText, countDownText);
+        output.writeString(FieldNames.nouseCountDownText, nouseCountDownText);
       }
       output.endObject();
     }
@@ -877,11 +877,11 @@ public final class AnnounceDataOuterClass {
             }
             break;
           }
-          case -1285402920:
-          case 671051254: {
-            if (input.isAtField(FieldNames.centerSystemFrequency)) {
+          case -799572398:
+          case 88421597: {
+            if (input.isAtField(FieldNames.nouseCenterSystemFrequency)) {
               if (!input.trySkipNullValue()) {
-                centerSystemFrequency = input.readUInt32();
+                nouseCenterSystemFrequency = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -901,11 +901,11 @@ public final class AnnounceDataOuterClass {
             }
             break;
           }
-          case -68660299:
-          case -630028317: {
-            if (input.isAtField(FieldNames.isCenterSystemLast5EveryMinutes)) {
+          case 476836527:
+          case 1679994506: {
+            if (input.isAtField(FieldNames.nouseIsCenterSystemLast5EveryMinutes)) {
               if (!input.trySkipNullValue()) {
-                isCenterSystemLast5EveryMinutes = input.readBool();
+                nouseIsCenterSystemLast5EveryMinutes = input.readBool();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -937,11 +937,11 @@ public final class AnnounceDataOuterClass {
             }
             break;
           }
-          case 515044126:
-          case 1806103418: {
-            if (input.isAtField(FieldNames.countDownText)) {
+          case 1348746392:
+          case 421106017: {
+            if (input.isAtField(FieldNames.nouseCountDownText)) {
               if (!input.trySkipNullValue()) {
-                input.readString(countDownText);
+                input.readString(nouseCountDownText);
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1007,17 +1007,17 @@ public final class AnnounceDataOuterClass {
 
       static final FieldName bannerFrequency = FieldName.forField("bannerFrequency", "banner_frequency");
 
-      static final FieldName centerSystemFrequency = FieldName.forField("centerSystemFrequency", "center_system_frequency");
+      static final FieldName nouseCenterSystemFrequency = FieldName.forField("nouseCenterSystemFrequency", "nouse_center_system_frequency");
 
       static final FieldName configId = FieldName.forField("configId", "config_id");
 
-      static final FieldName isCenterSystemLast5EveryMinutes = FieldName.forField("isCenterSystemLast5EveryMinutes", "is_center_system_last_5_every_minutes");
+      static final FieldName nouseIsCenterSystemLast5EveryMinutes = FieldName.forField("nouseIsCenterSystemLast5EveryMinutes", "nouse_is_center_system_last_5_every_minutes");
 
       static final FieldName bannerText = FieldName.forField("bannerText", "banner_text");
 
       static final FieldName emergencyText = FieldName.forField("emergencyText", "emergency_text");
 
-      static final FieldName countDownText = FieldName.forField("countDownText", "count_down_text");
+      static final FieldName nouseCountDownText = FieldName.forField("nouseCountDownText", "nouse_count_down_text");
     }
   }
 }

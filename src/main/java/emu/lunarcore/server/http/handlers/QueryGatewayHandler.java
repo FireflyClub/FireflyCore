@@ -1,9 +1,10 @@
 package emu.lunarcore.server.http.handlers;
 
-import emu.lunarcore.HotfixData;
 import org.jetbrains.annotations.NotNull;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
+import emu.lunarcore.config.HotfixData;
 import emu.lunarcore.proto.GateserverOuterClass.Gateserver;
 import emu.lunarcore.util.Utils;
 import io.javalin.http.Context;
@@ -19,9 +20,9 @@ public class QueryGatewayHandler implements Handler {
     public void handle(@NotNull Context ctx) throws Exception {
         // Build gateserver proto
         Gateserver gateserver = Gateserver.newInstance()
-            .setRegionName(LunarCore.getConfig().getGameServer().getId())
-            .setIp(LunarCore.getConfig().getGameServer().getPublicAddress())
-            .setPort(LunarCore.getConfig().getGameServer().getPublicPort())
+            .setRegionName(ConfigManager.getConfig().getGameServer().getId())
+            .setIp(ConfigManager.getConfig().getGameServer().getPublicAddress())
+            .setPort(ConfigManager.getConfig().getGameServer().getPublicPort())
             .setMsg("Access verification failed. Please check if you have logged in to the correct account and server.") // in case there is some error idk
             .setUnk1(true)
             .setUnk2(true)
@@ -38,14 +39,14 @@ public class QueryGatewayHandler implements Handler {
         if (versionQuery != null) {
             String version = versionQuery.replaceAll("CN|OS|BETA|PROD|Android|Win|iOS", "");
             String region = versionQuery.contains("CN") ?
-                    LunarCore.getHotfixData().getBaseUrl().getCNWin() :
-                    LunarCore.getHotfixData().getBaseUrl().getOSWin();
-            HotfixData.DownloadData hotfixData = LunarCore.getHotfixData().getDownloadData().get(version);
+                    ConfigManager.getHotfixData().getBaseUrl().getCNWin() :
+                    ConfigManager.getHotfixData().getBaseUrl().getOSWin();
+            HotfixData.DownloadData hotfixData = ConfigManager.getHotfixData().getDownloadData().get(version);
 
             if (hotfixData == null) {
                 hotfixData = new HotfixData.DownloadData();
-                LunarCore.getHotfixData().getDownloadData().put(version, hotfixData);
-                LunarCore.loadHotfixData();
+                ConfigManager.getHotfixData().getDownloadData().put(version, hotfixData);
+                ConfigManager.loadHotfixData();
             }
 
             if (hotfixData.assetBundleUrl != null) {
@@ -63,7 +64,7 @@ public class QueryGatewayHandler implements Handler {
         }
 
         // Log
-        if (LunarCore.getConfig().getLogOptions().connections) {
+        if (ConfigManager.getConfig().getLogOptions().connections) {
             LunarCore.getLogger().info("Client request: query_gateway");
         }
 

@@ -1,11 +1,11 @@
 package emu.lunarcore.command.commands;
 
-import emu.lunarcore.LunarCore;
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
+import emu.lunarcore.config.ConfigManager;
 
-@Command(label = "tag", permission = {"admin"}, requireTarget = true, desc = "/tag {add | remove} [name]. Add or remove a tag to a player.")
+@Command(label = "tag", permission = {"admin"}, requireTargetOnline = true, desc = "/tag {add | remove} [name]. Add or remove a tag to a player.")
 public class TagCommand implements CommandHandler {
 
     @Override
@@ -16,12 +16,12 @@ public class TagCommand implements CommandHandler {
         if ("add".equals(type)) {
             String tag = args.get(1);
 
-            LunarCore.getTagData().addTag(uid, tag);
+            ConfigManager.getTagData().add(uid, tag);
 
             args.sendMessage("Tag added.");
 
         } else if ("remove".equals(type)) {
-            LunarCore.getTagData().removeTag(uid);
+            ConfigManager.getTagData().remove(uid);
 
             args.sendMessage("Tag removed.");
         } else {

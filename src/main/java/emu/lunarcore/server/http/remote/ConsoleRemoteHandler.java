@@ -1,6 +1,7 @@
 package emu.lunarcore.server.http.remote;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
@@ -21,7 +22,7 @@ public final class ConsoleRemoteHandler implements Handler {
         String ipAddress = IpAddressManager.getClientIpAddress(ctx);
 
         // Check if key is correct (allow null)
-        String consoleRemoteKey = LunarCore.getConfig().getServerOptions().getConsoleRemoteKey();
+        String consoleRemoteKey = ConfigManager.getConfig().getAccountOptions().getConsoleRemoteKey();
         if (!Objects.equals(reqKey, consoleRemoteKey)) {
             ctx.json(new RemoteRspJson(201, "The console remote password is incorrect."));
             return;

@@ -10,9 +10,10 @@ import org.eclipse.jetty.server.SecureRequestCustomizer;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 
-import emu.lunarcore.Config.HttpServerConfig;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.LunarCore.ServerType;
+import emu.lunarcore.config.ConfigData.HttpServerConfig;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.proto.DispatchRegionDataOuterClass.DispatchRegionData;
 import emu.lunarcore.server.game.RegionInfo;
 import emu.lunarcore.server.http.handlers.*;
@@ -54,7 +55,7 @@ public class HttpServer {
     }
 
     public HttpServerConfig getServerConfig() {
-        return LunarCore.getConfig().getHttpServer();
+        return ConfigManager.getConfig().getHttpServer();
     }
 
     private HttpConnectionFactory getHttpFactory() {
@@ -67,8 +68,8 @@ public class HttpServer {
 
     private SslContextFactory.Server getSSLContextFactory() {
         SslContextFactory.Server sslContextFactory = new SslContextFactory.Server();
-        sslContextFactory.setKeyStorePath(LunarCore.getConfig().getKeystore().getPath());
-        sslContextFactory.setKeyStorePassword(LunarCore.getConfig().getKeystore().getPassword());
+        sslContextFactory.setKeyStorePath(ConfigManager.getConfig().getKeystore().getPath());
+        sslContextFactory.setKeyStorePassword(ConfigManager.getConfig().getKeystore().getPassword());
         sslContextFactory.setSniRequired(false);
         sslContextFactory.setRenegotiationAllowed(false);
         return sslContextFactory;

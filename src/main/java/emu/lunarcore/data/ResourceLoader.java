@@ -18,6 +18,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.ResourceDeserializers.LunarCoreDoubleDeserializer;
 import emu.lunarcore.data.ResourceDeserializers.LunarCoreHashDeserializer;
 import emu.lunarcore.data.config.FloorInfo.FloorGroupSimpleInfo;
@@ -66,7 +67,7 @@ public class ResourceLoader {
     }
     
     private static void checkDataFolder() {
-        File dir = new File(LunarCore.getConfig().getDataDir());
+        File dir = new File(ConfigManager.getConfig().getDataDir());
         if (!dir.exists()) {
             dir.mkdir();
         }
@@ -140,7 +141,7 @@ public class ResourceLoader {
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     private static <T> int loadFromResource(Class<T> c, ResourceType type, String fileName, Int2ObjectMap map) throws Exception {
-        String file = LunarCore.getConfig().getResourceDir() + "/ExcelOutput/" + fileName;
+        String file = ConfigManager.getConfig().getResourceDir() + "/ExcelOutput/" + fileName;
 
         // Load reader from file
         try (InputStreamReader fileReader = new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8)) {
@@ -217,7 +218,7 @@ public class ResourceLoader {
     private static void loadFloorInfos() {
         // Load floor infos
         LunarCore.getLogger().info("Loading floor infos... this may take a while.");
-        File floorDir = new File(LunarCore.getConfig().getResourceDir() + "/Config/LevelOutput/RuntimeFloor/");
+        File floorDir = new File(ConfigManager.getConfig().getResourceDir() + "/Config/LevelOutput/RuntimeFloor/");
         boolean missingGroupInfos = false;
 
         if (!floorDir.exists()) {
@@ -245,7 +246,7 @@ public class ResourceLoader {
                 }
                 
                 // Get file from resource directory
-                File file = new File(LunarCore.getConfig().getResourceDir() + "/" + simpleGroup.getGroupPath());
+                File file = new File(ConfigManager.getConfig().getResourceDir() + "/" + simpleGroup.getGroupPath());
                 if (!file.exists()) continue;
 
                 // TODO optimize
@@ -293,7 +294,7 @@ public class ResourceLoader {
             }
             
             // Get file
-            File file = new File(LunarCore.getConfig().getResourceDir() + "/" + summonUnitExcel.getJsonPath());
+            File file = new File(ConfigManager.getConfig().getResourceDir() + "/" + summonUnitExcel.getJsonPath());
             if (!file.exists()) continue;
             
             try (FileReader reader = new FileReader(file)) {
@@ -318,7 +319,7 @@ public class ResourceLoader {
         // Load maze abilities
         for (var avatarExcel : GameData.getAvatarExcelMap().values()) {
             // Get file
-            File file = new File(LunarCore.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + avatarExcel.getNameKey() + "_Ability.json");
+            File file = new File(ConfigManager.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + avatarExcel.getNameKey() + "_Ability.json");
             if (!file.exists()) continue;
 
             try (FileReader reader = new FileReader(file)) {
@@ -349,9 +350,9 @@ public class ResourceLoader {
         for (var dialogueEventExcel : GameData.getRogueDialogueEventList().values()) {
 
             // Get file
-            File file = new File(LunarCore.getConfig().getResourceDir() + "/" + dialogueEventExcel.getJsonPath());
+            File file = new File(ConfigManager.getConfig().getResourceDir() + "/" + dialogueEventExcel.getJsonPath());
             if (!file.exists()) {
-                file = new File(LunarCore.getConfig().getResourceDir() + "/" + dialogueEventExcel.getSecondPath());
+                file = new File(ConfigManager.getConfig().getResourceDir() + "/" + dialogueEventExcel.getSecondPath());
                 if (!file.exists()) continue;
             }
 
@@ -373,7 +374,7 @@ public class ResourceLoader {
     }
 
     private static void loadRogueMapGen() {
-        File file = new File(LunarCore.getConfig().getDataDir() + "/RogueMapGen.json");
+        File file = new File(ConfigManager.getConfig().getDataDir() + "/RogueMapGen.json");
         if (!file.exists()) {
             LunarCore.getLogger().warn("RogueMapGen not found in data folder. Simulated universe will not work.");
             return;
@@ -391,7 +392,7 @@ public class ResourceLoader {
     }
     
     private static void loadActivityScheduleConfig() {
-        File file = new File(LunarCore.getConfig().getDataDir() + "/ActivityScheduling.json");
+        File file = new File(ConfigManager.getConfig().getDataDir() + "/ActivityScheduling.json");
         if (!file.exists()) return;
 
         try (FileReader reader = new FileReader(file)) {

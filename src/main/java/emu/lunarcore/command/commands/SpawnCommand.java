@@ -3,10 +3,10 @@ package emu.lunarcore.command.commands;
 import java.util.Comparator;
 import java.util.Set;
 
-import emu.lunarcore.LunarCore;
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.GroupInfo;
 import emu.lunarcore.data.config.MonsterInfo;
@@ -23,7 +23,7 @@ import emu.lunarcore.game.scene.entity.EntityProp;
 import emu.lunarcore.util.Position;
 import emu.lunarcore.util.Utils;
 
-@Command(label = "spawn", aliases = {"s"}, permission = {"vip"}, requireTargetOnline = true, desc = "/spawn [npc monster id/prop id] s[stage id] x[amount] lv[level] r[radius] <battle monster ids...>. Spawns a monster or prop near the targeted player.")
+@Command(label = "spawn", aliases = {"s"}, permission = {"support"}, requireTargetOnline = true, desc = "/spawn [npc monster id/prop id] s[stage id] x[amount] lv[level] r[radius] <battle monster ids...>. Spawns a monster or prop near the targeted player.")
 public class SpawnCommand implements CommandHandler {
     private static final Set<String> SEPARATORS = Set.of("/", "|", "\\");
     private int baseNpcMonsterId;
@@ -54,7 +54,7 @@ public class SpawnCommand implements CommandHandler {
         int radius = Math.max(args.getRank(), 5) * 1000;
         
         // Enforce scene max entity limit
-        if (target.getScene().getEntities().size() + amount >= LunarCore.getConfig().getServerOptions().getSceneMaxEntites()) {
+        if (target.getScene().getEntities().size() + amount >= ConfigManager.getConfig().getServerOptions().getSceneMaxEntites()) {
             args.sendMessage("Error: Max entities in scene reached");
             return;
         }

@@ -1,6 +1,7 @@
 package emu.lunarcore.server.packet.recv;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.PlayerGetTokenCsReqOuterClass.PlayerGetTokenCsReq;
@@ -35,7 +36,7 @@ public class HandlerPlayerGetTokenCsReq extends PacketHandler {
         }
 
         // If playerCount reach the set maxPlayers, newly logged-in players will be kicked out
-        int maxPlayers = LunarCore.getConfig().getServerOptions().maxPlayers;
+        int maxPlayers = ConfigManager.getConfig().getAccountOptions().maxPlayers;
         int playerCount = LunarCore.getGameServer().getPlayerCount();
         if (maxPlayers > -1 &&  playerCount >= maxPlayers) {
             session.getPlayer().sendPacket(new PacketPlayerKickOutScNotify(5));

@@ -3,7 +3,9 @@ package emu.lunarcore.server.game;
 import java.net.InetSocketAddress;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
+import emu.lunarcore.game.login.LoginManager;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdIdUtils;
@@ -26,6 +28,8 @@ public class GameSession {
 
     private Account account;
     private Player player;
+
+    public LoginManager loginManager;
 
     // Network
     @Getter(AccessLevel.PRIVATE) private Ukcp ukcp;
@@ -72,13 +76,13 @@ public class GameSession {
     }
 
     public void onConnect() {
-        if (LunarCore.getConfig().getLogOptions().connections) {
+        if (ConfigManager.getConfig().getLogOptions().connections) {
             LunarCore.getLogger().info("Client connected from " + address.getHostString());
         }
     }
 
     public void onDisconnect() {
-        if (LunarCore.getConfig().getLogOptions().connections) {
+        if (ConfigManager.getConfig().getLogOptions().connections) {
             LunarCore.getLogger().info("Client disconnected from " + address.getHostString());
         }
 
@@ -131,8 +135,8 @@ public class GameSession {
                 }
 
                 // Log packet
-                if (LunarCore.getConfig().getLogOptions().packets && !LunarCore.getConfig().getLogOptions().easyPackets) {
-                    if (!(LunarCore.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(opcode))) {
+                if (ConfigManager.getConfig().getLogOptions().packets && !ConfigManager.getConfig().getLogOptions().easyPackets) {
+                    if (!(ConfigManager.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(opcode))) {
                         logPacket("RECV", opcode, data);
                     }
                 }
@@ -158,8 +162,8 @@ public class GameSession {
         this.send(packet.build());
 
         // Log
-        if (LunarCore.getConfig().getLogOptions().packets && !LunarCore.getConfig().getLogOptions().easyPackets) {
-            if (!(LunarCore.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(packet.getCmdId()))) {
+        if (ConfigManager.getConfig().getLogOptions().packets && !ConfigManager.getConfig().getLogOptions().easyPackets) {
+            if (!(ConfigManager.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(packet.getCmdId()))) {
                 logPacket("SEND", packet.getCmdId(), packet.getData());
             }
         }
@@ -176,8 +180,8 @@ public class GameSession {
         }
         
         // Log
-        if (LunarCore.getConfig().getLogOptions().packets && !LunarCore.getConfig().getLogOptions().easyPackets) {
-            if (!(LunarCore.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(cmdId))) {
+        if (ConfigManager.getConfig().getLogOptions().packets && !ConfigManager.getConfig().getLogOptions().easyPackets) {
+            if (!(ConfigManager.getConfig().getLogOptions().filterLoopingPackets && CmdIdUtils.IGNORED_LOG_PACKETS.contains(cmdId))) {
                 logPacket("SEND", cmdId, Utils.EMPTY_BYTE_ARRAY);
             }
         }

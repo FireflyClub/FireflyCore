@@ -18,7 +18,7 @@ import emu.lunarcore.game.player.Player;
 @Command(
         label = "giveall",
         aliases = {"ga"},
-        permission = {"vip"},
+        permission = {"support"},
         requireTargetOnline = true,
         desc = "/giveall {materials | avatars | lightcones | relics | usables} lv(level). Gives the targeted player items."
 )

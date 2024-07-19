@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.inventory.GameItem;
@@ -253,7 +254,7 @@ public class CommandArgs {
                 // Reset substats first
                 item.resetSubAffixes();
                 
-                int maxCount = (int) Math.floor(LunarCore.getConfig().getServerOptions().maxCustomRelicLevel / 3) + 1;
+                int maxCount = (int) Math.floor(ConfigManager.getConfig().getServerOptions().maxCustomRelicLevel / 3) + 1;
                 hasChanged = true;
                 
                 for (var entry : this.getMap().int2IntEntrySet()) {
@@ -280,7 +281,7 @@ public class CommandArgs {
             // Try to set level
             if (this.getLevel() > 0) {
                 // Set relic level
-                item.setLevel(Math.min(this.getLevel(), LunarCore.getConfig().getServerOptions().maxCustomRelicLevel));
+                item.setLevel(Math.min(this.getLevel(), ConfigManager.getConfig().getServerOptions().maxCustomRelicLevel));
                 
                 // Apply sub stat upgrades to the relic
                 int upgrades = item.getMaxNormalSubAffixCount() - item.getCurrentSubAffixCount();

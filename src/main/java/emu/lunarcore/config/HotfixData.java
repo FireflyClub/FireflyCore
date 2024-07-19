@@ -1,4 +1,4 @@
-package emu.lunarcore;
+package emu.lunarcore.config;
 
 import java.util.*;
 

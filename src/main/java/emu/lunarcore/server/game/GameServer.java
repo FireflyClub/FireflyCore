@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import emu.lunarcore.Config.GameServerConfig;
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigData.GameServerConfig;
 import emu.lunarcore.game.battle.BattleService;
 import emu.lunarcore.game.drops.DropService;
 import emu.lunarcore.game.gacha.GachaService;

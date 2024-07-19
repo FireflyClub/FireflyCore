@@ -2,17 +2,21 @@ package emu.lunarcore.game.chat;
 
 import java.util.List;
 
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.player.Player;
 
 public class ChatRoomManager {
+
+    public static String getTagByUid(int uid) {
+        return ConfigManager.tagData.getTagByUid(uid);
+    }
 
     // Method to handle chatroom message
     public static void handleChatRoomMsg(Player player, int targetUid, String msg) {
 
         int senderUid = player.getUid();
         String nickname = player.getNickname();
-        String tag = LunarCore.getTagByUid(senderUid);
+        String tag = getTagByUid(senderUid);
 
         String modifiedMsg = "[" + tag + "] " + nickname + " (" + senderUid + "): " + msg;
         ChatMessage localMsg = new ChatMessage(senderUid, targetUid, msg);
@@ -37,10 +41,9 @@ public class ChatRoomManager {
 
     // Method to handle chatroom emote
     public static void handleChatRoomEmote(Player player, int targetUid, int emote) {
-
         int senderUid = player.getUid();
         String nickname = player.getNickname();
-        String tag = LunarCore.getTagByUid(senderUid);
+        String tag = getTagByUid(senderUid);
 
         String modifiedMsg = "[" + tag + "] " + nickname + "(" + senderUid + "):";
         ChatMessage localMsg = new ChatMessage(senderUid, targetUid, emote);

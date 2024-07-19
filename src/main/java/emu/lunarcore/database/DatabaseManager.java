@@ -26,11 +26,11 @@ import dev.morphia.annotations.Entity;
 import dev.morphia.mapping.Mapper;
 import dev.morphia.mapping.MapperOptions;
 import dev.morphia.query.filters.Filters;
-
-import emu.lunarcore.Config.DatabaseInfo;
-import emu.lunarcore.Config.InternalMongoInfo;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.LunarCore.ServerType;
+import emu.lunarcore.config.ConfigData.DatabaseInfo;
+import emu.lunarcore.config.ConfigData.InternalMongoInfo;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.database.codecs.*;
 import lombok.Getter;
 
@@ -45,7 +45,7 @@ public final class DatabaseManager {
 
     public DatabaseManager(DatabaseInfo info, ServerType type) {
         // Variables
-        var internalConfig = LunarCore.getConfig().getInternalMongoServer();
+        var internalConfig = ConfigManager.getConfig().getInternalMongoServer();
         String connectionString = info.getUri();
 
         // Local mongo server

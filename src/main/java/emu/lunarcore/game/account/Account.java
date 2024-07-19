@@ -5,6 +5,7 @@ import java.util.*;
 import dev.morphia.annotations.*;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.database.AccountDatabaseOnly;
 import emu.lunarcore.util.Crypto;
 import emu.lunarcore.util.Snowflake32;
@@ -40,7 +41,7 @@ public class Account {
     public Account(String username) {
         this.uid = Long.toString(Snowflake32.newUid());
         this.username = username;
-        this.permissions = new HashSet<>(LunarCore.getConfig().getServerOptions().getDefaultPermissions());
+        this.permissions = new HashSet<>(ConfigManager.getConfig().getServerOptions().getDefaultPermissions());
         this.isBanned = false; 
     }
 

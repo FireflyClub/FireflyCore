@@ -6,7 +6,7 @@ import emu.lunarcore.command.CommandHandler;
 import emu.lunarcore.server.packet.send.PacketClientDownloadDataScNotify;
 import java.util.Base64;
 
-@Command(label = "unlockfps", permission = {"vip"}, requireTargetOnline = true, desc = "/unlockfps unlock client fps to 120hz")
+@Command(label = "unlockfps", permission = {"support"}, requireTargetOnline = true, desc = "/unlockfps unlock client fps to 120hz")
 public class UnlockFPSCommand implements CommandHandler {
 
     @Override

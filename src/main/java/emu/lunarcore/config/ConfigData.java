@@ -1,4 +1,4 @@
-package emu.lunarcore;
+package emu.lunarcore.config;
 
 import java.util.Date;
 import java.util.List;
@@ -10,7 +10,7 @@ import emu.lunarcore.data.common.ItemParam;
 import lombok.Getter;
 
 @Getter
-public class Config {
+public class ConfigData {
     public DatabaseInfo accountDatabase = new DatabaseInfo();
     public DatabaseInfo gameDatabase = new DatabaseInfo();
     public InternalMongoInfo internalMongoServer = new InternalMongoInfo();
@@ -18,10 +18,11 @@ public class Config {
 
     public KeystoreInfo keystore = new KeystoreInfo();
 
-    public HttpServerConfig httpServer = new HttpServerConfig(80);
-    public GameServerConfig gameServer = new GameServerConfig(23301);
+    public HttpServerConfig httpServer = new HttpServerConfig(619);
+    public GameServerConfig gameServer = new GameServerConfig(2007);
     
     public ServerOptions serverOptions = new ServerOptions();
+    public AccountOptions accountOptions = new AccountOptions();
     public ServerTime serverTime = new ServerTime();
     public ServerRates serverRates = new ServerRates();
     public LogOptions logOptions = new LogOptions();
@@ -121,9 +122,7 @@ public class Config {
     
     @Getter
     public static class ServerOptions {
-        public String consoleRemoteKey = "";
         public boolean useMission = false; // Seems to be stuck in mission scene
-        public boolean autoCreateAccount = true;
         public int sceneMaxEntites = 500;
         public int maxCustomRelicLevel = 15; // Maximum level of a relic that the player can create with the /give command
         public boolean unlockAllChallenges = true;
@@ -134,7 +133,6 @@ public class Config {
         public boolean autoUpgradeWorldLevel = true; // Automatically upgrades world level when the player reaches a certain TB level
         public String language = "CHS";
         public Set<String> defaultPermissions = Set.of("player");
-        public int maxPlayers = -1;
         public ServerProfile serverFriendInfo = new ServerProfile();
         public ServerChatProfile serverChatFriendInfo = new ServerChatProfile();
         public WelcomeMail welcomeMail = new WelcomeMail();
@@ -148,6 +146,15 @@ public class Config {
         }
     }
     
+    @Getter
+    public static class AccountOptions {
+        public boolean autoCreateAccount = true;
+        public int maxPlayers = -1;
+        public String consoleRemoteKey = "";
+        public boolean useLogin = true;
+        public boolean adminLoginSkip = false;
+    }
+
     @Getter
     public static class ServerRates {
         public double exp = 1.0;

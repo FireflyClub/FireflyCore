@@ -8,7 +8,7 @@ import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.player.PlayerGender;
 import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass.MultiPathAvatarType;
 
-@Command(label = "gender", permission = {"player"}, requireTarget = true, desc = "/gender {male | female}. Sets the player gender.")
+@Command(label = "gender", permission = {"support"}, requireTarget = true, desc = "/gender {male | female}. Sets the player gender.")
 public class GenderCommand implements CommandHandler {
 
     @Override

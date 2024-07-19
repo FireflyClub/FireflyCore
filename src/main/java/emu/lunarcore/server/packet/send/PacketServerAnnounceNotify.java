@@ -1,6 +1,6 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.proto.AnnounceDataOuterClass.AnnounceData;
 import emu.lunarcore.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify;
@@ -15,12 +15,12 @@ public class PacketServerAnnounceNotify extends BasePacket {
     public PacketServerAnnounceNotify(Account account) {
         super(CmdId.ServerAnnounceNotify);
 
-        if (LunarCore.getConfig().getAnnounceData().useBanner) {
+        if (ConfigManager.getConfig().getAnnounceData().useBanner) {
             // Set banner text for player or admin
-            String bannerText = LunarCore.getConfig().getAnnounceData().getBannerText();
-            int bannerFrequency = LunarCore.getConfig().getAnnounceData().getBannerFrequency();
+            String bannerText = ConfigManager.getConfig().getAnnounceData().getBannerText();
+            int bannerFrequency = ConfigManager.getConfig().getAnnounceData().getBannerFrequency();
             if (account.hasPermission("admin")) {
-                bannerText = LunarCore.getConfig().getAnnounceData().getAdminBannerText();
+                bannerText = ConfigManager.getConfig().getAnnounceData().getAdminBannerText();
                 bannerFrequency = Integer.MAX_VALUE;
             }
 
@@ -38,7 +38,7 @@ public class PacketServerAnnounceNotify extends BasePacket {
     }
 
     // For center system announcement
-    public PacketServerAnnounceNotify(String centerText, String color, int delay) {
+    public PacketServerAnnounceNotify(String centerText, String color) {
         super(CmdId.ServerAnnounceNotify);
 
         // Set configId for each announcement, or this window will not display, it calculate by receive player session
@@ -48,23 +48,17 @@ public class PacketServerAnnounceNotify extends BasePacket {
                 .addAnnounceDataList(AnnounceData.newInstance()
                     .setConfigId(configId)
                     .setEmergencyText("<color=" + color + ">" + centerText + "</color>")
-                    .setBeginTime((int) (System.currentTimeMillis() / 1000) + delay)
+                    .setBeginTime(0)
                     .setEndTime(Integer.MAX_VALUE)
                     .setBannerFrequency(Integer.MAX_VALUE)
                 );
 
         this.setData(announce);
     }
-
-    public PacketServerAnnounceNotify(String centerText, String color) {
-        super(CmdId.ServerAnnounceNotify);
-        PacketServerAnnounceNotify packet = new PacketServerAnnounceNotify(centerText, color, 0);
-        this.setData(packet.getData());
-    }
     
     public PacketServerAnnounceNotify(String centerText) {
         super(CmdId.ServerAnnounceNotify);
-        PacketServerAnnounceNotify packet = new PacketServerAnnounceNotify(centerText, "black", 0);
+        PacketServerAnnounceNotify packet = new PacketServerAnnounceNotify(centerText, "black");
         this.setData(packet.getData());
     }
     

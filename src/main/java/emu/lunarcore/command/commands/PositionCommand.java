@@ -4,7 +4,7 @@ import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 
-@Command(label = "position", aliases = {"pos"}, permission = {"player"}, requireTargetOnline = true, desc = "/pos. Get your current position.")
+@Command(label = "position", aliases = {"pos"}, permission = {"support"}, requireTargetOnline = true, desc = "/pos. Get your current position.")
 public class PositionCommand implements CommandHandler {
 
     @Override

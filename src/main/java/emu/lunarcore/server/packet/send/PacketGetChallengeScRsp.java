@@ -1,6 +1,6 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.ChallengeExtInfoOuterClass.ChallengeExtInfo;
@@ -20,7 +20,7 @@ public class PacketGetChallengeScRsp extends BasePacket {
         
 //        var time = LunarCore.currentServerTime();
         
-        if (LunarCore.getConfig().getServerOptions().unlockAllChallenges) {
+        if (ConfigManager.getConfig().getServerOptions().unlockAllChallenges) {
             // Add all challenge excels to our challenge list
             // TODO find out which challenge groups are active so we dont have to send old challenge ids to the client
             for (var challengeExcel : GameData.getChallengeExcelMap().values()) {

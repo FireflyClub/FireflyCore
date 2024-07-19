@@ -13,6 +13,7 @@ import java.util.Map;
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.command.Command;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.*;
 
@@ -22,10 +23,10 @@ public class Handbook {
         // Load text map
         Map<Long, String> textMap = null;
         List<Integer> list = null;
-        String language = LunarCore.getConfig().getServerOptions().language;
+        String language = ConfigManager.getConfig().getServerOptions().language;
 
         try {
-            textMap = JsonUtils.loadToMap(LunarCore.getConfig().getResourceDir() + "/TextMap/TextMap" + language + ".json", Long.class, String.class);
+            textMap = JsonUtils.loadToMap(ConfigManager.getConfig().getResourceDir() + "/TextMap/TextMap" + language + ".json", Long.class, String.class);
         } catch (Exception e) {
             LunarCore.getLogger().error("Error loading text map: " + language, e);
             return;

@@ -3,6 +3,7 @@ package emu.lunarcore.server.http.handlers;
 import org.jetbrains.annotations.NotNull;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.server.http.HttpServer;
 
 import io.javalin.http.Context;
@@ -18,7 +19,7 @@ public class QueryDispatchHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
         // Log
-        if (LunarCore.getConfig().getLogOptions().connections) {
+        if (ConfigManager.getConfig().getLogOptions().connections) {
             LunarCore.getLogger().info("Client request: query_dispatch");
         }
         

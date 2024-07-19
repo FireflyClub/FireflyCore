@@ -12,7 +12,7 @@ import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.player.lineup.PlayerLineup;
 import emu.lunarcore.util.Utils;
 
-@Command(label = "lineup", permission = {"player"}, requireTargetOnline = true, desc = "/lineup [avatar ids]. USE AT YOUR OWN RISK. Sets your current lineup with the specified avatar ids.")
+@Command(label = "lineup", permission = {"support"}, requireTargetOnline = true, desc = "/lineup [avatar ids]. USE AT YOUR OWN RISK. Sets your current lineup with the specified avatar ids.")
 public class LineupCommand implements CommandHandler {
 
     @Override

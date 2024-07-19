@@ -5,7 +5,7 @@ import emu.lunarcore.game.player.lineup.PlayerLineup;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 
-@Command(label = "energy", permission = {"player"}, requireTargetOnline = true, desc = "/energy. Refills all characters energy in current lineup.")
+@Command(label = "energy", permission = {"support"}, requireTargetOnline = true, desc = "/energy. Refills all characters energy in current lineup.")
 public class EnergyCommand implements CommandHandler {
 
     @Override

@@ -5,6 +5,7 @@ import java.util.Set;
 import org.reflections.Reflections;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.server.packet.*;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
@@ -80,14 +81,14 @@ public class GameServerPacketHandler {
                 // Handle packet
                 handler.handle(session, data);
 
-                if (LunarCore.getConfig().getLogOptions().easyPackets && !CmdIdUtils.IGNORED_LOG_PACKETS.contains(cmdId)) {
+                if (ConfigManager.getConfig().getLogOptions().easyPackets && !CmdIdUtils.IGNORED_LOG_PACKETS.contains(cmdId)) {
                     LunarCore.getLogger().info("Handled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
         } else {
-            if (LunarCore.getConfig().getLogOptions().easyPackets) {
+            if (ConfigManager.getConfig().getLogOptions().easyPackets) {
                 LunarCore.getLogger().info("Unhandled packet (" + cmdId + "): " + CmdIdUtils.getCmdIdName(cmdId));
             }
         }

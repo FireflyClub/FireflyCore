@@ -1,6 +1,6 @@
 package emu.lunarcore.game.scene;
 
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.GroupInfo;
 import emu.lunarcore.data.config.MonsterInfo;
@@ -24,7 +24,7 @@ public class SceneEntityLoader {
 
     public void onSceneLoad(Scene scene) {
         for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
-            if (LunarCore.getConfig().getServerOptions().useMission) {
+            if (ConfigManager.getConfig().getServerOptions().useMission) {
                 this.isEventMission = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
             } else {
                 this.isEventMission = false;
@@ -34,8 +34,8 @@ public class SceneEntityLoader {
             if (group.getLoadSide() != GroupLoadSide.Server && !isEventMission) continue;
 
             // If useMission, only skip 0-2000000 missions
-            if ((!LunarCore.getConfig().getServerOptions().useMission && group.getOwnerMainMissionID() > 0) ||
-                (LunarCore.getConfig().getServerOptions().useMission &&
+            if ((!ConfigManager.getConfig().getServerOptions().useMission && group.getOwnerMainMissionID() > 0) ||
+                (ConfigManager.getConfig().getServerOptions().useMission &&
                 group.getOwnerMainMissionID() > 0 && group.getOwnerMainMissionID() < 2000000)) {
                     continue;
             }
@@ -64,7 +64,7 @@ public class SceneEntityLoader {
     }
     
     public EntityProp loadProp(Scene scene, GroupInfo group, PropInfo propInfo) {
-        if (LunarCore.getConfig().getServerOptions().useMission) {
+        if (ConfigManager.getConfig().getServerOptions().useMission) {
             this.isEventProp = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
         } else {
             this.isEventProp = false;
@@ -119,7 +119,7 @@ public class SceneEntityLoader {
     }
     
     public EntityNpc loadNpc(Scene scene, GroupInfo group, NpcInfo npcInfo) {
-        if (LunarCore.getConfig().getServerOptions().useMission) {
+        if (ConfigManager.getConfig().getServerOptions().useMission) {
             this.isEventGroup = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
         } else {
             this.isEventGroup = false;

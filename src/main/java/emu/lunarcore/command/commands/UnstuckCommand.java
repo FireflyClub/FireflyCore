@@ -6,7 +6,7 @@ import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 import emu.lunarcore.game.player.Player;
 
-@Command(label = "unstuck", permission = {"vip"}, desc = "/unstuck @[player id]. Unstucks an offline player if theyre in a scene that doesnt load.")
+@Command(label = "unstuck", permission = {"support"}, desc = "/unstuck @[player id]. Unstucks an offline player if theyre in a scene that doesnt load.")
 public class UnstuckCommand implements CommandHandler {
 
     @Override

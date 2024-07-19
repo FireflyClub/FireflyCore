@@ -73,10 +73,11 @@ tmp/
 
 # extra
 Handbook.txt
-config.json
-hotfix.json
-tag.json
-remote.json
+Config.json
+Hotfix.json
+Tag.json
+Remote.json
+Login.json
 
 # Build
 *.mv

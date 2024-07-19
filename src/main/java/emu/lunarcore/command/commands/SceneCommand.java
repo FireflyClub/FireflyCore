@@ -9,7 +9,7 @@ import emu.lunarcore.data.config.FloorInfo;
 import emu.lunarcore.data.excel.MazePlaneExcel;
 import emu.lunarcore.util.Utils;
 
-@Command(label = "scene", aliases = {"sc"}, permission = {"vip"}, requireTargetOnline = true, desc = "/scene [scene id] [floor id]. Teleports the player to the specified scene.")
+@Command(label = "scene", aliases = {"sc"}, permission = {"support"}, requireTargetOnline = true, desc = "/scene [scene id] [floor id]. Teleports the player to the specified scene.")
 public class SceneCommand implements CommandHandler {
 
     @Override

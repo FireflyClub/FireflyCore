@@ -5,7 +5,7 @@ import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 import emu.lunarcore.game.player.lineup.PlayerLineup;
 
-@Command(label = "heal", permission = {"player"}, requireTargetOnline = true, desc = "/heal. Heals your avatars.")
+@Command(label = "heal", permission = {"support"}, requireTargetOnline = true, desc = "/heal. Heals your avatars.")
 public class HealCommand implements CommandHandler {
 
     @Override

@@ -8,6 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.ItemExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
@@ -67,7 +68,7 @@ public class GachaService extends BaseGameService {
     }
     
     private String getBannerFileName() {
-        return LunarCore.getConfig().getDataDir() + "/Banners.json";
+        return ConfigManager.getConfig().getDataDir() + "/Banners.json";
     }
     
     public void watch() throws Exception {
@@ -76,7 +77,7 @@ public class GachaService extends BaseGameService {
         
         // Create watch service
         this.watchService = FileSystems.getDefault().newWatchService();
-        Path watchPath = Paths.get(LunarCore.getConfig().getDataDir());
+        Path watchPath = Paths.get(ConfigManager.getConfig().getDataDir());
         watchPath.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_MODIFY, StandardWatchEventKinds.ENTRY_DELETE);
 
         // Start watch thread

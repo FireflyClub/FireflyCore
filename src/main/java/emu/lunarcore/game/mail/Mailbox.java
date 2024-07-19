@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.common.ItemParam;
 import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.player.BasePlayerManager;
@@ -118,7 +119,7 @@ public class Mailbox extends BasePlayerManager implements Iterable<Mail> {
     }
     
     public void sendWelcomeMail() {
-        var welcomeMail = LunarCore.getConfig().getServerOptions().welcomeMail;
+        var welcomeMail = ConfigManager.getConfig().getServerOptions().welcomeMail;
         if (welcomeMail == null) return;
         
         Mail mail = new Mail(welcomeMail.getTitle(), welcomeMail.getSender(), welcomeMail.getContent());

@@ -10,6 +10,7 @@ import javax.annotation.Nullable;
 import org.reflections.Reflections;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.player.Player;
 import io.javalin.http.Context;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
@@ -166,7 +167,7 @@ public class CommandManager {
             }
             
             // Log
-            if (sender != null && LunarCore.getConfig().getLogOptions().commands) {
+            if (sender != null && ConfigManager.getConfig().getLogOptions().commands) {
                 LunarCore.getLogger().info("\u001B[38;2;0;255;234m[UID: " + sender.getUid() + "] " + sender.getName() + " used command: " + message + "\u001B[0m");
             }
             

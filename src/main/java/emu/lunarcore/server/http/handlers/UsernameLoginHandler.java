@@ -3,6 +3,7 @@ package emu.lunarcore.server.http.handlers;
 import org.jetbrains.annotations.NotNull;
 
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.account.AccountHelper;
 import emu.lunarcore.server.http.objects.LoginAccountReqJson;
@@ -39,7 +40,7 @@ public class UsernameLoginHandler implements Handler {
 
         if (account == null) {
             // Auto create an account for the player if allowed in the config
-            if (LunarCore.getConfig().getServerOptions().autoCreateAccount) {
+            if (ConfigManager.getConfig().getAccountOptions().autoCreateAccount) {
                 account = AccountHelper.createAccount(req.account, null, 0);
             } else {
                 res.retcode = -201;

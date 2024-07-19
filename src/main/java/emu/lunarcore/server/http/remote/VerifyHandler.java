@@ -55,7 +55,7 @@ public final class VerifyHandler implements Handler {
         }
 
         // Save password
-        PasswordManager.saveOrUpdatePassword(uid, key);
+        PasswordManager.saveRemotePwd(uid, key);
 
         // Logs
         LunarCore.getLogger().info(ipAddress + " set a key for " + uid);

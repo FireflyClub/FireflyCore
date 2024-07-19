@@ -16,6 +16,7 @@ import dev.morphia.annotations.Indexed;
 
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.AnchorInfo;
 import emu.lunarcore.data.config.FloorInfo;
@@ -174,7 +175,7 @@ public class Player implements Tickable {
         this.isNew = true;
         this.initUid();
         this.resetPosition();
-        this.setLevel(LunarCore.getConfig().getServerOptions().startTrailblazerLevel);
+        this.setLevel(ConfigManager.getConfig().getServerOptions().startTrailblazerLevel);
         
         // Setup player data
         this.name = GameConstants.DEFAULT_NAME;
@@ -235,7 +236,7 @@ public class Player implements Tickable {
     
     private void onLevelChange(int oldLevel, int newLevel) {
         // Auto upgrades the player's world level when they level up to the right level
-        if (LunarCore.getConfig().getServerOptions().autoUpgradeWorldLevel) {
+        if (ConfigManager.getConfig().getServerOptions().autoUpgradeWorldLevel) {
             int maxWorldLevel = 0;
             
             for (int i = 0; i < GameConstants.WORLD_LEVEL_UPGRADES.length; i++) {
@@ -529,7 +530,7 @@ public class Player implements Tickable {
     }
     
     public void spendStamina(int amount) {
-        if (!LunarCore.getConfig().getServerOptions().spendStamina) {
+        if (!ConfigManager.getConfig().getServerOptions().spendStamina) {
             return;
         }
         this.stamina = Math.max(this.stamina - amount, 0);
@@ -561,7 +562,7 @@ public class Player implements Tickable {
                 this.stamina += 1;
                 hasChanged = true;
             } else if (this.stamina < GameConstants.MAX_STAMINA_RESERVE) {
-                double rate = LunarCore.getConfig().getServerOptions().getStaminaReserveRecoveryRate();
+                double rate = ConfigManager.getConfig().getServerOptions().getStaminaReserveRecoveryRate();
                 double amount = (timestamp - this.nextStaminaRecover) / (rate * 1000D);
                 this.staminaReserve = Math.min(this.staminaReserve + amount, GameConstants.MAX_STAMINA_RESERVE);
                 hasChanged = true;
@@ -572,7 +573,7 @@ public class Player implements Tickable {
                 this.nextStaminaRecover = timestamp;
             }
             
-            this.nextStaminaRecover += LunarCore.getConfig().getServerOptions().getStaminaRecoveryRate() * 1000;
+            this.nextStaminaRecover += ConfigManager.getConfig().getServerOptions().getStaminaRecoveryRate() * 1000;
         }
         
         // Send packet

@@ -5,7 +5,7 @@ import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
 
-@Command(label = "traillevel", aliases = {"tl"}, permission = {"player"}, requireTargetOnline = true, desc = "/traillevel [level] - Sets the targeted player's trailblazer level.")
+@Command(label = "traillevel", aliases = {"tl"}, permission = {"support"}, requireTargetOnline = true, desc = "/traillevel [level] - Sets the targeted player's trailblazer level.")
 public class TrailLevelCommand implements CommandHandler {
 
     @Override

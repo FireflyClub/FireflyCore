@@ -1,7 +1,7 @@
 package emu.lunarcore.server.packet.send;
 
 import emu.lunarcore.GameConstants;
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.friends.FriendList;
 import emu.lunarcore.proto.AssistSimpleInfoOuterClass.AssistSimpleInfo;
 import emu.lunarcore.proto.FriendListInfoOuterClass.FriendListInfo;
@@ -19,8 +19,8 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
         super(CmdId.GetFriendListInfoScRsp);
         
         // Get friend info from config
-        var serverFriendInfo = LunarCore.getConfig().getServerOptions().getServerFriendInfo();
-        var serverChatFriendInfo = LunarCore.getConfig().getServerOptions().getServerChatFriendInfo();
+        var serverFriendInfo = ConfigManager.getConfig().getServerOptions().getServerFriendInfo();
+        var serverChatFriendInfo = ConfigManager.getConfig().getServerOptions().getServerChatFriendInfo();
 
         // Inject server console as friend
         var consoleFriend = SimpleInfo.newInstance()

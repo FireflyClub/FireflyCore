@@ -14,28 +14,18 @@ import org.jline.terminal.TerminalBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import emu.lunarcore.command.CommandManager;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.ResourceLoader;
 import emu.lunarcore.database.DatabaseManager;
 import emu.lunarcore.server.game.GameServer;
 import emu.lunarcore.server.http.HttpServer;
 import emu.lunarcore.util.Handbook;
-import emu.lunarcore.util.JsonUtils;
 import lombok.Getter;
 
 
 public class LunarCore {
     private static final Logger log = LoggerFactory.getLogger(LunarCore.class);
-    private static File configFile = new File("./config/config.json");
-    private static final File hotfixFile = new File("./config/hotfix.json");
-    private static final File tagFile = new File("./config/tag.json");
-    public static final File remoteFile = new File("./config/remote.json");
-    @Getter private static Config config;
-    @Getter private static HotfixData hotfixData;
-    @Getter private static TagData tagData;
 
     @Getter private static DatabaseManager accountDatabase;
     @Getter private static DatabaseManager gameDatabase;
@@ -65,9 +55,7 @@ public class LunarCore {
         }
 
         // Load config
-        LunarCore.loadConfig();
-        LunarCore.loadHotfixData();
-        LunarCore.loadTagData();
+        ConfigManager.loadConfigs();
         LunarCore.updateServerTimeOffset();
     }
 
@@ -105,7 +93,7 @@ public class LunarCore {
                 break;
             case "-database":
                 // Database only
-                DatabaseManager.startInternalMongoServer(LunarCore.getConfig().getInternalMongoServer());
+                DatabaseManager.startInternalMongoServer(ConfigManager.getConfig().getInternalMongoServer());
                 LunarCore.getLogger().info("Running local mongo server at " + DatabaseManager.getServer().getConnectionString());
                 // Console
                 LunarCore.startConsole();
@@ -141,7 +129,7 @@ public class LunarCore {
 
         // Start game server
         if (serverType.runGame()) try {
-            gameServer = new GameServer(getConfig().getGameServer());
+            gameServer = new GameServer(ConfigManager.getConfig().getGameServer());
             gameServer.start();
         } catch (Exception exception) {
             LunarCore.getLogger().error("Unable to start the game server.", exception);
@@ -168,136 +156,28 @@ public class LunarCore {
     // Database
 
     private static void initDatabases() {
-        if (LunarCore.getConfig().useSameDatabase) {
+        if (ConfigManager.getConfig().useSameDatabase) {
             // Setup account and game database
-            accountDatabase = new DatabaseManager(LunarCore.getConfig().getAccountDatabase(), serverType);
+            accountDatabase = new DatabaseManager(ConfigManager.getConfig().getAccountDatabase(), serverType);
             // Optimization: Dont run a 2nd database manager if we are not running a gameserver
             if (serverType.runGame()) {
                 gameDatabase = accountDatabase;
             }
         } else {
             // Run separate databases
-            accountDatabase = new DatabaseManager(LunarCore.getConfig().getAccountDatabase(), ServerType.DISPATCH);
+            accountDatabase = new DatabaseManager(ConfigManager.getConfig().getAccountDatabase(), ServerType.DISPATCH);
             // Optimization: Dont run a 2nd database manager if we are not running a gameserver
             if (serverType.runGame()) {
-                gameDatabase = new DatabaseManager(LunarCore.getConfig().getGameDatabase(), ServerType.GAME);
+                gameDatabase = new DatabaseManager(ConfigManager.getConfig().getGameDatabase(), ServerType.GAME);
             }
         }
-    }
-
-    // Config and Hotfix
-    public static void loadConfig() {
-        // Load from file
-        try (FileReader file = new FileReader(configFile)) {
-            LunarCore.config = JsonUtils.loadToClass(file, Config.class);
-        } catch (Exception e) {
-            // Ignored
-        }
-        
-        // Sanity check
-        if (LunarCore.getConfig() == null) {
-            LunarCore.config = new Config();
-        } else {
-            LunarCore.getConfig().validate();
-        }
-        
-        // Save config
-        LunarCore.saveConfig();
-    }
-
-    public static void saveConfig() {
-        try (FileWriter file = new FileWriter(configFile)) {
-            Gson gson = new GsonBuilder()
-                    .setDateFormat("dd-MM-yyyy hh:mm:ss")
-                    .setPrettyPrinting()
-                    .serializeNulls()
-                    .create();
-            
-            file.write(gson.toJson(config));
-        } catch (Exception e) {
-            getLogger().error("Config save error");
-        }
-    }
-
-    public static void loadHotfixData() {
-        // Load from hotfix file
-        try (FileReader file = new FileReader(hotfixFile)) {
-            LunarCore.hotfixData = JsonUtils.loadToClass(file, HotfixData.class);
-        } catch (Exception e) {
-            LunarCore.hotfixData = null;
-        }
-
-        if (LunarCore.hotfixData == null) {
-            LunarCore.hotfixData = new HotfixData();
-        }
-
-        // Check and add missing versions
-        String version = GameConstants.VERSION;
-        for (int i = 1; i <= 5; i++) {
-            String targetVersion = version + i;
-            if (!LunarCore.hotfixData.getDownloadData().containsKey(targetVersion)) {
-                LunarCore.hotfixData.addNewVersion(targetVersion);
-            }
-        }
-
-        LunarCore.saveHotfixData();
-    }
-
-    public static void saveHotfixData() {
-        // Save hotfix data
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .serializeNulls()
-                .create();
-
-        try (FileWriter fw = new FileWriter(hotfixFile)) {
-            fw.write(gson.toJson(hotfixData));
-        } catch (Exception ex) {
-            // Ignored
-        }
-
-    }
-
-    // Tag data
-    public static void loadTagData() {
-        // Load from tag file
-        try (FileReader file = new FileReader(tagFile)) {
-            LunarCore.tagData = JsonUtils.loadToClass(file, TagData.class);
-        } catch (Exception e) {
-            LunarCore.tagData = null;
-        }
-
-        if (LunarCore.tagData == null) {
-            LunarCore.tagData = new TagData();
-        }
-
-        LunarCore.saveTagData();
-    }
-
-    public static void saveTagData() {
-        // Save tag data
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .serializeNulls()
-                .create();
-
-        try (FileWriter fw = new FileWriter(tagFile)) {
-            fw.write(gson.toJson(tagData));
-        } catch (Exception ex) {
-            // Ignored
-        }
-
-    }
-
-    public static String getTagByUid(int uid) {
-        return tagData.getTagByUid(uid);
     }
 
     // Build Config
     private static String getJarVersion() {
         // Safely get the build config class without errors even if it hasnt been generated yet
         try {
-            Class<?> buildConfig = Class.forName(LunarCore.class.getPackageName() + ".BuildConfig");
+            Class<?> buildConfig = Class.forName(LunarCore.class.getPackageName() + "./Config/BuildConfig");
             return buildConfig.getField("VERSION").get(null).toString();
         } catch (Exception e) {
             // Ignored
@@ -347,7 +227,7 @@ public class LunarCore {
     }
     
     private static void updateServerTimeOffset() {
-        var timeOptions = LunarCore.getConfig().getServerTime();
+        var timeOptions = ConfigManager.getConfig().getServerTime();
         if (timeOptions.isSpoofTime() && timeOptions.getSpoofDate() != null) {
             timeOffset = timeOptions.getSpoofDate().getTime() - System.currentTimeMillis();
         } else {

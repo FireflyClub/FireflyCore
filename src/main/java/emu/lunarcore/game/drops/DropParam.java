@@ -3,7 +3,7 @@ package emu.lunarcore.game.drops;
 import java.math.BigDecimal;
 
 import emu.lunarcore.GameConstants;
-import emu.lunarcore.LunarCore;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.ItemExcel;
 import emu.lunarcore.game.inventory.ItemParamMap;
@@ -84,7 +84,7 @@ public class DropParam {
         
         // Get count
         var count = BigDecimal.valueOf(generateCount());
-        var rates = LunarCore.getConfig().getServerRates();
+        var rates = ConfigManager.getConfig().getServerRates();
 
         // Generate item(s)
         while (count.doubleValue() > 0) {

@@ -1,9 +1,9 @@
 package emu.lunarcore.command.commands;
 
-import emu.lunarcore.LunarCore;
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.ResourceLoader;
 import emu.lunarcore.game.player.Player;
 
@@ -16,13 +16,13 @@ public class ReloadCommand implements CommandHandler {
         String type = args.get(0).toLowerCase();
 
         if ("all".equals(type)) {
-            LunarCore.loadConfig();
-            LunarCore.loadHotfixData();
+            ConfigManager.loadConfig();
+            ConfigManager.loadHotfixData();
             ResourceLoader.reloadAll();
 
         } else if ("config".equals(type)) {
-            LunarCore.loadConfig();
-            LunarCore.loadHotfixData();
+            ConfigManager.loadConfig();
+            ConfigManager.loadHotfixData();
 
         } else if ("res".equals(type)) {
             ResourceLoader.reloadAll();
@@ -33,9 +33,9 @@ public class ReloadCommand implements CommandHandler {
 
         }
 
+        args.sendMessage("Reloaded the " + type + " data.");
         if (args.getOnlineTarget() != null) {
             args.getOnlineTarget().loadScene(player.getPlaneId(), player.getFloorId(), player.getEntryId(), player.getPos(), player.getRot(), true);
-            args.sendMessage("Reloaded the " + type + " data.");
 
         }
 

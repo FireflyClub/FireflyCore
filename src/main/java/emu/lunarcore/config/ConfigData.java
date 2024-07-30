@@ -151,8 +151,10 @@ public class ConfigData {
         public boolean autoCreateAccount = true;
         public int maxPlayers = -1;
         public String consoleRemoteKey = "";
-        public boolean useLogin = true;
-        public boolean adminLoginSkip = false;
+        public boolean useLogin = false;
+        public boolean adminLoginSkip = true;
+        public boolean limitDeviceId = false;
+        public int maxDeviceId = 3;
     }
 
     @Getter

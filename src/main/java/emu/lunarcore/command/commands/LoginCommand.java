@@ -1,5 +1,7 @@
 package emu.lunarcore.command.commands;
 
+import java.util.Arrays;
+
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
@@ -43,11 +45,17 @@ public class LoginCommand implements CommandHandler {
 
         // Check password
         if (accountPwd.isEmpty()) {
+            // First login
             args.sendMessage("Account first login, your passwoed is set as: " + args.get(1));
-            ConfigManager.getLoginData().update(account, sendPwd);
+
+            ConfigManager.getLoginData().update(account, sendPwd, Arrays.asList());
             loginManager.loginSuccess(args.getSender());
+
         } else if (accountPwd.equals(sendPwd)) {
+            // Login success with correct password
             args.sendMessage("Login success.");
+
+            args.getSender().getAccount().removePermission("player");
             loginManager.loginSuccess(args.getSender());
         } else {
             args.sendMessage("Incorrect password.");

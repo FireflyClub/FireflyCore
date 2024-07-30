@@ -34,8 +34,16 @@ System.out.println(shouldGenerateProto ?
         "Skipping proto generation")
 
 repositories {
-    mavenCentral()
-    jcenter()
+    // mavenCentral()
+    // jcenter()
+
+    maven {
+        url 'https://maven.aliyun.com/repository/public'
+    }
+    maven {
+        url 'https://repo.huaweicloud.com/repository/maven'
+    }
+
 }
 
 protobuf {

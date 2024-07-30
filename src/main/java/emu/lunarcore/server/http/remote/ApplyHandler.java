@@ -2,6 +2,7 @@ package emu.lunarcore.server.http.remote;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.server.http.context.IpAddressHandler;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
@@ -27,7 +28,7 @@ public final class ApplyHandler implements Handler {
         RemoteReqJson req = JsonUtils.decode(ctx.body(), RemoteReqJson.class);
 
         int uid = req.uid;
-        String ipAddress = IpAddressManager.getClientIpAddress(ctx);
+        String ipAddress = IpAddressHandler.getClientIpAddress(ctx);
 
         if (uid == 0) {
             ctx.json(new RemoteRspJson(403, "The player UID was not entered."));

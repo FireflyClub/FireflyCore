@@ -31,6 +31,7 @@ public class Account {
 
     private Set<String> permissions;
 
+    @Setter public String deviceId;
     @Setter public boolean isBanned;
 
     @Deprecated
@@ -42,7 +43,8 @@ public class Account {
         this.uid = Long.toString(Snowflake32.newUid());
         this.username = username;
         this.permissions = new HashSet<>(ConfigManager.getConfig().getServerOptions().getDefaultPermissions());
-        this.isBanned = false; 
+        this.deviceId = "";
+        this.isBanned = false;
     }
 
     public String getEmail() {

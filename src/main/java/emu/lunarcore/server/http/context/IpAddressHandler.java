@@ -1,8 +1,8 @@
-package emu.lunarcore.server.http.remote;
+package emu.lunarcore.server.http.context;
 
 import io.javalin.http.Context;
 
-public class IpAddressManager {
+public class IpAddressHandler {
     private static final String[] HEADERS_TO_TRY = {
         "X-Forwarded-For",
         "Proxy-Client-IP",

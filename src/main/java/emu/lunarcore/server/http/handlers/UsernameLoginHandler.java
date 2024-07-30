@@ -6,6 +6,7 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.account.AccountHelper;
+import emu.lunarcore.server.http.context.DeviceHandler;
 import emu.lunarcore.server.http.objects.LoginAccountReqJson;
 import emu.lunarcore.server.http.objects.LoginResJson;
 import emu.lunarcore.server.http.objects.LoginResJson.VerifyData;
@@ -35,6 +36,7 @@ public class UsernameLoginHandler implements Handler {
             return;
         }
 
+
         // Login - Get account data
         Account account = LunarCore.getAccountDatabase().getObjectByField(Account.class, "username", req.account);
 
@@ -46,10 +48,10 @@ public class UsernameLoginHandler implements Handler {
                 res.retcode = -201;
                 res.message = "Username not found.";
             }
+        } else {
+            // Device ID
+            DeviceHandler.handleDeviceLimit(account, ctx, res);
 
-        }
-        
-        if (account != null) {
             res.message = "OK";
             res.data = new VerifyData(account.getUid(), account.getEmail(), account.generateDispatchToken());
         }

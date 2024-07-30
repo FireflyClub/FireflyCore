@@ -27,8 +27,10 @@ public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
 
         // Login moudle
         if (ConfigManager.getConfig().getAccountOptions().useLogin) {
-            if (session.getAccount().hasPermission("login")) {
-                session.getAccount().removePermission("login");
+            // Remove login status
+            if (session.getAccount().hasPermission("support")) {
+                session.getAccount().addPermission("player");
+                session.getAccount().removePermission("support");
             }
             session.loginManager = new LoginManager();
             session.loginManager.startLogin(session);

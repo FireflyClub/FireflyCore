@@ -41,7 +41,9 @@ public class LoginManager {
         if (currentFuture != null) {
             currentFuture.cancel(true);
         }
-        player.getAccount().addPermission("login");
+
+        // Add login status
+        player.getAccount().addPermission("support");
         player.getAccount().removePermission("player");
     }
 

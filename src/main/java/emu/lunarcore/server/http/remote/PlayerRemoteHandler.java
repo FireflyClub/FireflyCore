@@ -3,6 +3,7 @@ package emu.lunarcore.server.http.remote;
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.login.PasswordHandler;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.server.http.context.IpAddressHandler;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
@@ -19,7 +20,7 @@ public final class PlayerRemoteHandler implements Handler {
         int uid = req.uid;
         String reqKey = PasswordHandler.hashWithMD5(req.key);
         String cmd = req.cmd;
-        String ipAddress = IpAddressManager.getClientIpAddress(ctx);
+        String ipAddress = IpAddressHandler.getClientIpAddress(ctx);
 
         // Check req formats
         if (uid == 0) {

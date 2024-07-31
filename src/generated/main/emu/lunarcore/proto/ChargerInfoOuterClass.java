@@ -19,14 +19,14 @@ public final class ChargerInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 rotate_int = 1;</code>
-     */
-    private int rotateInt;
-
-    /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 4;</code>
      */
     private int groupId;
+
+    /**
+     * <code>optional uint32 rotate_int = 9;</code>
+     */
+    private int rotateInt;
 
     private ChargerInfo() {
     }
@@ -39,62 +39,25 @@ public final class ChargerInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 1;</code>
-     * @return whether the rotateInt field is set
+     * <code>optional uint32 group_id = 4;</code>
+     * @return whether the groupId field is set
      */
-    public boolean hasRotateInt() {
+    public boolean hasGroupId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 rotate_int = 1;</code>
-     * @return this
-     */
-    public ChargerInfo clearRotateInt() {
-      bitField0_ &= ~0x00000001;
-      rotateInt = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rotate_int = 1;</code>
-     * @return the rotateInt
-     */
-    public int getRotateInt() {
-      return rotateInt;
-    }
-
-    /**
-     * <code>optional uint32 rotate_int = 1;</code>
-     * @param value the rotateInt to set
-     * @return this
-     */
-    public ChargerInfo setRotateInt(final int value) {
-      bitField0_ |= 0x00000001;
-      rotateInt = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 group_id = 13;</code>
-     * @return whether the groupId field is set
-     */
-    public boolean hasGroupId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 4;</code>
      * @return this
      */
     public ChargerInfo clearGroupId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       groupId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 4;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -102,13 +65,50 @@ public final class ChargerInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 group_id = 4;</code>
      * @param value the groupId to set
      * @return this
      */
     public ChargerInfo setGroupId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       groupId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rotate_int = 9;</code>
+     * @return whether the rotateInt field is set
+     */
+    public boolean hasRotateInt() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 rotate_int = 9;</code>
+     * @return this
+     */
+    public ChargerInfo clearRotateInt() {
+      bitField0_ &= ~0x00000002;
+      rotateInt = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rotate_int = 9;</code>
+     * @return the rotateInt
+     */
+    public int getRotateInt() {
+      return rotateInt;
+    }
+
+    /**
+     * <code>optional uint32 rotate_int = 9;</code>
+     * @param value the rotateInt to set
+     * @return this
+     */
+    public ChargerInfo setRotateInt(final int value) {
+      bitField0_ |= 0x00000002;
+      rotateInt = value;
       return this;
     }
 
@@ -117,8 +117,8 @@ public final class ChargerInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        rotateInt = other.rotateInt;
         groupId = other.groupId;
+        rotateInt = other.rotateInt;
       }
       return this;
     }
@@ -129,11 +129,11 @@ public final class ChargerInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRotateInt()) {
-        setRotateInt(other.rotateInt);
-      }
       if (other.hasGroupId()) {
         setGroupId(other.groupId);
+      }
+      if (other.hasRotateInt()) {
+        setRotateInt(other.rotateInt);
       }
       return this;
     }
@@ -145,8 +145,8 @@ public final class ChargerInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      rotateInt = 0;
       groupId = 0;
+      rotateInt = 0;
       return this;
     }
 
@@ -170,19 +170,19 @@ public final class ChargerInfoOuterClass {
       }
       ChargerInfo other = (ChargerInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasRotateInt() || rotateInt == other.rotateInt)
-        && (!hasGroupId() || groupId == other.groupId);
+        && (!hasGroupId() || groupId == other.groupId)
+        && (!hasRotateInt() || rotateInt == other.rotateInt);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(rotateInt);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(groupId);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(rotateInt);
       }
     }
 
@@ -190,10 +190,10 @@ public final class ChargerInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rotateInt);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rotateInt);
       }
       return size;
     }
@@ -205,18 +205,18 @@ public final class ChargerInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // rotateInt
-            rotateInt = input.readUInt32();
+          case 32: {
+            // groupId
+            groupId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 72) {
               break;
             }
           }
-          case 104: {
-            // groupId
-            groupId = input.readUInt32();
+          case 72: {
+            // rotateInt
+            rotateInt = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +241,10 @@ public final class ChargerInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.rotateInt, rotateInt);
+        output.writeUInt32(FieldNames.groupId, groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.groupId, groupId);
+        output.writeUInt32(FieldNames.rotateInt, rotateInt);
       }
       output.endObject();
     }
@@ -256,11 +256,11 @@ public final class ChargerInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1249476460:
-          case -78414069: {
-            if (input.isAtField(FieldNames.rotateInt)) {
+          case 293428218:
+          case 506361563: {
+            if (input.isAtField(FieldNames.groupId)) {
               if (!input.trySkipNullValue()) {
-                rotateInt = input.readUInt32();
+                groupId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -268,11 +268,11 @@ public final class ChargerInfoOuterClass {
             }
             break;
           }
-          case 293428218:
-          case 506361563: {
-            if (input.isAtField(FieldNames.groupId)) {
+          case -1249476460:
+          case -78414069: {
+            if (input.isAtField(FieldNames.rotateInt)) {
               if (!input.trySkipNullValue()) {
-                groupId = input.readUInt32();
+                rotateInt = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -332,9 +332,9 @@ public final class ChargerInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName rotateInt = FieldName.forField("rotateInt", "rotate_int");
-
       static final FieldName groupId = FieldName.forField("groupId", "group_id");
+
+      static final FieldName rotateInt = FieldName.forField("rotateInt", "rotate_int");
     }
   }
 }

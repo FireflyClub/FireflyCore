@@ -293,7 +293,7 @@ public class GameItem {
                 .setMainAffixId(this.mainAffix);
         
         if (this.getEquipAvatar() != null) {
-            proto.setBaseAvatarId(this.getEquipAvatar().getAvatarId());
+            proto.setEquipAvatarId(this.getEquipAvatar().getAvatarId());
         }
 
         if (this.subAffixes != null) {
@@ -316,7 +316,7 @@ public class GameItem {
                 .setRank(this.getRank());
         
         if (this.getEquipAvatar() != null) {
-            proto.setBaseAvatarId(this.getEquipAvatar().getAvatarId());
+            proto.setEquipAvatarId(this.getEquipAvatar().getAvatarId());
         }
         
         return proto;

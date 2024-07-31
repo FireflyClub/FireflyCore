@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RogueUnlockProgress {
-    bool finish = 15;
-    uint32 progress = 9;
-    uint32 unlock_id = 13;
+    bool finish = 5;
+    uint32 progress = 13;
+    uint32 unlock_id = 4;
 }

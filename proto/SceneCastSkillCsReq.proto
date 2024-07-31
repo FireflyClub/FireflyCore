@@ -7,16 +7,16 @@ import "MotionInfo.proto";
 import "DynamicValue.proto";
 import "SceneCastSkill.proto";
 
-// CJFAEMBEDNL
 message SceneCastSkillCsReq {
-	uint32 LIDPJPHJANI = 3;
-	uint32 attacked_group_id = 10;
-	repeated AssistMonsterWave assist_monster_wave_list = 4; // LGNHBAJEJPN
-	repeated DynamicValue dynamic_values = 11;
-	uint32 skill_index = 15;
-	MotionInfo target_motion = 12; // KMCPCJJFIKH
-	repeated uint32 hit_target_entity_id_list = 2;
-	uint32 caster_id = 13; // GFJOJDILCEA
-	repeated SceneCastSkill DIBENGPJLGG = 5;
-	repeated uint32 assist_monster_entity_id_list = 8;
+	string LOBENEFGNNH = 11;
+	repeated SceneCastSkill HDKPIJDJDOL = 6;
+	uint32 caster_id = 14;
+	repeated uint32 assist_monster_entity_id_list = 7;
+	repeated uint32 hit_target_entity_id_list = 10;
+	repeated DynamicValue dynamic_values = 3;
+	MotionInfo target_motion = 5;
+	uint32 attacked_group_id = 15;
+	uint32 LLGPELFMACD = 9;
+	uint32 skill_index = 4;
+	repeated AssistMonsterWave assist_monster_wave_list = 12;
 }

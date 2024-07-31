@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SyncDeleteFriendScNotify {
-    uint32 uid = 12;
+	uint32 uid = 1;
 }

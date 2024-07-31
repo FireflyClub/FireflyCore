@@ -14,22 +14,18 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class MissionDataOuterClass {
   /**
-   * <pre>
-   *  LOOOCBGENKE
-   * </pre>
-   *
    * Protobuf type {@code MissionData}
    */
   public static final class MissionData extends ProtoMessage<MissionData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 12;</code>
+     * <code>optional uint32 id = 5;</code>
      */
     private int id;
 
     /**
-     * <code>optional .MissionStatus status = 15;</code>
+     * <code>optional .MissionStatus status = 7;</code>
      */
     private int status;
 
@@ -42,10 +38,6 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOOOCBGENKE
-     * </pre>
-     *
      * @return a new empty instance of {@code MissionData}
      */
     public static MissionData newInstance() {
@@ -53,7 +45,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 12;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -61,7 +53,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 12;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return this
      */
     public MissionData clearId() {
@@ -71,7 +63,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 12;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return the id
      */
     public int getId() {
@@ -79,7 +71,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 12;</code>
+     * <code>optional uint32 id = 5;</code>
      * @param value the id to set
      * @return this
      */
@@ -90,7 +82,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional .MissionStatus status = 15;</code>
+     * <code>optional .MissionStatus status = 7;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -98,7 +90,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional .MissionStatus status = 15;</code>
+     * <code>optional .MissionStatus status = 7;</code>
      * @return this
      */
     public MissionData clearStatus() {
@@ -108,7 +100,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional .MissionStatus status = 15;</code>
+     * <code>optional .MissionStatus status = 7;</code>
      * @return the status
      */
     public MissionStatusOuterClass.MissionStatus getStatus() {
@@ -141,7 +133,7 @@ public final class MissionDataOuterClass {
     }
 
     /**
-     * <code>optional .MissionStatus status = 15;</code>
+     * <code>optional .MissionStatus status = 7;</code>
      * @param value the status to set
      * @return this
      */
@@ -295,11 +287,11 @@ public final class MissionDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -332,16 +324,16 @@ public final class MissionDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 40: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 56) {
               break;
             }
           }
-          case 120: {
+          case 56: {
             // status
             final int value = input.readInt32();
             if (MissionStatusOuterClass.MissionStatus.forNumber(value) != null) {

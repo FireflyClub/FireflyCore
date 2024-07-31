@@ -4,10 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "Avatar.proto";
 
-// MHOHLKEDBHG
 message GetAvatarDataScRsp {
-    repeated Avatar avatar_list = 15;
-    repeated uint32 unlocked_skin_id_list = 7; // OHNGAAEEIBF
-    bool is_get_all = 14;
-    uint32 retcode = 3;
+	uint32 retcode = 14;
+	repeated uint32 unlocked_skin_id_list = 6;
+	bool is_get_all = 4;
+	repeated Avatar avatar_list = 13;
 }

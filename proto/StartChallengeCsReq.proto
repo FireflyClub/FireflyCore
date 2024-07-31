@@ -4,10 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "StartChallengeStoryInfo.proto";
 
-// FNMAJFMDCEG
 message StartChallengeCsReq {
-    uint32 challenge_id = 3; // EMJCNIBGHCH
-    StartChallengeStoryInfo start_info = 2;
-	repeated uint32 lineup1 = 5;
-	repeated uint32 lineup2 = 12;
+	uint32 challenge_id = 12;
+	repeated uint32 lineup2 = 14; //?
+	repeated uint32 lineup1 = 6; //?
+	StartChallengeStoryInfo start_info = 2;
 }

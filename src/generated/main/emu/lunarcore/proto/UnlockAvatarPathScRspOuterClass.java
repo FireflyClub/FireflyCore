@@ -14,43 +14,35 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class UnlockAvatarPathScRspOuterClass {
   /**
-   * <pre>
-   *  BAEMAIPJGJE
-   * </pre>
-   *
    * Protobuf type {@code UnlockAvatarPathScRsp}
    */
   public static final class UnlockAvatarPathScRsp extends ProtoMessage<UnlockAvatarPathScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 6;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
      */
     private int avatarId;
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      */
     private final ItemListOuterClass.ItemList reward = ItemListOuterClass.ItemList.newInstance();
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
      */
-    private final RepeatedInt gJKJLNLIEII = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt multiAvatarTypeIdList = RepeatedInt.newEmptyInstance();
 
     private UnlockAvatarPathScRsp() {
     }
 
     /**
-     * <pre>
-     *  BAEMAIPJGJE
-     * </pre>
-     *
      * @return a new empty instance of {@code UnlockAvatarPathScRsp}
      */
     public static UnlockAvatarPathScRsp newInstance() {
@@ -58,7 +50,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -66,7 +58,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public UnlockAvatarPathScRsp clearRetcode() {
@@ -76,7 +68,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -84,7 +76,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -95,7 +87,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 6;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -103,7 +95,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 6;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
      * @return this
      */
     public UnlockAvatarPathScRsp clearAvatarId() {
@@ -113,7 +105,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 6;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
      * @return the avatarId
      */
     public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getAvatarId() {
@@ -146,7 +138,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 6;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -158,7 +150,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @return whether the reward field is set
      */
     public boolean hasReward() {
@@ -166,7 +158,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @return this
      */
     public UnlockAvatarPathScRsp clearReward() {
@@ -176,7 +168,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -190,7 +182,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -204,7 +196,7 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 12;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @param value the reward to set
      * @return this
      */
@@ -215,39 +207,39 @@ public final class UnlockAvatarPathScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
-     * @return whether the gJKJLNLIEII field is set
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
+     * @return whether the multiAvatarTypeIdList field is set
      */
-    public boolean hasGJKJLNLIEII() {
+    public boolean hasMultiAvatarTypeIdList() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
      * @return this
      */
-    public UnlockAvatarPathScRsp clearGJKJLNLIEII() {
+    public UnlockAvatarPathScRsp clearMultiAvatarTypeIdList() {
       bitField0_ &= ~0x00000008;
-      gJKJLNLIEII.clear();
+      multiAvatarTypeIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGJKJLNLIEII()} if you want to modify it.
+     * Use {@link #getMutableMultiAvatarTypeIdList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getGJKJLNLIEII() {
-      return gJKJLNLIEII;
+    public RepeatedInt getMultiAvatarTypeIdList() {
+      return multiAvatarTypeIdList;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -255,30 +247,30 @@ public final class UnlockAvatarPathScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableGJKJLNLIEII() {
+    public RepeatedInt getMutableMultiAvatarTypeIdList() {
       bitField0_ |= 0x00000008;
-      return gJKJLNLIEII;
+      return multiAvatarTypeIdList;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
-     * @param value the gJKJLNLIEII to add
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
+     * @param value the multiAvatarTypeIdList to add
      * @return this
      */
-    public UnlockAvatarPathScRsp addGJKJLNLIEII(final int value) {
+    public UnlockAvatarPathScRsp addMultiAvatarTypeIdList(final int value) {
       bitField0_ |= 0x00000008;
-      gJKJLNLIEII.add(value);
+      multiAvatarTypeIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 GJKJLNLIEII = 7;</code>
-     * @param values the gJKJLNLIEII to add
+     * <code>repeated uint32 multi_avatar_type_id_list = 12;</code>
+     * @param values the multiAvatarTypeIdList to add
      * @return this
      */
-    public UnlockAvatarPathScRsp addAllGJKJLNLIEII(final int... values) {
+    public UnlockAvatarPathScRsp addAllMultiAvatarTypeIdList(final int... values) {
       bitField0_ |= 0x00000008;
-      gJKJLNLIEII.addAll(values);
+      multiAvatarTypeIdList.addAll(values);
       return this;
     }
 
@@ -290,7 +282,7 @@ public final class UnlockAvatarPathScRspOuterClass {
         retcode = other.retcode;
         avatarId = other.avatarId;
         reward.copyFrom(other.reward);
-        gJKJLNLIEII.copyFrom(other.gJKJLNLIEII);
+        multiAvatarTypeIdList.copyFrom(other.multiAvatarTypeIdList);
       }
       return this;
     }
@@ -310,8 +302,8 @@ public final class UnlockAvatarPathScRspOuterClass {
       if (other.hasReward()) {
         getMutableReward().mergeFrom(other.reward);
       }
-      if (other.hasGJKJLNLIEII()) {
-        getMutableGJKJLNLIEII().addAll(other.gJKJLNLIEII);
+      if (other.hasMultiAvatarTypeIdList()) {
+        getMutableMultiAvatarTypeIdList().addAll(other.multiAvatarTypeIdList);
       }
       return this;
     }
@@ -326,7 +318,7 @@ public final class UnlockAvatarPathScRspOuterClass {
       retcode = 0;
       avatarId = 0;
       reward.clear();
-      gJKJLNLIEII.clear();
+      multiAvatarTypeIdList.clear();
       return this;
     }
 
@@ -338,7 +330,7 @@ public final class UnlockAvatarPathScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       reward.clearQuick();
-      gJKJLNLIEII.clear();
+      multiAvatarTypeIdList.clear();
       return this;
     }
 
@@ -355,27 +347,27 @@ public final class UnlockAvatarPathScRspOuterClass {
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasAvatarId() || avatarId == other.avatarId)
         && (!hasReward() || reward.equals(other.reward))
-        && (!hasGJKJLNLIEII() || gJKJLNLIEII.equals(other.gJKJLNLIEII));
+        && (!hasMultiAvatarTypeIdList() || multiAvatarTypeIdList.equals(other.multiAvatarTypeIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(avatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(reward);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < gJKJLNLIEII.length(); i++) {
-          output.writeRawByte((byte) 56);
-          output.writeUInt32NoTag(gJKJLNLIEII.array()[i]);
+        for (int i = 0; i < multiAvatarTypeIdList.length(); i++) {
+          output.writeRawByte((byte) 96);
+          output.writeUInt32NoTag(multiAvatarTypeIdList.array()[i]);
         }
       }
     }
@@ -393,7 +385,7 @@ public final class UnlockAvatarPathScRspOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(reward);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * gJKJLNLIEII.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gJKJLNLIEII);
+        size += (1 * multiAvatarTypeIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(multiAvatarTypeIdList);
       }
       return size;
     }
@@ -405,16 +397,16 @@ public final class UnlockAvatarPathScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 56) {
               break;
             }
           }
-          case 48: {
+          case 56: {
             // avatarId
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
@@ -422,22 +414,22 @@ public final class UnlockAvatarPathScRspOuterClass {
               bitField0_ |= 0x00000002;
             }
             tag = input.readTag();
+            if (tag != 26) {
+              break;
+            }
+          }
+          case 26: {
+            // reward
+            input.readMessage(reward);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
             if (tag != 98) {
               break;
             }
           }
           case 98: {
-            // reward
-            input.readMessage(reward);
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // gJKJLNLIEII [packed=true]
-            input.readPackedUInt32(gJKJLNLIEII, tag);
+            // multiAvatarTypeIdList [packed=true]
+            input.readPackedUInt32(multiAvatarTypeIdList, tag);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -454,9 +446,9 @@ public final class UnlockAvatarPathScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 56: {
-            // gJKJLNLIEII [packed=false]
-            tag = input.readRepeatedUInt32(gJKJLNLIEII, tag);
+          case 96: {
+            // multiAvatarTypeIdList [packed=false]
+            tag = input.readRepeatedUInt32(multiAvatarTypeIdList, tag);
             bitField0_ |= 0x00000008;
             break;
           }
@@ -477,7 +469,7 @@ public final class UnlockAvatarPathScRspOuterClass {
         output.writeMessage(FieldNames.reward, reward);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.gJKJLNLIEII, gJKJLNLIEII);
+        output.writeRepeatedUInt32(FieldNames.multiAvatarTypeIdList, multiAvatarTypeIdList);
       }
       output.endObject();
     }
@@ -528,10 +520,11 @@ public final class UnlockAvatarPathScRspOuterClass {
             }
             break;
           }
-          case -1651469948: {
-            if (input.isAtField(FieldNames.gJKJLNLIEII)) {
+          case -948118075:
+          case 1948884573: {
+            if (input.isAtField(FieldNames.multiAvatarTypeIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(gJKJLNLIEII);
+                input.readRepeatedUInt32(multiAvatarTypeIdList);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -598,7 +591,7 @@ public final class UnlockAvatarPathScRspOuterClass {
 
       static final FieldName reward = FieldName.forField("reward");
 
-      static final FieldName gJKJLNLIEII = FieldName.forField("GJKJLNLIEII");
+      static final FieldName multiAvatarTypeIdList = FieldName.forField("multiAvatarTypeIdList", "multi_avatar_type_id_list");
     }
   }
 }

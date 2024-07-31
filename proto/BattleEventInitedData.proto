@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "SpBarInfo.proto";
 
 message BattleEventInitedData {
-    SpBarInfo sp_bar = 2;
+	SpBarInfo sp_bar = 2;
 }

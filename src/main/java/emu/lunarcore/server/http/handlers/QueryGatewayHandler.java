@@ -29,8 +29,6 @@ public class QueryGatewayHandler implements Handler {
             .setUnk3(true)
             .setUnk4(true)
             .setUnk5(true)
-            .setUnk6(true)
-            .setUnk7(true)
             .setUnk8(true)
             .setUnk9(true);
 

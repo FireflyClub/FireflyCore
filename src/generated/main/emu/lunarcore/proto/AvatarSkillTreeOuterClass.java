@@ -19,19 +19,11 @@ public final class AvatarSkillTreeOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  NFEFAKDMAOC
-     * </pre>
-     *
      * <code>optional uint32 point_id = 1;</code>
      */
     private int pointId;
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
@@ -47,10 +39,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  NFEFAKDMAOC
-     * </pre>
-     *
      * <code>optional uint32 point_id = 1;</code>
      * @return whether the pointId field is set
      */
@@ -59,10 +47,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  NFEFAKDMAOC
-     * </pre>
-     *
      * <code>optional uint32 point_id = 1;</code>
      * @return this
      */
@@ -73,10 +57,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  NFEFAKDMAOC
-     * </pre>
-     *
      * <code>optional uint32 point_id = 1;</code>
      * @return the pointId
      */
@@ -85,10 +65,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  NFEFAKDMAOC
-     * </pre>
-     *
      * <code>optional uint32 point_id = 1;</code>
      * @param value the pointId to set
      * @return this
@@ -100,10 +76,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -112,10 +84,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -126,10 +94,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -138,10 +102,6 @@ public final class AvatarSkillTreeOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this

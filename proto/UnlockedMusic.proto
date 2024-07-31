@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// GIAKMFBBGEE
 message UnlockedMusic {
-    uint32 id = 12;
-    bool music_unkbool = 5; // DHCBPOPAMNE
-    uint32 group_id = 8;
+	uint32 id = 15;
+	uint32 group_id = 11;
+	bool is_unlock = 14;
 }

@@ -20,7 +20,7 @@ public final class FightActivityGroupOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 4;</code>
+     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
      */
     private int passedMaxDifficultyLevel;
 
@@ -30,7 +30,7 @@ public final class FightActivityGroupOuterClass {
     private int endlessMaxWave;
 
     /**
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      */
     private int groupId;
 
@@ -50,7 +50,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 4;</code>
+     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
      * @return whether the passedMaxDifficultyLevel field is set
      */
     public boolean hasPassedMaxDifficultyLevel() {
@@ -58,7 +58,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 4;</code>
+     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
      * @return this
      */
     public FightActivityGroup clearPassedMaxDifficultyLevel() {
@@ -68,7 +68,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 4;</code>
+     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
      * @return the passedMaxDifficultyLevel
      */
     public int getPassedMaxDifficultyLevel() {
@@ -76,7 +76,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 4;</code>
+     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
      * @param value the passedMaxDifficultyLevel to set
      * @return this
      */
@@ -124,7 +124,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -132,7 +132,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return this
      */
     public FightActivityGroup clearGroupId() {
@@ -142,7 +142,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -150,7 +150,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -306,7 +306,7 @@ public final class FightActivityGroupOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(passedMaxDifficultyLevel);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -314,7 +314,7 @@ public final class FightActivityGroupOuterClass {
         output.writeUInt32NoTag(endlessMaxWave);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
@@ -350,7 +350,7 @@ public final class FightActivityGroupOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 16: {
             // passedMaxDifficultyLevel
             passedMaxDifficultyLevel = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -364,11 +364,11 @@ public final class FightActivityGroupOuterClass {
             endlessMaxWave = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 64) {
               break;
             }
           }
-          case 48: {
+          case 64: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000004;

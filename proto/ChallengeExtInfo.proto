@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "ChallengeBossInfo.proto";
 
-// LMJLNMPCJJA
 message ChallengeExtInfo {
-    ChallengeBossInfo boss_info = 11; // PIPLIDBCCPA
+	ChallengeBossInfo boss_info = 4;
 }

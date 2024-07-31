@@ -19,9 +19,14 @@ public final class SyncRogueStatusScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueStatus rogue_status = 15;</code>
+     * <code>optional .RogueStatus status = 6;</code>
      */
-    private int rogueStatus;
+    private int status;
+
+    /**
+     * <code>optional bool CPGOHINILOI = 15;</code>
+     */
+    private boolean cPGOHINILOI;
 
     private SyncRogueStatusScNotify() {
     }
@@ -34,64 +39,101 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus rogue_status = 15;</code>
-     * @return whether the rogueStatus field is set
+     * <code>optional .RogueStatus status = 6;</code>
+     * @return whether the status field is set
      */
-    public boolean hasRogueStatus() {
+    public boolean hasStatus() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .RogueStatus rogue_status = 15;</code>
+     * <code>optional .RogueStatus status = 6;</code>
      * @return this
      */
-    public SyncRogueStatusScNotify clearRogueStatus() {
+    public SyncRogueStatusScNotify clearStatus() {
       bitField0_ &= ~0x00000001;
-      rogueStatus = 0;
+      status = 0;
       return this;
     }
 
     /**
-     * <code>optional .RogueStatus rogue_status = 15;</code>
-     * @return the rogueStatus
+     * <code>optional .RogueStatus status = 6;</code>
+     * @return the status
      */
-    public RogueStatusOuterClass.RogueStatus getRogueStatus() {
-      return RogueStatusOuterClass.RogueStatus.forNumber(rogueStatus);
+    public RogueStatusOuterClass.RogueStatus getStatus() {
+      return RogueStatusOuterClass.RogueStatus.forNumber(status);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SyncRogueStatusScNotify#getRogueStatus()}.getNumber().
+     * equivalent to {@link SyncRogueStatusScNotify#getStatus()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getRogueStatusValue() {
-      return rogueStatus;
+    public int getStatusValue() {
+      return status;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link RogueStatusOuterClass.RogueStatus}. Setting an invalid value
-     * can cause {@link SyncRogueStatusScNotify#getRogueStatus()} to return null
+     * can cause {@link SyncRogueStatusScNotify#getStatus()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SyncRogueStatusScNotify setRogueStatusValue(final int value) {
+    public SyncRogueStatusScNotify setStatusValue(final int value) {
       bitField0_ |= 0x00000001;
-      rogueStatus = value;
+      status = value;
       return this;
     }
 
     /**
-     * <code>optional .RogueStatus rogue_status = 15;</code>
-     * @param value the rogueStatus to set
+     * <code>optional .RogueStatus status = 6;</code>
+     * @param value the status to set
      * @return this
      */
-    public SyncRogueStatusScNotify setRogueStatus(final RogueStatusOuterClass.RogueStatus value) {
+    public SyncRogueStatusScNotify setStatus(final RogueStatusOuterClass.RogueStatus value) {
       bitField0_ |= 0x00000001;
-      rogueStatus = value.getNumber();
+      status = value.getNumber();
+      return this;
+    }
+
+    /**
+     * <code>optional bool CPGOHINILOI = 15;</code>
+     * @return whether the cPGOHINILOI field is set
+     */
+    public boolean hasCPGOHINILOI() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional bool CPGOHINILOI = 15;</code>
+     * @return this
+     */
+    public SyncRogueStatusScNotify clearCPGOHINILOI() {
+      bitField0_ &= ~0x00000002;
+      cPGOHINILOI = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool CPGOHINILOI = 15;</code>
+     * @return the cPGOHINILOI
+     */
+    public boolean getCPGOHINILOI() {
+      return cPGOHINILOI;
+    }
+
+    /**
+     * <code>optional bool CPGOHINILOI = 15;</code>
+     * @param value the cPGOHINILOI to set
+     * @return this
+     */
+    public SyncRogueStatusScNotify setCPGOHINILOI(final boolean value) {
+      bitField0_ |= 0x00000002;
+      cPGOHINILOI = value;
       return this;
     }
 
@@ -100,7 +142,8 @@ public final class SyncRogueStatusScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        rogueStatus = other.rogueStatus;
+        status = other.status;
+        cPGOHINILOI = other.cPGOHINILOI;
       }
       return this;
     }
@@ -111,8 +154,11 @@ public final class SyncRogueStatusScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRogueStatus()) {
-        setRogueStatusValue(other.rogueStatus);
+      if (other.hasStatus()) {
+        setStatusValue(other.status);
+      }
+      if (other.hasCPGOHINILOI()) {
+        setCPGOHINILOI(other.cPGOHINILOI);
       }
       return this;
     }
@@ -124,7 +170,8 @@ public final class SyncRogueStatusScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      rogueStatus = 0;
+      status = 0;
+      cPGOHINILOI = false;
       return this;
     }
 
@@ -148,14 +195,19 @@ public final class SyncRogueStatusScNotifyOuterClass {
       }
       SyncRogueStatusScNotify other = (SyncRogueStatusScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasRogueStatus() || rogueStatus == other.rogueStatus);
+        && (!hasStatus() || status == other.status)
+        && (!hasCPGOHINILOI() || cPGOHINILOI == other.cPGOHINILOI);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeEnumNoTag(status);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeEnumNoTag(rogueStatus);
+        output.writeBoolNoTag(cPGOHINILOI);
       }
     }
 
@@ -163,7 +215,10 @@ public final class SyncRogueStatusScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(rogueStatus);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(status);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 2;
       }
       return size;
     }
@@ -175,13 +230,22 @@ public final class SyncRogueStatusScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
-            // rogueStatus
+          case 48: {
+            // status
             final int value = input.readInt32();
             if (RogueStatusOuterClass.RogueStatus.forNumber(value) != null) {
-              rogueStatus = value;
+              status = value;
               bitField0_ |= 0x00000001;
             }
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // cPGOHINILOI
+            cPGOHINILOI = input.readBool();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -205,7 +269,10 @@ public final class SyncRogueStatusScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeEnum(FieldNames.rogueStatus, rogueStatus, RogueStatusOuterClass.RogueStatus.converter());
+        output.writeEnum(FieldNames.status, status, RogueStatusOuterClass.RogueStatus.converter());
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeBool(FieldNames.cPGOHINILOI, cPGOHINILOI);
       }
       output.endObject();
     }
@@ -217,17 +284,27 @@ public final class SyncRogueStatusScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -836112788:
-          case 1898767863: {
-            if (input.isAtField(FieldNames.rogueStatus)) {
+          case -892481550: {
+            if (input.isAtField(FieldNames.status)) {
               if (!input.trySkipNullValue()) {
                 final RogueStatusOuterClass.RogueStatus value = input.readEnum(RogueStatusOuterClass.RogueStatus.converter());
                 if (value != null) {
-                  rogueStatus = value.getNumber();
+                  status = value.getNumber();
                   bitField0_ |= 0x00000001;
                 } else {
                   input.skipUnknownEnumValue();
                 }
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -570051723: {
+            if (input.isAtField(FieldNames.cPGOHINILOI)) {
+              if (!input.trySkipNullValue()) {
+                cPGOHINILOI = input.readBool();
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -287,7 +364,9 @@ public final class SyncRogueStatusScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName rogueStatus = FieldName.forField("rogueStatus", "rogue_status");
+      static final FieldName status = FieldName.forField("status");
+
+      static final FieldName cPGOHINILOI = FieldName.forField("CPGOHINILOI");
     }
   }
 }

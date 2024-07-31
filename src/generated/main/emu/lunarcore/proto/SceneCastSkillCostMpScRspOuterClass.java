@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneCastSkillCostMpScRspOuterClass {
   /**
-   * <pre>
-   *  DOHNPAPKEOJ
-   * </pre>
-   *
    * Protobuf type {@code SceneCastSkillCostMpScRsp}
    */
   public static final class SceneCastSkillCostMpScRsp extends ProtoMessage<SceneCastSkillCostMpScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 attacked_group_id = 2;</code>
+     * <code>optional uint32 attacked_group_id = 10;</code>
      */
     private int attackedGroupId;
 
@@ -36,10 +32,6 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  DOHNPAPKEOJ
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneCastSkillCostMpScRsp}
      */
     public static SceneCastSkillCostMpScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +47,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
     public SceneCastSkillCostMpScRsp clearRetcode() {
@@ -65,7 +57,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +65,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 2;</code>
+     * <code>optional uint32 attacked_group_id = 10;</code>
      * @return whether the attackedGroupId field is set
      */
     public boolean hasAttackedGroupId() {
@@ -92,7 +84,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 2;</code>
+     * <code>optional uint32 attacked_group_id = 10;</code>
      * @return this
      */
     public SceneCastSkillCostMpScRsp clearAttackedGroupId() {
@@ -102,7 +94,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 2;</code>
+     * <code>optional uint32 attacked_group_id = 10;</code>
      * @return the attackedGroupId
      */
     public int getAttackedGroupId() {
@@ -110,7 +102,7 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 2;</code>
+     * <code>optional uint32 attacked_group_id = 10;</code>
      * @param value the attackedGroupId to set
      * @return this
      */
@@ -185,11 +177,11 @@ public final class SceneCastSkillCostMpScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(attackedGroupId);
       }
     }
@@ -213,16 +205,16 @@ public final class SceneCastSkillCostMpScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 56: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 80) {
               break;
             }
           }
-          case 16: {
+          case 80: {
             // attackedGroupId
             attackedGroupId = input.readUInt32();
             bitField0_ |= 0x00000002;

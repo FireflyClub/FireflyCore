@@ -14,51 +14,35 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class MazeGroupOuterClass {
   /**
-   * <pre>
-   *  DNOJLEENOBJ
-   * </pre>
-   *
    * Protobuf type {@code MazeGroup}
    */
   public static final class MazeGroup extends ProtoMessage<MazeGroup> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  GAJDOGBEKMB
-     * </pre>
-     *
-     * <code>optional int64 modify_time = 3;</code>
+     * <code>optional int64 modify_time = 9;</code>
      */
     private long modifyTime;
 
     /**
-     * <pre>
-     *  FOFOJABMFCC
-     * </pre>
-     *
-     * <code>optional uint32 group_id = 1;</code>
+     * <code>optional uint32 group_id = 13;</code>
      */
     private int groupId;
 
     /**
-     * <code>optional bool LMKIKKODHPP = 5;</code>
+     * <code>optional bool OAHPEFAHPPP = 2;</code>
      */
-    private boolean lMKIKKODHPP;
+    private boolean oAHPEFAHPPP;
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
      */
-    private final RepeatedInt eKLDIGMOAFA = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt fFFFOKHJKEP = RepeatedInt.newEmptyInstance();
 
     private MazeGroup() {
     }
 
     /**
-     * <pre>
-     *  DNOJLEENOBJ
-     * </pre>
-     *
      * @return a new empty instance of {@code MazeGroup}
      */
     public static MazeGroup newInstance() {
@@ -66,11 +50,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAJDOGBEKMB
-     * </pre>
-     *
-     * <code>optional int64 modify_time = 3;</code>
+     * <code>optional int64 modify_time = 9;</code>
      * @return whether the modifyTime field is set
      */
     public boolean hasModifyTime() {
@@ -78,11 +58,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAJDOGBEKMB
-     * </pre>
-     *
-     * <code>optional int64 modify_time = 3;</code>
+     * <code>optional int64 modify_time = 9;</code>
      * @return this
      */
     public MazeGroup clearModifyTime() {
@@ -92,11 +68,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAJDOGBEKMB
-     * </pre>
-     *
-     * <code>optional int64 modify_time = 3;</code>
+     * <code>optional int64 modify_time = 9;</code>
      * @return the modifyTime
      */
     public long getModifyTime() {
@@ -104,11 +76,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAJDOGBEKMB
-     * </pre>
-     *
-     * <code>optional int64 modify_time = 3;</code>
+     * <code>optional int64 modify_time = 9;</code>
      * @param value the modifyTime to set
      * @return this
      */
@@ -119,11 +87,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  FOFOJABMFCC
-     * </pre>
-     *
-     * <code>optional uint32 group_id = 1;</code>
+     * <code>optional uint32 group_id = 13;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -131,11 +95,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  FOFOJABMFCC
-     * </pre>
-     *
-     * <code>optional uint32 group_id = 1;</code>
+     * <code>optional uint32 group_id = 13;</code>
      * @return this
      */
     public MazeGroup clearGroupId() {
@@ -145,11 +105,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  FOFOJABMFCC
-     * </pre>
-     *
-     * <code>optional uint32 group_id = 1;</code>
+     * <code>optional uint32 group_id = 13;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -157,11 +113,7 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <pre>
-     *  FOFOJABMFCC
-     * </pre>
-     *
-     * <code>optional uint32 group_id = 1;</code>
+     * <code>optional uint32 group_id = 13;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -172,76 +124,76 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional bool LMKIKKODHPP = 5;</code>
-     * @return whether the lMKIKKODHPP field is set
+     * <code>optional bool OAHPEFAHPPP = 2;</code>
+     * @return whether the oAHPEFAHPPP field is set
      */
-    public boolean hasLMKIKKODHPP() {
+    public boolean hasOAHPEFAHPPP() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool LMKIKKODHPP = 5;</code>
+     * <code>optional bool OAHPEFAHPPP = 2;</code>
      * @return this
      */
-    public MazeGroup clearLMKIKKODHPP() {
+    public MazeGroup clearOAHPEFAHPPP() {
       bitField0_ &= ~0x00000004;
-      lMKIKKODHPP = false;
+      oAHPEFAHPPP = false;
       return this;
     }
 
     /**
-     * <code>optional bool LMKIKKODHPP = 5;</code>
-     * @return the lMKIKKODHPP
+     * <code>optional bool OAHPEFAHPPP = 2;</code>
+     * @return the oAHPEFAHPPP
      */
-    public boolean getLMKIKKODHPP() {
-      return lMKIKKODHPP;
+    public boolean getOAHPEFAHPPP() {
+      return oAHPEFAHPPP;
     }
 
     /**
-     * <code>optional bool LMKIKKODHPP = 5;</code>
-     * @param value the lMKIKKODHPP to set
+     * <code>optional bool OAHPEFAHPPP = 2;</code>
+     * @param value the oAHPEFAHPPP to set
      * @return this
      */
-    public MazeGroup setLMKIKKODHPP(final boolean value) {
+    public MazeGroup setOAHPEFAHPPP(final boolean value) {
       bitField0_ |= 0x00000004;
-      lMKIKKODHPP = value;
+      oAHPEFAHPPP = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
-     * @return whether the eKLDIGMOAFA field is set
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
+     * @return whether the fFFFOKHJKEP field is set
      */
-    public boolean hasEKLDIGMOAFA() {
+    public boolean hasFFFFOKHJKEP() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
      * @return this
      */
-    public MazeGroup clearEKLDIGMOAFA() {
+    public MazeGroup clearFFFFOKHJKEP() {
       bitField0_ &= ~0x00000008;
-      eKLDIGMOAFA.clear();
+      fFFFOKHJKEP.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableEKLDIGMOAFA()} if you want to modify it.
+     * Use {@link #getMutableFFFFOKHJKEP()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getEKLDIGMOAFA() {
-      return eKLDIGMOAFA;
+    public RepeatedInt getFFFFOKHJKEP() {
+      return fFFFOKHJKEP;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -249,30 +201,30 @@ public final class MazeGroupOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableEKLDIGMOAFA() {
+    public RepeatedInt getMutableFFFFOKHJKEP() {
       bitField0_ |= 0x00000008;
-      return eKLDIGMOAFA;
+      return fFFFOKHJKEP;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
-     * @param value the eKLDIGMOAFA to add
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
+     * @param value the fFFFOKHJKEP to add
      * @return this
      */
-    public MazeGroup addEKLDIGMOAFA(final int value) {
+    public MazeGroup addFFFFOKHJKEP(final int value) {
       bitField0_ |= 0x00000008;
-      eKLDIGMOAFA.add(value);
+      fFFFOKHJKEP.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 EKLDIGMOAFA = 12;</code>
-     * @param values the eKLDIGMOAFA to add
+     * <code>repeated uint32 FFFFOKHJKEP = 5;</code>
+     * @param values the fFFFOKHJKEP to add
      * @return this
      */
-    public MazeGroup addAllEKLDIGMOAFA(final int... values) {
+    public MazeGroup addAllFFFFOKHJKEP(final int... values) {
       bitField0_ |= 0x00000008;
-      eKLDIGMOAFA.addAll(values);
+      fFFFOKHJKEP.addAll(values);
       return this;
     }
 
@@ -283,8 +235,8 @@ public final class MazeGroupOuterClass {
         bitField0_ = other.bitField0_;
         modifyTime = other.modifyTime;
         groupId = other.groupId;
-        lMKIKKODHPP = other.lMKIKKODHPP;
-        eKLDIGMOAFA.copyFrom(other.eKLDIGMOAFA);
+        oAHPEFAHPPP = other.oAHPEFAHPPP;
+        fFFFOKHJKEP.copyFrom(other.fFFFOKHJKEP);
       }
       return this;
     }
@@ -301,11 +253,11 @@ public final class MazeGroupOuterClass {
       if (other.hasGroupId()) {
         setGroupId(other.groupId);
       }
-      if (other.hasLMKIKKODHPP()) {
-        setLMKIKKODHPP(other.lMKIKKODHPP);
+      if (other.hasOAHPEFAHPPP()) {
+        setOAHPEFAHPPP(other.oAHPEFAHPPP);
       }
-      if (other.hasEKLDIGMOAFA()) {
-        getMutableEKLDIGMOAFA().addAll(other.eKLDIGMOAFA);
+      if (other.hasFFFFOKHJKEP()) {
+        getMutableFFFFOKHJKEP().addAll(other.fFFFOKHJKEP);
       }
       return this;
     }
@@ -319,8 +271,8 @@ public final class MazeGroupOuterClass {
       bitField0_ = 0;
       modifyTime = 0L;
       groupId = 0;
-      lMKIKKODHPP = false;
-      eKLDIGMOAFA.clear();
+      oAHPEFAHPPP = false;
+      fFFFOKHJKEP.clear();
       return this;
     }
 
@@ -331,7 +283,7 @@ public final class MazeGroupOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      eKLDIGMOAFA.clear();
+      fFFFOKHJKEP.clear();
       return this;
     }
 
@@ -347,28 +299,28 @@ public final class MazeGroupOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasModifyTime() || modifyTime == other.modifyTime)
         && (!hasGroupId() || groupId == other.groupId)
-        && (!hasLMKIKKODHPP() || lMKIKKODHPP == other.lMKIKKODHPP)
-        && (!hasEKLDIGMOAFA() || eKLDIGMOAFA.equals(other.eKLDIGMOAFA));
+        && (!hasOAHPEFAHPPP() || oAHPEFAHPPP == other.oAHPEFAHPPP)
+        && (!hasFFFFOKHJKEP() || fFFFOKHJKEP.equals(other.fFFFOKHJKEP));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 72);
         output.writeInt64NoTag(modifyTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeBoolNoTag(lMKIKKODHPP);
+        output.writeRawByte((byte) 16);
+        output.writeBoolNoTag(oAHPEFAHPPP);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < eKLDIGMOAFA.length(); i++) {
-          output.writeRawByte((byte) 96);
-          output.writeUInt32NoTag(eKLDIGMOAFA.array()[i]);
+        for (int i = 0; i < fFFFOKHJKEP.length(); i++) {
+          output.writeRawByte((byte) 40);
+          output.writeUInt32NoTag(fFFFOKHJKEP.array()[i]);
         }
       }
     }
@@ -386,7 +338,7 @@ public final class MazeGroupOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * eKLDIGMOAFA.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(eKLDIGMOAFA);
+        size += (1 * fFFFOKHJKEP.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(fFFFOKHJKEP);
       }
       return size;
     }
@@ -398,36 +350,36 @@ public final class MazeGroupOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 72: {
             // modifyTime
             modifyTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 104) {
               break;
             }
           }
-          case 8: {
+          case 104: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 16) {
               break;
             }
           }
-          case 40: {
-            // lMKIKKODHPP
-            lMKIKKODHPP = input.readBool();
+          case 16: {
+            // oAHPEFAHPPP
+            oAHPEFAHPPP = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 42) {
               break;
             }
           }
-          case 98: {
-            // eKLDIGMOAFA [packed=true]
-            input.readPackedUInt32(eKLDIGMOAFA, tag);
+          case 42: {
+            // fFFFOKHJKEP [packed=true]
+            input.readPackedUInt32(fFFFOKHJKEP, tag);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -444,9 +396,9 @@ public final class MazeGroupOuterClass {
             tag = input.readTag();
             break;
           }
-          case 96: {
-            // eKLDIGMOAFA [packed=false]
-            tag = input.readRepeatedUInt32(eKLDIGMOAFA, tag);
+          case 40: {
+            // fFFFOKHJKEP [packed=false]
+            tag = input.readRepeatedUInt32(fFFFOKHJKEP, tag);
             bitField0_ |= 0x00000008;
             break;
           }
@@ -464,10 +416,10 @@ public final class MazeGroupOuterClass {
         output.writeUInt32(FieldNames.groupId, groupId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.lMKIKKODHPP, lMKIKKODHPP);
+        output.writeBool(FieldNames.oAHPEFAHPPP, oAHPEFAHPPP);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.eKLDIGMOAFA, eKLDIGMOAFA);
+        output.writeRepeatedUInt32(FieldNames.fFFFOKHJKEP, fFFFOKHJKEP);
       }
       output.endObject();
     }
@@ -503,10 +455,10 @@ public final class MazeGroupOuterClass {
             }
             break;
           }
-          case -1054442124: {
-            if (input.isAtField(FieldNames.lMKIKKODHPP)) {
+          case -536003282: {
+            if (input.isAtField(FieldNames.oAHPEFAHPPP)) {
               if (!input.trySkipNullValue()) {
-                lMKIKKODHPP = input.readBool();
+                oAHPEFAHPPP = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -514,10 +466,10 @@ public final class MazeGroupOuterClass {
             }
             break;
           }
-          case -495312098: {
-            if (input.isAtField(FieldNames.eKLDIGMOAFA)) {
+          case 1275564056: {
+            if (input.isAtField(FieldNames.fFFFOKHJKEP)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(eKLDIGMOAFA);
+                input.readRepeatedUInt32(fFFFOKHJKEP);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -581,9 +533,9 @@ public final class MazeGroupOuterClass {
 
       static final FieldName groupId = FieldName.forField("groupId", "group_id");
 
-      static final FieldName lMKIKKODHPP = FieldName.forField("LMKIKKODHPP");
+      static final FieldName oAHPEFAHPPP = FieldName.forField("OAHPEFAHPPP");
 
-      static final FieldName eKLDIGMOAFA = FieldName.forField("EKLDIGMOAFA");
+      static final FieldName fFFFOKHJKEP = FieldName.forField("FFFFOKHJKEP");
     }
   }
 }

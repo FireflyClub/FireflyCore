@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "MotionInfo.proto";
 
 message EnterMapRotationRegionCsReq {
-	uint32 GDMPINKFLHA = 3;
-	uint32 AHDGHBNGJIG = 6;
-    MotionInfo motion = 14;
+	uint32 HDEHHKEMOCD = 4;
+	uint32 BJPBAJECKFO = 1;
+	MotionInfo motion = 6;
 }

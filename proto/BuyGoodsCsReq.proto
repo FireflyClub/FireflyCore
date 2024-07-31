@@ -3,9 +3,9 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message BuyGoodsCsReq {
-    uint32 goods_num = 9; // DIAEEEEFLHG
-    uint32 shop_id = 13; // GNDLGHPHOLH
-    uint32 goods_id = 5; // LAOLNBMLBEM
-    uint32 item_id = 4; // NKOODOJEBHH
-	uint32 FJLKOHICJHG = 3;
+	uint32 shop_id = 8;
+	uint32 item_id = 15;
+	uint32 goods_num = 13;
+	uint32 goods_id = 3;
+	uint32 ALLILIAJFJF = 1;
 }

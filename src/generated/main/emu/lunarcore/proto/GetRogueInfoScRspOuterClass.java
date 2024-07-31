@@ -19,12 +19,12 @@ public final class GetRogueInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      */
     private final RogueInfoOuterClass.RogueInfo rogueInfo = RogueInfoOuterClass.RogueInfo.newInstance();
 
@@ -39,7 +39,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public GetRogueInfoScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      * @return whether the rogueInfo field is set
      */
     public boolean hasRogueInfo() {
@@ -84,7 +84,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      * @return this
      */
     public GetRogueInfoScRsp clearRogueInfo() {
@@ -94,7 +94,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class GetRogueInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueInfo rogue_info = 9;</code>
+     * <code>optional .RogueInfo rogue_info = 15;</code>
      * @param value the rogueInfo to set
      * @return this
      */
@@ -198,11 +198,11 @@ public final class GetRogueInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(rogueInfo);
       }
     }
@@ -226,16 +226,16 @@ public final class GetRogueInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 122) {
               break;
             }
           }
-          case 74: {
+          case 122: {
             // rogueInfo
             input.readMessage(rogueInfo);
             bitField0_ |= 0x00000002;

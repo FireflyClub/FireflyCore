@@ -10,36 +10,34 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SetGenderScRspOuterClass {
   /**
-   * <pre>
-   *  OKGFNHEMPCN
-   * </pre>
-   *
    * Protobuf type {@code SetGenderScRsp}
    */
   public static final class SetGenderScRsp extends ProtoMessage<SetGenderScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 13;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 1;</code>
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
      */
-    private int cEDHDHEPCFO;
+    private int gPDNDCCLOOD;
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     */
+    private final RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> fJPGCEEAPMO = RepeatedMessage.newEmptyInstance(MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.getFactory());
 
     private SetGenderScRsp() {
     }
 
     /**
-     * <pre>
-     *  OKGFNHEMPCN
-     * </pre>
-     *
      * @return a new empty instance of {@code SetGenderScRsp}
      */
     public static SetGenderScRsp newInstance() {
@@ -47,7 +45,7 @@ public final class SetGenderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +53,7 @@ public final class SetGenderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return this
      */
     public SetGenderScRsp clearRetcode() {
@@ -65,7 +63,7 @@ public final class SetGenderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +71,7 @@ public final class SetGenderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -84,65 +82,137 @@ public final class SetGenderScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 1;</code>
-     * @return whether the cEDHDHEPCFO field is set
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @return whether the gPDNDCCLOOD field is set
      */
-    public boolean hasCEDHDHEPCFO() {
+    public boolean hasGPDNDCCLOOD() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 1;</code>
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
      * @return this
      */
-    public SetGenderScRsp clearCEDHDHEPCFO() {
+    public SetGenderScRsp clearGPDNDCCLOOD() {
       bitField0_ &= ~0x00000002;
-      cEDHDHEPCFO = 0;
+      gPDNDCCLOOD = 0;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 1;</code>
-     * @return the cEDHDHEPCFO
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @return the gPDNDCCLOOD
      */
-    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getCEDHDHEPCFO() {
-      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(cEDHDHEPCFO);
+    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getGPDNDCCLOOD() {
+      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(gPDNDCCLOOD);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SetGenderScRsp#getCEDHDHEPCFO()}.getNumber().
+     * equivalent to {@link SetGenderScRsp#getGPDNDCCLOOD()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getCEDHDHEPCFOValue() {
-      return cEDHDHEPCFO;
+    public int getGPDNDCCLOODValue() {
+      return gPDNDCCLOOD;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link MultiPathAvatarTypeOuterClass.MultiPathAvatarType}. Setting an invalid value
-     * can cause {@link SetGenderScRsp#getCEDHDHEPCFO()} to return null
+     * can cause {@link SetGenderScRsp#getGPDNDCCLOOD()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SetGenderScRsp setCEDHDHEPCFOValue(final int value) {
+    public SetGenderScRsp setGPDNDCCLOODValue(final int value) {
       bitField0_ |= 0x00000002;
-      cEDHDHEPCFO = value;
+      gPDNDCCLOOD = value;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 1;</code>
-     * @param value the cEDHDHEPCFO to set
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @param value the gPDNDCCLOOD to set
      * @return this
      */
-    public SetGenderScRsp setCEDHDHEPCFO(
+    public SetGenderScRsp setGPDNDCCLOOD(
         final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value) {
       bitField0_ |= 0x00000002;
-      cEDHDHEPCFO = value.getNumber();
+      gPDNDCCLOOD = value.getNumber();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     * @return whether the fJPGCEEAPMO field is set
+     */
+    public boolean hasFJPGCEEAPMO() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     * @return this
+     */
+    public SetGenderScRsp clearFJPGCEEAPMO() {
+      bitField0_ &= ~0x00000004;
+      fJPGCEEAPMO.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableFJPGCEEAPMO()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getFJPGCEEAPMO(
+        ) {
+      return fJPGCEEAPMO;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMutableFJPGCEEAPMO(
+        ) {
+      bitField0_ |= 0x00000004;
+      return fJPGCEEAPMO;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     * @param value the fJPGCEEAPMO to add
+     * @return this
+     */
+    public SetGenderScRsp addFJPGCEEAPMO(
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo value) {
+      bitField0_ |= 0x00000004;
+      fJPGCEEAPMO.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;</code>
+     * @param values the fJPGCEEAPMO to add
+     * @return this
+     */
+    public SetGenderScRsp addAllFJPGCEEAPMO(
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo... values) {
+      bitField0_ |= 0x00000004;
+      fJPGCEEAPMO.addAll(values);
       return this;
     }
 
@@ -152,7 +222,8 @@ public final class SetGenderScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        cEDHDHEPCFO = other.cEDHDHEPCFO;
+        gPDNDCCLOOD = other.gPDNDCCLOOD;
+        fJPGCEEAPMO.copyFrom(other.fJPGCEEAPMO);
       }
       return this;
     }
@@ -166,8 +237,11 @@ public final class SetGenderScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasCEDHDHEPCFO()) {
-        setCEDHDHEPCFOValue(other.cEDHDHEPCFO);
+      if (other.hasGPDNDCCLOOD()) {
+        setGPDNDCCLOODValue(other.gPDNDCCLOOD);
+      }
+      if (other.hasFJPGCEEAPMO()) {
+        getMutableFJPGCEEAPMO().addAll(other.fJPGCEEAPMO);
       }
       return this;
     }
@@ -180,7 +254,8 @@ public final class SetGenderScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      cEDHDHEPCFO = 0;
+      gPDNDCCLOOD = 0;
+      fJPGCEEAPMO.clear();
       return this;
     }
 
@@ -191,6 +266,7 @@ public final class SetGenderScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      fJPGCEEAPMO.clearQuick();
       return this;
     }
 
@@ -205,18 +281,25 @@ public final class SetGenderScRspOuterClass {
       SetGenderScRsp other = (SetGenderScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasCEDHDHEPCFO() || cEDHDHEPCFO == other.cEDHDHEPCFO);
+        && (!hasGPDNDCCLOOD() || gPDNDCCLOOD == other.gPDNDCCLOOD)
+        && (!hasFJPGCEEAPMO() || fJPGCEEAPMO.equals(other.fJPGCEEAPMO));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeEnumNoTag(cEDHDHEPCFO);
+        output.writeRawByte((byte) 16);
+        output.writeEnumNoTag(gPDNDCCLOOD);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < fJPGCEEAPMO.length(); i++) {
+          output.writeRawByte((byte) 58);
+          output.writeMessageNoTag(fJPGCEEAPMO.get(i));
+        }
       }
     }
 
@@ -227,7 +310,10 @@ public final class SetGenderScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(cEDHDHEPCFO);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(gPDNDCCLOOD);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * fJPGCEEAPMO.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(fJPGCEEAPMO);
       }
       return size;
     }
@@ -239,23 +325,31 @@ public final class SetGenderScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 104: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 16) {
               break;
             }
           }
-          case 8: {
-            // cEDHDHEPCFO
+          case 16: {
+            // gPDNDCCLOOD
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
-              cEDHDHEPCFO = value;
+              gPDNDCCLOOD = value;
               bitField0_ |= 0x00000002;
             }
             tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // fJPGCEEAPMO
+            tag = input.readRepeatedMessage(fJPGCEEAPMO, tag);
+            bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
             }
@@ -281,7 +375,10 @@ public final class SetGenderScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeEnum(FieldNames.cEDHDHEPCFO, cEDHDHEPCFO, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
+        output.writeEnum(FieldNames.gPDNDCCLOOD, gPDNDCCLOOD, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedMessage(FieldNames.fJPGCEEAPMO, fJPGCEEAPMO);
       }
       output.endObject();
     }
@@ -304,16 +401,27 @@ public final class SetGenderScRspOuterClass {
             }
             break;
           }
-          case -182533481: {
-            if (input.isAtField(FieldNames.cEDHDHEPCFO)) {
+          case 779774377: {
+            if (input.isAtField(FieldNames.gPDNDCCLOOD)) {
               if (!input.trySkipNullValue()) {
                 final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value = input.readEnum(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
                 if (value != null) {
-                  cEDHDHEPCFO = value.getNumber();
+                  gPDNDCCLOOD = value.getNumber();
                   bitField0_ |= 0x00000002;
                 } else {
                   input.skipUnknownEnumValue();
                 }
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -897273191: {
+            if (input.isAtField(FieldNames.fJPGCEEAPMO)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(fJPGCEEAPMO);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -375,7 +483,9 @@ public final class SetGenderScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName cEDHDHEPCFO = FieldName.forField("CEDHDHEPCFO");
+      static final FieldName gPDNDCCLOOD = FieldName.forField("GPDNDCCLOOD");
+
+      static final FieldName fJPGCEEAPMO = FieldName.forField("FJPGCEEAPMO");
     }
   }
 }

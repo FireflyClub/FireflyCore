@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "DailyActivityInfo.proto";
 
 message DailyActiveInfoNotify {
-    repeated DailyActivityInfo daily_active_level_list = 11; // DAALABNGGKL
-    repeated uint32 daily_active_quest_id_list = 14; // HDJDEGIILAK
-    uint32 daily_active_point = 9;
+	repeated DailyActivityInfo daily_active_level_list = 10;
+	uint32 daily_active_point = 13;
+	repeated uint32 daily_active_quest_id_list = 6;
 }

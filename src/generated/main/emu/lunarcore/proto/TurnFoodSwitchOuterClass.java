@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class TurnFoodSwitchOuterClass {
   /**
-   * <pre>
-   *  DENLODKNFJE
-   * </pre>
-   *
    * Protobuf enum {@code TurnFoodSwitch}
    */
   public enum TurnFoodSwitch implements ProtoEnum<TurnFoodSwitch> {

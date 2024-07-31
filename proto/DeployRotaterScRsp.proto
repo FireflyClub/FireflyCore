@@ -6,7 +6,7 @@ import "RotaterData.proto";
 import "RotatorEnergyInfo.proto";
 
 message DeployRotaterScRsp {
-    RotaterData rotater_data = 5;
-    RotatorEnergyInfo energy_info = 15;
-    uint32 retcode = 6;
+	RotatorEnergyInfo energy_info = 4;
+	RotaterData rotater_data = 10;
+	uint32 retcode = 5;
 }

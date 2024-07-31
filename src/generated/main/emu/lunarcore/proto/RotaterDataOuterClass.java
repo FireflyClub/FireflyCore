@@ -20,17 +20,17 @@ public final class RotaterDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float FENKFPPMPBN = 1;</code>
+     * <code>optional float MBCJHDHABAK = 14;</code>
      */
-    private float fENKFPPMPBN;
+    private float mBCJHDHABAK;
 
     /**
-     * <code>optional uint32 rotate_int = 9;</code>
+     * <code>optional uint32 rotate_int = 3;</code>
      */
     private int rotateInt;
 
     /**
-     * <code>optional uint32 group_id = 11;</code>
+     * <code>optional uint32 group_id = 15;</code>
      */
     private int groupId;
 
@@ -45,44 +45,44 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional float FENKFPPMPBN = 1;</code>
-     * @return whether the fENKFPPMPBN field is set
+     * <code>optional float MBCJHDHABAK = 14;</code>
+     * @return whether the mBCJHDHABAK field is set
      */
-    public boolean hasFENKFPPMPBN() {
+    public boolean hasMBCJHDHABAK() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional float FENKFPPMPBN = 1;</code>
+     * <code>optional float MBCJHDHABAK = 14;</code>
      * @return this
      */
-    public RotaterData clearFENKFPPMPBN() {
+    public RotaterData clearMBCJHDHABAK() {
       bitField0_ &= ~0x00000001;
-      fENKFPPMPBN = 0F;
+      mBCJHDHABAK = 0F;
       return this;
     }
 
     /**
-     * <code>optional float FENKFPPMPBN = 1;</code>
-     * @return the fENKFPPMPBN
+     * <code>optional float MBCJHDHABAK = 14;</code>
+     * @return the mBCJHDHABAK
      */
-    public float getFENKFPPMPBN() {
-      return fENKFPPMPBN;
+    public float getMBCJHDHABAK() {
+      return mBCJHDHABAK;
     }
 
     /**
-     * <code>optional float FENKFPPMPBN = 1;</code>
-     * @param value the fENKFPPMPBN to set
+     * <code>optional float MBCJHDHABAK = 14;</code>
+     * @param value the mBCJHDHABAK to set
      * @return this
      */
-    public RotaterData setFENKFPPMPBN(final float value) {
+    public RotaterData setMBCJHDHABAK(final float value) {
       bitField0_ |= 0x00000001;
-      fENKFPPMPBN = value;
+      mBCJHDHABAK = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 rotate_int = 9;</code>
+     * <code>optional uint32 rotate_int = 3;</code>
      * @return whether the rotateInt field is set
      */
     public boolean hasRotateInt() {
@@ -90,7 +90,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 9;</code>
+     * <code>optional uint32 rotate_int = 3;</code>
      * @return this
      */
     public RotaterData clearRotateInt() {
@@ -100,7 +100,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 9;</code>
+     * <code>optional uint32 rotate_int = 3;</code>
      * @return the rotateInt
      */
     public int getRotateInt() {
@@ -108,7 +108,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 9;</code>
+     * <code>optional uint32 rotate_int = 3;</code>
      * @param value the rotateInt to set
      * @return this
      */
@@ -119,7 +119,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 11;</code>
+     * <code>optional uint32 group_id = 15;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -127,7 +127,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 11;</code>
+     * <code>optional uint32 group_id = 15;</code>
      * @return this
      */
     public RotaterData clearGroupId() {
@@ -137,7 +137,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 11;</code>
+     * <code>optional uint32 group_id = 15;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -145,7 +145,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 11;</code>
+     * <code>optional uint32 group_id = 15;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -160,7 +160,7 @@ public final class RotaterDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        fENKFPPMPBN = other.fENKFPPMPBN;
+        mBCJHDHABAK = other.mBCJHDHABAK;
         rotateInt = other.rotateInt;
         groupId = other.groupId;
       }
@@ -173,8 +173,8 @@ public final class RotaterDataOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasFENKFPPMPBN()) {
-        setFENKFPPMPBN(other.fENKFPPMPBN);
+      if (other.hasMBCJHDHABAK()) {
+        setMBCJHDHABAK(other.mBCJHDHABAK);
       }
       if (other.hasRotateInt()) {
         setRotateInt(other.rotateInt);
@@ -192,7 +192,7 @@ public final class RotaterDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      fENKFPPMPBN = 0F;
+      mBCJHDHABAK = 0F;
       rotateInt = 0;
       groupId = 0;
       return this;
@@ -218,7 +218,7 @@ public final class RotaterDataOuterClass {
       }
       RotaterData other = (RotaterData) o;
       return bitField0_ == other.bitField0_
-        && (!hasFENKFPPMPBN() || ProtoUtil.isEqual(fENKFPPMPBN, other.fENKFPPMPBN))
+        && (!hasMBCJHDHABAK() || ProtoUtil.isEqual(mBCJHDHABAK, other.mBCJHDHABAK))
         && (!hasRotateInt() || rotateInt == other.rotateInt)
         && (!hasGroupId() || groupId == other.groupId);
     }
@@ -226,15 +226,15 @@ public final class RotaterDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 13);
-        output.writeFloatNoTag(fENKFPPMPBN);
+        output.writeRawByte((byte) 117);
+        output.writeFloatNoTag(mBCJHDHABAK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(rotateInt);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(groupId);
       }
     }
@@ -261,25 +261,25 @@ public final class RotaterDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 13: {
-            // fENKFPPMPBN
-            fENKFPPMPBN = input.readFloat();
+          case 117: {
+            // mBCJHDHABAK
+            mBCJHDHABAK = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 24) {
               break;
             }
           }
-          case 72: {
+          case 24: {
             // rotateInt
             rotateInt = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 120) {
               break;
             }
           }
-          case 88: {
+          case 120: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000004;
@@ -306,7 +306,7 @@ public final class RotaterDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeFloat(FieldNames.fENKFPPMPBN, fENKFPPMPBN);
+        output.writeFloat(FieldNames.mBCJHDHABAK, mBCJHDHABAK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.rotateInt, rotateInt);
@@ -324,10 +324,10 @@ public final class RotaterDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 774490297: {
-            if (input.isAtField(FieldNames.fENKFPPMPBN)) {
+          case -241676133: {
+            if (input.isAtField(FieldNames.mBCJHDHABAK)) {
               if (!input.trySkipNullValue()) {
-                fENKFPPMPBN = input.readFloat();
+                mBCJHDHABAK = input.readFloat();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -411,7 +411,7 @@ public final class RotaterDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName fENKFPPMPBN = FieldName.forField("FENKFPPMPBN");
+      static final FieldName mBCJHDHABAK = FieldName.forField("MBCJHDHABAK");
 
       static final FieldName rotateInt = FieldName.forField("rotateInt", "rotate_int");
 

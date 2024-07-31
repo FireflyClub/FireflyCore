@@ -14,17 +14,13 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class ChallengeStoryBuffInfoOuterClass {
   /**
-   * <pre>
-   *  OAEBHGPHCBL
-   * </pre>
-   *
    * Protobuf type {@code ChallengeStoryBuffInfo}
    */
   public static final class ChallengeStoryBuffInfo extends ProtoMessage<ChallengeStoryBuffInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      */
     private final RepeatedInt buffList = RepeatedInt.newEmptyInstance();
 
@@ -32,10 +28,6 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  OAEBHGPHCBL
-     * </pre>
-     *
      * @return a new empty instance of {@code ChallengeStoryBuffInfo}
      */
     public static ChallengeStoryBuffInfo newInstance() {
@@ -43,7 +35,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      * @return whether the buffList field is set
      */
     public boolean hasBuffList() {
@@ -51,7 +43,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      * @return this
      */
     public ChallengeStoryBuffInfo clearBuffList() {
@@ -61,7 +53,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -75,7 +67,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -89,7 +81,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      * @param value the buffList to add
      * @return this
      */
@@ -100,7 +92,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 3;</code>
+     * <code>repeated uint32 buff_list = 1;</code>
      * @param values the buffList to add
      * @return this
      */
@@ -171,7 +163,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < buffList.length(); i++) {
-          output.writeRawByte((byte) 24);
+          output.writeRawByte((byte) 8);
           output.writeUInt32NoTag(buffList.array()[i]);
         }
       }
@@ -193,7 +185,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 26: {
+          case 10: {
             // buffList [packed=true]
             input.readPackedUInt32(buffList, tag);
             bitField0_ |= 0x00000001;
@@ -212,7 +204,7 @@ public final class ChallengeStoryBuffInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 24: {
+          case 8: {
             // buffList [packed=false]
             tag = input.readRepeatedUInt32(buffList, tag);
             bitField0_ |= 0x00000001;

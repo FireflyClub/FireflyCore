@@ -2,10 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// JNBIFJNNOLJ
 enum MissionStatus {
-  MISSION_NONE = 0;
-  MISSION_DOING = 1;
-  MISSION_FINISH = 2;
-  MISSION_PREPARED = 3;
+	MISSION_NONE = 0;
+	MISSION_DOING = 1;
+	MISSION_FINISH = 2;
+	MISSION_PREPARED = 3;
 }

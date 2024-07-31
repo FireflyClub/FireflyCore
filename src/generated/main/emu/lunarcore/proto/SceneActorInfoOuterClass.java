@@ -13,40 +13,28 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneActorInfoOuterClass {
   /**
-   * <pre>
-   *  PGKNKNCFMHA
-   * </pre>
-   *
    * Protobuf type {@code SceneActorInfo}
    */
   public static final class SceneActorInfo extends ProtoMessage<SceneActorInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 2;</code>
      */
     private int uid;
 
     /**
-     * <pre>
-     *  ADHFAKPKFEN
-     * </pre>
-     *
-     * <code>optional uint32 map_layer = 9;</code>
+     * <code>optional uint32 base_avatar_id = 11;</code>
+     */
+    private int baseAvatarId;
+
+    /**
+     * <code>optional uint32 map_layer = 15;</code>
      */
     private int mapLayer;
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     */
-    private int sceneAvatarId;
-
-    /**
-     * <code>optional .AvatarType avatar_type = 2;</code>
+     * <code>optional .AvatarType avatar_type = 6;</code>
      */
     private int avatarType;
 
@@ -54,10 +42,6 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PGKNKNCFMHA
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneActorInfo}
      */
     public static SceneActorInfo newInstance() {
@@ -65,7 +49,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 2;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -73,7 +57,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 2;</code>
      * @return this
      */
     public SceneActorInfo clearUid() {
@@ -83,7 +67,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 2;</code>
      * @return the uid
      */
     public int getUid() {
@@ -91,7 +75,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 2;</code>
      * @param value the uid to set
      * @return this
      */
@@ -102,37 +86,62 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  ADHFAKPKFEN
-     * </pre>
-     *
-     * <code>optional uint32 map_layer = 9;</code>
-     * @return whether the mapLayer field is set
+     * <code>optional uint32 base_avatar_id = 11;</code>
+     * @return whether the baseAvatarId field is set
      */
-    public boolean hasMapLayer() {
+    public boolean hasBaseAvatarId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <pre>
-     *  ADHFAKPKFEN
-     * </pre>
-     *
-     * <code>optional uint32 map_layer = 9;</code>
+     * <code>optional uint32 base_avatar_id = 11;</code>
+     * @return this
+     */
+    public SceneActorInfo clearBaseAvatarId() {
+      bitField0_ &= ~0x00000002;
+      baseAvatarId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 base_avatar_id = 11;</code>
+     * @return the baseAvatarId
+     */
+    public int getBaseAvatarId() {
+      return baseAvatarId;
+    }
+
+    /**
+     * <code>optional uint32 base_avatar_id = 11;</code>
+     * @param value the baseAvatarId to set
+     * @return this
+     */
+    public SceneActorInfo setBaseAvatarId(final int value) {
+      bitField0_ |= 0x00000002;
+      baseAvatarId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 map_layer = 15;</code>
+     * @return whether the mapLayer field is set
+     */
+    public boolean hasMapLayer() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 map_layer = 15;</code>
      * @return this
      */
     public SceneActorInfo clearMapLayer() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       mapLayer = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  ADHFAKPKFEN
-     * </pre>
-     *
-     * <code>optional uint32 map_layer = 9;</code>
+     * <code>optional uint32 map_layer = 15;</code>
      * @return the mapLayer
      */
     public int getMapLayer() {
@@ -140,75 +149,18 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  ADHFAKPKFEN
-     * </pre>
-     *
-     * <code>optional uint32 map_layer = 9;</code>
+     * <code>optional uint32 map_layer = 15;</code>
      * @param value the mapLayer to set
      * @return this
      */
     public SceneActorInfo setMapLayer(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       mapLayer = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @return whether the sceneAvatarId field is set
-     */
-    public boolean hasSceneAvatarId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @return this
-     */
-    public SceneActorInfo clearSceneAvatarId() {
-      bitField0_ &= ~0x00000004;
-      sceneAvatarId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @return the sceneAvatarId
-     */
-    public int getSceneAvatarId() {
-      return sceneAvatarId;
-    }
-
-    /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @param value the sceneAvatarId to set
-     * @return this
-     */
-    public SceneActorInfo setSceneAvatarId(final int value) {
-      bitField0_ |= 0x00000004;
-      sceneAvatarId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional .AvatarType avatar_type = 2;</code>
+     * <code>optional .AvatarType avatar_type = 6;</code>
      * @return whether the avatarType field is set
      */
     public boolean hasAvatarType() {
@@ -216,7 +168,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 2;</code>
+     * <code>optional .AvatarType avatar_type = 6;</code>
      * @return this
      */
     public SceneActorInfo clearAvatarType() {
@@ -226,7 +178,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 2;</code>
+     * <code>optional .AvatarType avatar_type = 6;</code>
      * @return the avatarType
      */
     public AvatarTypeOuterClass.AvatarType getAvatarType() {
@@ -259,7 +211,7 @@ public final class SceneActorInfoOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 2;</code>
+     * <code>optional .AvatarType avatar_type = 6;</code>
      * @param value the avatarType to set
      * @return this
      */
@@ -275,8 +227,8 @@ public final class SceneActorInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         uid = other.uid;
+        baseAvatarId = other.baseAvatarId;
         mapLayer = other.mapLayer;
-        sceneAvatarId = other.sceneAvatarId;
         avatarType = other.avatarType;
       }
       return this;
@@ -291,11 +243,11 @@ public final class SceneActorInfoOuterClass {
       if (other.hasUid()) {
         setUid(other.uid);
       }
+      if (other.hasBaseAvatarId()) {
+        setBaseAvatarId(other.baseAvatarId);
+      }
       if (other.hasMapLayer()) {
         setMapLayer(other.mapLayer);
-      }
-      if (other.hasSceneAvatarId()) {
-        setSceneAvatarId(other.sceneAvatarId);
       }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
@@ -311,8 +263,8 @@ public final class SceneActorInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       uid = 0;
+      baseAvatarId = 0;
       mapLayer = 0;
-      sceneAvatarId = 0;
       avatarType = 0;
       return this;
     }
@@ -338,27 +290,27 @@ public final class SceneActorInfoOuterClass {
       SceneActorInfo other = (SceneActorInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasUid() || uid == other.uid)
+        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
         && (!hasMapLayer() || mapLayer == other.mapLayer)
-        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
         && (!hasAvatarType() || avatarType == other.avatarType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(mapLayer);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(sceneAvatarId);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(mapLayer);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 48);
         output.writeEnumNoTag(avatarType);
       }
     }
@@ -370,10 +322,10 @@ public final class SceneActorInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapLayer);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapLayer);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
@@ -388,34 +340,34 @@ public final class SceneActorInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 16: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
-            // mapLayer
-            mapLayer = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 88) {
               break;
             }
           }
           case 88: {
-            // sceneAvatarId
-            sceneAvatarId = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            // baseAvatarId
+            baseAvatarId = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 120) {
               break;
             }
           }
-          case 16: {
+          case 120: {
+            // mapLayer
+            mapLayer = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
             // avatarType
             final int value = input.readInt32();
             if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
@@ -448,10 +400,10 @@ public final class SceneActorInfoOuterClass {
         output.writeUInt32(FieldNames.uid, uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.mapLayer, mapLayer);
+        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
+        output.writeUInt32(FieldNames.mapLayer, mapLayer);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
@@ -477,11 +429,11 @@ public final class SceneActorInfoOuterClass {
             }
             break;
           }
-          case 160971093:
-          case 1248553134: {
-            if (input.isAtField(FieldNames.mapLayer)) {
+          case 118022725:
+          case -1756826157: {
+            if (input.isAtField(FieldNames.baseAvatarId)) {
               if (!input.trySkipNullValue()) {
-                mapLayer = input.readUInt32();
+                baseAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -489,11 +441,11 @@ public final class SceneActorInfoOuterClass {
             }
             break;
           }
-          case -1044772608:
-          case 1783323086: {
-            if (input.isAtField(FieldNames.sceneAvatarId)) {
+          case 160971093:
+          case 1248553134: {
+            if (input.isAtField(FieldNames.mapLayer)) {
               if (!input.trySkipNullValue()) {
-                sceneAvatarId = input.readUInt32();
+                mapLayer = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -573,9 +525,9 @@ public final class SceneActorInfoOuterClass {
     static class FieldNames {
       static final FieldName uid = FieldName.forField("uid");
 
-      static final FieldName mapLayer = FieldName.forField("mapLayer", "map_layer");
+      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
 
-      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
+      static final FieldName mapLayer = FieldName.forField("mapLayer", "map_layer");
 
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
     }

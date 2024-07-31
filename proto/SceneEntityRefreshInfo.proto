@@ -4,11 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "SceneEntityInfo.proto";
 
-// HFJEMBFAOCL
 message SceneEntityRefreshInfo {
-    oneof refresh_type {
-        SceneEntityInfo add_entity = 6; // KEOOGNDLBPE
-        uint32 del_entity = 9;
-        uint32 GJLADLHAAMM = 4;
-    }
+	SceneEntityInfo add_entity = 5;
+	//uint32 NHMLENKIPMO = 3;
+	//uint32 DBAPDELOBEN = 14;
+
+	uint32 del_entity = 3; //?
 }

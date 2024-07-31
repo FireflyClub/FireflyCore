@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class FriendApplyInfoOuterClass {
   /**
-   * <pre>
-   *  MFPFLKBHFCB
-   * </pre>
-   *
    * Protobuf type {@code FriendApplyInfo}
    */
   public static final class FriendApplyInfo extends ProtoMessage<FriendApplyInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * <code>optional int64 GCEHCPPAIFF = 14;</code>
      */
-    private long bIDBCBGACID;
+    private long gCEHCPPAIFF;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
@@ -36,10 +32,6 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MFPFLKBHFCB
-     * </pre>
-     *
      * @return a new empty instance of {@code FriendApplyInfo}
      */
     public static FriendApplyInfo newInstance() {
@@ -47,44 +39,44 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 BIDBCBGACID = 1;</code>
-     * @return whether the bIDBCBGACID field is set
+     * <code>optional int64 GCEHCPPAIFF = 14;</code>
+     * @return whether the gCEHCPPAIFF field is set
      */
-    public boolean hasBIDBCBGACID() {
+    public boolean hasGCEHCPPAIFF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional int64 BIDBCBGACID = 1;</code>
+     * <code>optional int64 GCEHCPPAIFF = 14;</code>
      * @return this
      */
-    public FriendApplyInfo clearBIDBCBGACID() {
+    public FriendApplyInfo clearGCEHCPPAIFF() {
       bitField0_ &= ~0x00000001;
-      bIDBCBGACID = 0L;
+      gCEHCPPAIFF = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 BIDBCBGACID = 1;</code>
-     * @return the bIDBCBGACID
+     * <code>optional int64 GCEHCPPAIFF = 14;</code>
+     * @return the gCEHCPPAIFF
      */
-    public long getBIDBCBGACID() {
-      return bIDBCBGACID;
+    public long getGCEHCPPAIFF() {
+      return gCEHCPPAIFF;
     }
 
     /**
-     * <code>optional int64 BIDBCBGACID = 1;</code>
-     * @param value the bIDBCBGACID to set
+     * <code>optional int64 GCEHCPPAIFF = 14;</code>
+     * @param value the gCEHCPPAIFF to set
      * @return this
      */
-    public FriendApplyInfo setBIDBCBGACID(final long value) {
+    public FriendApplyInfo setGCEHCPPAIFF(final long value) {
       bitField0_ |= 0x00000001;
-      bIDBCBGACID = value;
+      gCEHCPPAIFF = value;
       return this;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
@@ -92,7 +84,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      * @return this
      */
     public FriendApplyInfo clearSimpleInfo() {
@@ -102,7 +94,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 9;</code>
+     * <code>optional .SimpleInfo simple_info = 7;</code>
      * @param value the simpleInfo to set
      * @return this
      */
@@ -145,7 +137,7 @@ public final class FriendApplyInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        bIDBCBGACID = other.bIDBCBGACID;
+        gCEHCPPAIFF = other.gCEHCPPAIFF;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -157,8 +149,8 @@ public final class FriendApplyInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBIDBCBGACID()) {
-        setBIDBCBGACID(other.bIDBCBGACID);
+      if (other.hasGCEHCPPAIFF()) {
+        setGCEHCPPAIFF(other.gCEHCPPAIFF);
       }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
@@ -173,7 +165,7 @@ public final class FriendApplyInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      bIDBCBGACID = 0L;
+      gCEHCPPAIFF = 0L;
       simpleInfo.clear();
       return this;
     }
@@ -199,18 +191,18 @@ public final class FriendApplyInfoOuterClass {
       }
       FriendApplyInfo other = (FriendApplyInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBIDBCBGACID() || bIDBCBGACID == other.bIDBCBGACID)
+        && (!hasGCEHCPPAIFF() || gCEHCPPAIFF == other.gCEHCPPAIFF)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeInt64NoTag(bIDBCBGACID);
+        output.writeRawByte((byte) 112);
+        output.writeInt64NoTag(gCEHCPPAIFF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(simpleInfo);
       }
     }
@@ -219,7 +211,7 @@ public final class FriendApplyInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(bIDBCBGACID);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(gCEHCPPAIFF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(simpleInfo);
@@ -234,16 +226,16 @@ public final class FriendApplyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // bIDBCBGACID
-            bIDBCBGACID = input.readInt64();
+          case 112: {
+            // gCEHCPPAIFF
+            gCEHCPPAIFF = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 58) {
               break;
             }
           }
-          case 74: {
+          case 58: {
             // simpleInfo
             input.readMessage(simpleInfo);
             bitField0_ |= 0x00000002;
@@ -270,7 +262,7 @@ public final class FriendApplyInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeInt64(FieldNames.bIDBCBGACID, bIDBCBGACID);
+        output.writeInt64(FieldNames.gCEHCPPAIFF, gCEHCPPAIFF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
@@ -285,10 +277,10 @@ public final class FriendApplyInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2096441888: {
-            if (input.isAtField(FieldNames.bIDBCBGACID)) {
+          case -843584628: {
+            if (input.isAtField(FieldNames.gCEHCPPAIFF)) {
               if (!input.trySkipNullValue()) {
-                bIDBCBGACID = input.readInt64();
+                gCEHCPPAIFF = input.readInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -361,7 +353,7 @@ public final class FriendApplyInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName bIDBCBGACID = FieldName.forField("BIDBCBGACID");
+      static final FieldName gCEHCPPAIFF = FieldName.forField("GCEHCPPAIFF");
 
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }

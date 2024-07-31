@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// HOGOFOFOOHD
 message PropChessRogueInfo {
-    bool EECMOOFDCPF = 15;
-	bool FAHMIGDFDNP = 13;
+	bool DGJKFKNPNLF = 14;
+	bool DMKAAFFGLOM = 9;
 }

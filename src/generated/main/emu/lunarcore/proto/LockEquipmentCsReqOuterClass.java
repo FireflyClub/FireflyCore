@@ -20,20 +20,12 @@ public final class LockEquipmentCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  HGDOGNKBFAO
-     * </pre>
-     *
-     * <code>optional bool is_protected = 6;</code>
+     * <code>optional bool is_locked = 15;</code>
      */
-    private boolean isProtected;
+    private boolean isLocked;
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      */
     private final RepeatedInt equipmentIdList = RepeatedInt.newEmptyInstance();
 
@@ -48,64 +40,44 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HGDOGNKBFAO
-     * </pre>
-     *
-     * <code>optional bool is_protected = 6;</code>
-     * @return whether the isProtected field is set
+     * <code>optional bool is_locked = 15;</code>
+     * @return whether the isLocked field is set
      */
-    public boolean hasIsProtected() {
+    public boolean hasIsLocked() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  HGDOGNKBFAO
-     * </pre>
-     *
-     * <code>optional bool is_protected = 6;</code>
+     * <code>optional bool is_locked = 15;</code>
      * @return this
      */
-    public LockEquipmentCsReq clearIsProtected() {
+    public LockEquipmentCsReq clearIsLocked() {
       bitField0_ &= ~0x00000001;
-      isProtected = false;
+      isLocked = false;
       return this;
     }
 
     /**
-     * <pre>
-     *  HGDOGNKBFAO
-     * </pre>
-     *
-     * <code>optional bool is_protected = 6;</code>
-     * @return the isProtected
+     * <code>optional bool is_locked = 15;</code>
+     * @return the isLocked
      */
-    public boolean getIsProtected() {
-      return isProtected;
+    public boolean getIsLocked() {
+      return isLocked;
     }
 
     /**
-     * <pre>
-     *  HGDOGNKBFAO
-     * </pre>
-     *
-     * <code>optional bool is_protected = 6;</code>
-     * @param value the isProtected to set
+     * <code>optional bool is_locked = 15;</code>
+     * @param value the isLocked to set
      * @return this
      */
-    public LockEquipmentCsReq setIsProtected(final boolean value) {
+    public LockEquipmentCsReq setIsLocked(final boolean value) {
       bitField0_ |= 0x00000001;
-      isProtected = value;
+      isLocked = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      * @return whether the equipmentIdList field is set
      */
     public boolean hasEquipmentIdList() {
@@ -113,11 +85,7 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      * @return this
      */
     public LockEquipmentCsReq clearEquipmentIdList() {
@@ -127,11 +95,7 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -145,11 +109,7 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -163,11 +123,7 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      * @param value the equipmentIdList to add
      * @return this
      */
@@ -178,11 +134,7 @@ public final class LockEquipmentCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CINPNECFALD
-     * </pre>
-     *
-     * <code>repeated uint32 equipment_id_list = 3;</code>
+     * <code>repeated uint32 equipment_id_list = 10;</code>
      * @param values the equipmentIdList to add
      * @return this
      */
@@ -197,7 +149,7 @@ public final class LockEquipmentCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        isProtected = other.isProtected;
+        isLocked = other.isLocked;
         equipmentIdList.copyFrom(other.equipmentIdList);
       }
       return this;
@@ -209,8 +161,8 @@ public final class LockEquipmentCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasIsProtected()) {
-        setIsProtected(other.isProtected);
+      if (other.hasIsLocked()) {
+        setIsLocked(other.isLocked);
       }
       if (other.hasEquipmentIdList()) {
         getMutableEquipmentIdList().addAll(other.equipmentIdList);
@@ -225,7 +177,7 @@ public final class LockEquipmentCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      isProtected = false;
+      isLocked = false;
       equipmentIdList.clear();
       return this;
     }
@@ -251,19 +203,19 @@ public final class LockEquipmentCsReqOuterClass {
       }
       LockEquipmentCsReq other = (LockEquipmentCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasIsProtected() || isProtected == other.isProtected)
+        && (!hasIsLocked() || isLocked == other.isLocked)
         && (!hasEquipmentIdList() || equipmentIdList.equals(other.equipmentIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeBoolNoTag(isProtected);
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(isLocked);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < equipmentIdList.length(); i++) {
-          output.writeRawByte((byte) 24);
+          output.writeRawByte((byte) 80);
           output.writeUInt32NoTag(equipmentIdList.array()[i]);
         }
       }
@@ -288,16 +240,16 @@ public final class LockEquipmentCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // isProtected
-            isProtected = input.readBool();
+          case 120: {
+            // isLocked
+            isLocked = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 82) {
               break;
             }
           }
-          case 26: {
+          case 82: {
             // equipmentIdList [packed=true]
             input.readPackedUInt32(equipmentIdList, tag);
             bitField0_ |= 0x00000002;
@@ -316,7 +268,7 @@ public final class LockEquipmentCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 24: {
+          case 80: {
             // equipmentIdList [packed=false]
             tag = input.readRepeatedUInt32(equipmentIdList, tag);
             bitField0_ |= 0x00000002;
@@ -330,7 +282,7 @@ public final class LockEquipmentCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.isProtected, isProtected);
+        output.writeBool(FieldNames.isLocked, isLocked);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedUInt32(FieldNames.equipmentIdList, equipmentIdList);
@@ -345,11 +297,11 @@ public final class LockEquipmentCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 569879972:
-          case -1919645991: {
-            if (input.isAtField(FieldNames.isProtected)) {
+          case -423418668:
+          case -633413697: {
+            if (input.isAtField(FieldNames.isLocked)) {
               if (!input.trySkipNullValue()) {
-                isProtected = input.readBool();
+                isLocked = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -422,7 +374,7 @@ public final class LockEquipmentCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName isProtected = FieldName.forField("isProtected", "is_protected");
+      static final FieldName isLocked = FieldName.forField("isLocked", "is_locked");
 
       static final FieldName equipmentIdList = FieldName.forField("equipmentIdList", "equipment_id_list");
     }

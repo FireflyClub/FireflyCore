@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "FeverTimeActivityType.proto";
 
-// Emmdfkhifnc
 message FeverTimeActivityData {
-	uint32 BOCMDBMJBJP = 13;
-	FeverTimeActivityType activity_data_type = 4; // EMAEKKJJLNP
-	uint32 DFGOPDJPKNA = 12;
+	uint32 EDAMNPBBJHM = 6;
+	uint32 KJBIAEAEMJF = 8;
+	FeverTimeActivityType activity_data_type = 10;
 }

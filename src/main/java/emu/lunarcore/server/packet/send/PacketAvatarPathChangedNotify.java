@@ -12,7 +12,7 @@ public class PacketAvatarPathChangedNotify extends BasePacket {
 
         var data = AvatarPathChangedNotifyOuterClass.AvatarPathChangedNotify
             .newInstance()
-            .setSceneAvatarId(baseAvatarId)
+            .setBaseAvatarId(baseAvatarId)
             .setMultiPathAvatarType(type);
         
         this.setData(data);

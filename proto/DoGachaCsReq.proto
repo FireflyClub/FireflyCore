@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DoGachaCsReq {
-    uint32 gacha_num = 6; // LBEEILAMFKL
-    uint32 gacha_id = 12;
-    uint32 gacha_random = 14;
-    uint32 simulate_magic = 7; // NCJCKEELHOO
+	uint32 gacha_num = 8;
+	uint32 simulate_magic = 2;
+	uint32 gacha_random = 9;
+	uint32 gacha_id = 14;
 }

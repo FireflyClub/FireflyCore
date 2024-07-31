@@ -19,24 +19,24 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 1;</code>
      */
     private int id;
 
     /**
-     * <code>optional bool DDLKGEHPIGM = 7;</code>
+     * <code>optional bool PECAGANEKGI = 3;</code>
      */
-    private boolean dDLKGEHPIGM;
+    private boolean pECAGANEKGI;
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     */
-    private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
-
-    /**
-     * <code>optional .MotionInfo motion = 14;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     */
+    private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
 
     private RestoreWolfBroGameArchiveCsReq() {
     }
@@ -49,7 +49,7 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 1;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -57,7 +57,7 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 1;</code>
      * @return this
      */
     public RestoreWolfBroGameArchiveCsReq clearId() {
@@ -67,7 +67,7 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 1;</code>
      * @return the id
      */
     public int getId() {
@@ -75,7 +75,7 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 1;</code>
      * @param value the id to set
      * @return this
      */
@@ -86,120 +86,62 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool DDLKGEHPIGM = 7;</code>
-     * @return whether the dDLKGEHPIGM field is set
+     * <code>optional bool PECAGANEKGI = 3;</code>
+     * @return whether the pECAGANEKGI field is set
      */
-    public boolean hasDDLKGEHPIGM() {
+    public boolean hasPECAGANEKGI() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool DDLKGEHPIGM = 7;</code>
+     * <code>optional bool PECAGANEKGI = 3;</code>
      * @return this
      */
-    public RestoreWolfBroGameArchiveCsReq clearDDLKGEHPIGM() {
+    public RestoreWolfBroGameArchiveCsReq clearPECAGANEKGI() {
       bitField0_ &= ~0x00000002;
-      dDLKGEHPIGM = false;
+      pECAGANEKGI = false;
       return this;
     }
 
     /**
-     * <code>optional bool DDLKGEHPIGM = 7;</code>
-     * @return the dDLKGEHPIGM
+     * <code>optional bool PECAGANEKGI = 3;</code>
+     * @return the pECAGANEKGI
      */
-    public boolean getDDLKGEHPIGM() {
-      return dDLKGEHPIGM;
+    public boolean getPECAGANEKGI() {
+      return pECAGANEKGI;
     }
 
     /**
-     * <code>optional bool DDLKGEHPIGM = 7;</code>
-     * @param value the dDLKGEHPIGM to set
+     * <code>optional bool PECAGANEKGI = 3;</code>
+     * @param value the pECAGANEKGI to set
      * @return this
      */
-    public RestoreWolfBroGameArchiveCsReq setDDLKGEHPIGM(final boolean value) {
+    public RestoreWolfBroGameArchiveCsReq setPECAGANEKGI(final boolean value) {
       bitField0_ |= 0x00000002;
-      dDLKGEHPIGM = value;
+      pECAGANEKGI = value;
       return this;
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     * @return whether the groupStateInfo field is set
+     * <code>optional .MotionInfo motion = 4;</code>
+     * @return whether the motion field is set
      */
-    public boolean hasGroupStateInfo() {
+    public boolean hasMotion() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     * @return this
-     */
-    public RestoreWolfBroGameArchiveCsReq clearGroupStateInfo() {
-      bitField0_ &= ~0x00000004;
-      groupStateInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableGroupStateInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public GroupStateInfoOuterClass.GroupStateInfo getGroupStateInfo() {
-      return groupStateInfo;
-    }
-
-    /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public GroupStateInfoOuterClass.GroupStateInfo getMutableGroupStateInfo() {
-      bitField0_ |= 0x00000004;
-      return groupStateInfo;
-    }
-
-    /**
-     * <code>optional .GroupStateInfo group_state_info = 8;</code>
-     * @param value the groupStateInfo to set
-     * @return this
-     */
-    public RestoreWolfBroGameArchiveCsReq setGroupStateInfo(
-        final GroupStateInfoOuterClass.GroupStateInfo value) {
-      bitField0_ |= 0x00000004;
-      groupStateInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .MotionInfo motion = 14;</code>
-     * @return whether the motion field is set
-     */
-    public boolean hasMotion() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional .MotionInfo motion = 14;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      * @return this
      */
     public RestoreWolfBroGameArchiveCsReq clearMotion() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       motion.clear();
       return this;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 14;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -213,7 +155,7 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 14;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -222,18 +164,76 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public MotionInfoOuterClass.MotionInfo getMutableMotion() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       return motion;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 14;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      * @param value the motion to set
      * @return this
      */
     public RestoreWolfBroGameArchiveCsReq setMotion(final MotionInfoOuterClass.MotionInfo value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       motion.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     * @return whether the groupStateInfo field is set
+     */
+    public boolean hasGroupStateInfo() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     * @return this
+     */
+    public RestoreWolfBroGameArchiveCsReq clearGroupStateInfo() {
+      bitField0_ &= ~0x00000008;
+      groupStateInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableGroupStateInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public GroupStateInfoOuterClass.GroupStateInfo getGroupStateInfo() {
+      return groupStateInfo;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public GroupStateInfoOuterClass.GroupStateInfo getMutableGroupStateInfo() {
+      bitField0_ |= 0x00000008;
+      return groupStateInfo;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 10;</code>
+     * @param value the groupStateInfo to set
+     * @return this
+     */
+    public RestoreWolfBroGameArchiveCsReq setGroupStateInfo(
+        final GroupStateInfoOuterClass.GroupStateInfo value) {
+      bitField0_ |= 0x00000008;
+      groupStateInfo.copyFrom(value);
       return this;
     }
 
@@ -243,9 +243,9 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         id = other.id;
-        dDLKGEHPIGM = other.dDLKGEHPIGM;
-        groupStateInfo.copyFrom(other.groupStateInfo);
+        pECAGANEKGI = other.pECAGANEKGI;
         motion.copyFrom(other.motion);
+        groupStateInfo.copyFrom(other.groupStateInfo);
       }
       return this;
     }
@@ -259,14 +259,14 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       if (other.hasId()) {
         setId(other.id);
       }
-      if (other.hasDDLKGEHPIGM()) {
-        setDDLKGEHPIGM(other.dDLKGEHPIGM);
-      }
-      if (other.hasGroupStateInfo()) {
-        getMutableGroupStateInfo().mergeFrom(other.groupStateInfo);
+      if (other.hasPECAGANEKGI()) {
+        setPECAGANEKGI(other.pECAGANEKGI);
       }
       if (other.hasMotion()) {
         getMutableMotion().mergeFrom(other.motion);
+      }
+      if (other.hasGroupStateInfo()) {
+        getMutableGroupStateInfo().mergeFrom(other.groupStateInfo);
       }
       return this;
     }
@@ -279,9 +279,9 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       id = 0;
-      dDLKGEHPIGM = false;
-      groupStateInfo.clear();
+      pECAGANEKGI = false;
       motion.clear();
+      groupStateInfo.clear();
       return this;
     }
 
@@ -292,8 +292,8 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      groupStateInfo.clearQuick();
       motion.clearQuick();
+      groupStateInfo.clearQuick();
       return this;
     }
 
@@ -308,28 +308,28 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       RestoreWolfBroGameArchiveCsReq other = (RestoreWolfBroGameArchiveCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasId() || id == other.id)
-        && (!hasDDLKGEHPIGM() || dDLKGEHPIGM == other.dDLKGEHPIGM)
-        && (!hasGroupStateInfo() || groupStateInfo.equals(other.groupStateInfo))
-        && (!hasMotion() || motion.equals(other.motion));
+        && (!hasPECAGANEKGI() || pECAGANEKGI == other.pECAGANEKGI)
+        && (!hasMotion() || motion.equals(other.motion))
+        && (!hasGroupStateInfo() || groupStateInfo.equals(other.groupStateInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeBoolNoTag(dDLKGEHPIGM);
+        output.writeRawByte((byte) 24);
+        output.writeBoolNoTag(pECAGANEKGI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 66);
-        output.writeMessageNoTag(groupStateInfo);
+        output.writeRawByte((byte) 34);
+        output.writeMessageNoTag(motion);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeMessageNoTag(motion);
+        output.writeRawByte((byte) 82);
+        output.writeMessageNoTag(groupStateInfo);
       }
     }
 
@@ -343,10 +343,10 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(groupStateInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(groupStateInfo);
       }
       return size;
     }
@@ -358,36 +358,36 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 8: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 24) {
               break;
             }
           }
-          case 56: {
-            // dDLKGEHPIGM
-            dDLKGEHPIGM = input.readBool();
+          case 24: {
+            // pECAGANEKGI
+            pECAGANEKGI = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 34) {
               break;
             }
           }
-          case 66: {
-            // groupStateInfo
-            input.readMessage(groupStateInfo);
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 114) {
-              break;
-            }
-          }
-          case 114: {
+          case 34: {
             // motion
             input.readMessage(motion);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // groupStateInfo
+            input.readMessage(groupStateInfo);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -415,13 +415,13 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
         output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.dDLKGEHPIGM, dDLKGEHPIGM);
+        output.writeBool(FieldNames.pECAGANEKGI, pECAGANEKGI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.groupStateInfo, groupStateInfo);
+        output.writeMessage(FieldNames.motion, motion);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.motion, motion);
+        output.writeMessage(FieldNames.groupStateInfo, groupStateInfo);
       }
       output.endObject();
     }
@@ -444,11 +444,22 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
             }
             break;
           }
-          case 155158506: {
-            if (input.isAtField(FieldNames.dDLKGEHPIGM)) {
+          case -1400249271: {
+            if (input.isAtField(FieldNames.pECAGANEKGI)) {
               if (!input.trySkipNullValue()) {
-                dDLKGEHPIGM = input.readBool();
+                pECAGANEKGI = input.readBool();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1068318794: {
+            if (input.isAtField(FieldNames.motion)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(motion);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -460,17 +471,6 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
             if (input.isAtField(FieldNames.groupStateInfo)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(groupStateInfo);
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1068318794: {
-            if (input.isAtField(FieldNames.motion)) {
-              if (!input.trySkipNullValue()) {
-                input.readMessage(motion);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -535,11 +535,11 @@ public final class RestoreWolfBroGameArchiveCsReqOuterClass {
     static class FieldNames {
       static final FieldName id = FieldName.forField("id");
 
-      static final FieldName dDLKGEHPIGM = FieldName.forField("DDLKGEHPIGM");
-
-      static final FieldName groupStateInfo = FieldName.forField("groupStateInfo", "group_state_info");
+      static final FieldName pECAGANEKGI = FieldName.forField("PECAGANEKGI");
 
       static final FieldName motion = FieldName.forField("motion");
+
+      static final FieldName groupStateInfo = FieldName.forField("groupStateInfo", "group_state_info");
     }
   }
 }

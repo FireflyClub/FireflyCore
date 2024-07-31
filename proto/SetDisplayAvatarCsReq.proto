@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "DisplayAvatar.proto";
 
 message SetDisplayAvatarCsReq {
-	repeated DisplayAvatar display_avatar_list = 7;
+	repeated DisplayAvatar display_avatar_list = 10;
 }

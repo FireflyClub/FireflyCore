@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message AcceptMainMissionScRsp {
-	uint32 retcode = 9;
-	uint32 main_mission_id = 1; // PMNNABLLDBA
+	uint32 retcode = 4;
+	uint32 main_mission_id = 8;
 }

@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message BattleEquipment {
-    uint32 id = 1;
-    uint32 level = 2;
-    uint32 promotion = 3; // HOAAGPBKFKG
-    uint32 rank = 4; // GJLJMAGJDNK
+	uint32 id = 1;
+	uint32 level = 2;
+	uint32 promotion = 3;
+	uint32 rank = 4;
 }

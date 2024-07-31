@@ -3,12 +3,11 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 import "MotionInfo.proto";
-import "Vector.proto";
 import "NewMapRot.proto";
 
 message RotateMapCsReq {
-    uint32 group_id = 8;
-    uint32 rotate_int = 7; // MEHDHFLFEKK
-    NewMapRot rogue_map = 3; // NCIMLLJOLKB
-    MotionInfo motion = 13;
+	MotionInfo motion = 3;
+	uint32 group_id = 6;
+	NewMapRot rogue_map = 11;
+	uint32 rotate_int = 2;
 }

@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class AcceptMainMissionCsReqOuterClass {
   /**
-   * <pre>
-   *  MIOOAMNPMEB
-   * </pre>
-   *
    * Protobuf type {@code AcceptMainMissionCsReq}
    */
   public static final class AcceptMainMissionCsReq extends ProtoMessage<AcceptMainMissionCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 main_mission_id = 4;</code>
+     * <code>optional uint32 main_mission_id = 15;</code>
      */
     private int mainMissionId;
 
@@ -31,10 +27,6 @@ public final class AcceptMainMissionCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  MIOOAMNPMEB
-     * </pre>
-     *
      * @return a new empty instance of {@code AcceptMainMissionCsReq}
      */
     public static AcceptMainMissionCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class AcceptMainMissionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 4;</code>
+     * <code>optional uint32 main_mission_id = 15;</code>
      * @return whether the mainMissionId field is set
      */
     public boolean hasMainMissionId() {
@@ -50,7 +42,7 @@ public final class AcceptMainMissionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 4;</code>
+     * <code>optional uint32 main_mission_id = 15;</code>
      * @return this
      */
     public AcceptMainMissionCsReq clearMainMissionId() {
@@ -60,7 +52,7 @@ public final class AcceptMainMissionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 4;</code>
+     * <code>optional uint32 main_mission_id = 15;</code>
      * @return the mainMissionId
      */
     public int getMainMissionId() {
@@ -68,7 +60,7 @@ public final class AcceptMainMissionCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 4;</code>
+     * <code>optional uint32 main_mission_id = 15;</code>
      * @param value the mainMissionId to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class AcceptMainMissionCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(mainMissionId);
       }
     }
@@ -158,7 +150,7 @@ public final class AcceptMainMissionCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 120: {
             // mainMissionId
             mainMissionId = input.readUInt32();
             bitField0_ |= 0x00000001;

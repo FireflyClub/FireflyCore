@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetGameplayBirthdayScRsp {
+	uint32 retcode = 13;
 	uint32 birthday = 11;
-	uint32 retcode = 6;
 }

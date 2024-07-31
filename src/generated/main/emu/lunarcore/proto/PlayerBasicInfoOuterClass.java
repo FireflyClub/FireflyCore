@@ -20,10 +20,6 @@ public final class PlayerBasicInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
@@ -39,28 +35,16 @@ public final class PlayerBasicInfoOuterClass {
     private int stamina;
 
     /**
-     * <pre>
-     *  CAGDKHDOBJH
-     * </pre>
-     *
      * <code>optional uint32 mcoin = 5;</code>
      */
     private int mcoin;
 
     /**
-     * <pre>
-     *  MBJJADKBABA
-     * </pre>
-     *
      * <code>optional uint32 hcoin = 6;</code>
      */
     private int hcoin;
 
     /**
-     * <pre>
-     *  AIDHPLNNKCD
-     * </pre>
-     *
      * <code>optional uint32 scoin = 7;</code>
      */
     private int scoin;
@@ -86,10 +70,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -98,10 +78,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -112,10 +88,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -124,10 +96,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this
@@ -213,10 +181,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CAGDKHDOBJH
-     * </pre>
-     *
      * <code>optional uint32 mcoin = 5;</code>
      * @return whether the mcoin field is set
      */
@@ -225,10 +189,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CAGDKHDOBJH
-     * </pre>
-     *
      * <code>optional uint32 mcoin = 5;</code>
      * @return this
      */
@@ -239,10 +199,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CAGDKHDOBJH
-     * </pre>
-     *
      * <code>optional uint32 mcoin = 5;</code>
      * @return the mcoin
      */
@@ -251,10 +207,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CAGDKHDOBJH
-     * </pre>
-     *
      * <code>optional uint32 mcoin = 5;</code>
      * @param value the mcoin to set
      * @return this
@@ -266,10 +218,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MBJJADKBABA
-     * </pre>
-     *
      * <code>optional uint32 hcoin = 6;</code>
      * @return whether the hcoin field is set
      */
@@ -278,10 +226,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MBJJADKBABA
-     * </pre>
-     *
      * <code>optional uint32 hcoin = 6;</code>
      * @return this
      */
@@ -292,10 +236,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MBJJADKBABA
-     * </pre>
-     *
      * <code>optional uint32 hcoin = 6;</code>
      * @return the hcoin
      */
@@ -304,10 +244,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MBJJADKBABA
-     * </pre>
-     *
      * <code>optional uint32 hcoin = 6;</code>
      * @param value the hcoin to set
      * @return this
@@ -319,10 +255,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  AIDHPLNNKCD
-     * </pre>
-     *
      * <code>optional uint32 scoin = 7;</code>
      * @return whether the scoin field is set
      */
@@ -331,10 +263,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  AIDHPLNNKCD
-     * </pre>
-     *
      * <code>optional uint32 scoin = 7;</code>
      * @return this
      */
@@ -345,10 +273,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  AIDHPLNNKCD
-     * </pre>
-     *
      * <code>optional uint32 scoin = 7;</code>
      * @return the scoin
      */
@@ -357,10 +281,6 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  AIDHPLNNKCD
-     * </pre>
-     *
      * <code>optional uint32 scoin = 7;</code>
      * @param value the scoin to set
      * @return this

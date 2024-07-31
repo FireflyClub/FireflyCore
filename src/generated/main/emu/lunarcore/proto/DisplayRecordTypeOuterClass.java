@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class DisplayRecordTypeOuterClass {
   /**
-   * <pre>
-   *  JLMBAEKILPG
-   * </pre>
-   *
    * Protobuf enum {@code DisplayRecordType}
    */
   public enum DisplayRecordType implements ProtoEnum<DisplayRecordType> {

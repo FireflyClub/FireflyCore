@@ -14,20 +14,12 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class UnlockBackGroundMusicCsReqOuterClass {
   /**
-   * <pre>
-   *  Giengjodplp
-   * </pre>
-   *
    * Protobuf type {@code UnlockBackGroundMusicCsReq}
    */
   public static final class UnlockBackGroundMusicCsReq extends ProtoMessage<UnlockBackGroundMusicCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      */
     private final RepeatedInt reqUnlockIds = RepeatedInt.newEmptyInstance();
@@ -36,10 +28,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  Giengjodplp
-     * </pre>
-     *
      * @return a new empty instance of {@code UnlockBackGroundMusicCsReq}
      */
     public static UnlockBackGroundMusicCsReq newInstance() {
@@ -47,10 +35,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      * @return whether the reqUnlockIds field is set
      */
@@ -59,10 +43,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      * @return this
      */
@@ -73,10 +53,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -91,10 +67,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -109,10 +81,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      * @param value the reqUnlockIds to add
      * @return this
@@ -124,10 +92,6 @@ public final class UnlockBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LOHKAIIIOHJ
-     * </pre>
-     *
      * <code>repeated uint32 req_unlock_ids = 3;</code>
      * @param values the reqUnlockIds to add
      * @return this

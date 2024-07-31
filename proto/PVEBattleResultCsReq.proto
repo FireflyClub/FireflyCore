@@ -6,21 +6,20 @@ import "BattleEndStatus.proto";
 import "BattleOp.proto";
 import "BattleStatistics.proto";
 
-// HNLNNBAFNGE
 message PVEBattleResultCsReq {
-	uint32 client_res_version = 7;
-    BattleStatistics stt = 5; // DOHBEPLBCAE
-    repeated BattleOp op_list = 8; // HJKKPOPIANF
-    BattleEndStatus end_status = 9; // BMAIPJJKCLC
-	bool NIMIHLJJNLH = 15;
-	bool CCEPICANIJJ = 1;
-	uint32 DLEGEAIGABF = 2;
-    bytes turn_snapshot_hash = 11; // FMJJODAFANM
-    uint32 stage_id = 6;
-    uint32 cost_time = 13;
-	map<string, uint32> BADPNPCCIPL = 10;
-	uint32 BONOKPNOLAC = 14;
-	string OAMBLPAANHG = 4;
-	bool PMLBDODKKOA = 12;
-	uint32 battle_id = 3; // HHHCKNNKFAH
+	uint32 stage_id = 5;
+	map<string, uint32> OFBINFHOHKN = 7;
+	uint32 cost_time = 13;
+	uint32 NMHJOLNHMDK = 14;
+	uint32 IFJFPGFAHGO = 4;
+	bool GBBBEBFHGOJ = 15;
+	BattleEndStatus end_status = 1;
+	bytes turn_snapshot_hash = 8;
+	BattleStatistics stt = 12;
+	bool HCGIJFEIAMK = 2;
+	uint32 battle_id = 9;
+	bool ALLDMMPDLDL = 3;
+	string HMOIDIKHBHM = 11;
+	uint32 client_res_version = 10;
+	repeated BattleOp op_list = 6;
 }

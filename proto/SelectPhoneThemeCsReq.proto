@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SelectPhoneThemeCsReq {
-    uint32 theme_id = 8; // KNLGFCAEGFJ
+	uint32 theme_id = 13;
 }

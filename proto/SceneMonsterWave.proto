@@ -6,14 +6,11 @@ import "SceneMonster.proto";
 import "SceneMonsterWaveParam.proto";
 import "ItemList.proto";
 
-// OJNPIEEFMHE
 message SceneMonsterWave {
-    repeated ItemList drop_list = 5; // EEEOPLPNGHI
-	//uint32 EFCHOMLIMAD = 9;
-	//uint32 BOHFIKNPCED = 8;
-    repeated SceneMonster monster_list = 12; // MCCHLLBANEE
-    SceneMonsterWaveParam wave_param = 6; // MLOMBBDCCDM
+	repeated SceneMonster monster_list = 4;
+	repeated ItemList drop_list = 3;
+	SceneMonsterWaveParam wave_param = 13;
 
-    uint32 monster_stage_id = 8; //?
-    uint32 wave_id = 9; //?
+    uint32 monster_stage_id = 14;
+    uint32 wave_id = 10;
 }

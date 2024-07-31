@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class SceneEntityBuffChangeTypeOuterClass {
   /**
-   * <pre>
-   *  LHBGFHFGDGL
-   * </pre>
-   *
    * Protobuf enum {@code SceneEntityBuffChangeType}
    */
   public enum SceneEntityBuffChangeType implements ProtoEnum<SceneEntityBuffChangeType> {

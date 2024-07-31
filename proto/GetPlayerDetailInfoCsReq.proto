@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetPlayerDetailInfoCsReq {
-    uint32 uid = 13;
+	uint32 uid = 1;
 }

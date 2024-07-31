@@ -13,41 +13,25 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RogueCommonBuffOuterClass {
   /**
-   * <pre>
-   * Nnckdapiopi
-   * </pre>
-   *
    * Protobuf type {@code RogueCommonBuff}
    */
   public static final class RogueCommonBuff extends ProtoMessage<RogueCommonBuff> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  daimooemhjf
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 3;</code>
-     */
-    private int buffId;
-
-    /**
-     * <pre>
-     *  pojebpchnpn
-     * </pre>
-     *
-     * <code>optional uint32 buff_level = 5;</code>
+     * <code>optional uint32 buff_level = 8;</code>
      */
     private int buffLevel;
+
+    /**
+     * <code>optional uint32 buff_id = 11;</code>
+     */
+    private int buffId;
 
     private RogueCommonBuff() {
     }
 
     /**
-     * <pre>
-     * Nnckdapiopi
-     * </pre>
-     *
      * @return a new empty instance of {@code RogueCommonBuff}
      */
     public static RogueCommonBuff newInstance() {
@@ -55,90 +39,25 @@ public final class RogueCommonBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  daimooemhjf
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 3;</code>
-     * @return whether the buffId field is set
+     * <code>optional uint32 buff_level = 8;</code>
+     * @return whether the buffLevel field is set
      */
-    public boolean hasBuffId() {
+    public boolean hasBuffLevel() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  daimooemhjf
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 3;</code>
-     * @return this
-     */
-    public RogueCommonBuff clearBuffId() {
-      bitField0_ &= ~0x00000001;
-      buffId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  daimooemhjf
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 3;</code>
-     * @return the buffId
-     */
-    public int getBuffId() {
-      return buffId;
-    }
-
-    /**
-     * <pre>
-     *  daimooemhjf
-     * </pre>
-     *
-     * <code>optional uint32 buff_id = 3;</code>
-     * @param value the buffId to set
-     * @return this
-     */
-    public RogueCommonBuff setBuffId(final int value) {
-      bitField0_ |= 0x00000001;
-      buffId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  pojebpchnpn
-     * </pre>
-     *
-     * <code>optional uint32 buff_level = 5;</code>
-     * @return whether the buffLevel field is set
-     */
-    public boolean hasBuffLevel() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     *  pojebpchnpn
-     * </pre>
-     *
-     * <code>optional uint32 buff_level = 5;</code>
+     * <code>optional uint32 buff_level = 8;</code>
      * @return this
      */
     public RogueCommonBuff clearBuffLevel() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       buffLevel = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  pojebpchnpn
-     * </pre>
-     *
-     * <code>optional uint32 buff_level = 5;</code>
+     * <code>optional uint32 buff_level = 8;</code>
      * @return the buffLevel
      */
     public int getBuffLevel() {
@@ -146,17 +65,50 @@ public final class RogueCommonBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  pojebpchnpn
-     * </pre>
-     *
-     * <code>optional uint32 buff_level = 5;</code>
+     * <code>optional uint32 buff_level = 8;</code>
      * @param value the buffLevel to set
      * @return this
      */
     public RogueCommonBuff setBuffLevel(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       buffLevel = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 11;</code>
+     * @return whether the buffId field is set
+     */
+    public boolean hasBuffId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 11;</code>
+     * @return this
+     */
+    public RogueCommonBuff clearBuffId() {
+      bitField0_ &= ~0x00000002;
+      buffId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 11;</code>
+     * @return the buffId
+     */
+    public int getBuffId() {
+      return buffId;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 11;</code>
+     * @param value the buffId to set
+     * @return this
+     */
+    public RogueCommonBuff setBuffId(final int value) {
+      bitField0_ |= 0x00000002;
+      buffId = value;
       return this;
     }
 
@@ -165,8 +117,8 @@ public final class RogueCommonBuffOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffId = other.buffId;
         buffLevel = other.buffLevel;
+        buffId = other.buffId;
       }
       return this;
     }
@@ -177,11 +129,11 @@ public final class RogueCommonBuffOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffId()) {
-        setBuffId(other.buffId);
-      }
       if (other.hasBuffLevel()) {
         setBuffLevel(other.buffLevel);
+      }
+      if (other.hasBuffId()) {
+        setBuffId(other.buffId);
       }
       return this;
     }
@@ -193,8 +145,8 @@ public final class RogueCommonBuffOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffId = 0;
       buffLevel = 0;
+      buffId = 0;
       return this;
     }
 
@@ -218,19 +170,19 @@ public final class RogueCommonBuffOuterClass {
       }
       RogueCommonBuff other = (RogueCommonBuff) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffId() || buffId == other.buffId)
-        && (!hasBuffLevel() || buffLevel == other.buffLevel);
+        && (!hasBuffLevel() || buffLevel == other.buffLevel)
+        && (!hasBuffId() || buffId == other.buffId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(buffId);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(buffLevel);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(buffLevel);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(buffId);
       }
     }
 
@@ -238,10 +190,10 @@ public final class RogueCommonBuffOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffLevel);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffLevel);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
       }
       return size;
     }
@@ -253,18 +205,18 @@ public final class RogueCommonBuffOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // buffId
-            buffId = input.readUInt32();
+          case 64: {
+            // buffLevel
+            buffLevel = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 88) {
               break;
             }
           }
-          case 40: {
-            // buffLevel
-            buffLevel = input.readUInt32();
+          case 88: {
+            // buffId
+            buffId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -289,10 +241,10 @@ public final class RogueCommonBuffOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.buffId, buffId);
+        output.writeUInt32(FieldNames.buffLevel, buffLevel);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.buffLevel, buffLevel);
+        output.writeUInt32(FieldNames.buffId, buffId);
       }
       output.endObject();
     }
@@ -304,11 +256,11 @@ public final class RogueCommonBuffOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1378119474:
-          case 227990663: {
-            if (input.isAtField(FieldNames.buffId)) {
+          case 38049521:
+          case 1729463448: {
+            if (input.isAtField(FieldNames.buffLevel)) {
               if (!input.trySkipNullValue()) {
-                buffId = input.readUInt32();
+                buffLevel = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -316,11 +268,11 @@ public final class RogueCommonBuffOuterClass {
             }
             break;
           }
-          case 38049521:
-          case 1729463448: {
-            if (input.isAtField(FieldNames.buffLevel)) {
+          case -1378119474:
+          case 227990663: {
+            if (input.isAtField(FieldNames.buffId)) {
               if (!input.trySkipNullValue()) {
-                buffLevel = input.readUInt32();
+                buffId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -381,9 +333,9 @@ public final class RogueCommonBuffOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
-
       static final FieldName buffLevel = FieldName.forField("buffLevel", "buff_level");
+
+      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
     }
   }
 }

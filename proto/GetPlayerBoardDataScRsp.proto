@@ -6,10 +6,10 @@ import "HeadIcon.proto";
 import "DisplayAvatarVec.proto";
 
 message GetPlayerBoardDataScRsp {
-    repeated uint32 display_support_avatar_vec = 4; // LDLDPDDOJJH
-    DisplayAvatarVec display_avatar_vec = 10; // MDGEMEJCLHE
-    repeated HeadIcon unlocked_head_icon_list = 1; // KIMFLMHBHOG
-    uint32 current_head_icon_id = 8;
-    string signature = 12; // CANJPBPLPEJ
-    uint32 retcode = 9;
+	repeated HeadIcon unlocked_head_icon_list = 12;
+	repeated uint32 display_support_avatar_vec = 1;
+	string signature = 13;
+	uint32 current_head_icon_id = 14;
+	DisplayAvatarVec display_avatar_vec = 4;
+	uint32 retcode = 9;
 }

@@ -2,11 +2,10 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// IFDAFHEEAAN
 message DisplayEquipmentInfo {
-    uint32 tid = 11;
-    uint32 rank = 1;
-    uint32 exp = 3;
-    uint32 promotion = 5;
-    uint32 level = 7;
+	uint32 tid = 12;
+	uint32 level = 5;
+	uint32 exp = 2;
+	uint32 promotion = 15;
+	uint32 rank = 4;
 }

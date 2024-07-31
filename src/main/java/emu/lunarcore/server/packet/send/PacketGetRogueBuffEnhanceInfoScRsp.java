@@ -21,7 +21,7 @@ public class PacketGetRogueBuffEnhanceInfoScRsp extends BasePacket {
         
         for (var buff : buffs.values()) {
             if (buff.getLevel() > 1) continue;
-            shop.addBuffInfo(RogueBuffEnhanceInfo.newInstance()
+            shop.addBuffEnhanceInfo(RogueBuffEnhanceInfo.newInstance()
                 .setBuffId(buff.getId())
                 .setItemCostList(this.getItemCostList(buff.getExcel()))
                 .setUnkFloat(1));

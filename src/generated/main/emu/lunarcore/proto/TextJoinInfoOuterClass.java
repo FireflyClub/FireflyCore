@@ -24,33 +24,32 @@ public final class TextJoinInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_config_id = 10;</code>
+     * <code>optional uint32 text_item_id = 4;</code>
      */
-    private int textItemConfigId;
+    private int textItemId;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_id = 12;</code>
+     * <code>optional uint32 text_item_config_id = 11;</code>
      */
-    private int textItemId;
+    private int textItemConfigId;
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
+     * <code>optional string EMGNFCLJILL = 7;</code>
      */
-    private final Utf8String dOBKOMLHNDK = Utf8String.newEmptyInstance();
+    private final Utf8String eMGNFCLJILL = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
+     * <code>optional string FJFBPABNBBL = 15;</code>
      */
-    private final Utf8String aEAGJKMIIOI = Utf8String.newEmptyInstance();
+    private final Utf8String fJFBPABNBBL = Utf8String.newEmptyInstance();
 
     private TextJoinInfo() {
     }
@@ -67,10 +66,10 @@ public final class TextJoinInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_config_id = 10;</code>
-     * @return whether the textItemConfigId field is set
+     * <code>optional uint32 text_item_id = 4;</code>
+     * @return whether the textItemId field is set
      */
-    public boolean hasTextItemConfigId() {
+    public boolean hasTextItemId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
@@ -79,64 +78,11 @@ public final class TextJoinInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_config_id = 10;</code>
-     * @return this
-     */
-    public TextJoinInfo clearTextItemConfigId() {
-      bitField0_ &= ~0x00000001;
-      textItemConfigId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 text_item_config_id = 10;</code>
-     * @return the textItemConfigId
-     */
-    public int getTextItemConfigId() {
-      return textItemConfigId;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 text_item_config_id = 10;</code>
-     * @param value the textItemConfigId to set
-     * @return this
-     */
-    public TextJoinInfo setTextItemConfigId(final int value) {
-      bitField0_ |= 0x00000001;
-      textItemConfigId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 text_item_id = 12;</code>
-     * @return whether the textItemId field is set
-     */
-    public boolean hasTextItemId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 text_item_id = 12;</code>
+     * <code>optional uint32 text_item_id = 4;</code>
      * @return this
      */
     public TextJoinInfo clearTextItemId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       textItemId = 0;
       return this;
     }
@@ -146,7 +92,7 @@ public final class TextJoinInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_id = 12;</code>
+     * <code>optional uint32 text_item_id = 4;</code>
      * @return the textItemId
      */
     public int getTextItemId() {
@@ -158,178 +104,224 @@ public final class TextJoinInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 text_item_id = 12;</code>
+     * <code>optional uint32 text_item_id = 4;</code>
      * @param value the textItemId to set
      * @return this
      */
     public TextJoinInfo setTextItemId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       textItemId = value;
       return this;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * ?
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @return whether the dOBKOMLHNDK field is set
+     * <code>optional uint32 text_item_config_id = 11;</code>
+     * @return whether the textItemConfigId field is set
      */
-    public boolean hasDOBKOMLHNDK() {
+    public boolean hasTextItemConfigId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 text_item_config_id = 11;</code>
+     * @return this
+     */
+    public TextJoinInfo clearTextItemConfigId() {
+      bitField0_ &= ~0x00000002;
+      textItemConfigId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 text_item_config_id = 11;</code>
+     * @return the textItemConfigId
+     */
+    public int getTextItemConfigId() {
+      return textItemConfigId;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 text_item_config_id = 11;</code>
+     * @param value the textItemConfigId to set
+     * @return this
+     */
+    public TextJoinInfo setTextItemConfigId(final int value) {
+      bitField0_ |= 0x00000002;
+      textItemConfigId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * uint32 OJHDOLDHJJG = 4;
+     * </pre>
+     *
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @return whether the eMGNFCLJILL field is set
+     */
+    public boolean hasEMGNFCLJILL() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
+     * <code>optional string EMGNFCLJILL = 7;</code>
      * @return this
      */
-    public TextJoinInfo clearDOBKOMLHNDK() {
+    public TextJoinInfo clearEMGNFCLJILL() {
       bitField0_ &= ~0x00000004;
-      dOBKOMLHNDK.clear();
+      eMGNFCLJILL.clear();
       return this;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @return the dOBKOMLHNDK
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @return the eMGNFCLJILL
      */
-    public String getDOBKOMLHNDK() {
-      return dOBKOMLHNDK.getString();
+    public String getEMGNFCLJILL() {
+      return eMGNFCLJILL.getString();
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @return internal {@code Utf8String} representation of dOBKOMLHNDK for reading
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @return internal {@code Utf8String} representation of eMGNFCLJILL for reading
      */
-    public Utf8String getDOBKOMLHNDKBytes() {
-      return this.dOBKOMLHNDK;
+    public Utf8String getEMGNFCLJILLBytes() {
+      return this.eMGNFCLJILL;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @return internal {@code Utf8String} representation of dOBKOMLHNDK for modifications
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @return internal {@code Utf8String} representation of eMGNFCLJILL for modifications
      */
-    public Utf8String getMutableDOBKOMLHNDKBytes() {
+    public Utf8String getMutableEMGNFCLJILLBytes() {
       bitField0_ |= 0x00000004;
-      return this.dOBKOMLHNDK;
+      return this.eMGNFCLJILL;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @param value the dOBKOMLHNDK to set
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @param value the eMGNFCLJILL to set
      * @return this
      */
-    public TextJoinInfo setDOBKOMLHNDK(final CharSequence value) {
+    public TextJoinInfo setEMGNFCLJILL(final CharSequence value) {
       bitField0_ |= 0x00000004;
-      dOBKOMLHNDK.copyFrom(value);
+      eMGNFCLJILL.copyFrom(value);
       return this;
     }
 
     /**
      * <pre>
-     * uint32 DEOOEPCJMPI = 12;
-     * uint32 BJOHJGNJNEI = 10;
+     * uint32 OJHDOLDHJJG = 4;
      * </pre>
      *
-     * <code>optional string DOBKOMLHNDK = 3;</code>
-     * @param value the dOBKOMLHNDK to set
+     * <code>optional string EMGNFCLJILL = 7;</code>
+     * @param value the eMGNFCLJILL to set
      * @return this
      */
-    public TextJoinInfo setDOBKOMLHNDK(final Utf8String value) {
+    public TextJoinInfo setEMGNFCLJILL(final Utf8String value) {
       bitField0_ |= 0x00000004;
-      dOBKOMLHNDK.copyFrom(value);
+      eMGNFCLJILL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @return whether the aEAGJKMIIOI field is set
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @return whether the fJFBPABNBBL field is set
      */
-    public boolean hasAEAGJKMIIOI() {
+    public boolean hasFJFBPABNBBL() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
+     * <code>optional string FJFBPABNBBL = 15;</code>
      * @return this
      */
-    public TextJoinInfo clearAEAGJKMIIOI() {
+    public TextJoinInfo clearFJFBPABNBBL() {
       bitField0_ &= ~0x00000008;
-      aEAGJKMIIOI.clear();
+      fJFBPABNBBL.clear();
       return this;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @return the aEAGJKMIIOI
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @return the fJFBPABNBBL
      */
-    public String getAEAGJKMIIOI() {
-      return aEAGJKMIIOI.getString();
+    public String getFJFBPABNBBL() {
+      return fJFBPABNBBL.getString();
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @return internal {@code Utf8String} representation of aEAGJKMIIOI for reading
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @return internal {@code Utf8String} representation of fJFBPABNBBL for reading
      */
-    public Utf8String getAEAGJKMIIOIBytes() {
-      return this.aEAGJKMIIOI;
+    public Utf8String getFJFBPABNBBLBytes() {
+      return this.fJFBPABNBBL;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @return internal {@code Utf8String} representation of aEAGJKMIIOI for modifications
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @return internal {@code Utf8String} representation of fJFBPABNBBL for modifications
      */
-    public Utf8String getMutableAEAGJKMIIOIBytes() {
+    public Utf8String getMutableFJFBPABNBBLBytes() {
       bitField0_ |= 0x00000008;
-      return this.aEAGJKMIIOI;
+      return this.fJFBPABNBBL;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @param value the aEAGJKMIIOI to set
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @param value the fJFBPABNBBL to set
      * @return this
      */
-    public TextJoinInfo setAEAGJKMIIOI(final CharSequence value) {
+    public TextJoinInfo setFJFBPABNBBL(final CharSequence value) {
       bitField0_ |= 0x00000008;
-      aEAGJKMIIOI.copyFrom(value);
+      fJFBPABNBBL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string AEAGJKMIIOI = 14;</code>
-     * @param value the aEAGJKMIIOI to set
+     * <code>optional string FJFBPABNBBL = 15;</code>
+     * @param value the fJFBPABNBBL to set
      * @return this
      */
-    public TextJoinInfo setAEAGJKMIIOI(final Utf8String value) {
+    public TextJoinInfo setFJFBPABNBBL(final Utf8String value) {
       bitField0_ |= 0x00000008;
-      aEAGJKMIIOI.copyFrom(value);
+      fJFBPABNBBL.copyFrom(value);
       return this;
     }
 
@@ -338,10 +330,10 @@ public final class TextJoinInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        textItemConfigId = other.textItemConfigId;
         textItemId = other.textItemId;
-        dOBKOMLHNDK.copyFrom(other.dOBKOMLHNDK);
-        aEAGJKMIIOI.copyFrom(other.aEAGJKMIIOI);
+        textItemConfigId = other.textItemConfigId;
+        eMGNFCLJILL.copyFrom(other.eMGNFCLJILL);
+        fJFBPABNBBL.copyFrom(other.fJFBPABNBBL);
       }
       return this;
     }
@@ -352,17 +344,17 @@ public final class TextJoinInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasTextItemConfigId()) {
-        setTextItemConfigId(other.textItemConfigId);
-      }
       if (other.hasTextItemId()) {
         setTextItemId(other.textItemId);
       }
-      if (other.hasDOBKOMLHNDK()) {
-        getMutableDOBKOMLHNDKBytes().copyFrom(other.dOBKOMLHNDK);
+      if (other.hasTextItemConfigId()) {
+        setTextItemConfigId(other.textItemConfigId);
       }
-      if (other.hasAEAGJKMIIOI()) {
-        getMutableAEAGJKMIIOIBytes().copyFrom(other.aEAGJKMIIOI);
+      if (other.hasEMGNFCLJILL()) {
+        getMutableEMGNFCLJILLBytes().copyFrom(other.eMGNFCLJILL);
+      }
+      if (other.hasFJFBPABNBBL()) {
+        getMutableFJFBPABNBBLBytes().copyFrom(other.fJFBPABNBBL);
       }
       return this;
     }
@@ -374,10 +366,10 @@ public final class TextJoinInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      textItemConfigId = 0;
       textItemId = 0;
-      dOBKOMLHNDK.clear();
-      aEAGJKMIIOI.clear();
+      textItemConfigId = 0;
+      eMGNFCLJILL.clear();
+      fJFBPABNBBL.clear();
       return this;
     }
 
@@ -388,8 +380,8 @@ public final class TextJoinInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dOBKOMLHNDK.clear();
-      aEAGJKMIIOI.clear();
+      eMGNFCLJILL.clear();
+      fJFBPABNBBL.clear();
       return this;
     }
 
@@ -403,29 +395,29 @@ public final class TextJoinInfoOuterClass {
       }
       TextJoinInfo other = (TextJoinInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasTextItemConfigId() || textItemConfigId == other.textItemConfigId)
         && (!hasTextItemId() || textItemId == other.textItemId)
-        && (!hasDOBKOMLHNDK() || dOBKOMLHNDK.equals(other.dOBKOMLHNDK))
-        && (!hasAEAGJKMIIOI() || aEAGJKMIIOI.equals(other.aEAGJKMIIOI));
+        && (!hasTextItemConfigId() || textItemConfigId == other.textItemConfigId)
+        && (!hasEMGNFCLJILL() || eMGNFCLJILL.equals(other.eMGNFCLJILL))
+        && (!hasFJFBPABNBBL() || fJFBPABNBBL.equals(other.fJFBPABNBBL));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(textItemConfigId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(textItemId);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(textItemConfigId);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 26);
-        output.writeStringNoTag(dOBKOMLHNDK);
+        output.writeRawByte((byte) 58);
+        output.writeStringNoTag(eMGNFCLJILL);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeStringNoTag(aEAGJKMIIOI);
+        output.writeRawByte((byte) 122);
+        output.writeStringNoTag(fJFBPABNBBL);
       }
     }
 
@@ -433,16 +425,16 @@ public final class TextJoinInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(textItemConfigId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(textItemId);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(textItemConfigId);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(dOBKOMLHNDK);
+        size += 1 + ProtoSink.computeStringSizeNoTag(eMGNFCLJILL);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(aEAGJKMIIOI);
+        size += 1 + ProtoSink.computeStringSizeNoTag(fJFBPABNBBL);
       }
       return size;
     }
@@ -454,36 +446,36 @@ public final class TextJoinInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
-            // textItemConfigId
-            textItemConfigId = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
+          case 32: {
             // textItemId
             textItemId = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // textItemConfigId
+            textItemConfigId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 58) {
               break;
             }
           }
-          case 26: {
-            // dOBKOMLHNDK
-            input.readString(dOBKOMLHNDK);
+          case 58: {
+            // eMGNFCLJILL
+            input.readString(eMGNFCLJILL);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 122) {
               break;
             }
           }
-          case 114: {
-            // aEAGJKMIIOI
-            input.readString(aEAGJKMIIOI);
+          case 122: {
+            // fJFBPABNBBL
+            input.readString(fJFBPABNBBL);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -508,16 +500,16 @@ public final class TextJoinInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.textItemConfigId, textItemConfigId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.textItemId, textItemId);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.textItemConfigId, textItemConfigId);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeString(FieldNames.dOBKOMLHNDK, dOBKOMLHNDK);
+        output.writeString(FieldNames.eMGNFCLJILL, eMGNFCLJILL);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeString(FieldNames.aEAGJKMIIOI, aEAGJKMIIOI);
+        output.writeString(FieldNames.fJFBPABNBBL, fJFBPABNBBL);
       }
       output.endObject();
     }
@@ -529,11 +521,11 @@ public final class TextJoinInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1448403459:
-          case -1174236578: {
-            if (input.isAtField(FieldNames.textItemConfigId)) {
+          case 1565189915:
+          case -153409355: {
+            if (input.isAtField(FieldNames.textItemId)) {
               if (!input.trySkipNullValue()) {
-                textItemConfigId = input.readUInt32();
+                textItemId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -541,11 +533,11 @@ public final class TextJoinInfoOuterClass {
             }
             break;
           }
-          case 1565189915:
-          case -153409355: {
-            if (input.isAtField(FieldNames.textItemId)) {
+          case -1448403459:
+          case -1174236578: {
+            if (input.isAtField(FieldNames.textItemConfigId)) {
               if (!input.trySkipNullValue()) {
-                textItemId = input.readUInt32();
+                textItemConfigId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -553,10 +545,10 @@ public final class TextJoinInfoOuterClass {
             }
             break;
           }
-          case 1925741223: {
-            if (input.isAtField(FieldNames.dOBKOMLHNDK)) {
+          case 1324107839: {
+            if (input.isAtField(FieldNames.eMGNFCLJILL)) {
               if (!input.trySkipNullValue()) {
-                input.readString(dOBKOMLHNDK);
+                input.readString(eMGNFCLJILL);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -564,10 +556,10 @@ public final class TextJoinInfoOuterClass {
             }
             break;
           }
-          case -375884388: {
-            if (input.isAtField(FieldNames.aEAGJKMIIOI)) {
+          case -1590982545: {
+            if (input.isAtField(FieldNames.fJFBPABNBBL)) {
               if (!input.trySkipNullValue()) {
-                input.readString(aEAGJKMIIOI);
+                input.readString(fJFBPABNBBL);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -627,13 +619,13 @@ public final class TextJoinInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName textItemConfigId = FieldName.forField("textItemConfigId", "text_item_config_id");
-
       static final FieldName textItemId = FieldName.forField("textItemId", "text_item_id");
 
-      static final FieldName dOBKOMLHNDK = FieldName.forField("DOBKOMLHNDK");
+      static final FieldName textItemConfigId = FieldName.forField("textItemConfigId", "text_item_config_id");
 
-      static final FieldName aEAGJKMIIOI = FieldName.forField("AEAGJKMIIOI");
+      static final FieldName eMGNFCLJILL = FieldName.forField("EMGNFCLJILL");
+
+      static final FieldName fJFBPABNBBL = FieldName.forField("FJFBPABNBBL");
     }
   }
 }

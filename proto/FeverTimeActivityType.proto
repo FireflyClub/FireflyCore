@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// NEHPFBIGJCP
 enum FeverTimeActivityType {
 	FEVER_TIME_BATTLE_RANK_C = 0;
 	FEVER_TIME_BATTLE_RANK_B = 1;

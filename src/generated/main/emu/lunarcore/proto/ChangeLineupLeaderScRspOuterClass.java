@@ -19,12 +19,12 @@ public final class ChangeLineupLeaderScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 slot = 5;</code>
+     * <code>optional uint32 slot_type = 8;</code>
      */
-    private int slot;
+    private int slotType;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
 
@@ -39,44 +39,44 @@ public final class ChangeLineupLeaderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 5;</code>
-     * @return whether the slot field is set
+     * <code>optional uint32 slot_type = 8;</code>
+     * @return whether the slotType field is set
      */
-    public boolean hasSlot() {
+    public boolean hasSlotType() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 slot = 5;</code>
+     * <code>optional uint32 slot_type = 8;</code>
      * @return this
      */
-    public ChangeLineupLeaderScRsp clearSlot() {
+    public ChangeLineupLeaderScRsp clearSlotType() {
       bitField0_ &= ~0x00000001;
-      slot = 0;
+      slotType = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 slot = 5;</code>
-     * @return the slot
+     * <code>optional uint32 slot_type = 8;</code>
+     * @return the slotType
      */
-    public int getSlot() {
-      return slot;
+    public int getSlotType() {
+      return slotType;
     }
 
     /**
-     * <code>optional uint32 slot = 5;</code>
-     * @param value the slot to set
+     * <code>optional uint32 slot_type = 8;</code>
+     * @param value the slotType to set
      * @return this
      */
-    public ChangeLineupLeaderScRsp setSlot(final int value) {
+    public ChangeLineupLeaderScRsp setSlotType(final int value) {
       bitField0_ |= 0x00000001;
-      slot = value;
+      slotType = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -84,7 +84,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
     public ChangeLineupLeaderScRsp clearRetcode() {
@@ -94,7 +94,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -102,7 +102,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -117,7 +117,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        slot = other.slot;
+        slotType = other.slotType;
         retcode = other.retcode;
       }
       return this;
@@ -129,8 +129,8 @@ public final class ChangeLineupLeaderScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSlot()) {
-        setSlot(other.slot);
+      if (other.hasSlotType()) {
+        setSlotType(other.slotType);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
@@ -145,7 +145,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      slot = 0;
+      slotType = 0;
       retcode = 0;
       return this;
     }
@@ -170,18 +170,18 @@ public final class ChangeLineupLeaderScRspOuterClass {
       }
       ChangeLineupLeaderScRsp other = (ChangeLineupLeaderScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasSlot() || slot == other.slot)
+        && (!hasSlotType() || slotType == other.slotType)
         && (!hasRetcode() || retcode == other.retcode);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(slot);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(slotType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(retcode);
       }
     }
@@ -190,7 +190,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(slotType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -205,16 +205,16 @@ public final class ChangeLineupLeaderScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // slot
-            slot = input.readUInt32();
+          case 64: {
+            // slotType
+            slotType = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 88) {
               break;
             }
           }
-          case 64: {
+          case 88: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -241,7 +241,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.slot, slot);
+        output.writeUInt32(FieldNames.slotType, slotType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
@@ -256,10 +256,11 @@ public final class ChangeLineupLeaderScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3533310: {
-            if (input.isAtField(FieldNames.slot)) {
+          case -1086538152:
+          case 687074523: {
+            if (input.isAtField(FieldNames.slotType)) {
               if (!input.trySkipNullValue()) {
-                slot = input.readUInt32();
+                slotType = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -331,7 +332,7 @@ public final class ChangeLineupLeaderScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName slot = FieldName.forField("slot");
+      static final FieldName slotType = FieldName.forField("slotType", "slot_type");
 
       static final FieldName retcode = FieldName.forField("retcode");
     }

@@ -14,7 +14,7 @@ public class HandlerLockEquipmentCsReq extends PacketHandler {
         var req = LockEquipmentCsReq.parseFrom(data);
 
         for (int id : req.getEquipmentIdList()) {
-            session.getServer().getInventoryService().lockItem(session.getPlayer(), id, req.getIsProtected());
+            session.getServer().getInventoryService().lockItem(session.getPlayer(), id, req.getIsLocked());
         }
         
         session.send(CmdId.LockEquipmentScRsp);

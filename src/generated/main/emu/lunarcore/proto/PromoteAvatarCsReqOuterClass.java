@@ -14,26 +14,18 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class PromoteAvatarCsReqOuterClass {
   /**
-   * <pre>
-   *  HNPPJNNGJNP
-   * </pre>
-   *
    * Protobuf type {@code PromoteAvatarCsReq}
    */
   public static final class PromoteAvatarCsReq extends ProtoMessage<PromoteAvatarCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
+     * <code>optional uint32 base_avatar_id = 1;</code>
      */
-    private int sceneAvatarId;
+    private int baseAvatarId;
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      */
     private final RepeatedMessage<ItemCostOuterClass.ItemCost> itemList = RepeatedMessage.newEmptyInstance(ItemCostOuterClass.ItemCost.getFactory());
 
@@ -41,10 +33,6 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HNPPJNNGJNP
-     * </pre>
-     *
      * @return a new empty instance of {@code PromoteAvatarCsReq}
      */
     public static PromoteAvatarCsReq newInstance() {
@@ -52,60 +40,44 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @return whether the sceneAvatarId field is set
+     * <code>optional uint32 base_avatar_id = 1;</code>
+     * @return whether the baseAvatarId field is set
      */
-    public boolean hasSceneAvatarId() {
+    public boolean hasBaseAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
+     * <code>optional uint32 base_avatar_id = 1;</code>
      * @return this
      */
-    public PromoteAvatarCsReq clearSceneAvatarId() {
+    public PromoteAvatarCsReq clearBaseAvatarId() {
       bitField0_ &= ~0x00000001;
-      sceneAvatarId = 0;
+      baseAvatarId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @return the sceneAvatarId
+     * <code>optional uint32 base_avatar_id = 1;</code>
+     * @return the baseAvatarId
      */
-    public int getSceneAvatarId() {
-      return sceneAvatarId;
+    public int getBaseAvatarId() {
+      return baseAvatarId;
     }
 
     /**
-     * <pre>
-     *  OOLGGPJLNAF
-     * </pre>
-     *
-     * <code>optional uint32 scene_avatar_id = 11;</code>
-     * @param value the sceneAvatarId to set
+     * <code>optional uint32 base_avatar_id = 1;</code>
+     * @param value the baseAvatarId to set
      * @return this
      */
-    public PromoteAvatarCsReq setSceneAvatarId(final int value) {
+    public PromoteAvatarCsReq setBaseAvatarId(final int value) {
       bitField0_ |= 0x00000001;
-      sceneAvatarId = value;
+      baseAvatarId = value;
       return this;
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      * @return whether the itemList field is set
      */
     public boolean hasItemList() {
@@ -113,7 +85,7 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      * @return this
      */
     public PromoteAvatarCsReq clearItemList() {
@@ -123,7 +95,7 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -137,7 +109,7 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -151,7 +123,7 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      * @param value the itemList to add
      * @return this
      */
@@ -162,7 +134,7 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 4;</code>
+     * <code>repeated .ItemCost item_list = 6;</code>
      * @param values the itemList to add
      * @return this
      */
@@ -177,7 +149,7 @@ public final class PromoteAvatarCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        sceneAvatarId = other.sceneAvatarId;
+        baseAvatarId = other.baseAvatarId;
         itemList.copyFrom(other.itemList);
       }
       return this;
@@ -189,8 +161,8 @@ public final class PromoteAvatarCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSceneAvatarId()) {
-        setSceneAvatarId(other.sceneAvatarId);
+      if (other.hasBaseAvatarId()) {
+        setBaseAvatarId(other.baseAvatarId);
       }
       if (other.hasItemList()) {
         getMutableItemList().addAll(other.itemList);
@@ -205,7 +177,7 @@ public final class PromoteAvatarCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      sceneAvatarId = 0;
+      baseAvatarId = 0;
       itemList.clear();
       return this;
     }
@@ -231,19 +203,19 @@ public final class PromoteAvatarCsReqOuterClass {
       }
       PromoteAvatarCsReq other = (PromoteAvatarCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
+        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
         && (!hasItemList() || itemList.equals(other.itemList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(sceneAvatarId);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < itemList.length(); i++) {
-          output.writeRawByte((byte) 34);
+          output.writeRawByte((byte) 50);
           output.writeMessageNoTag(itemList.get(i));
         }
       }
@@ -253,7 +225,7 @@ public final class PromoteAvatarCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += (1 * itemList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(itemList);
@@ -268,16 +240,16 @@ public final class PromoteAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // sceneAvatarId
-            sceneAvatarId = input.readUInt32();
+          case 8: {
+            // baseAvatarId
+            baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 50) {
               break;
             }
           }
-          case 34: {
+          case 50: {
             // itemList
             tag = input.readRepeatedMessage(itemList, tag);
             bitField0_ |= 0x00000002;
@@ -303,7 +275,7 @@ public final class PromoteAvatarCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
+        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedMessage(FieldNames.itemList, itemList);
@@ -318,11 +290,11 @@ public final class PromoteAvatarCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1044772608:
-          case 1783323086: {
-            if (input.isAtField(FieldNames.sceneAvatarId)) {
+          case 118022725:
+          case -1756826157: {
+            if (input.isAtField(FieldNames.baseAvatarId)) {
               if (!input.trySkipNullValue()) {
-                sceneAvatarId = input.readUInt32();
+                baseAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -395,7 +367,7 @@ public final class PromoteAvatarCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
+      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
 
       static final FieldName itemList = FieldName.forField("itemList", "item_list");
     }

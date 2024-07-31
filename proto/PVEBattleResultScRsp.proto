@@ -6,29 +6,28 @@ import "BattleEndStatus.proto";
 import "BattleAvatar.proto";
 import "ItemList.proto";
 
-// OIELBKOIOCF
 message PVEBattleResultScRsp {
-	// ItemList DBAGCMFKABI = 6;
-	uint32 scene_event_id = 3;
-	repeated BattleAvatar pve_avatar_list = 11; // PMKOINDGNGH
-	//ItemList KHMNINDBCEC = 1822;
-	//ItemList NLKKIDOKMKG = 14;
-	bool check_identical = 1; // DMKDPNBAKKN
-	uint32 CILIOGNAKIC = 9;
-	uint32 retcode = 8;
-	// string KDNBJFIDMLJ = 12;
-	// ItemList ACCNGABCGNI = 5;
-	uint32 battle_id = 10;
-	uint32 PDJFOAHIKJH = 2;
-	// string OPAIBIIPFAA = 15;
-	BattleEndStatus end_status = 7;
-	uint32 MKBEKFAPHJE = 13;
-	uint32 stage_id = 4;
+	bool check_identical = 4;
+	repeated BattleAvatar pve_avatar_list = 7;
+	uint32 JBOAEDGLJPO = 14;
+	//string IOANCEODJOJ = 12;
+	uint32 retcode = 3;
+	uint32 stage_id = 11;
+	uint32 battle_id = 6;
+	uint32 OHNAGDLAMJO = 13;
+	uint32 scene_event_id = 15;
+	//ItemList DAKCNNCMKIH = 5;
+	//ItemList ENLCNLGHLJN = 1;
+	//ItemList IIBPIIDDEID = 73;
+	//ItemList BANPIFOJPEJ = 8;
+	uint32 KPMOFAPALOC = 9;
+	//string LEEBNNOKEEL = 10;
+	BattleEndStatus end_status = 2;
 
-	ItemList drop_data = 6; //?
+	ItemList drop_data = 1; //?
 	ItemList unk1 = 5; //?
-	ItemList unk2 = 14; //?
-	ItemList unk3 = 1822; //?
+	ItemList unk2 = 8; //?
+	ItemList unk3 = 73; //?
 	string bin_version = 12; //?
-	string res_version = 15; //?
+	string res_version = 10; //?
 }

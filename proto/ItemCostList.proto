@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCost.proto";
 
-// PEHCKCFABKB
 message ItemCostList {
-    repeated ItemCost item_list = 11; // LMCHNLPKMEJ
+	repeated ItemCost item_list = 9;
 }

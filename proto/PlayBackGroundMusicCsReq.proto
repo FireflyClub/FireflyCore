@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PlayBackGroundMusicCsReq {
-    uint32 play_music_id = 2; // HOLINHPFELN
+	uint32 play_music_id = 12;
 }

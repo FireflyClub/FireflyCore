@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneEntityTeleportCsReqOuterClass {
   /**
-   * <pre>
-   *  OJGHKBPIJKN
-   * </pre>
-   *
    * Protobuf type {@code SceneEntityTeleportCsReq}
    */
   public static final class SceneEntityTeleportCsReq extends ProtoMessage<SceneEntityTeleportCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <code>optional uint32 entry_id = 6;</code>
      */
     private int entryId;
 
@@ -36,10 +32,6 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  OJGHKBPIJKN
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneEntityTeleportCsReq}
      */
     public static SceneEntityTeleportCsReq newInstance() {
@@ -47,7 +39,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <code>optional uint32 entry_id = 6;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -55,7 +47,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <code>optional uint32 entry_id = 6;</code>
      * @return this
      */
     public SceneEntityTeleportCsReq clearEntryId() {
@@ -65,7 +57,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <code>optional uint32 entry_id = 6;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -73,7 +65,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <code>optional uint32 entry_id = 6;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -207,7 +199,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -235,7 +227,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 48: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000001;

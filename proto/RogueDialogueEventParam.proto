@@ -3,9 +3,9 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RogueDialogueEventParam {
-	int32 int_value = 5;
-	uint32 arg_id = 4;
-	float ratio = 9;
-	uint32 dialogue_event_id = 7;
-	bool is_valid = 12;
+	bool is_valid = 11;
+	uint32 dialogue_event_id = 13;
+	int32 int_value = 15;
+	float ratio = 6;
+	uint32 arg_id = 5;
 }

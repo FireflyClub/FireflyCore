@@ -10,36 +10,34 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedInt;
 
 public final class LockRelicCsReqOuterClass {
   /**
-   * <pre>
-   *  JGBMMDNEBDB
-   * </pre>
-   *
    * Protobuf type {@code LockRelicCsReq}
    */
   public static final class LockRelicCsReq extends ProtoMessage<LockRelicCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 relic_unique_id = 6;</code>
+     * <code>optional bool KIJKPEPDDEL = 1;</code>
      */
-    private int relicUniqueId;
+    private boolean kIJKPEPDDEL;
 
     /**
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_locked = 5;</code>
      */
-    private boolean isProtected;
+    private boolean isLocked;
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     */
+    private final RepeatedInt iPNGFAIPDDE = RepeatedInt.newEmptyInstance();
 
     private LockRelicCsReq() {
     }
 
     /**
-     * <pre>
-     *  JGBMMDNEBDB
-     * </pre>
-     *
      * @return a new empty instance of {@code LockRelicCsReq}
      */
     public static LockRelicCsReq newInstance() {
@@ -47,76 +45,144 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 6;</code>
-     * @return whether the relicUniqueId field is set
+     * <code>optional bool KIJKPEPDDEL = 1;</code>
+     * @return whether the kIJKPEPDDEL field is set
      */
-    public boolean hasRelicUniqueId() {
+    public boolean hasKIJKPEPDDEL() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 6;</code>
+     * <code>optional bool KIJKPEPDDEL = 1;</code>
      * @return this
      */
-    public LockRelicCsReq clearRelicUniqueId() {
+    public LockRelicCsReq clearKIJKPEPDDEL() {
       bitField0_ &= ~0x00000001;
-      relicUniqueId = 0;
+      kIJKPEPDDEL = false;
       return this;
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 6;</code>
-     * @return the relicUniqueId
+     * <code>optional bool KIJKPEPDDEL = 1;</code>
+     * @return the kIJKPEPDDEL
      */
-    public int getRelicUniqueId() {
-      return relicUniqueId;
+    public boolean getKIJKPEPDDEL() {
+      return kIJKPEPDDEL;
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 6;</code>
-     * @param value the relicUniqueId to set
+     * <code>optional bool KIJKPEPDDEL = 1;</code>
+     * @param value the kIJKPEPDDEL to set
      * @return this
      */
-    public LockRelicCsReq setRelicUniqueId(final int value) {
+    public LockRelicCsReq setKIJKPEPDDEL(final boolean value) {
       bitField0_ |= 0x00000001;
-      relicUniqueId = value;
+      kIJKPEPDDEL = value;
       return this;
     }
 
     /**
-     * <code>optional bool is_protected = 4;</code>
-     * @return whether the isProtected field is set
+     * <code>optional bool is_locked = 5;</code>
+     * @return whether the isLocked field is set
      */
-    public boolean hasIsProtected() {
+    public boolean hasIsLocked() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_locked = 5;</code>
      * @return this
      */
-    public LockRelicCsReq clearIsProtected() {
+    public LockRelicCsReq clearIsLocked() {
       bitField0_ &= ~0x00000002;
-      isProtected = false;
+      isLocked = false;
       return this;
     }
 
     /**
-     * <code>optional bool is_protected = 4;</code>
-     * @return the isProtected
+     * <code>optional bool is_locked = 5;</code>
+     * @return the isLocked
      */
-    public boolean getIsProtected() {
-      return isProtected;
+    public boolean getIsLocked() {
+      return isLocked;
     }
 
     /**
-     * <code>optional bool is_protected = 4;</code>
-     * @param value the isProtected to set
+     * <code>optional bool is_locked = 5;</code>
+     * @param value the isLocked to set
      * @return this
      */
-    public LockRelicCsReq setIsProtected(final boolean value) {
+    public LockRelicCsReq setIsLocked(final boolean value) {
       bitField0_ |= 0x00000002;
-      isProtected = value;
+      isLocked = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     * @return whether the iPNGFAIPDDE field is set
+     */
+    public boolean hasIPNGFAIPDDE() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     * @return this
+     */
+    public LockRelicCsReq clearIPNGFAIPDDE() {
+      bitField0_ &= ~0x00000004;
+      iPNGFAIPDDE.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableIPNGFAIPDDE()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getIPNGFAIPDDE() {
+      return iPNGFAIPDDE;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableIPNGFAIPDDE() {
+      bitField0_ |= 0x00000004;
+      return iPNGFAIPDDE;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     * @param value the iPNGFAIPDDE to add
+     * @return this
+     */
+    public LockRelicCsReq addIPNGFAIPDDE(final int value) {
+      bitField0_ |= 0x00000004;
+      iPNGFAIPDDE.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 4;</code>
+     * @param values the iPNGFAIPDDE to add
+     * @return this
+     */
+    public LockRelicCsReq addAllIPNGFAIPDDE(final int... values) {
+      bitField0_ |= 0x00000004;
+      iPNGFAIPDDE.addAll(values);
       return this;
     }
 
@@ -125,8 +191,9 @@ public final class LockRelicCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        relicUniqueId = other.relicUniqueId;
-        isProtected = other.isProtected;
+        kIJKPEPDDEL = other.kIJKPEPDDEL;
+        isLocked = other.isLocked;
+        iPNGFAIPDDE.copyFrom(other.iPNGFAIPDDE);
       }
       return this;
     }
@@ -137,11 +204,14 @@ public final class LockRelicCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRelicUniqueId()) {
-        setRelicUniqueId(other.relicUniqueId);
+      if (other.hasKIJKPEPDDEL()) {
+        setKIJKPEPDDEL(other.kIJKPEPDDEL);
       }
-      if (other.hasIsProtected()) {
-        setIsProtected(other.isProtected);
+      if (other.hasIsLocked()) {
+        setIsLocked(other.isLocked);
+      }
+      if (other.hasIPNGFAIPDDE()) {
+        getMutableIPNGFAIPDDE().addAll(other.iPNGFAIPDDE);
       }
       return this;
     }
@@ -153,8 +223,9 @@ public final class LockRelicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      relicUniqueId = 0;
-      isProtected = false;
+      kIJKPEPDDEL = false;
+      isLocked = false;
+      iPNGFAIPDDE.clear();
       return this;
     }
 
@@ -165,6 +236,7 @@ public final class LockRelicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      iPNGFAIPDDE.clear();
       return this;
     }
 
@@ -178,19 +250,26 @@ public final class LockRelicCsReqOuterClass {
       }
       LockRelicCsReq other = (LockRelicCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId)
-        && (!hasIsProtected() || isProtected == other.isProtected);
+        && (!hasKIJKPEPDDEL() || kIJKPEPDDEL == other.kIJKPEPDDEL)
+        && (!hasIsLocked() || isLocked == other.isLocked)
+        && (!hasIPNGFAIPDDE() || iPNGFAIPDDE.equals(other.iPNGFAIPDDE));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(relicUniqueId);
+        output.writeRawByte((byte) 8);
+        output.writeBoolNoTag(kIJKPEPDDEL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeBoolNoTag(isProtected);
+        output.writeRawByte((byte) 40);
+        output.writeBoolNoTag(isLocked);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < iPNGFAIPDDE.length(); i++) {
+          output.writeRawByte((byte) 32);
+          output.writeUInt32NoTag(iPNGFAIPDDE.array()[i]);
+        }
       }
     }
 
@@ -198,10 +277,13 @@ public final class LockRelicCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
+        size += 2;
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 2;
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * iPNGFAIPDDE.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(iPNGFAIPDDE);
       }
       return size;
     }
@@ -213,19 +295,28 @@ public final class LockRelicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // relicUniqueId
-            relicUniqueId = input.readUInt32();
+          case 8: {
+            // kIJKPEPDDEL
+            kIJKPEPDDEL = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 40) {
               break;
             }
           }
-          case 32: {
-            // isProtected
-            isProtected = input.readBool();
+          case 40: {
+            // isLocked
+            isLocked = input.readBool();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
+            // iPNGFAIPDDE [packed=true]
+            input.readPackedUInt32(iPNGFAIPDDE, tag);
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -241,6 +332,12 @@ public final class LockRelicCsReqOuterClass {
             tag = input.readTag();
             break;
           }
+          case 32: {
+            // iPNGFAIPDDE [packed=false]
+            tag = input.readRepeatedUInt32(iPNGFAIPDDE, tag);
+            bitField0_ |= 0x00000004;
+            break;
+          }
         }
       }
     }
@@ -249,10 +346,13 @@ public final class LockRelicCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
+        output.writeBool(FieldNames.kIJKPEPDDEL, kIJKPEPDDEL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.isProtected, isProtected);
+        output.writeBool(FieldNames.isLocked, isLocked);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedUInt32(FieldNames.iPNGFAIPDDE, iPNGFAIPDDE);
       }
       output.endObject();
     }
@@ -264,11 +364,10 @@ public final class LockRelicCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1966200481:
-          case 49648253: {
-            if (input.isAtField(FieldNames.relicUniqueId)) {
+          case -1796600669: {
+            if (input.isAtField(FieldNames.kIJKPEPDDEL)) {
               if (!input.trySkipNullValue()) {
-                relicUniqueId = input.readUInt32();
+                kIJKPEPDDEL = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -276,12 +375,23 @@ public final class LockRelicCsReqOuterClass {
             }
             break;
           }
-          case 569879972:
-          case -1919645991: {
-            if (input.isAtField(FieldNames.isProtected)) {
+          case -423418668:
+          case -633413697: {
+            if (input.isAtField(FieldNames.isLocked)) {
               if (!input.trySkipNullValue()) {
-                isProtected = input.readBool();
+                isLocked = input.readBool();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1300175805: {
+            if (input.isAtField(FieldNames.iPNGFAIPDDE)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(iPNGFAIPDDE);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -341,9 +451,11 @@ public final class LockRelicCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
+      static final FieldName kIJKPEPDDEL = FieldName.forField("KIJKPEPDDEL");
 
-      static final FieldName isProtected = FieldName.forField("isProtected", "is_protected");
+      static final FieldName isLocked = FieldName.forField("isLocked", "is_locked");
+
+      static final FieldName iPNGFAIPDDE = FieldName.forField("IPNGFAIPDDE");
     }
   }
 }

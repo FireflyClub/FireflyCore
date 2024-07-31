@@ -13,28 +13,20 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SetGenderCsReqOuterClass {
   /**
-   * <pre>
-   *  LAFFEFHDGAG
-   * </pre>
-   *
    * Protobuf type {@code SetGenderCsReq}
    */
   public static final class SetGenderCsReq extends ProtoMessage<SetGenderCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .Gender MLMJPADHNFE = 11;</code>
+     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
      */
-    private int mLMJPADHNFE;
+    private int hJPKBIBBNKN;
 
     private SetGenderCsReq() {
     }
 
     /**
-     * <pre>
-     *  LAFFEFHDGAG
-     * </pre>
-     *
      * @return a new empty instance of {@code SetGenderCsReq}
      */
     public static SetGenderCsReq newInstance() {
@@ -42,64 +34,64 @@ public final class SetGenderCsReqOuterClass {
     }
 
     /**
-     * <code>optional .Gender MLMJPADHNFE = 11;</code>
-     * @return whether the mLMJPADHNFE field is set
+     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
+     * @return whether the hJPKBIBBNKN field is set
      */
-    public boolean hasMLMJPADHNFE() {
+    public boolean hasHJPKBIBBNKN() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .Gender MLMJPADHNFE = 11;</code>
+     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
      * @return this
      */
-    public SetGenderCsReq clearMLMJPADHNFE() {
+    public SetGenderCsReq clearHJPKBIBBNKN() {
       bitField0_ &= ~0x00000001;
-      mLMJPADHNFE = 0;
+      hJPKBIBBNKN = 0;
       return this;
     }
 
     /**
-     * <code>optional .Gender MLMJPADHNFE = 11;</code>
-     * @return the mLMJPADHNFE
+     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
+     * @return the hJPKBIBBNKN
      */
-    public GenderOuterClass.Gender getMLMJPADHNFE() {
-      return GenderOuterClass.Gender.forNumber(mLMJPADHNFE);
+    public GenderOuterClass.Gender getHJPKBIBBNKN() {
+      return GenderOuterClass.Gender.forNumber(hJPKBIBBNKN);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SetGenderCsReq#getMLMJPADHNFE()}.getNumber().
+     * equivalent to {@link SetGenderCsReq#getHJPKBIBBNKN()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getMLMJPADHNFEValue() {
-      return mLMJPADHNFE;
+    public int getHJPKBIBBNKNValue() {
+      return hJPKBIBBNKN;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link GenderOuterClass.Gender}. Setting an invalid value
-     * can cause {@link SetGenderCsReq#getMLMJPADHNFE()} to return null
+     * can cause {@link SetGenderCsReq#getHJPKBIBBNKN()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SetGenderCsReq setMLMJPADHNFEValue(final int value) {
+    public SetGenderCsReq setHJPKBIBBNKNValue(final int value) {
       bitField0_ |= 0x00000001;
-      mLMJPADHNFE = value;
+      hJPKBIBBNKN = value;
       return this;
     }
 
     /**
-     * <code>optional .Gender MLMJPADHNFE = 11;</code>
-     * @param value the mLMJPADHNFE to set
+     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
+     * @param value the hJPKBIBBNKN to set
      * @return this
      */
-    public SetGenderCsReq setMLMJPADHNFE(final GenderOuterClass.Gender value) {
+    public SetGenderCsReq setHJPKBIBBNKN(final GenderOuterClass.Gender value) {
       bitField0_ |= 0x00000001;
-      mLMJPADHNFE = value.getNumber();
+      hJPKBIBBNKN = value.getNumber();
       return this;
     }
 
@@ -108,7 +100,7 @@ public final class SetGenderCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        mLMJPADHNFE = other.mLMJPADHNFE;
+        hJPKBIBBNKN = other.hJPKBIBBNKN;
       }
       return this;
     }
@@ -119,8 +111,8 @@ public final class SetGenderCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMLMJPADHNFE()) {
-        setMLMJPADHNFEValue(other.mLMJPADHNFE);
+      if (other.hasHJPKBIBBNKN()) {
+        setHJPKBIBBNKNValue(other.hJPKBIBBNKN);
       }
       return this;
     }
@@ -132,7 +124,7 @@ public final class SetGenderCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      mLMJPADHNFE = 0;
+      hJPKBIBBNKN = 0;
       return this;
     }
 
@@ -156,14 +148,14 @@ public final class SetGenderCsReqOuterClass {
       }
       SetGenderCsReq other = (SetGenderCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasMLMJPADHNFE() || mLMJPADHNFE == other.mLMJPADHNFE);
+        && (!hasHJPKBIBBNKN() || hJPKBIBBNKN == other.hJPKBIBBNKN);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeEnumNoTag(mLMJPADHNFE);
+        output.writeRawByte((byte) 56);
+        output.writeEnumNoTag(hJPKBIBBNKN);
       }
     }
 
@@ -171,7 +163,7 @@ public final class SetGenderCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(mLMJPADHNFE);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(hJPKBIBBNKN);
       }
       return size;
     }
@@ -183,11 +175,11 @@ public final class SetGenderCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // mLMJPADHNFE
+          case 56: {
+            // hJPKBIBBNKN
             final int value = input.readInt32();
             if (GenderOuterClass.Gender.forNumber(value) != null) {
-              mLMJPADHNFE = value;
+              hJPKBIBBNKN = value;
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
@@ -213,7 +205,7 @@ public final class SetGenderCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeEnum(FieldNames.mLMJPADHNFE, mLMJPADHNFE, GenderOuterClass.Gender.converter());
+        output.writeEnum(FieldNames.hJPKBIBBNKN, hJPKBIBBNKN, GenderOuterClass.Gender.converter());
       }
       output.endObject();
     }
@@ -225,12 +217,12 @@ public final class SetGenderCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -385785796: {
-            if (input.isAtField(FieldNames.mLMJPADHNFE)) {
+          case 1704335597: {
+            if (input.isAtField(FieldNames.hJPKBIBBNKN)) {
               if (!input.trySkipNullValue()) {
                 final GenderOuterClass.Gender value = input.readEnum(GenderOuterClass.Gender.converter());
                 if (value != null) {
-                  mLMJPADHNFE = value.getNumber();
+                  hJPKBIBBNKN = value.getNumber();
                   bitField0_ |= 0x00000001;
                 } else {
                   input.skipUnknownEnumValue();
@@ -294,7 +286,7 @@ public final class SetGenderCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName mLMJPADHNFE = FieldName.forField("MLMJPADHNFE");
+      static final FieldName hJPKBIBBNKN = FieldName.forField("HJPKBIBBNKN");
     }
   }
 }

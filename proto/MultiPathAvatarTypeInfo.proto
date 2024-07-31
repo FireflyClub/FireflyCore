@@ -6,13 +6,10 @@ import "MultiPathAvatarType.proto";
 import "AvatarSkillTree.proto";
 import "EquipRelic.proto";
 
-// PDLCDMEPDDJ
 message MultiPathAvatarTypeInfo {
-	uint32 path_equipment_id = 9; // IJHEIBNJOAO
-	MultiPathAvatarType avatar_id = 11;
-    repeated AvatarSkillTree skill_tree_list = 5; // APEMKCLHBML
-    repeated EquipRelic equip_relic_list = 13; // IGEGKGAACEF
-	repeated AvatarSkillTree all_path_special_skilltree_list = 14; // PODGAIBLNCM
-    uint32 rank = 12;
-	repeated uint32 all_path_unlocked_special_point_id_list = 15; // IBLJIJAPFFC
+	repeated AvatarSkillTree skill_tree_list = 4;
+	uint32 rank = 7;
+	uint32 path_equipment_id = 10;
+	MultiPathAvatarType avatar_id = 2;
+	repeated EquipRelic equip_relic_list = 3;
 }

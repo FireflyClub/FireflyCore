@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class SceneGroupRefreshTypeOuterClass {
   /**
-   * <pre>
-   *  LEFDMMJDIMO
-   * </pre>
-   *
    * Protobuf enum {@code SceneGroupRefreshType}
    */
   public enum SceneGroupRefreshType implements ProtoEnum<SceneGroupRefreshType> {

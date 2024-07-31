@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class FeverTimeAvatarOuterClass {
   /**
-   * <pre>
-   *  LNAPBOJEOLH
-   * </pre>
-   *
    * Protobuf type {@code FeverTimeAvatar}
    */
   public static final class FeverTimeAvatar extends ProtoMessage<FeverTimeAvatar> implements Cloneable {
@@ -36,10 +32,6 @@ public final class FeverTimeAvatarOuterClass {
     }
 
     /**
-     * <pre>
-     *  LNAPBOJEOLH
-     * </pre>
-     *
      * @return a new empty instance of {@code FeverTimeAvatar}
      */
     public static FeverTimeAvatar newInstance() {

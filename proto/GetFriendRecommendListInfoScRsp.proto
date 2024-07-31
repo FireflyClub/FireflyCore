@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "FriendRecommendInfo.proto";
 
 message GetFriendRecommendListInfoScRsp {
-	repeated FriendRecommendInfo friend_recommend_list = 13; // CMEDGDDJNMP
-	uint32 retcode = 5;
+	repeated FriendRecommendInfo friend_recommend_list = 12;
+	uint32 retcode = 7;
 }

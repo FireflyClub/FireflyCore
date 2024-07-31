@@ -21,17 +21,17 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
      */
-    private final RepeatedInt hOBOOCCEKPB = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt aPCHGHDOALJ = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      */
     private final RepeatedMessage<FriendApplyInfoOuterClass.FriendApplyInfo> friendApplyList = RepeatedMessage.newEmptyInstance(FriendApplyInfoOuterClass.FriendApplyInfo.getFactory());
 
@@ -46,7 +46,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -54,7 +54,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public GetFriendApplyListInfoScRsp clearRetcode() {
@@ -64,7 +64,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -72,7 +72,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -83,39 +83,39 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
-     * @return whether the hOBOOCCEKPB field is set
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
+     * @return whether the aPCHGHDOALJ field is set
      */
-    public boolean hasHOBOOCCEKPB() {
+    public boolean hasAPCHGHDOALJ() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
      * @return this
      */
-    public GetFriendApplyListInfoScRsp clearHOBOOCCEKPB() {
+    public GetFriendApplyListInfoScRsp clearAPCHGHDOALJ() {
       bitField0_ &= ~0x00000002;
-      hOBOOCCEKPB.clear();
+      aPCHGHDOALJ.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableHOBOOCCEKPB()} if you want to modify it.
+     * Use {@link #getMutableAPCHGHDOALJ()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getHOBOOCCEKPB() {
-      return hOBOOCCEKPB;
+    public RepeatedInt getAPCHGHDOALJ() {
+      return aPCHGHDOALJ;
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,35 +123,35 @@ public final class GetFriendApplyListInfoScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableHOBOOCCEKPB() {
+    public RepeatedInt getMutableAPCHGHDOALJ() {
       bitField0_ |= 0x00000002;
-      return hOBOOCCEKPB;
+      return aPCHGHDOALJ;
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
-     * @param value the hOBOOCCEKPB to add
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
+     * @param value the aPCHGHDOALJ to add
      * @return this
      */
-    public GetFriendApplyListInfoScRsp addHOBOOCCEKPB(final int value) {
+    public GetFriendApplyListInfoScRsp addAPCHGHDOALJ(final int value) {
       bitField0_ |= 0x00000002;
-      hOBOOCCEKPB.add(value);
+      aPCHGHDOALJ.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 HOBOOCCEKPB = 6;</code>
-     * @param values the hOBOOCCEKPB to add
+     * <code>repeated uint32 APCHGHDOALJ = 13;</code>
+     * @param values the aPCHGHDOALJ to add
      * @return this
      */
-    public GetFriendApplyListInfoScRsp addAllHOBOOCCEKPB(final int... values) {
+    public GetFriendApplyListInfoScRsp addAllAPCHGHDOALJ(final int... values) {
       bitField0_ |= 0x00000002;
-      hOBOOCCEKPB.addAll(values);
+      aPCHGHDOALJ.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      * @return whether the friendApplyList field is set
      */
     public boolean hasFriendApplyList() {
@@ -159,7 +159,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      * @return this
      */
     public GetFriendApplyListInfoScRsp clearFriendApplyList() {
@@ -169,7 +169,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -183,7 +183,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -197,7 +197,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      * @param value the friendApplyList to add
      * @return this
      */
@@ -209,7 +209,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendApplyInfo friend_apply_list = 11;</code>
+     * <code>repeated .FriendApplyInfo friend_apply_list = 10;</code>
      * @param values the friendApplyList to add
      * @return this
      */
@@ -226,7 +226,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        hOBOOCCEKPB.copyFrom(other.hOBOOCCEKPB);
+        aPCHGHDOALJ.copyFrom(other.aPCHGHDOALJ);
         friendApplyList.copyFrom(other.friendApplyList);
       }
       return this;
@@ -241,8 +241,8 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasHOBOOCCEKPB()) {
-        getMutableHOBOOCCEKPB().addAll(other.hOBOOCCEKPB);
+      if (other.hasAPCHGHDOALJ()) {
+        getMutableAPCHGHDOALJ().addAll(other.aPCHGHDOALJ);
       }
       if (other.hasFriendApplyList()) {
         getMutableFriendApplyList().addAll(other.friendApplyList);
@@ -258,7 +258,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      hOBOOCCEKPB.clear();
+      aPCHGHDOALJ.clear();
       friendApplyList.clear();
       return this;
     }
@@ -270,7 +270,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      hOBOOCCEKPB.clear();
+      aPCHGHDOALJ.clear();
       friendApplyList.clearQuick();
       return this;
     }
@@ -286,25 +286,25 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       GetFriendApplyListInfoScRsp other = (GetFriendApplyListInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasHOBOOCCEKPB() || hOBOOCCEKPB.equals(other.hOBOOCCEKPB))
+        && (!hasAPCHGHDOALJ() || aPCHGHDOALJ.equals(other.aPCHGHDOALJ))
         && (!hasFriendApplyList() || friendApplyList.equals(other.friendApplyList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < hOBOOCCEKPB.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeUInt32NoTag(hOBOOCCEKPB.array()[i]);
+        for (int i = 0; i < aPCHGHDOALJ.length(); i++) {
+          output.writeRawByte((byte) 104);
+          output.writeUInt32NoTag(aPCHGHDOALJ.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < friendApplyList.length(); i++) {
-          output.writeRawByte((byte) 90);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(friendApplyList.get(i));
         }
       }
@@ -317,7 +317,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * hOBOOCCEKPB.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hOBOOCCEKPB);
+        size += (1 * aPCHGHDOALJ.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(aPCHGHDOALJ);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * friendApplyList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(friendApplyList);
@@ -332,25 +332,25 @@ public final class GetFriendApplyListInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 106) {
               break;
             }
           }
-          case 50: {
-            // hOBOOCCEKPB [packed=true]
-            input.readPackedUInt32(hOBOOCCEKPB, tag);
+          case 106: {
+            // aPCHGHDOALJ [packed=true]
+            input.readPackedUInt32(aPCHGHDOALJ, tag);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 82) {
               break;
             }
           }
-          case 90: {
+          case 82: {
             // friendApplyList
             tag = input.readRepeatedMessage(friendApplyList, tag);
             bitField0_ |= 0x00000004;
@@ -368,9 +368,9 @@ public final class GetFriendApplyListInfoScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
-            // hOBOOCCEKPB [packed=false]
-            tag = input.readRepeatedUInt32(hOBOOCCEKPB, tag);
+          case 104: {
+            // aPCHGHDOALJ [packed=false]
+            tag = input.readRepeatedUInt32(aPCHGHDOALJ, tag);
             bitField0_ |= 0x00000002;
             break;
           }
@@ -385,7 +385,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedUInt32(FieldNames.hOBOOCCEKPB, hOBOOCCEKPB);
+        output.writeRepeatedUInt32(FieldNames.aPCHGHDOALJ, aPCHGHDOALJ);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.friendApplyList, friendApplyList);
@@ -411,10 +411,10 @@ public final class GetFriendApplyListInfoScRspOuterClass {
             }
             break;
           }
-          case 1414482035: {
-            if (input.isAtField(FieldNames.hOBOOCCEKPB)) {
+          case 1423763839: {
+            if (input.isAtField(FieldNames.aPCHGHDOALJ)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(hOBOOCCEKPB);
+                input.readRepeatedUInt32(aPCHGHDOALJ);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -490,7 +490,7 @@ public final class GetFriendApplyListInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName hOBOOCCEKPB = FieldName.forField("HOBOOCCEKPB");
+      static final FieldName aPCHGHDOALJ = FieldName.forField("APCHGHDOALJ");
 
       static final FieldName friendApplyList = FieldName.forField("friendApplyList", "friend_apply_list");
     }

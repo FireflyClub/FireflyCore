@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "Quest.proto";
 
 message GetQuestDataScRsp {
-  repeated Quest quest_list = 10; // EHMMJOOHAOJ
-  uint32 total_achievement_exp = 15;
-  uint32 retcode = 11;
+	repeated Quest quest_list = 13;
+	uint32 total_achievement_exp = 15;
+	uint32 retcode = 1;
 }

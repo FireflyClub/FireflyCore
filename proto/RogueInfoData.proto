@@ -9,9 +9,9 @@ import "RogueCurVirtualItemInfo.proto";
 import "RogueAreaInfo.proto";
 
 message RogueInfoData {
+	RogueAreaInfo rogue_area_info = 2;
+	RogueCurVirtualItemInfo rogue_virtual_item_info = 11;
+	RogueAeonInfo rogue_aeon_info = 10;
+	RogueScoreRewardInfo rogue_score_info = 3;
 	RogueSeasonInfo rogue_season_info = 14;
-    RogueAeonInfo rogue_aeon_info = 2;
-    RogueCurVirtualItemInfo rogue_virtual_item_info = 11;
-    RogueScoreRewardInfo rogue_score_info = 10;
-    RogueAreaInfo rogue_area_info = 3;
 }

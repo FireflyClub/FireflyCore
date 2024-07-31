@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ClientMailAttachmentItem {
-  uint32 mail_id = 6; // GCLKLBHLMFM
-  uint32 item_id = 1;
+	uint32 mail_id = 15;
+	uint32 item_id = 5;
 }

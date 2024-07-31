@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Mkdpclinljm
 message DoGachaInRollShopCsReq {
-	uint32 NJFGGEFHIKG = 13;
-  uint32 roll_shop_id = 11; // DLNLAHELGFN
-  uint32 gacha_random = 3;
+	uint32 gacha_random = 5;
+	uint32 roll_shop_id = 11;
+	uint32 NAMHHHBLBEN = 12;
 }

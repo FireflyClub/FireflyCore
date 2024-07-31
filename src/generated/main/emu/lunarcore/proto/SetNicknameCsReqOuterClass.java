@@ -20,20 +20,12 @@ public final class SetNicknameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  KEEAFOIHMJL
-     * </pre>
-     *
-     * <code>optional bool is_modify = 12;</code>
+     * <code>optional bool is_modify = 13;</code>
      */
     private boolean isModify;
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
 
@@ -48,11 +40,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  KEEAFOIHMJL
-     * </pre>
-     *
-     * <code>optional bool is_modify = 12;</code>
+     * <code>optional bool is_modify = 13;</code>
      * @return whether the isModify field is set
      */
     public boolean hasIsModify() {
@@ -60,11 +48,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  KEEAFOIHMJL
-     * </pre>
-     *
-     * <code>optional bool is_modify = 12;</code>
+     * <code>optional bool is_modify = 13;</code>
      * @return this
      */
     public SetNicknameCsReq clearIsModify() {
@@ -74,11 +58,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  KEEAFOIHMJL
-     * </pre>
-     *
-     * <code>optional bool is_modify = 12;</code>
+     * <code>optional bool is_modify = 13;</code>
      * @return the isModify
      */
     public boolean getIsModify() {
@@ -86,11 +66,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  KEEAFOIHMJL
-     * </pre>
-     *
-     * <code>optional bool is_modify = 12;</code>
+     * <code>optional bool is_modify = 13;</code>
      * @param value the isModify to set
      * @return this
      */
@@ -101,11 +77,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @return whether the nickname field is set
      */
     public boolean hasNickname() {
@@ -113,11 +85,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @return this
      */
     public SetNicknameCsReq clearNickname() {
@@ -127,11 +95,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @return the nickname
      */
     public String getNickname() {
@@ -139,11 +103,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @return internal {@code Utf8String} representation of nickname for reading
      */
     public Utf8String getNicknameBytes() {
@@ -151,11 +111,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
     public Utf8String getMutableNicknameBytes() {
@@ -164,11 +120,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -179,11 +131,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKANHGKGCMM
-     * </pre>
-     *
-     * <code>optional string nickname = 15;</code>
+     * <code>optional string nickname = 2;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -259,11 +207,11 @@ public final class SetNicknameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 104);
         output.writeBoolNoTag(isModify);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 18);
         output.writeStringNoTag(nickname);
       }
     }
@@ -287,16 +235,16 @@ public final class SetNicknameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 104: {
             // isModify
             isModify = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 18) {
               break;
             }
           }
-          case 122: {
+          case 18: {
             // nickname
             input.readString(nickname);
             bitField0_ |= 0x00000002;

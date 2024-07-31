@@ -13,26 +13,23 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SetFriendMarkCsReqOuterClass {
   /**
-   * <pre>
-   *  MOJIHIGKFCN
-   * </pre>
-   *
    * Protobuf type {@code SetFriendMarkCsReq}
    */
   public static final class SetFriendMarkCsReq extends ProtoMessage<SetFriendMarkCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 reason = 5;</code>
+     */
+    private int reason;
+
+    /**
+     * <code>optional uint32 uid = 15;</code>
      */
     private int uid;
 
     /**
-     * <pre>
-     *  HHDMJFGDKMM
-     * </pre>
-     *
-     * <code>optional bool is_set_mark = 1;</code>
+     * <code>optional bool is_set_mark = 11;</code>
      */
     private boolean isSetMark;
 
@@ -40,10 +37,6 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  MOJIHIGKFCN
-     * </pre>
-     *
      * @return a new empty instance of {@code SetFriendMarkCsReq}
      */
     public static SetFriendMarkCsReq newInstance() {
@@ -51,25 +44,62 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
-     * @return whether the uid field is set
+     * <code>optional uint32 reason = 5;</code>
+     * @return whether the reason field is set
      */
-    public boolean hasUid() {
+    public boolean hasReason() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 reason = 5;</code>
+     * @return this
+     */
+    public SetFriendMarkCsReq clearReason() {
+      bitField0_ &= ~0x00000001;
+      reason = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 reason = 5;</code>
+     * @return the reason
+     */
+    public int getReason() {
+      return reason;
+    }
+
+    /**
+     * <code>optional uint32 reason = 5;</code>
+     * @param value the reason to set
+     * @return this
+     */
+    public SetFriendMarkCsReq setReason(final int value) {
+      bitField0_ |= 0x00000001;
+      reason = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 uid = 15;</code>
+     * @return whether the uid field is set
+     */
+    public boolean hasUid() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 uid = 15;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearUid() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       uid = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 15;</code>
      * @return the uid
      */
     public int getUid() {
@@ -77,48 +107,36 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 7;</code>
+     * <code>optional uint32 uid = 15;</code>
      * @param value the uid to set
      * @return this
      */
     public SetFriendMarkCsReq setUid(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       uid = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  HHDMJFGDKMM
-     * </pre>
-     *
-     * <code>optional bool is_set_mark = 1;</code>
+     * <code>optional bool is_set_mark = 11;</code>
      * @return whether the isSetMark field is set
      */
     public boolean hasIsSetMark() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     *  HHDMJFGDKMM
-     * </pre>
-     *
-     * <code>optional bool is_set_mark = 1;</code>
+     * <code>optional bool is_set_mark = 11;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearIsSetMark() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       isSetMark = false;
       return this;
     }
 
     /**
-     * <pre>
-     *  HHDMJFGDKMM
-     * </pre>
-     *
-     * <code>optional bool is_set_mark = 1;</code>
+     * <code>optional bool is_set_mark = 11;</code>
      * @return the isSetMark
      */
     public boolean getIsSetMark() {
@@ -126,16 +144,12 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HHDMJFGDKMM
-     * </pre>
-     *
-     * <code>optional bool is_set_mark = 1;</code>
+     * <code>optional bool is_set_mark = 11;</code>
      * @param value the isSetMark to set
      * @return this
      */
     public SetFriendMarkCsReq setIsSetMark(final boolean value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       isSetMark = value;
       return this;
     }
@@ -145,6 +159,7 @@ public final class SetFriendMarkCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        reason = other.reason;
         uid = other.uid;
         isSetMark = other.isSetMark;
       }
@@ -157,6 +172,9 @@ public final class SetFriendMarkCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasReason()) {
+        setReason(other.reason);
+      }
       if (other.hasUid()) {
         setUid(other.uid);
       }
@@ -173,6 +191,7 @@ public final class SetFriendMarkCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      reason = 0;
       uid = 0;
       isSetMark = false;
       return this;
@@ -198,6 +217,7 @@ public final class SetFriendMarkCsReqOuterClass {
       }
       SetFriendMarkCsReq other = (SetFriendMarkCsReq) o;
       return bitField0_ == other.bitField0_
+        && (!hasReason() || reason == other.reason)
         && (!hasUid() || uid == other.uid)
         && (!hasIsSetMark() || isSetMark == other.isSetMark);
     }
@@ -205,11 +225,15 @@ public final class SetFriendMarkCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(uid);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(reason);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(uid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 88);
         output.writeBoolNoTag(isSetMark);
       }
     }
@@ -218,9 +242,12 @@ public final class SetFriendMarkCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(uid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(reason);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(uid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
       }
       return size;
@@ -233,19 +260,28 @@ public final class SetFriendMarkCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // uid
-            uid = input.readUInt32();
+          case 40: {
+            // reason
+            reason = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 120) {
               break;
             }
           }
-          case 8: {
+          case 120: {
+            // uid
+            uid = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
             // isSetMark
             isSetMark = input.readBool();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -269,9 +305,12 @@ public final class SetFriendMarkCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.uid, uid);
+        output.writeUInt32(FieldNames.reason, reason);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.uid, uid);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeBool(FieldNames.isSetMark, isSetMark);
       }
       output.endObject();
@@ -284,11 +323,22 @@ public final class SetFriendMarkCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -934964668: {
+            if (input.isAtField(FieldNames.reason)) {
+              if (!input.trySkipNullValue()) {
+                reason = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 115792: {
             if (input.isAtField(FieldNames.uid)) {
               if (!input.trySkipNullValue()) {
                 uid = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -300,7 +350,7 @@ public final class SetFriendMarkCsReqOuterClass {
             if (input.isAtField(FieldNames.isSetMark)) {
               if (!input.trySkipNullValue()) {
                 isSetMark = input.readBool();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -360,6 +410,8 @@ public final class SetFriendMarkCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName reason = FieldName.forField("reason");
+
       static final FieldName uid = FieldName.forField("uid");
 
       static final FieldName isSetMark = FieldName.forField("isSetMark", "is_set_mark");

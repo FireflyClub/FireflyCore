@@ -17,8 +17,8 @@ public class HandlerReplaceLineupCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = ReplaceLineupCsReq.parseFrom(data);
 
-        List<Integer> lineupList = new ArrayList<>(req.getSlots().length());
-        for (LineupSlotData slot : req.getSlots()) {
+        List<Integer> lineupList = new ArrayList<>(req.getSlotData().length());
+        for (LineupSlotData slot : req.getSlotData()) {
             lineupList.add(slot.getId());
         }
 

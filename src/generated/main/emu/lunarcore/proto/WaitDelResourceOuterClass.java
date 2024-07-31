@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class WaitDelResourceOuterClass {
   /**
-   * <pre>
-   *  GKKAKMDBGAD
-   * </pre>
-   *
    * Protobuf type {@code WaitDelResource}
    */
   public static final class WaitDelResource extends ProtoMessage<WaitDelResource> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 tid = 1;</code>
+     * <code>optional uint32 tid = 10;</code>
      */
     private int tid;
 
     /**
-     * <code>optional uint32 num = 10;</code>
+     * <code>optional uint32 num = 12;</code>
      */
     private int num;
 
@@ -36,10 +32,6 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <pre>
-     *  GKKAKMDBGAD
-     * </pre>
-     *
      * @return a new empty instance of {@code WaitDelResource}
      */
     public static WaitDelResource newInstance() {
@@ -47,7 +39,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 1;</code>
+     * <code>optional uint32 tid = 10;</code>
      * @return whether the tid field is set
      */
     public boolean hasTid() {
@@ -55,7 +47,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 1;</code>
+     * <code>optional uint32 tid = 10;</code>
      * @return this
      */
     public WaitDelResource clearTid() {
@@ -65,7 +57,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 1;</code>
+     * <code>optional uint32 tid = 10;</code>
      * @return the tid
      */
     public int getTid() {
@@ -73,7 +65,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 1;</code>
+     * <code>optional uint32 tid = 10;</code>
      * @param value the tid to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 10;</code>
+     * <code>optional uint32 num = 12;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -92,7 +84,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 10;</code>
+     * <code>optional uint32 num = 12;</code>
      * @return this
      */
     public WaitDelResource clearNum() {
@@ -102,7 +94,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 10;</code>
+     * <code>optional uint32 num = 12;</code>
      * @return the num
      */
     public int getNum() {
@@ -110,7 +102,7 @@ public final class WaitDelResourceOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 10;</code>
+     * <code>optional uint32 num = 12;</code>
      * @param value the num to set
      * @return this
      */
@@ -185,11 +177,11 @@ public final class WaitDelResourceOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(num);
       }
     }
@@ -213,16 +205,16 @@ public final class WaitDelResourceOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 80: {
             // tid
             tid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 96) {
               break;
             }
           }
-          case 80: {
+          case 96: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000002;

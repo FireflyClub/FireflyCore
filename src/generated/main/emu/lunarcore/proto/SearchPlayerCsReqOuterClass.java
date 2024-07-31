@@ -20,16 +20,12 @@ public final class SearchPlayerCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * <code>optional bool PGAGABFHDLE = 15;</code>
      */
-    private boolean hBKFAMAFCGB;
+    private boolean pGAGABFHDLE;
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      */
     private final RepeatedInt searchUidList = RepeatedInt.newEmptyInstance();
 
@@ -44,48 +40,44 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool HBKFAMAFCGB = 8;</code>
-     * @return whether the hBKFAMAFCGB field is set
+     * <code>optional bool PGAGABFHDLE = 15;</code>
+     * @return whether the pGAGABFHDLE field is set
      */
-    public boolean hasHBKFAMAFCGB() {
+    public boolean hasPGAGABFHDLE() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool HBKFAMAFCGB = 8;</code>
+     * <code>optional bool PGAGABFHDLE = 15;</code>
      * @return this
      */
-    public SearchPlayerCsReq clearHBKFAMAFCGB() {
+    public SearchPlayerCsReq clearPGAGABFHDLE() {
       bitField0_ &= ~0x00000001;
-      hBKFAMAFCGB = false;
+      pGAGABFHDLE = false;
       return this;
     }
 
     /**
-     * <code>optional bool HBKFAMAFCGB = 8;</code>
-     * @return the hBKFAMAFCGB
+     * <code>optional bool PGAGABFHDLE = 15;</code>
+     * @return the pGAGABFHDLE
      */
-    public boolean getHBKFAMAFCGB() {
-      return hBKFAMAFCGB;
+    public boolean getPGAGABFHDLE() {
+      return pGAGABFHDLE;
     }
 
     /**
-     * <code>optional bool HBKFAMAFCGB = 8;</code>
-     * @param value the hBKFAMAFCGB to set
+     * <code>optional bool PGAGABFHDLE = 15;</code>
+     * @param value the pGAGABFHDLE to set
      * @return this
      */
-    public SearchPlayerCsReq setHBKFAMAFCGB(final boolean value) {
+    public SearchPlayerCsReq setPGAGABFHDLE(final boolean value) {
       bitField0_ |= 0x00000001;
-      hBKFAMAFCGB = value;
+      pGAGABFHDLE = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      * @return whether the searchUidList field is set
      */
     public boolean hasSearchUidList() {
@@ -93,11 +85,7 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      * @return this
      */
     public SearchPlayerCsReq clearSearchUidList() {
@@ -107,11 +95,7 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -125,11 +109,7 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,11 +123,7 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      * @param value the searchUidList to add
      * @return this
      */
@@ -158,11 +134,7 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  PFKNLFKIJHD
-     * </pre>
-     *
-     * <code>repeated uint32 search_uid_list = 7;</code>
+     * <code>repeated uint32 search_uid_list = 6;</code>
      * @param values the searchUidList to add
      * @return this
      */
@@ -177,7 +149,7 @@ public final class SearchPlayerCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        hBKFAMAFCGB = other.hBKFAMAFCGB;
+        pGAGABFHDLE = other.pGAGABFHDLE;
         searchUidList.copyFrom(other.searchUidList);
       }
       return this;
@@ -189,8 +161,8 @@ public final class SearchPlayerCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasHBKFAMAFCGB()) {
-        setHBKFAMAFCGB(other.hBKFAMAFCGB);
+      if (other.hasPGAGABFHDLE()) {
+        setPGAGABFHDLE(other.pGAGABFHDLE);
       }
       if (other.hasSearchUidList()) {
         getMutableSearchUidList().addAll(other.searchUidList);
@@ -205,7 +177,7 @@ public final class SearchPlayerCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      hBKFAMAFCGB = false;
+      pGAGABFHDLE = false;
       searchUidList.clear();
       return this;
     }
@@ -231,19 +203,19 @@ public final class SearchPlayerCsReqOuterClass {
       }
       SearchPlayerCsReq other = (SearchPlayerCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasHBKFAMAFCGB() || hBKFAMAFCGB == other.hBKFAMAFCGB)
+        && (!hasPGAGABFHDLE() || pGAGABFHDLE == other.pGAGABFHDLE)
         && (!hasSearchUidList() || searchUidList.equals(other.searchUidList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeBoolNoTag(hBKFAMAFCGB);
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(pGAGABFHDLE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < searchUidList.length(); i++) {
-          output.writeRawByte((byte) 56);
+          output.writeRawByte((byte) 48);
           output.writeUInt32NoTag(searchUidList.array()[i]);
         }
       }
@@ -268,16 +240,16 @@ public final class SearchPlayerCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
-            // hBKFAMAFCGB
-            hBKFAMAFCGB = input.readBool();
+          case 120: {
+            // pGAGABFHDLE
+            pGAGABFHDLE = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 50) {
               break;
             }
           }
-          case 58: {
+          case 50: {
             // searchUidList [packed=true]
             input.readPackedUInt32(searchUidList, tag);
             bitField0_ |= 0x00000002;
@@ -296,7 +268,7 @@ public final class SearchPlayerCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 56: {
+          case 48: {
             // searchUidList [packed=false]
             tag = input.readRepeatedUInt32(searchUidList, tag);
             bitField0_ |= 0x00000002;
@@ -310,7 +282,7 @@ public final class SearchPlayerCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.hBKFAMAFCGB, hBKFAMAFCGB);
+        output.writeBool(FieldNames.pGAGABFHDLE, pGAGABFHDLE);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedUInt32(FieldNames.searchUidList, searchUidList);
@@ -325,10 +297,10 @@ public final class SearchPlayerCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1469105160: {
-            if (input.isAtField(FieldNames.hBKFAMAFCGB)) {
+          case -1615138243: {
+            if (input.isAtField(FieldNames.pGAGABFHDLE)) {
               if (!input.trySkipNullValue()) {
-                hBKFAMAFCGB = input.readBool();
+                pGAGABFHDLE = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -401,7 +373,7 @@ public final class SearchPlayerCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName hBKFAMAFCGB = FieldName.forField("HBKFAMAFCGB");
+      static final FieldName pGAGABFHDLE = FieldName.forField("PGAGABFHDLE");
 
       static final FieldName searchUidList = FieldName.forField("searchUidList", "search_uid_list");
     }

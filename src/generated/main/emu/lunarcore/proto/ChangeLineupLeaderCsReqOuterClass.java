@@ -19,9 +19,9 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 slot = 9;</code>
+     * <code>optional uint32 slot_type = 8;</code>
      */
-    private int slot;
+    private int slotType;
 
     private ChangeLineupLeaderCsReq() {
     }
@@ -34,39 +34,39 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 9;</code>
-     * @return whether the slot field is set
+     * <code>optional uint32 slot_type = 8;</code>
+     * @return whether the slotType field is set
      */
-    public boolean hasSlot() {
+    public boolean hasSlotType() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 slot = 9;</code>
+     * <code>optional uint32 slot_type = 8;</code>
      * @return this
      */
-    public ChangeLineupLeaderCsReq clearSlot() {
+    public ChangeLineupLeaderCsReq clearSlotType() {
       bitField0_ &= ~0x00000001;
-      slot = 0;
+      slotType = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 slot = 9;</code>
-     * @return the slot
+     * <code>optional uint32 slot_type = 8;</code>
+     * @return the slotType
      */
-    public int getSlot() {
-      return slot;
+    public int getSlotType() {
+      return slotType;
     }
 
     /**
-     * <code>optional uint32 slot = 9;</code>
-     * @param value the slot to set
+     * <code>optional uint32 slot_type = 8;</code>
+     * @param value the slotType to set
      * @return this
      */
-    public ChangeLineupLeaderCsReq setSlot(final int value) {
+    public ChangeLineupLeaderCsReq setSlotType(final int value) {
       bitField0_ |= 0x00000001;
-      slot = value;
+      slotType = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        slot = other.slot;
+        slotType = other.slotType;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class ChangeLineupLeaderCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSlot()) {
-        setSlot(other.slot);
+      if (other.hasSlotType()) {
+        setSlotType(other.slotType);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      slot = 0;
+      slotType = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       }
       ChangeLineupLeaderCsReq other = (ChangeLineupLeaderCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasSlot() || slot == other.slot);
+        && (!hasSlotType() || slotType == other.slotType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(slot);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(slotType);
       }
     }
 
@@ -138,7 +138,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(slotType);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
-            // slot
-            slot = input.readUInt32();
+          case 64: {
+            // slotType
+            slotType = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.slot, slot);
+        output.writeUInt32(FieldNames.slotType, slotType);
       }
       output.endObject();
     }
@@ -189,10 +189,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3533310: {
-            if (input.isAtField(FieldNames.slot)) {
+          case -1086538152:
+          case 687074523: {
+            if (input.isAtField(FieldNames.slotType)) {
               if (!input.trySkipNullValue()) {
-                slot = input.readUInt32();
+                slotType = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -253,7 +254,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName slot = FieldName.forField("slot");
+      static final FieldName slotType = FieldName.forField("slotType", "slot_type");
     }
   }
 }

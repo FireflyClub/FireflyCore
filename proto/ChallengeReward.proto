@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// EANDEHFDNOJ
 message ChallengeReward {
-    uint64 taken_challenge_reward = 5; // EONLIBILOOE
-    uint32 group_id = 6;
+	uint64 taken_challenge_reward = 3;
+	uint32 group_id = 1;
 }

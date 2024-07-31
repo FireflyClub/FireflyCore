@@ -35,7 +35,7 @@ public class ChatMessage {
 
     public Chat toProto() {
         var proto = Chat.newInstance()
-                .setSenderUid(this.getFromUid())
+                .setSenderChat(this.getFromUid())
                 .setSentTime(LunarCore.convertToServerTime(this.getTime()) / 1000)
                 .setMsgType(this.getType())
                 .setEmote(this.getEmote());

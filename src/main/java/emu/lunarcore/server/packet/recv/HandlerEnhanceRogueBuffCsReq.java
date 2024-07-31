@@ -12,7 +12,7 @@ public class HandlerEnhanceRogueBuffCsReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
         var proto = EnhanceRogueBuffCsReq.parseFrom(data);
-        var buffId = proto.getBuffId();
+        var buffId = proto.getRougeBuffId();
         
         var buff = session.getPlayer().getRogueInstance().enhanceBuff(buffId);
         session.send(new PacketEnhanceRogueBuffScRsp(buff));

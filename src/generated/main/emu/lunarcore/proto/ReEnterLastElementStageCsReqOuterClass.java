@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ReEnterLastElementStageCsReqOuterClass {
   /**
-   * <pre>
-   *  FJLCALAEEBA
-   * </pre>
-   *
    * Protobuf type {@code ReEnterLastElementStageCsReq}
    */
   public static final class ReEnterLastElementStageCsReq extends ProtoMessage<ReEnterLastElementStageCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 stage_id = 13;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      */
     private int stageId;
 
@@ -31,10 +27,6 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  FJLCALAEEBA
-     * </pre>
-     *
      * @return a new empty instance of {@code ReEnterLastElementStageCsReq}
      */
     public static ReEnterLastElementStageCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 13;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @return whether the stageId field is set
      */
     public boolean hasStageId() {
@@ -50,7 +42,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 13;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @return this
      */
     public ReEnterLastElementStageCsReq clearStageId() {
@@ -60,7 +52,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 13;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @return the stageId
      */
     public int getStageId() {
@@ -68,7 +60,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 13;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @param value the stageId to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(stageId);
       }
     }
@@ -158,7 +150,7 @@ public final class ReEnterLastElementStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 8: {
             // stageId
             stageId = input.readUInt32();
             bitField0_ |= 0x00000001;

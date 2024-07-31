@@ -14,58 +14,33 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SceneMonsterWaveOuterClass {
   /**
-   * <pre>
-   *  OJNPIEEFMHE
-   * </pre>
-   *
    * Protobuf type {@code SceneMonsterWave}
    */
   public static final class SceneMonsterWave extends ProtoMessage<SceneMonsterWave> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 monster_stage_id = 8;</code>
-     */
-    private int monsterStageId;
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 9;</code>
+     * <code>optional uint32 wave_id = 10;</code>
      */
     private int waveId;
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional uint32 monster_stage_id = 14;</code>
+     */
+    private int monsterStageId;
+
+    /**
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      */
     private final SceneMonsterWaveParamOuterClass.SceneMonsterWaveParam waveParam = SceneMonsterWaveParamOuterClass.SceneMonsterWaveParam.newInstance();
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      */
     private final RepeatedMessage<ItemListOuterClass.ItemList> dropList = RepeatedMessage.newEmptyInstance(ItemListOuterClass.ItemList.getFactory());
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      */
     private final RepeatedMessage<SceneMonsterOuterClass.SceneMonster> monsterList = RepeatedMessage.newEmptyInstance(SceneMonsterOuterClass.SceneMonster.getFactory());
 
@@ -73,10 +48,6 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  OJNPIEEFMHE
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneMonsterWave}
      */
     public static SceneMonsterWave newInstance() {
@@ -84,90 +55,25 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 monster_stage_id = 8;</code>
-     * @return whether the monsterStageId field is set
+     * <code>optional uint32 wave_id = 10;</code>
+     * @return whether the waveId field is set
      */
-    public boolean hasMonsterStageId() {
+    public boolean hasWaveId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 monster_stage_id = 8;</code>
-     * @return this
-     */
-    public SceneMonsterWave clearMonsterStageId() {
-      bitField0_ &= ~0x00000001;
-      monsterStageId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 monster_stage_id = 8;</code>
-     * @return the monsterStageId
-     */
-    public int getMonsterStageId() {
-      return monsterStageId;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 monster_stage_id = 8;</code>
-     * @param value the monsterStageId to set
-     * @return this
-     */
-    public SceneMonsterWave setMonsterStageId(final int value) {
-      bitField0_ |= 0x00000001;
-      monsterStageId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 9;</code>
-     * @return whether the waveId field is set
-     */
-    public boolean hasWaveId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 9;</code>
+     * <code>optional uint32 wave_id = 10;</code>
      * @return this
      */
     public SceneMonsterWave clearWaveId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       waveId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 9;</code>
+     * <code>optional uint32 wave_id = 10;</code>
      * @return the waveId
      */
     public int getWaveId() {
@@ -175,26 +81,55 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 9;</code>
+     * <code>optional uint32 wave_id = 10;</code>
      * @param value the waveId to set
      * @return this
      */
     public SceneMonsterWave setWaveId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       waveId = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional uint32 monster_stage_id = 14;</code>
+     * @return whether the monsterStageId field is set
+     */
+    public boolean hasMonsterStageId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 monster_stage_id = 14;</code>
+     * @return this
+     */
+    public SceneMonsterWave clearMonsterStageId() {
+      bitField0_ &= ~0x00000002;
+      monsterStageId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 monster_stage_id = 14;</code>
+     * @return the monsterStageId
+     */
+    public int getMonsterStageId() {
+      return monsterStageId;
+    }
+
+    /**
+     * <code>optional uint32 monster_stage_id = 14;</code>
+     * @param value the monsterStageId to set
+     * @return this
+     */
+    public SceneMonsterWave setMonsterStageId(final int value) {
+      bitField0_ |= 0x00000002;
+      monsterStageId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      * @return whether the waveParam field is set
      */
     public boolean hasWaveParam() {
@@ -202,11 +137,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      * @return this
      */
     public SceneMonsterWave clearWaveParam() {
@@ -216,11 +147,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -234,11 +161,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -252,11 +175,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  MLOMBBDCCDM
-     * </pre>
-     *
-     * <code>optional .SceneMonsterWaveParam wave_param = 6;</code>
+     * <code>optional .SceneMonsterWaveParam wave_param = 13;</code>
      * @param value the waveParam to set
      * @return this
      */
@@ -268,11 +187,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      * @return whether the dropList field is set
      */
     public boolean hasDropList() {
@@ -280,11 +195,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      * @return this
      */
     public SceneMonsterWave clearDropList() {
@@ -294,11 +205,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -312,11 +219,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -330,11 +233,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      * @param value the dropList to add
      * @return this
      */
@@ -345,11 +244,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     *  EEEOPLPNGHI
-     * </pre>
-     *
-     * <code>repeated .ItemList drop_list = 5;</code>
+     * <code>repeated .ItemList drop_list = 3;</code>
      * @param values the dropList to add
      * @return this
      */
@@ -360,12 +255,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      * @return whether the monsterList field is set
      */
     public boolean hasMonsterList() {
@@ -373,12 +263,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      * @return this
      */
     public SceneMonsterWave clearMonsterList() {
@@ -388,12 +273,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -407,12 +287,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -426,12 +301,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      * @param value the monsterList to add
      * @return this
      */
@@ -442,12 +312,7 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 EFCHOMLIMAD = 9;
-     * uint32 BOHFIKNPCED = 8;
-     * </pre>
-     *
-     * <code>repeated .SceneMonster monster_list = 12;</code>
+     * <code>repeated .SceneMonster monster_list = 4;</code>
      * @param values the monsterList to add
      * @return this
      */
@@ -462,8 +327,8 @@ public final class SceneMonsterWaveOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        monsterStageId = other.monsterStageId;
         waveId = other.waveId;
+        monsterStageId = other.monsterStageId;
         waveParam.copyFrom(other.waveParam);
         dropList.copyFrom(other.dropList);
         monsterList.copyFrom(other.monsterList);
@@ -477,11 +342,11 @@ public final class SceneMonsterWaveOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMonsterStageId()) {
-        setMonsterStageId(other.monsterStageId);
-      }
       if (other.hasWaveId()) {
         setWaveId(other.waveId);
+      }
+      if (other.hasMonsterStageId()) {
+        setMonsterStageId(other.monsterStageId);
       }
       if (other.hasWaveParam()) {
         getMutableWaveParam().mergeFrom(other.waveParam);
@@ -502,8 +367,8 @@ public final class SceneMonsterWaveOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      monsterStageId = 0;
       waveId = 0;
+      monsterStageId = 0;
       waveParam.clear();
       dropList.clear();
       monsterList.clear();
@@ -533,8 +398,8 @@ public final class SceneMonsterWaveOuterClass {
       }
       SceneMonsterWave other = (SceneMonsterWave) o;
       return bitField0_ == other.bitField0_
-        && (!hasMonsterStageId() || monsterStageId == other.monsterStageId)
         && (!hasWaveId() || waveId == other.waveId)
+        && (!hasMonsterStageId() || monsterStageId == other.monsterStageId)
         && (!hasWaveParam() || waveParam.equals(other.waveParam))
         && (!hasDropList() || dropList.equals(other.dropList))
         && (!hasMonsterList() || monsterList.equals(other.monsterList));
@@ -543,26 +408,26 @@ public final class SceneMonsterWaveOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(monsterStageId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(waveId);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(monsterStageId);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 106);
         output.writeMessageNoTag(waveParam);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < dropList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(dropList.get(i));
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < monsterList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 34);
           output.writeMessageNoTag(monsterList.get(i));
         }
       }
@@ -572,10 +437,10 @@ public final class SceneMonsterWaveOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterStageId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(waveId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(waveId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(monsterStageId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(waveParam);
@@ -596,42 +461,42 @@ public final class SceneMonsterWaveOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
-            // monsterStageId
-            monsterStageId = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
+          case 80: {
             // waveId
             waveId = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 112) {
               break;
             }
           }
-          case 50: {
+          case 112: {
+            // monsterStageId
+            monsterStageId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
             // waveParam
             input.readMessage(waveParam);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 26) {
               break;
             }
           }
-          case 42: {
+          case 26: {
             // dropList
             tag = input.readRepeatedMessage(dropList, tag);
             bitField0_ |= 0x00000008;
-            if (tag != 98) {
+            if (tag != 34) {
               break;
             }
           }
-          case 98: {
+          case 34: {
             // monsterList
             tag = input.readRepeatedMessage(monsterList, tag);
             bitField0_ |= 0x00000010;
@@ -657,10 +522,10 @@ public final class SceneMonsterWaveOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.monsterStageId, monsterStageId);
+        output.writeUInt32(FieldNames.waveId, waveId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.waveId, waveId);
+        output.writeUInt32(FieldNames.monsterStageId, monsterStageId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.waveParam, waveParam);
@@ -681,11 +546,11 @@ public final class SceneMonsterWaveOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 737913727:
-          case -1978334015: {
-            if (input.isAtField(FieldNames.monsterStageId)) {
+          case -794902028:
+          case 1127862305: {
+            if (input.isAtField(FieldNames.waveId)) {
               if (!input.trySkipNullValue()) {
-                monsterStageId = input.readUInt32();
+                waveId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -693,11 +558,11 @@ public final class SceneMonsterWaveOuterClass {
             }
             break;
           }
-          case -794902028:
-          case 1127862305: {
-            if (input.isAtField(FieldNames.waveId)) {
+          case 737913727:
+          case -1978334015: {
+            if (input.isAtField(FieldNames.monsterStageId)) {
               if (!input.trySkipNullValue()) {
-                waveId = input.readUInt32();
+                monsterStageId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -794,9 +659,9 @@ public final class SceneMonsterWaveOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName monsterStageId = FieldName.forField("monsterStageId", "monster_stage_id");
-
       static final FieldName waveId = FieldName.forField("waveId", "wave_id");
+
+      static final FieldName monsterStageId = FieldName.forField("monsterStageId", "monster_stage_id");
 
       static final FieldName waveParam = FieldName.forField("waveParam", "wave_param");
 

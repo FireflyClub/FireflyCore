@@ -14,22 +14,18 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class ChallengeBossBuffInfoOuterClass {
   /**
-   * <pre>
-   *  MMNKELPFNPF
-   * </pre>
-   *
    * Protobuf type {@code ChallengeBossBuffInfo}
    */
   public static final class ChallengeBossBuffInfo extends ProtoMessage<ChallengeBossBuffInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 PKGLMGHDPNJ = 12;</code>
+     * <code>optional uint32 KAEFAFNNEEK = 9;</code>
      */
-    private int pKGLMGHDPNJ;
+    private int kAEFAFNNEEK;
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      */
     private final RepeatedInt buffList = RepeatedInt.newEmptyInstance();
 
@@ -37,10 +33,6 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MMNKELPFNPF
-     * </pre>
-     *
      * @return a new empty instance of {@code ChallengeBossBuffInfo}
      */
     public static ChallengeBossBuffInfo newInstance() {
@@ -48,44 +40,44 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 PKGLMGHDPNJ = 12;</code>
-     * @return whether the pKGLMGHDPNJ field is set
+     * <code>optional uint32 KAEFAFNNEEK = 9;</code>
+     * @return whether the kAEFAFNNEEK field is set
      */
-    public boolean hasPKGLMGHDPNJ() {
+    public boolean hasKAEFAFNNEEK() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 PKGLMGHDPNJ = 12;</code>
+     * <code>optional uint32 KAEFAFNNEEK = 9;</code>
      * @return this
      */
-    public ChallengeBossBuffInfo clearPKGLMGHDPNJ() {
+    public ChallengeBossBuffInfo clearKAEFAFNNEEK() {
       bitField0_ &= ~0x00000001;
-      pKGLMGHDPNJ = 0;
+      kAEFAFNNEEK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 PKGLMGHDPNJ = 12;</code>
-     * @return the pKGLMGHDPNJ
+     * <code>optional uint32 KAEFAFNNEEK = 9;</code>
+     * @return the kAEFAFNNEEK
      */
-    public int getPKGLMGHDPNJ() {
-      return pKGLMGHDPNJ;
+    public int getKAEFAFNNEEK() {
+      return kAEFAFNNEEK;
     }
 
     /**
-     * <code>optional uint32 PKGLMGHDPNJ = 12;</code>
-     * @param value the pKGLMGHDPNJ to set
+     * <code>optional uint32 KAEFAFNNEEK = 9;</code>
+     * @param value the kAEFAFNNEEK to set
      * @return this
      */
-    public ChallengeBossBuffInfo setPKGLMGHDPNJ(final int value) {
+    public ChallengeBossBuffInfo setKAEFAFNNEEK(final int value) {
       bitField0_ |= 0x00000001;
-      pKGLMGHDPNJ = value;
+      kAEFAFNNEEK = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      * @return whether the buffList field is set
      */
     public boolean hasBuffList() {
@@ -93,7 +85,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      * @return this
      */
     public ChallengeBossBuffInfo clearBuffList() {
@@ -103,7 +95,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -117,7 +109,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -131,7 +123,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      * @param value the buffList to add
      * @return this
      */
@@ -142,7 +134,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <code>repeated uint32 buff_list = 10;</code>
      * @param values the buffList to add
      * @return this
      */
@@ -157,7 +149,7 @@ public final class ChallengeBossBuffInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pKGLMGHDPNJ = other.pKGLMGHDPNJ;
+        kAEFAFNNEEK = other.kAEFAFNNEEK;
         buffList.copyFrom(other.buffList);
       }
       return this;
@@ -169,8 +161,8 @@ public final class ChallengeBossBuffInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPKGLMGHDPNJ()) {
-        setPKGLMGHDPNJ(other.pKGLMGHDPNJ);
+      if (other.hasKAEFAFNNEEK()) {
+        setKAEFAFNNEEK(other.kAEFAFNNEEK);
       }
       if (other.hasBuffList()) {
         getMutableBuffList().addAll(other.buffList);
@@ -185,7 +177,7 @@ public final class ChallengeBossBuffInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pKGLMGHDPNJ = 0;
+      kAEFAFNNEEK = 0;
       buffList.clear();
       return this;
     }
@@ -211,19 +203,19 @@ public final class ChallengeBossBuffInfoOuterClass {
       }
       ChallengeBossBuffInfo other = (ChallengeBossBuffInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasPKGLMGHDPNJ() || pKGLMGHDPNJ == other.pKGLMGHDPNJ)
+        && (!hasKAEFAFNNEEK() || kAEFAFNNEEK == other.kAEFAFNNEEK)
         && (!hasBuffList() || buffList.equals(other.buffList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(pKGLMGHDPNJ);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(kAEFAFNNEEK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < buffList.length(); i++) {
-          output.writeRawByte((byte) 72);
+          output.writeRawByte((byte) 80);
           output.writeUInt32NoTag(buffList.array()[i]);
         }
       }
@@ -233,7 +225,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pKGLMGHDPNJ);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kAEFAFNNEEK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += (1 * buffList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(buffList);
@@ -248,16 +240,16 @@ public final class ChallengeBossBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // pKGLMGHDPNJ
-            pKGLMGHDPNJ = input.readUInt32();
+          case 72: {
+            // kAEFAFNNEEK
+            kAEFAFNNEEK = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 82) {
               break;
             }
           }
-          case 74: {
+          case 82: {
             // buffList [packed=true]
             input.readPackedUInt32(buffList, tag);
             bitField0_ |= 0x00000002;
@@ -276,7 +268,7 @@ public final class ChallengeBossBuffInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 72: {
+          case 80: {
             // buffList [packed=false]
             tag = input.readRepeatedUInt32(buffList, tag);
             bitField0_ |= 0x00000002;
@@ -290,7 +282,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.pKGLMGHDPNJ, pKGLMGHDPNJ);
+        output.writeUInt32(FieldNames.kAEFAFNNEEK, kAEFAFNNEEK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedUInt32(FieldNames.buffList, buffList);
@@ -305,10 +297,10 @@ public final class ChallengeBossBuffInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1968094742: {
-            if (input.isAtField(FieldNames.pKGLMGHDPNJ)) {
+          case -301844337: {
+            if (input.isAtField(FieldNames.kAEFAFNNEEK)) {
               if (!input.trySkipNullValue()) {
-                pKGLMGHDPNJ = input.readUInt32();
+                kAEFAFNNEEK = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -381,7 +373,7 @@ public final class ChallengeBossBuffInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pKGLMGHDPNJ = FieldName.forField("PKGLMGHDPNJ");
+      static final FieldName kAEFAFNNEEK = FieldName.forField("KAEFAFNNEEK");
 
       static final FieldName buffList = FieldName.forField("buffList", "buff_list");
     }

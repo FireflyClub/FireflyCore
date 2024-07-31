@@ -20,34 +20,22 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  HJMKKIDODAK
-     * </pre>
-     *
-     * <code>optional uint32 target_uid = 2;</code>
-     */
-    private int targetUid;
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     */
-    private int retcode;
-
-    /**
-     * <pre>
-     *  HFLCFKCGIPH
-     * </pre>
-     *
-     * <code>optional uint32 sender_uid = 11;</code>
+     * <code>optional uint32 sender_uid = 3;</code>
      */
     private int senderUid;
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>optional uint32 target_uid = 7;</code>
+     */
+    private int targetUid;
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     */
+    private int retcode;
+
+    /**
+     * <code>repeated .Chat chat_list = 9;</code>
      */
     private final RepeatedMessage<ChatOuterClass.Chat> chatList = RepeatedMessage.newEmptyInstance(ChatOuterClass.Chat.getFactory());
 
@@ -62,127 +50,25 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  HJMKKIDODAK
-     * </pre>
-     *
-     * <code>optional uint32 target_uid = 2;</code>
-     * @return whether the targetUid field is set
+     * <code>optional uint32 sender_uid = 3;</code>
+     * @return whether the senderUid field is set
      */
-    public boolean hasTargetUid() {
+    public boolean hasSenderUid() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  HJMKKIDODAK
-     * </pre>
-     *
-     * <code>optional uint32 target_uid = 2;</code>
-     * @return this
-     */
-    public GetPrivateChatHistoryScRsp clearTargetUid() {
-      bitField0_ &= ~0x00000001;
-      targetUid = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  HJMKKIDODAK
-     * </pre>
-     *
-     * <code>optional uint32 target_uid = 2;</code>
-     * @return the targetUid
-     */
-    public int getTargetUid() {
-      return targetUid;
-    }
-
-    /**
-     * <pre>
-     *  HJMKKIDODAK
-     * </pre>
-     *
-     * <code>optional uint32 target_uid = 2;</code>
-     * @param value the targetUid to set
-     * @return this
-     */
-    public GetPrivateChatHistoryScRsp setTargetUid(final int value) {
-      bitField0_ |= 0x00000001;
-      targetUid = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return this
-     */
-    public GetPrivateChatHistoryScRsp clearRetcode() {
-      bitField0_ &= ~0x00000002;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public GetPrivateChatHistoryScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000002;
-      retcode = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  HFLCFKCGIPH
-     * </pre>
-     *
-     * <code>optional uint32 sender_uid = 11;</code>
-     * @return whether the senderUid field is set
-     */
-    public boolean hasSenderUid() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     *  HFLCFKCGIPH
-     * </pre>
-     *
-     * <code>optional uint32 sender_uid = 11;</code>
+     * <code>optional uint32 sender_uid = 3;</code>
      * @return this
      */
     public GetPrivateChatHistoryScRsp clearSenderUid() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       senderUid = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  HFLCFKCGIPH
-     * </pre>
-     *
-     * <code>optional uint32 sender_uid = 11;</code>
+     * <code>optional uint32 sender_uid = 3;</code>
      * @return the senderUid
      */
     public int getSenderUid() {
@@ -190,26 +76,92 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  HFLCFKCGIPH
-     * </pre>
-     *
-     * <code>optional uint32 sender_uid = 11;</code>
+     * <code>optional uint32 sender_uid = 3;</code>
      * @param value the senderUid to set
      * @return this
      */
     public GetPrivateChatHistoryScRsp setSenderUid(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       senderUid = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>optional uint32 target_uid = 7;</code>
+     * @return whether the targetUid field is set
+     */
+    public boolean hasTargetUid() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 target_uid = 7;</code>
+     * @return this
+     */
+    public GetPrivateChatHistoryScRsp clearTargetUid() {
+      bitField0_ &= ~0x00000002;
+      targetUid = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 target_uid = 7;</code>
+     * @return the targetUid
+     */
+    public int getTargetUid() {
+      return targetUid;
+    }
+
+    /**
+     * <code>optional uint32 target_uid = 7;</code>
+     * @param value the targetUid to set
+     * @return this
+     */
+    public GetPrivateChatHistoryScRsp setTargetUid(final int value) {
+      bitField0_ |= 0x00000002;
+      targetUid = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return this
+     */
+    public GetPrivateChatHistoryScRsp clearRetcode() {
+      bitField0_ &= ~0x00000004;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public GetPrivateChatHistoryScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000004;
+      retcode = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated .Chat chat_list = 9;</code>
      * @return whether the chatList field is set
      */
     public boolean hasChatList() {
@@ -217,11 +169,7 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>repeated .Chat chat_list = 9;</code>
      * @return this
      */
     public GetPrivateChatHistoryScRsp clearChatList() {
@@ -231,11 +179,7 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>repeated .Chat chat_list = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -249,11 +193,7 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>repeated .Chat chat_list = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -267,11 +207,7 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>repeated .Chat chat_list = 9;</code>
      * @param value the chatList to add
      * @return this
      */
@@ -282,11 +218,7 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  FMKFIJNAAIG
-     * </pre>
-     *
-     * <code>repeated .Chat chat_list = 8;</code>
+     * <code>repeated .Chat chat_list = 9;</code>
      * @param values the chatList to add
      * @return this
      */
@@ -301,9 +233,9 @@ public final class GetPrivateChatHistoryScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        senderUid = other.senderUid;
         targetUid = other.targetUid;
         retcode = other.retcode;
-        senderUid = other.senderUid;
         chatList.copyFrom(other.chatList);
       }
       return this;
@@ -315,14 +247,14 @@ public final class GetPrivateChatHistoryScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasSenderUid()) {
+        setSenderUid(other.senderUid);
+      }
       if (other.hasTargetUid()) {
         setTargetUid(other.targetUid);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
-      }
-      if (other.hasSenderUid()) {
-        setSenderUid(other.senderUid);
       }
       if (other.hasChatList()) {
         getMutableChatList().addAll(other.chatList);
@@ -337,9 +269,9 @@ public final class GetPrivateChatHistoryScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      senderUid = 0;
       targetUid = 0;
       retcode = 0;
-      senderUid = 0;
       chatList.clear();
       return this;
     }
@@ -365,29 +297,29 @@ public final class GetPrivateChatHistoryScRspOuterClass {
       }
       GetPrivateChatHistoryScRsp other = (GetPrivateChatHistoryScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasSenderUid() || senderUid == other.senderUid)
         && (!hasTargetUid() || targetUid == other.targetUid)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasSenderUid() || senderUid == other.senderUid)
         && (!hasChatList() || chatList.equals(other.chatList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(targetUid);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(senderUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(targetUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(senderUid);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < chatList.length(); i++) {
-          output.writeRawByte((byte) 66);
+          output.writeRawByte((byte) 74);
           output.writeMessageNoTag(chatList.get(i));
         }
       }
@@ -397,13 +329,13 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(targetUid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(senderUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(targetUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(senderUid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * chatList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(chatList);
@@ -418,34 +350,34 @@ public final class GetPrivateChatHistoryScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // targetUid
-            targetUid = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 88) {
-              break;
-            }
-          }
-          case 88: {
+          case 24: {
             // senderUid
             senderUid = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 56) {
               break;
             }
           }
-          case 66: {
+          case 56: {
+            // targetUid
+            targetUid = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // retcode
+            retcode = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
             // chatList
             tag = input.readRepeatedMessage(chatList, tag);
             bitField0_ |= 0x00000008;
@@ -471,13 +403,13 @@ public final class GetPrivateChatHistoryScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.targetUid, targetUid);
+        output.writeUInt32(FieldNames.senderUid, senderUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.targetUid, targetUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.senderUid, senderUid);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.chatList, chatList);
@@ -492,12 +424,24 @@ public final class GetPrivateChatHistoryScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 32180699:
+          case 997911366: {
+            if (input.isAtField(FieldNames.senderUid)) {
+              if (!input.trySkipNullValue()) {
+                senderUid = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -815586049:
           case 486945954: {
             if (input.isAtField(FieldNames.targetUid)) {
               if (!input.trySkipNullValue()) {
                 targetUid = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -508,18 +452,6 @@ public final class GetPrivateChatHistoryScRspOuterClass {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 32180699:
-          case 997911366: {
-            if (input.isAtField(FieldNames.senderUid)) {
-              if (!input.trySkipNullValue()) {
-                senderUid = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -592,11 +524,11 @@ public final class GetPrivateChatHistoryScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName senderUid = FieldName.forField("senderUid", "sender_uid");
+
       static final FieldName targetUid = FieldName.forField("targetUid", "target_uid");
 
       static final FieldName retcode = FieldName.forField("retcode");
-
-      static final FieldName senderUid = FieldName.forField("senderUid", "sender_uid");
 
       static final FieldName chatList = FieldName.forField("chatList", "chat_list");
     }

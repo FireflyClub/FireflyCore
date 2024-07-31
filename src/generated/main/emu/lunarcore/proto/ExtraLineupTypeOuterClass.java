@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class ExtraLineupTypeOuterClass {
   /**
-   * <pre>
-   *  EOOKPOABBOG
-   * </pre>
-   *
    * Protobuf enum {@code ExtraLineupType}
    */
   public enum ExtraLineupType implements ProtoEnum<ExtraLineupType> {
@@ -86,7 +82,12 @@ public final class ExtraLineupTypeOuterClass {
     /**
      * <code>LINEUP_RELIC_ROGUE = 15;</code>
      */
-    LINEUP_RELIC_ROGUE("LINEUP_RELIC_ROGUE", 15);
+    LINEUP_RELIC_ROGUE("LINEUP_RELIC_ROGUE", 15),
+
+    /**
+     * <code>LINEUP_ARCADE_ROGUE = 16;</code>
+     */
+    LINEUP_ARCADE_ROGUE("LINEUP_ARCADE_ROGUE", 16);
 
     /**
      * <code>LINEUP_NONE = 0;</code>
@@ -163,6 +164,11 @@ public final class ExtraLineupTypeOuterClass {
      */
     public static final int LINEUP_RELIC_ROGUE_VALUE = 15;
 
+    /**
+     * <code>LINEUP_ARCADE_ROGUE = 16;</code>
+     */
+    public static final int LINEUP_ARCADE_ROGUE_VALUE = 16;
+
     private final String name;
 
     private final int number;
@@ -216,7 +222,7 @@ public final class ExtraLineupTypeOuterClass {
     enum ExtraLineupTypeConverter implements ProtoEnum.EnumConverter<ExtraLineupType> {
       INSTANCE;
 
-      private static final ExtraLineupType[] lookup = new ExtraLineupType[16];
+      private static final ExtraLineupType[] lookup = new ExtraLineupType[17];
 
       static {
         lookup[0] = LINEUP_NONE;
@@ -234,6 +240,7 @@ public final class ExtraLineupTypeOuterClass {
         lookup[13] = LINEUP_HELIOBUS;
         lookup[14] = LINEUP_TOURN_ROGUE;
         lookup[15] = LINEUP_RELIC_ROGUE;
+        lookup[16] = LINEUP_ARCADE_ROGUE;
       }
 
       @Override
@@ -298,6 +305,12 @@ public final class ExtraLineupTypeOuterClass {
             }
             if (ProtoUtil.isEqual("LINEUP_RELIC_ROGUE", value)) {
               return LINEUP_RELIC_ROGUE;
+            }
+            break;
+          }
+          case 19: {
+            if (ProtoUtil.isEqual("LINEUP_ARCADE_ROGUE", value)) {
+              return LINEUP_ARCADE_ROGUE;
             }
             break;
           }

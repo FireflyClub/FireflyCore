@@ -19,14 +19,14 @@ public final class RogueBuffOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_id = 2;</code>
-     */
-    private int buffId;
-
-    /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 3;</code>
      */
     private int level;
+
+    /**
+     * <code>optional uint32 buff_id = 7;</code>
+     */
+    private int buffId;
 
     private RogueBuff() {
     }
@@ -39,62 +39,25 @@ public final class RogueBuffOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 2;</code>
-     * @return whether the buffId field is set
+     * <code>optional uint32 level = 3;</code>
+     * @return whether the level field is set
      */
-    public boolean hasBuffId() {
+    public boolean hasLevel() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 buff_id = 2;</code>
-     * @return this
-     */
-    public RogueBuff clearBuffId() {
-      bitField0_ &= ~0x00000001;
-      buffId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 buff_id = 2;</code>
-     * @return the buffId
-     */
-    public int getBuffId() {
-      return buffId;
-    }
-
-    /**
-     * <code>optional uint32 buff_id = 2;</code>
-     * @param value the buffId to set
-     * @return this
-     */
-    public RogueBuff setBuffId(final int value) {
-      bitField0_ |= 0x00000001;
-      buffId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     * @return whether the level field is set
-     */
-    public boolean hasLevel() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 3;</code>
      * @return this
      */
     public RogueBuff clearLevel() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       level = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 3;</code>
      * @return the level
      */
     public int getLevel() {
@@ -102,13 +65,50 @@ public final class RogueBuffOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 3;</code>
      * @param value the level to set
      * @return this
      */
     public RogueBuff setLevel(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       level = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 7;</code>
+     * @return whether the buffId field is set
+     */
+    public boolean hasBuffId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 7;</code>
+     * @return this
+     */
+    public RogueBuff clearBuffId() {
+      bitField0_ &= ~0x00000002;
+      buffId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 7;</code>
+     * @return the buffId
+     */
+    public int getBuffId() {
+      return buffId;
+    }
+
+    /**
+     * <code>optional uint32 buff_id = 7;</code>
+     * @param value the buffId to set
+     * @return this
+     */
+    public RogueBuff setBuffId(final int value) {
+      bitField0_ |= 0x00000002;
+      buffId = value;
       return this;
     }
 
@@ -117,8 +117,8 @@ public final class RogueBuffOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffId = other.buffId;
         level = other.level;
+        buffId = other.buffId;
       }
       return this;
     }
@@ -129,11 +129,11 @@ public final class RogueBuffOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffId()) {
-        setBuffId(other.buffId);
-      }
       if (other.hasLevel()) {
         setLevel(other.level);
+      }
+      if (other.hasBuffId()) {
+        setBuffId(other.buffId);
       }
       return this;
     }
@@ -145,8 +145,8 @@ public final class RogueBuffOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffId = 0;
       level = 0;
+      buffId = 0;
       return this;
     }
 
@@ -170,19 +170,19 @@ public final class RogueBuffOuterClass {
       }
       RogueBuff other = (RogueBuff) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffId() || buffId == other.buffId)
-        && (!hasLevel() || level == other.level);
+        && (!hasLevel() || level == other.level)
+        && (!hasBuffId() || buffId == other.buffId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(buffId);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(level);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(buffId);
       }
     }
 
@@ -190,10 +190,10 @@ public final class RogueBuffOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
       }
       return size;
     }
@@ -205,18 +205,18 @@ public final class RogueBuffOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // buffId
-            buffId = input.readUInt32();
+          case 24: {
+            // level
+            level = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 56) {
               break;
             }
           }
-          case 88: {
-            // level
-            level = input.readUInt32();
+          case 56: {
+            // buffId
+            buffId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +241,10 @@ public final class RogueBuffOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.buffId, buffId);
+        output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.level, level);
+        output.writeUInt32(FieldNames.buffId, buffId);
       }
       output.endObject();
     }
@@ -256,11 +256,10 @@ public final class RogueBuffOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1378119474:
-          case 227990663: {
-            if (input.isAtField(FieldNames.buffId)) {
+          case 102865796: {
+            if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
-                buffId = input.readUInt32();
+                level = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -268,10 +267,11 @@ public final class RogueBuffOuterClass {
             }
             break;
           }
-          case 102865796: {
-            if (input.isAtField(FieldNames.level)) {
+          case -1378119474:
+          case 227990663: {
+            if (input.isAtField(FieldNames.buffId)) {
               if (!input.trySkipNullValue()) {
-                level = input.readUInt32();
+                buffId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -331,9 +331,9 @@ public final class RogueBuffOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
-
       static final FieldName level = FieldName.forField("level");
+
+      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
     }
   }
 }

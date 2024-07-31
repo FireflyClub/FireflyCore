@@ -20,64 +20,36 @@ public final class AvatarPropertyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  LNOAODAOJBE
-     * </pre>
-     *
      * <code>optional double max_hp = 1;</code>
      */
     private double maxHp;
 
     /**
-     * <pre>
-     *  JAAPHOAGJIP
-     * </pre>
-     *
      * <code>optional double attack = 2;</code>
      */
     private double attack;
 
     /**
-     * <pre>
-     *  GAFPMMHAOHB
-     * </pre>
-     *
      * <code>optional double defence = 3;</code>
      */
     private double defence;
 
     /**
-     * <pre>
-     *  JBOAKEGOMAB
-     * </pre>
-     *
      * <code>optional double speed = 4;</code>
      */
     private double speed;
 
     /**
-     * <pre>
-     *  EICPEENNKKB
-     * </pre>
-     *
      * <code>optional double left_hp = 5;</code>
      */
     private double leftHp;
 
     /**
-     * <pre>
-     *  IKMFGLHEEDL
-     * </pre>
-     *
      * <code>optional double left_sp = 6;</code>
      */
     private double leftSp;
 
     /**
-     * <pre>
-     *  BFLPKGCIBPA
-     * </pre>
-     *
      * <code>optional double max_sp = 7;</code>
      */
     private double maxSp;
@@ -93,10 +65,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LNOAODAOJBE
-     * </pre>
-     *
      * <code>optional double max_hp = 1;</code>
      * @return whether the maxHp field is set
      */
@@ -105,10 +73,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LNOAODAOJBE
-     * </pre>
-     *
      * <code>optional double max_hp = 1;</code>
      * @return this
      */
@@ -119,10 +83,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LNOAODAOJBE
-     * </pre>
-     *
      * <code>optional double max_hp = 1;</code>
      * @return the maxHp
      */
@@ -131,10 +91,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LNOAODAOJBE
-     * </pre>
-     *
      * <code>optional double max_hp = 1;</code>
      * @param value the maxHp to set
      * @return this
@@ -146,10 +102,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JAAPHOAGJIP
-     * </pre>
-     *
      * <code>optional double attack = 2;</code>
      * @return whether the attack field is set
      */
@@ -158,10 +110,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JAAPHOAGJIP
-     * </pre>
-     *
      * <code>optional double attack = 2;</code>
      * @return this
      */
@@ -172,10 +120,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JAAPHOAGJIP
-     * </pre>
-     *
      * <code>optional double attack = 2;</code>
      * @return the attack
      */
@@ -184,10 +128,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JAAPHOAGJIP
-     * </pre>
-     *
      * <code>optional double attack = 2;</code>
      * @param value the attack to set
      * @return this
@@ -199,10 +139,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAFPMMHAOHB
-     * </pre>
-     *
      * <code>optional double defence = 3;</code>
      * @return whether the defence field is set
      */
@@ -211,10 +147,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAFPMMHAOHB
-     * </pre>
-     *
      * <code>optional double defence = 3;</code>
      * @return this
      */
@@ -225,10 +157,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAFPMMHAOHB
-     * </pre>
-     *
      * <code>optional double defence = 3;</code>
      * @return the defence
      */
@@ -237,10 +165,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  GAFPMMHAOHB
-     * </pre>
-     *
      * <code>optional double defence = 3;</code>
      * @param value the defence to set
      * @return this
@@ -252,10 +176,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JBOAKEGOMAB
-     * </pre>
-     *
      * <code>optional double speed = 4;</code>
      * @return whether the speed field is set
      */
@@ -264,10 +184,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JBOAKEGOMAB
-     * </pre>
-     *
      * <code>optional double speed = 4;</code>
      * @return this
      */
@@ -278,10 +194,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JBOAKEGOMAB
-     * </pre>
-     *
      * <code>optional double speed = 4;</code>
      * @return the speed
      */
@@ -290,10 +202,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JBOAKEGOMAB
-     * </pre>
-     *
      * <code>optional double speed = 4;</code>
      * @param value the speed to set
      * @return this
@@ -305,10 +213,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EICPEENNKKB
-     * </pre>
-     *
      * <code>optional double left_hp = 5;</code>
      * @return whether the leftHp field is set
      */
@@ -317,10 +221,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EICPEENNKKB
-     * </pre>
-     *
      * <code>optional double left_hp = 5;</code>
      * @return this
      */
@@ -331,10 +231,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EICPEENNKKB
-     * </pre>
-     *
      * <code>optional double left_hp = 5;</code>
      * @return the leftHp
      */
@@ -343,10 +239,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EICPEENNKKB
-     * </pre>
-     *
      * <code>optional double left_hp = 5;</code>
      * @param value the leftHp to set
      * @return this
@@ -358,10 +250,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IKMFGLHEEDL
-     * </pre>
-     *
      * <code>optional double left_sp = 6;</code>
      * @return whether the leftSp field is set
      */
@@ -370,10 +258,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IKMFGLHEEDL
-     * </pre>
-     *
      * <code>optional double left_sp = 6;</code>
      * @return this
      */
@@ -384,10 +268,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IKMFGLHEEDL
-     * </pre>
-     *
      * <code>optional double left_sp = 6;</code>
      * @return the leftSp
      */
@@ -396,10 +276,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IKMFGLHEEDL
-     * </pre>
-     *
      * <code>optional double left_sp = 6;</code>
      * @param value the leftSp to set
      * @return this
@@ -411,10 +287,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BFLPKGCIBPA
-     * </pre>
-     *
      * <code>optional double max_sp = 7;</code>
      * @return whether the maxSp field is set
      */
@@ -423,10 +295,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BFLPKGCIBPA
-     * </pre>
-     *
      * <code>optional double max_sp = 7;</code>
      * @return this
      */
@@ -437,10 +305,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BFLPKGCIBPA
-     * </pre>
-     *
      * <code>optional double max_sp = 7;</code>
      * @return the maxSp
      */
@@ -449,10 +313,6 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BFLPKGCIBPA
-     * </pre>
-     *
      * <code>optional double max_sp = 7;</code>
      * @param value the maxSp to set
      * @return this

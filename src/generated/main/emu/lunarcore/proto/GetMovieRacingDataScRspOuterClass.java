@@ -20,16 +20,12 @@ public final class GetMovieRacingDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      */
     private final RepeatedMessage<RacingDataOuterClass.RacingData> racingData = RepeatedMessage.newEmptyInstance(RacingDataOuterClass.RacingData.getFactory());
 
@@ -44,7 +40,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -52,7 +48,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public GetMovieRacingDataScRsp clearRetcode() {
@@ -62,7 +58,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -70,7 +66,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -81,11 +77,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      * @return whether the racingData field is set
      */
     public boolean hasRacingData() {
@@ -93,11 +85,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      * @return this
      */
     public GetMovieRacingDataScRsp clearRacingData() {
@@ -107,11 +95,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -125,11 +109,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,11 +123,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      * @param value the racingData to add
      * @return this
      */
@@ -158,11 +134,7 @@ public final class GetMovieRacingDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JPJEFOIFEKC
-     * </pre>
-     *
-     * <code>repeated .RacingData racing_data = 14;</code>
+     * <code>repeated .RacingData racing_data = 13;</code>
      * @param values the racingData to add
      * @return this
      */
@@ -239,12 +211,12 @@ public final class GetMovieRacingDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < racingData.length(); i++) {
-          output.writeRawByte((byte) 114);
+          output.writeRawByte((byte) 106);
           output.writeMessageNoTag(racingData.get(i));
         }
       }
@@ -269,16 +241,16 @@ public final class GetMovieRacingDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 106) {
               break;
             }
           }
-          case 114: {
+          case 106: {
             // racingData
             tag = input.readRepeatedMessage(racingData, tag);
             bitField0_ |= 0x00000002;

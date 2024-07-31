@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "GroupStateInfo.proto";
 
 message GroupStateChangeScRsp {
-    GroupStateInfo group_state_info = 3;
-    uint32 retcode = 11;
+	GroupStateInfo group_state_info = 11;
+	uint32 retcode = 6;
 }

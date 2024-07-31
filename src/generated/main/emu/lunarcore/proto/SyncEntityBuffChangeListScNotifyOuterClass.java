@@ -14,21 +14,13 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SyncEntityBuffChangeListScNotifyOuterClass {
   /**
-   * <pre>
-   *  INGMBBBNCNJ
-   * </pre>
-   *
    * Protobuf type {@code SyncEntityBuffChangeListScNotify}
    */
   public static final class SyncEntityBuffChangeListScNotify extends ProtoMessage<SyncEntityBuffChangeListScNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      */
     private final RepeatedMessage<EntityBuffChangeInfoOuterClass.EntityBuffChangeInfo> entityBuffInfoList = RepeatedMessage.newEmptyInstance(EntityBuffChangeInfoOuterClass.EntityBuffChangeInfo.getFactory());
 
@@ -36,10 +28,6 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  INGMBBBNCNJ
-     * </pre>
-     *
      * @return a new empty instance of {@code SyncEntityBuffChangeListScNotify}
      */
     public static SyncEntityBuffChangeListScNotify newInstance() {
@@ -47,11 +35,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      * @return whether the entityBuffInfoList field is set
      */
     public boolean hasEntityBuffInfoList() {
@@ -59,11 +43,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      * @return this
      */
     public SyncEntityBuffChangeListScNotify clearEntityBuffInfoList() {
@@ -73,11 +53,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,11 +68,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -111,11 +83,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      * @param value the entityBuffInfoList to add
      * @return this
      */
@@ -127,11 +95,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NJPCOLKEEKK
-     * </pre>
-     *
-     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 10;</code>
+     * <code>repeated .EntityBuffChangeInfo entity_buff_info_list = 12;</code>
      * @param values the entityBuffInfoList to add
      * @return this
      */
@@ -204,7 +168,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < entityBuffInfoList.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 98);
           output.writeMessageNoTag(entityBuffInfoList.get(i));
         }
       }
@@ -226,7 +190,7 @@ public final class SyncEntityBuffChangeListScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
+          case 98: {
             // entityBuffInfoList
             tag = input.readRepeatedMessage(entityBuffInfoList, tag);
             bitField0_ |= 0x00000001;

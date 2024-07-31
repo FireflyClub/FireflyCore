@@ -5,11 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "Mission.proto";
 import "MissionData.proto";
 
-// ANEGBGJOCCD
 message GetMissionDataScRsp {
-	uint32 retcode = 1;
-	bool AGEAJPKFGKJ = 2;
-	repeated Mission mission_list = 11; // ILCONFGLKML
-	repeated MissionData mission_data_list = 9; // GAGLOABKOCC
-	uint32 FEAPGBPDENN = 5;
+	uint32 retcode = 10;
+	repeated MissionData mission_data_list = 12;
+	bool NCEJFANANKM = 15;
+	uint32 FBJAMCGFJJD = 13;
+	repeated Mission mission_list = 5;
 }

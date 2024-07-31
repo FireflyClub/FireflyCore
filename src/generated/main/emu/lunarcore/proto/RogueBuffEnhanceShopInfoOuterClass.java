@@ -20,9 +20,9 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
      */
-    private final RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> buffInfo = RepeatedMessage.newEmptyInstance(RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo.getFactory());
+    private final RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> buffEnhanceInfo = RepeatedMessage.newEmptyInstance(RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo.getFactory());
 
     private RogueBuffEnhanceShopInfo() {
     }
@@ -35,39 +35,40 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
-     * @return whether the buffInfo field is set
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
+     * @return whether the buffEnhanceInfo field is set
      */
-    public boolean hasBuffInfo() {
+    public boolean hasBuffEnhanceInfo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
      * @return this
      */
-    public RogueBuffEnhanceShopInfo clearBuffInfo() {
+    public RogueBuffEnhanceShopInfo clearBuffEnhanceInfo() {
       bitField0_ &= ~0x00000001;
-      buffInfo.clear();
+      buffEnhanceInfo.clear();
       return this;
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableBuffInfo()} if you want to modify it.
+     * Use {@link #getMutableBuffEnhanceInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> getBuffInfo() {
-      return buffInfo;
+    public RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> getBuffEnhanceInfo(
+        ) {
+      return buffEnhanceInfo;
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -75,33 +76,33 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> getMutableBuffInfo(
+    public RepeatedMessage<RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo> getMutableBuffEnhanceInfo(
         ) {
       bitField0_ |= 0x00000001;
-      return buffInfo;
+      return buffEnhanceInfo;
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
-     * @param value the buffInfo to add
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
+     * @param value the buffEnhanceInfo to add
      * @return this
      */
-    public RogueBuffEnhanceShopInfo addBuffInfo(
+    public RogueBuffEnhanceShopInfo addBuffEnhanceInfo(
         final RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo value) {
       bitField0_ |= 0x00000001;
-      buffInfo.add(value);
+      buffEnhanceInfo.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .RogueBuffEnhanceInfo buff_info = 10;</code>
-     * @param values the buffInfo to add
+     * <code>repeated .RogueBuffEnhanceInfo buff_enhance_info = 1;</code>
+     * @param values the buffEnhanceInfo to add
      * @return this
      */
-    public RogueBuffEnhanceShopInfo addAllBuffInfo(
+    public RogueBuffEnhanceShopInfo addAllBuffEnhanceInfo(
         final RogueBuffEnhanceInfoOuterClass.RogueBuffEnhanceInfo... values) {
       bitField0_ |= 0x00000001;
-      buffInfo.addAll(values);
+      buffEnhanceInfo.addAll(values);
       return this;
     }
 
@@ -110,7 +111,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffInfo.copyFrom(other.buffInfo);
+        buffEnhanceInfo.copyFrom(other.buffEnhanceInfo);
       }
       return this;
     }
@@ -121,8 +122,8 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffInfo()) {
-        getMutableBuffInfo().addAll(other.buffInfo);
+      if (other.hasBuffEnhanceInfo()) {
+        getMutableBuffEnhanceInfo().addAll(other.buffEnhanceInfo);
       }
       return this;
     }
@@ -134,7 +135,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffInfo.clear();
+      buffEnhanceInfo.clear();
       return this;
     }
 
@@ -145,7 +146,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffInfo.clearQuick();
+      buffEnhanceInfo.clearQuick();
       return this;
     }
 
@@ -159,15 +160,15 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       }
       RogueBuffEnhanceShopInfo other = (RogueBuffEnhanceShopInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffInfo() || buffInfo.equals(other.buffInfo));
+        && (!hasBuffEnhanceInfo() || buffEnhanceInfo.equals(other.buffEnhanceInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        for (int i = 0; i < buffInfo.length(); i++) {
-          output.writeRawByte((byte) 82);
-          output.writeMessageNoTag(buffInfo.get(i));
+        for (int i = 0; i < buffEnhanceInfo.length(); i++) {
+          output.writeRawByte((byte) 10);
+          output.writeMessageNoTag(buffEnhanceInfo.get(i));
         }
       }
     }
@@ -176,7 +177,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += (1 * buffInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(buffInfo);
+        size += (1 * buffEnhanceInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(buffEnhanceInfo);
       }
       return size;
     }
@@ -188,9 +189,9 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
-            // buffInfo
-            tag = input.readRepeatedMessage(buffInfo, tag);
+          case 10: {
+            // buffEnhanceInfo
+            tag = input.readRepeatedMessage(buffEnhanceInfo, tag);
             bitField0_ |= 0x00000001;
             if (tag != 0) {
               break;
@@ -214,7 +215,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRepeatedMessage(FieldNames.buffInfo, buffInfo);
+        output.writeRepeatedMessage(FieldNames.buffEnhanceInfo, buffEnhanceInfo);
       }
       output.endObject();
     }
@@ -226,11 +227,11 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1522874463:
-          case 55707930: {
-            if (input.isAtField(FieldNames.buffInfo)) {
+          case -734426583:
+          case 2143965195: {
+            if (input.isAtField(FieldNames.buffEnhanceInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(buffInfo);
+                input.readRepeatedMessage(buffEnhanceInfo);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -291,7 +292,7 @@ public final class RogueBuffEnhanceShopInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffInfo = FieldName.forField("buffInfo", "buff_info");
+      static final FieldName buffEnhanceInfo = FieldName.forField("buffEnhanceInfo", "buff_enhance_info");
     }
   }
 }

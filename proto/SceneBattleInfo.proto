@@ -8,24 +8,22 @@ import "BattleBuff.proto";
 import "BattleEventBattleInfo.proto";
 import "BattleTargetList.proto";
 
-// DKKIOMOCDLO
 message SceneBattleInfo {
-	//uint32 LKDEAOIJMGO = 12;
-    repeated BattleAvatar pve_avatar_list = 15;
-    repeated BattleEventBattleInfo event_battle_info_list = 1965; // AADJJDHAJKG
-    repeated BattleBuff buff_list = 3;
-	// EvolveBuildBattleInfo MONJOIMGLNA = 763;
-    uint32 stage_id = 4;
-	// OFHNBLOGEME KIELLILJENB = 854;
-	// AELAFNKGADP JBCCJMAMLOL = 63;
-    map<uint32, BattleTargetList> battle_target_info = 149;
-	bool NLLOLBFFPLK = 8;
-	//uint32 MAKAILBEICL = 2;
-    repeated SceneMonsterWave monster_wave_list = 1; // IJIFJEFEBLB
-    uint32 world_level = 6;
-	uint32 LDOPDINIKMG = 11;
-    uint32 battle_id = 14;
+	//IEIMEJDOKOC GPNMHCNAODM = 1315;
+	repeated BattleEventBattleInfo event_battle_info_list = 321;
+	//EvolveBuildBattleInfo EHEELOGGFME = 471;
+	repeated SceneMonsterWave monster_wave_list = 14;
+	uint32 world_level = 2;
+	repeated BattleBuff buff_list = 5;
+	bool CIFOOEMCPFJ = 11;
+	repeated BattleAvatar pve_avatar_list = 7;
+	uint32 logic_random_seed = 6;
+	map<uint32, BattleTargetList> battle_target_info = 892;
+	//uint32 IEAKJBAOADF = 4;
+	uint32 stage_id = 1;
+	//uint32 FBGAGKDLCLF = 9;
+	//CBIPMGKDBMJ PGKPLCABCOG = 1394;
+	uint32 battle_id = 12;
 
-    uint32 rounds_limit = 2; //?
-    uint32 logic_random_seed = 12; //?
+    uint32 rounds_limit = 4; //?
 }

@@ -6,11 +6,11 @@ import "RelicArchive.proto";
 import "MonsterArchive.proto";
 
 message ArchiveData {
-	//repeated uint32 IKCAJOOLDEM = 10;
-	repeated RelicArchive relic_list = 12;
-	repeated MonsterArchive archive_monster_id_list = 11; // AIPNNAKFKPB
-	//repeated uint32 OGNECMIJJHC = 8;
-	//repeated uint32 MMPCPEFBLLK = 2;
+	//repeated uint32 OBHEJCNAAKF = 12;
+	//repeated uint32 EHCDBDOGKEH = 3;
+	//repeated uint32 ADGJBPKDPEM = 9;
+	repeated RelicArchive relic_list = 2;
+	repeated MonsterArchive archive_monster_id_list = 5;
 
-	repeated uint32 archive_equipment_id_list = 10;
+	repeated uint32 archive_equipment_id_list = 3;
 }

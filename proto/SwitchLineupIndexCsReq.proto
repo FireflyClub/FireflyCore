@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SwitchLineupIndexCsReq {
-    uint32 index = 8;
+	uint32 index = 13;
 }

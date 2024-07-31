@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ChallengeLineupNotifyOuterClass {
   /**
-   * <pre>
-   *  PPFCEMJEFKA
-   * </pre>
-   *
    * Protobuf type {@code ChallengeLineupNotify}
    */
   public static final class ChallengeLineupNotify extends ProtoMessage<ChallengeLineupNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      */
     private int extraLineupType;
 
@@ -31,10 +27,6 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  PPFCEMJEFKA
-     * </pre>
-     *
      * @return a new empty instance of {@code ChallengeLineupNotify}
      */
     public static ChallengeLineupNotify newInstance() {
@@ -42,7 +34,7 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return whether the extraLineupType field is set
      */
     public boolean hasExtraLineupType() {
@@ -50,7 +42,7 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return this
      */
     public ChallengeLineupNotify clearExtraLineupType() {
@@ -60,7 +52,7 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return the extraLineupType
      */
     public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
@@ -93,7 +85,7 @@ public final class ChallengeLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @param value the extraLineupType to set
      * @return this
      */
@@ -163,7 +155,7 @@ public final class ChallengeLineupNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 72);
         output.writeEnumNoTag(extraLineupType);
       }
     }
@@ -184,7 +176,7 @@ public final class ChallengeLineupNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 72: {
             // extraLineupType
             final int value = input.readInt32();
             if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {

@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "ItemList.proto";
 
 message SellItemScRsp {
-    uint32 retcode = 2;
-    ItemList return_item_list = 4;
+	ItemList return_item_list = 5;
+	uint32 retcode = 8;
 }

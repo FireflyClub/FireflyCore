@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// AFCHMHCHIBA
 message UpdateFloorSavedValueNotify {
-	map<string, int32> saved_value = 13; // CIGHENOALHD
+	map<string, int32> saved_value = 5;
 }

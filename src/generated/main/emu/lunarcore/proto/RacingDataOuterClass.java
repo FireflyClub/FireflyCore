@@ -19,7 +19,7 @@ public final class RacingDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 6;</code>
      */
     private int level;
 
@@ -33,9 +33,13 @@ public final class RacingDataOuterClass {
     private int maxScore;
 
     /**
-     * <code>optional .MovieRacingType type = 5;</code>
+     * <pre>
+     * uint32 PNBNMHJNLJF = 11;
+     * </pre>
+     *
+     * <code>optional .MovieRacingType slot = 13;</code>
      */
-    private int type;
+    private int slot;
 
     private RacingData() {
     }
@@ -48,7 +52,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 6;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -56,7 +60,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 6;</code>
      * @return this
      */
     public RacingData clearLevel() {
@@ -66,7 +70,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 6;</code>
      * @return the level
      */
     public int getLevel() {
@@ -74,7 +78,7 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 6;</code>
      * @param value the level to set
      * @return this
      */
@@ -138,64 +142,80 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <code>optional .MovieRacingType type = 5;</code>
-     * @return whether the type field is set
+     * <pre>
+     * uint32 PNBNMHJNLJF = 11;
+     * </pre>
+     *
+     * <code>optional .MovieRacingType slot = 13;</code>
+     * @return whether the slot field is set
      */
-    public boolean hasType() {
+    public boolean hasSlot() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .MovieRacingType type = 5;</code>
+     * <pre>
+     * uint32 PNBNMHJNLJF = 11;
+     * </pre>
+     *
+     * <code>optional .MovieRacingType slot = 13;</code>
      * @return this
      */
-    public RacingData clearType() {
+    public RacingData clearSlot() {
       bitField0_ &= ~0x00000004;
-      type = 0;
+      slot = 0;
       return this;
     }
 
     /**
-     * <code>optional .MovieRacingType type = 5;</code>
-     * @return the type
+     * <pre>
+     * uint32 PNBNMHJNLJF = 11;
+     * </pre>
+     *
+     * <code>optional .MovieRacingType slot = 13;</code>
+     * @return the slot
      */
-    public MovieRacingTypeOuterClass.MovieRacingType getType() {
-      return MovieRacingTypeOuterClass.MovieRacingType.forNumber(type);
+    public MovieRacingTypeOuterClass.MovieRacingType getSlot() {
+      return MovieRacingTypeOuterClass.MovieRacingType.forNumber(slot);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link RacingData#getType()}.getNumber().
+     * equivalent to {@link RacingData#getSlot()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getTypeValue() {
-      return type;
+    public int getSlotValue() {
+      return slot;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link MovieRacingTypeOuterClass.MovieRacingType}. Setting an invalid value
-     * can cause {@link RacingData#getType()} to return null
+     * can cause {@link RacingData#getSlot()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public RacingData setTypeValue(final int value) {
+    public RacingData setSlotValue(final int value) {
       bitField0_ |= 0x00000004;
-      type = value;
+      slot = value;
       return this;
     }
 
     /**
-     * <code>optional .MovieRacingType type = 5;</code>
-     * @param value the type to set
+     * <pre>
+     * uint32 PNBNMHJNLJF = 11;
+     * </pre>
+     *
+     * <code>optional .MovieRacingType slot = 13;</code>
+     * @param value the slot to set
      * @return this
      */
-    public RacingData setType(final MovieRacingTypeOuterClass.MovieRacingType value) {
+    public RacingData setSlot(final MovieRacingTypeOuterClass.MovieRacingType value) {
       bitField0_ |= 0x00000004;
-      type = value.getNumber();
+      slot = value.getNumber();
       return this;
     }
 
@@ -206,7 +226,7 @@ public final class RacingDataOuterClass {
         bitField0_ = other.bitField0_;
         level = other.level;
         maxScore = other.maxScore;
-        type = other.type;
+        slot = other.slot;
       }
       return this;
     }
@@ -223,8 +243,8 @@ public final class RacingDataOuterClass {
       if (other.hasMaxScore()) {
         setMaxScore(other.maxScore);
       }
-      if (other.hasType()) {
-        setTypeValue(other.type);
+      if (other.hasSlot()) {
+        setSlotValue(other.slot);
       }
       return this;
     }
@@ -238,7 +258,7 @@ public final class RacingDataOuterClass {
       bitField0_ = 0;
       level = 0;
       maxScore = 0;
-      type = 0;
+      slot = 0;
       return this;
     }
 
@@ -264,13 +284,13 @@ public final class RacingDataOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasLevel() || level == other.level)
         && (!hasMaxScore() || maxScore == other.maxScore)
-        && (!hasType() || type == other.type);
+        && (!hasSlot() || slot == other.slot);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -278,8 +298,8 @@ public final class RacingDataOuterClass {
         output.writeUInt32NoTag(maxScore);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeEnumNoTag(type);
+        output.writeRawByte((byte) 104);
+        output.writeEnumNoTag(slot);
       }
     }
 
@@ -293,7 +313,7 @@ public final class RacingDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(maxScore);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(type);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(slot);
       }
       return size;
     }
@@ -305,7 +325,7 @@ public final class RacingDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 48: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -319,15 +339,15 @@ public final class RacingDataOuterClass {
             maxScore = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 104) {
               break;
             }
           }
-          case 40: {
-            // type
+          case 104: {
+            // slot
             final int value = input.readInt32();
             if (MovieRacingTypeOuterClass.MovieRacingType.forNumber(value) != null) {
-              type = value;
+              slot = value;
               bitField0_ |= 0x00000004;
             }
             tag = input.readTag();
@@ -359,7 +379,7 @@ public final class RacingDataOuterClass {
         output.writeUInt32(FieldNames.maxScore, maxScore);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeEnum(FieldNames.type, type, MovieRacingTypeOuterClass.MovieRacingType.converter());
+        output.writeEnum(FieldNames.slot, slot, MovieRacingTypeOuterClass.MovieRacingType.converter());
       }
       output.endObject();
     }
@@ -394,12 +414,12 @@ public final class RacingDataOuterClass {
             }
             break;
           }
-          case 3575610: {
-            if (input.isAtField(FieldNames.type)) {
+          case 3533310: {
+            if (input.isAtField(FieldNames.slot)) {
               if (!input.trySkipNullValue()) {
                 final MovieRacingTypeOuterClass.MovieRacingType value = input.readEnum(MovieRacingTypeOuterClass.MovieRacingType.converter());
                 if (value != null) {
-                  type = value.getNumber();
+                  slot = value.getNumber();
                   bitField0_ |= 0x00000004;
                 } else {
                   input.skipUnknownEnumValue();
@@ -466,7 +486,7 @@ public final class RacingDataOuterClass {
 
       static final FieldName maxScore = FieldName.forField("maxScore", "max_score");
 
-      static final FieldName type = FieldName.forField("type");
+      static final FieldName slot = FieldName.forField("slot");
     }
   }
 }

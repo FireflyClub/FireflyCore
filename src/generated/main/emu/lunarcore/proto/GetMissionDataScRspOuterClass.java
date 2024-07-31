@@ -14,56 +14,40 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetMissionDataScRspOuterClass {
   /**
-   * <pre>
-   *  ANEGBGJOCCD
-   * </pre>
-   *
    * Protobuf type {@code GetMissionDataScRsp}
    */
   public static final class GetMissionDataScRsp extends ProtoMessage<GetMissionDataScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 FEAPGBPDENN = 5;</code>
+     * <code>optional uint32 FBJAMCGFJJD = 13;</code>
      */
-    private int fEAPGBPDENN;
+    private int fBJAMCGFJJD;
 
     /**
-     * <code>optional bool AGEAJPKFGKJ = 2;</code>
+     * <code>optional bool NCEJFANANKM = 15;</code>
      */
-    private boolean aGEAJPKFGKJ;
+    private boolean nCEJFANANKM;
 
     /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     */
-    private final RepeatedMessage<MissionDataOuterClass.MissionData> missionDataList = RepeatedMessage.newEmptyInstance(MissionDataOuterClass.MissionData.getFactory());
-
-    /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      */
     private final RepeatedMessage<MissionOuterClass.Mission> missionList = RepeatedMessage.newEmptyInstance(MissionOuterClass.Mission.getFactory());
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     */
+    private final RepeatedMessage<MissionDataOuterClass.MissionData> missionDataList = RepeatedMessage.newEmptyInstance(MissionDataOuterClass.MissionData.getFactory());
 
     private GetMissionDataScRsp() {
     }
 
     /**
-     * <pre>
-     *  ANEGBGJOCCD
-     * </pre>
-     *
      * @return a new empty instance of {@code GetMissionDataScRsp}
      */
     public static GetMissionDataScRsp newInstance() {
@@ -71,7 +55,7 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -79,7 +63,7 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public GetMissionDataScRsp clearRetcode() {
@@ -89,7 +73,7 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -97,7 +81,7 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -108,204 +92,99 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 FEAPGBPDENN = 5;</code>
-     * @return whether the fEAPGBPDENN field is set
+     * <code>optional uint32 FBJAMCGFJJD = 13;</code>
+     * @return whether the fBJAMCGFJJD field is set
      */
-    public boolean hasFEAPGBPDENN() {
+    public boolean hasFBJAMCGFJJD() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 FEAPGBPDENN = 5;</code>
+     * <code>optional uint32 FBJAMCGFJJD = 13;</code>
      * @return this
      */
-    public GetMissionDataScRsp clearFEAPGBPDENN() {
+    public GetMissionDataScRsp clearFBJAMCGFJJD() {
       bitField0_ &= ~0x00000002;
-      fEAPGBPDENN = 0;
+      fBJAMCGFJJD = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 FEAPGBPDENN = 5;</code>
-     * @return the fEAPGBPDENN
+     * <code>optional uint32 FBJAMCGFJJD = 13;</code>
+     * @return the fBJAMCGFJJD
      */
-    public int getFEAPGBPDENN() {
-      return fEAPGBPDENN;
+    public int getFBJAMCGFJJD() {
+      return fBJAMCGFJJD;
     }
 
     /**
-     * <code>optional uint32 FEAPGBPDENN = 5;</code>
-     * @param value the fEAPGBPDENN to set
+     * <code>optional uint32 FBJAMCGFJJD = 13;</code>
+     * @param value the fBJAMCGFJJD to set
      * @return this
      */
-    public GetMissionDataScRsp setFEAPGBPDENN(final int value) {
+    public GetMissionDataScRsp setFBJAMCGFJJD(final int value) {
       bitField0_ |= 0x00000002;
-      fEAPGBPDENN = value;
+      fBJAMCGFJJD = value;
       return this;
     }
 
     /**
-     * <code>optional bool AGEAJPKFGKJ = 2;</code>
-     * @return whether the aGEAJPKFGKJ field is set
+     * <code>optional bool NCEJFANANKM = 15;</code>
+     * @return whether the nCEJFANANKM field is set
      */
-    public boolean hasAGEAJPKFGKJ() {
+    public boolean hasNCEJFANANKM() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool AGEAJPKFGKJ = 2;</code>
+     * <code>optional bool NCEJFANANKM = 15;</code>
      * @return this
      */
-    public GetMissionDataScRsp clearAGEAJPKFGKJ() {
+    public GetMissionDataScRsp clearNCEJFANANKM() {
       bitField0_ &= ~0x00000004;
-      aGEAJPKFGKJ = false;
+      nCEJFANANKM = false;
       return this;
     }
 
     /**
-     * <code>optional bool AGEAJPKFGKJ = 2;</code>
-     * @return the aGEAJPKFGKJ
+     * <code>optional bool NCEJFANANKM = 15;</code>
+     * @return the nCEJFANANKM
      */
-    public boolean getAGEAJPKFGKJ() {
-      return aGEAJPKFGKJ;
+    public boolean getNCEJFANANKM() {
+      return nCEJFANANKM;
     }
 
     /**
-     * <code>optional bool AGEAJPKFGKJ = 2;</code>
-     * @param value the aGEAJPKFGKJ to set
+     * <code>optional bool NCEJFANANKM = 15;</code>
+     * @param value the nCEJFANANKM to set
      * @return this
      */
-    public GetMissionDataScRsp setAGEAJPKFGKJ(final boolean value) {
+    public GetMissionDataScRsp setNCEJFANANKM(final boolean value) {
       bitField0_ |= 0x00000004;
-      aGEAJPKFGKJ = value;
+      nCEJFANANKM = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     * @return whether the missionDataList field is set
+     * <code>repeated .Mission mission_list = 5;</code>
+     * @return whether the missionList field is set
      */
-    public boolean hasMissionDataList() {
+    public boolean hasMissionList() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     * @return this
-     */
-    public GetMissionDataScRsp clearMissionDataList() {
-      bitField0_ &= ~0x00000008;
-      missionDataList.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableMissionDataList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<MissionDataOuterClass.MissionData> getMissionDataList() {
-      return missionDataList;
-    }
-
-    /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<MissionDataOuterClass.MissionData> getMutableMissionDataList() {
-      bitField0_ |= 0x00000008;
-      return missionDataList;
-    }
-
-    /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     * @param value the missionDataList to add
-     * @return this
-     */
-    public GetMissionDataScRsp addMissionDataList(final MissionDataOuterClass.MissionData value) {
-      bitField0_ |= 0x00000008;
-      missionDataList.add(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  GAGLOABKOCC
-     * </pre>
-     *
-     * <code>repeated .MissionData mission_data_list = 9;</code>
-     * @param values the missionDataList to add
-     * @return this
-     */
-    public GetMissionDataScRsp addAllMissionDataList(
-        final MissionDataOuterClass.MissionData... values) {
-      bitField0_ |= 0x00000008;
-      missionDataList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
-     * @return whether the missionList field is set
-     */
-    public boolean hasMissionList() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      * @return this
      */
     public GetMissionDataScRsp clearMissionList() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       missionList.clear();
       return this;
     }
 
     /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -319,11 +198,7 @@ public final class GetMissionDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -332,37 +207,98 @@ public final class GetMissionDataScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MissionOuterClass.Mission> getMutableMissionList() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       return missionList;
     }
 
     /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      * @param value the missionList to add
      * @return this
      */
     public GetMissionDataScRsp addMissionList(final MissionOuterClass.Mission value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       missionList.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     *  ILCONFGLKML
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 11;</code>
+     * <code>repeated .Mission mission_list = 5;</code>
      * @param values the missionList to add
      * @return this
      */
     public GetMissionDataScRsp addAllMissionList(final MissionOuterClass.Mission... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       missionList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     * @return whether the missionDataList field is set
+     */
+    public boolean hasMissionDataList() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     * @return this
+     */
+    public GetMissionDataScRsp clearMissionDataList() {
+      bitField0_ &= ~0x00000010;
+      missionDataList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMissionDataList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<MissionDataOuterClass.MissionData> getMissionDataList() {
+      return missionDataList;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<MissionDataOuterClass.MissionData> getMutableMissionDataList() {
+      bitField0_ |= 0x00000010;
+      return missionDataList;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     * @param value the missionDataList to add
+     * @return this
+     */
+    public GetMissionDataScRsp addMissionDataList(final MissionDataOuterClass.MissionData value) {
+      bitField0_ |= 0x00000010;
+      missionDataList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MissionData mission_data_list = 12;</code>
+     * @param values the missionDataList to add
+     * @return this
+     */
+    public GetMissionDataScRsp addAllMissionDataList(
+        final MissionDataOuterClass.MissionData... values) {
+      bitField0_ |= 0x00000010;
+      missionDataList.addAll(values);
       return this;
     }
 
@@ -372,10 +308,10 @@ public final class GetMissionDataScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        fEAPGBPDENN = other.fEAPGBPDENN;
-        aGEAJPKFGKJ = other.aGEAJPKFGKJ;
-        missionDataList.copyFrom(other.missionDataList);
+        fBJAMCGFJJD = other.fBJAMCGFJJD;
+        nCEJFANANKM = other.nCEJFANANKM;
         missionList.copyFrom(other.missionList);
+        missionDataList.copyFrom(other.missionDataList);
       }
       return this;
     }
@@ -389,17 +325,17 @@ public final class GetMissionDataScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasFEAPGBPDENN()) {
-        setFEAPGBPDENN(other.fEAPGBPDENN);
+      if (other.hasFBJAMCGFJJD()) {
+        setFBJAMCGFJJD(other.fBJAMCGFJJD);
       }
-      if (other.hasAGEAJPKFGKJ()) {
-        setAGEAJPKFGKJ(other.aGEAJPKFGKJ);
-      }
-      if (other.hasMissionDataList()) {
-        getMutableMissionDataList().addAll(other.missionDataList);
+      if (other.hasNCEJFANANKM()) {
+        setNCEJFANANKM(other.nCEJFANANKM);
       }
       if (other.hasMissionList()) {
         getMutableMissionList().addAll(other.missionList);
+      }
+      if (other.hasMissionDataList()) {
+        getMutableMissionDataList().addAll(other.missionDataList);
       }
       return this;
     }
@@ -412,10 +348,10 @@ public final class GetMissionDataScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      fEAPGBPDENN = 0;
-      aGEAJPKFGKJ = false;
-      missionDataList.clear();
+      fBJAMCGFJJD = 0;
+      nCEJFANANKM = false;
       missionList.clear();
+      missionDataList.clear();
       return this;
     }
 
@@ -426,8 +362,8 @@ public final class GetMissionDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      missionDataList.clearQuick();
       missionList.clearQuick();
+      missionDataList.clearQuick();
       return this;
     }
 
@@ -442,36 +378,36 @@ public final class GetMissionDataScRspOuterClass {
       GetMissionDataScRsp other = (GetMissionDataScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasFEAPGBPDENN() || fEAPGBPDENN == other.fEAPGBPDENN)
-        && (!hasAGEAJPKFGKJ() || aGEAJPKFGKJ == other.aGEAJPKFGKJ)
-        && (!hasMissionDataList() || missionDataList.equals(other.missionDataList))
-        && (!hasMissionList() || missionList.equals(other.missionList));
+        && (!hasFBJAMCGFJJD() || fBJAMCGFJJD == other.fBJAMCGFJJD)
+        && (!hasNCEJFANANKM() || nCEJFANANKM == other.nCEJFANANKM)
+        && (!hasMissionList() || missionList.equals(other.missionList))
+        && (!hasMissionDataList() || missionDataList.equals(other.missionDataList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(fEAPGBPDENN);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(fBJAMCGFJJD);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeBoolNoTag(aGEAJPKFGKJ);
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(nCEJFANANKM);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < missionDataList.length(); i++) {
-          output.writeRawByte((byte) 74);
-          output.writeMessageNoTag(missionDataList.get(i));
+        for (int i = 0; i < missionList.length(); i++) {
+          output.writeRawByte((byte) 42);
+          output.writeMessageNoTag(missionList.get(i));
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < missionList.length(); i++) {
-          output.writeRawByte((byte) 90);
-          output.writeMessageNoTag(missionList.get(i));
+        for (int i = 0; i < missionDataList.length(); i++) {
+          output.writeRawByte((byte) 98);
+          output.writeMessageNoTag(missionDataList.get(i));
         }
       }
     }
@@ -483,16 +419,16 @@ public final class GetMissionDataScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(fEAPGBPDENN);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fBJAMCGFJJD);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * missionDataList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(missionDataList);
+        size += (1 * missionList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(missionList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * missionList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(missionList);
+        size += (1 * missionDataList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(missionDataList);
       }
       return size;
     }
@@ -504,44 +440,44 @@ public final class GetMissionDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 80: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 104) {
               break;
             }
           }
-          case 40: {
-            // fEAPGBPDENN
-            fEAPGBPDENN = input.readUInt32();
+          case 104: {
+            // fBJAMCGFJJD
+            fBJAMCGFJJD = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 120) {
               break;
             }
           }
-          case 16: {
-            // aGEAJPKFGKJ
-            aGEAJPKFGKJ = input.readBool();
+          case 120: {
+            // nCEJFANANKM
+            nCEJFANANKM = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 42) {
               break;
             }
           }
-          case 74: {
-            // missionDataList
-            tag = input.readRepeatedMessage(missionDataList, tag);
-            bitField0_ |= 0x00000008;
-            if (tag != 90) {
-              break;
-            }
-          }
-          case 90: {
+          case 42: {
             // missionList
             tag = input.readRepeatedMessage(missionList, tag);
+            bitField0_ |= 0x00000008;
+            if (tag != 98) {
+              break;
+            }
+          }
+          case 98: {
+            // missionDataList
+            tag = input.readRepeatedMessage(missionDataList, tag);
             bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
@@ -568,16 +504,16 @@ public final class GetMissionDataScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.fEAPGBPDENN, fEAPGBPDENN);
+        output.writeUInt32(FieldNames.fBJAMCGFJJD, fBJAMCGFJJD);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.aGEAJPKFGKJ, aGEAJPKFGKJ);
+        output.writeBool(FieldNames.nCEJFANANKM, nCEJFANANKM);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.missionDataList, missionDataList);
+        output.writeRepeatedMessage(FieldNames.missionList, missionList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedMessage(FieldNames.missionList, missionList);
+        output.writeRepeatedMessage(FieldNames.missionDataList, missionDataList);
       }
       output.endObject();
     }
@@ -600,10 +536,10 @@ public final class GetMissionDataScRspOuterClass {
             }
             break;
           }
-          case -887871128: {
-            if (input.isAtField(FieldNames.fEAPGBPDENN)) {
+          case 1292533660: {
+            if (input.isAtField(FieldNames.fBJAMCGFJJD)) {
               if (!input.trySkipNullValue()) {
-                fEAPGBPDENN = input.readUInt32();
+                fBJAMCGFJJD = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -611,23 +547,11 @@ public final class GetMissionDataScRspOuterClass {
             }
             break;
           }
-          case -1134514781: {
-            if (input.isAtField(FieldNames.aGEAJPKFGKJ)) {
+          case 884542824: {
+            if (input.isAtField(FieldNames.nCEJFANANKM)) {
               if (!input.trySkipNullValue()) {
-                aGEAJPKFGKJ = input.readBool();
+                nCEJFANANKM = input.readBool();
                 bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1584150252:
-          case 1727508768: {
-            if (input.isAtField(FieldNames.missionDataList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(missionDataList);
-                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -639,6 +563,18 @@ public final class GetMissionDataScRspOuterClass {
             if (input.isAtField(FieldNames.missionList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(missionList);
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1584150252:
+          case 1727508768: {
+            if (input.isAtField(FieldNames.missionDataList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(missionDataList);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -701,13 +637,13 @@ public final class GetMissionDataScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName fEAPGBPDENN = FieldName.forField("FEAPGBPDENN");
+      static final FieldName fBJAMCGFJJD = FieldName.forField("FBJAMCGFJJD");
 
-      static final FieldName aGEAJPKFGKJ = FieldName.forField("AGEAJPKFGKJ");
-
-      static final FieldName missionDataList = FieldName.forField("missionDataList", "mission_data_list");
+      static final FieldName nCEJFANANKM = FieldName.forField("NCEJFANANKM");
 
       static final FieldName missionList = FieldName.forField("missionList", "mission_list");
+
+      static final FieldName missionDataList = FieldName.forField("missionDataList", "mission_data_list");
     }
   }
 }

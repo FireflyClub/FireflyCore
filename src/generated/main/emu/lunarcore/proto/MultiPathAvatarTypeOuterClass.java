@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MultiPathAvatarTypeOuterClass {
   /**
-   * <pre>
-   *  EOOAFDDNFCE
-   * </pre>
-   *
    * Protobuf enum {@code MultiPathAvatarType}
    */
   public enum MultiPathAvatarType implements ProtoEnum<MultiPathAvatarType> {

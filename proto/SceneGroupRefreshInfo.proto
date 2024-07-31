@@ -5,10 +5,9 @@ option java_package = "emu.lunarcore.proto";
 import "SceneEntityRefreshInfo.proto";
 import "SceneGroupRefreshType.proto";
 
-// KBCANOCGHGI
 message SceneGroupRefreshInfo {
-    uint32 state = 1;
-    SceneGroupRefreshType group_refresh_type = 7; // GJMIFELKNJP
-    repeated SceneEntityRefreshInfo refresh_entity = 5; // MFIHJJEJILA
-    uint32 group_id = 2;
+	repeated SceneEntityRefreshInfo refresh_entity = 7;
+	SceneGroupRefreshType group_refresh_type = 14;
+	uint32 state = 9;
+	uint32 group_id = 12;
 }

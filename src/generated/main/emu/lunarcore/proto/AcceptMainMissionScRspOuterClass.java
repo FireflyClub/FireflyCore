@@ -19,18 +19,14 @@ public final class AcceptMainMissionScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  PMNNABLLDBA
-     * </pre>
-     *
-     * <code>optional uint32 main_mission_id = 1;</code>
-     */
-    private int mainMissionId;
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
+
+    /**
+     * <code>optional uint32 main_mission_id = 8;</code>
+     */
+    private int mainMissionId;
 
     private AcceptMainMissionScRsp() {
     }
@@ -43,78 +39,25 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  PMNNABLLDBA
-     * </pre>
-     *
-     * <code>optional uint32 main_mission_id = 1;</code>
-     * @return whether the mainMissionId field is set
+     * <code>optional uint32 retcode = 4;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasMainMissionId() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  PMNNABLLDBA
-     * </pre>
-     *
-     * <code>optional uint32 main_mission_id = 1;</code>
-     * @return this
-     */
-    public AcceptMainMissionScRsp clearMainMissionId() {
-      bitField0_ &= ~0x00000001;
-      mainMissionId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  PMNNABLLDBA
-     * </pre>
-     *
-     * <code>optional uint32 main_mission_id = 1;</code>
-     * @return the mainMissionId
-     */
-    public int getMainMissionId() {
-      return mainMissionId;
-    }
-
-    /**
-     * <pre>
-     *  PMNNABLLDBA
-     * </pre>
-     *
-     * <code>optional uint32 main_mission_id = 1;</code>
-     * @param value the mainMissionId to set
-     * @return this
-     */
-    public AcceptMainMissionScRsp setMainMissionId(final int value) {
-      bitField0_ |= 0x00000001;
-      mainMissionId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public AcceptMainMissionScRsp clearRetcode() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -122,13 +65,50 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
     public AcceptMainMissionScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       retcode = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 main_mission_id = 8;</code>
+     * @return whether the mainMissionId field is set
+     */
+    public boolean hasMainMissionId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 main_mission_id = 8;</code>
+     * @return this
+     */
+    public AcceptMainMissionScRsp clearMainMissionId() {
+      bitField0_ &= ~0x00000002;
+      mainMissionId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 main_mission_id = 8;</code>
+     * @return the mainMissionId
+     */
+    public int getMainMissionId() {
+      return mainMissionId;
+    }
+
+    /**
+     * <code>optional uint32 main_mission_id = 8;</code>
+     * @param value the mainMissionId to set
+     * @return this
+     */
+    public AcceptMainMissionScRsp setMainMissionId(final int value) {
+      bitField0_ |= 0x00000002;
+      mainMissionId = value;
       return this;
     }
 
@@ -137,8 +117,8 @@ public final class AcceptMainMissionScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        mainMissionId = other.mainMissionId;
         retcode = other.retcode;
+        mainMissionId = other.mainMissionId;
       }
       return this;
     }
@@ -149,11 +129,11 @@ public final class AcceptMainMissionScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMainMissionId()) {
-        setMainMissionId(other.mainMissionId);
-      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
+      }
+      if (other.hasMainMissionId()) {
+        setMainMissionId(other.mainMissionId);
       }
       return this;
     }
@@ -165,8 +145,8 @@ public final class AcceptMainMissionScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      mainMissionId = 0;
       retcode = 0;
+      mainMissionId = 0;
       return this;
     }
 
@@ -190,19 +170,19 @@ public final class AcceptMainMissionScRspOuterClass {
       }
       AcceptMainMissionScRsp other = (AcceptMainMissionScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasMainMissionId() || mainMissionId == other.mainMissionId)
-        && (!hasRetcode() || retcode == other.retcode);
+        && (!hasRetcode() || retcode == other.retcode)
+        && (!hasMainMissionId() || mainMissionId == other.mainMissionId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(mainMissionId);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(mainMissionId);
       }
     }
 
@@ -210,10 +190,10 @@ public final class AcceptMainMissionScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mainMissionId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mainMissionId);
       }
       return size;
     }
@@ -225,18 +205,18 @@ public final class AcceptMainMissionScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // mainMissionId
-            mainMissionId = input.readUInt32();
+          case 32: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 64) {
               break;
             }
           }
-          case 72: {
-            // retcode
-            retcode = input.readUInt32();
+          case 64: {
+            // mainMissionId
+            mainMissionId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -261,10 +241,10 @@ public final class AcceptMainMissionScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.mainMissionId, mainMissionId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.mainMissionId, mainMissionId);
       }
       output.endObject();
     }
@@ -276,11 +256,10 @@ public final class AcceptMainMissionScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1124848142:
-          case 885892852: {
-            if (input.isAtField(FieldNames.mainMissionId)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                mainMissionId = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -288,10 +267,11 @@ public final class AcceptMainMissionScRspOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 1124848142:
+          case 885892852: {
+            if (input.isAtField(FieldNames.mainMissionId)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                mainMissionId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -352,9 +332,9 @@ public final class AcceptMainMissionScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName mainMissionId = FieldName.forField("mainMissionId", "main_mission_id");
-
       static final FieldName retcode = FieldName.forField("retcode");
+
+      static final FieldName mainMissionId = FieldName.forField("mainMissionId", "main_mission_id");
     }
   }
 }

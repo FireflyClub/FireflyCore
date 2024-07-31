@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "ContentPackageStatus.proto";
 
-// FIEDMJCNIKO
 message ContentPackageInfo {
+	ContentPackageStatus status = 12;
 	uint32 map_entry_id = 8;
-	ContentPackageStatus status = 7;
 }

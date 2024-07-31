@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message UnlockPhoneThemeScNotify {
-    uint32 theme_id = 10;
+	uint32 theme_id = 5;
 }

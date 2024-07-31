@@ -104,7 +104,7 @@ public class EntityProp implements GameEntity {
     @Override
     public SceneEntityInfo toSceneEntityProto() {
         var prop = ScenePropInfo.newInstance()
-                .setPropId(this.getPropId())
+                .setQuestPropId(this.getPropId())
                 .setPropState(this.getState().getVal());
         
         if (this.rogueData != null) {

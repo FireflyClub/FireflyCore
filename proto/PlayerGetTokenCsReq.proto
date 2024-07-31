@@ -2,14 +2,15 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// BFLBNFDIKOF
 message PlayerGetTokenCsReq {
-	// uint32 LGJOFBFJNFJ = 10;
-	string token = 1;
-	// uint32 EIBKJOHAEJK = 7;
-	string account_uid = 11;
-	uint32 uid = 2;
-	// uint32 PNBIJBAMIBM = 8;
-	uint32 platform_type = 15; // JPMEDAKGECJ
-	// string AKIPCJBNJGP = 12;
+	uint32 platform_type = 3;
+	string token = 4;
+	uint32 IPOLCNOCFNB = 7;
+	//string JEGONHAIAFG = 10;
+	//string NALKKAPMIGK = 5;
+	uint32 MNFBCAICCED = 2;
+	uint32 ICOPIHMOOGH = 14;
+	uint32 uid = 6;
+
+	string account_uid = 10;
 }

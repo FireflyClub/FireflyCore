@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "MissionStatus.proto";
 
-// ODGLICNHANG
 message Mission {
-    uint32 id = 2;
-    MissionStatus status = 1; // PFDBJFAGFPF
-    uint32 progress = 8; // PPOCPLPLJMA
+	uint32 id = 5;
+	uint32 progress = 3;
+	MissionStatus status = 6;
 }

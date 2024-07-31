@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import 'Gender.proto';
 
-// LAFFEFHDGAG
 message SetGenderCsReq {
-	Gender MLMJPADHNFE = 11;
+	Gender HJPKBIBBNKN = 7;
 }

@@ -29,19 +29,11 @@ public final class BlackInfoOuterClass {
     private long endTime;
 
     /**
-     * <pre>
-     *  EAMPPBLEIHN
-     * </pre>
-     *
      * <code>optional uint32 limit_level = 3;</code>
      */
     private int limitLevel;
 
     /**
-     * <pre>
-     *  PLENLGFHJIJ
-     * </pre>
-     *
      * <code>optional uint32 ban_type = 4;</code>
      */
     private int banType;
@@ -131,10 +123,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  EAMPPBLEIHN
-     * </pre>
-     *
      * <code>optional uint32 limit_level = 3;</code>
      * @return whether the limitLevel field is set
      */
@@ -143,10 +131,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  EAMPPBLEIHN
-     * </pre>
-     *
      * <code>optional uint32 limit_level = 3;</code>
      * @return this
      */
@@ -157,10 +141,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  EAMPPBLEIHN
-     * </pre>
-     *
      * <code>optional uint32 limit_level = 3;</code>
      * @return the limitLevel
      */
@@ -169,10 +149,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  EAMPPBLEIHN
-     * </pre>
-     *
      * <code>optional uint32 limit_level = 3;</code>
      * @param value the limitLevel to set
      * @return this
@@ -184,10 +160,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PLENLGFHJIJ
-     * </pre>
-     *
      * <code>optional uint32 ban_type = 4;</code>
      * @return whether the banType field is set
      */
@@ -196,10 +168,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PLENLGFHJIJ
-     * </pre>
-     *
      * <code>optional uint32 ban_type = 4;</code>
      * @return this
      */
@@ -210,10 +178,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PLENLGFHJIJ
-     * </pre>
-     *
      * <code>optional uint32 ban_type = 4;</code>
      * @return the banType
      */
@@ -222,10 +186,6 @@ public final class BlackInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PLENLGFHJIJ
-     * </pre>
-     *
      * <code>optional uint32 ban_type = 4;</code>
      * @param value the banType to set
      * @return this

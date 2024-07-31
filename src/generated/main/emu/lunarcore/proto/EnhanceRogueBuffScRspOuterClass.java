@@ -19,12 +19,12 @@ public final class EnhanceRogueBuffScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool is_success = 13;</code>
+     * <code>optional bool is_success = 1;</code>
      */
     private boolean isSuccess;
 
@@ -44,7 +44,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -52,7 +52,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public EnhanceRogueBuffScRsp clearRetcode() {
@@ -62,7 +62,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -70,7 +70,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -81,7 +81,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_success = 13;</code>
+     * <code>optional bool is_success = 1;</code>
      * @return whether the isSuccess field is set
      */
     public boolean hasIsSuccess() {
@@ -89,7 +89,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_success = 13;</code>
+     * <code>optional bool is_success = 1;</code>
      * @return this
      */
     public EnhanceRogueBuffScRsp clearIsSuccess() {
@@ -99,7 +99,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_success = 13;</code>
+     * <code>optional bool is_success = 1;</code>
      * @return the isSuccess
      */
     public boolean getIsSuccess() {
@@ -107,7 +107,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_success = 13;</code>
+     * <code>optional bool is_success = 1;</code>
      * @param value the isSuccess to set
      * @return this
      */
@@ -246,11 +246,11 @@ public final class EnhanceRogueBuffScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 8);
         output.writeBoolNoTag(isSuccess);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -281,16 +281,16 @@ public final class EnhanceRogueBuffScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 8) {
               break;
             }
           }
-          case 104: {
+          case 8: {
             // isSuccess
             isSuccess = input.readBool();
             bitField0_ |= 0x00000002;

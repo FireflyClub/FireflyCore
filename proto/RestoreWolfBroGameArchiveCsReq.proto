@@ -6,8 +6,8 @@ import "GroupStateInfo.proto";
 import "MotionInfo.proto";
 
 message RestoreWolfBroGameArchiveCsReq {
-	MotionInfo motion = 14;
-	uint32 id = 13;
-	GroupStateInfo group_state_info = 8;
-	bool DDLKGEHPIGM = 7;
+	GroupStateInfo group_state_info = 10;
+	MotionInfo motion = 4;
+	bool PECAGANEKGI = 3;
+	uint32 id = 1;
 }

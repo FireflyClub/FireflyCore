@@ -20,31 +20,35 @@ public final class GetFriendLoginInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool NGNCGBILFKG = 9;</code>
+     * <code>optional bool AMOMLNGMIMH = 4;</code>
      */
-    private boolean nGNCGBILFKG;
+    private boolean aMOMLNGMIMH;
 
     /**
-     * <code>optional bool EJJDNALJABJ = 15;</code>
+     * <code>optional bool MFPBMIEBIJC = 11;</code>
      */
-    private boolean eJJDNALJABJ;
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     */
-    private final RepeatedInt oLFOIOMINHD = RepeatedInt.newEmptyInstance();
+    private boolean mFPBMIEBIJC;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     */
+    private final RepeatedInt hPEIENIGEMJ = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      */
     private final RepeatedInt friendUidList = RepeatedInt.newEmptyInstance();
 
@@ -59,7 +63,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -67,7 +71,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
     public GetFriendLoginInfoScRsp clearRetcode() {
@@ -77,7 +81,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -85,7 +89,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -96,144 +100,76 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool NGNCGBILFKG = 9;</code>
-     * @return whether the nGNCGBILFKG field is set
+     * <code>optional bool AMOMLNGMIMH = 4;</code>
+     * @return whether the aMOMLNGMIMH field is set
      */
-    public boolean hasNGNCGBILFKG() {
+    public boolean hasAMOMLNGMIMH() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool NGNCGBILFKG = 9;</code>
+     * <code>optional bool AMOMLNGMIMH = 4;</code>
      * @return this
      */
-    public GetFriendLoginInfoScRsp clearNGNCGBILFKG() {
+    public GetFriendLoginInfoScRsp clearAMOMLNGMIMH() {
       bitField0_ &= ~0x00000002;
-      nGNCGBILFKG = false;
+      aMOMLNGMIMH = false;
       return this;
     }
 
     /**
-     * <code>optional bool NGNCGBILFKG = 9;</code>
-     * @return the nGNCGBILFKG
+     * <code>optional bool AMOMLNGMIMH = 4;</code>
+     * @return the aMOMLNGMIMH
      */
-    public boolean getNGNCGBILFKG() {
-      return nGNCGBILFKG;
+    public boolean getAMOMLNGMIMH() {
+      return aMOMLNGMIMH;
     }
 
     /**
-     * <code>optional bool NGNCGBILFKG = 9;</code>
-     * @param value the nGNCGBILFKG to set
+     * <code>optional bool AMOMLNGMIMH = 4;</code>
+     * @param value the aMOMLNGMIMH to set
      * @return this
      */
-    public GetFriendLoginInfoScRsp setNGNCGBILFKG(final boolean value) {
+    public GetFriendLoginInfoScRsp setAMOMLNGMIMH(final boolean value) {
       bitField0_ |= 0x00000002;
-      nGNCGBILFKG = value;
+      aMOMLNGMIMH = value;
       return this;
     }
 
     /**
-     * <code>optional bool EJJDNALJABJ = 15;</code>
-     * @return whether the eJJDNALJABJ field is set
+     * <code>optional bool MFPBMIEBIJC = 11;</code>
+     * @return whether the mFPBMIEBIJC field is set
      */
-    public boolean hasEJJDNALJABJ() {
+    public boolean hasMFPBMIEBIJC() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool EJJDNALJABJ = 15;</code>
+     * <code>optional bool MFPBMIEBIJC = 11;</code>
      * @return this
      */
-    public GetFriendLoginInfoScRsp clearEJJDNALJABJ() {
+    public GetFriendLoginInfoScRsp clearMFPBMIEBIJC() {
       bitField0_ &= ~0x00000004;
-      eJJDNALJABJ = false;
+      mFPBMIEBIJC = false;
       return this;
     }
 
     /**
-     * <code>optional bool EJJDNALJABJ = 15;</code>
-     * @return the eJJDNALJABJ
+     * <code>optional bool MFPBMIEBIJC = 11;</code>
+     * @return the mFPBMIEBIJC
      */
-    public boolean getEJJDNALJABJ() {
-      return eJJDNALJABJ;
+    public boolean getMFPBMIEBIJC() {
+      return mFPBMIEBIJC;
     }
 
     /**
-     * <code>optional bool EJJDNALJABJ = 15;</code>
-     * @param value the eJJDNALJABJ to set
+     * <code>optional bool MFPBMIEBIJC = 11;</code>
+     * @param value the mFPBMIEBIJC to set
      * @return this
      */
-    public GetFriendLoginInfoScRsp setEJJDNALJABJ(final boolean value) {
+    public GetFriendLoginInfoScRsp setMFPBMIEBIJC(final boolean value) {
       bitField0_ |= 0x00000004;
-      eJJDNALJABJ = value;
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     * @return whether the oLFOIOMINHD field is set
-     */
-    public boolean hasOLFOIOMINHD() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     * @return this
-     */
-    public GetFriendLoginInfoScRsp clearOLFOIOMINHD() {
-      bitField0_ &= ~0x00000008;
-      oLFOIOMINHD.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableOLFOIOMINHD()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getOLFOIOMINHD() {
-      return oLFOIOMINHD;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableOLFOIOMINHD() {
-      bitField0_ |= 0x00000008;
-      return oLFOIOMINHD;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     * @param value the oLFOIOMINHD to add
-     * @return this
-     */
-    public GetFriendLoginInfoScRsp addOLFOIOMINHD(final int value) {
-      bitField0_ |= 0x00000008;
-      oLFOIOMINHD.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 OLFOIOMINHD = 11;</code>
-     * @param values the oLFOIOMINHD to add
-     * @return this
-     */
-    public GetFriendLoginInfoScRsp addAllOLFOIOMINHD(final int... values) {
-      bitField0_ |= 0x00000008;
-      oLFOIOMINHD.addAll(values);
+      mFPBMIEBIJC = value;
       return this;
     }
 
@@ -242,7 +178,99 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     * @return whether the hPEIENIGEMJ field is set
+     */
+    public boolean hasHPEIENIGEMJ() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     * @return this
+     */
+    public GetFriendLoginInfoScRsp clearHPEIENIGEMJ() {
+      bitField0_ &= ~0x00000008;
+      hPEIENIGEMJ.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableHPEIENIGEMJ()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getHPEIENIGEMJ() {
+      return hPEIENIGEMJ;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableHPEIENIGEMJ() {
+      bitField0_ |= 0x00000008;
+      return hPEIENIGEMJ;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     * @param value the hPEIENIGEMJ to add
+     * @return this
+     */
+    public GetFriendLoginInfoScRsp addHPEIENIGEMJ(final int value) {
+      bitField0_ |= 0x00000008;
+      hPEIENIGEMJ.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 HPEIENIGEMJ = 7;</code>
+     * @param values the hPEIENIGEMJ to add
+     * @return this
+     */
+    public GetFriendLoginInfoScRsp addAllHPEIENIGEMJ(final int... values) {
+      bitField0_ |= 0x00000008;
+      hPEIENIGEMJ.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      * @return whether the friendUidList field is set
      */
     public boolean hasFriendUidList() {
@@ -254,7 +282,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      * @return this
      */
     public GetFriendLoginInfoScRsp clearFriendUidList() {
@@ -268,7 +296,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -286,7 +314,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -304,7 +332,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      * @param value the friendUidList to add
      * @return this
      */
@@ -319,7 +347,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 friend_uid_list = 12;</code>
+     * <code>repeated uint32 friend_uid_list = 9;</code>
      * @param values the friendUidList to add
      * @return this
      */
@@ -335,9 +363,9 @@ public final class GetFriendLoginInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        nGNCGBILFKG = other.nGNCGBILFKG;
-        eJJDNALJABJ = other.eJJDNALJABJ;
-        oLFOIOMINHD.copyFrom(other.oLFOIOMINHD);
+        aMOMLNGMIMH = other.aMOMLNGMIMH;
+        mFPBMIEBIJC = other.mFPBMIEBIJC;
+        hPEIENIGEMJ.copyFrom(other.hPEIENIGEMJ);
         friendUidList.copyFrom(other.friendUidList);
       }
       return this;
@@ -352,14 +380,14 @@ public final class GetFriendLoginInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasNGNCGBILFKG()) {
-        setNGNCGBILFKG(other.nGNCGBILFKG);
+      if (other.hasAMOMLNGMIMH()) {
+        setAMOMLNGMIMH(other.aMOMLNGMIMH);
       }
-      if (other.hasEJJDNALJABJ()) {
-        setEJJDNALJABJ(other.eJJDNALJABJ);
+      if (other.hasMFPBMIEBIJC()) {
+        setMFPBMIEBIJC(other.mFPBMIEBIJC);
       }
-      if (other.hasOLFOIOMINHD()) {
-        getMutableOLFOIOMINHD().addAll(other.oLFOIOMINHD);
+      if (other.hasHPEIENIGEMJ()) {
+        getMutableHPEIENIGEMJ().addAll(other.hPEIENIGEMJ);
       }
       if (other.hasFriendUidList()) {
         getMutableFriendUidList().addAll(other.friendUidList);
@@ -375,9 +403,9 @@ public final class GetFriendLoginInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      nGNCGBILFKG = false;
-      eJJDNALJABJ = false;
-      oLFOIOMINHD.clear();
+      aMOMLNGMIMH = false;
+      mFPBMIEBIJC = false;
+      hPEIENIGEMJ.clear();
       friendUidList.clear();
       return this;
     }
@@ -389,7 +417,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      oLFOIOMINHD.clear();
+      hPEIENIGEMJ.clear();
       friendUidList.clear();
       return this;
     }
@@ -405,35 +433,35 @@ public final class GetFriendLoginInfoScRspOuterClass {
       GetFriendLoginInfoScRsp other = (GetFriendLoginInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasNGNCGBILFKG() || nGNCGBILFKG == other.nGNCGBILFKG)
-        && (!hasEJJDNALJABJ() || eJJDNALJABJ == other.eJJDNALJABJ)
-        && (!hasOLFOIOMINHD() || oLFOIOMINHD.equals(other.oLFOIOMINHD))
+        && (!hasAMOMLNGMIMH() || aMOMLNGMIMH == other.aMOMLNGMIMH)
+        && (!hasMFPBMIEBIJC() || mFPBMIEBIJC == other.mFPBMIEBIJC)
+        && (!hasHPEIENIGEMJ() || hPEIENIGEMJ.equals(other.hPEIENIGEMJ))
         && (!hasFriendUidList() || friendUidList.equals(other.friendUidList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeBoolNoTag(nGNCGBILFKG);
+        output.writeRawByte((byte) 32);
+        output.writeBoolNoTag(aMOMLNGMIMH);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeBoolNoTag(eJJDNALJABJ);
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(mFPBMIEBIJC);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < oLFOIOMINHD.length(); i++) {
-          output.writeRawByte((byte) 88);
-          output.writeUInt32NoTag(oLFOIOMINHD.array()[i]);
+        for (int i = 0; i < hPEIENIGEMJ.length(); i++) {
+          output.writeRawByte((byte) 56);
+          output.writeUInt32NoTag(hPEIENIGEMJ.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < friendUidList.length(); i++) {
-          output.writeRawByte((byte) 96);
+          output.writeRawByte((byte) 72);
           output.writeUInt32NoTag(friendUidList.array()[i]);
         }
       }
@@ -452,7 +480,7 @@ public final class GetFriendLoginInfoScRspOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * oLFOIOMINHD.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(oLFOIOMINHD);
+        size += (1 * hPEIENIGEMJ.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hPEIENIGEMJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += (1 * friendUidList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(friendUidList);
@@ -467,43 +495,43 @@ public final class GetFriendLoginInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 112: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 32) {
               break;
             }
           }
-          case 72: {
-            // nGNCGBILFKG
-            nGNCGBILFKG = input.readBool();
+          case 32: {
+            // aMOMLNGMIMH
+            aMOMLNGMIMH = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 88) {
               break;
             }
           }
-          case 120: {
-            // eJJDNALJABJ
-            eJJDNALJABJ = input.readBool();
+          case 88: {
+            // mFPBMIEBIJC
+            mFPBMIEBIJC = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 58) {
               break;
             }
           }
-          case 90: {
-            // oLFOIOMINHD [packed=true]
-            input.readPackedUInt32(oLFOIOMINHD, tag);
+          case 58: {
+            // hPEIENIGEMJ [packed=true]
+            input.readPackedUInt32(hPEIENIGEMJ, tag);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 74) {
               break;
             }
           }
-          case 98: {
+          case 74: {
             // friendUidList [packed=true]
             input.readPackedUInt32(friendUidList, tag);
             bitField0_ |= 0x00000010;
@@ -522,13 +550,13 @@ public final class GetFriendLoginInfoScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 88: {
-            // oLFOIOMINHD [packed=false]
-            tag = input.readRepeatedUInt32(oLFOIOMINHD, tag);
+          case 56: {
+            // hPEIENIGEMJ [packed=false]
+            tag = input.readRepeatedUInt32(hPEIENIGEMJ, tag);
             bitField0_ |= 0x00000008;
             break;
           }
-          case 96: {
+          case 72: {
             // friendUidList [packed=false]
             tag = input.readRepeatedUInt32(friendUidList, tag);
             bitField0_ |= 0x00000010;
@@ -545,13 +573,13 @@ public final class GetFriendLoginInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.nGNCGBILFKG, nGNCGBILFKG);
+        output.writeBool(FieldNames.aMOMLNGMIMH, aMOMLNGMIMH);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.eJJDNALJABJ, eJJDNALJABJ);
+        output.writeBool(FieldNames.mFPBMIEBIJC, mFPBMIEBIJC);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.oLFOIOMINHD, oLFOIOMINHD);
+        output.writeRepeatedUInt32(FieldNames.hPEIENIGEMJ, hPEIENIGEMJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRepeatedUInt32(FieldNames.friendUidList, friendUidList);
@@ -577,10 +605,10 @@ public final class GetFriendLoginInfoScRspOuterClass {
             }
             break;
           }
-          case -1686634698: {
-            if (input.isAtField(FieldNames.nGNCGBILFKG)) {
+          case -2055118222: {
+            if (input.isAtField(FieldNames.aMOMLNGMIMH)) {
               if (!input.trySkipNullValue()) {
-                nGNCGBILFKG = input.readBool();
+                aMOMLNGMIMH = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -588,10 +616,10 @@ public final class GetFriendLoginInfoScRspOuterClass {
             }
             break;
           }
-          case -1009153351: {
-            if (input.isAtField(FieldNames.eJJDNALJABJ)) {
+          case 470547902: {
+            if (input.isAtField(FieldNames.mFPBMIEBIJC)) {
               if (!input.trySkipNullValue()) {
-                eJJDNALJABJ = input.readBool();
+                mFPBMIEBIJC = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -599,10 +627,10 @@ public final class GetFriendLoginInfoScRspOuterClass {
             }
             break;
           }
-          case -1301733598: {
-            if (input.isAtField(FieldNames.oLFOIOMINHD)) {
+          case -1740941681: {
+            if (input.isAtField(FieldNames.hPEIENIGEMJ)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(oLFOIOMINHD);
+                input.readRepeatedUInt32(hPEIENIGEMJ);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -677,11 +705,11 @@ public final class GetFriendLoginInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName nGNCGBILFKG = FieldName.forField("NGNCGBILFKG");
+      static final FieldName aMOMLNGMIMH = FieldName.forField("AMOMLNGMIMH");
 
-      static final FieldName eJJDNALJABJ = FieldName.forField("EJJDNALJABJ");
+      static final FieldName mFPBMIEBIJC = FieldName.forField("MFPBMIEBIJC");
 
-      static final FieldName oLFOIOMINHD = FieldName.forField("OLFOIOMINHD");
+      static final FieldName hPEIENIGEMJ = FieldName.forField("HPEIENIGEMJ");
 
       static final FieldName friendUidList = FieldName.forField("friendUidList", "friend_uid_list");
     }

@@ -13,21 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class MissionCustomValueDataOuterClass {
   /**
-   * <pre>
-   *  DIAAMFMFBBE
-   * </pre>
-   *
    * Protobuf type {@code MissionCustomValueData}
    */
   public static final class MissionCustomValueData extends ProtoMessage<MissionCustomValueData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  AKNJKDONIIF
-     * </pre>
-     *
-     * <code>optional uint32 custom_value = 9;</code>
+     * <code>optional uint32 custom_value = 10;</code>
      */
     private int customValue;
 
@@ -40,10 +32,6 @@ public final class MissionCustomValueDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  DIAAMFMFBBE
-     * </pre>
-     *
      * @return a new empty instance of {@code MissionCustomValueData}
      */
     public static MissionCustomValueData newInstance() {
@@ -51,11 +39,7 @@ public final class MissionCustomValueDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  AKNJKDONIIF
-     * </pre>
-     *
-     * <code>optional uint32 custom_value = 9;</code>
+     * <code>optional uint32 custom_value = 10;</code>
      * @return whether the customValue field is set
      */
     public boolean hasCustomValue() {
@@ -63,11 +47,7 @@ public final class MissionCustomValueDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  AKNJKDONIIF
-     * </pre>
-     *
-     * <code>optional uint32 custom_value = 9;</code>
+     * <code>optional uint32 custom_value = 10;</code>
      * @return this
      */
     public MissionCustomValueData clearCustomValue() {
@@ -77,11 +57,7 @@ public final class MissionCustomValueDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  AKNJKDONIIF
-     * </pre>
-     *
-     * <code>optional uint32 custom_value = 9;</code>
+     * <code>optional uint32 custom_value = 10;</code>
      * @return the customValue
      */
     public int getCustomValue() {
@@ -89,11 +65,7 @@ public final class MissionCustomValueDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  AKNJKDONIIF
-     * </pre>
-     *
-     * <code>optional uint32 custom_value = 9;</code>
+     * <code>optional uint32 custom_value = 10;</code>
      * @param value the customValue to set
      * @return this
      */
@@ -205,7 +177,7 @@ public final class MissionCustomValueDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(customValue);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -233,7 +205,7 @@ public final class MissionCustomValueDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 80: {
             // customValue
             customValue = input.readUInt32();
             bitField0_ |= 0x00000001;

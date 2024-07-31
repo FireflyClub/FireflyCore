@@ -20,21 +20,17 @@ public final class GetSceneMapInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool BFDKJBKHANA = 5;</code>
+     * <code>optional bool MFDIBEECLPP = 10;</code>
      */
-    private boolean bFDKJBKHANA;
+    private boolean mFDIBEECLPP;
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      */
     private final RepeatedMessage<MazeMapDataOuterClass.MazeMapData> mapList = RepeatedMessage.newEmptyInstance(MazeMapDataOuterClass.MazeMapData.getFactory());
 
@@ -49,7 +45,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -57,7 +53,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
     public GetSceneMapInfoScRsp clearRetcode() {
@@ -67,7 +63,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -75,7 +71,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -86,48 +82,44 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 5;</code>
-     * @return whether the bFDKJBKHANA field is set
+     * <code>optional bool MFDIBEECLPP = 10;</code>
+     * @return whether the mFDIBEECLPP field is set
      */
-    public boolean hasBFDKJBKHANA() {
+    public boolean hasMFDIBEECLPP() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 5;</code>
+     * <code>optional bool MFDIBEECLPP = 10;</code>
      * @return this
      */
-    public GetSceneMapInfoScRsp clearBFDKJBKHANA() {
+    public GetSceneMapInfoScRsp clearMFDIBEECLPP() {
       bitField0_ &= ~0x00000002;
-      bFDKJBKHANA = false;
+      mFDIBEECLPP = false;
       return this;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 5;</code>
-     * @return the bFDKJBKHANA
+     * <code>optional bool MFDIBEECLPP = 10;</code>
+     * @return the mFDIBEECLPP
      */
-    public boolean getBFDKJBKHANA() {
-      return bFDKJBKHANA;
+    public boolean getMFDIBEECLPP() {
+      return mFDIBEECLPP;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 5;</code>
-     * @param value the bFDKJBKHANA to set
+     * <code>optional bool MFDIBEECLPP = 10;</code>
+     * @param value the mFDIBEECLPP to set
      * @return this
      */
-    public GetSceneMapInfoScRsp setBFDKJBKHANA(final boolean value) {
+    public GetSceneMapInfoScRsp setMFDIBEECLPP(final boolean value) {
       bitField0_ |= 0x00000002;
-      bFDKJBKHANA = value;
+      mFDIBEECLPP = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      * @return whether the mapList field is set
      */
     public boolean hasMapList() {
@@ -135,11 +127,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      * @return this
      */
     public GetSceneMapInfoScRsp clearMapList() {
@@ -149,11 +137,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -167,11 +151,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -185,11 +165,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      * @param value the mapList to add
      * @return this
      */
@@ -200,11 +176,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKGDNAMADFC
-     * </pre>
-     *
-     * <code>repeated .MazeMapData map_list = 1;</code>
+     * <code>repeated .MazeMapData map_list = 5;</code>
      * @param values the mapList to add
      * @return this
      */
@@ -220,7 +192,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        bFDKJBKHANA = other.bFDKJBKHANA;
+        mFDIBEECLPP = other.mFDIBEECLPP;
         mapList.copyFrom(other.mapList);
       }
       return this;
@@ -235,8 +207,8 @@ public final class GetSceneMapInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasBFDKJBKHANA()) {
-        setBFDKJBKHANA(other.bFDKJBKHANA);
+      if (other.hasMFDIBEECLPP()) {
+        setMFDIBEECLPP(other.mFDIBEECLPP);
       }
       if (other.hasMapList()) {
         getMutableMapList().addAll(other.mapList);
@@ -252,7 +224,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      bFDKJBKHANA = false;
+      mFDIBEECLPP = false;
       mapList.clear();
       return this;
     }
@@ -279,23 +251,23 @@ public final class GetSceneMapInfoScRspOuterClass {
       GetSceneMapInfoScRsp other = (GetSceneMapInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasBFDKJBKHANA() || bFDKJBKHANA == other.bFDKJBKHANA)
+        && (!hasMFDIBEECLPP() || mFDIBEECLPP == other.mFDIBEECLPP)
         && (!hasMapList() || mapList.equals(other.mapList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeBoolNoTag(bFDKJBKHANA);
+        output.writeRawByte((byte) 80);
+        output.writeBoolNoTag(mFDIBEECLPP);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < mapList.length(); i++) {
-          output.writeRawByte((byte) 10);
+          output.writeRawByte((byte) 42);
           output.writeMessageNoTag(mapList.get(i));
         }
       }
@@ -323,25 +295,25 @@ public final class GetSceneMapInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 72: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 80) {
               break;
             }
           }
-          case 40: {
-            // bFDKJBKHANA
-            bFDKJBKHANA = input.readBool();
+          case 80: {
+            // mFDIBEECLPP
+            mFDIBEECLPP = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 42) {
               break;
             }
           }
-          case 10: {
+          case 42: {
             // mapList
             tag = input.readRepeatedMessage(mapList, tag);
             bitField0_ |= 0x00000004;
@@ -370,7 +342,7 @@ public final class GetSceneMapInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.bFDKJBKHANA, bFDKJBKHANA);
+        output.writeBool(FieldNames.mFDIBEECLPP, mFDIBEECLPP);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.mapList, mapList);
@@ -396,10 +368,10 @@ public final class GetSceneMapInfoScRspOuterClass {
             }
             break;
           }
-          case -1080018220: {
-            if (input.isAtField(FieldNames.bFDKJBKHANA)) {
+          case -1287154195: {
+            if (input.isAtField(FieldNames.mFDIBEECLPP)) {
               if (!input.trySkipNullValue()) {
-                bFDKJBKHANA = input.readBool();
+                mFDIBEECLPP = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -474,7 +446,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName bFDKJBKHANA = FieldName.forField("BFDKJBKHANA");
+      static final FieldName mFDIBEECLPP = FieldName.forField("MFDIBEECLPP");
 
       static final FieldName mapList = FieldName.forField("mapList", "map_list");
     }

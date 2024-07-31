@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetNpcTakenRewardScRsp {
-    uint32 npc_id = 2;
-    repeated uint32 talk_event_list = 14; // NJBEMMJHDDD
-    uint32 retcode = 4;
+	repeated uint32 talk_event_list = 4;
+	uint32 retcode = 5;
+	uint32 npc_id = 14;
 }

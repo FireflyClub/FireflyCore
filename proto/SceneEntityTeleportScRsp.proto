@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "EntityMotion.proto";
 
-// ILPCHPOENLH
 message SceneEntityTeleportScRsp {
-    uint32 retcode = 6;
-    uint32 client_pos_version = 12;
-    EntityMotion entity_motion = 9; // EEFAOFNFELG
+	uint32 retcode = 14;
+	uint32 client_pos_version = 7;
+	EntityMotion entity_motion = 13;
 }

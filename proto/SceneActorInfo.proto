@@ -4,10 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 import "AvatarType.proto";
 
-// PGKNKNCFMHA
 message SceneActorInfo {
-    AvatarType avatar_type = 2;
-    uint32 scene_avatar_id = 11; // OOLGGPJLNAF
-    uint32 map_layer = 9; // ADHFAKPKFEN
-    uint32 uid = 7;
+	uint32 base_avatar_id = 11;
+	uint32 map_layer = 15;
+	uint32 uid = 2;
+	AvatarType avatar_type = 6;
 }

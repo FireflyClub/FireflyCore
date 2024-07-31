@@ -13,7 +13,7 @@ public class HandlerJoinLineupCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = JoinLineupCsReq.parseFrom(data);
 
-        session.getPlayer().getLineupManager().joinLineup(req.getIndex(), req.getSlot(), req.getSceneAvatarId());
+        session.getPlayer().getLineupManager().joinLineup(req.getIndex(), req.getSlotType(), req.getBaseAvatarId());
         session.send(CmdId.JoinLineupScRsp);
     }
 

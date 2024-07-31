@@ -14,7 +14,7 @@ public class HandlerRogueNpcDisappearCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = RogueNpcDisappearCsReq.parseFrom(data);
         
-        GameEntity entity = session.getPlayer().getScene().getEntityById(req.getEntityId());
+        GameEntity entity = session.getPlayer().getScene().getEntityById(req.getDisappearNpcId());
         
         if (entity != null) {
             session.send(CmdId.RogueNpcDisappearScRsp);

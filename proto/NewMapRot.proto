@@ -5,8 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "Vector.proto";
 import "Vector4.proto";
 
-// OAKOJBOEMAA
 message NewMapRot {
-    Vector vector3 = 11; // JPFHECBHCJC
-    Vector4 vector4 = 13; // APDPCGNEBOM
+	Vector4 vector4 = 3;
+	Vector vector3 = 6;
 }

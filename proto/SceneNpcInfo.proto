@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "NpcExtraInfo.proto";
 
-// JJCHKHCFFNO
 message SceneNpcInfo {
-	NpcExtraInfo extra_info = 7; // GFGKEPKKEEP
-    uint32 npc_id = 15; // MPLLACAPPME
+	NpcExtraInfo extra_info = 6;
+	uint32 npc_id = 3;
 }

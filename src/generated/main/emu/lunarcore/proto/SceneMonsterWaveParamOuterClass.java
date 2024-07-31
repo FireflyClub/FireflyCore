@@ -13,43 +13,35 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneMonsterWaveParamOuterClass {
   /**
-   * <pre>
-   *  OHIHIIAJOMD
-   * </pre>
-   *
    * Protobuf type {@code SceneMonsterWaveParam}
    */
   public static final class SceneMonsterWaveParam extends ProtoMessage<SceneMonsterWaveParam> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * <code>optional uint32 DDAFGBCJFMG = 3;</code>
      */
-    private int lJELBCAGIOD;
+    private int dDAFGBCJFMG;
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <code>optional uint32 level = 5;</code>
      */
     private int level;
 
     /**
-     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * <code>optional uint32 NKAAPFHHLCN = 6;</code>
      */
-    private int mLAAHAFOLGG;
+    private int nKAAPFHHLCN;
 
     /**
-     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * <code>optional uint32 FOBGFMKKIPK = 10;</code>
      */
-    private int jLNKGLMINJE;
+    private int fOBGFMKKIPK;
 
     private SceneMonsterWaveParam() {
     }
 
     /**
-     * <pre>
-     *  OHIHIIAJOMD
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneMonsterWaveParam}
      */
     public static SceneMonsterWaveParam newInstance() {
@@ -57,44 +49,44 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 LJELBCAGIOD = 1;</code>
-     * @return whether the lJELBCAGIOD field is set
+     * <code>optional uint32 DDAFGBCJFMG = 3;</code>
+     * @return whether the dDAFGBCJFMG field is set
      */
-    public boolean hasLJELBCAGIOD() {
+    public boolean hasDDAFGBCJFMG() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 LJELBCAGIOD = 1;</code>
+     * <code>optional uint32 DDAFGBCJFMG = 3;</code>
      * @return this
      */
-    public SceneMonsterWaveParam clearLJELBCAGIOD() {
+    public SceneMonsterWaveParam clearDDAFGBCJFMG() {
       bitField0_ &= ~0x00000001;
-      lJELBCAGIOD = 0;
+      dDAFGBCJFMG = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 LJELBCAGIOD = 1;</code>
-     * @return the lJELBCAGIOD
+     * <code>optional uint32 DDAFGBCJFMG = 3;</code>
+     * @return the dDAFGBCJFMG
      */
-    public int getLJELBCAGIOD() {
-      return lJELBCAGIOD;
+    public int getDDAFGBCJFMG() {
+      return dDAFGBCJFMG;
     }
 
     /**
-     * <code>optional uint32 LJELBCAGIOD = 1;</code>
-     * @param value the lJELBCAGIOD to set
+     * <code>optional uint32 DDAFGBCJFMG = 3;</code>
+     * @param value the dDAFGBCJFMG to set
      * @return this
      */
-    public SceneMonsterWaveParam setLJELBCAGIOD(final int value) {
+    public SceneMonsterWaveParam setDDAFGBCJFMG(final int value) {
       bitField0_ |= 0x00000001;
-      lJELBCAGIOD = value;
+      dDAFGBCJFMG = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <code>optional uint32 level = 5;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -102,7 +94,7 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <code>optional uint32 level = 5;</code>
      * @return this
      */
     public SceneMonsterWaveParam clearLevel() {
@@ -112,7 +104,7 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <code>optional uint32 level = 5;</code>
      * @return the level
      */
     public int getLevel() {
@@ -120,7 +112,7 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <code>optional uint32 level = 5;</code>
      * @param value the level to set
      * @return this
      */
@@ -131,76 +123,76 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
-     * @return whether the mLAAHAFOLGG field is set
+     * <code>optional uint32 NKAAPFHHLCN = 6;</code>
+     * @return whether the nKAAPFHHLCN field is set
      */
-    public boolean hasMLAAHAFOLGG() {
+    public boolean hasNKAAPFHHLCN() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
+     * <code>optional uint32 NKAAPFHHLCN = 6;</code>
      * @return this
      */
-    public SceneMonsterWaveParam clearMLAAHAFOLGG() {
+    public SceneMonsterWaveParam clearNKAAPFHHLCN() {
       bitField0_ &= ~0x00000004;
-      mLAAHAFOLGG = 0;
+      nKAAPFHHLCN = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
-     * @return the mLAAHAFOLGG
+     * <code>optional uint32 NKAAPFHHLCN = 6;</code>
+     * @return the nKAAPFHHLCN
      */
-    public int getMLAAHAFOLGG() {
-      return mLAAHAFOLGG;
+    public int getNKAAPFHHLCN() {
+      return nKAAPFHHLCN;
     }
 
     /**
-     * <code>optional uint32 MLAAHAFOLGG = 11;</code>
-     * @param value the mLAAHAFOLGG to set
+     * <code>optional uint32 NKAAPFHHLCN = 6;</code>
+     * @param value the nKAAPFHHLCN to set
      * @return this
      */
-    public SceneMonsterWaveParam setMLAAHAFOLGG(final int value) {
+    public SceneMonsterWaveParam setNKAAPFHHLCN(final int value) {
       bitField0_ |= 0x00000004;
-      mLAAHAFOLGG = value;
+      nKAAPFHHLCN = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 JLNKGLMINJE = 14;</code>
-     * @return whether the jLNKGLMINJE field is set
+     * <code>optional uint32 FOBGFMKKIPK = 10;</code>
+     * @return whether the fOBGFMKKIPK field is set
      */
-    public boolean hasJLNKGLMINJE() {
+    public boolean hasFOBGFMKKIPK() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 JLNKGLMINJE = 14;</code>
+     * <code>optional uint32 FOBGFMKKIPK = 10;</code>
      * @return this
      */
-    public SceneMonsterWaveParam clearJLNKGLMINJE() {
+    public SceneMonsterWaveParam clearFOBGFMKKIPK() {
       bitField0_ &= ~0x00000008;
-      jLNKGLMINJE = 0;
+      fOBGFMKKIPK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 JLNKGLMINJE = 14;</code>
-     * @return the jLNKGLMINJE
+     * <code>optional uint32 FOBGFMKKIPK = 10;</code>
+     * @return the fOBGFMKKIPK
      */
-    public int getJLNKGLMINJE() {
-      return jLNKGLMINJE;
+    public int getFOBGFMKKIPK() {
+      return fOBGFMKKIPK;
     }
 
     /**
-     * <code>optional uint32 JLNKGLMINJE = 14;</code>
-     * @param value the jLNKGLMINJE to set
+     * <code>optional uint32 FOBGFMKKIPK = 10;</code>
+     * @param value the fOBGFMKKIPK to set
      * @return this
      */
-    public SceneMonsterWaveParam setJLNKGLMINJE(final int value) {
+    public SceneMonsterWaveParam setFOBGFMKKIPK(final int value) {
       bitField0_ |= 0x00000008;
-      jLNKGLMINJE = value;
+      fOBGFMKKIPK = value;
       return this;
     }
 
@@ -209,10 +201,10 @@ public final class SceneMonsterWaveParamOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        lJELBCAGIOD = other.lJELBCAGIOD;
+        dDAFGBCJFMG = other.dDAFGBCJFMG;
         level = other.level;
-        mLAAHAFOLGG = other.mLAAHAFOLGG;
-        jLNKGLMINJE = other.jLNKGLMINJE;
+        nKAAPFHHLCN = other.nKAAPFHHLCN;
+        fOBGFMKKIPK = other.fOBGFMKKIPK;
       }
       return this;
     }
@@ -223,17 +215,17 @@ public final class SceneMonsterWaveParamOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasLJELBCAGIOD()) {
-        setLJELBCAGIOD(other.lJELBCAGIOD);
+      if (other.hasDDAFGBCJFMG()) {
+        setDDAFGBCJFMG(other.dDAFGBCJFMG);
       }
       if (other.hasLevel()) {
         setLevel(other.level);
       }
-      if (other.hasMLAAHAFOLGG()) {
-        setMLAAHAFOLGG(other.mLAAHAFOLGG);
+      if (other.hasNKAAPFHHLCN()) {
+        setNKAAPFHHLCN(other.nKAAPFHHLCN);
       }
-      if (other.hasJLNKGLMINJE()) {
-        setJLNKGLMINJE(other.jLNKGLMINJE);
+      if (other.hasFOBGFMKKIPK()) {
+        setFOBGFMKKIPK(other.fOBGFMKKIPK);
       }
       return this;
     }
@@ -245,10 +237,10 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      lJELBCAGIOD = 0;
+      dDAFGBCJFMG = 0;
       level = 0;
-      mLAAHAFOLGG = 0;
-      jLNKGLMINJE = 0;
+      nKAAPFHHLCN = 0;
+      fOBGFMKKIPK = 0;
       return this;
     }
 
@@ -272,29 +264,29 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       SceneMonsterWaveParam other = (SceneMonsterWaveParam) o;
       return bitField0_ == other.bitField0_
-        && (!hasLJELBCAGIOD() || lJELBCAGIOD == other.lJELBCAGIOD)
+        && (!hasDDAFGBCJFMG() || dDAFGBCJFMG == other.dDAFGBCJFMG)
         && (!hasLevel() || level == other.level)
-        && (!hasMLAAHAFOLGG() || mLAAHAFOLGG == other.mLAAHAFOLGG)
-        && (!hasJLNKGLMINJE() || jLNKGLMINJE == other.jLNKGLMINJE);
+        && (!hasNKAAPFHHLCN() || nKAAPFHHLCN == other.nKAAPFHHLCN)
+        && (!hasFOBGFMKKIPK() || fOBGFMKKIPK == other.fOBGFMKKIPK);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(lJELBCAGIOD);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(dDAFGBCJFMG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(mLAAHAFOLGG);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(nKAAPFHHLCN);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(jLNKGLMINJE);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(fOBGFMKKIPK);
       }
     }
 
@@ -302,16 +294,16 @@ public final class SceneMonsterWaveParamOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(lJELBCAGIOD);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dDAFGBCJFMG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mLAAHAFOLGG);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(nKAAPFHHLCN);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(jLNKGLMINJE);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fOBGFMKKIPK);
       }
       return size;
     }
@@ -323,36 +315,36 @@ public final class SceneMonsterWaveParamOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // lJELBCAGIOD
-            lJELBCAGIOD = input.readUInt32();
+          case 24: {
+            // dDAFGBCJFMG
+            dDAFGBCJFMG = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 40) {
               break;
             }
           }
-          case 32: {
+          case 40: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 48) {
               break;
             }
           }
-          case 88: {
-            // mLAAHAFOLGG
-            mLAAHAFOLGG = input.readUInt32();
+          case 48: {
+            // nKAAPFHHLCN
+            nKAAPFHHLCN = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 80) {
               break;
             }
           }
-          case 112: {
-            // jLNKGLMINJE
-            jLNKGLMINJE = input.readUInt32();
+          case 80: {
+            // fOBGFMKKIPK
+            fOBGFMKKIPK = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -377,16 +369,16 @@ public final class SceneMonsterWaveParamOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.lJELBCAGIOD, lJELBCAGIOD);
+        output.writeUInt32(FieldNames.dDAFGBCJFMG, dDAFGBCJFMG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.mLAAHAFOLGG, mLAAHAFOLGG);
+        output.writeUInt32(FieldNames.nKAAPFHHLCN, nKAAPFHHLCN);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.jLNKGLMINJE, jLNKGLMINJE);
+        output.writeUInt32(FieldNames.fOBGFMKKIPK, fOBGFMKKIPK);
       }
       output.endObject();
     }
@@ -398,10 +390,10 @@ public final class SceneMonsterWaveParamOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1211083758: {
-            if (input.isAtField(FieldNames.lJELBCAGIOD)) {
+          case -1652482471: {
+            if (input.isAtField(FieldNames.dDAFGBCJFMG)) {
               if (!input.trySkipNullValue()) {
-                lJELBCAGIOD = input.readUInt32();
+                dDAFGBCJFMG = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -420,10 +412,10 @@ public final class SceneMonsterWaveParamOuterClass {
             }
             break;
           }
-          case -1479601013: {
-            if (input.isAtField(FieldNames.mLAAHAFOLGG)) {
+          case -130192572: {
+            if (input.isAtField(FieldNames.nKAAPFHHLCN)) {
               if (!input.trySkipNullValue()) {
-                mLAAHAFOLGG = input.readUInt32();
+                nKAAPFHHLCN = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -431,10 +423,10 @@ public final class SceneMonsterWaveParamOuterClass {
             }
             break;
           }
-          case 1571120585: {
-            if (input.isAtField(FieldNames.jLNKGLMINJE)) {
+          case 552094639: {
+            if (input.isAtField(FieldNames.fOBGFMKKIPK)) {
               if (!input.trySkipNullValue()) {
-                jLNKGLMINJE = input.readUInt32();
+                fOBGFMKKIPK = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -495,13 +487,13 @@ public final class SceneMonsterWaveParamOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName lJELBCAGIOD = FieldName.forField("LJELBCAGIOD");
+      static final FieldName dDAFGBCJFMG = FieldName.forField("DDAFGBCJFMG");
 
       static final FieldName level = FieldName.forField("level");
 
-      static final FieldName mLAAHAFOLGG = FieldName.forField("MLAAHAFOLGG");
+      static final FieldName nKAAPFHHLCN = FieldName.forField("NKAAPFHHLCN");
 
-      static final FieldName jLNKGLMINJE = FieldName.forField("JLNKGLMINJE");
+      static final FieldName fOBGFMKKIPK = FieldName.forField("FOBGFMKKIPK");
     }
   }
 }

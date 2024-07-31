@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "FriendListInfo.proto";
 
-// DMJPOKCMEGO
 message SyncHandleFriendScNotify {
-    FriendListInfo handle_friend_info = 14;
-    uint32 uid = 13;
-    bool handle_result = 8;
+	bool handle_result = 2;
+	uint32 uid = 5;
+	FriendListInfo handle_friend_info = 8;
 }

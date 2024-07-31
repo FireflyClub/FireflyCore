@@ -6,19 +6,18 @@ import "MazeGroup.proto";
 import "MazeChest.proto";
 import "MazeProp.proto";
 
-// GNIOCFIKGNE
 message MazeMapData {
-	map<string, int32> BEEIDEFKEKG = 12;
-    repeated MazeGroup maze_group_list = 11; // DBKGOECCBDB
-	// repeated NEOBMGCDILL CIHBHDIKFHE = 10;
-    uint32 retcode = 7;
-    repeated MazeChest unlocked_chest_list = 3; // MBILAMELLEJ
-    repeated uint32 lighten_section_list = 5;
-    repeated MazeProp maze_prop_list = 6; // LCDDPCGPAEH
-	uint32 PKOIJBEDMEK = 9;
-    repeated uint32 unlocked_teleport_list = 14; // PAEPFCAIBFA
-	uint32 JNBDFDPIONG = 8;
-	uint32 IGPEHMFKJKG = 1;
-    uint32 entry_id = 4;
-	uint32 LMOKAPLPCFD = 15;
+	map<string, int32> BOMLAPEJGIJ = 8;
+	repeated uint32 unlocked_teleport_list = 11;
+	repeated MazeGroup maze_group_list = 1;
+	uint32 entry_id = 9;
+	repeated MazeChest unlocked_chest_list = 7;
+	repeated uint32 lighten_section_list = 10;
+	uint32 EOBFHOFKJFM = 4;
+	uint32 PHHDECMGCBC = 3;
+	uint32 retcode = 6;
+	//repeated MDPNLIODAPD DCKLOFCGOMC = 2;
+	uint32 PHPHBMIAOGG = 12;
+	repeated MazeProp maze_prop_list = 5;
+	uint32 map_entry_id = 13;
 }

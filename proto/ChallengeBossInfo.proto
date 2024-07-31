@@ -6,13 +6,13 @@ import "ChallengeBossStageInfo.proto";
 import "ChallengeBossEquipment.proto";
 import "ChallengeBossRelic.proto";
 
-// NBGPGDMLKAD
 message ChallengeBossInfo {
-	ChallengeBossStageInfo first_node = 1; // LFINNEDDCAJ
-	ChallengeBossStageInfo second_node = 5; // LHDMIOKHDAJ
-    repeated uint32 team_two = 11; // DIHEALDBBFI
-    map<uint32, ChallengeBossRelic> relics = 3; // JJMBDNBBNFI
-	bool NILMFPFBCNJ = 14;
-    map<uint32, ChallengeBossEquipment> equipments = 12; // NKOODOOIEBF
-    repeated uint32 team_one = 2; // KBHGJGHNKGJ
+	map<uint32, ChallengeBossEquipment> equipments = 6;
+	map<uint32, ChallengeBossRelic> relics = 11;
+	repeated uint32 BADPGANOHKM = 3;
+	bool LBOJBINABDG = 13;
+	repeated uint32 PPKNDBEAHCA = 12;
+
+	ChallengeBossStageInfo first_node = 15; //?
+	ChallengeBossStageInfo second_node = 1; //?
 }

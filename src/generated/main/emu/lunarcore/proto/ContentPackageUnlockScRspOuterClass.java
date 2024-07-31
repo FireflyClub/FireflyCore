@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ContentPackageUnlockScRspOuterClass {
   /**
-   * <pre>
-   *  GIBNAGOFKPL
-   * </pre>
-   *
    * Protobuf type {@code ContentPackageUnlockScRsp}
    */
   public static final class ContentPackageUnlockScRsp extends ProtoMessage<ContentPackageUnlockScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 map_entry_id = 7;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      */
     private int mapEntryId;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
@@ -36,10 +32,6 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  GIBNAGOFKPL
-     * </pre>
-     *
      * @return a new empty instance of {@code ContentPackageUnlockScRsp}
      */
     public static ContentPackageUnlockScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 7;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return whether the mapEntryId field is set
      */
     public boolean hasMapEntryId() {
@@ -55,7 +47,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 7;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return this
      */
     public ContentPackageUnlockScRsp clearMapEntryId() {
@@ -65,7 +57,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 7;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return the mapEntryId
      */
     public int getMapEntryId() {
@@ -73,7 +65,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 7;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @param value the mapEntryId to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -92,7 +84,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public ContentPackageUnlockScRsp clearRetcode() {
@@ -102,7 +94,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -110,7 +102,7 @@ public final class ContentPackageUnlockScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -185,11 +177,11 @@ public final class ContentPackageUnlockScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
     }
@@ -213,16 +205,16 @@ public final class ContentPackageUnlockScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 16: {
             // mapEntryId
             mapEntryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 48) {
               break;
             }
           }
-          case 64: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;

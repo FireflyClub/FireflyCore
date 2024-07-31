@@ -5,9 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "LineupInfo.proto";
 import "ChallengeInfo.proto";
 
-// EIHGNFHADKC
 message GetCurChallengeScRsp {
-	uint32 retcode = 9;
-	ChallengeInfo challenge_info = 5; // JBLAOCMBABG
-    repeated LineupInfo lineup_list = 14;
+	ChallengeInfo challenge_info = 3;
+	repeated LineupInfo lineup_list = 4;
+	uint32 retcode = 14;
 }

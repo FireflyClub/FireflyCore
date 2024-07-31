@@ -6,5 +6,5 @@ import "ItemList.proto";
 
 // HCONDGFGEBI
 message ScenePlaneEventScNotify {
-    ItemList get_item_list = 1; //?
+    ItemList get_item_list = 9;
 }

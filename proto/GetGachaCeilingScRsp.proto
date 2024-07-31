@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "GachaCeiling.proto";
 
 message GetGachaCeilingScRsp {
-    uint32 gacha_type = 14;
-    GachaCeiling gacha_ceiling = 11;
-    uint32 retcode = 15;
+	GachaCeiling gacha_ceiling = 4;
+	uint32 retcode = 7;
+	uint32 gacha_type = 3;
 }

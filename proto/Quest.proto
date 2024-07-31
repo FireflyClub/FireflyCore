@@ -5,9 +5,9 @@ option java_package = "emu.lunarcore.proto";
 import "QuestStatus.proto";
 
 message Quest {
-  int64 finish_time = 4; // MIJOGLDJPHK
-	repeated uint32 CIAJHBCJAFJ = 1;
-  QuestStatus status = 8;
-  uint32 progress = 6;
-  uint32 id = 15;
+	int64 finish_time = 13;
+	uint32 id = 10;
+	QuestStatus status = 15;
+	uint32 progress = 6;
+	repeated uint32 ANAKGMFIDBJ = 5;
 }

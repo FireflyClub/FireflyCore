@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class BattleEndReasonOuterClass {
   /**
-   * <pre>
-   *  GFNDHIBPPBA
-   * </pre>
-   *
    * Protobuf enum {@code BattleEndReason}
    */
   public enum BattleEndReason implements ProtoEnum<BattleEndReason> {

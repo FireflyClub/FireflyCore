@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class FeverTimeActivityTypeOuterClass {
   /**
-   * <pre>
-   *  NEHPFBIGJCP
-   * </pre>
-   *
    * Protobuf enum {@code FeverTimeActivityType}
    */
   public enum FeverTimeActivityType implements ProtoEnum<FeverTimeActivityType> {

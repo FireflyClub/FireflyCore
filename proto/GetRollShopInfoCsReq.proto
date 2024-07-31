@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// KHLODLJFAEJ
 message GetRollShopInfoCsReq {
-  uint32 roll_shop_id = 3;
+	uint32 roll_shop_id = 7;
 }

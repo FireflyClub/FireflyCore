@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// EOOAFDDNFCE
 enum MultiPathAvatarType {
 	MultiPathAvatarTypeNone = 0;
 	Mar_7thKnightType = 1001;

@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RotatorEnergyInfoOuterClass {
   /**
-   * <pre>
-   *  HFGHBBKLDEF
-   * </pre>
-   *
    * Protobuf type {@code RotatorEnergyInfo}
    */
   public static final class RotatorEnergyInfo extends ProtoMessage<RotatorEnergyInfo> implements Cloneable {
@@ -27,7 +23,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 2;</code>
+     * <code>optional uint32 cur_num = 4;</code>
      */
     private int curNum;
 
@@ -44,10 +40,6 @@ public final class RotatorEnergyInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HFGHBBKLDEF
-     * </pre>
-     *
      * @return a new empty instance of {@code RotatorEnergyInfo}
      */
     public static RotatorEnergyInfo newInstance() {
@@ -59,7 +51,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 2;</code>
+     * <code>optional uint32 cur_num = 4;</code>
      * @return whether the curNum field is set
      */
     public boolean hasCurNum() {
@@ -71,7 +63,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 2;</code>
+     * <code>optional uint32 cur_num = 4;</code>
      * @return this
      */
     public RotatorEnergyInfo clearCurNum() {
@@ -85,7 +77,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 2;</code>
+     * <code>optional uint32 cur_num = 4;</code>
      * @return the curNum
      */
     public int getCurNum() {
@@ -97,7 +89,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 2;</code>
+     * <code>optional uint32 cur_num = 4;</code>
      * @param value the curNum to set
      * @return this
      */
@@ -225,7 +217,7 @@ public final class RotatorEnergyInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(curNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -253,7 +245,7 @@ public final class RotatorEnergyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 32: {
             // curNum
             curNum = input.readUInt32();
             bitField0_ |= 0x00000001;

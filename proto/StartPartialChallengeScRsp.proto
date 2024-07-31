@@ -6,10 +6,9 @@ import "LineupInfo.proto";
 import "ChallengeInfo.proto";
 import "SceneInfo.proto";
 
-// DPKLLCGOABD
 message StartPartialChallengeScRsp {
-	uint32 retcode = 7;
-	SceneInfo scene = 1;
-	LineupInfo lineup = 3;
+	LineupInfo lineup = 5;
+	SceneInfo scene = 6;
+	uint32 retcode = 8;
 	ChallengeInfo challenge_info = 9;
 }

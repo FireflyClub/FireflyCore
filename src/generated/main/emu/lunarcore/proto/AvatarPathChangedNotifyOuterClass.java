@@ -13,26 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class AvatarPathChangedNotifyOuterClass {
   /**
-   * <pre>
-   *  IFFEIGOPCKC
-   * </pre>
-   *
    * Protobuf type {@code AvatarPathChangedNotify}
    */
   public static final class AvatarPathChangedNotify extends ProtoMessage<AvatarPathChangedNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 scene_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 3;</code>
      */
-    private int sceneAvatarId;
+    private int baseAvatarId;
 
     /**
-     * <pre>
-     *  IPDLPAMOKLD
-     * </pre>
-     *
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
      */
     private int multiPathAvatarType;
 
@@ -40,10 +32,6 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IFFEIGOPCKC
-     * </pre>
-     *
      * @return a new empty instance of {@code AvatarPathChangedNotify}
      */
     public static AvatarPathChangedNotify newInstance() {
@@ -51,48 +39,44 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_avatar_id = 3;</code>
-     * @return whether the sceneAvatarId field is set
+     * <code>optional uint32 base_avatar_id = 3;</code>
+     * @return whether the baseAvatarId field is set
      */
-    public boolean hasSceneAvatarId() {
+    public boolean hasBaseAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 scene_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 3;</code>
      * @return this
      */
-    public AvatarPathChangedNotify clearSceneAvatarId() {
+    public AvatarPathChangedNotify clearBaseAvatarId() {
       bitField0_ &= ~0x00000001;
-      sceneAvatarId = 0;
+      baseAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 scene_avatar_id = 3;</code>
-     * @return the sceneAvatarId
+     * <code>optional uint32 base_avatar_id = 3;</code>
+     * @return the baseAvatarId
      */
-    public int getSceneAvatarId() {
-      return sceneAvatarId;
+    public int getBaseAvatarId() {
+      return baseAvatarId;
     }
 
     /**
-     * <code>optional uint32 scene_avatar_id = 3;</code>
-     * @param value the sceneAvatarId to set
+     * <code>optional uint32 base_avatar_id = 3;</code>
+     * @param value the baseAvatarId to set
      * @return this
      */
-    public AvatarPathChangedNotify setSceneAvatarId(final int value) {
+    public AvatarPathChangedNotify setBaseAvatarId(final int value) {
       bitField0_ |= 0x00000001;
-      sceneAvatarId = value;
+      baseAvatarId = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  IPDLPAMOKLD
-     * </pre>
-     *
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
      * @return whether the multiPathAvatarType field is set
      */
     public boolean hasMultiPathAvatarType() {
@@ -100,11 +84,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IPDLPAMOKLD
-     * </pre>
-     *
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
      * @return this
      */
     public AvatarPathChangedNotify clearMultiPathAvatarType() {
@@ -114,11 +94,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IPDLPAMOKLD
-     * </pre>
-     *
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
      * @return the multiPathAvatarType
      */
     public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getMultiPathAvatarType() {
@@ -151,11 +127,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  IPDLPAMOKLD
-     * </pre>
-     *
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 9;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
      * @param value the multiPathAvatarType to set
      * @return this
      */
@@ -171,7 +143,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        sceneAvatarId = other.sceneAvatarId;
+        baseAvatarId = other.baseAvatarId;
         multiPathAvatarType = other.multiPathAvatarType;
       }
       return this;
@@ -183,8 +155,8 @@ public final class AvatarPathChangedNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSceneAvatarId()) {
-        setSceneAvatarId(other.sceneAvatarId);
+      if (other.hasBaseAvatarId()) {
+        setBaseAvatarId(other.baseAvatarId);
       }
       if (other.hasMultiPathAvatarType()) {
         setMultiPathAvatarTypeValue(other.multiPathAvatarType);
@@ -199,7 +171,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      sceneAvatarId = 0;
+      baseAvatarId = 0;
       multiPathAvatarType = 0;
       return this;
     }
@@ -224,7 +196,7 @@ public final class AvatarPathChangedNotifyOuterClass {
       }
       AvatarPathChangedNotify other = (AvatarPathChangedNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasSceneAvatarId() || sceneAvatarId == other.sceneAvatarId)
+        && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
         && (!hasMultiPathAvatarType() || multiPathAvatarType == other.multiPathAvatarType);
     }
 
@@ -232,10 +204,10 @@ public final class AvatarPathChangedNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(sceneAvatarId);
+        output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 64);
         output.writeEnumNoTag(multiPathAvatarType);
       }
     }
@@ -244,7 +216,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(sceneAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(multiPathAvatarType);
@@ -260,15 +232,15 @@ public final class AvatarPathChangedNotifyOuterClass {
       while (true) {
         switch (tag) {
           case 24: {
-            // sceneAvatarId
-            sceneAvatarId = input.readUInt32();
+            // baseAvatarId
+            baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 64) {
               break;
             }
           }
-          case 72: {
+          case 64: {
             // multiPathAvatarType
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
@@ -298,7 +270,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.sceneAvatarId, sceneAvatarId);
+        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeEnum(FieldNames.multiPathAvatarType, multiPathAvatarType, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
@@ -313,11 +285,11 @@ public final class AvatarPathChangedNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1044772608:
-          case 1783323086: {
-            if (input.isAtField(FieldNames.sceneAvatarId)) {
+          case 118022725:
+          case -1756826157: {
+            if (input.isAtField(FieldNames.baseAvatarId)) {
               if (!input.trySkipNullValue()) {
-                sceneAvatarId = input.readUInt32();
+                baseAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -395,7 +367,7 @@ public final class AvatarPathChangedNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName sceneAvatarId = FieldName.forField("sceneAvatarId", "scene_avatar_id");
+      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
 
       static final FieldName multiPathAvatarType = FieldName.forField("multiPathAvatarType", "multi_path_avatar_type");
     }

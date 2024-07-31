@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// NPIBPOECPLH
 message GetUnlockTeleportScRsp {
-    repeated uint32 unlocked_teleport_list = 9;
-    uint32 retcode = 15;
+	uint32 retcode = 9;
+	repeated uint32 unlocked_teleport_list = 5;
 }

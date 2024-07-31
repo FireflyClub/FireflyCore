@@ -5,11 +5,11 @@ option java_package = "emu.lunarcore.proto";
 import "Goods.proto";
 
 message Shop {
-    repeated Goods goods_list = 8;
-    uint32 city_level = 5;
-    uint64 city_taken_level_reward = 2;
-    uint32 shop_id = 14;
-    int64 begin_time = 6;
-    int64 end_time = 15;
-    uint32 city_exp = 7;
+	repeated Goods goods_list = 5;
+	int64 end_time = 8;
+	uint32 city_exp = 6;
+	int64 begin_time = 3;
+	uint64 city_taken_level_reward = 14;
+	uint32 shop_id = 1;
+	uint32 city_level = 10;
 }

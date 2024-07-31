@@ -14,21 +14,13 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class GetUnlockTeleportCsReqOuterClass {
   /**
-   * <pre>
-   *  IKGFLNJJNIN
-   * </pre>
-   *
    * Protobuf type {@code GetUnlockTeleportCsReq}
    */
   public static final class GetUnlockTeleportCsReq extends ProtoMessage<GetUnlockTeleportCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      */
     private final RepeatedInt entryIdList = RepeatedInt.newEmptyInstance();
 
@@ -36,10 +28,6 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  IKGFLNJJNIN
-     * </pre>
-     *
      * @return a new empty instance of {@code GetUnlockTeleportCsReq}
      */
     public static GetUnlockTeleportCsReq newInstance() {
@@ -47,11 +35,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      * @return whether the entryIdList field is set
      */
     public boolean hasEntryIdList() {
@@ -59,11 +43,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      * @return this
      */
     public GetUnlockTeleportCsReq clearEntryIdList() {
@@ -73,11 +53,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -91,11 +67,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -109,11 +81,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      * @param value the entryIdList to add
      * @return this
      */
@@ -124,11 +92,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  CNGFEBNDGHK
-     * </pre>
-     *
-     * <code>repeated uint32 entry_id_list = 5;</code>
+     * <code>repeated uint32 entry_id_list = 12;</code>
      * @param values the entryIdList to add
      * @return this
      */
@@ -199,7 +163,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < entryIdList.length(); i++) {
-          output.writeRawByte((byte) 40);
+          output.writeRawByte((byte) 96);
           output.writeUInt32NoTag(entryIdList.array()[i]);
         }
       }
@@ -221,7 +185,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
+          case 98: {
             // entryIdList [packed=true]
             input.readPackedUInt32(entryIdList, tag);
             bitField0_ |= 0x00000001;
@@ -240,7 +204,7 @@ public final class GetUnlockTeleportCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 40: {
+          case 96: {
             // entryIdList [packed=false]
             tag = input.readRepeatedUInt32(entryIdList, tag);
             bitField0_ |= 0x00000001;

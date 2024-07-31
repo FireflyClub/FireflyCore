@@ -4,8 +4,7 @@ option java_package = "emu.lunarcore.proto";
 
 import "EntityMotion.proto";
 
-// OJGHKBPIJKN
 message SceneEntityTeleportCsReq {
-    uint32 entry_id = 4;
-    EntityMotion entity_motion = 11;
+	EntityMotion entity_motion = 11;
+	uint32 entry_id = 6;
 }

@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "EntityBuffChangeInfo.proto";
 
-// INGMBBBNCNJ
 message SyncEntityBuffChangeListScNotify {
-    repeated EntityBuffChangeInfo entity_buff_info_list = 10; // NJPCOLKEEKK
+	repeated EntityBuffChangeInfo entity_buff_info_list = 12;
 }

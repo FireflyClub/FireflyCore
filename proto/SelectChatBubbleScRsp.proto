@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Djdendkleem
 message SelectChatBubbleScRsp {
-	uint32 BBNGMOCDLFA = 6;
-    uint32 retcode = 2;
-    uint32 cur_chat_bubble = 15;
+	uint32 retcode = 11;
+	uint32 PMCGOBLJNJJ = 3;
+	uint32 cur_chat_bubble = 2;
 }

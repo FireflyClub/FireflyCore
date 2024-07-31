@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// HAMMEEAGHHP
 message EquipRelic {
-    uint32 relic_unique_id = 14; // JJIEKLBDJIP
-    uint32 slot = 1;
+	uint32 relic_unique_id = 13;
+	uint32 slot = 9;
 }

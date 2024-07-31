@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class NpcExtraInfoOuterClass {
   /**
-   * <pre>
-   *  MCMFGNBEGMN
-   * </pre>
-   *
    * Protobuf type {@code NpcExtraInfo}
    */
   public static final class NpcExtraInfo extends ProtoMessage<NpcExtraInfo> implements Cloneable {
@@ -24,7 +20,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>
@@ -35,10 +32,6 @@ public final class NpcExtraInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MCMFGNBEGMN
-     * </pre>
-     *
      * @return a new empty instance of {@code NpcExtraInfo}
      */
     public static NpcExtraInfo newInstance() {
@@ -47,7 +40,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>
@@ -59,7 +53,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>
@@ -73,7 +68,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>
@@ -91,7 +87,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>
@@ -109,7 +106,8 @@ public final class NpcExtraInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * PJGIELGHNOM AAAANHOHDIK = 11;
+     * MNAMHPIEFMK OGJJCPMDKGE = 10;
      * </pre>
      *
      * <code>optional .NpcRogueInfo rogue_info = 6;</code>

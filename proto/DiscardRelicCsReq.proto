@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// HHBEGOLFELK
 message DiscardRelicCsReq {
-    uint32 relic_unique_id = 7;
-    bool is_discard = 9; // KLLCHANCGPG
+	bool is_discard = 6;
+	repeated uint32 IPNGFAIPDDE = 3;
+	bool KIJKPEPDDEL = 15;
 }

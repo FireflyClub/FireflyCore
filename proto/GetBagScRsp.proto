@@ -10,19 +10,19 @@ import "WaitDelResource.proto";
 import "TurnFoodSwitch.proto";
 import "Material0.proto";
 
-// KKGLDLPALGO
 message GetBagScRsp {
-	repeated uint32 JKHMBHKDMHE = 12;
-	repeated Material0 ECDPDPPAGBC = 6;
-	uint32 DCIAMCOCIML = 13;
-	repeated Material material_list = 10;
-	repeated Equipment equipment_list = 14;
-	uint32 retcode = 7;
-	repeated TurnFoodSwitch turn_food_switch = 3; // NDDIKEHEKOC
-	repeated Material PPIOKIGDEPI = 4;
-	repeated uint32 CNKIGOHHDCA = 2;
-	repeated Relic relic_list = 9;
-	repeated PileItem pile_item_list = 5; // KAKKJBAGHGA
-	repeated Material0 JFKKBHDOOKG = 1;
-	repeated WaitDelResource wait_del_resource_list = 15; // MDFBPBPFOEI
+	repeated uint32 DAOHIHHHLOL = 2;
+	repeated Material PCKKHKBEAOM = 11;
+	repeated WaitDelResource wait_del_resource_list = 4;
+	repeated PileItem pile_item_list = 5;
+	repeated Material0 FLECIJNFOBI = 15;
+	repeated Relic relic_list = 10;
+	repeated Material0 GHHACNDFBAE = 13;
+	uint32 retcode = 9;
+	uint32 KAIKJLHKDPA = 3;
+	repeated uint32 FBEDJNJPNJN = 12;
+	repeated Equipment equipment_list = 6;
+	repeated TurnFoodSwitch turn_food_switch = 8;
+	repeated Material material_list = 1;
+	repeated uint32 EJLIMCBIFMF = 7;
 }

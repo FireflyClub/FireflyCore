@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// DNKBBCLBNDM
 message ContentPackageUnlockCsReq {
-	uint32 map_entry_id = 15;
+	uint32 map_entry_id = 2;
 }

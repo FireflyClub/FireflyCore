@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class FriendRecommendInfoOuterClass {
   /**
-   * <pre>
-   *  MAOJKNNONOJ
-   * </pre>
-   *
    * Protobuf type {@code FriendRecommendInfo}
    */
   public static final class FriendRecommendInfo extends ProtoMessage<FriendRecommendInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool OAAFIMCIONL = 8;</code>
+     * <code>optional bool BBEAAGPAIFD = 11;</code>
      */
-    private boolean oAAFIMCIONL;
+    private boolean bBEAAGPAIFD;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
@@ -36,10 +32,6 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  MAOJKNNONOJ
-     * </pre>
-     *
      * @return a new empty instance of {@code FriendRecommendInfo}
      */
     public static FriendRecommendInfo newInstance() {
@@ -47,44 +39,44 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional bool OAAFIMCIONL = 8;</code>
-     * @return whether the oAAFIMCIONL field is set
+     * <code>optional bool BBEAAGPAIFD = 11;</code>
+     * @return whether the bBEAAGPAIFD field is set
      */
-    public boolean hasOAAFIMCIONL() {
+    public boolean hasBBEAAGPAIFD() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool OAAFIMCIONL = 8;</code>
+     * <code>optional bool BBEAAGPAIFD = 11;</code>
      * @return this
      */
-    public FriendRecommendInfo clearOAAFIMCIONL() {
+    public FriendRecommendInfo clearBBEAAGPAIFD() {
       bitField0_ &= ~0x00000001;
-      oAAFIMCIONL = false;
+      bBEAAGPAIFD = false;
       return this;
     }
 
     /**
-     * <code>optional bool OAAFIMCIONL = 8;</code>
-     * @return the oAAFIMCIONL
+     * <code>optional bool BBEAAGPAIFD = 11;</code>
+     * @return the bBEAAGPAIFD
      */
-    public boolean getOAAFIMCIONL() {
-      return oAAFIMCIONL;
+    public boolean getBBEAAGPAIFD() {
+      return bBEAAGPAIFD;
     }
 
     /**
-     * <code>optional bool OAAFIMCIONL = 8;</code>
-     * @param value the oAAFIMCIONL to set
+     * <code>optional bool BBEAAGPAIFD = 11;</code>
+     * @param value the bBEAAGPAIFD to set
      * @return this
      */
-    public FriendRecommendInfo setOAAFIMCIONL(final boolean value) {
+    public FriendRecommendInfo setBBEAAGPAIFD(final boolean value) {
       bitField0_ |= 0x00000001;
-      oAAFIMCIONL = value;
+      bBEAAGPAIFD = value;
       return this;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
@@ -92,7 +84,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      * @return this
      */
     public FriendRecommendInfo clearSimpleInfo() {
@@ -102,7 +94,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 10;</code>
+     * <code>optional .SimpleInfo simple_info = 14;</code>
      * @param value the simpleInfo to set
      * @return this
      */
@@ -145,7 +137,7 @@ public final class FriendRecommendInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        oAAFIMCIONL = other.oAAFIMCIONL;
+        bBEAAGPAIFD = other.bBEAAGPAIFD;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -157,8 +149,8 @@ public final class FriendRecommendInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasOAAFIMCIONL()) {
-        setOAAFIMCIONL(other.oAAFIMCIONL);
+      if (other.hasBBEAAGPAIFD()) {
+        setBBEAAGPAIFD(other.bBEAAGPAIFD);
       }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
@@ -173,7 +165,7 @@ public final class FriendRecommendInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      oAAFIMCIONL = false;
+      bBEAAGPAIFD = false;
       simpleInfo.clear();
       return this;
     }
@@ -199,18 +191,18 @@ public final class FriendRecommendInfoOuterClass {
       }
       FriendRecommendInfo other = (FriendRecommendInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasOAAFIMCIONL() || oAAFIMCIONL == other.oAAFIMCIONL)
+        && (!hasBBEAAGPAIFD() || bBEAAGPAIFD == other.bBEAAGPAIFD)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeBoolNoTag(oAAFIMCIONL);
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(bBEAAGPAIFD);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(simpleInfo);
       }
     }
@@ -234,16 +226,16 @@ public final class FriendRecommendInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
-            // oAAFIMCIONL
-            oAAFIMCIONL = input.readBool();
+          case 88: {
+            // bBEAAGPAIFD
+            bBEAAGPAIFD = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 114) {
               break;
             }
           }
-          case 82: {
+          case 114: {
             // simpleInfo
             input.readMessage(simpleInfo);
             bitField0_ |= 0x00000002;
@@ -270,7 +262,7 @@ public final class FriendRecommendInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.oAAFIMCIONL, oAAFIMCIONL);
+        output.writeBool(FieldNames.bBEAAGPAIFD, bBEAAGPAIFD);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
@@ -285,10 +277,10 @@ public final class FriendRecommendInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1559630804: {
-            if (input.isAtField(FieldNames.oAAFIMCIONL)) {
+          case -1599689100: {
+            if (input.isAtField(FieldNames.bBEAAGPAIFD)) {
               if (!input.trySkipNullValue()) {
-                oAAFIMCIONL = input.readBool();
+                bBEAAGPAIFD = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -361,7 +353,7 @@ public final class FriendRecommendInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName oAAFIMCIONL = FieldName.forField("OAAFIMCIONL");
+      static final FieldName bBEAAGPAIFD = FieldName.forField("BBEAAGPAIFD");
 
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }

@@ -423,7 +423,7 @@ public class ChallengeInstance {
                 .getMutableStartInfo()
                 .getMutableCurBossBuffs()
                 .addBuffList(buffId)
-                .setPKGLMGHDPNJ(1);
+                .setKAEFAFNNEEK(1);
         }
         
         return proto;

@@ -14,20 +14,12 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class BattleTargetListOuterClass {
   /**
-   * <pre>
-   *  EOLPBMCFJDL
-   * </pre>
-   *
    * Protobuf type {@code BattleTargetList}
    */
   public static final class BattleTargetList extends ProtoMessage<BattleTargetList> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      */
     private final RepeatedMessage<BattleTargetOuterClass.BattleTarget> battleTargetList = RepeatedMessage.newEmptyInstance(BattleTargetOuterClass.BattleTarget.getFactory());
@@ -36,10 +28,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  EOLPBMCFJDL
-     * </pre>
-     *
      * @return a new empty instance of {@code BattleTargetList}
      */
     public static BattleTargetList newInstance() {
@@ -47,10 +35,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @return whether the battleTargetList field is set
      */
@@ -59,10 +43,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @return this
      */
@@ -73,10 +53,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -91,10 +67,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -109,10 +81,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @param value the battleTargetList to add
      * @return this
@@ -124,10 +92,6 @@ public final class BattleTargetListOuterClass {
     }
 
     /**
-     * <pre>
-     *  LKHKOMLPNLF
-     * </pre>
-     *
      * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @param values the battleTargetList to add
      * @return this

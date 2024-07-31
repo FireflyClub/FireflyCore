@@ -2,10 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// OKCMCGEKIFG
 message ChallengeBossStageInfo {
-	uint32 JGDMLOFCNCH = 9;
-    bool is_win = 7; // NNJCJEODEPK
-	bool KJCEEICMKEE = 1;
-	uint32 CKNGEMPPIGE = 2;
+	uint32 buff_id = 3;
+	uint32 stage_score = 14;
+	bool is_win = 12;
+	bool CCFNICMLEID = 13;
 }

@@ -10,7 +10,7 @@ public class PacketChangeLineupLeaderScRsp extends BasePacket {
         super(CmdId.ChangeLineupLeaderScRsp);
 
         var data = ChangeLineupLeaderScRsp.newInstance()
-                .setSlot(slot);
+                .setSlotType(slot);
 
         this.setData(data);
     }

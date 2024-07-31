@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class PlayingStateOuterClass {
   /**
-   * <pre>
-   *  PAPHFBALEKJ
-   * </pre>
-   *
    * Protobuf enum {@code PlayingState}
    */
   public enum PlayingState implements ProtoEnum<PlayingState> {
@@ -49,9 +45,9 @@ public final class PlayingStateOuterClass {
     PLAYING_CHALLENGE_BOSS("PLAYING_CHALLENGE_BOSS", 6),
 
     /**
-     * <code>PLAYINGROGUE_TOURN = 7;</code>
+     * <code>PLAYING_ROGUE_TOURN = 7;</code>
      */
-    PLAYINGROGUE_TOURN("PLAYINGROGUE_TOURN", 7);
+    PLAYING_ROGUE_TOURN("PLAYING_ROGUE_TOURN", 7);
 
     /**
      * <code>PLAYING_STATE_NONE = 0;</code>
@@ -89,9 +85,9 @@ public final class PlayingStateOuterClass {
     public static final int PLAYING_CHALLENGE_BOSS_VALUE = 6;
 
     /**
-     * <code>PLAYINGROGUE_TOURN = 7;</code>
+     * <code>PLAYING_ROGUE_TOURN = 7;</code>
      */
-    public static final int PLAYINGROGUE_TOURN_VALUE = 7;
+    public static final int PLAYING_ROGUE_TOURN_VALUE = 7;
 
     private final String name;
 
@@ -156,7 +152,7 @@ public final class PlayingStateOuterClass {
         lookup[4] = PLAYING_CHALLENGE_MEMORY;
         lookup[5] = PLAYING_CHALLENGE_STORY;
         lookup[6] = PLAYING_CHALLENGE_BOSS;
-        lookup[7] = PLAYINGROGUE_TOURN;
+        lookup[7] = PLAYING_ROGUE_TOURN;
       }
 
       @Override
@@ -174,14 +170,14 @@ public final class PlayingStateOuterClass {
             if (ProtoUtil.isEqual("PLAYING_STATE_NONE", value)) {
               return PLAYING_STATE_NONE;
             }
-            if (ProtoUtil.isEqual("PLAYINGROGUE_TOURN", value)) {
-              return PLAYINGROGUE_TOURN;
-            }
             break;
           }
           case 19: {
             if (ProtoUtil.isEqual("PLAYING_ROGUE_CHESS", value)) {
               return PLAYING_ROGUE_CHESS;
+            }
+            if (ProtoUtil.isEqual("PLAYING_ROGUE_TOURN", value)) {
+              return PLAYING_ROGUE_TOURN;
             }
             break;
           }

@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "GroupStateInfo.proto";
 
 message GroupStateChangeCsReq {
-    GroupStateInfo group_state_info = 7; // GEPHFEEKECN
+	GroupStateInfo group_state_info = 8;
 }

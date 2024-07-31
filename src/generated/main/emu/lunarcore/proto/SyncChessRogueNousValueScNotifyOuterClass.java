@@ -19,9 +19,9 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
      */
-    private final ChessRogueNousValueOuterClass.ChessRogueNousValue value_ = ChessRogueNousValueOuterClass.ChessRogueNousValue.newInstance();
+    private final ChessRogueNousValueOuterClass.ChessRogueNousValue nousValue = ChessRogueNousValueOuterClass.ChessRogueNousValue.newInstance();
 
     private SyncChessRogueNousValueScNotify() {
     }
@@ -34,39 +34,39 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
-     * @return whether the value_ field is set
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
+     * @return whether the nousValue field is set
      */
-    public boolean hasValue() {
+    public boolean hasNousValue() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
      * @return this
      */
-    public SyncChessRogueNousValueScNotify clearValue() {
+    public SyncChessRogueNousValueScNotify clearNousValue() {
       bitField0_ &= ~0x00000001;
-      value_.clear();
+      nousValue.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableValue()} if you want to modify it.
+     * Use {@link #getMutableNousValue()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChessRogueNousValueOuterClass.ChessRogueNousValue getValue() {
-      return value_;
+    public ChessRogueNousValueOuterClass.ChessRogueNousValue getNousValue() {
+      return nousValue;
     }
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -74,20 +74,20 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChessRogueNousValueOuterClass.ChessRogueNousValue getMutableValue() {
+    public ChessRogueNousValueOuterClass.ChessRogueNousValue getMutableNousValue() {
       bitField0_ |= 0x00000001;
-      return value_;
+      return nousValue;
     }
 
     /**
-     * <code>optional .ChessRogueNousValue value = 8;</code>
-     * @param value the value_ to set
+     * <code>optional .ChessRogueNousValue nous_value = 3;</code>
+     * @param value the nousValue to set
      * @return this
      */
-    public SyncChessRogueNousValueScNotify setValue(
+    public SyncChessRogueNousValueScNotify setNousValue(
         final ChessRogueNousValueOuterClass.ChessRogueNousValue value) {
       bitField0_ |= 0x00000001;
-      value_.copyFrom(value);
+      nousValue.copyFrom(value);
       return this;
     }
 
@@ -96,7 +96,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        value_.copyFrom(other.value_);
+        nousValue.copyFrom(other.nousValue);
       }
       return this;
     }
@@ -107,8 +107,8 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasValue()) {
-        getMutableValue().mergeFrom(other.value_);
+      if (other.hasNousValue()) {
+        getMutableNousValue().mergeFrom(other.nousValue);
       }
       return this;
     }
@@ -120,7 +120,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      value_.clear();
+      nousValue.clear();
       return this;
     }
 
@@ -131,7 +131,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      value_.clearQuick();
+      nousValue.clearQuick();
       return this;
     }
 
@@ -145,14 +145,14 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       }
       SyncChessRogueNousValueScNotify other = (SyncChessRogueNousValueScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasValue() || value_.equals(other.value_));
+        && (!hasNousValue() || nousValue.equals(other.nousValue));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 66);
-        output.writeMessageNoTag(value_);
+        output.writeRawByte((byte) 26);
+        output.writeMessageNoTag(nousValue);
       }
     }
 
@@ -160,7 +160,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(value_);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(nousValue);
       }
       return size;
     }
@@ -172,9 +172,9 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 66: {
-            // value_
-            input.readMessage(value_);
+          case 26: {
+            // nousValue
+            input.readMessage(nousValue);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -199,7 +199,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.value_, value_);
+        output.writeMessage(FieldNames.nousValue, nousValue);
       }
       output.endObject();
     }
@@ -211,10 +211,11 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 111972721: {
-            if (input.isAtField(FieldNames.value_)) {
+          case -1234555758:
+          case 660197713: {
+            if (input.isAtField(FieldNames.nousValue)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(value_);
+                input.readMessage(nousValue);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -277,7 +278,7 @@ public final class SyncChessRogueNousValueScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName value_ = FieldName.forField("value");
+      static final FieldName nousValue = FieldName.forField("nousValue", "nous_value");
     }
   }
 }

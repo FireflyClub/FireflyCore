@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "ServerPrefs.proto";
 
-// Kiinnopdhco
 message UpdateServerPrefsDataCsReq {
-	ServerPrefs server_prefs = 4; // DOJBPBDMEAO
+	ServerPrefs server_prefs = 8;
 }

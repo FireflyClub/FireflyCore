@@ -13,7 +13,7 @@ public class HandlerTakeOffRelicCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = TakeOffRelicCsReq.parseFrom(data);
 
-        for (int slot : req.getTypeList()) {
+        for (int slot : req.getSlotList()) {
             session.getPlayer().getInventory().unequipItem(req.getAvatarId(), slot);
         }
 

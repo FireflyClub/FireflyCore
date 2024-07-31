@@ -15,27 +15,23 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class BoardDataSyncOuterClass {
   /**
-   * <pre>
-   *  PIEPCJINODB
-   * </pre>
-   *
    * Protobuf type {@code BoardDataSync}
    */
   public static final class BoardDataSync extends ProtoMessage<BoardDataSync> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool IBCEJMGKBCD = 12;</code>
+     * <code>optional bool EDEAJOIAFMO = 7;</code>
      */
-    private boolean iBCEJMGKBCD;
+    private boolean eDEAJOIAFMO;
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      */
     private final Utf8String signature = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      */
     private final RepeatedMessage<HeadIconOuterClass.HeadIcon> unlockedHeadIconList = RepeatedMessage.newEmptyInstance(HeadIconOuterClass.HeadIcon.getFactory());
 
@@ -43,10 +39,6 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <pre>
-     *  PIEPCJINODB
-     * </pre>
-     *
      * @return a new empty instance of {@code BoardDataSync}
      */
     public static BoardDataSync newInstance() {
@@ -54,44 +46,44 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional bool IBCEJMGKBCD = 12;</code>
-     * @return whether the iBCEJMGKBCD field is set
+     * <code>optional bool EDEAJOIAFMO = 7;</code>
+     * @return whether the eDEAJOIAFMO field is set
      */
-    public boolean hasIBCEJMGKBCD() {
+    public boolean hasEDEAJOIAFMO() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool IBCEJMGKBCD = 12;</code>
+     * <code>optional bool EDEAJOIAFMO = 7;</code>
      * @return this
      */
-    public BoardDataSync clearIBCEJMGKBCD() {
+    public BoardDataSync clearEDEAJOIAFMO() {
       bitField0_ &= ~0x00000001;
-      iBCEJMGKBCD = false;
+      eDEAJOIAFMO = false;
       return this;
     }
 
     /**
-     * <code>optional bool IBCEJMGKBCD = 12;</code>
-     * @return the iBCEJMGKBCD
+     * <code>optional bool EDEAJOIAFMO = 7;</code>
+     * @return the eDEAJOIAFMO
      */
-    public boolean getIBCEJMGKBCD() {
-      return iBCEJMGKBCD;
+    public boolean getEDEAJOIAFMO() {
+      return eDEAJOIAFMO;
     }
 
     /**
-     * <code>optional bool IBCEJMGKBCD = 12;</code>
-     * @param value the iBCEJMGKBCD to set
+     * <code>optional bool EDEAJOIAFMO = 7;</code>
+     * @param value the eDEAJOIAFMO to set
      * @return this
      */
-    public BoardDataSync setIBCEJMGKBCD(final boolean value) {
+    public BoardDataSync setEDEAJOIAFMO(final boolean value) {
       bitField0_ |= 0x00000001;
-      iBCEJMGKBCD = value;
+      eDEAJOIAFMO = value;
       return this;
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @return whether the signature field is set
      */
     public boolean hasSignature() {
@@ -99,7 +91,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @return this
      */
     public BoardDataSync clearSignature() {
@@ -109,7 +101,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @return the signature
      */
     public String getSignature() {
@@ -117,7 +109,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @return internal {@code Utf8String} representation of signature for reading
      */
     public Utf8String getSignatureBytes() {
@@ -125,7 +117,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @return internal {@code Utf8String} representation of signature for modifications
      */
     public Utf8String getMutableSignatureBytes() {
@@ -134,7 +126,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @param value the signature to set
      * @return this
      */
@@ -145,7 +137,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 6;</code>
+     * <code>optional string signature = 13;</code>
      * @param value the signature to set
      * @return this
      */
@@ -156,7 +148,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      * @return whether the unlockedHeadIconList field is set
      */
     public boolean hasUnlockedHeadIconList() {
@@ -164,7 +156,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      * @return this
      */
     public BoardDataSync clearUnlockedHeadIconList() {
@@ -174,7 +166,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -188,7 +180,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -202,7 +194,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      * @param value the unlockedHeadIconList to add
      * @return this
      */
@@ -213,7 +205,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 15;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
      * @param values the unlockedHeadIconList to add
      * @return this
      */
@@ -228,7 +220,7 @@ public final class BoardDataSyncOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        iBCEJMGKBCD = other.iBCEJMGKBCD;
+        eDEAJOIAFMO = other.eDEAJOIAFMO;
         signature.copyFrom(other.signature);
         unlockedHeadIconList.copyFrom(other.unlockedHeadIconList);
       }
@@ -241,8 +233,8 @@ public final class BoardDataSyncOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasIBCEJMGKBCD()) {
-        setIBCEJMGKBCD(other.iBCEJMGKBCD);
+      if (other.hasEDEAJOIAFMO()) {
+        setEDEAJOIAFMO(other.eDEAJOIAFMO);
       }
       if (other.hasSignature()) {
         getMutableSignatureBytes().copyFrom(other.signature);
@@ -260,7 +252,7 @@ public final class BoardDataSyncOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iBCEJMGKBCD = false;
+      eDEAJOIAFMO = false;
       signature.clear();
       unlockedHeadIconList.clear();
       return this;
@@ -288,7 +280,7 @@ public final class BoardDataSyncOuterClass {
       }
       BoardDataSync other = (BoardDataSync) o;
       return bitField0_ == other.bitField0_
-        && (!hasIBCEJMGKBCD() || iBCEJMGKBCD == other.iBCEJMGKBCD)
+        && (!hasEDEAJOIAFMO() || eDEAJOIAFMO == other.eDEAJOIAFMO)
         && (!hasSignature() || signature.equals(other.signature))
         && (!hasUnlockedHeadIconList() || unlockedHeadIconList.equals(other.unlockedHeadIconList));
     }
@@ -296,16 +288,16 @@ public final class BoardDataSyncOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeBoolNoTag(iBCEJMGKBCD);
+        output.writeRawByte((byte) 56);
+        output.writeBoolNoTag(eDEAJOIAFMO);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 106);
         output.writeStringNoTag(signature);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < unlockedHeadIconList.length(); i++) {
-          output.writeRawByte((byte) 122);
+          output.writeRawByte((byte) 114);
           output.writeMessageNoTag(unlockedHeadIconList.get(i));
         }
       }
@@ -333,25 +325,25 @@ public final class BoardDataSyncOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // iBCEJMGKBCD
-            iBCEJMGKBCD = input.readBool();
+          case 56: {
+            // eDEAJOIAFMO
+            eDEAJOIAFMO = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 106) {
               break;
             }
           }
-          case 50: {
+          case 106: {
             // signature
             input.readString(signature);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 114) {
               break;
             }
           }
-          case 122: {
+          case 114: {
             // unlockedHeadIconList
             tag = input.readRepeatedMessage(unlockedHeadIconList, tag);
             bitField0_ |= 0x00000004;
@@ -377,7 +369,7 @@ public final class BoardDataSyncOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.iBCEJMGKBCD, iBCEJMGKBCD);
+        output.writeBool(FieldNames.eDEAJOIAFMO, eDEAJOIAFMO);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeString(FieldNames.signature, signature);
@@ -395,10 +387,10 @@ public final class BoardDataSyncOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 264121793: {
-            if (input.isAtField(FieldNames.iBCEJMGKBCD)) {
+          case 826528848: {
+            if (input.isAtField(FieldNames.eDEAJOIAFMO)) {
               if (!input.trySkipNullValue()) {
-                iBCEJMGKBCD = input.readBool();
+                eDEAJOIAFMO = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -481,7 +473,7 @@ public final class BoardDataSyncOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName iBCEJMGKBCD = FieldName.forField("IBCEJMGKBCD");
+      static final FieldName eDEAJOIAFMO = FieldName.forField("EDEAJOIAFMO");
 
       static final FieldName signature = FieldName.forField("signature");
 

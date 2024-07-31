@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// EJIDBOKFBIJ
 enum MsgType {
 	MSG_TYPE_NONE = 0;
 	MSG_TYPE_CUSTOM_TEXT = 1;

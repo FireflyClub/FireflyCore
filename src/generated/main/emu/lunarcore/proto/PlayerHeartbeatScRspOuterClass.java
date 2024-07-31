@@ -24,24 +24,16 @@ public final class PlayerHeartbeatScRspOuterClass {
     private long clientTimeMs;
 
     /**
-     * <pre>
-     *  IBHIPDLDNKA
-     * </pre>
-     *
-     * <code>optional uint64 server_time_ms = 15;</code>
+     * <code>optional uint64 server_time_ms = 12;</code>
      */
     private long serverTimeMs;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 13;</code>
      */
     private int retcode;
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      */
     private final ClientDownloadDataOuterClass.ClientDownloadData downloadData = ClientDownloadDataOuterClass.ClientDownloadData.newInstance();
@@ -94,11 +86,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  IBHIPDLDNKA
-     * </pre>
-     *
-     * <code>optional uint64 server_time_ms = 15;</code>
+     * <code>optional uint64 server_time_ms = 12;</code>
      * @return whether the serverTimeMs field is set
      */
     public boolean hasServerTimeMs() {
@@ -106,11 +94,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  IBHIPDLDNKA
-     * </pre>
-     *
-     * <code>optional uint64 server_time_ms = 15;</code>
+     * <code>optional uint64 server_time_ms = 12;</code>
      * @return this
      */
     public PlayerHeartbeatScRsp clearServerTimeMs() {
@@ -120,11 +104,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  IBHIPDLDNKA
-     * </pre>
-     *
-     * <code>optional uint64 server_time_ms = 15;</code>
+     * <code>optional uint64 server_time_ms = 12;</code>
      * @return the serverTimeMs
      */
     public long getServerTimeMs() {
@@ -132,11 +112,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  IBHIPDLDNKA
-     * </pre>
-     *
-     * <code>optional uint64 server_time_ms = 15;</code>
+     * <code>optional uint64 server_time_ms = 12;</code>
      * @param value the serverTimeMs to set
      * @return this
      */
@@ -147,7 +123,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -155,7 +131,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return this
      */
     public PlayerHeartbeatScRsp clearRetcode() {
@@ -165,7 +141,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -173,7 +149,7 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -184,10 +160,6 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      * @return whether the downloadData field is set
      */
@@ -196,10 +168,6 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      * @return this
      */
@@ -210,10 +178,6 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -228,10 +192,6 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -246,10 +206,6 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  JLGIECLEHFA
-     * </pre>
-     *
      * <code>optional .ClientDownloadData download_data = 10;</code>
      * @param value the downloadData to set
      * @return this
@@ -343,11 +299,11 @@ public final class PlayerHeartbeatScRspOuterClass {
         output.writeUInt64NoTag(clientTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 96);
         output.writeUInt64NoTag(serverTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
@@ -386,20 +342,20 @@ public final class PlayerHeartbeatScRspOuterClass {
             clientTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 96) {
               break;
             }
           }
-          case 120: {
+          case 96: {
             // serverTimeMs
             serverTimeMs = input.readUInt64();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 104) {
               break;
             }
           }
-          case 8: {
+          case 104: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000004;

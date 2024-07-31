@@ -10,40 +10,34 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedInt;
 
 public final class DiscardRelicCsReqOuterClass {
   /**
-   * <pre>
-   *  HHBEGOLFELK
-   * </pre>
-   *
    * Protobuf type {@code DiscardRelicCsReq}
    */
   public static final class DiscardRelicCsReq extends ProtoMessage<DiscardRelicCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 relic_unique_id = 7;</code>
-     */
-    private int relicUniqueId;
-
-    /**
-     * <pre>
-     *  KLLCHANCGPG
-     * </pre>
-     *
-     * <code>optional bool is_discard = 9;</code>
+     * <code>optional bool is_discard = 6;</code>
      */
     private boolean isDiscard;
+
+    /**
+     * <code>optional bool KIJKPEPDDEL = 15;</code>
+     */
+    private boolean kIJKPEPDDEL;
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     */
+    private final RepeatedInt iPNGFAIPDDE = RepeatedInt.newEmptyInstance();
 
     private DiscardRelicCsReq() {
     }
 
     /**
-     * <pre>
-     *  HHBEGOLFELK
-     * </pre>
-     *
      * @return a new empty instance of {@code DiscardRelicCsReq}
      */
     public static DiscardRelicCsReq newInstance() {
@@ -51,74 +45,25 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 7;</code>
-     * @return whether the relicUniqueId field is set
+     * <code>optional bool is_discard = 6;</code>
+     * @return whether the isDiscard field is set
      */
-    public boolean hasRelicUniqueId() {
+    public boolean hasIsDiscard() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 7;</code>
-     * @return this
-     */
-    public DiscardRelicCsReq clearRelicUniqueId() {
-      bitField0_ &= ~0x00000001;
-      relicUniqueId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 relic_unique_id = 7;</code>
-     * @return the relicUniqueId
-     */
-    public int getRelicUniqueId() {
-      return relicUniqueId;
-    }
-
-    /**
-     * <code>optional uint32 relic_unique_id = 7;</code>
-     * @param value the relicUniqueId to set
-     * @return this
-     */
-    public DiscardRelicCsReq setRelicUniqueId(final int value) {
-      bitField0_ |= 0x00000001;
-      relicUniqueId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  KLLCHANCGPG
-     * </pre>
-     *
-     * <code>optional bool is_discard = 9;</code>
-     * @return whether the isDiscard field is set
-     */
-    public boolean hasIsDiscard() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     *  KLLCHANCGPG
-     * </pre>
-     *
-     * <code>optional bool is_discard = 9;</code>
+     * <code>optional bool is_discard = 6;</code>
      * @return this
      */
     public DiscardRelicCsReq clearIsDiscard() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       isDiscard = false;
       return this;
     }
 
     /**
-     * <pre>
-     *  KLLCHANCGPG
-     * </pre>
-     *
-     * <code>optional bool is_discard = 9;</code>
+     * <code>optional bool is_discard = 6;</code>
      * @return the isDiscard
      */
     public boolean getIsDiscard() {
@@ -126,17 +71,118 @@ public final class DiscardRelicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  KLLCHANCGPG
-     * </pre>
-     *
-     * <code>optional bool is_discard = 9;</code>
+     * <code>optional bool is_discard = 6;</code>
      * @param value the isDiscard to set
      * @return this
      */
     public DiscardRelicCsReq setIsDiscard(final boolean value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       isDiscard = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KIJKPEPDDEL = 15;</code>
+     * @return whether the kIJKPEPDDEL field is set
+     */
+    public boolean hasKIJKPEPDDEL() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional bool KIJKPEPDDEL = 15;</code>
+     * @return this
+     */
+    public DiscardRelicCsReq clearKIJKPEPDDEL() {
+      bitField0_ &= ~0x00000002;
+      kIJKPEPDDEL = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KIJKPEPDDEL = 15;</code>
+     * @return the kIJKPEPDDEL
+     */
+    public boolean getKIJKPEPDDEL() {
+      return kIJKPEPDDEL;
+    }
+
+    /**
+     * <code>optional bool KIJKPEPDDEL = 15;</code>
+     * @param value the kIJKPEPDDEL to set
+     * @return this
+     */
+    public DiscardRelicCsReq setKIJKPEPDDEL(final boolean value) {
+      bitField0_ |= 0x00000002;
+      kIJKPEPDDEL = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     * @return whether the iPNGFAIPDDE field is set
+     */
+    public boolean hasIPNGFAIPDDE() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     * @return this
+     */
+    public DiscardRelicCsReq clearIPNGFAIPDDE() {
+      bitField0_ &= ~0x00000004;
+      iPNGFAIPDDE.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableIPNGFAIPDDE()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getIPNGFAIPDDE() {
+      return iPNGFAIPDDE;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableIPNGFAIPDDE() {
+      bitField0_ |= 0x00000004;
+      return iPNGFAIPDDE;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     * @param value the iPNGFAIPDDE to add
+     * @return this
+     */
+    public DiscardRelicCsReq addIPNGFAIPDDE(final int value) {
+      bitField0_ |= 0x00000004;
+      iPNGFAIPDDE.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 IPNGFAIPDDE = 3;</code>
+     * @param values the iPNGFAIPDDE to add
+     * @return this
+     */
+    public DiscardRelicCsReq addAllIPNGFAIPDDE(final int... values) {
+      bitField0_ |= 0x00000004;
+      iPNGFAIPDDE.addAll(values);
       return this;
     }
 
@@ -145,8 +191,9 @@ public final class DiscardRelicCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        relicUniqueId = other.relicUniqueId;
         isDiscard = other.isDiscard;
+        kIJKPEPDDEL = other.kIJKPEPDDEL;
+        iPNGFAIPDDE.copyFrom(other.iPNGFAIPDDE);
       }
       return this;
     }
@@ -157,11 +204,14 @@ public final class DiscardRelicCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRelicUniqueId()) {
-        setRelicUniqueId(other.relicUniqueId);
-      }
       if (other.hasIsDiscard()) {
         setIsDiscard(other.isDiscard);
+      }
+      if (other.hasKIJKPEPDDEL()) {
+        setKIJKPEPDDEL(other.kIJKPEPDDEL);
+      }
+      if (other.hasIPNGFAIPDDE()) {
+        getMutableIPNGFAIPDDE().addAll(other.iPNGFAIPDDE);
       }
       return this;
     }
@@ -173,8 +223,9 @@ public final class DiscardRelicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      relicUniqueId = 0;
       isDiscard = false;
+      kIJKPEPDDEL = false;
+      iPNGFAIPDDE.clear();
       return this;
     }
 
@@ -185,6 +236,7 @@ public final class DiscardRelicCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      iPNGFAIPDDE.clear();
       return this;
     }
 
@@ -198,19 +250,26 @@ public final class DiscardRelicCsReqOuterClass {
       }
       DiscardRelicCsReq other = (DiscardRelicCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId)
-        && (!hasIsDiscard() || isDiscard == other.isDiscard);
+        && (!hasIsDiscard() || isDiscard == other.isDiscard)
+        && (!hasKIJKPEPDDEL() || kIJKPEPDDEL == other.kIJKPEPDDEL)
+        && (!hasIPNGFAIPDDE() || iPNGFAIPDDE.equals(other.iPNGFAIPDDE));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(relicUniqueId);
+        output.writeRawByte((byte) 48);
+        output.writeBoolNoTag(isDiscard);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeBoolNoTag(isDiscard);
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(kIJKPEPDDEL);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < iPNGFAIPDDE.length(); i++) {
+          output.writeRawByte((byte) 24);
+          output.writeUInt32NoTag(iPNGFAIPDDE.array()[i]);
+        }
       }
     }
 
@@ -218,10 +277,13 @@ public final class DiscardRelicCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
+        size += 2;
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 2;
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * iPNGFAIPDDE.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(iPNGFAIPDDE);
       }
       return size;
     }
@@ -233,19 +295,28 @@ public final class DiscardRelicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // relicUniqueId
-            relicUniqueId = input.readUInt32();
+          case 48: {
+            // isDiscard
+            isDiscard = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 120) {
               break;
             }
           }
-          case 72: {
-            // isDiscard
-            isDiscard = input.readBool();
+          case 120: {
+            // kIJKPEPDDEL
+            kIJKPEPDDEL = input.readBool();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 26) {
+              break;
+            }
+          }
+          case 26: {
+            // iPNGFAIPDDE [packed=true]
+            input.readPackedUInt32(iPNGFAIPDDE, tag);
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -261,6 +332,12 @@ public final class DiscardRelicCsReqOuterClass {
             tag = input.readTag();
             break;
           }
+          case 24: {
+            // iPNGFAIPDDE [packed=false]
+            tag = input.readRepeatedUInt32(iPNGFAIPDDE, tag);
+            bitField0_ |= 0x00000004;
+            break;
+          }
         }
       }
     }
@@ -269,10 +346,13 @@ public final class DiscardRelicCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
+        output.writeBool(FieldNames.isDiscard, isDiscard);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.isDiscard, isDiscard);
+        output.writeBool(FieldNames.kIJKPEPDDEL, kIJKPEPDDEL);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedUInt32(FieldNames.iPNGFAIPDDE, iPNGFAIPDDE);
       }
       output.endObject();
     }
@@ -284,11 +364,11 @@ public final class DiscardRelicCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1966200481:
-          case 49648253: {
-            if (input.isAtField(FieldNames.relicUniqueId)) {
+          case 1091588116:
+          case -1123290487: {
+            if (input.isAtField(FieldNames.isDiscard)) {
               if (!input.trySkipNullValue()) {
-                relicUniqueId = input.readUInt32();
+                isDiscard = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -296,12 +376,22 @@ public final class DiscardRelicCsReqOuterClass {
             }
             break;
           }
-          case 1091588116:
-          case -1123290487: {
-            if (input.isAtField(FieldNames.isDiscard)) {
+          case -1796600669: {
+            if (input.isAtField(FieldNames.kIJKPEPDDEL)) {
               if (!input.trySkipNullValue()) {
-                isDiscard = input.readBool();
+                kIJKPEPDDEL = input.readBool();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1300175805: {
+            if (input.isAtField(FieldNames.iPNGFAIPDDE)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(iPNGFAIPDDE);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -361,9 +451,11 @@ public final class DiscardRelicCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
-
       static final FieldName isDiscard = FieldName.forField("isDiscard", "is_discard");
+
+      static final FieldName kIJKPEPDDEL = FieldName.forField("KIJKPEPDDEL");
+
+      static final FieldName iPNGFAIPDDE = FieldName.forField("IPNGFAIPDDE");
     }
   }
 }

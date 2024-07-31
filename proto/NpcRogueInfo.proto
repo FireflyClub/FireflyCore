@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// Chkmnnkmlpl
 message NpcRogueInfo {
 	bool finish_dialogue = 6;
 	uint32 dialogue_group_id = 3; //?

@@ -19,9 +19,9 @@ public final class StartWolfBroGameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 id = 7;</code>
      */
-    private int groupId;
+    private int id;
 
     private StartWolfBroGameCsReq() {
     }
@@ -34,39 +34,39 @@ public final class StartWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
-     * @return whether the groupId field is set
+     * <code>optional uint32 id = 7;</code>
+     * @return whether the id field is set
      */
-    public boolean hasGroupId() {
+    public boolean hasId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
+     * <code>optional uint32 id = 7;</code>
      * @return this
      */
-    public StartWolfBroGameCsReq clearGroupId() {
+    public StartWolfBroGameCsReq clearId() {
       bitField0_ &= ~0x00000001;
-      groupId = 0;
+      id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
-     * @return the groupId
+     * <code>optional uint32 id = 7;</code>
+     * @return the id
      */
-    public int getGroupId() {
-      return groupId;
+    public int getId() {
+      return id;
     }
 
     /**
-     * <code>optional uint32 group_id = 13;</code>
-     * @param value the groupId to set
+     * <code>optional uint32 id = 7;</code>
+     * @param value the id to set
      * @return this
      */
-    public StartWolfBroGameCsReq setGroupId(final int value) {
+    public StartWolfBroGameCsReq setId(final int value) {
       bitField0_ |= 0x00000001;
-      groupId = value;
+      id = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class StartWolfBroGameCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        groupId = other.groupId;
+        id = other.id;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class StartWolfBroGameCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasGroupId()) {
-        setGroupId(other.groupId);
+      if (other.hasId()) {
+        setId(other.id);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class StartWolfBroGameCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      groupId = 0;
+      id = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class StartWolfBroGameCsReqOuterClass {
       }
       StartWolfBroGameCsReq other = (StartWolfBroGameCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasGroupId() || groupId == other.groupId);
+        && (!hasId() || id == other.id);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(groupId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(id);
       }
     }
 
@@ -138,7 +138,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class StartWolfBroGameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
-            // groupId
-            groupId = input.readUInt32();
+          case 56: {
+            // id
+            id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.groupId, groupId);
+        output.writeUInt32(FieldNames.id, id);
       }
       output.endObject();
     }
@@ -189,11 +189,10 @@ public final class StartWolfBroGameCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 293428218:
-          case 506361563: {
-            if (input.isAtField(FieldNames.groupId)) {
+          case 3355: {
+            if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
-                groupId = input.readUInt32();
+                id = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -254,7 +253,7 @@ public final class StartWolfBroGameCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName groupId = FieldName.forField("groupId", "group_id");
+      static final FieldName id = FieldName.forField("id");
     }
   }
 }

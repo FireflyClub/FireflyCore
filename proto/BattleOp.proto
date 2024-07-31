@@ -2,14 +2,13 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// NOOKLEKBBAA
 message BattleOp {
-    uint32 turn_counter = 1; // CDIJGFBOOAB
-    uint32 state = 2;
-    uint32 action_entity_id = 3; // CLGDPDMKHGC
-    uint32 target_entity_id = 4; // GLIDOKAEJDO
-    uint32 op_type = 5; // HLGDHAIHDJB
-    uint32 skill_index = 6; // JJAIJFFIOCK
-    uint32 operation_counter = 7; // PPCJCFJFNBE
-	string OBCGHENJNLA = 8;
+	uint32 turn_counter = 1;
+	uint32 state = 2;
+	uint32 action_entity_id = 3;
+	uint32 target_entity_id = 4;
+	uint32 op_type = 5;
+	uint32 skill_index = 6;
+	uint32 operation_counter = 7;
+	string KBHJIPPKAJJ = 8;
 }

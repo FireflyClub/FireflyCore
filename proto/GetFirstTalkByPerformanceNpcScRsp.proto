@@ -6,5 +6,5 @@ import "NpcTalkInfo.proto";
 
 message GetFirstTalkByPerformanceNpcScRsp {
 	repeated NpcTalkInfo npc_talk_info_list = 9;
-	uint32 retcode = 13;
+	uint32 retcode = 15;
 }

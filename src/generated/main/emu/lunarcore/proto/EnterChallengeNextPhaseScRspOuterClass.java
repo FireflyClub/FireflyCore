@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class EnterChallengeNextPhaseScRspOuterClass {
   /**
-   * <pre>
-   *  AGNJKFMJGMP
-   * </pre>
-   *
    * Protobuf type {@code EnterChallengeNextPhaseScRsp}
    */
   public static final class EnterChallengeNextPhaseScRsp extends ProtoMessage<EnterChallengeNextPhaseScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 13;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      */
     private final SceneInfoOuterClass.SceneInfo scene = SceneInfoOuterClass.SceneInfo.newInstance();
 
@@ -36,10 +32,6 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  AGNJKFMJGMP
-     * </pre>
-     *
      * @return a new empty instance of {@code EnterChallengeNextPhaseScRsp}
      */
     public static EnterChallengeNextPhaseScRsp newInstance() {
@@ -47,7 +39,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -55,7 +47,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return this
      */
     public EnterChallengeNextPhaseScRsp clearRetcode() {
@@ -65,7 +57,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -73,7 +65,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 13;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      * @return whether the scene field is set
      */
     public boolean hasScene() {
@@ -92,7 +84,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      * @return this
      */
     public EnterChallengeNextPhaseScRsp clearScene() {
@@ -102,7 +94,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -116,7 +108,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +122,7 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 11;</code>
+     * <code>optional .SceneInfo scene = 1;</code>
      * @param value the scene to set
      * @return this
      */
@@ -206,11 +198,11 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(scene);
       }
     }
@@ -234,16 +226,16 @@ public final class EnterChallengeNextPhaseScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 104: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 10) {
               break;
             }
           }
-          case 90: {
+          case 10: {
             // scene
             input.readMessage(scene);
             bitField0_ |= 0x00000002;

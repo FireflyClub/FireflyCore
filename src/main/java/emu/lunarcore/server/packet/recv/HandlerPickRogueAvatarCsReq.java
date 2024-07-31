@@ -12,6 +12,6 @@ public class HandlerPickRogueAvatarCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var proto = PickRogueAvatarCsReq.parseFrom(data);
         
-        session.getPlayer().getRogueInstance().pickAvatar(proto.getBaseAvatarList());
+        session.getPlayer().getRogueInstance().pickAvatar(proto.getBaseAvatarIdList());
     }
 }

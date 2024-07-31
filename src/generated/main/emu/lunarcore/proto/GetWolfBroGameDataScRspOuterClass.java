@@ -19,12 +19,12 @@ public final class GetWolfBroGameDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      */
     private final WolfBroGameDataOuterClass.WolfBroGameData wolfBroGameData = WolfBroGameDataOuterClass.WolfBroGameData.newInstance();
 
@@ -39,7 +39,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
     public GetWolfBroGameDataScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      * @return whether the wolfBroGameData field is set
      */
     public boolean hasWolfBroGameData() {
@@ -84,7 +84,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      * @return this
      */
     public GetWolfBroGameDataScRsp clearWolfBroGameData() {
@@ -94,7 +94,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 7;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
      * @param value the wolfBroGameData to set
      * @return this
      */
@@ -199,11 +199,11 @@ public final class GetWolfBroGameDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 58);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(wolfBroGameData);
       }
     }
@@ -227,16 +227,16 @@ public final class GetWolfBroGameDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 88: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 42) {
               break;
             }
           }
-          case 58: {
+          case 42: {
             // wolfBroGameData
             input.readMessage(wolfBroGameData);
             bitField0_ |= 0x00000002;

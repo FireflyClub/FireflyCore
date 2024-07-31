@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DressAvatarCsReq {
-  	uint32 avatar_id  = 2;
-  	uint32 equipment_unique_id = 4; // COKGJPBHELD
+	uint32 avatar_id = 5;
+	uint32 equipment_unique_id = 7;
 }

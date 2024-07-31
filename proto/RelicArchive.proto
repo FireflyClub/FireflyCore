@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RelicArchive {
-    uint32 set_id = 13;
-    uint32 slot = 5;
+	uint32 relic_id = 3;
+	uint32 slot = 8;
 }

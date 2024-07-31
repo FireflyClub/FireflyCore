@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SetFriendMarkScRspOuterClass {
   /**
-   * <pre>
-   *  ODFCEEGNNNI
-   * </pre>
-   *
    * Protobuf type {@code SetFriendMarkScRsp}
    */
   public static final class SetFriendMarkScRsp extends ProtoMessage<SetFriendMarkScRsp> implements Cloneable {
@@ -28,12 +24,12 @@ public final class SetFriendMarkScRspOuterClass {
     private int uid;
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool is_set_mark = 4;</code>
+     * <code>optional bool is_set_mark = 10;</code>
      */
     private boolean isSetMark;
 
@@ -41,10 +37,6 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  ODFCEEGNNNI
-     * </pre>
-     *
      * @return a new empty instance of {@code SetFriendMarkScRsp}
      */
     public static SetFriendMarkScRsp newInstance() {
@@ -89,7 +81,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -97,7 +89,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
     public SetFriendMarkScRsp clearRetcode() {
@@ -107,7 +99,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -115,7 +107,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -126,7 +118,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 4;</code>
+     * <code>optional bool is_set_mark = 10;</code>
      * @return whether the isSetMark field is set
      */
     public boolean hasIsSetMark() {
@@ -134,7 +126,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 4;</code>
+     * <code>optional bool is_set_mark = 10;</code>
      * @return this
      */
     public SetFriendMarkScRsp clearIsSetMark() {
@@ -144,7 +136,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 4;</code>
+     * <code>optional bool is_set_mark = 10;</code>
      * @return the isSetMark
      */
     public boolean getIsSetMark() {
@@ -152,7 +144,7 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 4;</code>
+     * <code>optional bool is_set_mark = 10;</code>
      * @param value the isSetMark to set
      * @return this
      */
@@ -237,11 +229,11 @@ public final class SetFriendMarkScRspOuterClass {
         output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 80);
         output.writeBoolNoTag(isSetMark);
       }
     }
@@ -273,20 +265,20 @@ public final class SetFriendMarkScRspOuterClass {
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 112) {
               break;
             }
           }
-          case 96: {
+          case 112: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 80) {
               break;
             }
           }
-          case 32: {
+          case 80: {
             // isSetMark
             isSetMark = input.readBool();
             bitField0_ |= 0x00000004;

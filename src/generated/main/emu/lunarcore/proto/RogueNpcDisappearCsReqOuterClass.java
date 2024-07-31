@@ -19,9 +19,9 @@ public final class RogueNpcDisappearCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entity_id = 7;</code>
+     * <code>optional uint32 disappear_npc_id = 11;</code>
      */
-    private int entityId;
+    private int disappearNpcId;
 
     private RogueNpcDisappearCsReq() {
     }
@@ -34,39 +34,39 @@ public final class RogueNpcDisappearCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 7;</code>
-     * @return whether the entityId field is set
+     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * @return whether the disappearNpcId field is set
      */
-    public boolean hasEntityId() {
+    public boolean hasDisappearNpcId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 entity_id = 7;</code>
+     * <code>optional uint32 disappear_npc_id = 11;</code>
      * @return this
      */
-    public RogueNpcDisappearCsReq clearEntityId() {
+    public RogueNpcDisappearCsReq clearDisappearNpcId() {
       bitField0_ &= ~0x00000001;
-      entityId = 0;
+      disappearNpcId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 entity_id = 7;</code>
-     * @return the entityId
+     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * @return the disappearNpcId
      */
-    public int getEntityId() {
-      return entityId;
+    public int getDisappearNpcId() {
+      return disappearNpcId;
     }
 
     /**
-     * <code>optional uint32 entity_id = 7;</code>
-     * @param value the entityId to set
+     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * @param value the disappearNpcId to set
      * @return this
      */
-    public RogueNpcDisappearCsReq setEntityId(final int value) {
+    public RogueNpcDisappearCsReq setDisappearNpcId(final int value) {
       bitField0_ |= 0x00000001;
-      entityId = value;
+      disappearNpcId = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        entityId = other.entityId;
+        disappearNpcId = other.disappearNpcId;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class RogueNpcDisappearCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEntityId()) {
-        setEntityId(other.entityId);
+      if (other.hasDisappearNpcId()) {
+        setDisappearNpcId(other.disappearNpcId);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      entityId = 0;
+      disappearNpcId = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class RogueNpcDisappearCsReqOuterClass {
       }
       RogueNpcDisappearCsReq other = (RogueNpcDisappearCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasEntityId() || entityId == other.entityId);
+        && (!hasDisappearNpcId() || disappearNpcId == other.disappearNpcId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(entityId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(disappearNpcId);
       }
     }
 
@@ -138,7 +138,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(disappearNpcId);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class RogueNpcDisappearCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // entityId
-            entityId = input.readUInt32();
+          case 88: {
+            // disappearNpcId
+            disappearNpcId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.entityId, entityId);
+        output.writeUInt32(FieldNames.disappearNpcId, disappearNpcId);
       }
       output.endObject();
     }
@@ -189,11 +189,11 @@ public final class RogueNpcDisappearCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2102099874:
-          case -740565257: {
-            if (input.isAtField(FieldNames.entityId)) {
+          case 2046995961:
+          case -2068689067: {
+            if (input.isAtField(FieldNames.disappearNpcId)) {
               if (!input.trySkipNullValue()) {
-                entityId = input.readUInt32();
+                disappearNpcId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -254,7 +254,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName entityId = FieldName.forField("entityId", "entity_id");
+      static final FieldName disappearNpcId = FieldName.forField("disappearNpcId", "disappear_npc_id");
     }
   }
 }

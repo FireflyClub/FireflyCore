@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message StartWolfBroGameCsReq {
-	uint32 group_id = 13;
+	uint32 id = 7;
 }

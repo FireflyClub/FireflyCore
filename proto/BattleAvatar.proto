@@ -21,7 +21,7 @@ message BattleAvatar {
 	repeated BattleRelic relic_list = 11;
 	uint32 world_level = 12;
 	uint32 assist_uid = 13;
-	// PFNDMOJJMEC LFFIFJJOEAC = 15;
+	//GNOMPBKAHNM KPDLPCJHGHL = 15;
 	SpBarInfo sp_bar = 16;
-	// uint32 LEMOFHGDKOM = 17;
+	uint32 MPFLNIIKEIC = 17;
 }

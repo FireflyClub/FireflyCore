@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RogueAeonInfo {
-	bool is_unlocked = 15;
-	uint32 unlock_aeon_enhance_num = 11;
-	uint32 unlock_aeon_num = 7;
-	repeated uint32 aeon_id_list = 2;
+	uint32 unlock_aeon_num = 4;
+	repeated uint32 aeon_id_list = 13;
+	bool is_unlocked = 7;
+	uint32 unlock_aeon_enhance_num = 15;
 }

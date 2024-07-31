@@ -14,36 +14,28 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class GetSceneMapInfoCsReqOuterClass {
   /**
-   * <pre>
-   *  LJGKBLFDLLN
-   * </pre>
-   *
    * Protobuf type {@code GetSceneMapInfoCsReq}
    */
   public static final class GetSceneMapInfoCsReq extends ProtoMessage<GetSceneMapInfoCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  IGPEHMFKJKG
-     * </pre>
-     *
-     * <code>optional uint32 map_entry_id = 2;</code>
+     * <code>optional uint32 PHHDECMGCBC = 12;</code>
+     */
+    private int pHHDECMGCBC;
+
+    /**
+     * <code>optional uint32 map_entry_id = 14;</code>
      */
     private int mapEntryId;
 
     /**
-     * <code>optional uint32 LMOKAPLPCFD = 13;</code>
+     * <code>optional bool MFDIBEECLPP = 6;</code>
      */
-    private int lMOKAPLPCFD;
+    private boolean mFDIBEECLPP;
 
     /**
-     * <code>optional bool BFDKJBKHANA = 14;</code>
-     */
-    private boolean bFDKJBKHANA;
-
-    /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      */
     private final RepeatedInt entryIdList = RepeatedInt.newEmptyInstance();
 
@@ -51,10 +43,6 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  LJGKBLFDLLN
-     * </pre>
-     *
      * @return a new empty instance of {@code GetSceneMapInfoCsReq}
      */
     public static GetSceneMapInfoCsReq newInstance() {
@@ -62,37 +50,62 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  IGPEHMFKJKG
-     * </pre>
-     *
-     * <code>optional uint32 map_entry_id = 2;</code>
-     * @return whether the mapEntryId field is set
+     * <code>optional uint32 PHHDECMGCBC = 12;</code>
+     * @return whether the pHHDECMGCBC field is set
      */
-    public boolean hasMapEntryId() {
+    public boolean hasPHHDECMGCBC() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  IGPEHMFKJKG
-     * </pre>
-     *
-     * <code>optional uint32 map_entry_id = 2;</code>
+     * <code>optional uint32 PHHDECMGCBC = 12;</code>
+     * @return this
+     */
+    public GetSceneMapInfoCsReq clearPHHDECMGCBC() {
+      bitField0_ &= ~0x00000001;
+      pHHDECMGCBC = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 PHHDECMGCBC = 12;</code>
+     * @return the pHHDECMGCBC
+     */
+    public int getPHHDECMGCBC() {
+      return pHHDECMGCBC;
+    }
+
+    /**
+     * <code>optional uint32 PHHDECMGCBC = 12;</code>
+     * @param value the pHHDECMGCBC to set
+     * @return this
+     */
+    public GetSceneMapInfoCsReq setPHHDECMGCBC(final int value) {
+      bitField0_ |= 0x00000001;
+      pHHDECMGCBC = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 14;</code>
+     * @return whether the mapEntryId field is set
+     */
+    public boolean hasMapEntryId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 map_entry_id = 14;</code>
      * @return this
      */
     public GetSceneMapInfoCsReq clearMapEntryId() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       mapEntryId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  IGPEHMFKJKG
-     * </pre>
-     *
-     * <code>optional uint32 map_entry_id = 2;</code>
+     * <code>optional uint32 map_entry_id = 14;</code>
      * @return the mapEntryId
      */
     public int getMapEntryId() {
@@ -100,96 +113,55 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  IGPEHMFKJKG
-     * </pre>
-     *
-     * <code>optional uint32 map_entry_id = 2;</code>
+     * <code>optional uint32 map_entry_id = 14;</code>
      * @param value the mapEntryId to set
      * @return this
      */
     public GetSceneMapInfoCsReq setMapEntryId(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       mapEntryId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 LMOKAPLPCFD = 13;</code>
-     * @return whether the lMOKAPLPCFD field is set
+     * <code>optional bool MFDIBEECLPP = 6;</code>
+     * @return whether the mFDIBEECLPP field is set
      */
-    public boolean hasLMOKAPLPCFD() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 LMOKAPLPCFD = 13;</code>
-     * @return this
-     */
-    public GetSceneMapInfoCsReq clearLMOKAPLPCFD() {
-      bitField0_ &= ~0x00000002;
-      lMOKAPLPCFD = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 LMOKAPLPCFD = 13;</code>
-     * @return the lMOKAPLPCFD
-     */
-    public int getLMOKAPLPCFD() {
-      return lMOKAPLPCFD;
-    }
-
-    /**
-     * <code>optional uint32 LMOKAPLPCFD = 13;</code>
-     * @param value the lMOKAPLPCFD to set
-     * @return this
-     */
-    public GetSceneMapInfoCsReq setLMOKAPLPCFD(final int value) {
-      bitField0_ |= 0x00000002;
-      lMOKAPLPCFD = value;
-      return this;
-    }
-
-    /**
-     * <code>optional bool BFDKJBKHANA = 14;</code>
-     * @return whether the bFDKJBKHANA field is set
-     */
-    public boolean hasBFDKJBKHANA() {
+    public boolean hasMFDIBEECLPP() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 14;</code>
+     * <code>optional bool MFDIBEECLPP = 6;</code>
      * @return this
      */
-    public GetSceneMapInfoCsReq clearBFDKJBKHANA() {
+    public GetSceneMapInfoCsReq clearMFDIBEECLPP() {
       bitField0_ &= ~0x00000004;
-      bFDKJBKHANA = false;
+      mFDIBEECLPP = false;
       return this;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 14;</code>
-     * @return the bFDKJBKHANA
+     * <code>optional bool MFDIBEECLPP = 6;</code>
+     * @return the mFDIBEECLPP
      */
-    public boolean getBFDKJBKHANA() {
-      return bFDKJBKHANA;
+    public boolean getMFDIBEECLPP() {
+      return mFDIBEECLPP;
     }
 
     /**
-     * <code>optional bool BFDKJBKHANA = 14;</code>
-     * @param value the bFDKJBKHANA to set
+     * <code>optional bool MFDIBEECLPP = 6;</code>
+     * @param value the mFDIBEECLPP to set
      * @return this
      */
-    public GetSceneMapInfoCsReq setBFDKJBKHANA(final boolean value) {
+    public GetSceneMapInfoCsReq setMFDIBEECLPP(final boolean value) {
       bitField0_ |= 0x00000004;
-      bFDKJBKHANA = value;
+      mFDIBEECLPP = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      * @return whether the entryIdList field is set
      */
     public boolean hasEntryIdList() {
@@ -197,7 +169,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      * @return this
      */
     public GetSceneMapInfoCsReq clearEntryIdList() {
@@ -207,7 +179,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -221,7 +193,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -235,7 +207,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      * @param value the entryIdList to add
      * @return this
      */
@@ -246,7 +218,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 entry_id_list = 15;</code>
+     * <code>repeated uint32 entry_id_list = 1;</code>
      * @param values the entryIdList to add
      * @return this
      */
@@ -261,9 +233,9 @@ public final class GetSceneMapInfoCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        pHHDECMGCBC = other.pHHDECMGCBC;
         mapEntryId = other.mapEntryId;
-        lMOKAPLPCFD = other.lMOKAPLPCFD;
-        bFDKJBKHANA = other.bFDKJBKHANA;
+        mFDIBEECLPP = other.mFDIBEECLPP;
         entryIdList.copyFrom(other.entryIdList);
       }
       return this;
@@ -275,14 +247,14 @@ public final class GetSceneMapInfoCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPHHDECMGCBC()) {
+        setPHHDECMGCBC(other.pHHDECMGCBC);
+      }
       if (other.hasMapEntryId()) {
         setMapEntryId(other.mapEntryId);
       }
-      if (other.hasLMOKAPLPCFD()) {
-        setLMOKAPLPCFD(other.lMOKAPLPCFD);
-      }
-      if (other.hasBFDKJBKHANA()) {
-        setBFDKJBKHANA(other.bFDKJBKHANA);
+      if (other.hasMFDIBEECLPP()) {
+        setMFDIBEECLPP(other.mFDIBEECLPP);
       }
       if (other.hasEntryIdList()) {
         getMutableEntryIdList().addAll(other.entryIdList);
@@ -297,9 +269,9 @@ public final class GetSceneMapInfoCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      pHHDECMGCBC = 0;
       mapEntryId = 0;
-      lMOKAPLPCFD = 0;
-      bFDKJBKHANA = false;
+      mFDIBEECLPP = false;
       entryIdList.clear();
       return this;
     }
@@ -325,29 +297,29 @@ public final class GetSceneMapInfoCsReqOuterClass {
       }
       GetSceneMapInfoCsReq other = (GetSceneMapInfoCsReq) o;
       return bitField0_ == other.bitField0_
+        && (!hasPHHDECMGCBC() || pHHDECMGCBC == other.pHHDECMGCBC)
         && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
-        && (!hasLMOKAPLPCFD() || lMOKAPLPCFD == other.lMOKAPLPCFD)
-        && (!hasBFDKJBKHANA() || bFDKJBKHANA == other.bFDKJBKHANA)
+        && (!hasMFDIBEECLPP() || mFDIBEECLPP == other.mFDIBEECLPP)
         && (!hasEntryIdList() || entryIdList.equals(other.entryIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(mapEntryId);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(pHHDECMGCBC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(lMOKAPLPCFD);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeBoolNoTag(bFDKJBKHANA);
+        output.writeRawByte((byte) 48);
+        output.writeBoolNoTag(mFDIBEECLPP);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < entryIdList.length(); i++) {
-          output.writeRawByte((byte) 120);
+          output.writeRawByte((byte) 8);
           output.writeUInt32NoTag(entryIdList.array()[i]);
         }
       }
@@ -357,10 +329,10 @@ public final class GetSceneMapInfoCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pHHDECMGCBC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(lMOKAPLPCFD);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
@@ -378,34 +350,34 @@ public final class GetSceneMapInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // mapEntryId
-            mapEntryId = input.readUInt32();
+          case 96: {
+            // pHHDECMGCBC
+            pHHDECMGCBC = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 104) {
-              break;
-            }
-          }
-          case 104: {
-            // lMOKAPLPCFD
-            lMOKAPLPCFD = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 112) {
               break;
             }
           }
           case 112: {
-            // bFDKJBKHANA
-            bFDKJBKHANA = input.readBool();
-            bitField0_ |= 0x00000004;
+            // mapEntryId
+            mapEntryId = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 48) {
               break;
             }
           }
-          case 122: {
+          case 48: {
+            // mFDIBEECLPP
+            mFDIBEECLPP = input.readBool();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 10) {
+              break;
+            }
+          }
+          case 10: {
             // entryIdList [packed=true]
             input.readPackedUInt32(entryIdList, tag);
             bitField0_ |= 0x00000008;
@@ -424,7 +396,7 @@ public final class GetSceneMapInfoCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 120: {
+          case 8: {
             // entryIdList [packed=false]
             tag = input.readRepeatedUInt32(entryIdList, tag);
             bitField0_ |= 0x00000008;
@@ -438,13 +410,13 @@ public final class GetSceneMapInfoCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
+        output.writeUInt32(FieldNames.pHHDECMGCBC, pHHDECMGCBC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.lMOKAPLPCFD, lMOKAPLPCFD);
+        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.bFDKJBKHANA, bFDKJBKHANA);
+        output.writeBool(FieldNames.mFDIBEECLPP, mFDIBEECLPP);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedUInt32(FieldNames.entryIdList, entryIdList);
@@ -459,11 +431,10 @@ public final class GetSceneMapInfoCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1475203023:
-          case 436670347: {
-            if (input.isAtField(FieldNames.mapEntryId)) {
+          case 1072682648: {
+            if (input.isAtField(FieldNames.pHHDECMGCBC)) {
               if (!input.trySkipNullValue()) {
-                mapEntryId = input.readUInt32();
+                pHHDECMGCBC = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -471,10 +442,11 @@ public final class GetSceneMapInfoCsReqOuterClass {
             }
             break;
           }
-          case -648046671: {
-            if (input.isAtField(FieldNames.lMOKAPLPCFD)) {
+          case -1475203023:
+          case 436670347: {
+            if (input.isAtField(FieldNames.mapEntryId)) {
               if (!input.trySkipNullValue()) {
-                lMOKAPLPCFD = input.readUInt32();
+                mapEntryId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -482,10 +454,10 @@ public final class GetSceneMapInfoCsReqOuterClass {
             }
             break;
           }
-          case -1080018220: {
-            if (input.isAtField(FieldNames.bFDKJBKHANA)) {
+          case -1287154195: {
+            if (input.isAtField(FieldNames.mFDIBEECLPP)) {
               if (!input.trySkipNullValue()) {
-                bFDKJBKHANA = input.readBool();
+                mFDIBEECLPP = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -558,11 +530,11 @@ public final class GetSceneMapInfoCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName pHHDECMGCBC = FieldName.forField("PHHDECMGCBC");
+
       static final FieldName mapEntryId = FieldName.forField("mapEntryId", "map_entry_id");
 
-      static final FieldName lMOKAPLPCFD = FieldName.forField("LMOKAPLPCFD");
-
-      static final FieldName bFDKJBKHANA = FieldName.forField("BFDKJBKHANA");
+      static final FieldName mFDIBEECLPP = FieldName.forField("MFDIBEECLPP");
 
       static final FieldName entryIdList = FieldName.forField("entryIdList", "entry_id_list");
     }

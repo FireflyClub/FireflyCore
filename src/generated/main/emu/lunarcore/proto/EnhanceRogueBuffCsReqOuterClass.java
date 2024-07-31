@@ -19,9 +19,9 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_id = 12;</code>
+     * <code>optional uint32 rouge_buff_id = 5;</code>
      */
-    private int buffId;
+    private int rougeBuffId;
 
     private EnhanceRogueBuffCsReq() {
     }
@@ -34,39 +34,39 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 12;</code>
-     * @return whether the buffId field is set
+     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * @return whether the rougeBuffId field is set
      */
-    public boolean hasBuffId() {
+    public boolean hasRougeBuffId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 buff_id = 12;</code>
+     * <code>optional uint32 rouge_buff_id = 5;</code>
      * @return this
      */
-    public EnhanceRogueBuffCsReq clearBuffId() {
+    public EnhanceRogueBuffCsReq clearRougeBuffId() {
       bitField0_ &= ~0x00000001;
-      buffId = 0;
+      rougeBuffId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 buff_id = 12;</code>
-     * @return the buffId
+     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * @return the rougeBuffId
      */
-    public int getBuffId() {
-      return buffId;
+    public int getRougeBuffId() {
+      return rougeBuffId;
     }
 
     /**
-     * <code>optional uint32 buff_id = 12;</code>
-     * @param value the buffId to set
+     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * @param value the rougeBuffId to set
      * @return this
      */
-    public EnhanceRogueBuffCsReq setBuffId(final int value) {
+    public EnhanceRogueBuffCsReq setRougeBuffId(final int value) {
       bitField0_ |= 0x00000001;
-      buffId = value;
+      rougeBuffId = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffId = other.buffId;
+        rougeBuffId = other.rougeBuffId;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class EnhanceRogueBuffCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffId()) {
-        setBuffId(other.buffId);
+      if (other.hasRougeBuffId()) {
+        setRougeBuffId(other.rougeBuffId);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffId = 0;
+      rougeBuffId = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       }
       EnhanceRogueBuffCsReq other = (EnhanceRogueBuffCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffId() || buffId == other.buffId);
+        && (!hasRougeBuffId() || rougeBuffId == other.rougeBuffId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(buffId);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(rougeBuffId);
       }
     }
 
@@ -138,7 +138,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rougeBuffId);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // buffId
-            buffId = input.readUInt32();
+          case 40: {
+            // rougeBuffId
+            rougeBuffId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.buffId, buffId);
+        output.writeUInt32(FieldNames.rougeBuffId, rougeBuffId);
       }
       output.endObject();
     }
@@ -189,11 +189,11 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1378119474:
-          case 227990663: {
-            if (input.isAtField(FieldNames.buffId)) {
+          case 514149668:
+          case -73916930: {
+            if (input.isAtField(FieldNames.rougeBuffId)) {
               if (!input.trySkipNullValue()) {
-                buffId = input.readUInt32();
+                rougeBuffId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -254,7 +254,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffId = FieldName.forField("buffId", "buff_id");
+      static final FieldName rougeBuffId = FieldName.forField("rougeBuffId", "rouge_buff_id");
     }
   }
 }

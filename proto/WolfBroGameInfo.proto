@@ -6,8 +6,8 @@ import "Vector.proto";
 import "MotionInfo.proto";
 
 message WolfBroGameInfo {
-	bool CIMCFAAFMDP = 2;
-	MotionInfo motion = 1;
-	uint32 ALEPHLCKJJE = 6;
-	repeated Vector KILNIOKEHMD = 9;
+	repeated Vector FLPJKKCPIOO = 4;
+	MotionInfo motion = 12;
+	bool BOBGLLPPDKE = 5;
+	uint32 NLIAEPNOKAE = 14;
 }

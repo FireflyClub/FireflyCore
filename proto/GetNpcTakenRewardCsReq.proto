@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetNpcTakenRewardCsReq {
-    uint32 npc_id = 15;
+	uint32 npc_id = 8;
 }

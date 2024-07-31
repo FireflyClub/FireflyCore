@@ -14,27 +14,23 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class EnterFeverTimeActivityStageCsReqOuterClass {
   /**
-   * <pre>
-   *  BHCNIGIKHMN
-   * </pre>
-   *
    * Protobuf type {@code EnterFeverTimeActivityStageCsReq}
    */
   public static final class EnterFeverTimeActivityStageCsReq extends ProtoMessage<EnterFeverTimeActivityStageCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * <code>optional uint32 JLKHDEPACML = 5;</code>
      */
-    private int gLLKFHKKKBG;
+    private int jLKHDEPACML;
 
     /**
-     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * <code>optional uint32 KGPNHCEPCAB = 9;</code>
      */
-    private int aOGOLEIEOKG;
+    private int kGPNHCEPCAB;
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 12;</code>
      */
     private int id;
 
@@ -47,10 +43,6 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  BHCNIGIKHMN
-     * </pre>
-     *
      * @return a new empty instance of {@code EnterFeverTimeActivityStageCsReq}
      */
     public static EnterFeverTimeActivityStageCsReq newInstance() {
@@ -58,81 +50,81 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
-     * @return whether the gLLKFHKKKBG field is set
+     * <code>optional uint32 JLKHDEPACML = 5;</code>
+     * @return whether the jLKHDEPACML field is set
      */
-    public boolean hasGLLKFHKKKBG() {
+    public boolean hasJLKHDEPACML() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
+     * <code>optional uint32 JLKHDEPACML = 5;</code>
      * @return this
      */
-    public EnterFeverTimeActivityStageCsReq clearGLLKFHKKKBG() {
+    public EnterFeverTimeActivityStageCsReq clearJLKHDEPACML() {
       bitField0_ &= ~0x00000001;
-      gLLKFHKKKBG = 0;
+      jLKHDEPACML = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
-     * @return the gLLKFHKKKBG
+     * <code>optional uint32 JLKHDEPACML = 5;</code>
+     * @return the jLKHDEPACML
      */
-    public int getGLLKFHKKKBG() {
-      return gLLKFHKKKBG;
+    public int getJLKHDEPACML() {
+      return jLKHDEPACML;
     }
 
     /**
-     * <code>optional uint32 GLLKFHKKKBG = 2;</code>
-     * @param value the gLLKFHKKKBG to set
+     * <code>optional uint32 JLKHDEPACML = 5;</code>
+     * @param value the jLKHDEPACML to set
      * @return this
      */
-    public EnterFeverTimeActivityStageCsReq setGLLKFHKKKBG(final int value) {
+    public EnterFeverTimeActivityStageCsReq setJLKHDEPACML(final int value) {
       bitField0_ |= 0x00000001;
-      gLLKFHKKKBG = value;
+      jLKHDEPACML = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
-     * @return whether the aOGOLEIEOKG field is set
+     * <code>optional uint32 KGPNHCEPCAB = 9;</code>
+     * @return whether the kGPNHCEPCAB field is set
      */
-    public boolean hasAOGOLEIEOKG() {
+    public boolean hasKGPNHCEPCAB() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
+     * <code>optional uint32 KGPNHCEPCAB = 9;</code>
      * @return this
      */
-    public EnterFeverTimeActivityStageCsReq clearAOGOLEIEOKG() {
+    public EnterFeverTimeActivityStageCsReq clearKGPNHCEPCAB() {
       bitField0_ &= ~0x00000002;
-      aOGOLEIEOKG = 0;
+      kGPNHCEPCAB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
-     * @return the aOGOLEIEOKG
+     * <code>optional uint32 KGPNHCEPCAB = 9;</code>
+     * @return the kGPNHCEPCAB
      */
-    public int getAOGOLEIEOKG() {
-      return aOGOLEIEOKG;
+    public int getKGPNHCEPCAB() {
+      return kGPNHCEPCAB;
     }
 
     /**
-     * <code>optional uint32 AOGOLEIEOKG = 5;</code>
-     * @param value the aOGOLEIEOKG to set
+     * <code>optional uint32 KGPNHCEPCAB = 9;</code>
+     * @param value the kGPNHCEPCAB to set
      * @return this
      */
-    public EnterFeverTimeActivityStageCsReq setAOGOLEIEOKG(final int value) {
+    public EnterFeverTimeActivityStageCsReq setKGPNHCEPCAB(final int value) {
       bitField0_ |= 0x00000002;
-      aOGOLEIEOKG = value;
+      kGPNHCEPCAB = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 12;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -140,7 +132,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 12;</code>
      * @return this
      */
     public EnterFeverTimeActivityStageCsReq clearId() {
@@ -150,7 +142,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 12;</code>
      * @return the id
      */
     public int getId() {
@@ -158,7 +150,7 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 12;</code>
      * @param value the id to set
      * @return this
      */
@@ -243,8 +235,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        gLLKFHKKKBG = other.gLLKFHKKKBG;
-        aOGOLEIEOKG = other.aOGOLEIEOKG;
+        jLKHDEPACML = other.jLKHDEPACML;
+        kGPNHCEPCAB = other.kGPNHCEPCAB;
         id = other.id;
         avatarList.copyFrom(other.avatarList);
       }
@@ -258,11 +250,11 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasGLLKFHKKKBG()) {
-        setGLLKFHKKKBG(other.gLLKFHKKKBG);
+      if (other.hasJLKHDEPACML()) {
+        setJLKHDEPACML(other.jLKHDEPACML);
       }
-      if (other.hasAOGOLEIEOKG()) {
-        setAOGOLEIEOKG(other.aOGOLEIEOKG);
+      if (other.hasKGPNHCEPCAB()) {
+        setKGPNHCEPCAB(other.kGPNHCEPCAB);
       }
       if (other.hasId()) {
         setId(other.id);
@@ -280,8 +272,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      gLLKFHKKKBG = 0;
-      aOGOLEIEOKG = 0;
+      jLKHDEPACML = 0;
+      kGPNHCEPCAB = 0;
       id = 0;
       avatarList.clear();
       return this;
@@ -308,8 +300,8 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       EnterFeverTimeActivityStageCsReq other = (EnterFeverTimeActivityStageCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasGLLKFHKKKBG() || gLLKFHKKKBG == other.gLLKFHKKKBG)
-        && (!hasAOGOLEIEOKG() || aOGOLEIEOKG == other.aOGOLEIEOKG)
+        && (!hasJLKHDEPACML() || jLKHDEPACML == other.jLKHDEPACML)
+        && (!hasKGPNHCEPCAB() || kGPNHCEPCAB == other.kGPNHCEPCAB)
         && (!hasId() || id == other.id)
         && (!hasAvatarList() || avatarList.equals(other.avatarList));
     }
@@ -317,15 +309,15 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(gLLKFHKKKBG);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(jLKHDEPACML);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(aOGOLEIEOKG);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(kGPNHCEPCAB);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000008) != 0) {
@@ -340,10 +332,10 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(gLLKFHKKKBG);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(jLKHDEPACML);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(aOGOLEIEOKG);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kGPNHCEPCAB);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
@@ -361,25 +353,25 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // gLLKFHKKKBG
-            gLLKFHKKKBG = input.readUInt32();
+          case 40: {
+            // jLKHDEPACML
+            jLKHDEPACML = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 72) {
               break;
             }
           }
-          case 40: {
-            // aOGOLEIEOKG
-            aOGOLEIEOKG = input.readUInt32();
+          case 72: {
+            // kGPNHCEPCAB
+            kGPNHCEPCAB = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 96) {
               break;
             }
           }
-          case 88: {
+          case 96: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000004;
@@ -414,10 +406,10 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.gLLKFHKKKBG, gLLKFHKKKBG);
+        output.writeUInt32(FieldNames.jLKHDEPACML, jLKHDEPACML);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.aOGOLEIEOKG, aOGOLEIEOKG);
+        output.writeUInt32(FieldNames.kGPNHCEPCAB, kGPNHCEPCAB);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.id, id);
@@ -435,10 +427,10 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 983138122: {
-            if (input.isAtField(FieldNames.gLLKFHKKKBG)) {
+          case -1095340367: {
+            if (input.isAtField(FieldNames.jLKHDEPACML)) {
               if (!input.trySkipNullValue()) {
-                gLLKFHKKKBG = input.readUInt32();
+                jLKHDEPACML = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -446,10 +438,10 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
             }
             break;
           }
-          case -1938805984: {
-            if (input.isAtField(FieldNames.aOGOLEIEOKG)) {
+          case -1302057628: {
+            if (input.isAtField(FieldNames.kGPNHCEPCAB)) {
               if (!input.trySkipNullValue()) {
-                aOGOLEIEOKG = input.readUInt32();
+                kGPNHCEPCAB = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -535,9 +527,9 @@ public final class EnterFeverTimeActivityStageCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName gLLKFHKKKBG = FieldName.forField("GLLKFHKKKBG");
+      static final FieldName jLKHDEPACML = FieldName.forField("JLKHDEPACML");
 
-      static final FieldName aOGOLEIEOKG = FieldName.forField("AOGOLEIEOKG");
+      static final FieldName kGPNHCEPCAB = FieldName.forField("KGPNHCEPCAB");
 
       static final FieldName id = FieldName.forField("id");
 

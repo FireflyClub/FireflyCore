@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class ChallengeStatusOuterClass {
   /**
-   * <pre>
-   *  OHOLIFIIIHD
-   * </pre>
-   *
    * Protobuf enum {@code ChallengeStatus}
    */
   public enum ChallengeStatus implements ProtoEnum<ChallengeStatus> {

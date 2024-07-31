@@ -7,16 +7,14 @@ import "DisplayRelicInfo.proto";
 import "DisplayEquipmentInfo.proto";
 
 message DisplayAvatarDetailInfo {
-    uint32 rank = 7;
-    uint32 pos = 12;
-    uint32 dressed_skin_id = 4;
-    DisplayEquipmentInfo equipment = 5;
-    repeated DisplayRelicInfo relic_list = 11;
-    repeated uint32 all_path_unlocked_special_id_list = 1;
-    repeated AvatarSkillTree skilltree_list = 2;
-    uint32 exp = 8;
-    uint32 avatar_id = 9;
-    repeated uint32 all_path_special_skilltree_list = 3;
-    uint32 level = 10;
-    uint32 promotion = 14;
+	uint32 dressed_skin_id = 14;
+	uint32 avatar_id = 1;
+	DisplayEquipmentInfo equipment = 15;
+	uint32 pos = 5;
+	uint32 exp = 12;
+	uint32 rank = 10;
+	repeated AvatarSkillTree skilltree_list = 7;
+	uint32 level = 8;
+	uint32 promotion = 6;
+	repeated DisplayRelicInfo relic_list = 13;
 }

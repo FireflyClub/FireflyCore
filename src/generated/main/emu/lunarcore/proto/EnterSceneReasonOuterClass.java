@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class EnterSceneReasonOuterClass {
   /**
-   * <pre>
-   *  MOGLACHDHBJ
-   * </pre>
-   *
    * Protobuf enum {@code EnterSceneReason}
    */
   public enum EnterSceneReason implements ProtoEnum<EnterSceneReason> {
@@ -31,7 +27,12 @@ public final class EnterSceneReasonOuterClass {
     /**
      * <code>ENTER_SCENE_REASON_CHANGE_STORYLINE = 3;</code>
      */
-    ENTER_SCENE_REASON_CHANGE_STORYLINE("ENTER_SCENE_REASON_CHANGE_STORYLINE", 3);
+    ENTER_SCENE_REASON_CHANGE_STORYLINE("ENTER_SCENE_REASON_CHANGE_STORYLINE", 3),
+
+    /**
+     * <code>ENTER_SCENE_REASON_DIMENSION_MERGE = 4;</code>
+     */
+    ENTER_SCENE_REASON_DIMENSION_MERGE("ENTER_SCENE_REASON_DIMENSION_MERGE", 4);
 
     /**
      * <code>ENTER_SCENE_REASON_NONE = 0;</code>
@@ -52,6 +53,11 @@ public final class EnterSceneReasonOuterClass {
      * <code>ENTER_SCENE_REASON_CHANGE_STORYLINE = 3;</code>
      */
     public static final int ENTER_SCENE_REASON_CHANGE_STORYLINE_VALUE = 3;
+
+    /**
+     * <code>ENTER_SCENE_REASON_DIMENSION_MERGE = 4;</code>
+     */
+    public static final int ENTER_SCENE_REASON_DIMENSION_MERGE_VALUE = 4;
 
     private final String name;
 
@@ -106,13 +112,14 @@ public final class EnterSceneReasonOuterClass {
     enum EnterSceneReasonConverter implements ProtoEnum.EnumConverter<EnterSceneReason> {
       INSTANCE;
 
-      private static final EnterSceneReason[] lookup = new EnterSceneReason[4];
+      private static final EnterSceneReason[] lookup = new EnterSceneReason[5];
 
       static {
         lookup[0] = ENTER_SCENE_REASON_NONE;
         lookup[1] = ENTER_SCENE_REASON_CHALLENGE_TIMEOUT;
         lookup[2] = ENTER_SCENE_REASON_ROGUE_TIMEOUT;
         lookup[3] = ENTER_SCENE_REASON_CHANGE_STORYLINE;
+        lookup[4] = ENTER_SCENE_REASON_DIMENSION_MERGE;
       }
 
       @Override
@@ -135,6 +142,12 @@ public final class EnterSceneReasonOuterClass {
           case 32: {
             if (ProtoUtil.isEqual("ENTER_SCENE_REASON_ROGUE_TIMEOUT", value)) {
               return ENTER_SCENE_REASON_ROGUE_TIMEOUT;
+            }
+            break;
+          }
+          case 34: {
+            if (ProtoUtil.isEqual("ENTER_SCENE_REASON_DIMENSION_MERGE", value)) {
+              return ENTER_SCENE_REASON_DIMENSION_MERGE;
             }
             break;
           }

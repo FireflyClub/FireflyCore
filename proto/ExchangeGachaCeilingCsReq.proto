@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ExchangeGachaCeilingCsReq {
-    uint32 gacha_type = 14;
-    uint32 avatar_id = 11;
+	uint32 avatar_id = 13;
+	uint32 gacha_type = 3;
 }

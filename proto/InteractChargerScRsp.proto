@@ -6,7 +6,7 @@ import "ChargerInfo.proto";
 import "RotatorEnergyInfo.proto";
 
 message InteractChargerScRsp {
-	RotatorEnergyInfo energy_info = 13;
 	uint32 retcode = 14;
-	ChargerInfo charger_info = 15;
+	RotatorEnergyInfo energy_info = 8;
+	ChargerInfo charger_info = 1;
 }

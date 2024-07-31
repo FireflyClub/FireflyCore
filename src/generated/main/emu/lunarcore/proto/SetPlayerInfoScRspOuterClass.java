@@ -10,46 +10,44 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SetPlayerInfoScRspOuterClass {
   /**
-   * <pre>
-   *  CMPPCENAHPB
-   * </pre>
-   *
    * Protobuf type {@code SetPlayerInfoScRsp}
    */
   public static final class SetPlayerInfoScRsp extends ProtoMessage<SetPlayerInfoScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 PGCICECKJDP = 6;</code>
+     * <code>optional int64 NCBJIHNAOFG = 14;</code>
      */
-    private long pGCICECKJDP;
+    private long nCBJIHNAOFG;
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 12;</code>
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
      */
-    private int cEDHDHEPCFO;
+    private int gPDNDCCLOOD;
 
     /**
-     * <code>optional bool is_modify = 2;</code>
+     * <code>optional bool is_modify = 10;</code>
      */
     private boolean isModify;
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     */
+    private final RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> fJPGCEEAPMO = RepeatedMessage.newEmptyInstance(MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.getFactory());
 
     private SetPlayerInfoScRsp() {
     }
 
     /**
-     * <pre>
-     *  CMPPCENAHPB
-     * </pre>
-     *
      * @return a new empty instance of {@code SetPlayerInfoScRsp}
      */
     public static SetPlayerInfoScRsp newInstance() {
@@ -57,44 +55,44 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional int64 PGCICECKJDP = 6;</code>
-     * @return whether the pGCICECKJDP field is set
+     * <code>optional int64 NCBJIHNAOFG = 14;</code>
+     * @return whether the nCBJIHNAOFG field is set
      */
-    public boolean hasPGCICECKJDP() {
+    public boolean hasNCBJIHNAOFG() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional int64 PGCICECKJDP = 6;</code>
+     * <code>optional int64 NCBJIHNAOFG = 14;</code>
      * @return this
      */
-    public SetPlayerInfoScRsp clearPGCICECKJDP() {
+    public SetPlayerInfoScRsp clearNCBJIHNAOFG() {
       bitField0_ &= ~0x00000001;
-      pGCICECKJDP = 0L;
+      nCBJIHNAOFG = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 PGCICECKJDP = 6;</code>
-     * @return the pGCICECKJDP
+     * <code>optional int64 NCBJIHNAOFG = 14;</code>
+     * @return the nCBJIHNAOFG
      */
-    public long getPGCICECKJDP() {
-      return pGCICECKJDP;
+    public long getNCBJIHNAOFG() {
+      return nCBJIHNAOFG;
     }
 
     /**
-     * <code>optional int64 PGCICECKJDP = 6;</code>
-     * @param value the pGCICECKJDP to set
+     * <code>optional int64 NCBJIHNAOFG = 14;</code>
+     * @param value the nCBJIHNAOFG to set
      * @return this
      */
-    public SetPlayerInfoScRsp setPGCICECKJDP(final long value) {
+    public SetPlayerInfoScRsp setNCBJIHNAOFG(final long value) {
       bitField0_ |= 0x00000001;
-      pGCICECKJDP = value;
+      nCBJIHNAOFG = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -102,7 +100,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public SetPlayerInfoScRsp clearRetcode() {
@@ -112,7 +110,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -120,7 +118,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -131,70 +129,70 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 12;</code>
-     * @return whether the cEDHDHEPCFO field is set
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @return whether the gPDNDCCLOOD field is set
      */
-    public boolean hasCEDHDHEPCFO() {
+    public boolean hasGPDNDCCLOOD() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 12;</code>
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
      * @return this
      */
-    public SetPlayerInfoScRsp clearCEDHDHEPCFO() {
+    public SetPlayerInfoScRsp clearGPDNDCCLOOD() {
       bitField0_ &= ~0x00000004;
-      cEDHDHEPCFO = 0;
+      gPDNDCCLOOD = 0;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 12;</code>
-     * @return the cEDHDHEPCFO
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @return the gPDNDCCLOOD
      */
-    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getCEDHDHEPCFO() {
-      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(cEDHDHEPCFO);
+    public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getGPDNDCCLOOD() {
+      return MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(gPDNDCCLOOD);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SetPlayerInfoScRsp#getCEDHDHEPCFO()}.getNumber().
+     * equivalent to {@link SetPlayerInfoScRsp#getGPDNDCCLOOD()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getCEDHDHEPCFOValue() {
-      return cEDHDHEPCFO;
+    public int getGPDNDCCLOODValue() {
+      return gPDNDCCLOOD;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link MultiPathAvatarTypeOuterClass.MultiPathAvatarType}. Setting an invalid value
-     * can cause {@link SetPlayerInfoScRsp#getCEDHDHEPCFO()} to return null
+     * can cause {@link SetPlayerInfoScRsp#getGPDNDCCLOOD()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SetPlayerInfoScRsp setCEDHDHEPCFOValue(final int value) {
+    public SetPlayerInfoScRsp setGPDNDCCLOODValue(final int value) {
       bitField0_ |= 0x00000004;
-      cEDHDHEPCFO = value;
+      gPDNDCCLOOD = value;
       return this;
     }
 
     /**
-     * <code>optional .MultiPathAvatarType CEDHDHEPCFO = 12;</code>
-     * @param value the cEDHDHEPCFO to set
+     * <code>optional .MultiPathAvatarType GPDNDCCLOOD = 2;</code>
+     * @param value the gPDNDCCLOOD to set
      * @return this
      */
-    public SetPlayerInfoScRsp setCEDHDHEPCFO(
+    public SetPlayerInfoScRsp setGPDNDCCLOOD(
         final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value) {
       bitField0_ |= 0x00000004;
-      cEDHDHEPCFO = value.getNumber();
+      gPDNDCCLOOD = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional bool is_modify = 2;</code>
+     * <code>optional bool is_modify = 10;</code>
      * @return whether the isModify field is set
      */
     public boolean hasIsModify() {
@@ -202,7 +200,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 2;</code>
+     * <code>optional bool is_modify = 10;</code>
      * @return this
      */
     public SetPlayerInfoScRsp clearIsModify() {
@@ -212,7 +210,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 2;</code>
+     * <code>optional bool is_modify = 10;</code>
      * @return the isModify
      */
     public boolean getIsModify() {
@@ -220,7 +218,7 @@ public final class SetPlayerInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 2;</code>
+     * <code>optional bool is_modify = 10;</code>
      * @param value the isModify to set
      * @return this
      */
@@ -230,15 +228,88 @@ public final class SetPlayerInfoScRspOuterClass {
       return this;
     }
 
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     * @return whether the fJPGCEEAPMO field is set
+     */
+    public boolean hasFJPGCEEAPMO() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     * @return this
+     */
+    public SetPlayerInfoScRsp clearFJPGCEEAPMO() {
+      bitField0_ &= ~0x00000010;
+      fJPGCEEAPMO.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableFJPGCEEAPMO()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getFJPGCEEAPMO(
+        ) {
+      return fJPGCEEAPMO;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo> getMutableFJPGCEEAPMO(
+        ) {
+      bitField0_ |= 0x00000010;
+      return fJPGCEEAPMO;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     * @param value the fJPGCEEAPMO to add
+     * @return this
+     */
+    public SetPlayerInfoScRsp addFJPGCEEAPMO(
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo value) {
+      bitField0_ |= 0x00000010;
+      fJPGCEEAPMO.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;</code>
+     * @param values the fJPGCEEAPMO to add
+     * @return this
+     */
+    public SetPlayerInfoScRsp addAllFJPGCEEAPMO(
+        final MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo... values) {
+      bitField0_ |= 0x00000010;
+      fJPGCEEAPMO.addAll(values);
+      return this;
+    }
+
     @Override
     public SetPlayerInfoScRsp copyFrom(final SetPlayerInfoScRsp other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pGCICECKJDP = other.pGCICECKJDP;
+        nCBJIHNAOFG = other.nCBJIHNAOFG;
         retcode = other.retcode;
-        cEDHDHEPCFO = other.cEDHDHEPCFO;
+        gPDNDCCLOOD = other.gPDNDCCLOOD;
         isModify = other.isModify;
+        fJPGCEEAPMO.copyFrom(other.fJPGCEEAPMO);
       }
       return this;
     }
@@ -249,17 +320,20 @@ public final class SetPlayerInfoScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPGCICECKJDP()) {
-        setPGCICECKJDP(other.pGCICECKJDP);
+      if (other.hasNCBJIHNAOFG()) {
+        setNCBJIHNAOFG(other.nCBJIHNAOFG);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasCEDHDHEPCFO()) {
-        setCEDHDHEPCFOValue(other.cEDHDHEPCFO);
+      if (other.hasGPDNDCCLOOD()) {
+        setGPDNDCCLOODValue(other.gPDNDCCLOOD);
       }
       if (other.hasIsModify()) {
         setIsModify(other.isModify);
+      }
+      if (other.hasFJPGCEEAPMO()) {
+        getMutableFJPGCEEAPMO().addAll(other.fJPGCEEAPMO);
       }
       return this;
     }
@@ -271,10 +345,11 @@ public final class SetPlayerInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pGCICECKJDP = 0L;
+      nCBJIHNAOFG = 0L;
       retcode = 0;
-      cEDHDHEPCFO = 0;
+      gPDNDCCLOOD = 0;
       isModify = false;
+      fJPGCEEAPMO.clear();
       return this;
     }
 
@@ -285,6 +360,7 @@ public final class SetPlayerInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      fJPGCEEAPMO.clearQuick();
       return this;
     }
 
@@ -298,29 +374,36 @@ public final class SetPlayerInfoScRspOuterClass {
       }
       SetPlayerInfoScRsp other = (SetPlayerInfoScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasPGCICECKJDP() || pGCICECKJDP == other.pGCICECKJDP)
+        && (!hasNCBJIHNAOFG() || nCBJIHNAOFG == other.nCBJIHNAOFG)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasCEDHDHEPCFO() || cEDHDHEPCFO == other.cEDHDHEPCFO)
-        && (!hasIsModify() || isModify == other.isModify);
+        && (!hasGPDNDCCLOOD() || gPDNDCCLOOD == other.gPDNDCCLOOD)
+        && (!hasIsModify() || isModify == other.isModify)
+        && (!hasFJPGCEEAPMO() || fJPGCEEAPMO.equals(other.fJPGCEEAPMO));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeInt64NoTag(pGCICECKJDP);
+        output.writeRawByte((byte) 112);
+        output.writeInt64NoTag(nCBJIHNAOFG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeEnumNoTag(cEDHDHEPCFO);
+        output.writeRawByte((byte) 16);
+        output.writeEnumNoTag(gPDNDCCLOOD);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 80);
         output.writeBoolNoTag(isModify);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        for (int i = 0; i < fJPGCEEAPMO.length(); i++) {
+          output.writeRawByte((byte) 74);
+          output.writeMessageNoTag(fJPGCEEAPMO.get(i));
+        }
       }
     }
 
@@ -328,16 +411,19 @@ public final class SetPlayerInfoScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(pGCICECKJDP);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(nCBJIHNAOFG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(cEDHDHEPCFO);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(gPDNDCCLOOD);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 2;
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += (1 * fJPGCEEAPMO.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(fJPGCEEAPMO);
       }
       return size;
     }
@@ -349,41 +435,49 @@ public final class SetPlayerInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // pGCICECKJDP
-            pGCICECKJDP = input.readInt64();
+          case 112: {
+            // nCBJIHNAOFG
+            nCBJIHNAOFG = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 32) {
               break;
             }
           }
-          case 120: {
+          case 32: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
-            // cEDHDHEPCFO
-            final int value = input.readInt32();
-            if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
-              cEDHDHEPCFO = value;
-              bitField0_ |= 0x00000004;
-            }
             tag = input.readTag();
             if (tag != 16) {
               break;
             }
           }
           case 16: {
+            // gPDNDCCLOOD
+            final int value = input.readInt32();
+            if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {
+              gPDNDCCLOOD = value;
+              bitField0_ |= 0x00000004;
+            }
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
             // isModify
             isModify = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
+            // fJPGCEEAPMO
+            tag = input.readRepeatedMessage(fJPGCEEAPMO, tag);
+            bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
             }
@@ -406,16 +500,19 @@ public final class SetPlayerInfoScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeInt64(FieldNames.pGCICECKJDP, pGCICECKJDP);
+        output.writeInt64(FieldNames.nCBJIHNAOFG, nCBJIHNAOFG);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeEnum(FieldNames.cEDHDHEPCFO, cEDHDHEPCFO, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
+        output.writeEnum(FieldNames.gPDNDCCLOOD, gPDNDCCLOOD, MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeBool(FieldNames.isModify, isModify);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRepeatedMessage(FieldNames.fJPGCEEAPMO, fJPGCEEAPMO);
       }
       output.endObject();
     }
@@ -427,10 +524,10 @@ public final class SetPlayerInfoScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 113792655: {
-            if (input.isAtField(FieldNames.pGCICECKJDP)) {
+          case 579887521: {
+            if (input.isAtField(FieldNames.nCBJIHNAOFG)) {
               if (!input.trySkipNullValue()) {
-                pGCICECKJDP = input.readInt64();
+                nCBJIHNAOFG = input.readInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -449,12 +546,12 @@ public final class SetPlayerInfoScRspOuterClass {
             }
             break;
           }
-          case -182533481: {
-            if (input.isAtField(FieldNames.cEDHDHEPCFO)) {
+          case 779774377: {
+            if (input.isAtField(FieldNames.gPDNDCCLOOD)) {
               if (!input.trySkipNullValue()) {
                 final MultiPathAvatarTypeOuterClass.MultiPathAvatarType value = input.readEnum(MultiPathAvatarTypeOuterClass.MultiPathAvatarType.converter());
                 if (value != null) {
-                  cEDHDHEPCFO = value.getNumber();
+                  gPDNDCCLOOD = value.getNumber();
                   bitField0_ |= 0x00000004;
                 } else {
                   input.skipUnknownEnumValue();
@@ -471,6 +568,17 @@ public final class SetPlayerInfoScRspOuterClass {
               if (!input.trySkipNullValue()) {
                 isModify = input.readBool();
                 bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -897273191: {
+            if (input.isAtField(FieldNames.fJPGCEEAPMO)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(fJPGCEEAPMO);
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -530,13 +638,15 @@ public final class SetPlayerInfoScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pGCICECKJDP = FieldName.forField("PGCICECKJDP");
+      static final FieldName nCBJIHNAOFG = FieldName.forField("NCBJIHNAOFG");
 
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName cEDHDHEPCFO = FieldName.forField("CEDHDHEPCFO");
+      static final FieldName gPDNDCCLOOD = FieldName.forField("GPDNDCCLOOD");
 
       static final FieldName isModify = FieldName.forField("isModify", "is_modify");
+
+      static final FieldName fJPGCEEAPMO = FieldName.forField("FJPGCEEAPMO");
     }
   }
 }

@@ -3,12 +3,12 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PlayerBasicInfo {
-    string nickname = 1;
-    uint32 level = 2;
-    uint32 exp = 3;
-    uint32 stamina = 4;
-    uint32 mcoin = 5; // CAGDKHDOBJH
-    uint32 hcoin = 6; // MBJJADKBABA
-    uint32 scoin = 7; // AIDHPLNNKCD
-    uint32 world_level = 8; // ACHMPFPNBHK
+	string nickname = 1;
+	uint32 level = 2;
+	uint32 exp = 3;
+	uint32 stamina = 4;
+	uint32 mcoin = 5;
+	uint32 hcoin = 6;
+	uint32 scoin = 7;
+	uint32 world_level = 8;
 }

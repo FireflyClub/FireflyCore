@@ -3,11 +3,12 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 import "MultiPathAvatarType.proto";
+import "MultiPathAvatarTypeInfo.proto";
 
-// CMPPCENAHPB
 message SetPlayerInfoScRsp {
-	int64 PGCICECKJDP = 6;
-	MultiPathAvatarType CEDHDHEPCFO = 12;
-	bool is_modify = 2;
-	uint32 retcode = 15;
+	MultiPathAvatarType GPDNDCCLOOD = 2;
+	int64 NCBJIHNAOFG = 14;
+	repeated MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;
+	uint32 retcode = 4;
+	bool is_modify = 10;
 }

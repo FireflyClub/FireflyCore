@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "FriendApplyInfo.proto";
 
 message GetFriendApplyListInfoScRsp {
-	uint32 retcode = 8;
-	repeated FriendApplyInfo friend_apply_list = 11;
-	repeated uint32 HOBOOCCEKPB = 6;
+	uint32 retcode = 1;
+	repeated uint32 APCHGHDOALJ = 13;
+	repeated FriendApplyInfo friend_apply_list = 10;
 }

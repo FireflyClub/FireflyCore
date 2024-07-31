@@ -20,9 +20,19 @@ public final class PickRogueAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
+     * <code>optional uint32 prop_entity_id = 1;</code>
      */
-    private final RepeatedInt baseAvatarList = RepeatedInt.newEmptyInstance();
+    private int propEntityId;
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     */
+    private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     */
+    private final RepeatedInt dAPLNLIGMOM = RepeatedInt.newEmptyInstance();
 
     private PickRogueAvatarCsReq() {
     }
@@ -35,39 +45,76 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
-     * @return whether the baseAvatarList field is set
+     * <code>optional uint32 prop_entity_id = 1;</code>
+     * @return whether the propEntityId field is set
      */
-    public boolean hasBaseAvatarList() {
+    public boolean hasPropEntityId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
+     * <code>optional uint32 prop_entity_id = 1;</code>
      * @return this
      */
-    public PickRogueAvatarCsReq clearBaseAvatarList() {
+    public PickRogueAvatarCsReq clearPropEntityId() {
       bitField0_ &= ~0x00000001;
-      baseAvatarList.clear();
+      propEntityId = 0;
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
+     * <code>optional uint32 prop_entity_id = 1;</code>
+     * @return the propEntityId
+     */
+    public int getPropEntityId() {
+      return propEntityId;
+    }
+
+    /**
+     * <code>optional uint32 prop_entity_id = 1;</code>
+     * @param value the propEntityId to set
+     * @return this
+     */
+    public PickRogueAvatarCsReq setPropEntityId(final int value) {
+      bitField0_ |= 0x00000001;
+      propEntityId = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * @return whether the baseAvatarIdList field is set
+     */
+    public boolean hasBaseAvatarIdList() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * @return this
+     */
+    public PickRogueAvatarCsReq clearBaseAvatarIdList() {
+      bitField0_ &= ~0x00000002;
+      baseAvatarIdList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableBaseAvatarList()} if you want to modify it.
+     * Use {@link #getMutableBaseAvatarIdList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getBaseAvatarList() {
-      return baseAvatarList;
+    public RepeatedInt getBaseAvatarIdList() {
+      return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -75,30 +122,98 @@ public final class PickRogueAvatarCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableBaseAvatarList() {
-      bitField0_ |= 0x00000001;
-      return baseAvatarList;
+    public RepeatedInt getMutableBaseAvatarIdList() {
+      bitField0_ |= 0x00000002;
+      return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
-     * @param value the baseAvatarList to add
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * @param value the baseAvatarIdList to add
      * @return this
      */
-    public PickRogueAvatarCsReq addBaseAvatarList(final int value) {
-      bitField0_ |= 0x00000001;
-      baseAvatarList.add(value);
+    public PickRogueAvatarCsReq addBaseAvatarIdList(final int value) {
+      bitField0_ |= 0x00000002;
+      baseAvatarIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_list = 12;</code>
-     * @param values the baseAvatarList to add
+     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * @param values the baseAvatarIdList to add
      * @return this
      */
-    public PickRogueAvatarCsReq addAllBaseAvatarList(final int... values) {
-      bitField0_ |= 0x00000001;
-      baseAvatarList.addAll(values);
+    public PickRogueAvatarCsReq addAllBaseAvatarIdList(final int... values) {
+      bitField0_ |= 0x00000002;
+      baseAvatarIdList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     * @return whether the dAPLNLIGMOM field is set
+     */
+    public boolean hasDAPLNLIGMOM() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     * @return this
+     */
+    public PickRogueAvatarCsReq clearDAPLNLIGMOM() {
+      bitField0_ &= ~0x00000004;
+      dAPLNLIGMOM.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableDAPLNLIGMOM()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getDAPLNLIGMOM() {
+      return dAPLNLIGMOM;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableDAPLNLIGMOM() {
+      bitField0_ |= 0x00000004;
+      return dAPLNLIGMOM;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     * @param value the dAPLNLIGMOM to add
+     * @return this
+     */
+    public PickRogueAvatarCsReq addDAPLNLIGMOM(final int value) {
+      bitField0_ |= 0x00000004;
+      dAPLNLIGMOM.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     * @param values the dAPLNLIGMOM to add
+     * @return this
+     */
+    public PickRogueAvatarCsReq addAllDAPLNLIGMOM(final int... values) {
+      bitField0_ |= 0x00000004;
+      dAPLNLIGMOM.addAll(values);
       return this;
     }
 
@@ -107,7 +222,9 @@ public final class PickRogueAvatarCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        baseAvatarList.copyFrom(other.baseAvatarList);
+        propEntityId = other.propEntityId;
+        baseAvatarIdList.copyFrom(other.baseAvatarIdList);
+        dAPLNLIGMOM.copyFrom(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -118,8 +235,14 @@ public final class PickRogueAvatarCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBaseAvatarList()) {
-        getMutableBaseAvatarList().addAll(other.baseAvatarList);
+      if (other.hasPropEntityId()) {
+        setPropEntityId(other.propEntityId);
+      }
+      if (other.hasBaseAvatarIdList()) {
+        getMutableBaseAvatarIdList().addAll(other.baseAvatarIdList);
+      }
+      if (other.hasDAPLNLIGMOM()) {
+        getMutableDAPLNLIGMOM().addAll(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -131,7 +254,9 @@ public final class PickRogueAvatarCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      baseAvatarList.clear();
+      propEntityId = 0;
+      baseAvatarIdList.clear();
+      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -142,7 +267,8 @@ public final class PickRogueAvatarCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      baseAvatarList.clear();
+      baseAvatarIdList.clear();
+      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -156,15 +282,27 @@ public final class PickRogueAvatarCsReqOuterClass {
       }
       PickRogueAvatarCsReq other = (PickRogueAvatarCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBaseAvatarList() || baseAvatarList.equals(other.baseAvatarList));
+        && (!hasPropEntityId() || propEntityId == other.propEntityId)
+        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList))
+        && (!hasDAPLNLIGMOM() || dAPLNLIGMOM.equals(other.dAPLNLIGMOM));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        for (int i = 0; i < baseAvatarList.length(); i++) {
-          output.writeRawByte((byte) 96);
-          output.writeUInt32NoTag(baseAvatarList.array()[i]);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(propEntityId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+          output.writeRawByte((byte) 16);
+          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < dAPLNLIGMOM.length(); i++) {
+          output.writeRawByte((byte) 32);
+          output.writeUInt32NoTag(dAPLNLIGMOM.array()[i]);
         }
       }
     }
@@ -173,7 +311,13 @@ public final class PickRogueAvatarCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += (1 * baseAvatarList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarList);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(propEntityId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * dAPLNLIGMOM.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dAPLNLIGMOM);
       }
       return size;
     }
@@ -185,10 +329,28 @@ public final class PickRogueAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 98: {
-            // baseAvatarList [packed=true]
-            input.readPackedUInt32(baseAvatarList, tag);
+          case 8: {
+            // propEntityId
+            propEntityId = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 18) {
+              break;
+            }
+          }
+          case 18: {
+            // baseAvatarIdList [packed=true]
+            input.readPackedUInt32(baseAvatarIdList, tag);
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
+            // dAPLNLIGMOM [packed=true]
+            input.readPackedUInt32(dAPLNLIGMOM, tag);
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -204,10 +366,16 @@ public final class PickRogueAvatarCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 96: {
-            // baseAvatarList [packed=false]
-            tag = input.readRepeatedUInt32(baseAvatarList, tag);
-            bitField0_ |= 0x00000001;
+          case 16: {
+            // baseAvatarIdList [packed=false]
+            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
+            bitField0_ |= 0x00000002;
+            break;
+          }
+          case 32: {
+            // dAPLNLIGMOM [packed=false]
+            tag = input.readRepeatedUInt32(dAPLNLIGMOM, tag);
+            bitField0_ |= 0x00000004;
             break;
           }
         }
@@ -218,7 +386,13 @@ public final class PickRogueAvatarCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRepeatedUInt32(FieldNames.baseAvatarList, baseAvatarList);
+        output.writeUInt32(FieldNames.propEntityId, propEntityId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedUInt32(FieldNames.dAPLNLIGMOM, dAPLNLIGMOM);
       }
       output.endObject();
     }
@@ -230,12 +404,35 @@ public final class PickRogueAvatarCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1750786888:
-          case -387691690: {
-            if (input.isAtField(FieldNames.baseAvatarList)) {
+          case -68717343:
+          case -57484005: {
+            if (input.isAtField(FieldNames.propEntityId)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(baseAvatarList);
+                propEntityId = input.readUInt32();
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1212654461:
+          case 914628490: {
+            if (input.isAtField(FieldNames.baseAvatarIdList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(baseAvatarIdList);
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1671280822: {
+            if (input.isAtField(FieldNames.dAPLNLIGMOM)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(dAPLNLIGMOM);
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -295,7 +492,11 @@ public final class PickRogueAvatarCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName baseAvatarList = FieldName.forField("baseAvatarList", "base_avatar_list");
+      static final FieldName propEntityId = FieldName.forField("propEntityId", "prop_entity_id");
+
+      static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
+
+      static final FieldName dAPLNLIGMOM = FieldName.forField("DAPLNLIGMOM");
     }
   }
 }

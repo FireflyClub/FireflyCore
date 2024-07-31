@@ -13,31 +13,23 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class FeverTimeActivityDataOuterClass {
   /**
-   * <pre>
-   *  Emmdfkhifnc
-   * </pre>
-   *
    * Protobuf type {@code FeverTimeActivityData}
    */
   public static final class FeverTimeActivityData extends ProtoMessage<FeverTimeActivityData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 DFGOPDJPKNA = 12;</code>
+     * <code>optional uint32 EDAMNPBBJHM = 6;</code>
      */
-    private int dFGOPDJPKNA;
+    private int eDAMNPBBJHM;
 
     /**
-     * <code>optional uint32 BOCMDBMJBJP = 13;</code>
+     * <code>optional uint32 KJBIAEAEMJF = 8;</code>
      */
-    private int bOCMDBMJBJP;
+    private int kJBIAEAEMJF;
 
     /**
-     * <pre>
-     *  EMAEKKJJLNP
-     * </pre>
-     *
-     * <code>optional .FeverTimeActivityType activity_data_type = 4;</code>
+     * <code>optional .FeverTimeActivityType activity_data_type = 10;</code>
      */
     private int activityDataType;
 
@@ -45,10 +37,6 @@ public final class FeverTimeActivityDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  Emmdfkhifnc
-     * </pre>
-     *
      * @return a new empty instance of {@code FeverTimeActivityData}
      */
     public static FeverTimeActivityData newInstance() {
@@ -56,85 +44,81 @@ public final class FeverTimeActivityDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 DFGOPDJPKNA = 12;</code>
-     * @return whether the dFGOPDJPKNA field is set
+     * <code>optional uint32 EDAMNPBBJHM = 6;</code>
+     * @return whether the eDAMNPBBJHM field is set
      */
-    public boolean hasDFGOPDJPKNA() {
+    public boolean hasEDAMNPBBJHM() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 DFGOPDJPKNA = 12;</code>
+     * <code>optional uint32 EDAMNPBBJHM = 6;</code>
      * @return this
      */
-    public FeverTimeActivityData clearDFGOPDJPKNA() {
+    public FeverTimeActivityData clearEDAMNPBBJHM() {
       bitField0_ &= ~0x00000001;
-      dFGOPDJPKNA = 0;
+      eDAMNPBBJHM = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 DFGOPDJPKNA = 12;</code>
-     * @return the dFGOPDJPKNA
+     * <code>optional uint32 EDAMNPBBJHM = 6;</code>
+     * @return the eDAMNPBBJHM
      */
-    public int getDFGOPDJPKNA() {
-      return dFGOPDJPKNA;
+    public int getEDAMNPBBJHM() {
+      return eDAMNPBBJHM;
     }
 
     /**
-     * <code>optional uint32 DFGOPDJPKNA = 12;</code>
-     * @param value the dFGOPDJPKNA to set
+     * <code>optional uint32 EDAMNPBBJHM = 6;</code>
+     * @param value the eDAMNPBBJHM to set
      * @return this
      */
-    public FeverTimeActivityData setDFGOPDJPKNA(final int value) {
+    public FeverTimeActivityData setEDAMNPBBJHM(final int value) {
       bitField0_ |= 0x00000001;
-      dFGOPDJPKNA = value;
+      eDAMNPBBJHM = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 BOCMDBMJBJP = 13;</code>
-     * @return whether the bOCMDBMJBJP field is set
+     * <code>optional uint32 KJBIAEAEMJF = 8;</code>
+     * @return whether the kJBIAEAEMJF field is set
      */
-    public boolean hasBOCMDBMJBJP() {
+    public boolean hasKJBIAEAEMJF() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 BOCMDBMJBJP = 13;</code>
+     * <code>optional uint32 KJBIAEAEMJF = 8;</code>
      * @return this
      */
-    public FeverTimeActivityData clearBOCMDBMJBJP() {
+    public FeverTimeActivityData clearKJBIAEAEMJF() {
       bitField0_ &= ~0x00000002;
-      bOCMDBMJBJP = 0;
+      kJBIAEAEMJF = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 BOCMDBMJBJP = 13;</code>
-     * @return the bOCMDBMJBJP
+     * <code>optional uint32 KJBIAEAEMJF = 8;</code>
+     * @return the kJBIAEAEMJF
      */
-    public int getBOCMDBMJBJP() {
-      return bOCMDBMJBJP;
+    public int getKJBIAEAEMJF() {
+      return kJBIAEAEMJF;
     }
 
     /**
-     * <code>optional uint32 BOCMDBMJBJP = 13;</code>
-     * @param value the bOCMDBMJBJP to set
+     * <code>optional uint32 KJBIAEAEMJF = 8;</code>
+     * @param value the kJBIAEAEMJF to set
      * @return this
      */
-    public FeverTimeActivityData setBOCMDBMJBJP(final int value) {
+    public FeverTimeActivityData setKJBIAEAEMJF(final int value) {
       bitField0_ |= 0x00000002;
-      bOCMDBMJBJP = value;
+      kJBIAEAEMJF = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  EMAEKKJJLNP
-     * </pre>
-     *
-     * <code>optional .FeverTimeActivityType activity_data_type = 4;</code>
+     * <code>optional .FeverTimeActivityType activity_data_type = 10;</code>
      * @return whether the activityDataType field is set
      */
     public boolean hasActivityDataType() {
@@ -142,11 +126,7 @@ public final class FeverTimeActivityDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  EMAEKKJJLNP
-     * </pre>
-     *
-     * <code>optional .FeverTimeActivityType activity_data_type = 4;</code>
+     * <code>optional .FeverTimeActivityType activity_data_type = 10;</code>
      * @return this
      */
     public FeverTimeActivityData clearActivityDataType() {
@@ -156,11 +136,7 @@ public final class FeverTimeActivityDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  EMAEKKJJLNP
-     * </pre>
-     *
-     * <code>optional .FeverTimeActivityType activity_data_type = 4;</code>
+     * <code>optional .FeverTimeActivityType activity_data_type = 10;</code>
      * @return the activityDataType
      */
     public FeverTimeActivityTypeOuterClass.FeverTimeActivityType getActivityDataType() {
@@ -193,11 +169,7 @@ public final class FeverTimeActivityDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  EMAEKKJJLNP
-     * </pre>
-     *
-     * <code>optional .FeverTimeActivityType activity_data_type = 4;</code>
+     * <code>optional .FeverTimeActivityType activity_data_type = 10;</code>
      * @param value the activityDataType to set
      * @return this
      */
@@ -213,8 +185,8 @@ public final class FeverTimeActivityDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        dFGOPDJPKNA = other.dFGOPDJPKNA;
-        bOCMDBMJBJP = other.bOCMDBMJBJP;
+        eDAMNPBBJHM = other.eDAMNPBBJHM;
+        kJBIAEAEMJF = other.kJBIAEAEMJF;
         activityDataType = other.activityDataType;
       }
       return this;
@@ -226,11 +198,11 @@ public final class FeverTimeActivityDataOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasDFGOPDJPKNA()) {
-        setDFGOPDJPKNA(other.dFGOPDJPKNA);
+      if (other.hasEDAMNPBBJHM()) {
+        setEDAMNPBBJHM(other.eDAMNPBBJHM);
       }
-      if (other.hasBOCMDBMJBJP()) {
-        setBOCMDBMJBJP(other.bOCMDBMJBJP);
+      if (other.hasKJBIAEAEMJF()) {
+        setKJBIAEAEMJF(other.kJBIAEAEMJF);
       }
       if (other.hasActivityDataType()) {
         setActivityDataTypeValue(other.activityDataType);
@@ -245,8 +217,8 @@ public final class FeverTimeActivityDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dFGOPDJPKNA = 0;
-      bOCMDBMJBJP = 0;
+      eDAMNPBBJHM = 0;
+      kJBIAEAEMJF = 0;
       activityDataType = 0;
       return this;
     }
@@ -271,23 +243,23 @@ public final class FeverTimeActivityDataOuterClass {
       }
       FeverTimeActivityData other = (FeverTimeActivityData) o;
       return bitField0_ == other.bitField0_
-        && (!hasDFGOPDJPKNA() || dFGOPDJPKNA == other.dFGOPDJPKNA)
-        && (!hasBOCMDBMJBJP() || bOCMDBMJBJP == other.bOCMDBMJBJP)
+        && (!hasEDAMNPBBJHM() || eDAMNPBBJHM == other.eDAMNPBBJHM)
+        && (!hasKJBIAEAEMJF() || kJBIAEAEMJF == other.kJBIAEAEMJF)
         && (!hasActivityDataType() || activityDataType == other.activityDataType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(dFGOPDJPKNA);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(eDAMNPBBJHM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(bOCMDBMJBJP);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(kJBIAEAEMJF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 80);
         output.writeEnumNoTag(activityDataType);
       }
     }
@@ -296,10 +268,10 @@ public final class FeverTimeActivityDataOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(dFGOPDJPKNA);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(eDAMNPBBJHM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bOCMDBMJBJP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kJBIAEAEMJF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(activityDataType);
@@ -314,25 +286,25 @@ public final class FeverTimeActivityDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // dFGOPDJPKNA
-            dFGOPDJPKNA = input.readUInt32();
+          case 48: {
+            // eDAMNPBBJHM
+            eDAMNPBBJHM = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 64) {
               break;
             }
           }
-          case 104: {
-            // bOCMDBMJBJP
-            bOCMDBMJBJP = input.readUInt32();
+          case 64: {
+            // kJBIAEAEMJF
+            kJBIAEAEMJF = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 80) {
               break;
             }
           }
-          case 32: {
+          case 80: {
             // activityDataType
             final int value = input.readInt32();
             if (FeverTimeActivityTypeOuterClass.FeverTimeActivityType.forNumber(value) != null) {
@@ -362,10 +334,10 @@ public final class FeverTimeActivityDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.dFGOPDJPKNA, dFGOPDJPKNA);
+        output.writeUInt32(FieldNames.eDAMNPBBJHM, eDAMNPBBJHM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.bOCMDBMJBJP, bOCMDBMJBJP);
+        output.writeUInt32(FieldNames.kJBIAEAEMJF, kJBIAEAEMJF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeEnum(FieldNames.activityDataType, activityDataType, FeverTimeActivityTypeOuterClass.FeverTimeActivityType.converter());
@@ -380,10 +352,10 @@ public final class FeverTimeActivityDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2038405478: {
-            if (input.isAtField(FieldNames.dFGOPDJPKNA)) {
+          case -1817454942: {
+            if (input.isAtField(FieldNames.eDAMNPBBJHM)) {
               if (!input.trySkipNullValue()) {
-                dFGOPDJPKNA = input.readUInt32();
+                eDAMNPBBJHM = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -391,10 +363,10 @@ public final class FeverTimeActivityDataOuterClass {
             }
             break;
           }
-          case 1416288054: {
-            if (input.isAtField(FieldNames.bOCMDBMJBJP)) {
+          case -50501285: {
+            if (input.isAtField(FieldNames.kJBIAEAEMJF)) {
               if (!input.trySkipNullValue()) {
-                bOCMDBMJBJP = input.readUInt32();
+                kJBIAEAEMJF = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -472,9 +444,9 @@ public final class FeverTimeActivityDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName dFGOPDJPKNA = FieldName.forField("DFGOPDJPKNA");
+      static final FieldName eDAMNPBBJHM = FieldName.forField("EDAMNPBBJHM");
 
-      static final FieldName bOCMDBMJBJP = FieldName.forField("BOCMDBMJBJP");
+      static final FieldName kJBIAEAEMJF = FieldName.forField("KJBIAEAEMJF");
 
       static final FieldName activityDataType = FieldName.forField("activityDataType", "activity_data_type");
     }

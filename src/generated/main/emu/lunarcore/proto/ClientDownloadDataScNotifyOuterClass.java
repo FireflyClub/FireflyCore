@@ -19,7 +19,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      */
     private final ClientDownloadDataOuterClass.ClientDownloadData downloadData = ClientDownloadDataOuterClass.ClientDownloadData.newInstance();
 
@@ -34,7 +34,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      * @return whether the downloadData field is set
      */
     public boolean hasDownloadData() {
@@ -42,7 +42,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      * @return this
      */
     public ClientDownloadDataScNotify clearDownloadData() {
@@ -52,7 +52,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +66,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +80,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ClientDownloadData download_data = 5;</code>
+     * <code>optional .ClientDownloadData download_data = 11;</code>
      * @param value the downloadData to set
      * @return this
      */
@@ -151,7 +151,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(downloadData);
       }
     }
@@ -172,7 +172,7 @@ public final class ClientDownloadDataScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
+          case 90: {
             // downloadData
             input.readMessage(downloadData);
             bitField0_ |= 0x00000001;

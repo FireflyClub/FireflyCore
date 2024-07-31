@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "MotionInfo.proto";
 
 message RefreshTriggerByClientCsReq {
-    repeated uint32 trigger_target_id_list = 7; // HKDNEKDFIGP
-    MotionInfo trigger_motion = 5; // LMNAFFHCNEA
-    uint32 trigger_entity_id = 4; // FHCDOLDBFCJ
-    string trigger_name = 10; // hpjcegjfonl
+	string trigger_name = 5;
+	uint32 trigger_entity_id = 11;
+	MotionInfo trigger_motion = 14;
+	repeated uint32 trigger_target_id_list = 15;
 }

@@ -5,28 +5,29 @@ option java_package = "emu.lunarcore.proto";
 import "SceneEntityInfo.proto";
 import "SceneGroupState.proto";
 import "SceneEntityGroupInfo.proto";
+import "EntityBuffInfo.proto";
+import "BuffInfo.proto";
 
-// GBFEAIFGOAI
 message SceneInfo {
-    repeated uint32 lighten_section_list = 8;
-	// map<uint32, FKCHJEFEPNF> HLHNOLAIIHE = 3;
-	repeated SceneEntityInfo entity_list = 4;
-    uint32 leader_entity_id = 14; //?
-	uint32 map_entry_id = 739;
-	// repeated EntityBuffInfo KLBDOBGEAMA = 9;
-	// repeated BuffInfo MNLNDDDGEMC = 11;
-    uint32 world_id = 15; //?
-	map<string, int32> BEEIDEFKEKG = 317;
-    repeated uint32 group_id_list = 1; // EKOKBEPBJMK
-	uint32 GIBIDJKFBOK = 1997;
-    uint32 plane_id = 5;
-	// repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-	// PFGPGKFEPHG MDBJCABNGMB = 622;
-    uint32 game_mode_type = 10; // DMPMPEOHIEA
-    uint32 client_pos_version = 12;
-    uint32 floor_id = 7;
-    repeated SceneEntityGroupInfo entity_group_list = 203; // PEKKFEADKBN
-    repeated SceneGroupState group_state_list = 1274; // JEFBKJBEOFF
-    uint32 entry_id = 6;
-	uint32 PKOIJBEDMEK = 267;
+	uint32 leader_entity_id = 14;
+	uint32 plane_id = 2;
+	uint32 PHPHBMIAOGG = 81;
+	uint32 game_mode_type = 5;
+	repeated SceneEntityInfo entity_list = 6;
+	uint32 entry_id = 13;
+	uint32 map_entry_id = 599;
+	uint32 world_id = 15;
+	uint32 client_pos_version = 7;
+	repeated SceneGroupState group_state_list = 1577;
+	repeated uint32 group_id_list = 1;
+	repeated BuffInfo IOJCJAJKCKJ = 12;
+	//repeated NLLCOJPPKLJ BPJADFJKBJD = 3;
+	repeated uint32 lighten_section_list = 8;
+	uint32 floor_id = 11;
+	map<string, int32> BOMLAPEJGIJ = 1458;
+	uint32 FGPALNEPABC = 1226;
+	repeated SceneEntityGroupInfo entity_group_list = 1909;
+	//JIPKADFNHNH HFIGNONOMIC = 1816;
+	repeated EntityBuffInfo GFNKBPCGCHB = 4;
+	//map<uint32, GGICHCCBLMD> GDEFFADKFAN = 9;
 }

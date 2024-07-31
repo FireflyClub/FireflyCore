@@ -13,31 +13,23 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class MazePropOuterClass {
   /**
-   * <pre>
-   *  OMNCCAPFKLA
-   * </pre>
-   *
    * Protobuf type {@code MazeProp}
    */
   public static final class MazeProp extends ProtoMessage<MazeProp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 3;</code>
      */
     private int state;
 
     /**
-     * <pre>
-     *  JDGKOODKLOG
-     * </pre>
-     *
-     * <code>optional uint32 config_id = 14;</code>
+     * <code>optional uint32 config_id = 4;</code>
      */
     private int configId;
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 8;</code>
      */
     private int groupId;
 
@@ -45,10 +37,6 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <pre>
-     *  OMNCCAPFKLA
-     * </pre>
-     *
      * @return a new empty instance of {@code MazeProp}
      */
     public static MazeProp newInstance() {
@@ -56,7 +44,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 3;</code>
      * @return whether the state field is set
      */
     public boolean hasState() {
@@ -64,7 +52,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 3;</code>
      * @return this
      */
     public MazeProp clearState() {
@@ -74,7 +62,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 3;</code>
      * @return the state
      */
     public int getState() {
@@ -82,7 +70,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 3;</code>
      * @param value the state to set
      * @return this
      */
@@ -93,11 +81,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <pre>
-     *  JDGKOODKLOG
-     * </pre>
-     *
-     * <code>optional uint32 config_id = 14;</code>
+     * <code>optional uint32 config_id = 4;</code>
      * @return whether the configId field is set
      */
     public boolean hasConfigId() {
@@ -105,11 +89,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <pre>
-     *  JDGKOODKLOG
-     * </pre>
-     *
-     * <code>optional uint32 config_id = 14;</code>
+     * <code>optional uint32 config_id = 4;</code>
      * @return this
      */
     public MazeProp clearConfigId() {
@@ -119,11 +99,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <pre>
-     *  JDGKOODKLOG
-     * </pre>
-     *
-     * <code>optional uint32 config_id = 14;</code>
+     * <code>optional uint32 config_id = 4;</code>
      * @return the configId
      */
     public int getConfigId() {
@@ -131,11 +107,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <pre>
-     *  JDGKOODKLOG
-     * </pre>
-     *
-     * <code>optional uint32 config_id = 14;</code>
+     * <code>optional uint32 config_id = 4;</code>
      * @param value the configId to set
      * @return this
      */
@@ -146,7 +118,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -154,7 +126,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return this
      */
     public MazeProp clearGroupId() {
@@ -164,7 +136,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -172,7 +144,7 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -253,15 +225,15 @@ public final class MazePropOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(state);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(configId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(groupId);
       }
     }
@@ -288,25 +260,25 @@ public final class MazePropOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 24: {
             // state
             state = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 32) {
               break;
             }
           }
-          case 112: {
+          case 32: {
             // configId
             configId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 64) {
               break;
             }
           }
-          case 120: {
+          case 64: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000004;

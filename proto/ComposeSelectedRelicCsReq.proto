@@ -4,11 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCostList.proto";
 
-// EALDGFAGIGP
 message ComposeSelectedRelicCsReq {
-    ItemCostList compose_item_list = 12; // KDNCKKHJMCI
-    uint32 compose_relic_id = 6; // MGJIKCHNDAB
-    uint32 main_affix_id = 3;
-    uint32 count = 7;
-    uint32 compose_id = 2;
+	ItemCostList compose_item_list = 10;
+	uint32 compose_relic_id = 7;
+	uint32 compose_id = 14;
+	uint32 count = 8;
+	uint32 main_affix_id = 12;
 }

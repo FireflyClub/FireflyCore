@@ -13,13 +13,13 @@ public class PacketChallengeBossPhaseSettleNotify extends BasePacket {
             .newInstance()
             .setChallengeId(challenge.getExcel().getId())
             .setPhase(challenge.getCurrentStage())
-            .setChallengeScore(challenge.getScoreStage1())
+            .setScoreOne(challenge.getScoreStage1())
             .setScoreTwo(challenge.getScoreStage2())
             .setIsWin(challenge.isWin()) // if is win == false, the AV battle target not shown
             .setStars(challenge.getStars())
-            .setGIPCBILIPIP(false) // show completion reward
-            .setKJFDFGLCJPB(true) // if false, the AV battle target not shown
-            .setCPJOLGJDICK(1); // if the value is not 1, will show stars
+            .setKHLCHIFGCPD(false) // show completion reward
+            .setOCNGBEDMEGJ(true) // if false, the AV battle target not shown
+            .setLMHBPGCPMNH(1); // if the value is not 1, will show stars
         
         if (challenge.getBossTarget1() != null && challenge.getCurrentStage() == 1) {
             for (var target: challenge.getBossTarget1()) {

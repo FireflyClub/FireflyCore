@@ -5,20 +5,19 @@ option java_package = "emu.lunarcore.proto";
 import "ExtraLineupType.proto";
 import "LineupAvatar.proto";
 
-// JEPIBLEFLEO
 message LineupInfo {
-    uint32 leader_slot = 11;
-    ExtraLineupType extra_lineup_type = 6;
-	repeated uint32 JGDHJDIAJBD = 13;
-	repeated uint32 GLLFFBELFGC = 2;
-	repeated uint32 EAJMDIHNDCH = 9;
-    repeated LineupAvatar avatar_list = 5; // EAIBJAPAPKP
-    uint32 plane_id = 3;
-    string name = 1;
-	uint32 GIBIDJKFBOK = 12;
-    uint32 max_mp = 14; // GHJGFOGMPGN
-    uint32 mp = 4;
-    bool NIELAFGGLJB = 15;
-    uint32 index = 7;
-    bool is_virtual = 10; // LPIAFAAKJNO
+	bool KKAPCFFDNCH = 12;
+	repeated LineupAvatar avatar_list = 2;
+	repeated uint32 EOIFBNKPBGE = 11;
+	uint32 FGPALNEPABC = 9;
+	uint32 index = 3;
+	bool is_virtual = 15;
+	uint32 mp = 6;
+	string name = 14;
+	ExtraLineupType extra_lineup_type = 7;
+	uint32 plane_id = 10;
+	repeated uint32 LKLPOOEMOHI = 5;
+	uint32 leader_slot = 13;
+	repeated uint32 OLBHMCHJGKI = 1;
+	uint32 max_mp = 8;
 }

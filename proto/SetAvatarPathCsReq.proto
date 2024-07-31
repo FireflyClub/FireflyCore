@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "MultiPathAvatarType.proto";
 
-// MJJHOFGNEJE
 message SetAvatarPathCsReq {
-    MultiPathAvatarType avatar_id = 7;
+	MultiPathAvatarType avatar_id = 13;
 }

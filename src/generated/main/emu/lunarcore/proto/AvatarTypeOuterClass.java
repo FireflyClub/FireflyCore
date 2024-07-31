@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class AvatarTypeOuterClass {
   /**
-   * <pre>
-   *  ODKEOFEENMC
-   * </pre>
-   *
    * Protobuf enum {@code AvatarType}
    */
   public enum AvatarType implements ProtoEnum<AvatarType> {

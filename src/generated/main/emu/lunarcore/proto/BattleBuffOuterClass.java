@@ -28,37 +28,21 @@ public final class BattleBuffOuterClass {
     private int id;
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
 
     /**
-     * <pre>
-     *  BKHNHFDLOCI
-     * </pre>
-     *
      * <code>optional uint32 owner_id = 3;</code>
      */
     private int ownerId;
 
     /**
-     * <pre>
-     *  DPMLHGJLPCD
-     * </pre>
-     *
      * <code>optional uint32 wave_flag = 4;</code>
      */
     private int waveFlag;
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      */
     private final RepeatedInt targetIndexList = RepeatedInt.newEmptyInstance();
@@ -116,10 +100,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -128,10 +108,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -142,10 +118,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -154,10 +126,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this
@@ -169,10 +137,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKHNHFDLOCI
-     * </pre>
-     *
      * <code>optional uint32 owner_id = 3;</code>
      * @return whether the ownerId field is set
      */
@@ -181,10 +145,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKHNHFDLOCI
-     * </pre>
-     *
      * <code>optional uint32 owner_id = 3;</code>
      * @return this
      */
@@ -195,10 +155,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKHNHFDLOCI
-     * </pre>
-     *
      * <code>optional uint32 owner_id = 3;</code>
      * @return the ownerId
      */
@@ -207,10 +163,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  BKHNHFDLOCI
-     * </pre>
-     *
      * <code>optional uint32 owner_id = 3;</code>
      * @param value the ownerId to set
      * @return this
@@ -222,10 +174,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  DPMLHGJLPCD
-     * </pre>
-     *
      * <code>optional uint32 wave_flag = 4;</code>
      * @return whether the waveFlag field is set
      */
@@ -234,10 +182,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  DPMLHGJLPCD
-     * </pre>
-     *
      * <code>optional uint32 wave_flag = 4;</code>
      * @return this
      */
@@ -248,10 +192,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  DPMLHGJLPCD
-     * </pre>
-     *
      * <code>optional uint32 wave_flag = 4;</code>
      * @return the waveFlag
      */
@@ -260,10 +200,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  DPMLHGJLPCD
-     * </pre>
-     *
      * <code>optional uint32 wave_flag = 4;</code>
      * @param value the waveFlag to set
      * @return this
@@ -275,10 +211,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      * @return whether the targetIndexList field is set
      */
@@ -287,10 +219,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      * @return this
      */
@@ -301,10 +229,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -319,10 +243,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -337,10 +257,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      * @param value the targetIndexList to add
      * @return this
@@ -352,10 +268,6 @@ public final class BattleBuffOuterClass {
     }
 
     /**
-     * <pre>
-     *  JOBMGMHFNNH
-     * </pre>
-     *
      * <code>repeated uint32 target_index_list = 5;</code>
      * @param values the targetIndexList to add
      * @return this

@@ -6,6 +6,6 @@ import "SyncReason.proto";
 import "LineupInfo.proto";
 
 message SyncLineupNotify {
-    LineupInfo lineup = 13;
-    repeated SyncReason reason_list = 1;
+	repeated SyncReason reason_list = 3;
+	LineupInfo lineup = 14;
 }

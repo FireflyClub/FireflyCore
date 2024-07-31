@@ -8,36 +8,35 @@ import "MonsterBattleInfo.proto";
 import "BattleTargetList.proto";
 import "BattleEventBattleInfo.proto";
 
-// IMNAOPFAJOI
 message BattleStatistics {
-  uint32 total_battle_turns = 1; // LFEFALEFLIP
-  uint32 total_auto_turns = 2; // OGOFMIFOGJJ
-  repeated uint32 avatar_id_list = 3; // CDDAMAOICAJ
-  uint32 ultra_cnt = 4; // NCJFJKLPCGP
-  double total_delay_cumulate = 5; // AKGCDCKPBHB
-  double cost_time = 6; // OCENPNKNMMC
-  repeated AvatarBattleInfo battle_avatar_list = 7; // HFIHGIEBCKK
-  repeated MonsterBattleInfo battle_monster_list = 8; // DOFDIBEMNIO
-  uint32 round_cnt = 9; // NMANEGGKEON
-  uint32 cocoon_dead_wave = 10; // BMJOFLADKHM
-  uint32 avatar_battle_turns = 11; // JMENJONJLAH
-  uint32 monster_battle_turns = 12; // AIFFPNFLMHK
-  map<string, float> custom_values = 13; // FNLKAHKOENJ
-  uint32 battle_score = 14; // HAHLJJFHGAD
-	repeated BattleEventBattleInfo CKHOAMNMKAJ = 16;
-  BattleEndReason end_reason = 19; // ICKNHPGIPAJ
-	// repeated LGFELGLKHJB PPGFLMFFHID = 21;
-	repeated int32 LMMAFBHEIPD = 22;
-	// repeated EDMLINEHPPE EKHEJMDFMOE = 23;
-	// repeated IGOJKPCDFNN LLKDKCMLFCE = 26;
-	// repeated CKLPMMEKCDF ONIJHCJBKJJ = 27;
-	map<uint32, BattleTargetList> battle_target_info = 28; // DNHDEANOCDN
-	// repeated MFBFMKMABAO DCMFEKIAEJK = 29;
-	// EvolveBuildBattleInfo MONJOIMGLNA = 30;
-	// HHJEAHMHGFK JDGFLBIBJJH = 31;
-	bool FMGPIJEGCHL = 32;
-	// repeated DKODPCDGOOL BBNLJFJEIMA = 33;
-	// repeated CLJLLOFIBML CMHDFLBPMDB = 34;
-	uint32 FCHHFDFHPBG = 35;
-
+	uint32 total_battle_turns = 1;
+	uint32 total_auto_turns = 2;
+	repeated uint32 avatar_id_list = 3;
+	uint32 ultra_cnt = 4;
+	double total_delay_cumulate = 5;
+	double cost_time = 6;
+	repeated AvatarBattleInfo battle_avatar_list = 7;
+	repeated MonsterBattleInfo battle_monster_list = 8;
+	uint32 round_cnt = 9;
+	uint32 cocoon_dead_wave = 10;
+	uint32 avatar_battle_turns = 11;
+	uint32 monster_battle_turns = 12;
+	map<string, float> custom_values = 13;
+	uint32 battle_score = 14;
+	repeated BattleEventBattleInfo AIKIGMFOIPD = 16;
+	BattleEndReason end_reason = 19;
+	//repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+	repeated int32 PCEOMHIOFCB = 22;
+	//repeated DBBHAAODPGL ODLMBMOMBIH = 23;
+	//repeated HLLMBJMBIEH CGFLIGMAECA = 26;
+	//repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+	map<uint32, BattleTargetList> battle_target_info = 28;
+	//repeated MOFDLJPGDJC LCNPJGHHELM = 29;
+	//EvolveBuildBattleInfo EHEELOGGFME = 30;
+	//JNEGDKNFDFJ PKOFLJLGCFF = 31;
+	bool IOMHFPMGHFC = 32;
+	//repeated GFHLELKFECD KMBFLEMGFLF = 33;
+	//repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+	uint32 LDBJKJFMJDE = 35;
+	//MPCONOKHBFI DIGEGEIFJLE = 37;
 }

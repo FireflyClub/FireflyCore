@@ -24,28 +24,16 @@ public final class BattleEquipmentOuterClass {
     private int id;
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
 
     /**
-     * <pre>
-     *  HOAAGPBKFKG
-     * </pre>
-     *
      * <code>optional uint32 promotion = 3;</code>
      */
     private int promotion;
 
     /**
-     * <pre>
-     *  GJLJMAGJDNK
-     * </pre>
-     *
      * <code>optional uint32 rank = 4;</code>
      */
     private int rank;
@@ -98,10 +86,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -110,10 +94,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -124,10 +104,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -136,10 +112,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  CFNKFJKAIAJ
-     * </pre>
-     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this
@@ -151,10 +123,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOAAGPBKFKG
-     * </pre>
-     *
      * <code>optional uint32 promotion = 3;</code>
      * @return whether the promotion field is set
      */
@@ -163,10 +131,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOAAGPBKFKG
-     * </pre>
-     *
      * <code>optional uint32 promotion = 3;</code>
      * @return this
      */
@@ -177,10 +141,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOAAGPBKFKG
-     * </pre>
-     *
      * <code>optional uint32 promotion = 3;</code>
      * @return the promotion
      */
@@ -189,10 +149,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOAAGPBKFKG
-     * </pre>
-     *
      * <code>optional uint32 promotion = 3;</code>
      * @param value the promotion to set
      * @return this
@@ -204,10 +160,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  GJLJMAGJDNK
-     * </pre>
-     *
      * <code>optional uint32 rank = 4;</code>
      * @return whether the rank field is set
      */
@@ -216,10 +168,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  GJLJMAGJDNK
-     * </pre>
-     *
      * <code>optional uint32 rank = 4;</code>
      * @return this
      */
@@ -230,10 +178,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  GJLJMAGJDNK
-     * </pre>
-     *
      * <code>optional uint32 rank = 4;</code>
      * @return the rank
      */
@@ -242,10 +186,6 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
-     * <pre>
-     *  GJLJMAGJDNK
-     * </pre>
-     *
      * <code>optional uint32 rank = 4;</code>
      * @param value the rank to set
      * @return this

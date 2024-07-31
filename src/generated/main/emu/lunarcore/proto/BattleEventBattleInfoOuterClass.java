@@ -20,10 +20,6 @@ public final class BattleEventBattleInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  FLDLEOPCEFM
-     * </pre>
-     *
      * <code>optional uint32 battle_event_id = 1;</code>
      */
     private int battleEventId;
@@ -34,9 +30,9 @@ public final class BattleEventBattleInfoOuterClass {
     private final BattleEventInitedDataOuterClass.BattleEventInitedData status = BattleEventInitedDataOuterClass.BattleEventInitedData.newInstance();
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
      */
-    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> nJODLNCNPNF = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
+    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> iGIEFPANAEL = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
 
     private BattleEventBattleInfo() {
     }
@@ -49,10 +45,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FLDLEOPCEFM
-     * </pre>
-     *
      * <code>optional uint32 battle_event_id = 1;</code>
      * @return whether the battleEventId field is set
      */
@@ -61,10 +53,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FLDLEOPCEFM
-     * </pre>
-     *
      * <code>optional uint32 battle_event_id = 1;</code>
      * @return this
      */
@@ -75,10 +63,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FLDLEOPCEFM
-     * </pre>
-     *
      * <code>optional uint32 battle_event_id = 1;</code>
      * @return the battleEventId
      */
@@ -87,10 +71,6 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FLDLEOPCEFM
-     * </pre>
-     *
      * <code>optional uint32 battle_event_id = 1;</code>
      * @param value the battleEventId to set
      * @return this
@@ -160,39 +140,39 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
-     * @return whether the nJODLNCNPNF field is set
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * @return whether the iGIEFPANAEL field is set
      */
-    public boolean hasNJODLNCNPNF() {
+    public boolean hasIGIEFPANAEL() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
      * @return this
      */
-    public BattleEventBattleInfo clearNJODLNCNPNF() {
+    public BattleEventBattleInfo clearIGIEFPANAEL() {
       bitField0_ &= ~0x00000004;
-      nJODLNCNPNF.clear();
+      iGIEFPANAEL.clear();
       return this;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableNJODLNCNPNF()} if you want to modify it.
+     * Use {@link #getMutableIGIEFPANAEL()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getNJODLNCNPNF() {
-      return nJODLNCNPNF;
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getIGIEFPANAEL() {
+      return iGIEFPANAEL;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -200,32 +180,32 @@ public final class BattleEventBattleInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableNJODLNCNPNF() {
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableIGIEFPANAEL() {
       bitField0_ |= 0x00000004;
-      return nJODLNCNPNF;
+      return iGIEFPANAEL;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
-     * @param value the nJODLNCNPNF to add
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * @param value the iGIEFPANAEL to add
      * @return this
      */
-    public BattleEventBattleInfo addNJODLNCNPNF(
+    public BattleEventBattleInfo addIGIEFPANAEL(
         final BattleSkillInfoOuterClass.BattleSkillInfo value) {
       bitField0_ |= 0x00000004;
-      nJODLNCNPNF.add(value);
+      iGIEFPANAEL.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo NJODLNCNPNF = 3;</code>
-     * @param values the nJODLNCNPNF to add
+     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * @param values the iGIEFPANAEL to add
      * @return this
      */
-    public BattleEventBattleInfo addAllNJODLNCNPNF(
+    public BattleEventBattleInfo addAllIGIEFPANAEL(
         final BattleSkillInfoOuterClass.BattleSkillInfo... values) {
       bitField0_ |= 0x00000004;
-      nJODLNCNPNF.addAll(values);
+      iGIEFPANAEL.addAll(values);
       return this;
     }
 
@@ -236,7 +216,7 @@ public final class BattleEventBattleInfoOuterClass {
         bitField0_ = other.bitField0_;
         battleEventId = other.battleEventId;
         status.copyFrom(other.status);
-        nJODLNCNPNF.copyFrom(other.nJODLNCNPNF);
+        iGIEFPANAEL.copyFrom(other.iGIEFPANAEL);
       }
       return this;
     }
@@ -253,8 +233,8 @@ public final class BattleEventBattleInfoOuterClass {
       if (other.hasStatus()) {
         getMutableStatus().mergeFrom(other.status);
       }
-      if (other.hasNJODLNCNPNF()) {
-        getMutableNJODLNCNPNF().addAll(other.nJODLNCNPNF);
+      if (other.hasIGIEFPANAEL()) {
+        getMutableIGIEFPANAEL().addAll(other.iGIEFPANAEL);
       }
       return this;
     }
@@ -268,7 +248,7 @@ public final class BattleEventBattleInfoOuterClass {
       bitField0_ = 0;
       battleEventId = 0;
       status.clear();
-      nJODLNCNPNF.clear();
+      iGIEFPANAEL.clear();
       return this;
     }
 
@@ -280,7 +260,7 @@ public final class BattleEventBattleInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       status.clearQuick();
-      nJODLNCNPNF.clearQuick();
+      iGIEFPANAEL.clearQuick();
       return this;
     }
 
@@ -296,7 +276,7 @@ public final class BattleEventBattleInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasBattleEventId() || battleEventId == other.battleEventId)
         && (!hasStatus() || status.equals(other.status))
-        && (!hasNJODLNCNPNF() || nJODLNCNPNF.equals(other.nJODLNCNPNF));
+        && (!hasIGIEFPANAEL() || iGIEFPANAEL.equals(other.iGIEFPANAEL));
     }
 
     @Override
@@ -310,9 +290,9 @@ public final class BattleEventBattleInfoOuterClass {
         output.writeMessageNoTag(status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < nJODLNCNPNF.length(); i++) {
+        for (int i = 0; i < iGIEFPANAEL.length(); i++) {
           output.writeRawByte((byte) 26);
-          output.writeMessageNoTag(nJODLNCNPNF.get(i));
+          output.writeMessageNoTag(iGIEFPANAEL.get(i));
         }
       }
     }
@@ -327,7 +307,7 @@ public final class BattleEventBattleInfoOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * nJODLNCNPNF.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(nJODLNCNPNF);
+        size += (1 * iGIEFPANAEL.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(iGIEFPANAEL);
       }
       return size;
     }
@@ -358,8 +338,8 @@ public final class BattleEventBattleInfoOuterClass {
             }
           }
           case 26: {
-            // nJODLNCNPNF
-            tag = input.readRepeatedMessage(nJODLNCNPNF, tag);
+            // iGIEFPANAEL
+            tag = input.readRepeatedMessage(iGIEFPANAEL, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -389,7 +369,7 @@ public final class BattleEventBattleInfoOuterClass {
         output.writeMessage(FieldNames.status, status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.nJODLNCNPNF, nJODLNCNPNF);
+        output.writeRepeatedMessage(FieldNames.iGIEFPANAEL, iGIEFPANAEL);
       }
       output.endObject();
     }
@@ -424,10 +404,10 @@ public final class BattleEventBattleInfoOuterClass {
             }
             break;
           }
-          case -1860190262: {
-            if (input.isAtField(FieldNames.nJODLNCNPNF)) {
+          case 2147116759: {
+            if (input.isAtField(FieldNames.iGIEFPANAEL)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(nJODLNCNPNF);
+                input.readRepeatedMessage(iGIEFPANAEL);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -492,7 +472,7 @@ public final class BattleEventBattleInfoOuterClass {
 
       static final FieldName status = FieldName.forField("status");
 
-      static final FieldName nJODLNCNPNF = FieldName.forField("NJODLNCNPNF");
+      static final FieldName iGIEFPANAEL = FieldName.forField("IGIEFPANAEL");
     }
   }
 }

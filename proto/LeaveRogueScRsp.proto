@@ -7,8 +7,9 @@ import "SceneInfo.proto";
 import "LineupInfo.proto";
 
 message LeaveRogueScRsp {
-	uint32 retcode = 12;
-	RogueInfo rogue_info = 1;
-	SceneInfo scene = 15;
-	LineupInfo lineup = 10;
+	SceneInfo scene = 2;
+	//CIOEAHEFPLN OOPAJCPODNG = 10;
+	LineupInfo lineup = 14;
+	uint32 retcode = 1;
+	RogueInfo rogue_info = 9;
 }

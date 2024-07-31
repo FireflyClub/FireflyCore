@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class NpcRogueInfoOuterClass {
   /**
-   * <pre>
-   *  Chkmnnkmlpl
-   * </pre>
-   *
    * Protobuf type {@code NpcRogueInfo}
    */
   public static final class NpcRogueInfo extends ProtoMessage<NpcRogueInfo> implements Cloneable {
@@ -49,10 +45,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  Chkmnnkmlpl
-     * </pre>
-     *
      * @return a new empty instance of {@code NpcRogueInfo}
      */
     public static NpcRogueInfo newInstance() {

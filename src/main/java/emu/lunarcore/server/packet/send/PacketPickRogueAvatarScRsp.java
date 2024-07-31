@@ -13,7 +13,7 @@ public class PacketPickRogueAvatarScRsp extends BasePacket {
         var proto = PickRogueAvatarScRsp.newInstance();
         
         for (var avatarId : avatarIds) {
-            proto.addBaseAvatarList(avatarId);
+            proto.addBaseAvatarIdList(avatarId);
         }
         
         this.setData(proto);

@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SetAvatarPathCsReqOuterClass {
   /**
-   * <pre>
-   *  MJJHOFGNEJE
-   * </pre>
-   *
    * Protobuf type {@code SetAvatarPathCsReq}
    */
   public static final class SetAvatarPathCsReq extends ProtoMessage<SetAvatarPathCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 13;</code>
      */
     private int avatarId;
 
@@ -31,10 +27,6 @@ public final class SetAvatarPathCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  MJJHOFGNEJE
-     * </pre>
-     *
      * @return a new empty instance of {@code SetAvatarPathCsReq}
      */
     public static SetAvatarPathCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class SetAvatarPathCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 13;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -50,7 +42,7 @@ public final class SetAvatarPathCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 13;</code>
      * @return this
      */
     public SetAvatarPathCsReq clearAvatarId() {
@@ -60,7 +52,7 @@ public final class SetAvatarPathCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 13;</code>
      * @return the avatarId
      */
     public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getAvatarId() {
@@ -93,7 +85,7 @@ public final class SetAvatarPathCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType avatar_id = 7;</code>
+     * <code>optional .MultiPathAvatarType avatar_id = 13;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -163,7 +155,7 @@ public final class SetAvatarPathCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 104);
         output.writeEnumNoTag(avatarId);
       }
     }
@@ -184,7 +176,7 @@ public final class SetAvatarPathCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 104: {
             // avatarId
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {

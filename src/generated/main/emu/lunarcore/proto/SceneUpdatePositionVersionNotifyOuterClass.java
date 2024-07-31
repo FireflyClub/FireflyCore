@@ -19,11 +19,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  LDEBGMDKOKP
-     * </pre>
-     *
-     * <code>optional uint32 pos_version = 10;</code>
+     * <code>optional uint32 pos_version = 6;</code>
      */
     private int posVersion;
 
@@ -38,11 +34,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LDEBGMDKOKP
-     * </pre>
-     *
-     * <code>optional uint32 pos_version = 10;</code>
+     * <code>optional uint32 pos_version = 6;</code>
      * @return whether the posVersion field is set
      */
     public boolean hasPosVersion() {
@@ -50,11 +42,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LDEBGMDKOKP
-     * </pre>
-     *
-     * <code>optional uint32 pos_version = 10;</code>
+     * <code>optional uint32 pos_version = 6;</code>
      * @return this
      */
     public SceneUpdatePositionVersionNotify clearPosVersion() {
@@ -64,11 +52,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LDEBGMDKOKP
-     * </pre>
-     *
-     * <code>optional uint32 pos_version = 10;</code>
+     * <code>optional uint32 pos_version = 6;</code>
      * @return the posVersion
      */
     public int getPosVersion() {
@@ -76,11 +60,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  LDEBGMDKOKP
-     * </pre>
-     *
-     * <code>optional uint32 pos_version = 10;</code>
+     * <code>optional uint32 pos_version = 6;</code>
      * @param value the posVersion to set
      * @return this
      */
@@ -150,7 +130,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(posVersion);
       }
     }
@@ -171,7 +151,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 48: {
             // posVersion
             posVersion = input.readUInt32();
             bitField0_ |= 0x00000001;

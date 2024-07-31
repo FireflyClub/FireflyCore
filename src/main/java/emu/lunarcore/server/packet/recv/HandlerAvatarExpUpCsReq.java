@@ -24,7 +24,7 @@ public class HandlerAvatarExpUpCsReq extends PacketHandler {
             items.add(new ItemParam(cost));
         }
 
-        var returnItems = session.getServer().getInventoryService().levelUpAvatar(session.getPlayer(), req.getSceneAvatarId(), items);
+        var returnItems = session.getServer().getInventoryService().levelUpAvatar(session.getPlayer(), req.getBaseAvatarId(), items);
         session.send(new PacketAvatarExpUpScRsp(returnItems));
     }
 

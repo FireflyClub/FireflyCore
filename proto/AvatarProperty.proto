@@ -3,11 +3,11 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message AvatarProperty {
-    double max_hp = 1; // LNOAODAOJBE
-    double attack = 2; // JAAPHOAGJIP
-    double defence = 3; // GAFPMMHAOHB
-    double speed = 4; // JBOAKEGOMAB
-    double left_hp = 5; // EICPEENNKKB
-    double left_sp = 6; // IKMFGLHEEDL
-    double max_sp = 7; // BFLPKGCIBPA
+	double max_hp = 1;
+	double attack = 2;
+	double defence = 3;
+	double speed = 4;
+	double left_hp = 5;
+	double left_sp = 6;
+	double max_sp = 7;
 }

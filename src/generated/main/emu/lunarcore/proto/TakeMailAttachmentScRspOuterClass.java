@@ -21,22 +21,22 @@ public final class TakeMailAttachmentScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      */
     private final ItemListOuterClass.ItemList attachment = ItemListOuterClass.ItemList.newInstance();
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      */
     private final RepeatedInt succMailIdList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      */
     private final RepeatedMessage<ClientMailAttachmentItemOuterClass.ClientMailAttachmentItem> failMailList = RepeatedMessage.newEmptyInstance(ClientMailAttachmentItemOuterClass.ClientMailAttachmentItem.getFactory());
 
@@ -51,7 +51,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -59,7 +59,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
     public TakeMailAttachmentScRsp clearRetcode() {
@@ -69,7 +69,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -77,7 +77,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -88,7 +88,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      * @return whether the attachment field is set
      */
     public boolean hasAttachment() {
@@ -96,7 +96,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      * @return this
      */
     public TakeMailAttachmentScRsp clearAttachment() {
@@ -106,7 +106,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -120,7 +120,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -134,7 +134,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList attachment = 15;</code>
+     * <code>optional .ItemList attachment = 14;</code>
      * @param value the attachment to set
      * @return this
      */
@@ -145,7 +145,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      * @return whether the succMailIdList field is set
      */
     public boolean hasSuccMailIdList() {
@@ -153,7 +153,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      * @return this
      */
     public TakeMailAttachmentScRsp clearSuccMailIdList() {
@@ -163,7 +163,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -177,7 +177,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -191,7 +191,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      * @param value the succMailIdList to add
      * @return this
      */
@@ -202,7 +202,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 succ_mail_id_list = 13;</code>
+     * <code>repeated uint32 succ_mail_id_list = 12;</code>
      * @param values the succMailIdList to add
      * @return this
      */
@@ -213,7 +213,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      * @return whether the failMailList field is set
      */
     public boolean hasFailMailList() {
@@ -221,7 +221,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      * @return this
      */
     public TakeMailAttachmentScRsp clearFailMailList() {
@@ -231,7 +231,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -246,7 +246,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -261,7 +261,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      * @param value the failMailList to add
      * @return this
      */
@@ -273,7 +273,7 @@ public final class TakeMailAttachmentScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 9;</code>
+     * <code>repeated .ClientMailAttachmentItem fail_mail_list = 6;</code>
      * @param values the failMailList to add
      * @return this
      */
@@ -364,22 +364,22 @@ public final class TakeMailAttachmentScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(attachment);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < succMailIdList.length(); i++) {
-          output.writeRawByte((byte) 104);
+          output.writeRawByte((byte) 96);
           output.writeUInt32NoTag(succMailIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < failMailList.length(); i++) {
-          output.writeRawByte((byte) 74);
+          output.writeRawByte((byte) 50);
           output.writeMessageNoTag(failMailList.get(i));
         }
       }
@@ -410,34 +410,34 @@ public final class TakeMailAttachmentScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 120: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 114) {
               break;
             }
           }
-          case 122: {
+          case 114: {
             // attachment
             input.readMessage(attachment);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 98) {
               break;
             }
           }
-          case 106: {
+          case 98: {
             // succMailIdList [packed=true]
             input.readPackedUInt32(succMailIdList, tag);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 50) {
               break;
             }
           }
-          case 74: {
+          case 50: {
             // failMailList
             tag = input.readRepeatedMessage(failMailList, tag);
             bitField0_ |= 0x00000008;
@@ -455,7 +455,7 @@ public final class TakeMailAttachmentScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 104: {
+          case 96: {
             // succMailIdList [packed=false]
             tag = input.readRepeatedUInt32(succMailIdList, tag);
             bitField0_ |= 0x00000004;

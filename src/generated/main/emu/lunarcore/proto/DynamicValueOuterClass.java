@@ -15,26 +15,18 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class DynamicValueOuterClass {
   /**
-   * <pre>
-   *  ABJCBAOKICE
-   * </pre>
-   *
    * Protobuf type {@code DynamicValue}
    */
   public static final class DynamicValue extends ProtoMessage<DynamicValue> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float value = 8;</code>
+     * <code>optional float value = 3;</code>
      */
     private float value_;
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      */
     private final Utf8String key = Utf8String.newEmptyInstance();
 
@@ -42,10 +34,6 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  ABJCBAOKICE
-     * </pre>
-     *
      * @return a new empty instance of {@code DynamicValue}
      */
     public static DynamicValue newInstance() {
@@ -53,7 +41,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 8;</code>
+     * <code>optional float value = 3;</code>
      * @return whether the value_ field is set
      */
     public boolean hasValue() {
@@ -61,7 +49,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 8;</code>
+     * <code>optional float value = 3;</code>
      * @return this
      */
     public DynamicValue clearValue() {
@@ -71,7 +59,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 8;</code>
+     * <code>optional float value = 3;</code>
      * @return the value_
      */
     public float getValue() {
@@ -79,7 +67,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 8;</code>
+     * <code>optional float value = 3;</code>
      * @param value the value_ to set
      * @return this
      */
@@ -90,11 +78,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @return whether the key field is set
      */
     public boolean hasKey() {
@@ -102,11 +86,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @return this
      */
     public DynamicValue clearKey() {
@@ -116,11 +96,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @return the key
      */
     public String getKey() {
@@ -128,11 +104,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @return internal {@code Utf8String} representation of key for reading
      */
     public Utf8String getKeyBytes() {
@@ -140,11 +112,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @return internal {@code Utf8String} representation of key for modifications
      */
     public Utf8String getMutableKeyBytes() {
@@ -153,11 +121,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @param value the key to set
      * @return this
      */
@@ -168,11 +132,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <pre>
-     *  MACAPPANAAJ
-     * </pre>
-     *
-     * <code>optional string key = 10;</code>
+     * <code>optional string key = 6;</code>
      * @param value the key to set
      * @return this
      */
@@ -248,11 +208,11 @@ public final class DynamicValueOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 69);
+        output.writeRawByte((byte) 29);
         output.writeFloatNoTag(value_);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 50);
         output.writeStringNoTag(key);
       }
     }
@@ -276,16 +236,16 @@ public final class DynamicValueOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 69: {
+          case 29: {
             // value_
             value_ = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 50) {
               break;
             }
           }
-          case 82: {
+          case 50: {
             // key
             input.readString(key);
             bitField0_ |= 0x00000002;

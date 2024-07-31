@@ -6,7 +6,7 @@ import "FriendListInfo.proto";
 import "SimpleInfo.proto";
 
 message GetFriendListInfoScRsp {
-	uint32 retcode = 11;
-	repeated FriendListInfo friend_list = 6; // EPKMDDOJMOA
-	repeated SimpleInfo simple_info_list = 3; // AEHJIDDKNCG
+	repeated FriendListInfo friend_list = 3;
+	uint32 retcode = 10;
+	repeated SimpleInfo simple_info_list = 1;
 }

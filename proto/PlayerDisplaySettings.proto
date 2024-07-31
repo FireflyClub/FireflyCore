@@ -2,14 +2,10 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "DisplayRecordType.proto";
-
-// DNCLPGJGHHK
 message PlayerDisplaySettings {
-	bool BONNOPPHFJM = 13;
-	bool KBMNNNLACAE = 8;
-	bool HDEMABIFFFO = 11;
-	bool PFCCJBIENCK = 7;
-	bool DAHEPDDJJCD = 5;
-    DisplayRecordType display_record_type = 15;
+	bool OJNELKIOAOK = 6;
+	bool DAAAIHDPCFE = 14;
+	bool MAJIMDCHNDL = 2;
+	bool MOKMEEDBECL = 3;
+	bool BBJGEGEJJFB = 13;
 }

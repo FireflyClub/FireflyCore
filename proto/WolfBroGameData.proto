@@ -6,10 +6,10 @@ import "WolfBroGameInfo.proto";
 import "Vector.proto";
 
 message WolfBroGameData {
-	repeated Vector KILNIOKEHMD = 11;
-	uint32 ALEPHLCKJJE = 10;
-	uint32 id = 4;
-	string IKAPDMODPFD = 9;
-	bool CIMCFAAFMDP = 13;
-	WolfBroGameInfo JLMHCFDOKMO = 15;
+	uint32 NLIAEPNOKAE = 14;
+	uint32 id = 8;
+	bool BOBGLLPPDKE = 13;
+	repeated Vector FLPJKKCPIOO = 6;
+	string BBFJNPDGLGF = 5;
+	WolfBroGameInfo GGKOINMJHHK = 7;
 }

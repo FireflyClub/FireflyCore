@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "MazeMapData.proto";
 
 message GetSceneMapInfoScRsp {
-	uint32 retcode = 7;
-	bool BFDKJBKHANA = 5;
-	repeated MazeMapData map_list = 1; // BKGDNAMADFC
+	bool MFDIBEECLPP = 10;
+	repeated MazeMapData map_list = 5;
+	uint32 retcode = 9;
 }

@@ -19,20 +19,12 @@ public final class FirstNpcTalkInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  FPCFJGELEBJ
-     * </pre>
-     *
-     * <code>optional uint32 first_npc_id = 6;</code>
+     * <code>optional uint32 first_npc_id = 10;</code>
      */
     private int firstNpcId;
 
     /**
-     * <pre>
-     *  PHBEFLFGKKL
-     * </pre>
-     *
-     * <code>optional bool finish_dialogue = 7;</code>
+     * <code>optional bool finish_dialogue = 1;</code>
      */
     private boolean finishDialogue;
 
@@ -47,11 +39,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FPCFJGELEBJ
-     * </pre>
-     *
-     * <code>optional uint32 first_npc_id = 6;</code>
+     * <code>optional uint32 first_npc_id = 10;</code>
      * @return whether the firstNpcId field is set
      */
     public boolean hasFirstNpcId() {
@@ -59,11 +47,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FPCFJGELEBJ
-     * </pre>
-     *
-     * <code>optional uint32 first_npc_id = 6;</code>
+     * <code>optional uint32 first_npc_id = 10;</code>
      * @return this
      */
     public FirstNpcTalkInfo clearFirstNpcId() {
@@ -73,11 +57,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FPCFJGELEBJ
-     * </pre>
-     *
-     * <code>optional uint32 first_npc_id = 6;</code>
+     * <code>optional uint32 first_npc_id = 10;</code>
      * @return the firstNpcId
      */
     public int getFirstNpcId() {
@@ -85,11 +65,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  FPCFJGELEBJ
-     * </pre>
-     *
-     * <code>optional uint32 first_npc_id = 6;</code>
+     * <code>optional uint32 first_npc_id = 10;</code>
      * @param value the firstNpcId to set
      * @return this
      */
@@ -100,11 +76,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PHBEFLFGKKL
-     * </pre>
-     *
-     * <code>optional bool finish_dialogue = 7;</code>
+     * <code>optional bool finish_dialogue = 1;</code>
      * @return whether the finishDialogue field is set
      */
     public boolean hasFinishDialogue() {
@@ -112,11 +84,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PHBEFLFGKKL
-     * </pre>
-     *
-     * <code>optional bool finish_dialogue = 7;</code>
+     * <code>optional bool finish_dialogue = 1;</code>
      * @return this
      */
     public FirstNpcTalkInfo clearFinishDialogue() {
@@ -126,11 +94,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PHBEFLFGKKL
-     * </pre>
-     *
-     * <code>optional bool finish_dialogue = 7;</code>
+     * <code>optional bool finish_dialogue = 1;</code>
      * @return the finishDialogue
      */
     public boolean getFinishDialogue() {
@@ -138,11 +102,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  PHBEFLFGKKL
-     * </pre>
-     *
-     * <code>optional bool finish_dialogue = 7;</code>
+     * <code>optional bool finish_dialogue = 1;</code>
      * @param value the finishDialogue to set
      * @return this
      */
@@ -217,11 +177,11 @@ public final class FirstNpcTalkInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(firstNpcId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 8);
         output.writeBoolNoTag(finishDialogue);
       }
     }
@@ -245,16 +205,16 @@ public final class FirstNpcTalkInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 80: {
             // firstNpcId
             firstNpcId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 8) {
               break;
             }
           }
-          case 56: {
+          case 8: {
             // finishDialogue
             finishDialogue = input.readBool();
             bitField0_ |= 0x00000002;

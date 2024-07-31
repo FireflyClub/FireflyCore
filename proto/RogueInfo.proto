@@ -6,6 +6,6 @@ import "RogueInfoData.proto";
 import "RogueCurrentInfo.proto";
 
 message RogueInfo {
-	RogueInfoData rogue_info_data = 806;
-	RogueCurrentInfo rogue_current_info = 1236;
+	RogueCurrentInfo rogue_current_info = 1019;
+	RogueInfoData rogue_info_data = 306;
 }

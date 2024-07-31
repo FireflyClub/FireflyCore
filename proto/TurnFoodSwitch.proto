@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// DENLODKNFJE
 enum TurnFoodSwitch {
 	TURN_FOOD_SWITCH_NONE = 0;
 	TURN_FOOD_SWITCH_ATTACK = 1;

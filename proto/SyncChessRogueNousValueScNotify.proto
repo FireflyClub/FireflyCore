@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "ChessRogueNousValue.proto";
 
 message SyncChessRogueNousValueScNotify {
-    ChessRogueNousValue value = 8;
+	ChessRogueNousValue nous_value = 3;
 }

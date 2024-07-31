@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class ContentPackageStatusOuterClass {
   /**
-   * <pre>
-   *  KLKCMAPNOGA
-   * </pre>
-   *
    * Protobuf enum {@code ContentPackageStatus}
    */
   public enum ContentPackageStatus implements ProtoEnum<ContentPackageStatus> {

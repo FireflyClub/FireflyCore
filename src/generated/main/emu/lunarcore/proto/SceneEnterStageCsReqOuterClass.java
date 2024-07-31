@@ -13,37 +13,29 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class SceneEnterStageCsReqOuterClass {
   /**
-   * <pre>
-   *  OGJHIILBFKI
-   * </pre>
-   *
    * Protobuf type {@code SceneEnterStageCsReq}
    */
   public static final class SceneEnterStageCsReq extends ProtoMessage<SceneEnterStageCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 scene_event_id = 4;</code>
+     * <pre>
+     * CAMLHBEGNMO HADHNDGJFGL = 2;
+     * </pre>
+     *
+     * <code>optional uint32 scene_event_id = 14;</code>
      */
     private int sceneEventId;
 
     /**
-     * <pre>
-     *  OICCDGCAPKG DBHFNGKHKKE = 15;
-     * </pre>
-     *
-     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * <code>optional bool NNNCABEMAEB = 3;</code>
      */
-    private boolean nHIJPAMAACF;
+    private boolean nNNCABEMAEB;
 
     private SceneEnterStageCsReq() {
     }
 
     /**
-     * <pre>
-     *  OGJHIILBFKI
-     * </pre>
-     *
      * @return a new empty instance of {@code SceneEnterStageCsReq}
      */
     public static SceneEnterStageCsReq newInstance() {
@@ -51,7 +43,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 4;</code>
+     * <pre>
+     * CAMLHBEGNMO HADHNDGJFGL = 2;
+     * </pre>
+     *
+     * <code>optional uint32 scene_event_id = 14;</code>
      * @return whether the sceneEventId field is set
      */
     public boolean hasSceneEventId() {
@@ -59,7 +55,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 4;</code>
+     * <pre>
+     * CAMLHBEGNMO HADHNDGJFGL = 2;
+     * </pre>
+     *
+     * <code>optional uint32 scene_event_id = 14;</code>
      * @return this
      */
     public SceneEnterStageCsReq clearSceneEventId() {
@@ -69,7 +69,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 4;</code>
+     * <pre>
+     * CAMLHBEGNMO HADHNDGJFGL = 2;
+     * </pre>
+     *
+     * <code>optional uint32 scene_event_id = 14;</code>
      * @return the sceneEventId
      */
     public int getSceneEventId() {
@@ -77,7 +81,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 scene_event_id = 4;</code>
+     * <pre>
+     * CAMLHBEGNMO HADHNDGJFGL = 2;
+     * </pre>
+     *
+     * <code>optional uint32 scene_event_id = 14;</code>
      * @param value the sceneEventId to set
      * @return this
      */
@@ -88,55 +96,39 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  OICCDGCAPKG DBHFNGKHKKE = 15;
-     * </pre>
-     *
-     * <code>optional bool NHIJPAMAACF = 7;</code>
-     * @return whether the nHIJPAMAACF field is set
+     * <code>optional bool NNNCABEMAEB = 3;</code>
+     * @return whether the nNNCABEMAEB field is set
      */
-    public boolean hasNHIJPAMAACF() {
+    public boolean hasNNNCABEMAEB() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <pre>
-     *  OICCDGCAPKG DBHFNGKHKKE = 15;
-     * </pre>
-     *
-     * <code>optional bool NHIJPAMAACF = 7;</code>
+     * <code>optional bool NNNCABEMAEB = 3;</code>
      * @return this
      */
-    public SceneEnterStageCsReq clearNHIJPAMAACF() {
+    public SceneEnterStageCsReq clearNNNCABEMAEB() {
       bitField0_ &= ~0x00000002;
-      nHIJPAMAACF = false;
+      nNNCABEMAEB = false;
       return this;
     }
 
     /**
-     * <pre>
-     *  OICCDGCAPKG DBHFNGKHKKE = 15;
-     * </pre>
-     *
-     * <code>optional bool NHIJPAMAACF = 7;</code>
-     * @return the nHIJPAMAACF
+     * <code>optional bool NNNCABEMAEB = 3;</code>
+     * @return the nNNCABEMAEB
      */
-    public boolean getNHIJPAMAACF() {
-      return nHIJPAMAACF;
+    public boolean getNNNCABEMAEB() {
+      return nNNCABEMAEB;
     }
 
     /**
-     * <pre>
-     *  OICCDGCAPKG DBHFNGKHKKE = 15;
-     * </pre>
-     *
-     * <code>optional bool NHIJPAMAACF = 7;</code>
-     * @param value the nHIJPAMAACF to set
+     * <code>optional bool NNNCABEMAEB = 3;</code>
+     * @param value the nNNCABEMAEB to set
      * @return this
      */
-    public SceneEnterStageCsReq setNHIJPAMAACF(final boolean value) {
+    public SceneEnterStageCsReq setNNNCABEMAEB(final boolean value) {
       bitField0_ |= 0x00000002;
-      nHIJPAMAACF = value;
+      nNNCABEMAEB = value;
       return this;
     }
 
@@ -146,7 +138,7 @@ public final class SceneEnterStageCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         sceneEventId = other.sceneEventId;
-        nHIJPAMAACF = other.nHIJPAMAACF;
+        nNNCABEMAEB = other.nNNCABEMAEB;
       }
       return this;
     }
@@ -160,8 +152,8 @@ public final class SceneEnterStageCsReqOuterClass {
       if (other.hasSceneEventId()) {
         setSceneEventId(other.sceneEventId);
       }
-      if (other.hasNHIJPAMAACF()) {
-        setNHIJPAMAACF(other.nHIJPAMAACF);
+      if (other.hasNNNCABEMAEB()) {
+        setNNNCABEMAEB(other.nNNCABEMAEB);
       }
       return this;
     }
@@ -174,7 +166,7 @@ public final class SceneEnterStageCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       sceneEventId = 0;
-      nHIJPAMAACF = false;
+      nNNCABEMAEB = false;
       return this;
     }
 
@@ -199,18 +191,18 @@ public final class SceneEnterStageCsReqOuterClass {
       SceneEnterStageCsReq other = (SceneEnterStageCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasSceneEventId() || sceneEventId == other.sceneEventId)
-        && (!hasNHIJPAMAACF() || nHIJPAMAACF == other.nHIJPAMAACF);
+        && (!hasNNNCABEMAEB() || nNNCABEMAEB == other.nNNCABEMAEB);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(sceneEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeBoolNoTag(nHIJPAMAACF);
+        output.writeRawByte((byte) 24);
+        output.writeBoolNoTag(nNNCABEMAEB);
       }
     }
 
@@ -233,18 +225,18 @@ public final class SceneEnterStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 112: {
             // sceneEventId
             sceneEventId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 24) {
               break;
             }
           }
-          case 56: {
-            // nHIJPAMAACF
-            nHIJPAMAACF = input.readBool();
+          case 24: {
+            // nNNCABEMAEB
+            nNNCABEMAEB = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -272,7 +264,7 @@ public final class SceneEnterStageCsReqOuterClass {
         output.writeUInt32(FieldNames.sceneEventId, sceneEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.nHIJPAMAACF, nHIJPAMAACF);
+        output.writeBool(FieldNames.nNNCABEMAEB, nNNCABEMAEB);
       }
       output.endObject();
     }
@@ -296,10 +288,10 @@ public final class SceneEnterStageCsReqOuterClass {
             }
             break;
           }
-          case 1546257988: {
-            if (input.isAtField(FieldNames.nHIJPAMAACF)) {
+          case 199013984: {
+            if (input.isAtField(FieldNames.nNNCABEMAEB)) {
               if (!input.trySkipNullValue()) {
-                nHIJPAMAACF = input.readBool();
+                nNNCABEMAEB = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -362,7 +354,7 @@ public final class SceneEnterStageCsReqOuterClass {
     static class FieldNames {
       static final FieldName sceneEventId = FieldName.forField("sceneEventId", "scene_event_id");
 
-      static final FieldName nHIJPAMAACF = FieldName.forField("NHIJPAMAACF");
+      static final FieldName nNNCABEMAEB = FieldName.forField("NNNCABEMAEB");
     }
   }
 }

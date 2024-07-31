@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ContentPackageSyncDataScNotifyOuterClass {
   /**
-   * <pre>
-   *  JCGIEPFFKEG
-   * </pre>
-   *
    * Protobuf type {@code ContentPackageSyncDataScNotify}
    */
   public static final class ContentPackageSyncDataScNotify extends ProtoMessage<ContentPackageSyncDataScNotify> implements Cloneable {
@@ -31,10 +27,6 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  JCGIEPFFKEG
-     * </pre>
-     *
      * @return a new empty instance of {@code ContentPackageSyncDataScNotify}
      */
     public static ContentPackageSyncDataScNotify newInstance() {

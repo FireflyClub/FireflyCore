@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetNicknameScRsp {
-	bool is_modify = 6;
-	int64 PGCICECKJDP = 11;
+	int64 NCBJIHNAOFG = 1;
+	bool is_modify = 8;
 	uint32 retcode = 9;
 }

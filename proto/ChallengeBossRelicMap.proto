@@ -4,11 +4,10 @@ option java_package = "emu.lunarcore.proto";
 
 import "RelicAffix.proto";
 
-// MGCIMMMLHDM
 message ChallengeBossRelicMap {
-    uint32 level = 9;
-    uint32 unique_id = 7;
-    uint32 main_affix_id = 10;
-    repeated RelicAffix sub_affix_list = 5;
-    uint32 tid = 8;
+	uint32 level = 4;
+	repeated RelicAffix sub_affix_list = 7;
+	uint32 unique_id = 6;
+	uint32 main_affix_id = 5;
+	uint32 tid = 2;
 }

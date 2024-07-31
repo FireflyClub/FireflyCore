@@ -19,11 +19,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  HOLINHPFELN
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 2;</code>
+     * <code>optional uint32 play_music_id = 12;</code>
      */
     private int playMusicId;
 
@@ -38,11 +34,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOLINHPFELN
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 2;</code>
+     * <code>optional uint32 play_music_id = 12;</code>
      * @return whether the playMusicId field is set
      */
     public boolean hasPlayMusicId() {
@@ -50,11 +42,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOLINHPFELN
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 2;</code>
+     * <code>optional uint32 play_music_id = 12;</code>
      * @return this
      */
     public PlayBackGroundMusicCsReq clearPlayMusicId() {
@@ -64,11 +52,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOLINHPFELN
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 2;</code>
+     * <code>optional uint32 play_music_id = 12;</code>
      * @return the playMusicId
      */
     public int getPlayMusicId() {
@@ -76,11 +60,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  HOLINHPFELN
-     * </pre>
-     *
-     * <code>optional uint32 play_music_id = 2;</code>
+     * <code>optional uint32 play_music_id = 12;</code>
      * @param value the playMusicId to set
      * @return this
      */
@@ -149,7 +129,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(playMusicId);
       }
     }
@@ -170,7 +150,7 @@ public final class PlayBackGroundMusicCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 96: {
             // playMusicId
             playMusicId = input.readUInt32();
             bitField0_ |= 0x00000001;

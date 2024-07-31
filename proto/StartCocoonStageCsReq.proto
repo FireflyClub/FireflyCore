@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message StartCocoonStageCsReq {
-    uint32 prop_entity_id = 11;
-    uint32 cocoon_id = 14; // ELHGNOEBCAC
-    uint32 world_level = 2;
-    uint32 monster_wave = 6;
+	uint32 monster_wave = 3;
+	uint32 world_level = 5;
+	uint32 prop_entity_id = 2;
+	uint32 cocoon_id = 10;
 }

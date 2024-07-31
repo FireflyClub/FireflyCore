@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class MsgTypeOuterClass {
   /**
-   * <pre>
-   *  EJIDBOKFBIJ
-   * </pre>
-   *
    * Protobuf enum {@code MsgType}
    */
   public enum MsgType implements ProtoEnum<MsgType> {

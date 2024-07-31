@@ -6,7 +6,7 @@ import "BattleEventInitedData.proto";
 import "BattleSkillInfo.proto";
 
 message BattleEventBattleInfo {
-    uint32 battle_event_id = 1; // FLDLEOPCEFM
-    BattleEventInitedData status = 2;
-	repeated BattleSkillInfo NJODLNCNPNF = 3;
+	uint32 battle_event_id = 1;
+	BattleEventInitedData status = 2;
+	repeated BattleSkillInfo IGIEFPANAEL = 3;
 }

@@ -15,34 +15,22 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class BattleSkillInfoOuterClass {
   /**
-   * <pre>
-   *  LGJAJMEHHID
-   * </pre>
-   *
    * Protobuf type {@code BattleSkillInfo}
    */
   public static final class BattleSkillInfo extends ProtoMessage<BattleSkillInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional double PPDIDFGCOBD = 2;</code>
+     * <code>optional double FNKEHCJDKDP = 2;</code>
      */
-    private double pPDIDFGCOBD;
+    private double fNKEHCJDKDP;
 
     /**
-     * <pre>
-     *  CBHGIHIHHNP
-     * </pre>
-     *
      * <code>optional double damage = 4;</code>
      */
     private double damage;
 
     /**
-     * <pre>
-     *  OELHKLOKPLO
-     * </pre>
-     *
      * <code>optional uint32 skill_id = 1;</code>
      */
     private int skillId;
@@ -56,10 +44,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  LGJAJMEHHID
-     * </pre>
-     *
      * @return a new empty instance of {@code BattleSkillInfo}
      */
     public static BattleSkillInfo newInstance() {
@@ -67,47 +51,43 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <code>optional double PPDIDFGCOBD = 2;</code>
-     * @return whether the pPDIDFGCOBD field is set
+     * <code>optional double FNKEHCJDKDP = 2;</code>
+     * @return whether the fNKEHCJDKDP field is set
      */
-    public boolean hasPPDIDFGCOBD() {
+    public boolean hasFNKEHCJDKDP() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional double PPDIDFGCOBD = 2;</code>
+     * <code>optional double FNKEHCJDKDP = 2;</code>
      * @return this
      */
-    public BattleSkillInfo clearPPDIDFGCOBD() {
+    public BattleSkillInfo clearFNKEHCJDKDP() {
       bitField0_ &= ~0x00000001;
-      pPDIDFGCOBD = 0D;
+      fNKEHCJDKDP = 0D;
       return this;
     }
 
     /**
-     * <code>optional double PPDIDFGCOBD = 2;</code>
-     * @return the pPDIDFGCOBD
+     * <code>optional double FNKEHCJDKDP = 2;</code>
+     * @return the fNKEHCJDKDP
      */
-    public double getPPDIDFGCOBD() {
-      return pPDIDFGCOBD;
+    public double getFNKEHCJDKDP() {
+      return fNKEHCJDKDP;
     }
 
     /**
-     * <code>optional double PPDIDFGCOBD = 2;</code>
-     * @param value the pPDIDFGCOBD to set
+     * <code>optional double FNKEHCJDKDP = 2;</code>
+     * @param value the fNKEHCJDKDP to set
      * @return this
      */
-    public BattleSkillInfo setPPDIDFGCOBD(final double value) {
+    public BattleSkillInfo setFNKEHCJDKDP(final double value) {
       bitField0_ |= 0x00000001;
-      pPDIDFGCOBD = value;
+      fNKEHCJDKDP = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  CBHGIHIHHNP
-     * </pre>
-     *
      * <code>optional double damage = 4;</code>
      * @return whether the damage field is set
      */
@@ -116,10 +96,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CBHGIHIHHNP
-     * </pre>
-     *
      * <code>optional double damage = 4;</code>
      * @return this
      */
@@ -130,10 +106,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CBHGIHIHHNP
-     * </pre>
-     *
      * <code>optional double damage = 4;</code>
      * @return the damage
      */
@@ -142,10 +114,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  CBHGIHIHHNP
-     * </pre>
-     *
      * <code>optional double damage = 4;</code>
      * @param value the damage to set
      * @return this
@@ -157,10 +125,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  OELHKLOKPLO
-     * </pre>
-     *
      * <code>optional uint32 skill_id = 1;</code>
      * @return whether the skillId field is set
      */
@@ -169,10 +133,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  OELHKLOKPLO
-     * </pre>
-     *
      * <code>optional uint32 skill_id = 1;</code>
      * @return this
      */
@@ -183,10 +143,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  OELHKLOKPLO
-     * </pre>
-     *
      * <code>optional uint32 skill_id = 1;</code>
      * @return the skillId
      */
@@ -195,10 +151,6 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  OELHKLOKPLO
-     * </pre>
-     *
      * <code>optional uint32 skill_id = 1;</code>
      * @param value the skillId to set
      * @return this
@@ -282,7 +234,7 @@ public final class BattleSkillInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pPDIDFGCOBD = other.pPDIDFGCOBD;
+        fNKEHCJDKDP = other.fNKEHCJDKDP;
         damage = other.damage;
         skillId = other.skillId;
         battleTargetList.copyFrom(other.battleTargetList);
@@ -296,8 +248,8 @@ public final class BattleSkillInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPPDIDFGCOBD()) {
-        setPPDIDFGCOBD(other.pPDIDFGCOBD);
+      if (other.hasFNKEHCJDKDP()) {
+        setFNKEHCJDKDP(other.fNKEHCJDKDP);
       }
       if (other.hasDamage()) {
         setDamage(other.damage);
@@ -318,7 +270,7 @@ public final class BattleSkillInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pPDIDFGCOBD = 0D;
+      fNKEHCJDKDP = 0D;
       damage = 0D;
       skillId = 0;
       battleTargetList.clear();
@@ -346,7 +298,7 @@ public final class BattleSkillInfoOuterClass {
       }
       BattleSkillInfo other = (BattleSkillInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasPPDIDFGCOBD() || ProtoUtil.isEqual(pPDIDFGCOBD, other.pPDIDFGCOBD))
+        && (!hasFNKEHCJDKDP() || ProtoUtil.isEqual(fNKEHCJDKDP, other.fNKEHCJDKDP))
         && (!hasDamage() || ProtoUtil.isEqual(damage, other.damage))
         && (!hasSkillId() || skillId == other.skillId)
         && (!hasBattleTargetList() || battleTargetList.equals(other.battleTargetList));
@@ -356,7 +308,7 @@ public final class BattleSkillInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 17);
-        output.writeDoubleNoTag(pPDIDFGCOBD);
+        output.writeDoubleNoTag(fNKEHCJDKDP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 33);
@@ -400,8 +352,8 @@ public final class BattleSkillInfoOuterClass {
       while (true) {
         switch (tag) {
           case 17: {
-            // pPDIDFGCOBD
-            pPDIDFGCOBD = input.readDouble();
+            // fNKEHCJDKDP
+            fNKEHCJDKDP = input.readDouble();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 33) {
@@ -459,7 +411,7 @@ public final class BattleSkillInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeDouble(FieldNames.pPDIDFGCOBD, pPDIDFGCOBD);
+        output.writeDouble(FieldNames.fNKEHCJDKDP, fNKEHCJDKDP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeDouble(FieldNames.damage, damage);
@@ -480,10 +432,10 @@ public final class BattleSkillInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1752277262: {
-            if (input.isAtField(FieldNames.pPDIDFGCOBD)) {
+          case -336648160: {
+            if (input.isAtField(FieldNames.fNKEHCJDKDP)) {
               if (!input.trySkipNullValue()) {
-                pPDIDFGCOBD = input.readDouble();
+                fNKEHCJDKDP = input.readDouble();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -579,7 +531,7 @@ public final class BattleSkillInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pPDIDFGCOBD = FieldName.forField("PPDIDFGCOBD");
+      static final FieldName fNKEHCJDKDP = FieldName.forField("FNKEHCJDKDP");
 
       static final FieldName damage = FieldName.forField("damage");
 

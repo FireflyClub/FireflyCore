@@ -4,15 +4,14 @@ option java_package = "emu.lunarcore.proto";
 
 import "PlayerCollectionInfo.proto";
 
-// MAPBIMHMJLO
 message PlayerRecordInfo {
-	uint32 ALPBKKOPBFI = 15;
-	uint32 FMCNFCIDMGA = 7;
-	uint32 GAJJGBMHLEO = 14;
-	uint32 FOMHGACPACJ = 8;
-	uint32 FEENICFMNFP = 3;
-	uint32 KNHNOJBEIAO = 4;
-	uint32 DBPEJDKFEJD = 10;
-    PlayerCollectionInfo collection_info = 2; // HBBLDIIGDGB
-	uint32 GODJBPLPPBC = 12;
+	uint32 CCJLPCEOAMO = 14;
+	uint32 GFODBFNNHLL = 3;
+	uint32 DHLEJELLMEL = 10;
+	uint32 OHPJGNHDNCL = 6;
+	PlayerCollectionInfo collection_info = 7;
+	uint32 KBNBAAJACDC = 9;
+	uint32 FKAGLHIHHJN = 15;
+	uint32 KILECHIGGBF = 8;
+	uint32 CGIBMLEGEFK = 13;
 }

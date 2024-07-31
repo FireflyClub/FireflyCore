@@ -13,22 +13,18 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class StartChallengeStoryBuffInfoOuterClass {
   /**
-   * <pre>
-   *  DGNHNMBDGDP
-   * </pre>
-   *
    * Protobuf type {@code StartChallengeStoryBuffInfo}
    */
   public static final class StartChallengeStoryBuffInfo extends ProtoMessage<StartChallengeStoryBuffInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_two = 7;</code>
+     * <code>optional uint32 buff_two = 2;</code>
      */
     private int buffTwo;
 
     /**
-     * <code>optional uint32 buff_one = 10;</code>
+     * <code>optional uint32 buff_one = 13;</code>
      */
     private int buffOne;
 
@@ -36,10 +32,6 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  DGNHNMBDGDP
-     * </pre>
-     *
      * @return a new empty instance of {@code StartChallengeStoryBuffInfo}
      */
     public static StartChallengeStoryBuffInfo newInstance() {
@@ -47,7 +39,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_two = 7;</code>
+     * <code>optional uint32 buff_two = 2;</code>
      * @return whether the buffTwo field is set
      */
     public boolean hasBuffTwo() {
@@ -55,7 +47,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_two = 7;</code>
+     * <code>optional uint32 buff_two = 2;</code>
      * @return this
      */
     public StartChallengeStoryBuffInfo clearBuffTwo() {
@@ -65,7 +57,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_two = 7;</code>
+     * <code>optional uint32 buff_two = 2;</code>
      * @return the buffTwo
      */
     public int getBuffTwo() {
@@ -73,7 +65,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_two = 7;</code>
+     * <code>optional uint32 buff_two = 2;</code>
      * @param value the buffTwo to set
      * @return this
      */
@@ -84,7 +76,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_one = 10;</code>
+     * <code>optional uint32 buff_one = 13;</code>
      * @return whether the buffOne field is set
      */
     public boolean hasBuffOne() {
@@ -92,7 +84,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_one = 10;</code>
+     * <code>optional uint32 buff_one = 13;</code>
      * @return this
      */
     public StartChallengeStoryBuffInfo clearBuffOne() {
@@ -102,7 +94,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_one = 10;</code>
+     * <code>optional uint32 buff_one = 13;</code>
      * @return the buffOne
      */
     public int getBuffOne() {
@@ -110,7 +102,7 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_one = 10;</code>
+     * <code>optional uint32 buff_one = 13;</code>
      * @param value the buffOne to set
      * @return this
      */
@@ -185,11 +177,11 @@ public final class StartChallengeStoryBuffInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(buffTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(buffOne);
       }
     }
@@ -213,16 +205,16 @@ public final class StartChallengeStoryBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 16: {
             // buffTwo
             buffTwo = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 104) {
               break;
             }
           }
-          case 80: {
+          case 104: {
             // buffOne
             buffOne = input.readUInt32();
             bitField0_ |= 0x00000002;

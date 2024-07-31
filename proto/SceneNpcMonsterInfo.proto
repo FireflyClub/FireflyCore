@@ -2,12 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// FJNJOFFCJCO
 message SceneNpcMonsterInfo {
-	bool DFOMKNFKODO = 6;
-    uint32 world_level = 8;
-    uint32 monster_id = 10; // JFMPCFKIFEN
-	bool MELPIGCIGPC = 1;
-    uint32 scene_event_id = 13; // DADPFBANDKH
-	// ONMJBNNOBFJ extra_info = 15;
+	bool AHNAIBGMCDB = 11;
+	uint32 monster_id = 12;
+	uint32 scene_event_id = 1;
+	bool MNGIHHFBPLO = 3;
+	uint32 world_level = 10;
+	//INGKKPMDGFJ extra_info = 2;
 }

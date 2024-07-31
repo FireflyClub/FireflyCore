@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// GCCGNJCEFCC
 message TextJoinQueryCsReq {
-    repeated uint32 text_join_id_list = 8; // OFJGOPCKFOC
+	repeated uint32 text_join_id_list = 11;
 }

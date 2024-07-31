@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "MissionCustomValueData.proto";
 
 message FinishTalkMissionScRsp {
-	repeated MissionCustomValueData custom_value_list = 12;
-	uint32 retcode = 1;
-	uint32 sub_mission_id = 13;
+	uint32 sub_mission_id = 10;
+	uint32 retcode = 8;
 	string talk_str = 11;
+	repeated MissionCustomValueData custom_value_list = 4;
 }

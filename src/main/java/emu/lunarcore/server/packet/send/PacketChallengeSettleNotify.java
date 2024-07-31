@@ -13,7 +13,7 @@ public class PacketChallengeSettleNotify extends BasePacket {
         var data = ChallengeSettleNotify.newInstance()
                 .setChallengeId(challenge.getExcel().getId())
                 .setIsWin(challenge.isWin())
-                .setChallengeScore(challenge.getScoreStage1())
+                .setScoreOne(challenge.getScoreStage1())
                 .setScoreTwo(challenge.getScoreStage2())
                 .setStars(challenge.getStars());
         

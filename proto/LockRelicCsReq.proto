@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// JGBMMDNEBDB
 message LockRelicCsReq {
-    bool is_protected = 4;
-    uint32 relic_unique_id = 6;
+	bool KIJKPEPDDEL = 1;
+	repeated uint32 IPNGFAIPDDE = 4;
+	bool is_locked = 5;
 }

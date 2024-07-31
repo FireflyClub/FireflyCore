@@ -5,8 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeStoryBuffInfo.proto";
 import "ChallengeBossBuffInfo.proto";
 
-// IMEEDKGJKDB
 message ChallengeStoryInfo {
-    ChallengeStoryBuffInfo cur_story_buffs = 1; // GFCJKAGDCLD
-    ChallengeBossBuffInfo cur_boss_buffs = 9; // AIAHFBMKNAI
+	ChallengeStoryBuffInfo cur_story_buffs = 9;
+	ChallengeBossBuffInfo cur_boss_buffs = 8;
 }

@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetAssistAvatarScRsp {
-	uint32 retcode = 3;
-	uint32 avatar_id = 9;
 	repeated uint32 avatar_id_list = 7;
+	uint32 avatar_id = 11;
+	uint32 retcode = 2;
 }

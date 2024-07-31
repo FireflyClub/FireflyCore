@@ -19,14 +19,19 @@ public final class RelicRecommendScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <code>optional uint32 avatar_id = 10;</code>
      */
     private int avatarId;
+
+    /**
+     * <code>optional bool ILKKADKMDLC = 6;</code>
+     */
+    private boolean iLKKADKMDLC;
 
     private RelicRecommendScRsp() {
     }
@@ -39,7 +44,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +52,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public RelicRecommendScRsp clearRetcode() {
@@ -57,7 +62,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +70,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +81,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -84,7 +89,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return this
      */
     public RelicRecommendScRsp clearAvatarId() {
@@ -94,7 +99,7 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -102,13 +107,50 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <code>optional uint32 avatar_id = 10;</code>
      * @param value the avatarId to set
      * @return this
      */
     public RelicRecommendScRsp setAvatarId(final int value) {
       bitField0_ |= 0x00000002;
       avatarId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool ILKKADKMDLC = 6;</code>
+     * @return whether the iLKKADKMDLC field is set
+     */
+    public boolean hasILKKADKMDLC() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional bool ILKKADKMDLC = 6;</code>
+     * @return this
+     */
+    public RelicRecommendScRsp clearILKKADKMDLC() {
+      bitField0_ &= ~0x00000004;
+      iLKKADKMDLC = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool ILKKADKMDLC = 6;</code>
+     * @return the iLKKADKMDLC
+     */
+    public boolean getILKKADKMDLC() {
+      return iLKKADKMDLC;
+    }
+
+    /**
+     * <code>optional bool ILKKADKMDLC = 6;</code>
+     * @param value the iLKKADKMDLC to set
+     * @return this
+     */
+    public RelicRecommendScRsp setILKKADKMDLC(final boolean value) {
+      bitField0_ |= 0x00000004;
+      iLKKADKMDLC = value;
       return this;
     }
 
@@ -119,6 +161,7 @@ public final class RelicRecommendScRspOuterClass {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
         avatarId = other.avatarId;
+        iLKKADKMDLC = other.iLKKADKMDLC;
       }
       return this;
     }
@@ -135,6 +178,9 @@ public final class RelicRecommendScRspOuterClass {
       if (other.hasAvatarId()) {
         setAvatarId(other.avatarId);
       }
+      if (other.hasILKKADKMDLC()) {
+        setILKKADKMDLC(other.iLKKADKMDLC);
+      }
       return this;
     }
 
@@ -147,6 +193,7 @@ public final class RelicRecommendScRspOuterClass {
       bitField0_ = 0;
       retcode = 0;
       avatarId = 0;
+      iLKKADKMDLC = false;
       return this;
     }
 
@@ -171,18 +218,23 @@ public final class RelicRecommendScRspOuterClass {
       RelicRecommendScRsp other = (RelicRecommendScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasAvatarId() || avatarId == other.avatarId);
+        && (!hasAvatarId() || avatarId == other.avatarId)
+        && (!hasILKKADKMDLC() || iLKKADKMDLC == other.iLKKADKMDLC);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(avatarId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeBoolNoTag(iLKKADKMDLC);
       }
     }
 
@@ -195,6 +247,9 @@ public final class RelicRecommendScRspOuterClass {
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarId);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 2;
+      }
       return size;
     }
 
@@ -205,19 +260,28 @@ public final class RelicRecommendScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 80) {
               break;
             }
           }
-          case 88: {
+          case 80: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // iLKKADKMDLC
+            iLKKADKMDLC = input.readBool();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -246,6 +310,9 @@ public final class RelicRecommendScRspOuterClass {
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.avatarId, avatarId);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeBool(FieldNames.iLKKADKMDLC, iLKKADKMDLC);
+      }
       output.endObject();
     }
 
@@ -273,6 +340,17 @@ public final class RelicRecommendScRspOuterClass {
               if (!input.trySkipNullValue()) {
                 avatarId = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1060324685: {
+            if (input.isAtField(FieldNames.iLKKADKMDLC)) {
+              if (!input.trySkipNullValue()) {
+                iLKKADKMDLC = input.readBool();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -335,6 +413,8 @@ public final class RelicRecommendScRspOuterClass {
       static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName avatarId = FieldName.forField("avatarId", "avatar_id");
+
+      static final FieldName iLKKADKMDLC = FieldName.forField("ILKKADKMDLC");
     }
   }
 }

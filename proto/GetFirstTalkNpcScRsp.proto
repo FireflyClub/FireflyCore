@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "FirstNpcTalkInfo.proto";
 
 message GetFirstTalkNpcScRsp {
-    uint32 retcode = 3;
-    repeated FirstNpcTalkInfo npc_talk_info_list = 14; // MNFNLNDLNPI
+	repeated FirstNpcTalkInfo npc_talk_info_list = 3;
+	uint32 retcode = 4;
 }

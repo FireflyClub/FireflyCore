@@ -6,7 +6,7 @@ import "RogueBuff.proto";
 import "RogueRecordAvatar.proto";
 
 message RogueRecordInfo {
-	repeated RogueBuff buff_list = 6;
-	repeated uint32 rogue_miracle_list = 8;
 	repeated RogueRecordAvatar avatar_list = 7;
+	repeated uint32 rogue_miracle_list = 8;
+	repeated RogueBuff buff_list = 9;
 }

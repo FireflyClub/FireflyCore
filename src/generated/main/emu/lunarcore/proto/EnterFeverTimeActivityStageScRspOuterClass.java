@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class EnterFeverTimeActivityStageScRspOuterClass {
   /**
-   * <pre>
-   *  MKGOKJBNNAJ
-   * </pre>
-   *
    * Protobuf type {@code EnterFeverTimeActivityStageScRsp}
    */
   public static final class EnterFeverTimeActivityStageScRsp extends ProtoMessage<EnterFeverTimeActivityStageScRsp> implements Cloneable {
@@ -28,12 +24,12 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 14;</code>
      */
     private int id;
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      */
     private final SceneBattleInfoOuterClass.SceneBattleInfo battleInfo = SceneBattleInfoOuterClass.SceneBattleInfo.newInstance();
 
@@ -41,10 +37,6 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  MKGOKJBNNAJ
-     * </pre>
-     *
      * @return a new empty instance of {@code EnterFeverTimeActivityStageScRsp}
      */
     public static EnterFeverTimeActivityStageScRsp newInstance() {
@@ -89,7 +81,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 14;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -97,7 +89,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 14;</code>
      * @return this
      */
     public EnterFeverTimeActivityStageScRsp clearId() {
@@ -107,7 +99,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 14;</code>
      * @return the id
      */
     public int getId() {
@@ -115,7 +107,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 14;</code>
      * @param value the id to set
      * @return this
      */
@@ -126,7 +118,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @return whether the battleInfo field is set
      */
     public boolean hasBattleInfo() {
@@ -134,7 +126,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @return this
      */
     public EnterFeverTimeActivityStageScRsp clearBattleInfo() {
@@ -144,7 +136,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -158,7 +150,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -172,7 +164,7 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 6;</code>
      * @param value the battleInfo to set
      * @return this
      */
@@ -260,11 +252,11 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 50);
         output.writeMessageNoTag(battleInfo);
       }
     }
@@ -296,20 +288,20 @@ public final class EnterFeverTimeActivityStageScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 112) {
               break;
             }
           }
-          case 40: {
+          case 112: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 50) {
               break;
             }
           }
-          case 18: {
+          case 50: {
             // battleInfo
             input.readMessage(battleInfo);
             bitField0_ |= 0x00000004;

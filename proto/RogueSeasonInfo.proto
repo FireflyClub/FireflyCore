@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RogueSeasonInfo {
-	int64 begin_time = 4;
-	uint32 season_id = 11;
-	int64 end_time = 14;
+	int64 end_time = 6;
+	int64 begin_time = 7;
+	uint32 season_id = 5;
 }

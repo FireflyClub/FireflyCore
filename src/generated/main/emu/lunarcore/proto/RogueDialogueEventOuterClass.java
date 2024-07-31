@@ -15,55 +15,33 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class RogueDialogueEventOuterClass {
   /**
-   * <pre>
-   *  MIJAFKCPBJP
-   * </pre>
-   *
    * Protobuf type {@code RogueDialogueEvent}
    */
   public static final class RogueDialogueEvent extends ProtoMessage<RogueDialogueEvent> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 KKCPLMGIADL = 1;</code>
-     */
-    private int kKCPLMGIADL;
-
-    /**
-     * <code>optional uint32 npc_id = 5;</code>
+     * <code>optional uint32 npc_id = 7;</code>
      */
     private int npcId;
 
     /**
      * <pre>
-     *  repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-     *  PFGPGKFEPHG MDBJCABNGMB = 622;
+     * uint32 MAKNONJDDAI = 15;
+     * uint32 FLIHFAGBPJJ = 13;
      * </pre>
      *
-     * <code>optional uint32 game_mode_type = 10;</code>
+     * <code>optional uint32 game_mode_type = 9;</code>
      */
     private int gameModeType;
 
     /**
-     * <code>optional uint32 MBNBIEJIBFJ = 13;</code>
-     */
-    private int mBNBIEJIBFJ;
-
-    /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      */
     private final RepeatedInt selectEventId = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      */
     private final RepeatedMessage<RogueDialogueEventParamOuterClass.RogueDialogueEventParam> rogueDialogueEventParam = RepeatedMessage.newEmptyInstance(RogueDialogueEventParamOuterClass.RogueDialogueEventParam.getFactory());
 
@@ -71,10 +49,6 @@ public final class RogueDialogueEventOuterClass {
     }
 
     /**
-     * <pre>
-     *  MIJAFKCPBJP
-     * </pre>
-     *
      * @return a new empty instance of {@code RogueDialogueEvent}
      */
     public static RogueDialogueEvent newInstance() {
@@ -82,62 +56,25 @@ public final class RogueDialogueEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 KKCPLMGIADL = 1;</code>
-     * @return whether the kKCPLMGIADL field is set
+     * <code>optional uint32 npc_id = 7;</code>
+     * @return whether the npcId field is set
      */
-    public boolean hasKKCPLMGIADL() {
+    public boolean hasNpcId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 KKCPLMGIADL = 1;</code>
-     * @return this
-     */
-    public RogueDialogueEvent clearKKCPLMGIADL() {
-      bitField0_ &= ~0x00000001;
-      kKCPLMGIADL = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 KKCPLMGIADL = 1;</code>
-     * @return the kKCPLMGIADL
-     */
-    public int getKKCPLMGIADL() {
-      return kKCPLMGIADL;
-    }
-
-    /**
-     * <code>optional uint32 KKCPLMGIADL = 1;</code>
-     * @param value the kKCPLMGIADL to set
-     * @return this
-     */
-    public RogueDialogueEvent setKKCPLMGIADL(final int value) {
-      bitField0_ |= 0x00000001;
-      kKCPLMGIADL = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 npc_id = 5;</code>
-     * @return whether the npcId field is set
-     */
-    public boolean hasNpcId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 npc_id = 5;</code>
+     * <code>optional uint32 npc_id = 7;</code>
      * @return this
      */
     public RogueDialogueEvent clearNpcId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       npcId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 npc_id = 5;</code>
+     * <code>optional uint32 npc_id = 7;</code>
      * @return the npcId
      */
     public int getNpcId() {
@@ -145,51 +82,51 @@ public final class RogueDialogueEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 5;</code>
+     * <code>optional uint32 npc_id = 7;</code>
      * @param value the npcId to set
      * @return this
      */
     public RogueDialogueEvent setNpcId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       npcId = value;
       return this;
     }
 
     /**
      * <pre>
-     *  repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-     *  PFGPGKFEPHG MDBJCABNGMB = 622;
+     * uint32 MAKNONJDDAI = 15;
+     * uint32 FLIHFAGBPJJ = 13;
      * </pre>
      *
-     * <code>optional uint32 game_mode_type = 10;</code>
+     * <code>optional uint32 game_mode_type = 9;</code>
      * @return whether the gameModeType field is set
      */
     public boolean hasGameModeType() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
      * <pre>
-     *  repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-     *  PFGPGKFEPHG MDBJCABNGMB = 622;
+     * uint32 MAKNONJDDAI = 15;
+     * uint32 FLIHFAGBPJJ = 13;
      * </pre>
      *
-     * <code>optional uint32 game_mode_type = 10;</code>
+     * <code>optional uint32 game_mode_type = 9;</code>
      * @return this
      */
     public RogueDialogueEvent clearGameModeType() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       gameModeType = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-     *  PFGPGKFEPHG MDBJCABNGMB = 622;
+     * uint32 MAKNONJDDAI = 15;
+     * uint32 FLIHFAGBPJJ = 13;
      * </pre>
      *
-     * <code>optional uint32 game_mode_type = 10;</code>
+     * <code>optional uint32 game_mode_type = 9;</code>
      * @return the gameModeType
      */
     public int getGameModeType() {
@@ -198,89 +135,40 @@ public final class RogueDialogueEventOuterClass {
 
     /**
      * <pre>
-     *  repeated OLKMPCJLPMI BEGABGKHAFO = 13;
-     *  PFGPGKFEPHG MDBJCABNGMB = 622;
+     * uint32 MAKNONJDDAI = 15;
+     * uint32 FLIHFAGBPJJ = 13;
      * </pre>
      *
-     * <code>optional uint32 game_mode_type = 10;</code>
+     * <code>optional uint32 game_mode_type = 9;</code>
      * @param value the gameModeType to set
      * @return this
      */
     public RogueDialogueEvent setGameModeType(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       gameModeType = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 MBNBIEJIBFJ = 13;</code>
-     * @return whether the mBNBIEJIBFJ field is set
-     */
-    public boolean hasMBNBIEJIBFJ() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 MBNBIEJIBFJ = 13;</code>
-     * @return this
-     */
-    public RogueDialogueEvent clearMBNBIEJIBFJ() {
-      bitField0_ &= ~0x00000008;
-      mBNBIEJIBFJ = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 MBNBIEJIBFJ = 13;</code>
-     * @return the mBNBIEJIBFJ
-     */
-    public int getMBNBIEJIBFJ() {
-      return mBNBIEJIBFJ;
-    }
-
-    /**
-     * <code>optional uint32 MBNBIEJIBFJ = 13;</code>
-     * @param value the mBNBIEJIBFJ to set
-     * @return this
-     */
-    public RogueDialogueEvent setMBNBIEJIBFJ(final int value) {
-      bitField0_ |= 0x00000008;
-      mBNBIEJIBFJ = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      * @return whether the selectEventId field is set
      */
     public boolean hasSelectEventId() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      * @return this
      */
     public RogueDialogueEvent clearSelectEventId() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000004;
       selectEventId.clear();
       return this;
     }
 
     /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -294,11 +182,7 @@ public final class RogueDialogueEventOuterClass {
     }
 
     /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -307,72 +191,52 @@ public final class RogueDialogueEventOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableSelectEventId() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       return selectEventId;
     }
 
     /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      * @param value the selectEventId to add
      * @return this
      */
     public RogueDialogueEvent addSelectEventId(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       selectEventId.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     *  KNAODMEIBKF
-     * </pre>
-     *
-     * <code>repeated uint32 select_event_id = 11;</code>
+     * <code>repeated uint32 select_event_id = 4;</code>
      * @param values the selectEventId to add
      * @return this
      */
     public RogueDialogueEvent addAllSelectEventId(final int... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       selectEventId.addAll(values);
       return this;
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      * @return whether the rogueDialogueEventParam field is set
      */
     public boolean hasRogueDialogueEventParam() {
-      return (bitField0_ & 0x00000020) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      * @return this
      */
     public RogueDialogueEvent clearRogueDialogueEventParam() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000008;
       rogueDialogueEventParam.clear();
       return this;
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -387,11 +251,7 @@ public final class RogueDialogueEventOuterClass {
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -401,38 +261,30 @@ public final class RogueDialogueEventOuterClass {
      */
     public RepeatedMessage<RogueDialogueEventParamOuterClass.RogueDialogueEventParam> getMutableRogueDialogueEventParam(
         ) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       return rogueDialogueEventParam;
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      * @param value the rogueDialogueEventParam to add
      * @return this
      */
     public RogueDialogueEvent addRogueDialogueEventParam(
         final RogueDialogueEventParamOuterClass.RogueDialogueEventParam value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       rogueDialogueEventParam.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     *  MFLEBNNPFGL
-     * </pre>
-     *
-     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 8;</code>
+     * <code>repeated .RogueDialogueEventParam rogue_dialogue_event_param = 1;</code>
      * @param values the rogueDialogueEventParam to add
      * @return this
      */
     public RogueDialogueEvent addAllRogueDialogueEventParam(
         final RogueDialogueEventParamOuterClass.RogueDialogueEventParam... values) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       rogueDialogueEventParam.addAll(values);
       return this;
     }
@@ -442,10 +294,8 @@ public final class RogueDialogueEventOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        kKCPLMGIADL = other.kKCPLMGIADL;
         npcId = other.npcId;
         gameModeType = other.gameModeType;
-        mBNBIEJIBFJ = other.mBNBIEJIBFJ;
         selectEventId.copyFrom(other.selectEventId);
         rogueDialogueEventParam.copyFrom(other.rogueDialogueEventParam);
       }
@@ -458,17 +308,11 @@ public final class RogueDialogueEventOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasKKCPLMGIADL()) {
-        setKKCPLMGIADL(other.kKCPLMGIADL);
-      }
       if (other.hasNpcId()) {
         setNpcId(other.npcId);
       }
       if (other.hasGameModeType()) {
         setGameModeType(other.gameModeType);
-      }
-      if (other.hasMBNBIEJIBFJ()) {
-        setMBNBIEJIBFJ(other.mBNBIEJIBFJ);
       }
       if (other.hasSelectEventId()) {
         getMutableSelectEventId().addAll(other.selectEventId);
@@ -486,10 +330,8 @@ public final class RogueDialogueEventOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      kKCPLMGIADL = 0;
       npcId = 0;
       gameModeType = 0;
-      mBNBIEJIBFJ = 0;
       selectEventId.clear();
       rogueDialogueEventParam.clear();
       return this;
@@ -517,10 +359,8 @@ public final class RogueDialogueEventOuterClass {
       }
       RogueDialogueEvent other = (RogueDialogueEvent) o;
       return bitField0_ == other.bitField0_
-        && (!hasKKCPLMGIADL() || kKCPLMGIADL == other.kKCPLMGIADL)
         && (!hasNpcId() || npcId == other.npcId)
         && (!hasGameModeType() || gameModeType == other.gameModeType)
-        && (!hasMBNBIEJIBFJ() || mBNBIEJIBFJ == other.mBNBIEJIBFJ)
         && (!hasSelectEventId() || selectEventId.equals(other.selectEventId))
         && (!hasRogueDialogueEventParam() || rogueDialogueEventParam.equals(other.rogueDialogueEventParam));
     }
@@ -528,30 +368,22 @@ public final class RogueDialogueEventOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(kKCPLMGIADL);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(npcId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 80);
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(gameModeType);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(mBNBIEJIBFJ);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < selectEventId.length(); i++) {
-          output.writeRawByte((byte) 88);
+          output.writeRawByte((byte) 32);
           output.writeUInt32NoTag(selectEventId.array()[i]);
         }
       }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < rogueDialogueEventParam.length(); i++) {
-          output.writeRawByte((byte) 66);
+          output.writeRawByte((byte) 10);
           output.writeMessageNoTag(rogueDialogueEventParam.get(i));
         }
       }
@@ -561,21 +393,15 @@ public final class RogueDialogueEventOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(kKCPLMGIADL);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(npcId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(gameModeType);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mBNBIEJIBFJ);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * selectEventId.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(selectEventId);
       }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * rogueDialogueEventParam.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(rogueDialogueEventParam);
       }
       return size;
@@ -588,55 +414,37 @@ public final class RogueDialogueEventOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // kKCPLMGIADL
-            kKCPLMGIADL = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
+          case 56: {
             // npcId
             npcId = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 72) {
               break;
             }
           }
-          case 80: {
+          case 72: {
             // gameModeType
             gameModeType = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 34) {
               break;
             }
           }
-          case 104: {
-            // mBNBIEJIBFJ
-            mBNBIEJIBFJ = input.readUInt32();
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 90) {
-              break;
-            }
-          }
-          case 90: {
+          case 34: {
             // selectEventId [packed=true]
             input.readPackedUInt32(selectEventId, tag);
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 10) {
               break;
             }
           }
-          case 66: {
+          case 10: {
             // rogueDialogueEventParam
             tag = input.readRepeatedMessage(rogueDialogueEventParam, tag);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
             }
@@ -651,10 +459,10 @@ public final class RogueDialogueEventOuterClass {
             tag = input.readTag();
             break;
           }
-          case 88: {
+          case 32: {
             // selectEventId [packed=false]
             tag = input.readRepeatedUInt32(selectEventId, tag);
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000004;
             break;
           }
         }
@@ -665,21 +473,15 @@ public final class RogueDialogueEventOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.kKCPLMGIADL, kKCPLMGIADL);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.npcId, npcId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.gameModeType, gameModeType);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.mBNBIEJIBFJ, mBNBIEJIBFJ);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedUInt32(FieldNames.selectEventId, selectEventId);
       }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.rogueDialogueEventParam, rogueDialogueEventParam);
       }
       output.endObject();
@@ -692,23 +494,12 @@ public final class RogueDialogueEventOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1332411111: {
-            if (input.isAtField(FieldNames.kKCPLMGIADL)) {
-              if (!input.trySkipNullValue()) {
-                kKCPLMGIADL = input.readUInt32();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 105021404:
           case -1039282375: {
             if (input.isAtField(FieldNames.npcId)) {
               if (!input.trySkipNullValue()) {
                 npcId = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -720,18 +511,7 @@ public final class RogueDialogueEventOuterClass {
             if (input.isAtField(FieldNames.gameModeType)) {
               if (!input.trySkipNullValue()) {
                 gameModeType = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1211798818: {
-            if (input.isAtField(FieldNames.mBNBIEJIBFJ)) {
-              if (!input.trySkipNullValue()) {
-                mBNBIEJIBFJ = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -743,7 +523,7 @@ public final class RogueDialogueEventOuterClass {
             if (input.isAtField(FieldNames.selectEventId)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(selectEventId);
-                bitField0_ |= 0x00000010;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -755,7 +535,7 @@ public final class RogueDialogueEventOuterClass {
             if (input.isAtField(FieldNames.rogueDialogueEventParam)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(rogueDialogueEventParam);
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -815,13 +595,9 @@ public final class RogueDialogueEventOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName kKCPLMGIADL = FieldName.forField("KKCPLMGIADL");
-
       static final FieldName npcId = FieldName.forField("npcId", "npc_id");
 
       static final FieldName gameModeType = FieldName.forField("gameModeType", "game_mode_type");
-
-      static final FieldName mBNBIEJIBFJ = FieldName.forField("MBNBIEJIBFJ");
 
       static final FieldName selectEventId = FieldName.forField("selectEventId", "select_event_id");
 

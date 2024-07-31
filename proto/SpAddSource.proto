@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SpAddSource {
-    string source = 1; // JOKHNEEFPOP
-    uint32 sp_add = 2; // IDIBPHLJGBF
+	string source = 1;
+	uint32 sp_add = 2;
 }

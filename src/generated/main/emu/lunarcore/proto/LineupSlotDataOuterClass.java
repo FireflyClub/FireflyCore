@@ -13,27 +13,23 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class LineupSlotDataOuterClass {
   /**
-   * <pre>
-   *  OMGGNKGPDCM
-   * </pre>
-   *
    * Protobuf type {@code LineupSlotData}
    */
   public static final class LineupSlotData extends ProtoMessage<LineupSlotData> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 10;</code>
      */
     private int id;
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <code>optional uint32 slot_type = 13;</code>
      */
-    private int slot;
+    private int slotType;
 
     /**
-     * <code>optional .AvatarType avatar_type = 8;</code>
+     * <code>optional .AvatarType avatar_type = 11;</code>
      */
     private int avatarType;
 
@@ -41,10 +37,6 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <pre>
-     *  OMGGNKGPDCM
-     * </pre>
-     *
      * @return a new empty instance of {@code LineupSlotData}
      */
     public static LineupSlotData newInstance() {
@@ -52,7 +44,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -60,7 +52,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return this
      */
     public LineupSlotData clearId() {
@@ -70,7 +62,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return the id
      */
     public int getId() {
@@ -78,7 +70,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 5;</code>
+     * <code>optional uint32 id = 10;</code>
      * @param value the id to set
      * @return this
      */
@@ -89,44 +81,44 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
-     * @return whether the slot field is set
+     * <code>optional uint32 slot_type = 13;</code>
+     * @return whether the slotType field is set
      */
-    public boolean hasSlot() {
+    public boolean hasSlotType() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <code>optional uint32 slot_type = 13;</code>
      * @return this
      */
-    public LineupSlotData clearSlot() {
+    public LineupSlotData clearSlotType() {
       bitField0_ &= ~0x00000002;
-      slot = 0;
+      slotType = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
-     * @return the slot
+     * <code>optional uint32 slot_type = 13;</code>
+     * @return the slotType
      */
-    public int getSlot() {
-      return slot;
+    public int getSlotType() {
+      return slotType;
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
-     * @param value the slot to set
+     * <code>optional uint32 slot_type = 13;</code>
+     * @param value the slotType to set
      * @return this
      */
-    public LineupSlotData setSlot(final int value) {
+    public LineupSlotData setSlotType(final int value) {
       bitField0_ |= 0x00000002;
-      slot = value;
+      slotType = value;
       return this;
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 8;</code>
+     * <code>optional .AvatarType avatar_type = 11;</code>
      * @return whether the avatarType field is set
      */
     public boolean hasAvatarType() {
@@ -134,7 +126,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 8;</code>
+     * <code>optional .AvatarType avatar_type = 11;</code>
      * @return this
      */
     public LineupSlotData clearAvatarType() {
@@ -144,7 +136,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 8;</code>
+     * <code>optional .AvatarType avatar_type = 11;</code>
      * @return the avatarType
      */
     public AvatarTypeOuterClass.AvatarType getAvatarType() {
@@ -177,7 +169,7 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
-     * <code>optional .AvatarType avatar_type = 8;</code>
+     * <code>optional .AvatarType avatar_type = 11;</code>
      * @param value the avatarType to set
      * @return this
      */
@@ -193,7 +185,7 @@ public final class LineupSlotDataOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         id = other.id;
-        slot = other.slot;
+        slotType = other.slotType;
         avatarType = other.avatarType;
       }
       return this;
@@ -208,8 +200,8 @@ public final class LineupSlotDataOuterClass {
       if (other.hasId()) {
         setId(other.id);
       }
-      if (other.hasSlot()) {
-        setSlot(other.slot);
+      if (other.hasSlotType()) {
+        setSlotType(other.slotType);
       }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
@@ -225,7 +217,7 @@ public final class LineupSlotDataOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       id = 0;
-      slot = 0;
+      slotType = 0;
       avatarType = 0;
       return this;
     }
@@ -251,22 +243,22 @@ public final class LineupSlotDataOuterClass {
       LineupSlotData other = (LineupSlotData) o;
       return bitField0_ == other.bitField0_
         && (!hasId() || id == other.id)
-        && (!hasSlot() || slot == other.slot)
+        && (!hasSlotType() || slotType == other.slotType)
         && (!hasAvatarType() || avatarType == other.avatarType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(slot);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(slotType);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeEnumNoTag(avatarType);
       }
     }
@@ -278,7 +270,7 @@ public final class LineupSlotDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(slotType);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
@@ -293,25 +285,25 @@ public final class LineupSlotDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 80: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 104) {
               break;
             }
           }
-          case 112: {
-            // slot
-            slot = input.readUInt32();
+          case 104: {
+            // slotType
+            slotType = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 88) {
               break;
             }
           }
-          case 64: {
+          case 88: {
             // avatarType
             final int value = input.readInt32();
             if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
@@ -344,7 +336,7 @@ public final class LineupSlotDataOuterClass {
         output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.slot, slot);
+        output.writeUInt32(FieldNames.slotType, slotType);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
@@ -370,10 +362,11 @@ public final class LineupSlotDataOuterClass {
             }
             break;
           }
-          case 3533310: {
-            if (input.isAtField(FieldNames.slot)) {
+          case -1086538152:
+          case 687074523: {
+            if (input.isAtField(FieldNames.slotType)) {
               if (!input.trySkipNullValue()) {
-                slot = input.readUInt32();
+                slotType = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -453,7 +446,7 @@ public final class LineupSlotDataOuterClass {
     static class FieldNames {
       static final FieldName id = FieldName.forField("id");
 
-      static final FieldName slot = FieldName.forField("slot");
+      static final FieldName slotType = FieldName.forField("slotType", "slot_type");
 
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
     }

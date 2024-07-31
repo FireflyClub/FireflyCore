@@ -338,7 +338,7 @@ public class GameAvatar implements GameEntity {
                 .setId(this.getAvatarId())
                 .setSpBar(SpBarInfo.newInstance().setCurSp(this.getCurrentSp(lineup)).setMaxSp(this.getMaxSp()))
                 .setHp(this.getCurrentHp(lineup))
-                .setSlot(slot);
+                .setSlotType(slot);
         
         return proto;
     }
@@ -350,7 +350,7 @@ public class GameAvatar implements GameEntity {
         var proto = SceneEntityInfo.newInstance()
                 .setEntityId(this.getEntityId())
                 .setMotion(MotionInfo.newInstance().setPos(this.getPos().toProto()).setRot(this.getRot().toProto()))
-                .setActor(SceneActorInfo.newInstance().setSceneAvatarId(avatarId).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
+                .setActor(SceneActorInfo.newInstance().setBaseAvatarId(avatarId).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
 
         return proto;
     }

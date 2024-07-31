@@ -13,17 +13,13 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ContentPackageUnlockCsReqOuterClass {
   /**
-   * <pre>
-   *  DNKBBCLBNDM
-   * </pre>
-   *
    * Protobuf type {@code ContentPackageUnlockCsReq}
    */
   public static final class ContentPackageUnlockCsReq extends ProtoMessage<ContentPackageUnlockCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 map_entry_id = 15;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      */
     private int mapEntryId;
 
@@ -31,10 +27,6 @@ public final class ContentPackageUnlockCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  DNKBBCLBNDM
-     * </pre>
-     *
      * @return a new empty instance of {@code ContentPackageUnlockCsReq}
      */
     public static ContentPackageUnlockCsReq newInstance() {
@@ -42,7 +34,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 15;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return whether the mapEntryId field is set
      */
     public boolean hasMapEntryId() {
@@ -50,7 +42,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 15;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return this
      */
     public ContentPackageUnlockCsReq clearMapEntryId() {
@@ -60,7 +52,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 15;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @return the mapEntryId
      */
     public int getMapEntryId() {
@@ -68,7 +60,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 15;</code>
+     * <code>optional uint32 map_entry_id = 2;</code>
      * @param value the mapEntryId to set
      * @return this
      */
@@ -137,7 +129,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(mapEntryId);
       }
     }
@@ -158,7 +150,7 @@ public final class ContentPackageUnlockCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 16: {
             // mapEntryId
             mapEntryId = input.readUInt32();
             bitField0_ |= 0x00000001;

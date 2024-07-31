@@ -7,11 +7,10 @@ import "LineupInfo.proto";
 import "SceneInfo.proto";
 import "ChallengeExtInfo.proto";
 
-// HLLACCBLIJF
 message StartChallengeScRsp {
-	SceneInfo scene = 11;
-	ChallengeExtInfo start_info = 12; // KLMLLEFMJKJ
-	repeated LineupInfo lineup_list = 14;
 	ChallengeInfo challenge_info = 8;
-	uint32 retcode = 7;
+	uint32 retcode = 6;
+	repeated LineupInfo lineup_list = 10;
+	SceneInfo scene = 15;
+	ChallengeExtInfo start_info = 4;
 }

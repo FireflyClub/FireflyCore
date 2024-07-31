@@ -2,9 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// LALGHJNCDIM
 message GetMissionStatusCsReq {
-    repeated uint32 sub_mission_id_list = 8; // HHPNOADKKJH
-    repeated uint32 mission_event_id_list = 11; // JBDFPABCACM
-    repeated uint32 main_mission_id_list = 6; // JCPHJABKHEO
+	repeated uint32 main_mission_id_list = 8;
+	repeated uint32 mission_event_id_list = 11;
+	repeated uint32 sub_mission_id_list = 10;
 }

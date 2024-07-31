@@ -7,24 +7,23 @@ import "PlayerRecordInfo.proto";
 import "PlayerDisplaySettings.proto";
 import "DisplayAvatarDetailInfo.proto";
 
-// DHKCIHEODML
 message PlayerDetailInfo {
-	bool is_banned = 11;
-	uint32 world_level = 6;
-	PlayerDisplaySettings display_settings = 1265; // FDPLJMEOBPK
-	uint32 EHAPOJPKFOF = 10;
-	uint32 head_icon = 12;
-	string DICMJNOAHJC = 3;
-	string signature = 4;
-	repeated DisplayAvatarDetailInfo display_avatar_list = 8; // ENOCEDCJNCF
-	repeated DisplayAvatarDetailInfo assist_avatar_list = 1854; // GJGCAENAEJG
-	PlatformType platform_type = 5;
-	PlayerRecordInfo record_info = 13; // EBKHIDPOFNO
-	// CAIDCEFAPAB IIIGBCHOPHP = 1079;
-	uint32 uid = 9;
-	uint32 ALIEOKDNFHN = 15;
-	uint32 level = 14;
-	string nickname = 2;
-	bool show_display_avatars = 1; // BOLPBNIPCCC
-	string NKCONLNPGLM = 7;
+	string nickname = 4;
+	uint32 level = 15;
+	uint32 head_icon = 8;
+	PlatformType platform_type = 3;
+	uint32 world_level = 5;
+	PlayerDisplaySettings display_settings = 1743;
+	repeated DisplayAvatarDetailInfo display_avatar_list = 11;
+	string CDFPLBBIKDI = 6;
+	uint32 FLHDCJECCPN = 9;
+	uint32 uid = 13;
+	//MBNDAJPEAGO OBPJHEDCNJM = 1297;
+	string signature = 14;
+	bool show_display_avatars = 1;
+	bool is_banned = 12;
+	repeated DisplayAvatarDetailInfo assist_avatar_list = 1700;
+	uint32 CHFANJMIPKA = 2;
+	string EMGADLCGDBF = 10;
+	PlayerRecordInfo record_info = 7;
 }

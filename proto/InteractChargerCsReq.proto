@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "ChargerInfo.proto";
 
 message InteractChargerCsReq {
-    ChargerInfo charger_info = 8;
+	ChargerInfo charger_info = 13;
 }

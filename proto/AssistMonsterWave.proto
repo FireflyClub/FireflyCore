@@ -2,7 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-// DGHMFJGHCGI
 message AssistMonsterWave {
-    repeated uint32 entity_id_list = 9; // NHDMEOACOEC
+	repeated uint32 entity_id_list = 4;
 }

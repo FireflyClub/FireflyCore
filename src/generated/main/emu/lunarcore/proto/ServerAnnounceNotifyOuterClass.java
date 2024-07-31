@@ -14,21 +14,13 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class ServerAnnounceNotifyOuterClass {
   /**
-   * <pre>
-   *  BBAIEJIDMLG
-   * </pre>
-   *
    * Protobuf type {@code ServerAnnounceNotify}
    */
   public static final class ServerAnnounceNotify extends ProtoMessage<ServerAnnounceNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      */
     private final RepeatedMessage<AnnounceDataOuterClass.AnnounceData> announceDataList = RepeatedMessage.newEmptyInstance(AnnounceDataOuterClass.AnnounceData.getFactory());
 
@@ -36,10 +28,6 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BBAIEJIDMLG
-     * </pre>
-     *
      * @return a new empty instance of {@code ServerAnnounceNotify}
      */
     public static ServerAnnounceNotify newInstance() {
@@ -47,11 +35,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      * @return whether the announceDataList field is set
      */
     public boolean hasAnnounceDataList() {
@@ -59,11 +43,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      * @return this
      */
     public ServerAnnounceNotify clearAnnounceDataList() {
@@ -73,11 +53,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -91,11 +67,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -109,11 +81,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      * @param value the announceDataList to add
      * @return this
      */
@@ -125,11 +93,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  BGPNJMCOOGJ
-     * </pre>
-     *
-     * <code>repeated .AnnounceData announce_data_list = 10;</code>
+     * <code>repeated .AnnounceData announce_data_list = 8;</code>
      * @param values the announceDataList to add
      * @return this
      */
@@ -201,7 +165,7 @@ public final class ServerAnnounceNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < announceDataList.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(announceDataList.get(i));
         }
       }
@@ -223,7 +187,7 @@ public final class ServerAnnounceNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
+          case 66: {
             // announceDataList
             tag = input.readRepeatedMessage(announceDataList, tag);
             bitField0_ |= 0x00000001;

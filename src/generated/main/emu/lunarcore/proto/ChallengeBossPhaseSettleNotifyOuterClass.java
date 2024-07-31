@@ -14,70 +14,58 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class ChallengeBossPhaseSettleNotifyOuterClass {
   /**
-   * <pre>
-   *  EHFKHFOGLFJ
-   * </pre>
-   *
    * Protobuf type {@code ChallengeBossPhaseSettleNotify}
    */
   public static final class ChallengeBossPhaseSettleNotify extends ProtoMessage<ChallengeBossPhaseSettleNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 phase = 3;</code>
-     */
-    private int phase;
-
-    /**
-     * <code>optional uint32 challenge_score = 6;</code>
-     */
-    private int challengeScore;
-
-    /**
-     * <code>optional uint32 CPJOLGJDICK = 8;</code>
-     */
-    private int cPJOLGJDICK;
-
-    /**
-     * <code>optional uint32 stars = 9;</code>
-     */
-    private int stars;
-
-    /**
-     * <code>optional uint32 challenge_id = 10;</code>
-     */
-    private int challengeId;
-
-    /**
-     * <code>optional uint32 score_two = 14;</code>
+     * <code>optional uint32 score_two = 2;</code>
      */
     private int scoreTwo;
 
     /**
-     * <pre>
-     *  NNJCJEODEPK
-     * </pre>
-     *
-     * <code>optional bool is_win = 1;</code>
+     * <code>optional uint32 score_one = 3;</code>
+     */
+    private int scoreOne;
+
+    /**
+     * <code>optional uint32 stars = 4;</code>
+     */
+    private int stars;
+
+    /**
+     * <code>optional uint32 phase = 12;</code>
+     */
+    private int phase;
+
+    /**
+     * <code>optional uint32 challenge_id = 13;</code>
+     */
+    private int challengeId;
+
+    /**
+     * <code>optional uint32 LMHBPGCPMNH = 14;</code>
+     */
+    private int lMHBPGCPMNH;
+
+    /**
+     * <code>optional bool OCNGBEDMEGJ = 6;</code>
+     */
+    private boolean oCNGBEDMEGJ;
+
+    /**
+     * <code>optional bool KHLCHIFGCPD = 7;</code>
+     */
+    private boolean kHLCHIFGCPD;
+
+    /**
+     * <code>optional bool is_win = 11;</code>
      */
     private boolean isWin;
 
     /**
-     * <code>optional bool KJFDFGLCJPB = 2;</code>
-     */
-    private boolean kJFDFGLCJPB;
-
-    /**
-     * <code>optional bool GIPCBILIPIP = 15;</code>
-     */
-    private boolean gIPCBILIPIP;
-
-    /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      */
     private final RepeatedMessage<BattleTargetOuterClass.BattleTarget> battleTargetList = RepeatedMessage.newEmptyInstance(BattleTargetOuterClass.BattleTarget.getFactory());
 
@@ -85,10 +73,6 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EHFKHFOGLFJ
-     * </pre>
-     *
      * @return a new empty instance of {@code ChallengeBossPhaseSettleNotify}
      */
     public static ChallengeBossPhaseSettleNotify newInstance() {
@@ -96,136 +80,99 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 phase = 3;</code>
-     * @return whether the phase field is set
+     * <code>optional uint32 score_two = 2;</code>
+     * @return whether the scoreTwo field is set
      */
-    public boolean hasPhase() {
+    public boolean hasScoreTwo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 phase = 3;</code>
+     * <code>optional uint32 score_two = 2;</code>
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify clearPhase() {
+    public ChallengeBossPhaseSettleNotify clearScoreTwo() {
       bitField0_ &= ~0x00000001;
-      phase = 0;
+      scoreTwo = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 phase = 3;</code>
-     * @return the phase
+     * <code>optional uint32 score_two = 2;</code>
+     * @return the scoreTwo
      */
-    public int getPhase() {
-      return phase;
+    public int getScoreTwo() {
+      return scoreTwo;
     }
 
     /**
-     * <code>optional uint32 phase = 3;</code>
-     * @param value the phase to set
+     * <code>optional uint32 score_two = 2;</code>
+     * @param value the scoreTwo to set
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify setPhase(final int value) {
+    public ChallengeBossPhaseSettleNotify setScoreTwo(final int value) {
       bitField0_ |= 0x00000001;
-      phase = value;
+      scoreTwo = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 challenge_score = 6;</code>
-     * @return whether the challengeScore field is set
+     * <code>optional uint32 score_one = 3;</code>
+     * @return whether the scoreOne field is set
      */
-    public boolean hasChallengeScore() {
+    public boolean hasScoreOne() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 challenge_score = 6;</code>
+     * <code>optional uint32 score_one = 3;</code>
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify clearChallengeScore() {
+    public ChallengeBossPhaseSettleNotify clearScoreOne() {
       bitField0_ &= ~0x00000002;
-      challengeScore = 0;
+      scoreOne = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 challenge_score = 6;</code>
-     * @return the challengeScore
+     * <code>optional uint32 score_one = 3;</code>
+     * @return the scoreOne
      */
-    public int getChallengeScore() {
-      return challengeScore;
+    public int getScoreOne() {
+      return scoreOne;
     }
 
     /**
-     * <code>optional uint32 challenge_score = 6;</code>
-     * @param value the challengeScore to set
+     * <code>optional uint32 score_one = 3;</code>
+     * @param value the scoreOne to set
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify setChallengeScore(final int value) {
+    public ChallengeBossPhaseSettleNotify setScoreOne(final int value) {
       bitField0_ |= 0x00000002;
-      challengeScore = value;
+      scoreOne = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 CPJOLGJDICK = 8;</code>
-     * @return whether the cPJOLGJDICK field is set
+     * <code>optional uint32 stars = 4;</code>
+     * @return whether the stars field is set
      */
-    public boolean hasCPJOLGJDICK() {
+    public boolean hasStars() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 CPJOLGJDICK = 8;</code>
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify clearCPJOLGJDICK() {
-      bitField0_ &= ~0x00000004;
-      cPJOLGJDICK = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 CPJOLGJDICK = 8;</code>
-     * @return the cPJOLGJDICK
-     */
-    public int getCPJOLGJDICK() {
-      return cPJOLGJDICK;
-    }
-
-    /**
-     * <code>optional uint32 CPJOLGJDICK = 8;</code>
-     * @param value the cPJOLGJDICK to set
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify setCPJOLGJDICK(final int value) {
-      bitField0_ |= 0x00000004;
-      cPJOLGJDICK = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 stars = 9;</code>
-     * @return whether the stars field is set
-     */
-    public boolean hasStars() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 stars = 9;</code>
+     * <code>optional uint32 stars = 4;</code>
      * @return this
      */
     public ChallengeBossPhaseSettleNotify clearStars() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       stars = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 stars = 9;</code>
+     * <code>optional uint32 stars = 4;</code>
      * @return the stars
      */
     public int getStars() {
@@ -233,18 +180,55 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 stars = 9;</code>
+     * <code>optional uint32 stars = 4;</code>
      * @param value the stars to set
      * @return this
      */
     public ChallengeBossPhaseSettleNotify setStars(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       stars = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 challenge_id = 10;</code>
+     * <code>optional uint32 phase = 12;</code>
+     * @return whether the phase field is set
+     */
+    public boolean hasPhase() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 phase = 12;</code>
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify clearPhase() {
+      bitField0_ &= ~0x00000008;
+      phase = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 phase = 12;</code>
+     * @return the phase
+     */
+    public int getPhase() {
+      return phase;
+    }
+
+    /**
+     * <code>optional uint32 phase = 12;</code>
+     * @param value the phase to set
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify setPhase(final int value) {
+      bitField0_ |= 0x00000008;
+      phase = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 challenge_id = 13;</code>
      * @return whether the challengeId field is set
      */
     public boolean hasChallengeId() {
@@ -252,7 +236,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 10;</code>
+     * <code>optional uint32 challenge_id = 13;</code>
      * @return this
      */
     public ChallengeBossPhaseSettleNotify clearChallengeId() {
@@ -262,7 +246,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 10;</code>
+     * <code>optional uint32 challenge_id = 13;</code>
      * @return the challengeId
      */
     public int getChallengeId() {
@@ -270,7 +254,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 10;</code>
+     * <code>optional uint32 challenge_id = 13;</code>
      * @param value the challengeId to set
      * @return this
      */
@@ -281,74 +265,136 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 14;</code>
-     * @return whether the scoreTwo field is set
+     * <code>optional uint32 LMHBPGCPMNH = 14;</code>
+     * @return whether the lMHBPGCPMNH field is set
      */
-    public boolean hasScoreTwo() {
+    public boolean hasLMHBPGCPMNH() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 score_two = 14;</code>
+     * <code>optional uint32 LMHBPGCPMNH = 14;</code>
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify clearScoreTwo() {
+    public ChallengeBossPhaseSettleNotify clearLMHBPGCPMNH() {
       bitField0_ &= ~0x00000020;
-      scoreTwo = 0;
+      lMHBPGCPMNH = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 score_two = 14;</code>
-     * @return the scoreTwo
+     * <code>optional uint32 LMHBPGCPMNH = 14;</code>
+     * @return the lMHBPGCPMNH
      */
-    public int getScoreTwo() {
-      return scoreTwo;
+    public int getLMHBPGCPMNH() {
+      return lMHBPGCPMNH;
     }
 
     /**
-     * <code>optional uint32 score_two = 14;</code>
-     * @param value the scoreTwo to set
+     * <code>optional uint32 LMHBPGCPMNH = 14;</code>
+     * @param value the lMHBPGCPMNH to set
      * @return this
      */
-    public ChallengeBossPhaseSettleNotify setScoreTwo(final int value) {
+    public ChallengeBossPhaseSettleNotify setLMHBPGCPMNH(final int value) {
       bitField0_ |= 0x00000020;
-      scoreTwo = value;
+      lMHBPGCPMNH = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  NNJCJEODEPK
-     * </pre>
-     *
-     * <code>optional bool is_win = 1;</code>
-     * @return whether the isWin field is set
+     * <code>optional bool OCNGBEDMEGJ = 6;</code>
+     * @return whether the oCNGBEDMEGJ field is set
      */
-    public boolean hasIsWin() {
+    public boolean hasOCNGBEDMEGJ() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <pre>
-     *  NNJCJEODEPK
-     * </pre>
-     *
-     * <code>optional bool is_win = 1;</code>
+     * <code>optional bool OCNGBEDMEGJ = 6;</code>
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify clearOCNGBEDMEGJ() {
+      bitField0_ &= ~0x00000040;
+      oCNGBEDMEGJ = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool OCNGBEDMEGJ = 6;</code>
+     * @return the oCNGBEDMEGJ
+     */
+    public boolean getOCNGBEDMEGJ() {
+      return oCNGBEDMEGJ;
+    }
+
+    /**
+     * <code>optional bool OCNGBEDMEGJ = 6;</code>
+     * @param value the oCNGBEDMEGJ to set
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify setOCNGBEDMEGJ(final boolean value) {
+      bitField0_ |= 0x00000040;
+      oCNGBEDMEGJ = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KHLCHIFGCPD = 7;</code>
+     * @return whether the kHLCHIFGCPD field is set
+     */
+    public boolean hasKHLCHIFGCPD() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional bool KHLCHIFGCPD = 7;</code>
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify clearKHLCHIFGCPD() {
+      bitField0_ &= ~0x00000080;
+      kHLCHIFGCPD = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool KHLCHIFGCPD = 7;</code>
+     * @return the kHLCHIFGCPD
+     */
+    public boolean getKHLCHIFGCPD() {
+      return kHLCHIFGCPD;
+    }
+
+    /**
+     * <code>optional bool KHLCHIFGCPD = 7;</code>
+     * @param value the kHLCHIFGCPD to set
+     * @return this
+     */
+    public ChallengeBossPhaseSettleNotify setKHLCHIFGCPD(final boolean value) {
+      bitField0_ |= 0x00000080;
+      kHLCHIFGCPD = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool is_win = 11;</code>
+     * @return whether the isWin field is set
+     */
+    public boolean hasIsWin() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional bool is_win = 11;</code>
      * @return this
      */
     public ChallengeBossPhaseSettleNotify clearIsWin() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000100;
       isWin = false;
       return this;
     }
 
     /**
-     * <pre>
-     *  NNJCJEODEPK
-     * </pre>
-     *
-     * <code>optional bool is_win = 1;</code>
+     * <code>optional bool is_win = 11;</code>
      * @return the isWin
      */
     public boolean getIsWin() {
@@ -356,100 +402,18 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  NNJCJEODEPK
-     * </pre>
-     *
-     * <code>optional bool is_win = 1;</code>
+     * <code>optional bool is_win = 11;</code>
      * @param value the isWin to set
      * @return this
      */
     public ChallengeBossPhaseSettleNotify setIsWin(final boolean value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000100;
       isWin = value;
       return this;
     }
 
     /**
-     * <code>optional bool KJFDFGLCJPB = 2;</code>
-     * @return whether the kJFDFGLCJPB field is set
-     */
-    public boolean hasKJFDFGLCJPB() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional bool KJFDFGLCJPB = 2;</code>
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify clearKJFDFGLCJPB() {
-      bitField0_ &= ~0x00000080;
-      kJFDFGLCJPB = false;
-      return this;
-    }
-
-    /**
-     * <code>optional bool KJFDFGLCJPB = 2;</code>
-     * @return the kJFDFGLCJPB
-     */
-    public boolean getKJFDFGLCJPB() {
-      return kJFDFGLCJPB;
-    }
-
-    /**
-     * <code>optional bool KJFDFGLCJPB = 2;</code>
-     * @param value the kJFDFGLCJPB to set
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify setKJFDFGLCJPB(final boolean value) {
-      bitField0_ |= 0x00000080;
-      kJFDFGLCJPB = value;
-      return this;
-    }
-
-    /**
-     * <code>optional bool GIPCBILIPIP = 15;</code>
-     * @return whether the gIPCBILIPIP field is set
-     */
-    public boolean hasGIPCBILIPIP() {
-      return (bitField0_ & 0x00000100) != 0;
-    }
-
-    /**
-     * <code>optional bool GIPCBILIPIP = 15;</code>
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify clearGIPCBILIPIP() {
-      bitField0_ &= ~0x00000100;
-      gIPCBILIPIP = false;
-      return this;
-    }
-
-    /**
-     * <code>optional bool GIPCBILIPIP = 15;</code>
-     * @return the gIPCBILIPIP
-     */
-    public boolean getGIPCBILIPIP() {
-      return gIPCBILIPIP;
-    }
-
-    /**
-     * <code>optional bool GIPCBILIPIP = 15;</code>
-     * @param value the gIPCBILIPIP to set
-     * @return this
-     */
-    public ChallengeBossPhaseSettleNotify setGIPCBILIPIP(final boolean value) {
-      bitField0_ |= 0x00000100;
-      gIPCBILIPIP = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @return whether the battleTargetList field is set
      */
     public boolean hasBattleTargetList() {
@@ -457,11 +421,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @return this
      */
     public ChallengeBossPhaseSettleNotify clearBattleTargetList() {
@@ -471,11 +431,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -489,11 +445,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -507,11 +459,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @param value the battleTargetList to add
      * @return this
      */
@@ -523,11 +471,7 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  EDAGGOCLHEP
-     * </pre>
-     *
-     * <code>repeated .BattleTarget battle_target_list = 7;</code>
+     * <code>repeated .BattleTarget battle_target_list = 1;</code>
      * @param values the battleTargetList to add
      * @return this
      */
@@ -543,15 +487,15 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        phase = other.phase;
-        challengeScore = other.challengeScore;
-        cPJOLGJDICK = other.cPJOLGJDICK;
-        stars = other.stars;
-        challengeId = other.challengeId;
         scoreTwo = other.scoreTwo;
+        scoreOne = other.scoreOne;
+        stars = other.stars;
+        phase = other.phase;
+        challengeId = other.challengeId;
+        lMHBPGCPMNH = other.lMHBPGCPMNH;
+        oCNGBEDMEGJ = other.oCNGBEDMEGJ;
+        kHLCHIFGCPD = other.kHLCHIFGCPD;
         isWin = other.isWin;
-        kJFDFGLCJPB = other.kJFDFGLCJPB;
-        gIPCBILIPIP = other.gIPCBILIPIP;
         battleTargetList.copyFrom(other.battleTargetList);
       }
       return this;
@@ -563,32 +507,32 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPhase()) {
-        setPhase(other.phase);
+      if (other.hasScoreTwo()) {
+        setScoreTwo(other.scoreTwo);
       }
-      if (other.hasChallengeScore()) {
-        setChallengeScore(other.challengeScore);
-      }
-      if (other.hasCPJOLGJDICK()) {
-        setCPJOLGJDICK(other.cPJOLGJDICK);
+      if (other.hasScoreOne()) {
+        setScoreOne(other.scoreOne);
       }
       if (other.hasStars()) {
         setStars(other.stars);
       }
+      if (other.hasPhase()) {
+        setPhase(other.phase);
+      }
       if (other.hasChallengeId()) {
         setChallengeId(other.challengeId);
       }
-      if (other.hasScoreTwo()) {
-        setScoreTwo(other.scoreTwo);
+      if (other.hasLMHBPGCPMNH()) {
+        setLMHBPGCPMNH(other.lMHBPGCPMNH);
+      }
+      if (other.hasOCNGBEDMEGJ()) {
+        setOCNGBEDMEGJ(other.oCNGBEDMEGJ);
+      }
+      if (other.hasKHLCHIFGCPD()) {
+        setKHLCHIFGCPD(other.kHLCHIFGCPD);
       }
       if (other.hasIsWin()) {
         setIsWin(other.isWin);
-      }
-      if (other.hasKJFDFGLCJPB()) {
-        setKJFDFGLCJPB(other.kJFDFGLCJPB);
-      }
-      if (other.hasGIPCBILIPIP()) {
-        setGIPCBILIPIP(other.gIPCBILIPIP);
       }
       if (other.hasBattleTargetList()) {
         getMutableBattleTargetList().addAll(other.battleTargetList);
@@ -603,15 +547,15 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      phase = 0;
-      challengeScore = 0;
-      cPJOLGJDICK = 0;
-      stars = 0;
-      challengeId = 0;
       scoreTwo = 0;
+      scoreOne = 0;
+      stars = 0;
+      phase = 0;
+      challengeId = 0;
+      lMHBPGCPMNH = 0;
+      oCNGBEDMEGJ = false;
+      kHLCHIFGCPD = false;
       isWin = false;
-      kJFDFGLCJPB = false;
-      gIPCBILIPIP = false;
       battleTargetList.clear();
       return this;
     }
@@ -637,59 +581,59 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
       }
       ChallengeBossPhaseSettleNotify other = (ChallengeBossPhaseSettleNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasPhase() || phase == other.phase)
-        && (!hasChallengeScore() || challengeScore == other.challengeScore)
-        && (!hasCPJOLGJDICK() || cPJOLGJDICK == other.cPJOLGJDICK)
-        && (!hasStars() || stars == other.stars)
-        && (!hasChallengeId() || challengeId == other.challengeId)
         && (!hasScoreTwo() || scoreTwo == other.scoreTwo)
+        && (!hasScoreOne() || scoreOne == other.scoreOne)
+        && (!hasStars() || stars == other.stars)
+        && (!hasPhase() || phase == other.phase)
+        && (!hasChallengeId() || challengeId == other.challengeId)
+        && (!hasLMHBPGCPMNH() || lMHBPGCPMNH == other.lMHBPGCPMNH)
+        && (!hasOCNGBEDMEGJ() || oCNGBEDMEGJ == other.oCNGBEDMEGJ)
+        && (!hasKHLCHIFGCPD() || kHLCHIFGCPD == other.kHLCHIFGCPD)
         && (!hasIsWin() || isWin == other.isWin)
-        && (!hasKJFDFGLCJPB() || kJFDFGLCJPB == other.kJFDFGLCJPB)
-        && (!hasGIPCBILIPIP() || gIPCBILIPIP == other.gIPCBILIPIP)
         && (!hasBattleTargetList() || battleTargetList.equals(other.battleTargetList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(phase);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(challengeScore);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(scoreOne);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(cPJOLGJDICK);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(stars);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(phase);
+      }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(scoreTwo);
+        output.writeUInt32NoTag(lMHBPGCPMNH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeBoolNoTag(isWin);
+        output.writeRawByte((byte) 48);
+        output.writeBoolNoTag(oCNGBEDMEGJ);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeBoolNoTag(kJFDFGLCJPB);
+        output.writeRawByte((byte) 56);
+        output.writeBoolNoTag(kHLCHIFGCPD);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeBoolNoTag(gIPCBILIPIP);
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(isWin);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         for (int i = 0; i < battleTargetList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 10);
           output.writeMessageNoTag(battleTargetList.get(i));
         }
       }
@@ -699,22 +643,22 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(phase);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeScore);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreOne);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(cPJOLGJDICK);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stars);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stars);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(phase);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lMHBPGCPMNH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 2;
@@ -738,43 +682,43 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // phase
-            phase = input.readUInt32();
+          case 16: {
+            // scoreTwo
+            scoreTwo = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 24) {
               break;
             }
           }
-          case 48: {
-            // challengeScore
-            challengeScore = input.readUInt32();
+          case 24: {
+            // scoreOne
+            scoreOne = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 32) {
               break;
             }
           }
-          case 64: {
-            // cPJOLGJDICK
-            cPJOLGJDICK = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
+          case 32: {
             // stars
             stars = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 96) {
               break;
             }
           }
-          case 80: {
+          case 96: {
+            // phase
+            phase = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
             // challengeId
             challengeId = input.readUInt32();
             bitField0_ |= 0x00000010;
@@ -784,42 +728,42 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
             }
           }
           case 112: {
-            // scoreTwo
-            scoreTwo = input.readUInt32();
+            // lMHBPGCPMNH
+            lMHBPGCPMNH = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 48) {
               break;
             }
           }
-          case 8: {
-            // isWin
-            isWin = input.readBool();
+          case 48: {
+            // oCNGBEDMEGJ
+            oCNGBEDMEGJ = input.readBool();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 56) {
               break;
             }
           }
-          case 16: {
-            // kJFDFGLCJPB
-            kJFDFGLCJPB = input.readBool();
+          case 56: {
+            // kHLCHIFGCPD
+            kHLCHIFGCPD = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 88) {
               break;
             }
           }
-          case 120: {
-            // gIPCBILIPIP
-            gIPCBILIPIP = input.readBool();
+          case 88: {
+            // isWin
+            isWin = input.readBool();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 10) {
               break;
             }
           }
-          case 58: {
+          case 10: {
             // battleTargetList
             tag = input.readRepeatedMessage(battleTargetList, tag);
             bitField0_ |= 0x00000200;
@@ -845,31 +789,31 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.phase, phase);
+        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.challengeScore, challengeScore);
+        output.writeUInt32(FieldNames.scoreOne, scoreOne);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.cPJOLGJDICK, cPJOLGJDICK);
+        output.writeUInt32(FieldNames.stars, stars);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.stars, stars);
+        output.writeUInt32(FieldNames.phase, phase);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.challengeId, challengeId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
+        output.writeUInt32(FieldNames.lMHBPGCPMNH, lMHBPGCPMNH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeBool(FieldNames.isWin, isWin);
+        output.writeBool(FieldNames.oCNGBEDMEGJ, oCNGBEDMEGJ);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeBool(FieldNames.kJFDFGLCJPB, kJFDFGLCJPB);
+        output.writeBool(FieldNames.kHLCHIFGCPD, kHLCHIFGCPD);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeBool(FieldNames.gIPCBILIPIP, gIPCBILIPIP);
+        output.writeBool(FieldNames.isWin, isWin);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRepeatedMessage(FieldNames.battleTargetList, battleTargetList);
@@ -884,10 +828,11 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 106629499: {
-            if (input.isAtField(FieldNames.phase)) {
+          case -485512614:
+          case 2129303327: {
+            if (input.isAtField(FieldNames.scoreTwo)) {
               if (!input.trySkipNullValue()) {
-                phase = input.readUInt32();
+                scoreTwo = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -895,23 +840,12 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
             }
             break;
           }
-          case 591599599:
-          case 1517684662: {
-            if (input.isAtField(FieldNames.challengeScore)) {
+          case -485517708:
+          case 2129298233: {
+            if (input.isAtField(FieldNames.scoreOne)) {
               if (!input.trySkipNullValue()) {
-                challengeScore = input.readUInt32();
+                scoreOne = input.readUInt32();
                 bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1791462314: {
-            if (input.isAtField(FieldNames.cPJOLGJDICK)) {
-              if (!input.trySkipNullValue()) {
-                cPJOLGJDICK = input.readUInt32();
-                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -922,6 +856,17 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
             if (input.isAtField(FieldNames.stars)) {
               if (!input.trySkipNullValue()) {
                 stars = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 106629499: {
+            if (input.isAtField(FieldNames.phase)) {
+              if (!input.trySkipNullValue()) {
+                phase = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -941,12 +886,33 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
             }
             break;
           }
-          case -485512614:
-          case 2129303327: {
-            if (input.isAtField(FieldNames.scoreTwo)) {
+          case 775497992: {
+            if (input.isAtField(FieldNames.lMHBPGCPMNH)) {
               if (!input.trySkipNullValue()) {
-                scoreTwo = input.readUInt32();
+                lMHBPGCPMNH = input.readUInt32();
                 bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -82510545: {
+            if (input.isAtField(FieldNames.oCNGBEDMEGJ)) {
+              if (!input.trySkipNullValue()) {
+                oCNGBEDMEGJ = input.readBool();
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -382334303: {
+            if (input.isAtField(FieldNames.kHLCHIFGCPD)) {
+              if (!input.trySkipNullValue()) {
+                kHLCHIFGCPD = input.readBool();
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -958,28 +924,6 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
             if (input.isAtField(FieldNames.isWin)) {
               if (!input.trySkipNullValue()) {
                 isWin = input.readBool();
-                bitField0_ |= 0x00000040;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1395404231: {
-            if (input.isAtField(FieldNames.kJFDFGLCJPB)) {
-              if (!input.trySkipNullValue()) {
-                kJFDFGLCJPB = input.readBool();
-                bitField0_ |= 0x00000080;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1645302018: {
-            if (input.isAtField(FieldNames.gIPCBILIPIP)) {
-              if (!input.trySkipNullValue()) {
-                gIPCBILIPIP = input.readBool();
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1054,23 +998,23 @@ public final class ChallengeBossPhaseSettleNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName phase = FieldName.forField("phase");
+      static final FieldName scoreTwo = FieldName.forField("scoreTwo", "score_two");
 
-      static final FieldName challengeScore = FieldName.forField("challengeScore", "challenge_score");
-
-      static final FieldName cPJOLGJDICK = FieldName.forField("CPJOLGJDICK");
+      static final FieldName scoreOne = FieldName.forField("scoreOne", "score_one");
 
       static final FieldName stars = FieldName.forField("stars");
 
+      static final FieldName phase = FieldName.forField("phase");
+
       static final FieldName challengeId = FieldName.forField("challengeId", "challenge_id");
 
-      static final FieldName scoreTwo = FieldName.forField("scoreTwo", "score_two");
+      static final FieldName lMHBPGCPMNH = FieldName.forField("LMHBPGCPMNH");
+
+      static final FieldName oCNGBEDMEGJ = FieldName.forField("OCNGBEDMEGJ");
+
+      static final FieldName kHLCHIFGCPD = FieldName.forField("KHLCHIFGCPD");
 
       static final FieldName isWin = FieldName.forField("isWin", "is_win");
-
-      static final FieldName kJFDFGLCJPB = FieldName.forField("KJFDFGLCJPB");
-
-      static final FieldName gIPCBILIPIP = FieldName.forField("GIPCBILIPIP");
 
       static final FieldName battleTargetList = FieldName.forField("battleTargetList", "battle_target_list");
     }

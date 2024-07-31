@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message AvatarSkillTree {
-    uint32 point_id = 1; // NFEFAKDMAOC
-    uint32 level = 2; // CFNKFJKAIAJ
+	uint32 point_id = 1;
+	uint32 level = 2;
 }

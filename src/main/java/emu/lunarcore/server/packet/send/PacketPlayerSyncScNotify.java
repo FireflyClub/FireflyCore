@@ -41,7 +41,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         var data = PlayerSyncScNotify.newInstance();
         
         if (avatar.isMultiplePath()) {
-            data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+            data.getMutableMultiAvatarTypeInfoList().add(avatar.toMultiPathAvatarProto());
             data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
         } else {
             data.getMutableAvatarSync().addAvatarList(avatar.toProto());
@@ -56,7 +56,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         var data = PlayerSyncScNotify.newInstance();
         
         if(avatar.isMultiplePath()) {
-            data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+            data.getMutableMultiAvatarTypeInfoList().add(avatar.toMultiPathAvatarProto());
             data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
         } else {
             data.getMutableAvatarSync().addAvatarList(avatar.toProto());
@@ -85,7 +85,7 @@ public class PacketPlayerSyncScNotify extends BasePacket {
         for (var avatar : avatars) {
             // Also update hero basic type info if were updating the main character
             if (avatar.isMultiplePath()) {
-                data.getMutableBasicTypeInfoList().add(avatar.toMultiPathAvatarProto());
+                data.getMutableMultiAvatarTypeInfoList().add(avatar.toMultiPathAvatarProto());
                 data.getMutableAvatarSync().addAvatarList(avatar.toProto(avatar.getMultiPathExcel().getBaseAvatarID()));
             } else {
                 // Sync avatar

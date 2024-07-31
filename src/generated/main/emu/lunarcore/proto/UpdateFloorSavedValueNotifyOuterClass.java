@@ -15,21 +15,13 @@ import us.hebi.quickbuf.Utf8String;
 
 public final class UpdateFloorSavedValueNotifyOuterClass {
   /**
-   * <pre>
-   *  AFCHMHCHIBA
-   * </pre>
-   *
    * Protobuf type {@code UpdateFloorSavedValueNotify}
    */
   public static final class UpdateFloorSavedValueNotify extends ProtoMessage<UpdateFloorSavedValueNotify> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      */
     private final RepeatedMessage<SavedValueEntry> savedValue = RepeatedMessage.newEmptyInstance(SavedValueEntry.getFactory());
 
@@ -37,10 +29,6 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  AFCHMHCHIBA
-     * </pre>
-     *
      * @return a new empty instance of {@code UpdateFloorSavedValueNotify}
      */
     public static UpdateFloorSavedValueNotify newInstance() {
@@ -48,11 +36,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      * @return whether the savedValue field is set
      */
     public boolean hasSavedValue() {
@@ -60,11 +44,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      * @return this
      */
     public UpdateFloorSavedValueNotify clearSavedValue() {
@@ -74,11 +54,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -92,11 +68,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -110,11 +82,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      * @param value the savedValue to add
      * @return this
      */
@@ -125,11 +93,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  CIGHENOALHD
-     * </pre>
-     *
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 13;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
      * @param values the savedValue to add
      * @return this
      */
@@ -200,7 +164,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < savedValue.length(); i++) {
-          output.writeRawByte((byte) 106);
+          output.writeRawByte((byte) 42);
           output.writeMessageNoTag(savedValue.get(i));
         }
       }
@@ -222,7 +186,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 106: {
+          case 42: {
             // savedValue
             tag = input.readRepeatedMessage(savedValue, tag);
             bitField0_ |= 0x00000001;

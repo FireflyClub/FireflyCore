@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "RogueInfo.proto";
 
 message GetRogueInfoScRsp {
-	uint32 retcode = 5;
-	RogueInfo rogue_info = 9;
+	uint32 retcode = 1;
+	RogueInfo rogue_info = 15;
 }

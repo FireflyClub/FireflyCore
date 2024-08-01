@@ -17,8 +17,8 @@ public class PacketChallengeBossPhaseSettleNotify extends BasePacket {
                 .setScoreTwo(challenge.getScoreStage2())
                 .setIsWin(challenge.isWin()) // if is win == false, the AV battle target not shown
                 .setStars(challenge.getStars())
-                .setOCNGBEDMEGJ(challenge.getCurrentStage() == 2) // show completion reward
-                .setKHLCHIFGCPD(true) // if false, the AV battle target not shown
+                .setKHLCHIFGCPD(challenge.getCurrentStage() == 2) // show completion reward
+                .setOCNGBEDMEGJ(true) // if false, the AV battle target not shown
                 .setLMHBPGCPMNH(1); // if the value is not 1, will show stars
         
         if (challenge.getBattleTarget1() != null && challenge.getCurrentStage() == 1) {

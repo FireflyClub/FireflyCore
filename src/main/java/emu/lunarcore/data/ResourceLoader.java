@@ -322,7 +322,7 @@ public class ResourceLoader {
             }
             
             // Get file
-            File file = new File(ConfigManager.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + avatarExcel.getNameKey() + "_Ability.json");
+            File file = new File(ConfigManager.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + adventurePlayerExcel.getName() + "_Ability.json");
             if (!file.exists()) continue;
 
             try (FileReader reader = new FileReader(file)) {

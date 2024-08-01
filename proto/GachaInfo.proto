@@ -7,12 +7,12 @@ import "GachaCeiling.proto";
 message GachaInfo {
 	uint32 CPJKHJEAEBM = 13;
 	GachaCeiling gacha_ceiling = 15;
-	repeated uint32 up_info = 4; //?
+	repeated uint32 up_info = 2; //?
 	uint32 gacha_id = 11;
 	int64 begin_time = 6;
-	repeated uint32 featured = 2; //?
+	repeated uint32 featured = 4; //?
 	uint32 MKAAOHEEFBC = 1;
-	string history_url = 10; //?
+	string history_url = 9; //?
 	int64 end_time = 5;
-	string detail_url = 9; //?
+	string detail_url = 10; //?
 }

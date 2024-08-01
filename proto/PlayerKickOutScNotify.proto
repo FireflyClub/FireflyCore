@@ -7,7 +7,7 @@ import "BlackInfo.proto";
 
 message PlayerKickOutScNotify {
     oneof kick_info {
-        BlackInfo black_info = 5;
-        KickType kick_type = 12;
+        BlackInfo black_info = 4;
+        KickType kick_type = 9;
     }
 }

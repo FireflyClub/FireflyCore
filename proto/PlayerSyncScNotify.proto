@@ -12,13 +12,14 @@ import "MultiPathAvatarTypeInfo.proto";
 import "Quest.proto";
 import "WaitDelResource.proto";
 import "ItemList.proto";
+import "MissionSync.proto";
 
 message PlayerSyncScNotify {
 	PlayerBasicInfo basic_info = 4;
 	repeated Relic relic_list = 7;
 	repeated Equipment equipment_list = 5;
 	repeated WaitDelResource wait_del_resource_list = 2;
-	//OIOFBFHDFCI DJDCHGOFBLH = 9;
+	MissionSync mission_sync = 9;
 	repeated Material GHHACNDFBAE = 345;
 	repeated Quest quest_list = 1;
 	repeated uint32 JGHIMABKAJD = 1546;

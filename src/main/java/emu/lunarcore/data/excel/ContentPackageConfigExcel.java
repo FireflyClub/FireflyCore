@@ -6,7 +6,7 @@ import lombok.Getter;
 
 @Getter
 @ResourceType(name = {"ContentPackageConfig.json"})
-public class ContentPackageExcel extends GameResource {
+public class ContentPackageConfigExcel extends GameResource {
     private int ContentID;
 
     @Override

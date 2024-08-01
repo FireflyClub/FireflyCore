@@ -6,25 +6,26 @@ import emu.lunarcore.GameConstants;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.ChallengeExcel;
 import emu.lunarcore.game.battle.Battle;
+import emu.lunarcore.game.enums.ChallengeType;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.scene.Scene;
 import emu.lunarcore.game.scene.entity.EntityMonster;
 import emu.lunarcore.proto.BattleEndReasonOuterClass.BattleEndReason;
 import emu.lunarcore.proto.BattleEndStatusOuterClass.BattleEndStatus;
 import emu.lunarcore.proto.BattleStatisticsOuterClass.BattleStatistics;
-import emu.lunarcore.proto.BattleTargetOuterClass.BattleTarget;
+import emu.lunarcore.proto.BattleTargetOuterClass;
 import emu.lunarcore.proto.ChallengeInfoOuterClass.ChallengeInfo;
 import emu.lunarcore.proto.ChallengeStatusOuterClass.ChallengeStatus;
 import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
 import emu.lunarcore.server.packet.send.*;
 import emu.lunarcore.util.Position;
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.LinkedList;
-import java.util.List;
 
 @Getter @Entity(useDiscriminator = false)
 public class ChallengeInstance {
@@ -34,7 +35,7 @@ public class ChallengeInstance {
     private Position startRot;
     
     private int challengeId;
-    private int currentStage;
+    @Setter private int currentStage;
     private int currentBossStage;
     private int currentExtraLineup;
     private int status;
@@ -46,19 +47,17 @@ public class ChallengeInstance {
     @Setter private int scoreStage1;
     @Setter private int scoreStage2;
     
-    @Transient
-    private List<BattleTarget> bossTarget1;
-    @Transient 
-    private List<BattleTarget> bossTarget2;
-    @Transient
-    private boolean isWin = false;
-    
-    private IntList storyBuffs;
-    private IntList bossBuffs;
+    @Transient private boolean isWin = false;
+    @Transient @Setter private Int2ObjectMap<BattleTargetOuterClass.BattleTarget> battleTarget1;
+    @Transient @Setter private Int2ObjectMap<BattleTargetOuterClass.BattleTarget> battleTarget2;
+    @Setter private IntList buffs;
+    @Transient @Setter private boolean isPartialChallenge;
     
     @Deprecated // Morphia only
     public ChallengeInstance() {}
 
+    
+    
     public ChallengeInstance(Player player, ChallengeExcel excel) {
         this.player = player;
         this.excel = excel;
@@ -67,32 +66,21 @@ public class ChallengeInstance {
         this.startRot = new Position();
         this.currentStage = 1;
         this.currentBossStage = 1;
-        this.roundsLeft = getExcel().isStory() ? 5 : excel.getChallengeCountDown();
+        this.roundsLeft = excel.getChallengeCountDown();
         this.setStatus(ChallengeStatus.CHALLENGE_DOING);
         this.setCurrentExtraLineup(ExtraLineupType.LINEUP_CHALLENGE);
+        this.setBuffs(new IntArrayList());
     }
     
     private Scene getScene() {
         return this.getPlayer().getScene();
     }
     
-    private int getChallengeId() {
-        return this.getExcel().getId();
-    }
-    
-    public boolean isStory() {
-        return this.excel.isStory();
-    }
-    
-    public boolean isBoss() {
-        return this.excel.isBoss();
-    }
-    
     private void setStatus(ChallengeStatus status) {
         this.status = status.getNumber();
     }
     
-    private void setCurrentExtraLineup(ExtraLineupType type) {
+    public void setCurrentExtraLineup(ExtraLineupType type) {
         this.currentExtraLineup = type.getNumber();
     }
     
@@ -108,65 +96,53 @@ public class ChallengeInstance {
         return status == ChallengeStatus.CHALLENGE_FINISH_VALUE;
     }
     
-    public void addStoryBuff(int storyBuff) {
-        // Add story buffs
-        if (storyBuffs == null) {
-            storyBuffs = new IntArrayList();
+    public void addBuff(int buffId) {
+        if (getBuffs() == null) {
+            setBuffs(new IntArrayList());
         }
         
-        storyBuffs.add(storyBuff);
-    }
-    
-    public void addBossBuff(int bossBuff) {
-        if (bossBuffs == null) {
-            bossBuffs = new IntArrayList();
-        }
-        
-        bossBuffs.add(bossBuff);
+        getBuffs().add(buffId);
     }
     
     public void onBattleStart(Battle battle) {
         // Set cycle limit
         battle.setRoundsLimit(player.getChallengeInstance().getRoundsLeft());
         
-        // Add story buffs
-        if (this.getStoryBuffs() != null) {
+        // Add buffs
+        if (getBuffs() != null) {
             battle.addBuff(this.getExcel().getMazeBuffID());
+            var index = this.getCurrentStage() - 1;
+            if(getBuffs().size() < 2) {
+                index = 0;
+            }
             
-            int buffId = this.getStoryBuffs().getInt(this.getCurrentStage() - 1);
-            if (buffId != 0) {
-                battle.addBuff(buffId);
+            try {
+                int buffId = getBuffs().getInt(index);
+                if (buffId != 0) {
+                    battle.addBuff(buffId);
+                }
+            } catch (Exception ex) {
+                // ignore
             }
         }
         
-        // Add boss buffs
-        if (this.getBossBuffs() != null) {
-            battle.addBuff(this.getExcel().getMazeBuffID());
-            
-            int buffId = this.getBossBuffs().getInt(this.getCurrentStage() - 1);
-            if (buffId != 0) {
-                battle.addBuff(buffId);
-            }
-
-            // add battle target
-            battle.addBattleTarget(1, 90004, 0);
-            battle.addBattleTarget(1, 90005, 0);
-        }
-        
-        // Add story battle targets
-        if (this.getExcel().getStoryExcel() != null) {
+        // Add battle targets
+        if (excel.getType() == ChallengeType.Story) {
             // Add base score counter
             battle.addBattleTarget(1, 10001, this.getTotalScore());
             // Add battle targets from story excel
             for (int id : getExcel().getStoryExcel().getBattleTargetID()) {
                 battle.addBattleTarget(5, id, this.getTotalScore());
             }
+        } else if (excel.getType() == ChallengeType.Boss) {
+            battle.addBattleTarget(1, 90004, 0);
+            battle.addBattleTarget(1, 90005, 0);
         }
     }
     
     public void onBattleFinish(Battle battle, BattleEndStatus result, BattleStatistics stats) {
         // Add challenge score
-        if (this.isStory()) {
+        if (excel.getType() == ChallengeType.Story) {
             // Calculate score for current stage
             int stageScore = stats.getBattleScore() - this.getTotalScore();
             // Set score
@@ -177,24 +153,24 @@ public class ChallengeInstance {
             }
         }
         
-        if (this.isBoss()) {
-            var score = stats.getBattleScore();
-            var scores = new LinkedList<BattleTarget>();
-            var bt = stats.getBattleTargetInfo().get(0);
-            if (bt != null) {
+        if (excel.getType() == ChallengeType.Boss) {
+            var score = stats.getBattleScore(); // full score (av + hp)
+            var battleTargets = new Int2ObjectOpenHashMap<BattleTargetOuterClass.BattleTarget>();
+            var battleTargetInfo = stats.getBattleTargetInfo().get(0);
+            if (battleTargetInfo != null) {
                 score = 0;
-                for (var battleTarget: bt.getValue().getMutableBattleTargetList()) {
+                for (var battleTarget: battleTargetInfo.getValue().getMutableBattleTargetList()) {
                     score += battleTarget.getProgress();
-                    scores.add(battleTarget);
+                    battleTargets.put(battleTarget.getId(), battleTarget);
                 }
             }
             
             if (this.getCurrentStage() == 1) {
                 this.scoreStage1 = score;
-                this.bossTarget1 = scores;
+                this.battleTarget1 = battleTargets;
             } else {
                 this.scoreStage2 = score;
-                this.bossTarget2 = scores;
+                this.battleTarget2 = battleTargets;
             }
         }
         
@@ -216,7 +192,7 @@ public class ChallengeInstance {
                 }
                 
                 // Calculate rounds left
-                if (!this.isStory()) {
+                if (excel.getType() == ChallengeType.Memory) {
                     this.roundsLeft = Math.min(Math.max(this.roundsLeft - stats.getRoundCnt(), 1), this.roundsLeft);
                 }
                 
@@ -225,7 +201,7 @@ public class ChallengeInstance {
                 this.isWin = true;
                 break;
             case BATTLE_END_QUIT:
-                if (this.isBoss()) {
+                if (excel.getType() == ChallengeType.Boss) {
                     this.quitBossBattle();
                     return;
                 }
@@ -237,7 +213,7 @@ public class ChallengeInstance {
                 break;
             default:
                 // Determine challenge result
-                if ((this.isStory() || this.isBoss()) && stats.getEndReason() == BattleEndReason.BATTLE_END_REASON_TURN_LIMIT) {
+                if (excel.getType() != ChallengeType.Memory && stats.getEndReason() == BattleEndReason.BATTLE_END_REASON_TURN_LIMIT) {
                     // kill monsters first before advancing
                     for (EntityMonster npcMonster : battle.getNpcMonsters()) {
                         getScene().removeEntity(npcMonster);
@@ -257,7 +233,6 @@ public class ChallengeInstance {
     public void enterNextPhase() {
         this.advanceStage();
     }
-    
     
     public void restartChallenge() {
         var lineup = player.getCurrentLineup();
@@ -290,66 +265,71 @@ public class ChallengeInstance {
     }
     
     private void advanceStage() {
+        if (this.isPartialChallenge) {
+            this.currentStage++;
+        }
+        
         // Progress to the next stage
         if (this.currentStage >= excel.getStageNum()) {
             // Last stage
             this.setStatus(ChallengeStatus.CHALLENGE_FINISH);
             this.stars = this.calculateStars();
             // Save history
-            player.getChallengeManager().addHistory(this.getChallengeId(), this.getStars(), this.getTotalScore());
+            player.getChallengeManager().addHistory(this);
             // Send challenge result data
-            if (this.isBoss()) {
+            if (excel.getType() == ChallengeType.Boss) {
                 player.sendPacket(new PacketChallengeBossPhaseSettleNotify(this));
             } else {
                 player.sendPacket(new PacketChallengeSettleNotify(this));
             }
-        } else {
-            // show end battle (if boss challenge)
-            if (this.isBoss() && this.currentBossStage == 1) {
-                this.stars = this.calculateStars();
-                this.currentBossStage++;
-                player.sendPacket(new PacketChallengeBossPhaseSettleNotify(this));
-                return;
-            }
-            
-            // Increment and reset stage
-            this.currentStage++;
+            return;
+        }
+        
+        // show partial end of battle (if boss challenge)
+        if (excel.getType() == ChallengeType.Boss && this.currentBossStage == 1) {
+            this.stars = this.calculateStars();
+            this.currentBossStage++;
+            player.sendPacket(new PacketChallengeBossPhaseSettleNotify(this));
+            return;
+        }
+        
+        // Increment and reset stage
+        this.currentStage++;
 
-            // enter next phase (if boss challenge)
-            if (this.isBoss() && this.currentBossStage == 2) {
-                // Change player lineup
-                this.setCurrentExtraLineup(ExtraLineupType.LINEUP_CHALLENGE_2);
-                player.getLineupManager().setCurrentExtraLineup(this.getCurrentExtraLineup(), false);
-                player.sendPacket(new PacketChallengeLineupNotify(this.getCurrentExtraLineup()));
-                
-                // set mp
-                this.savedMp = player.getCurrentLineup().getMp();
-                
-                player.enterScene(excel.getMapEntranceID2(), 0, false);
-                // this.getScene().getEntitiesByGroup(EntityMonster.class, excel.getMazeGroupID1()).forEach(e -> getScene().removeEntity(e));
-                this.getScene().loadGroup(excel.getMazeGroupID2());
-                
-                player.sendPacket(new PacketEnterChallengeNextPhaseScRsp(player.getScene().toProto()));
-                this.getScene().syncLineup();
-                
-                return;
-            }
-
-
-            // Load scene group for stage 2
-            this.getScene().loadGroup(excel.getMazeGroupID2());
-            
-            // Change player line up
+        // enter next phase (if boss challenge)
+        if (excel.getType() == ChallengeType.Boss && this.currentBossStage == 2) {
+            // Change player lineup
             this.setCurrentExtraLineup(ExtraLineupType.LINEUP_CHALLENGE_2);
-            player.getLineupManager().setCurrentExtraLineup(this.getCurrentExtraLineup(), true);
+            player.getLineupManager().setCurrentExtraLineup(this.getCurrentExtraLineup(), false);
             player.sendPacket(new PacketChallengeLineupNotify(this.getCurrentExtraLineup()));
             
             // set mp
             this.savedMp = player.getCurrentLineup().getMp();
             
-            // Move player
-            player.moveTo(this.getStartPos(), this.getStartRot());
+            player.enterScene(excel.getMapEntranceID2(), 0, false);
+            this.getScene().getEntitiesByGroup(EntityMonster.class, excel.getMazeGroupID1()).forEach(e -> getScene().removeEntity(e));
+            this.getScene().loadGroup(excel.getMazeGroupID2());
+            
+            player.sendPacket(new PacketEnterChallengeNextPhaseScRsp(player.getScene().toProto()));
+            this.getScene().syncLineup();
+            
+            return;
         }
+        
+        // Load scene group for stage 2
+        this.getScene().loadGroup(excel.getMazeGroupID2());
+        
+        // Change player line up
+        this.setCurrentExtraLineup(ExtraLineupType.LINEUP_CHALLENGE_2);
+        player.getLineupManager().setCurrentExtraLineup(this.getCurrentExtraLineup(), true);
+        player.sendPacket(new PacketChallengeLineupNotify(this.getCurrentExtraLineup()));
+        
+        // set mp
+        this.savedMp = player.getCurrentLineup().getMp();
+        
+        // Move player
+        player.moveTo(this.getStartPos(), this.getStartRot());
+        
     }
 
     public void onUpdate() {
@@ -410,20 +390,23 @@ public class ChallengeInstance {
                 .setScoreTwo(this.getScoreStage2())
                 .setRoundCount(this.getRoundsElapsed())
                 .setExtraLineupTypeValue(this.getCurrentExtraLineup());
-                // .setUnk(1);
+//                .setUnk(1);
         
-        if (this.getStoryBuffs() != null) {
-            int buffId = this.getStoryBuffs().getInt(this.getCurrentStage() - 1);
-            proto.getMutableStartInfo().getMutableCurStoryBuffs().addBuffList(buffId);
-        }
-        
-        if (this.getBossBuffs() != null) {
-            int buffId = this.getBossBuffs().getInt(this.getCurrentStage() - 1);
-            proto
-                .getMutableStartInfo()
-                .getMutableCurBossBuffs()
-                .addBuffList(buffId)
-                .setKAEFAFNNEEK(1);
+        if (this.getBuffs() != null) {
+            for (var buffId: this.getBuffs()) {
+                if (excel.getType() == ChallengeType.Story) {
+                    proto
+                        .getMutableStartInfo()
+                        .getMutableCurStoryBuffs()
+                        .addBuffList(buffId);
+                } else {
+                    proto
+                        .getMutableStartInfo()
+                        .getMutableCurBossBuffs()
+                        .addBuffList(buffId)
+                        .setKAEFAFNNEEK(1);
+                }
+            }
         }
         
         return proto;

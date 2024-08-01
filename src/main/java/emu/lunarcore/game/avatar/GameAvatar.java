@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 import emu.lunarcore.data.excel.MultiplePathAvatarConfigExcel;
 import emu.lunarcore.game.player.PlayerGender;
-import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass;
+import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
 import org.bson.types.ObjectId;
 import dev.morphia.annotations.Entity;
 import dev.morphia.annotations.Id;
@@ -459,9 +459,9 @@ public class GameAvatar implements GameEntity {
         return proto;
     }
     
-    public MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo toMultiPathAvatarProto() {
+    public MultiPathAvatarTypeInfo toMultiPathAvatarProto() {
         var equipmentInternalUid = getEquipment() == null ? 0 : getEquipment().getInternalUid();
-        var proto = MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo.newInstance()
+        var proto = MultiPathAvatarTypeInfo.newInstance()
             .setAvatarIdValue(this.getAvatarId())
             .setRank(this.getRank())
             .setPathEquipmentId(equipmentInternalUid);

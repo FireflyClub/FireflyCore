@@ -254,8 +254,6 @@ public class ResourceLoader {
                     GroupInfo group = gson.fromJson(reader, GroupInfo.class);
                     group.setId(simpleGroup.getID());
                     
-                    // Load groups into the floor info
-                    floor.getGroupList().add(group);
                     floor.getGroups().put(simpleGroup.getID(), group);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -317,7 +315,12 @@ public class ResourceLoader {
         count = 0;
 
         // Load maze abilities
-        for (var avatarExcel : GameData.getAvatarExcelMap().values()) {
+        for (var adventurePlayerExcel : GameData.getAdventurePlayerExcelMap().values()) {
+            var avatarExcel = GameData.getAvatarExcelMap().get(adventurePlayerExcel.getId());
+            if (avatarExcel == null) {
+                continue;
+            }
+            
             // Get file
             File file = new File(ConfigManager.getConfig().getResourceDir() + "/Config/ConfigAdventureAbility/LocalPlayer/LocalPlayer_" + avatarExcel.getNameKey() + "_Ability.json");
             if (!file.exists()) continue;

@@ -19,12 +19,14 @@ public class HandlerStartChallengeCsReq extends PacketHandler {
         if (bossBuffs != null && bossBuffs.getBuffOne() == 0) {
             bossBuffs = null;
         }
+
+        var challengeId = session.getPlayer().getOverrideChallengeId() > 0 ? session.getPlayer().getOverrideChallengeId() : req.getChallengeId();
         
         session
             .getPlayer()
             .getChallengeManager()
             .startChallenge(
-                req.getChallengeId(), 
+                challengeId,
                 storyBuffs, 
                 bossBuffs, 
                 Arrays.stream(req.getLineup1().toArray()).boxed().toList(),

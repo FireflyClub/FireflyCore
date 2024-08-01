@@ -8,9 +8,6 @@ import lombok.Getter;
 @ResourceType(name = {"MainMission.json"})
 public class MainMissionExcel extends GameResource {
     private int MainMissionID;
-    private String Type;
-    private int ChapterID;
-    private int RewardID;
 
     @Override
     public int getId() {

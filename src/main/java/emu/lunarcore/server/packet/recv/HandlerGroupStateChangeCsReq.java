@@ -1,6 +1,5 @@
 package emu.lunarcore.server.packet.recv;
 
-import emu.lunarcore.LunarCore;
 import emu.lunarcore.proto.GroupStateChangeCsReqOuterClass.GroupStateChangeCsReq;
 import emu.lunarcore.server.game.GameSession;
 import emu.lunarcore.server.packet.CmdId;
@@ -16,7 +15,6 @@ public class HandlerGroupStateChangeCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = GroupStateChangeCsReq.parseFrom(data);
         var groupStateInfo = req.getMutableGroupStateInfo();
-        LunarCore.getLogger().warn(groupStateInfo.getPlayerUid() + "");
         
         session.send(new PacketGroupStateChangeScNotify(groupStateInfo));
         session.send(new PacketGroupStateChangeScRsp(groupStateInfo));

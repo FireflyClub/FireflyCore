@@ -1548,6 +1548,7 @@ public class CmdId {
     public static final int FinishTutorialCsReq = 1651;
     public static final int UnlockTutorialGuideScRsp = 1629;
     public static final int FinishTutorialScRsp = 1633;
+    public static final int UnlockTutorialScRsp = 1693;
     public static final int RestoreWolfBroGameArchiveScRsp = 6593;
     public static final int UnlockTutorialGuideCsReq = 1639;
     public static final int GetTutorialScRsp = 1606;

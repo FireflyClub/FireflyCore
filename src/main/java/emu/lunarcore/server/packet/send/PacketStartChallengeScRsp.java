@@ -1,5 +1,6 @@
 package emu.lunarcore.server.packet.send;
 
+import emu.lunarcore.game.enums.ChallengeType;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
 import emu.lunarcore.proto.StartChallengeScRspOuterClass.StartChallengeScRsp;
@@ -30,7 +31,7 @@ public class PacketStartChallengeScRsp extends BasePacket {
             data.setScene(player.getScene().toProto());
             data.setChallengeInfo(player.getChallengeInstance().toProto());
             
-            if (player.getChallengeInstance().isBoss()) {
+            if (player.getChallengeInstance().getExcel().getType() == ChallengeType.Boss) {
                 var info = data.getMutableStartInfo().getMutableBossInfo();
                 info.getMutableFirstNode();
                 info.getMutableSecondNode();

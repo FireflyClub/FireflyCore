@@ -8,6 +8,7 @@ import emu.lunarcore.data.config.NpcInfo;
 import emu.lunarcore.data.config.GroupInfo.GroupLoadSide;
 import emu.lunarcore.data.excel.NpcMonsterExcel;
 import emu.lunarcore.data.excel.ChallengeExcel.ChallengeMonsterInfo;
+import emu.lunarcore.game.enums.ChallengeType;
 import emu.lunarcore.game.scene.Scene;
 import emu.lunarcore.game.scene.SceneEntityLoader;
 import emu.lunarcore.game.scene.entity.EntityMonster;
@@ -26,7 +27,11 @@ public class ChallengeEntityLoader extends SceneEntityLoader {
         scene.loadGroup(instance.getExcel().getMazeGroupID1());
         
         // Set leave entry
-        scene.setLeaveEntryId(instance.isStory() ? GameConstants.CHALLENGE_STORY_ENTRANCE : instance.isBoss() ? GameConstants.CHALLENGE_BOSS_ENTRANCE : GameConstants.CHALLENGE_ENTRANCE);
+        scene.setLeaveEntryId(
+            instance.getExcel().getType() == ChallengeType.Story ? 
+                GameConstants.CHALLENGE_STORY_ENTRANCE : instance.getExcel().getType() == ChallengeType.Boss ? 
+                    GameConstants.CHALLENGE_BOSS_ENTRANCE : GameConstants.CHALLENGE_ENTRANCE
+        );
         
         // Load all groups with props
         for (var group : scene.getFloorInfo().getGroups().values()) {
@@ -70,6 +75,7 @@ public class ChallengeEntityLoader extends SceneEntityLoader {
         EntityMonster monster = new EntityMonster(scene, npcMonsterExcel, group, monsterInfo);
         monster.setEventId(challengeMonsterInfo.getEventId());
         monster.setCustomStage(challengeMonsterInfo.getEventId());
+        monster.setWorldLevel(scene.getPlayer().getWorldLevel());
         
         return monster;
     }

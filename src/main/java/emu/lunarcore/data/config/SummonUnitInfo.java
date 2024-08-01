@@ -16,12 +16,16 @@ import lombok.Setter;
 public class SummonUnitInfo {
     private String AttachPoint;
     private SummonUnitTriggers TriggerConfig;
+    private List<TaskInfo> OnCreate;
     
     // When this value is true, it will prevent removing other summon unit after spawning this object
     @Setter private transient boolean canCoexistWithOther;
     
     public List<SummonUnitCustomTrigger> getCustomTriggers() {
-        return TriggerConfig.getCustomTriggers();
+        if (TriggerConfig != null) {
+            return TriggerConfig.getCustomTriggers();
+        }
+        else return new ArrayList<>();
     }
     
     public SummonUnitCustomTrigger getTriggerByName(String name) {

@@ -1,6 +1,5 @@
 package emu.lunarcore.game.scene;
 
-import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.GroupInfo;
 import emu.lunarcore.data.config.MonsterInfo;
@@ -18,26 +17,18 @@ import emu.lunarcore.game.scene.entity.GameEntity;
 
 public class SceneEntityLoader {
     
-    boolean isEventMission = false;
-    boolean isEventProp = false;
-    boolean isEventGroup = false;
-
     public void onSceneLoad(Scene scene) {
+        
         for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
-            if (ConfigManager.getConfig().getServerOptions().useMission) {
-                this.isEventMission = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
-            } else {
-                this.isEventMission = false;
-            }
+            var isEventMission = false;
             
             // Skip non-server & non-event groups
-            if (group.getLoadSide() != GroupLoadSide.Server && !isEventMission) continue;
-
-            // If useMission, only skip 0-2000000 missions
-            if ((!ConfigManager.getConfig().getServerOptions().useMission && group.getOwnerMainMissionID() > 0) ||
-                (ConfigManager.getConfig().getServerOptions().useMission &&
-                group.getOwnerMainMissionID() > 0 && group.getOwnerMainMissionID() < 2000000)) {
-                    continue;
+            if (group.getLoadSide() != GroupLoadSide.Server && !isEventMission) {
+                continue;
+            }
+            
+            if (group.getOwnerMainMissionID() > 0 /*&& group.getOwnerMainMissionID() < 2000000*/) {
+                continue;
             }
             
             // Load group
@@ -64,11 +55,7 @@ public class SceneEntityLoader {
     }
     
     public EntityProp loadProp(Scene scene, GroupInfo group, PropInfo propInfo) {
-        if (ConfigManager.getConfig().getServerOptions().useMission) {
-            this.isEventProp = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
-        } else {
-            this.isEventProp = false;
-        }
+        var isEventProp = false;
         
         // Don't spawn entity if they have certain flags in their info
         if (!isEventProp && (propInfo.isIsDelete() || propInfo.isIsClientOnly())) {
@@ -119,11 +106,7 @@ public class SceneEntityLoader {
     }
     
     public EntityNpc loadNpc(Scene scene, GroupInfo group, NpcInfo npcInfo) {
-        if (ConfigManager.getConfig().getServerOptions().useMission) {
-            this.isEventGroup = GameData.getMainMissionScheduleExcelMap().containsKey(group.getOwnerMainMissionID());
-        } else {
-            this.isEventGroup = false;
-        }
+        var isEventGroup = false;
         
         // Don't spawn entity if they have certain flags in their info
         if ((npcInfo.isIsDelete() || npcInfo.isIsClientOnly()) && !isEventGroup) {

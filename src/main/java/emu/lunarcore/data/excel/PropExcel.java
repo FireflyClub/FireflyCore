@@ -37,7 +37,7 @@ public class PropExcel extends GameResource {
                 this.recoverHp = true;
             } else if (getJsonPath().contains("_Door_")) {
                 this.isDoor = true;
-            } else if (getJsonPath().contains("Stair")) {
+            } else if (getJsonPath().contains("Stair") || getJsonPath().contains("PortalController")) {
                 this.isStaircase = true;
             }
         }

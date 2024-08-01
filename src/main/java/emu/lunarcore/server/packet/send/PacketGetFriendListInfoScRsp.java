@@ -2,6 +2,7 @@ package emu.lunarcore.server.packet.send;
 
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.config.ConfigManager;
+import emu.lunarcore.game.enums.ChallengeType;
 import emu.lunarcore.game.friends.FriendList;
 import emu.lunarcore.proto.AssistSimpleInfoOuterClass.AssistSimpleInfo;
 import emu.lunarcore.proto.FriendListInfoOuterClass.FriendListInfo;
@@ -86,7 +87,7 @@ public class PacketGetFriendListInfoScRsp extends BasePacket {
             
             // Set playing state
             if (friend.isOnline()) {
-                if (friend.getChallengeInstance() != null && friend.getChallengeInstance().isStory()) {
+                if (friend.getChallengeInstance() != null && friend.getChallengeInstance().getExcel().getType() == ChallengeType.Story) {
                     friendInfo.setPlayingState(PlayingState.PLAYING_CHALLENGE_STORY);
                 } else if (friend.getChallengeInstance() != null) {
                     friendInfo.setPlayingState(PlayingState.PLAYING_CHALLENGE_MEMORY);

@@ -18,7 +18,7 @@ public class TaskInfo {
     @SerializedName(value = "ID", alternate = {"SummonUnitID"})
     private int ID;
     
-    private boolean TriggerBattle = true;
+    private boolean TriggerBattle = false;
     private DynamicFloat LifeTime;
     private String ModifierName;
     

@@ -261,8 +261,8 @@ public class Battle {
         }
         
         // Buffs
-        for (var entry : this.getBuffs().int2ObjectEntrySet()) {
-            proto.addBuffList(entry.getValue().toProto());
+        for (MazeBuff buff : this.getBuffs().values()) {
+            proto.addBuffList(buff.toProto());
         }
         
         // Client turn snapshots

@@ -443,9 +443,9 @@ public class Scene implements Tickable {
             leaderAvatarId = getPlayer().getCurrentMultiPathAvatarType().getOrDefault(leaderAvatarId, leaderAvatarId);
         }
         
-        // TODO: save latest valid world_id to database
-        if(proto.getWorldId() == 100) {
-            proto.setWorldId(401);
+        // Special WorldID for train
+        if(player.getWorldId() != 0 && excel.getPlaneType() == PlaneType.Train) {
+            proto.setWorldId(player.getWorldId());
         }
         
         // Sort entities into groups

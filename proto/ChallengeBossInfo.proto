@@ -7,12 +7,11 @@ import "ChallengeBossEquipment.proto";
 import "ChallengeBossRelic.proto";
 
 message ChallengeBossInfo {
+	ChallengeBossStageInfo first_node = 1;
 	map<uint32, ChallengeBossEquipment> equipments = 6;
 	map<uint32, ChallengeBossRelic> relics = 11;
-	repeated uint32 BADPGANOHKM = 3;
+	repeated uint32 lineup2 = 3;
+	ChallengeBossStageInfo second_node = 15;
 	bool LBOJBINABDG = 13;
-	repeated uint32 PPKNDBEAHCA = 12;
-
-	ChallengeBossStageInfo first_node = 15; //?
-	ChallengeBossStageInfo second_node = 1; //?
+	repeated uint32 lineup1 = 12;
 }

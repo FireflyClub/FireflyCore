@@ -2,6 +2,7 @@ package emu.lunarcore.data.excel;
 
 import emu.lunarcore.data.GameResource;
 import emu.lunarcore.data.ResourceType;
+import emu.lunarcore.game.enums.ChallengeType;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import lombok.Getter;
@@ -31,25 +32,25 @@ public class ChallengeExcel extends GameResource {
 
     private transient Int2ObjectMap<ChallengeMonsterInfo> challengeMonsters1;
     private transient Int2ObjectMap<ChallengeMonsterInfo> challengeMonsters2;
-    
+    private transient ChallengeType type = ChallengeType.Memory;
     private transient ChallengeStoryExtraExcel storyExcel;
+    private transient ChallengeBossExtraExcel bossExcel;
 
     @Override
     public int getId() {
         return ID;
     }
     
-    public boolean isStory() {
-        return this.storyExcel != null;
-    }
-    
-    public boolean isBoss() {
-        return this.getGroupID() > 3000;
-    }
-
     public void setStoryExcel(ChallengeStoryExtraExcel storyExcel) {
         this.storyExcel = storyExcel;
         this.ChallengeCountDown = storyExcel.getTurnLimit();
+        this.type = ChallengeType.Story;
+    }
+
+    public void setBossExcel(ChallengeBossExtraExcel bossExcel) {
+        this.bossExcel = bossExcel;
+        this.ChallengeCountDown = bossExcel.getTurnLimit();
+        this.type = ChallengeType.Boss;
     }
 
     @Override

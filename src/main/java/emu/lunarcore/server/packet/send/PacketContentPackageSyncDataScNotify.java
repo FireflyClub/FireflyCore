@@ -14,7 +14,7 @@ public class PacketContentPackageSyncDataScNotify extends BasePacket {
         super(CmdId.ContentPackageSyncDataScNotify);
 
         var contentPackageData = ContentPackageData.newInstance().setCurContentId(0);
-        for (var content : GameData.getContentPackageExcelMap().values()) {
+        for (var content : GameData.getContentPackageConfigExcelMap().values()) {
             var contentInfo = ContentPackageInfo.newInstance()
                     .setMapEntryId(content.getContentID())
                     .setStatus(ContentPackageStatus.ContentPackageStatus_Finished);

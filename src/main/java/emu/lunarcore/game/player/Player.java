@@ -87,7 +87,7 @@ public class Player implements Tickable {
     private String name;
     private String signature;
     private int birthday;
-    private Int2IntMap currentMultiPathAvatarType;
+    @Setter private Int2IntMap currentMultiPathAvatarType;
     private int headIcon;
     private int phoneTheme;
     private int chatBubble;
@@ -113,6 +113,7 @@ public class Player implements Tickable {
     private int planeId;
     private int floorId;
     private int entryId;
+    private int worldId;
     
     private long lastActiveTime;
     
@@ -143,6 +144,7 @@ public class Player implements Tickable {
     private transient int nextBattleId;
     private transient PlayerUnlockData unlocks;
     private transient Int2ObjectMap<SceneBuff> foodBuffs;
+    @Setter private transient int overrideChallengeId = 0;
     
     @Setter private transient boolean paused;
     
@@ -760,10 +762,7 @@ public class Player implements Tickable {
                 anchorId = teleport.getAnchorID();
             }
         } else if (anchorId == 0) {
-            var group = floor.getGroupInfoByIndex(floor.getStartGroupIndex());
-            if (group == null) return false;
-
-            startGroup = group.getId();
+            startGroup = floor.getStartGroupID();
             anchorId = floor.getStartAnchorID();
         }
         

@@ -31,7 +31,7 @@ public class AvatarExcel extends GameResource {
 
     private int[] RankIDList;
     private int[] SkillList;
-    private String ManikinJsonPath;
+    private String JsonPath;
 
     @Getter(AccessLevel.NONE)
     private transient AvatarPromotionExcel[] promotionData;
@@ -77,13 +77,13 @@ public class AvatarExcel extends GameResource {
         }
 
         // Get name key
-        Matcher matcher = namePattern.matcher(this.ManikinJsonPath);
+        Matcher matcher = namePattern.matcher(this.JsonPath);
 
         if (matcher.find()) {
             this.nameKey = matcher.group(0);
         }
 
         // Clear variable to save memory
-        this.ManikinJsonPath = null;
+        this.JsonPath = null;
     }
 }

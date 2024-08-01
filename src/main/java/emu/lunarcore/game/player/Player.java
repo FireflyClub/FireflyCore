@@ -1,11 +1,10 @@
 package emu.lunarcore.game.player;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass;
-import it.unimi.dsi.fastutil.ints.Int2IntMap;
-import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 import org.bson.types.ObjectId;
 
 import com.mongodb.client.model.Filters;
@@ -28,6 +27,7 @@ import emu.lunarcore.data.excel.MazePlaneExcel;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.avatar.AvatarStorage;
 import emu.lunarcore.game.avatar.GameAvatar;
+import emu.lunarcore.game.avatar.AvatarMultiPath;
 import emu.lunarcore.game.battle.Battle;
 import emu.lunarcore.game.challenge.ChallengeGroupReward;
 import emu.lunarcore.game.challenge.ChallengeHistory;
@@ -87,12 +87,12 @@ public class Player implements Tickable {
     private String name;
     private String signature;
     private int birthday;
-    @Setter private Int2IntMap currentMultiPathAvatarType;
     private int headIcon;
     private int phoneTheme;
     private int chatBubble;
     private int currentBgm;
-    @Setter private PlayerGender gender;
+    private Map<Integer, Integer> curAvatarPaths;
+    private PlayerGender gender;
     
     private int level;
     private int exp; // Total exp
@@ -150,15 +150,11 @@ public class Player implements Tickable {
     
     @Deprecated // Morphia only
     public Player() {
-        this.currentMultiPathAvatarType = new Int2IntOpenHashMap();
-        this.currentMultiPathAvatarType.put(
-            GameConstants.TRAILBLAZER_AVATAR_ID, GameConstants.TRAILBLAZER_AVATAR_ID
-        );
-        
         this.gender = PlayerGender.GENDER_MAN;
         this.foodBuffs = new Int2ObjectOpenHashMap<>();
         this.assistAvatars = new ArrayList<>();
         this.displayAvatars = new ArrayList<>();
+        this.curAvatarPaths = new HashMap<>();
         
         this.avatars = new AvatarStorage(this);
         this.inventory = new Inventory(this);
@@ -197,6 +193,9 @@ public class Player implements Tickable {
         if (GameConstants.DEFAULT_HEAD_ICONS.length > 0) {
             this.headIcon = GameConstants.DEFAULT_HEAD_ICONS[0];
         }
+        
+        // Setup hero paths
+        this.getAvatars().validateMultiPaths();
 
         // Give us the main character
         // TODO script tutorial
@@ -346,18 +345,7 @@ public class Player implements Tickable {
     }
 
     public GameAvatar getAvatarById(int avatarId) {
-        return getAvatarById(avatarId, true);
-    }
-    
-    public GameAvatar getAvatarById(int avatarId, boolean handleMultiAvatar) {
-        var newAvatarId = avatarId;
-        
-        // handle multi path avatar
-        if (GameData.getMultiplePathAvatarConfigExcelMap().containsKey(avatarId) && handleMultiAvatar) {
-            newAvatarId = this.getCurrentMultiPathAvatarType().getOrDefault(avatarId, avatarId);
-        }
-        
-        return getAvatars().getAvatarById(newAvatarId);
+        return getAvatars().getAvatarById(avatarId);
     }
     
     public GameAvatar getAvatarById(ObjectId id) {
@@ -481,25 +469,46 @@ public class Player implements Tickable {
         return this.exp - GameData.getPlayerExpRequired(this.level);
     }
     
+    public int getCurAvatarPathId(int baseAvatarId) {
+        return this.getCurAvatarPaths().getOrDefault(baseAvatarId, 0);
+    }
     
-    public void setMultiAvatarType(MultiPathAvatarTypeOuterClass.MultiPathAvatarType avatarType) {
-        var multiPathExcel = GameData.getMultiplePathAvatarConfigExcelMap().get(avatarType.getNumber());
+    public AvatarMultiPath getCurAvatarPath(int baseAvatarId) {
+        int pathId = this.getCurAvatarPathId(baseAvatarId);
+        return this.getAvatars().getMultiPathById(pathId);
+    }
+    
+    public int setAvatarPath(int pathId) {
+        // Get excel
+        var excel = GameData.getMultiplePathAvatarExcelMap().get(pathId);
+        if (excel == null) return 0;
         
-        GameAvatar newAvatar = this.getAvatarById(avatarType.getNumber(), false);
-        if (newAvatar == null || multiPathExcel == null) return;
-        var currentAvatarId = currentMultiPathAvatarType.get(multiPathExcel.getBaseAvatarID());
-        var currentAvatar = this.getAvatarById(currentAvatarId);
+        // Get path data
+        AvatarMultiPath path = this.getAvatars().getMultiPathById(pathId);
+        if (path == null) return 0;
         
-        this.getCurrentMultiPathAvatarType().put(multiPathExcel.getBaseAvatarID(), avatarType.getNumber());
+        // Get avatar data
+        GameAvatar avatar = this.getAvatarById(excel.getBaseAvatarID());
+        if (avatar == null) return 0;
         
-        sendPacket(new PacketAvatarPathChangedNotify(multiPathExcel.getBaseAvatarID(),avatarType));
-        sendPacket(new PacketPlayerSyncScNotify(newAvatar));
+        // Set new avatar path
+        avatar.setMultiPath(path);
         
-        // Refresh entity
-        getScene().removeEntity(currentAvatar.getEntityId());
-        getScene().addEntity(currentAvatar);
+        // Set gender if we are changing the main character
+        if (excel.getBaseAvatarID() == GameConstants.TRAILBLAZER_AVATAR_ID && excel.getGender() != null) {
+            this.gender = excel.getGender();
+        }
         
+        // Set current avatar path and save to database
+        this.getCurAvatarPaths().put(excel.getBaseAvatarID(), pathId);
         this.save();
+
+        // Sync with client
+        this.sendPacket(new PacketAvatarPathChangedNotify(avatar, path));
+        this.sendPacket(new PacketPlayerSyncScNotify(avatar));
+        
+        // Success
+        return pathId;
     }
     
     public int getNextBattleId() {
@@ -762,7 +771,10 @@ public class Player implements Tickable {
                 anchorId = teleport.getAnchorID();
             }
         } else if (anchorId == 0) {
-            startGroup = floor.getStartGroupID();
+            var group = floor.getGroupInfoByIndex(floor.getStartGroupIndex());
+            if (group == null) return false;
+            
+            startGroup = group.getId();
             anchorId = floor.getStartAnchorID();
         }
         
@@ -801,6 +813,11 @@ public class Player implements Tickable {
             nextScene = this.scene;
         } else {
             nextScene = new Scene(this, planeExcel, floorId);
+        }
+        
+        // Set world id
+        if (planeExcel.getPlaneType() == PlaneType.Town || planeExcel.getPlaneType() == PlaneType.Maze) {
+            this.worldId = planeExcel.getWorldID();
         }
         
         // Set player position
@@ -921,6 +938,11 @@ public class Player implements Tickable {
             this.challengeInstance = null;
         }
         
+        // Set default world id if we don't have it
+        if (this.worldId == 0) {
+            this.worldId = GameConstants.DEFAULT_WORLD_ID;
+        }
+        
         // Unstuck check, dont load player into raid scenes
         MazePlaneExcel planeExcel = GameData.getMazePlaneExcelMap().get(planeId);
         if (planeExcel == null || planeExcel.getPlaneType().getVal() >= PlaneType.Raid.getVal()) {
@@ -934,7 +956,7 @@ public class Player implements Tickable {
         if (this.getScene() == null) {
             this.enterScene(GameConstants.START_ENTRY_ID, 0, false);
         }
-
+        
         // Make sure the current lineup's leader exists
         var lineup = this.getCurrentLineup();
         if (lineup.size() == 0) {
@@ -945,7 +967,7 @@ public class Player implements Tickable {
             lineup.setLeader(0);
             lineup.save();
         }
-
+        
         // Sanity check lineup to prevent the player from getting stuck in a loading screen if they loaded into the game with an avatar that had 0 hp
         var leader = this.getCurrentLeaderAvatar();
         if (leader != null && leader.getCurrentHp(this.getCurrentLineup()) <= 0) {
@@ -993,6 +1015,7 @@ public class Player implements Tickable {
         datastore.getCollection(GameAvatar.class).deleteMany(filter);
         datastore.getCollection(ChallengeHistory.class).deleteMany(filter);
         datastore.getCollection(ChallengeGroupReward.class).deleteMany(filter);
+        datastore.getCollection(AvatarMultiPath.class).deleteMany(filter);
         datastore.getCollection(GameItem.class).deleteMany(filter);
         datastore.getCollection(PlayerLineup.class).deleteMany(filter);
         datastore.getCollection(PlayerExtraLineup.class).deleteMany(filter);

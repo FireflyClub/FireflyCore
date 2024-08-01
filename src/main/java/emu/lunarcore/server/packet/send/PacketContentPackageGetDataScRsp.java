@@ -16,7 +16,7 @@ public class PacketContentPackageGetDataScRsp extends BasePacket {
         var data = proto.getMutableData();
         
         // Add content packages from excels
-        for (var excel : GameData.getContentPackageConfigExcelMap().values()) {
+        for (var excel : GameData.getContentPackageExcelMap().values()) {
             var contentPackage = ContentPackageInfo.newInstance()
                     .setMapEntryId(excel.getId())
                     .setStatus(ContentPackageStatus.ContentPackageStatus_Finished);

@@ -1,19 +1,19 @@
 package emu.lunarcore.server.packet.send;
 
-import emu.lunarcore.proto.AvatarPathChangedNotifyOuterClass;
-import emu.lunarcore.proto.MultiPathAvatarTypeOuterClass;
+import emu.lunarcore.game.avatar.AvatarMultiPath;
+import emu.lunarcore.game.avatar.GameAvatar;
+import emu.lunarcore.proto.AvatarPathChangedNotifyOuterClass.AvatarPathChangedNotify;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdId;
 
 public class PacketAvatarPathChangedNotify extends BasePacket {
 
-    public PacketAvatarPathChangedNotify(int baseAvatarId, MultiPathAvatarTypeOuterClass.MultiPathAvatarType type) {
+    public PacketAvatarPathChangedNotify(GameAvatar avatar, AvatarMultiPath path) {
         super(CmdId.AvatarPathChangedNotify);
-
-        var data = AvatarPathChangedNotifyOuterClass.AvatarPathChangedNotify
-            .newInstance()
-            .setBaseAvatarId(baseAvatarId)
-            .setMultiPathAvatarType(type);
+        
+        var data = AvatarPathChangedNotify.newInstance()
+                .setBaseAvatarId(avatar.getAvatarId())
+                .setMultiPathAvatarTypeValue(path.getExcelId());
         
         this.setData(data);
     }

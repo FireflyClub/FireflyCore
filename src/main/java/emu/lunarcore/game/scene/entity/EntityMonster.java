@@ -99,7 +99,7 @@ public class EntityMonster implements GameEntity, Tickable {
         this.tempBuffs.add(tempBuff);
     }
     
-    public synchronized void applyBuffs(Battle battle, int waveIndex) {
+    public synchronized void applyBuffs(Battle battle, int waveNum) {
         if (this.buffs != null) {
             for (var entry : this.buffs.int2ObjectEntrySet()) {
                 // Check expiry for buff
@@ -108,27 +108,26 @@ public class EntityMonster implements GameEntity, Tickable {
                 }
                 
                 // Add buff to battle
-                this.applyBuff(battle, entry.getValue(), waveIndex);
+                this.applyBuff(battle, entry.getValue(), waveNum);
             }
         }
         
         if (this.getTempBuffs() != null) {
             for (var tempBuff : this.getTempBuffs()) {
-                this.applyBuff(battle, tempBuff, waveIndex);
+                this.applyBuff(battle, tempBuff, waveNum);
             }
             
             this.tempBuffs = null;
         }
     }
     
-    private boolean applyBuff(Battle battle, SceneBuff buff, int waveIndex) {
+    private boolean applyBuff(Battle battle, SceneBuff buff, int waveNum) {
         // Get index of owner in lineup
         int ownerIndex = battle.getLineup().indexOf(buff.getCasterAvatarId());
         
         // Add buff to battle if owner exists
         if (ownerIndex != -1) {
-            // battle.addBuff(buff.getBuffId(), ownerIndex, 1 << waveIndex);
-            battle.addBuff(buff.getBuffId(), ownerIndex, 0xffffffff, buff.getSkillIndex());
+            battle.addBuff(buff.getBuffId(), ownerIndex, (1 << waveNum) - 1);
             return true;
         }
         

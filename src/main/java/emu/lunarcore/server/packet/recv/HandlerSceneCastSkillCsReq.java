@@ -11,7 +11,6 @@ import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.send.PacketSceneCastSkillMpUpdateScNotify;
 import emu.lunarcore.server.packet.send.PacketSceneCastSkillScRsp;
 import it.unimi.dsi.fastutil.ints.IntLinkedOpenHashSet;
-import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import it.unimi.dsi.fastutil.ints.IntSet;
 
 @Opcodes(CmdId.SceneCastSkillCsReq)
@@ -24,36 +23,11 @@ public class HandlerSceneCastSkillCsReq extends PacketHandler {
         // Setup variables
         Player player = session.getPlayer();
         MazeSkill skill = null;
-        IntSet hitTargets = new IntLinkedOpenHashSet();
-        IntSet hitTargetAssist = new IntOpenHashSet(); // targets around cast location (not actually hitting)
-        IntSet assistMonsters = new IntLinkedOpenHashSet();
-
-        if (req.hasHitTargetEntityIdList() || req.hasAssistMonsterEntityIdList()) {
-            // Parse targets efficiently (skips integer boxing)
-            for (var entityId:  req.getHitTargetEntityIdList()) {
-                hitTargets.add(entityId.intValue());
-                hitTargetAssist.add(entityId.intValue());
-            }
-
-            for (var assistWave : req.getAssistMonsterWaveList()) {
-                for (int id : assistWave.getEntityIdList()) {
-                    assistMonsters.add(id);
-                }
-            }
-            
-            for (var entityId: req.getAssistMonsterEntityIdList()) {
-                hitTargetAssist.add(entityId.intValue());
-            }
-        }
         
         // Check if player casted a maze skill
         if (player.getScene().getAvatarEntityIds().contains(req.getCasterId())) {
             // Get casting avatar
             GameAvatar caster = player.getCurrentLeaderAvatar();
-            var casterEntity = player.getScene().getEntityById(req.getCasterId());
-            if (casterEntity instanceof GameAvatar && caster == null) {
-                caster = ((GameAvatar) casterEntity);
-            }
             
             // Sanity check, but should never happen
             if (caster == null) {
@@ -69,15 +43,28 @@ public class HandlerSceneCastSkillCsReq extends PacketHandler {
                 // Cast skill effects
                 if (caster.getExcel().getMazeSkill() != null) {
                     skill = caster.getExcel().getMazeSkill();
-                    skill.onCast(caster, req.getTargetMotion(), hitTargetAssist);
+                    skill.onCast(caster, req.getTargetMotion());
                 }
             } else {
                 skill = caster.getExcel().getMazeAttack();
             }
         }
         
-        // Start battle
-        if (!hitTargets.isEmpty()) {
+        if (req.hasHitTargetEntityIdList()) {
+            // Parse targets efficiently (skips integer boxing)
+            IntSet hitTargets = new IntLinkedOpenHashSet();
+            for (int i = 0; i < req.getHitTargetEntityIdList().length(); i++) {
+                hitTargets.add(req.getHitTargetEntityIdList().get(i));
+            }
+            
+            IntSet assistMonsters = new IntLinkedOpenHashSet();
+            for (var assistWave : req.getAssistMonsterWaveList()) {
+                for (int id : assistWave.getEntityIdList()) {
+                    assistMonsters.add(id);
+                }
+            }
+            
+            // Start battle
             session.getServer().getBattleService().startBattle(player, req.getCasterId(), req.getAttackedGroupId(), skill, hitTargets, assistMonsters);
         } else {
             // We had no targets for some reason

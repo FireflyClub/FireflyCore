@@ -4,7 +4,6 @@ import emu.lunarcore.data.excel.SummonUnitExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
 import emu.lunarcore.util.Position;
-import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
 
 @Getter
@@ -18,8 +17,8 @@ public class MazeSkillSummonUnit extends MazeSkillAction {
     }
 
     @Override
-    public void onCast(GameAvatar caster, MotionInfo castPosition, IntSet hitTargets) {
-        caster.getScene().summonUnit(caster, excel, new Position(castPosition.getPos()), new Position(castPosition.getRot()), duration, hitTargets);
+    public void onCast(GameAvatar caster, MotionInfo castPosition) {
+        caster.getScene().summonUnit(caster, excel, new Position(castPosition.getPos()), new Position(castPosition.getRot()), duration);
     }
 
 }

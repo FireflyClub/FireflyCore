@@ -2,7 +2,6 @@ package emu.lunarcore.game.scene;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.config.*;
@@ -24,12 +23,12 @@ import emu.lunarcore.server.game.Tickable;
 import emu.lunarcore.server.packet.send.PacketActivateFarmElementScRsp;
 import emu.lunarcore.server.packet.send.PacketRefreshTriggerByClientScNotify;
 import emu.lunarcore.server.packet.send.PacketSceneGroupRefreshScNotify;
-import emu.lunarcore.server.packet.send.PacketSyncEntityBuffChangeListScNotify;
 import emu.lunarcore.util.Position;
 import it.unimi.dsi.fastutil.ints.*;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import lombok.Getter;
 import lombok.Setter;
+import us.hebi.quickbuf.RepeatedInt;
 
 @Getter
 public class Scene implements Tickable {
@@ -40,6 +39,7 @@ public class Scene implements Tickable {
     private final int planeId;
     private final int floorId;
     private int entryId;
+    private int worldId;
     @Setter private int leaveEntryId;
     
     private int lastEntityId = 0;
@@ -55,6 +55,7 @@ public class Scene implements Tickable {
     // Avatar entites
     private final IntSet avatarEntityIds;
     private final Int2ObjectMap<GameAvatar> avatars;
+    private EntitySummonUnit playerSummon;
 
     // Other entities
     private final Int2ObjectMap<GameEntity> entities;
@@ -78,7 +79,14 @@ public class Scene implements Tickable {
         
         this.healingSprings = new ObjectArrayList<>();
         this.triggers = new ObjectArrayList<>();
-        
+
+        // Set world id
+        if (this.getExcel().getPlaneType() == PlaneType.Train) {
+            this.worldId = player.getWorldId();
+        } else {
+            this.worldId = this.getExcel().getWorldID();
+        }
+
         // Use singleton to avoid allocating memory for a new entity loader everytime we create a scene
         this.entityLoader = getExcel().getPlaneType().getSceneEntityLoader();
 
@@ -234,57 +242,24 @@ public class Scene implements Tickable {
     
     // Summons
     
-    public synchronized void summonUnit(GameAvatar caster, SummonUnitExcel excel, Position pos, Position rot, int duration, IntSet hitTargets) {
+    public synchronized void summonUnit(GameAvatar caster, SummonUnitExcel excel, Position pos, Position rot, int duration) {
         // Remove previous summon
-        if(!excel.getInfo().isCanCoexistWithOther()) {
-            this.removeSummonUnit();
-        }
+        this.removeSummonUnit();
         
         // Add a new summoned unit to scene
-        var summon = new EntitySummonUnit(this, caster, excel, pos, rot, hitTargets);
+        var summon = new EntitySummonUnit(this, caster, excel, pos, rot);
         summon.setDuration(duration);
         
         this.addEntity(summon, true);
     }
     
     public synchronized void removeSummonUnit() {
-        for (var entity: entities.values()) {
-            if (entity instanceof  EntitySummonUnit) {
-                var buffIds = ((EntitySummonUnit) entity)
-                    .getExcel()
-                    .getInfo()
-                    .getCustomTriggers()
-                    .stream()
-                    .flatMap(p -> p
-                        .getOnTriggerEnter()
-                        .stream()
-                        .filter(f->f.getType().contains("AddMazeBuff"))
-                        .map(TaskInfo::getID)
-                    )
-                    .collect(Collectors.toSet()) ;
-                
-                // TODO: experimental remove any maze buff from the summon
-                for (var mazeBuffId: buffIds) {
-//                    handleSummonUnitTriggers(
-//                        entity.getEntityId(),
-//                        "RemoveMazeBuff",
-//                        MotionInfo.newInstance().setPos(entity.getPos().toProto()),
-//                        ((EntitySummonUnit) entity).getHitTargetsOnCast()
-//                    );
-                    for (var hitTargetEntityId: ((EntitySummonUnit) entity).getHitTargets()) {
-                        var monsterEntity = getEntityById(hitTargetEntityId);
-                        if(!(monsterEntity instanceof EntityMonster)) continue;
-                        ((EntityMonster) monsterEntity).getBuffs().remove(mazeBuffId.intValue());
-                        getPlayer().sendPacket(new PacketSyncEntityBuffChangeListScNotify(monsterEntity.getEntityId(), mazeBuffId));
-                    }
-                }
-                
-                this.removeEntity(entity);
-            }
+        if (this.getPlayerSummon() != null) {
+            this.removeEntity(this.getPlayerSummon());
         }
     }
     
-    public void handleSummonUnitTriggers(int entityId, String name, MotionInfo motion, IntSet targetIds) {
+    public void handleSummonUnitTriggers(int entityId, String name, MotionInfo motion, RepeatedInt targetIds) {
         // Get summon unit
         EntitySummonUnit summonUnit = null;
         
@@ -294,9 +269,6 @@ public class Scene implements Tickable {
         } else {
             return;
         }
-        
-        // save hit entities to the summon entity
-        ((EntitySummonUnit) entity).getHitTargets().addAll(targetIds);
         
         // Get trigger
         var trigger = summonUnit.getExcel().getInfo().getTriggerByName(name);
@@ -408,6 +380,12 @@ public class Scene implements Tickable {
     
     @Override
     public synchronized void onTick(long timestamp, long delta) {
+        // Remove summoned unit if it expired
+        if (this.getPlayerSummon() != null) {
+            if (this.getPlayerSummon().isExpired()) {
+                this.removeSummonUnit();
+            }
+        }
         // Tick entities
         for (GameEntity entity : this.getEntities().values()) {
             if (entity instanceof Tickable tickableEntity) {
@@ -417,7 +395,10 @@ public class Scene implements Tickable {
     }
     
     public void onBattleStart(Battle battle) {
-        this.removeSummonUnit();
+        // Remove summoned unit
+        if (this.getPlayerSummon() != null) {
+            this.removeSummonUnit();
+        }
     }
     
     // Proto serialization
@@ -425,10 +406,10 @@ public class Scene implements Tickable {
     public synchronized SceneInfo toProto() {
         // Set loaded flag
         this.loaded = true;
-        
+
         // Proto
         var proto = SceneInfo.newInstance()
-                .setWorldId(this.getExcel().getWorldID())
+                .setWorldId(this.getWorldId())
                 .setGameModeType(this.getExcel().getPlaneType().getVal())
                 .setPlaneId(this.getPlaneId())
                 .setFloorId(this.getFloorId())
@@ -437,16 +418,6 @@ public class Scene implements Tickable {
         // Get current lineup
         PlayerLineup lineup = getPlayer().getCurrentLineup();
         int leaderAvatarId = lineup.getAvatars().get(lineup.getLeader());
-        
-        // TODO: hacky way to get leaderAvatarId if avatar is multi type
-        if (GameData.getMultiplePathAvatarConfigExcelMap().containsKey(leaderAvatarId)) {
-            leaderAvatarId = getPlayer().getCurrentMultiPathAvatarType().getOrDefault(leaderAvatarId, leaderAvatarId);
-        }
-        
-        // Special WorldID for train
-        if(player.getWorldId() != 0 && excel.getPlaneType() == PlaneType.Train) {
-            proto.setWorldId(player.getWorldId());
-        }
         
         // Sort entities into groups
         var groups = new Int2ObjectOpenHashMap<SceneEntityGroupInfo>();

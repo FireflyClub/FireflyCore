@@ -166,11 +166,6 @@ public class CommandArgs {
     public boolean setProperties(GameAvatar avatar) {
         boolean hasChanged = false;
 
-        // skip different gender
-        if(avatar.isHero() && avatar.getGender() != getTarget().getGender()) {
-            return false;
-        }
-
         // Try to set level
         if (this.getLevel() > 0) {
             avatar.setLevel(Math.min(this.getLevel(), 80));

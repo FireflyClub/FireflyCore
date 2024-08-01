@@ -13,7 +13,7 @@ import emu.lunarcore.data.GameDepot;
 import emu.lunarcore.data.excel.ItemExcel;
 import emu.lunarcore.data.excel.RelicMainAffixExcel;
 import emu.lunarcore.data.excel.RelicSubAffixExcel;
-import emu.lunarcore.game.avatar.GameAvatar;
+import emu.lunarcore.game.avatar.IAvatar;
 import emu.lunarcore.game.enums.AvatarPropertyType;
 import emu.lunarcore.game.enums.ItemMainType;
 import emu.lunarcore.game.player.Player;
@@ -53,7 +53,7 @@ public class GameItem {
     private List<GameItemSubAffix> subAffixes;
 
     @Indexed private ObjectId equipAvatarId; // Object id of the avatar this item is equipped to
-    private transient GameAvatar equipAvatar;
+    private transient IAvatar equipAvatar;
     
     @LoadOnly @AlsoLoad("equipAvatar")
     private int equipAvatarExcelId; // Deprecated legacy field
@@ -151,15 +151,15 @@ public class GameItem {
         return false;
     }
 
-    public boolean setEquipAvatar(GameAvatar avatar) {
-        if (avatar == null && this.isEquipped()) {
+    public boolean setEquipAvatar(IAvatar baseAvatar) {
+        if (baseAvatar == null && this.isEquipped()) {
             this.equipAvatarId = null;
             this.equipAvatar = null;
             this.equipAvatarExcelId = 0; // Legacy field
             return true;
-        } else if (this.equipAvatarId != avatar.getId()) {
-            this.equipAvatarId = avatar.getId();
-            this.equipAvatar = avatar;
+        } else if (this.equipAvatarId != baseAvatar.getId()) {
+            this.equipAvatarId = baseAvatar.getId();
+            this.equipAvatar = baseAvatar;
             this.equipAvatarExcelId = 0; // Legacy field
             return true;
         }
@@ -293,7 +293,7 @@ public class GameItem {
                 .setMainAffixId(this.mainAffix);
         
         if (this.getEquipAvatar() != null) {
-            proto.setEquipAvatarId(this.getEquipAvatar().getAvatarId());
+            proto.setEquipAvatarId(this.getEquipAvatar().getExcelId());
         }
 
         if (this.subAffixes != null) {
@@ -316,7 +316,7 @@ public class GameItem {
                 .setRank(this.getRank());
         
         if (this.getEquipAvatar() != null) {
-            proto.setEquipAvatarId(this.getEquipAvatar().getAvatarId());
+            proto.setEquipAvatarId(this.getEquipAvatar().getExcelId());
         }
         
         return proto;

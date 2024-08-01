@@ -8,8 +8,6 @@ import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
 import emu.lunarcore.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.lunarcore.proto.SceneSummonUnitInfoOuterClass.SceneSummonUnitInfo;
 import emu.lunarcore.util.Position;
-import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
-import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,20 +25,14 @@ public class EntitySummonUnit implements GameEntity {
     private int attachedEntityId;
     private int duration;
     private long expiry;
-    @Setter private IntSet hitTargets;
     
-    public EntitySummonUnit(Scene scene, GameAvatar caster, SummonUnitExcel excel, Position pos, Position rot, IntSet hitTargets) {
+    public EntitySummonUnit(Scene scene, GameAvatar caster, SummonUnitExcel excel, Position pos, Position rot) {
         this.scene = scene;
         this.caster = caster;
         this.excel = excel;
         this.pos = pos;
         this.rot = rot;
         this.createTime = System.currentTimeMillis();
-        if (getHitTargets() != null) {
-            this.setHitTargets(hitTargets);
-        } else {
-            this.setHitTargets(new IntOpenHashSet());
-        }
         
         // Attach summon unit to an entity
         String attachPoint = excel.getInfo().getAttachPoint();
@@ -64,7 +56,7 @@ public class EntitySummonUnit implements GameEntity {
                 .setLifeTimeMs(this.getDuration())
                 .setCreateTimeMs(LunarCore.convertToServerTime(this.getCreateTime()))
                 .setCasterEntityId(this.getCaster().getEntityId())
-                .setAttachEntityId(this.getCaster().getEntityId())
+                .setAttachEntityId(this.getAttachedEntityId())
                 .setSummonUnitId(this.getExcel().getId());
         
         for (var trigger : this.getExcel().getInfo().getCustomTriggers()) {

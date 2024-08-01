@@ -14,8 +14,8 @@ public class HandlerSetAvatarPathCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = SetAvatarPathCsReq.parseFrom(data);
         
-        session.getPlayer().setMultiAvatarType(req.getAvatarId());
-        session.send(new PacketSetAvatarPathScRsp(req.getAvatarId()));
+        int pathId = session.getPlayer().setAvatarPath(req.getAvatarIdValue());
+        session.send(new PacketSetAvatarPathScRsp(pathId));
     }
 
 }

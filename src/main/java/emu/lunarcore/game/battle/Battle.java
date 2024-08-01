@@ -36,7 +36,7 @@ public class Battle {
     private final long timestamp;
     
     private BattleStage stage; // Main battle stage
-    @Setter private IntList battleEvents; // TODO maybe turn it into a map?
+    private IntList battleEvents; // TODO maybe turn it into a map?
     private Int2ObjectMap<BattleTargetList> battleTargets; // TODO use custom battle target object as value type in case we need to save battles to the db
     
     // Internal battle data
@@ -128,7 +128,10 @@ public class Battle {
             var wave = new BattleMonsterWave(stage);
             wave.getMonsters().addAll(stageMonsterWave);
             
-            // Handle npc monster
+            // Add wave to battle
+            this.getWaves().add(wave);
+            
+            // Add buffs from npc monsters
             if (npcMonster != null) {
                 // Set wave custom level
                 wave.setCustomLevel(npcMonster.getCustomLevel());
@@ -136,9 +139,6 @@ public class Battle {
                 // Handle monster buffs
                 npcMonster.applyBuffs(this, this.getWaves().size());
             }
-            
-            // Finally add wave to battle
-            this.getWaves().add(wave);
         }
     }
     
@@ -157,15 +157,10 @@ public class Battle {
     }
     
     public void addBattleTarget(int key, int targetId, int progress) {
-        this.addBattleTarget(key, targetId, progress, 0);
-    }
-    
-    public void addBattleTarget(int key, int targetId, int progress, int totalProgress) {
         var list = getBattleTargets().computeIfAbsent(key, i -> BattleTargetList.newInstance());
         var battleTarget = BattleTarget.newInstance()
                 .setId(targetId)
-                .setProgress(progress)
-                .setTotalProgress(totalProgress);
+                .setProgress(progress);
         
         list.addBattleTargetList(battleTarget);
     }
@@ -187,16 +182,7 @@ public class Battle {
     }
     
     public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag) {
-        return addBuff(buffId, ownerIndex, waveFlag, 0);
-    }
-
-    public MazeBuff addBuff(int buffId, int ownerIndex, int waveFlag, int skillIndex) {
         MazeBuff buff = new MazeBuff(buffId, 1, ownerIndex, waveFlag);
-        
-        if(skillIndex > 0) {
-            buff.addDynamicValue("SkillIndex", skillIndex);
-        }
-        
         return addBuff(buff);
     }
     
@@ -261,7 +247,7 @@ public class Battle {
         }
         
         // Buffs
-        for (MazeBuff buff : this.getBuffs().values()) {
+        for (var buff : this.getBuffs().values()) {
             proto.addBuffList(buff.toProto());
         }
         

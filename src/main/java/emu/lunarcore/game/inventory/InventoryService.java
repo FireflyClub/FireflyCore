@@ -16,6 +16,7 @@ import emu.lunarcore.game.player.Player;
 import emu.lunarcore.server.game.BaseGameService;
 import emu.lunarcore.server.game.GameServer;
 import emu.lunarcore.server.packet.send.*;
+import us.hebi.quickbuf.RepeatedInt;
 
 public class InventoryService extends BaseGameService {
 
@@ -164,8 +165,13 @@ public class InventoryService extends BaseGameService {
         player.save();
 
         // Save avatar and send packets
-        avatar.save();
-        player.sendPacket(new PacketPlayerSyncScNotify(avatar));
+        if (avatar.getMultiPath() != null) {
+            avatar.getMultiPath().save();
+            player.sendPacket(new PacketPlayerSyncScNotify(avatar.getMultiPath()));
+        } else {
+            avatar.save();
+            player.sendPacket(new PacketPlayerSyncScNotify(avatar));
+        }
         
         return true;
     }
@@ -190,8 +196,13 @@ public class InventoryService extends BaseGameService {
         avatar.setRank(avatar.getRank() + 1);
         
         // Save avatar and send packets
-        avatar.save();
-        player.sendPacket(new PacketPlayerSyncScNotify(avatar));
+        if (avatar.getMultiPath() != null) {
+            avatar.getMultiPath().save();
+            player.sendPacket(new PacketPlayerSyncScNotify(avatar.getMultiPath()));
+        } else {
+            avatar.save();
+            player.sendPacket(new PacketPlayerSyncScNotify(avatar));
+        }
         
         return true;
     }
@@ -514,30 +525,46 @@ public class InventoryService extends BaseGameService {
 
     // === Etc ===
 
-    public void lockItem(Player player, int equipId, boolean locked) {
-        GameItem item = player.getInventory().getItemByUid(equipId);
-        if (item == null || !item.getExcel().isEquippable()) {
-            return;
+    public void lockItems(Player player, RepeatedInt list, boolean locked) {
+        // List of items to update on the client
+        List<GameItem> items = new ArrayList<>();
+        
+        // Lock items
+        for (int equipId : list) {
+            GameItem item = player.getInventory().getItemByUid(equipId);
+            if (item == null || !item.getExcel().isEquippable()) {
+                continue;
+            }
+            
+            item.setLocked(locked);
+            item.save();
         }
-
-        item.setLocked(locked);
-        item.save();
-
-        //  Send packet
-        player.sendPacket(new PacketPlayerSyncScNotify(item));
+        
+        // Send packet
+        if (items.size() > 0) {
+            player.sendPacket(new PacketPlayerSyncScNotify(items));
+        }
     }
     
-    public void discardRelic(Player player, int equipId, boolean discarded) {
-        GameItem relic = player.getInventory().getItemByUid(equipId);
-        if (relic == null || !relic.getExcel().isRelic()) {
-            return;
+    public void discardRelics(Player player, RepeatedInt list, boolean discarded) {
+        // List of items to update on the client
+        List<GameItem> items = new ArrayList<>();
+        
+        // Lock items
+        for (int equipId : list) {
+            GameItem item = player.getInventory().getItemByUid(equipId);
+            if (item == null || !item.getExcel().isEquippable()) {
+                continue;
+            }
+            
+            item.setDiscarded(discarded);
+            item.save();
         }
-
-        relic.setDiscarded(discarded);
-        relic.save();
-
-        //  Send packet
-        player.sendPacket(new PacketPlayerSyncScNotify(relic));
+        
+        // Send packet
+        if (items.size() > 0) {
+            player.sendPacket(new PacketPlayerSyncScNotify(items));
+        }
     }
 
     public List<GameItem> sellItems(Player player, boolean toMaterials, List<ItemParam> items) {

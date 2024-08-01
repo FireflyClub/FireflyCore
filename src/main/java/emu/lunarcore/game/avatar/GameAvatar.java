@@ -1,12 +1,7 @@
 package emu.lunarcore.game.avatar;
 
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-import emu.lunarcore.data.excel.MultiplePathAvatarConfigExcel;
-import emu.lunarcore.game.player.PlayerGender;
-import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
 import org.bson.types.ObjectId;
 import dev.morphia.annotations.Entity;
 import dev.morphia.annotations.Id;
@@ -16,7 +11,6 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.game.enums.ItemMainType;
-import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.game.player.lineup.PlayerLineup;
 import emu.lunarcore.game.scene.Scene;
@@ -37,7 +31,6 @@ import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
 import emu.lunarcore.proto.SceneActorInfoOuterClass.SceneActorInfo;
 import emu.lunarcore.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.lunarcore.proto.SpBarInfoOuterClass.SpBarInfo;
-import emu.lunarcore.server.packet.send.PacketPlayerSyncScNotify;
 import emu.lunarcore.util.Position;
 
 import it.unimi.dsi.fastutil.ints.*;
@@ -47,7 +40,7 @@ import lombok.Setter;
 
 @Getter
 @Entity(value = "avatars", useDiscriminator = false)
-public class GameAvatar implements GameEntity {
+public class GameAvatar implements GameEntity, IAvatar {
     @Id private ObjectId id;
     @Indexed @Getter private int ownerUid; // Uid of player that this avatar belongs to
 
@@ -70,12 +63,11 @@ public class GameAvatar implements GameEntity {
     @Getter(AccessLevel.NONE) private int extraLineupSp;
 
     private transient int entityId;
-    private transient Int2ObjectMap<GameItem> equips;
     private transient Int2LongMap buffs;
+    private transient AvatarMultiPath multiPath;
 
     @Deprecated // Morphia only
     public GameAvatar() {
-        this.equips = new Int2ObjectOpenHashMap<>();
         this.buffs = Int2LongMaps.synchronize(new Int2LongOpenHashMap());
         this.level = 1;
         this.currentHp = 10000;
@@ -98,6 +90,10 @@ public class GameAvatar implements GameEntity {
         return this.getOwner().getScene();
     }
     
+    public int getExcelId() {
+        return this.avatarId;
+    }
+    
     public void setExcel(AvatarExcel excel) {
         if (this.excel == null) {
             this.excel = excel;
@@ -105,6 +101,7 @@ public class GameAvatar implements GameEntity {
         if (this.data == null) {
             this.data = new AvatarData(excel);
         }
+        this.data.setBaseAvatar(this);
     }
 
     public void setOwner(Player player) {
@@ -131,28 +128,12 @@ public class GameAvatar implements GameEntity {
         return 200000 + this.getAvatarId();
     }
     
-    public boolean isMultiplePath() {
-        return GameData.getMultiplePathAvatarConfigExcelMap().containsKey(this.getAvatarId());
-    }
-    
     public boolean isHero() {
-        return GameData.getHeroExcelMap().containsKey(this.getAvatarId());
+        return this.getAvatarId() == GameConstants.TRAILBLAZER_AVATAR_ID;
     }
     
-    public PlayerGender getGender() {
-        if(!isHero()) {
-            return PlayerGender.GENDER_NONE;
-        }
-        
-        if(getAvatarId() % 2 == 0) {
-            return PlayerGender.GENDER_WOMAN;
-        } else {
-            return PlayerGender.GENDER_MAN;
-        }
-    }
-    
-    public MultiplePathAvatarConfigExcel getMultiPathExcel() {
-        return GameData.getMultiplePathAvatarConfigExcelMap().get(this.avatarId);
+    public boolean hasMultiPath() {
+        return GameData.getMultiplePathAvatarExcelMap().containsKey(this.getAvatarId());
     }
 
     public int getMaxSp() {
@@ -205,6 +186,18 @@ public class GameAvatar implements GameEntity {
         return this.getData().getSkills();
     }
     
+    public void setMultiPath(AvatarMultiPath multiPath) {
+        // Clear prev set hero path from avatar
+        if (this.multiPath != null) {
+            this.multiPath.setAvatar(null);
+        }
+        
+        this.data = multiPath.getData();
+        this.excel = multiPath.getExcel(); // DO NOT USE GameAvatar::setExcel for this
+        this.multiPath = multiPath;
+        this.multiPath.setAvatar(this);
+    }
+    
     // Rewards
     
     public boolean setRewards(int flag) {
@@ -229,81 +222,13 @@ public class GameAvatar implements GameEntity {
     public void addBuff(int buffId, int duration) {
         this.buffs.put(buffId, System.currentTimeMillis() + (duration * 1000));
     }
-
-    // Equips
-
-    public GameItem getEquipBySlot(int slot) {
-        return this.getEquips().get(slot);
-    }
-
-    public GameItem getEquipment() {
-        return this.getEquips().get(GameConstants.EQUIPMENT_SLOT_ID);
-    }
     
-    public List<GameItem> getRelics() {
-        return this.getEquips().values().stream().filter(p -> p.getEquipSlot() != GameConstants.EQUIPMENT_SLOT_ID).collect(Collectors.toList());
-    }
-
-    public boolean equipItem(GameItem item) {
-        // Sanity check
-        int slot = item.getEquipSlot();
-        if (slot == 0) return false;
-
-        // Check if other avatars have this item equipped
-        GameAvatar otherAvatar = getOwner().getAvatarById(item.getEquipAvatarId());
-        if (otherAvatar != null) {
-            // Unequip this item from the other avatar
-            if (otherAvatar.unequipItem(slot) != null) {
-                getOwner().sendPacket(new PacketPlayerSyncScNotify(otherAvatar));
-            }
-            // Swap with other avatar
-            if (getEquips().containsKey(slot)) {
-                GameItem toSwap = this.getEquipBySlot(slot);
-                otherAvatar.equipItem(toSwap);
-            }
-        } else if (getEquips().containsKey(slot)) {
-            // Unequip item in current slot if it exists
-            GameItem unequipped = unequipItem(slot);
-            if (unequipped != null) {
-                getOwner().sendPacket(new PacketPlayerSyncScNotify(unequipped));
-            }
-        }
-
-        // Set equip
-        getEquips().put(slot, item);
-
-        // Save equip if equipped avatar was changed
-        if (item.setEquipAvatar(this)) {
-            item.save();
-        }
-
-        // Send packet
-        getOwner().sendPacket(new PacketPlayerSyncScNotify(this, item));
-        
-        return true;
-    }
-
-    public GameItem unequipItem(int slot) {
-        GameItem item = getEquips().remove(slot);
-
-        if (item != null) {
-            item.setEquipAvatar(null);
-            item.save();
-            return item;
-        }
-
-        return null;
-    }
-
     // Proto
 
     public Avatar toProto() {
-        return this.toProto(this.getAvatarId());
-    }
-    
-    public Avatar toProto(int baseAvatarId) {
         var proto = Avatar.newInstance()
-                .setBaseAvatarId(baseAvatarId)
+                .setIsMarked(this.isMarked())
+                .setBaseAvatarId(this.getAvatarId())
                 .setLevel(this.getLevel())
                 .setExp(this.getExp())
                 .setPromotion(this.getPromotion())
@@ -318,7 +243,7 @@ public class GameAvatar implements GameEntity {
                 proto.setEquipmentUniqueId(equip.getInternalUid());
             }
         }
-
+        
         for (var skill : getSkills().entrySet()) {
             proto.addSkilltreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));
         }
@@ -345,12 +270,10 @@ public class GameAvatar implements GameEntity {
 
     @Override
     public SceneEntityInfo toSceneEntityProto() {
-        //  TODO: Hacky way to set avatarId for avatar that has multi type
-        var avatarId = this.isMultiplePath() ? this.getMultiPathExcel().getBaseAvatarID() : this.getAvatarId();
         var proto = SceneEntityInfo.newInstance()
                 .setEntityId(this.getEntityId())
                 .setMotion(MotionInfo.newInstance().setPos(this.getPos().toProto()).setRot(this.getRot().toProto()))
-                .setActor(SceneActorInfo.newInstance().setBaseAvatarId(avatarId).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
+                .setActor(SceneActorInfo.newInstance().setBaseAvatarId(this.getAvatarId()).setAvatarType(AvatarType.AVATAR_FORMAL_TYPE));
 
         return proto;
     }
@@ -458,33 +381,15 @@ public class GameAvatar implements GameEntity {
         
         return proto;
     }
-    
-    public MultiPathAvatarTypeInfo toMultiPathAvatarProto() {
-        var equipmentInternalUid = getEquipment() == null ? 0 : getEquipment().getInternalUid();
-        var proto = MultiPathAvatarTypeInfo.newInstance()
-            .setAvatarIdValue(this.getAvatarId())
-            .setRank(this.getRank())
-            .setPathEquipmentId(equipmentInternalUid);
 
-        for (var skill : getSkills().entrySet()) {
-            proto.addSkillTreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));
-        }
-
-        for (var relic : getRelics()) {
-            var equipRelic = EquipRelic.newInstance()
-                .setRelicUniqueId(relic.getInternalUid())
-                .setSlot(relic.getEquipSlot()) ;
-
-            proto.addEquipRelicList(equipRelic);
-        }
-
-        return proto;
-    }
-    
     // Database
 
     public void save() {
         // Save avatar
         LunarCore.getGameDatabase().save(this);
+        // Save hero path
+        if (this.getMultiPath() != null) {
+            this.getMultiPath().save();
+        }
     }
 }

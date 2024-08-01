@@ -227,10 +227,17 @@ public class ResourceLoader {
         }
 
         // Load floor infos
-        for (File file : floorDir.listFiles()) {
+        for (var excel : GameData.getMapEntranceExcelMap().values()) {
+            String name = "P" + excel.getPlaneID() + "_F" + excel.getFloorID();
+            File file = new File(ConfigManager.getConfig().getResourceDir() + "/Config/LevelOutput/RuntimeFloor/" + name + ".json");
+            
+            if (!file.exists()) {
+                LunarCore.getLogger().warn("Missing floor info: " + name);
+                continue;
+            }
+
             try (FileReader reader = new FileReader(file)) {
                 FloorInfo floor = gson.fromJson(reader, FloorInfo.class);
-                String name = file.getName().substring(0, file.getName().indexOf('.'));
                 GameData.getFloorInfos().put(name, floor);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -254,6 +261,8 @@ public class ResourceLoader {
                     GroupInfo group = gson.fromJson(reader, GroupInfo.class);
                     group.setId(simpleGroup.getID());
                     
+                    // Load groups into the floor info
+                    floor.getGroupList().add(group);
                     floor.getGroups().put(simpleGroup.getID(), group);
                 } catch (Exception e) {
                     e.printStackTrace();

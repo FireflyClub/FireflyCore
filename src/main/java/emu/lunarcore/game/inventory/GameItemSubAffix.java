@@ -7,13 +7,13 @@ import emu.lunarcore.util.Utils;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
+@Getter @Setter 
 @Entity(useDiscriminator = false)
 public class GameItemSubAffix implements Comparable<GameItemSubAffix> {
     private int id; // Affix id
     
-    @Setter private int count;
-    @Setter private int step;
+    private int count;
+    private int step;
 	
     @Deprecated
     public GameItemSubAffix() {

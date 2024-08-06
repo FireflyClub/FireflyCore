@@ -548,7 +548,7 @@ public class CmdId {
     public static final int UseItemScRsp = 529;
     public static final int AddRelicFilterPlanScRsp = 558;
     public static final int GetMarkItemListScRsp = 576;
-    public static final int RelicRecommendCsReq = 567;
+    public static final int RelicRecommendCsReq = 2407;
     public static final int GetBagScRsp = 506;
     public static final int PromoteEquipmentCsReq = 511;
     public static final int DestroyItemScRsp = 523;
@@ -559,12 +559,12 @@ public class CmdId {
     public static final int AddEquipmentScNotify = 588;
     public static final int DiscardRelicScRsp = 569;
     public static final int DeleteRelicFilterPlanScRsp = 541;
-    public static final int RelicRecommendScRsp = 515;
+    public static final int RelicRecommendScRsp = 2424;
     public static final int ComposeLimitNumUpdateNotify = 516;
     public static final int ModifyRelicFilterPlanCsReq = 547;
     public static final int DestroyItemCsReq = 584;
     public static final int ExpUpEquipmentScRsp = 554;
-    public static final int RelicAvatarRecommendScRsp = 540;
+    public static final int RelicAvatarRecommendScRsp = 2417;
     public static final int ComposeSelectedRelicCsReq = 528;
     public static final int AddRelicFilterPlanCsReq = 553;
     public static final int LockRelicCsReq = 597;
@@ -575,7 +575,7 @@ public class CmdId {
     public static final int GetBagCsReq = 568;
     public static final int ExpUpRelicScRsp = 534;
     public static final int MarkRelicFilterPlanCsReq = 531;
-    public static final int RelicAvatarRecommendCsReq = 575;
+    public static final int RelicAvatarRecommendCsReq = 2415;
     public static final int ExchangeHcoinCsReq = 592;
     public static final int GetMarkItemListCsReq = 578;
     public static final int PromoteEquipmentScRsp = 543;

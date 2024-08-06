@@ -20,19 +20,14 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * uint32 NHMLENKIPMO = 3;
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      */
     private int delEntity;
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      */
     private final SceneEntityInfoOuterClass.SceneEntityInfo addEntity = SceneEntityInfoOuterClass.SceneEntityInfo.newInstance();
@@ -49,10 +44,10 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * uint32 NHMLENKIPMO = 3;
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return whether the delEntity field is set
      */
     public boolean hasDelEntity() {
@@ -61,10 +56,10 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * uint32 NHMLENKIPMO = 3;
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return this
      */
     public SceneEntityRefreshInfo clearDelEntity() {
@@ -75,10 +70,10 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * uint32 NHMLENKIPMO = 3;
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return the delEntity
      */
     public int getDelEntity() {
@@ -87,10 +82,10 @@ public final class SceneEntityRefreshInfoOuterClass {
 
     /**
      * <pre>
-     * ?
+     * uint32 NHMLENKIPMO = 3;
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @param value the delEntity to set
      * @return this
      */
@@ -101,11 +96,6 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      * @return whether the addEntity field is set
      */
@@ -114,11 +104,6 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      * @return this
      */
@@ -129,11 +114,6 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -148,11 +128,6 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -167,11 +142,6 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * uint32 DBAPDELOBEN = 14;
-     * </pre>
-     *
      * <code>optional .SceneEntityInfo add_entity = 5;</code>
      * @param value the addEntity to set
      * @return this
@@ -249,7 +219,7 @@ public final class SceneEntityRefreshInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(delEntity);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -277,7 +247,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 112: {
             // delEntity
             delEntity = input.readUInt32();
             bitField0_ |= 0x00000001;

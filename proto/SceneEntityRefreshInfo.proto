@@ -7,7 +7,5 @@ import "SceneEntityInfo.proto";
 message SceneEntityRefreshInfo {
 	SceneEntityInfo add_entity = 5;
 	//uint32 NHMLENKIPMO = 3;
-	//uint32 DBAPDELOBEN = 14;
-
-	uint32 del_entity = 3; //?
+	uint32 del_entity = 14;
 }

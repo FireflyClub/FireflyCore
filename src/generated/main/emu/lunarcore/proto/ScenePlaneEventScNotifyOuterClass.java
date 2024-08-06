@@ -13,10 +13,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ScenePlaneEventScNotifyOuterClass {
   /**
-   * <pre>
-   *  HCONDGFGEBI
-   * </pre>
-   *
    * Protobuf type {@code ScenePlaneEventScNotify}
    */
   public static final class ScenePlaneEventScNotify extends ProtoMessage<ScenePlaneEventScNotify> implements Cloneable {
@@ -31,10 +27,6 @@ public final class ScenePlaneEventScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  HCONDGFGEBI
-     * </pre>
-     *
      * @return a new empty instance of {@code ScenePlaneEventScNotify}
      */
     public static ScenePlaneEventScNotify newInstance() {

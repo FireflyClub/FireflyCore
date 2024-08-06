@@ -4,7 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemList.proto";
 
-// HCONDGFGEBI
 message ScenePlaneEventScNotify {
     ItemList get_item_list = 9;
 }

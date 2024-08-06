@@ -6,7 +6,7 @@ import emu.lunarcore.game.scene.entity.GameEntity;
 import emu.lunarcore.proto.SceneEntityRefreshInfoOuterClass.SceneEntityRefreshInfo;
 import emu.lunarcore.proto.SceneGroupRefreshInfoOuterClass.SceneGroupRefreshInfo;
 import emu.lunarcore.proto.SceneGroupRefreshScNotifyOuterClass.SceneGroupRefreshScNotify;
-import emu.lunarcore.proto.SceneGroupRefreshTypeOuterClass;
+import emu.lunarcore.proto.SceneGroupRefreshTypeOuterClass.SceneGroupRefreshType;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdId;
 
@@ -18,7 +18,7 @@ public class PacketSceneGroupRefreshScNotify extends BasePacket {
         var group = SceneGroupRefreshInfo.newInstance();
         
         // TODO: Maybe properly handle the refresh type?
-        group.setGroupRefreshType(SceneGroupRefreshTypeOuterClass.SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_LOADED);
+        group.setGroupRefreshType(SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_LOADED);
 
         if (toAdd != null) {
             group.setGroupId(toAdd.getGroupId());

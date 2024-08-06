@@ -8,19 +8,34 @@ import java.util.Map;
 public class LoginData {
     private Map<String, UserData> userDataMap = new LinkedHashMap<>();
 
-    public String getLoginPwdByAccount(String account) {
-        UserData userData = userDataMap.get(account);
+    public boolean isUserExist(String user) {
+        return userDataMap.containsKey(user);
+    }
+
+    public String getLoginPwdByUser(String user) {
+        UserData userData = userDataMap.get(user);
         return userData != null ? userData.getPwds() : null;
     }
 
-    public List<String> getDeviceIdsByAccount(String account) {
-        UserData userData = userDataMap.get(account);
+    public List<String> getDeviceIdsByUser(String user) {
+        UserData userData = userDataMap.get(user);
         return userData != null ? userData.getDeviceIds() : new ArrayList<>();
     }
 
-    public void update(String account, String pwd, List<String> deviceIds) {
-        UserData userData = new UserData(pwd, deviceIds);
-        userDataMap.put(account, userData);
+    public void update(String user, String pwd) {
+        UserData userData = new UserData(pwd, getDeviceIdsByUser(user));
+        userDataMap.put(user, userData);
+        ConfigManager.saveLoginData();
+    }
+    
+    public void update(String user, List<String> deviceIds) {
+        UserData userData = new UserData(getLoginPwdByUser(user), deviceIds);
+        userDataMap.put(user, userData);
+        ConfigManager.saveLoginData();
+    }
+    
+    public void delete(String user) {
+        userDataMap.remove(user);
         ConfigManager.saveLoginData();
     }
 

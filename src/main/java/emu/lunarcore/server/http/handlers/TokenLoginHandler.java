@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.account.Account;
-//import emu.lunarcore.server.http.context.DeviceHandler;
+import emu.lunarcore.server.http.context.DeviceHandler;
 import emu.lunarcore.server.http.objects.LoginResJson;
 import emu.lunarcore.server.http.objects.LoginResJson.VerifyData;
 import emu.lunarcore.server.http.objects.LoginTokenReqJson;
@@ -42,7 +42,7 @@ public class TokenLoginHandler implements Handler {
             res.message = "Game account cache information error";
         } else {
             // Device ID
-            //DeviceHandler.handleDeviceLimit(account, ctx, res);
+            DeviceHandler.handleDeviceLimit(account, ctx, res);
             
             res.message = "OK";
             res.data = new VerifyData(account.getUid(), account.getEmail(), req.token);

@@ -12,6 +12,8 @@ public class DeviceHandler {
             res.message = "Device ID not found.";
             return;
         }
+
         account.setDeviceId(deviceId);
+        account.save();
     }
 }

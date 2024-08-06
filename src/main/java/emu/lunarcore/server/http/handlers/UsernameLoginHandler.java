@@ -6,7 +6,7 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.game.account.AccountHelper;
-//import emu.lunarcore.server.http.context.DeviceHandler;
+import emu.lunarcore.server.http.context.DeviceHandler;
 import emu.lunarcore.server.http.objects.LoginAccountReqJson;
 import emu.lunarcore.server.http.objects.LoginResJson;
 import emu.lunarcore.server.http.objects.LoginResJson.VerifyData;
@@ -50,7 +50,7 @@ public class UsernameLoginHandler implements Handler {
             }
         } else {
             // Device ID
-            //DeviceHandler.handleDeviceLimit(account, ctx, res);
+            DeviceHandler.handleDeviceLimit(account, ctx, res);
 
             res.message = "OK";
             res.data = new VerifyData(account.getUid(), account.getEmail(), account.generateDispatchToken());

@@ -1,13 +1,9 @@
 package emu.lunarcore.command.commands;
 
-import java.util.Arrays;
-
 import emu.lunarcore.command.Command;
 import emu.lunarcore.command.CommandArgs;
 import emu.lunarcore.command.CommandHandler;
-import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.login.LoginManager;
-import emu.lunarcore.game.login.PasswordHandler;
 import emu.lunarcore.server.game.GameSession;
 
 @Command(label = "login", permission = {"player"}, requireTargetOnline = true, desc = "/login [account] [pwd]. Login to your account.")
@@ -28,38 +24,12 @@ public class LoginCommand implements CommandHandler {
             return;
         }
 
-        // Login task
-        String account = args.get(0);
-        String sendPwd = PasswordHandler.hashWithMD5(args.get(1));
+        // Check password
+        String sendUser = args.get(0);
+        String sendPwd = args.get(1);
         GameSession session = args.getSender().getSession();
         LoginManager loginManager = session.getLoginManager();
-        String accountPwd = LoginManager.getLoginPwdByAccount(account);
-        if (loginManager == null) {
-            args.sendMessage("You are not allowed to login.");
-            return;
-        }
-        if (accountPwd == null) {
-            args.sendMessage("Account not found.");
-            return;
-        }
-
-        // Check password
-        if (accountPwd.isEmpty()) {
-            // First login
-            args.sendMessage("Account first login, your passwoed is set as: " + args.get(1));
-
-            ConfigManager.getLoginData().update(account, sendPwd, Arrays.asList());
-            loginManager.loginSuccess(args.getSender());
-
-        } else if (accountPwd.equals(sendPwd)) {
-            // Login success with correct password
-            args.sendMessage("Login success.");
-
-            args.getSender().getAccount().removePermission("player");
-            loginManager.loginSuccess(args.getSender());
-        } else {
-            args.sendMessage("Incorrect password.");
-        }
+        loginManager.loginVerify(session.getPlayer(), sendUser, sendPwd);
         
     }
 

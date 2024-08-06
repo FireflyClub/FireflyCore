@@ -16,20 +16,17 @@ public class ConfigManager {
     public static File configFile = new File("./config/Config.json");
     public static File hotfixFile = new File("./config/Hotfix.json");
     public static File tagFile = new File("./config/Tag.json");
-    public static File remoteFile = new File("./config/Remote.json");
     public static File loginFile = new File("./config/Login.json");
 
     @Getter public static ConfigData config;
     @Getter public static HotfixData hotfixData;
     @Getter public static TagData tagData;
-    @Getter public static RemoteData remoteData;
     @Getter public static LoginData loginData;
 
     public static void loadConfigs() {
         loadConfig();
         loadHotfixData();
         loadTagData();
-        loadRemoteData();
         loadLoginData();
     }
     
@@ -124,33 +121,6 @@ public class ConfigManager {
     
         try (FileWriter fw = new FileWriter(ConfigManager.tagFile)) {
             fw.write(gson.toJson(ConfigManager.tagData));
-        } catch (Exception ex) {
-            // Ignored
-        }
-    }
-
-    public static void loadRemoteData() {
-        try (FileReader file = new FileReader(ConfigManager.remoteFile)) {
-            ConfigManager.remoteData = JsonUtils.loadToClass(file, RemoteData.class);
-        } catch (Exception e) {
-            ConfigManager.remoteData = null;
-        }
-
-        if (ConfigManager.remoteData == null) {
-            ConfigManager.remoteData = new RemoteData();
-        }
-
-        saveRemoteData();
-    }
-
-    public static void saveRemoteData() {
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .serializeNulls()
-                .create();
-    
-        try (FileWriter fw = new FileWriter(ConfigManager.remoteFile)) {
-            fw.write(gson.toJson(ConfigManager.remoteData));
         } catch (Exception ex) {
             // Ignored
         }

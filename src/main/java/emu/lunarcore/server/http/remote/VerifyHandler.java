@@ -18,7 +18,6 @@ public final class VerifyHandler implements Handler {
 
         int uid = req.uid;
         int reqCode = req.code;
-        String key = req.key;
         String ipAddress = IpAddressHandler.getClientIpAddress(ctx);
 
         // Check req formats
@@ -28,10 +27,6 @@ public final class VerifyHandler implements Handler {
         }
         if (reqCode == 0) {
             ctx.json(new RemoteRspJson(403, "The verification code was not entered."));
-            return;
-        }
-        if (key.isEmpty()) {
-            ctx.json(new RemoteRspJson(403, "The remote password was not entered."));
             return;
         }
 
@@ -55,14 +50,18 @@ public final class VerifyHandler implements Handler {
             return;
         }
 
-        // Save password
-        PasswordManager.saveRemotePwd(uid, key);
+        // Generate a 16-character random token
+        String randomToken = TokenHandler.generateRandomToken(16);
+
+        // Store the token in the map
+        TokenHandler tokenHandler = new TokenHandler();
+        tokenHandler.addToken(uid, randomToken);
 
         // Logs
-        LunarCore.getLogger().info(ipAddress + " set a key for " + uid);
-        sender.sendMessage(ipAddress + " set a key for you, your remote pwd is: " + key);
+        LunarCore.getLogger().info(ipAddress + " access remote control for " + uid);
+        sender.sendMessage(ipAddress + " apply a token for remote control: " + randomToken);
 
         // Response
-        ctx.json(new RemoteRspJson());
+        ctx.json(new RemoteRspJson(200, randomToken));
     }
 }

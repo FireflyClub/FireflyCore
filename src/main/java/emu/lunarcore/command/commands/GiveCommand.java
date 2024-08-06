@@ -67,6 +67,6 @@ public class GiveCommand implements CommandHandler {
         }
         
         // Add to player inventory
-        args.getOnlineTarget().getInventory().addItems(items, true);
+        args.getOnlineTarget().getInventory().addItems(items, false);
     }
 }

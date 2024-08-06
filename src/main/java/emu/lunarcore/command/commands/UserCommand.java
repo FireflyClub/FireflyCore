@@ -20,8 +20,8 @@ public class UserCommand implements CommandHandler {
             }
 
             String pwd = "";
-            if (args.size() == 2) {
-                pwd = PasswordHandler.hashWithMD5(args.get(1));
+            if (args.size() == 3) {
+                pwd = PasswordHandler.hashWithMD5(args.get(2));
             }
             
             ConfigManager.getLoginData().update(user, pwd);

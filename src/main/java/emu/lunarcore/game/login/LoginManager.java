@@ -69,7 +69,7 @@ public class LoginManager {
 
         if (userPwd.isEmpty()) {
             // First login
-            player.sendMessage("Account first login, your passwoed is set as: " + sendPwd);
+            player.sendMessage("Account first login, your password is set as: " + sendPwd);
             ConfigManager.getLoginData().update(sendUser, enPwd);
             return true;
         } else if (userPwd.equals(enPwd)) {

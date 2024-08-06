@@ -6,7 +6,7 @@ import java.time.ZoneOffset;
 import emu.lunarcore.util.Position;
 
 public class GameConstants {
-    public static String VERSION = "2.3.5";
+    public static String VERSION = "2.4.5";
     
     public static final ZoneOffset CURRENT_ZONEOFFSET = ZoneOffset.systemDefault().getRules().getOffset(Instant.now());
     public static final int CURRENT_TIMEZONE = CURRENT_ZONEOFFSET.getTotalSeconds() / 3600;
@@ -67,7 +67,7 @@ public class GameConstants {
     public static final int[] ENABLE_ACTIVITY_TYPES = { 18, 34 };
     
     // Custom
-    public static final int SERVER_CHATROOM_UID = 98;
-    public static final int SERVER_CONSOLE_UID = 99;
+    public static final int SERVER_CONSOLE_UID = 98;
+    public static final int SERVER_CHATROOM_UID = 99;
     public static final int EQUIPMENT_SLOT_ID = 100;
 }

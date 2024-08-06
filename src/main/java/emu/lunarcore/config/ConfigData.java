@@ -34,8 +34,8 @@ public class ConfigData {
     @Getter
     public static class DatabaseInfo {
         public String uri = "mongodb://localhost:27017";
-        public String collection = "lunarcore";
-        public boolean useInternal = true;
+        public String collection = "jokersr";
+        public boolean useInternal = false;
     }
 
     @Getter
@@ -173,7 +173,7 @@ public class ConfigData {
         public int level = 70;
         public int headIcon = 202007;
         public int chatBubbleId = 0;
-        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1218, 80), new ServerDisplayAvatar(1221, 80));
+        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1220, 80), new ServerDisplayAvatar(1222, 80));
         
         @Getter
         public static class ServerDisplayAvatar {
@@ -194,7 +194,7 @@ public class ConfigData {
         public int level = 70;
         public int headIcon = 202016;
         public int chatBubbleId = 0;
-        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1224, 1));
+        public List<ServerDisplayAvatar> displayAvatars = List.of(new ServerDisplayAvatar(1223, 80));
         
         @Getter
         public static class ServerDisplayAvatar {

@@ -6,43 +6,46 @@ import emu.lunarcore.GameConstants;
 import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.game.inventory.GameItem;
 import emu.lunarcore.game.player.Player;
+import emu.lunarcore.server.game.Syncable;
 import emu.lunarcore.server.packet.send.PacketPlayerSyncScNotify;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 
-public interface IAvatar {
-    public ObjectId getId();
+public abstract class BaseAvatar implements Syncable {
+    // Properties
     
-    public Player getOwner();
+    public abstract ObjectId getId();
     
-    public AvatarData getData();
+    public abstract Player getOwner();
+    
+    public abstract AvatarData getData();
     
     // Excels
     
-    public int getExcelId();
+    public abstract int getExcelId();
     
-    public AvatarExcel getExcel();
+    public abstract AvatarExcel getExcel();
     
     // Equip handlers
     
-    public default Int2ObjectMap<GameItem> getEquips() {
+    public Int2ObjectMap<GameItem> getEquips() {
         return this.getData().getEquips();
     }
     
-    public default GameItem getEquipBySlot(int slot) {
+    public GameItem getEquipBySlot(int slot) {
         return this.getEquips().get(slot);
     }
     
-    public default GameItem getEquipment() {
+    public GameItem getEquipment() {
         return this.getEquips().get(GameConstants.EQUIPMENT_SLOT_ID);
     }
     
-    public default boolean equipItem(GameItem item) {
+    public boolean equipItem(GameItem item) {
         // Sanity check
         int slot = item.getEquipSlot();
         if (slot == 0) return false;
 
         // Check if other avatars have this item equipped
-        IAvatar otherAvatar = item.getEquipAvatar();
+        BaseAvatar otherAvatar = item.getEquipAvatar();
         if (otherAvatar != null) {
             // Unequip this item from the other avatar
             if (otherAvatar.unequipItem(slot) != null) {
@@ -75,7 +78,7 @@ public interface IAvatar {
         return true;
     }
 
-    public default GameItem unequipItem(int slot) {
+    public GameItem unequipItem(int slot) {
         GameItem item = getEquips().remove(slot);
 
         if (item != null) {

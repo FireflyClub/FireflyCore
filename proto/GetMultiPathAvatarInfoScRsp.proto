@@ -7,7 +7,7 @@ import "MultiPathAvatarType.proto";
 
 message GetMultiPathAvatarInfoScRsp {
 	uint32 retcode = 3;
-	repeated MultiPathAvatarTypeInfo multi_avatar_type_info_list = 2;
+	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 2;
 	repeated uint32 multi_avatar_type_id_list = 4;
 	map<uint32, MultiPathAvatarType> current_multi_avatar_id = 13;
 }

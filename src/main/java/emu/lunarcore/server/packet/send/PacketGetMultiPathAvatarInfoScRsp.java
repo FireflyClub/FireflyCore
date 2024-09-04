@@ -15,7 +15,7 @@ public class PacketGetMultiPathAvatarInfoScRsp extends BasePacket {
         var data = GetMultiPathAvatarInfoScRsp.newInstance();
         
         for (AvatarMultiPath path : player.getAvatars().getMultiPaths().values()) {
-            data.addMultiAvatarTypeInfoList(path.toProto());
+            data.addMultiPathAvatarInfoList(path.toProto());
         }
         
         for (var entry : player.getCurAvatarPaths().entrySet()) {

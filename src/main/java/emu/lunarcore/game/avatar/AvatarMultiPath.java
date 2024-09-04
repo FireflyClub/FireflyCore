@@ -15,12 +15,13 @@ import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.AvatarSkillTreeOuterClass.AvatarSkillTree;
 import emu.lunarcore.proto.EquipRelicOuterClass.EquipRelic;
 import emu.lunarcore.proto.MultiPathAvatarTypeInfoOuterClass.MultiPathAvatarTypeInfo;
+import emu.lunarcore.proto.PlayerSyncScNotifyOuterClass.PlayerSyncScNotify;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Entity(value = "multiPaths", useDiscriminator = false)
-public class AvatarMultiPath implements IAvatar {
+public class AvatarMultiPath extends BaseAvatar {
     @Id private ObjectId id;
     @Indexed private int ownerUid;
     
@@ -61,7 +62,13 @@ public class AvatarMultiPath implements IAvatar {
     public Map<Integer, Integer> getSkills() {
         return this.getData().getSkills();
     }
-    
+
+    // Player sync
+    public void onSync(PlayerSyncScNotify proto) {
+        proto.addMultiPathAvatarInfoList(this.toProto());
+    }
+
+    // Proto
     public MultiPathAvatarTypeInfo toProto() {
         var proto = MultiPathAvatarTypeInfo.newInstance()
                 .setAvatarIdValue(this.getExcelId())
@@ -83,6 +90,7 @@ public class AvatarMultiPath implements IAvatar {
         return proto;
     }
     
+    // Database
     public void save() {
         LunarCore.getGameDatabase().save(this);
     }

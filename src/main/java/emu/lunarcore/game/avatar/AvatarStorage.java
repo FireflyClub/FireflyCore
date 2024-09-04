@@ -42,8 +42,8 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<GameAva
     
     // Base avatars
     
-    public IAvatar getBaseAvatarById(int id) {
-        IAvatar baseAvatar = this.getMultiPathById(id);
+    public BaseAvatar getBaseAvatarById(int id) {
+        BaseAvatar baseAvatar = this.getMultiPathById(id);
         if (baseAvatar == null) {
             baseAvatar = this.getAvatarById(id);
         }
@@ -51,8 +51,8 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<GameAva
         return baseAvatar;
     }
     
-    public IAvatar getBaseAvatarById(ObjectId id) {
-        IAvatar baseAvatar = this.getMultiPathById(id);
+    public BaseAvatar getBaseAvatarById(ObjectId id) {
+        BaseAvatar baseAvatar = this.getMultiPathById(id);
         if (baseAvatar == null) {
             baseAvatar = this.getAvatarById(id);
         }

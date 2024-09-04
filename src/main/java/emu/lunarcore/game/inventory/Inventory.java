@@ -14,7 +14,7 @@ import emu.lunarcore.data.excel.AvatarExcel;
 import emu.lunarcore.data.excel.ItemExcel;
 import emu.lunarcore.game.avatar.AvatarStorage;
 import emu.lunarcore.game.avatar.GameAvatar;
-import emu.lunarcore.game.avatar.IAvatar;
+import emu.lunarcore.game.avatar.BaseAvatar;
 import emu.lunarcore.game.enums.ItemMainType;
 import emu.lunarcore.game.enums.ItemSubType;
 import emu.lunarcore.game.inventory.tabs.EquipInventoryTab;
@@ -554,7 +554,7 @@ public class Inventory extends BasePlayerManager {
     // Equips
 
     public boolean equipItem(int avatarId, int equipId) {
-        IAvatar avatar = getPlayer().getAvatars().getBaseAvatarById(avatarId);
+        BaseAvatar avatar = getPlayer().getAvatars().getBaseAvatarById(avatarId);
         GameItem item = this.getItemByUid(equipId);
 
         if (avatar != null && item != null) {
@@ -565,7 +565,7 @@ public class Inventory extends BasePlayerManager {
     }
 
     public boolean unequipItem(int avatarId, int slot) {
-        IAvatar avatar = getPlayer().getAvatars().getBaseAvatarById(avatarId);
+        BaseAvatar avatar = getPlayer().getAvatars().getBaseAvatarById(avatarId);
 
         if (avatar != null) {
             GameItem unequipped = avatar.unequipItem(slot);
@@ -614,7 +614,7 @@ public class Inventory extends BasePlayerManager {
 
         // Equip to a character if possible
         if (item.isEquipped() || item.getEquipAvatarExcelId() > 0) {
-            IAvatar avatar = null;
+            BaseAvatar avatar = null;
             boolean hasEquipped = false;
             
             if (item.getEquipAvatarExcelId() > 0) {

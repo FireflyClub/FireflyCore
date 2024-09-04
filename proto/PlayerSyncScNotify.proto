@@ -32,7 +32,7 @@ message PlayerSyncScNotify {
 	//DFILOMFFAFD GHOCFMLGIHN = 3;
 	//repeated GroupStatus HKGBLMADMHC = 1100;
 	repeated Material material_list = 14;
-	repeated MultiPathAvatarTypeInfo multi_avatar_type_info_list = 1834;
+	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 1834;
 	ItemList HEPOLAAEBGF = 969;
 	//CBPBLOPAOCM FMKEFNEFDAA = 1221;
 

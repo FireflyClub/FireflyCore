@@ -28,6 +28,7 @@ import emu.lunarcore.proto.DisplayRelicInfoOuterClass.DisplayRelicInfo;
 import emu.lunarcore.proto.EquipRelicOuterClass.EquipRelic;
 import emu.lunarcore.proto.LineupAvatarOuterClass.LineupAvatar;
 import emu.lunarcore.proto.MotionInfoOuterClass.MotionInfo;
+import emu.lunarcore.proto.PlayerSyncScNotifyOuterClass.PlayerSyncScNotify;
 import emu.lunarcore.proto.SceneActorInfoOuterClass.SceneActorInfo;
 import emu.lunarcore.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.lunarcore.proto.SpBarInfoOuterClass.SpBarInfo;
@@ -40,7 +41,7 @@ import lombok.Setter;
 
 @Getter
 @Entity(value = "avatars", useDiscriminator = false)
-public class GameAvatar implements GameEntity, IAvatar {
+public class GameAvatar extends BaseAvatar implements GameEntity {
     @Id private ObjectId id;
     @Indexed @Getter private int ownerUid; // Uid of player that this avatar belongs to
 
@@ -221,6 +222,18 @@ public class GameAvatar implements GameEntity, IAvatar {
     
     public void addBuff(int buffId, int duration) {
         this.buffs.put(buffId, System.currentTimeMillis() + (duration * 1000));
+    }
+    
+    // Player sync
+    
+    public void onSync(PlayerSyncScNotify proto) {
+        // Add to avatar sync
+        proto.getMutableAvatarSync().addAvatarList(this.toProto());
+        
+        // Also update multipath info
+        if (this.getMultiPath() != null) {
+            proto.addMultiPathAvatarInfoList(this.getMultiPath().toProto());
+        }
     }
     
     // Proto

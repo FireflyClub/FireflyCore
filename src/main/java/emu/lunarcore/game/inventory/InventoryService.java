@@ -532,12 +532,14 @@ public class InventoryService extends BaseGameService {
         // Lock items
         for (int equipId : list) {
             GameItem item = player.getInventory().getItemByUid(equipId);
-            if (item == null || !item.getExcel().isEquippable()) {
+            if (item == null || !item.getExcel().isEquippable() || item.isDiscarded()) {
                 continue;
             }
             
             item.setLocked(locked);
             item.save();
+            
+            items.add(item);
         }
         
         // Send packet
@@ -550,15 +552,17 @@ public class InventoryService extends BaseGameService {
         // List of items to update on the client
         List<GameItem> items = new ArrayList<>();
         
-        // Lock items
+        // Discard items
         for (int equipId : list) {
             GameItem item = player.getInventory().getItemByUid(equipId);
-            if (item == null || !item.getExcel().isEquippable()) {
+            if (item == null || !item.getExcel().isEquippable() || item.isLocked()) {
                 continue;
             }
             
             item.setDiscarded(discarded);
             item.save();
+            
+            items.add(item);
         }
         
         // Send packet

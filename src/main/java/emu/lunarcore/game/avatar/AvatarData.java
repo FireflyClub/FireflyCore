@@ -20,7 +20,7 @@ public class AvatarData {
     @Setter private int rank; // Eidolons
     private Int2IntMap skills; // Skill tree
     
-    @Setter private transient IAvatar baseAvatar;
+    @Setter private transient BaseAvatar baseAvatar;
     private transient Int2ObjectMap<GameItem> equips;
         
     @Deprecated // Morphia only

@@ -13,7 +13,7 @@ import emu.lunarcore.data.GameDepot;
 import emu.lunarcore.data.excel.ItemExcel;
 import emu.lunarcore.data.excel.RelicMainAffixExcel;
 import emu.lunarcore.data.excel.RelicSubAffixExcel;
-import emu.lunarcore.game.avatar.IAvatar;
+import emu.lunarcore.game.avatar.BaseAvatar;
 import emu.lunarcore.game.enums.AvatarPropertyType;
 import emu.lunarcore.game.enums.ItemMainType;
 import emu.lunarcore.game.player.Player;
@@ -21,7 +21,9 @@ import emu.lunarcore.proto.EquipmentOuterClass.Equipment;
 import emu.lunarcore.proto.ItemOuterClass.Item;
 import emu.lunarcore.proto.MaterialOuterClass.Material;
 import emu.lunarcore.proto.PileItemOuterClass.PileItem;
+import emu.lunarcore.proto.PlayerSyncScNotifyOuterClass.PlayerSyncScNotify;
 import emu.lunarcore.proto.RelicOuterClass.Relic;
+import emu.lunarcore.server.game.Syncable;
 import emu.lunarcore.util.Utils;
 import emu.lunarcore.util.WeightedList;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
@@ -31,7 +33,7 @@ import lombok.Setter;
 
 @Getter
 @Entity(value = "items", useDiscriminator = false)
-public class GameItem {
+public class GameItem implements Syncable {
     @Id private ObjectId id;
     @Indexed private int ownerUid; // Uid of player that this avatar belongs to
 
@@ -53,7 +55,7 @@ public class GameItem {
     private List<GameItemSubAffix> subAffixes;
 
     @Indexed private ObjectId equipAvatarId; // Object id of the avatar this item is equipped to
-    private transient IAvatar equipAvatar;
+    private transient BaseAvatar equipAvatar;
     
     @LoadOnly @AlsoLoad("equipAvatar")
     private int equipAvatarExcelId; // Deprecated legacy field
@@ -151,7 +153,7 @@ public class GameItem {
         return false;
     }
 
-    public boolean setEquipAvatar(IAvatar baseAvatar) {
+    public boolean setEquipAvatar(BaseAvatar baseAvatar) {
         if (baseAvatar == null && this.isEquipped()) {
             this.equipAvatarId = null;
             this.equipAvatar = null;
@@ -269,6 +271,33 @@ public class GameItem {
             LunarCore.getGameDatabase().save(this);
         } else if (this.getId() != null) {
             LunarCore.getGameDatabase().delete(this);
+        }
+    }
+    
+    // Player sync
+    
+    public void onSync(PlayerSyncScNotify proto) {
+        switch (this.getExcel().getItemMainType().getTabType()) {
+            case MATERIAL -> {
+                proto.addMaterialList(this.toMaterialProto());
+            }
+            case RELIC -> {
+                if (this.getCount() > 0) {
+                    proto.addRelicList(this.toRelicProto());
+                } else {
+                    proto.addDelRelicList(this.getInternalUid());
+                }
+            }
+            case EQUIPMENT -> {
+                if (this.getCount() > 0) {
+                    proto.addEquipmentList(this.toEquipmentProto());
+                } else {
+                    proto.addDelEquipmentList(this.getInternalUid());
+                }
+            }
+            default -> {
+                // Skip
+            }
         }
     }
 

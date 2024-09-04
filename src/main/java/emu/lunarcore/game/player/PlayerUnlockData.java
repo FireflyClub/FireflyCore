@@ -7,6 +7,8 @@ import emu.lunarcore.LunarCore;
 import emu.lunarcore.data.GameData;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.enums.PersonalizeShowType;
+import emu.lunarcore.proto.PlayerSyncScNotifyOuterClass.PlayerSyncScNotify;
+import emu.lunarcore.server.game.Syncable;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.send.PacketPlayerSyncScNotify;
 import emu.lunarcore.server.packet.send.PacketUnlockChatBubbleScNotify;
@@ -17,7 +19,7 @@ import lombok.Getter;
 
 @Getter
 @Entity(value = "unlocks", useDiscriminator = false)
-public class PlayerUnlockData {
+public class PlayerUnlockData implements Syncable {
     private transient Player owner;
     
     @Id private int ownerUid;
@@ -89,7 +91,7 @@ public class PlayerUnlockData {
         boolean success = this.getHeadIcons().add(headIconId);
         
         if (success && this.getOwner().isLoggedIn()) {
-            this.sendPacket(new PacketPlayerSyncScNotify(getOwner().toBoardData()));
+            this.sendPacket(new PacketPlayerSyncScNotify(this));
             this.save();
         }
     }
@@ -115,6 +117,14 @@ public class PlayerUnlockData {
     private void sendPacket(BasePacket packet) {
         this.getOwner().sendPacket(packet);
     }
+    
+    // Player sync
+    
+    public void onSync(PlayerSyncScNotify proto) {
+        proto.setBoardDataSync(this.getOwner().toBoardData());
+    }
+    
+    // Database
 
     public void save() {
         LunarCore.getGameDatabase().save(this);

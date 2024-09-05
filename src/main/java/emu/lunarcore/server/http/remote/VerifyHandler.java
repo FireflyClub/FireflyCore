@@ -2,7 +2,8 @@ package emu.lunarcore.server.http.remote;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.player.Player;
-import emu.lunarcore.server.http.context.IpAddressHandler;
+import emu.lunarcore.server.http.module.IpAddressHandler;
+import emu.lunarcore.server.http.module.TokenHandler;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
@@ -54,8 +55,7 @@ public final class VerifyHandler implements Handler {
         String randomToken = TokenHandler.generateRandomToken(16);
 
         // Store the token in the map
-        TokenHandler tokenHandler = new TokenHandler();
-        tokenHandler.addToken(uid, randomToken);
+        TokenHandler.getInstance().addToken(uid, randomToken);
 
         // Logs
         LunarCore.getLogger().info(ipAddress + " access remote control for " + uid);

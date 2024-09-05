@@ -2,7 +2,8 @@ package emu.lunarcore.server.http.remote;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.player.Player;
-import emu.lunarcore.server.http.context.IpAddressHandler;
+import emu.lunarcore.server.http.module.IpAddressHandler;
+import emu.lunarcore.server.http.module.TokenHandler;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;
@@ -39,8 +40,7 @@ public final class PlayerRemoteHandler implements Handler {
         }
 
         // Check if key is set before
-        TokenHandler tokenHandler = new TokenHandler();
-        String setKey = tokenHandler.getTokenByUid(uid);
+        String setKey = TokenHandler.getInstance().getTokenByUid(uid);
         if (setKey == null) {
             ctx.json(new RemoteRspJson(500, "The player remote password is not set."));
             return;

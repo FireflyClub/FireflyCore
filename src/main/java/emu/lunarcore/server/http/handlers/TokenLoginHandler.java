@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.account.Account;
-import emu.lunarcore.server.http.context.DeviceHandler;
+import emu.lunarcore.server.http.module.DeviceHandler;
 import emu.lunarcore.server.http.objects.LoginResJson;
 import emu.lunarcore.server.http.objects.LoginResJson.VerifyData;
 import emu.lunarcore.server.http.objects.LoginTokenReqJson;

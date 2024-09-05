@@ -1,4 +1,4 @@
-package emu.lunarcore.server.http.context;
+package emu.lunarcore.server.http.module;
 
 import emu.lunarcore.game.account.Account;
 import emu.lunarcore.server.http.objects.LoginResJson;

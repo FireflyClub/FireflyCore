@@ -2,7 +2,7 @@ package emu.lunarcore.server.http.remote;
 
 import emu.lunarcore.LunarCore;
 import emu.lunarcore.game.player.Player;
-import emu.lunarcore.server.http.context.IpAddressHandler;
+import emu.lunarcore.server.http.module.IpAddressHandler;
 import emu.lunarcore.server.http.objects.RemoteReqJson;
 import emu.lunarcore.server.http.objects.RemoteRspJson;
 import emu.lunarcore.util.JsonUtils;

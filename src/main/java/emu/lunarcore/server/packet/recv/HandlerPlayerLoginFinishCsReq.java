@@ -1,6 +1,5 @@
 package emu.lunarcore.server.packet.recv;
 
-import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.game.login.LoginManager;
 import emu.lunarcore.server.game.GameSession;
 import emu.lunarcore.server.packet.CmdId;
@@ -25,16 +24,7 @@ public class HandlerPlayerLoginFinishCsReq extends PacketHandler {
         // Banner announcement
         session.send(new PacketServerAnnounceNotify(session.getAccount()));
 
-        // Login moudle
-        if (ConfigManager.getConfig().getAccountOptions().useLogin) {
-            // Remove login status
-            if (session.getAccount().hasPermission("support")) {
-                session.getAccount().addPermission("player");
-                session.getAccount().removePermission("support");
-            }
-            session.loginManager = new LoginManager();
-            session.loginManager.startLogin(session);
-        }
+        // Login module
+        LoginManager.handleLoginPerm(session);
     }
-
 }

@@ -26,6 +26,24 @@ public class LoginManager {
         loginManager.startLogin(session);
     }
 
+    public static void handleLoginPerm(GameSession session) {
+        if (ConfigManager.getConfig().getAccountOptions().useLogin) {
+            // Remove login status
+            if (session.getAccount().hasPermission("support")) {
+                session.getAccount().addPermission("player");
+                session.getAccount().removePermission("support");
+            }
+            session.loginManager = new LoginManager();
+            session.loginManager.startLogin(session);
+        } else {
+            // Add verified status
+            if (session.getAccount().hasPermission("player")) {
+                session.getAccount().addPermission("support");
+                session.getAccount().removePermission("player");
+            }
+        }
+    }
+
     public void startLogin(GameSession session) {
         if (ConfigManager.getConfig().getAccountOptions().adminLoginSkip &&
             session.getAccount().hasPermission("admin")) {

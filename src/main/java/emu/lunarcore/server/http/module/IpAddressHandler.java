@@ -1,4 +1,4 @@
-package emu.lunarcore.server.http.context;
+package emu.lunarcore.server.http.module;
 
 import io.javalin.http.Context;
 

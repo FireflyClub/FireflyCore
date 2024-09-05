@@ -1,13 +1,19 @@
-package emu.lunarcore.server.http.remote;
+package emu.lunarcore.server.http.module;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
 public class TokenHandler {
+    private static final TokenHandler instance = new TokenHandler();
     private Map<Integer, String> tokenMap;
-    public TokenHandler() {
+
+    private TokenHandler() {
         tokenMap = new HashMap<>();
+    }
+
+    public static TokenHandler getInstance() {
+        return instance;
     }
 
     public void addToken(int uid, String token) {

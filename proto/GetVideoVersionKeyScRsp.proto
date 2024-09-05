@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "VideoKeyInfo.proto";
+
+message GetVideoVersionKeyScRsp {
+	uint32 retcode = 5;
+	repeated VideoKeyInfo video_key_list = 7;
+	repeated VideoKeyInfo activity_video_key_list = 2;
+}

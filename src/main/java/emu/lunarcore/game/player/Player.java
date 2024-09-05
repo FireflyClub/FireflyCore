@@ -178,7 +178,7 @@ public class Player implements Tickable, Syncable {
         this.setLevel(ConfigManager.getConfig().getServerOptions().startTrailblazerLevel);
         
         // Setup player data
-        this.name = GameConstants.DEFAULT_NAME;
+        this.name = getAccount().getUsername();
         this.signature = "";
         this.phoneTheme = 221000;
         this.chatBubble = 220000;

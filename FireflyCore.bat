@@ -27,7 +27,7 @@ set JAVA_EXE="java"
     if errorlevel 1 goto process_execute
 
 :process_execute
-    start "" %JAVA_EXE% -jar JokerSR-LC.jar
+    start "" %JAVA_EXE% -jar FireflyCore.jar
     goto end
 
 :end

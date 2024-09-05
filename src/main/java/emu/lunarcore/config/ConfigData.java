@@ -34,7 +34,7 @@ public class ConfigData {
     @Getter
     public static class DatabaseInfo {
         public String uri = "mongodb://localhost:27017";
-        public String collection = "jokersr";
+        public String collection = "FireflyCore";
         public boolean useInternal = false;
     }
 
@@ -99,9 +99,9 @@ public class ConfigData {
 
     @Getter
     public static class GameServerConfig extends ServerConfig {
-        public String id = "Joker";
-        public String name = "Joker-Server";
-        public String description = "JokerSR-LC";
+        public String id = "FireflyCore";
+        public String name = "FireflyCore";
+        public String description = "FireflyCore";
         public int kcpInterval = 40;
         public Integer kcpTimeout = 30;
 
@@ -168,7 +168,7 @@ public class ConfigData {
     
     @Getter
     public static class ServerProfile {
-        public String name = "JokerSR-Console";
+        public String name = "FireflyCore-Console";
         public String signature = "Type /help for a list of the modified commands.";
         public int level = 70;
         public int headIcon = 202007;
@@ -189,7 +189,7 @@ public class ConfigData {
 
     @Getter
     public static class ServerChatProfile {
-        public String name = "JokerSR-World";
+        public String name = "FireflyCore-World";
         public String signature = "Be free chating here!";
         public int level = 70;
         public int headIcon = 202016;
@@ -216,9 +216,9 @@ public class ConfigData {
         public List<ItemParam> attachments;
         
         public WelcomeMail() {
-            this.title = "Welcome to a JokerSR-Server";
-            this.sender = "Joker";
-            this.content = "Welcome to JokerSR-Server, a modified version of LunarCore.";
+            this.title = "Welcome to a FireflyCore";
+            this.sender = "FireflyCore";
+            this.content = "Welcome to FireflyCore, a modified version of LunarCore.";
             this.attachments = List.of(
                 new ItemParam(2, 1000000),
                 new ItemParam(101, 1000),
@@ -239,8 +239,8 @@ public class ConfigData {
     @Getter
     public static class AnnounceData {
         public boolean useBanner = false;
-        public String bannerText = "JokerSR-LC By Lethe";
-        public String adminBannerText = "JokerSR-LC By Lethe (Admin Access)";
+        public String bannerText = "FireflyCore By Lethe";
+        public String adminBannerText = "FireflyCore By Lethe (Admin Access)";
         public int bannerFrequency = 0;
     }
 

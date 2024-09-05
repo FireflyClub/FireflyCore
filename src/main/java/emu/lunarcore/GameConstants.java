@@ -12,7 +12,6 @@ public class GameConstants {
     public static final int CURRENT_TIMEZONE = CURRENT_ZONEOFFSET.getTotalSeconds() / 3600;
 
     // Game
-    public static final String DEFAULT_NAME = "Joker";
     public static final int[] DEFAULT_HEAD_ICONS = {208001, 208002};
     public static final int DEFAULT_WORLD_ID = 101;
     public static final int TRAILBLAZER_AVATAR_ID = 8001;

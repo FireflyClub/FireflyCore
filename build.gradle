@@ -140,7 +140,7 @@ jar {
     }
 
     jar {
-        archiveBaseName = 'JokerSR-LC'
+        archiveBaseName = 'FireflyCore'
         archiveVersion = ''
     }
 

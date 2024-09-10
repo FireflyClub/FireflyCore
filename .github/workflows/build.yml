@@ -1,19 +1,6 @@
 name: Build LunarCore
 on:
-  workflow_dispatch: ~
-  push:
-    paths:
-      - "**.java"
-    branches:
-      - main
-      - development
-  pull_request:
-    paths:
-      - "**.java"
-    types:
-      - opened
-      - synchronize
-      - reopened
+  workflow_dispatch:
 jobs:
   Build:
     runs-on: ubuntu-latest

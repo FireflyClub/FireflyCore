@@ -1,38 +1,46 @@
 [
-    {
-      "activityId": 1005801,
-      "moduleId": 10058,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    },
-    {
-      "activityId": 2003900,
-      "moduleId": 20039,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    },
-    {
-      "activityId": 5001500,
-      "moduleId": 50015,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    },
-    {
-      "activityId": 5001500,
-      "moduleId": 150015,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    },
-    {
-      "activityId": 5001701,
-      "moduleId": 50017,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    },
-    {
-      "activityId": 5002001,
-      "moduleId": 50020,
-      "beginTime": 1664308800,
-      "endTime": 4294967295
-    }
-  ]
+  {
+    "moduleId": 10061,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": "Treasures Lightward: High Difficulty"
+  },
+  {
+    "activityId": 2004600,
+    "moduleId": 20046,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": ""
+  },
+  {
+    "activityId": 6001501,
+    "moduleId": 60016,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": "Simulated Universe: Unknowable Domain"
+  },
+  {
+    "activityId": 5002201,
+    "moduleId": 50022,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": "Sound Hunt Ninjutsu Inscription",
+    "contentId": 130013
+  },
+  {
+    "activityId": 3001101,
+    "moduleId": 30011,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": "Mr. Cold Feet's Shop",
+    "contentId": 130011
+  },
+  {
+    "activityId": 3001201,
+    "moduleId": 30012,
+    "beginTime": 1664308800,
+    "endTime": 4294967295,
+    "tabName": "Shadow of the Ranger",
+    "contentId": 130012
+  }
+]

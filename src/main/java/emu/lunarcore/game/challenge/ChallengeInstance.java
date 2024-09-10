@@ -403,7 +403,8 @@ public class ChallengeInstance {
                     proto
                         .getMutableExtInfo()
                         .getMutableCurBossBuffs()
-                        .addBuffList(buffId);
+                        .addBuffList(buffId)
+                        .setBossBuffId(1);
                 }
             }
         }

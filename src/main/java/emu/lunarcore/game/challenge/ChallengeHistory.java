@@ -68,7 +68,7 @@ public class ChallengeHistory {
         }
     }
     
-    public Challenge toProto() {
+    public Challenge toProto(Player player) {
         var proto =  Challenge.newInstance()
                 .setChallengeId(this.getChallengeId())
                 .setTakenReward(this.getTakenReward())
@@ -81,17 +81,23 @@ public class ChallengeHistory {
         var info = proto.getMutableExtInfo().getMutableBossInfo();
         
         if (getFirstNodeData() != null && getSecondNodeData() != null) {
+            info.setCPNMHNAFDJM(true);
+            
             for (var avatarId: getFirstNodeData().getAvatarIds()) {
-                info.addLineup1(avatarId);
-                info.addAllRelics(ChallengeBossInfo.RelicsEntry.newInstance().setKey(avatarId));
-                info.addAllEquipments(ChallengeBossInfo.EquipmentsEntry.newInstance().setKey(avatarId));
+                var avatar = player.getAvatarById(avatarId);
+                if(avatar == null) continue;
+                info.addLineup1(avatar.getAvatarId());
+                info.addAllRelics(ChallengeBossInfo.RelicsEntry.newInstance().setKey(avatar.getAvatarId()));
+                info.addEquipments(ChallengeBossInfo.EquipmentsEntry.newInstance().setKey(avatar.getAvatarId()));
             }
 
             for (var avatarId: getSecondNodeData().getAvatarIds()) {
-                info.addLineup2(avatarId);
-                info.addAllRelics(ChallengeBossInfo.RelicsEntry.newInstance().setKey(avatarId));
-                info.addAllEquipments(ChallengeBossInfo.EquipmentsEntry.newInstance().setKey(avatarId));
-            }
+                var avatar = player.getAvatarById(avatarId);
+                if(avatar == null) continue;
+                info.addLineup2(avatar.getAvatarId());
+                info.addAllRelics(ChallengeBossInfo.RelicsEntry.newInstance().setKey(avatar.getAvatarId()));
+                info.addEquipments(ChallengeBossInfo.EquipmentsEntry.newInstance().setKey(avatar.getAvatarId()));
+            }          
             
             // set node info
             info.getMutableFirstNode()

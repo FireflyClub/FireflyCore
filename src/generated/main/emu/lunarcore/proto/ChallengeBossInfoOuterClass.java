@@ -30,16 +30,7 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     */
-    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo firstNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      */
     private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo secondNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
@@ -48,18 +39,27 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup2 = 5;</code>
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      */
-    private final RepeatedInt lineup2 = RepeatedInt.newEmptyInstance();
+    private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo firstNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      */
     private final RepeatedInt lineup1 = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     */
+    private final RepeatedInt lineup2 = RepeatedInt.newEmptyInstance();
 
     /**
      * <code>repeated .ChallengeBossInfo.RelicsEntry relics = 1;</code>
@@ -123,10 +123,10 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     * @return whether the firstNode field is set
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
+     * @return whether the secondNode field is set
      */
-    public boolean hasFirstNode() {
+    public boolean hasSecondNode() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
@@ -135,89 +135,11 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     * @return this
-     */
-    public ChallengeBossInfo clearFirstNode() {
-      bitField0_ &= ~0x00000002;
-      firstNode.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableFirstNode()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getFirstNode() {
-      return firstNode;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableFirstNode() {
-      bitField0_ |= 0x00000002;
-      return firstNode;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo first_node = 8;</code>
-     * @param value the firstNode to set
-     * @return this
-     */
-    public ChallengeBossInfo setFirstNode(
-        final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
-      bitField0_ |= 0x00000002;
-      firstNode.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
-     * @return whether the secondNode field is set
-     */
-    public boolean hasSecondNode() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      * @return this
      */
     public ChallengeBossInfo clearSecondNode() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       secondNode.clear();
       return this;
     }
@@ -227,7 +149,7 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -245,7 +167,7 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -254,7 +176,7 @@ public final class ChallengeBossInfoOuterClass {
      * @return internal storage object for modifications
      */
     public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableSecondNode() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       return secondNode;
     }
 
@@ -263,13 +185,13 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional .ChallengeBossStageInfo second_node = 14;</code>
+     * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      * @param value the secondNode to set
      * @return this
      */
     public ChallengeBossInfo setSecondNode(
         final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       secondNode.copyFrom(value);
       return this;
     }
@@ -279,10 +201,88 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     * @return whether the lineup2 field is set
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
+     * @return whether the firstNode field is set
      */
-    public boolean hasLineup2() {
+    public boolean hasFirstNode() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
+     * @return this
+     */
+    public ChallengeBossInfo clearFirstNode() {
+      bitField0_ &= ~0x00000004;
+      firstNode.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableFirstNode()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getFirstNode() {
+      return firstNode;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo getMutableFirstNode() {
+      bitField0_ |= 0x00000004;
+      return firstNode;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
+     * @param value the firstNode to set
+     * @return this
+     */
+    public ChallengeBossInfo setFirstNode(
+        final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo value) {
+      bitField0_ |= 0x00000004;
+      firstNode.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 5;</code>
+     * @return whether the lineup1 field is set
+     */
+    public boolean hasLineup1() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
@@ -291,103 +291,11 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     * @return this
-     */
-    public ChallengeBossInfo clearLineup2() {
-      bitField0_ &= ~0x00000008;
-      lineup2.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableLineup2()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getLineup2() {
-      return lineup2;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableLineup2() {
-      bitField0_ |= 0x00000008;
-      return lineup2;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     * @param value the lineup2 to add
-     * @return this
-     */
-    public ChallengeBossInfo addLineup2(final int value) {
-      bitField0_ |= 0x00000008;
-      lineup2.add(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup2 = 5;</code>
-     * @param values the lineup2 to add
-     * @return this
-     */
-    public ChallengeBossInfo addAllLineup2(final int... values) {
-      bitField0_ |= 0x00000008;
-      lineup2.addAll(values);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup1 = 13;</code>
-     * @return whether the lineup1 field is set
-     */
-    public boolean hasLineup1() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      * @return this
      */
     public ChallengeBossInfo clearLineup1() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       lineup1.clear();
       return this;
     }
@@ -397,7 +305,7 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -415,7 +323,7 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -424,7 +332,7 @@ public final class ChallengeBossInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableLineup1() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       return lineup1;
     }
 
@@ -433,12 +341,12 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      * @param value the lineup1 to add
      * @return this
      */
     public ChallengeBossInfo addLineup1(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       lineup1.add(value);
       return this;
     }
@@ -448,13 +356,105 @@ public final class ChallengeBossInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>repeated uint32 lineup1 = 13;</code>
+     * <code>repeated uint32 lineup1 = 5;</code>
      * @param values the lineup1 to add
      * @return this
      */
     public ChallengeBossInfo addAllLineup1(final int... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       lineup1.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     * @return whether the lineup2 field is set
+     */
+    public boolean hasLineup2() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     * @return this
+     */
+    public ChallengeBossInfo clearLineup2() {
+      bitField0_ &= ~0x00000010;
+      lineup2.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableLineup2()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getLineup2() {
+      return lineup2;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableLineup2() {
+      bitField0_ |= 0x00000010;
+      return lineup2;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     * @param value the lineup2 to add
+     * @return this
+     */
+    public ChallengeBossInfo addLineup2(final int value) {
+      bitField0_ |= 0x00000010;
+      lineup2.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 13;</code>
+     * @param values the lineup2 to add
+     * @return this
+     */
+    public ChallengeBossInfo addAllLineup2(final int... values) {
+      bitField0_ |= 0x00000010;
+      lineup2.addAll(values);
       return this;
     }
 
@@ -600,10 +600,10 @@ public final class ChallengeBossInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         cPNMHNAFDJM = other.cPNMHNAFDJM;
-        firstNode.copyFrom(other.firstNode);
         secondNode.copyFrom(other.secondNode);
-        lineup2.copyFrom(other.lineup2);
+        firstNode.copyFrom(other.firstNode);
         lineup1.copyFrom(other.lineup1);
+        lineup2.copyFrom(other.lineup2);
         relics.copyFrom(other.relics);
         equipments.copyFrom(other.equipments);
       }
@@ -619,17 +619,17 @@ public final class ChallengeBossInfoOuterClass {
       if (other.hasCPNMHNAFDJM()) {
         setCPNMHNAFDJM(other.cPNMHNAFDJM);
       }
-      if (other.hasFirstNode()) {
-        getMutableFirstNode().mergeFrom(other.firstNode);
-      }
       if (other.hasSecondNode()) {
         getMutableSecondNode().mergeFrom(other.secondNode);
       }
-      if (other.hasLineup2()) {
-        getMutableLineup2().addAll(other.lineup2);
+      if (other.hasFirstNode()) {
+        getMutableFirstNode().mergeFrom(other.firstNode);
       }
       if (other.hasLineup1()) {
         getMutableLineup1().addAll(other.lineup1);
+      }
+      if (other.hasLineup2()) {
+        getMutableLineup2().addAll(other.lineup2);
       }
       if (other.hasRelics()) {
         getMutableRelics().addAll(other.relics);
@@ -648,10 +648,10 @@ public final class ChallengeBossInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       cPNMHNAFDJM = false;
-      firstNode.clear();
       secondNode.clear();
-      lineup2.clear();
+      firstNode.clear();
       lineup1.clear();
+      lineup2.clear();
       relics.clear();
       equipments.clear();
       return this;
@@ -664,10 +664,10 @@ public final class ChallengeBossInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      firstNode.clearQuick();
       secondNode.clearQuick();
-      lineup2.clear();
+      firstNode.clearQuick();
       lineup1.clear();
+      lineup2.clear();
       relics.clearQuick();
       equipments.clearQuick();
       return this;
@@ -684,10 +684,10 @@ public final class ChallengeBossInfoOuterClass {
       ChallengeBossInfo other = (ChallengeBossInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasCPNMHNAFDJM() || cPNMHNAFDJM == other.cPNMHNAFDJM)
-        && (!hasFirstNode() || firstNode.equals(other.firstNode))
         && (!hasSecondNode() || secondNode.equals(other.secondNode))
-        && (!hasLineup2() || lineup2.equals(other.lineup2))
+        && (!hasFirstNode() || firstNode.equals(other.firstNode))
         && (!hasLineup1() || lineup1.equals(other.lineup1))
+        && (!hasLineup2() || lineup2.equals(other.lineup2))
         && (!hasRelics() || relics.equals(other.relics))
         && (!hasEquipments() || equipments.equals(other.equipments));
     }
@@ -700,22 +700,22 @@ public final class ChallengeBossInfoOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 66);
-        output.writeMessageNoTag(firstNode);
+        output.writeMessageNoTag(secondNode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 114);
-        output.writeMessageNoTag(secondNode);
+        output.writeMessageNoTag(firstNode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < lineup2.length(); i++) {
+        for (int i = 0; i < lineup1.length(); i++) {
           output.writeRawByte((byte) 40);
-          output.writeUInt32NoTag(lineup2.array()[i]);
+          output.writeUInt32NoTag(lineup1.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < lineup1.length(); i++) {
+        for (int i = 0; i < lineup2.length(); i++) {
           output.writeRawByte((byte) 104);
-          output.writeUInt32NoTag(lineup1.array()[i]);
+          output.writeUInt32NoTag(lineup2.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
@@ -739,16 +739,16 @@ public final class ChallengeBossInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(firstNode);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(secondNode);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(firstNode);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * lineup2.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup2);
+        size += (1 * lineup1.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup1);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * lineup1.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup1);
+        size += (1 * lineup2.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup2);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * relics.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(relics);
@@ -776,8 +776,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 66: {
-            // firstNode
-            input.readMessage(firstNode);
+            // secondNode
+            input.readMessage(secondNode);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 114) {
@@ -785,8 +785,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 114: {
-            // secondNode
-            input.readMessage(secondNode);
+            // firstNode
+            input.readMessage(firstNode);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 42) {
@@ -794,8 +794,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 42: {
-            // lineup2 [packed=true]
-            input.readPackedUInt32(lineup2, tag);
+            // lineup1 [packed=true]
+            input.readPackedUInt32(lineup1, tag);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 106) {
@@ -803,8 +803,8 @@ public final class ChallengeBossInfoOuterClass {
             }
           }
           case 106: {
-            // lineup1 [packed=true]
-            input.readPackedUInt32(lineup1, tag);
+            // lineup2 [packed=true]
+            input.readPackedUInt32(lineup2, tag);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 10) {
@@ -838,14 +838,14 @@ public final class ChallengeBossInfoOuterClass {
             break;
           }
           case 40: {
-            // lineup2 [packed=false]
-            tag = input.readRepeatedUInt32(lineup2, tag);
+            // lineup1 [packed=false]
+            tag = input.readRepeatedUInt32(lineup1, tag);
             bitField0_ |= 0x00000008;
             break;
           }
           case 104: {
-            // lineup1 [packed=false]
-            tag = input.readRepeatedUInt32(lineup1, tag);
+            // lineup2 [packed=false]
+            tag = input.readRepeatedUInt32(lineup2, tag);
             bitField0_ |= 0x00000010;
             break;
           }
@@ -860,16 +860,16 @@ public final class ChallengeBossInfoOuterClass {
         output.writeBool(FieldNames.cPNMHNAFDJM, cPNMHNAFDJM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.firstNode, firstNode);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.secondNode, secondNode);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeMessage(FieldNames.firstNode, firstNode);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lineup2, lineup2);
+        output.writeRepeatedUInt32(FieldNames.lineup1, lineup1);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lineup1, lineup1);
+        output.writeRepeatedUInt32(FieldNames.lineup2, lineup2);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedMessage(FieldNames.relics, relics);
@@ -898,11 +898,11 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case 132848850:
-          case -160972239: {
-            if (input.isAtField(FieldNames.firstNode)) {
+          case 423693462:
+          case 265276141: {
+            if (input.isAtField(FieldNames.secondNode)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(firstNode);
+                input.readMessage(secondNode);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -910,23 +910,12 @@ public final class ChallengeBossInfoOuterClass {
             }
             break;
           }
-          case 423693462:
-          case 265276141: {
-            if (input.isAtField(FieldNames.secondNode)) {
+          case 132848850:
+          case -160972239: {
+            if (input.isAtField(FieldNames.firstNode)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(secondNode);
+                input.readMessage(firstNode);
                 bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 176922755: {
-            if (input.isAtField(FieldNames.lineup2)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(lineup2);
-                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -937,6 +926,17 @@ public final class ChallengeBossInfoOuterClass {
             if (input.isAtField(FieldNames.lineup1)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(lineup1);
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 176922755: {
+            if (input.isAtField(FieldNames.lineup2)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(lineup2);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -1713,13 +1713,13 @@ public final class ChallengeBossInfoOuterClass {
     static class FieldNames {
       static final FieldName cPNMHNAFDJM = FieldName.forField("CPNMHNAFDJM");
 
-      static final FieldName firstNode = FieldName.forField("firstNode", "first_node");
-
       static final FieldName secondNode = FieldName.forField("secondNode", "second_node");
 
-      static final FieldName lineup2 = FieldName.forField("lineup2");
+      static final FieldName firstNode = FieldName.forField("firstNode", "first_node");
 
       static final FieldName lineup1 = FieldName.forField("lineup1");
+
+      static final FieldName lineup2 = FieldName.forField("lineup2");
 
       static final FieldName relics = FieldName.forField("relics");
 

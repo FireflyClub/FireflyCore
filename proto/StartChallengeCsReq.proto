@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "StartChallengeInfo.proto";
 
 message StartChallengeCsReq {
-	repeated uint32 lineup1 = 12; //?
+	repeated uint32 lineup2 = 12; //?
 	uint32 challenge_id = 4;
 	StartChallengeInfo ext_info = 5;
-	repeated uint32 lineup2 = 9; //?
+	repeated uint32 lineup1 = 9; //?
 }

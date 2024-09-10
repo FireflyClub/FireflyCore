@@ -25,9 +25,7 @@ public class ItemExcel extends GameResource {
     private int PileLimit;
     private int PurposeType;
     
-    private int UseDataID;
     private ItemUseMethod UseMethod;
-
     private List<ItemParam> ReturnItemIDList;
 
     // Transient cache

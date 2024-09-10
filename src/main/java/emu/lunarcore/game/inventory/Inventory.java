@@ -528,7 +528,7 @@ public class Inventory extends BasePlayerManager {
         }
         
         // Get use excel
-        var itemUseExcel = GameData.getItemUseExcelMap().get(useItem.getExcel().getUseDataID());
+        var itemUseExcel = GameData.getItemUseExcelMap().get(useItem.getExcel().getId());
         if (itemUseExcel == null) return null; 
         
         // Setup variables

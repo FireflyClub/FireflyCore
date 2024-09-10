@@ -95,6 +95,12 @@ public class GameData {
     private static Int2ObjectMap<RelicSubAffixExcel> relicSubAffixExcelMap = new Int2ObjectOpenHashMap<>();
     private static Int2ObjectMap<RelicSetExcel> relicSetExcelMap = new Int2ObjectOpenHashMap<>();
     
+    // Music
+    @Getter private static Int2ObjectMap<MusicRhythmLevelExcel> musicRhythmLevelExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MusicRhythmSongExcel> musicRhythmSongExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MusicRhythmSoundEffectExcel> musicRhythmSoundEffectExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MusicRhythmTrackExcel> musicRhythmTrackExcelMap = new Int2ObjectOpenHashMap<>();
+    
     // Configs (Bin)
     @Getter private static Object2ObjectMap<String, FloorInfo> floorInfos = new Object2ObjectOpenHashMap<>();
     

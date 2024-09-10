@@ -147,6 +147,7 @@ public class Player implements Tickable, Syncable {
     private transient PlayerUnlockData unlocks;
     private transient Int2ObjectMap<SceneBuff> foodBuffs;
     @Setter private transient int overrideChallengeId = 0;
+    @Setter private transient int curMusicId;
     
     @Setter private transient boolean paused;
     

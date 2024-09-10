@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message MusicRhythmUnlockSongNotify {
+	repeated uint32 music_unlock_list = 7;
+}

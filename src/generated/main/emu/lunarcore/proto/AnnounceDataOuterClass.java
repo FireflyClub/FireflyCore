@@ -20,10 +20,6 @@ public final class AnnounceDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * uint32 JCLHPKIEDIA = 14;
-     * </pre>
-     *
      * <code>optional int64 end_time = 7;</code>
      */
     private long endTime;
@@ -39,11 +35,6 @@ public final class AnnounceDataOuterClass {
     private int bannerFrequency;
 
     /**
-     * <pre>
-     * uint32 ODBEELGCENI = 1;
-     * string NFOIIBJPFFG = 8;
-     * </pre>
-     *
      * <code>optional uint32 config_id = 9;</code>
      */
     private int configId;
@@ -54,11 +45,6 @@ public final class AnnounceDataOuterClass {
     private int nouseCenterSystemFrequency;
 
     /**
-     * <pre>
-     * string BNGDKIBJHMD = 15;
-     * string CENCAKDHHHA = 5;
-     * </pre>
-     *
      * <code>optional bool is_center_system_last_5_every_minutes = 4;</code>
      */
     private boolean isCenterSystemLast5EveryMinutes;
@@ -69,10 +55,6 @@ public final class AnnounceDataOuterClass {
     private final Utf8String bannerText = Utf8String.newEmptyInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      */
     private final Utf8String nouseCountDownText = Utf8String.newEmptyInstance();
@@ -93,10 +75,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 JCLHPKIEDIA = 14;
-     * </pre>
-     *
      * <code>optional int64 end_time = 7;</code>
      * @return whether the endTime field is set
      */
@@ -105,10 +83,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 JCLHPKIEDIA = 14;
-     * </pre>
-     *
      * <code>optional int64 end_time = 7;</code>
      * @return this
      */
@@ -119,10 +93,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 JCLHPKIEDIA = 14;
-     * </pre>
-     *
      * <code>optional int64 end_time = 7;</code>
      * @return the endTime
      */
@@ -131,10 +101,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 JCLHPKIEDIA = 14;
-     * </pre>
-     *
      * <code>optional int64 end_time = 7;</code>
      * @param value the endTime to set
      * @return this
@@ -220,11 +186,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 ODBEELGCENI = 1;
-     * string NFOIIBJPFFG = 8;
-     * </pre>
-     *
      * <code>optional uint32 config_id = 9;</code>
      * @return whether the configId field is set
      */
@@ -233,11 +194,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 ODBEELGCENI = 1;
-     * string NFOIIBJPFFG = 8;
-     * </pre>
-     *
      * <code>optional uint32 config_id = 9;</code>
      * @return this
      */
@@ -248,11 +204,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 ODBEELGCENI = 1;
-     * string NFOIIBJPFFG = 8;
-     * </pre>
-     *
      * <code>optional uint32 config_id = 9;</code>
      * @return the configId
      */
@@ -261,11 +212,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 ODBEELGCENI = 1;
-     * string NFOIIBJPFFG = 8;
-     * </pre>
-     *
      * <code>optional uint32 config_id = 9;</code>
      * @param value the configId to set
      * @return this
@@ -314,11 +260,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * string BNGDKIBJHMD = 15;
-     * string CENCAKDHHHA = 5;
-     * </pre>
-     *
      * <code>optional bool is_center_system_last_5_every_minutes = 4;</code>
      * @return whether the isCenterSystemLast5EveryMinutes field is set
      */
@@ -327,11 +268,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * string BNGDKIBJHMD = 15;
-     * string CENCAKDHHHA = 5;
-     * </pre>
-     *
      * <code>optional bool is_center_system_last_5_every_minutes = 4;</code>
      * @return this
      */
@@ -342,11 +278,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * string BNGDKIBJHMD = 15;
-     * string CENCAKDHHHA = 5;
-     * </pre>
-     *
      * <code>optional bool is_center_system_last_5_every_minutes = 4;</code>
      * @return the isCenterSystemLast5EveryMinutes
      */
@@ -355,11 +286,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * string BNGDKIBJHMD = 15;
-     * string CENCAKDHHHA = 5;
-     * </pre>
-     *
      * <code>optional bool is_center_system_last_5_every_minutes = 4;</code>
      * @param value the isCenterSystemLast5EveryMinutes to set
      * @return this
@@ -436,10 +362,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @return whether the nouseCountDownText field is set
      */
@@ -448,10 +370,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @return this
      */
@@ -462,10 +380,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @return the nouseCountDownText
      */
@@ -474,10 +388,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @return internal {@code Utf8String} representation of nouseCountDownText for reading
      */
@@ -486,10 +396,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @return internal {@code Utf8String} representation of nouseCountDownText for modifications
      */
@@ -499,10 +405,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @param value the nouseCountDownText to set
      * @return this
@@ -514,10 +416,6 @@ public final class AnnounceDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional string nouse_count_down_text = 8;</code>
      * @param value the nouseCountDownText to set
      * @return this

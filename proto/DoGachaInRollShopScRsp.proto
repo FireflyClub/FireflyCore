@@ -5,9 +5,9 @@ option java_package = "emu.lunarcore.proto";
 import "ItemList.proto";
 
 message DoGachaInRollShopScRsp {
-	uint32 BHPEBOKFCDB = 14;
-	ItemList reward = 11;
-	uint32 retcode = 3;
-	uint32 roll_shop_id = 7;
-	uint32 PGPHIPBCGAP = 6;
+	ItemList reward = 15;
+	uint32 roll_shop_id = 13;
+	uint32 CLAPDDHKGKK = 4;
+	uint32 retcode = 9;
+	uint32 KEACGMLKBDK = 1;
 }

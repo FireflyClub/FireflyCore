@@ -6,6 +6,6 @@ import "UnlockedMusic.proto";
 
 message UnlockBackGroundMusicScRsp {
 	repeated UnlockedMusic music_list = 2;
-	uint32 retcode = 1;
-	repeated uint32 rsp_unlocked_ids = 11;
+	repeated uint32 rsp_unlocked_ids = 9;
+	uint32 retcode = 15;
 }

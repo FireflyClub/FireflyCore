@@ -24,7 +24,7 @@ public final class SellItemCsReqOuterClass {
     private boolean toMaterial;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -76,7 +76,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -84,7 +84,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      * @return this
      */
     public SellItemCsReq clearItemCostList() {
@@ -94,7 +94,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 14;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -202,7 +202,7 @@ public final class SellItemCsReqOuterClass {
         output.writeBoolNoTag(toMaterial);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -231,11 +231,11 @@ public final class SellItemCsReqOuterClass {
             toMaterial = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 114) {
               break;
             }
           }
-          case 42: {
+          case 114: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

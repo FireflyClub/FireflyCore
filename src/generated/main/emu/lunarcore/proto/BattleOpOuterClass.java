@@ -55,9 +55,9 @@ public final class BattleOpOuterClass {
     private int operationCounter;
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
+     * <code>optional string GPBKOBEPMCA = 8;</code>
      */
-    private final Utf8String kBHJIPPKAJJ = Utf8String.newEmptyInstance();
+    private final Utf8String gPBKOBEPMCA = Utf8String.newEmptyInstance();
 
     private BattleOp() {
     }
@@ -329,67 +329,67 @@ public final class BattleOpOuterClass {
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @return whether the kBHJIPPKAJJ field is set
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @return whether the gPBKOBEPMCA field is set
      */
-    public boolean hasKBHJIPPKAJJ() {
+    public boolean hasGPBKOBEPMCA() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
+     * <code>optional string GPBKOBEPMCA = 8;</code>
      * @return this
      */
-    public BattleOp clearKBHJIPPKAJJ() {
+    public BattleOp clearGPBKOBEPMCA() {
       bitField0_ &= ~0x00000080;
-      kBHJIPPKAJJ.clear();
+      gPBKOBEPMCA.clear();
       return this;
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @return the kBHJIPPKAJJ
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @return the gPBKOBEPMCA
      */
-    public String getKBHJIPPKAJJ() {
-      return kBHJIPPKAJJ.getString();
+    public String getGPBKOBEPMCA() {
+      return gPBKOBEPMCA.getString();
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @return internal {@code Utf8String} representation of kBHJIPPKAJJ for reading
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @return internal {@code Utf8String} representation of gPBKOBEPMCA for reading
      */
-    public Utf8String getKBHJIPPKAJJBytes() {
-      return this.kBHJIPPKAJJ;
+    public Utf8String getGPBKOBEPMCABytes() {
+      return this.gPBKOBEPMCA;
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @return internal {@code Utf8String} representation of kBHJIPPKAJJ for modifications
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @return internal {@code Utf8String} representation of gPBKOBEPMCA for modifications
      */
-    public Utf8String getMutableKBHJIPPKAJJBytes() {
+    public Utf8String getMutableGPBKOBEPMCABytes() {
       bitField0_ |= 0x00000080;
-      return this.kBHJIPPKAJJ;
+      return this.gPBKOBEPMCA;
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @param value the kBHJIPPKAJJ to set
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @param value the gPBKOBEPMCA to set
      * @return this
      */
-    public BattleOp setKBHJIPPKAJJ(final CharSequence value) {
+    public BattleOp setGPBKOBEPMCA(final CharSequence value) {
       bitField0_ |= 0x00000080;
-      kBHJIPPKAJJ.copyFrom(value);
+      gPBKOBEPMCA.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string KBHJIPPKAJJ = 8;</code>
-     * @param value the kBHJIPPKAJJ to set
+     * <code>optional string GPBKOBEPMCA = 8;</code>
+     * @param value the gPBKOBEPMCA to set
      * @return this
      */
-    public BattleOp setKBHJIPPKAJJ(final Utf8String value) {
+    public BattleOp setGPBKOBEPMCA(final Utf8String value) {
       bitField0_ |= 0x00000080;
-      kBHJIPPKAJJ.copyFrom(value);
+      gPBKOBEPMCA.copyFrom(value);
       return this;
     }
 
@@ -405,7 +405,7 @@ public final class BattleOpOuterClass {
         opType = other.opType;
         skillIndex = other.skillIndex;
         operationCounter = other.operationCounter;
-        kBHJIPPKAJJ.copyFrom(other.kBHJIPPKAJJ);
+        gPBKOBEPMCA.copyFrom(other.gPBKOBEPMCA);
       }
       return this;
     }
@@ -437,8 +437,8 @@ public final class BattleOpOuterClass {
       if (other.hasOperationCounter()) {
         setOperationCounter(other.operationCounter);
       }
-      if (other.hasKBHJIPPKAJJ()) {
-        getMutableKBHJIPPKAJJBytes().copyFrom(other.kBHJIPPKAJJ);
+      if (other.hasGPBKOBEPMCA()) {
+        getMutableGPBKOBEPMCABytes().copyFrom(other.gPBKOBEPMCA);
       }
       return this;
     }
@@ -457,7 +457,7 @@ public final class BattleOpOuterClass {
       opType = 0;
       skillIndex = 0;
       operationCounter = 0;
-      kBHJIPPKAJJ.clear();
+      gPBKOBEPMCA.clear();
       return this;
     }
 
@@ -468,7 +468,7 @@ public final class BattleOpOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      kBHJIPPKAJJ.clear();
+      gPBKOBEPMCA.clear();
       return this;
     }
 
@@ -489,7 +489,7 @@ public final class BattleOpOuterClass {
         && (!hasOpType() || opType == other.opType)
         && (!hasSkillIndex() || skillIndex == other.skillIndex)
         && (!hasOperationCounter() || operationCounter == other.operationCounter)
-        && (!hasKBHJIPPKAJJ() || kBHJIPPKAJJ.equals(other.kBHJIPPKAJJ));
+        && (!hasGPBKOBEPMCA() || gPBKOBEPMCA.equals(other.gPBKOBEPMCA));
     }
 
     @Override
@@ -524,7 +524,7 @@ public final class BattleOpOuterClass {
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 66);
-        output.writeStringNoTag(kBHJIPPKAJJ);
+        output.writeStringNoTag(gPBKOBEPMCA);
       }
     }
 
@@ -553,7 +553,7 @@ public final class BattleOpOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(operationCounter);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(kBHJIPPKAJJ);
+        size += 1 + ProtoSink.computeStringSizeNoTag(gPBKOBEPMCA);
       }
       return size;
     }
@@ -629,8 +629,8 @@ public final class BattleOpOuterClass {
             }
           }
           case 66: {
-            // kBHJIPPKAJJ
-            input.readString(kBHJIPPKAJJ);
+            // gPBKOBEPMCA
+            input.readString(gPBKOBEPMCA);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 0) {
@@ -676,7 +676,7 @@ public final class BattleOpOuterClass {
         output.writeUInt32(FieldNames.operationCounter, operationCounter);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeString(FieldNames.kBHJIPPKAJJ, kBHJIPPKAJJ);
+        output.writeString(FieldNames.gPBKOBEPMCA, gPBKOBEPMCA);
       }
       output.endObject();
     }
@@ -771,10 +771,10 @@ public final class BattleOpOuterClass {
             }
             break;
           }
-          case -151339546: {
-            if (input.isAtField(FieldNames.kBHJIPPKAJJ)) {
+          case 312192955: {
+            if (input.isAtField(FieldNames.gPBKOBEPMCA)) {
               if (!input.trySkipNullValue()) {
-                input.readString(kBHJIPPKAJJ);
+                input.readString(gPBKOBEPMCA);
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -848,7 +848,7 @@ public final class BattleOpOuterClass {
 
       static final FieldName operationCounter = FieldName.forField("operationCounter", "operation_counter");
 
-      static final FieldName kBHJIPPKAJJ = FieldName.forField("KBHJIPPKAJJ");
+      static final FieldName gPBKOBEPMCA = FieldName.forField("GPBKOBEPMCA");
     }
   }
 }

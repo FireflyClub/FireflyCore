@@ -19,14 +19,14 @@ public final class NewMapRotOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     */
-    private final Vector4OuterClass.Vector4 vector4 = Vector4OuterClass.Vector4.newInstance();
-
-    /**
-     * <code>optional .Vector vector3 = 6;</code>
+     * <code>optional .Vector vector3 = 11;</code>
      */
     private final VectorOuterClass.Vector vector3 = VectorOuterClass.Vector.newInstance();
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     */
+    private final Vector4OuterClass.Vector4 vector4 = Vector4OuterClass.Vector4.newInstance();
 
     private NewMapRot() {
     }
@@ -39,82 +39,25 @@ public final class NewMapRotOuterClass {
     }
 
     /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     * @return whether the vector4 field is set
+     * <code>optional .Vector vector3 = 11;</code>
+     * @return whether the vector3 field is set
      */
-    public boolean hasVector4() {
+    public boolean hasVector3() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     * @return this
-     */
-    public NewMapRot clearVector4() {
-      bitField0_ &= ~0x00000001;
-      vector4.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableVector4()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public Vector4OuterClass.Vector4 getVector4() {
-      return vector4;
-    }
-
-    /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public Vector4OuterClass.Vector4 getMutableVector4() {
-      bitField0_ |= 0x00000001;
-      return vector4;
-    }
-
-    /**
-     * <code>optional .Vector4 vector4 = 3;</code>
-     * @param value the vector4 to set
-     * @return this
-     */
-    public NewMapRot setVector4(final Vector4OuterClass.Vector4 value) {
-      bitField0_ |= 0x00000001;
-      vector4.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .Vector vector3 = 6;</code>
-     * @return whether the vector3 field is set
-     */
-    public boolean hasVector3() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional .Vector vector3 = 6;</code>
+     * <code>optional .Vector vector3 = 11;</code>
      * @return this
      */
     public NewMapRot clearVector3() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       vector3.clear();
       return this;
     }
 
     /**
-     * <code>optional .Vector vector3 = 6;</code>
+     * <code>optional .Vector vector3 = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -128,7 +71,7 @@ public final class NewMapRotOuterClass {
     }
 
     /**
-     * <code>optional .Vector vector3 = 6;</code>
+     * <code>optional .Vector vector3 = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -137,18 +80,75 @@ public final class NewMapRotOuterClass {
      * @return internal storage object for modifications
      */
     public VectorOuterClass.Vector getMutableVector3() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       return vector3;
     }
 
     /**
-     * <code>optional .Vector vector3 = 6;</code>
+     * <code>optional .Vector vector3 = 11;</code>
      * @param value the vector3 to set
      * @return this
      */
     public NewMapRot setVector3(final VectorOuterClass.Vector value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       vector3.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     * @return whether the vector4 field is set
+     */
+    public boolean hasVector4() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     * @return this
+     */
+    public NewMapRot clearVector4() {
+      bitField0_ &= ~0x00000002;
+      vector4.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableVector4()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public Vector4OuterClass.Vector4 getVector4() {
+      return vector4;
+    }
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public Vector4OuterClass.Vector4 getMutableVector4() {
+      bitField0_ |= 0x00000002;
+      return vector4;
+    }
+
+    /**
+     * <code>optional .Vector4 vector4 = 14;</code>
+     * @param value the vector4 to set
+     * @return this
+     */
+    public NewMapRot setVector4(final Vector4OuterClass.Vector4 value) {
+      bitField0_ |= 0x00000002;
+      vector4.copyFrom(value);
       return this;
     }
 
@@ -157,8 +157,8 @@ public final class NewMapRotOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        vector4.copyFrom(other.vector4);
         vector3.copyFrom(other.vector3);
+        vector4.copyFrom(other.vector4);
       }
       return this;
     }
@@ -169,11 +169,11 @@ public final class NewMapRotOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasVector4()) {
-        getMutableVector4().mergeFrom(other.vector4);
-      }
       if (other.hasVector3()) {
         getMutableVector3().mergeFrom(other.vector3);
+      }
+      if (other.hasVector4()) {
+        getMutableVector4().mergeFrom(other.vector4);
       }
       return this;
     }
@@ -185,8 +185,8 @@ public final class NewMapRotOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      vector4.clear();
       vector3.clear();
+      vector4.clear();
       return this;
     }
 
@@ -197,8 +197,8 @@ public final class NewMapRotOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      vector4.clearQuick();
       vector3.clearQuick();
+      vector4.clearQuick();
       return this;
     }
 
@@ -212,19 +212,19 @@ public final class NewMapRotOuterClass {
       }
       NewMapRot other = (NewMapRot) o;
       return bitField0_ == other.bitField0_
-        && (!hasVector4() || vector4.equals(other.vector4))
-        && (!hasVector3() || vector3.equals(other.vector3));
+        && (!hasVector3() || vector3.equals(other.vector3))
+        && (!hasVector4() || vector4.equals(other.vector4));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 26);
-        output.writeMessageNoTag(vector4);
+        output.writeRawByte((byte) 90);
+        output.writeMessageNoTag(vector3);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 50);
-        output.writeMessageNoTag(vector3);
+        output.writeRawByte((byte) 114);
+        output.writeMessageNoTag(vector4);
       }
     }
 
@@ -232,10 +232,10 @@ public final class NewMapRotOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(vector4);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(vector3);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(vector3);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(vector4);
       }
       return size;
     }
@@ -247,18 +247,18 @@ public final class NewMapRotOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 26: {
-            // vector4
-            input.readMessage(vector4);
+          case 90: {
+            // vector3
+            input.readMessage(vector3);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 114) {
               break;
             }
           }
-          case 50: {
-            // vector3
-            input.readMessage(vector3);
+          case 114: {
+            // vector4
+            input.readMessage(vector4);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -283,10 +283,10 @@ public final class NewMapRotOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.vector4, vector4);
+        output.writeMessage(FieldNames.vector3, vector3);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.vector3, vector3);
+        output.writeMessage(FieldNames.vector4, vector4);
       }
       output.endObject();
     }
@@ -298,10 +298,10 @@ public final class NewMapRotOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 337790801: {
-            if (input.isAtField(FieldNames.vector4)) {
+          case 337790800: {
+            if (input.isAtField(FieldNames.vector3)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(vector4);
+                input.readMessage(vector3);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -309,10 +309,10 @@ public final class NewMapRotOuterClass {
             }
             break;
           }
-          case 337790800: {
-            if (input.isAtField(FieldNames.vector3)) {
+          case 337790801: {
+            if (input.isAtField(FieldNames.vector4)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(vector3);
+                input.readMessage(vector4);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -372,9 +372,9 @@ public final class NewMapRotOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName vector4 = FieldName.forField("vector4");
-
       static final FieldName vector3 = FieldName.forField("vector3");
+
+      static final FieldName vector4 = FieldName.forField("vector4");
     }
   }
 }

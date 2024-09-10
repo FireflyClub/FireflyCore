@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "AvatarSkillTree.proto";
 import "BattleEquipment.proto";
-import "AvatarType.proto";
-import "BattleRelic.proto";
 import "SpBarInfo.proto";
+import "BattleRelic.proto";
+import "AvatarSkillTree.proto";
+import "AvatarType.proto";
 
 message BattleAvatar {
 	AvatarType avatar_type = 1;
@@ -21,7 +21,7 @@ message BattleAvatar {
 	repeated BattleRelic relic_list = 11;
 	uint32 world_level = 12;
 	uint32 assist_uid = 13;
-	//GNOMPBKAHNM KPDLPCJHGHL = 15;
+	//CDCPBIAPMBM MBPNICPIMHH = 15;
 	SpBarInfo sp_bar = 16;
-	uint32 MPFLNIIKEIC = 17;
+	uint32 MKJKMMIOCHB = 17;
 }

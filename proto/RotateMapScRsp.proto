@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "MotionInfo.proto";
 
 message RotateMapScRsp {
-	uint32 retcode = 11;
-	MotionInfo motion = 4;
-	uint32 client_pos_version = 5;
+	uint32 retcode = 8;
+	uint32 client_pos_version = 14;
+	MotionInfo motion = 5;
 }

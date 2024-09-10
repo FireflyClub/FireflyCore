@@ -19,9 +19,9 @@ public final class ChessRogueNousValueOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 value = 6;</code>
+     * <code>optional int32 BIIOOGNGNDA = 11;</code>
      */
-    private int value_;
+    private int bIIOOGNGNDA;
 
     private ChessRogueNousValue() {
     }
@@ -34,39 +34,39 @@ public final class ChessRogueNousValueOuterClass {
     }
 
     /**
-     * <code>optional uint32 value = 6;</code>
-     * @return whether the value_ field is set
+     * <code>optional int32 BIIOOGNGNDA = 11;</code>
+     * @return whether the bIIOOGNGNDA field is set
      */
-    public boolean hasValue() {
+    public boolean hasBIIOOGNGNDA() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 value = 6;</code>
+     * <code>optional int32 BIIOOGNGNDA = 11;</code>
      * @return this
      */
-    public ChessRogueNousValue clearValue() {
+    public ChessRogueNousValue clearBIIOOGNGNDA() {
       bitField0_ &= ~0x00000001;
-      value_ = 0;
+      bIIOOGNGNDA = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 value = 6;</code>
-     * @return the value_
+     * <code>optional int32 BIIOOGNGNDA = 11;</code>
+     * @return the bIIOOGNGNDA
      */
-    public int getValue() {
-      return value_;
+    public int getBIIOOGNGNDA() {
+      return bIIOOGNGNDA;
     }
 
     /**
-     * <code>optional uint32 value = 6;</code>
-     * @param value the value_ to set
+     * <code>optional int32 BIIOOGNGNDA = 11;</code>
+     * @param value the bIIOOGNGNDA to set
      * @return this
      */
-    public ChessRogueNousValue setValue(final int value) {
+    public ChessRogueNousValue setBIIOOGNGNDA(final int value) {
       bitField0_ |= 0x00000001;
-      value_ = value;
+      bIIOOGNGNDA = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class ChessRogueNousValueOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        value_ = other.value_;
+        bIIOOGNGNDA = other.bIIOOGNGNDA;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class ChessRogueNousValueOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasValue()) {
-        setValue(other.value_);
+      if (other.hasBIIOOGNGNDA()) {
+        setBIIOOGNGNDA(other.bIIOOGNGNDA);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class ChessRogueNousValueOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      value_ = 0;
+      bIIOOGNGNDA = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class ChessRogueNousValueOuterClass {
       }
       ChessRogueNousValue other = (ChessRogueNousValue) o;
       return bitField0_ == other.bitField0_
-        && (!hasValue() || value_ == other.value_);
+        && (!hasBIIOOGNGNDA() || bIIOOGNGNDA == other.bIIOOGNGNDA);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(value_);
+        output.writeRawByte((byte) 88);
+        output.writeInt32NoTag(bIIOOGNGNDA);
       }
     }
 
@@ -138,7 +138,7 @@ public final class ChessRogueNousValueOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(value_);
+        size += 1 + ProtoSink.computeInt32SizeNoTag(bIIOOGNGNDA);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class ChessRogueNousValueOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // value_
-            value_ = input.readUInt32();
+          case 88: {
+            // bIIOOGNGNDA
+            bIIOOGNGNDA = input.readInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class ChessRogueNousValueOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.value_, value_);
+        output.writeInt32(FieldNames.bIIOOGNGNDA, bIIOOGNGNDA);
       }
       output.endObject();
     }
@@ -189,10 +189,10 @@ public final class ChessRogueNousValueOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 111972721: {
-            if (input.isAtField(FieldNames.value_)) {
+          case 847827405: {
+            if (input.isAtField(FieldNames.bIIOOGNGNDA)) {
               if (!input.trySkipNullValue()) {
-                value_ = input.readUInt32();
+                bIIOOGNGNDA = input.readInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -253,7 +253,7 @@ public final class ChessRogueNousValueOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName value_ = FieldName.forField("value");
+      static final FieldName bIIOOGNGNDA = FieldName.forField("BIIOOGNGNDA");
     }
   }
 }

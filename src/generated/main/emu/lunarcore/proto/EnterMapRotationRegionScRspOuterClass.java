@@ -19,19 +19,19 @@ public final class EnterMapRotationRegionScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 client_pos_version = 2;</code>
+     * <code>optional uint32 IPFOFHHKJKP = 7;</code>
+     */
+    private int iPFOFHHKJKP;
+
+    /**
+     * <code>optional uint32 client_pos_version = 11;</code>
      */
     private int clientPosVersion;
 
     /**
-     * <code>optional uint32 BJPBAJECKFO = 8;</code>
+     * <code>optional uint32 CHJMODIMLDA = 12;</code>
      */
-    private int bJPBAJECKFO;
-
-    /**
-     * <code>optional uint32 HDEHHKEMOCD = 12;</code>
-     */
-    private int hDEHHKEMOCD;
+    private int cHJMODIMLDA;
 
     /**
      * <code>optional uint32 retcode = 15;</code>
@@ -39,12 +39,12 @@ public final class EnterMapRotationRegionScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      */
     private final RotatorEnergyInfoOuterClass.RotatorEnergyInfo energyInfo = RotatorEnergyInfoOuterClass.RotatorEnergyInfo.newInstance();
 
@@ -59,25 +59,62 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 2;</code>
-     * @return whether the clientPosVersion field is set
+     * <code>optional uint32 IPFOFHHKJKP = 7;</code>
+     * @return whether the iPFOFHHKJKP field is set
      */
-    public boolean hasClientPosVersion() {
+    public boolean hasIPFOFHHKJKP() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 2;</code>
+     * <code>optional uint32 IPFOFHHKJKP = 7;</code>
+     * @return this
+     */
+    public EnterMapRotationRegionScRsp clearIPFOFHHKJKP() {
+      bitField0_ &= ~0x00000001;
+      iPFOFHHKJKP = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 IPFOFHHKJKP = 7;</code>
+     * @return the iPFOFHHKJKP
+     */
+    public int getIPFOFHHKJKP() {
+      return iPFOFHHKJKP;
+    }
+
+    /**
+     * <code>optional uint32 IPFOFHHKJKP = 7;</code>
+     * @param value the iPFOFHHKJKP to set
+     * @return this
+     */
+    public EnterMapRotationRegionScRsp setIPFOFHHKJKP(final int value) {
+      bitField0_ |= 0x00000001;
+      iPFOFHHKJKP = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 client_pos_version = 11;</code>
+     * @return whether the clientPosVersion field is set
+     */
+    public boolean hasClientPosVersion() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 client_pos_version = 11;</code>
      * @return this
      */
     public EnterMapRotationRegionScRsp clearClientPosVersion() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       clientPosVersion = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 2;</code>
+     * <code>optional uint32 client_pos_version = 11;</code>
      * @return the clientPosVersion
      */
     public int getClientPosVersion() {
@@ -85,87 +122,50 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 2;</code>
+     * <code>optional uint32 client_pos_version = 11;</code>
      * @param value the clientPosVersion to set
      * @return this
      */
     public EnterMapRotationRegionScRsp setClientPosVersion(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       clientPosVersion = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 BJPBAJECKFO = 8;</code>
-     * @return whether the bJPBAJECKFO field is set
+     * <code>optional uint32 CHJMODIMLDA = 12;</code>
+     * @return whether the cHJMODIMLDA field is set
      */
-    public boolean hasBJPBAJECKFO() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 BJPBAJECKFO = 8;</code>
-     * @return this
-     */
-    public EnterMapRotationRegionScRsp clearBJPBAJECKFO() {
-      bitField0_ &= ~0x00000002;
-      bJPBAJECKFO = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 BJPBAJECKFO = 8;</code>
-     * @return the bJPBAJECKFO
-     */
-    public int getBJPBAJECKFO() {
-      return bJPBAJECKFO;
-    }
-
-    /**
-     * <code>optional uint32 BJPBAJECKFO = 8;</code>
-     * @param value the bJPBAJECKFO to set
-     * @return this
-     */
-    public EnterMapRotationRegionScRsp setBJPBAJECKFO(final int value) {
-      bitField0_ |= 0x00000002;
-      bJPBAJECKFO = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 HDEHHKEMOCD = 12;</code>
-     * @return whether the hDEHHKEMOCD field is set
-     */
-    public boolean hasHDEHHKEMOCD() {
+    public boolean hasCHJMODIMLDA() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 HDEHHKEMOCD = 12;</code>
+     * <code>optional uint32 CHJMODIMLDA = 12;</code>
      * @return this
      */
-    public EnterMapRotationRegionScRsp clearHDEHHKEMOCD() {
+    public EnterMapRotationRegionScRsp clearCHJMODIMLDA() {
       bitField0_ &= ~0x00000004;
-      hDEHHKEMOCD = 0;
+      cHJMODIMLDA = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 HDEHHKEMOCD = 12;</code>
-     * @return the hDEHHKEMOCD
+     * <code>optional uint32 CHJMODIMLDA = 12;</code>
+     * @return the cHJMODIMLDA
      */
-    public int getHDEHHKEMOCD() {
-      return hDEHHKEMOCD;
+    public int getCHJMODIMLDA() {
+      return cHJMODIMLDA;
     }
 
     /**
-     * <code>optional uint32 HDEHHKEMOCD = 12;</code>
-     * @param value the hDEHHKEMOCD to set
+     * <code>optional uint32 CHJMODIMLDA = 12;</code>
+     * @param value the cHJMODIMLDA to set
      * @return this
      */
-    public EnterMapRotationRegionScRsp setHDEHHKEMOCD(final int value) {
+    public EnterMapRotationRegionScRsp setCHJMODIMLDA(final int value) {
       bitField0_ |= 0x00000004;
-      hDEHHKEMOCD = value;
+      cHJMODIMLDA = value;
       return this;
     }
 
@@ -207,7 +207,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -215,7 +215,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      * @return this
      */
     public EnterMapRotationRegionScRsp clearMotion() {
@@ -225,7 +225,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -239,7 +239,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -253,7 +253,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 6;</code>
+     * <code>optional .MotionInfo motion = 2;</code>
      * @param value the motion to set
      * @return this
      */
@@ -264,7 +264,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      * @return whether the energyInfo field is set
      */
     public boolean hasEnergyInfo() {
@@ -272,7 +272,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      * @return this
      */
     public EnterMapRotationRegionScRsp clearEnergyInfo() {
@@ -282,7 +282,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -296,7 +296,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -310,7 +310,7 @@ public final class EnterMapRotationRegionScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 14;</code>
+     * <code>optional .RotatorEnergyInfo energy_info = 9;</code>
      * @param value the energyInfo to set
      * @return this
      */
@@ -326,9 +326,9 @@ public final class EnterMapRotationRegionScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        iPFOFHHKJKP = other.iPFOFHHKJKP;
         clientPosVersion = other.clientPosVersion;
-        bJPBAJECKFO = other.bJPBAJECKFO;
-        hDEHHKEMOCD = other.hDEHHKEMOCD;
+        cHJMODIMLDA = other.cHJMODIMLDA;
         retcode = other.retcode;
         motion.copyFrom(other.motion);
         energyInfo.copyFrom(other.energyInfo);
@@ -342,14 +342,14 @@ public final class EnterMapRotationRegionScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasIPFOFHHKJKP()) {
+        setIPFOFHHKJKP(other.iPFOFHHKJKP);
+      }
       if (other.hasClientPosVersion()) {
         setClientPosVersion(other.clientPosVersion);
       }
-      if (other.hasBJPBAJECKFO()) {
-        setBJPBAJECKFO(other.bJPBAJECKFO);
-      }
-      if (other.hasHDEHHKEMOCD()) {
-        setHDEHHKEMOCD(other.hDEHHKEMOCD);
+      if (other.hasCHJMODIMLDA()) {
+        setCHJMODIMLDA(other.cHJMODIMLDA);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
@@ -370,9 +370,9 @@ public final class EnterMapRotationRegionScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      iPFOFHHKJKP = 0;
       clientPosVersion = 0;
-      bJPBAJECKFO = 0;
-      hDEHHKEMOCD = 0;
+      cHJMODIMLDA = 0;
       retcode = 0;
       motion.clear();
       energyInfo.clear();
@@ -401,9 +401,9 @@ public final class EnterMapRotationRegionScRspOuterClass {
       }
       EnterMapRotationRegionScRsp other = (EnterMapRotationRegionScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasIPFOFHHKJKP() || iPFOFHHKJKP == other.iPFOFHHKJKP)
         && (!hasClientPosVersion() || clientPosVersion == other.clientPosVersion)
-        && (!hasBJPBAJECKFO() || bJPBAJECKFO == other.bJPBAJECKFO)
-        && (!hasHDEHHKEMOCD() || hDEHHKEMOCD == other.hDEHHKEMOCD)
+        && (!hasCHJMODIMLDA() || cHJMODIMLDA == other.cHJMODIMLDA)
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasMotion() || motion.equals(other.motion))
         && (!hasEnergyInfo() || energyInfo.equals(other.energyInfo));
@@ -412,27 +412,27 @@ public final class EnterMapRotationRegionScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(clientPosVersion);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(iPFOFHHKJKP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(bJPBAJECKFO);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(hDEHHKEMOCD);
+        output.writeUInt32NoTag(cHJMODIMLDA);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 18);
         output.writeMessageNoTag(motion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(energyInfo);
       }
     }
@@ -441,13 +441,13 @@ public final class EnterMapRotationRegionScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientPosVersion);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(iPFOFHHKJKP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bJPBAJECKFO);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(hDEHHKEMOCD);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(cHJMODIMLDA);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -468,18 +468,18 @@ public final class EnterMapRotationRegionScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // clientPosVersion
-            clientPosVersion = input.readUInt32();
+          case 56: {
+            // iPFOFHHKJKP
+            iPFOFHHKJKP = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 88) {
               break;
             }
           }
-          case 64: {
-            // bJPBAJECKFO
-            bJPBAJECKFO = input.readUInt32();
+          case 88: {
+            // clientPosVersion
+            clientPosVersion = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
@@ -487,8 +487,8 @@ public final class EnterMapRotationRegionScRspOuterClass {
             }
           }
           case 96: {
-            // hDEHHKEMOCD
-            hDEHHKEMOCD = input.readUInt32();
+            // cHJMODIMLDA
+            cHJMODIMLDA = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 120) {
@@ -500,20 +500,20 @@ public final class EnterMapRotationRegionScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 18) {
               break;
             }
           }
-          case 50: {
+          case 18: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 74) {
               break;
             }
           }
-          case 114: {
+          case 74: {
             // energyInfo
             input.readMessage(energyInfo);
             bitField0_ |= 0x00000020;
@@ -540,13 +540,13 @@ public final class EnterMapRotationRegionScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.clientPosVersion, clientPosVersion);
+        output.writeUInt32(FieldNames.iPFOFHHKJKP, iPFOFHHKJKP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.bJPBAJECKFO, bJPBAJECKFO);
+        output.writeUInt32(FieldNames.clientPosVersion, clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.hDEHHKEMOCD, hDEHHKEMOCD);
+        output.writeUInt32(FieldNames.cHJMODIMLDA, cHJMODIMLDA);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
@@ -567,11 +567,10 @@ public final class EnterMapRotationRegionScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1787644431:
-          case 1278860153: {
-            if (input.isAtField(FieldNames.clientPosVersion)) {
+          case 1531476378: {
+            if (input.isAtField(FieldNames.iPFOFHHKJKP)) {
               if (!input.trySkipNullValue()) {
-                clientPosVersion = input.readUInt32();
+                iPFOFHHKJKP = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -579,10 +578,11 @@ public final class EnterMapRotationRegionScRspOuterClass {
             }
             break;
           }
-          case 239640819: {
-            if (input.isAtField(FieldNames.bJPBAJECKFO)) {
+          case 1787644431:
+          case 1278860153: {
+            if (input.isAtField(FieldNames.clientPosVersion)) {
               if (!input.trySkipNullValue()) {
-                bJPBAJECKFO = input.readUInt32();
+                clientPosVersion = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -590,10 +590,10 @@ public final class EnterMapRotationRegionScRspOuterClass {
             }
             break;
           }
-          case 1447527590: {
-            if (input.isAtField(FieldNames.hDEHHKEMOCD)) {
+          case -1841046520: {
+            if (input.isAtField(FieldNames.cHJMODIMLDA)) {
               if (!input.trySkipNullValue()) {
-                hDEHHKEMOCD = input.readUInt32();
+                cHJMODIMLDA = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -689,11 +689,11 @@ public final class EnterMapRotationRegionScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName iPFOFHHKJKP = FieldName.forField("IPFOFHHKJKP");
+
       static final FieldName clientPosVersion = FieldName.forField("clientPosVersion", "client_pos_version");
 
-      static final FieldName bJPBAJECKFO = FieldName.forField("BJPBAJECKFO");
-
-      static final FieldName hDEHHKEMOCD = FieldName.forField("HDEHHKEMOCD");
+      static final FieldName cHJMODIMLDA = FieldName.forField("CHJMODIMLDA");
 
       static final FieldName retcode = FieldName.forField("retcode");
 

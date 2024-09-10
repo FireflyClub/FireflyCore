@@ -19,14 +19,14 @@ public final class SyncRogueStatusScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueStatus status = 6;</code>
+     * <code>optional .RogueStatus status = 7;</code>
      */
     private int status;
 
     /**
-     * <code>optional bool CPGOHINILOI = 15;</code>
+     * <code>optional bool MMGFCILICND = 5;</code>
      */
-    private boolean cPGOHINILOI;
+    private boolean mMGFCILICND;
 
     private SyncRogueStatusScNotify() {
     }
@@ -39,7 +39,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 6;</code>
+     * <code>optional .RogueStatus status = 7;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -47,7 +47,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 6;</code>
+     * <code>optional .RogueStatus status = 7;</code>
      * @return this
      */
     public SyncRogueStatusScNotify clearStatus() {
@@ -57,7 +57,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 6;</code>
+     * <code>optional .RogueStatus status = 7;</code>
      * @return the status
      */
     public RogueStatusOuterClass.RogueStatus getStatus() {
@@ -90,7 +90,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 6;</code>
+     * <code>optional .RogueStatus status = 7;</code>
      * @param value the status to set
      * @return this
      */
@@ -101,39 +101,39 @@ public final class SyncRogueStatusScNotifyOuterClass {
     }
 
     /**
-     * <code>optional bool CPGOHINILOI = 15;</code>
-     * @return whether the cPGOHINILOI field is set
+     * <code>optional bool MMGFCILICND = 5;</code>
+     * @return whether the mMGFCILICND field is set
      */
-    public boolean hasCPGOHINILOI() {
+    public boolean hasMMGFCILICND() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool CPGOHINILOI = 15;</code>
+     * <code>optional bool MMGFCILICND = 5;</code>
      * @return this
      */
-    public SyncRogueStatusScNotify clearCPGOHINILOI() {
+    public SyncRogueStatusScNotify clearMMGFCILICND() {
       bitField0_ &= ~0x00000002;
-      cPGOHINILOI = false;
+      mMGFCILICND = false;
       return this;
     }
 
     /**
-     * <code>optional bool CPGOHINILOI = 15;</code>
-     * @return the cPGOHINILOI
+     * <code>optional bool MMGFCILICND = 5;</code>
+     * @return the mMGFCILICND
      */
-    public boolean getCPGOHINILOI() {
-      return cPGOHINILOI;
+    public boolean getMMGFCILICND() {
+      return mMGFCILICND;
     }
 
     /**
-     * <code>optional bool CPGOHINILOI = 15;</code>
-     * @param value the cPGOHINILOI to set
+     * <code>optional bool MMGFCILICND = 5;</code>
+     * @param value the mMGFCILICND to set
      * @return this
      */
-    public SyncRogueStatusScNotify setCPGOHINILOI(final boolean value) {
+    public SyncRogueStatusScNotify setMMGFCILICND(final boolean value) {
       bitField0_ |= 0x00000002;
-      cPGOHINILOI = value;
+      mMGFCILICND = value;
       return this;
     }
 
@@ -143,7 +143,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         status = other.status;
-        cPGOHINILOI = other.cPGOHINILOI;
+        mMGFCILICND = other.mMGFCILICND;
       }
       return this;
     }
@@ -157,8 +157,8 @@ public final class SyncRogueStatusScNotifyOuterClass {
       if (other.hasStatus()) {
         setStatusValue(other.status);
       }
-      if (other.hasCPGOHINILOI()) {
-        setCPGOHINILOI(other.cPGOHINILOI);
+      if (other.hasMMGFCILICND()) {
+        setMMGFCILICND(other.mMGFCILICND);
       }
       return this;
     }
@@ -171,7 +171,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       status = 0;
-      cPGOHINILOI = false;
+      mMGFCILICND = false;
       return this;
     }
 
@@ -196,18 +196,18 @@ public final class SyncRogueStatusScNotifyOuterClass {
       SyncRogueStatusScNotify other = (SyncRogueStatusScNotify) o;
       return bitField0_ == other.bitField0_
         && (!hasStatus() || status == other.status)
-        && (!hasCPGOHINILOI() || cPGOHINILOI == other.cPGOHINILOI);
+        && (!hasMMGFCILICND() || mMGFCILICND == other.mMGFCILICND);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(status);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeBoolNoTag(cPGOHINILOI);
+        output.writeRawByte((byte) 40);
+        output.writeBoolNoTag(mMGFCILICND);
       }
     }
 
@@ -230,7 +230,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 56: {
             // status
             final int value = input.readInt32();
             if (RogueStatusOuterClass.RogueStatus.forNumber(value) != null) {
@@ -238,13 +238,13 @@ public final class SyncRogueStatusScNotifyOuterClass {
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 40) {
               break;
             }
           }
-          case 120: {
-            // cPGOHINILOI
-            cPGOHINILOI = input.readBool();
+          case 40: {
+            // mMGFCILICND
+            mMGFCILICND = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -272,7 +272,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
         output.writeEnum(FieldNames.status, status, RogueStatusOuterClass.RogueStatus.converter());
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.cPGOHINILOI, cPGOHINILOI);
+        output.writeBool(FieldNames.mMGFCILICND, mMGFCILICND);
       }
       output.endObject();
     }
@@ -300,10 +300,10 @@ public final class SyncRogueStatusScNotifyOuterClass {
             }
             break;
           }
-          case -570051723: {
-            if (input.isAtField(FieldNames.cPGOHINILOI)) {
+          case 580013719: {
+            if (input.isAtField(FieldNames.mMGFCILICND)) {
               if (!input.trySkipNullValue()) {
-                cPGOHINILOI = input.readBool();
+                mMGFCILICND = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -366,7 +366,7 @@ public final class SyncRogueStatusScNotifyOuterClass {
     static class FieldNames {
       static final FieldName status = FieldName.forField("status");
 
-      static final FieldName cPGOHINILOI = FieldName.forField("CPGOHINILOI");
+      static final FieldName mMGFCILICND = FieldName.forField("MMGFCILICND");
     }
   }
 }

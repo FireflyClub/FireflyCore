@@ -20,17 +20,17 @@ public final class RotaterDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float MBCJHDHABAK = 14;</code>
+     * <code>optional float LENPGCPMGCL = 2;</code>
      */
-    private float mBCJHDHABAK;
+    private float lENPGCPMGCL;
 
     /**
-     * <code>optional uint32 rotate_int = 3;</code>
+     * <code>optional uint32 rotate_int = 5;</code>
      */
     private int rotateInt;
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 12;</code>
      */
     private int groupId;
 
@@ -45,44 +45,44 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional float MBCJHDHABAK = 14;</code>
-     * @return whether the mBCJHDHABAK field is set
+     * <code>optional float LENPGCPMGCL = 2;</code>
+     * @return whether the lENPGCPMGCL field is set
      */
-    public boolean hasMBCJHDHABAK() {
+    public boolean hasLENPGCPMGCL() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional float MBCJHDHABAK = 14;</code>
+     * <code>optional float LENPGCPMGCL = 2;</code>
      * @return this
      */
-    public RotaterData clearMBCJHDHABAK() {
+    public RotaterData clearLENPGCPMGCL() {
       bitField0_ &= ~0x00000001;
-      mBCJHDHABAK = 0F;
+      lENPGCPMGCL = 0F;
       return this;
     }
 
     /**
-     * <code>optional float MBCJHDHABAK = 14;</code>
-     * @return the mBCJHDHABAK
+     * <code>optional float LENPGCPMGCL = 2;</code>
+     * @return the lENPGCPMGCL
      */
-    public float getMBCJHDHABAK() {
-      return mBCJHDHABAK;
+    public float getLENPGCPMGCL() {
+      return lENPGCPMGCL;
     }
 
     /**
-     * <code>optional float MBCJHDHABAK = 14;</code>
-     * @param value the mBCJHDHABAK to set
+     * <code>optional float LENPGCPMGCL = 2;</code>
+     * @param value the lENPGCPMGCL to set
      * @return this
      */
-    public RotaterData setMBCJHDHABAK(final float value) {
+    public RotaterData setLENPGCPMGCL(final float value) {
       bitField0_ |= 0x00000001;
-      mBCJHDHABAK = value;
+      lENPGCPMGCL = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 rotate_int = 3;</code>
+     * <code>optional uint32 rotate_int = 5;</code>
      * @return whether the rotateInt field is set
      */
     public boolean hasRotateInt() {
@@ -90,7 +90,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 3;</code>
+     * <code>optional uint32 rotate_int = 5;</code>
      * @return this
      */
     public RotaterData clearRotateInt() {
@@ -100,7 +100,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 3;</code>
+     * <code>optional uint32 rotate_int = 5;</code>
      * @return the rotateInt
      */
     public int getRotateInt() {
@@ -108,7 +108,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 rotate_int = 3;</code>
+     * <code>optional uint32 rotate_int = 5;</code>
      * @param value the rotateInt to set
      * @return this
      */
@@ -119,7 +119,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 12;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -127,7 +127,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 12;</code>
      * @return this
      */
     public RotaterData clearGroupId() {
@@ -137,7 +137,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 12;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -145,7 +145,7 @@ public final class RotaterDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 12;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -160,7 +160,7 @@ public final class RotaterDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        mBCJHDHABAK = other.mBCJHDHABAK;
+        lENPGCPMGCL = other.lENPGCPMGCL;
         rotateInt = other.rotateInt;
         groupId = other.groupId;
       }
@@ -173,8 +173,8 @@ public final class RotaterDataOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMBCJHDHABAK()) {
-        setMBCJHDHABAK(other.mBCJHDHABAK);
+      if (other.hasLENPGCPMGCL()) {
+        setLENPGCPMGCL(other.lENPGCPMGCL);
       }
       if (other.hasRotateInt()) {
         setRotateInt(other.rotateInt);
@@ -192,7 +192,7 @@ public final class RotaterDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      mBCJHDHABAK = 0F;
+      lENPGCPMGCL = 0F;
       rotateInt = 0;
       groupId = 0;
       return this;
@@ -218,7 +218,7 @@ public final class RotaterDataOuterClass {
       }
       RotaterData other = (RotaterData) o;
       return bitField0_ == other.bitField0_
-        && (!hasMBCJHDHABAK() || ProtoUtil.isEqual(mBCJHDHABAK, other.mBCJHDHABAK))
+        && (!hasLENPGCPMGCL() || ProtoUtil.isEqual(lENPGCPMGCL, other.lENPGCPMGCL))
         && (!hasRotateInt() || rotateInt == other.rotateInt)
         && (!hasGroupId() || groupId == other.groupId);
     }
@@ -226,15 +226,15 @@ public final class RotaterDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 117);
-        output.writeFloatNoTag(mBCJHDHABAK);
+        output.writeRawByte((byte) 21);
+        output.writeFloatNoTag(lENPGCPMGCL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(rotateInt);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(groupId);
       }
     }
@@ -261,25 +261,25 @@ public final class RotaterDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 117: {
-            // mBCJHDHABAK
-            mBCJHDHABAK = input.readFloat();
+          case 21: {
+            // lENPGCPMGCL
+            lENPGCPMGCL = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 40) {
               break;
             }
           }
-          case 24: {
+          case 40: {
             // rotateInt
             rotateInt = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 96) {
               break;
             }
           }
-          case 120: {
+          case 96: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000004;
@@ -306,7 +306,7 @@ public final class RotaterDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeFloat(FieldNames.mBCJHDHABAK, mBCJHDHABAK);
+        output.writeFloat(FieldNames.lENPGCPMGCL, lENPGCPMGCL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.rotateInt, rotateInt);
@@ -324,10 +324,10 @@ public final class RotaterDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -241676133: {
-            if (input.isAtField(FieldNames.mBCJHDHABAK)) {
+          case -777850084: {
+            if (input.isAtField(FieldNames.lENPGCPMGCL)) {
               if (!input.trySkipNullValue()) {
-                mBCJHDHABAK = input.readFloat();
+                lENPGCPMGCL = input.readFloat();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -411,7 +411,7 @@ public final class RotaterDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName mBCJHDHABAK = FieldName.forField("MBCJHDHABAK");
+      static final FieldName lENPGCPMGCL = FieldName.forField("LENPGCPMGCL");
 
       static final FieldName rotateInt = FieldName.forField("rotateInt", "rotate_int");
 

@@ -396,15 +396,14 @@ public class ChallengeInstance {
             for (var buffId: this.getBuffs()) {
                 if (excel.getType() == ChallengeType.Story) {
                     proto
-                        .getMutableStartInfo()
+                        .getMutableExtInfo()
                         .getMutableCurStoryBuffs()
                         .addBuffList(buffId);
                 } else {
                     proto
-                        .getMutableStartInfo()
+                        .getMutableExtInfo()
                         .getMutableCurBossBuffs()
-                        .addBuffList(buffId)
-                        .setKAEFAFNNEEK(1);
+                        .addBuffList(buffId);
                 }
             }
         }

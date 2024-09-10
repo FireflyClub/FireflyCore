@@ -20,7 +20,7 @@ public class HandlerSetClientPausedCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = SetClientPausedCsReq.parseFrom(data);
         
-        session.getPlayer().setPaused(req.getPaused());
+        session.getPlayer().setPaused(req.getIsPaused());
         session.send(new PacketSetClientPausedScRsp(session.getPlayer()));
 
         byte[] bytecode;

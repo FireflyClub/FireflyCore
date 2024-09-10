@@ -6,7 +6,7 @@ import "FriendListInfo.proto";
 
 message HandleFriendScRsp {
 	uint32 retcode = 1;
-	bool handle_result = 11;
-	FriendListInfo handle_friend_info = 6;
-	uint32 uid = 7;
+	FriendListInfo handle_friend_info = 14;
+	uint32 uid = 3;
+	bool handle_result = 5;
 }

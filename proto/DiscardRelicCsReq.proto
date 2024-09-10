@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DiscardRelicCsReq {
-	bool is_discard = 6;
-	repeated uint32 IPNGFAIPDDE = 3;
-	bool KIJKPEPDDEL = 15;
+	bool is_discard = 3;
+	bool OKKJFIBNGCE = 11;
+	repeated uint32 EAMLKLABFBO = 10;
 }

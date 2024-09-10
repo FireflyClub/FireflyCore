@@ -19,29 +19,29 @@ public final class PlayerCollectionInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 JPBEJKAHKCM = 2;</code>
+     * <code>optional uint32 HMMOBNAFHJC = 7;</code>
      */
-    private int jPBEJKAHKCM;
+    private int hMMOBNAFHJC;
 
     /**
-     * <code>optional uint32 HEDNPIBGENF = 4;</code>
+     * <code>optional uint32 OJCGAOPENDG = 8;</code>
      */
-    private int hEDNPIBGENF;
+    private int oJCGAOPENDG;
 
     /**
-     * <code>optional uint32 KFONDAPNDEP = 8;</code>
+     * <code>optional uint32 GIJPKEENIAO = 13;</code>
      */
-    private int kFONDAPNDEP;
+    private int gIJPKEENIAO;
 
     /**
-     * <code>optional uint32 OFMFGKEIDJO = 10;</code>
+     * <code>optional uint32 EFGAAHCDEFK = 14;</code>
      */
-    private int oFMFGKEIDJO;
+    private int eFGAAHCDEFK;
 
     /**
-     * <code>optional uint32 EJMCBAGHHDH = 11;</code>
+     * <code>optional uint32 JLEAIIHKNJB = 15;</code>
      */
-    private int eJMCBAGHHDH;
+    private int jLEAIIHKNJB;
 
     private PlayerCollectionInfo() {
     }
@@ -54,187 +54,187 @@ public final class PlayerCollectionInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 JPBEJKAHKCM = 2;</code>
-     * @return whether the jPBEJKAHKCM field is set
+     * <code>optional uint32 HMMOBNAFHJC = 7;</code>
+     * @return whether the hMMOBNAFHJC field is set
      */
-    public boolean hasJPBEJKAHKCM() {
+    public boolean hasHMMOBNAFHJC() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 JPBEJKAHKCM = 2;</code>
+     * <code>optional uint32 HMMOBNAFHJC = 7;</code>
      * @return this
      */
-    public PlayerCollectionInfo clearJPBEJKAHKCM() {
+    public PlayerCollectionInfo clearHMMOBNAFHJC() {
       bitField0_ &= ~0x00000001;
-      jPBEJKAHKCM = 0;
+      hMMOBNAFHJC = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 JPBEJKAHKCM = 2;</code>
-     * @return the jPBEJKAHKCM
+     * <code>optional uint32 HMMOBNAFHJC = 7;</code>
+     * @return the hMMOBNAFHJC
      */
-    public int getJPBEJKAHKCM() {
-      return jPBEJKAHKCM;
+    public int getHMMOBNAFHJC() {
+      return hMMOBNAFHJC;
     }
 
     /**
-     * <code>optional uint32 JPBEJKAHKCM = 2;</code>
-     * @param value the jPBEJKAHKCM to set
+     * <code>optional uint32 HMMOBNAFHJC = 7;</code>
+     * @param value the hMMOBNAFHJC to set
      * @return this
      */
-    public PlayerCollectionInfo setJPBEJKAHKCM(final int value) {
+    public PlayerCollectionInfo setHMMOBNAFHJC(final int value) {
       bitField0_ |= 0x00000001;
-      jPBEJKAHKCM = value;
+      hMMOBNAFHJC = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 HEDNPIBGENF = 4;</code>
-     * @return whether the hEDNPIBGENF field is set
+     * <code>optional uint32 OJCGAOPENDG = 8;</code>
+     * @return whether the oJCGAOPENDG field is set
      */
-    public boolean hasHEDNPIBGENF() {
+    public boolean hasOJCGAOPENDG() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 HEDNPIBGENF = 4;</code>
+     * <code>optional uint32 OJCGAOPENDG = 8;</code>
      * @return this
      */
-    public PlayerCollectionInfo clearHEDNPIBGENF() {
+    public PlayerCollectionInfo clearOJCGAOPENDG() {
       bitField0_ &= ~0x00000002;
-      hEDNPIBGENF = 0;
+      oJCGAOPENDG = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 HEDNPIBGENF = 4;</code>
-     * @return the hEDNPIBGENF
+     * <code>optional uint32 OJCGAOPENDG = 8;</code>
+     * @return the oJCGAOPENDG
      */
-    public int getHEDNPIBGENF() {
-      return hEDNPIBGENF;
+    public int getOJCGAOPENDG() {
+      return oJCGAOPENDG;
     }
 
     /**
-     * <code>optional uint32 HEDNPIBGENF = 4;</code>
-     * @param value the hEDNPIBGENF to set
+     * <code>optional uint32 OJCGAOPENDG = 8;</code>
+     * @param value the oJCGAOPENDG to set
      * @return this
      */
-    public PlayerCollectionInfo setHEDNPIBGENF(final int value) {
+    public PlayerCollectionInfo setOJCGAOPENDG(final int value) {
       bitField0_ |= 0x00000002;
-      hEDNPIBGENF = value;
+      oJCGAOPENDG = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 KFONDAPNDEP = 8;</code>
-     * @return whether the kFONDAPNDEP field is set
+     * <code>optional uint32 GIJPKEENIAO = 13;</code>
+     * @return whether the gIJPKEENIAO field is set
      */
-    public boolean hasKFONDAPNDEP() {
+    public boolean hasGIJPKEENIAO() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 KFONDAPNDEP = 8;</code>
+     * <code>optional uint32 GIJPKEENIAO = 13;</code>
      * @return this
      */
-    public PlayerCollectionInfo clearKFONDAPNDEP() {
+    public PlayerCollectionInfo clearGIJPKEENIAO() {
       bitField0_ &= ~0x00000004;
-      kFONDAPNDEP = 0;
+      gIJPKEENIAO = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 KFONDAPNDEP = 8;</code>
-     * @return the kFONDAPNDEP
+     * <code>optional uint32 GIJPKEENIAO = 13;</code>
+     * @return the gIJPKEENIAO
      */
-    public int getKFONDAPNDEP() {
-      return kFONDAPNDEP;
+    public int getGIJPKEENIAO() {
+      return gIJPKEENIAO;
     }
 
     /**
-     * <code>optional uint32 KFONDAPNDEP = 8;</code>
-     * @param value the kFONDAPNDEP to set
+     * <code>optional uint32 GIJPKEENIAO = 13;</code>
+     * @param value the gIJPKEENIAO to set
      * @return this
      */
-    public PlayerCollectionInfo setKFONDAPNDEP(final int value) {
+    public PlayerCollectionInfo setGIJPKEENIAO(final int value) {
       bitField0_ |= 0x00000004;
-      kFONDAPNDEP = value;
+      gIJPKEENIAO = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 OFMFGKEIDJO = 10;</code>
-     * @return whether the oFMFGKEIDJO field is set
+     * <code>optional uint32 EFGAAHCDEFK = 14;</code>
+     * @return whether the eFGAAHCDEFK field is set
      */
-    public boolean hasOFMFGKEIDJO() {
+    public boolean hasEFGAAHCDEFK() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 OFMFGKEIDJO = 10;</code>
+     * <code>optional uint32 EFGAAHCDEFK = 14;</code>
      * @return this
      */
-    public PlayerCollectionInfo clearOFMFGKEIDJO() {
+    public PlayerCollectionInfo clearEFGAAHCDEFK() {
       bitField0_ &= ~0x00000008;
-      oFMFGKEIDJO = 0;
+      eFGAAHCDEFK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 OFMFGKEIDJO = 10;</code>
-     * @return the oFMFGKEIDJO
+     * <code>optional uint32 EFGAAHCDEFK = 14;</code>
+     * @return the eFGAAHCDEFK
      */
-    public int getOFMFGKEIDJO() {
-      return oFMFGKEIDJO;
+    public int getEFGAAHCDEFK() {
+      return eFGAAHCDEFK;
     }
 
     /**
-     * <code>optional uint32 OFMFGKEIDJO = 10;</code>
-     * @param value the oFMFGKEIDJO to set
+     * <code>optional uint32 EFGAAHCDEFK = 14;</code>
+     * @param value the eFGAAHCDEFK to set
      * @return this
      */
-    public PlayerCollectionInfo setOFMFGKEIDJO(final int value) {
+    public PlayerCollectionInfo setEFGAAHCDEFK(final int value) {
       bitField0_ |= 0x00000008;
-      oFMFGKEIDJO = value;
+      eFGAAHCDEFK = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 EJMCBAGHHDH = 11;</code>
-     * @return whether the eJMCBAGHHDH field is set
+     * <code>optional uint32 JLEAIIHKNJB = 15;</code>
+     * @return whether the jLEAIIHKNJB field is set
      */
-    public boolean hasEJMCBAGHHDH() {
+    public boolean hasJLEAIIHKNJB() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional uint32 EJMCBAGHHDH = 11;</code>
+     * <code>optional uint32 JLEAIIHKNJB = 15;</code>
      * @return this
      */
-    public PlayerCollectionInfo clearEJMCBAGHHDH() {
+    public PlayerCollectionInfo clearJLEAIIHKNJB() {
       bitField0_ &= ~0x00000010;
-      eJMCBAGHHDH = 0;
+      jLEAIIHKNJB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 EJMCBAGHHDH = 11;</code>
-     * @return the eJMCBAGHHDH
+     * <code>optional uint32 JLEAIIHKNJB = 15;</code>
+     * @return the jLEAIIHKNJB
      */
-    public int getEJMCBAGHHDH() {
-      return eJMCBAGHHDH;
+    public int getJLEAIIHKNJB() {
+      return jLEAIIHKNJB;
     }
 
     /**
-     * <code>optional uint32 EJMCBAGHHDH = 11;</code>
-     * @param value the eJMCBAGHHDH to set
+     * <code>optional uint32 JLEAIIHKNJB = 15;</code>
+     * @param value the jLEAIIHKNJB to set
      * @return this
      */
-    public PlayerCollectionInfo setEJMCBAGHHDH(final int value) {
+    public PlayerCollectionInfo setJLEAIIHKNJB(final int value) {
       bitField0_ |= 0x00000010;
-      eJMCBAGHHDH = value;
+      jLEAIIHKNJB = value;
       return this;
     }
 
@@ -243,11 +243,11 @@ public final class PlayerCollectionInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        jPBEJKAHKCM = other.jPBEJKAHKCM;
-        hEDNPIBGENF = other.hEDNPIBGENF;
-        kFONDAPNDEP = other.kFONDAPNDEP;
-        oFMFGKEIDJO = other.oFMFGKEIDJO;
-        eJMCBAGHHDH = other.eJMCBAGHHDH;
+        hMMOBNAFHJC = other.hMMOBNAFHJC;
+        oJCGAOPENDG = other.oJCGAOPENDG;
+        gIJPKEENIAO = other.gIJPKEENIAO;
+        eFGAAHCDEFK = other.eFGAAHCDEFK;
+        jLEAIIHKNJB = other.jLEAIIHKNJB;
       }
       return this;
     }
@@ -258,20 +258,20 @@ public final class PlayerCollectionInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasJPBEJKAHKCM()) {
-        setJPBEJKAHKCM(other.jPBEJKAHKCM);
+      if (other.hasHMMOBNAFHJC()) {
+        setHMMOBNAFHJC(other.hMMOBNAFHJC);
       }
-      if (other.hasHEDNPIBGENF()) {
-        setHEDNPIBGENF(other.hEDNPIBGENF);
+      if (other.hasOJCGAOPENDG()) {
+        setOJCGAOPENDG(other.oJCGAOPENDG);
       }
-      if (other.hasKFONDAPNDEP()) {
-        setKFONDAPNDEP(other.kFONDAPNDEP);
+      if (other.hasGIJPKEENIAO()) {
+        setGIJPKEENIAO(other.gIJPKEENIAO);
       }
-      if (other.hasOFMFGKEIDJO()) {
-        setOFMFGKEIDJO(other.oFMFGKEIDJO);
+      if (other.hasEFGAAHCDEFK()) {
+        setEFGAAHCDEFK(other.eFGAAHCDEFK);
       }
-      if (other.hasEJMCBAGHHDH()) {
-        setEJMCBAGHHDH(other.eJMCBAGHHDH);
+      if (other.hasJLEAIIHKNJB()) {
+        setJLEAIIHKNJB(other.jLEAIIHKNJB);
       }
       return this;
     }
@@ -283,11 +283,11 @@ public final class PlayerCollectionInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      jPBEJKAHKCM = 0;
-      hEDNPIBGENF = 0;
-      kFONDAPNDEP = 0;
-      oFMFGKEIDJO = 0;
-      eJMCBAGHHDH = 0;
+      hMMOBNAFHJC = 0;
+      oJCGAOPENDG = 0;
+      gIJPKEENIAO = 0;
+      eFGAAHCDEFK = 0;
+      jLEAIIHKNJB = 0;
       return this;
     }
 
@@ -311,34 +311,34 @@ public final class PlayerCollectionInfoOuterClass {
       }
       PlayerCollectionInfo other = (PlayerCollectionInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasJPBEJKAHKCM() || jPBEJKAHKCM == other.jPBEJKAHKCM)
-        && (!hasHEDNPIBGENF() || hEDNPIBGENF == other.hEDNPIBGENF)
-        && (!hasKFONDAPNDEP() || kFONDAPNDEP == other.kFONDAPNDEP)
-        && (!hasOFMFGKEIDJO() || oFMFGKEIDJO == other.oFMFGKEIDJO)
-        && (!hasEJMCBAGHHDH() || eJMCBAGHHDH == other.eJMCBAGHHDH);
+        && (!hasHMMOBNAFHJC() || hMMOBNAFHJC == other.hMMOBNAFHJC)
+        && (!hasOJCGAOPENDG() || oJCGAOPENDG == other.oJCGAOPENDG)
+        && (!hasGIJPKEENIAO() || gIJPKEENIAO == other.gIJPKEENIAO)
+        && (!hasEFGAAHCDEFK() || eFGAAHCDEFK == other.eFGAAHCDEFK)
+        && (!hasJLEAIIHKNJB() || jLEAIIHKNJB == other.jLEAIIHKNJB);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(jPBEJKAHKCM);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(hMMOBNAFHJC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(hEDNPIBGENF);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(oJCGAOPENDG);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(kFONDAPNDEP);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(gIJPKEENIAO);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(oFMFGKEIDJO);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(eFGAAHCDEFK);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(eJMCBAGHHDH);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(jLEAIIHKNJB);
       }
     }
 
@@ -346,19 +346,19 @@ public final class PlayerCollectionInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(jPBEJKAHKCM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(hMMOBNAFHJC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(hEDNPIBGENF);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(oJCGAOPENDG);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(kFONDAPNDEP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gIJPKEENIAO);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(oFMFGKEIDJO);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(eFGAAHCDEFK);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(eJMCBAGHHDH);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(jLEAIIHKNJB);
       }
       return size;
     }
@@ -370,45 +370,45 @@ public final class PlayerCollectionInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // jPBEJKAHKCM
-            jPBEJKAHKCM = input.readUInt32();
+          case 56: {
+            // hMMOBNAFHJC
+            hMMOBNAFHJC = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 32) {
-              break;
-            }
-          }
-          case 32: {
-            // hEDNPIBGENF
-            hEDNPIBGENF = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 64) {
               break;
             }
           }
           case 64: {
-            // kFONDAPNDEP
-            kFONDAPNDEP = input.readUInt32();
+            // oJCGAOPENDG
+            oJCGAOPENDG = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // gIJPKEENIAO
+            gIJPKEENIAO = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 112) {
               break;
             }
           }
-          case 80: {
-            // oFMFGKEIDJO
-            oFMFGKEIDJO = input.readUInt32();
+          case 112: {
+            // eFGAAHCDEFK
+            eFGAAHCDEFK = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 120) {
               break;
             }
           }
-          case 88: {
-            // eJMCBAGHHDH
-            eJMCBAGHHDH = input.readUInt32();
+          case 120: {
+            // jLEAIIHKNJB
+            jLEAIIHKNJB = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
@@ -433,19 +433,19 @@ public final class PlayerCollectionInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.jPBEJKAHKCM, jPBEJKAHKCM);
+        output.writeUInt32(FieldNames.hMMOBNAFHJC, hMMOBNAFHJC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.hEDNPIBGENF, hEDNPIBGENF);
+        output.writeUInt32(FieldNames.oJCGAOPENDG, oJCGAOPENDG);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.kFONDAPNDEP, kFONDAPNDEP);
+        output.writeUInt32(FieldNames.gIJPKEENIAO, gIJPKEENIAO);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.oFMFGKEIDJO, oFMFGKEIDJO);
+        output.writeUInt32(FieldNames.eFGAAHCDEFK, eFGAAHCDEFK);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.eJMCBAGHHDH, eJMCBAGHHDH);
+        output.writeUInt32(FieldNames.jLEAIIHKNJB, jLEAIIHKNJB);
       }
       output.endObject();
     }
@@ -457,10 +457,10 @@ public final class PlayerCollectionInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1755522980: {
-            if (input.isAtField(FieldNames.jPBEJKAHKCM)) {
+          case 765833513: {
+            if (input.isAtField(FieldNames.hMMOBNAFHJC)) {
               if (!input.trySkipNullValue()) {
-                jPBEJKAHKCM = input.readUInt32();
+                hMMOBNAFHJC = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -468,10 +468,10 @@ public final class PlayerCollectionInfoOuterClass {
             }
             break;
           }
-          case -919693352: {
-            if (input.isAtField(FieldNames.hEDNPIBGENF)) {
+          case 653665135: {
+            if (input.isAtField(FieldNames.oJCGAOPENDG)) {
               if (!input.trySkipNullValue()) {
-                hEDNPIBGENF = input.readUInt32();
+                oJCGAOPENDG = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -479,10 +479,10 @@ public final class PlayerCollectionInfoOuterClass {
             }
             break;
           }
-          case 1399704858: {
-            if (input.isAtField(FieldNames.kFONDAPNDEP)) {
+          case 1067947308: {
+            if (input.isAtField(FieldNames.gIJPKEENIAO)) {
               if (!input.trySkipNullValue()) {
-                kFONDAPNDEP = input.readUInt32();
+                gIJPKEENIAO = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -490,10 +490,10 @@ public final class PlayerCollectionInfoOuterClass {
             }
             break;
           }
-          case -292277423: {
-            if (input.isAtField(FieldNames.oFMFGKEIDJO)) {
+          case 1510104679: {
+            if (input.isAtField(FieldNames.eFGAAHCDEFK)) {
               if (!input.trySkipNullValue()) {
-                oFMFGKEIDJO = input.readUInt32();
+                eFGAAHCDEFK = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -501,10 +501,10 @@ public final class PlayerCollectionInfoOuterClass {
             }
             break;
           }
-          case -1649172463: {
-            if (input.isAtField(FieldNames.eJMCBAGHHDH)) {
+          case 2094669285: {
+            if (input.isAtField(FieldNames.jLEAIIHKNJB)) {
               if (!input.trySkipNullValue()) {
-                eJMCBAGHHDH = input.readUInt32();
+                jLEAIIHKNJB = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -565,15 +565,15 @@ public final class PlayerCollectionInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName jPBEJKAHKCM = FieldName.forField("JPBEJKAHKCM");
+      static final FieldName hMMOBNAFHJC = FieldName.forField("HMMOBNAFHJC");
 
-      static final FieldName hEDNPIBGENF = FieldName.forField("HEDNPIBGENF");
+      static final FieldName oJCGAOPENDG = FieldName.forField("OJCGAOPENDG");
 
-      static final FieldName kFONDAPNDEP = FieldName.forField("KFONDAPNDEP");
+      static final FieldName gIJPKEENIAO = FieldName.forField("GIJPKEENIAO");
 
-      static final FieldName oFMFGKEIDJO = FieldName.forField("OFMFGKEIDJO");
+      static final FieldName eFGAAHCDEFK = FieldName.forField("EFGAAHCDEFK");
 
-      static final FieldName eJMCBAGHHDH = FieldName.forField("EJMCBAGHHDH");
+      static final FieldName jLEAIIHKNJB = FieldName.forField("JLEAIIHKNJB");
     }
   }
 }

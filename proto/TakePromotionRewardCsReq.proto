@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message TakePromotionRewardCsReq {
-	uint32 promotion = 1;
-	uint32 base_avatar_id = 2;
+	uint32 base_avatar_id = 9;
+	uint32 promotion = 13;
 }

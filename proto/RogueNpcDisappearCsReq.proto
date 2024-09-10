@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RogueNpcDisappearCsReq {
-	uint32 disappear_npc_id = 11;
+	uint32 disappear_npc_id = 3;
 }

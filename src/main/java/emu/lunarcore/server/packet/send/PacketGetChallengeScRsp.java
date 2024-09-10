@@ -25,7 +25,7 @@ public class PacketGetChallengeScRsp extends BasePacket {
                 
                 // add extra infos for bosses to trigger challenge unlock
                 if (challengeExcel.getType() == ChallengeType.Boss) {
-                    var boss = challenge.getMutableStartInfo().getMutableBossInfo();
+                    var boss = challenge.getMutableExtInfo().getMutableBossInfo();
                     boss.getMutableSecondNode();
                     boss.getMutableFirstNode();
                 }

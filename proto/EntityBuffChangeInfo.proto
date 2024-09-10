@@ -6,8 +6,9 @@ import "BuffInfo.proto";
 import "SceneEntityBuffChangeType.proto";
 
 message EntityBuffChangeInfo {
+	oneof challenge_info_case {		BuffInfo add_buff_info = 6;
+		uint32 remove_buff_id = 7;
+	}
+	uint32 entity_id = 10;
 	SceneEntityBuffChangeType reason = 11;
-	BuffInfo add_buff_info = 8;
-	uint32 remove_buff_id = 9;
-	uint32 entity_id = 13;
 }

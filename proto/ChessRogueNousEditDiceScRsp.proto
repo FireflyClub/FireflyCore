@@ -6,5 +6,5 @@ import "ChessRogueNousDiceInfo.proto";
 
 message ChessRogueNousEditDiceScRsp {
     uint32 retcode = 11;
-    ChessRogueNousDiceInfo dice_info = 13;
+    ChessRogueNousDiceInfo dice_info = 4;
 }

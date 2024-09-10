@@ -19,9 +19,9 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entity_id = 4;</code>
+     * <code>optional uint32 OKCOHJJEEAA = 15;</code>
      */
-    private int entityId;
+    private int oKCOHJJEEAA;
 
     private ChessRogueRollDiceCsReq() {
     }
@@ -34,39 +34,39 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 4;</code>
-     * @return whether the entityId field is set
+     * <code>optional uint32 OKCOHJJEEAA = 15;</code>
+     * @return whether the oKCOHJJEEAA field is set
      */
-    public boolean hasEntityId() {
+    public boolean hasOKCOHJJEEAA() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 entity_id = 4;</code>
+     * <code>optional uint32 OKCOHJJEEAA = 15;</code>
      * @return this
      */
-    public ChessRogueRollDiceCsReq clearEntityId() {
+    public ChessRogueRollDiceCsReq clearOKCOHJJEEAA() {
       bitField0_ &= ~0x00000001;
-      entityId = 0;
+      oKCOHJJEEAA = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 entity_id = 4;</code>
-     * @return the entityId
+     * <code>optional uint32 OKCOHJJEEAA = 15;</code>
+     * @return the oKCOHJJEEAA
      */
-    public int getEntityId() {
-      return entityId;
+    public int getOKCOHJJEEAA() {
+      return oKCOHJJEEAA;
     }
 
     /**
-     * <code>optional uint32 entity_id = 4;</code>
-     * @param value the entityId to set
+     * <code>optional uint32 OKCOHJJEEAA = 15;</code>
+     * @param value the oKCOHJJEEAA to set
      * @return this
      */
-    public ChessRogueRollDiceCsReq setEntityId(final int value) {
+    public ChessRogueRollDiceCsReq setOKCOHJJEEAA(final int value) {
       bitField0_ |= 0x00000001;
-      entityId = value;
+      oKCOHJJEEAA = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class ChessRogueRollDiceCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        entityId = other.entityId;
+        oKCOHJJEEAA = other.oKCOHJJEEAA;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class ChessRogueRollDiceCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEntityId()) {
-        setEntityId(other.entityId);
+      if (other.hasOKCOHJJEEAA()) {
+        setOKCOHJJEEAA(other.oKCOHJJEEAA);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class ChessRogueRollDiceCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      entityId = 0;
+      oKCOHJJEEAA = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class ChessRogueRollDiceCsReqOuterClass {
       }
       ChessRogueRollDiceCsReq other = (ChessRogueRollDiceCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasEntityId() || entityId == other.entityId);
+        && (!hasOKCOHJJEEAA() || oKCOHJJEEAA == other.oKCOHJJEEAA);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(entityId);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(oKCOHJJEEAA);
       }
     }
 
@@ -138,7 +138,7 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(oKCOHJJEEAA);
       }
       return size;
     }
@@ -150,9 +150,9 @@ public final class ChessRogueRollDiceCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // entityId
-            entityId = input.readUInt32();
+          case 120: {
+            // oKCOHJJEEAA
+            oKCOHJJEEAA = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.entityId, entityId);
+        output.writeUInt32(FieldNames.oKCOHJJEEAA, oKCOHJJEEAA);
       }
       output.endObject();
     }
@@ -189,11 +189,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2102099874:
-          case -740565257: {
-            if (input.isAtField(FieldNames.entityId)) {
+          case -1011372032: {
+            if (input.isAtField(FieldNames.oKCOHJJEEAA)) {
               if (!input.trySkipNullValue()) {
-                entityId = input.readUInt32();
+                oKCOHJJEEAA = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -254,7 +253,7 @@ public final class ChessRogueRollDiceCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName entityId = FieldName.forField("entityId", "entity_id");
+      static final FieldName oKCOHJJEEAA = FieldName.forField("OKCOHJJEEAA");
     }
   }
 }

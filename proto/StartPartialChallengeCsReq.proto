@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message StartPartialChallengeCsReq {
-	uint32 buff_id = 12;
-	uint32 challenge_id = 10;
-	bool is_first_half = 4;
+	uint32 challenge_id = 9;
+	bool is_first_half = 7;
+	uint32 buff_id = 11;
 }

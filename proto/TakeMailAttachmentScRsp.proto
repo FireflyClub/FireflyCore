@@ -6,8 +6,8 @@ import "ItemList.proto";
 import "ClientMailAttachmentItem.proto";
 
 message TakeMailAttachmentScRsp {
-	uint32 retcode = 15;
-	ItemList attachment = 14;
-	repeated uint32 succ_mail_id_list = 12;
-	repeated ClientMailAttachmentItem fail_mail_list = 6;
+	ItemList Attachment = 10;
+	uint32 Retcode = 1;
+	repeated ClientMailAttachmentItem FailMailList = 12;
+	repeated uint32 SuccMailIdList = 11;
 }

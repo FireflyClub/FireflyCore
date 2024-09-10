@@ -19,9 +19,9 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
      */
-    private final ChessRogueMoneyInfoOuterClass.ChessRogueMoneyInfo moneyInfo = ChessRogueMoneyInfoOuterClass.ChessRogueMoneyInfo.newInstance();
+    private final RogueVirtualItemOuterClass.RogueVirtualItem cNKNDNIMFFL = RogueVirtualItemOuterClass.RogueVirtualItem.newInstance();
 
     private ChessRogueUpdateMoneyInfoScNotify() {
     }
@@ -34,39 +34,39 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
-     * @return whether the moneyInfo field is set
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
+     * @return whether the cNKNDNIMFFL field is set
      */
-    public boolean hasMoneyInfo() {
+    public boolean hasCNKNDNIMFFL() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
      * @return this
      */
-    public ChessRogueUpdateMoneyInfoScNotify clearMoneyInfo() {
+    public ChessRogueUpdateMoneyInfoScNotify clearCNKNDNIMFFL() {
       bitField0_ &= ~0x00000001;
-      moneyInfo.clear();
+      cNKNDNIMFFL.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableMoneyInfo()} if you want to modify it.
+     * Use {@link #getMutableCNKNDNIMFFL()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public ChessRogueMoneyInfoOuterClass.ChessRogueMoneyInfo getMoneyInfo() {
-      return moneyInfo;
+    public RogueVirtualItemOuterClass.RogueVirtualItem getCNKNDNIMFFL() {
+      return cNKNDNIMFFL;
     }
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -74,20 +74,20 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public ChessRogueMoneyInfoOuterClass.ChessRogueMoneyInfo getMutableMoneyInfo() {
+    public RogueVirtualItemOuterClass.RogueVirtualItem getMutableCNKNDNIMFFL() {
       bitField0_ |= 0x00000001;
-      return moneyInfo;
+      return cNKNDNIMFFL;
     }
 
     /**
-     * <code>optional .ChessRogueMoneyInfo money_info = 12;</code>
-     * @param value the moneyInfo to set
+     * <code>optional .RogueVirtualItem CNKNDNIMFFL = 11;</code>
+     * @param value the cNKNDNIMFFL to set
      * @return this
      */
-    public ChessRogueUpdateMoneyInfoScNotify setMoneyInfo(
-        final ChessRogueMoneyInfoOuterClass.ChessRogueMoneyInfo value) {
+    public ChessRogueUpdateMoneyInfoScNotify setCNKNDNIMFFL(
+        final RogueVirtualItemOuterClass.RogueVirtualItem value) {
       bitField0_ |= 0x00000001;
-      moneyInfo.copyFrom(value);
+      cNKNDNIMFFL.copyFrom(value);
       return this;
     }
 
@@ -97,7 +97,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        moneyInfo.copyFrom(other.moneyInfo);
+        cNKNDNIMFFL.copyFrom(other.cNKNDNIMFFL);
       }
       return this;
     }
@@ -109,8 +109,8 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMoneyInfo()) {
-        getMutableMoneyInfo().mergeFrom(other.moneyInfo);
+      if (other.hasCNKNDNIMFFL()) {
+        getMutableCNKNDNIMFFL().mergeFrom(other.cNKNDNIMFFL);
       }
       return this;
     }
@@ -122,7 +122,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      moneyInfo.clear();
+      cNKNDNIMFFL.clear();
       return this;
     }
 
@@ -133,7 +133,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      moneyInfo.clearQuick();
+      cNKNDNIMFFL.clearQuick();
       return this;
     }
 
@@ -147,14 +147,14 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       }
       ChessRogueUpdateMoneyInfoScNotify other = (ChessRogueUpdateMoneyInfoScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasMoneyInfo() || moneyInfo.equals(other.moneyInfo));
+        && (!hasCNKNDNIMFFL() || cNKNDNIMFFL.equals(other.cNKNDNIMFFL));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 98);
-        output.writeMessageNoTag(moneyInfo);
+        output.writeRawByte((byte) 90);
+        output.writeMessageNoTag(cNKNDNIMFFL);
       }
     }
 
@@ -162,7 +162,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(moneyInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(cNKNDNIMFFL);
       }
       return size;
     }
@@ -174,9 +174,9 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 98: {
-            // moneyInfo
-            input.readMessage(moneyInfo);
+          case 90: {
+            // cNKNDNIMFFL
+            input.readMessage(cNKNDNIMFFL);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -201,7 +201,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.moneyInfo, moneyInfo);
+        output.writeMessage(FieldNames.cNKNDNIMFFL, cNKNDNIMFFL);
       }
       output.endObject();
     }
@@ -213,11 +213,10 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1713858162:
-          case -1569819443: {
-            if (input.isAtField(FieldNames.moneyInfo)) {
+          case 323875536: {
+            if (input.isAtField(FieldNames.cNKNDNIMFFL)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(moneyInfo);
+                input.readMessage(cNKNDNIMFFL);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -280,7 +279,7 @@ public final class ChessRogueUpdateMoneyInfoScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName moneyInfo = FieldName.forField("moneyInfo", "money_info");
+      static final FieldName cNKNDNIMFFL = FieldName.forField("CNKNDNIMFFL");
     }
   }
 }

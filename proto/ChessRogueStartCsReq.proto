@@ -3,11 +3,11 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ChessRogueStartCsReq {
-    repeated uint32 JDCMGPJHGLG = 8;
-    uint32 KOLEFJKMFLF = 1;  // guess this is the difficulty level
-    repeated uint32 DDDICOEFHPM = 6;
-    uint32 area_id = 5;
-    repeated uint32 base_avatar_id_list = 15;
-    repeated uint32 disable_aeon_id = 13;
-    uint32 dice_branch_id = 9;
+	uint32 LKCKPCJECJO = 9;
+	repeated uint32 MOICCJNMBBI = 4;
+	repeated uint32 NGBFEHEJHHO = 6;
+	repeated uint32 CCONMCFLBKG = 15;
+	uint32 id = 10;
+	repeated uint32 base_avatar_id_list = 1;
+	uint32 buff_aeon_id = 7;
 }

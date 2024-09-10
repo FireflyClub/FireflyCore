@@ -20,7 +20,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      */
     private final RepeatedByte reqKey = RepeatedByte.newEmptyInstance();
 
@@ -35,7 +35,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      * @return whether the reqKey field is set
      */
     public boolean hasReqKey() {
@@ -43,7 +43,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      * @return this
      */
     public GetSecretKeyInfoCsReq clearReqKey() {
@@ -53,7 +53,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +67,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +81,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      * @param value the reqKey to add
      * @return this
      */
@@ -92,7 +92,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      * @param values the reqKey to add
      * @return this
      */
@@ -103,7 +103,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes req_key = 4;</code>
+     * <code>optional bytes req_key = 15;</code>
      * @param values the reqKey to set
      * @return this
      */
@@ -173,7 +173,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 122);
         output.writeBytesNoTag(reqKey);
       }
     }
@@ -194,7 +194,7 @@ public final class GetSecretKeyInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 34: {
+          case 122: {
             // reqKey
             input.readBytes(reqKey);
             bitField0_ |= 0x00000001;

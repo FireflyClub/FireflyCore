@@ -20,7 +20,7 @@ public final class ItemListOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      */
     private final RepeatedMessage<ItemOuterClass.Item> itemList = RepeatedMessage.newEmptyInstance(ItemOuterClass.Item.getFactory());
 
@@ -35,7 +35,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      * @return whether the itemList field is set
      */
     public boolean hasItemList() {
@@ -43,7 +43,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      * @return this
      */
     public ItemList clearItemList() {
@@ -53,7 +53,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +67,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +81,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      * @param value the itemList to add
      * @return this
      */
@@ -92,7 +92,7 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 10;</code>
+     * <code>repeated .Item ItemList_ = 12;</code>
      * @param values the itemList to add
      * @return this
      */
@@ -163,7 +163,7 @@ public final class ItemListOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < itemList.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 98);
           output.writeMessageNoTag(itemList.get(i));
         }
       }
@@ -185,7 +185,7 @@ public final class ItemListOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
+          case 98: {
             // itemList
             tag = input.readRepeatedMessage(itemList, tag);
             bitField0_ |= 0x00000001;
@@ -223,8 +223,8 @@ public final class ItemListOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1177280081:
-          case -2141396406: {
+          case 1241924209:
+          case -155055090: {
             if (input.isAtField(FieldNames.itemList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(itemList);
@@ -287,7 +287,7 @@ public final class ItemListOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName itemList = FieldName.forField("itemList", "item_list");
+      static final FieldName itemList = FieldName.forField("ItemList", "ItemList_");
     }
   }
 }

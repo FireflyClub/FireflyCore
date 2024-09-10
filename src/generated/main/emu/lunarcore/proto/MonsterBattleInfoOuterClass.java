@@ -116,7 +116,7 @@ public final class MonsterBattleInfoOuterClass {
 
     /**
      * <pre>
-     * LDHIMMJAIEB death_source = 20;
+     * ADKIINEHBCD death_source = 20;
      * </pre>
      *
      * <code>optional uint32 monster_wave = 21;</code>
@@ -134,36 +134,36 @@ public final class MonsterBattleInfoOuterClass {
     private int maxPhase;
 
     /**
-     * <code>optional uint32 AMDHNDFLMGD = 27;</code>
+     * <code>optional uint32 OKGKMLGGMDO = 27;</code>
      */
-    private int aMDHNDFLMGD;
+    private int oKGKMLGGMDO;
 
     /**
      * <pre>
-     * repeated MonsterPhaseStt BJFOPABIFMB = 28;
+     * repeated MonsterPhaseStt KEPDCEILLJF = 28;
      * </pre>
      *
-     * <code>optional uint32 BMOLAPHKIKH = 29;</code>
+     * <code>optional uint32 JGHNPEBHBDK = 29;</code>
      */
-    private int bMOLAPHKIKH;
+    private int jGHNPEBHBDK;
 
     /**
      * <pre>
-     * CMHFGEPJLFL ONLFPAADPNN = 31;
+     * LBNOGHIMDMG AMLAAOLDKCL = 31;
      * </pre>
      *
-     * <code>optional uint32 MLNOOCHGLJP = 30;</code>
+     * <code>optional uint32 LANOIPJHKAC = 30;</code>
      */
-    private int mLNOOCHGLJP;
+    private int lANOIPJHKAC;
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
      */
-    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> iGIEFPANAEL = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
+    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> battleEventId = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
 
     private MonsterBattleInfo() {
     }
@@ -842,7 +842,7 @@ public final class MonsterBattleInfoOuterClass {
 
     /**
      * <pre>
-     * LDHIMMJAIEB death_source = 20;
+     * ADKIINEHBCD death_source = 20;
      * </pre>
      *
      * <code>optional uint32 monster_wave = 21;</code>
@@ -854,7 +854,7 @@ public final class MonsterBattleInfoOuterClass {
 
     /**
      * <pre>
-     * LDHIMMJAIEB death_source = 20;
+     * ADKIINEHBCD death_source = 20;
      * </pre>
      *
      * <code>optional uint32 monster_wave = 21;</code>
@@ -868,7 +868,7 @@ public final class MonsterBattleInfoOuterClass {
 
     /**
      * <pre>
-     * LDHIMMJAIEB death_source = 20;
+     * ADKIINEHBCD death_source = 20;
      * </pre>
      *
      * <code>optional uint32 monster_wave = 21;</code>
@@ -880,7 +880,7 @@ public final class MonsterBattleInfoOuterClass {
 
     /**
      * <pre>
-     * LDHIMMJAIEB death_source = 20;
+     * ADKIINEHBCD death_source = 20;
      * </pre>
      *
      * <code>optional uint32 monster_wave = 21;</code>
@@ -968,198 +968,198 @@ public final class MonsterBattleInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 AMDHNDFLMGD = 27;</code>
-     * @return whether the aMDHNDFLMGD field is set
+     * <code>optional uint32 OKGKMLGGMDO = 27;</code>
+     * @return whether the oKGKMLGGMDO field is set
      */
-    public boolean hasAMDHNDFLMGD() {
+    public boolean hasOKGKMLGGMDO() {
       return (bitField0_ & 0x00100000) != 0;
     }
 
     /**
-     * <code>optional uint32 AMDHNDFLMGD = 27;</code>
+     * <code>optional uint32 OKGKMLGGMDO = 27;</code>
      * @return this
      */
-    public MonsterBattleInfo clearAMDHNDFLMGD() {
+    public MonsterBattleInfo clearOKGKMLGGMDO() {
       bitField0_ &= ~0x00100000;
-      aMDHNDFLMGD = 0;
+      oKGKMLGGMDO = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 AMDHNDFLMGD = 27;</code>
-     * @return the aMDHNDFLMGD
+     * <code>optional uint32 OKGKMLGGMDO = 27;</code>
+     * @return the oKGKMLGGMDO
      */
-    public int getAMDHNDFLMGD() {
-      return aMDHNDFLMGD;
+    public int getOKGKMLGGMDO() {
+      return oKGKMLGGMDO;
     }
 
     /**
-     * <code>optional uint32 AMDHNDFLMGD = 27;</code>
-     * @param value the aMDHNDFLMGD to set
+     * <code>optional uint32 OKGKMLGGMDO = 27;</code>
+     * @param value the oKGKMLGGMDO to set
      * @return this
      */
-    public MonsterBattleInfo setAMDHNDFLMGD(final int value) {
+    public MonsterBattleInfo setOKGKMLGGMDO(final int value) {
       bitField0_ |= 0x00100000;
-      aMDHNDFLMGD = value;
+      oKGKMLGGMDO = value;
       return this;
     }
 
     /**
      * <pre>
-     * repeated MonsterPhaseStt BJFOPABIFMB = 28;
+     * repeated MonsterPhaseStt KEPDCEILLJF = 28;
      * </pre>
      *
-     * <code>optional uint32 BMOLAPHKIKH = 29;</code>
-     * @return whether the bMOLAPHKIKH field is set
+     * <code>optional uint32 JGHNPEBHBDK = 29;</code>
+     * @return whether the jGHNPEBHBDK field is set
      */
-    public boolean hasBMOLAPHKIKH() {
+    public boolean hasJGHNPEBHBDK() {
       return (bitField0_ & 0x00200000) != 0;
     }
 
     /**
      * <pre>
-     * repeated MonsterPhaseStt BJFOPABIFMB = 28;
+     * repeated MonsterPhaseStt KEPDCEILLJF = 28;
      * </pre>
      *
-     * <code>optional uint32 BMOLAPHKIKH = 29;</code>
+     * <code>optional uint32 JGHNPEBHBDK = 29;</code>
      * @return this
      */
-    public MonsterBattleInfo clearBMOLAPHKIKH() {
+    public MonsterBattleInfo clearJGHNPEBHBDK() {
       bitField0_ &= ~0x00200000;
-      bMOLAPHKIKH = 0;
+      jGHNPEBHBDK = 0;
       return this;
     }
 
     /**
      * <pre>
-     * repeated MonsterPhaseStt BJFOPABIFMB = 28;
+     * repeated MonsterPhaseStt KEPDCEILLJF = 28;
      * </pre>
      *
-     * <code>optional uint32 BMOLAPHKIKH = 29;</code>
-     * @return the bMOLAPHKIKH
+     * <code>optional uint32 JGHNPEBHBDK = 29;</code>
+     * @return the jGHNPEBHBDK
      */
-    public int getBMOLAPHKIKH() {
-      return bMOLAPHKIKH;
+    public int getJGHNPEBHBDK() {
+      return jGHNPEBHBDK;
     }
 
     /**
      * <pre>
-     * repeated MonsterPhaseStt BJFOPABIFMB = 28;
+     * repeated MonsterPhaseStt KEPDCEILLJF = 28;
      * </pre>
      *
-     * <code>optional uint32 BMOLAPHKIKH = 29;</code>
-     * @param value the bMOLAPHKIKH to set
+     * <code>optional uint32 JGHNPEBHBDK = 29;</code>
+     * @param value the jGHNPEBHBDK to set
      * @return this
      */
-    public MonsterBattleInfo setBMOLAPHKIKH(final int value) {
+    public MonsterBattleInfo setJGHNPEBHBDK(final int value) {
       bitField0_ |= 0x00200000;
-      bMOLAPHKIKH = value;
+      jGHNPEBHBDK = value;
       return this;
     }
 
     /**
      * <pre>
-     * CMHFGEPJLFL ONLFPAADPNN = 31;
+     * LBNOGHIMDMG AMLAAOLDKCL = 31;
      * </pre>
      *
-     * <code>optional uint32 MLNOOCHGLJP = 30;</code>
-     * @return whether the mLNOOCHGLJP field is set
+     * <code>optional uint32 LANOIPJHKAC = 30;</code>
+     * @return whether the lANOIPJHKAC field is set
      */
-    public boolean hasMLNOOCHGLJP() {
+    public boolean hasLANOIPJHKAC() {
       return (bitField0_ & 0x00400000) != 0;
     }
 
     /**
      * <pre>
-     * CMHFGEPJLFL ONLFPAADPNN = 31;
+     * LBNOGHIMDMG AMLAAOLDKCL = 31;
      * </pre>
      *
-     * <code>optional uint32 MLNOOCHGLJP = 30;</code>
+     * <code>optional uint32 LANOIPJHKAC = 30;</code>
      * @return this
      */
-    public MonsterBattleInfo clearMLNOOCHGLJP() {
+    public MonsterBattleInfo clearLANOIPJHKAC() {
       bitField0_ &= ~0x00400000;
-      mLNOOCHGLJP = 0;
+      lANOIPJHKAC = 0;
       return this;
     }
 
     /**
      * <pre>
-     * CMHFGEPJLFL ONLFPAADPNN = 31;
+     * LBNOGHIMDMG AMLAAOLDKCL = 31;
      * </pre>
      *
-     * <code>optional uint32 MLNOOCHGLJP = 30;</code>
-     * @return the mLNOOCHGLJP
+     * <code>optional uint32 LANOIPJHKAC = 30;</code>
+     * @return the lANOIPJHKAC
      */
-    public int getMLNOOCHGLJP() {
-      return mLNOOCHGLJP;
+    public int getLANOIPJHKAC() {
+      return lANOIPJHKAC;
     }
 
     /**
      * <pre>
-     * CMHFGEPJLFL ONLFPAADPNN = 31;
+     * LBNOGHIMDMG AMLAAOLDKCL = 31;
      * </pre>
      *
-     * <code>optional uint32 MLNOOCHGLJP = 30;</code>
-     * @param value the mLNOOCHGLJP to set
+     * <code>optional uint32 LANOIPJHKAC = 30;</code>
+     * @param value the lANOIPJHKAC to set
      * @return this
      */
-    public MonsterBattleInfo setMLNOOCHGLJP(final int value) {
+    public MonsterBattleInfo setLANOIPJHKAC(final int value) {
       bitField0_ |= 0x00400000;
-      mLNOOCHGLJP = value;
+      lANOIPJHKAC = value;
       return this;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
-     * @return whether the iGIEFPANAEL field is set
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
+     * @return whether the battleEventId field is set
      */
-    public boolean hasIGIEFPANAEL() {
+    public boolean hasBattleEventId() {
       return (bitField0_ & 0x00800000) != 0;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
      * @return this
      */
-    public MonsterBattleInfo clearIGIEFPANAEL() {
+    public MonsterBattleInfo clearBattleEventId() {
       bitField0_ &= ~0x00800000;
-      iGIEFPANAEL.clear();
+      battleEventId.clear();
       return this;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableIGIEFPANAEL()} if you want to modify it.
+     * Use {@link #getMutableBattleEventId()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getIGIEFPANAEL() {
-      return iGIEFPANAEL;
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getBattleEventId() {
+      return battleEventId;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -1167,39 +1167,40 @@ public final class MonsterBattleInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableIGIEFPANAEL() {
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableBattleEventId() {
       bitField0_ |= 0x00800000;
-      return iGIEFPANAEL;
+      return battleEventId;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
-     * @param value the iGIEFPANAEL to add
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
+     * @param value the battleEventId to add
      * @return this
      */
-    public MonsterBattleInfo addIGIEFPANAEL(final BattleSkillInfoOuterClass.BattleSkillInfo value) {
+    public MonsterBattleInfo addBattleEventId(
+        final BattleSkillInfoOuterClass.BattleSkillInfo value) {
       bitField0_ |= 0x00800000;
-      iGIEFPANAEL.add(value);
+      battleEventId.add(value);
       return this;
     }
 
     /**
      * <pre>
-     * DBGHOANDOJE battle_tag = 25;
+     * BPPBFGAEPNI battle_tag = 25;
      * </pre>
      *
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 26;</code>
-     * @param values the iGIEFPANAEL to add
+     * <code>repeated .BattleSkillInfo battle_event_id = 26;</code>
+     * @param values the battleEventId to add
      * @return this
      */
-    public MonsterBattleInfo addAllIGIEFPANAEL(
+    public MonsterBattleInfo addAllBattleEventId(
         final BattleSkillInfoOuterClass.BattleSkillInfo... values) {
       bitField0_ |= 0x00800000;
-      iGIEFPANAEL.addAll(values);
+      battleEventId.addAll(values);
       return this;
     }
 
@@ -1228,10 +1229,10 @@ public final class MonsterBattleInfoOuterClass {
         monsterWave = other.monsterWave;
         phase = other.phase;
         maxPhase = other.maxPhase;
-        aMDHNDFLMGD = other.aMDHNDFLMGD;
-        bMOLAPHKIKH = other.bMOLAPHKIKH;
-        mLNOOCHGLJP = other.mLNOOCHGLJP;
-        iGIEFPANAEL.copyFrom(other.iGIEFPANAEL);
+        oKGKMLGGMDO = other.oKGKMLGGMDO;
+        jGHNPEBHBDK = other.jGHNPEBHBDK;
+        lANOIPJHKAC = other.lANOIPJHKAC;
+        battleEventId.copyFrom(other.battleEventId);
       }
       return this;
     }
@@ -1302,17 +1303,17 @@ public final class MonsterBattleInfoOuterClass {
       if (other.hasMaxPhase()) {
         setMaxPhase(other.maxPhase);
       }
-      if (other.hasAMDHNDFLMGD()) {
-        setAMDHNDFLMGD(other.aMDHNDFLMGD);
+      if (other.hasOKGKMLGGMDO()) {
+        setOKGKMLGGMDO(other.oKGKMLGGMDO);
       }
-      if (other.hasBMOLAPHKIKH()) {
-        setBMOLAPHKIKH(other.bMOLAPHKIKH);
+      if (other.hasJGHNPEBHBDK()) {
+        setJGHNPEBHBDK(other.jGHNPEBHBDK);
       }
-      if (other.hasMLNOOCHGLJP()) {
-        setMLNOOCHGLJP(other.mLNOOCHGLJP);
+      if (other.hasLANOIPJHKAC()) {
+        setLANOIPJHKAC(other.lANOIPJHKAC);
       }
-      if (other.hasIGIEFPANAEL()) {
-        getMutableIGIEFPANAEL().addAll(other.iGIEFPANAEL);
+      if (other.hasBattleEventId()) {
+        getMutableBattleEventId().addAll(other.battleEventId);
       }
       return this;
     }
@@ -1344,10 +1345,10 @@ public final class MonsterBattleInfoOuterClass {
       monsterWave = 0;
       phase = 0;
       maxPhase = 0;
-      aMDHNDFLMGD = 0;
-      bMOLAPHKIKH = 0;
-      mLNOOCHGLJP = 0;
-      iGIEFPANAEL.clear();
+      oKGKMLGGMDO = 0;
+      jGHNPEBHBDK = 0;
+      lANOIPJHKAC = 0;
+      battleEventId.clear();
       return this;
     }
 
@@ -1358,7 +1359,7 @@ public final class MonsterBattleInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iGIEFPANAEL.clearQuick();
+      battleEventId.clearQuick();
       return this;
     }
 
@@ -1392,10 +1393,10 @@ public final class MonsterBattleInfoOuterClass {
         && (!hasMonsterWave() || monsterWave == other.monsterWave)
         && (!hasPhase() || phase == other.phase)
         && (!hasMaxPhase() || maxPhase == other.maxPhase)
-        && (!hasAMDHNDFLMGD() || aMDHNDFLMGD == other.aMDHNDFLMGD)
-        && (!hasBMOLAPHKIKH() || bMOLAPHKIKH == other.bMOLAPHKIKH)
-        && (!hasMLNOOCHGLJP() || mLNOOCHGLJP == other.mLNOOCHGLJP)
-        && (!hasIGIEFPANAEL() || iGIEFPANAEL.equals(other.iGIEFPANAEL));
+        && (!hasOKGKMLGGMDO() || oKGKMLGGMDO == other.oKGKMLGGMDO)
+        && (!hasJGHNPEBHBDK() || jGHNPEBHBDK == other.jGHNPEBHBDK)
+        && (!hasLANOIPJHKAC() || lANOIPJHKAC == other.lANOIPJHKAC)
+        && (!hasBattleEventId() || battleEventId.equals(other.battleEventId));
     }
 
     @Override
@@ -1482,20 +1483,20 @@ public final class MonsterBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00100000) != 0) {
         output.writeRawLittleEndian16((short) 472);
-        output.writeUInt32NoTag(aMDHNDFLMGD);
+        output.writeUInt32NoTag(oKGKMLGGMDO);
       }
       if ((bitField0_ & 0x00200000) != 0) {
         output.writeRawLittleEndian16((short) 488);
-        output.writeUInt32NoTag(bMOLAPHKIKH);
+        output.writeUInt32NoTag(jGHNPEBHBDK);
       }
       if ((bitField0_ & 0x00400000) != 0) {
         output.writeRawLittleEndian16((short) 496);
-        output.writeUInt32NoTag(mLNOOCHGLJP);
+        output.writeUInt32NoTag(lANOIPJHKAC);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        for (int i = 0; i < iGIEFPANAEL.length(); i++) {
+        for (int i = 0; i < battleEventId.length(); i++) {
           output.writeRawLittleEndian16((short) 466);
-          output.writeMessageNoTag(iGIEFPANAEL.get(i));
+          output.writeMessageNoTag(battleEventId.get(i));
         }
       }
     }
@@ -1564,16 +1565,16 @@ public final class MonsterBattleInfoOuterClass {
         size += 2 + ProtoSink.computeUInt32SizeNoTag(maxPhase);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(aMDHNDFLMGD);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(oKGKMLGGMDO);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(bMOLAPHKIKH);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(jGHNPEBHBDK);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(mLNOOCHGLJP);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(lANOIPJHKAC);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        size += (2 * iGIEFPANAEL.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(iGIEFPANAEL);
+        size += (2 * battleEventId.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(battleEventId);
       }
       return size;
     }
@@ -1766,8 +1767,8 @@ public final class MonsterBattleInfoOuterClass {
             }
           }
           case 216: {
-            // aMDHNDFLMGD
-            aMDHNDFLMGD = input.readUInt32();
+            // oKGKMLGGMDO
+            oKGKMLGGMDO = input.readUInt32();
             bitField0_ |= 0x00100000;
             tag = input.readTag();
             if (tag != 232) {
@@ -1775,8 +1776,8 @@ public final class MonsterBattleInfoOuterClass {
             }
           }
           case 232: {
-            // bMOLAPHKIKH
-            bMOLAPHKIKH = input.readUInt32();
+            // jGHNPEBHBDK
+            jGHNPEBHBDK = input.readUInt32();
             bitField0_ |= 0x00200000;
             tag = input.readTag();
             if (tag != 240) {
@@ -1784,8 +1785,8 @@ public final class MonsterBattleInfoOuterClass {
             }
           }
           case 240: {
-            // mLNOOCHGLJP
-            mLNOOCHGLJP = input.readUInt32();
+            // lANOIPJHKAC
+            lANOIPJHKAC = input.readUInt32();
             bitField0_ |= 0x00400000;
             tag = input.readTag();
             if (tag != 210) {
@@ -1793,8 +1794,8 @@ public final class MonsterBattleInfoOuterClass {
             }
           }
           case 210: {
-            // iGIEFPANAEL
-            tag = input.readRepeatedMessage(iGIEFPANAEL, tag);
+            // battleEventId
+            tag = input.readRepeatedMessage(battleEventId, tag);
             bitField0_ |= 0x00800000;
             if (tag != 0) {
               break;
@@ -1878,16 +1879,16 @@ public final class MonsterBattleInfoOuterClass {
         output.writeUInt32(FieldNames.maxPhase, maxPhase);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeUInt32(FieldNames.aMDHNDFLMGD, aMDHNDFLMGD);
+        output.writeUInt32(FieldNames.oKGKMLGGMDO, oKGKMLGGMDO);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeUInt32(FieldNames.bMOLAPHKIKH, bMOLAPHKIKH);
+        output.writeUInt32(FieldNames.jGHNPEBHBDK, jGHNPEBHBDK);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeUInt32(FieldNames.mLNOOCHGLJP, mLNOOCHGLJP);
+        output.writeUInt32(FieldNames.lANOIPJHKAC, lANOIPJHKAC);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        output.writeRepeatedMessage(FieldNames.iGIEFPANAEL, iGIEFPANAEL);
+        output.writeRepeatedMessage(FieldNames.battleEventId, battleEventId);
       }
       output.endObject();
     }
@@ -2138,10 +2139,10 @@ public final class MonsterBattleInfoOuterClass {
             }
             break;
           }
-          case 2010660798: {
-            if (input.isAtField(FieldNames.aMDHNDFLMGD)) {
+          case -2130423111: {
+            if (input.isAtField(FieldNames.oKGKMLGGMDO)) {
               if (!input.trySkipNullValue()) {
-                aMDHNDFLMGD = input.readUInt32();
+                oKGKMLGGMDO = input.readUInt32();
                 bitField0_ |= 0x00100000;
               }
             } else {
@@ -2149,10 +2150,10 @@ public final class MonsterBattleInfoOuterClass {
             }
             break;
           }
-          case 1880570956: {
-            if (input.isAtField(FieldNames.bMOLAPHKIKH)) {
+          case 633970955: {
+            if (input.isAtField(FieldNames.jGHNPEBHBDK)) {
               if (!input.trySkipNullValue()) {
-                bMOLAPHKIKH = input.readUInt32();
+                jGHNPEBHBDK = input.readUInt32();
                 bitField0_ |= 0x00200000;
               }
             } else {
@@ -2160,10 +2161,10 @@ public final class MonsterBattleInfoOuterClass {
             }
             break;
           }
-          case 1399261247: {
-            if (input.isAtField(FieldNames.mLNOOCHGLJP)) {
+          case 406893618: {
+            if (input.isAtField(FieldNames.lANOIPJHKAC)) {
               if (!input.trySkipNullValue()) {
-                mLNOOCHGLJP = input.readUInt32();
+                lANOIPJHKAC = input.readUInt32();
                 bitField0_ |= 0x00400000;
               }
             } else {
@@ -2171,10 +2172,11 @@ public final class MonsterBattleInfoOuterClass {
             }
             break;
           }
-          case 2147116759: {
-            if (input.isAtField(FieldNames.iGIEFPANAEL)) {
+          case -79510147:
+          case -766250873: {
+            if (input.isAtField(FieldNames.battleEventId)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(iGIEFPANAEL);
+                input.readRepeatedMessage(battleEventId);
                 bitField0_ |= 0x00800000;
               }
             } else {
@@ -2275,13 +2277,13 @@ public final class MonsterBattleInfoOuterClass {
 
       static final FieldName maxPhase = FieldName.forField("maxPhase", "max_phase");
 
-      static final FieldName aMDHNDFLMGD = FieldName.forField("AMDHNDFLMGD");
+      static final FieldName oKGKMLGGMDO = FieldName.forField("OKGKMLGGMDO");
 
-      static final FieldName bMOLAPHKIKH = FieldName.forField("BMOLAPHKIKH");
+      static final FieldName jGHNPEBHBDK = FieldName.forField("JGHNPEBHBDK");
 
-      static final FieldName mLNOOCHGLJP = FieldName.forField("MLNOOCHGLJP");
+      static final FieldName lANOIPJHKAC = FieldName.forField("LANOIPJHKAC");
 
-      static final FieldName iGIEFPANAEL = FieldName.forField("IGIEFPANAEL");
+      static final FieldName battleEventId = FieldName.forField("battleEventId", "battle_event_id");
     }
   }
 }

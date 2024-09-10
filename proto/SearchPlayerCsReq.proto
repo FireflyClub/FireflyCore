@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SearchPlayerCsReq {
-	repeated uint32 search_uid_list = 6;
-	bool PGAGABFHDLE = 15;
+	repeated uint32 search_uid_list = 14;
+	bool COBDHLMALKI = 15;
 }

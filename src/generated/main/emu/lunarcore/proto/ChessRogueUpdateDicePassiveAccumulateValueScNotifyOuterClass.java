@@ -19,9 +19,9 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 value = 13;</code>
+     * <code>optional int32 BFNDFONMNKI = 5;</code>
      */
-    private int value_;
+    private int bFNDFONMNKI;
 
     private ChessRogueUpdateDicePassiveAccumulateValueScNotify() {
     }
@@ -34,39 +34,39 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
     }
 
     /**
-     * <code>optional uint32 value = 13;</code>
-     * @return whether the value_ field is set
+     * <code>optional int32 BFNDFONMNKI = 5;</code>
+     * @return whether the bFNDFONMNKI field is set
      */
-    public boolean hasValue() {
+    public boolean hasBFNDFONMNKI() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 value = 13;</code>
+     * <code>optional int32 BFNDFONMNKI = 5;</code>
      * @return this
      */
-    public ChessRogueUpdateDicePassiveAccumulateValueScNotify clearValue() {
+    public ChessRogueUpdateDicePassiveAccumulateValueScNotify clearBFNDFONMNKI() {
       bitField0_ &= ~0x00000001;
-      value_ = 0;
+      bFNDFONMNKI = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 value = 13;</code>
-     * @return the value_
+     * <code>optional int32 BFNDFONMNKI = 5;</code>
+     * @return the bFNDFONMNKI
      */
-    public int getValue() {
-      return value_;
+    public int getBFNDFONMNKI() {
+      return bFNDFONMNKI;
     }
 
     /**
-     * <code>optional uint32 value = 13;</code>
-     * @param value the value_ to set
+     * <code>optional int32 BFNDFONMNKI = 5;</code>
+     * @param value the bFNDFONMNKI to set
      * @return this
      */
-    public ChessRogueUpdateDicePassiveAccumulateValueScNotify setValue(final int value) {
+    public ChessRogueUpdateDicePassiveAccumulateValueScNotify setBFNDFONMNKI(final int value) {
       bitField0_ |= 0x00000001;
-      value_ = value;
+      bFNDFONMNKI = value;
       return this;
     }
 
@@ -76,7 +76,7 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        value_ = other.value_;
+        bFNDFONMNKI = other.bFNDFONMNKI;
       }
       return this;
     }
@@ -88,8 +88,8 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
         return this;
       }
       cachedSize = -1;
-      if (other.hasValue()) {
-        setValue(other.value_);
+      if (other.hasBFNDFONMNKI()) {
+        setBFNDFONMNKI(other.bFNDFONMNKI);
       }
       return this;
     }
@@ -101,7 +101,7 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
       }
       cachedSize = -1;
       bitField0_ = 0;
-      value_ = 0;
+      bFNDFONMNKI = 0;
       return this;
     }
 
@@ -125,14 +125,14 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
       }
       ChessRogueUpdateDicePassiveAccumulateValueScNotify other = (ChessRogueUpdateDicePassiveAccumulateValueScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasValue() || value_ == other.value_);
+        && (!hasBFNDFONMNKI() || bFNDFONMNKI == other.bFNDFONMNKI);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(value_);
+        output.writeRawByte((byte) 40);
+        output.writeInt32NoTag(bFNDFONMNKI);
       }
     }
 
@@ -140,7 +140,7 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(value_);
+        size += 1 + ProtoSink.computeInt32SizeNoTag(bFNDFONMNKI);
       }
       return size;
     }
@@ -153,9 +153,9 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
-            // value_
-            value_ = input.readUInt32();
+          case 40: {
+            // bFNDFONMNKI
+            bFNDFONMNKI = input.readInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -180,7 +180,7 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.value_, value_);
+        output.writeInt32(FieldNames.bFNDFONMNKI, bFNDFONMNKI);
       }
       output.endObject();
     }
@@ -193,10 +193,10 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 111972721: {
-            if (input.isAtField(FieldNames.value_)) {
+          case -169400662: {
+            if (input.isAtField(FieldNames.bFNDFONMNKI)) {
               if (!input.trySkipNullValue()) {
-                value_ = input.readUInt32();
+                bFNDFONMNKI = input.readInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -259,7 +259,7 @@ public final class ChessRogueUpdateDicePassiveAccumulateValueScNotifyOuterClass 
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName value_ = FieldName.forField("value");
+      static final FieldName bFNDFONMNKI = FieldName.forField("BFNDFONMNKI");
     }
   }
 }

@@ -6,7 +6,7 @@ import "RogueTalentStatus.proto";
 import "RogueUnlockProgress.proto";
 
 message RogueTalent {
-	repeated RogueUnlockProgress unlock_progress_list = 6;
-	uint32 talent_id = 5;
-	RogueTalentStatus status = 15;
+	uint32 talent_id = 10;
+	repeated RogueUnlockProgress unlock_progress_list = 8;
+	RogueTalentStatus status = 1;
 }

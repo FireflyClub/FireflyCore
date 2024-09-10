@@ -21,17 +21,17 @@ public final class BoardDataSyncOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool EDEAJOIAFMO = 7;</code>
+     * <code>optional bool KOIMGBMLOPB = 9;</code>
      */
-    private boolean eDEAJOIAFMO;
+    private boolean kOIMGBMLOPB;
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      */
     private final Utf8String signature = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      */
     private final RepeatedMessage<HeadIconOuterClass.HeadIcon> unlockedHeadIconList = RepeatedMessage.newEmptyInstance(HeadIconOuterClass.HeadIcon.getFactory());
 
@@ -46,44 +46,44 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional bool EDEAJOIAFMO = 7;</code>
-     * @return whether the eDEAJOIAFMO field is set
+     * <code>optional bool KOIMGBMLOPB = 9;</code>
+     * @return whether the kOIMGBMLOPB field is set
      */
-    public boolean hasEDEAJOIAFMO() {
+    public boolean hasKOIMGBMLOPB() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool EDEAJOIAFMO = 7;</code>
+     * <code>optional bool KOIMGBMLOPB = 9;</code>
      * @return this
      */
-    public BoardDataSync clearEDEAJOIAFMO() {
+    public BoardDataSync clearKOIMGBMLOPB() {
       bitField0_ &= ~0x00000001;
-      eDEAJOIAFMO = false;
+      kOIMGBMLOPB = false;
       return this;
     }
 
     /**
-     * <code>optional bool EDEAJOIAFMO = 7;</code>
-     * @return the eDEAJOIAFMO
+     * <code>optional bool KOIMGBMLOPB = 9;</code>
+     * @return the kOIMGBMLOPB
      */
-    public boolean getEDEAJOIAFMO() {
-      return eDEAJOIAFMO;
+    public boolean getKOIMGBMLOPB() {
+      return kOIMGBMLOPB;
     }
 
     /**
-     * <code>optional bool EDEAJOIAFMO = 7;</code>
-     * @param value the eDEAJOIAFMO to set
+     * <code>optional bool KOIMGBMLOPB = 9;</code>
+     * @param value the kOIMGBMLOPB to set
      * @return this
      */
-    public BoardDataSync setEDEAJOIAFMO(final boolean value) {
+    public BoardDataSync setKOIMGBMLOPB(final boolean value) {
       bitField0_ |= 0x00000001;
-      eDEAJOIAFMO = value;
+      kOIMGBMLOPB = value;
       return this;
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @return whether the signature field is set
      */
     public boolean hasSignature() {
@@ -91,7 +91,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @return this
      */
     public BoardDataSync clearSignature() {
@@ -101,7 +101,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @return the signature
      */
     public String getSignature() {
@@ -109,7 +109,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @return internal {@code Utf8String} representation of signature for reading
      */
     public Utf8String getSignatureBytes() {
@@ -117,7 +117,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @return internal {@code Utf8String} representation of signature for modifications
      */
     public Utf8String getMutableSignatureBytes() {
@@ -126,7 +126,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @param value the signature to set
      * @return this
      */
@@ -137,7 +137,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>optional string signature = 13;</code>
+     * <code>optional string signature = 4;</code>
      * @param value the signature to set
      * @return this
      */
@@ -148,7 +148,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      * @return whether the unlockedHeadIconList field is set
      */
     public boolean hasUnlockedHeadIconList() {
@@ -156,7 +156,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      * @return this
      */
     public BoardDataSync clearUnlockedHeadIconList() {
@@ -166,7 +166,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -180,7 +180,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -194,7 +194,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      * @param value the unlockedHeadIconList to add
      * @return this
      */
@@ -205,7 +205,7 @@ public final class BoardDataSyncOuterClass {
     }
 
     /**
-     * <code>repeated .HeadIcon unlocked_head_icon_list = 14;</code>
+     * <code>repeated .HeadIcon unlocked_head_icon_list = 2;</code>
      * @param values the unlockedHeadIconList to add
      * @return this
      */
@@ -220,7 +220,7 @@ public final class BoardDataSyncOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        eDEAJOIAFMO = other.eDEAJOIAFMO;
+        kOIMGBMLOPB = other.kOIMGBMLOPB;
         signature.copyFrom(other.signature);
         unlockedHeadIconList.copyFrom(other.unlockedHeadIconList);
       }
@@ -233,8 +233,8 @@ public final class BoardDataSyncOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEDEAJOIAFMO()) {
-        setEDEAJOIAFMO(other.eDEAJOIAFMO);
+      if (other.hasKOIMGBMLOPB()) {
+        setKOIMGBMLOPB(other.kOIMGBMLOPB);
       }
       if (other.hasSignature()) {
         getMutableSignatureBytes().copyFrom(other.signature);
@@ -252,7 +252,7 @@ public final class BoardDataSyncOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      eDEAJOIAFMO = false;
+      kOIMGBMLOPB = false;
       signature.clear();
       unlockedHeadIconList.clear();
       return this;
@@ -280,7 +280,7 @@ public final class BoardDataSyncOuterClass {
       }
       BoardDataSync other = (BoardDataSync) o;
       return bitField0_ == other.bitField0_
-        && (!hasEDEAJOIAFMO() || eDEAJOIAFMO == other.eDEAJOIAFMO)
+        && (!hasKOIMGBMLOPB() || kOIMGBMLOPB == other.kOIMGBMLOPB)
         && (!hasSignature() || signature.equals(other.signature))
         && (!hasUnlockedHeadIconList() || unlockedHeadIconList.equals(other.unlockedHeadIconList));
     }
@@ -288,16 +288,16 @@ public final class BoardDataSyncOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeBoolNoTag(eDEAJOIAFMO);
+        output.writeRawByte((byte) 72);
+        output.writeBoolNoTag(kOIMGBMLOPB);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 34);
         output.writeStringNoTag(signature);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < unlockedHeadIconList.length(); i++) {
-          output.writeRawByte((byte) 114);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(unlockedHeadIconList.get(i));
         }
       }
@@ -325,25 +325,25 @@ public final class BoardDataSyncOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // eDEAJOIAFMO
-            eDEAJOIAFMO = input.readBool();
+          case 72: {
+            // kOIMGBMLOPB
+            kOIMGBMLOPB = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 34) {
               break;
             }
           }
-          case 106: {
+          case 34: {
             // signature
             input.readString(signature);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 18) {
               break;
             }
           }
-          case 114: {
+          case 18: {
             // unlockedHeadIconList
             tag = input.readRepeatedMessage(unlockedHeadIconList, tag);
             bitField0_ |= 0x00000004;
@@ -369,7 +369,7 @@ public final class BoardDataSyncOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.eDEAJOIAFMO, eDEAJOIAFMO);
+        output.writeBool(FieldNames.kOIMGBMLOPB, kOIMGBMLOPB);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeString(FieldNames.signature, signature);
@@ -387,10 +387,10 @@ public final class BoardDataSyncOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 826528848: {
-            if (input.isAtField(FieldNames.eDEAJOIAFMO)) {
+          case -1463581185: {
+            if (input.isAtField(FieldNames.kOIMGBMLOPB)) {
               if (!input.trySkipNullValue()) {
-                eDEAJOIAFMO = input.readBool();
+                kOIMGBMLOPB = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -473,7 +473,7 @@ public final class BoardDataSyncOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName eDEAJOIAFMO = FieldName.forField("EDEAJOIAFMO");
+      static final FieldName kOIMGBMLOPB = FieldName.forField("KOIMGBMLOPB");
 
       static final FieldName signature = FieldName.forField("signature");
 

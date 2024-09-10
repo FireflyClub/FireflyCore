@@ -5,14 +5,14 @@ option java_package = "emu.lunarcore.proto";
 import "BattleTarget.proto";
 
 message ChallengeBossPhaseSettleNotify {
-	uint32 challenge_id = 13;
-	uint32 score_two = 2;
-	uint32 score_one = 3;
-	bool OCNGBEDMEGJ = 6;
-	repeated BattleTarget battle_target_list = 1;
-	uint32 phase = 12;
-	bool is_win = 11;
-	bool KHLCHIFGCPD = 7;
-	uint32 stars = 4;
-	uint32 LMHBPGCPMNH = 14;
+	bool is_win = 14;
+	bool EEPIGCKDPDK = 7;
+	uint32 stars = 5;
+	repeated BattleTarget battle_target_list = 4;
+	uint32 score_two = 12;
+	uint32 score_one = 9;
+	bool OFECNECFJJI = 6;
+	uint32 challenge_id = 3;
+	uint32 OGMPDLCDJDL = 8;
+	uint32 phase = 1;
 }

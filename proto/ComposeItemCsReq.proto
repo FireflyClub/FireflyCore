@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "ItemCostList.proto";
 
 message ComposeItemCsReq {
-	ItemCostList compose_item_list = 3;
-	uint32 count = 6;
-	uint32 compose_id = 5;
+	uint32 count = 4;
+	uint32 compose_id = 10;
+	ItemCostList compose_item_list = 1;
 }

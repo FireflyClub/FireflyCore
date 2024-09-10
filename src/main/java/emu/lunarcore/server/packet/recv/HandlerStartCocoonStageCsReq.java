@@ -13,7 +13,7 @@ public class HandlerStartCocoonStageCsReq extends PacketHandler {
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = StartCocoonStageCsReq.parseFrom(data);
         
-        session.getServer().getBattleService().startCocoon(session.getPlayer(), req.getCocoonId(), req.getWorldLevel(), req.getMonsterWave());
+        session.getServer().getBattleService().startCocoon(session.getPlayer(), req.getCocoonId(), req.getWorldLevel(), req.getWave());
     }
 
 }

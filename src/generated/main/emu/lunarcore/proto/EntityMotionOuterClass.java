@@ -19,22 +19,22 @@ public final class EntityMotionOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 map_layer = 11;</code>
+     * <code>optional uint32 map_layer = 8;</code>
      */
     private int mapLayer;
 
     /**
-     * <code>optional uint32 entity_id = 15;</code>
+     * <code>optional uint32 entity_id = 12;</code>
      */
     private int entityId;
 
     /**
-     * <code>optional bool GCHCPPDDMAD = 8;</code>
+     * <code>optional bool DOOCFNPJGND = 9;</code>
      */
-    private boolean gCHCPPDDMAD;
+    private boolean dOOCFNPJGND;
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -49,7 +49,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_layer = 11;</code>
+     * <code>optional uint32 map_layer = 8;</code>
      * @return whether the mapLayer field is set
      */
     public boolean hasMapLayer() {
@@ -57,7 +57,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_layer = 11;</code>
+     * <code>optional uint32 map_layer = 8;</code>
      * @return this
      */
     public EntityMotion clearMapLayer() {
@@ -67,7 +67,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_layer = 11;</code>
+     * <code>optional uint32 map_layer = 8;</code>
      * @return the mapLayer
      */
     public int getMapLayer() {
@@ -75,7 +75,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_layer = 11;</code>
+     * <code>optional uint32 map_layer = 8;</code>
      * @param value the mapLayer to set
      * @return this
      */
@@ -86,7 +86,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 15;</code>
+     * <code>optional uint32 entity_id = 12;</code>
      * @return whether the entityId field is set
      */
     public boolean hasEntityId() {
@@ -94,7 +94,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 15;</code>
+     * <code>optional uint32 entity_id = 12;</code>
      * @return this
      */
     public EntityMotion clearEntityId() {
@@ -104,7 +104,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 15;</code>
+     * <code>optional uint32 entity_id = 12;</code>
      * @return the entityId
      */
     public int getEntityId() {
@@ -112,7 +112,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 15;</code>
+     * <code>optional uint32 entity_id = 12;</code>
      * @param value the entityId to set
      * @return this
      */
@@ -123,44 +123,44 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional bool GCHCPPDDMAD = 8;</code>
-     * @return whether the gCHCPPDDMAD field is set
+     * <code>optional bool DOOCFNPJGND = 9;</code>
+     * @return whether the dOOCFNPJGND field is set
      */
-    public boolean hasGCHCPPDDMAD() {
+    public boolean hasDOOCFNPJGND() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool GCHCPPDDMAD = 8;</code>
+     * <code>optional bool DOOCFNPJGND = 9;</code>
      * @return this
      */
-    public EntityMotion clearGCHCPPDDMAD() {
+    public EntityMotion clearDOOCFNPJGND() {
       bitField0_ &= ~0x00000004;
-      gCHCPPDDMAD = false;
+      dOOCFNPJGND = false;
       return this;
     }
 
     /**
-     * <code>optional bool GCHCPPDDMAD = 8;</code>
-     * @return the gCHCPPDDMAD
+     * <code>optional bool DOOCFNPJGND = 9;</code>
+     * @return the dOOCFNPJGND
      */
-    public boolean getGCHCPPDDMAD() {
-      return gCHCPPDDMAD;
+    public boolean getDOOCFNPJGND() {
+      return dOOCFNPJGND;
     }
 
     /**
-     * <code>optional bool GCHCPPDDMAD = 8;</code>
-     * @param value the gCHCPPDDMAD to set
+     * <code>optional bool DOOCFNPJGND = 9;</code>
+     * @param value the dOOCFNPJGND to set
      * @return this
      */
-    public EntityMotion setGCHCPPDDMAD(final boolean value) {
+    public EntityMotion setDOOCFNPJGND(final boolean value) {
       bitField0_ |= 0x00000004;
-      gCHCPPDDMAD = value;
+      dOOCFNPJGND = value;
       return this;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -168,7 +168,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      * @return this
      */
     public EntityMotion clearMotion() {
@@ -178,7 +178,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -192,7 +192,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -206,7 +206,7 @@ public final class EntityMotionOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 1;</code>
+     * <code>optional .MotionInfo motion = 14;</code>
      * @param value the motion to set
      * @return this
      */
@@ -223,7 +223,7 @@ public final class EntityMotionOuterClass {
         bitField0_ = other.bitField0_;
         mapLayer = other.mapLayer;
         entityId = other.entityId;
-        gCHCPPDDMAD = other.gCHCPPDDMAD;
+        dOOCFNPJGND = other.dOOCFNPJGND;
         motion.copyFrom(other.motion);
       }
       return this;
@@ -241,8 +241,8 @@ public final class EntityMotionOuterClass {
       if (other.hasEntityId()) {
         setEntityId(other.entityId);
       }
-      if (other.hasGCHCPPDDMAD()) {
-        setGCHCPPDDMAD(other.gCHCPPDDMAD);
+      if (other.hasDOOCFNPJGND()) {
+        setDOOCFNPJGND(other.dOOCFNPJGND);
       }
       if (other.hasMotion()) {
         getMutableMotion().mergeFrom(other.motion);
@@ -259,7 +259,7 @@ public final class EntityMotionOuterClass {
       bitField0_ = 0;
       mapLayer = 0;
       entityId = 0;
-      gCHCPPDDMAD = false;
+      dOOCFNPJGND = false;
       motion.clear();
       return this;
     }
@@ -287,26 +287,26 @@ public final class EntityMotionOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasMapLayer() || mapLayer == other.mapLayer)
         && (!hasEntityId() || entityId == other.entityId)
-        && (!hasGCHCPPDDMAD() || gCHCPPDDMAD == other.gCHCPPDDMAD)
+        && (!hasDOOCFNPJGND() || dOOCFNPJGND == other.dOOCFNPJGND)
         && (!hasMotion() || motion.equals(other.motion));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(mapLayer);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(entityId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeBoolNoTag(gCHCPPDDMAD);
+        output.writeRawByte((byte) 72);
+        output.writeBoolNoTag(dOOCFNPJGND);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 10);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(motion);
       }
     }
@@ -336,34 +336,34 @@ public final class EntityMotionOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 64: {
             // mapLayer
             mapLayer = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 96) {
               break;
             }
           }
-          case 120: {
+          case 96: {
             // entityId
             entityId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 72) {
               break;
             }
           }
-          case 64: {
-            // gCHCPPDDMAD
-            gCHCPPDDMAD = input.readBool();
+          case 72: {
+            // dOOCFNPJGND
+            dOOCFNPJGND = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 114) {
               break;
             }
           }
-          case 10: {
+          case 114: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000008;
@@ -396,7 +396,7 @@ public final class EntityMotionOuterClass {
         output.writeUInt32(FieldNames.entityId, entityId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.gCHCPPDDMAD, gCHCPPDDMAD);
+        output.writeBool(FieldNames.dOOCFNPJGND, dOOCFNPJGND);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeMessage(FieldNames.motion, motion);
@@ -435,10 +435,10 @@ public final class EntityMotionOuterClass {
             }
             break;
           }
-          case 841526265: {
-            if (input.isAtField(FieldNames.gCHCPPDDMAD)) {
+          case -519133252: {
+            if (input.isAtField(FieldNames.dOOCFNPJGND)) {
               if (!input.trySkipNullValue()) {
-                gCHCPPDDMAD = input.readBool();
+                dOOCFNPJGND = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -513,7 +513,7 @@ public final class EntityMotionOuterClass {
 
       static final FieldName entityId = FieldName.forField("entityId", "entity_id");
 
-      static final FieldName gCHCPPDDMAD = FieldName.forField("GCHCPPDDMAD");
+      static final FieldName dOOCFNPJGND = FieldName.forField("DOOCFNPJGND");
 
       static final FieldName motion = FieldName.forField("motion");
     }

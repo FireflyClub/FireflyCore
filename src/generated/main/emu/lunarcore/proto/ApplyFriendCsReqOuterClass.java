@@ -24,7 +24,7 @@ public final class ApplyFriendCsReqOuterClass {
     private int uid;
 
     /**
-     * <code>optional .FriendApplySource source = 8;</code>
+     * <code>optional .FriendApplySource source = 4;</code>
      */
     private int source;
 
@@ -76,7 +76,7 @@ public final class ApplyFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional .FriendApplySource source = 8;</code>
+     * <code>optional .FriendApplySource source = 4;</code>
      * @return whether the source field is set
      */
     public boolean hasSource() {
@@ -84,7 +84,7 @@ public final class ApplyFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional .FriendApplySource source = 8;</code>
+     * <code>optional .FriendApplySource source = 4;</code>
      * @return this
      */
     public ApplyFriendCsReq clearSource() {
@@ -94,7 +94,7 @@ public final class ApplyFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional .FriendApplySource source = 8;</code>
+     * <code>optional .FriendApplySource source = 4;</code>
      * @return the source
      */
     public FriendApplySourceOuterClass.FriendApplySource getSource() {
@@ -127,7 +127,7 @@ public final class ApplyFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional .FriendApplySource source = 8;</code>
+     * <code>optional .FriendApplySource source = 4;</code>
      * @param value the source to set
      * @return this
      */
@@ -206,7 +206,7 @@ public final class ApplyFriendCsReqOuterClass {
         output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 32);
         output.writeEnumNoTag(source);
       }
     }
@@ -235,11 +235,11 @@ public final class ApplyFriendCsReqOuterClass {
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 32) {
               break;
             }
           }
-          case 64: {
+          case 32: {
             // source
             final int value = input.readInt32();
             if (FriendApplySourceOuterClass.FriendApplySource.forNumber(value) != null) {

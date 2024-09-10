@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DestroyItemCsReq {
-	uint32 item_count = 1;
-	uint32 cur_item_count = 12;
-	uint32 item_id = 4;
+	uint32 cur_item_count = 7;
+	uint32 item_id = 15;
+	uint32 item_count = 10;
 }

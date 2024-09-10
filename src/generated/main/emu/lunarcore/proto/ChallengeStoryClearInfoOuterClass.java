@@ -20,32 +20,40 @@ public final class ChallengeStoryClearInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_two = 2;</code>
-     */
-    private int buffTwo;
-
-    /**
-     * <code>optional uint32 score = 4;</code>
-     */
-    private int score;
-
-    /**
-     * <code>optional uint32 highest_difficulty = 5;</code>
-     */
-    private int highestDifficulty;
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     */
-    private int level;
-
-    /**
-     * <code>optional uint32 buff_one = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 1;</code>
      */
     private int buffOne;
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>optional uint32 highest_difficulty = 7;</code>
+     */
+    private int highestDifficulty;
+
+    /**
+     * <code>optional uint32 score = 9;</code>
+     */
+    private int score;
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 13;</code>
+     */
+    private int buffTwo;
+
+    /**
+     * <code>optional uint32 level = 15;</code>
+     */
+    private int level;
+
+    /**
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      */
     private final RepeatedMessage<ChallengeLineupOuterClass.ChallengeLineup> lineupList = RepeatedMessage.newEmptyInstance(ChallengeLineupOuterClass.ChallengeLineup.getFactory());
 
@@ -60,173 +68,37 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_two = 2;</code>
-     * @return whether the buffTwo field is set
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 1;</code>
+     * @return whether the buffOne field is set
      */
-    public boolean hasBuffTwo() {
+    public boolean hasBuffOne() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 buff_two = 2;</code>
-     * @return this
-     */
-    public ChallengeStoryClearInfo clearBuffTwo() {
-      bitField0_ &= ~0x00000001;
-      buffTwo = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 buff_two = 2;</code>
-     * @return the buffTwo
-     */
-    public int getBuffTwo() {
-      return buffTwo;
-    }
-
-    /**
-     * <code>optional uint32 buff_two = 2;</code>
-     * @param value the buffTwo to set
-     * @return this
-     */
-    public ChallengeStoryClearInfo setBuffTwo(final int value) {
-      bitField0_ |= 0x00000001;
-      buffTwo = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 score = 4;</code>
-     * @return whether the score field is set
-     */
-    public boolean hasScore() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 score = 4;</code>
-     * @return this
-     */
-    public ChallengeStoryClearInfo clearScore() {
-      bitField0_ &= ~0x00000002;
-      score = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 score = 4;</code>
-     * @return the score
-     */
-    public int getScore() {
-      return score;
-    }
-
-    /**
-     * <code>optional uint32 score = 4;</code>
-     * @param value the score to set
-     * @return this
-     */
-    public ChallengeStoryClearInfo setScore(final int value) {
-      bitField0_ |= 0x00000002;
-      score = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 5;</code>
-     * @return whether the highestDifficulty field is set
-     */
-    public boolean hasHighestDifficulty() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 5;</code>
-     * @return this
-     */
-    public ChallengeStoryClearInfo clearHighestDifficulty() {
-      bitField0_ &= ~0x00000004;
-      highestDifficulty = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 5;</code>
-     * @return the highestDifficulty
-     */
-    public int getHighestDifficulty() {
-      return highestDifficulty;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 5;</code>
-     * @param value the highestDifficulty to set
-     * @return this
-     */
-    public ChallengeStoryClearInfo setHighestDifficulty(final int value) {
-      bitField0_ |= 0x00000004;
-      highestDifficulty = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     * @return whether the level field is set
-     */
-    public boolean hasLevel() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     * @return this
-     */
-    public ChallengeStoryClearInfo clearLevel() {
-      bitField0_ &= ~0x00000008;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 11;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public ChallengeStoryClearInfo setLevel(final int value) {
-      bitField0_ |= 0x00000008;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 buff_one = 12;</code>
-     * @return whether the buffOne field is set
-     */
-    public boolean hasBuffOne() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 buff_one = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 1;</code>
      * @return this
      */
     public ChallengeStoryClearInfo clearBuffOne() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000001;
       buffOne = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 buff_one = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 1;</code>
      * @return the buffOne
      */
     public int getBuffOne() {
@@ -234,18 +106,186 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_one = 12;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_one = 1;</code>
      * @param value the buffOne to set
      * @return this
      */
     public ChallengeStoryClearInfo setBuffOne(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000001;
       buffOne = value;
       return this;
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>optional uint32 highest_difficulty = 7;</code>
+     * @return whether the highestDifficulty field is set
+     */
+    public boolean hasHighestDifficulty() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 7;</code>
+     * @return this
+     */
+    public ChallengeStoryClearInfo clearHighestDifficulty() {
+      bitField0_ &= ~0x00000002;
+      highestDifficulty = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 7;</code>
+     * @return the highestDifficulty
+     */
+    public int getHighestDifficulty() {
+      return highestDifficulty;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 7;</code>
+     * @param value the highestDifficulty to set
+     * @return this
+     */
+    public ChallengeStoryClearInfo setHighestDifficulty(final int value) {
+      bitField0_ |= 0x00000002;
+      highestDifficulty = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 score = 9;</code>
+     * @return whether the score field is set
+     */
+    public boolean hasScore() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 score = 9;</code>
+     * @return this
+     */
+    public ChallengeStoryClearInfo clearScore() {
+      bitField0_ &= ~0x00000004;
+      score = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 score = 9;</code>
+     * @return the score
+     */
+    public int getScore() {
+      return score;
+    }
+
+    /**
+     * <code>optional uint32 score = 9;</code>
+     * @param value the score to set
+     * @return this
+     */
+    public ChallengeStoryClearInfo setScore(final int value) {
+      bitField0_ |= 0x00000004;
+      score = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 13;</code>
+     * @return whether the buffTwo field is set
+     */
+    public boolean hasBuffTwo() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 13;</code>
+     * @return this
+     */
+    public ChallengeStoryClearInfo clearBuffTwo() {
+      bitField0_ &= ~0x00000008;
+      buffTwo = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 13;</code>
+     * @return the buffTwo
+     */
+    public int getBuffTwo() {
+      return buffTwo;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 buff_two = 13;</code>
+     * @param value the buffTwo to set
+     * @return this
+     */
+    public ChallengeStoryClearInfo setBuffTwo(final int value) {
+      bitField0_ |= 0x00000008;
+      buffTwo = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 15;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 15;</code>
+     * @return this
+     */
+    public ChallengeStoryClearInfo clearLevel() {
+      bitField0_ &= ~0x00000010;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 15;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <code>optional uint32 level = 15;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public ChallengeStoryClearInfo setLevel(final int value) {
+      bitField0_ |= 0x00000010;
+      level = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      * @return whether the lineupList field is set
      */
     public boolean hasLineupList() {
@@ -253,7 +293,7 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      * @return this
      */
     public ChallengeStoryClearInfo clearLineupList() {
@@ -263,7 +303,7 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -277,7 +317,7 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -291,7 +331,7 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      * @param value the lineupList to add
      * @return this
      */
@@ -303,7 +343,7 @@ public final class ChallengeStoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 10;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 4;</code>
      * @param values the lineupList to add
      * @return this
      */
@@ -319,11 +359,11 @@ public final class ChallengeStoryClearInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffTwo = other.buffTwo;
-        score = other.score;
-        highestDifficulty = other.highestDifficulty;
-        level = other.level;
         buffOne = other.buffOne;
+        highestDifficulty = other.highestDifficulty;
+        score = other.score;
+        buffTwo = other.buffTwo;
+        level = other.level;
         lineupList.copyFrom(other.lineupList);
       }
       return this;
@@ -335,20 +375,20 @@ public final class ChallengeStoryClearInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffTwo()) {
-        setBuffTwo(other.buffTwo);
-      }
-      if (other.hasScore()) {
-        setScore(other.score);
+      if (other.hasBuffOne()) {
+        setBuffOne(other.buffOne);
       }
       if (other.hasHighestDifficulty()) {
         setHighestDifficulty(other.highestDifficulty);
       }
+      if (other.hasScore()) {
+        setScore(other.score);
+      }
+      if (other.hasBuffTwo()) {
+        setBuffTwo(other.buffTwo);
+      }
       if (other.hasLevel()) {
         setLevel(other.level);
-      }
-      if (other.hasBuffOne()) {
-        setBuffOne(other.buffOne);
       }
       if (other.hasLineupList()) {
         getMutableLineupList().addAll(other.lineupList);
@@ -363,11 +403,11 @@ public final class ChallengeStoryClearInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffTwo = 0;
-      score = 0;
-      highestDifficulty = 0;
-      level = 0;
       buffOne = 0;
+      highestDifficulty = 0;
+      score = 0;
+      buffTwo = 0;
+      level = 0;
       lineupList.clear();
       return this;
     }
@@ -393,39 +433,39 @@ public final class ChallengeStoryClearInfoOuterClass {
       }
       ChallengeStoryClearInfo other = (ChallengeStoryClearInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffTwo() || buffTwo == other.buffTwo)
-        && (!hasScore() || score == other.score)
-        && (!hasHighestDifficulty() || highestDifficulty == other.highestDifficulty)
-        && (!hasLevel() || level == other.level)
         && (!hasBuffOne() || buffOne == other.buffOne)
+        && (!hasHighestDifficulty() || highestDifficulty == other.highestDifficulty)
+        && (!hasScore() || score == other.score)
+        && (!hasBuffTwo() || buffTwo == other.buffTwo)
+        && (!hasLevel() || level == other.level)
         && (!hasLineupList() || lineupList.equals(other.lineupList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(buffTwo);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(buffOne);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(score);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(highestDifficulty);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(score);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(level);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(buffTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(buffOne);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < lineupList.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 34);
           output.writeMessageNoTag(lineupList.get(i));
         }
       }
@@ -435,19 +475,19 @@ public final class ChallengeStoryClearInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffTwo);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffOne);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(score);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(highestDifficulty);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(score);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffOne);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * lineupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(lineupList);
@@ -462,52 +502,52 @@ public final class ChallengeStoryClearInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // buffTwo
-            buffTwo = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 32) {
-              break;
-            }
-          }
-          case 32: {
-            // score
-            score = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // highestDifficulty
-            highestDifficulty = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 88) {
-              break;
-            }
-          }
-          case 88: {
-            // level
-            level = input.readUInt32();
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
+          case 8: {
             // buffOne
             buffOne = input.readUInt32();
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 56) {
               break;
             }
           }
-          case 82: {
+          case 56: {
+            // highestDifficulty
+            highestDifficulty = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 72) {
+              break;
+            }
+          }
+          case 72: {
+            // score
+            score = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // buffTwo
+            buffTwo = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // level
+            level = input.readUInt32();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
             // lineupList
             tag = input.readRepeatedMessage(lineupList, tag);
             bitField0_ |= 0x00000020;
@@ -533,19 +573,19 @@ public final class ChallengeStoryClearInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.buffTwo, buffTwo);
+        output.writeUInt32(FieldNames.buffOne, buffOne);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.score, score);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.highestDifficulty, highestDifficulty);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.score, score);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.level, level);
+        output.writeUInt32(FieldNames.buffTwo, buffTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.buffOne, buffOne);
+        output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedMessage(FieldNames.lineupList, lineupList);
@@ -560,23 +600,12 @@ public final class ChallengeStoryClearInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 227980537:
-          case -1522212768: {
-            if (input.isAtField(FieldNames.buffTwo)) {
+          case 227975443:
+          case -1522217862: {
+            if (input.isAtField(FieldNames.buffOne)) {
               if (!input.trySkipNullValue()) {
-                buffTwo = input.readUInt32();
+                buffOne = input.readUInt32();
                 bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 109264530: {
-            if (input.isAtField(FieldNames.score)) {
-              if (!input.trySkipNullValue()) {
-                score = input.readUInt32();
-                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -588,7 +617,30 @@ public final class ChallengeStoryClearInfoOuterClass {
             if (input.isAtField(FieldNames.highestDifficulty)) {
               if (!input.trySkipNullValue()) {
                 highestDifficulty = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 109264530: {
+            if (input.isAtField(FieldNames.score)) {
+              if (!input.trySkipNullValue()) {
+                score = input.readUInt32();
                 bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 227980537:
+          case -1522212768: {
+            if (input.isAtField(FieldNames.buffTwo)) {
+              if (!input.trySkipNullValue()) {
+                buffTwo = input.readUInt32();
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -599,18 +651,6 @@ public final class ChallengeStoryClearInfoOuterClass {
             if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
                 level = input.readUInt32();
-                bitField0_ |= 0x00000008;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 227975443:
-          case -1522217862: {
-            if (input.isAtField(FieldNames.buffOne)) {
-              if (!input.trySkipNullValue()) {
-                buffOne = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -683,15 +723,15 @@ public final class ChallengeStoryClearInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffTwo = FieldName.forField("buffTwo", "buff_two");
-
-      static final FieldName score = FieldName.forField("score");
+      static final FieldName buffOne = FieldName.forField("buffOne", "buff_one");
 
       static final FieldName highestDifficulty = FieldName.forField("highestDifficulty", "highest_difficulty");
 
-      static final FieldName level = FieldName.forField("level");
+      static final FieldName score = FieldName.forField("score");
 
-      static final FieldName buffOne = FieldName.forField("buffOne", "buff_one");
+      static final FieldName buffTwo = FieldName.forField("buffTwo", "buff_two");
+
+      static final FieldName level = FieldName.forField("level");
 
       static final FieldName lineupList = FieldName.forField("lineupList", "lineup_list");
     }

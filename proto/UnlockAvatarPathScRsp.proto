@@ -6,8 +6,8 @@ import "MultiPathAvatarType.proto";
 import "ItemList.proto";
 
 message UnlockAvatarPathScRsp {
-	MultiPathAvatarType avatar_id = 7;
-	ItemList reward = 3;
-	uint32 retcode = 1;
-	repeated uint32 multi_avatar_type_id_list = 12;
+	repeated uint32 multi_avatar_type_id_list = 10;
+	ItemList reward = 9;
+	uint32 retcode = 4;
+	MultiPathAvatarType avatar_id = 13;
 }

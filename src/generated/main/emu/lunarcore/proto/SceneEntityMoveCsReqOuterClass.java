@@ -20,12 +20,12 @@ public final class SceneEntityMoveCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 NJPEMCAGPIB = 10;</code>
+     * <code>optional uint64 PNKNIBLGCLM = 3;</code>
      */
-    private long nJPEMCAGPIB;
+    private long pNKNIBLGCLM;
 
     /**
-     * <code>optional uint32 entry_id = 3;</code>
+     * <code>optional uint32 entry_id = 13;</code>
      */
     private int entryId;
 
@@ -45,44 +45,44 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 NJPEMCAGPIB = 10;</code>
-     * @return whether the nJPEMCAGPIB field is set
+     * <code>optional uint64 PNKNIBLGCLM = 3;</code>
+     * @return whether the pNKNIBLGCLM field is set
      */
-    public boolean hasNJPEMCAGPIB() {
+    public boolean hasPNKNIBLGCLM() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint64 NJPEMCAGPIB = 10;</code>
+     * <code>optional uint64 PNKNIBLGCLM = 3;</code>
      * @return this
      */
-    public SceneEntityMoveCsReq clearNJPEMCAGPIB() {
+    public SceneEntityMoveCsReq clearPNKNIBLGCLM() {
       bitField0_ &= ~0x00000001;
-      nJPEMCAGPIB = 0L;
+      pNKNIBLGCLM = 0L;
       return this;
     }
 
     /**
-     * <code>optional uint64 NJPEMCAGPIB = 10;</code>
-     * @return the nJPEMCAGPIB
+     * <code>optional uint64 PNKNIBLGCLM = 3;</code>
+     * @return the pNKNIBLGCLM
      */
-    public long getNJPEMCAGPIB() {
-      return nJPEMCAGPIB;
+    public long getPNKNIBLGCLM() {
+      return pNKNIBLGCLM;
     }
 
     /**
-     * <code>optional uint64 NJPEMCAGPIB = 10;</code>
-     * @param value the nJPEMCAGPIB to set
+     * <code>optional uint64 PNKNIBLGCLM = 3;</code>
+     * @param value the pNKNIBLGCLM to set
      * @return this
      */
-    public SceneEntityMoveCsReq setNJPEMCAGPIB(final long value) {
+    public SceneEntityMoveCsReq setPNKNIBLGCLM(final long value) {
       bitField0_ |= 0x00000001;
-      nJPEMCAGPIB = value;
+      pNKNIBLGCLM = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 entry_id = 3;</code>
+     * <code>optional uint32 entry_id = 13;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -90,7 +90,7 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 3;</code>
+     * <code>optional uint32 entry_id = 13;</code>
      * @return this
      */
     public SceneEntityMoveCsReq clearEntryId() {
@@ -100,7 +100,7 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 3;</code>
+     * <code>optional uint32 entry_id = 13;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -108,7 +108,7 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 3;</code>
+     * <code>optional uint32 entry_id = 13;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -193,7 +193,7 @@ public final class SceneEntityMoveCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        nJPEMCAGPIB = other.nJPEMCAGPIB;
+        pNKNIBLGCLM = other.pNKNIBLGCLM;
         entryId = other.entryId;
         entityMotionList.copyFrom(other.entityMotionList);
       }
@@ -206,8 +206,8 @@ public final class SceneEntityMoveCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasNJPEMCAGPIB()) {
-        setNJPEMCAGPIB(other.nJPEMCAGPIB);
+      if (other.hasPNKNIBLGCLM()) {
+        setPNKNIBLGCLM(other.pNKNIBLGCLM);
       }
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
@@ -225,7 +225,7 @@ public final class SceneEntityMoveCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      nJPEMCAGPIB = 0L;
+      pNKNIBLGCLM = 0L;
       entryId = 0;
       entityMotionList.clear();
       return this;
@@ -252,7 +252,7 @@ public final class SceneEntityMoveCsReqOuterClass {
       }
       SceneEntityMoveCsReq other = (SceneEntityMoveCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasNJPEMCAGPIB() || nJPEMCAGPIB == other.nJPEMCAGPIB)
+        && (!hasPNKNIBLGCLM() || pNKNIBLGCLM == other.pNKNIBLGCLM)
         && (!hasEntryId() || entryId == other.entryId)
         && (!hasEntityMotionList() || entityMotionList.equals(other.entityMotionList));
     }
@@ -260,11 +260,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt64NoTag(nJPEMCAGPIB);
+        output.writeRawByte((byte) 24);
+        output.writeUInt64NoTag(pNKNIBLGCLM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -279,7 +279,7 @@ public final class SceneEntityMoveCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt64SizeNoTag(nJPEMCAGPIB);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(pNKNIBLGCLM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
@@ -297,16 +297,16 @@ public final class SceneEntityMoveCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
-            // nJPEMCAGPIB
-            nJPEMCAGPIB = input.readUInt64();
+          case 24: {
+            // pNKNIBLGCLM
+            pNKNIBLGCLM = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 104) {
               break;
             }
           }
-          case 24: {
+          case 104: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -341,7 +341,7 @@ public final class SceneEntityMoveCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt64(FieldNames.nJPEMCAGPIB, nJPEMCAGPIB);
+        output.writeUInt64(FieldNames.pNKNIBLGCLM, pNKNIBLGCLM);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.entryId, entryId);
@@ -359,10 +359,10 @@ public final class SceneEntityMoveCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1354307108: {
-            if (input.isAtField(FieldNames.nJPEMCAGPIB)) {
+          case -1760065233: {
+            if (input.isAtField(FieldNames.pNKNIBLGCLM)) {
               if (!input.trySkipNullValue()) {
-                nJPEMCAGPIB = input.readUInt64();
+                pNKNIBLGCLM = input.readUInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -447,7 +447,7 @@ public final class SceneEntityMoveCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName nJPEMCAGPIB = FieldName.forField("NJPEMCAGPIB");
+      static final FieldName pNKNIBLGCLM = FieldName.forField("PNKNIBLGCLM");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
 

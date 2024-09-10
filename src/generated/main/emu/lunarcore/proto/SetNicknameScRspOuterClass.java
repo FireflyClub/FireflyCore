@@ -19,17 +19,17 @@ public final class SetNicknameScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 NCBJIHNAOFG = 1;</code>
+     * <code>optional int64 DLFJLAJMLHJ = 10;</code>
      */
-    private long nCBJIHNAOFG;
+    private long dLFJLAJMLHJ;
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool is_modify = 8;</code>
+     * <code>optional bool is_modify = 6;</code>
      */
     private boolean isModify;
 
@@ -44,44 +44,44 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional int64 NCBJIHNAOFG = 1;</code>
-     * @return whether the nCBJIHNAOFG field is set
+     * <code>optional int64 DLFJLAJMLHJ = 10;</code>
+     * @return whether the dLFJLAJMLHJ field is set
      */
-    public boolean hasNCBJIHNAOFG() {
+    public boolean hasDLFJLAJMLHJ() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional int64 NCBJIHNAOFG = 1;</code>
+     * <code>optional int64 DLFJLAJMLHJ = 10;</code>
      * @return this
      */
-    public SetNicknameScRsp clearNCBJIHNAOFG() {
+    public SetNicknameScRsp clearDLFJLAJMLHJ() {
       bitField0_ &= ~0x00000001;
-      nCBJIHNAOFG = 0L;
+      dLFJLAJMLHJ = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 NCBJIHNAOFG = 1;</code>
-     * @return the nCBJIHNAOFG
+     * <code>optional int64 DLFJLAJMLHJ = 10;</code>
+     * @return the dLFJLAJMLHJ
      */
-    public long getNCBJIHNAOFG() {
-      return nCBJIHNAOFG;
+    public long getDLFJLAJMLHJ() {
+      return dLFJLAJMLHJ;
     }
 
     /**
-     * <code>optional int64 NCBJIHNAOFG = 1;</code>
-     * @param value the nCBJIHNAOFG to set
+     * <code>optional int64 DLFJLAJMLHJ = 10;</code>
+     * @param value the dLFJLAJMLHJ to set
      * @return this
      */
-    public SetNicknameScRsp setNCBJIHNAOFG(final long value) {
+    public SetNicknameScRsp setDLFJLAJMLHJ(final long value) {
       bitField0_ |= 0x00000001;
-      nCBJIHNAOFG = value;
+      dLFJLAJMLHJ = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -89,7 +89,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public SetNicknameScRsp clearRetcode() {
@@ -99,7 +99,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -107,7 +107,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -118,7 +118,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 8;</code>
+     * <code>optional bool is_modify = 6;</code>
      * @return whether the isModify field is set
      */
     public boolean hasIsModify() {
@@ -126,7 +126,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 8;</code>
+     * <code>optional bool is_modify = 6;</code>
      * @return this
      */
     public SetNicknameScRsp clearIsModify() {
@@ -136,7 +136,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 8;</code>
+     * <code>optional bool is_modify = 6;</code>
      * @return the isModify
      */
     public boolean getIsModify() {
@@ -144,7 +144,7 @@ public final class SetNicknameScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 8;</code>
+     * <code>optional bool is_modify = 6;</code>
      * @param value the isModify to set
      * @return this
      */
@@ -159,7 +159,7 @@ public final class SetNicknameScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        nCBJIHNAOFG = other.nCBJIHNAOFG;
+        dLFJLAJMLHJ = other.dLFJLAJMLHJ;
         retcode = other.retcode;
         isModify = other.isModify;
       }
@@ -172,8 +172,8 @@ public final class SetNicknameScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasNCBJIHNAOFG()) {
-        setNCBJIHNAOFG(other.nCBJIHNAOFG);
+      if (other.hasDLFJLAJMLHJ()) {
+        setDLFJLAJMLHJ(other.dLFJLAJMLHJ);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
@@ -191,7 +191,7 @@ public final class SetNicknameScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      nCBJIHNAOFG = 0L;
+      dLFJLAJMLHJ = 0L;
       retcode = 0;
       isModify = false;
       return this;
@@ -217,7 +217,7 @@ public final class SetNicknameScRspOuterClass {
       }
       SetNicknameScRsp other = (SetNicknameScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasNCBJIHNAOFG() || nCBJIHNAOFG == other.nCBJIHNAOFG)
+        && (!hasDLFJLAJMLHJ() || dLFJLAJMLHJ == other.dLFJLAJMLHJ)
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasIsModify() || isModify == other.isModify);
     }
@@ -225,15 +225,15 @@ public final class SetNicknameScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeInt64NoTag(nCBJIHNAOFG);
+        output.writeRawByte((byte) 80);
+        output.writeInt64NoTag(dLFJLAJMLHJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeBoolNoTag(isModify);
       }
     }
@@ -242,7 +242,7 @@ public final class SetNicknameScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(nCBJIHNAOFG);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(dLFJLAJMLHJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -260,25 +260,25 @@ public final class SetNicknameScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // nCBJIHNAOFG
-            nCBJIHNAOFG = input.readInt64();
+          case 80: {
+            // dLFJLAJMLHJ
+            dLFJLAJMLHJ = input.readInt64();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 64) {
               break;
             }
           }
           case 64: {
+            // retcode
+            retcode = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
             // isModify
             isModify = input.readBool();
             bitField0_ |= 0x00000004;
@@ -305,7 +305,7 @@ public final class SetNicknameScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeInt64(FieldNames.nCBJIHNAOFG, nCBJIHNAOFG);
+        output.writeInt64(FieldNames.dLFJLAJMLHJ, dLFJLAJMLHJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
@@ -323,10 +323,10 @@ public final class SetNicknameScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 579887521: {
-            if (input.isAtField(FieldNames.nCBJIHNAOFG)) {
+          case -875172598: {
+            if (input.isAtField(FieldNames.dLFJLAJMLHJ)) {
               if (!input.trySkipNullValue()) {
-                nCBJIHNAOFG = input.readInt64();
+                dLFJLAJMLHJ = input.readInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -410,7 +410,7 @@ public final class SetNicknameScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName nCBJIHNAOFG = FieldName.forField("NCBJIHNAOFG");
+      static final FieldName dLFJLAJMLHJ = FieldName.forField("DLFJLAJMLHJ");
 
       static final FieldName retcode = FieldName.forField("retcode");
 

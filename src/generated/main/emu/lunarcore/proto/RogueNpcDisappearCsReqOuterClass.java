@@ -19,7 +19,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * <code>optional uint32 disappear_npc_id = 3;</code>
      */
     private int disappearNpcId;
 
@@ -34,7 +34,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * <code>optional uint32 disappear_npc_id = 3;</code>
      * @return whether the disappearNpcId field is set
      */
     public boolean hasDisappearNpcId() {
@@ -42,7 +42,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * <code>optional uint32 disappear_npc_id = 3;</code>
      * @return this
      */
     public RogueNpcDisappearCsReq clearDisappearNpcId() {
@@ -52,7 +52,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * <code>optional uint32 disappear_npc_id = 3;</code>
      * @return the disappearNpcId
      */
     public int getDisappearNpcId() {
@@ -60,7 +60,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 disappear_npc_id = 11;</code>
+     * <code>optional uint32 disappear_npc_id = 3;</code>
      * @param value the disappearNpcId to set
      * @return this
      */
@@ -129,7 +129,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(disappearNpcId);
       }
     }
@@ -150,7 +150,7 @@ public final class RogueNpcDisappearCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
+          case 24: {
             // disappearNpcId
             disappearNpcId = input.readUInt32();
             bitField0_ |= 0x00000001;

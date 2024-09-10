@@ -20,14 +20,14 @@ public final class SecretKeyInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .SecretKeyType slot = 8;</code>
+     * <code>optional .SecretKeyType slot = 4;</code>
      */
     private int slot;
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
+     * <code>optional string ICEGNEOLFAN = 15;</code>
      */
-    private final Utf8String nLEKIEANBMP = Utf8String.newEmptyInstance();
+    private final Utf8String iCEGNEOLFAN = Utf8String.newEmptyInstance();
 
     private SecretKeyInfo() {
     }
@@ -40,7 +40,7 @@ public final class SecretKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SecretKeyType slot = 8;</code>
+     * <code>optional .SecretKeyType slot = 4;</code>
      * @return whether the slot field is set
      */
     public boolean hasSlot() {
@@ -48,7 +48,7 @@ public final class SecretKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SecretKeyType slot = 8;</code>
+     * <code>optional .SecretKeyType slot = 4;</code>
      * @return this
      */
     public SecretKeyInfo clearSlot() {
@@ -58,7 +58,7 @@ public final class SecretKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SecretKeyType slot = 8;</code>
+     * <code>optional .SecretKeyType slot = 4;</code>
      * @return the slot
      */
     public SecretKeyTypeOuterClass.SecretKeyType getSlot() {
@@ -91,7 +91,7 @@ public final class SecretKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SecretKeyType slot = 8;</code>
+     * <code>optional .SecretKeyType slot = 4;</code>
      * @param value the slot to set
      * @return this
      */
@@ -102,67 +102,67 @@ public final class SecretKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @return whether the nLEKIEANBMP field is set
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @return whether the iCEGNEOLFAN field is set
      */
-    public boolean hasNLEKIEANBMP() {
+    public boolean hasICEGNEOLFAN() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
+     * <code>optional string ICEGNEOLFAN = 15;</code>
      * @return this
      */
-    public SecretKeyInfo clearNLEKIEANBMP() {
+    public SecretKeyInfo clearICEGNEOLFAN() {
       bitField0_ &= ~0x00000002;
-      nLEKIEANBMP.clear();
+      iCEGNEOLFAN.clear();
       return this;
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @return the nLEKIEANBMP
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @return the iCEGNEOLFAN
      */
-    public String getNLEKIEANBMP() {
-      return nLEKIEANBMP.getString();
+    public String getICEGNEOLFAN() {
+      return iCEGNEOLFAN.getString();
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @return internal {@code Utf8String} representation of nLEKIEANBMP for reading
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @return internal {@code Utf8String} representation of iCEGNEOLFAN for reading
      */
-    public Utf8String getNLEKIEANBMPBytes() {
-      return this.nLEKIEANBMP;
+    public Utf8String getICEGNEOLFANBytes() {
+      return this.iCEGNEOLFAN;
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @return internal {@code Utf8String} representation of nLEKIEANBMP for modifications
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @return internal {@code Utf8String} representation of iCEGNEOLFAN for modifications
      */
-    public Utf8String getMutableNLEKIEANBMPBytes() {
+    public Utf8String getMutableICEGNEOLFANBytes() {
       bitField0_ |= 0x00000002;
-      return this.nLEKIEANBMP;
+      return this.iCEGNEOLFAN;
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @param value the nLEKIEANBMP to set
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @param value the iCEGNEOLFAN to set
      * @return this
      */
-    public SecretKeyInfo setNLEKIEANBMP(final CharSequence value) {
+    public SecretKeyInfo setICEGNEOLFAN(final CharSequence value) {
       bitField0_ |= 0x00000002;
-      nLEKIEANBMP.copyFrom(value);
+      iCEGNEOLFAN.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string NLEKIEANBMP = 4;</code>
-     * @param value the nLEKIEANBMP to set
+     * <code>optional string ICEGNEOLFAN = 15;</code>
+     * @param value the iCEGNEOLFAN to set
      * @return this
      */
-    public SecretKeyInfo setNLEKIEANBMP(final Utf8String value) {
+    public SecretKeyInfo setICEGNEOLFAN(final Utf8String value) {
       bitField0_ |= 0x00000002;
-      nLEKIEANBMP.copyFrom(value);
+      iCEGNEOLFAN.copyFrom(value);
       return this;
     }
 
@@ -172,7 +172,7 @@ public final class SecretKeyInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         slot = other.slot;
-        nLEKIEANBMP.copyFrom(other.nLEKIEANBMP);
+        iCEGNEOLFAN.copyFrom(other.iCEGNEOLFAN);
       }
       return this;
     }
@@ -186,8 +186,8 @@ public final class SecretKeyInfoOuterClass {
       if (other.hasSlot()) {
         setSlotValue(other.slot);
       }
-      if (other.hasNLEKIEANBMP()) {
-        getMutableNLEKIEANBMPBytes().copyFrom(other.nLEKIEANBMP);
+      if (other.hasICEGNEOLFAN()) {
+        getMutableICEGNEOLFANBytes().copyFrom(other.iCEGNEOLFAN);
       }
       return this;
     }
@@ -200,7 +200,7 @@ public final class SecretKeyInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       slot = 0;
-      nLEKIEANBMP.clear();
+      iCEGNEOLFAN.clear();
       return this;
     }
 
@@ -211,7 +211,7 @@ public final class SecretKeyInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      nLEKIEANBMP.clear();
+      iCEGNEOLFAN.clear();
       return this;
     }
 
@@ -226,18 +226,18 @@ public final class SecretKeyInfoOuterClass {
       SecretKeyInfo other = (SecretKeyInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasSlot() || slot == other.slot)
-        && (!hasNLEKIEANBMP() || nLEKIEANBMP.equals(other.nLEKIEANBMP));
+        && (!hasICEGNEOLFAN() || iCEGNEOLFAN.equals(other.iCEGNEOLFAN));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 32);
         output.writeEnumNoTag(slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 34);
-        output.writeStringNoTag(nLEKIEANBMP);
+        output.writeRawByte((byte) 122);
+        output.writeStringNoTag(iCEGNEOLFAN);
       }
     }
 
@@ -248,7 +248,7 @@ public final class SecretKeyInfoOuterClass {
         size += 1 + ProtoSink.computeEnumSizeNoTag(slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(nLEKIEANBMP);
+        size += 1 + ProtoSink.computeStringSizeNoTag(iCEGNEOLFAN);
       }
       return size;
     }
@@ -260,7 +260,7 @@ public final class SecretKeyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 32: {
             // slot
             final int value = input.readInt32();
             if (SecretKeyTypeOuterClass.SecretKeyType.forNumber(value) != null) {
@@ -268,13 +268,13 @@ public final class SecretKeyInfoOuterClass {
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 122) {
               break;
             }
           }
-          case 34: {
-            // nLEKIEANBMP
-            input.readString(nLEKIEANBMP);
+          case 122: {
+            // iCEGNEOLFAN
+            input.readString(iCEGNEOLFAN);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -302,7 +302,7 @@ public final class SecretKeyInfoOuterClass {
         output.writeEnum(FieldNames.slot, slot, SecretKeyTypeOuterClass.SecretKeyType.converter());
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeString(FieldNames.nLEKIEANBMP, nLEKIEANBMP);
+        output.writeString(FieldNames.iCEGNEOLFAN, iCEGNEOLFAN);
       }
       output.endObject();
     }
@@ -330,10 +330,10 @@ public final class SecretKeyInfoOuterClass {
             }
             break;
           }
-          case -670837992: {
-            if (input.isAtField(FieldNames.nLEKIEANBMP)) {
+          case -1028243997: {
+            if (input.isAtField(FieldNames.iCEGNEOLFAN)) {
               if (!input.trySkipNullValue()) {
-                input.readString(nLEKIEANBMP);
+                input.readString(iCEGNEOLFAN);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -395,7 +395,7 @@ public final class SecretKeyInfoOuterClass {
     static class FieldNames {
       static final FieldName slot = FieldName.forField("slot");
 
-      static final FieldName nLEKIEANBMP = FieldName.forField("NLEKIEANBMP");
+      static final FieldName iCEGNEOLFAN = FieldName.forField("ICEGNEOLFAN");
     }
   }
 }

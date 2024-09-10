@@ -20,12 +20,12 @@ public final class SetNicknameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool is_modify = 13;</code>
+     * <code>optional bool is_modify = 2;</code>
      */
     private boolean isModify;
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
 
@@ -40,7 +40,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 13;</code>
+     * <code>optional bool is_modify = 2;</code>
      * @return whether the isModify field is set
      */
     public boolean hasIsModify() {
@@ -48,7 +48,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 13;</code>
+     * <code>optional bool is_modify = 2;</code>
      * @return this
      */
     public SetNicknameCsReq clearIsModify() {
@@ -58,7 +58,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 13;</code>
+     * <code>optional bool is_modify = 2;</code>
      * @return the isModify
      */
     public boolean getIsModify() {
@@ -66,7 +66,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 13;</code>
+     * <code>optional bool is_modify = 2;</code>
      * @param value the isModify to set
      * @return this
      */
@@ -77,7 +77,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @return whether the nickname field is set
      */
     public boolean hasNickname() {
@@ -85,7 +85,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @return this
      */
     public SetNicknameCsReq clearNickname() {
@@ -95,7 +95,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @return the nickname
      */
     public String getNickname() {
@@ -103,7 +103,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @return internal {@code Utf8String} representation of nickname for reading
      */
     public Utf8String getNicknameBytes() {
@@ -111,7 +111,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
     public Utf8String getMutableNicknameBytes() {
@@ -120,7 +120,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -131,7 +131,7 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 2;</code>
+     * <code>optional string nickname = 4;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -207,11 +207,11 @@ public final class SetNicknameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 16);
         output.writeBoolNoTag(isModify);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 34);
         output.writeStringNoTag(nickname);
       }
     }
@@ -235,16 +235,16 @@ public final class SetNicknameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 16: {
             // isModify
             isModify = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 34) {
               break;
             }
           }
-          case 18: {
+          case 34: {
             // nickname
             input.readString(nickname);
             bitField0_ |= 0x00000002;

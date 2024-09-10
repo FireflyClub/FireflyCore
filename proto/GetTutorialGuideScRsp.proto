@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "TutorialGuide.proto";
 
 message GetTutorialGuideScRsp {
-	repeated TutorialGuide tutorial_guide_list = 5;
-	uint32 retcode = 15;
+	uint32 Retcode = 1;
+	repeated TutorialGuide TutorialGuideList = 2;
 }

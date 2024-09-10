@@ -2,16 +2,16 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "RogueSeasonInfo.proto";
 import "RogueScoreRewardInfo.proto";
 import "RogueAeonInfo.proto";
-import "RogueCurVirtualItemInfo.proto";
+import "RogueSeasonInfo.proto";
 import "RogueAreaInfo.proto";
+import "RogueCurVirtualItemInfo.proto";
 
 message RogueInfoData {
-	RogueAreaInfo rogue_area_info = 2;
-	RogueCurVirtualItemInfo rogue_virtual_item_info = 11;
-	RogueAeonInfo rogue_aeon_info = 10;
-	RogueScoreRewardInfo rogue_score_info = 3;
-	RogueSeasonInfo rogue_season_info = 14;
+	RogueCurVirtualItemInfo rogue_virtual_item_info = 4;
+	RogueScoreRewardInfo rogue_score_info = 10;
+	RogueAreaInfo rogue_area_info = 14;
+	RogueAeonInfo rogue_aeon_info = 12;
+	RogueSeasonInfo rogue_season_info = 13;
 }

@@ -5,10 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "ItemList.proto";
 
 message UseItemScRsp {
-	uint32 use_item_count = 12;
-	ItemList return_data = 4;
-	uint32 LLIMGDMHEFL = 3;
+	uint32 retcode = 8;
+	ItemList return_data = 7;
+	uint64 GNGOKFEMCMI = 2;
 	uint32 use_item_id = 13;
-	uint32 retcode = 14;
-	uint64 PEKJLBINDGG = 7;
+	uint32 use_item_count = 14;
+	uint32 PHFFPFMPEBG = 6;
 }

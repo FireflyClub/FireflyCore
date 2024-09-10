@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "RogueActionResult.proto";
 import "RogueCommonActionResultDisplayType.proto";
 
-message SyncRogueCommonActionResultScNotify { // ADBBKEPKAND
-    repeated RogueActionResult action_result_list = 5;
-    uint32 rogue_version_id = 8;
-    RogueCommonActionResultDisplayType display_type = 11;
+message SyncRogueCommonActionResultScNotify {
+	RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;
+	repeated RogueActionResult action_result_list = 13;
+	uint32 rogue_version_id = 8;
 }

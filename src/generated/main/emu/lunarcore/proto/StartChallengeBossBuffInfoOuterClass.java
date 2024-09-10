@@ -23,7 +23,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_one = 3;</code>
+     * <code>optional uint32 buff_one = 1;</code>
      */
     private int buffOne;
 
@@ -32,7 +32,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_two = 10;</code>
+     * <code>optional uint32 buff_two = 7;</code>
      */
     private int buffTwo;
 
@@ -51,7 +51,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_one = 3;</code>
+     * <code>optional uint32 buff_one = 1;</code>
      * @return whether the buffOne field is set
      */
     public boolean hasBuffOne() {
@@ -63,7 +63,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_one = 3;</code>
+     * <code>optional uint32 buff_one = 1;</code>
      * @return this
      */
     public StartChallengeBossBuffInfo clearBuffOne() {
@@ -77,7 +77,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_one = 3;</code>
+     * <code>optional uint32 buff_one = 1;</code>
      * @return the buffOne
      */
     public int getBuffOne() {
@@ -89,7 +89,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_one = 3;</code>
+     * <code>optional uint32 buff_one = 1;</code>
      * @param value the buffOne to set
      * @return this
      */
@@ -104,7 +104,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_two = 10;</code>
+     * <code>optional uint32 buff_two = 7;</code>
      * @return whether the buffTwo field is set
      */
     public boolean hasBuffTwo() {
@@ -116,7 +116,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_two = 10;</code>
+     * <code>optional uint32 buff_two = 7;</code>
      * @return this
      */
     public StartChallengeBossBuffInfo clearBuffTwo() {
@@ -130,7 +130,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_two = 10;</code>
+     * <code>optional uint32 buff_two = 7;</code>
      * @return the buffTwo
      */
     public int getBuffTwo() {
@@ -142,7 +142,7 @@ public final class StartChallengeBossBuffInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 buff_two = 10;</code>
+     * <code>optional uint32 buff_two = 7;</code>
      * @param value the buffTwo to set
      * @return this
      */
@@ -217,11 +217,11 @@ public final class StartChallengeBossBuffInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(buffOne);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(buffTwo);
       }
     }
@@ -245,16 +245,16 @@ public final class StartChallengeBossBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 8: {
             // buffOne
             buffOne = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 56) {
               break;
             }
           }
-          case 80: {
+          case 56: {
             // buffTwo
             buffTwo = input.readUInt32();
             bitField0_ |= 0x00000002;

@@ -19,7 +19,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      */
     private final WolfBroGameDataOuterClass.WolfBroGameData wolfBroGameData = WolfBroGameDataOuterClass.WolfBroGameData.newInstance();
 
@@ -34,7 +34,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      * @return whether the wolfBroGameData field is set
      */
     public boolean hasWolfBroGameData() {
@@ -42,7 +42,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      * @return this
      */
     public WolfBroGameDataChangeScNotify clearWolfBroGameData() {
@@ -52,7 +52,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +66,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +80,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 1;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 2;</code>
      * @param value the wolfBroGameData to set
      * @return this
      */
@@ -151,7 +151,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 10);
+        output.writeRawByte((byte) 18);
         output.writeMessageNoTag(wolfBroGameData);
       }
     }
@@ -172,7 +172,7 @@ public final class WolfBroGameDataChangeScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 10: {
+          case 18: {
             // wolfBroGameData
             input.readMessage(wolfBroGameData);
             bitField0_ |= 0x00000001;

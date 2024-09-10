@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RotaterData {
-	uint32 rotate_int = 3;
-	uint32 group_id = 15;
-	float MBCJHDHABAK = 14;
+	uint32 group_id = 12;
+	uint32 rotate_int = 5;
+	float LENPGCPMGCL = 2;
 }

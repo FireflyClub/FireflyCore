@@ -20,10 +20,6 @@ public final class RogueMiracleSelectInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 JDDLGDNOIEC = 10;</code>
      */
     private int jDDLGDNOIEC;
@@ -57,10 +53,6 @@ public final class RogueMiracleSelectInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 JDDLGDNOIEC = 10;</code>
      * @return whether the jDDLGDNOIEC field is set
      */
@@ -69,10 +61,6 @@ public final class RogueMiracleSelectInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 JDDLGDNOIEC = 10;</code>
      * @return this
      */
@@ -83,10 +71,6 @@ public final class RogueMiracleSelectInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 JDDLGDNOIEC = 10;</code>
      * @return the jDDLGDNOIEC
      */
@@ -95,10 +79,6 @@ public final class RogueMiracleSelectInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  RogueCommonMiracleSelectSourceType EOIFGPMGFGJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 JDDLGDNOIEC = 10;</code>
      * @param value the jDDLGDNOIEC to set
      * @return this

@@ -2,27 +2,27 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "Relic.proto";
-import "Equipment.proto";
-import "Material.proto";
-import "PileItem.proto";
 import "WaitDelResource.proto";
+import "Relic.proto";
 import "TurnFoodSwitch.proto";
+import "PileItem.proto";
 import "Material0.proto";
+import "Material.proto";
+import "Equipment.proto";
 
 message GetBagScRsp {
-	repeated uint32 DAOHIHHHLOL = 2;
-	repeated Material PCKKHKBEAOM = 11;
-	repeated WaitDelResource wait_del_resource_list = 4;
-	repeated PileItem pile_item_list = 5;
-	repeated Material0 FLECIJNFOBI = 15;
+	repeated Material0 NGENOBFFLAB = 3;
+	repeated Material0 HNBHLCAKAJG = 4;
+	repeated Equipment equipment_list = 15;
+	repeated uint32 PNBPDOGEKGB = 5;
+	repeated uint32 DHDJIIOIPKH = 13;
+	repeated Material FAMNCJFBAFF = 6;
+	uint32 CGFLEKCNJKD = 14;
+	repeated TurnFoodSwitch turn_food_switch = 11;
+	repeated Material material_list = 7;
 	repeated Relic relic_list = 10;
-	repeated Material0 GHHACNDFBAE = 13;
 	uint32 retcode = 9;
-	uint32 KAIKJLHKDPA = 3;
-	repeated uint32 FBEDJNJPNJN = 12;
-	repeated Equipment equipment_list = 6;
-	repeated TurnFoodSwitch turn_food_switch = 8;
-	repeated Material material_list = 1;
-	repeated uint32 EJLIMCBIFMF = 7;
+	repeated PileItem pile_item_list = 12;
+	repeated WaitDelResource wait_del_resource_list = 8;
+	repeated uint32 CONNKODKLKH = 2;
 }

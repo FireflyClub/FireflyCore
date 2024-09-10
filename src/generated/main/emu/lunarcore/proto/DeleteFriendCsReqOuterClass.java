@@ -19,14 +19,14 @@ public final class DeleteFriendCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 IJDJCHIAJGP = 3;</code>
-     */
-    private int iJDJCHIAJGP;
-
-    /**
-     * <code>optional uint32 uid = 12;</code>
+     * <code>optional uint32 uid = 3;</code>
      */
     private int uid;
+
+    /**
+     * <code>optional uint32 LEJFPAJNHDD = 11;</code>
+     */
+    private int lEJFPAJNHDD;
 
     private DeleteFriendCsReq() {
     }
@@ -39,62 +39,25 @@ public final class DeleteFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 IJDJCHIAJGP = 3;</code>
-     * @return whether the iJDJCHIAJGP field is set
+     * <code>optional uint32 uid = 3;</code>
+     * @return whether the uid field is set
      */
-    public boolean hasIJDJCHIAJGP() {
+    public boolean hasUid() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 IJDJCHIAJGP = 3;</code>
-     * @return this
-     */
-    public DeleteFriendCsReq clearIJDJCHIAJGP() {
-      bitField0_ &= ~0x00000001;
-      iJDJCHIAJGP = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 IJDJCHIAJGP = 3;</code>
-     * @return the iJDJCHIAJGP
-     */
-    public int getIJDJCHIAJGP() {
-      return iJDJCHIAJGP;
-    }
-
-    /**
-     * <code>optional uint32 IJDJCHIAJGP = 3;</code>
-     * @param value the iJDJCHIAJGP to set
-     * @return this
-     */
-    public DeleteFriendCsReq setIJDJCHIAJGP(final int value) {
-      bitField0_ |= 0x00000001;
-      iJDJCHIAJGP = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 uid = 12;</code>
-     * @return whether the uid field is set
-     */
-    public boolean hasUid() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 uid = 12;</code>
+     * <code>optional uint32 uid = 3;</code>
      * @return this
      */
     public DeleteFriendCsReq clearUid() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       uid = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 uid = 12;</code>
+     * <code>optional uint32 uid = 3;</code>
      * @return the uid
      */
     public int getUid() {
@@ -102,13 +65,50 @@ public final class DeleteFriendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 12;</code>
+     * <code>optional uint32 uid = 3;</code>
      * @param value the uid to set
      * @return this
      */
     public DeleteFriendCsReq setUid(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       uid = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 LEJFPAJNHDD = 11;</code>
+     * @return whether the lEJFPAJNHDD field is set
+     */
+    public boolean hasLEJFPAJNHDD() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 LEJFPAJNHDD = 11;</code>
+     * @return this
+     */
+    public DeleteFriendCsReq clearLEJFPAJNHDD() {
+      bitField0_ &= ~0x00000002;
+      lEJFPAJNHDD = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 LEJFPAJNHDD = 11;</code>
+     * @return the lEJFPAJNHDD
+     */
+    public int getLEJFPAJNHDD() {
+      return lEJFPAJNHDD;
+    }
+
+    /**
+     * <code>optional uint32 LEJFPAJNHDD = 11;</code>
+     * @param value the lEJFPAJNHDD to set
+     * @return this
+     */
+    public DeleteFriendCsReq setLEJFPAJNHDD(final int value) {
+      bitField0_ |= 0x00000002;
+      lEJFPAJNHDD = value;
       return this;
     }
 
@@ -117,8 +117,8 @@ public final class DeleteFriendCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        iJDJCHIAJGP = other.iJDJCHIAJGP;
         uid = other.uid;
+        lEJFPAJNHDD = other.lEJFPAJNHDD;
       }
       return this;
     }
@@ -129,11 +129,11 @@ public final class DeleteFriendCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasIJDJCHIAJGP()) {
-        setIJDJCHIAJGP(other.iJDJCHIAJGP);
-      }
       if (other.hasUid()) {
         setUid(other.uid);
+      }
+      if (other.hasLEJFPAJNHDD()) {
+        setLEJFPAJNHDD(other.lEJFPAJNHDD);
       }
       return this;
     }
@@ -145,8 +145,8 @@ public final class DeleteFriendCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iJDJCHIAJGP = 0;
       uid = 0;
+      lEJFPAJNHDD = 0;
       return this;
     }
 
@@ -170,19 +170,19 @@ public final class DeleteFriendCsReqOuterClass {
       }
       DeleteFriendCsReq other = (DeleteFriendCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasIJDJCHIAJGP() || iJDJCHIAJGP == other.iJDJCHIAJGP)
-        && (!hasUid() || uid == other.uid);
+        && (!hasUid() || uid == other.uid)
+        && (!hasLEJFPAJNHDD() || lEJFPAJNHDD == other.lEJFPAJNHDD);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(iJDJCHIAJGP);
+        output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(uid);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(lEJFPAJNHDD);
       }
     }
 
@@ -190,10 +190,10 @@ public final class DeleteFriendCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(iJDJCHIAJGP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(uid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lEJFPAJNHDD);
       }
       return size;
     }
@@ -206,17 +206,17 @@ public final class DeleteFriendCsReqOuterClass {
       while (true) {
         switch (tag) {
           case 24: {
-            // iJDJCHIAJGP
-            iJDJCHIAJGP = input.readUInt32();
+            // uid
+            uid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 88) {
               break;
             }
           }
-          case 96: {
-            // uid
-            uid = input.readUInt32();
+          case 88: {
+            // lEJFPAJNHDD
+            lEJFPAJNHDD = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +241,10 @@ public final class DeleteFriendCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.iJDJCHIAJGP, iJDJCHIAJGP);
+        output.writeUInt32(FieldNames.uid, uid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.uid, uid);
+        output.writeUInt32(FieldNames.lEJFPAJNHDD, lEJFPAJNHDD);
       }
       output.endObject();
     }
@@ -256,10 +256,10 @@ public final class DeleteFriendCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -755503601: {
-            if (input.isAtField(FieldNames.iJDJCHIAJGP)) {
+          case 115792: {
+            if (input.isAtField(FieldNames.uid)) {
               if (!input.trySkipNullValue()) {
-                iJDJCHIAJGP = input.readUInt32();
+                uid = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -267,10 +267,10 @@ public final class DeleteFriendCsReqOuterClass {
             }
             break;
           }
-          case 115792: {
-            if (input.isAtField(FieldNames.uid)) {
+          case 1243596190: {
+            if (input.isAtField(FieldNames.lEJFPAJNHDD)) {
               if (!input.trySkipNullValue()) {
-                uid = input.readUInt32();
+                lEJFPAJNHDD = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -331,9 +331,9 @@ public final class DeleteFriendCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName iJDJCHIAJGP = FieldName.forField("IJDJCHIAJGP");
-
       static final FieldName uid = FieldName.forField("uid");
+
+      static final FieldName lEJFPAJNHDD = FieldName.forField("LEJFPAJNHDD");
     }
   }
 }

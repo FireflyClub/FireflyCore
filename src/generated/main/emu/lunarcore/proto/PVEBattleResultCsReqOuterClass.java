@@ -22,79 +22,79 @@ public final class PVEBattleResultCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 IFJFPGFAHGO = 4;</code>
-     */
-    private int iFJFPGFAHGO;
-
-    /**
-     * <code>optional uint32 stage_id = 5;</code>
-     */
-    private int stageId;
-
-    /**
-     * <code>optional uint32 battle_id = 9;</code>
+     * <code>optional uint32 battle_id = 1;</code>
      */
     private int battleId;
 
     /**
-     * <code>optional uint32 client_res_version = 10;</code>
-     */
-    private int clientResVersion;
-
-    /**
-     * <code>optional uint32 cost_time = 13;</code>
+     * <code>optional uint32 cost_time = 2;</code>
      */
     private int costTime;
 
     /**
-     * <code>optional uint32 NMHJOLNHMDK = 14;</code>
+     * <code>optional uint32 EJELPBGNINF = 6;</code>
      */
-    private int nMHJOLNHMDK;
+    private int eJELPBGNINF;
 
     /**
-     * <code>optional .BattleEndStatus end_status = 1;</code>
+     * <code>optional uint32 stage_id = 7;</code>
+     */
+    private int stageId;
+
+    /**
+     * <code>optional uint32 FLJNOLCHBBC = 10;</code>
+     */
+    private int fLJNOLCHBBC;
+
+    /**
+     * <code>optional uint32 client_res_version = 13;</code>
+     */
+    private int clientResVersion;
+
+    /**
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      */
     private int endStatus;
 
     /**
-     * <code>optional bool HCGIJFEIAMK = 2;</code>
+     * <code>optional bool NKFMMKOBDBC = 8;</code>
      */
-    private boolean hCGIJFEIAMK;
+    private boolean nKFMMKOBDBC;
 
     /**
-     * <code>optional bool ALLDMMPDLDL = 3;</code>
+     * <code>optional bool BNPJHJNLFDH = 11;</code>
      */
-    private boolean aLLDMMPDLDL;
+    private boolean bNPJHJNLFDH;
 
     /**
-     * <code>optional bool GBBBEBFHGOJ = 15;</code>
+     * <code>optional bool KNFEGGDGFGC = 15;</code>
      */
-    private boolean gBBBEBFHGOJ;
+    private boolean kNFEGGDGFGC;
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      */
     private final BattleStatisticsOuterClass.BattleStatistics stt = BattleStatisticsOuterClass.BattleStatistics.newInstance();
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      */
     private final RepeatedByte turnSnapshotHash = RepeatedByte.newEmptyInstance();
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
+     * <code>optional string LFDDAGOMEGB = 5;</code>
      */
-    private final Utf8String hMOIDIKHBHM = Utf8String.newEmptyInstance();
+    private final Utf8String lFDDAGOMEGB = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      */
     private final RepeatedMessage<BattleOpOuterClass.BattleOp> opList = RepeatedMessage.newEmptyInstance(BattleOpOuterClass.BattleOp.getFactory());
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
      */
-    private final RepeatedMessage<OFBINFHOHKNEntry> oFBINFHOHKN = RepeatedMessage.newEmptyInstance(OFBINFHOHKNEntry.getFactory());
+    private final RepeatedMessage<LAOIGBICBAOEntry> lAOIGBICBAO = RepeatedMessage.newEmptyInstance(LAOIGBICBAOEntry.getFactory());
 
     private PVEBattleResultCsReq() {
     }
@@ -107,99 +107,25 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 IFJFPGFAHGO = 4;</code>
-     * @return whether the iFJFPGFAHGO field is set
+     * <code>optional uint32 battle_id = 1;</code>
+     * @return whether the battleId field is set
      */
-    public boolean hasIFJFPGFAHGO() {
+    public boolean hasBattleId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 IFJFPGFAHGO = 4;</code>
-     * @return this
-     */
-    public PVEBattleResultCsReq clearIFJFPGFAHGO() {
-      bitField0_ &= ~0x00000001;
-      iFJFPGFAHGO = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 IFJFPGFAHGO = 4;</code>
-     * @return the iFJFPGFAHGO
-     */
-    public int getIFJFPGFAHGO() {
-      return iFJFPGFAHGO;
-    }
-
-    /**
-     * <code>optional uint32 IFJFPGFAHGO = 4;</code>
-     * @param value the iFJFPGFAHGO to set
-     * @return this
-     */
-    public PVEBattleResultCsReq setIFJFPGFAHGO(final int value) {
-      bitField0_ |= 0x00000001;
-      iFJFPGFAHGO = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 stage_id = 5;</code>
-     * @return whether the stageId field is set
-     */
-    public boolean hasStageId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 stage_id = 5;</code>
-     * @return this
-     */
-    public PVEBattleResultCsReq clearStageId() {
-      bitField0_ &= ~0x00000002;
-      stageId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 stage_id = 5;</code>
-     * @return the stageId
-     */
-    public int getStageId() {
-      return stageId;
-    }
-
-    /**
-     * <code>optional uint32 stage_id = 5;</code>
-     * @param value the stageId to set
-     * @return this
-     */
-    public PVEBattleResultCsReq setStageId(final int value) {
-      bitField0_ |= 0x00000002;
-      stageId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 battle_id = 9;</code>
-     * @return whether the battleId field is set
-     */
-    public boolean hasBattleId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 battle_id = 9;</code>
+     * <code>optional uint32 battle_id = 1;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearBattleId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       battleId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 battle_id = 9;</code>
+     * <code>optional uint32 battle_id = 1;</code>
      * @return the battleId
      */
     public int getBattleId() {
@@ -207,73 +133,36 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 battle_id = 9;</code>
+     * <code>optional uint32 battle_id = 1;</code>
      * @param value the battleId to set
      * @return this
      */
     public PVEBattleResultCsReq setBattleId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       battleId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 client_res_version = 10;</code>
-     * @return whether the clientResVersion field is set
-     */
-    public boolean hasClientResVersion() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 client_res_version = 10;</code>
-     * @return this
-     */
-    public PVEBattleResultCsReq clearClientResVersion() {
-      bitField0_ &= ~0x00000008;
-      clientResVersion = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 client_res_version = 10;</code>
-     * @return the clientResVersion
-     */
-    public int getClientResVersion() {
-      return clientResVersion;
-    }
-
-    /**
-     * <code>optional uint32 client_res_version = 10;</code>
-     * @param value the clientResVersion to set
-     * @return this
-     */
-    public PVEBattleResultCsReq setClientResVersion(final int value) {
-      bitField0_ |= 0x00000008;
-      clientResVersion = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 cost_time = 13;</code>
+     * <code>optional uint32 cost_time = 2;</code>
      * @return whether the costTime field is set
      */
     public boolean hasCostTime() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 cost_time = 13;</code>
+     * <code>optional uint32 cost_time = 2;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearCostTime() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000002;
       costTime = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 cost_time = 13;</code>
+     * <code>optional uint32 cost_time = 2;</code>
      * @return the costTime
      */
     public int getCostTime() {
@@ -281,55 +170,166 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cost_time = 13;</code>
+     * <code>optional uint32 cost_time = 2;</code>
      * @param value the costTime to set
      * @return this
      */
     public PVEBattleResultCsReq setCostTime(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000002;
       costTime = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 NMHJOLNHMDK = 14;</code>
-     * @return whether the nMHJOLNHMDK field is set
+     * <code>optional uint32 EJELPBGNINF = 6;</code>
+     * @return whether the eJELPBGNINF field is set
      */
-    public boolean hasNMHJOLNHMDK() {
+    public boolean hasEJELPBGNINF() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 EJELPBGNINF = 6;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearEJELPBGNINF() {
+      bitField0_ &= ~0x00000004;
+      eJELPBGNINF = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 EJELPBGNINF = 6;</code>
+     * @return the eJELPBGNINF
+     */
+    public int getEJELPBGNINF() {
+      return eJELPBGNINF;
+    }
+
+    /**
+     * <code>optional uint32 EJELPBGNINF = 6;</code>
+     * @param value the eJELPBGNINF to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setEJELPBGNINF(final int value) {
+      bitField0_ |= 0x00000004;
+      eJELPBGNINF = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 7;</code>
+     * @return whether the stageId field is set
+     */
+    public boolean hasStageId() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 7;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearStageId() {
+      bitField0_ &= ~0x00000008;
+      stageId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 7;</code>
+     * @return the stageId
+     */
+    public int getStageId() {
+      return stageId;
+    }
+
+    /**
+     * <code>optional uint32 stage_id = 7;</code>
+     * @param value the stageId to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setStageId(final int value) {
+      bitField0_ |= 0x00000008;
+      stageId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 FLJNOLCHBBC = 10;</code>
+     * @return whether the fLJNOLCHBBC field is set
+     */
+    public boolean hasFLJNOLCHBBC() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 FLJNOLCHBBC = 10;</code>
+     * @return this
+     */
+    public PVEBattleResultCsReq clearFLJNOLCHBBC() {
+      bitField0_ &= ~0x00000010;
+      fLJNOLCHBBC = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 FLJNOLCHBBC = 10;</code>
+     * @return the fLJNOLCHBBC
+     */
+    public int getFLJNOLCHBBC() {
+      return fLJNOLCHBBC;
+    }
+
+    /**
+     * <code>optional uint32 FLJNOLCHBBC = 10;</code>
+     * @param value the fLJNOLCHBBC to set
+     * @return this
+     */
+    public PVEBattleResultCsReq setFLJNOLCHBBC(final int value) {
+      bitField0_ |= 0x00000010;
+      fLJNOLCHBBC = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 client_res_version = 13;</code>
+     * @return whether the clientResVersion field is set
+     */
+    public boolean hasClientResVersion() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 NMHJOLNHMDK = 14;</code>
+     * <code>optional uint32 client_res_version = 13;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearNMHJOLNHMDK() {
+    public PVEBattleResultCsReq clearClientResVersion() {
       bitField0_ &= ~0x00000020;
-      nMHJOLNHMDK = 0;
+      clientResVersion = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 NMHJOLNHMDK = 14;</code>
-     * @return the nMHJOLNHMDK
+     * <code>optional uint32 client_res_version = 13;</code>
+     * @return the clientResVersion
      */
-    public int getNMHJOLNHMDK() {
-      return nMHJOLNHMDK;
+    public int getClientResVersion() {
+      return clientResVersion;
     }
 
     /**
-     * <code>optional uint32 NMHJOLNHMDK = 14;</code>
-     * @param value the nMHJOLNHMDK to set
+     * <code>optional uint32 client_res_version = 13;</code>
+     * @param value the clientResVersion to set
      * @return this
      */
-    public PVEBattleResultCsReq setNMHJOLNHMDK(final int value) {
+    public PVEBattleResultCsReq setClientResVersion(final int value) {
       bitField0_ |= 0x00000020;
-      nMHJOLNHMDK = value;
+      clientResVersion = value;
       return this;
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 1;</code>
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @return whether the endStatus field is set
      */
     public boolean hasEndStatus() {
@@ -337,7 +337,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 1;</code>
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearEndStatus() {
@@ -347,7 +347,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 1;</code>
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @return the endStatus
      */
     public BattleEndStatusOuterClass.BattleEndStatus getEndStatus() {
@@ -380,7 +380,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleEndStatus end_status = 1;</code>
+     * <code>optional .BattleEndStatus end_status = 9;</code>
      * @param value the endStatus to set
      * @return this
      */
@@ -392,118 +392,118 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool HCGIJFEIAMK = 2;</code>
-     * @return whether the hCGIJFEIAMK field is set
+     * <code>optional bool NKFMMKOBDBC = 8;</code>
+     * @return whether the nKFMMKOBDBC field is set
      */
-    public boolean hasHCGIJFEIAMK() {
+    public boolean hasNKFMMKOBDBC() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional bool HCGIJFEIAMK = 2;</code>
+     * <code>optional bool NKFMMKOBDBC = 8;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearHCGIJFEIAMK() {
+    public PVEBattleResultCsReq clearNKFMMKOBDBC() {
       bitField0_ &= ~0x00000080;
-      hCGIJFEIAMK = false;
+      nKFMMKOBDBC = false;
       return this;
     }
 
     /**
-     * <code>optional bool HCGIJFEIAMK = 2;</code>
-     * @return the hCGIJFEIAMK
+     * <code>optional bool NKFMMKOBDBC = 8;</code>
+     * @return the nKFMMKOBDBC
      */
-    public boolean getHCGIJFEIAMK() {
-      return hCGIJFEIAMK;
+    public boolean getNKFMMKOBDBC() {
+      return nKFMMKOBDBC;
     }
 
     /**
-     * <code>optional bool HCGIJFEIAMK = 2;</code>
-     * @param value the hCGIJFEIAMK to set
+     * <code>optional bool NKFMMKOBDBC = 8;</code>
+     * @param value the nKFMMKOBDBC to set
      * @return this
      */
-    public PVEBattleResultCsReq setHCGIJFEIAMK(final boolean value) {
+    public PVEBattleResultCsReq setNKFMMKOBDBC(final boolean value) {
       bitField0_ |= 0x00000080;
-      hCGIJFEIAMK = value;
+      nKFMMKOBDBC = value;
       return this;
     }
 
     /**
-     * <code>optional bool ALLDMMPDLDL = 3;</code>
-     * @return whether the aLLDMMPDLDL field is set
+     * <code>optional bool BNPJHJNLFDH = 11;</code>
+     * @return whether the bNPJHJNLFDH field is set
      */
-    public boolean hasALLDMMPDLDL() {
+    public boolean hasBNPJHJNLFDH() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>optional bool ALLDMMPDLDL = 3;</code>
+     * <code>optional bool BNPJHJNLFDH = 11;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearALLDMMPDLDL() {
+    public PVEBattleResultCsReq clearBNPJHJNLFDH() {
       bitField0_ &= ~0x00000100;
-      aLLDMMPDLDL = false;
+      bNPJHJNLFDH = false;
       return this;
     }
 
     /**
-     * <code>optional bool ALLDMMPDLDL = 3;</code>
-     * @return the aLLDMMPDLDL
+     * <code>optional bool BNPJHJNLFDH = 11;</code>
+     * @return the bNPJHJNLFDH
      */
-    public boolean getALLDMMPDLDL() {
-      return aLLDMMPDLDL;
+    public boolean getBNPJHJNLFDH() {
+      return bNPJHJNLFDH;
     }
 
     /**
-     * <code>optional bool ALLDMMPDLDL = 3;</code>
-     * @param value the aLLDMMPDLDL to set
+     * <code>optional bool BNPJHJNLFDH = 11;</code>
+     * @param value the bNPJHJNLFDH to set
      * @return this
      */
-    public PVEBattleResultCsReq setALLDMMPDLDL(final boolean value) {
+    public PVEBattleResultCsReq setBNPJHJNLFDH(final boolean value) {
       bitField0_ |= 0x00000100;
-      aLLDMMPDLDL = value;
+      bNPJHJNLFDH = value;
       return this;
     }
 
     /**
-     * <code>optional bool GBBBEBFHGOJ = 15;</code>
-     * @return whether the gBBBEBFHGOJ field is set
+     * <code>optional bool KNFEGGDGFGC = 15;</code>
+     * @return whether the kNFEGGDGFGC field is set
      */
-    public boolean hasGBBBEBFHGOJ() {
+    public boolean hasKNFEGGDGFGC() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>optional bool GBBBEBFHGOJ = 15;</code>
+     * <code>optional bool KNFEGGDGFGC = 15;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearGBBBEBFHGOJ() {
+    public PVEBattleResultCsReq clearKNFEGGDGFGC() {
       bitField0_ &= ~0x00000200;
-      gBBBEBFHGOJ = false;
+      kNFEGGDGFGC = false;
       return this;
     }
 
     /**
-     * <code>optional bool GBBBEBFHGOJ = 15;</code>
-     * @return the gBBBEBFHGOJ
+     * <code>optional bool KNFEGGDGFGC = 15;</code>
+     * @return the kNFEGGDGFGC
      */
-    public boolean getGBBBEBFHGOJ() {
-      return gBBBEBFHGOJ;
+    public boolean getKNFEGGDGFGC() {
+      return kNFEGGDGFGC;
     }
 
     /**
-     * <code>optional bool GBBBEBFHGOJ = 15;</code>
-     * @param value the gBBBEBFHGOJ to set
+     * <code>optional bool KNFEGGDGFGC = 15;</code>
+     * @param value the kNFEGGDGFGC to set
      * @return this
      */
-    public PVEBattleResultCsReq setGBBBEBFHGOJ(final boolean value) {
+    public PVEBattleResultCsReq setKNFEGGDGFGC(final boolean value) {
       bitField0_ |= 0x00000200;
-      gBBBEBFHGOJ = value;
+      kNFEGGDGFGC = value;
       return this;
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      * @return whether the stt field is set
      */
     public boolean hasStt() {
@@ -511,7 +511,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearStt() {
@@ -521,7 +521,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -535,7 +535,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -549,7 +549,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional .BattleStatistics stt = 12;</code>
+     * <code>optional .BattleStatistics stt = 14;</code>
      * @param value the stt to set
      * @return this
      */
@@ -560,7 +560,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      * @return whether the turnSnapshotHash field is set
      */
     public boolean hasTurnSnapshotHash() {
@@ -568,7 +568,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearTurnSnapshotHash() {
@@ -578,7 +578,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -592,7 +592,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -606,7 +606,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      * @param value the turnSnapshotHash to add
      * @return this
      */
@@ -617,7 +617,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      * @param values the turnSnapshotHash to add
      * @return this
      */
@@ -628,7 +628,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional bytes turn_snapshot_hash = 8;</code>
+     * <code>optional bytes turn_snapshot_hash = 12;</code>
      * @param values the turnSnapshotHash to set
      * @return this
      */
@@ -639,72 +639,72 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @return whether the hMOIDIKHBHM field is set
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @return whether the lFDDAGOMEGB field is set
      */
-    public boolean hasHMOIDIKHBHM() {
+    public boolean hasLFDDAGOMEGB() {
       return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
+     * <code>optional string LFDDAGOMEGB = 5;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearHMOIDIKHBHM() {
+    public PVEBattleResultCsReq clearLFDDAGOMEGB() {
       bitField0_ &= ~0x00001000;
-      hMOIDIKHBHM.clear();
+      lFDDAGOMEGB.clear();
       return this;
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @return the hMOIDIKHBHM
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @return the lFDDAGOMEGB
      */
-    public String getHMOIDIKHBHM() {
-      return hMOIDIKHBHM.getString();
+    public String getLFDDAGOMEGB() {
+      return lFDDAGOMEGB.getString();
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @return internal {@code Utf8String} representation of hMOIDIKHBHM for reading
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @return internal {@code Utf8String} representation of lFDDAGOMEGB for reading
      */
-    public Utf8String getHMOIDIKHBHMBytes() {
-      return this.hMOIDIKHBHM;
+    public Utf8String getLFDDAGOMEGBBytes() {
+      return this.lFDDAGOMEGB;
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @return internal {@code Utf8String} representation of hMOIDIKHBHM for modifications
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @return internal {@code Utf8String} representation of lFDDAGOMEGB for modifications
      */
-    public Utf8String getMutableHMOIDIKHBHMBytes() {
+    public Utf8String getMutableLFDDAGOMEGBBytes() {
       bitField0_ |= 0x00001000;
-      return this.hMOIDIKHBHM;
+      return this.lFDDAGOMEGB;
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @param value the hMOIDIKHBHM to set
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @param value the lFDDAGOMEGB to set
      * @return this
      */
-    public PVEBattleResultCsReq setHMOIDIKHBHM(final CharSequence value) {
+    public PVEBattleResultCsReq setLFDDAGOMEGB(final CharSequence value) {
       bitField0_ |= 0x00001000;
-      hMOIDIKHBHM.copyFrom(value);
+      lFDDAGOMEGB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string HMOIDIKHBHM = 11;</code>
-     * @param value the hMOIDIKHBHM to set
+     * <code>optional string LFDDAGOMEGB = 5;</code>
+     * @param value the lFDDAGOMEGB to set
      * @return this
      */
-    public PVEBattleResultCsReq setHMOIDIKHBHM(final Utf8String value) {
+    public PVEBattleResultCsReq setLFDDAGOMEGB(final Utf8String value) {
       bitField0_ |= 0x00001000;
-      hMOIDIKHBHM.copyFrom(value);
+      lFDDAGOMEGB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      * @return whether the opList field is set
      */
     public boolean hasOpList() {
@@ -712,7 +712,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearOpList() {
@@ -722,7 +722,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -736,7 +736,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -750,7 +750,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      * @param value the opList to add
      * @return this
      */
@@ -761,7 +761,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .BattleOp op_list = 6;</code>
+     * <code>repeated .BattleOp op_list = 3;</code>
      * @param values the opList to add
      * @return this
      */
@@ -772,39 +772,39 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
-     * @return whether the oFBINFHOHKN field is set
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
+     * @return whether the lAOIGBICBAO field is set
      */
-    public boolean hasOFBINFHOHKN() {
+    public boolean hasLAOIGBICBAO() {
       return (bitField0_ & 0x00004000) != 0;
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
      * @return this
      */
-    public PVEBattleResultCsReq clearOFBINFHOHKN() {
+    public PVEBattleResultCsReq clearLAOIGBICBAO() {
       bitField0_ &= ~0x00004000;
-      oFBINFHOHKN.clear();
+      lAOIGBICBAO.clear();
       return this;
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableOFBINFHOHKN()} if you want to modify it.
+     * Use {@link #getMutableLAOIGBICBAO()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<OFBINFHOHKNEntry> getOFBINFHOHKN() {
-      return oFBINFHOHKN;
+    public RepeatedMessage<LAOIGBICBAOEntry> getLAOIGBICBAO() {
+      return lAOIGBICBAO;
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -812,30 +812,30 @@ public final class PVEBattleResultCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<OFBINFHOHKNEntry> getMutableOFBINFHOHKN() {
+    public RepeatedMessage<LAOIGBICBAOEntry> getMutableLAOIGBICBAO() {
       bitField0_ |= 0x00004000;
-      return oFBINFHOHKN;
+      return lAOIGBICBAO;
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
-     * @param value the oFBINFHOHKN to add
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
+     * @param value the lAOIGBICBAO to add
      * @return this
      */
-    public PVEBattleResultCsReq addOFBINFHOHKN(final OFBINFHOHKNEntry value) {
+    public PVEBattleResultCsReq addLAOIGBICBAO(final LAOIGBICBAOEntry value) {
       bitField0_ |= 0x00004000;
-      oFBINFHOHKN.add(value);
+      lAOIGBICBAO.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .PVEBattleResultCsReq.OFBINFHOHKNEntry OFBINFHOHKN = 7;</code>
-     * @param values the oFBINFHOHKN to add
+     * <code>repeated .PVEBattleResultCsReq.LAOIGBICBAOEntry LAOIGBICBAO = 4;</code>
+     * @param values the lAOIGBICBAO to add
      * @return this
      */
-    public PVEBattleResultCsReq addAllOFBINFHOHKN(final OFBINFHOHKNEntry... values) {
+    public PVEBattleResultCsReq addAllLAOIGBICBAO(final LAOIGBICBAOEntry... values) {
       bitField0_ |= 0x00004000;
-      oFBINFHOHKN.addAll(values);
+      lAOIGBICBAO.addAll(values);
       return this;
     }
 
@@ -844,21 +844,21 @@ public final class PVEBattleResultCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        iFJFPGFAHGO = other.iFJFPGFAHGO;
-        stageId = other.stageId;
         battleId = other.battleId;
-        clientResVersion = other.clientResVersion;
         costTime = other.costTime;
-        nMHJOLNHMDK = other.nMHJOLNHMDK;
+        eJELPBGNINF = other.eJELPBGNINF;
+        stageId = other.stageId;
+        fLJNOLCHBBC = other.fLJNOLCHBBC;
+        clientResVersion = other.clientResVersion;
         endStatus = other.endStatus;
-        hCGIJFEIAMK = other.hCGIJFEIAMK;
-        aLLDMMPDLDL = other.aLLDMMPDLDL;
-        gBBBEBFHGOJ = other.gBBBEBFHGOJ;
+        nKFMMKOBDBC = other.nKFMMKOBDBC;
+        bNPJHJNLFDH = other.bNPJHJNLFDH;
+        kNFEGGDGFGC = other.kNFEGGDGFGC;
         stt.copyFrom(other.stt);
         turnSnapshotHash.copyFrom(other.turnSnapshotHash);
-        hMOIDIKHBHM.copyFrom(other.hMOIDIKHBHM);
+        lFDDAGOMEGB.copyFrom(other.lFDDAGOMEGB);
         opList.copyFrom(other.opList);
-        oFBINFHOHKN.copyFrom(other.oFBINFHOHKN);
+        lAOIGBICBAO.copyFrom(other.lAOIGBICBAO);
       }
       return this;
     }
@@ -869,35 +869,35 @@ public final class PVEBattleResultCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasIFJFPGFAHGO()) {
-        setIFJFPGFAHGO(other.iFJFPGFAHGO);
-      }
-      if (other.hasStageId()) {
-        setStageId(other.stageId);
-      }
       if (other.hasBattleId()) {
         setBattleId(other.battleId);
-      }
-      if (other.hasClientResVersion()) {
-        setClientResVersion(other.clientResVersion);
       }
       if (other.hasCostTime()) {
         setCostTime(other.costTime);
       }
-      if (other.hasNMHJOLNHMDK()) {
-        setNMHJOLNHMDK(other.nMHJOLNHMDK);
+      if (other.hasEJELPBGNINF()) {
+        setEJELPBGNINF(other.eJELPBGNINF);
+      }
+      if (other.hasStageId()) {
+        setStageId(other.stageId);
+      }
+      if (other.hasFLJNOLCHBBC()) {
+        setFLJNOLCHBBC(other.fLJNOLCHBBC);
+      }
+      if (other.hasClientResVersion()) {
+        setClientResVersion(other.clientResVersion);
       }
       if (other.hasEndStatus()) {
         setEndStatusValue(other.endStatus);
       }
-      if (other.hasHCGIJFEIAMK()) {
-        setHCGIJFEIAMK(other.hCGIJFEIAMK);
+      if (other.hasNKFMMKOBDBC()) {
+        setNKFMMKOBDBC(other.nKFMMKOBDBC);
       }
-      if (other.hasALLDMMPDLDL()) {
-        setALLDMMPDLDL(other.aLLDMMPDLDL);
+      if (other.hasBNPJHJNLFDH()) {
+        setBNPJHJNLFDH(other.bNPJHJNLFDH);
       }
-      if (other.hasGBBBEBFHGOJ()) {
-        setGBBBEBFHGOJ(other.gBBBEBFHGOJ);
+      if (other.hasKNFEGGDGFGC()) {
+        setKNFEGGDGFGC(other.kNFEGGDGFGC);
       }
       if (other.hasStt()) {
         getMutableStt().mergeFrom(other.stt);
@@ -905,14 +905,14 @@ public final class PVEBattleResultCsReqOuterClass {
       if (other.hasTurnSnapshotHash()) {
         getMutableTurnSnapshotHash().copyFrom(other.turnSnapshotHash);
       }
-      if (other.hasHMOIDIKHBHM()) {
-        getMutableHMOIDIKHBHMBytes().copyFrom(other.hMOIDIKHBHM);
+      if (other.hasLFDDAGOMEGB()) {
+        getMutableLFDDAGOMEGBBytes().copyFrom(other.lFDDAGOMEGB);
       }
       if (other.hasOpList()) {
         getMutableOpList().addAll(other.opList);
       }
-      if (other.hasOFBINFHOHKN()) {
-        getMutableOFBINFHOHKN().addAll(other.oFBINFHOHKN);
+      if (other.hasLAOIGBICBAO()) {
+        getMutableLAOIGBICBAO().addAll(other.lAOIGBICBAO);
       }
       return this;
     }
@@ -924,21 +924,21 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iFJFPGFAHGO = 0;
-      stageId = 0;
       battleId = 0;
-      clientResVersion = 0;
       costTime = 0;
-      nMHJOLNHMDK = 0;
+      eJELPBGNINF = 0;
+      stageId = 0;
+      fLJNOLCHBBC = 0;
+      clientResVersion = 0;
       endStatus = 0;
-      hCGIJFEIAMK = false;
-      aLLDMMPDLDL = false;
-      gBBBEBFHGOJ = false;
+      nKFMMKOBDBC = false;
+      bNPJHJNLFDH = false;
+      kNFEGGDGFGC = false;
       stt.clear();
       turnSnapshotHash.clear();
-      hMOIDIKHBHM.clear();
+      lFDDAGOMEGB.clear();
       opList.clear();
-      oFBINFHOHKN.clear();
+      lAOIGBICBAO.clear();
       return this;
     }
 
@@ -951,9 +951,9 @@ public final class PVEBattleResultCsReqOuterClass {
       bitField0_ = 0;
       stt.clearQuick();
       turnSnapshotHash.clear();
-      hMOIDIKHBHM.clear();
+      lFDDAGOMEGB.clear();
       opList.clearQuick();
-      oFBINFHOHKN.clearQuick();
+      lAOIGBICBAO.clearQuick();
       return this;
     }
 
@@ -967,87 +967,87 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       PVEBattleResultCsReq other = (PVEBattleResultCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasIFJFPGFAHGO() || iFJFPGFAHGO == other.iFJFPGFAHGO)
-        && (!hasStageId() || stageId == other.stageId)
         && (!hasBattleId() || battleId == other.battleId)
-        && (!hasClientResVersion() || clientResVersion == other.clientResVersion)
         && (!hasCostTime() || costTime == other.costTime)
-        && (!hasNMHJOLNHMDK() || nMHJOLNHMDK == other.nMHJOLNHMDK)
+        && (!hasEJELPBGNINF() || eJELPBGNINF == other.eJELPBGNINF)
+        && (!hasStageId() || stageId == other.stageId)
+        && (!hasFLJNOLCHBBC() || fLJNOLCHBBC == other.fLJNOLCHBBC)
+        && (!hasClientResVersion() || clientResVersion == other.clientResVersion)
         && (!hasEndStatus() || endStatus == other.endStatus)
-        && (!hasHCGIJFEIAMK() || hCGIJFEIAMK == other.hCGIJFEIAMK)
-        && (!hasALLDMMPDLDL() || aLLDMMPDLDL == other.aLLDMMPDLDL)
-        && (!hasGBBBEBFHGOJ() || gBBBEBFHGOJ == other.gBBBEBFHGOJ)
+        && (!hasNKFMMKOBDBC() || nKFMMKOBDBC == other.nKFMMKOBDBC)
+        && (!hasBNPJHJNLFDH() || bNPJHJNLFDH == other.bNPJHJNLFDH)
+        && (!hasKNFEGGDGFGC() || kNFEGGDGFGC == other.kNFEGGDGFGC)
         && (!hasStt() || stt.equals(other.stt))
         && (!hasTurnSnapshotHash() || turnSnapshotHash.equals(other.turnSnapshotHash))
-        && (!hasHMOIDIKHBHM() || hMOIDIKHBHM.equals(other.hMOIDIKHBHM))
+        && (!hasLFDDAGOMEGB() || lFDDAGOMEGB.equals(other.lFDDAGOMEGB))
         && (!hasOpList() || opList.equals(other.opList))
-        && (!hasOFBINFHOHKN() || oFBINFHOHKN.equals(other.oFBINFHOHKN));
+        && (!hasLAOIGBICBAO() || lAOIGBICBAO.equals(other.lAOIGBICBAO));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(iFJFPGFAHGO);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(stageId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(battleId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(clientResVersion);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 104);
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(costTime);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(eJELPBGNINF);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(stageId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(fLJNOLCHBBC);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(nMHJOLNHMDK);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 72);
         output.writeEnumNoTag(endStatus);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeBoolNoTag(hCGIJFEIAMK);
+        output.writeRawByte((byte) 64);
+        output.writeBoolNoTag(nKFMMKOBDBC);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeBoolNoTag(aLLDMMPDLDL);
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(bNPJHJNLFDH);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeBoolNoTag(gBBBEBFHGOJ);
+        output.writeBoolNoTag(kNFEGGDGFGC);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(stt);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 98);
         output.writeBytesNoTag(turnSnapshotHash);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeStringNoTag(hMOIDIKHBHM);
+        output.writeRawByte((byte) 42);
+        output.writeStringNoTag(lFDDAGOMEGB);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         for (int i = 0; i < opList.length(); i++) {
-          output.writeRawByte((byte) 50);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(opList.get(i));
         }
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        for (int i = 0; i < oFBINFHOHKN.length(); i++) {
-          output.writeRawByte((byte) 58);
-          output.writeMessageNoTag(oFBINFHOHKN.get(i));
+        for (int i = 0; i < lAOIGBICBAO.length(); i++) {
+          output.writeRawByte((byte) 34);
+          output.writeMessageNoTag(lAOIGBICBAO.get(i));
         }
       }
     }
@@ -1056,22 +1056,22 @@ public final class PVEBattleResultCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(iFJFPGFAHGO);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(battleId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientResVersion);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(costTime);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(eJELPBGNINF);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fLJNOLCHBBC);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(nMHJOLNHMDK);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(endStatus);
@@ -1092,13 +1092,13 @@ public final class PVEBattleResultCsReqOuterClass {
         size += 1 + ProtoSink.computeBytesSizeNoTag(turnSnapshotHash);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(hMOIDIKHBHM);
+        size += 1 + ProtoSink.computeStringSizeNoTag(lFDDAGOMEGB);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         size += (1 * opList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(opList);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        size += (1 * oFBINFHOHKN.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(oFBINFHOHKN);
+        size += (1 * lAOIGBICBAO.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(lAOIGBICBAO);
       }
       return size;
     }
@@ -1110,61 +1110,61 @@ public final class PVEBattleResultCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // iFJFPGFAHGO
-            iFJFPGFAHGO = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // stageId
-            stageId = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
+          case 8: {
             // battleId
             battleId = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
+          case 16: {
+            // costTime
+            costTime = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // eJELPBGNINF
+            eJELPBGNINF = input.readUInt32();
             bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // stageId
+            stageId = input.readUInt32();
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 80) {
               break;
             }
           }
           case 80: {
-            // clientResVersion
-            clientResVersion = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            // fLJNOLCHBBC
+            fLJNOLCHBBC = input.readUInt32();
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 104) {
               break;
             }
           }
           case 104: {
-            // costTime
-            costTime = input.readUInt32();
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
-            // nMHJOLNHMDK
-            nMHJOLNHMDK = input.readUInt32();
+            // clientResVersion
+            clientResVersion = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 72) {
               break;
             }
           }
-          case 8: {
+          case 72: {
             // endStatus
             final int value = input.readInt32();
             if (BattleEndStatusOuterClass.BattleEndStatus.forNumber(value) != null) {
@@ -1172,22 +1172,22 @@ public final class PVEBattleResultCsReqOuterClass {
               bitField0_ |= 0x00000040;
             }
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 64) {
               break;
             }
           }
-          case 16: {
-            // hCGIJFEIAMK
-            hCGIJFEIAMK = input.readBool();
+          case 64: {
+            // nKFMMKOBDBC
+            nKFMMKOBDBC = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 88) {
               break;
             }
           }
-          case 24: {
-            // aLLDMMPDLDL
-            aLLDMMPDLDL = input.readBool();
+          case 88: {
+            // bNPJHJNLFDH
+            bNPJHJNLFDH = input.readBool();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 120) {
@@ -1195,52 +1195,52 @@ public final class PVEBattleResultCsReqOuterClass {
             }
           }
           case 120: {
-            // gBBBEBFHGOJ
-            gBBBEBFHGOJ = input.readBool();
+            // kNFEGGDGFGC
+            kNFEGGDGFGC = input.readBool();
             bitField0_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 114) {
+              break;
+            }
+          }
+          case 114: {
+            // stt
+            input.readMessage(stt);
+            bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 98) {
               break;
             }
           }
           case 98: {
-            // stt
-            input.readMessage(stt);
-            bitField0_ |= 0x00000400;
-            tag = input.readTag();
-            if (tag != 66) {
-              break;
-            }
-          }
-          case 66: {
             // turnSnapshotHash
             input.readBytes(turnSnapshotHash);
             bitField0_ |= 0x00000800;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 42) {
               break;
             }
           }
-          case 90: {
-            // hMOIDIKHBHM
-            input.readString(hMOIDIKHBHM);
+          case 42: {
+            // lFDDAGOMEGB
+            input.readString(lFDDAGOMEGB);
             bitField0_ |= 0x00001000;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 26) {
               break;
             }
           }
-          case 50: {
+          case 26: {
             // opList
             tag = input.readRepeatedMessage(opList, tag);
             bitField0_ |= 0x00002000;
-            if (tag != 58) {
+            if (tag != 34) {
               break;
             }
           }
-          case 58: {
-            // oFBINFHOHKN
-            tag = input.readRepeatedMessage(oFBINFHOHKN, tag);
+          case 34: {
+            // lAOIGBICBAO
+            tag = input.readRepeatedMessage(lAOIGBICBAO, tag);
             bitField0_ |= 0x00004000;
             if (tag != 0) {
               break;
@@ -1264,34 +1264,34 @@ public final class PVEBattleResultCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.iFJFPGFAHGO, iFJFPGFAHGO);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.stageId, stageId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.battleId, battleId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.clientResVersion, clientResVersion);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.costTime, costTime);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.eJELPBGNINF, eJELPBGNINF);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.stageId, stageId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.fLJNOLCHBBC, fLJNOLCHBBC);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.nMHJOLNHMDK, nMHJOLNHMDK);
+        output.writeUInt32(FieldNames.clientResVersion, clientResVersion);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeEnum(FieldNames.endStatus, endStatus, BattleEndStatusOuterClass.BattleEndStatus.converter());
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeBool(FieldNames.hCGIJFEIAMK, hCGIJFEIAMK);
+        output.writeBool(FieldNames.nKFMMKOBDBC, nKFMMKOBDBC);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeBool(FieldNames.aLLDMMPDLDL, aLLDMMPDLDL);
+        output.writeBool(FieldNames.bNPJHJNLFDH, bNPJHJNLFDH);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeBool(FieldNames.gBBBEBFHGOJ, gBBBEBFHGOJ);
+        output.writeBool(FieldNames.kNFEGGDGFGC, kNFEGGDGFGC);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeMessage(FieldNames.stt, stt);
@@ -1300,13 +1300,13 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeBytes(FieldNames.turnSnapshotHash, turnSnapshotHash);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeString(FieldNames.hMOIDIKHBHM, hMOIDIKHBHM);
+        output.writeString(FieldNames.lFDDAGOMEGB, lFDDAGOMEGB);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         output.writeRepeatedMessage(FieldNames.opList, opList);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeRepeatedMessage(FieldNames.oFBINFHOHKN, oFBINFHOHKN);
+        output.writeRepeatedMessage(FieldNames.lAOIGBICBAO, lAOIGBICBAO);
       }
       output.endObject();
     }
@@ -1318,47 +1318,12 @@ public final class PVEBattleResultCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1984304187: {
-            if (input.isAtField(FieldNames.iFJFPGFAHGO)) {
-              if (!input.trySkipNullValue()) {
-                iFJFPGFAHGO = input.readUInt32();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1897528135:
-          case 1306191356: {
-            if (input.isAtField(FieldNames.stageId)) {
-              if (!input.trySkipNullValue()) {
-                stageId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -1678308365:
           case -487930366: {
             if (input.isAtField(FieldNames.battleId)) {
               if (!input.trySkipNullValue()) {
                 battleId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -2005674429:
-          case -349907515: {
-            if (input.isAtField(FieldNames.clientResVersion)) {
-              if (!input.trySkipNullValue()) {
-                clientResVersion = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -1370,6 +1335,40 @@ public final class PVEBattleResultCsReqOuterClass {
             if (input.isAtField(FieldNames.costTime)) {
               if (!input.trySkipNullValue()) {
                 costTime = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2000056004: {
+            if (input.isAtField(FieldNames.eJELPBGNINF)) {
+              if (!input.trySkipNullValue()) {
+                eJELPBGNINF = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1897528135:
+          case 1306191356: {
+            if (input.isAtField(FieldNames.stageId)) {
+              if (!input.trySkipNullValue()) {
+                stageId = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1756843529: {
+            if (input.isAtField(FieldNames.fLJNOLCHBBC)) {
+              if (!input.trySkipNullValue()) {
+                fLJNOLCHBBC = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -1377,10 +1376,11 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case 1799705532: {
-            if (input.isAtField(FieldNames.nMHJOLNHMDK)) {
+          case -2005674429:
+          case -349907515: {
+            if (input.isAtField(FieldNames.clientResVersion)) {
               if (!input.trySkipNullValue()) {
-                nMHJOLNHMDK = input.readUInt32();
+                clientResVersion = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1405,10 +1405,10 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case 1403671810: {
-            if (input.isAtField(FieldNames.hCGIJFEIAMK)) {
+          case 643237424: {
+            if (input.isAtField(FieldNames.nKFMMKOBDBC)) {
               if (!input.trySkipNullValue()) {
-                hCGIJFEIAMK = input.readBool();
+                nKFMMKOBDBC = input.readBool();
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -1416,10 +1416,10 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case 1630288253: {
-            if (input.isAtField(FieldNames.aLLDMMPDLDL)) {
+          case -1857666300: {
+            if (input.isAtField(FieldNames.bNPJHJNLFDH)) {
               if (!input.trySkipNullValue()) {
-                aLLDMMPDLDL = input.readBool();
+                bNPJHJNLFDH = input.readBool();
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1427,10 +1427,10 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case -21431512: {
-            if (input.isAtField(FieldNames.gBBBEBFHGOJ)) {
+          case -1062576195: {
+            if (input.isAtField(FieldNames.kNFEGGDGFGC)) {
               if (!input.trySkipNullValue()) {
-                gBBBEBFHGOJ = input.readBool();
+                kNFEGGDGFGC = input.readBool();
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -1461,10 +1461,10 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case 1220115046: {
-            if (input.isAtField(FieldNames.hMOIDIKHBHM)) {
+          case -435039198: {
+            if (input.isAtField(FieldNames.lFDDAGOMEGB)) {
               if (!input.trySkipNullValue()) {
-                input.readString(hMOIDIKHBHM);
+                input.readString(lFDDAGOMEGB);
                 bitField0_ |= 0x00001000;
               }
             } else {
@@ -1484,10 +1484,10 @@ public final class PVEBattleResultCsReqOuterClass {
             }
             break;
           }
-          case 825714798: {
-            if (input.isAtField(FieldNames.oFBINFHOHKN)) {
+          case -1149417556: {
+            if (input.isAtField(FieldNames.lAOIGBICBAO)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(oFBINFHOHKN);
+                input.readRepeatedMessage(lAOIGBICBAO);
                 bitField0_ |= 0x00004000;
               }
             } else {
@@ -1536,9 +1536,9 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * Protobuf type {@code OFBINFHOHKNEntry}
+     * Protobuf type {@code LAOIGBICBAOEntry}
      */
-    public static final class OFBINFHOHKNEntry extends ProtoMessage<OFBINFHOHKNEntry> implements Cloneable {
+    public static final class LAOIGBICBAOEntry extends ProtoMessage<LAOIGBICBAOEntry> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -1551,14 +1551,14 @@ public final class PVEBattleResultCsReqOuterClass {
        */
       private final Utf8String key = Utf8String.newEmptyInstance();
 
-      private OFBINFHOHKNEntry() {
+      private LAOIGBICBAOEntry() {
       }
 
       /**
-       * @return a new empty instance of {@code OFBINFHOHKNEntry}
+       * @return a new empty instance of {@code LAOIGBICBAOEntry}
        */
-      public static OFBINFHOHKNEntry newInstance() {
-        return new OFBINFHOHKNEntry();
+      public static LAOIGBICBAOEntry newInstance() {
+        return new LAOIGBICBAOEntry();
       }
 
       /**
@@ -1573,7 +1573,7 @@ public final class PVEBattleResultCsReqOuterClass {
        * <code>optional uint32 value = 2;</code>
        * @return this
        */
-      public OFBINFHOHKNEntry clearValue() {
+      public LAOIGBICBAOEntry clearValue() {
         bitField0_ &= ~0x00000001;
         value_ = 0;
         return this;
@@ -1592,7 +1592,7 @@ public final class PVEBattleResultCsReqOuterClass {
        * @param value the value_ to set
        * @return this
        */
-      public OFBINFHOHKNEntry setValue(final int value) {
+      public LAOIGBICBAOEntry setValue(final int value) {
         bitField0_ |= 0x00000001;
         value_ = value;
         return this;
@@ -1610,7 +1610,7 @@ public final class PVEBattleResultCsReqOuterClass {
        * <code>optional string key = 1;</code>
        * @return this
        */
-      public OFBINFHOHKNEntry clearKey() {
+      public LAOIGBICBAOEntry clearKey() {
         bitField0_ &= ~0x00000002;
         key.clear();
         return this;
@@ -1646,7 +1646,7 @@ public final class PVEBattleResultCsReqOuterClass {
        * @param value the key to set
        * @return this
        */
-      public OFBINFHOHKNEntry setKey(final CharSequence value) {
+      public LAOIGBICBAOEntry setKey(final CharSequence value) {
         bitField0_ |= 0x00000002;
         key.copyFrom(value);
         return this;
@@ -1657,14 +1657,14 @@ public final class PVEBattleResultCsReqOuterClass {
        * @param value the key to set
        * @return this
        */
-      public OFBINFHOHKNEntry setKey(final Utf8String value) {
+      public LAOIGBICBAOEntry setKey(final Utf8String value) {
         bitField0_ |= 0x00000002;
         key.copyFrom(value);
         return this;
       }
 
       @Override
-      public OFBINFHOHKNEntry copyFrom(final OFBINFHOHKNEntry other) {
+      public LAOIGBICBAOEntry copyFrom(final LAOIGBICBAOEntry other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
@@ -1675,7 +1675,7 @@ public final class PVEBattleResultCsReqOuterClass {
       }
 
       @Override
-      public OFBINFHOHKNEntry mergeFrom(final OFBINFHOHKNEntry other) {
+      public LAOIGBICBAOEntry mergeFrom(final LAOIGBICBAOEntry other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -1690,7 +1690,7 @@ public final class PVEBattleResultCsReqOuterClass {
       }
 
       @Override
-      public OFBINFHOHKNEntry clear() {
+      public LAOIGBICBAOEntry clear() {
         if (isEmpty()) {
           return this;
         }
@@ -1702,7 +1702,7 @@ public final class PVEBattleResultCsReqOuterClass {
       }
 
       @Override
-      public OFBINFHOHKNEntry clearQuick() {
+      public LAOIGBICBAOEntry clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -1717,10 +1717,10 @@ public final class PVEBattleResultCsReqOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof OFBINFHOHKNEntry)) {
+        if (!(o instanceof LAOIGBICBAOEntry)) {
           return false;
         }
-        OFBINFHOHKNEntry other = (OFBINFHOHKNEntry) o;
+        LAOIGBICBAOEntry other = (LAOIGBICBAOEntry) o;
         return bitField0_ == other.bitField0_
           && (!hasValue() || value_ == other.value_)
           && (!hasKey() || key.equals(other.key));
@@ -1752,7 +1752,7 @@ public final class PVEBattleResultCsReqOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public OFBINFHOHKNEntry mergeFrom(final ProtoSource input) throws IOException {
+      public LAOIGBICBAOEntry mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -1802,7 +1802,7 @@ public final class PVEBattleResultCsReqOuterClass {
       }
 
       @Override
-      public OFBINFHOHKNEntry mergeFrom(final JsonSource input) throws IOException {
+      public LAOIGBICBAOEntry mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -1841,8 +1841,8 @@ public final class PVEBattleResultCsReqOuterClass {
       }
 
       @Override
-      public OFBINFHOHKNEntry clone() {
-        return new OFBINFHOHKNEntry().copyFrom(this);
+      public LAOIGBICBAOEntry clone() {
+        return new LAOIGBICBAOEntry().copyFrom(this);
       }
 
       @Override
@@ -1850,32 +1850,32 @@ public final class PVEBattleResultCsReqOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static OFBINFHOHKNEntry parseFrom(final byte[] data) throws
+      public static LAOIGBICBAOEntry parseFrom(final byte[] data) throws
           InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new OFBINFHOHKNEntry(), data).checkInitialized();
+        return ProtoMessage.mergeFrom(new LAOIGBICBAOEntry(), data).checkInitialized();
       }
 
-      public static OFBINFHOHKNEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OFBINFHOHKNEntry(), input).checkInitialized();
+      public static LAOIGBICBAOEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new LAOIGBICBAOEntry(), input).checkInitialized();
       }
 
-      public static OFBINFHOHKNEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OFBINFHOHKNEntry(), input).checkInitialized();
+      public static LAOIGBICBAOEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new LAOIGBICBAOEntry(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating OFBINFHOHKNEntry messages
+       * @return factory for creating LAOIGBICBAOEntry messages
        */
-      public static MessageFactory<OFBINFHOHKNEntry> getFactory() {
-        return OFBINFHOHKNEntryFactory.INSTANCE;
+      public static MessageFactory<LAOIGBICBAOEntry> getFactory() {
+        return LAOIGBICBAOEntryFactory.INSTANCE;
       }
 
-      private enum OFBINFHOHKNEntryFactory implements MessageFactory<OFBINFHOHKNEntry> {
+      private enum LAOIGBICBAOEntryFactory implements MessageFactory<LAOIGBICBAOEntry> {
         INSTANCE;
 
         @Override
-        public OFBINFHOHKNEntry create() {
-          return OFBINFHOHKNEntry.newInstance();
+        public LAOIGBICBAOEntry create() {
+          return LAOIGBICBAOEntry.newInstance();
         }
       }
 
@@ -1902,35 +1902,35 @@ public final class PVEBattleResultCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName iFJFPGFAHGO = FieldName.forField("IFJFPGFAHGO");
-
-      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
-
       static final FieldName battleId = FieldName.forField("battleId", "battle_id");
-
-      static final FieldName clientResVersion = FieldName.forField("clientResVersion", "client_res_version");
 
       static final FieldName costTime = FieldName.forField("costTime", "cost_time");
 
-      static final FieldName nMHJOLNHMDK = FieldName.forField("NMHJOLNHMDK");
+      static final FieldName eJELPBGNINF = FieldName.forField("EJELPBGNINF");
+
+      static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+
+      static final FieldName fLJNOLCHBBC = FieldName.forField("FLJNOLCHBBC");
+
+      static final FieldName clientResVersion = FieldName.forField("clientResVersion", "client_res_version");
 
       static final FieldName endStatus = FieldName.forField("endStatus", "end_status");
 
-      static final FieldName hCGIJFEIAMK = FieldName.forField("HCGIJFEIAMK");
+      static final FieldName nKFMMKOBDBC = FieldName.forField("NKFMMKOBDBC");
 
-      static final FieldName aLLDMMPDLDL = FieldName.forField("ALLDMMPDLDL");
+      static final FieldName bNPJHJNLFDH = FieldName.forField("BNPJHJNLFDH");
 
-      static final FieldName gBBBEBFHGOJ = FieldName.forField("GBBBEBFHGOJ");
+      static final FieldName kNFEGGDGFGC = FieldName.forField("KNFEGGDGFGC");
 
       static final FieldName stt = FieldName.forField("stt");
 
       static final FieldName turnSnapshotHash = FieldName.forField("turnSnapshotHash", "turn_snapshot_hash");
 
-      static final FieldName hMOIDIKHBHM = FieldName.forField("HMOIDIKHBHM");
+      static final FieldName lFDDAGOMEGB = FieldName.forField("LFDDAGOMEGB");
 
       static final FieldName opList = FieldName.forField("opList", "op_list");
 
-      static final FieldName oFBINFHOHKN = FieldName.forField("OFBINFHOHKN");
+      static final FieldName lAOIGBICBAO = FieldName.forField("LAOIGBICBAO");
     }
   }
 }

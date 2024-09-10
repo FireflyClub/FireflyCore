@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "ServerPrefs.proto";
 
 message UpdateServerPrefsDataCsReq {
-	ServerPrefs server_prefs = 8;
+	ServerPrefs server_prefs = 11;
 }

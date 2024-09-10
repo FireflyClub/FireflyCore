@@ -19,7 +19,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      */
     private final ChessRogueNousDiceOuterClass.ChessRogueNousDice nousDice = ChessRogueNousDiceOuterClass.ChessRogueNousDice.newInstance();
 
@@ -34,7 +34,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      * @return whether the nousDice field is set
      */
     public boolean hasNousDice() {
@@ -42,7 +42,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      * @return this
      */
     public ChessRogueUpdateDiceInfoScNotify clearNousDice() {
@@ -52,7 +52,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +66,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +80,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDice nous_dice = 5;</code>
+     * <code>optional .ChessRogueNousDice nous_dice = 8;</code>
      * @param value the nousDice to set
      * @return this
      */
@@ -152,7 +152,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(nousDice);
       }
     }
@@ -173,7 +173,7 @@ public final class ChessRogueUpdateDiceInfoScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
+          case 66: {
             // nousDice
             input.readMessage(nousDice);
             bitField0_ |= 0x00000001;

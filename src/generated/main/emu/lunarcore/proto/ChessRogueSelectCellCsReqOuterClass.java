@@ -19,9 +19,14 @@ public final class ChessRogueSelectCellCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 cell_id = 11;</code>
+     * <code>optional uint32 KMIPNOOKBMB = 10;</code>
      */
-    private int cellId;
+    private int kMIPNOOKBMB;
+
+    /**
+     * <code>optional uint32 DOLHMBKDJGL = 14;</code>
+     */
+    private int dOLHMBKDJGL;
 
     private ChessRogueSelectCellCsReq() {
     }
@@ -34,39 +39,76 @@ public final class ChessRogueSelectCellCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cell_id = 11;</code>
-     * @return whether the cellId field is set
+     * <code>optional uint32 KMIPNOOKBMB = 10;</code>
+     * @return whether the kMIPNOOKBMB field is set
      */
-    public boolean hasCellId() {
+    public boolean hasKMIPNOOKBMB() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 cell_id = 11;</code>
+     * <code>optional uint32 KMIPNOOKBMB = 10;</code>
      * @return this
      */
-    public ChessRogueSelectCellCsReq clearCellId() {
+    public ChessRogueSelectCellCsReq clearKMIPNOOKBMB() {
       bitField0_ &= ~0x00000001;
-      cellId = 0;
+      kMIPNOOKBMB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 cell_id = 11;</code>
-     * @return the cellId
+     * <code>optional uint32 KMIPNOOKBMB = 10;</code>
+     * @return the kMIPNOOKBMB
      */
-    public int getCellId() {
-      return cellId;
+    public int getKMIPNOOKBMB() {
+      return kMIPNOOKBMB;
     }
 
     /**
-     * <code>optional uint32 cell_id = 11;</code>
-     * @param value the cellId to set
+     * <code>optional uint32 KMIPNOOKBMB = 10;</code>
+     * @param value the kMIPNOOKBMB to set
      * @return this
      */
-    public ChessRogueSelectCellCsReq setCellId(final int value) {
+    public ChessRogueSelectCellCsReq setKMIPNOOKBMB(final int value) {
       bitField0_ |= 0x00000001;
-      cellId = value;
+      kMIPNOOKBMB = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 DOLHMBKDJGL = 14;</code>
+     * @return whether the dOLHMBKDJGL field is set
+     */
+    public boolean hasDOLHMBKDJGL() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 DOLHMBKDJGL = 14;</code>
+     * @return this
+     */
+    public ChessRogueSelectCellCsReq clearDOLHMBKDJGL() {
+      bitField0_ &= ~0x00000002;
+      dOLHMBKDJGL = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 DOLHMBKDJGL = 14;</code>
+     * @return the dOLHMBKDJGL
+     */
+    public int getDOLHMBKDJGL() {
+      return dOLHMBKDJGL;
+    }
+
+    /**
+     * <code>optional uint32 DOLHMBKDJGL = 14;</code>
+     * @param value the dOLHMBKDJGL to set
+     * @return this
+     */
+    public ChessRogueSelectCellCsReq setDOLHMBKDJGL(final int value) {
+      bitField0_ |= 0x00000002;
+      dOLHMBKDJGL = value;
       return this;
     }
 
@@ -75,7 +117,8 @@ public final class ChessRogueSelectCellCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        cellId = other.cellId;
+        kMIPNOOKBMB = other.kMIPNOOKBMB;
+        dOLHMBKDJGL = other.dOLHMBKDJGL;
       }
       return this;
     }
@@ -86,8 +129,11 @@ public final class ChessRogueSelectCellCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasCellId()) {
-        setCellId(other.cellId);
+      if (other.hasKMIPNOOKBMB()) {
+        setKMIPNOOKBMB(other.kMIPNOOKBMB);
+      }
+      if (other.hasDOLHMBKDJGL()) {
+        setDOLHMBKDJGL(other.dOLHMBKDJGL);
       }
       return this;
     }
@@ -99,7 +145,8 @@ public final class ChessRogueSelectCellCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      cellId = 0;
+      kMIPNOOKBMB = 0;
+      dOLHMBKDJGL = 0;
       return this;
     }
 
@@ -123,14 +170,19 @@ public final class ChessRogueSelectCellCsReqOuterClass {
       }
       ChessRogueSelectCellCsReq other = (ChessRogueSelectCellCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasCellId() || cellId == other.cellId);
+        && (!hasKMIPNOOKBMB() || kMIPNOOKBMB == other.kMIPNOOKBMB)
+        && (!hasDOLHMBKDJGL() || dOLHMBKDJGL == other.dOLHMBKDJGL);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(cellId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(kMIPNOOKBMB);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(dOLHMBKDJGL);
       }
     }
 
@@ -138,7 +190,10 @@ public final class ChessRogueSelectCellCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(cellId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kMIPNOOKBMB);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dOLHMBKDJGL);
       }
       return size;
     }
@@ -150,10 +205,19 @@ public final class ChessRogueSelectCellCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // cellId
-            cellId = input.readUInt32();
+          case 80: {
+            // kMIPNOOKBMB
+            kMIPNOOKBMB = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // dOLHMBKDJGL
+            dOLHMBKDJGL = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -177,7 +241,10 @@ public final class ChessRogueSelectCellCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.cellId, cellId);
+        output.writeUInt32(FieldNames.kMIPNOOKBMB, kMIPNOOKBMB);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.dOLHMBKDJGL, dOLHMBKDJGL);
       }
       output.endObject();
     }
@@ -189,12 +256,22 @@ public final class ChessRogueSelectCellCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1364082147:
-          case 663147800: {
-            if (input.isAtField(FieldNames.cellId)) {
+          case -2140515663: {
+            if (input.isAtField(FieldNames.kMIPNOOKBMB)) {
               if (!input.trySkipNullValue()) {
-                cellId = input.readUInt32();
+                kMIPNOOKBMB = input.readUInt32();
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1993372390: {
+            if (input.isAtField(FieldNames.dOLHMBKDJGL)) {
+              if (!input.trySkipNullValue()) {
+                dOLHMBKDJGL = input.readUInt32();
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -254,7 +331,9 @@ public final class ChessRogueSelectCellCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName cellId = FieldName.forField("cellId", "cell_id");
+      static final FieldName kMIPNOOKBMB = FieldName.forField("KMIPNOOKBMB");
+
+      static final FieldName dOLHMBKDJGL = FieldName.forField("DOLHMBKDJGL");
     }
   }
 }

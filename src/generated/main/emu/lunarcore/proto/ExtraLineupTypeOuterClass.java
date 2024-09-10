@@ -87,7 +87,12 @@ public final class ExtraLineupTypeOuterClass {
     /**
      * <code>LINEUP_ARCADE_ROGUE = 16;</code>
      */
-    LINEUP_ARCADE_ROGUE("LINEUP_ARCADE_ROGUE", 16);
+    LINEUP_ARCADE_ROGUE("LINEUP_ARCADE_ROGUE", 16),
+
+    /**
+     * <code>LINEUP_MAGIC_ROGUE = 17;</code>
+     */
+    LINEUP_MAGIC_ROGUE("LINEUP_MAGIC_ROGUE", 17);
 
     /**
      * <code>LINEUP_NONE = 0;</code>
@@ -169,6 +174,11 @@ public final class ExtraLineupTypeOuterClass {
      */
     public static final int LINEUP_ARCADE_ROGUE_VALUE = 16;
 
+    /**
+     * <code>LINEUP_MAGIC_ROGUE = 17;</code>
+     */
+    public static final int LINEUP_MAGIC_ROGUE_VALUE = 17;
+
     private final String name;
 
     private final int number;
@@ -222,7 +232,7 @@ public final class ExtraLineupTypeOuterClass {
     enum ExtraLineupTypeConverter implements ProtoEnum.EnumConverter<ExtraLineupType> {
       INSTANCE;
 
-      private static final ExtraLineupType[] lookup = new ExtraLineupType[17];
+      private static final ExtraLineupType[] lookup = new ExtraLineupType[18];
 
       static {
         lookup[0] = LINEUP_NONE;
@@ -241,6 +251,7 @@ public final class ExtraLineupTypeOuterClass {
         lookup[14] = LINEUP_TOURN_ROGUE;
         lookup[15] = LINEUP_RELIC_ROGUE;
         lookup[16] = LINEUP_ARCADE_ROGUE;
+        lookup[17] = LINEUP_MAGIC_ROGUE;
       }
 
       @Override
@@ -305,6 +316,9 @@ public final class ExtraLineupTypeOuterClass {
             }
             if (ProtoUtil.isEqual("LINEUP_RELIC_ROGUE", value)) {
               return LINEUP_RELIC_ROGUE;
+            }
+            if (ProtoUtil.isEqual("LINEUP_MAGIC_ROGUE", value)) {
+              return LINEUP_MAGIC_ROGUE;
             }
             break;
           }

@@ -19,7 +19,7 @@ public final class ChallengeRewardOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 taken_challenge_reward = 3;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      */
     private long takenChallengeReward;
 
@@ -39,7 +39,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_challenge_reward = 3;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return whether the takenChallengeReward field is set
      */
     public boolean hasTakenChallengeReward() {
@@ -47,7 +47,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_challenge_reward = 3;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return this
      */
     public ChallengeReward clearTakenChallengeReward() {
@@ -57,7 +57,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_challenge_reward = 3;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @return the takenChallengeReward
      */
     public long getTakenChallengeReward() {
@@ -65,7 +65,7 @@ public final class ChallengeRewardOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_challenge_reward = 3;</code>
+     * <code>optional uint64 taken_challenge_reward = 5;</code>
      * @param value the takenChallengeReward to set
      * @return this
      */
@@ -177,7 +177,7 @@ public final class ChallengeRewardOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 40);
         output.writeUInt64NoTag(takenChallengeReward);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -205,7 +205,7 @@ public final class ChallengeRewardOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 40: {
             // takenChallengeReward
             takenChallengeReward = input.readUInt64();
             bitField0_ |= 0x00000001;

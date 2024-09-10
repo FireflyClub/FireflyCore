@@ -81,27 +81,32 @@ public final class AvatarBattleInfoOuterClass {
 
     /**
      * <pre>
-     * repeated AttackDamageProperty MPMGIACFGOA = 36;
+     * repeated AttackDamageProperty ELJGKKANLDI = 36;
      * </pre>
      *
-     * <code>optional double GPHGHLGHNJF = 37;</code>
+     * <code>optional double CALNPMADJBG = 37;</code>
      */
-    private double gPHGHLGHNJF;
+    private double cALNPMADJBG;
 
     /**
-     * <code>optional double HNMAEDKEMEO = 38;</code>
+     * <code>optional double NBNJMLLGFIL = 38;</code>
      */
-    private double hNMAEDKEMEO;
+    private double nBNJMLLGFIL;
 
     /**
-     * <code>optional double KOKGBDEJBHL = 39;</code>
+     * <code>optional double OLADIJEDBPJ = 39;</code>
      */
-    private double kOKGBDEJBHL;
+    private double oLADIJEDBPJ;
 
     /**
-     * <code>optional double FIICHEILPCF = 40;</code>
+     * <code>optional double HHJFDGDHLOP = 40;</code>
      */
-    private double fIICHEILPCF;
+    private double hHJFDGDHLOP;
+
+    /**
+     * <code>optional double NIHFBGGIKIM = 44;</code>
+     */
+    private double nIHFBGGIKIM;
 
     /**
      * <code>optional uint32 id = 2;</code>
@@ -179,17 +184,17 @@ public final class AvatarBattleInfoOuterClass {
 
     /**
      * <pre>
-     * repeated AbilityUseStt EAONALFPOGL = 41;
+     * repeated AbilityUseStt PPAPOLPPKBH = 41;
      * </pre>
      *
-     * <code>optional uint32 EINCNMLBFJD = 42;</code>
+     * <code>optional uint32 PADBNMLAGMM = 42;</code>
      */
-    private int eINCNMLBFJD;
+    private int pADBNMLAGMM;
 
     /**
-     * <code>optional uint32 JMOJBLEELFJ = 43;</code>
+     * <code>optional uint32 KDFLCJLALEH = 43;</code>
      */
-    private int jMOJBLEELFJ;
+    private int kDFLCJLALEH;
 
     /**
      * <code>optional .AvatarType avatar_type = 1;</code>
@@ -631,165 +636,202 @@ public final class AvatarBattleInfoOuterClass {
 
     /**
      * <pre>
-     * repeated AttackDamageProperty MPMGIACFGOA = 36;
+     * repeated AttackDamageProperty ELJGKKANLDI = 36;
      * </pre>
      *
-     * <code>optional double GPHGHLGHNJF = 37;</code>
-     * @return whether the gPHGHLGHNJF field is set
+     * <code>optional double CALNPMADJBG = 37;</code>
+     * @return whether the cALNPMADJBG field is set
      */
-    public boolean hasGPHGHLGHNJF() {
+    public boolean hasCALNPMADJBG() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
      * <pre>
-     * repeated AttackDamageProperty MPMGIACFGOA = 36;
+     * repeated AttackDamageProperty ELJGKKANLDI = 36;
      * </pre>
      *
-     * <code>optional double GPHGHLGHNJF = 37;</code>
+     * <code>optional double CALNPMADJBG = 37;</code>
      * @return this
      */
-    public AvatarBattleInfo clearGPHGHLGHNJF() {
+    public AvatarBattleInfo clearCALNPMADJBG() {
       bitField0_ &= ~0x00000400;
-      gPHGHLGHNJF = 0D;
+      cALNPMADJBG = 0D;
       return this;
     }
 
     /**
      * <pre>
-     * repeated AttackDamageProperty MPMGIACFGOA = 36;
+     * repeated AttackDamageProperty ELJGKKANLDI = 36;
      * </pre>
      *
-     * <code>optional double GPHGHLGHNJF = 37;</code>
-     * @return the gPHGHLGHNJF
+     * <code>optional double CALNPMADJBG = 37;</code>
+     * @return the cALNPMADJBG
      */
-    public double getGPHGHLGHNJF() {
-      return gPHGHLGHNJF;
+    public double getCALNPMADJBG() {
+      return cALNPMADJBG;
     }
 
     /**
      * <pre>
-     * repeated AttackDamageProperty MPMGIACFGOA = 36;
+     * repeated AttackDamageProperty ELJGKKANLDI = 36;
      * </pre>
      *
-     * <code>optional double GPHGHLGHNJF = 37;</code>
-     * @param value the gPHGHLGHNJF to set
+     * <code>optional double CALNPMADJBG = 37;</code>
+     * @param value the cALNPMADJBG to set
      * @return this
      */
-    public AvatarBattleInfo setGPHGHLGHNJF(final double value) {
+    public AvatarBattleInfo setCALNPMADJBG(final double value) {
       bitField0_ |= 0x00000400;
-      gPHGHLGHNJF = value;
+      cALNPMADJBG = value;
       return this;
     }
 
     /**
-     * <code>optional double HNMAEDKEMEO = 38;</code>
-     * @return whether the hNMAEDKEMEO field is set
+     * <code>optional double NBNJMLLGFIL = 38;</code>
+     * @return whether the nBNJMLLGFIL field is set
      */
-    public boolean hasHNMAEDKEMEO() {
+    public boolean hasNBNJMLLGFIL() {
       return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
-     * <code>optional double HNMAEDKEMEO = 38;</code>
+     * <code>optional double NBNJMLLGFIL = 38;</code>
      * @return this
      */
-    public AvatarBattleInfo clearHNMAEDKEMEO() {
+    public AvatarBattleInfo clearNBNJMLLGFIL() {
       bitField0_ &= ~0x00000800;
-      hNMAEDKEMEO = 0D;
+      nBNJMLLGFIL = 0D;
       return this;
     }
 
     /**
-     * <code>optional double HNMAEDKEMEO = 38;</code>
-     * @return the hNMAEDKEMEO
+     * <code>optional double NBNJMLLGFIL = 38;</code>
+     * @return the nBNJMLLGFIL
      */
-    public double getHNMAEDKEMEO() {
-      return hNMAEDKEMEO;
+    public double getNBNJMLLGFIL() {
+      return nBNJMLLGFIL;
     }
 
     /**
-     * <code>optional double HNMAEDKEMEO = 38;</code>
-     * @param value the hNMAEDKEMEO to set
+     * <code>optional double NBNJMLLGFIL = 38;</code>
+     * @param value the nBNJMLLGFIL to set
      * @return this
      */
-    public AvatarBattleInfo setHNMAEDKEMEO(final double value) {
+    public AvatarBattleInfo setNBNJMLLGFIL(final double value) {
       bitField0_ |= 0x00000800;
-      hNMAEDKEMEO = value;
+      nBNJMLLGFIL = value;
       return this;
     }
 
     /**
-     * <code>optional double KOKGBDEJBHL = 39;</code>
-     * @return whether the kOKGBDEJBHL field is set
+     * <code>optional double OLADIJEDBPJ = 39;</code>
+     * @return whether the oLADIJEDBPJ field is set
      */
-    public boolean hasKOKGBDEJBHL() {
+    public boolean hasOLADIJEDBPJ() {
       return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
-     * <code>optional double KOKGBDEJBHL = 39;</code>
+     * <code>optional double OLADIJEDBPJ = 39;</code>
      * @return this
      */
-    public AvatarBattleInfo clearKOKGBDEJBHL() {
+    public AvatarBattleInfo clearOLADIJEDBPJ() {
       bitField0_ &= ~0x00001000;
-      kOKGBDEJBHL = 0D;
+      oLADIJEDBPJ = 0D;
       return this;
     }
 
     /**
-     * <code>optional double KOKGBDEJBHL = 39;</code>
-     * @return the kOKGBDEJBHL
+     * <code>optional double OLADIJEDBPJ = 39;</code>
+     * @return the oLADIJEDBPJ
      */
-    public double getKOKGBDEJBHL() {
-      return kOKGBDEJBHL;
+    public double getOLADIJEDBPJ() {
+      return oLADIJEDBPJ;
     }
 
     /**
-     * <code>optional double KOKGBDEJBHL = 39;</code>
-     * @param value the kOKGBDEJBHL to set
+     * <code>optional double OLADIJEDBPJ = 39;</code>
+     * @param value the oLADIJEDBPJ to set
      * @return this
      */
-    public AvatarBattleInfo setKOKGBDEJBHL(final double value) {
+    public AvatarBattleInfo setOLADIJEDBPJ(final double value) {
       bitField0_ |= 0x00001000;
-      kOKGBDEJBHL = value;
+      oLADIJEDBPJ = value;
       return this;
     }
 
     /**
-     * <code>optional double FIICHEILPCF = 40;</code>
-     * @return whether the fIICHEILPCF field is set
+     * <code>optional double HHJFDGDHLOP = 40;</code>
+     * @return whether the hHJFDGDHLOP field is set
      */
-    public boolean hasFIICHEILPCF() {
+    public boolean hasHHJFDGDHLOP() {
       return (bitField0_ & 0x00002000) != 0;
     }
 
     /**
-     * <code>optional double FIICHEILPCF = 40;</code>
+     * <code>optional double HHJFDGDHLOP = 40;</code>
      * @return this
      */
-    public AvatarBattleInfo clearFIICHEILPCF() {
+    public AvatarBattleInfo clearHHJFDGDHLOP() {
       bitField0_ &= ~0x00002000;
-      fIICHEILPCF = 0D;
+      hHJFDGDHLOP = 0D;
       return this;
     }
 
     /**
-     * <code>optional double FIICHEILPCF = 40;</code>
-     * @return the fIICHEILPCF
+     * <code>optional double HHJFDGDHLOP = 40;</code>
+     * @return the hHJFDGDHLOP
      */
-    public double getFIICHEILPCF() {
-      return fIICHEILPCF;
+    public double getHHJFDGDHLOP() {
+      return hHJFDGDHLOP;
     }
 
     /**
-     * <code>optional double FIICHEILPCF = 40;</code>
-     * @param value the fIICHEILPCF to set
+     * <code>optional double HHJFDGDHLOP = 40;</code>
+     * @param value the hHJFDGDHLOP to set
      * @return this
      */
-    public AvatarBattleInfo setFIICHEILPCF(final double value) {
+    public AvatarBattleInfo setHHJFDGDHLOP(final double value) {
       bitField0_ |= 0x00002000;
-      fIICHEILPCF = value;
+      hHJFDGDHLOP = value;
+      return this;
+    }
+
+    /**
+     * <code>optional double NIHFBGGIKIM = 44;</code>
+     * @return whether the nIHFBGGIKIM field is set
+     */
+    public boolean hasNIHFBGGIKIM() {
+      return (bitField0_ & 0x00004000) != 0;
+    }
+
+    /**
+     * <code>optional double NIHFBGGIKIM = 44;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearNIHFBGGIKIM() {
+      bitField0_ &= ~0x00004000;
+      nIHFBGGIKIM = 0D;
+      return this;
+    }
+
+    /**
+     * <code>optional double NIHFBGGIKIM = 44;</code>
+     * @return the nIHFBGGIKIM
+     */
+    public double getNIHFBGGIKIM() {
+      return nIHFBGGIKIM;
+    }
+
+    /**
+     * <code>optional double NIHFBGGIKIM = 44;</code>
+     * @param value the nIHFBGGIKIM to set
+     * @return this
+     */
+    public AvatarBattleInfo setNIHFBGGIKIM(final double value) {
+      bitField0_ |= 0x00004000;
+      nIHFBGGIKIM = value;
       return this;
     }
 
@@ -798,7 +840,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the id field is set
      */
     public boolean hasId() {
-      return (bitField0_ & 0x00004000) != 0;
+      return (bitField0_ & 0x00008000) != 0;
     }
 
     /**
@@ -806,7 +848,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearId() {
-      bitField0_ &= ~0x00004000;
+      bitField0_ &= ~0x00008000;
       id = 0;
       return this;
     }
@@ -825,7 +867,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setId(final int value) {
-      bitField0_ |= 0x00004000;
+      bitField0_ |= 0x00008000;
       id = value;
       return this;
     }
@@ -835,7 +877,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarLevel field is set
      */
     public boolean hasAvatarLevel() {
-      return (bitField0_ & 0x00008000) != 0;
+      return (bitField0_ & 0x00010000) != 0;
     }
 
     /**
@@ -843,7 +885,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarLevel() {
-      bitField0_ &= ~0x00008000;
+      bitField0_ &= ~0x00010000;
       avatarLevel = 0;
       return this;
     }
@@ -862,7 +904,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarLevel(final int value) {
-      bitField0_ |= 0x00008000;
+      bitField0_ |= 0x00010000;
       avatarLevel = value;
       return this;
     }
@@ -872,7 +914,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarRank field is set
      */
     public boolean hasAvatarRank() {
-      return (bitField0_ & 0x00010000) != 0;
+      return (bitField0_ & 0x00020000) != 0;
     }
 
     /**
@@ -880,7 +922,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarRank() {
-      bitField0_ &= ~0x00010000;
+      bitField0_ &= ~0x00020000;
       avatarRank = 0;
       return this;
     }
@@ -899,7 +941,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarRank(final int value) {
-      bitField0_ |= 0x00010000;
+      bitField0_ |= 0x00020000;
       avatarRank = value;
       return this;
     }
@@ -909,7 +951,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarPromotion field is set
      */
     public boolean hasAvatarPromotion() {
-      return (bitField0_ & 0x00020000) != 0;
+      return (bitField0_ & 0x00040000) != 0;
     }
 
     /**
@@ -917,7 +959,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarPromotion() {
-      bitField0_ &= ~0x00020000;
+      bitField0_ &= ~0x00040000;
       avatarPromotion = 0;
       return this;
     }
@@ -936,7 +978,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarPromotion(final int value) {
-      bitField0_ |= 0x00020000;
+      bitField0_ |= 0x00040000;
       avatarPromotion = value;
       return this;
     }
@@ -950,7 +992,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the totalTurns field is set
      */
     public boolean hasTotalTurns() {
-      return (bitField0_ & 0x00040000) != 0;
+      return (bitField0_ & 0x00080000) != 0;
     }
 
     /**
@@ -962,7 +1004,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearTotalTurns() {
-      bitField0_ &= ~0x00040000;
+      bitField0_ &= ~0x00080000;
       totalTurns = 0;
       return this;
     }
@@ -989,7 +1031,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setTotalTurns(final int value) {
-      bitField0_ |= 0x00040000;
+      bitField0_ |= 0x00080000;
       totalTurns = value;
       return this;
     }
@@ -999,7 +1041,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the stageId field is set
      */
     public boolean hasStageId() {
-      return (bitField0_ & 0x00080000) != 0;
+      return (bitField0_ & 0x00100000) != 0;
     }
 
     /**
@@ -1007,7 +1049,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearStageId() {
-      bitField0_ &= ~0x00080000;
+      bitField0_ &= ~0x00100000;
       stageId = 0;
       return this;
     }
@@ -1026,7 +1068,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setStageId(final int value) {
-      bitField0_ |= 0x00080000;
+      bitField0_ |= 0x00100000;
       stageId = value;
       return this;
     }
@@ -1036,7 +1078,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the stageType field is set
      */
     public boolean hasStageType() {
-      return (bitField0_ & 0x00100000) != 0;
+      return (bitField0_ & 0x00200000) != 0;
     }
 
     /**
@@ -1044,7 +1086,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearStageType() {
-      bitField0_ &= ~0x00100000;
+      bitField0_ &= ~0x00200000;
       stageType = 0;
       return this;
     }
@@ -1063,7 +1105,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setStageType(final int value) {
-      bitField0_ |= 0x00100000;
+      bitField0_ |= 0x00200000;
       stageType = value;
       return this;
     }
@@ -1073,7 +1115,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the totalSpAdd field is set
      */
     public boolean hasTotalSpAdd() {
-      return (bitField0_ & 0x00200000) != 0;
+      return (bitField0_ & 0x00400000) != 0;
     }
 
     /**
@@ -1081,7 +1123,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearTotalSpAdd() {
-      bitField0_ &= ~0x00200000;
+      bitField0_ &= ~0x00400000;
       totalSpAdd = 0;
       return this;
     }
@@ -1100,7 +1142,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setTotalSpAdd(final int value) {
-      bitField0_ |= 0x00200000;
+      bitField0_ |= 0x00400000;
       totalSpAdd = value;
       return this;
     }
@@ -1110,7 +1152,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the totalBpCost field is set
      */
     public boolean hasTotalBpCost() {
-      return (bitField0_ & 0x00400000) != 0;
+      return (bitField0_ & 0x00800000) != 0;
     }
 
     /**
@@ -1118,7 +1160,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearTotalBpCost() {
-      bitField0_ &= ~0x00400000;
+      bitField0_ &= ~0x00800000;
       totalBpCost = 0;
       return this;
     }
@@ -1137,7 +1179,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setTotalBpCost(final int value) {
-      bitField0_ |= 0x00400000;
+      bitField0_ |= 0x00800000;
       totalBpCost = value;
       return this;
     }
@@ -1147,7 +1189,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the dieTimes field is set
      */
     public boolean hasDieTimes() {
-      return (bitField0_ & 0x00800000) != 0;
+      return (bitField0_ & 0x01000000) != 0;
     }
 
     /**
@@ -1155,7 +1197,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearDieTimes() {
-      bitField0_ &= ~0x00800000;
+      bitField0_ &= ~0x01000000;
       dieTimes = 0;
       return this;
     }
@@ -1174,7 +1216,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setDieTimes(final int value) {
-      bitField0_ |= 0x00800000;
+      bitField0_ |= 0x01000000;
       dieTimes = value;
       return this;
     }
@@ -1184,7 +1226,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the reviveTimes field is set
      */
     public boolean hasReviveTimes() {
-      return (bitField0_ & 0x01000000) != 0;
+      return (bitField0_ & 0x02000000) != 0;
     }
 
     /**
@@ -1192,7 +1234,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearReviveTimes() {
-      bitField0_ &= ~0x01000000;
+      bitField0_ &= ~0x02000000;
       reviveTimes = 0;
       return this;
     }
@@ -1211,7 +1253,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setReviveTimes(final int value) {
-      bitField0_ |= 0x01000000;
+      bitField0_ |= 0x02000000;
       reviveTimes = value;
       return this;
     }
@@ -1221,7 +1263,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the breakTimes field is set
      */
     public boolean hasBreakTimes() {
-      return (bitField0_ & 0x02000000) != 0;
+      return (bitField0_ & 0x04000000) != 0;
     }
 
     /**
@@ -1229,7 +1271,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearBreakTimes() {
-      bitField0_ &= ~0x02000000;
+      bitField0_ &= ~0x04000000;
       breakTimes = 0;
       return this;
     }
@@ -1248,7 +1290,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setBreakTimes(final int value) {
-      bitField0_ |= 0x02000000;
+      bitField0_ |= 0x04000000;
       breakTimes = value;
       return this;
     }
@@ -1258,7 +1300,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the extraTurns field is set
      */
     public boolean hasExtraTurns() {
-      return (bitField0_ & 0x04000000) != 0;
+      return (bitField0_ & 0x08000000) != 0;
     }
 
     /**
@@ -1266,7 +1308,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearExtraTurns() {
-      bitField0_ &= ~0x04000000;
+      bitField0_ &= ~0x08000000;
       extraTurns = 0;
       return this;
     }
@@ -1285,7 +1327,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setExtraTurns(final int value) {
-      bitField0_ |= 0x04000000;
+      bitField0_ |= 0x08000000;
       extraTurns = value;
       return this;
     }
@@ -1295,7 +1337,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the assistUid field is set
      */
     public boolean hasAssistUid() {
-      return (bitField0_ & 0x08000000) != 0;
+      return (bitField0_ & 0x10000000) != 0;
     }
 
     /**
@@ -1303,7 +1345,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAssistUid() {
-      bitField0_ &= ~0x08000000;
+      bitField0_ &= ~0x10000000;
       assistUid = 0;
       return this;
     }
@@ -1322,98 +1364,98 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAssistUid(final int value) {
-      bitField0_ |= 0x08000000;
+      bitField0_ |= 0x10000000;
       assistUid = value;
       return this;
     }
 
     /**
      * <pre>
-     * repeated AbilityUseStt EAONALFPOGL = 41;
+     * repeated AbilityUseStt PPAPOLPPKBH = 41;
      * </pre>
      *
-     * <code>optional uint32 EINCNMLBFJD = 42;</code>
-     * @return whether the eINCNMLBFJD field is set
+     * <code>optional uint32 PADBNMLAGMM = 42;</code>
+     * @return whether the pADBNMLAGMM field is set
      */
-    public boolean hasEINCNMLBFJD() {
-      return (bitField0_ & 0x10000000) != 0;
-    }
-
-    /**
-     * <pre>
-     * repeated AbilityUseStt EAONALFPOGL = 41;
-     * </pre>
-     *
-     * <code>optional uint32 EINCNMLBFJD = 42;</code>
-     * @return this
-     */
-    public AvatarBattleInfo clearEINCNMLBFJD() {
-      bitField0_ &= ~0x10000000;
-      eINCNMLBFJD = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * repeated AbilityUseStt EAONALFPOGL = 41;
-     * </pre>
-     *
-     * <code>optional uint32 EINCNMLBFJD = 42;</code>
-     * @return the eINCNMLBFJD
-     */
-    public int getEINCNMLBFJD() {
-      return eINCNMLBFJD;
-    }
-
-    /**
-     * <pre>
-     * repeated AbilityUseStt EAONALFPOGL = 41;
-     * </pre>
-     *
-     * <code>optional uint32 EINCNMLBFJD = 42;</code>
-     * @param value the eINCNMLBFJD to set
-     * @return this
-     */
-    public AvatarBattleInfo setEINCNMLBFJD(final int value) {
-      bitField0_ |= 0x10000000;
-      eINCNMLBFJD = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 JMOJBLEELFJ = 43;</code>
-     * @return whether the jMOJBLEELFJ field is set
-     */
-    public boolean hasJMOJBLEELFJ() {
+    public boolean hasPADBNMLAGMM() {
       return (bitField0_ & 0x20000000) != 0;
     }
 
     /**
-     * <code>optional uint32 JMOJBLEELFJ = 43;</code>
+     * <pre>
+     * repeated AbilityUseStt PPAPOLPPKBH = 41;
+     * </pre>
+     *
+     * <code>optional uint32 PADBNMLAGMM = 42;</code>
      * @return this
      */
-    public AvatarBattleInfo clearJMOJBLEELFJ() {
+    public AvatarBattleInfo clearPADBNMLAGMM() {
       bitField0_ &= ~0x20000000;
-      jMOJBLEELFJ = 0;
+      pADBNMLAGMM = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 JMOJBLEELFJ = 43;</code>
-     * @return the jMOJBLEELFJ
+     * <pre>
+     * repeated AbilityUseStt PPAPOLPPKBH = 41;
+     * </pre>
+     *
+     * <code>optional uint32 PADBNMLAGMM = 42;</code>
+     * @return the pADBNMLAGMM
      */
-    public int getJMOJBLEELFJ() {
-      return jMOJBLEELFJ;
+    public int getPADBNMLAGMM() {
+      return pADBNMLAGMM;
     }
 
     /**
-     * <code>optional uint32 JMOJBLEELFJ = 43;</code>
-     * @param value the jMOJBLEELFJ to set
+     * <pre>
+     * repeated AbilityUseStt PPAPOLPPKBH = 41;
+     * </pre>
+     *
+     * <code>optional uint32 PADBNMLAGMM = 42;</code>
+     * @param value the pADBNMLAGMM to set
      * @return this
      */
-    public AvatarBattleInfo setJMOJBLEELFJ(final int value) {
+    public AvatarBattleInfo setPADBNMLAGMM(final int value) {
       bitField0_ |= 0x20000000;
-      jMOJBLEELFJ = value;
+      pADBNMLAGMM = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 KDFLCJLALEH = 43;</code>
+     * @return whether the kDFLCJLALEH field is set
+     */
+    public boolean hasKDFLCJLALEH() {
+      return (bitField0_ & 0x40000000) != 0;
+    }
+
+    /**
+     * <code>optional uint32 KDFLCJLALEH = 43;</code>
+     * @return this
+     */
+    public AvatarBattleInfo clearKDFLCJLALEH() {
+      bitField0_ &= ~0x40000000;
+      kDFLCJLALEH = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 KDFLCJLALEH = 43;</code>
+     * @return the kDFLCJLALEH
+     */
+    public int getKDFLCJLALEH() {
+      return kDFLCJLALEH;
+    }
+
+    /**
+     * <code>optional uint32 KDFLCJLALEH = 43;</code>
+     * @param value the kDFLCJLALEH to set
+     * @return this
+     */
+    public AvatarBattleInfo setKDFLCJLALEH(final int value) {
+      bitField0_ |= 0x40000000;
+      kDFLCJLALEH = value;
       return this;
     }
 
@@ -1422,7 +1464,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarType field is set
      */
     public boolean hasAvatarType() {
-      return (bitField0_ & 0x40000000) != 0;
+      return (bitField0_ & 0x80000000) != 0;
     }
 
     /**
@@ -1430,7 +1472,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarType() {
-      bitField0_ &= ~0x40000000;
+      bitField0_ &= ~0x80000000;
       avatarType = 0;
       return this;
     }
@@ -1463,7 +1505,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarTypeValue(final int value) {
-      bitField0_ |= 0x40000000;
+      bitField0_ |= 0x80000000;
       avatarType = value;
       return this;
     }
@@ -1474,7 +1516,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarType(final AvatarTypeOuterClass.AvatarType value) {
-      bitField0_ |= 0x40000000;
+      bitField0_ |= 0x80000000;
       avatarType = value.getNumber();
       return this;
     }
@@ -1484,7 +1526,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarStatus field is set
      */
     public boolean hasAvatarStatus() {
-      return (bitField0_ & 0x80000000) != 0;
+      return (bitField1_ & 0x00000001) != 0;
     }
 
     /**
@@ -1492,7 +1534,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarStatus() {
-      bitField0_ &= ~0x80000000;
+      bitField1_ &= ~0x00000001;
       avatarStatus.clear();
       return this;
     }
@@ -1521,7 +1563,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public AvatarPropertyOuterClass.AvatarProperty getMutableAvatarStatus() {
-      bitField0_ |= 0x80000000;
+      bitField1_ |= 0x00000001;
       return avatarStatus;
     }
 
@@ -1531,7 +1573,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setAvatarStatus(final AvatarPropertyOuterClass.AvatarProperty value) {
-      bitField0_ |= 0x80000000;
+      bitField1_ |= 0x00000001;
       avatarStatus.copyFrom(value);
       return this;
     }
@@ -1541,7 +1583,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the initialStatus field is set
      */
     public boolean hasInitialStatus() {
-      return (bitField1_ & 0x00000001) != 0;
+      return (bitField1_ & 0x00000002) != 0;
     }
 
     /**
@@ -1549,7 +1591,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearInitialStatus() {
-      bitField1_ &= ~0x00000001;
+      bitField1_ &= ~0x00000002;
       initialStatus.clear();
       return this;
     }
@@ -1578,7 +1620,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public AvatarPropertyOuterClass.AvatarProperty getMutableInitialStatus() {
-      bitField1_ |= 0x00000001;
+      bitField1_ |= 0x00000002;
       return initialStatus;
     }
 
@@ -1588,7 +1630,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo setInitialStatus(final AvatarPropertyOuterClass.AvatarProperty value) {
-      bitField1_ |= 0x00000001;
+      bitField1_ |= 0x00000002;
       initialStatus.copyFrom(value);
       return this;
     }
@@ -1598,7 +1640,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the avatarSkill field is set
      */
     public boolean hasAvatarSkill() {
-      return (bitField1_ & 0x00000002) != 0;
+      return (bitField1_ & 0x00000004) != 0;
     }
 
     /**
@@ -1606,7 +1648,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearAvatarSkill() {
-      bitField1_ &= ~0x00000002;
+      bitField1_ &= ~0x00000004;
       avatarSkill.clear();
       return this;
     }
@@ -1635,7 +1677,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableAvatarSkill() {
-      bitField1_ |= 0x00000002;
+      bitField1_ |= 0x00000004;
       return avatarSkill;
     }
 
@@ -1645,7 +1687,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo addAvatarSkill(final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField1_ |= 0x00000002;
+      bitField1_ |= 0x00000004;
       avatarSkill.add(value);
       return this;
     }
@@ -1657,7 +1699,7 @@ public final class AvatarBattleInfoOuterClass {
      */
     public AvatarBattleInfo addAllAvatarSkill(
         final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField1_ |= 0x00000002;
+      bitField1_ |= 0x00000004;
       avatarSkill.addAll(values);
       return this;
     }
@@ -1667,7 +1709,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the spAddSource field is set
      */
     public boolean hasSpAddSource() {
-      return (bitField1_ & 0x00000004) != 0;
+      return (bitField1_ & 0x00000008) != 0;
     }
 
     /**
@@ -1675,7 +1717,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearSpAddSource() {
-      bitField1_ &= ~0x00000004;
+      bitField1_ &= ~0x00000008;
       spAddSource.clear();
       return this;
     }
@@ -1704,7 +1746,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<SpAddSourceOuterClass.SpAddSource> getMutableSpAddSource() {
-      bitField1_ |= 0x00000004;
+      bitField1_ |= 0x00000008;
       return spAddSource;
     }
 
@@ -1714,7 +1756,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo addSpAddSource(final SpAddSourceOuterClass.SpAddSource value) {
-      bitField1_ |= 0x00000004;
+      bitField1_ |= 0x00000008;
       spAddSource.add(value);
       return this;
     }
@@ -1725,7 +1767,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo addAllSpAddSource(final SpAddSourceOuterClass.SpAddSource... values) {
-      bitField1_ |= 0x00000004;
+      bitField1_ |= 0x00000008;
       spAddSource.addAll(values);
       return this;
     }
@@ -1735,7 +1777,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return whether the battleRelicList field is set
      */
     public boolean hasBattleRelicList() {
-      return (bitField1_ & 0x00000008) != 0;
+      return (bitField1_ & 0x00000010) != 0;
     }
 
     /**
@@ -1743,7 +1785,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo clearBattleRelicList() {
-      bitField1_ &= ~0x00000008;
+      bitField1_ &= ~0x00000010;
       battleRelicList.clear();
       return this;
     }
@@ -1772,7 +1814,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<BattleRelicOuterClass.BattleRelic> getMutableBattleRelicList() {
-      bitField1_ |= 0x00000008;
+      bitField1_ |= 0x00000010;
       return battleRelicList;
     }
 
@@ -1782,7 +1824,7 @@ public final class AvatarBattleInfoOuterClass {
      * @return this
      */
     public AvatarBattleInfo addBattleRelicList(final BattleRelicOuterClass.BattleRelic value) {
-      bitField1_ |= 0x00000008;
+      bitField1_ |= 0x00000010;
       battleRelicList.add(value);
       return this;
     }
@@ -1794,7 +1836,7 @@ public final class AvatarBattleInfoOuterClass {
      */
     public AvatarBattleInfo addAllBattleRelicList(
         final BattleRelicOuterClass.BattleRelic... values) {
-      bitField1_ |= 0x00000008;
+      bitField1_ |= 0x00000010;
       battleRelicList.addAll(values);
       return this;
     }
@@ -1814,10 +1856,11 @@ public final class AvatarBattleInfoOuterClass {
         totalShield = other.totalShield;
         totalShieldTaken = other.totalShieldTaken;
         totalShieldDamage = other.totalShieldDamage;
-        gPHGHLGHNJF = other.gPHGHLGHNJF;
-        hNMAEDKEMEO = other.hNMAEDKEMEO;
-        kOKGBDEJBHL = other.kOKGBDEJBHL;
-        fIICHEILPCF = other.fIICHEILPCF;
+        cALNPMADJBG = other.cALNPMADJBG;
+        nBNJMLLGFIL = other.nBNJMLLGFIL;
+        oLADIJEDBPJ = other.oLADIJEDBPJ;
+        hHJFDGDHLOP = other.hHJFDGDHLOP;
+        nIHFBGGIKIM = other.nIHFBGGIKIM;
         id = other.id;
         avatarLevel = other.avatarLevel;
         avatarRank = other.avatarRank;
@@ -1832,13 +1875,13 @@ public final class AvatarBattleInfoOuterClass {
         breakTimes = other.breakTimes;
         extraTurns = other.extraTurns;
         assistUid = other.assistUid;
-        eINCNMLBFJD = other.eINCNMLBFJD;
-        jMOJBLEELFJ = other.jMOJBLEELFJ;
+        pADBNMLAGMM = other.pADBNMLAGMM;
+        kDFLCJLALEH = other.kDFLCJLALEH;
         avatarType = other.avatarType;
-        avatarStatus.copyFrom(other.avatarStatus);
       }
       if ((bitField1_ | other.bitField1_) != 0) {
         bitField1_ = other.bitField1_;
+        avatarStatus.copyFrom(other.avatarStatus);
         initialStatus.copyFrom(other.initialStatus);
         avatarSkill.copyFrom(other.avatarSkill);
         spAddSource.copyFrom(other.spAddSource);
@@ -1883,17 +1926,20 @@ public final class AvatarBattleInfoOuterClass {
       if (other.hasTotalShieldDamage()) {
         setTotalShieldDamage(other.totalShieldDamage);
       }
-      if (other.hasGPHGHLGHNJF()) {
-        setGPHGHLGHNJF(other.gPHGHLGHNJF);
+      if (other.hasCALNPMADJBG()) {
+        setCALNPMADJBG(other.cALNPMADJBG);
       }
-      if (other.hasHNMAEDKEMEO()) {
-        setHNMAEDKEMEO(other.hNMAEDKEMEO);
+      if (other.hasNBNJMLLGFIL()) {
+        setNBNJMLLGFIL(other.nBNJMLLGFIL);
       }
-      if (other.hasKOKGBDEJBHL()) {
-        setKOKGBDEJBHL(other.kOKGBDEJBHL);
+      if (other.hasOLADIJEDBPJ()) {
+        setOLADIJEDBPJ(other.oLADIJEDBPJ);
       }
-      if (other.hasFIICHEILPCF()) {
-        setFIICHEILPCF(other.fIICHEILPCF);
+      if (other.hasHHJFDGDHLOP()) {
+        setHHJFDGDHLOP(other.hHJFDGDHLOP);
+      }
+      if (other.hasNIHFBGGIKIM()) {
+        setNIHFBGGIKIM(other.nIHFBGGIKIM);
       }
       if (other.hasId()) {
         setId(other.id);
@@ -1937,11 +1983,11 @@ public final class AvatarBattleInfoOuterClass {
       if (other.hasAssistUid()) {
         setAssistUid(other.assistUid);
       }
-      if (other.hasEINCNMLBFJD()) {
-        setEINCNMLBFJD(other.eINCNMLBFJD);
+      if (other.hasPADBNMLAGMM()) {
+        setPADBNMLAGMM(other.pADBNMLAGMM);
       }
-      if (other.hasJMOJBLEELFJ()) {
-        setJMOJBLEELFJ(other.jMOJBLEELFJ);
+      if (other.hasKDFLCJLALEH()) {
+        setKDFLCJLALEH(other.kDFLCJLALEH);
       }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
@@ -1982,10 +2028,11 @@ public final class AvatarBattleInfoOuterClass {
       totalShield = 0D;
       totalShieldTaken = 0D;
       totalShieldDamage = 0D;
-      gPHGHLGHNJF = 0D;
-      hNMAEDKEMEO = 0D;
-      kOKGBDEJBHL = 0D;
-      fIICHEILPCF = 0D;
+      cALNPMADJBG = 0D;
+      nBNJMLLGFIL = 0D;
+      oLADIJEDBPJ = 0D;
+      hHJFDGDHLOP = 0D;
+      nIHFBGGIKIM = 0D;
       id = 0;
       avatarLevel = 0;
       avatarRank = 0;
@@ -2000,8 +2047,8 @@ public final class AvatarBattleInfoOuterClass {
       breakTimes = 0;
       extraTurns = 0;
       assistUid = 0;
-      eINCNMLBFJD = 0;
-      jMOJBLEELFJ = 0;
+      pADBNMLAGMM = 0;
+      kDFLCJLALEH = 0;
       avatarType = 0;
       avatarStatus.clear();
       initialStatus.clear();
@@ -2048,10 +2095,11 @@ public final class AvatarBattleInfoOuterClass {
         && (!hasTotalShield() || ProtoUtil.isEqual(totalShield, other.totalShield))
         && (!hasTotalShieldTaken() || ProtoUtil.isEqual(totalShieldTaken, other.totalShieldTaken))
         && (!hasTotalShieldDamage() || ProtoUtil.isEqual(totalShieldDamage, other.totalShieldDamage))
-        && (!hasGPHGHLGHNJF() || ProtoUtil.isEqual(gPHGHLGHNJF, other.gPHGHLGHNJF))
-        && (!hasHNMAEDKEMEO() || ProtoUtil.isEqual(hNMAEDKEMEO, other.hNMAEDKEMEO))
-        && (!hasKOKGBDEJBHL() || ProtoUtil.isEqual(kOKGBDEJBHL, other.kOKGBDEJBHL))
-        && (!hasFIICHEILPCF() || ProtoUtil.isEqual(fIICHEILPCF, other.fIICHEILPCF))
+        && (!hasCALNPMADJBG() || ProtoUtil.isEqual(cALNPMADJBG, other.cALNPMADJBG))
+        && (!hasNBNJMLLGFIL() || ProtoUtil.isEqual(nBNJMLLGFIL, other.nBNJMLLGFIL))
+        && (!hasOLADIJEDBPJ() || ProtoUtil.isEqual(oLADIJEDBPJ, other.oLADIJEDBPJ))
+        && (!hasHHJFDGDHLOP() || ProtoUtil.isEqual(hHJFDGDHLOP, other.hHJFDGDHLOP))
+        && (!hasNIHFBGGIKIM() || ProtoUtil.isEqual(nIHFBGGIKIM, other.nIHFBGGIKIM))
         && (!hasId() || id == other.id)
         && (!hasAvatarLevel() || avatarLevel == other.avatarLevel)
         && (!hasAvatarRank() || avatarRank == other.avatarRank)
@@ -2066,8 +2114,8 @@ public final class AvatarBattleInfoOuterClass {
         && (!hasBreakTimes() || breakTimes == other.breakTimes)
         && (!hasExtraTurns() || extraTurns == other.extraTurns)
         && (!hasAssistUid() || assistUid == other.assistUid)
-        && (!hasEINCNMLBFJD() || eINCNMLBFJD == other.eINCNMLBFJD)
-        && (!hasJMOJBLEELFJ() || jMOJBLEELFJ == other.jMOJBLEELFJ)
+        && (!hasPADBNMLAGMM() || pADBNMLAGMM == other.pADBNMLAGMM)
+        && (!hasKDFLCJLALEH() || kDFLCJLALEH == other.kDFLCJLALEH)
         && (!hasAvatarType() || avatarType == other.avatarType)
         && (!hasAvatarStatus() || avatarStatus.equals(other.avatarStatus))
         && (!hasInitialStatus() || initialStatus.equals(other.initialStatus))
@@ -2120,109 +2168,113 @@ public final class AvatarBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawLittleEndian16((short) 681);
-        output.writeDoubleNoTag(gPHGHLGHNJF);
+        output.writeDoubleNoTag(cALNPMADJBG);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawLittleEndian16((short) 689);
-        output.writeDoubleNoTag(hNMAEDKEMEO);
+        output.writeDoubleNoTag(nBNJMLLGFIL);
       }
       if ((bitField0_ & 0x00001000) != 0) {
         output.writeRawLittleEndian16((short) 697);
-        output.writeDoubleNoTag(kOKGBDEJBHL);
+        output.writeDoubleNoTag(oLADIJEDBPJ);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         output.writeRawLittleEndian16((short) 705);
-        output.writeDoubleNoTag(fIICHEILPCF);
+        output.writeDoubleNoTag(hHJFDGDHLOP);
       }
       if ((bitField0_ & 0x00004000) != 0) {
+        output.writeRawLittleEndian16((short) 737);
+        output.writeDoubleNoTag(nIHFBGGIKIM);
+      }
+      if ((bitField0_ & 0x00008000) != 0) {
         output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(id);
       }
-      if ((bitField0_ & 0x00008000) != 0) {
+      if ((bitField0_ & 0x00010000) != 0) {
         output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(avatarLevel);
       }
-      if ((bitField0_ & 0x00010000) != 0) {
+      if ((bitField0_ & 0x00020000) != 0) {
         output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(avatarRank);
       }
-      if ((bitField0_ & 0x00020000) != 0) {
+      if ((bitField0_ & 0x00040000) != 0) {
         output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(avatarPromotion);
       }
-      if ((bitField0_ & 0x00040000) != 0) {
+      if ((bitField0_ & 0x00080000) != 0) {
         output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(totalTurns);
       }
-      if ((bitField0_ & 0x00080000) != 0) {
+      if ((bitField0_ & 0x00100000) != 0) {
         output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(stageId);
       }
-      if ((bitField0_ & 0x00100000) != 0) {
+      if ((bitField0_ & 0x00200000) != 0) {
         output.writeRawLittleEndian16((short) 384);
         output.writeUInt32NoTag(stageType);
       }
-      if ((bitField0_ & 0x00200000) != 0) {
+      if ((bitField0_ & 0x00400000) != 0) {
         output.writeRawLittleEndian16((short) 440);
         output.writeUInt32NoTag(totalSpAdd);
       }
-      if ((bitField0_ & 0x00400000) != 0) {
+      if ((bitField0_ & 0x00800000) != 0) {
         output.writeRawLittleEndian16((short) 456);
         output.writeUInt32NoTag(totalBpCost);
       }
-      if ((bitField0_ & 0x00800000) != 0) {
+      if ((bitField0_ & 0x01000000) != 0) {
         output.writeRawLittleEndian16((short) 464);
         output.writeUInt32NoTag(dieTimes);
       }
-      if ((bitField0_ & 0x01000000) != 0) {
+      if ((bitField0_ & 0x02000000) != 0) {
         output.writeRawLittleEndian16((short) 472);
         output.writeUInt32NoTag(reviveTimes);
       }
-      if ((bitField0_ & 0x02000000) != 0) {
+      if ((bitField0_ & 0x04000000) != 0) {
         output.writeRawLittleEndian16((short) 480);
         output.writeUInt32NoTag(breakTimes);
       }
-      if ((bitField0_ & 0x04000000) != 0) {
+      if ((bitField0_ & 0x08000000) != 0) {
         output.writeRawLittleEndian16((short) 488);
         output.writeUInt32NoTag(extraTurns);
       }
-      if ((bitField0_ & 0x08000000) != 0) {
+      if ((bitField0_ & 0x10000000) != 0) {
         output.writeRawLittleEndian16((short) 664);
         output.writeUInt32NoTag(assistUid);
       }
-      if ((bitField0_ & 0x10000000) != 0) {
-        output.writeRawLittleEndian16((short) 720);
-        output.writeUInt32NoTag(eINCNMLBFJD);
-      }
       if ((bitField0_ & 0x20000000) != 0) {
-        output.writeRawLittleEndian16((short) 728);
-        output.writeUInt32NoTag(jMOJBLEELFJ);
+        output.writeRawLittleEndian16((short) 720);
+        output.writeUInt32NoTag(pADBNMLAGMM);
       }
       if ((bitField0_ & 0x40000000) != 0) {
+        output.writeRawLittleEndian16((short) 728);
+        output.writeUInt32NoTag(kDFLCJLALEH);
+      }
+      if ((bitField0_ & 0x80000000) != 0) {
         output.writeRawByte((byte) 8);
         output.writeEnumNoTag(avatarType);
       }
-      if ((bitField0_ & 0x80000000) != 0) {
+      if ((bitField1_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 50);
         output.writeMessageNoTag(avatarStatus);
       }
-      if ((bitField1_ & 0x00000001) != 0) {
+      if ((bitField1_ & 0x00000002) != 0) {
         output.writeRawLittleEndian16((short) 650);
         output.writeMessageNoTag(initialStatus);
       }
-      if ((bitField1_ & 0x00000002) != 0) {
+      if ((bitField1_ & 0x00000004) != 0) {
         for (int i = 0; i < avatarSkill.length(); i++) {
           output.writeRawByte((byte) 58);
           output.writeMessageNoTag(avatarSkill.get(i));
         }
       }
-      if ((bitField1_ & 0x00000004) != 0) {
+      if ((bitField1_ & 0x00000008) != 0) {
         for (int i = 0; i < spAddSource.length(); i++) {
           output.writeRawLittleEndian16((short) 450);
           output.writeMessageNoTag(spAddSource.get(i));
         }
       }
-      if ((bitField1_ & 0x00000008) != 0) {
+      if ((bitField1_ & 0x00000010) != 0) {
         for (int i = 0; i < battleRelicList.length(); i++) {
           output.writeRawLittleEndian16((short) 658);
           output.writeMessageNoTag(battleRelicList.get(i));
@@ -2276,69 +2328,72 @@ public final class AvatarBattleInfoOuterClass {
         size += 10;
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 10;
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarLevel);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarRank);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarLevel);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarPromotion);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarRank);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalTurns);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarPromotion);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalTurns);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(stageType);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalSpAdd);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(stageType);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalBpCost);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalSpAdd);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(dieTimes);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(totalBpCost);
       }
       if ((bitField0_ & 0x01000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(reviveTimes);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(dieTimes);
       }
       if ((bitField0_ & 0x02000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(breakTimes);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(reviveTimes);
       }
       if ((bitField0_ & 0x04000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(extraTurns);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(breakTimes);
       }
       if ((bitField0_ & 0x08000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(assistUid);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(extraTurns);
       }
       if ((bitField0_ & 0x10000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(eINCNMLBFJD);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(assistUid);
       }
       if ((bitField0_ & 0x20000000) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(jMOJBLEELFJ);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(pADBNMLAGMM);
       }
       if ((bitField0_ & 0x40000000) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(kDFLCJLALEH);
       }
       if ((bitField0_ & 0x80000000) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(avatarStatus);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
       }
       if ((bitField1_ & 0x00000001) != 0) {
-        size += 2 + ProtoSink.computeMessageSizeNoTag(initialStatus);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(avatarStatus);
       }
       if ((bitField1_ & 0x00000002) != 0) {
-        size += (1 * avatarSkill.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarSkill);
+        size += 2 + ProtoSink.computeMessageSizeNoTag(initialStatus);
       }
       if ((bitField1_ & 0x00000004) != 0) {
-        size += (2 * spAddSource.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(spAddSource);
+        size += (1 * avatarSkill.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarSkill);
       }
       if ((bitField1_ & 0x00000008) != 0) {
+        size += (2 * spAddSource.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(spAddSource);
+      }
+      if ((bitField1_ & 0x00000010) != 0) {
         size += (2 * battleRelicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(battleRelicList);
       }
       return size;
@@ -2442,8 +2497,8 @@ public final class AvatarBattleInfoOuterClass {
             }
           }
           case 297: {
-            // gPHGHLGHNJF
-            gPHGHLGHNJF = input.readDouble();
+            // cALNPMADJBG
+            cALNPMADJBG = input.readDouble();
             bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 305) {
@@ -2451,8 +2506,8 @@ public final class AvatarBattleInfoOuterClass {
             }
           }
           case 305: {
-            // hNMAEDKEMEO
-            hNMAEDKEMEO = input.readDouble();
+            // nBNJMLLGFIL
+            nBNJMLLGFIL = input.readDouble();
             bitField0_ |= 0x00000800;
             tag = input.readTag();
             if (tag != 313) {
@@ -2460,8 +2515,8 @@ public final class AvatarBattleInfoOuterClass {
             }
           }
           case 313: {
-            // kOKGBDEJBHL
-            kOKGBDEJBHL = input.readDouble();
+            // oLADIJEDBPJ
+            oLADIJEDBPJ = input.readDouble();
             bitField0_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 321) {
@@ -2469,9 +2524,18 @@ public final class AvatarBattleInfoOuterClass {
             }
           }
           case 321: {
-            // fIICHEILPCF
-            fIICHEILPCF = input.readDouble();
+            // hHJFDGDHLOP
+            hHJFDGDHLOP = input.readDouble();
             bitField0_ |= 0x00002000;
+            tag = input.readTag();
+            if (tag != 353) {
+              break;
+            }
+          }
+          case 353: {
+            // nIHFBGGIKIM
+            nIHFBGGIKIM = input.readDouble();
+            bitField0_ |= 0x00004000;
             tag = input.readTag();
             if (tag != 16) {
               break;
@@ -2480,7 +2544,7 @@ public final class AvatarBattleInfoOuterClass {
           case 16: {
             // id
             id = input.readUInt32();
-            bitField0_ |= 0x00004000;
+            bitField0_ |= 0x00008000;
             tag = input.readTag();
             if (tag != 24) {
               break;
@@ -2489,7 +2553,7 @@ public final class AvatarBattleInfoOuterClass {
           case 24: {
             // avatarLevel
             avatarLevel = input.readUInt32();
-            bitField0_ |= 0x00008000;
+            bitField0_ |= 0x00010000;
             tag = input.readTag();
             if (tag != 32) {
               break;
@@ -2498,7 +2562,7 @@ public final class AvatarBattleInfoOuterClass {
           case 32: {
             // avatarRank
             avatarRank = input.readUInt32();
-            bitField0_ |= 0x00010000;
+            bitField0_ |= 0x00020000;
             tag = input.readTag();
             if (tag != 40) {
               break;
@@ -2507,7 +2571,7 @@ public final class AvatarBattleInfoOuterClass {
           case 40: {
             // avatarPromotion
             avatarPromotion = input.readUInt32();
-            bitField0_ |= 0x00020000;
+            bitField0_ |= 0x00040000;
             tag = input.readTag();
             if (tag != 72) {
               break;
@@ -2516,7 +2580,7 @@ public final class AvatarBattleInfoOuterClass {
           case 72: {
             // totalTurns
             totalTurns = input.readUInt32();
-            bitField0_ |= 0x00040000;
+            bitField0_ |= 0x00080000;
             tag = input.readTag();
             if (tag != 120) {
               break;
@@ -2525,7 +2589,7 @@ public final class AvatarBattleInfoOuterClass {
           case 120: {
             // stageId
             stageId = input.readUInt32();
-            bitField0_ |= 0x00080000;
+            bitField0_ |= 0x00100000;
             tag = input.readTag();
             if (tag != 128) {
               break;
@@ -2534,7 +2598,7 @@ public final class AvatarBattleInfoOuterClass {
           case 128: {
             // stageType
             stageType = input.readUInt32();
-            bitField0_ |= 0x00100000;
+            bitField0_ |= 0x00200000;
             tag = input.readTag();
             if (tag != 184) {
               break;
@@ -2543,7 +2607,7 @@ public final class AvatarBattleInfoOuterClass {
           case 184: {
             // totalSpAdd
             totalSpAdd = input.readUInt32();
-            bitField0_ |= 0x00200000;
+            bitField0_ |= 0x00400000;
             tag = input.readTag();
             if (tag != 200) {
               break;
@@ -2552,7 +2616,7 @@ public final class AvatarBattleInfoOuterClass {
           case 200: {
             // totalBpCost
             totalBpCost = input.readUInt32();
-            bitField0_ |= 0x00400000;
+            bitField0_ |= 0x00800000;
             tag = input.readTag();
             if (tag != 208) {
               break;
@@ -2561,7 +2625,7 @@ public final class AvatarBattleInfoOuterClass {
           case 208: {
             // dieTimes
             dieTimes = input.readUInt32();
-            bitField0_ |= 0x00800000;
+            bitField0_ |= 0x01000000;
             tag = input.readTag();
             if (tag != 216) {
               break;
@@ -2570,7 +2634,7 @@ public final class AvatarBattleInfoOuterClass {
           case 216: {
             // reviveTimes
             reviveTimes = input.readUInt32();
-            bitField0_ |= 0x01000000;
+            bitField0_ |= 0x02000000;
             tag = input.readTag();
             if (tag != 224) {
               break;
@@ -2579,7 +2643,7 @@ public final class AvatarBattleInfoOuterClass {
           case 224: {
             // breakTimes
             breakTimes = input.readUInt32();
-            bitField0_ |= 0x02000000;
+            bitField0_ |= 0x04000000;
             tag = input.readTag();
             if (tag != 232) {
               break;
@@ -2588,7 +2652,7 @@ public final class AvatarBattleInfoOuterClass {
           case 232: {
             // extraTurns
             extraTurns = input.readUInt32();
-            bitField0_ |= 0x04000000;
+            bitField0_ |= 0x08000000;
             tag = input.readTag();
             if (tag != 280) {
               break;
@@ -2597,25 +2661,25 @@ public final class AvatarBattleInfoOuterClass {
           case 280: {
             // assistUid
             assistUid = input.readUInt32();
-            bitField0_ |= 0x08000000;
+            bitField0_ |= 0x10000000;
             tag = input.readTag();
             if (tag != 336) {
               break;
             }
           }
           case 336: {
-            // eINCNMLBFJD
-            eINCNMLBFJD = input.readUInt32();
-            bitField0_ |= 0x10000000;
+            // pADBNMLAGMM
+            pADBNMLAGMM = input.readUInt32();
+            bitField0_ |= 0x20000000;
             tag = input.readTag();
             if (tag != 344) {
               break;
             }
           }
           case 344: {
-            // jMOJBLEELFJ
-            jMOJBLEELFJ = input.readUInt32();
-            bitField0_ |= 0x20000000;
+            // kDFLCJLALEH
+            kDFLCJLALEH = input.readUInt32();
+            bitField0_ |= 0x40000000;
             tag = input.readTag();
             if (tag != 8) {
               break;
@@ -2626,7 +2690,7 @@ public final class AvatarBattleInfoOuterClass {
             final int value = input.readInt32();
             if (AvatarTypeOuterClass.AvatarType.forNumber(value) != null) {
               avatarType = value;
-              bitField0_ |= 0x40000000;
+              bitField0_ |= 0x80000000;
             }
             tag = input.readTag();
             if (tag != 50) {
@@ -2636,7 +2700,7 @@ public final class AvatarBattleInfoOuterClass {
           case 50: {
             // avatarStatus
             input.readMessage(avatarStatus);
-            bitField0_ |= 0x80000000;
+            bitField1_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 266) {
               break;
@@ -2645,7 +2709,7 @@ public final class AvatarBattleInfoOuterClass {
           case 266: {
             // initialStatus
             input.readMessage(initialStatus);
-            bitField1_ |= 0x00000001;
+            bitField1_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 58) {
               break;
@@ -2654,7 +2718,7 @@ public final class AvatarBattleInfoOuterClass {
           case 58: {
             // avatarSkill
             tag = input.readRepeatedMessage(avatarSkill, tag);
-            bitField1_ |= 0x00000002;
+            bitField1_ |= 0x00000004;
             if (tag != 194) {
               break;
             }
@@ -2662,7 +2726,7 @@ public final class AvatarBattleInfoOuterClass {
           case 194: {
             // spAddSource
             tag = input.readRepeatedMessage(spAddSource, tag);
-            bitField1_ |= 0x00000004;
+            bitField1_ |= 0x00000008;
             if (tag != 274) {
               break;
             }
@@ -2670,7 +2734,7 @@ public final class AvatarBattleInfoOuterClass {
           case 274: {
             // battleRelicList
             tag = input.readRepeatedMessage(battleRelicList, tag);
-            bitField1_ |= 0x00000008;
+            bitField1_ |= 0x00000010;
             if (tag != 0) {
               break;
             }
@@ -2723,81 +2787,84 @@ public final class AvatarBattleInfoOuterClass {
         output.writeDouble(FieldNames.totalShieldDamage, totalShieldDamage);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeDouble(FieldNames.gPHGHLGHNJF, gPHGHLGHNJF);
+        output.writeDouble(FieldNames.cALNPMADJBG, cALNPMADJBG);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeDouble(FieldNames.hNMAEDKEMEO, hNMAEDKEMEO);
+        output.writeDouble(FieldNames.nBNJMLLGFIL, nBNJMLLGFIL);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeDouble(FieldNames.kOKGBDEJBHL, kOKGBDEJBHL);
+        output.writeDouble(FieldNames.oLADIJEDBPJ, oLADIJEDBPJ);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeDouble(FieldNames.fIICHEILPCF, fIICHEILPCF);
+        output.writeDouble(FieldNames.hHJFDGDHLOP, hHJFDGDHLOP);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeDouble(FieldNames.nIHFBGGIKIM, nIHFBGGIKIM);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        output.writeUInt32(FieldNames.avatarLevel, avatarLevel);
+        output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        output.writeUInt32(FieldNames.avatarRank, avatarRank);
+        output.writeUInt32(FieldNames.avatarLevel, avatarLevel);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        output.writeUInt32(FieldNames.avatarPromotion, avatarPromotion);
+        output.writeUInt32(FieldNames.avatarRank, avatarRank);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeUInt32(FieldNames.totalTurns, totalTurns);
+        output.writeUInt32(FieldNames.avatarPromotion, avatarPromotion);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        output.writeUInt32(FieldNames.stageId, stageId);
+        output.writeUInt32(FieldNames.totalTurns, totalTurns);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeUInt32(FieldNames.stageType, stageType);
+        output.writeUInt32(FieldNames.stageId, stageId);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeUInt32(FieldNames.totalSpAdd, totalSpAdd);
+        output.writeUInt32(FieldNames.stageType, stageType);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeUInt32(FieldNames.totalBpCost, totalBpCost);
+        output.writeUInt32(FieldNames.totalSpAdd, totalSpAdd);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        output.writeUInt32(FieldNames.dieTimes, dieTimes);
+        output.writeUInt32(FieldNames.totalBpCost, totalBpCost);
       }
       if ((bitField0_ & 0x01000000) != 0) {
-        output.writeUInt32(FieldNames.reviveTimes, reviveTimes);
+        output.writeUInt32(FieldNames.dieTimes, dieTimes);
       }
       if ((bitField0_ & 0x02000000) != 0) {
-        output.writeUInt32(FieldNames.breakTimes, breakTimes);
+        output.writeUInt32(FieldNames.reviveTimes, reviveTimes);
       }
       if ((bitField0_ & 0x04000000) != 0) {
-        output.writeUInt32(FieldNames.extraTurns, extraTurns);
+        output.writeUInt32(FieldNames.breakTimes, breakTimes);
       }
       if ((bitField0_ & 0x08000000) != 0) {
-        output.writeUInt32(FieldNames.assistUid, assistUid);
+        output.writeUInt32(FieldNames.extraTurns, extraTurns);
       }
       if ((bitField0_ & 0x10000000) != 0) {
-        output.writeUInt32(FieldNames.eINCNMLBFJD, eINCNMLBFJD);
+        output.writeUInt32(FieldNames.assistUid, assistUid);
       }
       if ((bitField0_ & 0x20000000) != 0) {
-        output.writeUInt32(FieldNames.jMOJBLEELFJ, jMOJBLEELFJ);
+        output.writeUInt32(FieldNames.pADBNMLAGMM, pADBNMLAGMM);
       }
       if ((bitField0_ & 0x40000000) != 0) {
-        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
+        output.writeUInt32(FieldNames.kDFLCJLALEH, kDFLCJLALEH);
       }
       if ((bitField0_ & 0x80000000) != 0) {
-        output.writeMessage(FieldNames.avatarStatus, avatarStatus);
+        output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
       }
       if ((bitField1_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.initialStatus, initialStatus);
+        output.writeMessage(FieldNames.avatarStatus, avatarStatus);
       }
       if ((bitField1_ & 0x00000002) != 0) {
-        output.writeRepeatedMessage(FieldNames.avatarSkill, avatarSkill);
+        output.writeMessage(FieldNames.initialStatus, initialStatus);
       }
       if ((bitField1_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.spAddSource, spAddSource);
+        output.writeRepeatedMessage(FieldNames.avatarSkill, avatarSkill);
       }
       if ((bitField1_ & 0x00000008) != 0) {
+        output.writeRepeatedMessage(FieldNames.spAddSource, spAddSource);
+      }
+      if ((bitField1_ & 0x00000010) != 0) {
         output.writeRepeatedMessage(FieldNames.battleRelicList, battleRelicList);
       }
       output.endObject();
@@ -2930,10 +2997,10 @@ public final class AvatarBattleInfoOuterClass {
             }
             break;
           }
-          case -1953563043: {
-            if (input.isAtField(FieldNames.gPHGHLGHNJF)) {
+          case -1200042801: {
+            if (input.isAtField(FieldNames.cALNPMADJBG)) {
               if (!input.trySkipNullValue()) {
-                gPHGHLGHNJF = input.readDouble();
+                cALNPMADJBG = input.readDouble();
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -2941,10 +3008,10 @@ public final class AvatarBattleInfoOuterClass {
             }
             break;
           }
-          case 30241412: {
-            if (input.isAtField(FieldNames.hNMAEDKEMEO)) {
+          case -70328865: {
+            if (input.isAtField(FieldNames.nBNJMLLGFIL)) {
               if (!input.trySkipNullValue()) {
-                hNMAEDKEMEO = input.readDouble();
+                nBNJMLLGFIL = input.readDouble();
                 bitField0_ |= 0x00000800;
               }
             } else {
@@ -2952,10 +3019,10 @@ public final class AvatarBattleInfoOuterClass {
             }
             break;
           }
-          case 1551763775: {
-            if (input.isAtField(FieldNames.kOKGBDEJBHL)) {
+          case 1298832764: {
+            if (input.isAtField(FieldNames.oLADIJEDBPJ)) {
               if (!input.trySkipNullValue()) {
-                kOKGBDEJBHL = input.readDouble();
+                oLADIJEDBPJ = input.readDouble();
                 bitField0_ |= 0x00001000;
               }
             } else {
@@ -2963,11 +3030,22 @@ public final class AvatarBattleInfoOuterClass {
             }
             break;
           }
-          case 831785494: {
-            if (input.isAtField(FieldNames.fIICHEILPCF)) {
+          case 1652843466: {
+            if (input.isAtField(FieldNames.hHJFDGDHLOP)) {
               if (!input.trySkipNullValue()) {
-                fIICHEILPCF = input.readDouble();
+                hHJFDGDHLOP = input.readDouble();
                 bitField0_ |= 0x00002000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1107257167: {
+            if (input.isAtField(FieldNames.nIHFBGGIKIM)) {
+              if (!input.trySkipNullValue()) {
+                nIHFBGGIKIM = input.readDouble();
+                bitField0_ |= 0x00004000;
               }
             } else {
               input.skipUnknownField();
@@ -2978,7 +3056,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
-                bitField0_ |= 0x00004000;
+                bitField0_ |= 0x00008000;
               }
             } else {
               input.skipUnknownField();
@@ -2990,7 +3068,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarLevel)) {
               if (!input.trySkipNullValue()) {
                 avatarLevel = input.readUInt32();
-                bitField0_ |= 0x00008000;
+                bitField0_ |= 0x00010000;
               }
             } else {
               input.skipUnknownField();
@@ -3002,7 +3080,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarRank)) {
               if (!input.trySkipNullValue()) {
                 avatarRank = input.readUInt32();
-                bitField0_ |= 0x00010000;
+                bitField0_ |= 0x00020000;
               }
             } else {
               input.skipUnknownField();
@@ -3014,7 +3092,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarPromotion)) {
               if (!input.trySkipNullValue()) {
                 avatarPromotion = input.readUInt32();
-                bitField0_ |= 0x00020000;
+                bitField0_ |= 0x00040000;
               }
             } else {
               input.skipUnknownField();
@@ -3026,7 +3104,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.totalTurns)) {
               if (!input.trySkipNullValue()) {
                 totalTurns = input.readUInt32();
-                bitField0_ |= 0x00040000;
+                bitField0_ |= 0x00080000;
               }
             } else {
               input.skipUnknownField();
@@ -3038,7 +3116,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.stageId)) {
               if (!input.trySkipNullValue()) {
                 stageId = input.readUInt32();
-                bitField0_ |= 0x00080000;
+                bitField0_ |= 0x00100000;
               }
             } else {
               input.skipUnknownField();
@@ -3050,7 +3128,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.stageType)) {
               if (!input.trySkipNullValue()) {
                 stageType = input.readUInt32();
-                bitField0_ |= 0x00100000;
+                bitField0_ |= 0x00200000;
               }
             } else {
               input.skipUnknownField();
@@ -3062,7 +3140,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.totalSpAdd)) {
               if (!input.trySkipNullValue()) {
                 totalSpAdd = input.readUInt32();
-                bitField0_ |= 0x00200000;
+                bitField0_ |= 0x00400000;
               }
             } else {
               input.skipUnknownField();
@@ -3074,7 +3152,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.totalBpCost)) {
               if (!input.trySkipNullValue()) {
                 totalBpCost = input.readUInt32();
-                bitField0_ |= 0x00400000;
+                bitField0_ |= 0x00800000;
               }
             } else {
               input.skipUnknownField();
@@ -3086,7 +3164,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.dieTimes)) {
               if (!input.trySkipNullValue()) {
                 dieTimes = input.readUInt32();
-                bitField0_ |= 0x00800000;
+                bitField0_ |= 0x01000000;
               }
             } else {
               input.skipUnknownField();
@@ -3098,7 +3176,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.reviveTimes)) {
               if (!input.trySkipNullValue()) {
                 reviveTimes = input.readUInt32();
-                bitField0_ |= 0x01000000;
+                bitField0_ |= 0x02000000;
               }
             } else {
               input.skipUnknownField();
@@ -3110,7 +3188,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.breakTimes)) {
               if (!input.trySkipNullValue()) {
                 breakTimes = input.readUInt32();
-                bitField0_ |= 0x02000000;
+                bitField0_ |= 0x04000000;
               }
             } else {
               input.skipUnknownField();
@@ -3122,7 +3200,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.extraTurns)) {
               if (!input.trySkipNullValue()) {
                 extraTurns = input.readUInt32();
-                bitField0_ |= 0x04000000;
+                bitField0_ |= 0x08000000;
               }
             } else {
               input.skipUnknownField();
@@ -3134,17 +3212,6 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.assistUid)) {
               if (!input.trySkipNullValue()) {
                 assistUid = input.readUInt32();
-                bitField0_ |= 0x08000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -852016910: {
-            if (input.isAtField(FieldNames.eINCNMLBFJD)) {
-              if (!input.trySkipNullValue()) {
-                eINCNMLBFJD = input.readUInt32();
                 bitField0_ |= 0x10000000;
               }
             } else {
@@ -3152,11 +3219,22 @@ public final class AvatarBattleInfoOuterClass {
             }
             break;
           }
-          case 1969249096: {
-            if (input.isAtField(FieldNames.jMOJBLEELFJ)) {
+          case 1580299044: {
+            if (input.isAtField(FieldNames.pADBNMLAGMM)) {
               if (!input.trySkipNullValue()) {
-                jMOJBLEELFJ = input.readUInt32();
+                pADBNMLAGMM = input.readUInt32();
                 bitField0_ |= 0x20000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1055384468: {
+            if (input.isAtField(FieldNames.kDFLCJLALEH)) {
+              if (!input.trySkipNullValue()) {
+                kDFLCJLALEH = input.readUInt32();
+                bitField0_ |= 0x40000000;
               }
             } else {
               input.skipUnknownField();
@@ -3170,7 +3248,7 @@ public final class AvatarBattleInfoOuterClass {
                 final AvatarTypeOuterClass.AvatarType value = input.readEnum(AvatarTypeOuterClass.AvatarType.converter());
                 if (value != null) {
                   avatarType = value.getNumber();
-                  bitField0_ |= 0x40000000;
+                  bitField0_ |= 0x80000000;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -3185,7 +3263,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarStatus)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(avatarStatus);
-                bitField0_ |= 0x80000000;
+                bitField1_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -3197,7 +3275,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.initialStatus)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(initialStatus);
-                bitField1_ |= 0x00000001;
+                bitField1_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -3209,7 +3287,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.avatarSkill)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(avatarSkill);
-                bitField1_ |= 0x00000002;
+                bitField1_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -3221,7 +3299,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.spAddSource)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(spAddSource);
-                bitField1_ |= 0x00000004;
+                bitField1_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -3233,7 +3311,7 @@ public final class AvatarBattleInfoOuterClass {
             if (input.isAtField(FieldNames.battleRelicList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(battleRelicList);
-                bitField1_ |= 0x00000008;
+                bitField1_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -3313,13 +3391,15 @@ public final class AvatarBattleInfoOuterClass {
 
       static final FieldName totalShieldDamage = FieldName.forField("totalShieldDamage", "total_shield_damage");
 
-      static final FieldName gPHGHLGHNJF = FieldName.forField("GPHGHLGHNJF");
+      static final FieldName cALNPMADJBG = FieldName.forField("CALNPMADJBG");
 
-      static final FieldName hNMAEDKEMEO = FieldName.forField("HNMAEDKEMEO");
+      static final FieldName nBNJMLLGFIL = FieldName.forField("NBNJMLLGFIL");
 
-      static final FieldName kOKGBDEJBHL = FieldName.forField("KOKGBDEJBHL");
+      static final FieldName oLADIJEDBPJ = FieldName.forField("OLADIJEDBPJ");
 
-      static final FieldName fIICHEILPCF = FieldName.forField("FIICHEILPCF");
+      static final FieldName hHJFDGDHLOP = FieldName.forField("HHJFDGDHLOP");
+
+      static final FieldName nIHFBGGIKIM = FieldName.forField("NIHFBGGIKIM");
 
       static final FieldName id = FieldName.forField("id");
 
@@ -3349,9 +3429,9 @@ public final class AvatarBattleInfoOuterClass {
 
       static final FieldName assistUid = FieldName.forField("assistUid", "assist_uid");
 
-      static final FieldName eINCNMLBFJD = FieldName.forField("EINCNMLBFJD");
+      static final FieldName pADBNMLAGMM = FieldName.forField("PADBNMLAGMM");
 
-      static final FieldName jMOJBLEELFJ = FieldName.forField("JMOJBLEELFJ");
+      static final FieldName kDFLCJLALEH = FieldName.forField("KDFLCJLALEH");
 
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
 

@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "RogueTalent.proto";
 
 message RogueTalentInfo {
-    repeated RogueTalent rogue_talent = 15;
+    repeated RogueTalent rogue_talent = 8;
 }

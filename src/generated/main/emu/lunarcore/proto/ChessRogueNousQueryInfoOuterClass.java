@@ -12,15 +12,6 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ChessRogueNousQueryInfoOuterClass {
   /**
-   * <pre>
-   * MAKPHMAOCHI talent_info = 1;
-   * OFHBFINPHAG JNAGMIALOII = 6;
-   * CLIDPGPDFGK IKGPADCBBPN = 4;
-   * ChessRogueQuery query_info = 13;
-   * repeated uint32 PHJAFGJHOCO = 7;
-   * repeated uint32 CMNHLKGFKOP = 8;
-   * </pre>
-   *
    * Protobuf type {@code ChessRogueNousQueryInfo}
    */
   public static final class ChessRogueNousQueryInfo extends ProtoMessage<ChessRogueNousQueryInfo> implements Cloneable {
@@ -30,15 +21,6 @@ public final class ChessRogueNousQueryInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * MAKPHMAOCHI talent_info = 1;
-     * OFHBFINPHAG JNAGMIALOII = 6;
-     * CLIDPGPDFGK IKGPADCBBPN = 4;
-     * ChessRogueQuery query_info = 13;
-     * repeated uint32 PHJAFGJHOCO = 7;
-     * repeated uint32 CMNHLKGFKOP = 8;
-     * </pre>
-     *
      * @return a new empty instance of {@code ChessRogueNousQueryInfo}
      */
     public static ChessRogueNousQueryInfo newInstance() {

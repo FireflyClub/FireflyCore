@@ -5,9 +5,9 @@ option java_package = "emu.lunarcore.proto";
 import "FightActivityGroup.proto";
 
 message GetFightActivityDataScRsp {
-	uint32 retcode = 2;
-	map<uint32, uint32> BAHHEJPGIAH = 13;
-	uint32 world_level = 7;
-	repeated FightActivityGroup JDDCJCNPCDN = 10;
-	bool GPPPBKHMHPM = 1;
+	uint32 retcode = 14;
+	repeated FightActivityGroup DPFKPKDKONP = 8;
+	bool AGGMHDOKDPM = 2;
+	map<uint32, uint32> JDNHCNHAMML = 7;
+	uint32 world_level = 5;
 }

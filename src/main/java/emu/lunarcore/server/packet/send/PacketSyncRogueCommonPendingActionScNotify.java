@@ -23,7 +23,7 @@ public class PacketSyncRogueCommonPendingActionScNotify extends BasePacket {
     
     public PacketSyncRogueCommonPendingActionScNotify(RogueAction action, int id) {
         this(RogueCommonPendingAction.newInstance()
-            .setUniqueId(id)
+            .setRougeUniqueId(id)
             .setRogueAction(action));
     }
     

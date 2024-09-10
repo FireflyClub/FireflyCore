@@ -6,7 +6,7 @@ import "MultiPathAvatarType.proto";
 import "MultiPathAvatarTypeInfo.proto";
 
 message SetGenderScRsp {
-	repeated MultiPathAvatarTypeInfo FJPGCEEAPMO = 7;
-	uint32 retcode = 13;
-	MultiPathAvatarType GPDNDCCLOOD = 2;
+	repeated MultiPathAvatarTypeInfo IEEGHOGHKML = 11;
+	uint32 retcode = 10;
+	MultiPathAvatarType MBDOPMGIHJH = 4;
 }

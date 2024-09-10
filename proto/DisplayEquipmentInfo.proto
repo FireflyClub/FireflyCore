@@ -3,9 +3,9 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DisplayEquipmentInfo {
-	uint32 tid = 12;
-	uint32 level = 5;
+	uint32 tid = 7;
+	uint32 rank = 12;
 	uint32 exp = 2;
-	uint32 promotion = 15;
-	uint32 rank = 4;
+	uint32 promotion = 8;
+	uint32 level = 10;
 }

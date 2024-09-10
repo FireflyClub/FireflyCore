@@ -2,14 +2,14 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "ChatType.proto";
 import "MsgType.proto";
+import "ChatType.proto";
 
 message SendMsgCsReq {
-	ChatType chat_type = 1;
-	MsgType msg_type = 3;
-	repeated uint32 to_uid_list = 15;
-	//KICJPJALBBH IGNEAJDPAPE = 11;
+	MsgType msg_type = 4;
+	uint32 emote = 7;
+	//LFCKPPDLIJI BNABNCCMILM = 8;
 	string text = 6;
-	uint32 emote = 9;
+	repeated uint32 to_uid_list = 1;
+	ChatType chat_type = 2;
 }

@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message FightActivityGroup {
-	uint32 group_id = 8;
-	uint32 endless_max_wave = 5;
-	uint32 passed_max_difficulty_level = 2;
-	repeated uint32 taken_difficulty_level_reward_list = 11;
+	uint32 GroupId = 15;
+	uint32 EndlessMaxWave = 3;
+	uint32 PassedMaxDifficultyLevel = 9;
+	repeated uint32 TakenDifficultyLevelRewardList = 4;
 }

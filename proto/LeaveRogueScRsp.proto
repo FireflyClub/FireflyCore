@@ -2,14 +2,14 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "RogueInfo.proto";
 import "SceneInfo.proto";
 import "LineupInfo.proto";
+import "RogueInfo.proto";
 
 message LeaveRogueScRsp {
-	SceneInfo scene = 2;
-	//CIOEAHEFPLN OOPAJCPODNG = 10;
-	LineupInfo lineup = 14;
-	uint32 retcode = 1;
-	RogueInfo rogue_info = 9;
+	//MGCIMEKACFE NPFLJLEEFFI = 7;
+	RogueInfo rogue_info = 12;
+	LineupInfo lineup = 11;
+	uint32 retcode = 10;
+	SceneInfo scene = 14;
 }

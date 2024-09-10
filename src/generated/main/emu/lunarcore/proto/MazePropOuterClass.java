@@ -19,19 +19,19 @@ public final class MazePropOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 state = 3;</code>
+     * <code>optional uint32 group_id = 5;</code>
+     */
+    private int groupId;
+
+    /**
+     * <code>optional uint32 state = 8;</code>
      */
     private int state;
 
     /**
-     * <code>optional uint32 config_id = 4;</code>
+     * <code>optional uint32 config_id = 11;</code>
      */
     private int configId;
-
-    /**
-     * <code>optional uint32 group_id = 8;</code>
-     */
-    private int groupId;
 
     private MazeProp() {
     }
@@ -44,99 +44,25 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 3;</code>
-     * @return whether the state field is set
+     * <code>optional uint32 group_id = 5;</code>
+     * @return whether the groupId field is set
      */
-    public boolean hasState() {
+    public boolean hasGroupId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 state = 3;</code>
-     * @return this
-     */
-    public MazeProp clearState() {
-      bitField0_ &= ~0x00000001;
-      state = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 state = 3;</code>
-     * @return the state
-     */
-    public int getState() {
-      return state;
-    }
-
-    /**
-     * <code>optional uint32 state = 3;</code>
-     * @param value the state to set
-     * @return this
-     */
-    public MazeProp setState(final int value) {
-      bitField0_ |= 0x00000001;
-      state = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 config_id = 4;</code>
-     * @return whether the configId field is set
-     */
-    public boolean hasConfigId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 config_id = 4;</code>
-     * @return this
-     */
-    public MazeProp clearConfigId() {
-      bitField0_ &= ~0x00000002;
-      configId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 config_id = 4;</code>
-     * @return the configId
-     */
-    public int getConfigId() {
-      return configId;
-    }
-
-    /**
-     * <code>optional uint32 config_id = 4;</code>
-     * @param value the configId to set
-     * @return this
-     */
-    public MazeProp setConfigId(final int value) {
-      bitField0_ |= 0x00000002;
-      configId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 group_id = 8;</code>
-     * @return whether the groupId field is set
-     */
-    public boolean hasGroupId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 group_id = 5;</code>
      * @return this
      */
     public MazeProp clearGroupId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       groupId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 group_id = 5;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -144,13 +70,87 @@ public final class MazePropOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 group_id = 5;</code>
      * @param value the groupId to set
      * @return this
      */
     public MazeProp setGroupId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       groupId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 state = 8;</code>
+     * @return whether the state field is set
+     */
+    public boolean hasState() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 state = 8;</code>
+     * @return this
+     */
+    public MazeProp clearState() {
+      bitField0_ &= ~0x00000002;
+      state = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 state = 8;</code>
+     * @return the state
+     */
+    public int getState() {
+      return state;
+    }
+
+    /**
+     * <code>optional uint32 state = 8;</code>
+     * @param value the state to set
+     * @return this
+     */
+    public MazeProp setState(final int value) {
+      bitField0_ |= 0x00000002;
+      state = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 config_id = 11;</code>
+     * @return whether the configId field is set
+     */
+    public boolean hasConfigId() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 config_id = 11;</code>
+     * @return this
+     */
+    public MazeProp clearConfigId() {
+      bitField0_ &= ~0x00000004;
+      configId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 config_id = 11;</code>
+     * @return the configId
+     */
+    public int getConfigId() {
+      return configId;
+    }
+
+    /**
+     * <code>optional uint32 config_id = 11;</code>
+     * @param value the configId to set
+     * @return this
+     */
+    public MazeProp setConfigId(final int value) {
+      bitField0_ |= 0x00000004;
+      configId = value;
       return this;
     }
 
@@ -159,9 +159,9 @@ public final class MazePropOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        groupId = other.groupId;
         state = other.state;
         configId = other.configId;
-        groupId = other.groupId;
       }
       return this;
     }
@@ -172,14 +172,14 @@ public final class MazePropOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasGroupId()) {
+        setGroupId(other.groupId);
+      }
       if (other.hasState()) {
         setState(other.state);
       }
       if (other.hasConfigId()) {
         setConfigId(other.configId);
-      }
-      if (other.hasGroupId()) {
-        setGroupId(other.groupId);
       }
       return this;
     }
@@ -191,9 +191,9 @@ public final class MazePropOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      groupId = 0;
       state = 0;
       configId = 0;
-      groupId = 0;
       return this;
     }
 
@@ -217,24 +217,24 @@ public final class MazePropOuterClass {
       }
       MazeProp other = (MazeProp) o;
       return bitField0_ == other.bitField0_
+        && (!hasGroupId() || groupId == other.groupId)
         && (!hasState() || state == other.state)
-        && (!hasConfigId() || configId == other.configId)
-        && (!hasGroupId() || groupId == other.groupId);
+        && (!hasConfigId() || configId == other.configId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(state);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(configId);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(groupId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(configId);
       }
     }
 
@@ -242,13 +242,13 @@ public final class MazePropOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(state);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(configId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(configId);
       }
       return size;
     }
@@ -260,27 +260,27 @@ public final class MazePropOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // state
-            state = input.readUInt32();
+          case 40: {
+            // groupId
+            groupId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 32) {
-              break;
-            }
-          }
-          case 32: {
-            // configId
-            configId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 64) {
               break;
             }
           }
           case 64: {
-            // groupId
-            groupId = input.readUInt32();
+            // state
+            state = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // configId
+            configId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -305,13 +305,13 @@ public final class MazePropOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.state, state);
+        output.writeUInt32(FieldNames.groupId, groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.configId, configId);
+        output.writeUInt32(FieldNames.state, state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.groupId, groupId);
+        output.writeUInt32(FieldNames.configId, configId);
       }
       output.endObject();
     }
@@ -323,11 +323,23 @@ public final class MazePropOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 293428218:
+          case 506361563: {
+            if (input.isAtField(FieldNames.groupId)) {
+              if (!input.trySkipNullValue()) {
+                groupId = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 109757585: {
             if (input.isAtField(FieldNames.state)) {
               if (!input.trySkipNullValue()) {
                 state = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -339,18 +351,6 @@ public final class MazePropOuterClass {
             if (input.isAtField(FieldNames.configId)) {
               if (!input.trySkipNullValue()) {
                 configId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 293428218:
-          case 506361563: {
-            if (input.isAtField(FieldNames.groupId)) {
-              if (!input.trySkipNullValue()) {
-                groupId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -410,11 +410,11 @@ public final class MazePropOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName groupId = FieldName.forField("groupId", "group_id");
+
       static final FieldName state = FieldName.forField("state");
 
       static final FieldName configId = FieldName.forField("configId", "config_id");
-
-      static final FieldName groupId = FieldName.forField("groupId", "group_id");
     }
   }
 }

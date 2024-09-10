@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class RogueReviveInfoOuterClass {
   /**
-   * <pre>
-   *  Ihoejbhjhpn
-   * </pre>
-   *
    * Protobuf type {@code RogueReviveInfo}
    */
   public static final class RogueReviveInfo extends ProtoMessage<RogueReviveInfo> implements Cloneable {
@@ -55,10 +51,6 @@ public final class RogueReviveInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  Ihoejbhjhpn
-     * </pre>
-     *
      * @return a new empty instance of {@code RogueReviveInfo}
      */
     public static RogueReviveInfo newInstance() {

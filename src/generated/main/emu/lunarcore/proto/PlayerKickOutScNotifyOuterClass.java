@@ -21,12 +21,12 @@ public final class PlayerKickOutScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 9;</code>
+     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 14;</code>
      */
     private int kickType;
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      */
     private final BlackInfoOuterClass.BlackInfo blackInfo = BlackInfoOuterClass.BlackInfo.newInstance();
 
@@ -41,7 +41,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 9;</code>
+     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 14;</code>
      * @return whether the kickType field is set
      */
     public boolean hasKickType() {
@@ -49,7 +49,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 9;</code>
+     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 14;</code>
      * @return this
      */
     public PlayerKickOutScNotify clearKickType() {
@@ -59,7 +59,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 9;</code>
+     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 14;</code>
      * @return the kickType
      */
     public KickType getKickType() {
@@ -92,7 +92,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 9;</code>
+     * <code>optional .PlayerKickOutScNotify.KickType kick_type = 14;</code>
      * @param value the kickType to set
      * @return this
      */
@@ -103,7 +103,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      * @return whether the blackInfo field is set
      */
     public boolean hasBlackInfo() {
@@ -111,7 +111,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      * @return this
      */
     public PlayerKickOutScNotify clearBlackInfo() {
@@ -121,7 +121,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -135,7 +135,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -149,7 +149,7 @@ public final class PlayerKickOutScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BlackInfo black_info = 4;</code>
+     * <code>optional .BlackInfo black_info = 12;</code>
      * @param value the blackInfo to set
      * @return this
      */
@@ -225,11 +225,11 @@ public final class PlayerKickOutScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 112);
         output.writeEnumNoTag(kickType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 98);
         output.writeMessageNoTag(blackInfo);
       }
     }
@@ -253,7 +253,7 @@ public final class PlayerKickOutScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 112: {
             // kickType
             final int value = input.readInt32();
             if (KickType.forNumber(value) != null) {
@@ -261,11 +261,11 @@ public final class PlayerKickOutScNotifyOuterClass {
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 98) {
               break;
             }
           }
-          case 34: {
+          case 98: {
             // blackInfo
             input.readMessage(blackInfo);
             bitField0_ |= 0x00000002;

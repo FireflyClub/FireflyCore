@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message NewMailScNotify {
-	repeated uint32 mail_id_list = 10;
+	repeated uint32 MailIdList = 13;
 }

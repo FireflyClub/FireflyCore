@@ -20,54 +20,54 @@ public final class PlayerLoginScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 login_random = 13;</code>
+     * <code>optional uint64 login_random = 2;</code>
      */
     private long loginRandom;
 
     /**
-     * <code>optional uint64 server_timestamp_ms = 15;</code>
+     * <code>optional uint64 server_timestamp_ms = 8;</code>
      */
     private long serverTimestampMs;
 
     /**
-     * <code>optional int32 cur_timezone = 3;</code>
+     * <code>optional int32 cur_timezone = 7;</code>
      */
     private int curTimezone;
 
     /**
-     * <code>optional uint32 stamina = 6;</code>
-     */
-    private int stamina;
-
-    /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool FCLLJFMDKMK = 1;</code>
+     * <code>optional uint32 stamina = 14;</code>
      */
-    private boolean fCLLJFMDKMK;
+    private int stamina;
 
     /**
-     * <code>optional bool KMLDBOHKBCP = 4;</code>
+     * <code>optional bool LJMFOHLOBCI = 3;</code>
      */
-    private boolean kMLDBOHKBCP;
+    private boolean lJMFOHLOBCI;
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional bool JOPPAENDMFJ = 9;</code>
+     */
+    private boolean jOPPAENDMFJ;
+
+    /**
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      */
     private final PlayerBasicInfoOuterClass.PlayerBasicInfo basicInfo = PlayerBasicInfoOuterClass.PlayerBasicInfo.newInstance();
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
      */
-    private final Utf8String cFCKBNEAFEB = Utf8String.newEmptyInstance();
+    private final Utf8String nDFEAEIHBFJ = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
      */
-    private final Utf8String dNLEOPGBPBJ = Utf8String.newEmptyInstance();
+    private final Utf8String dMAAMAMCNKJ = Utf8String.newEmptyInstance();
 
     private PlayerLoginScRsp() {
     }
@@ -80,7 +80,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 13;</code>
+     * <code>optional uint64 login_random = 2;</code>
      * @return whether the loginRandom field is set
      */
     public boolean hasLoginRandom() {
@@ -88,7 +88,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 13;</code>
+     * <code>optional uint64 login_random = 2;</code>
      * @return this
      */
     public PlayerLoginScRsp clearLoginRandom() {
@@ -98,7 +98,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 13;</code>
+     * <code>optional uint64 login_random = 2;</code>
      * @return the loginRandom
      */
     public long getLoginRandom() {
@@ -106,7 +106,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 13;</code>
+     * <code>optional uint64 login_random = 2;</code>
      * @param value the loginRandom to set
      * @return this
      */
@@ -117,7 +117,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 server_timestamp_ms = 15;</code>
+     * <code>optional uint64 server_timestamp_ms = 8;</code>
      * @return whether the serverTimestampMs field is set
      */
     public boolean hasServerTimestampMs() {
@@ -125,7 +125,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 server_timestamp_ms = 15;</code>
+     * <code>optional uint64 server_timestamp_ms = 8;</code>
      * @return this
      */
     public PlayerLoginScRsp clearServerTimestampMs() {
@@ -135,7 +135,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 server_timestamp_ms = 15;</code>
+     * <code>optional uint64 server_timestamp_ms = 8;</code>
      * @return the serverTimestampMs
      */
     public long getServerTimestampMs() {
@@ -143,7 +143,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint64 server_timestamp_ms = 15;</code>
+     * <code>optional uint64 server_timestamp_ms = 8;</code>
      * @param value the serverTimestampMs to set
      * @return this
      */
@@ -154,7 +154,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional int32 cur_timezone = 3;</code>
+     * <code>optional int32 cur_timezone = 7;</code>
      * @return whether the curTimezone field is set
      */
     public boolean hasCurTimezone() {
@@ -162,7 +162,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional int32 cur_timezone = 3;</code>
+     * <code>optional int32 cur_timezone = 7;</code>
      * @return this
      */
     public PlayerLoginScRsp clearCurTimezone() {
@@ -172,7 +172,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional int32 cur_timezone = 3;</code>
+     * <code>optional int32 cur_timezone = 7;</code>
      * @return the curTimezone
      */
     public int getCurTimezone() {
@@ -180,7 +180,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional int32 cur_timezone = 3;</code>
+     * <code>optional int32 cur_timezone = 7;</code>
      * @param value the curTimezone to set
      * @return this
      */
@@ -191,62 +191,25 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 stamina = 6;</code>
-     * @return whether the stamina field is set
+     * <code>optional uint32 retcode = 10;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasStamina() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 stamina = 6;</code>
-     * @return this
-     */
-    public PlayerLoginScRsp clearStamina() {
-      bitField0_ &= ~0x00000008;
-      stamina = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 stamina = 6;</code>
-     * @return the stamina
-     */
-    public int getStamina() {
-      return stamina;
-    }
-
-    /**
-     * <code>optional uint32 stamina = 6;</code>
-     * @param value the stamina to set
-     * @return this
-     */
-    public PlayerLoginScRsp setStamina(final int value) {
-      bitField0_ |= 0x00000008;
-      stamina = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 7;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public PlayerLoginScRsp clearRetcode() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -254,92 +217,129 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
     public PlayerLoginScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional bool FCLLJFMDKMK = 1;</code>
-     * @return whether the fCLLJFMDKMK field is set
+     * <code>optional uint32 stamina = 14;</code>
+     * @return whether the stamina field is set
      */
-    public boolean hasFCLLJFMDKMK() {
+    public boolean hasStamina() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 stamina = 14;</code>
+     * @return this
+     */
+    public PlayerLoginScRsp clearStamina() {
+      bitField0_ &= ~0x00000010;
+      stamina = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stamina = 14;</code>
+     * @return the stamina
+     */
+    public int getStamina() {
+      return stamina;
+    }
+
+    /**
+     * <code>optional uint32 stamina = 14;</code>
+     * @param value the stamina to set
+     * @return this
+     */
+    public PlayerLoginScRsp setStamina(final int value) {
+      bitField0_ |= 0x00000010;
+      stamina = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool LJMFOHLOBCI = 3;</code>
+     * @return whether the lJMFOHLOBCI field is set
+     */
+    public boolean hasLJMFOHLOBCI() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional bool FCLLJFMDKMK = 1;</code>
+     * <code>optional bool LJMFOHLOBCI = 3;</code>
      * @return this
      */
-    public PlayerLoginScRsp clearFCLLJFMDKMK() {
+    public PlayerLoginScRsp clearLJMFOHLOBCI() {
       bitField0_ &= ~0x00000020;
-      fCLLJFMDKMK = false;
+      lJMFOHLOBCI = false;
       return this;
     }
 
     /**
-     * <code>optional bool FCLLJFMDKMK = 1;</code>
-     * @return the fCLLJFMDKMK
+     * <code>optional bool LJMFOHLOBCI = 3;</code>
+     * @return the lJMFOHLOBCI
      */
-    public boolean getFCLLJFMDKMK() {
-      return fCLLJFMDKMK;
+    public boolean getLJMFOHLOBCI() {
+      return lJMFOHLOBCI;
     }
 
     /**
-     * <code>optional bool FCLLJFMDKMK = 1;</code>
-     * @param value the fCLLJFMDKMK to set
+     * <code>optional bool LJMFOHLOBCI = 3;</code>
+     * @param value the lJMFOHLOBCI to set
      * @return this
      */
-    public PlayerLoginScRsp setFCLLJFMDKMK(final boolean value) {
+    public PlayerLoginScRsp setLJMFOHLOBCI(final boolean value) {
       bitField0_ |= 0x00000020;
-      fCLLJFMDKMK = value;
+      lJMFOHLOBCI = value;
       return this;
     }
 
     /**
-     * <code>optional bool KMLDBOHKBCP = 4;</code>
-     * @return whether the kMLDBOHKBCP field is set
+     * <code>optional bool JOPPAENDMFJ = 9;</code>
+     * @return whether the jOPPAENDMFJ field is set
      */
-    public boolean hasKMLDBOHKBCP() {
+    public boolean hasJOPPAENDMFJ() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional bool KMLDBOHKBCP = 4;</code>
+     * <code>optional bool JOPPAENDMFJ = 9;</code>
      * @return this
      */
-    public PlayerLoginScRsp clearKMLDBOHKBCP() {
+    public PlayerLoginScRsp clearJOPPAENDMFJ() {
       bitField0_ &= ~0x00000040;
-      kMLDBOHKBCP = false;
+      jOPPAENDMFJ = false;
       return this;
     }
 
     /**
-     * <code>optional bool KMLDBOHKBCP = 4;</code>
-     * @return the kMLDBOHKBCP
+     * <code>optional bool JOPPAENDMFJ = 9;</code>
+     * @return the jOPPAENDMFJ
      */
-    public boolean getKMLDBOHKBCP() {
-      return kMLDBOHKBCP;
+    public boolean getJOPPAENDMFJ() {
+      return jOPPAENDMFJ;
     }
 
     /**
-     * <code>optional bool KMLDBOHKBCP = 4;</code>
-     * @param value the kMLDBOHKBCP to set
+     * <code>optional bool JOPPAENDMFJ = 9;</code>
+     * @param value the jOPPAENDMFJ to set
      * @return this
      */
-    public PlayerLoginScRsp setKMLDBOHKBCP(final boolean value) {
+    public PlayerLoginScRsp setJOPPAENDMFJ(final boolean value) {
       bitField0_ |= 0x00000040;
-      kMLDBOHKBCP = value;
+      jOPPAENDMFJ = value;
       return this;
     }
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      * @return whether the basicInfo field is set
      */
     public boolean hasBasicInfo() {
@@ -347,7 +347,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      * @return this
      */
     public PlayerLoginScRsp clearBasicInfo() {
@@ -357,7 +357,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -371,7 +371,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -385,7 +385,7 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional .PlayerBasicInfo basic_info = 5;</code>
+     * <code>optional .PlayerBasicInfo basic_info = 4;</code>
      * @param value the basicInfo to set
      * @return this
      */
@@ -396,132 +396,132 @@ public final class PlayerLoginScRspOuterClass {
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @return whether the cFCKBNEAFEB field is set
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @return whether the nDFEAEIHBFJ field is set
      */
-    public boolean hasCFCKBNEAFEB() {
+    public boolean hasNDFEAEIHBFJ() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
      * @return this
      */
-    public PlayerLoginScRsp clearCFCKBNEAFEB() {
+    public PlayerLoginScRsp clearNDFEAEIHBFJ() {
       bitField0_ &= ~0x00000100;
-      cFCKBNEAFEB.clear();
+      nDFEAEIHBFJ.clear();
       return this;
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @return the cFCKBNEAFEB
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @return the nDFEAEIHBFJ
      */
-    public String getCFCKBNEAFEB() {
-      return cFCKBNEAFEB.getString();
+    public String getNDFEAEIHBFJ() {
+      return nDFEAEIHBFJ.getString();
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @return internal {@code Utf8String} representation of cFCKBNEAFEB for reading
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @return internal {@code Utf8String} representation of nDFEAEIHBFJ for reading
      */
-    public Utf8String getCFCKBNEAFEBBytes() {
-      return this.cFCKBNEAFEB;
+    public Utf8String getNDFEAEIHBFJBytes() {
+      return this.nDFEAEIHBFJ;
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @return internal {@code Utf8String} representation of cFCKBNEAFEB for modifications
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @return internal {@code Utf8String} representation of nDFEAEIHBFJ for modifications
      */
-    public Utf8String getMutableCFCKBNEAFEBBytes() {
+    public Utf8String getMutableNDFEAEIHBFJBytes() {
       bitField0_ |= 0x00000100;
-      return this.cFCKBNEAFEB;
+      return this.nDFEAEIHBFJ;
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @param value the cFCKBNEAFEB to set
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @param value the nDFEAEIHBFJ to set
      * @return this
      */
-    public PlayerLoginScRsp setCFCKBNEAFEB(final CharSequence value) {
+    public PlayerLoginScRsp setNDFEAEIHBFJ(final CharSequence value) {
       bitField0_ |= 0x00000100;
-      cFCKBNEAFEB.copyFrom(value);
+      nDFEAEIHBFJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string CFCKBNEAFEB = 2;</code>
-     * @param value the cFCKBNEAFEB to set
+     * <code>optional string NDFEAEIHBFJ = 6;</code>
+     * @param value the nDFEAEIHBFJ to set
      * @return this
      */
-    public PlayerLoginScRsp setCFCKBNEAFEB(final Utf8String value) {
+    public PlayerLoginScRsp setNDFEAEIHBFJ(final Utf8String value) {
       bitField0_ |= 0x00000100;
-      cFCKBNEAFEB.copyFrom(value);
+      nDFEAEIHBFJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @return whether the dNLEOPGBPBJ field is set
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @return whether the dMAAMAMCNKJ field is set
      */
-    public boolean hasDNLEOPGBPBJ() {
+    public boolean hasDMAAMAMCNKJ() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
      * @return this
      */
-    public PlayerLoginScRsp clearDNLEOPGBPBJ() {
+    public PlayerLoginScRsp clearDMAAMAMCNKJ() {
       bitField0_ &= ~0x00000200;
-      dNLEOPGBPBJ.clear();
+      dMAAMAMCNKJ.clear();
       return this;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @return the dNLEOPGBPBJ
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @return the dMAAMAMCNKJ
      */
-    public String getDNLEOPGBPBJ() {
-      return dNLEOPGBPBJ.getString();
+    public String getDMAAMAMCNKJ() {
+      return dMAAMAMCNKJ.getString();
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @return internal {@code Utf8String} representation of dNLEOPGBPBJ for reading
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @return internal {@code Utf8String} representation of dMAAMAMCNKJ for reading
      */
-    public Utf8String getDNLEOPGBPBJBytes() {
-      return this.dNLEOPGBPBJ;
+    public Utf8String getDMAAMAMCNKJBytes() {
+      return this.dMAAMAMCNKJ;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @return internal {@code Utf8String} representation of dNLEOPGBPBJ for modifications
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @return internal {@code Utf8String} representation of dMAAMAMCNKJ for modifications
      */
-    public Utf8String getMutableDNLEOPGBPBJBytes() {
+    public Utf8String getMutableDMAAMAMCNKJBytes() {
       bitField0_ |= 0x00000200;
-      return this.dNLEOPGBPBJ;
+      return this.dMAAMAMCNKJ;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @param value the dNLEOPGBPBJ to set
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @param value the dMAAMAMCNKJ to set
      * @return this
      */
-    public PlayerLoginScRsp setDNLEOPGBPBJ(final CharSequence value) {
+    public PlayerLoginScRsp setDMAAMAMCNKJ(final CharSequence value) {
       bitField0_ |= 0x00000200;
-      dNLEOPGBPBJ.copyFrom(value);
+      dMAAMAMCNKJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DNLEOPGBPBJ = 14;</code>
-     * @param value the dNLEOPGBPBJ to set
+     * <code>optional string DMAAMAMCNKJ = 12;</code>
+     * @param value the dMAAMAMCNKJ to set
      * @return this
      */
-    public PlayerLoginScRsp setDNLEOPGBPBJ(final Utf8String value) {
+    public PlayerLoginScRsp setDMAAMAMCNKJ(final Utf8String value) {
       bitField0_ |= 0x00000200;
-      dNLEOPGBPBJ.copyFrom(value);
+      dMAAMAMCNKJ.copyFrom(value);
       return this;
     }
 
@@ -533,13 +533,13 @@ public final class PlayerLoginScRspOuterClass {
         loginRandom = other.loginRandom;
         serverTimestampMs = other.serverTimestampMs;
         curTimezone = other.curTimezone;
-        stamina = other.stamina;
         retcode = other.retcode;
-        fCLLJFMDKMK = other.fCLLJFMDKMK;
-        kMLDBOHKBCP = other.kMLDBOHKBCP;
+        stamina = other.stamina;
+        lJMFOHLOBCI = other.lJMFOHLOBCI;
+        jOPPAENDMFJ = other.jOPPAENDMFJ;
         basicInfo.copyFrom(other.basicInfo);
-        cFCKBNEAFEB.copyFrom(other.cFCKBNEAFEB);
-        dNLEOPGBPBJ.copyFrom(other.dNLEOPGBPBJ);
+        nDFEAEIHBFJ.copyFrom(other.nDFEAEIHBFJ);
+        dMAAMAMCNKJ.copyFrom(other.dMAAMAMCNKJ);
       }
       return this;
     }
@@ -559,26 +559,26 @@ public final class PlayerLoginScRspOuterClass {
       if (other.hasCurTimezone()) {
         setCurTimezone(other.curTimezone);
       }
-      if (other.hasStamina()) {
-        setStamina(other.stamina);
-      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasFCLLJFMDKMK()) {
-        setFCLLJFMDKMK(other.fCLLJFMDKMK);
+      if (other.hasStamina()) {
+        setStamina(other.stamina);
       }
-      if (other.hasKMLDBOHKBCP()) {
-        setKMLDBOHKBCP(other.kMLDBOHKBCP);
+      if (other.hasLJMFOHLOBCI()) {
+        setLJMFOHLOBCI(other.lJMFOHLOBCI);
+      }
+      if (other.hasJOPPAENDMFJ()) {
+        setJOPPAENDMFJ(other.jOPPAENDMFJ);
       }
       if (other.hasBasicInfo()) {
         getMutableBasicInfo().mergeFrom(other.basicInfo);
       }
-      if (other.hasCFCKBNEAFEB()) {
-        getMutableCFCKBNEAFEBBytes().copyFrom(other.cFCKBNEAFEB);
+      if (other.hasNDFEAEIHBFJ()) {
+        getMutableNDFEAEIHBFJBytes().copyFrom(other.nDFEAEIHBFJ);
       }
-      if (other.hasDNLEOPGBPBJ()) {
-        getMutableDNLEOPGBPBJBytes().copyFrom(other.dNLEOPGBPBJ);
+      if (other.hasDMAAMAMCNKJ()) {
+        getMutableDMAAMAMCNKJBytes().copyFrom(other.dMAAMAMCNKJ);
       }
       return this;
     }
@@ -593,13 +593,13 @@ public final class PlayerLoginScRspOuterClass {
       loginRandom = 0L;
       serverTimestampMs = 0L;
       curTimezone = 0;
-      stamina = 0;
       retcode = 0;
-      fCLLJFMDKMK = false;
-      kMLDBOHKBCP = false;
+      stamina = 0;
+      lJMFOHLOBCI = false;
+      jOPPAENDMFJ = false;
       basicInfo.clear();
-      cFCKBNEAFEB.clear();
-      dNLEOPGBPBJ.clear();
+      nDFEAEIHBFJ.clear();
+      dMAAMAMCNKJ.clear();
       return this;
     }
 
@@ -611,8 +611,8 @@ public final class PlayerLoginScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       basicInfo.clearQuick();
-      cFCKBNEAFEB.clear();
-      dNLEOPGBPBJ.clear();
+      nDFEAEIHBFJ.clear();
+      dMAAMAMCNKJ.clear();
       return this;
     }
 
@@ -629,56 +629,56 @@ public final class PlayerLoginScRspOuterClass {
         && (!hasLoginRandom() || loginRandom == other.loginRandom)
         && (!hasServerTimestampMs() || serverTimestampMs == other.serverTimestampMs)
         && (!hasCurTimezone() || curTimezone == other.curTimezone)
-        && (!hasStamina() || stamina == other.stamina)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasFCLLJFMDKMK() || fCLLJFMDKMK == other.fCLLJFMDKMK)
-        && (!hasKMLDBOHKBCP() || kMLDBOHKBCP == other.kMLDBOHKBCP)
+        && (!hasStamina() || stamina == other.stamina)
+        && (!hasLJMFOHLOBCI() || lJMFOHLOBCI == other.lJMFOHLOBCI)
+        && (!hasJOPPAENDMFJ() || jOPPAENDMFJ == other.jOPPAENDMFJ)
         && (!hasBasicInfo() || basicInfo.equals(other.basicInfo))
-        && (!hasCFCKBNEAFEB() || cFCKBNEAFEB.equals(other.cFCKBNEAFEB))
-        && (!hasDNLEOPGBPBJ() || dNLEOPGBPBJ.equals(other.dNLEOPGBPBJ));
+        && (!hasNDFEAEIHBFJ() || nDFEAEIHBFJ.equals(other.nDFEAEIHBFJ))
+        && (!hasDMAAMAMCNKJ() || dMAAMAMCNKJ.equals(other.dMAAMAMCNKJ));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 16);
         output.writeUInt64NoTag(loginRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 64);
         output.writeUInt64NoTag(serverTimestampMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 56);
         output.writeInt32NoTag(curTimezone);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(stamina);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(stamina);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeBoolNoTag(fCLLJFMDKMK);
+        output.writeRawByte((byte) 24);
+        output.writeBoolNoTag(lJMFOHLOBCI);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeBoolNoTag(kMLDBOHKBCP);
+        output.writeRawByte((byte) 72);
+        output.writeBoolNoTag(jOPPAENDMFJ);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(basicInfo);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 18);
-        output.writeStringNoTag(cFCKBNEAFEB);
+        output.writeRawByte((byte) 50);
+        output.writeStringNoTag(nDFEAEIHBFJ);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeStringNoTag(dNLEOPGBPBJ);
+        output.writeRawByte((byte) 98);
+        output.writeStringNoTag(dMAAMAMCNKJ);
       }
     }
 
@@ -695,10 +695,10 @@ public final class PlayerLoginScRspOuterClass {
         size += 1 + ProtoSink.computeInt32SizeNoTag(curTimezone);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stamina);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stamina);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += 2;
@@ -710,10 +710,10 @@ public final class PlayerLoginScRspOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(basicInfo);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(cFCKBNEAFEB);
+        size += 1 + ProtoSink.computeStringSizeNoTag(nDFEAEIHBFJ);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(dNLEOPGBPBJ);
+        size += 1 + ProtoSink.computeStringSizeNoTag(dMAAMAMCNKJ);
       }
       return size;
     }
@@ -725,90 +725,90 @@ public final class PlayerLoginScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 16: {
             // loginRandom
             loginRandom = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 64) {
               break;
             }
           }
-          case 120: {
+          case 64: {
             // serverTimestampMs
             serverTimestampMs = input.readUInt64();
             bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 24) {
-              break;
-            }
-          }
-          case 24: {
-            // curTimezone
-            curTimezone = input.readInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
-            // stamina
-            stamina = input.readUInt32();
-            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 56) {
               break;
             }
           }
           case 56: {
+            // curTimezone
+            curTimezone = input.readInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
             // retcode
             retcode = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // stamina
+            stamina = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 24) {
               break;
             }
           }
-          case 8: {
-            // fCLLJFMDKMK
-            fCLLJFMDKMK = input.readBool();
+          case 24: {
+            // lJMFOHLOBCI
+            lJMFOHLOBCI = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 72) {
               break;
             }
           }
-          case 32: {
-            // kMLDBOHKBCP
-            kMLDBOHKBCP = input.readBool();
+          case 72: {
+            // jOPPAENDMFJ
+            jOPPAENDMFJ = input.readBool();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 34) {
               break;
             }
           }
-          case 42: {
+          case 34: {
             // basicInfo
             input.readMessage(basicInfo);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 50) {
               break;
             }
           }
-          case 18: {
-            // cFCKBNEAFEB
-            input.readString(cFCKBNEAFEB);
+          case 50: {
+            // nDFEAEIHBFJ
+            input.readString(nDFEAEIHBFJ);
             bitField0_ |= 0x00000100;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 98) {
               break;
             }
           }
-          case 114: {
-            // dNLEOPGBPBJ
-            input.readString(dNLEOPGBPBJ);
+          case 98: {
+            // dMAAMAMCNKJ
+            input.readString(dMAAMAMCNKJ);
             bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 0) {
@@ -842,25 +842,25 @@ public final class PlayerLoginScRspOuterClass {
         output.writeInt32(FieldNames.curTimezone, curTimezone);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.stamina, stamina);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.stamina, stamina);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeBool(FieldNames.fCLLJFMDKMK, fCLLJFMDKMK);
+        output.writeBool(FieldNames.lJMFOHLOBCI, lJMFOHLOBCI);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeBool(FieldNames.kMLDBOHKBCP, kMLDBOHKBCP);
+        output.writeBool(FieldNames.jOPPAENDMFJ, jOPPAENDMFJ);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeMessage(FieldNames.basicInfo, basicInfo);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeString(FieldNames.cFCKBNEAFEB, cFCKBNEAFEB);
+        output.writeString(FieldNames.nDFEAEIHBFJ, nDFEAEIHBFJ);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeString(FieldNames.dNLEOPGBPBJ, dNLEOPGBPBJ);
+        output.writeString(FieldNames.dMAAMAMCNKJ, dMAAMAMCNKJ);
       }
       output.endObject();
     }
@@ -908,10 +908,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case -1897344401: {
-            if (input.isAtField(FieldNames.stamina)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                stamina = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -919,10 +919,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case -1897344401: {
+            if (input.isAtField(FieldNames.stamina)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                stamina = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -930,10 +930,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case 1195982041: {
-            if (input.isAtField(FieldNames.fCLLJFMDKMK)) {
+          case -1551596011: {
+            if (input.isAtField(FieldNames.lJMFOHLOBCI)) {
               if (!input.trySkipNullValue()) {
-                fCLLJFMDKMK = input.readBool();
+                lJMFOHLOBCI = input.readBool();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -941,10 +941,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case -478406523: {
-            if (input.isAtField(FieldNames.kMLDBOHKBCP)) {
+          case 556070162: {
+            if (input.isAtField(FieldNames.jOPPAENDMFJ)) {
               if (!input.trySkipNullValue()) {
-                kMLDBOHKBCP = input.readBool();
+                jOPPAENDMFJ = input.readBool();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -964,10 +964,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case 758194704: {
-            if (input.isAtField(FieldNames.cFCKBNEAFEB)) {
+          case -1275997490: {
+            if (input.isAtField(FieldNames.nDFEAEIHBFJ)) {
               if (!input.trySkipNullValue()) {
-                input.readString(cFCKBNEAFEB);
+                input.readString(nDFEAEIHBFJ);
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -975,10 +975,10 @@ public final class PlayerLoginScRspOuterClass {
             }
             break;
           }
-          case -558255175: {
-            if (input.isAtField(FieldNames.dNLEOPGBPBJ)) {
+          case 1760206138: {
+            if (input.isAtField(FieldNames.dMAAMAMCNKJ)) {
               if (!input.trySkipNullValue()) {
-                input.readString(dNLEOPGBPBJ);
+                input.readString(dMAAMAMCNKJ);
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -1045,19 +1045,19 @@ public final class PlayerLoginScRspOuterClass {
 
       static final FieldName curTimezone = FieldName.forField("curTimezone", "cur_timezone");
 
-      static final FieldName stamina = FieldName.forField("stamina");
-
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName fCLLJFMDKMK = FieldName.forField("FCLLJFMDKMK");
+      static final FieldName stamina = FieldName.forField("stamina");
 
-      static final FieldName kMLDBOHKBCP = FieldName.forField("KMLDBOHKBCP");
+      static final FieldName lJMFOHLOBCI = FieldName.forField("LJMFOHLOBCI");
+
+      static final FieldName jOPPAENDMFJ = FieldName.forField("JOPPAENDMFJ");
 
       static final FieldName basicInfo = FieldName.forField("basicInfo", "basic_info");
 
-      static final FieldName cFCKBNEAFEB = FieldName.forField("CFCKBNEAFEB");
+      static final FieldName nDFEAEIHBFJ = FieldName.forField("NDFEAEIHBFJ");
 
-      static final FieldName dNLEOPGBPBJ = FieldName.forField("DNLEOPGBPBJ");
+      static final FieldName dMAAMAMCNKJ = FieldName.forField("DMAAMAMCNKJ");
     }
   }
 }

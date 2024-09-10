@@ -19,12 +19,12 @@ public final class ContentPackageInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 map_entry_id = 8;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      */
     private int mapEntryId;
 
     /**
-     * <code>optional .ContentPackageStatus status = 12;</code>
+     * <code>optional .ContentPackageStatus status = 9;</code>
      */
     private int status;
 
@@ -39,7 +39,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 8;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      * @return whether the mapEntryId field is set
      */
     public boolean hasMapEntryId() {
@@ -47,7 +47,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 8;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      * @return this
      */
     public ContentPackageInfo clearMapEntryId() {
@@ -57,7 +57,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 8;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      * @return the mapEntryId
      */
     public int getMapEntryId() {
@@ -65,7 +65,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 8;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      * @param value the mapEntryId to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 12;</code>
+     * <code>optional .ContentPackageStatus status = 9;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -84,7 +84,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 12;</code>
+     * <code>optional .ContentPackageStatus status = 9;</code>
      * @return this
      */
     public ContentPackageInfo clearStatus() {
@@ -94,7 +94,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 12;</code>
+     * <code>optional .ContentPackageStatus status = 9;</code>
      * @return the status
      */
     public ContentPackageStatusOuterClass.ContentPackageStatus getStatus() {
@@ -127,7 +127,7 @@ public final class ContentPackageInfoOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageStatus status = 12;</code>
+     * <code>optional .ContentPackageStatus status = 9;</code>
      * @param value the status to set
      * @return this
      */
@@ -203,11 +203,11 @@ public final class ContentPackageInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 72);
         output.writeEnumNoTag(status);
       }
     }
@@ -231,16 +231,16 @@ public final class ContentPackageInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 8: {
             // mapEntryId
             mapEntryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 72) {
               break;
             }
           }
-          case 96: {
+          case 72: {
             // status
             final int value = input.readInt32();
             if (ContentPackageStatusOuterClass.ContentPackageStatus.forNumber(value) != null) {

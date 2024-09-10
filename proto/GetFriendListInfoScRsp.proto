@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "FriendListInfo.proto";
 import "SimpleInfo.proto";
+import "FriendListInfo.proto";
 
 message GetFriendListInfoScRsp {
-	repeated FriendListInfo friend_list = 3;
-	uint32 retcode = 10;
-	repeated SimpleInfo simple_info_list = 1;
+	repeated SimpleInfo simple_info_list = 11;
+	repeated FriendListInfo friend_list = 2;
+	uint32 retcode = 3;
 }

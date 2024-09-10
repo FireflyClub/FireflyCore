@@ -3,9 +3,9 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message EnterSceneCsReq {
-	uint32 map_entry_id = 15;
-	uint32 FGPALNEPABC = 7;
-	uint32 entry_id = 3;
-	uint32 teleport_id = 9;
-	bool FFHHBKJFCDO = 2;
+	uint32 CPGDHGKAHHD = 1;
+	bool ALCKPIOBHLB = 2;
+	uint32 teleport_id = 13;
+	uint32 entry_id = 14;
+	uint32 map_entry_id = 10;
 }

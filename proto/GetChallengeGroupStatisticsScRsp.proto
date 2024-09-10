@@ -7,9 +7,10 @@ import "ChallengeStoryStats.proto";
 import "ChallengeBossStats.proto";
 
 message GetChallengeGroupStatisticsScRsp {
-	uint32 group_id = 15;
-	uint32 retcode = 10;
-	ChallengeMemoryStats memory_stats = 4;
-	ChallengeStoryStats story_stats = 7;
-	ChallengeBossStats boss_stats = 8;
+	oneof group_info_case {		ChallengeMemoryStats memory_stats = 12;
+		ChallengeStoryStats story_stats = 4;
+		ChallengeBossStats boss_stats = 15;
+	}
+	uint32 retcode = 8;
+	uint32 group_id = 14;
 }

@@ -19,27 +19,27 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 14;</code>
      */
     private int groupId;
 
     /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     */
-    private final ChallengeMemoryStatsOuterClass.ChallengeMemoryStats memoryStats = ChallengeMemoryStatsOuterClass.ChallengeMemoryStats.newInstance();
-
-    /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      */
     private final ChallengeStoryStatsOuterClass.ChallengeStoryStats storyStats = ChallengeStoryStatsOuterClass.ChallengeStoryStats.newInstance();
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     */
+    private final ChallengeMemoryStatsOuterClass.ChallengeMemoryStats memoryStats = ChallengeMemoryStatsOuterClass.ChallengeMemoryStats.newInstance();
+
+    /**
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
      */
     private final ChallengeBossStatsOuterClass.ChallengeBossStats bossStats = ChallengeBossStatsOuterClass.ChallengeBossStats.newInstance();
 
@@ -53,26 +53,60 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       return new GetChallengeGroupStatisticsScRsp();
     }
 
-    /**
-     * <code>optional uint32 retcode = 10;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000001) != 0;
+    public boolean hasGroupInfoCase() {
+      return (((bitField0_ & 0x00000007)) != 0);
+    }
+
+    public GetChallengeGroupStatisticsScRsp clearGroupInfoCase() {
+      if (hasGroupInfoCase()) {
+        clearStoryStats();
+        clearMemoryStats();
+        clearBossStats();
+      }
+      return this;
+    }
+
+    private void clearGroupInfoCaseOtherStoryStats() {
+      if ((((bitField0_ & 0x00000006)) != 0)) {
+        clearMemoryStats();
+        clearBossStats();
+      }
+    }
+
+    private void clearGroupInfoCaseOtherMemoryStats() {
+      if ((((bitField0_ & 0x00000005)) != 0)) {
+        clearStoryStats();
+        clearBossStats();
+      }
+    }
+
+    private void clearGroupInfoCaseOtherBossStats() {
+      if ((((bitField0_ & 0x00000003)) != 0)) {
+        clearStoryStats();
+        clearMemoryStats();
+      }
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 8;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000008;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -80,36 +114,36 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 14;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 14;</code>
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp clearGroupId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000010;
       groupId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 14;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -117,94 +151,36 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 15;</code>
+     * <code>optional uint32 group_id = 14;</code>
      * @param value the groupId to set
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp setGroupId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000010;
       groupId = value;
       return this;
     }
 
     /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     * @return whether the memoryStats field is set
-     */
-    public boolean hasMemoryStats() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     * @return this
-     */
-    public GetChallengeGroupStatisticsScRsp clearMemoryStats() {
-      bitField0_ &= ~0x00000004;
-      memoryStats.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableMemoryStats()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public ChallengeMemoryStatsOuterClass.ChallengeMemoryStats getMemoryStats() {
-      return memoryStats;
-    }
-
-    /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public ChallengeMemoryStatsOuterClass.ChallengeMemoryStats getMutableMemoryStats() {
-      bitField0_ |= 0x00000004;
-      return memoryStats;
-    }
-
-    /**
-     * <code>optional .ChallengeMemoryStats memory_stats = 4;</code>
-     * @param value the memoryStats to set
-     * @return this
-     */
-    public GetChallengeGroupStatisticsScRsp setMemoryStats(
-        final ChallengeMemoryStatsOuterClass.ChallengeMemoryStats value) {
-      bitField0_ |= 0x00000004;
-      memoryStats.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      * @return whether the storyStats field is set
      */
     public boolean hasStoryStats() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp clearStoryStats() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000001;
       storyStats.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -218,7 +194,7 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -227,42 +203,104 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
      * @return internal storage object for modifications
      */
     public ChallengeStoryStatsOuterClass.ChallengeStoryStats getMutableStoryStats() {
-      bitField0_ |= 0x00000008;
+      clearGroupInfoCaseOtherStoryStats();
+      bitField0_ |= 0x00000001;
       return storyStats;
     }
 
     /**
-     * <code>optional .ChallengeStoryStats story_stats = 7;</code>
+     * <code>optional .ChallengeStoryStats story_stats = 4;</code>
      * @param value the storyStats to set
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp setStoryStats(
         final ChallengeStoryStatsOuterClass.ChallengeStoryStats value) {
-      bitField0_ |= 0x00000008;
+      clearGroupInfoCaseOtherStoryStats();
+      bitField0_ |= 0x00000001;
       storyStats.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
-     * @return whether the bossStats field is set
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     * @return whether the memoryStats field is set
      */
-    public boolean hasBossStats() {
-      return (bitField0_ & 0x00000010) != 0;
+    public boolean hasMemoryStats() {
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     * @return this
+     */
+    public GetChallengeGroupStatisticsScRsp clearMemoryStats() {
+      bitField0_ &= ~0x00000002;
+      memoryStats.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMemoryStats()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ChallengeMemoryStatsOuterClass.ChallengeMemoryStats getMemoryStats() {
+      return memoryStats;
+    }
+
+    /**
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ChallengeMemoryStatsOuterClass.ChallengeMemoryStats getMutableMemoryStats() {
+      clearGroupInfoCaseOtherMemoryStats();
+      bitField0_ |= 0x00000002;
+      return memoryStats;
+    }
+
+    /**
+     * <code>optional .ChallengeMemoryStats memory_stats = 12;</code>
+     * @param value the memoryStats to set
+     * @return this
+     */
+    public GetChallengeGroupStatisticsScRsp setMemoryStats(
+        final ChallengeMemoryStatsOuterClass.ChallengeMemoryStats value) {
+      clearGroupInfoCaseOtherMemoryStats();
+      bitField0_ |= 0x00000002;
+      memoryStats.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
+     * @return whether the bossStats field is set
+     */
+    public boolean hasBossStats() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp clearBossStats() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000004;
       bossStats.clear();
       return this;
     }
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -276,7 +314,7 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -285,18 +323,20 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
      * @return internal storage object for modifications
      */
     public ChallengeBossStatsOuterClass.ChallengeBossStats getMutableBossStats() {
-      bitField0_ |= 0x00000010;
+      clearGroupInfoCaseOtherBossStats();
+      bitField0_ |= 0x00000004;
       return bossStats;
     }
 
     /**
-     * <code>optional .ChallengeBossStats boss_stats = 8;</code>
+     * <code>optional .ChallengeBossStats boss_stats = 15;</code>
      * @param value the bossStats to set
      * @return this
      */
     public GetChallengeGroupStatisticsScRsp setBossStats(
         final ChallengeBossStatsOuterClass.ChallengeBossStats value) {
-      bitField0_ |= 0x00000010;
+      clearGroupInfoCaseOtherBossStats();
+      bitField0_ |= 0x00000004;
       bossStats.copyFrom(value);
       return this;
     }
@@ -308,8 +348,8 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
         groupId = other.groupId;
-        memoryStats.copyFrom(other.memoryStats);
         storyStats.copyFrom(other.storyStats);
+        memoryStats.copyFrom(other.memoryStats);
         bossStats.copyFrom(other.bossStats);
       }
       return this;
@@ -328,11 +368,11 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       if (other.hasGroupId()) {
         setGroupId(other.groupId);
       }
-      if (other.hasMemoryStats()) {
-        getMutableMemoryStats().mergeFrom(other.memoryStats);
-      }
       if (other.hasStoryStats()) {
         getMutableStoryStats().mergeFrom(other.storyStats);
+      }
+      if (other.hasMemoryStats()) {
+        getMutableMemoryStats().mergeFrom(other.memoryStats);
       }
       if (other.hasBossStats()) {
         getMutableBossStats().mergeFrom(other.bossStats);
@@ -349,8 +389,8 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       bitField0_ = 0;
       retcode = 0;
       groupId = 0;
-      memoryStats.clear();
       storyStats.clear();
+      memoryStats.clear();
       bossStats.clear();
       return this;
     }
@@ -362,8 +402,8 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      memoryStats.clearQuick();
       storyStats.clearQuick();
+      memoryStats.clearQuick();
       bossStats.clearQuick();
       return this;
     }
@@ -380,31 +420,31 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasGroupId() || groupId == other.groupId)
-        && (!hasMemoryStats() || memoryStats.equals(other.memoryStats))
         && (!hasStoryStats() || storyStats.equals(other.storyStats))
+        && (!hasMemoryStats() || memoryStats.equals(other.memoryStats))
         && (!hasBossStats() || bossStats.equals(other.bossStats));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
-      if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(groupId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 34);
-        output.writeMessageNoTag(memoryStats);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(storyStats);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 66);
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 98);
+        output.writeMessageNoTag(memoryStats);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(bossStats);
       }
     }
@@ -412,19 +452,19 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     @Override
     protected int computeSerializedSize() {
       int size = 0;
-      if ((bitField0_ & 0x00000001) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(memoryStats);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000001) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(storyStats);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(memoryStats);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(bossStats);
       }
       return size;
@@ -437,46 +477,49 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 112) {
               break;
             }
           }
-          case 120: {
+          case 112: {
             // groupId
             groupId = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 34) {
               break;
             }
           }
           case 34: {
-            // memoryStats
-            input.readMessage(memoryStats);
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
             // storyStats
+            clearGroupInfoCaseOtherStoryStats();
             input.readMessage(storyStats);
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 98) {
               break;
             }
           }
-          case 66: {
+          case 98: {
+            // memoryStats
+            clearGroupInfoCaseOtherMemoryStats();
+            input.readMessage(memoryStats);
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 122) {
+              break;
+            }
+          }
+          case 122: {
             // bossStats
+            clearGroupInfoCaseOtherBossStats();
             input.readMessage(bossStats);
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -499,19 +542,19 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
     @Override
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
-      if ((bitField0_ & 0x00000001) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.groupId, groupId);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.memoryStats, memoryStats);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000001) != 0) {
         output.writeMessage(FieldNames.storyStats, storyStats);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeMessage(FieldNames.memoryStats, memoryStats);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.bossStats, bossStats);
       }
       output.endObject();
@@ -528,7 +571,7 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -540,19 +583,7 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
             if (input.isAtField(FieldNames.groupId)) {
               if (!input.trySkipNullValue()) {
                 groupId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1407717406:
-          case 1032740833: {
-            if (input.isAtField(FieldNames.memoryStats)) {
-              if (!input.trySkipNullValue()) {
-                input.readMessage(memoryStats);
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -563,8 +594,22 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
           case -915483435: {
             if (input.isAtField(FieldNames.storyStats)) {
               if (!input.trySkipNullValue()) {
+                clearGroupInfoCaseOtherStoryStats();
                 input.readMessage(storyStats);
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1407717406:
+          case 1032740833: {
+            if (input.isAtField(FieldNames.memoryStats)) {
+              if (!input.trySkipNullValue()) {
+                clearGroupInfoCaseOtherMemoryStats();
+                input.readMessage(memoryStats);
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -575,8 +620,9 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
           case -469476019: {
             if (input.isAtField(FieldNames.bossStats)) {
               if (!input.trySkipNullValue()) {
+                clearGroupInfoCaseOtherBossStats();
                 input.readMessage(bossStats);
-                bitField0_ |= 0x00000010;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -642,9 +688,9 @@ public final class GetChallengeGroupStatisticsScRspOuterClass {
 
       static final FieldName groupId = FieldName.forField("groupId", "group_id");
 
-      static final FieldName memoryStats = FieldName.forField("memoryStats", "memory_stats");
-
       static final FieldName storyStats = FieldName.forField("storyStats", "story_stats");
+
+      static final FieldName memoryStats = FieldName.forField("memoryStats", "memory_stats");
 
       static final FieldName bossStats = FieldName.forField("bossStats", "boss_stats");
     }

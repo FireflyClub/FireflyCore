@@ -22,51 +22,51 @@ public final class MazeMapDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 PHHDECMGCBC = 3;</code>
-     */
-    private int pHHDECMGCBC;
-
-    /**
-     * <code>optional uint32 EOBFHOFKJFM = 4;</code>
-     */
-    private int eOBFHOFKJFM;
-
-    /**
-     * <code>optional uint32 retcode = 6;</code>
-     */
-    private int retcode;
-
-    /**
-     * <code>optional uint32 entry_id = 9;</code>
-     */
-    private int entryId;
-
-    /**
-     * <pre>
-     * repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-     * </pre>
-     *
-     * <code>optional uint32 PHPHBMIAOGG = 12;</code>
-     */
-    private int pHPHBMIAOGG;
-
-    /**
-     * <code>optional uint32 map_entry_id = 13;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      */
     private int mapEntryId;
 
     /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
+     * <code>optional uint32 dimension_id = 2;</code>
      */
-    private final RepeatedInt lightenSectionList = RepeatedInt.newEmptyInstance();
+    private int dimensionId;
 
     /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <code>optional uint32 KPEADJCPCNK = 4;</code>
+     */
+    private int kPEADJCPCNK;
+
+    /**
+     * <code>optional uint32 entry_id = 10;</code>
+     */
+    private int entryId;
+
+    /**
+     * <code>optional uint32 retcode = 12;</code>
+     */
+    private int retcode;
+
+    /**
+     * <code>optional uint32 PBAMLLJIGEH = 13;</code>
+     */
+    private int pBAMLLJIGEH;
+
+    /**
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      */
     private final RepeatedInt unlockedTeleportList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     */
+    private final RepeatedInt lightenSectionList = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      */
     private final RepeatedMessage<MazeGroupOuterClass.MazeGroup> mazeGroupList = RepeatedMessage.newEmptyInstance(MazeGroupOuterClass.MazeGroup.getFactory());
 
@@ -76,14 +76,14 @@ public final class MazeMapDataOuterClass {
     private final RepeatedMessage<MazePropOuterClass.MazeProp> mazePropList = RepeatedMessage.newEmptyInstance(MazePropOuterClass.MazeProp.getFactory());
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
      */
-    private final RepeatedMessage<MazeChestOuterClass.MazeChest> unlockedChestList = RepeatedMessage.newEmptyInstance(MazeChestOuterClass.MazeChest.getFactory());
+    private final RepeatedMessage<PBKKPKGOBOKEntry> pBKKPKGOBOK = RepeatedMessage.newEmptyInstance(PBKKPKGOBOKEntry.getFactory());
 
     /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      */
-    private final RepeatedMessage<BOMLAPEJGIJEntry> bOMLAPEJGIJ = RepeatedMessage.newEmptyInstance(BOMLAPEJGIJEntry.getFactory());
+    private final RepeatedMessage<MazeChestOuterClass.MazeChest> unlockedChestList = RepeatedMessage.newEmptyInstance(MazeChestOuterClass.MazeChest.getFactory());
 
     private MazeMapData() {
     }
@@ -96,118 +96,118 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 PHHDECMGCBC = 3;</code>
-     * @return whether the pHHDECMGCBC field is set
+     * <code>optional uint32 map_entry_id = 1;</code>
+     * @return whether the mapEntryId field is set
      */
-    public boolean hasPHHDECMGCBC() {
+    public boolean hasMapEntryId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 PHHDECMGCBC = 3;</code>
+     * <code>optional uint32 map_entry_id = 1;</code>
      * @return this
      */
-    public MazeMapData clearPHHDECMGCBC() {
+    public MazeMapData clearMapEntryId() {
       bitField0_ &= ~0x00000001;
-      pHHDECMGCBC = 0;
+      mapEntryId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 PHHDECMGCBC = 3;</code>
-     * @return the pHHDECMGCBC
+     * <code>optional uint32 map_entry_id = 1;</code>
+     * @return the mapEntryId
      */
-    public int getPHHDECMGCBC() {
-      return pHHDECMGCBC;
+    public int getMapEntryId() {
+      return mapEntryId;
     }
 
     /**
-     * <code>optional uint32 PHHDECMGCBC = 3;</code>
-     * @param value the pHHDECMGCBC to set
+     * <code>optional uint32 map_entry_id = 1;</code>
+     * @param value the mapEntryId to set
      * @return this
      */
-    public MazeMapData setPHHDECMGCBC(final int value) {
+    public MazeMapData setMapEntryId(final int value) {
       bitField0_ |= 0x00000001;
-      pHHDECMGCBC = value;
+      mapEntryId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 EOBFHOFKJFM = 4;</code>
-     * @return whether the eOBFHOFKJFM field is set
+     * <code>optional uint32 dimension_id = 2;</code>
+     * @return whether the dimensionId field is set
      */
-    public boolean hasEOBFHOFKJFM() {
+    public boolean hasDimensionId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 EOBFHOFKJFM = 4;</code>
+     * <code>optional uint32 dimension_id = 2;</code>
      * @return this
      */
-    public MazeMapData clearEOBFHOFKJFM() {
+    public MazeMapData clearDimensionId() {
       bitField0_ &= ~0x00000002;
-      eOBFHOFKJFM = 0;
+      dimensionId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 EOBFHOFKJFM = 4;</code>
-     * @return the eOBFHOFKJFM
+     * <code>optional uint32 dimension_id = 2;</code>
+     * @return the dimensionId
      */
-    public int getEOBFHOFKJFM() {
-      return eOBFHOFKJFM;
+    public int getDimensionId() {
+      return dimensionId;
     }
 
     /**
-     * <code>optional uint32 EOBFHOFKJFM = 4;</code>
-     * @param value the eOBFHOFKJFM to set
+     * <code>optional uint32 dimension_id = 2;</code>
+     * @param value the dimensionId to set
      * @return this
      */
-    public MazeMapData setEOBFHOFKJFM(final int value) {
+    public MazeMapData setDimensionId(final int value) {
       bitField0_ |= 0x00000002;
-      eOBFHOFKJFM = value;
+      dimensionId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 KPEADJCPCNK = 4;</code>
+     * @return whether the kPEADJCPCNK field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasKPEADJCPCNK() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 KPEADJCPCNK = 4;</code>
      * @return this
      */
-    public MazeMapData clearRetcode() {
+    public MazeMapData clearKPEADJCPCNK() {
       bitField0_ &= ~0x00000004;
-      retcode = 0;
+      kPEADJCPCNK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @return the retcode
+     * <code>optional uint32 KPEADJCPCNK = 4;</code>
+     * @return the kPEADJCPCNK
      */
-    public int getRetcode() {
-      return retcode;
+    public int getKPEADJCPCNK() {
+      return kPEADJCPCNK;
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @param value the retcode to set
+     * <code>optional uint32 KPEADJCPCNK = 4;</code>
+     * @param value the kPEADJCPCNK to set
      * @return this
      */
-    public MazeMapData setRetcode(final int value) {
+    public MazeMapData setKPEADJCPCNK(final int value) {
       bitField0_ |= 0x00000004;
-      retcode = value;
+      kPEADJCPCNK = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 10;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -215,7 +215,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 10;</code>
      * @return this
      */
     public MazeMapData clearEntryId() {
@@ -225,7 +225,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 10;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -233,7 +233,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 9;</code>
+     * <code>optional uint32 entry_id = 10;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -244,183 +244,111 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-     * </pre>
-     *
-     * <code>optional uint32 PHPHBMIAOGG = 12;</code>
-     * @return whether the pHPHBMIAOGG field is set
+     * <code>optional uint32 retcode = 12;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasPHPHBMIAOGG() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <pre>
-     * repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-     * </pre>
-     *
-     * <code>optional uint32 PHPHBMIAOGG = 12;</code>
+     * <code>optional uint32 retcode = 12;</code>
      * @return this
      */
-    public MazeMapData clearPHPHBMIAOGG() {
+    public MazeMapData clearRetcode() {
       bitField0_ &= ~0x00000010;
-      pHPHBMIAOGG = 0;
+      retcode = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-     * </pre>
-     *
-     * <code>optional uint32 PHPHBMIAOGG = 12;</code>
-     * @return the pHPHBMIAOGG
+     * <code>optional uint32 retcode = 12;</code>
+     * @return the retcode
      */
-    public int getPHPHBMIAOGG() {
-      return pHPHBMIAOGG;
+    public int getRetcode() {
+      return retcode;
     }
 
     /**
-     * <pre>
-     * repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-     * </pre>
-     *
-     * <code>optional uint32 PHPHBMIAOGG = 12;</code>
-     * @param value the pHPHBMIAOGG to set
+     * <code>optional uint32 retcode = 12;</code>
+     * @param value the retcode to set
      * @return this
      */
-    public MazeMapData setPHPHBMIAOGG(final int value) {
+    public MazeMapData setRetcode(final int value) {
       bitField0_ |= 0x00000010;
-      pHPHBMIAOGG = value;
+      retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 13;</code>
-     * @return whether the mapEntryId field is set
+     * <code>optional uint32 PBAMLLJIGEH = 13;</code>
+     * @return whether the pBAMLLJIGEH field is set
      */
-    public boolean hasMapEntryId() {
+    public boolean hasPBAMLLJIGEH() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 13;</code>
+     * <code>optional uint32 PBAMLLJIGEH = 13;</code>
      * @return this
      */
-    public MazeMapData clearMapEntryId() {
+    public MazeMapData clearPBAMLLJIGEH() {
       bitField0_ &= ~0x00000020;
-      mapEntryId = 0;
+      pBAMLLJIGEH = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 13;</code>
-     * @return the mapEntryId
+     * <code>optional uint32 PBAMLLJIGEH = 13;</code>
+     * @return the pBAMLLJIGEH
      */
-    public int getMapEntryId() {
-      return mapEntryId;
+    public int getPBAMLLJIGEH() {
+      return pBAMLLJIGEH;
     }
 
     /**
-     * <code>optional uint32 map_entry_id = 13;</code>
-     * @param value the mapEntryId to set
+     * <code>optional uint32 PBAMLLJIGEH = 13;</code>
+     * @param value the pBAMLLJIGEH to set
      * @return this
      */
-    public MazeMapData setMapEntryId(final int value) {
+    public MazeMapData setPBAMLLJIGEH(final int value) {
       bitField0_ |= 0x00000020;
-      mapEntryId = value;
+      pBAMLLJIGEH = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
-     * @return whether the lightenSectionList field is set
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
+     * @return whether the unlockedTeleportList field is set
      */
-    public boolean hasLightenSectionList() {
+    public boolean hasUnlockedTeleportList() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
-     * @return this
-     */
-    public MazeMapData clearLightenSectionList() {
-      bitField0_ &= ~0x00000040;
-      lightenSectionList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
      *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableLightenSectionList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getLightenSectionList() {
-      return lightenSectionList;
-    }
-
-    /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableLightenSectionList() {
-      bitField0_ |= 0x00000040;
-      return lightenSectionList;
-    }
-
-    /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
-     * @param value the lightenSectionList to add
-     * @return this
-     */
-    public MazeMapData addLightenSectionList(final int value) {
-      bitField0_ |= 0x00000040;
-      lightenSectionList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 lighten_section_list = 10;</code>
-     * @param values the lightenSectionList to add
-     * @return this
-     */
-    public MazeMapData addAllLightenSectionList(final int... values) {
-      bitField0_ |= 0x00000040;
-      lightenSectionList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
-     * @return whether the unlockedTeleportList field is set
-     */
-    public boolean hasUnlockedTeleportList() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      * @return this
      */
     public MazeMapData clearUnlockedTeleportList() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000040;
       unlockedTeleportList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -434,7 +362,11 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -443,34 +375,110 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableUnlockedTeleportList() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       return unlockedTeleportList;
     }
 
     /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      * @param value the unlockedTeleportList to add
      * @return this
      */
     public MazeMapData addUnlockedTeleportList(final int value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       unlockedTeleportList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 unlocked_teleport_list = 11;</code>
+     * <pre>
+     * repeated BKCEKEKHJCA GCELHDACAJK = 9;
+     * </pre>
+     *
+     * <code>repeated uint32 unlocked_teleport_list = 6;</code>
      * @param values the unlockedTeleportList to add
      * @return this
      */
     public MazeMapData addAllUnlockedTeleportList(final int... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       unlockedTeleportList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     * @return whether the lightenSectionList field is set
+     */
+    public boolean hasLightenSectionList() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     * @return this
+     */
+    public MazeMapData clearLightenSectionList() {
+      bitField0_ &= ~0x00000080;
+      lightenSectionList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableLightenSectionList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getLightenSectionList() {
+      return lightenSectionList;
+    }
+
+    /**
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableLightenSectionList() {
+      bitField0_ |= 0x00000080;
+      return lightenSectionList;
+    }
+
+    /**
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     * @param value the lightenSectionList to add
+     * @return this
+     */
+    public MazeMapData addLightenSectionList(final int value) {
+      bitField0_ |= 0x00000080;
+      lightenSectionList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 lighten_section_list = 15;</code>
+     * @param values the lightenSectionList to add
+     * @return this
+     */
+    public MazeMapData addAllLightenSectionList(final int... values) {
+      bitField0_ |= 0x00000080;
+      lightenSectionList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      * @return whether the mazeGroupList field is set
      */
     public boolean hasMazeGroupList() {
@@ -478,7 +486,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      * @return this
      */
     public MazeMapData clearMazeGroupList() {
@@ -488,7 +496,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -502,7 +510,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -516,7 +524,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      * @param value the mazeGroupList to add
      * @return this
      */
@@ -527,7 +535,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeGroup maze_group_list = 1;</code>
+     * <code>repeated .MazeGroup maze_group_list = 3;</code>
      * @param values the mazeGroupList to add
      * @return this
      */
@@ -606,25 +614,93 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
-     * @return whether the unlockedChestList field is set
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     * @return whether the pBKKPKGOBOK field is set
      */
-    public boolean hasUnlockedChestList() {
+    public boolean hasPBKKPKGOBOK() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     * @return this
+     */
+    public MazeMapData clearPBKKPKGOBOK() {
+      bitField0_ &= ~0x00000400;
+      pBKKPKGOBOK.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutablePBKKPKGOBOK()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<PBKKPKGOBOKEntry> getPBKKPKGOBOK() {
+      return pBKKPKGOBOK;
+    }
+
+    /**
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<PBKKPKGOBOKEntry> getMutablePBKKPKGOBOK() {
+      bitField0_ |= 0x00000400;
+      return pBKKPKGOBOK;
+    }
+
+    /**
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     * @param value the pBKKPKGOBOK to add
+     * @return this
+     */
+    public MazeMapData addPBKKPKGOBOK(final PBKKPKGOBOKEntry value) {
+      bitField0_ |= 0x00000400;
+      pBKKPKGOBOK.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MazeMapData.PBKKPKGOBOKEntry PBKKPKGOBOK = 8;</code>
+     * @param values the pBKKPKGOBOK to add
+     * @return this
+     */
+    public MazeMapData addAllPBKKPKGOBOK(final PBKKPKGOBOKEntry... values) {
+      bitField0_ |= 0x00000400;
+      pBKKPKGOBOK.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
+     * @return whether the unlockedChestList field is set
+     */
+    public boolean hasUnlockedChestList() {
+      return (bitField0_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      * @return this
      */
     public MazeMapData clearUnlockedChestList() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00000800;
       unlockedChestList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -638,7 +714,7 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -647,97 +723,29 @@ public final class MazeMapDataOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MazeChestOuterClass.MazeChest> getMutableUnlockedChestList() {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       return unlockedChestList;
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      * @param value the unlockedChestList to add
      * @return this
      */
     public MazeMapData addUnlockedChestList(final MazeChestOuterClass.MazeChest value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       unlockedChestList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .MazeChest unlocked_chest_list = 7;</code>
+     * <code>repeated .MazeChest unlocked_chest_list = 11;</code>
      * @param values the unlockedChestList to add
      * @return this
      */
     public MazeMapData addAllUnlockedChestList(final MazeChestOuterClass.MazeChest... values) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000800;
       unlockedChestList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     * @return whether the bOMLAPEJGIJ field is set
-     */
-    public boolean hasBOMLAPEJGIJ() {
-      return (bitField0_ & 0x00000800) != 0;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     * @return this
-     */
-    public MazeMapData clearBOMLAPEJGIJ() {
-      bitField0_ &= ~0x00000800;
-      bOMLAPEJGIJ.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableBOMLAPEJGIJ()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<BOMLAPEJGIJEntry> getBOMLAPEJGIJ() {
-      return bOMLAPEJGIJ;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<BOMLAPEJGIJEntry> getMutableBOMLAPEJGIJ() {
-      bitField0_ |= 0x00000800;
-      return bOMLAPEJGIJ;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     * @param value the bOMLAPEJGIJ to add
-     * @return this
-     */
-    public MazeMapData addBOMLAPEJGIJ(final BOMLAPEJGIJEntry value) {
-      bitField0_ |= 0x00000800;
-      bOMLAPEJGIJ.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .MazeMapData.BOMLAPEJGIJEntry BOMLAPEJGIJ = 8;</code>
-     * @param values the bOMLAPEJGIJ to add
-     * @return this
-     */
-    public MazeMapData addAllBOMLAPEJGIJ(final BOMLAPEJGIJEntry... values) {
-      bitField0_ |= 0x00000800;
-      bOMLAPEJGIJ.addAll(values);
       return this;
     }
 
@@ -746,18 +754,18 @@ public final class MazeMapDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pHHDECMGCBC = other.pHHDECMGCBC;
-        eOBFHOFKJFM = other.eOBFHOFKJFM;
-        retcode = other.retcode;
-        entryId = other.entryId;
-        pHPHBMIAOGG = other.pHPHBMIAOGG;
         mapEntryId = other.mapEntryId;
-        lightenSectionList.copyFrom(other.lightenSectionList);
+        dimensionId = other.dimensionId;
+        kPEADJCPCNK = other.kPEADJCPCNK;
+        entryId = other.entryId;
+        retcode = other.retcode;
+        pBAMLLJIGEH = other.pBAMLLJIGEH;
         unlockedTeleportList.copyFrom(other.unlockedTeleportList);
+        lightenSectionList.copyFrom(other.lightenSectionList);
         mazeGroupList.copyFrom(other.mazeGroupList);
         mazePropList.copyFrom(other.mazePropList);
+        pBKKPKGOBOK.copyFrom(other.pBKKPKGOBOK);
         unlockedChestList.copyFrom(other.unlockedChestList);
-        bOMLAPEJGIJ.copyFrom(other.bOMLAPEJGIJ);
       }
       return this;
     }
@@ -768,29 +776,29 @@ public final class MazeMapDataOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPHHDECMGCBC()) {
-        setPHHDECMGCBC(other.pHHDECMGCBC);
+      if (other.hasMapEntryId()) {
+        setMapEntryId(other.mapEntryId);
       }
-      if (other.hasEOBFHOFKJFM()) {
-        setEOBFHOFKJFM(other.eOBFHOFKJFM);
+      if (other.hasDimensionId()) {
+        setDimensionId(other.dimensionId);
       }
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
+      if (other.hasKPEADJCPCNK()) {
+        setKPEADJCPCNK(other.kPEADJCPCNK);
       }
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
       }
-      if (other.hasPHPHBMIAOGG()) {
-        setPHPHBMIAOGG(other.pHPHBMIAOGG);
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
-      if (other.hasMapEntryId()) {
-        setMapEntryId(other.mapEntryId);
-      }
-      if (other.hasLightenSectionList()) {
-        getMutableLightenSectionList().addAll(other.lightenSectionList);
+      if (other.hasPBAMLLJIGEH()) {
+        setPBAMLLJIGEH(other.pBAMLLJIGEH);
       }
       if (other.hasUnlockedTeleportList()) {
         getMutableUnlockedTeleportList().addAll(other.unlockedTeleportList);
+      }
+      if (other.hasLightenSectionList()) {
+        getMutableLightenSectionList().addAll(other.lightenSectionList);
       }
       if (other.hasMazeGroupList()) {
         getMutableMazeGroupList().addAll(other.mazeGroupList);
@@ -798,11 +806,11 @@ public final class MazeMapDataOuterClass {
       if (other.hasMazePropList()) {
         getMutableMazePropList().addAll(other.mazePropList);
       }
+      if (other.hasPBKKPKGOBOK()) {
+        getMutablePBKKPKGOBOK().addAll(other.pBKKPKGOBOK);
+      }
       if (other.hasUnlockedChestList()) {
         getMutableUnlockedChestList().addAll(other.unlockedChestList);
-      }
-      if (other.hasBOMLAPEJGIJ()) {
-        getMutableBOMLAPEJGIJ().addAll(other.bOMLAPEJGIJ);
       }
       return this;
     }
@@ -814,18 +822,18 @@ public final class MazeMapDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pHHDECMGCBC = 0;
-      eOBFHOFKJFM = 0;
-      retcode = 0;
-      entryId = 0;
-      pHPHBMIAOGG = 0;
       mapEntryId = 0;
-      lightenSectionList.clear();
+      dimensionId = 0;
+      kPEADJCPCNK = 0;
+      entryId = 0;
+      retcode = 0;
+      pBAMLLJIGEH = 0;
       unlockedTeleportList.clear();
+      lightenSectionList.clear();
       mazeGroupList.clear();
       mazePropList.clear();
+      pBKKPKGOBOK.clear();
       unlockedChestList.clear();
-      bOMLAPEJGIJ.clear();
       return this;
     }
 
@@ -836,12 +844,12 @@ public final class MazeMapDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      lightenSectionList.clear();
       unlockedTeleportList.clear();
+      lightenSectionList.clear();
       mazeGroupList.clearQuick();
       mazePropList.clearQuick();
+      pBKKPKGOBOK.clearQuick();
       unlockedChestList.clearQuick();
-      bOMLAPEJGIJ.clearQuick();
       return this;
     }
 
@@ -855,61 +863,61 @@ public final class MazeMapDataOuterClass {
       }
       MazeMapData other = (MazeMapData) o;
       return bitField0_ == other.bitField0_
-        && (!hasPHHDECMGCBC() || pHHDECMGCBC == other.pHHDECMGCBC)
-        && (!hasEOBFHOFKJFM() || eOBFHOFKJFM == other.eOBFHOFKJFM)
-        && (!hasRetcode() || retcode == other.retcode)
-        && (!hasEntryId() || entryId == other.entryId)
-        && (!hasPHPHBMIAOGG() || pHPHBMIAOGG == other.pHPHBMIAOGG)
         && (!hasMapEntryId() || mapEntryId == other.mapEntryId)
-        && (!hasLightenSectionList() || lightenSectionList.equals(other.lightenSectionList))
+        && (!hasDimensionId() || dimensionId == other.dimensionId)
+        && (!hasKPEADJCPCNK() || kPEADJCPCNK == other.kPEADJCPCNK)
+        && (!hasEntryId() || entryId == other.entryId)
+        && (!hasRetcode() || retcode == other.retcode)
+        && (!hasPBAMLLJIGEH() || pBAMLLJIGEH == other.pBAMLLJIGEH)
         && (!hasUnlockedTeleportList() || unlockedTeleportList.equals(other.unlockedTeleportList))
+        && (!hasLightenSectionList() || lightenSectionList.equals(other.lightenSectionList))
         && (!hasMazeGroupList() || mazeGroupList.equals(other.mazeGroupList))
         && (!hasMazePropList() || mazePropList.equals(other.mazePropList))
-        && (!hasUnlockedChestList() || unlockedChestList.equals(other.unlockedChestList))
-        && (!hasBOMLAPEJGIJ() || bOMLAPEJGIJ.equals(other.bOMLAPEJGIJ));
+        && (!hasPBKKPKGOBOK() || pBKKPKGOBOK.equals(other.pBKKPKGOBOK))
+        && (!hasUnlockedChestList() || unlockedChestList.equals(other.unlockedChestList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(pHHDECMGCBC);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(eOBFHOFKJFM);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(dimensionId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(kPEADJCPCNK);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(pHPHBMIAOGG);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(mapEntryId);
+        output.writeUInt32NoTag(pBAMLLJIGEH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < lightenSectionList.length(); i++) {
-          output.writeRawByte((byte) 80);
-          output.writeUInt32NoTag(lightenSectionList.array()[i]);
+        for (int i = 0; i < unlockedTeleportList.length(); i++) {
+          output.writeRawByte((byte) 48);
+          output.writeUInt32NoTag(unlockedTeleportList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        for (int i = 0; i < unlockedTeleportList.length(); i++) {
-          output.writeRawByte((byte) 88);
-          output.writeUInt32NoTag(unlockedTeleportList.array()[i]);
+        for (int i = 0; i < lightenSectionList.length(); i++) {
+          output.writeRawByte((byte) 120);
+          output.writeUInt32NoTag(lightenSectionList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000100) != 0) {
         for (int i = 0; i < mazeGroupList.length(); i++) {
-          output.writeRawByte((byte) 10);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(mazeGroupList.get(i));
         }
       }
@@ -920,15 +928,15 @@ public final class MazeMapDataOuterClass {
         }
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        for (int i = 0; i < unlockedChestList.length(); i++) {
-          output.writeRawByte((byte) 58);
-          output.writeMessageNoTag(unlockedChestList.get(i));
+        for (int i = 0; i < pBKKPKGOBOK.length(); i++) {
+          output.writeRawByte((byte) 66);
+          output.writeMessageNoTag(pBKKPKGOBOK.get(i));
         }
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        for (int i = 0; i < bOMLAPEJGIJ.length(); i++) {
-          output.writeRawByte((byte) 66);
-          output.writeMessageNoTag(bOMLAPEJGIJ.get(i));
+        for (int i = 0; i < unlockedChestList.length(); i++) {
+          output.writeRawByte((byte) 90);
+          output.writeMessageNoTag(unlockedChestList.get(i));
         }
       }
     }
@@ -937,28 +945,28 @@ public final class MazeMapDataOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pHHDECMGCBC);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(eOBFHOFKJFM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dimensionId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kPEADJCPCNK);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pHPHBMIAOGG);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mapEntryId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pBAMLLJIGEH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * lightenSectionList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lightenSectionList);
+        size += (1 * unlockedTeleportList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockedTeleportList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += (1 * unlockedTeleportList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockedTeleportList);
+        size += (1 * lightenSectionList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lightenSectionList);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         size += (1 * mazeGroupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazeGroupList);
@@ -967,10 +975,10 @@ public final class MazeMapDataOuterClass {
         size += (1 * mazePropList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mazePropList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += (1 * unlockedChestList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(unlockedChestList);
+        size += (1 * pBKKPKGOBOK.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(pBKKPKGOBOK);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        size += (1 * bOMLAPEJGIJ.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(bOMLAPEJGIJ);
+        size += (1 * unlockedChestList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(unlockedChestList);
       }
       return size;
     }
@@ -982,34 +990,34 @@ public final class MazeMapDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // pHHDECMGCBC
-            pHHDECMGCBC = input.readUInt32();
+          case 8: {
+            // mapEntryId
+            mapEntryId = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
+          case 16: {
+            // dimensionId
+            dimensionId = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 32) {
               break;
             }
           }
           case 32: {
-            // eOBFHOFKJFM
-            eOBFHOFKJFM = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
-            // retcode
-            retcode = input.readUInt32();
+            // kPEADJCPCNK
+            kPEADJCPCNK = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 80) {
               break;
             }
           }
-          case 72: {
+          case 80: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000008;
@@ -1019,8 +1027,8 @@ public final class MazeMapDataOuterClass {
             }
           }
           case 96: {
-            // pHPHBMIAOGG
-            pHPHBMIAOGG = input.readUInt32();
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 104) {
@@ -1028,33 +1036,33 @@ public final class MazeMapDataOuterClass {
             }
           }
           case 104: {
-            // mapEntryId
-            mapEntryId = input.readUInt32();
+            // pBAMLLJIGEH
+            pBAMLLJIGEH = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 50) {
               break;
             }
           }
-          case 82: {
-            // lightenSectionList [packed=true]
-            input.readPackedUInt32(lightenSectionList, tag);
-            bitField0_ |= 0x00000040;
-            tag = input.readTag();
-            if (tag != 90) {
-              break;
-            }
-          }
-          case 90: {
+          case 50: {
             // unlockedTeleportList [packed=true]
             input.readPackedUInt32(unlockedTeleportList, tag);
-            bitField0_ |= 0x00000080;
+            bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 122) {
               break;
             }
           }
-          case 10: {
+          case 122: {
+            // lightenSectionList [packed=true]
+            input.readPackedUInt32(lightenSectionList, tag);
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 26) {
+              break;
+            }
+          }
+          case 26: {
             // mazeGroupList
             tag = input.readRepeatedMessage(mazeGroupList, tag);
             bitField0_ |= 0x00000100;
@@ -1066,21 +1074,21 @@ public final class MazeMapDataOuterClass {
             // mazePropList
             tag = input.readRepeatedMessage(mazePropList, tag);
             bitField0_ |= 0x00000200;
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // unlockedChestList
-            tag = input.readRepeatedMessage(unlockedChestList, tag);
-            bitField0_ |= 0x00000400;
             if (tag != 66) {
               break;
             }
           }
           case 66: {
-            // bOMLAPEJGIJ
-            tag = input.readRepeatedMessage(bOMLAPEJGIJ, tag);
+            // pBKKPKGOBOK
+            tag = input.readRepeatedMessage(pBKKPKGOBOK, tag);
+            bitField0_ |= 0x00000400;
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // unlockedChestList
+            tag = input.readRepeatedMessage(unlockedChestList, tag);
             bitField0_ |= 0x00000800;
             if (tag != 0) {
               break;
@@ -1096,15 +1104,15 @@ public final class MazeMapDataOuterClass {
             tag = input.readTag();
             break;
           }
-          case 80: {
-            // lightenSectionList [packed=false]
-            tag = input.readRepeatedUInt32(lightenSectionList, tag);
+          case 48: {
+            // unlockedTeleportList [packed=false]
+            tag = input.readRepeatedUInt32(unlockedTeleportList, tag);
             bitField0_ |= 0x00000040;
             break;
           }
-          case 88: {
-            // unlockedTeleportList [packed=false]
-            tag = input.readRepeatedUInt32(unlockedTeleportList, tag);
+          case 120: {
+            // lightenSectionList [packed=false]
+            tag = input.readRepeatedUInt32(lightenSectionList, tag);
             bitField0_ |= 0x00000080;
             break;
           }
@@ -1116,28 +1124,28 @@ public final class MazeMapDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.pHHDECMGCBC, pHHDECMGCBC);
+        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.eOBFHOFKJFM, eOBFHOFKJFM);
+        output.writeUInt32(FieldNames.dimensionId, dimensionId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.kPEADJCPCNK, kPEADJCPCNK);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.entryId, entryId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.pHPHBMIAOGG, pHPHBMIAOGG);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.mapEntryId, mapEntryId);
+        output.writeUInt32(FieldNames.pBAMLLJIGEH, pBAMLLJIGEH);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lightenSectionList, lightenSectionList);
+        output.writeRepeatedUInt32(FieldNames.unlockedTeleportList, unlockedTeleportList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRepeatedUInt32(FieldNames.unlockedTeleportList, unlockedTeleportList);
+        output.writeRepeatedUInt32(FieldNames.lightenSectionList, lightenSectionList);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRepeatedMessage(FieldNames.mazeGroupList, mazeGroupList);
@@ -1146,10 +1154,10 @@ public final class MazeMapDataOuterClass {
         output.writeRepeatedMessage(FieldNames.mazePropList, mazePropList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRepeatedMessage(FieldNames.unlockedChestList, unlockedChestList);
+        output.writeRepeatedMessage(FieldNames.pBKKPKGOBOK, pBKKPKGOBOK);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeRepeatedMessage(FieldNames.bOMLAPEJGIJ, bOMLAPEJGIJ);
+        output.writeRepeatedMessage(FieldNames.unlockedChestList, unlockedChestList);
       }
       output.endObject();
     }
@@ -1161,10 +1169,11 @@ public final class MazeMapDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1072682648: {
-            if (input.isAtField(FieldNames.pHHDECMGCBC)) {
+          case -1475203023:
+          case 436670347: {
+            if (input.isAtField(FieldNames.mapEntryId)) {
               if (!input.trySkipNullValue()) {
-                pHHDECMGCBC = input.readUInt32();
+                mapEntryId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -1172,10 +1181,11 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case -1861082921: {
-            if (input.isAtField(FieldNames.eOBFHOFKJFM)) {
+          case -40520415:
+          case -1256111468: {
+            if (input.isAtField(FieldNames.dimensionId)) {
               if (!input.trySkipNullValue()) {
-                eOBFHOFKJFM = input.readUInt32();
+                dimensionId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -1183,10 +1193,10 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case -606737140: {
+            if (input.isAtField(FieldNames.kPEADJCPCNK)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                kPEADJCPCNK = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -1206,10 +1216,10 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case -205857796: {
-            if (input.isAtField(FieldNames.pHPHBMIAOGG)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                pHPHBMIAOGG = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -1217,24 +1227,11 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case -1475203023:
-          case 436670347: {
-            if (input.isAtField(FieldNames.mapEntryId)) {
+          case -1597986643: {
+            if (input.isAtField(FieldNames.pBAMLLJIGEH)) {
               if (!input.trySkipNullValue()) {
-                mapEntryId = input.readUInt32();
+                pBAMLLJIGEH = input.readUInt32();
                 bitField0_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1942343836:
-          case 1328850360: {
-            if (input.isAtField(FieldNames.lightenSectionList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(lightenSectionList);
-                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -1246,6 +1243,18 @@ public final class MazeMapDataOuterClass {
             if (input.isAtField(FieldNames.unlockedTeleportList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(unlockedTeleportList);
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1942343836:
+          case 1328850360: {
+            if (input.isAtField(FieldNames.lightenSectionList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(lightenSectionList);
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -1277,11 +1286,10 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case -337762404:
-          case 231688696: {
-            if (input.isAtField(FieldNames.unlockedChestList)) {
+          case 1835473801: {
+            if (input.isAtField(FieldNames.pBKKPKGOBOK)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(unlockedChestList);
+                input.readRepeatedMessage(pBKKPKGOBOK);
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -1289,10 +1297,11 @@ public final class MazeMapDataOuterClass {
             }
             break;
           }
-          case 804683240: {
-            if (input.isAtField(FieldNames.bOMLAPEJGIJ)) {
+          case -337762404:
+          case 231688696: {
+            if (input.isAtField(FieldNames.unlockedChestList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(bOMLAPEJGIJ);
+                input.readRepeatedMessage(unlockedChestList);
                 bitField0_ |= 0x00000800;
               }
             } else {
@@ -1340,9 +1349,9 @@ public final class MazeMapDataOuterClass {
     }
 
     /**
-     * Protobuf type {@code BOMLAPEJGIJEntry}
+     * Protobuf type {@code PBKKPKGOBOKEntry}
      */
-    public static final class BOMLAPEJGIJEntry extends ProtoMessage<BOMLAPEJGIJEntry> implements Cloneable {
+    public static final class PBKKPKGOBOKEntry extends ProtoMessage<PBKKPKGOBOKEntry> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -1355,14 +1364,14 @@ public final class MazeMapDataOuterClass {
        */
       private final Utf8String key = Utf8String.newEmptyInstance();
 
-      private BOMLAPEJGIJEntry() {
+      private PBKKPKGOBOKEntry() {
       }
 
       /**
-       * @return a new empty instance of {@code BOMLAPEJGIJEntry}
+       * @return a new empty instance of {@code PBKKPKGOBOKEntry}
        */
-      public static BOMLAPEJGIJEntry newInstance() {
-        return new BOMLAPEJGIJEntry();
+      public static PBKKPKGOBOKEntry newInstance() {
+        return new PBKKPKGOBOKEntry();
       }
 
       /**
@@ -1377,7 +1386,7 @@ public final class MazeMapDataOuterClass {
        * <code>optional int32 value = 2;</code>
        * @return this
        */
-      public BOMLAPEJGIJEntry clearValue() {
+      public PBKKPKGOBOKEntry clearValue() {
         bitField0_ &= ~0x00000001;
         value_ = 0;
         return this;
@@ -1396,7 +1405,7 @@ public final class MazeMapDataOuterClass {
        * @param value the value_ to set
        * @return this
        */
-      public BOMLAPEJGIJEntry setValue(final int value) {
+      public PBKKPKGOBOKEntry setValue(final int value) {
         bitField0_ |= 0x00000001;
         value_ = value;
         return this;
@@ -1414,7 +1423,7 @@ public final class MazeMapDataOuterClass {
        * <code>optional string key = 1;</code>
        * @return this
        */
-      public BOMLAPEJGIJEntry clearKey() {
+      public PBKKPKGOBOKEntry clearKey() {
         bitField0_ &= ~0x00000002;
         key.clear();
         return this;
@@ -1450,7 +1459,7 @@ public final class MazeMapDataOuterClass {
        * @param value the key to set
        * @return this
        */
-      public BOMLAPEJGIJEntry setKey(final CharSequence value) {
+      public PBKKPKGOBOKEntry setKey(final CharSequence value) {
         bitField0_ |= 0x00000002;
         key.copyFrom(value);
         return this;
@@ -1461,14 +1470,14 @@ public final class MazeMapDataOuterClass {
        * @param value the key to set
        * @return this
        */
-      public BOMLAPEJGIJEntry setKey(final Utf8String value) {
+      public PBKKPKGOBOKEntry setKey(final Utf8String value) {
         bitField0_ |= 0x00000002;
         key.copyFrom(value);
         return this;
       }
 
       @Override
-      public BOMLAPEJGIJEntry copyFrom(final BOMLAPEJGIJEntry other) {
+      public PBKKPKGOBOKEntry copyFrom(final PBKKPKGOBOKEntry other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
@@ -1479,7 +1488,7 @@ public final class MazeMapDataOuterClass {
       }
 
       @Override
-      public BOMLAPEJGIJEntry mergeFrom(final BOMLAPEJGIJEntry other) {
+      public PBKKPKGOBOKEntry mergeFrom(final PBKKPKGOBOKEntry other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -1494,7 +1503,7 @@ public final class MazeMapDataOuterClass {
       }
 
       @Override
-      public BOMLAPEJGIJEntry clear() {
+      public PBKKPKGOBOKEntry clear() {
         if (isEmpty()) {
           return this;
         }
@@ -1506,7 +1515,7 @@ public final class MazeMapDataOuterClass {
       }
 
       @Override
-      public BOMLAPEJGIJEntry clearQuick() {
+      public PBKKPKGOBOKEntry clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -1521,10 +1530,10 @@ public final class MazeMapDataOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof BOMLAPEJGIJEntry)) {
+        if (!(o instanceof PBKKPKGOBOKEntry)) {
           return false;
         }
-        BOMLAPEJGIJEntry other = (BOMLAPEJGIJEntry) o;
+        PBKKPKGOBOKEntry other = (PBKKPKGOBOKEntry) o;
         return bitField0_ == other.bitField0_
           && (!hasValue() || value_ == other.value_)
           && (!hasKey() || key.equals(other.key));
@@ -1556,7 +1565,7 @@ public final class MazeMapDataOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public BOMLAPEJGIJEntry mergeFrom(final ProtoSource input) throws IOException {
+      public PBKKPKGOBOKEntry mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -1606,7 +1615,7 @@ public final class MazeMapDataOuterClass {
       }
 
       @Override
-      public BOMLAPEJGIJEntry mergeFrom(final JsonSource input) throws IOException {
+      public PBKKPKGOBOKEntry mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -1645,8 +1654,8 @@ public final class MazeMapDataOuterClass {
       }
 
       @Override
-      public BOMLAPEJGIJEntry clone() {
-        return new BOMLAPEJGIJEntry().copyFrom(this);
+      public PBKKPKGOBOKEntry clone() {
+        return new PBKKPKGOBOKEntry().copyFrom(this);
       }
 
       @Override
@@ -1654,32 +1663,32 @@ public final class MazeMapDataOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static BOMLAPEJGIJEntry parseFrom(final byte[] data) throws
+      public static PBKKPKGOBOKEntry parseFrom(final byte[] data) throws
           InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new BOMLAPEJGIJEntry(), data).checkInitialized();
+        return ProtoMessage.mergeFrom(new PBKKPKGOBOKEntry(), data).checkInitialized();
       }
 
-      public static BOMLAPEJGIJEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new BOMLAPEJGIJEntry(), input).checkInitialized();
+      public static PBKKPKGOBOKEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new PBKKPKGOBOKEntry(), input).checkInitialized();
       }
 
-      public static BOMLAPEJGIJEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new BOMLAPEJGIJEntry(), input).checkInitialized();
+      public static PBKKPKGOBOKEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new PBKKPKGOBOKEntry(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating BOMLAPEJGIJEntry messages
+       * @return factory for creating PBKKPKGOBOKEntry messages
        */
-      public static MessageFactory<BOMLAPEJGIJEntry> getFactory() {
-        return BOMLAPEJGIJEntryFactory.INSTANCE;
+      public static MessageFactory<PBKKPKGOBOKEntry> getFactory() {
+        return PBKKPKGOBOKEntryFactory.INSTANCE;
       }
 
-      private enum BOMLAPEJGIJEntryFactory implements MessageFactory<BOMLAPEJGIJEntry> {
+      private enum PBKKPKGOBOKEntryFactory implements MessageFactory<PBKKPKGOBOKEntry> {
         INSTANCE;
 
         @Override
-        public BOMLAPEJGIJEntry create() {
-          return BOMLAPEJGIJEntry.newInstance();
+        public PBKKPKGOBOKEntry create() {
+          return PBKKPKGOBOKEntry.newInstance();
         }
       }
 
@@ -1706,29 +1715,29 @@ public final class MazeMapDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pHHDECMGCBC = FieldName.forField("PHHDECMGCBC");
+      static final FieldName mapEntryId = FieldName.forField("mapEntryId", "map_entry_id");
 
-      static final FieldName eOBFHOFKJFM = FieldName.forField("EOBFHOFKJFM");
+      static final FieldName dimensionId = FieldName.forField("dimensionId", "dimension_id");
 
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName kPEADJCPCNK = FieldName.forField("KPEADJCPCNK");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
 
-      static final FieldName pHPHBMIAOGG = FieldName.forField("PHPHBMIAOGG");
+      static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName mapEntryId = FieldName.forField("mapEntryId", "map_entry_id");
-
-      static final FieldName lightenSectionList = FieldName.forField("lightenSectionList", "lighten_section_list");
+      static final FieldName pBAMLLJIGEH = FieldName.forField("PBAMLLJIGEH");
 
       static final FieldName unlockedTeleportList = FieldName.forField("unlockedTeleportList", "unlocked_teleport_list");
+
+      static final FieldName lightenSectionList = FieldName.forField("lightenSectionList", "lighten_section_list");
 
       static final FieldName mazeGroupList = FieldName.forField("mazeGroupList", "maze_group_list");
 
       static final FieldName mazePropList = FieldName.forField("mazePropList", "maze_prop_list");
 
-      static final FieldName unlockedChestList = FieldName.forField("unlockedChestList", "unlocked_chest_list");
+      static final FieldName pBKKPKGOBOK = FieldName.forField("PBKKPKGOBOK");
 
-      static final FieldName bOMLAPEJGIJ = FieldName.forField("BOMLAPEJGIJ");
+      static final FieldName unlockedChestList = FieldName.forField("unlockedChestList", "unlocked_chest_list");
     }
   }
 }

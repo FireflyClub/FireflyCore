@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message EnteredSceneInfo {
-	uint32 plane_id = 12;
-	uint32 floor_id = 6;
+	uint32 floor_id = 12;
+	uint32 plane_id = 13;
 }

@@ -20,28 +20,33 @@ public final class GetChallengeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <pre>
+     * MGCIMEKACFE NPFLJLEEFFI = 1;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 5;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 12;</code>
+     * <code>optional uint32 GGBCPNCDMFA = 12;</code>
      */
-    private int iIJBMNKFMAA;
+    private int gGBCPNCDMFA;
 
     /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     */
-    private final RepeatedMessage<ChallengeOuterClass.Challenge> challengeList = RepeatedMessage.newEmptyInstance(ChallengeOuterClass.Challenge.getFactory());
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      */
     private final RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> challengeRewardList = RepeatedMessage.newEmptyInstance(ChallengeRewardOuterClass.ChallengeReward.getFactory());
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     */
+    private final RepeatedMessage<ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel> maxLevelList = RepeatedMessage.newEmptyInstance(ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel.getFactory());
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     */
+    private final RepeatedMessage<ChallengeOuterClass.Challenge> challengeList = RepeatedMessage.newEmptyInstance(ChallengeOuterClass.Challenge.getFactory());
 
     private GetChallengeScRsp() {
     }
@@ -54,7 +59,11 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <pre>
+     * MGCIMEKACFE NPFLJLEEFFI = 1;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 5;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -62,7 +71,11 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <pre>
+     * MGCIMEKACFE NPFLJLEEFFI = 1;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 5;</code>
      * @return this
      */
     public GetChallengeScRsp clearRetcode() {
@@ -72,7 +85,11 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <pre>
+     * MGCIMEKACFE NPFLJLEEFFI = 1;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 5;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -80,7 +97,11 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <pre>
+     * MGCIMEKACFE NPFLJLEEFFI = 1;
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 5;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -91,154 +112,62 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 12;</code>
-     * @return whether the iIJBMNKFMAA field is set
+     * <code>optional uint32 GGBCPNCDMFA = 12;</code>
+     * @return whether the gGBCPNCDMFA field is set
      */
-    public boolean hasIIJBMNKFMAA() {
+    public boolean hasGGBCPNCDMFA() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 12;</code>
+     * <code>optional uint32 GGBCPNCDMFA = 12;</code>
      * @return this
      */
-    public GetChallengeScRsp clearIIJBMNKFMAA() {
+    public GetChallengeScRsp clearGGBCPNCDMFA() {
       bitField0_ &= ~0x00000002;
-      iIJBMNKFMAA = 0;
+      gGBCPNCDMFA = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 12;</code>
-     * @return the iIJBMNKFMAA
+     * <code>optional uint32 GGBCPNCDMFA = 12;</code>
+     * @return the gGBCPNCDMFA
      */
-    public int getIIJBMNKFMAA() {
-      return iIJBMNKFMAA;
+    public int getGGBCPNCDMFA() {
+      return gGBCPNCDMFA;
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 12;</code>
-     * @param value the iIJBMNKFMAA to set
+     * <code>optional uint32 GGBCPNCDMFA = 12;</code>
+     * @param value the gGBCPNCDMFA to set
      * @return this
      */
-    public GetChallengeScRsp setIIJBMNKFMAA(final int value) {
+    public GetChallengeScRsp setGGBCPNCDMFA(final int value) {
       bitField0_ |= 0x00000002;
-      iIJBMNKFMAA = value;
+      gGBCPNCDMFA = value;
       return this;
     }
 
     /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     * @return whether the challengeList field is set
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
+     * @return whether the challengeRewardList field is set
      */
-    public boolean hasChallengeList() {
+    public boolean hasChallengeRewardList() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     * @return this
-     */
-    public GetChallengeScRsp clearChallengeList() {
-      bitField0_ &= ~0x00000004;
-      challengeList.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableChallengeList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<ChallengeOuterClass.Challenge> getChallengeList() {
-      return challengeList;
-    }
-
-    /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<ChallengeOuterClass.Challenge> getMutableChallengeList() {
-      bitField0_ |= 0x00000004;
-      return challengeList;
-    }
-
-    /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     * @param value the challengeList to add
-     * @return this
-     */
-    public GetChallengeScRsp addChallengeList(final ChallengeOuterClass.Challenge value) {
-      bitField0_ |= 0x00000004;
-      challengeList.add(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-     * </pre>
-     *
-     * <code>repeated .Challenge challenge_list = 1;</code>
-     * @param values the challengeList to add
-     * @return this
-     */
-    public GetChallengeScRsp addAllChallengeList(final ChallengeOuterClass.Challenge... values) {
-      bitField0_ |= 0x00000004;
-      challengeList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
-     * @return whether the challengeRewardList field is set
-     */
-    public boolean hasChallengeRewardList() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      * @return this
      */
     public GetChallengeScRsp clearChallengeRewardList() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       challengeRewardList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -252,7 +181,7 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -262,31 +191,171 @@ public final class GetChallengeScRspOuterClass {
      */
     public RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> getMutableChallengeRewardList(
         ) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       return challengeRewardList;
     }
 
     /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      * @param value the challengeRewardList to add
      * @return this
      */
     public GetChallengeScRsp addChallengeRewardList(
         final ChallengeRewardOuterClass.ChallengeReward value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       challengeRewardList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 9;</code>
      * @param values the challengeRewardList to add
      * @return this
      */
     public GetChallengeScRsp addAllChallengeRewardList(
         final ChallengeRewardOuterClass.ChallengeReward... values) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       challengeRewardList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     * @return whether the maxLevelList field is set
+     */
+    public boolean hasMaxLevelList() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     * @return this
+     */
+    public GetChallengeScRsp clearMaxLevelList() {
+      bitField0_ &= ~0x00000008;
+      maxLevelList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMaxLevelList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel> getMaxLevelList(
+        ) {
+      return maxLevelList;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel> getMutableMaxLevelList(
+        ) {
+      bitField0_ |= 0x00000008;
+      return maxLevelList;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     * @param value the maxLevelList to add
+     * @return this
+     */
+    public GetChallengeScRsp addMaxLevelList(
+        final ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel value) {
+      bitField0_ |= 0x00000008;
+      maxLevelList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeHistoryMaxLevel max_level_list = 13;</code>
+     * @param values the maxLevelList to add
+     * @return this
+     */
+    public GetChallengeScRsp addAllMaxLevelList(
+        final ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel... values) {
+      bitField0_ |= 0x00000008;
+      maxLevelList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     * @return whether the challengeList field is set
+     */
+    public boolean hasChallengeList() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     * @return this
+     */
+    public GetChallengeScRsp clearChallengeList() {
+      bitField0_ &= ~0x00000010;
+      challengeList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableChallengeList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<ChallengeOuterClass.Challenge> getChallengeList() {
+      return challengeList;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<ChallengeOuterClass.Challenge> getMutableChallengeList() {
+      bitField0_ |= 0x00000010;
+      return challengeList;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     * @param value the challengeList to add
+     * @return this
+     */
+    public GetChallengeScRsp addChallengeList(final ChallengeOuterClass.Challenge value) {
+      bitField0_ |= 0x00000010;
+      challengeList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .Challenge challenge_list = 15;</code>
+     * @param values the challengeList to add
+     * @return this
+     */
+    public GetChallengeScRsp addAllChallengeList(final ChallengeOuterClass.Challenge... values) {
+      bitField0_ |= 0x00000010;
+      challengeList.addAll(values);
       return this;
     }
 
@@ -296,9 +365,10 @@ public final class GetChallengeScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        iIJBMNKFMAA = other.iIJBMNKFMAA;
-        challengeList.copyFrom(other.challengeList);
+        gGBCPNCDMFA = other.gGBCPNCDMFA;
         challengeRewardList.copyFrom(other.challengeRewardList);
+        maxLevelList.copyFrom(other.maxLevelList);
+        challengeList.copyFrom(other.challengeList);
       }
       return this;
     }
@@ -312,14 +382,17 @@ public final class GetChallengeScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasIIJBMNKFMAA()) {
-        setIIJBMNKFMAA(other.iIJBMNKFMAA);
-      }
-      if (other.hasChallengeList()) {
-        getMutableChallengeList().addAll(other.challengeList);
+      if (other.hasGGBCPNCDMFA()) {
+        setGGBCPNCDMFA(other.gGBCPNCDMFA);
       }
       if (other.hasChallengeRewardList()) {
         getMutableChallengeRewardList().addAll(other.challengeRewardList);
+      }
+      if (other.hasMaxLevelList()) {
+        getMutableMaxLevelList().addAll(other.maxLevelList);
+      }
+      if (other.hasChallengeList()) {
+        getMutableChallengeList().addAll(other.challengeList);
       }
       return this;
     }
@@ -332,9 +405,10 @@ public final class GetChallengeScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      iIJBMNKFMAA = 0;
-      challengeList.clear();
+      gGBCPNCDMFA = 0;
       challengeRewardList.clear();
+      maxLevelList.clear();
+      challengeList.clear();
       return this;
     }
 
@@ -345,8 +419,9 @@ public final class GetChallengeScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      challengeList.clearQuick();
       challengeRewardList.clearQuick();
+      maxLevelList.clearQuick();
+      challengeList.clearQuick();
       return this;
     }
 
@@ -361,31 +436,38 @@ public final class GetChallengeScRspOuterClass {
       GetChallengeScRsp other = (GetChallengeScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasIIJBMNKFMAA() || iIJBMNKFMAA == other.iIJBMNKFMAA)
-        && (!hasChallengeList() || challengeList.equals(other.challengeList))
-        && (!hasChallengeRewardList() || challengeRewardList.equals(other.challengeRewardList));
+        && (!hasGGBCPNCDMFA() || gGBCPNCDMFA == other.gGBCPNCDMFA)
+        && (!hasChallengeRewardList() || challengeRewardList.equals(other.challengeRewardList))
+        && (!hasMaxLevelList() || maxLevelList.equals(other.maxLevelList))
+        && (!hasChallengeList() || challengeList.equals(other.challengeList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(iIJBMNKFMAA);
+        output.writeUInt32NoTag(gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < challengeList.length(); i++) {
-          output.writeRawByte((byte) 10);
-          output.writeMessageNoTag(challengeList.get(i));
+        for (int i = 0; i < challengeRewardList.length(); i++) {
+          output.writeRawByte((byte) 74);
+          output.writeMessageNoTag(challengeRewardList.get(i));
         }
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < challengeRewardList.length(); i++) {
-          output.writeRawByte((byte) 114);
-          output.writeMessageNoTag(challengeRewardList.get(i));
+        for (int i = 0; i < maxLevelList.length(); i++) {
+          output.writeRawByte((byte) 106);
+          output.writeMessageNoTag(maxLevelList.get(i));
+        }
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        for (int i = 0; i < challengeList.length(); i++) {
+          output.writeRawByte((byte) 122);
+          output.writeMessageNoTag(challengeList.get(i));
         }
       }
     }
@@ -397,13 +479,16 @@ public final class GetChallengeScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(iIJBMNKFMAA);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * challengeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeList);
+        size += (1 * challengeRewardList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeRewardList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * challengeRewardList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeRewardList);
+        size += (1 * maxLevelList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(maxLevelList);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += (1 * challengeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeList);
       }
       return size;
     }
@@ -415,7 +500,7 @@ public final class GetChallengeScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 40: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -425,26 +510,34 @@ public final class GetChallengeScRspOuterClass {
             }
           }
           case 96: {
-            // iIJBMNKFMAA
-            iIJBMNKFMAA = input.readUInt32();
+            // gGBCPNCDMFA
+            gGBCPNCDMFA = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 74) {
               break;
             }
           }
-          case 10: {
-            // challengeList
-            tag = input.readRepeatedMessage(challengeList, tag);
-            bitField0_ |= 0x00000004;
-            if (tag != 114) {
-              break;
-            }
-          }
-          case 114: {
+          case 74: {
             // challengeRewardList
             tag = input.readRepeatedMessage(challengeRewardList, tag);
+            bitField0_ |= 0x00000004;
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
+            // maxLevelList
+            tag = input.readRepeatedMessage(maxLevelList, tag);
             bitField0_ |= 0x00000008;
+            if (tag != 122) {
+              break;
+            }
+          }
+          case 122: {
+            // challengeList
+            tag = input.readRepeatedMessage(challengeList, tag);
+            bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
             }
@@ -470,13 +563,16 @@ public final class GetChallengeScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.iIJBMNKFMAA, iIJBMNKFMAA);
+        output.writeUInt32(FieldNames.gGBCPNCDMFA, gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.challengeList, challengeList);
+        output.writeRepeatedMessage(FieldNames.challengeRewardList, challengeRewardList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.challengeRewardList, challengeRewardList);
+        output.writeRepeatedMessage(FieldNames.maxLevelList, maxLevelList);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRepeatedMessage(FieldNames.challengeList, challengeList);
       }
       output.endObject();
     }
@@ -499,23 +595,11 @@ public final class GetChallengeScRspOuterClass {
             }
             break;
           }
-          case 882480025: {
-            if (input.isAtField(FieldNames.iIJBMNKFMAA)) {
+          case -2042884536: {
+            if (input.isAtField(FieldNames.gGBCPNCDMFA)) {
               if (!input.trySkipNullValue()) {
-                iIJBMNKFMAA = input.readUInt32();
+                gGBCPNCDMFA = input.readUInt32();
                 bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -812402783:
-          case 602944250: {
-            if (input.isAtField(FieldNames.challengeList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(challengeList);
-                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -527,7 +611,31 @@ public final class GetChallengeScRspOuterClass {
             if (input.isAtField(FieldNames.challengeRewardList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(challengeRewardList);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1215211838:
+          case 1938590260: {
+            if (input.isAtField(FieldNames.maxLevelList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(maxLevelList);
                 bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -812402783:
+          case 602944250: {
+            if (input.isAtField(FieldNames.challengeList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(challengeList);
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -589,11 +697,13 @@ public final class GetChallengeScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName iIJBMNKFMAA = FieldName.forField("IIJBMNKFMAA");
-
-      static final FieldName challengeList = FieldName.forField("challengeList", "challenge_list");
+      static final FieldName gGBCPNCDMFA = FieldName.forField("GGBCPNCDMFA");
 
       static final FieldName challengeRewardList = FieldName.forField("challengeRewardList", "challenge_reward_list");
+
+      static final FieldName maxLevelList = FieldName.forField("maxLevelList", "max_level_list");
+
+      static final FieldName challengeList = FieldName.forField("challengeList", "challenge_list");
     }
   }
 }

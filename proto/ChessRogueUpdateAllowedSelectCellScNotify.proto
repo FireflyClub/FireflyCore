@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ChessRogueUpdateAllowedSelectCellScNotify {
-    repeated uint32 cell_id_list = 11;
-    uint32 room_id = 12;
+	repeated uint32 ADAGFCPMIEA = 6;
+	uint32 FENMMJNLKMJ = 7;
 }

@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "RogueBuff.proto";
 
 message EnhanceRogueBuffScRsp {
-	uint32 retcode = 6;
-	bool is_success = 1;
-	RogueBuff rogue_buff = 15;
+	RogueBuff rogue_buff = 6;
+	uint32 retcode = 7;
+	bool is_succ = 13;
 }

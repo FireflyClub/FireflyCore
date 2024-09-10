@@ -2,14 +2,14 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "WolfBroGameInfo.proto";
 import "Vector.proto";
+import "WolfBroGameInfo.proto";
 
 message WolfBroGameData {
-	uint32 NLIAEPNOKAE = 14;
-	uint32 id = 8;
-	bool BOBGLLPPDKE = 13;
-	repeated Vector FLPJKKCPIOO = 6;
-	string BBFJNPDGLGF = 5;
-	WolfBroGameInfo GGKOINMJHHK = 7;
+	repeated Vector JBOFIALLOPI = 10;
+	WolfBroGameInfo KPPEHBJLAAA = 6;
+	uint32 id = 4;
+	uint32 PPINPEHJFAB = 1;
+	string NIEPAOBBFJF = 15;
+	bool HFNEKMMMFHO = 9;
 }

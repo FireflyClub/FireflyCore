@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import 'Gender.proto';
+import "Gender.proto";
 
 message SetGenderCsReq {
-	Gender HJPKBIBBNKN = 7;
+	Gender GLBIOLFDHOL = 15;
 }

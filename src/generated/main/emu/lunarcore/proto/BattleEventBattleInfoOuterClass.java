@@ -30,9 +30,9 @@ public final class BattleEventBattleInfoOuterClass {
     private final BattleEventInitedDataOuterClass.BattleEventInitedData status = BattleEventInitedDataOuterClass.BattleEventInitedData.newInstance();
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
      */
-    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> iGIEFPANAEL = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
+    private final RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> fFLNPGHOJDD = RepeatedMessage.newEmptyInstance(BattleSkillInfoOuterClass.BattleSkillInfo.getFactory());
 
     private BattleEventBattleInfo() {
     }
@@ -140,39 +140,39 @@ public final class BattleEventBattleInfoOuterClass {
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
-     * @return whether the iGIEFPANAEL field is set
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
+     * @return whether the fFLNPGHOJDD field is set
      */
-    public boolean hasIGIEFPANAEL() {
+    public boolean hasFFLNPGHOJDD() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
      * @return this
      */
-    public BattleEventBattleInfo clearIGIEFPANAEL() {
+    public BattleEventBattleInfo clearFFLNPGHOJDD() {
       bitField0_ &= ~0x00000004;
-      iGIEFPANAEL.clear();
+      fFLNPGHOJDD.clear();
       return this;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableIGIEFPANAEL()} if you want to modify it.
+     * Use {@link #getMutableFFLNPGHOJDD()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getIGIEFPANAEL() {
-      return iGIEFPANAEL;
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getFFLNPGHOJDD() {
+      return fFLNPGHOJDD;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -180,32 +180,32 @@ public final class BattleEventBattleInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableIGIEFPANAEL() {
+    public RepeatedMessage<BattleSkillInfoOuterClass.BattleSkillInfo> getMutableFFLNPGHOJDD() {
       bitField0_ |= 0x00000004;
-      return iGIEFPANAEL;
+      return fFLNPGHOJDD;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
-     * @param value the iGIEFPANAEL to add
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
+     * @param value the fFLNPGHOJDD to add
      * @return this
      */
-    public BattleEventBattleInfo addIGIEFPANAEL(
+    public BattleEventBattleInfo addFFLNPGHOJDD(
         final BattleSkillInfoOuterClass.BattleSkillInfo value) {
       bitField0_ |= 0x00000004;
-      iGIEFPANAEL.add(value);
+      fFLNPGHOJDD.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .BattleSkillInfo IGIEFPANAEL = 3;</code>
-     * @param values the iGIEFPANAEL to add
+     * <code>repeated .BattleSkillInfo FFLNPGHOJDD = 3;</code>
+     * @param values the fFLNPGHOJDD to add
      * @return this
      */
-    public BattleEventBattleInfo addAllIGIEFPANAEL(
+    public BattleEventBattleInfo addAllFFLNPGHOJDD(
         final BattleSkillInfoOuterClass.BattleSkillInfo... values) {
       bitField0_ |= 0x00000004;
-      iGIEFPANAEL.addAll(values);
+      fFLNPGHOJDD.addAll(values);
       return this;
     }
 
@@ -216,7 +216,7 @@ public final class BattleEventBattleInfoOuterClass {
         bitField0_ = other.bitField0_;
         battleEventId = other.battleEventId;
         status.copyFrom(other.status);
-        iGIEFPANAEL.copyFrom(other.iGIEFPANAEL);
+        fFLNPGHOJDD.copyFrom(other.fFLNPGHOJDD);
       }
       return this;
     }
@@ -233,8 +233,8 @@ public final class BattleEventBattleInfoOuterClass {
       if (other.hasStatus()) {
         getMutableStatus().mergeFrom(other.status);
       }
-      if (other.hasIGIEFPANAEL()) {
-        getMutableIGIEFPANAEL().addAll(other.iGIEFPANAEL);
+      if (other.hasFFLNPGHOJDD()) {
+        getMutableFFLNPGHOJDD().addAll(other.fFLNPGHOJDD);
       }
       return this;
     }
@@ -248,7 +248,7 @@ public final class BattleEventBattleInfoOuterClass {
       bitField0_ = 0;
       battleEventId = 0;
       status.clear();
-      iGIEFPANAEL.clear();
+      fFLNPGHOJDD.clear();
       return this;
     }
 
@@ -260,7 +260,7 @@ public final class BattleEventBattleInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       status.clearQuick();
-      iGIEFPANAEL.clearQuick();
+      fFLNPGHOJDD.clearQuick();
       return this;
     }
 
@@ -276,7 +276,7 @@ public final class BattleEventBattleInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasBattleEventId() || battleEventId == other.battleEventId)
         && (!hasStatus() || status.equals(other.status))
-        && (!hasIGIEFPANAEL() || iGIEFPANAEL.equals(other.iGIEFPANAEL));
+        && (!hasFFLNPGHOJDD() || fFLNPGHOJDD.equals(other.fFLNPGHOJDD));
     }
 
     @Override
@@ -290,9 +290,9 @@ public final class BattleEventBattleInfoOuterClass {
         output.writeMessageNoTag(status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < iGIEFPANAEL.length(); i++) {
+        for (int i = 0; i < fFLNPGHOJDD.length(); i++) {
           output.writeRawByte((byte) 26);
-          output.writeMessageNoTag(iGIEFPANAEL.get(i));
+          output.writeMessageNoTag(fFLNPGHOJDD.get(i));
         }
       }
     }
@@ -307,7 +307,7 @@ public final class BattleEventBattleInfoOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * iGIEFPANAEL.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(iGIEFPANAEL);
+        size += (1 * fFLNPGHOJDD.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(fFLNPGHOJDD);
       }
       return size;
     }
@@ -338,8 +338,8 @@ public final class BattleEventBattleInfoOuterClass {
             }
           }
           case 26: {
-            // iGIEFPANAEL
-            tag = input.readRepeatedMessage(iGIEFPANAEL, tag);
+            // fFLNPGHOJDD
+            tag = input.readRepeatedMessage(fFLNPGHOJDD, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -369,7 +369,7 @@ public final class BattleEventBattleInfoOuterClass {
         output.writeMessage(FieldNames.status, status);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.iGIEFPANAEL, iGIEFPANAEL);
+        output.writeRepeatedMessage(FieldNames.fFLNPGHOJDD, fFLNPGHOJDD);
       }
       output.endObject();
     }
@@ -404,10 +404,10 @@ public final class BattleEventBattleInfoOuterClass {
             }
             break;
           }
-          case 2147116759: {
-            if (input.isAtField(FieldNames.iGIEFPANAEL)) {
+          case 851487690: {
+            if (input.isAtField(FieldNames.fFLNPGHOJDD)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(iGIEFPANAEL);
+                input.readRepeatedMessage(fFLNPGHOJDD);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -472,7 +472,7 @@ public final class BattleEventBattleInfoOuterClass {
 
       static final FieldName status = FieldName.forField("status");
 
-      static final FieldName iGIEFPANAEL = FieldName.forField("IGIEFPANAEL");
+      static final FieldName fFLNPGHOJDD = FieldName.forField("FFLNPGHOJDD");
     }
   }
 }

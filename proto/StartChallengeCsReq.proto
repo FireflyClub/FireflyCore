@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "StartChallengeStoryInfo.proto";
+import "StartChallengeInfo.proto";
 
 message StartChallengeCsReq {
-	uint32 challenge_id = 12;
-	repeated uint32 lineup2 = 14;
-	repeated uint32 lineup1 = 6;
-	StartChallengeStoryInfo start_info = 2;
+	repeated uint32 lineup1 = 12; //?
+	uint32 challenge_id = 4;
+	StartChallengeInfo ext_info = 5;
+	repeated uint32 lineup2 = 9; //?
 }

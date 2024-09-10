@@ -6,4 +6,3 @@ message RogueVirtualItemData {
     uint32 num = 13;
     uint32 HEMPKBBNDJJ = 14;
 }
-

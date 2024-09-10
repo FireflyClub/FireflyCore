@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DeactivateFarmElementCsReq {
-	uint32 entity_id = 8;
+	uint32 entity_id = 3;
 }

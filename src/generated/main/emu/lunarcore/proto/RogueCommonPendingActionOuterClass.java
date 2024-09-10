@@ -19,9 +19,9 @@ public final class RogueCommonPendingActionOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 rouge_unique_id = 7;</code>
      */
-    private int uniqueId;
+    private int rougeUniqueId;
 
     /**
      * <code>optional .RogueAction rogue_action = 6;</code>
@@ -39,39 +39,39 @@ public final class RogueCommonPendingActionOuterClass {
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
-     * @return whether the uniqueId field is set
+     * <code>optional uint32 rouge_unique_id = 7;</code>
+     * @return whether the rougeUniqueId field is set
      */
-    public boolean hasUniqueId() {
+    public boolean hasRougeUniqueId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 rouge_unique_id = 7;</code>
      * @return this
      */
-    public RogueCommonPendingAction clearUniqueId() {
+    public RogueCommonPendingAction clearRougeUniqueId() {
       bitField0_ &= ~0x00000001;
-      uniqueId = 0;
+      rougeUniqueId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
-     * @return the uniqueId
+     * <code>optional uint32 rouge_unique_id = 7;</code>
+     * @return the rougeUniqueId
      */
-    public int getUniqueId() {
-      return uniqueId;
+    public int getRougeUniqueId() {
+      return rougeUniqueId;
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
-     * @param value the uniqueId to set
+     * <code>optional uint32 rouge_unique_id = 7;</code>
+     * @param value the rougeUniqueId to set
      * @return this
      */
-    public RogueCommonPendingAction setUniqueId(final int value) {
+    public RogueCommonPendingAction setRougeUniqueId(final int value) {
       bitField0_ |= 0x00000001;
-      uniqueId = value;
+      rougeUniqueId = value;
       return this;
     }
 
@@ -137,7 +137,7 @@ public final class RogueCommonPendingActionOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        uniqueId = other.uniqueId;
+        rougeUniqueId = other.rougeUniqueId;
         rogueAction.copyFrom(other.rogueAction);
       }
       return this;
@@ -149,8 +149,8 @@ public final class RogueCommonPendingActionOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasUniqueId()) {
-        setUniqueId(other.uniqueId);
+      if (other.hasRougeUniqueId()) {
+        setRougeUniqueId(other.rougeUniqueId);
       }
       if (other.hasRogueAction()) {
         getMutableRogueAction().mergeFrom(other.rogueAction);
@@ -165,7 +165,7 @@ public final class RogueCommonPendingActionOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      uniqueId = 0;
+      rougeUniqueId = 0;
       rogueAction.clear();
       return this;
     }
@@ -191,15 +191,15 @@ public final class RogueCommonPendingActionOuterClass {
       }
       RogueCommonPendingAction other = (RogueCommonPendingAction) o;
       return bitField0_ == other.bitField0_
-        && (!hasUniqueId() || uniqueId == other.uniqueId)
+        && (!hasRougeUniqueId() || rougeUniqueId == other.rougeUniqueId)
         && (!hasRogueAction() || rogueAction.equals(other.rogueAction));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(uniqueId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(rougeUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 50);
@@ -211,7 +211,7 @@ public final class RogueCommonPendingActionOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(uniqueId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rougeUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAction);
@@ -226,9 +226,9 @@ public final class RogueCommonPendingActionOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
-            // uniqueId
-            uniqueId = input.readUInt32();
+          case 56: {
+            // rougeUniqueId
+            rougeUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 50) {
@@ -262,7 +262,7 @@ public final class RogueCommonPendingActionOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.uniqueId, uniqueId);
+        output.writeUInt32(FieldNames.rougeUniqueId, rougeUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.rogueAction, rogueAction);
@@ -277,11 +277,11 @@ public final class RogueCommonPendingActionOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -294460212:
-          case -538310583: {
-            if (input.isAtField(FieldNames.uniqueId)) {
+          case 1405019042:
+          case 1386268672: {
+            if (input.isAtField(FieldNames.rougeUniqueId)) {
               if (!input.trySkipNullValue()) {
-                uniqueId = input.readUInt32();
+                rougeUniqueId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -354,7 +354,7 @@ public final class RogueCommonPendingActionOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName uniqueId = FieldName.forField("uniqueId", "unique_id");
+      static final FieldName rougeUniqueId = FieldName.forField("rougeUniqueId", "rouge_unique_id");
 
       static final FieldName rogueAction = FieldName.forField("rogueAction", "rogue_action");
     }

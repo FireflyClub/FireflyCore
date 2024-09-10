@@ -20,12 +20,12 @@ public final class ContentPackageDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 cur_content_id = 2;</code>
+     * <code>optional uint32 cur_content_id = 15;</code>
      */
     private int curContentId;
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      */
     private final RepeatedMessage<ContentPackageInfoOuterClass.ContentPackageInfo> contentPackageList = RepeatedMessage.newEmptyInstance(ContentPackageInfoOuterClass.ContentPackageInfo.getFactory());
 
@@ -40,7 +40,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_content_id = 2;</code>
+     * <code>optional uint32 cur_content_id = 15;</code>
      * @return whether the curContentId field is set
      */
     public boolean hasCurContentId() {
@@ -48,7 +48,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_content_id = 2;</code>
+     * <code>optional uint32 cur_content_id = 15;</code>
      * @return this
      */
     public ContentPackageData clearCurContentId() {
@@ -58,7 +58,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_content_id = 2;</code>
+     * <code>optional uint32 cur_content_id = 15;</code>
      * @return the curContentId
      */
     public int getCurContentId() {
@@ -66,7 +66,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_content_id = 2;</code>
+     * <code>optional uint32 cur_content_id = 15;</code>
      * @param value the curContentId to set
      * @return this
      */
@@ -77,7 +77,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      * @return whether the contentPackageList field is set
      */
     public boolean hasContentPackageList() {
@@ -85,7 +85,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      * @return this
      */
     public ContentPackageData clearContentPackageList() {
@@ -95,7 +95,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -110,7 +110,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -125,7 +125,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      * @param value the contentPackageList to add
      * @return this
      */
@@ -137,7 +137,7 @@ public final class ContentPackageDataOuterClass {
     }
 
     /**
-     * <code>repeated .ContentPackageInfo content_package_list = 14;</code>
+     * <code>repeated .ContentPackageInfo content_package_list = 12;</code>
      * @param values the contentPackageList to add
      * @return this
      */
@@ -214,12 +214,12 @@ public final class ContentPackageDataOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(curContentId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < contentPackageList.length(); i++) {
-          output.writeRawByte((byte) 114);
+          output.writeRawByte((byte) 98);
           output.writeMessageNoTag(contentPackageList.get(i));
         }
       }
@@ -244,16 +244,16 @@ public final class ContentPackageDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 120: {
             // curContentId
             curContentId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 98) {
               break;
             }
           }
-          case 114: {
+          case 98: {
             // contentPackageList
             tag = input.readRepeatedMessage(contentPackageList, tag);
             bitField0_ |= 0x00000002;

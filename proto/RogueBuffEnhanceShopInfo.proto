@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "RogueBuffEnhanceInfo.proto";
 
 message RogueBuffEnhanceShopInfo {
-	repeated RogueBuffEnhanceInfo buff_enhance_info = 1;
+	repeated RogueBuffEnhanceInfo buff_enhance_info = 6;
 }

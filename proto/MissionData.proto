@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "MissionCustomValueData.proto";
 import "MissionStatus.proto";
+import "MissionCustomValueData.proto";
 
 message MissionData {
-	uint32 id = 5;
-	repeated MissionCustomValueData custom_value_list = 9;
-	MissionStatus status = 7;
+	uint32 id = 14;
+	repeated MissionCustomValueData custom_value_list = 1;
+	MissionStatus status = 15;
 }

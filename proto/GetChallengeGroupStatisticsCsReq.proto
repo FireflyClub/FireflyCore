@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetChallengeGroupStatisticsCsReq {
-	uint32 group_id = 12;
+	uint32 group_id = 8;
 }

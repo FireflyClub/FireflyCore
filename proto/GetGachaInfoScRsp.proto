@@ -5,10 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "GachaInfo.proto";
 
 message GetGachaInfoScRsp {
-	uint32 retcode = 7;
+	uint32 PJAFIMMCPDF = 6;
+	uint32 HDFMNLHCOME = 5;
+	uint32 HJFLGCNEKKK = 12;
+	repeated GachaInfo gacha_info_list = 8;
 	uint32 gacha_random = 2;
-	uint32 GHJDKHPBGNN = 6;
-	repeated GachaInfo gacha_info_list = 3;
-	uint32 FMMILADAHFF = 12;
-	uint32 ECKOEHMHJBM = 15;
+	uint32 retcode = 9;
 }

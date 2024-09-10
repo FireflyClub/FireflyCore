@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "EntityMotion.proto";
 
 message SceneEntityMoveCsReq {
-	uint64 NJPEMCAGPIB = 10;
+	uint64 PNKNIBLGCLM = 3;
 	repeated EntityMotion entity_motion_list = 15;
-	uint32 entry_id = 3;
+	uint32 entry_id = 13;
 }

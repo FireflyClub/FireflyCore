@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "RogueVirtualItemInfo.proto";
 
 message SyncRogueVirtualItemInfoScNotify {
-	RogueVirtualItemInfo rogue_virtual_item_info = 8;
+	RogueVirtualItemInfo rogue_virtual_item_info = 14;
 }

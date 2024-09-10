@@ -19,12 +19,12 @@ public final class AcceptMainMissionScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 main_mission_id = 8;</code>
+     * <code>optional uint32 main_mission_id = 5;</code>
      */
     private int mainMissionId;
 
@@ -39,7 +39,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public AcceptMainMissionScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 8;</code>
+     * <code>optional uint32 main_mission_id = 5;</code>
      * @return whether the mainMissionId field is set
      */
     public boolean hasMainMissionId() {
@@ -84,7 +84,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 8;</code>
+     * <code>optional uint32 main_mission_id = 5;</code>
      * @return this
      */
     public AcceptMainMissionScRsp clearMainMissionId() {
@@ -94,7 +94,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 8;</code>
+     * <code>optional uint32 main_mission_id = 5;</code>
      * @return the mainMissionId
      */
     public int getMainMissionId() {
@@ -102,7 +102,7 @@ public final class AcceptMainMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 main_mission_id = 8;</code>
+     * <code>optional uint32 main_mission_id = 5;</code>
      * @param value the mainMissionId to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class AcceptMainMissionScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(mainMissionId);
       }
     }
@@ -205,16 +205,16 @@ public final class AcceptMainMissionScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 40) {
               break;
             }
           }
-          case 64: {
+          case 40: {
             // mainMissionId
             mainMissionId = input.readUInt32();
             bitField0_ |= 0x00000002;

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "RogueInfoData.proto";
 import "RogueCurrentInfo.proto";
+import "RogueInfoData.proto";
 
 message RogueInfo {
-	RogueCurrentInfo rogue_current_info = 1019;
-	RogueInfoData rogue_info_data = 306;
+	RogueCurrentInfo rogue_current_info = 607;
+	RogueInfoData rogue_info_data = 683;
 }

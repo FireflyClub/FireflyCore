@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SyncRogueCommonActionResultScNotifyOuterClass {
   /**
-   * <pre>
-   *  ADBBKEPKAND
-   * </pre>
-   *
    * Protobuf type {@code SyncRogueCommonActionResultScNotify}
    */
   public static final class SyncRogueCommonActionResultScNotify extends ProtoMessage<SyncRogueCommonActionResultScNotify> implements Cloneable {
@@ -29,12 +25,12 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     private int rogueVersionId;
 
     /**
-     * <code>optional .RogueCommonActionResultDisplayType display_type = 11;</code>
+     * <code>optional .RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;</code>
      */
-    private int displayType;
+    private int cIGKKIDJEKB;
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      */
     private final RepeatedMessage<RogueActionResultOuterClass.RogueActionResult> actionResultList = RepeatedMessage.newEmptyInstance(RogueActionResultOuterClass.RogueActionResult.getFactory());
 
@@ -42,10 +38,6 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  ADBBKEPKAND
-     * </pre>
-     *
      * @return a new empty instance of {@code SyncRogueCommonActionResultScNotify}
      */
     public static SyncRogueCommonActionResultScNotify newInstance() {
@@ -90,71 +82,71 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueCommonActionResultDisplayType display_type = 11;</code>
-     * @return whether the displayType field is set
+     * <code>optional .RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;</code>
+     * @return whether the cIGKKIDJEKB field is set
      */
-    public boolean hasDisplayType() {
+    public boolean hasCIGKKIDJEKB() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .RogueCommonActionResultDisplayType display_type = 11;</code>
+     * <code>optional .RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;</code>
      * @return this
      */
-    public SyncRogueCommonActionResultScNotify clearDisplayType() {
+    public SyncRogueCommonActionResultScNotify clearCIGKKIDJEKB() {
       bitField0_ &= ~0x00000002;
-      displayType = 0;
+      cIGKKIDJEKB = 0;
       return this;
     }
 
     /**
-     * <code>optional .RogueCommonActionResultDisplayType display_type = 11;</code>
-     * @return the displayType
+     * <code>optional .RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;</code>
+     * @return the cIGKKIDJEKB
      */
-    public RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType getDisplayType(
+    public RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType getCIGKKIDJEKB(
         ) {
-      return RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.forNumber(displayType);
+      return RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.forNumber(cIGKKIDJEKB);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SyncRogueCommonActionResultScNotify#getDisplayType()}.getNumber().
+     * equivalent to {@link SyncRogueCommonActionResultScNotify#getCIGKKIDJEKB()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getDisplayTypeValue() {
-      return displayType;
+    public int getCIGKKIDJEKBValue() {
+      return cIGKKIDJEKB;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType}. Setting an invalid value
-     * can cause {@link SyncRogueCommonActionResultScNotify#getDisplayType()} to return null
+     * can cause {@link SyncRogueCommonActionResultScNotify#getCIGKKIDJEKB()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SyncRogueCommonActionResultScNotify setDisplayTypeValue(final int value) {
+    public SyncRogueCommonActionResultScNotify setCIGKKIDJEKBValue(final int value) {
       bitField0_ |= 0x00000002;
-      displayType = value;
+      cIGKKIDJEKB = value;
       return this;
     }
 
     /**
-     * <code>optional .RogueCommonActionResultDisplayType display_type = 11;</code>
-     * @param value the displayType to set
+     * <code>optional .RogueCommonActionResultDisplayType CIGKKIDJEKB = 9;</code>
+     * @param value the cIGKKIDJEKB to set
      * @return this
      */
-    public SyncRogueCommonActionResultScNotify setDisplayType(
+    public SyncRogueCommonActionResultScNotify setCIGKKIDJEKB(
         final RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType value) {
       bitField0_ |= 0x00000002;
-      displayType = value.getNumber();
+      cIGKKIDJEKB = value.getNumber();
       return this;
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      * @return whether the actionResultList field is set
      */
     public boolean hasActionResultList() {
@@ -162,7 +154,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      * @return this
      */
     public SyncRogueCommonActionResultScNotify clearActionResultList() {
@@ -172,7 +164,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -186,7 +178,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -201,7 +193,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      * @param value the actionResultList to add
      * @return this
      */
@@ -213,7 +205,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .RogueActionResult action_result_list = 5;</code>
+     * <code>repeated .RogueActionResult action_result_list = 13;</code>
      * @param values the actionResultList to add
      * @return this
      */
@@ -231,7 +223,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         rogueVersionId = other.rogueVersionId;
-        displayType = other.displayType;
+        cIGKKIDJEKB = other.cIGKKIDJEKB;
         actionResultList.copyFrom(other.actionResultList);
       }
       return this;
@@ -247,8 +239,8 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
       if (other.hasRogueVersionId()) {
         setRogueVersionId(other.rogueVersionId);
       }
-      if (other.hasDisplayType()) {
-        setDisplayTypeValue(other.displayType);
+      if (other.hasCIGKKIDJEKB()) {
+        setCIGKKIDJEKBValue(other.cIGKKIDJEKB);
       }
       if (other.hasActionResultList()) {
         getMutableActionResultList().addAll(other.actionResultList);
@@ -264,7 +256,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       rogueVersionId = 0;
-      displayType = 0;
+      cIGKKIDJEKB = 0;
       actionResultList.clear();
       return this;
     }
@@ -291,7 +283,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
       SyncRogueCommonActionResultScNotify other = (SyncRogueCommonActionResultScNotify) o;
       return bitField0_ == other.bitField0_
         && (!hasRogueVersionId() || rogueVersionId == other.rogueVersionId)
-        && (!hasDisplayType() || displayType == other.displayType)
+        && (!hasCIGKKIDJEKB() || cIGKKIDJEKB == other.cIGKKIDJEKB)
         && (!hasActionResultList() || actionResultList.equals(other.actionResultList));
     }
 
@@ -302,12 +294,12 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
         output.writeUInt32NoTag(rogueVersionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeEnumNoTag(displayType);
+        output.writeRawByte((byte) 72);
+        output.writeEnumNoTag(cIGKKIDJEKB);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < actionResultList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 106);
           output.writeMessageNoTag(actionResultList.get(i));
         }
       }
@@ -320,7 +312,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(rogueVersionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(displayType);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(cIGKKIDJEKB);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * actionResultList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(actionResultList);
@@ -341,23 +333,23 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
             rogueVersionId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 72) {
               break;
             }
           }
-          case 88: {
-            // displayType
+          case 72: {
+            // cIGKKIDJEKB
             final int value = input.readInt32();
             if (RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.forNumber(value) != null) {
-              displayType = value;
+              cIGKKIDJEKB = value;
               bitField0_ |= 0x00000002;
             }
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 106) {
               break;
             }
           }
-          case 42: {
+          case 106: {
             // actionResultList
             tag = input.readRepeatedMessage(actionResultList, tag);
             bitField0_ |= 0x00000004;
@@ -386,7 +378,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
         output.writeUInt32(FieldNames.rogueVersionId, rogueVersionId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeEnum(FieldNames.displayType, displayType, RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.converter());
+        output.writeEnum(FieldNames.cIGKKIDJEKB, cIGKKIDJEKB, RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.converter());
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.actionResultList, actionResultList);
@@ -414,13 +406,12 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
             }
             break;
           }
-          case 1714350876:
-          case 1615288471: {
-            if (input.isAtField(FieldNames.displayType)) {
+          case 782567534: {
+            if (input.isAtField(FieldNames.cIGKKIDJEKB)) {
               if (!input.trySkipNullValue()) {
                 final RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType value = input.readEnum(RogueCommonActionResultDisplayTypeOuterClass.RogueCommonActionResultDisplayType.converter());
                 if (value != null) {
-                  displayType = value.getNumber();
+                  cIGKKIDJEKB = value.getNumber();
                   bitField0_ |= 0x00000002;
                 } else {
                   input.skipUnknownEnumValue();
@@ -500,7 +491,7 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     static class FieldNames {
       static final FieldName rogueVersionId = FieldName.forField("rogueVersionId", "rogue_version_id");
 
-      static final FieldName displayType = FieldName.forField("displayType", "display_type");
+      static final FieldName cIGKKIDJEKB = FieldName.forField("CIGKKIDJEKB");
 
       static final FieldName actionResultList = FieldName.forField("actionResultList", "action_result_list");
     }

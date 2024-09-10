@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "DailyActivityInfo.proto";
 
 message GetDailyActiveInfoScRsp {
-	uint32 daily_active_point = 9;
-	repeated DailyActivityInfo daily_active_level_list = 8;
-	uint32 retcode = 6;
-	repeated uint32 daily_active_quest_id_list = 1;
+	uint32 daily_active_point = 6;
+	repeated uint32 daily_active_quest_id_list = 8;
+	uint32 retcode = 7;
+	repeated DailyActivityInfo daily_active_level_list = 1;
 }

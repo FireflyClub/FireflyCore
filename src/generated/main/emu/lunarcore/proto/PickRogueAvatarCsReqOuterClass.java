@@ -20,19 +20,19 @@ public final class PickRogueAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 prop_entity_id = 1;</code>
+     * <code>optional uint32 prop_entity_id = 3;</code>
      */
     private int propEntityId;
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
      */
-    private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt mOICCJNMBBI = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      */
-    private final RepeatedInt dAPLNLIGMOM = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
 
     private PickRogueAvatarCsReq() {
     }
@@ -45,7 +45,7 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 1;</code>
+     * <code>optional uint32 prop_entity_id = 3;</code>
      * @return whether the propEntityId field is set
      */
     public boolean hasPropEntityId() {
@@ -53,7 +53,7 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 1;</code>
+     * <code>optional uint32 prop_entity_id = 3;</code>
      * @return this
      */
     public PickRogueAvatarCsReq clearPropEntityId() {
@@ -63,7 +63,7 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 1;</code>
+     * <code>optional uint32 prop_entity_id = 3;</code>
      * @return the propEntityId
      */
     public int getPropEntityId() {
@@ -71,7 +71,7 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 prop_entity_id = 1;</code>
+     * <code>optional uint32 prop_entity_id = 3;</code>
      * @param value the propEntityId to set
      * @return this
      */
@@ -82,25 +82,93 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
-     * @return whether the baseAvatarIdList field is set
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @return whether the mOICCJNMBBI field is set
      */
-    public boolean hasBaseAvatarIdList() {
+    public boolean hasMOICCJNMBBI() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @return this
+     */
+    public PickRogueAvatarCsReq clearMOICCJNMBBI() {
+      bitField0_ &= ~0x00000002;
+      mOICCJNMBBI.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMOICCJNMBBI()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getMOICCJNMBBI() {
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableMOICCJNMBBI() {
+      bitField0_ |= 0x00000002;
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @param value the mOICCJNMBBI to add
+     * @return this
+     */
+    public PickRogueAvatarCsReq addMOICCJNMBBI(final int value) {
+      bitField0_ |= 0x00000002;
+      mOICCJNMBBI.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @param values the mOICCJNMBBI to add
+     * @return this
+     */
+    public PickRogueAvatarCsReq addAllMOICCJNMBBI(final int... values) {
+      bitField0_ |= 0x00000002;
+      mOICCJNMBBI.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
+     * @return whether the baseAvatarIdList field is set
+     */
+    public boolean hasBaseAvatarIdList() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      * @return this
      */
     public PickRogueAvatarCsReq clearBaseAvatarIdList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       baseAvatarIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -114,7 +182,7 @@ public final class PickRogueAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,97 +191,29 @@ public final class PickRogueAvatarCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableBaseAvatarIdList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      * @param value the baseAvatarIdList to add
      * @return this
      */
     public PickRogueAvatarCsReq addBaseAvatarIdList(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       baseAvatarIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 2;</code>
+     * <code>repeated uint32 base_avatar_id_list = 8;</code>
      * @param values the baseAvatarIdList to add
      * @return this
      */
     public PickRogueAvatarCsReq addAllBaseAvatarIdList(final int... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       baseAvatarIdList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     * @return whether the dAPLNLIGMOM field is set
-     */
-    public boolean hasDAPLNLIGMOM() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     * @return this
-     */
-    public PickRogueAvatarCsReq clearDAPLNLIGMOM() {
-      bitField0_ &= ~0x00000004;
-      dAPLNLIGMOM.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableDAPLNLIGMOM()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getDAPLNLIGMOM() {
-      return dAPLNLIGMOM;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableDAPLNLIGMOM() {
-      bitField0_ |= 0x00000004;
-      return dAPLNLIGMOM;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     * @param value the dAPLNLIGMOM to add
-     * @return this
-     */
-    public PickRogueAvatarCsReq addDAPLNLIGMOM(final int value) {
-      bitField0_ |= 0x00000004;
-      dAPLNLIGMOM.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 4;</code>
-     * @param values the dAPLNLIGMOM to add
-     * @return this
-     */
-    public PickRogueAvatarCsReq addAllDAPLNLIGMOM(final int... values) {
-      bitField0_ |= 0x00000004;
-      dAPLNLIGMOM.addAll(values);
       return this;
     }
 
@@ -223,8 +223,8 @@ public final class PickRogueAvatarCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         propEntityId = other.propEntityId;
+        mOICCJNMBBI.copyFrom(other.mOICCJNMBBI);
         baseAvatarIdList.copyFrom(other.baseAvatarIdList);
-        dAPLNLIGMOM.copyFrom(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -238,11 +238,11 @@ public final class PickRogueAvatarCsReqOuterClass {
       if (other.hasPropEntityId()) {
         setPropEntityId(other.propEntityId);
       }
+      if (other.hasMOICCJNMBBI()) {
+        getMutableMOICCJNMBBI().addAll(other.mOICCJNMBBI);
+      }
       if (other.hasBaseAvatarIdList()) {
         getMutableBaseAvatarIdList().addAll(other.baseAvatarIdList);
-      }
-      if (other.hasDAPLNLIGMOM()) {
-        getMutableDAPLNLIGMOM().addAll(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -255,8 +255,8 @@ public final class PickRogueAvatarCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       propEntityId = 0;
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -267,8 +267,8 @@ public final class PickRogueAvatarCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -283,26 +283,26 @@ public final class PickRogueAvatarCsReqOuterClass {
       PickRogueAvatarCsReq other = (PickRogueAvatarCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasPropEntityId() || propEntityId == other.propEntityId)
-        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList))
-        && (!hasDAPLNLIGMOM() || dAPLNLIGMOM.equals(other.dAPLNLIGMOM));
+        && (!hasMOICCJNMBBI() || mOICCJNMBBI.equals(other.mOICCJNMBBI))
+        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(propEntityId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+        for (int i = 0; i < mOICCJNMBBI.length(); i++) {
           output.writeRawByte((byte) 16);
-          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
+          output.writeUInt32NoTag(mOICCJNMBBI.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < dAPLNLIGMOM.length(); i++) {
-          output.writeRawByte((byte) 32);
-          output.writeUInt32NoTag(dAPLNLIGMOM.array()[i]);
+        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+          output.writeRawByte((byte) 64);
+          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
         }
       }
     }
@@ -314,10 +314,10 @@ public final class PickRogueAvatarCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(propEntityId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
+        size += (1 * mOICCJNMBBI.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * dAPLNLIGMOM.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dAPLNLIGMOM);
+        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
       }
       return size;
     }
@@ -329,7 +329,7 @@ public final class PickRogueAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 24: {
             // propEntityId
             propEntityId = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -339,17 +339,17 @@ public final class PickRogueAvatarCsReqOuterClass {
             }
           }
           case 18: {
-            // baseAvatarIdList [packed=true]
-            input.readPackedUInt32(baseAvatarIdList, tag);
+            // mOICCJNMBBI [packed=true]
+            input.readPackedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 66) {
               break;
             }
           }
-          case 34: {
-            // dAPLNLIGMOM [packed=true]
-            input.readPackedUInt32(dAPLNLIGMOM, tag);
+          case 66: {
+            // baseAvatarIdList [packed=true]
+            input.readPackedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -367,14 +367,14 @@ public final class PickRogueAvatarCsReqOuterClass {
             break;
           }
           case 16: {
-            // baseAvatarIdList [packed=false]
-            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
+            // mOICCJNMBBI [packed=false]
+            tag = input.readRepeatedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000002;
             break;
           }
-          case 32: {
-            // dAPLNLIGMOM [packed=false]
-            tag = input.readRepeatedUInt32(dAPLNLIGMOM, tag);
+          case 64: {
+            // baseAvatarIdList [packed=false]
+            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000004;
             break;
           }
@@ -389,10 +389,10 @@ public final class PickRogueAvatarCsReqOuterClass {
         output.writeUInt32(FieldNames.propEntityId, propEntityId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
+        output.writeRepeatedUInt32(FieldNames.mOICCJNMBBI, mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedUInt32(FieldNames.dAPLNLIGMOM, dAPLNLIGMOM);
+        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
       }
       output.endObject();
     }
@@ -416,11 +416,10 @@ public final class PickRogueAvatarCsReqOuterClass {
             }
             break;
           }
-          case -1212654461:
-          case 914628490: {
-            if (input.isAtField(FieldNames.baseAvatarIdList)) {
+          case -35824601: {
+            if (input.isAtField(FieldNames.mOICCJNMBBI)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(baseAvatarIdList);
+                input.readRepeatedUInt32(mOICCJNMBBI);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -428,10 +427,11 @@ public final class PickRogueAvatarCsReqOuterClass {
             }
             break;
           }
-          case 1671280822: {
-            if (input.isAtField(FieldNames.dAPLNLIGMOM)) {
+          case -1212654461:
+          case 914628490: {
+            if (input.isAtField(FieldNames.baseAvatarIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(dAPLNLIGMOM);
+                input.readRepeatedUInt32(baseAvatarIdList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -494,9 +494,9 @@ public final class PickRogueAvatarCsReqOuterClass {
     static class FieldNames {
       static final FieldName propEntityId = FieldName.forField("propEntityId", "prop_entity_id");
 
-      static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
+      static final FieldName mOICCJNMBBI = FieldName.forField("MOICCJNMBBI");
 
-      static final FieldName dAPLNLIGMOM = FieldName.forField("DAPLNLIGMOM");
+      static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
     }
   }
 }

@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "SceneBattleInfo.proto";
 
 message SceneCastSkillScRsp {
-	//repeated KNCJHGLKLBI DGPJOIAGIGM = 4;
-	uint32 attacked_group_id = 10;
+	uint32 attacked_group_id = 1;
+	//repeated IIMHJNGOION IABJAAOJPJM = 9;
 	uint32 retcode = 14;
-	SceneBattleInfo battle_info = 13;
+	SceneBattleInfo battle_info = 7;
 }

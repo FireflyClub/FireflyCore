@@ -6,15 +6,15 @@ import "ItemList.proto";
 import "MailType.proto";
 
 message ClientMail {
-	string title = 1;
-	ItemList attachment = 14;
-	uint32 id = 12;
-	string content = 11;
-	repeated string para_list = 9;
-	uint32 template = 8;
-	MailType mail_type = 4;
-	int64 time = 15;
-	int64 expire_time = 3;
-	bool is_read = 13;
-	string sender = 7;
+	string Title = 14;
+	string Content = 3;
+	uint32 Id = 4;
+	string Sender = 5;
+	MailType MailType = 1;
+	int64 ExpireTime = 7;
+	bool IsRead = 8;
+	uint32 TemplateId = 11;
+	ItemList Attachment = 2;
+	repeated string ParaList = 10;
+	int64 Time = 6;
 }

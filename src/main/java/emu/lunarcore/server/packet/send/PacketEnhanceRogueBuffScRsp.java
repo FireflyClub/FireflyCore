@@ -10,7 +10,7 @@ public class PacketEnhanceRogueBuffScRsp extends BasePacket {
         super(CmdId.EnhanceRogueBuffScRsp);
         
         var proto = EnhanceRogueBuffScRsp.newInstance()
-            .setIsSuccess(true)
+            .setIsSucc(true)
             .setRogueBuff(buff);
         
         this.setData(proto);

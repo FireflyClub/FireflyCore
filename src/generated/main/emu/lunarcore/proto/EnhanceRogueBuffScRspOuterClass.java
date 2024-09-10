@@ -19,17 +19,17 @@ public final class EnhanceRogueBuffScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool is_success = 1;</code>
+     * <code>optional bool is_succ = 13;</code>
      */
-    private boolean isSuccess;
+    private boolean isSucc;
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      */
     private final RogueBuffOuterClass.RogueBuff rogueBuff = RogueBuffOuterClass.RogueBuff.newInstance();
 
@@ -44,7 +44,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -52,7 +52,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
     public EnhanceRogueBuffScRsp clearRetcode() {
@@ -62,7 +62,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -70,7 +70,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -81,44 +81,44 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_success = 1;</code>
-     * @return whether the isSuccess field is set
+     * <code>optional bool is_succ = 13;</code>
+     * @return whether the isSucc field is set
      */
-    public boolean hasIsSuccess() {
+    public boolean hasIsSucc() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool is_success = 1;</code>
+     * <code>optional bool is_succ = 13;</code>
      * @return this
      */
-    public EnhanceRogueBuffScRsp clearIsSuccess() {
+    public EnhanceRogueBuffScRsp clearIsSucc() {
       bitField0_ &= ~0x00000002;
-      isSuccess = false;
+      isSucc = false;
       return this;
     }
 
     /**
-     * <code>optional bool is_success = 1;</code>
-     * @return the isSuccess
+     * <code>optional bool is_succ = 13;</code>
+     * @return the isSucc
      */
-    public boolean getIsSuccess() {
-      return isSuccess;
+    public boolean getIsSucc() {
+      return isSucc;
     }
 
     /**
-     * <code>optional bool is_success = 1;</code>
-     * @param value the isSuccess to set
+     * <code>optional bool is_succ = 13;</code>
+     * @param value the isSucc to set
      * @return this
      */
-    public EnhanceRogueBuffScRsp setIsSuccess(final boolean value) {
+    public EnhanceRogueBuffScRsp setIsSucc(final boolean value) {
       bitField0_ |= 0x00000002;
-      isSuccess = value;
+      isSucc = value;
       return this;
     }
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      * @return whether the rogueBuff field is set
      */
     public boolean hasRogueBuff() {
@@ -126,7 +126,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      * @return this
      */
     public EnhanceRogueBuffScRsp clearRogueBuff() {
@@ -136,7 +136,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -150,7 +150,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -164,7 +164,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
-     * <code>optional .RogueBuff rogue_buff = 15;</code>
+     * <code>optional .RogueBuff rogue_buff = 6;</code>
      * @param value the rogueBuff to set
      * @return this
      */
@@ -180,7 +180,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        isSuccess = other.isSuccess;
+        isSucc = other.isSucc;
         rogueBuff.copyFrom(other.rogueBuff);
       }
       return this;
@@ -195,8 +195,8 @@ public final class EnhanceRogueBuffScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasIsSuccess()) {
-        setIsSuccess(other.isSuccess);
+      if (other.hasIsSucc()) {
+        setIsSucc(other.isSucc);
       }
       if (other.hasRogueBuff()) {
         getMutableRogueBuff().mergeFrom(other.rogueBuff);
@@ -212,7 +212,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      isSuccess = false;
+      isSucc = false;
       rogueBuff.clear();
       return this;
     }
@@ -239,22 +239,22 @@ public final class EnhanceRogueBuffScRspOuterClass {
       EnhanceRogueBuffScRsp other = (EnhanceRogueBuffScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasIsSuccess() || isSuccess == other.isSuccess)
+        && (!hasIsSucc() || isSucc == other.isSucc)
         && (!hasRogueBuff() || rogueBuff.equals(other.rogueBuff));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeBoolNoTag(isSuccess);
+        output.writeRawByte((byte) 104);
+        output.writeBoolNoTag(isSucc);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 50);
         output.writeMessageNoTag(rogueBuff);
       }
     }
@@ -281,25 +281,25 @@ public final class EnhanceRogueBuffScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 56: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 104) {
               break;
             }
           }
-          case 8: {
-            // isSuccess
-            isSuccess = input.readBool();
+          case 104: {
+            // isSucc
+            isSucc = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 50) {
               break;
             }
           }
-          case 122: {
+          case 50: {
             // rogueBuff
             input.readMessage(rogueBuff);
             bitField0_ |= 0x00000004;
@@ -329,7 +329,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.isSuccess, isSuccess);
+        output.writeBool(FieldNames.isSucc, isSucc);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.rogueBuff, rogueBuff);
@@ -355,11 +355,11 @@ public final class EnhanceRogueBuffScRspOuterClass {
             }
             break;
           }
-          case 1848018809:
-          case -366859794: {
-            if (input.isAtField(FieldNames.isSuccess)) {
+          case -1180113268:
+          case 2082234423: {
+            if (input.isAtField(FieldNames.isSucc)) {
               if (!input.trySkipNullValue()) {
-                isSuccess = input.readBool();
+                isSucc = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -434,7 +434,7 @@ public final class EnhanceRogueBuffScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName isSuccess = FieldName.forField("isSuccess", "is_success");
+      static final FieldName isSucc = FieldName.forField("isSucc", "is_succ");
 
       static final FieldName rogueBuff = FieldName.forField("rogueBuff", "rogue_buff");
     }

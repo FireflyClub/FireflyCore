@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeBossRelicMap.proto";
 
 message ChallengeBossRelic {
-	map<uint32, ChallengeBossRelicMap> relic_map = 6;
+	map<uint32, ChallengeBossRelicMap> relic_map = 4;
 }

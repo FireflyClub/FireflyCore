@@ -24,16 +24,16 @@ message MonsterBattleInfo {
 	uint32 stage_type = 17;
 	double total_break_damage_taken = 18;
 	double delay_cumulate = 19;
-	//LDHIMMJAIEB death_source = 20;
+	//ADKIINEHBCD death_source = 20;
 	uint32 monster_wave = 21;
 	int32 index_in_wave = 22;
 	uint32 phase = 23;
 	uint32 max_phase = 24;
-	//DBGHOANDOJE battle_tag = 25;
-	repeated BattleSkillInfo IGIEFPANAEL = 26;
-	uint32 AMDHNDFLMGD = 27;
-	//repeated MonsterPhaseStt BJFOPABIFMB = 28;
-	uint32 BMOLAPHKIKH = 29;
-	uint32 MLNOOCHGLJP = 30;
-	//CMHFGEPJLFL ONLFPAADPNN = 31;
+	//BPPBFGAEPNI battle_tag = 25;
+	repeated BattleSkillInfo battle_event_id = 26;
+	uint32 OKGKMLGGMDO = 27;
+	//repeated MonsterPhaseStt KEPDCEILLJF = 28;
+	uint32 JGHNPEBHBDK = 29;
+	uint32 LANOIPJHKAC = 30;
+	//LBNOGHIMDMG AMLAAOLDKCL = 31;
 }

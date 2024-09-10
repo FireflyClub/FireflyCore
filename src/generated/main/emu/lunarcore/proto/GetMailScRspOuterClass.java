@@ -20,32 +20,32 @@ public final class GetMailScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 start = 1;</code>
-     */
-    private int start;
-
-    /**
-     * <code>optional uint32 total_num = 10;</code>
-     */
-    private int totalNum;
-
-    /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 2;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool is_end = 8;</code>
+     * <code>optional uint32 Start = 6;</code>
+     */
+    private int start;
+
+    /**
+     * <code>optional uint32 TotalNum = 15;</code>
+     */
+    private int totalNum;
+
+    /**
+     * <code>optional bool IsEnd = 8;</code>
      */
     private boolean isEnd;
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      */
     private final RepeatedMessage<ClientMailOuterClass.ClientMail> mailList = RepeatedMessage.newEmptyInstance(ClientMailOuterClass.ClientMail.getFactory());
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      */
     private final RepeatedMessage<ClientMailOuterClass.ClientMail> noticeMailList = RepeatedMessage.newEmptyInstance(ClientMailOuterClass.ClientMail.getFactory());
 
@@ -60,99 +60,25 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 start = 1;</code>
-     * @return whether the start field is set
+     * <code>optional uint32 Retcode = 2;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasStart() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 start = 1;</code>
-     * @return this
-     */
-    public GetMailScRsp clearStart() {
-      bitField0_ &= ~0x00000001;
-      start = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 start = 1;</code>
-     * @return the start
-     */
-    public int getStart() {
-      return start;
-    }
-
-    /**
-     * <code>optional uint32 start = 1;</code>
-     * @param value the start to set
-     * @return this
-     */
-    public GetMailScRsp setStart(final int value) {
-      bitField0_ |= 0x00000001;
-      start = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 total_num = 10;</code>
-     * @return whether the totalNum field is set
-     */
-    public boolean hasTotalNum() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 total_num = 10;</code>
-     * @return this
-     */
-    public GetMailScRsp clearTotalNum() {
-      bitField0_ &= ~0x00000002;
-      totalNum = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 total_num = 10;</code>
-     * @return the totalNum
-     */
-    public int getTotalNum() {
-      return totalNum;
-    }
-
-    /**
-     * <code>optional uint32 total_num = 10;</code>
-     * @param value the totalNum to set
-     * @return this
-     */
-    public GetMailScRsp setTotalNum(final int value) {
-      bitField0_ |= 0x00000002;
-      totalNum = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 14;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 2;</code>
      * @return this
      */
     public GetMailScRsp clearRetcode() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 2;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -160,18 +86,92 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 2;</code>
      * @param value the retcode to set
      * @return this
      */
     public GetMailScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional bool is_end = 8;</code>
+     * <code>optional uint32 Start = 6;</code>
+     * @return whether the start field is set
+     */
+    public boolean hasStart() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 Start = 6;</code>
+     * @return this
+     */
+    public GetMailScRsp clearStart() {
+      bitField0_ &= ~0x00000002;
+      start = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 Start = 6;</code>
+     * @return the start
+     */
+    public int getStart() {
+      return start;
+    }
+
+    /**
+     * <code>optional uint32 Start = 6;</code>
+     * @param value the start to set
+     * @return this
+     */
+    public GetMailScRsp setStart(final int value) {
+      bitField0_ |= 0x00000002;
+      start = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 TotalNum = 15;</code>
+     * @return whether the totalNum field is set
+     */
+    public boolean hasTotalNum() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 TotalNum = 15;</code>
+     * @return this
+     */
+    public GetMailScRsp clearTotalNum() {
+      bitField0_ &= ~0x00000004;
+      totalNum = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 TotalNum = 15;</code>
+     * @return the totalNum
+     */
+    public int getTotalNum() {
+      return totalNum;
+    }
+
+    /**
+     * <code>optional uint32 TotalNum = 15;</code>
+     * @param value the totalNum to set
+     * @return this
+     */
+    public GetMailScRsp setTotalNum(final int value) {
+      bitField0_ |= 0x00000004;
+      totalNum = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool IsEnd = 8;</code>
      * @return whether the isEnd field is set
      */
     public boolean hasIsEnd() {
@@ -179,7 +179,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_end = 8;</code>
+     * <code>optional bool IsEnd = 8;</code>
      * @return this
      */
     public GetMailScRsp clearIsEnd() {
@@ -189,7 +189,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_end = 8;</code>
+     * <code>optional bool IsEnd = 8;</code>
      * @return the isEnd
      */
     public boolean getIsEnd() {
@@ -197,7 +197,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>optional bool is_end = 8;</code>
+     * <code>optional bool IsEnd = 8;</code>
      * @param value the isEnd to set
      * @return this
      */
@@ -208,7 +208,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      * @return whether the mailList field is set
      */
     public boolean hasMailList() {
@@ -216,7 +216,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      * @return this
      */
     public GetMailScRsp clearMailList() {
@@ -226,7 +226,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -240,7 +240,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -254,7 +254,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      * @param value the mailList to add
      * @return this
      */
@@ -265,7 +265,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail mail_list = 2;</code>
+     * <code>repeated .ClientMail MailList = 7;</code>
      * @param values the mailList to add
      * @return this
      */
@@ -276,7 +276,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      * @return whether the noticeMailList field is set
      */
     public boolean hasNoticeMailList() {
@@ -284,7 +284,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      * @return this
      */
     public GetMailScRsp clearNoticeMailList() {
@@ -294,7 +294,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -308,7 +308,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -322,7 +322,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      * @param value the noticeMailList to add
      * @return this
      */
@@ -333,7 +333,7 @@ public final class GetMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ClientMail notice_mail_list = 4;</code>
+     * <code>repeated .ClientMail NoticeMailList = 14;</code>
      * @param values the noticeMailList to add
      * @return this
      */
@@ -348,9 +348,9 @@ public final class GetMailScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        retcode = other.retcode;
         start = other.start;
         totalNum = other.totalNum;
-        retcode = other.retcode;
         isEnd = other.isEnd;
         mailList.copyFrom(other.mailList);
         noticeMailList.copyFrom(other.noticeMailList);
@@ -364,14 +364,14 @@ public final class GetMailScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
+      }
       if (other.hasStart()) {
         setStart(other.start);
       }
       if (other.hasTotalNum()) {
         setTotalNum(other.totalNum);
-      }
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
       }
       if (other.hasIsEnd()) {
         setIsEnd(other.isEnd);
@@ -392,9 +392,9 @@ public final class GetMailScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      retcode = 0;
       start = 0;
       totalNum = 0;
-      retcode = 0;
       isEnd = false;
       mailList.clear();
       noticeMailList.clear();
@@ -423,9 +423,9 @@ public final class GetMailScRspOuterClass {
       }
       GetMailScRsp other = (GetMailScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasRetcode() || retcode == other.retcode)
         && (!hasStart() || start == other.start)
         && (!hasTotalNum() || totalNum == other.totalNum)
-        && (!hasRetcode() || retcode == other.retcode)
         && (!hasIsEnd() || isEnd == other.isEnd)
         && (!hasMailList() || mailList.equals(other.mailList))
         && (!hasNoticeMailList() || noticeMailList.equals(other.noticeMailList));
@@ -434,16 +434,16 @@ public final class GetMailScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(start);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(totalNum);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(start);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(totalNum);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 64);
@@ -451,13 +451,13 @@ public final class GetMailScRspOuterClass {
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < mailList.length(); i++) {
-          output.writeRawByte((byte) 18);
+          output.writeRawByte((byte) 58);
           output.writeMessageNoTag(mailList.get(i));
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < noticeMailList.length(); i++) {
-          output.writeRawByte((byte) 34);
+          output.writeRawByte((byte) 114);
           output.writeMessageNoTag(noticeMailList.get(i));
         }
       }
@@ -467,13 +467,13 @@ public final class GetMailScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(start);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalNum);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(start);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalNum);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 2;
@@ -494,27 +494,27 @@ public final class GetMailScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // start
-            start = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 80) {
-              break;
-            }
-          }
-          case 80: {
-            // totalNum
-            totalNum = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
+          case 16: {
             // retcode
             retcode = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // start
+            start = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // totalNum
+            totalNum = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 64) {
@@ -526,19 +526,19 @@ public final class GetMailScRspOuterClass {
             isEnd = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 58) {
               break;
             }
           }
-          case 18: {
+          case 58: {
             // mailList
             tag = input.readRepeatedMessage(mailList, tag);
             bitField0_ |= 0x00000010;
-            if (tag != 34) {
+            if (tag != 114) {
               break;
             }
           }
-          case 34: {
+          case 114: {
             // noticeMailList
             tag = input.readRepeatedMessage(noticeMailList, tag);
             bitField0_ |= 0x00000020;
@@ -564,13 +564,13 @@ public final class GetMailScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.start, start);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.totalNum, totalNum);
+        output.writeUInt32(FieldNames.start, start);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.totalNum, totalNum);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeBool(FieldNames.isEnd, isEnd);
@@ -591,10 +591,10 @@ public final class GetMailScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 109757538: {
-            if (input.isAtField(FieldNames.start)) {
+          case -1532377618: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                start = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -602,11 +602,10 @@ public final class GetMailScRspOuterClass {
             }
             break;
           }
-          case -849911390:
-          case -576949237: {
-            if (input.isAtField(FieldNames.totalNum)) {
+          case 80204866: {
+            if (input.isAtField(FieldNames.start)) {
               if (!input.trySkipNullValue()) {
-                totalNum = input.readUInt32();
+                start = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -614,10 +613,10 @@ public final class GetMailScRspOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case -785267262: {
+            if (input.isAtField(FieldNames.totalNum)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                totalNum = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -625,8 +624,7 @@ public final class GetMailScRspOuterClass {
             }
             break;
           }
-          case 100465489:
-          case -1179770810: {
+          case 70912817: {
             if (input.isAtField(FieldNames.isEnd)) {
               if (!input.trySkipNullValue()) {
                 isEnd = input.readBool();
@@ -637,8 +635,7 @@ public final class GetMailScRspOuterClass {
             }
             break;
           }
-          case -10520843:
-          case -308519386: {
+          case 54123285: {
             if (input.isAtField(FieldNames.mailList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(mailList);
@@ -649,8 +646,7 @@ public final class GetMailScRspOuterClass {
             }
             break;
           }
-          case 17373677:
-          case 1540899199: {
+          case -984619507: {
             if (input.isAtField(FieldNames.noticeMailList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(noticeMailList);
@@ -713,17 +709,17 @@ public final class GetMailScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName start = FieldName.forField("start");
+      static final FieldName retcode = FieldName.forField("Retcode");
 
-      static final FieldName totalNum = FieldName.forField("totalNum", "total_num");
+      static final FieldName start = FieldName.forField("Start");
 
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName totalNum = FieldName.forField("TotalNum");
 
-      static final FieldName isEnd = FieldName.forField("isEnd", "is_end");
+      static final FieldName isEnd = FieldName.forField("IsEnd");
 
-      static final FieldName mailList = FieldName.forField("mailList", "mail_list");
+      static final FieldName mailList = FieldName.forField("MailList");
 
-      static final FieldName noticeMailList = FieldName.forField("noticeMailList", "notice_mail_list");
+      static final FieldName noticeMailList = FieldName.forField("NoticeMailList");
     }
   }
 }

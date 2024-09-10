@@ -10,6 +10,4 @@ message ChessRogueVirtualItemInfo {
     ChessRogueBuffInfo buff_info = 6;
     ChessRogueMiracleInfo miracle_info = 10;
     ChessRogueItemInfo item_info = 11;
-    // HMLCJCGOEHI rogue_aeon_info = 3;
-    // MBGNHFBIIHJ GEOIJKDCIOI = 12;
 }

@@ -20,12 +20,12 @@ public final class GetTutorialScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      */
     private final RepeatedMessage<TutorialOuterClass.Tutorial> tutorialList = RepeatedMessage.newEmptyInstance(TutorialOuterClass.Tutorial.getFactory());
 
@@ -40,7 +40,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -48,7 +48,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return this
      */
     public GetTutorialScRsp clearRetcode() {
@@ -58,7 +58,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -66,7 +66,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -77,7 +77,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      * @return whether the tutorialList field is set
      */
     public boolean hasTutorialList() {
@@ -85,7 +85,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      * @return this
      */
     public GetTutorialScRsp clearTutorialList() {
@@ -95,7 +95,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +109,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +123,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      * @param value the tutorialList to add
      * @return this
      */
@@ -134,7 +134,7 @@ public final class GetTutorialScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Tutorial tutorial_list = 9;</code>
+     * <code>repeated .Tutorial TutorialList = 9;</code>
      * @param values the tutorialList to add
      * @return this
      */
@@ -210,7 +210,7 @@ public final class GetTutorialScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -240,7 +240,7 @@ public final class GetTutorialScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 24: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -290,7 +290,7 @@ public final class GetTutorialScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
+          case -1532377618: {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
@@ -301,8 +301,7 @@ public final class GetTutorialScRspOuterClass {
             }
             break;
           }
-          case 608727324:
-          case 1708304607: {
+          case 773047612: {
             if (input.isAtField(FieldNames.tutorialList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(tutorialList);
@@ -366,9 +365,9 @@ public final class GetTutorialScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName retcode = FieldName.forField("Retcode");
 
-      static final FieldName tutorialList = FieldName.forField("tutorialList", "tutorial_list");
+      static final FieldName tutorialList = FieldName.forField("TutorialList");
     }
   }
 }

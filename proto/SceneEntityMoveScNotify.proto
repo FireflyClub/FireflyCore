@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "MotionInfo.proto";
 
 message SceneEntityMoveScNotify {
-	uint32 entity_id = 10;
-	MotionInfo motion = 15;
-	uint32 entry_id = 7;
-	uint32 client_pos_version = 9;
+	uint32 entry_id = 2;
+	MotionInfo motion = 14;
+	uint32 entity_id = 1;
+	uint32 client_pos_version = 4;
 }

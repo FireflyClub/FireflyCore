@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "SimpleInfo.proto";
 
 message FriendRecommendInfo {
-	SimpleInfo simple_info = 14;
-	bool BBEAAGPAIFD = 11;
+	bool NBHIADFEKFF = 11;
+	SimpleInfo simple_info = 13;
 }

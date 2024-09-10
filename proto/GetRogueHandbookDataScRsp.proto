@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "RogueHandbookData.proto";
 
 message GetRogueHandbookDataScRsp {
-	uint32 retcode = 5;
-	RogueHandbookData handbook_info = 7;
+	RogueHandbookData HandbookInfo = 2;
+	uint32 Retcode = 8;
 }

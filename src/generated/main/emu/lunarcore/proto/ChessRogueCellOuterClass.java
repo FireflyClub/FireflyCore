@@ -68,10 +68,6 @@ public final class ChessRogueCellOuterClass {
     private int newRoomId;
 
     /**
-     * <pre>
-     * AKNBDONHPPM chess_rogue_info = 14;
-     * </pre>
-     *
      * <code>optional bool PMBLMGDFGAN = 6;</code>
      */
     private boolean pMBLMGDFGAN;
@@ -429,10 +425,6 @@ public final class ChessRogueCellOuterClass {
     }
 
     /**
-     * <pre>
-     * AKNBDONHPPM chess_rogue_info = 14;
-     * </pre>
-     *
      * <code>optional bool PMBLMGDFGAN = 6;</code>
      * @return whether the pMBLMGDFGAN field is set
      */
@@ -441,10 +433,6 @@ public final class ChessRogueCellOuterClass {
     }
 
     /**
-     * <pre>
-     * AKNBDONHPPM chess_rogue_info = 14;
-     * </pre>
-     *
      * <code>optional bool PMBLMGDFGAN = 6;</code>
      * @return this
      */
@@ -455,10 +443,6 @@ public final class ChessRogueCellOuterClass {
     }
 
     /**
-     * <pre>
-     * AKNBDONHPPM chess_rogue_info = 14;
-     * </pre>
-     *
      * <code>optional bool PMBLMGDFGAN = 6;</code>
      * @return the pMBLMGDFGAN
      */
@@ -467,10 +451,6 @@ public final class ChessRogueCellOuterClass {
     }
 
     /**
-     * <pre>
-     * AKNBDONHPPM chess_rogue_info = 14;
-     * </pre>
-     *
      * <code>optional bool PMBLMGDFGAN = 6;</code>
      * @param value the pMBLMGDFGAN to set
      * @return this

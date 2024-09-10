@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "ChargerInfo.proto";
 import "RotatorEnergyInfo.proto";
+import "ChargerInfo.proto";
 
 message InteractChargerScRsp {
-	uint32 retcode = 14;
-	RotatorEnergyInfo energy_info = 8;
-	ChargerInfo charger_info = 1;
+	ChargerInfo charger_info = 6;
+	uint32 retcode = 12;
+	RotatorEnergyInfo energy_info = 3;
 }

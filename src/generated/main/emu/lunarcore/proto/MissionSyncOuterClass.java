@@ -21,22 +21,32 @@ public final class MissionSyncOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
      */
-    private final RepeatedInt syncMissionId = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt eKOKENIBLND = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     */
+    private final RepeatedInt aNJMGEHLOHE = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     */
+    private final RepeatedInt fHJPGKOKIMP = RepeatedInt.newEmptyInstance();
 
     /**
      * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
      * </pre>
      *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     */
+    private final RepeatedInt dJOBGKDFLBI = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated .Mission mission_list = 7;</code>
      */
     private final RepeatedMessage<MissionOuterClass.Mission> missionList = RepeatedMessage.newEmptyInstance(MissionOuterClass.Mission.getFactory());
 
@@ -51,63 +61,39 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
-     * @return whether the syncMissionId field is set
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
+     * @return whether the eKOKENIBLND field is set
      */
-    public boolean hasSyncMissionId() {
+    public boolean hasEKOKENIBLND() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
      * @return this
      */
-    public MissionSync clearSyncMissionId() {
+    public MissionSync clearEKOKENIBLND() {
       bitField0_ &= ~0x00000001;
-      syncMissionId.clear();
+      eKOKENIBLND.clear();
       return this;
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableSyncMissionId()} if you want to modify it.
+     * Use {@link #getMutableEKOKENIBLND()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getSyncMissionId() {
-      return syncMissionId;
+    public RepeatedInt getEKOKENIBLND() {
+      return eKOKENIBLND;
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -115,77 +101,287 @@ public final class MissionSyncOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableSyncMissionId() {
+    public RepeatedInt getMutableEKOKENIBLND() {
       bitField0_ |= 0x00000001;
-      return syncMissionId;
+      return eKOKENIBLND;
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
-     * @param value the syncMissionId to add
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
+     * @param value the eKOKENIBLND to add
      * @return this
      */
-    public MissionSync addSyncMissionId(final int value) {
+    public MissionSync addEKOKENIBLND(final int value) {
       bitField0_ |= 0x00000001;
-      syncMissionId.add(value);
+      eKOKENIBLND.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     * repeated uint32 LIGLNAIGDNH = 10;
-     * repeated uint32 HMBHDBNBHKI = 6;
-     * repeated uint32 IBAIJPGBICF = 1;
-     * </pre>
-     *
-     * <code>repeated uint32 sync_mission_id = 1;</code>
-     * @param values the syncMissionId to add
+     * <code>repeated uint32 EKOKENIBLND = 3;</code>
+     * @param values the eKOKENIBLND to add
      * @return this
      */
-    public MissionSync addAllSyncMissionId(final int... values) {
+    public MissionSync addAllEKOKENIBLND(final int... values) {
       bitField0_ |= 0x00000001;
-      syncMissionId.addAll(values);
+      eKOKENIBLND.addAll(values);
       return this;
     }
 
     /**
-     * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 12;</code>
-     * @return whether the missionList field is set
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     * @return whether the aNJMGEHLOHE field is set
      */
-    public boolean hasMissionList() {
+    public boolean hasANJMGEHLOHE() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     * @return this
+     */
+    public MissionSync clearANJMGEHLOHE() {
+      bitField0_ &= ~0x00000002;
+      aNJMGEHLOHE.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableANJMGEHLOHE()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getANJMGEHLOHE() {
+      return aNJMGEHLOHE;
+    }
+
+    /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableANJMGEHLOHE() {
+      bitField0_ |= 0x00000002;
+      return aNJMGEHLOHE;
+    }
+
+    /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     * @param value the aNJMGEHLOHE to add
+     * @return this
+     */
+    public MissionSync addANJMGEHLOHE(final int value) {
+      bitField0_ |= 0x00000002;
+      aNJMGEHLOHE.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 ANJMGEHLOHE = 5;</code>
+     * @param values the aNJMGEHLOHE to add
+     * @return this
+     */
+    public MissionSync addAllANJMGEHLOHE(final int... values) {
+      bitField0_ |= 0x00000002;
+      aNJMGEHLOHE.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     * @return whether the fHJPGKOKIMP field is set
+     */
+    public boolean hasFHJPGKOKIMP() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     * @return this
+     */
+    public MissionSync clearFHJPGKOKIMP() {
+      bitField0_ &= ~0x00000004;
+      fHJPGKOKIMP.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableFHJPGKOKIMP()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getFHJPGKOKIMP() {
+      return fHJPGKOKIMP;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableFHJPGKOKIMP() {
+      bitField0_ |= 0x00000004;
+      return fHJPGKOKIMP;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     * @param value the fHJPGKOKIMP to add
+     * @return this
+     */
+    public MissionSync addFHJPGKOKIMP(final int value) {
+      bitField0_ |= 0x00000004;
+      fHJPGKOKIMP.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 FHJPGKOKIMP = 11;</code>
+     * @param values the fHJPGKOKIMP to add
+     * @return this
+     */
+    public MissionSync addAllFHJPGKOKIMP(final int... values) {
+      bitField0_ |= 0x00000004;
+      fHJPGKOKIMP.addAll(values);
+      return this;
+    }
+
+    /**
      * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
      * </pre>
      *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     * @return whether the dJOBGKDFLBI field is set
+     */
+    public boolean hasDJOBGKDFLBI() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+     * </pre>
+     *
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     * @return this
+     */
+    public MissionSync clearDJOBGKDFLBI() {
+      bitField0_ &= ~0x00000008;
+      dJOBGKDFLBI.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+     * </pre>
+     *
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableDJOBGKDFLBI()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getDJOBGKDFLBI() {
+      return dJOBGKDFLBI;
+    }
+
+    /**
+     * <pre>
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+     * </pre>
+     *
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableDJOBGKDFLBI() {
+      bitField0_ |= 0x00000008;
+      return dJOBGKDFLBI;
+    }
+
+    /**
+     * <pre>
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+     * </pre>
+     *
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     * @param value the dJOBGKDFLBI to add
+     * @return this
+     */
+    public MissionSync addDJOBGKDFLBI(final int value) {
+      bitField0_ |= 0x00000008;
+      dJOBGKDFLBI.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+     * repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+     * </pre>
+     *
+     * <code>repeated uint32 DJOBGKDFLBI = 12;</code>
+     * @param values the dJOBGKDFLBI to add
+     * @return this
+     */
+    public MissionSync addAllDJOBGKDFLBI(final int... values) {
+      bitField0_ |= 0x00000008;
+      dJOBGKDFLBI.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .Mission mission_list = 7;</code>
+     * @return whether the missionList field is set
+     */
+    public boolean hasMissionList() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>repeated .Mission mission_list = 7;</code>
      * @return this
      */
     public MissionSync clearMissionList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000010;
       missionList.clear();
       return this;
     }
 
     /**
-     * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated .Mission mission_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -199,11 +395,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated .Mission mission_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -212,36 +404,28 @@ public final class MissionSyncOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MissionOuterClass.Mission> getMutableMissionList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000010;
       return missionList;
     }
 
     /**
-     * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated .Mission mission_list = 7;</code>
      * @param value the missionList to add
      * @return this
      */
     public MissionSync addMissionList(final MissionOuterClass.Mission value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000010;
       missionList.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     * repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-     * </pre>
-     *
-     * <code>repeated .Mission mission_list = 12;</code>
+     * <code>repeated .Mission mission_list = 7;</code>
      * @param values the missionList to add
      * @return this
      */
     public MissionSync addAllMissionList(final MissionOuterClass.Mission... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000010;
       missionList.addAll(values);
       return this;
     }
@@ -251,7 +435,10 @@ public final class MissionSyncOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        syncMissionId.copyFrom(other.syncMissionId);
+        eKOKENIBLND.copyFrom(other.eKOKENIBLND);
+        aNJMGEHLOHE.copyFrom(other.aNJMGEHLOHE);
+        fHJPGKOKIMP.copyFrom(other.fHJPGKOKIMP);
+        dJOBGKDFLBI.copyFrom(other.dJOBGKDFLBI);
         missionList.copyFrom(other.missionList);
       }
       return this;
@@ -263,8 +450,17 @@ public final class MissionSyncOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSyncMissionId()) {
-        getMutableSyncMissionId().addAll(other.syncMissionId);
+      if (other.hasEKOKENIBLND()) {
+        getMutableEKOKENIBLND().addAll(other.eKOKENIBLND);
+      }
+      if (other.hasANJMGEHLOHE()) {
+        getMutableANJMGEHLOHE().addAll(other.aNJMGEHLOHE);
+      }
+      if (other.hasFHJPGKOKIMP()) {
+        getMutableFHJPGKOKIMP().addAll(other.fHJPGKOKIMP);
+      }
+      if (other.hasDJOBGKDFLBI()) {
+        getMutableDJOBGKDFLBI().addAll(other.dJOBGKDFLBI);
       }
       if (other.hasMissionList()) {
         getMutableMissionList().addAll(other.missionList);
@@ -279,7 +475,10 @@ public final class MissionSyncOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      syncMissionId.clear();
+      eKOKENIBLND.clear();
+      aNJMGEHLOHE.clear();
+      fHJPGKOKIMP.clear();
+      dJOBGKDFLBI.clear();
       missionList.clear();
       return this;
     }
@@ -291,7 +490,10 @@ public final class MissionSyncOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      syncMissionId.clear();
+      eKOKENIBLND.clear();
+      aNJMGEHLOHE.clear();
+      fHJPGKOKIMP.clear();
+      dJOBGKDFLBI.clear();
       missionList.clearQuick();
       return this;
     }
@@ -306,21 +508,42 @@ public final class MissionSyncOuterClass {
       }
       MissionSync other = (MissionSync) o;
       return bitField0_ == other.bitField0_
-        && (!hasSyncMissionId() || syncMissionId.equals(other.syncMissionId))
+        && (!hasEKOKENIBLND() || eKOKENIBLND.equals(other.eKOKENIBLND))
+        && (!hasANJMGEHLOHE() || aNJMGEHLOHE.equals(other.aNJMGEHLOHE))
+        && (!hasFHJPGKOKIMP() || fHJPGKOKIMP.equals(other.fHJPGKOKIMP))
+        && (!hasDJOBGKDFLBI() || dJOBGKDFLBI.equals(other.dJOBGKDFLBI))
         && (!hasMissionList() || missionList.equals(other.missionList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        for (int i = 0; i < syncMissionId.length(); i++) {
-          output.writeRawByte((byte) 8);
-          output.writeUInt32NoTag(syncMissionId.array()[i]);
+        for (int i = 0; i < eKOKENIBLND.length(); i++) {
+          output.writeRawByte((byte) 24);
+          output.writeUInt32NoTag(eKOKENIBLND.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        for (int i = 0; i < aNJMGEHLOHE.length(); i++) {
+          output.writeRawByte((byte) 40);
+          output.writeUInt32NoTag(aNJMGEHLOHE.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        for (int i = 0; i < fHJPGKOKIMP.length(); i++) {
+          output.writeRawByte((byte) 88);
+          output.writeUInt32NoTag(fHJPGKOKIMP.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        for (int i = 0; i < dJOBGKDFLBI.length(); i++) {
+          output.writeRawByte((byte) 96);
+          output.writeUInt32NoTag(dJOBGKDFLBI.array()[i]);
+        }
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < missionList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 58);
           output.writeMessageNoTag(missionList.get(i));
         }
       }
@@ -330,9 +553,18 @@ public final class MissionSyncOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += (1 * syncMissionId.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(syncMissionId);
+        size += (1 * eKOKENIBLND.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(eKOKENIBLND);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += (1 * aNJMGEHLOHE.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(aNJMGEHLOHE);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += (1 * fHJPGKOKIMP.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(fHJPGKOKIMP);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += (1 * dJOBGKDFLBI.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dJOBGKDFLBI);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
         size += (1 * missionList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(missionList);
       }
       return size;
@@ -345,19 +577,46 @@ public final class MissionSyncOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 10: {
-            // syncMissionId [packed=true]
-            input.readPackedUInt32(syncMissionId, tag);
+          case 26: {
+            // eKOKENIBLND [packed=true]
+            input.readPackedUInt32(eKOKENIBLND, tag);
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
+            // aNJMGEHLOHE [packed=true]
+            input.readPackedUInt32(aNJMGEHLOHE, tag);
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // fHJPGKOKIMP [packed=true]
+            input.readPackedUInt32(fHJPGKOKIMP, tag);
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 98) {
               break;
             }
           }
           case 98: {
+            // dJOBGKDFLBI [packed=true]
+            input.readPackedUInt32(dJOBGKDFLBI, tag);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
             // missionList
             tag = input.readRepeatedMessage(missionList, tag);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
             }
@@ -372,10 +631,28 @@ public final class MissionSyncOuterClass {
             tag = input.readTag();
             break;
           }
-          case 8: {
-            // syncMissionId [packed=false]
-            tag = input.readRepeatedUInt32(syncMissionId, tag);
+          case 24: {
+            // eKOKENIBLND [packed=false]
+            tag = input.readRepeatedUInt32(eKOKENIBLND, tag);
             bitField0_ |= 0x00000001;
+            break;
+          }
+          case 40: {
+            // aNJMGEHLOHE [packed=false]
+            tag = input.readRepeatedUInt32(aNJMGEHLOHE, tag);
+            bitField0_ |= 0x00000002;
+            break;
+          }
+          case 88: {
+            // fHJPGKOKIMP [packed=false]
+            tag = input.readRepeatedUInt32(fHJPGKOKIMP, tag);
+            bitField0_ |= 0x00000004;
+            break;
+          }
+          case 96: {
+            // dJOBGKDFLBI [packed=false]
+            tag = input.readRepeatedUInt32(dJOBGKDFLBI, tag);
+            bitField0_ |= 0x00000008;
             break;
           }
         }
@@ -386,9 +663,18 @@ public final class MissionSyncOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRepeatedUInt32(FieldNames.syncMissionId, syncMissionId);
+        output.writeRepeatedUInt32(FieldNames.eKOKENIBLND, eKOKENIBLND);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRepeatedUInt32(FieldNames.aNJMGEHLOHE, aNJMGEHLOHE);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRepeatedUInt32(FieldNames.fHJPGKOKIMP, fHJPGKOKIMP);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRepeatedUInt32(FieldNames.dJOBGKDFLBI, dJOBGKDFLBI);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
         output.writeRepeatedMessage(FieldNames.missionList, missionList);
       }
       output.endObject();
@@ -401,12 +687,44 @@ public final class MissionSyncOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -65725588:
-          case -794160942: {
-            if (input.isAtField(FieldNames.syncMissionId)) {
+          case -1366651650: {
+            if (input.isAtField(FieldNames.eKOKENIBLND)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(syncMissionId);
+                input.readRepeatedUInt32(eKOKENIBLND);
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 2091359162: {
+            if (input.isAtField(FieldNames.aNJMGEHLOHE)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(aNJMGEHLOHE);
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -307681436: {
+            if (input.isAtField(FieldNames.fHJPGKOKIMP)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(fHJPGKOKIMP);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -488956812: {
+            if (input.isAtField(FieldNames.dJOBGKDFLBI)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(dJOBGKDFLBI);
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -418,7 +736,7 @@ public final class MissionSyncOuterClass {
             if (input.isAtField(FieldNames.missionList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(missionList);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -477,7 +795,13 @@ public final class MissionSyncOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName syncMissionId = FieldName.forField("syncMissionId", "sync_mission_id");
+      static final FieldName eKOKENIBLND = FieldName.forField("EKOKENIBLND");
+
+      static final FieldName aNJMGEHLOHE = FieldName.forField("ANJMGEHLOHE");
+
+      static final FieldName fHJPGKOKIMP = FieldName.forField("FHJPGKOKIMP");
+
+      static final FieldName dJOBGKDFLBI = FieldName.forField("DJOBGKDFLBI");
 
       static final FieldName missionList = FieldName.forField("missionList", "mission_list");
     }

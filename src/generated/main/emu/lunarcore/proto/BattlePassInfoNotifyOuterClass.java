@@ -20,26 +20,12 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
-     * </pre>
-     *
-     * <code>optional uint64 taken_free_reward = 5;</code>
-     */
-    private long takenFreeReward;
-
-    /**
-     * <pre>
      * ? All 127
      * </pre>
      *
-     * <code>optional uint64 taken_premium_extended_reward = 6;</code>
+     * <code>optional uint64 taken_premium_extended_reward = 1;</code>
      */
     private long takenPremiumExtendedReward;
-
-    /**
-     * <code>optional uint64 taken_premium_reward2 = 7;</code>
-     */
-    private long takenPremiumReward2;
 
     /**
      * <code>optional uint64 taken_free_extended_reward = 8;</code>
@@ -47,45 +33,59 @@ public final class BattlePassInfoNotifyOuterClass {
     private long takenFreeExtendedReward;
 
     /**
-     * <code>optional uint64 taken_premium_optional_reward = 12;</code>
-     */
-    private long takenPremiumOptionalReward;
-
-    /**
-     * <code>optional uint64 taken_premium_reward1 = 15;</code>
+     * <code>optional uint64 taken_premium_reward1 = 10;</code>
      */
     private long takenPremiumReward1;
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <pre>
+     * ? All 0xFFFFFFFFFFFFFFFFL
+     * </pre>
+     *
+     * <code>optional uint64 taken_free_reward = 12;</code>
      */
-    private int level;
+    private long takenFreeReward;
 
     /**
-     * <code>optional uint32 exp = 4;</code>
+     * <code>optional uint64 taken_premium_optional_reward = 13;</code>
      */
-    private int exp;
+    private long takenPremiumOptionalReward;
+
+    /**
+     * <code>optional uint64 taken_premium_reward2 = 14;</code>
+     */
+    private long takenPremiumReward2;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_bp_id = 9;</code>
+     * <code>optional uint32 cur_bp_id = 3;</code>
      */
     private int curBpId;
 
     /**
+     * <code>optional uint32 level = 6;</code>
+     */
+    private int level;
+
+    /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_week_add_exp_sum = 14;</code>
+     * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      */
     private int curWeekAddExpSum;
 
     /**
-     * <code>optional .BpTierType bp_tier_type = 13;</code>
+     * <code>optional uint32 exp = 11;</code>
+     */
+    private int exp;
+
+    /**
+     * <code>optional .BpTierType bp_tier_type = 15;</code>
      */
     private int bpTierType;
 
@@ -101,79 +101,26 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ? All 127
      * </pre>
      *
-     * <code>optional uint64 taken_free_reward = 5;</code>
-     * @return whether the takenFreeReward field is set
+     * <code>optional uint64 taken_premium_extended_reward = 1;</code>
+     * @return whether the takenPremiumExtendedReward field is set
      */
-    public boolean hasTakenFreeReward() {
+    public boolean hasTakenPremiumExtendedReward() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
-     * </pre>
-     *
-     * <code>optional uint64 taken_free_reward = 5;</code>
-     * @return this
-     */
-    public BattlePassInfoNotify clearTakenFreeReward() {
-      bitField0_ &= ~0x00000001;
-      takenFreeReward = 0L;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
-     * </pre>
-     *
-     * <code>optional uint64 taken_free_reward = 5;</code>
-     * @return the takenFreeReward
-     */
-    public long getTakenFreeReward() {
-      return takenFreeReward;
-    }
-
-    /**
-     * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
-     * </pre>
-     *
-     * <code>optional uint64 taken_free_reward = 5;</code>
-     * @param value the takenFreeReward to set
-     * @return this
-     */
-    public BattlePassInfoNotify setTakenFreeReward(final long value) {
-      bitField0_ |= 0x00000001;
-      takenFreeReward = value;
-      return this;
-    }
-
-    /**
-     * <pre>
      * ? All 127
      * </pre>
      *
-     * <code>optional uint64 taken_premium_extended_reward = 6;</code>
-     * @return whether the takenPremiumExtendedReward field is set
-     */
-    public boolean hasTakenPremiumExtendedReward() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ? All 127
-     * </pre>
-     *
-     * <code>optional uint64 taken_premium_extended_reward = 6;</code>
+     * <code>optional uint64 taken_premium_extended_reward = 1;</code>
      * @return this
      */
     public BattlePassInfoNotify clearTakenPremiumExtendedReward() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       takenPremiumExtendedReward = 0L;
       return this;
     }
@@ -183,7 +130,7 @@ public final class BattlePassInfoNotifyOuterClass {
      * ? All 127
      * </pre>
      *
-     * <code>optional uint64 taken_premium_extended_reward = 6;</code>
+     * <code>optional uint64 taken_premium_extended_reward = 1;</code>
      * @return the takenPremiumExtendedReward
      */
     public long getTakenPremiumExtendedReward() {
@@ -195,50 +142,13 @@ public final class BattlePassInfoNotifyOuterClass {
      * ? All 127
      * </pre>
      *
-     * <code>optional uint64 taken_premium_extended_reward = 6;</code>
+     * <code>optional uint64 taken_premium_extended_reward = 1;</code>
      * @param value the takenPremiumExtendedReward to set
      * @return this
      */
     public BattlePassInfoNotify setTakenPremiumExtendedReward(final long value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       takenPremiumExtendedReward = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint64 taken_premium_reward2 = 7;</code>
-     * @return whether the takenPremiumReward2 field is set
-     */
-    public boolean hasTakenPremiumReward2() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint64 taken_premium_reward2 = 7;</code>
-     * @return this
-     */
-    public BattlePassInfoNotify clearTakenPremiumReward2() {
-      bitField0_ &= ~0x00000004;
-      takenPremiumReward2 = 0L;
-      return this;
-    }
-
-    /**
-     * <code>optional uint64 taken_premium_reward2 = 7;</code>
-     * @return the takenPremiumReward2
-     */
-    public long getTakenPremiumReward2() {
-      return takenPremiumReward2;
-    }
-
-    /**
-     * <code>optional uint64 taken_premium_reward2 = 7;</code>
-     * @param value the takenPremiumReward2 to set
-     * @return this
-     */
-    public BattlePassInfoNotify setTakenPremiumReward2(final long value) {
-      bitField0_ |= 0x00000004;
-      takenPremiumReward2 = value;
       return this;
     }
 
@@ -247,7 +157,7 @@ public final class BattlePassInfoNotifyOuterClass {
      * @return whether the takenFreeExtendedReward field is set
      */
     public boolean hasTakenFreeExtendedReward() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -255,7 +165,7 @@ public final class BattlePassInfoNotifyOuterClass {
      * @return this
      */
     public BattlePassInfoNotify clearTakenFreeExtendedReward() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000002;
       takenFreeExtendedReward = 0L;
       return this;
     }
@@ -274,13 +184,103 @@ public final class BattlePassInfoNotifyOuterClass {
      * @return this
      */
     public BattlePassInfoNotify setTakenFreeExtendedReward(final long value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       takenFreeExtendedReward = value;
       return this;
     }
 
     /**
-     * <code>optional uint64 taken_premium_optional_reward = 12;</code>
+     * <code>optional uint64 taken_premium_reward1 = 10;</code>
+     * @return whether the takenPremiumReward1 field is set
+     */
+    public boolean hasTakenPremiumReward1() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint64 taken_premium_reward1 = 10;</code>
+     * @return this
+     */
+    public BattlePassInfoNotify clearTakenPremiumReward1() {
+      bitField0_ &= ~0x00000004;
+      takenPremiumReward1 = 0L;
+      return this;
+    }
+
+    /**
+     * <code>optional uint64 taken_premium_reward1 = 10;</code>
+     * @return the takenPremiumReward1
+     */
+    public long getTakenPremiumReward1() {
+      return takenPremiumReward1;
+    }
+
+    /**
+     * <code>optional uint64 taken_premium_reward1 = 10;</code>
+     * @param value the takenPremiumReward1 to set
+     * @return this
+     */
+    public BattlePassInfoNotify setTakenPremiumReward1(final long value) {
+      bitField0_ |= 0x00000004;
+      takenPremiumReward1 = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ? All 0xFFFFFFFFFFFFFFFFL
+     * </pre>
+     *
+     * <code>optional uint64 taken_free_reward = 12;</code>
+     * @return whether the takenFreeReward field is set
+     */
+    public boolean hasTakenFreeReward() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * ? All 0xFFFFFFFFFFFFFFFFL
+     * </pre>
+     *
+     * <code>optional uint64 taken_free_reward = 12;</code>
+     * @return this
+     */
+    public BattlePassInfoNotify clearTakenFreeReward() {
+      bitField0_ &= ~0x00000008;
+      takenFreeReward = 0L;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ? All 0xFFFFFFFFFFFFFFFFL
+     * </pre>
+     *
+     * <code>optional uint64 taken_free_reward = 12;</code>
+     * @return the takenFreeReward
+     */
+    public long getTakenFreeReward() {
+      return takenFreeReward;
+    }
+
+    /**
+     * <pre>
+     * ? All 0xFFFFFFFFFFFFFFFFL
+     * </pre>
+     *
+     * <code>optional uint64 taken_free_reward = 12;</code>
+     * @param value the takenFreeReward to set
+     * @return this
+     */
+    public BattlePassInfoNotify setTakenFreeReward(final long value) {
+      bitField0_ |= 0x00000008;
+      takenFreeReward = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint64 taken_premium_optional_reward = 13;</code>
      * @return whether the takenPremiumOptionalReward field is set
      */
     public boolean hasTakenPremiumOptionalReward() {
@@ -288,7 +288,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_premium_optional_reward = 12;</code>
+     * <code>optional uint64 taken_premium_optional_reward = 13;</code>
      * @return this
      */
     public BattlePassInfoNotify clearTakenPremiumOptionalReward() {
@@ -298,7 +298,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_premium_optional_reward = 12;</code>
+     * <code>optional uint64 taken_premium_optional_reward = 13;</code>
      * @return the takenPremiumOptionalReward
      */
     public long getTakenPremiumOptionalReward() {
@@ -306,7 +306,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_premium_optional_reward = 12;</code>
+     * <code>optional uint64 taken_premium_optional_reward = 13;</code>
      * @param value the takenPremiumOptionalReward to set
      * @return this
      */
@@ -317,138 +317,64 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint64 taken_premium_reward1 = 15;</code>
-     * @return whether the takenPremiumReward1 field is set
+     * <code>optional uint64 taken_premium_reward2 = 14;</code>
+     * @return whether the takenPremiumReward2 field is set
      */
-    public boolean hasTakenPremiumReward1() {
+    public boolean hasTakenPremiumReward2() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint64 taken_premium_reward1 = 15;</code>
+     * <code>optional uint64 taken_premium_reward2 = 14;</code>
      * @return this
      */
-    public BattlePassInfoNotify clearTakenPremiumReward1() {
+    public BattlePassInfoNotify clearTakenPremiumReward2() {
       bitField0_ &= ~0x00000020;
-      takenPremiumReward1 = 0L;
+      takenPremiumReward2 = 0L;
       return this;
     }
 
     /**
-     * <code>optional uint64 taken_premium_reward1 = 15;</code>
-     * @return the takenPremiumReward1
+     * <code>optional uint64 taken_premium_reward2 = 14;</code>
+     * @return the takenPremiumReward2
      */
-    public long getTakenPremiumReward1() {
-      return takenPremiumReward1;
+    public long getTakenPremiumReward2() {
+      return takenPremiumReward2;
     }
 
     /**
-     * <code>optional uint64 taken_premium_reward1 = 15;</code>
-     * @param value the takenPremiumReward1 to set
+     * <code>optional uint64 taken_premium_reward2 = 14;</code>
+     * @param value the takenPremiumReward2 to set
      * @return this
      */
-    public BattlePassInfoNotify setTakenPremiumReward1(final long value) {
+    public BattlePassInfoNotify setTakenPremiumReward2(final long value) {
       bitField0_ |= 0x00000020;
-      takenPremiumReward1 = value;
+      takenPremiumReward2 = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
-     * @return whether the level field is set
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 cur_bp_id = 3;</code>
+     * @return whether the curBpId field is set
      */
-    public boolean hasLevel() {
+    public boolean hasCurBpId() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
-     * @return this
-     */
-    public BattlePassInfoNotify clearLevel() {
-      bitField0_ &= ~0x00000040;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 1;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 1;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public BattlePassInfoNotify setLevel(final int value) {
-      bitField0_ |= 0x00000040;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 exp = 4;</code>
-     * @return whether the exp field is set
-     */
-    public boolean hasExp() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional uint32 exp = 4;</code>
-     * @return this
-     */
-    public BattlePassInfoNotify clearExp() {
-      bitField0_ &= ~0x00000080;
-      exp = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 exp = 4;</code>
-     * @return the exp
-     */
-    public int getExp() {
-      return exp;
-    }
-
-    /**
-     * <code>optional uint32 exp = 4;</code>
-     * @param value the exp to set
-     * @return this
-     */
-    public BattlePassInfoNotify setExp(final int value) {
-      bitField0_ |= 0x00000080;
-      exp = value;
-      return this;
-    }
-
-    /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_bp_id = 9;</code>
-     * @return whether the curBpId field is set
-     */
-    public boolean hasCurBpId() {
-      return (bitField0_ & 0x00000100) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 cur_bp_id = 9;</code>
+     * <code>optional uint32 cur_bp_id = 3;</code>
      * @return this
      */
     public BattlePassInfoNotify clearCurBpId() {
-      bitField0_ &= ~0x00000100;
+      bitField0_ &= ~0x00000040;
       curBpId = 0;
       return this;
     }
@@ -458,7 +384,7 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_bp_id = 9;</code>
+     * <code>optional uint32 cur_bp_id = 3;</code>
      * @return the curBpId
      */
     public int getCurBpId() {
@@ -470,13 +396,50 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_bp_id = 9;</code>
+     * <code>optional uint32 cur_bp_id = 3;</code>
      * @param value the curBpId to set
      * @return this
      */
     public BattlePassInfoNotify setCurBpId(final int value) {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000040;
       curBpId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 6;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 6;</code>
+     * @return this
+     */
+    public BattlePassInfoNotify clearLevel() {
+      bitField0_ &= ~0x00000080;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 6;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <code>optional uint32 level = 6;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public BattlePassInfoNotify setLevel(final int value) {
+      bitField0_ |= 0x00000080;
+      level = value;
       return this;
     }
 
@@ -485,11 +448,11 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_week_add_exp_sum = 14;</code>
+     * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return whether the curWeekAddExpSum field is set
      */
     public boolean hasCurWeekAddExpSum() {
-      return (bitField0_ & 0x00000200) != 0;
+      return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
@@ -497,11 +460,11 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_week_add_exp_sum = 14;</code>
+     * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return this
      */
     public BattlePassInfoNotify clearCurWeekAddExpSum() {
-      bitField0_ &= ~0x00000200;
+      bitField0_ &= ~0x00000100;
       curWeekAddExpSum = 0;
       return this;
     }
@@ -511,7 +474,7 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_week_add_exp_sum = 14;</code>
+     * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return the curWeekAddExpSum
      */
     public int getCurWeekAddExpSum() {
@@ -523,18 +486,55 @@ public final class BattlePassInfoNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_week_add_exp_sum = 14;</code>
+     * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @param value the curWeekAddExpSum to set
      * @return this
      */
     public BattlePassInfoNotify setCurWeekAddExpSum(final int value) {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       curWeekAddExpSum = value;
       return this;
     }
 
     /**
-     * <code>optional .BpTierType bp_tier_type = 13;</code>
+     * <code>optional uint32 exp = 11;</code>
+     * @return whether the exp field is set
+     */
+    public boolean hasExp() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>optional uint32 exp = 11;</code>
+     * @return this
+     */
+    public BattlePassInfoNotify clearExp() {
+      bitField0_ &= ~0x00000200;
+      exp = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 exp = 11;</code>
+     * @return the exp
+     */
+    public int getExp() {
+      return exp;
+    }
+
+    /**
+     * <code>optional uint32 exp = 11;</code>
+     * @param value the exp to set
+     * @return this
+     */
+    public BattlePassInfoNotify setExp(final int value) {
+      bitField0_ |= 0x00000200;
+      exp = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .BpTierType bp_tier_type = 15;</code>
      * @return whether the bpTierType field is set
      */
     public boolean hasBpTierType() {
@@ -542,7 +542,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BpTierType bp_tier_type = 13;</code>
+     * <code>optional .BpTierType bp_tier_type = 15;</code>
      * @return this
      */
     public BattlePassInfoNotify clearBpTierType() {
@@ -552,7 +552,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BpTierType bp_tier_type = 13;</code>
+     * <code>optional .BpTierType bp_tier_type = 15;</code>
      * @return the bpTierType
      */
     public BpTierTypeOuterClass.BpTierType getBpTierType() {
@@ -585,7 +585,7 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional .BpTierType bp_tier_type = 13;</code>
+     * <code>optional .BpTierType bp_tier_type = 15;</code>
      * @param value the bpTierType to set
      * @return this
      */
@@ -600,16 +600,16 @@ public final class BattlePassInfoNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        takenFreeReward = other.takenFreeReward;
         takenPremiumExtendedReward = other.takenPremiumExtendedReward;
-        takenPremiumReward2 = other.takenPremiumReward2;
         takenFreeExtendedReward = other.takenFreeExtendedReward;
-        takenPremiumOptionalReward = other.takenPremiumOptionalReward;
         takenPremiumReward1 = other.takenPremiumReward1;
-        level = other.level;
-        exp = other.exp;
+        takenFreeReward = other.takenFreeReward;
+        takenPremiumOptionalReward = other.takenPremiumOptionalReward;
+        takenPremiumReward2 = other.takenPremiumReward2;
         curBpId = other.curBpId;
+        level = other.level;
         curWeekAddExpSum = other.curWeekAddExpSum;
+        exp = other.exp;
         bpTierType = other.bpTierType;
       }
       return this;
@@ -621,35 +621,35 @@ public final class BattlePassInfoNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasTakenFreeReward()) {
-        setTakenFreeReward(other.takenFreeReward);
-      }
       if (other.hasTakenPremiumExtendedReward()) {
         setTakenPremiumExtendedReward(other.takenPremiumExtendedReward);
-      }
-      if (other.hasTakenPremiumReward2()) {
-        setTakenPremiumReward2(other.takenPremiumReward2);
       }
       if (other.hasTakenFreeExtendedReward()) {
         setTakenFreeExtendedReward(other.takenFreeExtendedReward);
       }
-      if (other.hasTakenPremiumOptionalReward()) {
-        setTakenPremiumOptionalReward(other.takenPremiumOptionalReward);
-      }
       if (other.hasTakenPremiumReward1()) {
         setTakenPremiumReward1(other.takenPremiumReward1);
       }
-      if (other.hasLevel()) {
-        setLevel(other.level);
+      if (other.hasTakenFreeReward()) {
+        setTakenFreeReward(other.takenFreeReward);
       }
-      if (other.hasExp()) {
-        setExp(other.exp);
+      if (other.hasTakenPremiumOptionalReward()) {
+        setTakenPremiumOptionalReward(other.takenPremiumOptionalReward);
+      }
+      if (other.hasTakenPremiumReward2()) {
+        setTakenPremiumReward2(other.takenPremiumReward2);
       }
       if (other.hasCurBpId()) {
         setCurBpId(other.curBpId);
       }
+      if (other.hasLevel()) {
+        setLevel(other.level);
+      }
       if (other.hasCurWeekAddExpSum()) {
         setCurWeekAddExpSum(other.curWeekAddExpSum);
+      }
+      if (other.hasExp()) {
+        setExp(other.exp);
       }
       if (other.hasBpTierType()) {
         setBpTierTypeValue(other.bpTierType);
@@ -664,16 +664,16 @@ public final class BattlePassInfoNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      takenFreeReward = 0L;
       takenPremiumExtendedReward = 0L;
-      takenPremiumReward2 = 0L;
       takenFreeExtendedReward = 0L;
-      takenPremiumOptionalReward = 0L;
       takenPremiumReward1 = 0L;
-      level = 0;
-      exp = 0;
+      takenFreeReward = 0L;
+      takenPremiumOptionalReward = 0L;
+      takenPremiumReward2 = 0L;
       curBpId = 0;
+      level = 0;
       curWeekAddExpSum = 0;
+      exp = 0;
       bpTierType = 0;
       return this;
     }
@@ -698,63 +698,63 @@ public final class BattlePassInfoNotifyOuterClass {
       }
       BattlePassInfoNotify other = (BattlePassInfoNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasTakenFreeReward() || takenFreeReward == other.takenFreeReward)
         && (!hasTakenPremiumExtendedReward() || takenPremiumExtendedReward == other.takenPremiumExtendedReward)
-        && (!hasTakenPremiumReward2() || takenPremiumReward2 == other.takenPremiumReward2)
         && (!hasTakenFreeExtendedReward() || takenFreeExtendedReward == other.takenFreeExtendedReward)
-        && (!hasTakenPremiumOptionalReward() || takenPremiumOptionalReward == other.takenPremiumOptionalReward)
         && (!hasTakenPremiumReward1() || takenPremiumReward1 == other.takenPremiumReward1)
-        && (!hasLevel() || level == other.level)
-        && (!hasExp() || exp == other.exp)
+        && (!hasTakenFreeReward() || takenFreeReward == other.takenFreeReward)
+        && (!hasTakenPremiumOptionalReward() || takenPremiumOptionalReward == other.takenPremiumOptionalReward)
+        && (!hasTakenPremiumReward2() || takenPremiumReward2 == other.takenPremiumReward2)
         && (!hasCurBpId() || curBpId == other.curBpId)
+        && (!hasLevel() || level == other.level)
         && (!hasCurWeekAddExpSum() || curWeekAddExpSum == other.curWeekAddExpSum)
+        && (!hasExp() || exp == other.exp)
         && (!hasBpTierType() || bpTierType == other.bpTierType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt64NoTag(takenFreeReward);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 8);
         output.writeUInt64NoTag(takenPremiumExtendedReward);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt64NoTag(takenPremiumReward2);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 64);
         output.writeUInt64NoTag(takenFreeExtendedReward);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt64NoTag(takenPremiumReward1);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 96);
+        output.writeUInt64NoTag(takenFreeReward);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 104);
         output.writeUInt64NoTag(takenPremiumOptionalReward);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeUInt64NoTag(takenPremiumReward1);
+        output.writeRawByte((byte) 112);
+        output.writeUInt64NoTag(takenPremiumReward2);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(level);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(curBpId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(exp);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(curBpId);
-      }
-      if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(curWeekAddExpSum);
       }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(exp);
+      }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 120);
         output.writeEnumNoTag(bpTierType);
       }
     }
@@ -763,34 +763,34 @@ public final class BattlePassInfoNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenFreeReward);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumExtendedReward);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenFreeExtendedReward);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumReward2);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumReward1);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenFreeExtendedReward);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenFreeReward);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumOptionalReward);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumReward1);
+        size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumReward2);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
-      }
-      if ((bitField0_ & 0x00000100) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(curBpId);
       }
-      if ((bitField0_ & 0x00000200) != 0) {
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(curWeekAddExpSum);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(bpTierType);
@@ -805,28 +805,10 @@ public final class BattlePassInfoNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // takenFreeReward
-            takenFreeReward = input.readUInt64();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
+          case 8: {
             // takenPremiumExtendedReward
             takenPremiumExtendedReward = input.readUInt64();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
-            // takenPremiumReward2
-            takenPremiumReward2 = input.readUInt64();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 64) {
               break;
@@ -835,42 +817,60 @@ public final class BattlePassInfoNotifyOuterClass {
           case 64: {
             // takenFreeExtendedReward
             takenFreeExtendedReward = input.readUInt64();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // takenPremiumReward1
+            takenPremiumReward1 = input.readUInt64();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 96) {
               break;
             }
           }
           case 96: {
+            // takenFreeReward
+            takenFreeReward = input.readUInt64();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
             // takenPremiumOptionalReward
             takenPremiumOptionalReward = input.readUInt64();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 112) {
               break;
             }
           }
-          case 120: {
-            // takenPremiumReward1
-            takenPremiumReward1 = input.readUInt64();
+          case 112: {
+            // takenPremiumReward2
+            takenPremiumReward2 = input.readUInt64();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 24) {
               break;
             }
           }
-          case 8: {
-            // level
-            level = input.readUInt32();
+          case 24: {
+            // curBpId
+            curBpId = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 48) {
               break;
             }
           }
-          case 32: {
-            // exp
-            exp = input.readUInt32();
+          case 48: {
+            // level
+            level = input.readUInt32();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 72) {
@@ -878,24 +878,24 @@ public final class BattlePassInfoNotifyOuterClass {
             }
           }
           case 72: {
-            // curBpId
-            curBpId = input.readUInt32();
-            bitField0_ |= 0x00000100;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
             // curWeekAddExpSum
             curWeekAddExpSum = input.readUInt32();
-            bitField0_ |= 0x00000200;
+            bitField0_ |= 0x00000100;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 88) {
               break;
             }
           }
-          case 104: {
+          case 88: {
+            // exp
+            exp = input.readUInt32();
+            bitField0_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
             // bpTierType
             final int value = input.readInt32();
             if (BpTierTypeOuterClass.BpTierType.forNumber(value) != null) {
@@ -925,34 +925,34 @@ public final class BattlePassInfoNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt64(FieldNames.takenFreeReward, takenFreeReward);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt64(FieldNames.takenPremiumExtendedReward, takenPremiumExtendedReward);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt64(FieldNames.takenFreeExtendedReward, takenFreeExtendedReward);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt64(FieldNames.takenPremiumReward2, takenPremiumReward2);
+        output.writeUInt64(FieldNames.takenPremiumReward1, takenPremiumReward1);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt64(FieldNames.takenFreeExtendedReward, takenFreeExtendedReward);
+        output.writeUInt64(FieldNames.takenFreeReward, takenFreeReward);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt64(FieldNames.takenPremiumOptionalReward, takenPremiumOptionalReward);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt64(FieldNames.takenPremiumReward1, takenPremiumReward1);
+        output.writeUInt64(FieldNames.takenPremiumReward2, takenPremiumReward2);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.level, level);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
-        output.writeUInt32(FieldNames.exp, exp);
-      }
-      if ((bitField0_ & 0x00000100) != 0) {
         output.writeUInt32(FieldNames.curBpId, curBpId);
       }
-      if ((bitField0_ & 0x00000200) != 0) {
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeUInt32(FieldNames.level, level);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
         output.writeUInt32(FieldNames.curWeekAddExpSum, curWeekAddExpSum);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeUInt32(FieldNames.exp, exp);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeEnum(FieldNames.bpTierType, bpTierType, BpTierTypeOuterClass.BpTierType.converter());
@@ -967,36 +967,12 @@ public final class BattlePassInfoNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1065549026:
-          case 135671018: {
-            if (input.isAtField(FieldNames.takenFreeReward)) {
-              if (!input.trySkipNullValue()) {
-                takenFreeReward = input.readUInt64();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -1290021512:
           case -2138632299: {
             if (input.isAtField(FieldNames.takenPremiumExtendedReward)) {
               if (!input.trySkipNullValue()) {
                 takenPremiumExtendedReward = input.readUInt64();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 226926899:
-          case 1195903363: {
-            if (input.isAtField(FieldNames.takenPremiumReward2)) {
-              if (!input.trySkipNullValue()) {
-                takenPremiumReward2 = input.readUInt64();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -1008,6 +984,30 @@ public final class BattlePassInfoNotifyOuterClass {
             if (input.isAtField(FieldNames.takenFreeExtendedReward)) {
               if (!input.trySkipNullValue()) {
                 takenFreeExtendedReward = input.readUInt64();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 226926898:
+          case 1195903362: {
+            if (input.isAtField(FieldNames.takenPremiumReward1)) {
+              if (!input.trySkipNullValue()) {
+                takenPremiumReward1 = input.readUInt64();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1065549026:
+          case 135671018: {
+            if (input.isAtField(FieldNames.takenFreeReward)) {
+              if (!input.trySkipNullValue()) {
+                takenFreeReward = input.readUInt64();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -1027,34 +1027,12 @@ public final class BattlePassInfoNotifyOuterClass {
             }
             break;
           }
-          case 226926898:
-          case 1195903362: {
-            if (input.isAtField(FieldNames.takenPremiumReward1)) {
+          case 226926899:
+          case 1195903363: {
+            if (input.isAtField(FieldNames.takenPremiumReward2)) {
               if (!input.trySkipNullValue()) {
-                takenPremiumReward1 = input.readUInt64();
+                takenPremiumReward2 = input.readUInt64();
                 bitField0_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 102865796: {
-            if (input.isAtField(FieldNames.level)) {
-              if (!input.trySkipNullValue()) {
-                level = input.readUInt32();
-                bitField0_ |= 0x00000040;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 100893: {
-            if (input.isAtField(FieldNames.exp)) {
-              if (!input.trySkipNullValue()) {
-                exp = input.readUInt32();
-                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -1066,7 +1044,18 @@ public final class BattlePassInfoNotifyOuterClass {
             if (input.isAtField(FieldNames.curBpId)) {
               if (!input.trySkipNullValue()) {
                 curBpId = input.readUInt32();
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 102865796: {
+            if (input.isAtField(FieldNames.level)) {
+              if (!input.trySkipNullValue()) {
+                level = input.readUInt32();
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -1078,6 +1067,17 @@ public final class BattlePassInfoNotifyOuterClass {
             if (input.isAtField(FieldNames.curWeekAddExpSum)) {
               if (!input.trySkipNullValue()) {
                 curWeekAddExpSum = input.readUInt32();
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 100893: {
+            if (input.isAtField(FieldNames.exp)) {
+              if (!input.trySkipNullValue()) {
+                exp = input.readUInt32();
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -1155,25 +1155,25 @@ public final class BattlePassInfoNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName takenFreeReward = FieldName.forField("takenFreeReward", "taken_free_reward");
-
       static final FieldName takenPremiumExtendedReward = FieldName.forField("takenPremiumExtendedReward", "taken_premium_extended_reward");
-
-      static final FieldName takenPremiumReward2 = FieldName.forField("takenPremiumReward2", "taken_premium_reward2");
 
       static final FieldName takenFreeExtendedReward = FieldName.forField("takenFreeExtendedReward", "taken_free_extended_reward");
 
-      static final FieldName takenPremiumOptionalReward = FieldName.forField("takenPremiumOptionalReward", "taken_premium_optional_reward");
-
       static final FieldName takenPremiumReward1 = FieldName.forField("takenPremiumReward1", "taken_premium_reward1");
 
-      static final FieldName level = FieldName.forField("level");
+      static final FieldName takenFreeReward = FieldName.forField("takenFreeReward", "taken_free_reward");
 
-      static final FieldName exp = FieldName.forField("exp");
+      static final FieldName takenPremiumOptionalReward = FieldName.forField("takenPremiumOptionalReward", "taken_premium_optional_reward");
+
+      static final FieldName takenPremiumReward2 = FieldName.forField("takenPremiumReward2", "taken_premium_reward2");
 
       static final FieldName curBpId = FieldName.forField("curBpId", "cur_bp_id");
 
+      static final FieldName level = FieldName.forField("level");
+
       static final FieldName curWeekAddExpSum = FieldName.forField("curWeekAddExpSum", "cur_week_add_exp_sum");
+
+      static final FieldName exp = FieldName.forField("exp");
 
       static final FieldName bpTierType = FieldName.forField("bpTierType", "bp_tier_type");
     }

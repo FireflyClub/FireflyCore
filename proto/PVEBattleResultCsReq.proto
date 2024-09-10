@@ -2,24 +2,24 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "BattleEndStatus.proto";
-import "BattleOp.proto";
 import "BattleStatistics.proto";
+import "BattleOp.proto";
+import "BattleEndStatus.proto";
 
 message PVEBattleResultCsReq {
-	uint32 stage_id = 5;
-	map<string, uint32> OFBINFHOHKN = 7;
-	uint32 cost_time = 13;
-	uint32 NMHJOLNHMDK = 14;
-	uint32 IFJFPGFAHGO = 4;
-	bool GBBBEBFHGOJ = 15;
-	BattleEndStatus end_status = 1;
-	bytes turn_snapshot_hash = 8;
-	BattleStatistics stt = 12;
-	bool HCGIJFEIAMK = 2;
-	uint32 battle_id = 9;
-	bool ALLDMMPDLDL = 3;
-	string HMOIDIKHBHM = 11;
-	uint32 client_res_version = 10;
-	repeated BattleOp op_list = 6;
+	map<string, uint32> LAOIGBICBAO = 4;
+	uint32 cost_time = 2;
+	BattleEndStatus end_status = 9;
+	bool KNFEGGDGFGC = 15;
+	uint32 client_res_version = 13;
+	uint32 stage_id = 7;
+	bool BNPJHJNLFDH = 11;
+	uint32 battle_id = 1;
+	BattleStatistics stt = 14;
+	string LFDDAGOMEGB = 5;
+	uint32 FLJNOLCHBBC = 10;
+	repeated BattleOp op_list = 3;
+	uint32 EJELPBGNINF = 6;
+	bytes turn_snapshot_hash = 12;
+	bool NKFMMKOBDBC = 8;
 }

@@ -19,12 +19,12 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 3;</code>
+     * <code>optional uint32 id = 10;</code>
      */
     private int id;
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -39,7 +39,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 3;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -47,7 +47,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 3;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return this
      */
     public ArchiveWolfBroGameCsReq clearId() {
@@ -57,7 +57,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 3;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return the id
      */
     public int getId() {
@@ -65,7 +65,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 3;</code>
+     * <code>optional uint32 id = 10;</code>
      * @param value the id to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -84,7 +84,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      * @return this
      */
     public ArchiveWolfBroGameCsReq clearMotion() {
@@ -94,7 +94,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 15;</code>
+     * <code>optional .MotionInfo motion = 4;</code>
      * @param value the motion to set
      * @return this
      */
@@ -198,11 +198,11 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(motion);
       }
     }
@@ -226,16 +226,16 @@ public final class ArchiveWolfBroGameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 80: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 34) {
               break;
             }
           }
-          case 122: {
+          case 34: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000002;

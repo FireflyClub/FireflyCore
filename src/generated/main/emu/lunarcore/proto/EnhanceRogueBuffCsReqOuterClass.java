@@ -19,7 +19,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * <code>optional uint32 rouge_buff_id = 11;</code>
      */
     private int rougeBuffId;
 
@@ -34,7 +34,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * <code>optional uint32 rouge_buff_id = 11;</code>
      * @return whether the rougeBuffId field is set
      */
     public boolean hasRougeBuffId() {
@@ -42,7 +42,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * <code>optional uint32 rouge_buff_id = 11;</code>
      * @return this
      */
     public EnhanceRogueBuffCsReq clearRougeBuffId() {
@@ -52,7 +52,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * <code>optional uint32 rouge_buff_id = 11;</code>
      * @return the rougeBuffId
      */
     public int getRougeBuffId() {
@@ -60,7 +60,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rouge_buff_id = 5;</code>
+     * <code>optional uint32 rouge_buff_id = 11;</code>
      * @param value the rougeBuffId to set
      * @return this
      */
@@ -129,7 +129,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(rougeBuffId);
       }
     }
@@ -150,7 +150,7 @@ public final class EnhanceRogueBuffCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 88: {
             // rougeBuffId
             rougeBuffId = input.readUInt32();
             bitField0_ |= 0x00000001;

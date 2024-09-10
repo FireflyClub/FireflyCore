@@ -19,12 +19,12 @@ public final class FirstNpcTalkInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 first_npc_id = 10;</code>
+     * <code>optional uint32 first_npc_id = 7;</code>
      */
     private int firstNpcId;
 
     /**
-     * <code>optional bool finish_dialogue = 1;</code>
+     * <code>optional bool finish_dialogue = 4;</code>
      */
     private boolean finishDialogue;
 
@@ -39,7 +39,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 first_npc_id = 10;</code>
+     * <code>optional uint32 first_npc_id = 7;</code>
      * @return whether the firstNpcId field is set
      */
     public boolean hasFirstNpcId() {
@@ -47,7 +47,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 first_npc_id = 10;</code>
+     * <code>optional uint32 first_npc_id = 7;</code>
      * @return this
      */
     public FirstNpcTalkInfo clearFirstNpcId() {
@@ -57,7 +57,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 first_npc_id = 10;</code>
+     * <code>optional uint32 first_npc_id = 7;</code>
      * @return the firstNpcId
      */
     public int getFirstNpcId() {
@@ -65,7 +65,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 first_npc_id = 10;</code>
+     * <code>optional uint32 first_npc_id = 7;</code>
      * @param value the firstNpcId to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional bool finish_dialogue = 1;</code>
+     * <code>optional bool finish_dialogue = 4;</code>
      * @return whether the finishDialogue field is set
      */
     public boolean hasFinishDialogue() {
@@ -84,7 +84,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional bool finish_dialogue = 1;</code>
+     * <code>optional bool finish_dialogue = 4;</code>
      * @return this
      */
     public FirstNpcTalkInfo clearFinishDialogue() {
@@ -94,7 +94,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional bool finish_dialogue = 1;</code>
+     * <code>optional bool finish_dialogue = 4;</code>
      * @return the finishDialogue
      */
     public boolean getFinishDialogue() {
@@ -102,7 +102,7 @@ public final class FirstNpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional bool finish_dialogue = 1;</code>
+     * <code>optional bool finish_dialogue = 4;</code>
      * @param value the finishDialogue to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class FirstNpcTalkInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(firstNpcId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(finishDialogue);
       }
     }
@@ -205,16 +205,16 @@ public final class FirstNpcTalkInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 56: {
             // firstNpcId
             firstNpcId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 32) {
               break;
             }
           }
-          case 8: {
+          case 32: {
             // finishDialogue
             finishDialogue = input.readBool();
             bitField0_ |= 0x00000002;

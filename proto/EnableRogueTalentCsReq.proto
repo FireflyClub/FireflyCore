@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message EnableRogueTalentCsReq {
-	uint32 talent_id = 2;
+	uint32 talent_id = 5;
 }

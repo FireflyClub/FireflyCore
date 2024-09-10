@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "Chat.proto";
 
 message GetPrivateChatHistoryScRsp {
-	uint32 target_uid = 7;
-	uint32 retcode = 15;
-	uint32 sender_uid = 3;
-	repeated Chat chat_list = 9;
+	uint32 sender_uid = 8;
+	repeated Chat chat_list = 5;
+	uint32 retcode = 14;
+	uint32 target_uid = 4;
 }

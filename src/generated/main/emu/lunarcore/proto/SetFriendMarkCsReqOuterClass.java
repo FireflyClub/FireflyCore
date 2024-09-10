@@ -24,12 +24,12 @@ public final class SetFriendMarkCsReqOuterClass {
     private int reason;
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 9;</code>
      */
     private int uid;
 
     /**
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 12;</code>
      */
     private boolean isSetMark;
 
@@ -81,7 +81,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 9;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -89,7 +89,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 9;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearUid() {
@@ -99,7 +99,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 9;</code>
      * @return the uid
      */
     public int getUid() {
@@ -107,7 +107,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 15;</code>
+     * <code>optional uint32 uid = 9;</code>
      * @param value the uid to set
      * @return this
      */
@@ -118,7 +118,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 12;</code>
      * @return whether the isSetMark field is set
      */
     public boolean hasIsSetMark() {
@@ -126,7 +126,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 12;</code>
      * @return this
      */
     public SetFriendMarkCsReq clearIsSetMark() {
@@ -136,7 +136,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 12;</code>
      * @return the isSetMark
      */
     public boolean getIsSetMark() {
@@ -144,7 +144,7 @@ public final class SetFriendMarkCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_set_mark = 11;</code>
+     * <code>optional bool is_set_mark = 12;</code>
      * @param value the isSetMark to set
      * @return this
      */
@@ -229,11 +229,11 @@ public final class SetFriendMarkCsReqOuterClass {
         output.writeUInt32NoTag(reason);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(uid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 96);
         output.writeBoolNoTag(isSetMark);
       }
     }
@@ -265,20 +265,20 @@ public final class SetFriendMarkCsReqOuterClass {
             reason = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 72) {
               break;
             }
           }
-          case 120: {
+          case 72: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 96) {
               break;
             }
           }
-          case 88: {
+          case 96: {
             // isSetMark
             isSetMark = input.readBool();
             bitField0_ |= 0x00000004;

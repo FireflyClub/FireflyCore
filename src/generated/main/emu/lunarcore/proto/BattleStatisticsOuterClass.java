@@ -74,13 +74,13 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated GFHLELKFECD KMBFLEMGFLF = 33;
-     * repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+     * repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+     * repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
      * </pre>
      *
-     * <code>optional uint32 LDBJKJFMJDE = 35;</code>
+     * <code>optional uint32 CLNABFDPIKJ = 35;</code>
      */
-    private int lDBJKJFMJDE;
+    private int cLNABFDPIKJ;
 
     /**
      * <code>optional .BattleEndReason end_reason = 19;</code>
@@ -89,23 +89,23 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-     * EvolveBuildBattleInfo EHEELOGGFME = 30;
-     * JNEGDKNFDFJ PKOFLJLGCFF = 31;
+     * repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+     * EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+     * HJJDFBODGFD DFNGHNEHIIG = 31;
      * </pre>
      *
-     * <code>optional bool IOMHFPMGHFC = 32;</code>
+     * <code>optional bool PIINHCIMOGD = 32;</code>
      */
-    private boolean iOMHFPMGHFC;
+    private boolean pIINHCIMOGD;
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
      */
-    private final RepeatedInt pCEOMHIOFCB = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt pMJLBECBODD = RepeatedInt.newEmptyInstance();
 
     /**
      * <code>repeated uint32 avatar_id_list = 3;</code>
@@ -128,15 +128,15 @@ public final class BattleStatisticsOuterClass {
     private final RepeatedMessage<CustomValuesEntry> customValues = RepeatedMessage.newEmptyInstance(CustomValuesEntry.getFactory());
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
      */
-    private final RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> aIKIGMFOIPD = RepeatedMessage.newEmptyInstance(BattleEventBattleInfoOuterClass.BattleEventBattleInfo.getFactory());
+    private final RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> pDCIAMOLIGP = RepeatedMessage.newEmptyInstance(BattleEventBattleInfoOuterClass.BattleEventBattleInfo.getFactory());
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -525,58 +525,58 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated GFHLELKFECD KMBFLEMGFLF = 33;
-     * repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+     * repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+     * repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
      * </pre>
      *
-     * <code>optional uint32 LDBJKJFMJDE = 35;</code>
-     * @return whether the lDBJKJFMJDE field is set
+     * <code>optional uint32 CLNABFDPIKJ = 35;</code>
+     * @return whether the cLNABFDPIKJ field is set
      */
-    public boolean hasLDBJKJFMJDE() {
+    public boolean hasCLNABFDPIKJ() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
      * <pre>
-     * repeated GFHLELKFECD KMBFLEMGFLF = 33;
-     * repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+     * repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+     * repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
      * </pre>
      *
-     * <code>optional uint32 LDBJKJFMJDE = 35;</code>
+     * <code>optional uint32 CLNABFDPIKJ = 35;</code>
      * @return this
      */
-    public BattleStatistics clearLDBJKJFMJDE() {
+    public BattleStatistics clearCLNABFDPIKJ() {
       bitField0_ &= ~0x00000400;
-      lDBJKJFMJDE = 0;
+      cLNABFDPIKJ = 0;
       return this;
     }
 
     /**
      * <pre>
-     * repeated GFHLELKFECD KMBFLEMGFLF = 33;
-     * repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+     * repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+     * repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
      * </pre>
      *
-     * <code>optional uint32 LDBJKJFMJDE = 35;</code>
-     * @return the lDBJKJFMJDE
+     * <code>optional uint32 CLNABFDPIKJ = 35;</code>
+     * @return the cLNABFDPIKJ
      */
-    public int getLDBJKJFMJDE() {
-      return lDBJKJFMJDE;
+    public int getCLNABFDPIKJ() {
+      return cLNABFDPIKJ;
     }
 
     /**
      * <pre>
-     * repeated GFHLELKFECD KMBFLEMGFLF = 33;
-     * repeated FKDALPNLNPP BBEIBAHJDHP = 34;
+     * repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+     * repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
      * </pre>
      *
-     * <code>optional uint32 LDBJKJFMJDE = 35;</code>
-     * @param value the lDBJKJFMJDE to set
+     * <code>optional uint32 CLNABFDPIKJ = 35;</code>
+     * @param value the cLNABFDPIKJ to set
      * @return this
      */
-    public BattleStatistics setLDBJKJFMJDE(final int value) {
+    public BattleStatistics setCLNABFDPIKJ(final int value) {
       bitField0_ |= 0x00000400;
-      lDBJKJFMJDE = value;
+      cLNABFDPIKJ = value;
       return this;
     }
 
@@ -644,115 +644,115 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-     * EvolveBuildBattleInfo EHEELOGGFME = 30;
-     * JNEGDKNFDFJ PKOFLJLGCFF = 31;
+     * repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+     * EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+     * HJJDFBODGFD DFNGHNEHIIG = 31;
      * </pre>
      *
-     * <code>optional bool IOMHFPMGHFC = 32;</code>
-     * @return whether the iOMHFPMGHFC field is set
+     * <code>optional bool PIINHCIMOGD = 32;</code>
+     * @return whether the pIINHCIMOGD field is set
      */
-    public boolean hasIOMHFPMGHFC() {
+    public boolean hasPIINHCIMOGD() {
       return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
      * <pre>
-     * repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-     * EvolveBuildBattleInfo EHEELOGGFME = 30;
-     * JNEGDKNFDFJ PKOFLJLGCFF = 31;
+     * repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+     * EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+     * HJJDFBODGFD DFNGHNEHIIG = 31;
      * </pre>
      *
-     * <code>optional bool IOMHFPMGHFC = 32;</code>
+     * <code>optional bool PIINHCIMOGD = 32;</code>
      * @return this
      */
-    public BattleStatistics clearIOMHFPMGHFC() {
+    public BattleStatistics clearPIINHCIMOGD() {
       bitField0_ &= ~0x00001000;
-      iOMHFPMGHFC = false;
+      pIINHCIMOGD = false;
       return this;
     }
 
     /**
      * <pre>
-     * repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-     * EvolveBuildBattleInfo EHEELOGGFME = 30;
-     * JNEGDKNFDFJ PKOFLJLGCFF = 31;
+     * repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+     * EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+     * HJJDFBODGFD DFNGHNEHIIG = 31;
      * </pre>
      *
-     * <code>optional bool IOMHFPMGHFC = 32;</code>
-     * @return the iOMHFPMGHFC
+     * <code>optional bool PIINHCIMOGD = 32;</code>
+     * @return the pIINHCIMOGD
      */
-    public boolean getIOMHFPMGHFC() {
-      return iOMHFPMGHFC;
+    public boolean getPIINHCIMOGD() {
+      return pIINHCIMOGD;
     }
 
     /**
      * <pre>
-     * repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-     * EvolveBuildBattleInfo EHEELOGGFME = 30;
-     * JNEGDKNFDFJ PKOFLJLGCFF = 31;
+     * repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+     * EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+     * HJJDFBODGFD DFNGHNEHIIG = 31;
      * </pre>
      *
-     * <code>optional bool IOMHFPMGHFC = 32;</code>
-     * @param value the iOMHFPMGHFC to set
+     * <code>optional bool PIINHCIMOGD = 32;</code>
+     * @param value the pIINHCIMOGD to set
      * @return this
      */
-    public BattleStatistics setIOMHFPMGHFC(final boolean value) {
+    public BattleStatistics setPIINHCIMOGD(final boolean value) {
       bitField0_ |= 0x00001000;
-      iOMHFPMGHFC = value;
+      pIINHCIMOGD = value;
       return this;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
-     * @return whether the pCEOMHIOFCB field is set
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
+     * @return whether the pMJLBECBODD field is set
      */
-    public boolean hasPCEOMHIOFCB() {
+    public boolean hasPMJLBECBODD() {
       return (bitField0_ & 0x00002000) != 0;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
      * @return this
      */
-    public BattleStatistics clearPCEOMHIOFCB() {
+    public BattleStatistics clearPMJLBECBODD() {
       bitField0_ &= ~0x00002000;
-      pCEOMHIOFCB.clear();
+      pMJLBECBODD.clear();
       return this;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutablePCEOMHIOFCB()} if you want to modify it.
+     * Use {@link #getMutablePMJLBECBODD()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getPCEOMHIOFCB() {
-      return pCEOMHIOFCB;
+    public RepeatedInt getPMJLBECBODD() {
+      return pMJLBECBODD;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -760,38 +760,38 @@ public final class BattleStatisticsOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutablePCEOMHIOFCB() {
+    public RepeatedInt getMutablePMJLBECBODD() {
       bitField0_ |= 0x00002000;
-      return pCEOMHIOFCB;
+      return pMJLBECBODD;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
-     * @param value the pCEOMHIOFCB to add
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
+     * @param value the pMJLBECBODD to add
      * @return this
      */
-    public BattleStatistics addPCEOMHIOFCB(final int value) {
+    public BattleStatistics addPMJLBECBODD(final int value) {
       bitField0_ |= 0x00002000;
-      pCEOMHIOFCB.add(value);
+      pMJLBECBODD.add(value);
       return this;
     }
 
     /**
      * <pre>
-     * repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
+     * repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
      * </pre>
      *
-     * <code>repeated int32 PCEOMHIOFCB = 22;</code>
-     * @param values the pCEOMHIOFCB to add
+     * <code>repeated int32 PMJLBECBODD = 22;</code>
+     * @param values the pMJLBECBODD to add
      * @return this
      */
-    public BattleStatistics addAllPCEOMHIOFCB(final int... values) {
+    public BattleStatistics addAllPMJLBECBODD(final int... values) {
       bitField0_ |= 0x00002000;
-      pCEOMHIOFCB.addAll(values);
+      pMJLBECBODD.addAll(values);
       return this;
     }
 
@@ -1074,39 +1074,39 @@ public final class BattleStatisticsOuterClass {
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
-     * @return whether the aIKIGMFOIPD field is set
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
+     * @return whether the pDCIAMOLIGP field is set
      */
-    public boolean hasAIKIGMFOIPD() {
+    public boolean hasPDCIAMOLIGP() {
       return (bitField0_ & 0x00040000) != 0;
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
      * @return this
      */
-    public BattleStatistics clearAIKIGMFOIPD() {
+    public BattleStatistics clearPDCIAMOLIGP() {
       bitField0_ &= ~0x00040000;
-      aIKIGMFOIPD.clear();
+      pDCIAMOLIGP.clear();
       return this;
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableAIKIGMFOIPD()} if you want to modify it.
+     * Use {@link #getMutablePDCIAMOLIGP()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> getAIKIGMFOIPD() {
-      return aIKIGMFOIPD;
+    public RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> getPDCIAMOLIGP() {
+      return pDCIAMOLIGP;
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -1114,41 +1114,41 @@ public final class BattleStatisticsOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> getMutableAIKIGMFOIPD(
+    public RepeatedMessage<BattleEventBattleInfoOuterClass.BattleEventBattleInfo> getMutablePDCIAMOLIGP(
         ) {
       bitField0_ |= 0x00040000;
-      return aIKIGMFOIPD;
+      return pDCIAMOLIGP;
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
-     * @param value the aIKIGMFOIPD to add
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
+     * @param value the pDCIAMOLIGP to add
      * @return this
      */
-    public BattleStatistics addAIKIGMFOIPD(
+    public BattleStatistics addPDCIAMOLIGP(
         final BattleEventBattleInfoOuterClass.BattleEventBattleInfo value) {
       bitField0_ |= 0x00040000;
-      aIKIGMFOIPD.add(value);
+      pDCIAMOLIGP.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .BattleEventBattleInfo AIKIGMFOIPD = 16;</code>
-     * @param values the aIKIGMFOIPD to add
+     * <code>repeated .BattleEventBattleInfo PDCIAMOLIGP = 16;</code>
+     * @param values the pDCIAMOLIGP to add
      * @return this
      */
-    public BattleStatistics addAllAIKIGMFOIPD(
+    public BattleStatistics addAllPDCIAMOLIGP(
         final BattleEventBattleInfoOuterClass.BattleEventBattleInfo... values) {
       bitField0_ |= 0x00040000;
-      aIKIGMFOIPD.addAll(values);
+      pDCIAMOLIGP.addAll(values);
       return this;
     }
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1160,9 +1160,9 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1176,9 +1176,9 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1196,9 +1196,9 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1216,9 +1216,9 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1233,9 +1233,9 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     * repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-     * repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-     * repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+     * repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+     * repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+     * repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
      * </pre>
      *
      * <code>repeated .BattleStatistics.BattleTargetInfoEntry battle_target_info = 28;</code>
@@ -1263,15 +1263,15 @@ public final class BattleStatisticsOuterClass {
         avatarBattleTurns = other.avatarBattleTurns;
         monsterBattleTurns = other.monsterBattleTurns;
         battleScore = other.battleScore;
-        lDBJKJFMJDE = other.lDBJKJFMJDE;
+        cLNABFDPIKJ = other.cLNABFDPIKJ;
         endReason = other.endReason;
-        iOMHFPMGHFC = other.iOMHFPMGHFC;
-        pCEOMHIOFCB.copyFrom(other.pCEOMHIOFCB);
+        pIINHCIMOGD = other.pIINHCIMOGD;
+        pMJLBECBODD.copyFrom(other.pMJLBECBODD);
         avatarIdList.copyFrom(other.avatarIdList);
         battleAvatarList.copyFrom(other.battleAvatarList);
         battleMonsterList.copyFrom(other.battleMonsterList);
         customValues.copyFrom(other.customValues);
-        aIKIGMFOIPD.copyFrom(other.aIKIGMFOIPD);
+        pDCIAMOLIGP.copyFrom(other.pDCIAMOLIGP);
         battleTargetInfo.copyFrom(other.battleTargetInfo);
       }
       return this;
@@ -1313,17 +1313,17 @@ public final class BattleStatisticsOuterClass {
       if (other.hasBattleScore()) {
         setBattleScore(other.battleScore);
       }
-      if (other.hasLDBJKJFMJDE()) {
-        setLDBJKJFMJDE(other.lDBJKJFMJDE);
+      if (other.hasCLNABFDPIKJ()) {
+        setCLNABFDPIKJ(other.cLNABFDPIKJ);
       }
       if (other.hasEndReason()) {
         setEndReasonValue(other.endReason);
       }
-      if (other.hasIOMHFPMGHFC()) {
-        setIOMHFPMGHFC(other.iOMHFPMGHFC);
+      if (other.hasPIINHCIMOGD()) {
+        setPIINHCIMOGD(other.pIINHCIMOGD);
       }
-      if (other.hasPCEOMHIOFCB()) {
-        getMutablePCEOMHIOFCB().addAll(other.pCEOMHIOFCB);
+      if (other.hasPMJLBECBODD()) {
+        getMutablePMJLBECBODD().addAll(other.pMJLBECBODD);
       }
       if (other.hasAvatarIdList()) {
         getMutableAvatarIdList().addAll(other.avatarIdList);
@@ -1337,8 +1337,8 @@ public final class BattleStatisticsOuterClass {
       if (other.hasCustomValues()) {
         getMutableCustomValues().addAll(other.customValues);
       }
-      if (other.hasAIKIGMFOIPD()) {
-        getMutableAIKIGMFOIPD().addAll(other.aIKIGMFOIPD);
+      if (other.hasPDCIAMOLIGP()) {
+        getMutablePDCIAMOLIGP().addAll(other.pDCIAMOLIGP);
       }
       if (other.hasBattleTargetInfo()) {
         getMutableBattleTargetInfo().addAll(other.battleTargetInfo);
@@ -1363,15 +1363,15 @@ public final class BattleStatisticsOuterClass {
       avatarBattleTurns = 0;
       monsterBattleTurns = 0;
       battleScore = 0;
-      lDBJKJFMJDE = 0;
+      cLNABFDPIKJ = 0;
       endReason = 0;
-      iOMHFPMGHFC = false;
-      pCEOMHIOFCB.clear();
+      pIINHCIMOGD = false;
+      pMJLBECBODD.clear();
       avatarIdList.clear();
       battleAvatarList.clear();
       battleMonsterList.clear();
       customValues.clear();
-      aIKIGMFOIPD.clear();
+      pDCIAMOLIGP.clear();
       battleTargetInfo.clear();
       return this;
     }
@@ -1383,12 +1383,12 @@ public final class BattleStatisticsOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pCEOMHIOFCB.clear();
+      pMJLBECBODD.clear();
       avatarIdList.clear();
       battleAvatarList.clearQuick();
       battleMonsterList.clearQuick();
       customValues.clearQuick();
-      aIKIGMFOIPD.clearQuick();
+      pDCIAMOLIGP.clearQuick();
       battleTargetInfo.clearQuick();
       return this;
     }
@@ -1413,15 +1413,15 @@ public final class BattleStatisticsOuterClass {
         && (!hasAvatarBattleTurns() || avatarBattleTurns == other.avatarBattleTurns)
         && (!hasMonsterBattleTurns() || monsterBattleTurns == other.monsterBattleTurns)
         && (!hasBattleScore() || battleScore == other.battleScore)
-        && (!hasLDBJKJFMJDE() || lDBJKJFMJDE == other.lDBJKJFMJDE)
+        && (!hasCLNABFDPIKJ() || cLNABFDPIKJ == other.cLNABFDPIKJ)
         && (!hasEndReason() || endReason == other.endReason)
-        && (!hasIOMHFPMGHFC() || iOMHFPMGHFC == other.iOMHFPMGHFC)
-        && (!hasPCEOMHIOFCB() || pCEOMHIOFCB.equals(other.pCEOMHIOFCB))
+        && (!hasPIINHCIMOGD() || pIINHCIMOGD == other.pIINHCIMOGD)
+        && (!hasPMJLBECBODD() || pMJLBECBODD.equals(other.pMJLBECBODD))
         && (!hasAvatarIdList() || avatarIdList.equals(other.avatarIdList))
         && (!hasBattleAvatarList() || battleAvatarList.equals(other.battleAvatarList))
         && (!hasBattleMonsterList() || battleMonsterList.equals(other.battleMonsterList))
         && (!hasCustomValues() || customValues.equals(other.customValues))
-        && (!hasAIKIGMFOIPD() || aIKIGMFOIPD.equals(other.aIKIGMFOIPD))
+        && (!hasPDCIAMOLIGP() || pDCIAMOLIGP.equals(other.pDCIAMOLIGP))
         && (!hasBattleTargetInfo() || battleTargetInfo.equals(other.battleTargetInfo));
     }
 
@@ -1469,7 +1469,7 @@ public final class BattleStatisticsOuterClass {
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawLittleEndian16((short) 664);
-        output.writeUInt32NoTag(lDBJKJFMJDE);
+        output.writeUInt32NoTag(cLNABFDPIKJ);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawLittleEndian16((short) 408);
@@ -1477,12 +1477,12 @@ public final class BattleStatisticsOuterClass {
       }
       if ((bitField0_ & 0x00001000) != 0) {
         output.writeRawLittleEndian16((short) 640);
-        output.writeBoolNoTag(iOMHFPMGHFC);
+        output.writeBoolNoTag(pIINHCIMOGD);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        for (int i = 0; i < pCEOMHIOFCB.length(); i++) {
+        for (int i = 0; i < pMJLBECBODD.length(); i++) {
           output.writeRawLittleEndian16((short) 432);
-          output.writeInt32NoTag(pCEOMHIOFCB.array()[i]);
+          output.writeInt32NoTag(pMJLBECBODD.array()[i]);
         }
       }
       if ((bitField0_ & 0x00004000) != 0) {
@@ -1510,9 +1510,9 @@ public final class BattleStatisticsOuterClass {
         }
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        for (int i = 0; i < aIKIGMFOIPD.length(); i++) {
+        for (int i = 0; i < pDCIAMOLIGP.length(); i++) {
           output.writeRawLittleEndian16((short) 386);
-          output.writeMessageNoTag(aIKIGMFOIPD.get(i));
+          output.writeMessageNoTag(pDCIAMOLIGP.get(i));
         }
       }
       if ((bitField0_ & 0x00080000) != 0) {
@@ -1557,7 +1557,7 @@ public final class BattleStatisticsOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(battleScore);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(lDBJKJFMJDE);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(cLNABFDPIKJ);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         size += 2 + ProtoSink.computeEnumSizeNoTag(endReason);
@@ -1566,7 +1566,7 @@ public final class BattleStatisticsOuterClass {
         size += 3;
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        size += (2 * pCEOMHIOFCB.length()) + ProtoSink.computeRepeatedInt32SizeNoTag(pCEOMHIOFCB);
+        size += (2 * pMJLBECBODD.length()) + ProtoSink.computeRepeatedInt32SizeNoTag(pMJLBECBODD);
       }
       if ((bitField0_ & 0x00004000) != 0) {
         size += (1 * avatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(avatarIdList);
@@ -1581,7 +1581,7 @@ public final class BattleStatisticsOuterClass {
         size += (1 * customValues.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(customValues);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        size += (2 * aIKIGMFOIPD.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(aIKIGMFOIPD);
+        size += (2 * pDCIAMOLIGP.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(pDCIAMOLIGP);
       }
       if ((bitField0_ & 0x00080000) != 0) {
         size += (2 * battleTargetInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(battleTargetInfo);
@@ -1687,8 +1687,8 @@ public final class BattleStatisticsOuterClass {
             }
           }
           case 280: {
-            // lDBJKJFMJDE
-            lDBJKJFMJDE = input.readUInt32();
+            // cLNABFDPIKJ
+            cLNABFDPIKJ = input.readUInt32();
             bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 152) {
@@ -1708,8 +1708,8 @@ public final class BattleStatisticsOuterClass {
             }
           }
           case 256: {
-            // iOMHFPMGHFC
-            iOMHFPMGHFC = input.readBool();
+            // pIINHCIMOGD
+            pIINHCIMOGD = input.readBool();
             bitField0_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 178) {
@@ -1717,8 +1717,8 @@ public final class BattleStatisticsOuterClass {
             }
           }
           case 178: {
-            // pCEOMHIOFCB [packed=true]
-            input.readPackedInt32(pCEOMHIOFCB, tag);
+            // pMJLBECBODD [packed=true]
+            input.readPackedInt32(pMJLBECBODD, tag);
             bitField0_ |= 0x00002000;
             tag = input.readTag();
             if (tag != 26) {
@@ -1759,8 +1759,8 @@ public final class BattleStatisticsOuterClass {
             }
           }
           case 130: {
-            // aIKIGMFOIPD
-            tag = input.readRepeatedMessage(aIKIGMFOIPD, tag);
+            // pDCIAMOLIGP
+            tag = input.readRepeatedMessage(pDCIAMOLIGP, tag);
             bitField0_ |= 0x00040000;
             if (tag != 226) {
               break;
@@ -1785,8 +1785,8 @@ public final class BattleStatisticsOuterClass {
             break;
           }
           case 176: {
-            // pCEOMHIOFCB [packed=false]
-            tag = input.readRepeatedInt32(pCEOMHIOFCB, tag);
+            // pMJLBECBODD [packed=false]
+            tag = input.readRepeatedInt32(pMJLBECBODD, tag);
             bitField0_ |= 0x00002000;
             break;
           }
@@ -1834,16 +1834,16 @@ public final class BattleStatisticsOuterClass {
         output.writeUInt32(FieldNames.battleScore, battleScore);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeUInt32(FieldNames.lDBJKJFMJDE, lDBJKJFMJDE);
+        output.writeUInt32(FieldNames.cLNABFDPIKJ, cLNABFDPIKJ);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeEnum(FieldNames.endReason, endReason, BattleEndReasonOuterClass.BattleEndReason.converter());
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeBool(FieldNames.iOMHFPMGHFC, iOMHFPMGHFC);
+        output.writeBool(FieldNames.pIINHCIMOGD, pIINHCIMOGD);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeRepeatedInt32(FieldNames.pCEOMHIOFCB, pCEOMHIOFCB);
+        output.writeRepeatedInt32(FieldNames.pMJLBECBODD, pMJLBECBODD);
       }
       if ((bitField0_ & 0x00004000) != 0) {
         output.writeRepeatedUInt32(FieldNames.avatarIdList, avatarIdList);
@@ -1858,7 +1858,7 @@ public final class BattleStatisticsOuterClass {
         output.writeRepeatedMessage(FieldNames.customValues, customValues);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeRepeatedMessage(FieldNames.aIKIGMFOIPD, aIKIGMFOIPD);
+        output.writeRepeatedMessage(FieldNames.pDCIAMOLIGP, pDCIAMOLIGP);
       }
       if ((bitField0_ & 0x00080000) != 0) {
         output.writeRepeatedMessage(FieldNames.battleTargetInfo, battleTargetInfo);
@@ -1993,10 +1993,10 @@ public final class BattleStatisticsOuterClass {
             }
             break;
           }
-          case 1507539557: {
-            if (input.isAtField(FieldNames.lDBJKJFMJDE)) {
+          case 694210108: {
+            if (input.isAtField(FieldNames.cLNABFDPIKJ)) {
               if (!input.trySkipNullValue()) {
-                lDBJKJFMJDE = input.readUInt32();
+                cLNABFDPIKJ = input.readUInt32();
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -2021,10 +2021,10 @@ public final class BattleStatisticsOuterClass {
             }
             break;
           }
-          case -1415497664: {
-            if (input.isAtField(FieldNames.iOMHFPMGHFC)) {
+          case 1975956239: {
+            if (input.isAtField(FieldNames.pIINHCIMOGD)) {
               if (!input.trySkipNullValue()) {
-                iOMHFPMGHFC = input.readBool();
+                pIINHCIMOGD = input.readBool();
                 bitField0_ |= 0x00001000;
               }
             } else {
@@ -2032,10 +2032,10 @@ public final class BattleStatisticsOuterClass {
             }
             break;
           }
-          case -471488761: {
-            if (input.isAtField(FieldNames.pCEOMHIOFCB)) {
+          case -786871026: {
+            if (input.isAtField(FieldNames.pMJLBECBODD)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedInt32(pCEOMHIOFCB);
+                input.readRepeatedInt32(pMJLBECBODD);
                 bitField0_ |= 0x00002000;
               }
             } else {
@@ -2091,10 +2091,10 @@ public final class BattleStatisticsOuterClass {
             }
             break;
           }
-          case -1182531800: {
-            if (input.isAtField(FieldNames.aIKIGMFOIPD)) {
+          case -831529809: {
+            if (input.isAtField(FieldNames.pDCIAMOLIGP)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(aIKIGMFOIPD);
+                input.readRepeatedMessage(pDCIAMOLIGP);
                 bitField0_ |= 0x00040000;
               }
             } else {
@@ -2888,13 +2888,13 @@ public final class BattleStatisticsOuterClass {
 
       static final FieldName battleScore = FieldName.forField("battleScore", "battle_score");
 
-      static final FieldName lDBJKJFMJDE = FieldName.forField("LDBJKJFMJDE");
+      static final FieldName cLNABFDPIKJ = FieldName.forField("CLNABFDPIKJ");
 
       static final FieldName endReason = FieldName.forField("endReason", "end_reason");
 
-      static final FieldName iOMHFPMGHFC = FieldName.forField("IOMHFPMGHFC");
+      static final FieldName pIINHCIMOGD = FieldName.forField("PIINHCIMOGD");
 
-      static final FieldName pCEOMHIOFCB = FieldName.forField("PCEOMHIOFCB");
+      static final FieldName pMJLBECBODD = FieldName.forField("PMJLBECBODD");
 
       static final FieldName avatarIdList = FieldName.forField("avatarIdList", "avatar_id_list");
 
@@ -2904,7 +2904,7 @@ public final class BattleStatisticsOuterClass {
 
       static final FieldName customValues = FieldName.forField("customValues", "custom_values");
 
-      static final FieldName aIKIGMFOIPD = FieldName.forField("AIKIGMFOIPD");
+      static final FieldName pDCIAMOLIGP = FieldName.forField("PDCIAMOLIGP");
 
       static final FieldName battleTargetInfo = FieldName.forField("battleTargetInfo", "battle_target_info");
     }

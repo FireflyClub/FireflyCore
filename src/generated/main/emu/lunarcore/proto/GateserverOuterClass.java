@@ -23,311 +23,320 @@ public final class GateserverOuterClass {
     private int bitField1_;
 
     /**
-     * <code>optional int64 POHJHDDOECN = 9;</code>
+     * <code>optional int64 MDAHNIKKAHI = 4;</code>
      */
-    private long pOHJHDDOECN;
+    private long mDAHNIKKAHI;
 
     /**
-     * <code>optional int64 KICPPAHLGHB = 15;</code>
+     * <code>optional int64 GHENHJPJJLK = 15;</code>
      */
-    private long kICPPAHLGHB;
+    private long gHENHJPJJLK;
 
     /**
-     * <code>optional uint32 port = 2;</code>
-     */
-    private int port;
-
-    /**
-     * <code>optional uint32 BAGLOFEACNC = 6;</code>
-     */
-    private int bAGLOFEACNC;
-
-    /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 2;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 AOMEDACHLJD = 13;</code>
+     * <code>optional uint32 IGKDKFJIDPP = 7;</code>
      */
-    private int aOMEDACHLJD;
+    private int iGKDKFJIDPP;
 
     /**
-     * <code>optional uint32 MDAILCAMOAO = 1710;</code>
+     * <code>optional uint32 port = 11;</code>
      */
-    private int mDAILCAMOAO;
+    private int port;
 
     /**
-     * <code>optional bool unk1 = 1;</code>
+     * <code>optional uint32 HNDPOHGEIPM = 13;</code>
+     */
+    private int hNDPOHGEIPM;
+
+    /**
+     * <code>optional uint32 CLCFLOAMGBL = 1243;</code>
+     */
+    private int cLCFLOAMGBL;
+
+    /**
+     * <code>optional bool unk1 = 6;</code>
      */
     private boolean unk1;
 
     /**
-     * <code>optional bool unk2 = 7;</code>
+     * <code>optional bool unk2 = 10;</code>
      */
     private boolean unk2;
 
     /**
-     * <code>optional bool unk3 = 297;</code>
+     * <code>optional bool unk3 = 62;</code>
      */
     private boolean unk3;
 
     /**
-     * <code>optional bool unk4 = 414;</code>
+     * <code>optional bool unk4 = 326;</code>
      */
     private boolean unk4;
 
     /**
-     * <code>optional bool unk5 = 593;</code>
+     * <code>optional bool unk5 = 340;</code>
      */
     private boolean unk5;
 
     /**
-     * <code>optional bool unk6 = 825;</code>
+     * <code>optional bool CNAKLGMDLPE = 422;</code>
      */
-    private boolean unk6;
+    private boolean cNAKLGMDLPE;
 
     /**
-     * <code>optional bool unk7 = 1028;</code>
+     * <code>optional bool APJECJMGAKC = 577;</code>
      */
-    private boolean unk7;
+    private boolean aPJECJMGAKC;
 
     /**
-     * <code>optional bool unk8 = 1176;</code>
+     * <code>optional bool JGCIILJEHHE = 673;</code>
      */
-    private boolean unk8;
+    private boolean jGCIILJEHHE;
 
     /**
-     * <code>optional bool unk9 = 1457;</code>
+     * <code>optional bool FIOHEKDJNCG = 837;</code>
      */
-    private boolean unk9;
+    private boolean fIOHEKDJNCG;
 
     /**
-     * <code>optional bool unk10 = 1486;</code>
+     * <code>optional bool MCEIPIBAMDB = 1574;</code>
      */
-    private boolean unk10;
+    private boolean mCEIPIBAMDB;
 
     /**
-     * <code>optional bool unk11 = 1523;</code>
+     * <code>optional bool EBKBNEKCOHI = 1575;</code>
      */
-    private boolean unk11;
+    private boolean eBKBNEKCOHI;
 
     /**
-     * <code>optional bool unk12 = 1566;</code>
+     * <code>optional bool LAABLMNKLLD = 1703;</code>
      */
-    private boolean unk12;
+    private boolean lAABLMNKLLD;
 
     /**
-     * <code>optional bool unk13 = 1754;</code>
+     * <code>optional bool OFJAKNEDMDM = 1782;</code>
      */
-    private boolean unk13;
+    private boolean oFJAKNEDMDM;
 
     /**
-     * <code>optional bool unk14 = 1915;</code>
+     * <code>optional bool NPHDIMJOKNI = 1866;</code>
      */
-    private boolean unk14;
+    private boolean nPHDIMJOKNI;
 
     /**
-     * <code>optional bool unk15 = 1952;</code>
+     * <code>optional bool NNGLEBKCMLA = 2018;</code>
      */
-    private boolean unk15;
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     */
-    private final Utf8String assetBundleUrl = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string ip = 4;</code>
-     */
-    private final Utf8String ip = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     */
-    private final Utf8String regionName = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     */
-    private final Utf8String fNCHMFHFMID = Utf8String.newEmptyInstance();
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     */
-    private final Utf8String luaUrl = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string msg = 11;</code>
-     */
-    private final Utf8String msg = Utf8String.newEmptyInstance();
+    private boolean nNGLEBKCMLA;
 
     /**
      * <pre>
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      */
     private final Utf8String exResourceUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
      */
-    private final Utf8String pNHBALGFHOH = Utf8String.newEmptyInstance();
+    private final Utf8String luaUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
+     * <code>optional string ip = 5;</code>
      */
-    private final Utf8String nPNBJBCFPNE = Utf8String.newEmptyInstance();
+    private final Utf8String ip = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
+     * <code>optional string msg = 8;</code>
      */
-    private final Utf8String bFIHFKLMMEK = Utf8String.newEmptyInstance();
+    private final Utf8String msg = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
      */
-    private final Utf8String bHDBHBJJPNI = Utf8String.newEmptyInstance();
+    private final Utf8String assetBundleUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
+     * <code>optional string region_name = 12;</code>
      */
-    private final Utf8String lBPFHPCBCKL = Utf8String.newEmptyInstance();
+    private final Utf8String regionName = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
+     * <code>optional string IOKEPIEDBNE = 14;</code>
      */
-    private final Utf8String gBICAMFDFCE = Utf8String.newEmptyInstance();
+    private final Utf8String iOKEPIEDBNE = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
+     * <code>optional string FCMMMPKJJIL = 20;</code>
      */
-    private final Utf8String mEACAGAFHGA = Utf8String.newEmptyInstance();
+    private final Utf8String fCMMMPKJJIL = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
+     * <code>optional string IPKLAMMKNNG = 117;</code>
      */
-    private final Utf8String gDOBHNDOCOJ = Utf8String.newEmptyInstance();
+    private final Utf8String iPKLAMMKNNG = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
+     * <code>optional string IIJLFILFMDF = 138;</code>
      */
-    private final Utf8String nKJBGBOOGFD = Utf8String.newEmptyInstance();
+    private final Utf8String iIJLFILFMDF = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
+     * <code>optional string ODOCFCJMBCL = 337;</code>
      */
-    private final Utf8String fPHFAJBCHPG = Utf8String.newEmptyInstance();
+    private final Utf8String oDOCFCJMBCL = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
+     * <code>optional string BBFOAJGLLBC = 355;</code>
      */
-    private final Utf8String oAONLAKKNIH = Utf8String.newEmptyInstance();
+    private final Utf8String bBFOAJGLLBC = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
+     * <code>optional string KKHFKMIKFIB = 362;</code>
      */
-    private final Utf8String mANDMJOLPHH = Utf8String.newEmptyInstance();
+    private final Utf8String kKHFKMIKFIB = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
+     * <code>optional string MKCNEFHHAOG = 365;</code>
      */
-    private final Utf8String kEICDBEHMDO = Utf8String.newEmptyInstance();
+    private final Utf8String mKCNEFHHAOG = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     */
-    private final Utf8String gHCIOIALPMH = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      */
     private final Utf8String ifixUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
+     * <code>optional string NPPCGBIFDMN = 452;</code>
      */
-    private final Utf8String iHGAICFNADN = Utf8String.newEmptyInstance();
+    private final Utf8String nPPCGBIFDMN = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
+     * <code>optional string NPIGPBEKEKO = 464;</code>
      */
-    private final Utf8String dEGFPDPOIHI = Utf8String.newEmptyInstance();
+    private final Utf8String nPIGPBEKEKO = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
+     * <code>optional string AIPNJNLHFBP = 569;</code>
      */
-    private final Utf8String lLBOPDMGMLO = Utf8String.newEmptyInstance();
+    private final Utf8String aIPNJNLHFBP = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
+     * <code>optional string FHALNCIHMGA = 592;</code>
      */
-    private final Utf8String bCADOJCHKAE = Utf8String.newEmptyInstance();
+    private final Utf8String fHALNCIHMGA = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
+     * <code>optional string LKDFCHNEFBB = 614;</code>
      */
-    private final Utf8String mNEMHHBMKEA = Utf8String.newEmptyInstance();
+    private final Utf8String lKDFCHNEFBB = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
+     * <code>optional string msg2 = 659;</code>
      */
-    private final Utf8String eNLGGEEKCJH = Utf8String.newEmptyInstance();
+    private final Utf8String msg2 = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     */
+    private final Utf8String lHGKDGDJIHC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     */
+    private final Utf8String oGJIECMHHHG = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     */
+    private final Utf8String pMABNNEDCCG = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     */
+    private final Utf8String nECFMBFGPML = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     */
+    private final Utf8String kDBAGALHEDC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     */
+    private final Utf8String fDGFFCMALPI = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     */
+    private final Utf8String kLIAGHGOFML = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     */
+    private final Utf8String pNALJLBMILJ = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     */
+    private final Utf8String bJOCANIBBKI = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     */
+    private final Utf8String eICAECNMDIB = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     */
+    private final Utf8String lLFDDPLHGBM = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     */
+    private final Utf8String oBOPKJFGDIC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     */
+    private final Utf8String mDKDJLNHGKN = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     */
+    private final Utf8String eLJIMGJLHBC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     */
+    private final Utf8String gKPLIAPPLCO = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string ipv6 = 1952;</code>
      */
     private final Utf8String ipv6 = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
      */
-    private final Utf8String jCFGJFMGNLF = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     */
-    private final Utf8String nDAOKPKOLKI = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     */
-    private final Utf8String mPDCHMICKGP = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     */
-    private final Utf8String oHOGINOGEOG = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     */
-    private final Utf8String pKDDCFGDDDE = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     */
-    private final Utf8String gMCEHMDOHDL = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     */
-    private final Utf8String dALBCELEHGM = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
-     */
-    private final RepeatedString gBCBIDAHGJC = RepeatedString.newEmptyInstance();
+    private final RepeatedString gBONLDEMBEN = RepeatedString.newEmptyInstance();
 
     private Gateserver() {
     }
@@ -340,173 +349,99 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional int64 POHJHDDOECN = 9;</code>
-     * @return whether the pOHJHDDOECN field is set
+     * <code>optional int64 MDAHNIKKAHI = 4;</code>
+     * @return whether the mDAHNIKKAHI field is set
      */
-    public boolean hasPOHJHDDOECN() {
+    public boolean hasMDAHNIKKAHI() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional int64 POHJHDDOECN = 9;</code>
+     * <code>optional int64 MDAHNIKKAHI = 4;</code>
      * @return this
      */
-    public Gateserver clearPOHJHDDOECN() {
+    public Gateserver clearMDAHNIKKAHI() {
       bitField0_ &= ~0x00000001;
-      pOHJHDDOECN = 0L;
+      mDAHNIKKAHI = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 POHJHDDOECN = 9;</code>
-     * @return the pOHJHDDOECN
+     * <code>optional int64 MDAHNIKKAHI = 4;</code>
+     * @return the mDAHNIKKAHI
      */
-    public long getPOHJHDDOECN() {
-      return pOHJHDDOECN;
+    public long getMDAHNIKKAHI() {
+      return mDAHNIKKAHI;
     }
 
     /**
-     * <code>optional int64 POHJHDDOECN = 9;</code>
-     * @param value the pOHJHDDOECN to set
+     * <code>optional int64 MDAHNIKKAHI = 4;</code>
+     * @param value the mDAHNIKKAHI to set
      * @return this
      */
-    public Gateserver setPOHJHDDOECN(final long value) {
+    public Gateserver setMDAHNIKKAHI(final long value) {
       bitField0_ |= 0x00000001;
-      pOHJHDDOECN = value;
+      mDAHNIKKAHI = value;
       return this;
     }
 
     /**
-     * <code>optional int64 KICPPAHLGHB = 15;</code>
-     * @return whether the kICPPAHLGHB field is set
+     * <code>optional int64 GHENHJPJJLK = 15;</code>
+     * @return whether the gHENHJPJJLK field is set
      */
-    public boolean hasKICPPAHLGHB() {
+    public boolean hasGHENHJPJJLK() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional int64 KICPPAHLGHB = 15;</code>
+     * <code>optional int64 GHENHJPJJLK = 15;</code>
      * @return this
      */
-    public Gateserver clearKICPPAHLGHB() {
+    public Gateserver clearGHENHJPJJLK() {
       bitField0_ &= ~0x00000002;
-      kICPPAHLGHB = 0L;
+      gHENHJPJJLK = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 KICPPAHLGHB = 15;</code>
-     * @return the kICPPAHLGHB
+     * <code>optional int64 GHENHJPJJLK = 15;</code>
+     * @return the gHENHJPJJLK
      */
-    public long getKICPPAHLGHB() {
-      return kICPPAHLGHB;
+    public long getGHENHJPJJLK() {
+      return gHENHJPJJLK;
     }
 
     /**
-     * <code>optional int64 KICPPAHLGHB = 15;</code>
-     * @param value the kICPPAHLGHB to set
+     * <code>optional int64 GHENHJPJJLK = 15;</code>
+     * @param value the gHENHJPJJLK to set
      * @return this
      */
-    public Gateserver setKICPPAHLGHB(final long value) {
+    public Gateserver setGHENHJPJJLK(final long value) {
       bitField0_ |= 0x00000002;
-      kICPPAHLGHB = value;
+      gHENHJPJJLK = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 port = 2;</code>
-     * @return whether the port field is set
+     * <code>optional uint32 retcode = 2;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasPort() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 port = 2;</code>
-     * @return this
-     */
-    public Gateserver clearPort() {
-      bitField0_ &= ~0x00000004;
-      port = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 port = 2;</code>
-     * @return the port
-     */
-    public int getPort() {
-      return port;
-    }
-
-    /**
-     * <code>optional uint32 port = 2;</code>
-     * @param value the port to set
-     * @return this
-     */
-    public Gateserver setPort(final int value) {
-      bitField0_ |= 0x00000004;
-      port = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 BAGLOFEACNC = 6;</code>
-     * @return whether the bAGLOFEACNC field is set
-     */
-    public boolean hasBAGLOFEACNC() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 BAGLOFEACNC = 6;</code>
-     * @return this
-     */
-    public Gateserver clearBAGLOFEACNC() {
-      bitField0_ &= ~0x00000008;
-      bAGLOFEACNC = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 BAGLOFEACNC = 6;</code>
-     * @return the bAGLOFEACNC
-     */
-    public int getBAGLOFEACNC() {
-      return bAGLOFEACNC;
-    }
-
-    /**
-     * <code>optional uint32 BAGLOFEACNC = 6;</code>
-     * @param value the bAGLOFEACNC to set
-     * @return this
-     */
-    public Gateserver setBAGLOFEACNC(final int value) {
-      bitField0_ |= 0x00000008;
-      bAGLOFEACNC = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 12;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return this
      */
     public Gateserver clearRetcode() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000004;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -514,92 +449,166 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @param value the retcode to set
      * @return this
      */
     public Gateserver setRetcode(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 AOMEDACHLJD = 13;</code>
-     * @return whether the aOMEDACHLJD field is set
+     * <code>optional uint32 IGKDKFJIDPP = 7;</code>
+     * @return whether the iGKDKFJIDPP field is set
      */
-    public boolean hasAOMEDACHLJD() {
+    public boolean hasIGKDKFJIDPP() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 IGKDKFJIDPP = 7;</code>
+     * @return this
+     */
+    public Gateserver clearIGKDKFJIDPP() {
+      bitField0_ &= ~0x00000008;
+      iGKDKFJIDPP = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 IGKDKFJIDPP = 7;</code>
+     * @return the iGKDKFJIDPP
+     */
+    public int getIGKDKFJIDPP() {
+      return iGKDKFJIDPP;
+    }
+
+    /**
+     * <code>optional uint32 IGKDKFJIDPP = 7;</code>
+     * @param value the iGKDKFJIDPP to set
+     * @return this
+     */
+    public Gateserver setIGKDKFJIDPP(final int value) {
+      bitField0_ |= 0x00000008;
+      iGKDKFJIDPP = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 port = 11;</code>
+     * @return whether the port field is set
+     */
+    public boolean hasPort() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 port = 11;</code>
+     * @return this
+     */
+    public Gateserver clearPort() {
+      bitField0_ &= ~0x00000010;
+      port = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 port = 11;</code>
+     * @return the port
+     */
+    public int getPort() {
+      return port;
+    }
+
+    /**
+     * <code>optional uint32 port = 11;</code>
+     * @param value the port to set
+     * @return this
+     */
+    public Gateserver setPort(final int value) {
+      bitField0_ |= 0x00000010;
+      port = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 HNDPOHGEIPM = 13;</code>
+     * @return whether the hNDPOHGEIPM field is set
+     */
+    public boolean hasHNDPOHGEIPM() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 AOMEDACHLJD = 13;</code>
+     * <code>optional uint32 HNDPOHGEIPM = 13;</code>
      * @return this
      */
-    public Gateserver clearAOMEDACHLJD() {
+    public Gateserver clearHNDPOHGEIPM() {
       bitField0_ &= ~0x00000020;
-      aOMEDACHLJD = 0;
+      hNDPOHGEIPM = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 AOMEDACHLJD = 13;</code>
-     * @return the aOMEDACHLJD
+     * <code>optional uint32 HNDPOHGEIPM = 13;</code>
+     * @return the hNDPOHGEIPM
      */
-    public int getAOMEDACHLJD() {
-      return aOMEDACHLJD;
+    public int getHNDPOHGEIPM() {
+      return hNDPOHGEIPM;
     }
 
     /**
-     * <code>optional uint32 AOMEDACHLJD = 13;</code>
-     * @param value the aOMEDACHLJD to set
+     * <code>optional uint32 HNDPOHGEIPM = 13;</code>
+     * @param value the hNDPOHGEIPM to set
      * @return this
      */
-    public Gateserver setAOMEDACHLJD(final int value) {
+    public Gateserver setHNDPOHGEIPM(final int value) {
       bitField0_ |= 0x00000020;
-      aOMEDACHLJD = value;
+      hNDPOHGEIPM = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 MDAILCAMOAO = 1710;</code>
-     * @return whether the mDAILCAMOAO field is set
+     * <code>optional uint32 CLCFLOAMGBL = 1243;</code>
+     * @return whether the cLCFLOAMGBL field is set
      */
-    public boolean hasMDAILCAMOAO() {
+    public boolean hasCLCFLOAMGBL() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional uint32 MDAILCAMOAO = 1710;</code>
+     * <code>optional uint32 CLCFLOAMGBL = 1243;</code>
      * @return this
      */
-    public Gateserver clearMDAILCAMOAO() {
+    public Gateserver clearCLCFLOAMGBL() {
       bitField0_ &= ~0x00000040;
-      mDAILCAMOAO = 0;
+      cLCFLOAMGBL = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 MDAILCAMOAO = 1710;</code>
-     * @return the mDAILCAMOAO
+     * <code>optional uint32 CLCFLOAMGBL = 1243;</code>
+     * @return the cLCFLOAMGBL
      */
-    public int getMDAILCAMOAO() {
-      return mDAILCAMOAO;
+    public int getCLCFLOAMGBL() {
+      return cLCFLOAMGBL;
     }
 
     /**
-     * <code>optional uint32 MDAILCAMOAO = 1710;</code>
-     * @param value the mDAILCAMOAO to set
+     * <code>optional uint32 CLCFLOAMGBL = 1243;</code>
+     * @param value the cLCFLOAMGBL to set
      * @return this
      */
-    public Gateserver setMDAILCAMOAO(final int value) {
+    public Gateserver setCLCFLOAMGBL(final int value) {
       bitField0_ |= 0x00000040;
-      mDAILCAMOAO = value;
+      cLCFLOAMGBL = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk1 = 1;</code>
+     * <code>optional bool unk1 = 6;</code>
      * @return whether the unk1 field is set
      */
     public boolean hasUnk1() {
@@ -607,7 +616,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk1 = 1;</code>
+     * <code>optional bool unk1 = 6;</code>
      * @return this
      */
     public Gateserver clearUnk1() {
@@ -617,7 +626,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk1 = 1;</code>
+     * <code>optional bool unk1 = 6;</code>
      * @return the unk1
      */
     public boolean getUnk1() {
@@ -625,7 +634,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk1 = 1;</code>
+     * <code>optional bool unk1 = 6;</code>
      * @param value the unk1 to set
      * @return this
      */
@@ -636,7 +645,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk2 = 7;</code>
+     * <code>optional bool unk2 = 10;</code>
      * @return whether the unk2 field is set
      */
     public boolean hasUnk2() {
@@ -644,7 +653,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk2 = 7;</code>
+     * <code>optional bool unk2 = 10;</code>
      * @return this
      */
     public Gateserver clearUnk2() {
@@ -654,7 +663,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk2 = 7;</code>
+     * <code>optional bool unk2 = 10;</code>
      * @return the unk2
      */
     public boolean getUnk2() {
@@ -662,7 +671,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk2 = 7;</code>
+     * <code>optional bool unk2 = 10;</code>
      * @param value the unk2 to set
      * @return this
      */
@@ -673,7 +682,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk3 = 297;</code>
+     * <code>optional bool unk3 = 62;</code>
      * @return whether the unk3 field is set
      */
     public boolean hasUnk3() {
@@ -681,7 +690,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk3 = 297;</code>
+     * <code>optional bool unk3 = 62;</code>
      * @return this
      */
     public Gateserver clearUnk3() {
@@ -691,7 +700,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk3 = 297;</code>
+     * <code>optional bool unk3 = 62;</code>
      * @return the unk3
      */
     public boolean getUnk3() {
@@ -699,7 +708,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk3 = 297;</code>
+     * <code>optional bool unk3 = 62;</code>
      * @param value the unk3 to set
      * @return this
      */
@@ -710,7 +719,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk4 = 414;</code>
+     * <code>optional bool unk4 = 326;</code>
      * @return whether the unk4 field is set
      */
     public boolean hasUnk4() {
@@ -718,7 +727,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk4 = 414;</code>
+     * <code>optional bool unk4 = 326;</code>
      * @return this
      */
     public Gateserver clearUnk4() {
@@ -728,7 +737,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk4 = 414;</code>
+     * <code>optional bool unk4 = 326;</code>
      * @return the unk4
      */
     public boolean getUnk4() {
@@ -736,7 +745,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk4 = 414;</code>
+     * <code>optional bool unk4 = 326;</code>
      * @param value the unk4 to set
      * @return this
      */
@@ -747,7 +756,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk5 = 593;</code>
+     * <code>optional bool unk5 = 340;</code>
      * @return whether the unk5 field is set
      */
     public boolean hasUnk5() {
@@ -755,7 +764,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk5 = 593;</code>
+     * <code>optional bool unk5 = 340;</code>
      * @return this
      */
     public Gateserver clearUnk5() {
@@ -765,7 +774,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk5 = 593;</code>
+     * <code>optional bool unk5 = 340;</code>
      * @return the unk5
      */
     public boolean getUnk5() {
@@ -773,7 +782,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk5 = 593;</code>
+     * <code>optional bool unk5 = 340;</code>
      * @param value the unk5 to set
      * @return this
      */
@@ -784,843 +793,397 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional bool unk6 = 825;</code>
-     * @return whether the unk6 field is set
+     * <code>optional bool CNAKLGMDLPE = 422;</code>
+     * @return whether the cNAKLGMDLPE field is set
      */
-    public boolean hasUnk6() {
+    public boolean hasCNAKLGMDLPE() {
       return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
-     * <code>optional bool unk6 = 825;</code>
+     * <code>optional bool CNAKLGMDLPE = 422;</code>
      * @return this
      */
-    public Gateserver clearUnk6() {
+    public Gateserver clearCNAKLGMDLPE() {
       bitField0_ &= ~0x00001000;
-      unk6 = false;
+      cNAKLGMDLPE = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk6 = 825;</code>
-     * @return the unk6
+     * <code>optional bool CNAKLGMDLPE = 422;</code>
+     * @return the cNAKLGMDLPE
      */
-    public boolean getUnk6() {
-      return unk6;
+    public boolean getCNAKLGMDLPE() {
+      return cNAKLGMDLPE;
     }
 
     /**
-     * <code>optional bool unk6 = 825;</code>
-     * @param value the unk6 to set
+     * <code>optional bool CNAKLGMDLPE = 422;</code>
+     * @param value the cNAKLGMDLPE to set
      * @return this
      */
-    public Gateserver setUnk6(final boolean value) {
+    public Gateserver setCNAKLGMDLPE(final boolean value) {
       bitField0_ |= 0x00001000;
-      unk6 = value;
+      cNAKLGMDLPE = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk7 = 1028;</code>
-     * @return whether the unk7 field is set
+     * <code>optional bool APJECJMGAKC = 577;</code>
+     * @return whether the aPJECJMGAKC field is set
      */
-    public boolean hasUnk7() {
+    public boolean hasAPJECJMGAKC() {
       return (bitField0_ & 0x00002000) != 0;
     }
 
     /**
-     * <code>optional bool unk7 = 1028;</code>
+     * <code>optional bool APJECJMGAKC = 577;</code>
      * @return this
      */
-    public Gateserver clearUnk7() {
+    public Gateserver clearAPJECJMGAKC() {
       bitField0_ &= ~0x00002000;
-      unk7 = false;
+      aPJECJMGAKC = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk7 = 1028;</code>
-     * @return the unk7
+     * <code>optional bool APJECJMGAKC = 577;</code>
+     * @return the aPJECJMGAKC
      */
-    public boolean getUnk7() {
-      return unk7;
+    public boolean getAPJECJMGAKC() {
+      return aPJECJMGAKC;
     }
 
     /**
-     * <code>optional bool unk7 = 1028;</code>
-     * @param value the unk7 to set
+     * <code>optional bool APJECJMGAKC = 577;</code>
+     * @param value the aPJECJMGAKC to set
      * @return this
      */
-    public Gateserver setUnk7(final boolean value) {
+    public Gateserver setAPJECJMGAKC(final boolean value) {
       bitField0_ |= 0x00002000;
-      unk7 = value;
+      aPJECJMGAKC = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk8 = 1176;</code>
-     * @return whether the unk8 field is set
+     * <code>optional bool JGCIILJEHHE = 673;</code>
+     * @return whether the jGCIILJEHHE field is set
      */
-    public boolean hasUnk8() {
+    public boolean hasJGCIILJEHHE() {
       return (bitField0_ & 0x00004000) != 0;
     }
 
     /**
-     * <code>optional bool unk8 = 1176;</code>
+     * <code>optional bool JGCIILJEHHE = 673;</code>
      * @return this
      */
-    public Gateserver clearUnk8() {
+    public Gateserver clearJGCIILJEHHE() {
       bitField0_ &= ~0x00004000;
-      unk8 = false;
+      jGCIILJEHHE = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk8 = 1176;</code>
-     * @return the unk8
+     * <code>optional bool JGCIILJEHHE = 673;</code>
+     * @return the jGCIILJEHHE
      */
-    public boolean getUnk8() {
-      return unk8;
+    public boolean getJGCIILJEHHE() {
+      return jGCIILJEHHE;
     }
 
     /**
-     * <code>optional bool unk8 = 1176;</code>
-     * @param value the unk8 to set
+     * <code>optional bool JGCIILJEHHE = 673;</code>
+     * @param value the jGCIILJEHHE to set
      * @return this
      */
-    public Gateserver setUnk8(final boolean value) {
+    public Gateserver setJGCIILJEHHE(final boolean value) {
       bitField0_ |= 0x00004000;
-      unk8 = value;
+      jGCIILJEHHE = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk9 = 1457;</code>
-     * @return whether the unk9 field is set
+     * <code>optional bool FIOHEKDJNCG = 837;</code>
+     * @return whether the fIOHEKDJNCG field is set
      */
-    public boolean hasUnk9() {
+    public boolean hasFIOHEKDJNCG() {
       return (bitField0_ & 0x00008000) != 0;
     }
 
     /**
-     * <code>optional bool unk9 = 1457;</code>
+     * <code>optional bool FIOHEKDJNCG = 837;</code>
      * @return this
      */
-    public Gateserver clearUnk9() {
+    public Gateserver clearFIOHEKDJNCG() {
       bitField0_ &= ~0x00008000;
-      unk9 = false;
+      fIOHEKDJNCG = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk9 = 1457;</code>
-     * @return the unk9
+     * <code>optional bool FIOHEKDJNCG = 837;</code>
+     * @return the fIOHEKDJNCG
      */
-    public boolean getUnk9() {
-      return unk9;
+    public boolean getFIOHEKDJNCG() {
+      return fIOHEKDJNCG;
     }
 
     /**
-     * <code>optional bool unk9 = 1457;</code>
-     * @param value the unk9 to set
+     * <code>optional bool FIOHEKDJNCG = 837;</code>
+     * @param value the fIOHEKDJNCG to set
      * @return this
      */
-    public Gateserver setUnk9(final boolean value) {
+    public Gateserver setFIOHEKDJNCG(final boolean value) {
       bitField0_ |= 0x00008000;
-      unk9 = value;
+      fIOHEKDJNCG = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk10 = 1486;</code>
-     * @return whether the unk10 field is set
+     * <code>optional bool MCEIPIBAMDB = 1574;</code>
+     * @return whether the mCEIPIBAMDB field is set
      */
-    public boolean hasUnk10() {
+    public boolean hasMCEIPIBAMDB() {
       return (bitField0_ & 0x00010000) != 0;
     }
 
     /**
-     * <code>optional bool unk10 = 1486;</code>
+     * <code>optional bool MCEIPIBAMDB = 1574;</code>
      * @return this
      */
-    public Gateserver clearUnk10() {
+    public Gateserver clearMCEIPIBAMDB() {
       bitField0_ &= ~0x00010000;
-      unk10 = false;
+      mCEIPIBAMDB = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk10 = 1486;</code>
-     * @return the unk10
+     * <code>optional bool MCEIPIBAMDB = 1574;</code>
+     * @return the mCEIPIBAMDB
      */
-    public boolean getUnk10() {
-      return unk10;
+    public boolean getMCEIPIBAMDB() {
+      return mCEIPIBAMDB;
     }
 
     /**
-     * <code>optional bool unk10 = 1486;</code>
-     * @param value the unk10 to set
+     * <code>optional bool MCEIPIBAMDB = 1574;</code>
+     * @param value the mCEIPIBAMDB to set
      * @return this
      */
-    public Gateserver setUnk10(final boolean value) {
+    public Gateserver setMCEIPIBAMDB(final boolean value) {
       bitField0_ |= 0x00010000;
-      unk10 = value;
+      mCEIPIBAMDB = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk11 = 1523;</code>
-     * @return whether the unk11 field is set
+     * <code>optional bool EBKBNEKCOHI = 1575;</code>
+     * @return whether the eBKBNEKCOHI field is set
      */
-    public boolean hasUnk11() {
+    public boolean hasEBKBNEKCOHI() {
       return (bitField0_ & 0x00020000) != 0;
     }
 
     /**
-     * <code>optional bool unk11 = 1523;</code>
+     * <code>optional bool EBKBNEKCOHI = 1575;</code>
      * @return this
      */
-    public Gateserver clearUnk11() {
+    public Gateserver clearEBKBNEKCOHI() {
       bitField0_ &= ~0x00020000;
-      unk11 = false;
+      eBKBNEKCOHI = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk11 = 1523;</code>
-     * @return the unk11
+     * <code>optional bool EBKBNEKCOHI = 1575;</code>
+     * @return the eBKBNEKCOHI
      */
-    public boolean getUnk11() {
-      return unk11;
+    public boolean getEBKBNEKCOHI() {
+      return eBKBNEKCOHI;
     }
 
     /**
-     * <code>optional bool unk11 = 1523;</code>
-     * @param value the unk11 to set
+     * <code>optional bool EBKBNEKCOHI = 1575;</code>
+     * @param value the eBKBNEKCOHI to set
      * @return this
      */
-    public Gateserver setUnk11(final boolean value) {
+    public Gateserver setEBKBNEKCOHI(final boolean value) {
       bitField0_ |= 0x00020000;
-      unk11 = value;
+      eBKBNEKCOHI = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk12 = 1566;</code>
-     * @return whether the unk12 field is set
+     * <code>optional bool LAABLMNKLLD = 1703;</code>
+     * @return whether the lAABLMNKLLD field is set
      */
-    public boolean hasUnk12() {
+    public boolean hasLAABLMNKLLD() {
       return (bitField0_ & 0x00040000) != 0;
     }
 
     /**
-     * <code>optional bool unk12 = 1566;</code>
+     * <code>optional bool LAABLMNKLLD = 1703;</code>
      * @return this
      */
-    public Gateserver clearUnk12() {
+    public Gateserver clearLAABLMNKLLD() {
       bitField0_ &= ~0x00040000;
-      unk12 = false;
+      lAABLMNKLLD = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk12 = 1566;</code>
-     * @return the unk12
+     * <code>optional bool LAABLMNKLLD = 1703;</code>
+     * @return the lAABLMNKLLD
      */
-    public boolean getUnk12() {
-      return unk12;
+    public boolean getLAABLMNKLLD() {
+      return lAABLMNKLLD;
     }
 
     /**
-     * <code>optional bool unk12 = 1566;</code>
-     * @param value the unk12 to set
+     * <code>optional bool LAABLMNKLLD = 1703;</code>
+     * @param value the lAABLMNKLLD to set
      * @return this
      */
-    public Gateserver setUnk12(final boolean value) {
+    public Gateserver setLAABLMNKLLD(final boolean value) {
       bitField0_ |= 0x00040000;
-      unk12 = value;
+      lAABLMNKLLD = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk13 = 1754;</code>
-     * @return whether the unk13 field is set
+     * <code>optional bool OFJAKNEDMDM = 1782;</code>
+     * @return whether the oFJAKNEDMDM field is set
      */
-    public boolean hasUnk13() {
+    public boolean hasOFJAKNEDMDM() {
       return (bitField0_ & 0x00080000) != 0;
     }
 
     /**
-     * <code>optional bool unk13 = 1754;</code>
+     * <code>optional bool OFJAKNEDMDM = 1782;</code>
      * @return this
      */
-    public Gateserver clearUnk13() {
+    public Gateserver clearOFJAKNEDMDM() {
       bitField0_ &= ~0x00080000;
-      unk13 = false;
+      oFJAKNEDMDM = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk13 = 1754;</code>
-     * @return the unk13
+     * <code>optional bool OFJAKNEDMDM = 1782;</code>
+     * @return the oFJAKNEDMDM
      */
-    public boolean getUnk13() {
-      return unk13;
+    public boolean getOFJAKNEDMDM() {
+      return oFJAKNEDMDM;
     }
 
     /**
-     * <code>optional bool unk13 = 1754;</code>
-     * @param value the unk13 to set
+     * <code>optional bool OFJAKNEDMDM = 1782;</code>
+     * @param value the oFJAKNEDMDM to set
      * @return this
      */
-    public Gateserver setUnk13(final boolean value) {
+    public Gateserver setOFJAKNEDMDM(final boolean value) {
       bitField0_ |= 0x00080000;
-      unk13 = value;
+      oFJAKNEDMDM = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk14 = 1915;</code>
-     * @return whether the unk14 field is set
+     * <code>optional bool NPHDIMJOKNI = 1866;</code>
+     * @return whether the nPHDIMJOKNI field is set
      */
-    public boolean hasUnk14() {
+    public boolean hasNPHDIMJOKNI() {
       return (bitField0_ & 0x00100000) != 0;
     }
 
     /**
-     * <code>optional bool unk14 = 1915;</code>
+     * <code>optional bool NPHDIMJOKNI = 1866;</code>
      * @return this
      */
-    public Gateserver clearUnk14() {
+    public Gateserver clearNPHDIMJOKNI() {
       bitField0_ &= ~0x00100000;
-      unk14 = false;
+      nPHDIMJOKNI = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk14 = 1915;</code>
-     * @return the unk14
+     * <code>optional bool NPHDIMJOKNI = 1866;</code>
+     * @return the nPHDIMJOKNI
      */
-    public boolean getUnk14() {
-      return unk14;
+    public boolean getNPHDIMJOKNI() {
+      return nPHDIMJOKNI;
     }
 
     /**
-     * <code>optional bool unk14 = 1915;</code>
-     * @param value the unk14 to set
+     * <code>optional bool NPHDIMJOKNI = 1866;</code>
+     * @param value the nPHDIMJOKNI to set
      * @return this
      */
-    public Gateserver setUnk14(final boolean value) {
+    public Gateserver setNPHDIMJOKNI(final boolean value) {
       bitField0_ |= 0x00100000;
-      unk14 = value;
+      nPHDIMJOKNI = value;
       return this;
     }
 
     /**
-     * <code>optional bool unk15 = 1952;</code>
-     * @return whether the unk15 field is set
+     * <code>optional bool NNGLEBKCMLA = 2018;</code>
+     * @return whether the nNGLEBKCMLA field is set
      */
-    public boolean hasUnk15() {
+    public boolean hasNNGLEBKCMLA() {
       return (bitField0_ & 0x00200000) != 0;
     }
 
     /**
-     * <code>optional bool unk15 = 1952;</code>
+     * <code>optional bool NNGLEBKCMLA = 2018;</code>
      * @return this
      */
-    public Gateserver clearUnk15() {
+    public Gateserver clearNNGLEBKCMLA() {
       bitField0_ &= ~0x00200000;
-      unk15 = false;
+      nNGLEBKCMLA = false;
       return this;
     }
 
     /**
-     * <code>optional bool unk15 = 1952;</code>
-     * @return the unk15
+     * <code>optional bool NNGLEBKCMLA = 2018;</code>
+     * @return the nNGLEBKCMLA
      */
-    public boolean getUnk15() {
-      return unk15;
+    public boolean getNNGLEBKCMLA() {
+      return nNGLEBKCMLA;
     }
 
     /**
-     * <code>optional bool unk15 = 1952;</code>
-     * @param value the unk15 to set
+     * <code>optional bool NNGLEBKCMLA = 2018;</code>
+     * @param value the nNGLEBKCMLA to set
      * @return this
      */
-    public Gateserver setUnk15(final boolean value) {
+    public Gateserver setNNGLEBKCMLA(final boolean value) {
       bitField0_ |= 0x00200000;
-      unk15 = value;
+      nNGLEBKCMLA = value;
       return this;
     }
 
     /**
      * <pre>
-     *  Asb
+     *  Design Data
      * </pre>
      *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @return whether the assetBundleUrl field is set
+     * <code>optional string ex_resource_url = 1;</code>
+     * @return whether the exResourceUrl field is set
      */
-    public boolean hasAssetBundleUrl() {
+    public boolean hasExResourceUrl() {
       return (bitField0_ & 0x00400000) != 0;
     }
 
     /**
      * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @return this
-     */
-    public Gateserver clearAssetBundleUrl() {
-      bitField0_ &= ~0x00400000;
-      assetBundleUrl.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @return the assetBundleUrl
-     */
-    public String getAssetBundleUrl() {
-      return assetBundleUrl.getString();
-    }
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @return internal {@code Utf8String} representation of assetBundleUrl for reading
-     */
-    public Utf8String getAssetBundleUrlBytes() {
-      return this.assetBundleUrl;
-    }
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @return internal {@code Utf8String} representation of assetBundleUrl for modifications
-     */
-    public Utf8String getMutableAssetBundleUrlBytes() {
-      bitField0_ |= 0x00400000;
-      return this.assetBundleUrl;
-    }
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @param value the assetBundleUrl to set
-     * @return this
-     */
-    public Gateserver setAssetBundleUrl(final CharSequence value) {
-      bitField0_ |= 0x00400000;
-      assetBundleUrl.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  Asb
-     * </pre>
-     *
-     * <code>optional string asset_bundle_url = 3;</code>
-     * @param value the assetBundleUrl to set
-     * @return this
-     */
-    public Gateserver setAssetBundleUrl(final Utf8String value) {
-      bitField0_ |= 0x00400000;
-      assetBundleUrl.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @return whether the ip field is set
-     */
-    public boolean hasIp() {
-      return (bitField0_ & 0x00800000) != 0;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @return this
-     */
-    public Gateserver clearIp() {
-      bitField0_ &= ~0x00800000;
-      ip.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @return the ip
-     */
-    public String getIp() {
-      return ip.getString();
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @return internal {@code Utf8String} representation of ip for reading
-     */
-    public Utf8String getIpBytes() {
-      return this.ip;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @return internal {@code Utf8String} representation of ip for modifications
-     */
-    public Utf8String getMutableIpBytes() {
-      bitField0_ |= 0x00800000;
-      return this.ip;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @param value the ip to set
-     * @return this
-     */
-    public Gateserver setIp(final CharSequence value) {
-      bitField0_ |= 0x00800000;
-      ip.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string ip = 4;</code>
-     * @param value the ip to set
-     * @return this
-     */
-    public Gateserver setIp(final Utf8String value) {
-      bitField0_ |= 0x00800000;
-      ip.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @return whether the regionName field is set
-     */
-    public boolean hasRegionName() {
-      return (bitField0_ & 0x01000000) != 0;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @return this
-     */
-    public Gateserver clearRegionName() {
-      bitField0_ &= ~0x01000000;
-      regionName.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @return the regionName
-     */
-    public String getRegionName() {
-      return regionName.getString();
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @return internal {@code Utf8String} representation of regionName for reading
-     */
-    public Utf8String getRegionNameBytes() {
-      return this.regionName;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @return internal {@code Utf8String} representation of regionName for modifications
-     */
-    public Utf8String getMutableRegionNameBytes() {
-      bitField0_ |= 0x01000000;
-      return this.regionName;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @param value the regionName to set
-     * @return this
-     */
-    public Gateserver setRegionName(final CharSequence value) {
-      bitField0_ |= 0x01000000;
-      regionName.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string region_name = 5;</code>
-     * @param value the regionName to set
-     * @return this
-     */
-    public Gateserver setRegionName(final Utf8String value) {
-      bitField0_ |= 0x01000000;
-      regionName.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @return whether the fNCHMFHFMID field is set
-     */
-    public boolean hasFNCHMFHFMID() {
-      return (bitField0_ & 0x02000000) != 0;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @return this
-     */
-    public Gateserver clearFNCHMFHFMID() {
-      bitField0_ &= ~0x02000000;
-      fNCHMFHFMID.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @return the fNCHMFHFMID
-     */
-    public String getFNCHMFHFMID() {
-      return fNCHMFHFMID.getString();
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @return internal {@code Utf8String} representation of fNCHMFHFMID for reading
-     */
-    public Utf8String getFNCHMFHFMIDBytes() {
-      return this.fNCHMFHFMID;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @return internal {@code Utf8String} representation of fNCHMFHFMID for modifications
-     */
-    public Utf8String getMutableFNCHMFHFMIDBytes() {
-      bitField0_ |= 0x02000000;
-      return this.fNCHMFHFMID;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @param value the fNCHMFHFMID to set
-     * @return this
-     */
-    public Gateserver setFNCHMFHFMID(final CharSequence value) {
-      bitField0_ |= 0x02000000;
-      fNCHMFHFMID.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string FNCHMFHFMID = 8;</code>
-     * @param value the fNCHMFHFMID to set
-     * @return this
-     */
-    public Gateserver setFNCHMFHFMID(final Utf8String value) {
-      bitField0_ |= 0x02000000;
-      fNCHMFHFMID.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @return whether the luaUrl field is set
-     */
-    public boolean hasLuaUrl() {
-      return (bitField0_ & 0x04000000) != 0;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @return this
-     */
-    public Gateserver clearLuaUrl() {
-      bitField0_ &= ~0x04000000;
-      luaUrl.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @return the luaUrl
-     */
-    public String getLuaUrl() {
-      return luaUrl.getString();
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @return internal {@code Utf8String} representation of luaUrl for reading
-     */
-    public Utf8String getLuaUrlBytes() {
-      return this.luaUrl;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @return internal {@code Utf8String} representation of luaUrl for modifications
-     */
-    public Utf8String getMutableLuaUrlBytes() {
-      bitField0_ |= 0x04000000;
-      return this.luaUrl;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @param value the luaUrl to set
-     * @return this
-     */
-    public Gateserver setLuaUrl(final CharSequence value) {
-      bitField0_ |= 0x04000000;
-      luaUrl.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  Lua
-     * </pre>
-     *
-     * <code>optional string lua_url = 10;</code>
-     * @param value the luaUrl to set
-     * @return this
-     */
-    public Gateserver setLuaUrl(final Utf8String value) {
-      bitField0_ |= 0x04000000;
-      luaUrl.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @return whether the msg field is set
-     */
-    public boolean hasMsg() {
-      return (bitField0_ & 0x08000000) != 0;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @return this
-     */
-    public Gateserver clearMsg() {
-      bitField0_ &= ~0x08000000;
-      msg.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @return the msg
-     */
-    public String getMsg() {
-      return msg.getString();
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @return internal {@code Utf8String} representation of msg for reading
-     */
-    public Utf8String getMsgBytes() {
-      return this.msg;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @return internal {@code Utf8String} representation of msg for modifications
-     */
-    public Utf8String getMutableMsgBytes() {
-      bitField0_ |= 0x08000000;
-      return this.msg;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @param value the msg to set
-     * @return this
-     */
-    public Gateserver setMsg(final CharSequence value) {
-      bitField0_ |= 0x08000000;
-      msg.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string msg = 11;</code>
-     * @param value the msg to set
-     * @return this
-     */
-    public Gateserver setMsg(final Utf8String value) {
-      bitField0_ |= 0x08000000;
-      msg.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
-     * @return whether the exResourceUrl field is set
-     */
-    public boolean hasExResourceUrl() {
-      return (bitField0_ & 0x10000000) != 0;
-    }
-
-    /**
-     * <pre>
-     *  Design Data
-     * </pre>
-     *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @return this
      */
     public Gateserver clearExResourceUrl() {
-      bitField0_ &= ~0x10000000;
+      bitField0_ &= ~0x00400000;
       exResourceUrl.clear();
       return this;
     }
@@ -1630,7 +1193,7 @@ public final class GateserverOuterClass {
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @return the exResourceUrl
      */
     public String getExResourceUrl() {
@@ -1642,7 +1205,7 @@ public final class GateserverOuterClass {
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @return internal {@code Utf8String} representation of exResourceUrl for reading
      */
     public Utf8String getExResourceUrlBytes() {
@@ -1654,11 +1217,11 @@ public final class GateserverOuterClass {
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @return internal {@code Utf8String} representation of exResourceUrl for modifications
      */
     public Utf8String getMutableExResourceUrlBytes() {
-      bitField0_ |= 0x10000000;
+      bitField0_ |= 0x00400000;
       return this.exResourceUrl;
     }
 
@@ -1667,12 +1230,12 @@ public final class GateserverOuterClass {
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @param value the exResourceUrl to set
      * @return this
      */
     public Gateserver setExResourceUrl(final CharSequence value) {
-      bitField0_ |= 0x10000000;
+      bitField0_ |= 0x00400000;
       exResourceUrl.copyFrom(value);
       return this;
     }
@@ -1682,946 +1245,949 @@ public final class GateserverOuterClass {
      *  Design Data
      * </pre>
      *
-     * <code>optional string ex_resource_url = 14;</code>
+     * <code>optional string ex_resource_url = 1;</code>
      * @param value the exResourceUrl to set
      * @return this
      */
     public Gateserver setExResourceUrl(final Utf8String value) {
-      bitField0_ |= 0x10000000;
+      bitField0_ |= 0x00400000;
       exResourceUrl.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @return whether the pNHBALGFHOH field is set
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @return whether the luaUrl field is set
      */
-    public boolean hasPNHBALGFHOH() {
+    public boolean hasLuaUrl() {
+      return (bitField0_ & 0x00800000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @return this
+     */
+    public Gateserver clearLuaUrl() {
+      bitField0_ &= ~0x00800000;
+      luaUrl.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @return the luaUrl
+     */
+    public String getLuaUrl() {
+      return luaUrl.getString();
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @return internal {@code Utf8String} representation of luaUrl for reading
+     */
+    public Utf8String getLuaUrlBytes() {
+      return this.luaUrl;
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @return internal {@code Utf8String} representation of luaUrl for modifications
+     */
+    public Utf8String getMutableLuaUrlBytes() {
+      bitField0_ |= 0x00800000;
+      return this.luaUrl;
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @param value the luaUrl to set
+     * @return this
+     */
+    public Gateserver setLuaUrl(final CharSequence value) {
+      bitField0_ |= 0x00800000;
+      luaUrl.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  Lua
+     * </pre>
+     *
+     * <code>optional string lua_url = 3;</code>
+     * @param value the luaUrl to set
+     * @return this
+     */
+    public Gateserver setLuaUrl(final Utf8String value) {
+      bitField0_ |= 0x00800000;
+      luaUrl.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @return whether the ip field is set
+     */
+    public boolean hasIp() {
+      return (bitField0_ & 0x01000000) != 0;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @return this
+     */
+    public Gateserver clearIp() {
+      bitField0_ &= ~0x01000000;
+      ip.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @return the ip
+     */
+    public String getIp() {
+      return ip.getString();
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @return internal {@code Utf8String} representation of ip for reading
+     */
+    public Utf8String getIpBytes() {
+      return this.ip;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @return internal {@code Utf8String} representation of ip for modifications
+     */
+    public Utf8String getMutableIpBytes() {
+      bitField0_ |= 0x01000000;
+      return this.ip;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @param value the ip to set
+     * @return this
+     */
+    public Gateserver setIp(final CharSequence value) {
+      bitField0_ |= 0x01000000;
+      ip.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string ip = 5;</code>
+     * @param value the ip to set
+     * @return this
+     */
+    public Gateserver setIp(final Utf8String value) {
+      bitField0_ |= 0x01000000;
+      ip.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @return whether the msg field is set
+     */
+    public boolean hasMsg() {
+      return (bitField0_ & 0x02000000) != 0;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @return this
+     */
+    public Gateserver clearMsg() {
+      bitField0_ &= ~0x02000000;
+      msg.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @return the msg
+     */
+    public String getMsg() {
+      return msg.getString();
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @return internal {@code Utf8String} representation of msg for reading
+     */
+    public Utf8String getMsgBytes() {
+      return this.msg;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @return internal {@code Utf8String} representation of msg for modifications
+     */
+    public Utf8String getMutableMsgBytes() {
+      bitField0_ |= 0x02000000;
+      return this.msg;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @param value the msg to set
+     * @return this
+     */
+    public Gateserver setMsg(final CharSequence value) {
+      bitField0_ |= 0x02000000;
+      msg.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string msg = 8;</code>
+     * @param value the msg to set
+     * @return this
+     */
+    public Gateserver setMsg(final Utf8String value) {
+      bitField0_ |= 0x02000000;
+      msg.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @return whether the assetBundleUrl field is set
+     */
+    public boolean hasAssetBundleUrl() {
+      return (bitField0_ & 0x04000000) != 0;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @return this
+     */
+    public Gateserver clearAssetBundleUrl() {
+      bitField0_ &= ~0x04000000;
+      assetBundleUrl.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @return the assetBundleUrl
+     */
+    public String getAssetBundleUrl() {
+      return assetBundleUrl.getString();
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @return internal {@code Utf8String} representation of assetBundleUrl for reading
+     */
+    public Utf8String getAssetBundleUrlBytes() {
+      return this.assetBundleUrl;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @return internal {@code Utf8String} representation of assetBundleUrl for modifications
+     */
+    public Utf8String getMutableAssetBundleUrlBytes() {
+      bitField0_ |= 0x04000000;
+      return this.assetBundleUrl;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @param value the assetBundleUrl to set
+     * @return this
+     */
+    public Gateserver setAssetBundleUrl(final CharSequence value) {
+      bitField0_ |= 0x04000000;
+      assetBundleUrl.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  Asb
+     * </pre>
+     *
+     * <code>optional string asset_bundle_url = 9;</code>
+     * @param value the assetBundleUrl to set
+     * @return this
+     */
+    public Gateserver setAssetBundleUrl(final Utf8String value) {
+      bitField0_ |= 0x04000000;
+      assetBundleUrl.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @return whether the regionName field is set
+     */
+    public boolean hasRegionName() {
+      return (bitField0_ & 0x08000000) != 0;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @return this
+     */
+    public Gateserver clearRegionName() {
+      bitField0_ &= ~0x08000000;
+      regionName.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @return the regionName
+     */
+    public String getRegionName() {
+      return regionName.getString();
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @return internal {@code Utf8String} representation of regionName for reading
+     */
+    public Utf8String getRegionNameBytes() {
+      return this.regionName;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @return internal {@code Utf8String} representation of regionName for modifications
+     */
+    public Utf8String getMutableRegionNameBytes() {
+      bitField0_ |= 0x08000000;
+      return this.regionName;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @param value the regionName to set
+     * @return this
+     */
+    public Gateserver setRegionName(final CharSequence value) {
+      bitField0_ |= 0x08000000;
+      regionName.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string region_name = 12;</code>
+     * @param value the regionName to set
+     * @return this
+     */
+    public Gateserver setRegionName(final Utf8String value) {
+      bitField0_ |= 0x08000000;
+      regionName.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @return whether the iOKEPIEDBNE field is set
+     */
+    public boolean hasIOKEPIEDBNE() {
+      return (bitField0_ & 0x10000000) != 0;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @return this
+     */
+    public Gateserver clearIOKEPIEDBNE() {
+      bitField0_ &= ~0x10000000;
+      iOKEPIEDBNE.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @return the iOKEPIEDBNE
+     */
+    public String getIOKEPIEDBNE() {
+      return iOKEPIEDBNE.getString();
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @return internal {@code Utf8String} representation of iOKEPIEDBNE for reading
+     */
+    public Utf8String getIOKEPIEDBNEBytes() {
+      return this.iOKEPIEDBNE;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @return internal {@code Utf8String} representation of iOKEPIEDBNE for modifications
+     */
+    public Utf8String getMutableIOKEPIEDBNEBytes() {
+      bitField0_ |= 0x10000000;
+      return this.iOKEPIEDBNE;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @param value the iOKEPIEDBNE to set
+     * @return this
+     */
+    public Gateserver setIOKEPIEDBNE(final CharSequence value) {
+      bitField0_ |= 0x10000000;
+      iOKEPIEDBNE.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string IOKEPIEDBNE = 14;</code>
+     * @param value the iOKEPIEDBNE to set
+     * @return this
+     */
+    public Gateserver setIOKEPIEDBNE(final Utf8String value) {
+      bitField0_ |= 0x10000000;
+      iOKEPIEDBNE.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @return whether the fCMMMPKJJIL field is set
+     */
+    public boolean hasFCMMMPKJJIL() {
       return (bitField0_ & 0x20000000) != 0;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
+     * <code>optional string FCMMMPKJJIL = 20;</code>
      * @return this
      */
-    public Gateserver clearPNHBALGFHOH() {
+    public Gateserver clearFCMMMPKJJIL() {
       bitField0_ &= ~0x20000000;
-      pNHBALGFHOH.clear();
+      fCMMMPKJJIL.clear();
       return this;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @return the pNHBALGFHOH
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @return the fCMMMPKJJIL
      */
-    public String getPNHBALGFHOH() {
-      return pNHBALGFHOH.getString();
+    public String getFCMMMPKJJIL() {
+      return fCMMMPKJJIL.getString();
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @return internal {@code Utf8String} representation of pNHBALGFHOH for reading
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @return internal {@code Utf8String} representation of fCMMMPKJJIL for reading
      */
-    public Utf8String getPNHBALGFHOHBytes() {
-      return this.pNHBALGFHOH;
+    public Utf8String getFCMMMPKJJILBytes() {
+      return this.fCMMMPKJJIL;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @return internal {@code Utf8String} representation of pNHBALGFHOH for modifications
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @return internal {@code Utf8String} representation of fCMMMPKJJIL for modifications
      */
-    public Utf8String getMutablePNHBALGFHOHBytes() {
+    public Utf8String getMutableFCMMMPKJJILBytes() {
       bitField0_ |= 0x20000000;
-      return this.pNHBALGFHOH;
+      return this.fCMMMPKJJIL;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @param value the pNHBALGFHOH to set
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @param value the fCMMMPKJJIL to set
      * @return this
      */
-    public Gateserver setPNHBALGFHOH(final CharSequence value) {
+    public Gateserver setFCMMMPKJJIL(final CharSequence value) {
       bitField0_ |= 0x20000000;
-      pNHBALGFHOH.copyFrom(value);
+      fCMMMPKJJIL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string PNHBALGFHOH = 87;</code>
-     * @param value the pNHBALGFHOH to set
+     * <code>optional string FCMMMPKJJIL = 20;</code>
+     * @param value the fCMMMPKJJIL to set
      * @return this
      */
-    public Gateserver setPNHBALGFHOH(final Utf8String value) {
+    public Gateserver setFCMMMPKJJIL(final Utf8String value) {
       bitField0_ |= 0x20000000;
-      pNHBALGFHOH.copyFrom(value);
+      fCMMMPKJJIL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @return whether the nPNBJBCFPNE field is set
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @return whether the iPKLAMMKNNG field is set
      */
-    public boolean hasNPNBJBCFPNE() {
+    public boolean hasIPKLAMMKNNG() {
       return (bitField0_ & 0x40000000) != 0;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
+     * <code>optional string IPKLAMMKNNG = 117;</code>
      * @return this
      */
-    public Gateserver clearNPNBJBCFPNE() {
+    public Gateserver clearIPKLAMMKNNG() {
       bitField0_ &= ~0x40000000;
-      nPNBJBCFPNE.clear();
+      iPKLAMMKNNG.clear();
       return this;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @return the nPNBJBCFPNE
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @return the iPKLAMMKNNG
      */
-    public String getNPNBJBCFPNE() {
-      return nPNBJBCFPNE.getString();
+    public String getIPKLAMMKNNG() {
+      return iPKLAMMKNNG.getString();
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @return internal {@code Utf8String} representation of nPNBJBCFPNE for reading
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @return internal {@code Utf8String} representation of iPKLAMMKNNG for reading
      */
-    public Utf8String getNPNBJBCFPNEBytes() {
-      return this.nPNBJBCFPNE;
+    public Utf8String getIPKLAMMKNNGBytes() {
+      return this.iPKLAMMKNNG;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @return internal {@code Utf8String} representation of nPNBJBCFPNE for modifications
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @return internal {@code Utf8String} representation of iPKLAMMKNNG for modifications
      */
-    public Utf8String getMutableNPNBJBCFPNEBytes() {
+    public Utf8String getMutableIPKLAMMKNNGBytes() {
       bitField0_ |= 0x40000000;
-      return this.nPNBJBCFPNE;
+      return this.iPKLAMMKNNG;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @param value the nPNBJBCFPNE to set
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @param value the iPKLAMMKNNG to set
      * @return this
      */
-    public Gateserver setNPNBJBCFPNE(final CharSequence value) {
+    public Gateserver setIPKLAMMKNNG(final CharSequence value) {
       bitField0_ |= 0x40000000;
-      nPNBJBCFPNE.copyFrom(value);
+      iPKLAMMKNNG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string NPNBJBCFPNE = 148;</code>
-     * @param value the nPNBJBCFPNE to set
+     * <code>optional string IPKLAMMKNNG = 117;</code>
+     * @param value the iPKLAMMKNNG to set
      * @return this
      */
-    public Gateserver setNPNBJBCFPNE(final Utf8String value) {
+    public Gateserver setIPKLAMMKNNG(final Utf8String value) {
       bitField0_ |= 0x40000000;
-      nPNBJBCFPNE.copyFrom(value);
+      iPKLAMMKNNG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @return whether the bFIHFKLMMEK field is set
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @return whether the iIJLFILFMDF field is set
      */
-    public boolean hasBFIHFKLMMEK() {
+    public boolean hasIIJLFILFMDF() {
       return (bitField0_ & 0x80000000) != 0;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
+     * <code>optional string IIJLFILFMDF = 138;</code>
      * @return this
      */
-    public Gateserver clearBFIHFKLMMEK() {
+    public Gateserver clearIIJLFILFMDF() {
       bitField0_ &= ~0x80000000;
-      bFIHFKLMMEK.clear();
+      iIJLFILFMDF.clear();
       return this;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @return the bFIHFKLMMEK
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @return the iIJLFILFMDF
      */
-    public String getBFIHFKLMMEK() {
-      return bFIHFKLMMEK.getString();
+    public String getIIJLFILFMDF() {
+      return iIJLFILFMDF.getString();
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @return internal {@code Utf8String} representation of bFIHFKLMMEK for reading
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @return internal {@code Utf8String} representation of iIJLFILFMDF for reading
      */
-    public Utf8String getBFIHFKLMMEKBytes() {
-      return this.bFIHFKLMMEK;
+    public Utf8String getIIJLFILFMDFBytes() {
+      return this.iIJLFILFMDF;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @return internal {@code Utf8String} representation of bFIHFKLMMEK for modifications
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @return internal {@code Utf8String} representation of iIJLFILFMDF for modifications
      */
-    public Utf8String getMutableBFIHFKLMMEKBytes() {
+    public Utf8String getMutableIIJLFILFMDFBytes() {
       bitField0_ |= 0x80000000;
-      return this.bFIHFKLMMEK;
+      return this.iIJLFILFMDF;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @param value the bFIHFKLMMEK to set
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @param value the iIJLFILFMDF to set
      * @return this
      */
-    public Gateserver setBFIHFKLMMEK(final CharSequence value) {
+    public Gateserver setIIJLFILFMDF(final CharSequence value) {
       bitField0_ |= 0x80000000;
-      bFIHFKLMMEK.copyFrom(value);
+      iIJLFILFMDF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BFIHFKLMMEK = 312;</code>
-     * @param value the bFIHFKLMMEK to set
+     * <code>optional string IIJLFILFMDF = 138;</code>
+     * @param value the iIJLFILFMDF to set
      * @return this
      */
-    public Gateserver setBFIHFKLMMEK(final Utf8String value) {
+    public Gateserver setIIJLFILFMDF(final Utf8String value) {
       bitField0_ |= 0x80000000;
-      bFIHFKLMMEK.copyFrom(value);
+      iIJLFILFMDF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @return whether the bHDBHBJJPNI field is set
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @return whether the oDOCFCJMBCL field is set
      */
-    public boolean hasBHDBHBJJPNI() {
+    public boolean hasODOCFCJMBCL() {
       return (bitField1_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
+     * <code>optional string ODOCFCJMBCL = 337;</code>
      * @return this
      */
-    public Gateserver clearBHDBHBJJPNI() {
+    public Gateserver clearODOCFCJMBCL() {
       bitField1_ &= ~0x00000001;
-      bHDBHBJJPNI.clear();
+      oDOCFCJMBCL.clear();
       return this;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @return the bHDBHBJJPNI
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @return the oDOCFCJMBCL
      */
-    public String getBHDBHBJJPNI() {
-      return bHDBHBJJPNI.getString();
+    public String getODOCFCJMBCL() {
+      return oDOCFCJMBCL.getString();
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @return internal {@code Utf8String} representation of bHDBHBJJPNI for reading
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @return internal {@code Utf8String} representation of oDOCFCJMBCL for reading
      */
-    public Utf8String getBHDBHBJJPNIBytes() {
-      return this.bHDBHBJJPNI;
+    public Utf8String getODOCFCJMBCLBytes() {
+      return this.oDOCFCJMBCL;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @return internal {@code Utf8String} representation of bHDBHBJJPNI for modifications
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @return internal {@code Utf8String} representation of oDOCFCJMBCL for modifications
      */
-    public Utf8String getMutableBHDBHBJJPNIBytes() {
+    public Utf8String getMutableODOCFCJMBCLBytes() {
       bitField1_ |= 0x00000001;
-      return this.bHDBHBJJPNI;
+      return this.oDOCFCJMBCL;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @param value the bHDBHBJJPNI to set
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @param value the oDOCFCJMBCL to set
      * @return this
      */
-    public Gateserver setBHDBHBJJPNI(final CharSequence value) {
+    public Gateserver setODOCFCJMBCL(final CharSequence value) {
       bitField1_ |= 0x00000001;
-      bHDBHBJJPNI.copyFrom(value);
+      oDOCFCJMBCL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BHDBHBJJPNI = 405;</code>
-     * @param value the bHDBHBJJPNI to set
+     * <code>optional string ODOCFCJMBCL = 337;</code>
+     * @param value the oDOCFCJMBCL to set
      * @return this
      */
-    public Gateserver setBHDBHBJJPNI(final Utf8String value) {
+    public Gateserver setODOCFCJMBCL(final Utf8String value) {
       bitField1_ |= 0x00000001;
-      bHDBHBJJPNI.copyFrom(value);
+      oDOCFCJMBCL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @return whether the lBPFHPCBCKL field is set
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @return whether the bBFOAJGLLBC field is set
      */
-    public boolean hasLBPFHPCBCKL() {
+    public boolean hasBBFOAJGLLBC() {
       return (bitField1_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
+     * <code>optional string BBFOAJGLLBC = 355;</code>
      * @return this
      */
-    public Gateserver clearLBPFHPCBCKL() {
+    public Gateserver clearBBFOAJGLLBC() {
       bitField1_ &= ~0x00000002;
-      lBPFHPCBCKL.clear();
+      bBFOAJGLLBC.clear();
       return this;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @return the lBPFHPCBCKL
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @return the bBFOAJGLLBC
      */
-    public String getLBPFHPCBCKL() {
-      return lBPFHPCBCKL.getString();
+    public String getBBFOAJGLLBC() {
+      return bBFOAJGLLBC.getString();
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @return internal {@code Utf8String} representation of lBPFHPCBCKL for reading
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @return internal {@code Utf8String} representation of bBFOAJGLLBC for reading
      */
-    public Utf8String getLBPFHPCBCKLBytes() {
-      return this.lBPFHPCBCKL;
+    public Utf8String getBBFOAJGLLBCBytes() {
+      return this.bBFOAJGLLBC;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @return internal {@code Utf8String} representation of lBPFHPCBCKL for modifications
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @return internal {@code Utf8String} representation of bBFOAJGLLBC for modifications
      */
-    public Utf8String getMutableLBPFHPCBCKLBytes() {
+    public Utf8String getMutableBBFOAJGLLBCBytes() {
       bitField1_ |= 0x00000002;
-      return this.lBPFHPCBCKL;
+      return this.bBFOAJGLLBC;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @param value the lBPFHPCBCKL to set
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @param value the bBFOAJGLLBC to set
      * @return this
      */
-    public Gateserver setLBPFHPCBCKL(final CharSequence value) {
+    public Gateserver setBBFOAJGLLBC(final CharSequence value) {
       bitField1_ |= 0x00000002;
-      lBPFHPCBCKL.copyFrom(value);
+      bBFOAJGLLBC.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string LBPFHPCBCKL = 512;</code>
-     * @param value the lBPFHPCBCKL to set
+     * <code>optional string BBFOAJGLLBC = 355;</code>
+     * @param value the bBFOAJGLLBC to set
      * @return this
      */
-    public Gateserver setLBPFHPCBCKL(final Utf8String value) {
+    public Gateserver setBBFOAJGLLBC(final Utf8String value) {
       bitField1_ |= 0x00000002;
-      lBPFHPCBCKL.copyFrom(value);
+      bBFOAJGLLBC.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @return whether the gBICAMFDFCE field is set
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @return whether the kKHFKMIKFIB field is set
      */
-    public boolean hasGBICAMFDFCE() {
+    public boolean hasKKHFKMIKFIB() {
       return (bitField1_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
+     * <code>optional string KKHFKMIKFIB = 362;</code>
      * @return this
      */
-    public Gateserver clearGBICAMFDFCE() {
+    public Gateserver clearKKHFKMIKFIB() {
       bitField1_ &= ~0x00000004;
-      gBICAMFDFCE.clear();
+      kKHFKMIKFIB.clear();
       return this;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @return the gBICAMFDFCE
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @return the kKHFKMIKFIB
      */
-    public String getGBICAMFDFCE() {
-      return gBICAMFDFCE.getString();
+    public String getKKHFKMIKFIB() {
+      return kKHFKMIKFIB.getString();
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @return internal {@code Utf8String} representation of gBICAMFDFCE for reading
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @return internal {@code Utf8String} representation of kKHFKMIKFIB for reading
      */
-    public Utf8String getGBICAMFDFCEBytes() {
-      return this.gBICAMFDFCE;
+    public Utf8String getKKHFKMIKFIBBytes() {
+      return this.kKHFKMIKFIB;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @return internal {@code Utf8String} representation of gBICAMFDFCE for modifications
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @return internal {@code Utf8String} representation of kKHFKMIKFIB for modifications
      */
-    public Utf8String getMutableGBICAMFDFCEBytes() {
+    public Utf8String getMutableKKHFKMIKFIBBytes() {
       bitField1_ |= 0x00000004;
-      return this.gBICAMFDFCE;
+      return this.kKHFKMIKFIB;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @param value the gBICAMFDFCE to set
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @param value the kKHFKMIKFIB to set
      * @return this
      */
-    public Gateserver setGBICAMFDFCE(final CharSequence value) {
+    public Gateserver setKKHFKMIKFIB(final CharSequence value) {
       bitField1_ |= 0x00000004;
-      gBICAMFDFCE.copyFrom(value);
+      kKHFKMIKFIB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string GBICAMFDFCE = 563;</code>
-     * @param value the gBICAMFDFCE to set
+     * <code>optional string KKHFKMIKFIB = 362;</code>
+     * @param value the kKHFKMIKFIB to set
      * @return this
      */
-    public Gateserver setGBICAMFDFCE(final Utf8String value) {
+    public Gateserver setKKHFKMIKFIB(final Utf8String value) {
       bitField1_ |= 0x00000004;
-      gBICAMFDFCE.copyFrom(value);
+      kKHFKMIKFIB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @return whether the mEACAGAFHGA field is set
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @return whether the mKCNEFHHAOG field is set
      */
-    public boolean hasMEACAGAFHGA() {
+    public boolean hasMKCNEFHHAOG() {
       return (bitField1_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
+     * <code>optional string MKCNEFHHAOG = 365;</code>
      * @return this
      */
-    public Gateserver clearMEACAGAFHGA() {
+    public Gateserver clearMKCNEFHHAOG() {
       bitField1_ &= ~0x00000008;
-      mEACAGAFHGA.clear();
+      mKCNEFHHAOG.clear();
       return this;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @return the mEACAGAFHGA
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @return the mKCNEFHHAOG
      */
-    public String getMEACAGAFHGA() {
-      return mEACAGAFHGA.getString();
+    public String getMKCNEFHHAOG() {
+      return mKCNEFHHAOG.getString();
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @return internal {@code Utf8String} representation of mEACAGAFHGA for reading
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @return internal {@code Utf8String} representation of mKCNEFHHAOG for reading
      */
-    public Utf8String getMEACAGAFHGABytes() {
-      return this.mEACAGAFHGA;
+    public Utf8String getMKCNEFHHAOGBytes() {
+      return this.mKCNEFHHAOG;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @return internal {@code Utf8String} representation of mEACAGAFHGA for modifications
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @return internal {@code Utf8String} representation of mKCNEFHHAOG for modifications
      */
-    public Utf8String getMutableMEACAGAFHGABytes() {
+    public Utf8String getMutableMKCNEFHHAOGBytes() {
       bitField1_ |= 0x00000008;
-      return this.mEACAGAFHGA;
+      return this.mKCNEFHHAOG;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @param value the mEACAGAFHGA to set
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @param value the mKCNEFHHAOG to set
      * @return this
      */
-    public Gateserver setMEACAGAFHGA(final CharSequence value) {
+    public Gateserver setMKCNEFHHAOG(final CharSequence value) {
       bitField1_ |= 0x00000008;
-      mEACAGAFHGA.copyFrom(value);
+      mKCNEFHHAOG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string MEACAGAFHGA = 571;</code>
-     * @param value the mEACAGAFHGA to set
+     * <code>optional string MKCNEFHHAOG = 365;</code>
+     * @param value the mKCNEFHHAOG to set
      * @return this
      */
-    public Gateserver setMEACAGAFHGA(final Utf8String value) {
+    public Gateserver setMKCNEFHHAOG(final Utf8String value) {
       bitField1_ |= 0x00000008;
-      mEACAGAFHGA.copyFrom(value);
+      mKCNEFHHAOG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @return whether the gDOBHNDOCOJ field is set
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
+     * @return whether the ifixUrl field is set
      */
-    public boolean hasGDOBHNDOCOJ() {
+    public boolean hasIfixUrl() {
       return (bitField1_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @return this
-     */
-    public Gateserver clearGDOBHNDOCOJ() {
-      bitField1_ &= ~0x00000010;
-      gDOBHNDOCOJ.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @return the gDOBHNDOCOJ
-     */
-    public String getGDOBHNDOCOJ() {
-      return gDOBHNDOCOJ.getString();
-    }
-
-    /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @return internal {@code Utf8String} representation of gDOBHNDOCOJ for reading
-     */
-    public Utf8String getGDOBHNDOCOJBytes() {
-      return this.gDOBHNDOCOJ;
-    }
-
-    /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @return internal {@code Utf8String} representation of gDOBHNDOCOJ for modifications
-     */
-    public Utf8String getMutableGDOBHNDOCOJBytes() {
-      bitField1_ |= 0x00000010;
-      return this.gDOBHNDOCOJ;
-    }
-
-    /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @param value the gDOBHNDOCOJ to set
-     * @return this
-     */
-    public Gateserver setGDOBHNDOCOJ(final CharSequence value) {
-      bitField1_ |= 0x00000010;
-      gDOBHNDOCOJ.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GDOBHNDOCOJ = 614;</code>
-     * @param value the gDOBHNDOCOJ to set
-     * @return this
-     */
-    public Gateserver setGDOBHNDOCOJ(final Utf8String value) {
-      bitField1_ |= 0x00000010;
-      gDOBHNDOCOJ.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @return whether the nKJBGBOOGFD field is set
-     */
-    public boolean hasNKJBGBOOGFD() {
-      return (bitField1_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @return this
-     */
-    public Gateserver clearNKJBGBOOGFD() {
-      bitField1_ &= ~0x00000020;
-      nKJBGBOOGFD.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @return the nKJBGBOOGFD
-     */
-    public String getNKJBGBOOGFD() {
-      return nKJBGBOOGFD.getString();
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @return internal {@code Utf8String} representation of nKJBGBOOGFD for reading
-     */
-    public Utf8String getNKJBGBOOGFDBytes() {
-      return this.nKJBGBOOGFD;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @return internal {@code Utf8String} representation of nKJBGBOOGFD for modifications
-     */
-    public Utf8String getMutableNKJBGBOOGFDBytes() {
-      bitField1_ |= 0x00000020;
-      return this.nKJBGBOOGFD;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @param value the nKJBGBOOGFD to set
-     * @return this
-     */
-    public Gateserver setNKJBGBOOGFD(final CharSequence value) {
-      bitField1_ |= 0x00000020;
-      nKJBGBOOGFD.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NKJBGBOOGFD = 661;</code>
-     * @param value the nKJBGBOOGFD to set
-     * @return this
-     */
-    public Gateserver setNKJBGBOOGFD(final Utf8String value) {
-      bitField1_ |= 0x00000020;
-      nKJBGBOOGFD.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @return whether the fPHFAJBCHPG field is set
-     */
-    public boolean hasFPHFAJBCHPG() {
-      return (bitField1_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @return this
-     */
-    public Gateserver clearFPHFAJBCHPG() {
-      bitField1_ &= ~0x00000040;
-      fPHFAJBCHPG.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @return the fPHFAJBCHPG
-     */
-    public String getFPHFAJBCHPG() {
-      return fPHFAJBCHPG.getString();
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @return internal {@code Utf8String} representation of fPHFAJBCHPG for reading
-     */
-    public Utf8String getFPHFAJBCHPGBytes() {
-      return this.fPHFAJBCHPG;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @return internal {@code Utf8String} representation of fPHFAJBCHPG for modifications
-     */
-    public Utf8String getMutableFPHFAJBCHPGBytes() {
-      bitField1_ |= 0x00000040;
-      return this.fPHFAJBCHPG;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @param value the fPHFAJBCHPG to set
-     * @return this
-     */
-    public Gateserver setFPHFAJBCHPG(final CharSequence value) {
-      bitField1_ |= 0x00000040;
-      fPHFAJBCHPG.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string FPHFAJBCHPG = 677;</code>
-     * @param value the fPHFAJBCHPG to set
-     * @return this
-     */
-    public Gateserver setFPHFAJBCHPG(final Utf8String value) {
-      bitField1_ |= 0x00000040;
-      fPHFAJBCHPG.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @return whether the oAONLAKKNIH field is set
-     */
-    public boolean hasOAONLAKKNIH() {
-      return (bitField1_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @return this
-     */
-    public Gateserver clearOAONLAKKNIH() {
-      bitField1_ &= ~0x00000080;
-      oAONLAKKNIH.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @return the oAONLAKKNIH
-     */
-    public String getOAONLAKKNIH() {
-      return oAONLAKKNIH.getString();
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @return internal {@code Utf8String} representation of oAONLAKKNIH for reading
-     */
-    public Utf8String getOAONLAKKNIHBytes() {
-      return this.oAONLAKKNIH;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @return internal {@code Utf8String} representation of oAONLAKKNIH for modifications
-     */
-    public Utf8String getMutableOAONLAKKNIHBytes() {
-      bitField1_ |= 0x00000080;
-      return this.oAONLAKKNIH;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @param value the oAONLAKKNIH to set
-     * @return this
-     */
-    public Gateserver setOAONLAKKNIH(final CharSequence value) {
-      bitField1_ |= 0x00000080;
-      oAONLAKKNIH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string OAONLAKKNIH = 716;</code>
-     * @param value the oAONLAKKNIH to set
-     * @return this
-     */
-    public Gateserver setOAONLAKKNIH(final Utf8String value) {
-      bitField1_ |= 0x00000080;
-      oAONLAKKNIH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @return whether the mANDMJOLPHH field is set
-     */
-    public boolean hasMANDMJOLPHH() {
-      return (bitField1_ & 0x00000100) != 0;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @return this
-     */
-    public Gateserver clearMANDMJOLPHH() {
-      bitField1_ &= ~0x00000100;
-      mANDMJOLPHH.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @return the mANDMJOLPHH
-     */
-    public String getMANDMJOLPHH() {
-      return mANDMJOLPHH.getString();
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @return internal {@code Utf8String} representation of mANDMJOLPHH for reading
-     */
-    public Utf8String getMANDMJOLPHHBytes() {
-      return this.mANDMJOLPHH;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @return internal {@code Utf8String} representation of mANDMJOLPHH for modifications
-     */
-    public Utf8String getMutableMANDMJOLPHHBytes() {
-      bitField1_ |= 0x00000100;
-      return this.mANDMJOLPHH;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @param value the mANDMJOLPHH to set
-     * @return this
-     */
-    public Gateserver setMANDMJOLPHH(final CharSequence value) {
-      bitField1_ |= 0x00000100;
-      mANDMJOLPHH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MANDMJOLPHH = 873;</code>
-     * @param value the mANDMJOLPHH to set
-     * @return this
-     */
-    public Gateserver setMANDMJOLPHH(final Utf8String value) {
-      bitField1_ |= 0x00000100;
-      mANDMJOLPHH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @return whether the kEICDBEHMDO field is set
-     */
-    public boolean hasKEICDBEHMDO() {
-      return (bitField1_ & 0x00000200) != 0;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @return this
-     */
-    public Gateserver clearKEICDBEHMDO() {
-      bitField1_ &= ~0x00000200;
-      kEICDBEHMDO.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @return the kEICDBEHMDO
-     */
-    public String getKEICDBEHMDO() {
-      return kEICDBEHMDO.getString();
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @return internal {@code Utf8String} representation of kEICDBEHMDO for reading
-     */
-    public Utf8String getKEICDBEHMDOBytes() {
-      return this.kEICDBEHMDO;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @return internal {@code Utf8String} representation of kEICDBEHMDO for modifications
-     */
-    public Utf8String getMutableKEICDBEHMDOBytes() {
-      bitField1_ |= 0x00000200;
-      return this.kEICDBEHMDO;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @param value the kEICDBEHMDO to set
-     * @return this
-     */
-    public Gateserver setKEICDBEHMDO(final CharSequence value) {
-      bitField1_ |= 0x00000200;
-      kEICDBEHMDO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string KEICDBEHMDO = 915;</code>
-     * @param value the kEICDBEHMDO to set
-     * @return this
-     */
-    public Gateserver setKEICDBEHMDO(final Utf8String value) {
-      bitField1_ |= 0x00000200;
-      kEICDBEHMDO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @return whether the gHCIOIALPMH field is set
-     */
-    public boolean hasGHCIOIALPMH() {
-      return (bitField1_ & 0x00000400) != 0;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @return this
-     */
-    public Gateserver clearGHCIOIALPMH() {
-      bitField1_ &= ~0x00000400;
-      gHCIOIALPMH.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @return the gHCIOIALPMH
-     */
-    public String getGHCIOIALPMH() {
-      return gHCIOIALPMH.getString();
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @return internal {@code Utf8String} representation of gHCIOIALPMH for reading
-     */
-    public Utf8String getGHCIOIALPMHBytes() {
-      return this.gHCIOIALPMH;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @return internal {@code Utf8String} representation of gHCIOIALPMH for modifications
-     */
-    public Utf8String getMutableGHCIOIALPMHBytes() {
-      bitField1_ |= 0x00000400;
-      return this.gHCIOIALPMH;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @param value the gHCIOIALPMH to set
-     * @return this
-     */
-    public Gateserver setGHCIOIALPMH(final CharSequence value) {
-      bitField1_ |= 0x00000400;
-      gHCIOIALPMH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GHCIOIALPMH = 1012;</code>
-     * @param value the gHCIOIALPMH to set
-     * @return this
-     */
-    public Gateserver setGHCIOIALPMH(final Utf8String value) {
-      bitField1_ |= 0x00000400;
-      gHCIOIALPMH.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string ifix_url = 1113;</code>
-     * @return whether the ifixUrl field is set
-     */
-    public boolean hasIfixUrl() {
-      return (bitField1_ & 0x00000800) != 0;
-    }
-
-    /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @return this
      */
     public Gateserver clearIfixUrl() {
-      bitField1_ &= ~0x00000800;
+      bitField1_ &= ~0x00000010;
       ifixUrl.clear();
       return this;
     }
 
     /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @return the ifixUrl
      */
     public String getIfixUrl() {
@@ -2629,7 +2195,11 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @return internal {@code Utf8String} representation of ifixUrl for reading
      */
     public Utf8String getIfixUrlBytes() {
@@ -2637,446 +2207,1433 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @return internal {@code Utf8String} representation of ifixUrl for modifications
      */
     public Utf8String getMutableIfixUrlBytes() {
-      bitField1_ |= 0x00000800;
+      bitField1_ |= 0x00000010;
       return this.ifixUrl;
     }
 
     /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @param value the ifixUrl to set
      * @return this
      */
     public Gateserver setIfixUrl(final CharSequence value) {
-      bitField1_ |= 0x00000800;
+      bitField1_ |= 0x00000010;
       ifixUrl.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string ifix_url = 1113;</code>
+     * <pre>
+     *  Ifix
+     * </pre>
+     *
+     * <code>optional string ifix_url = 370;</code>
      * @param value the ifixUrl to set
      * @return this
      */
     public Gateserver setIfixUrl(final Utf8String value) {
-      bitField1_ |= 0x00000800;
+      bitField1_ |= 0x00000010;
       ifixUrl.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @return whether the iHGAICFNADN field is set
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @return whether the nPPCGBIFDMN field is set
      */
-    public boolean hasIHGAICFNADN() {
+    public boolean hasNPPCGBIFDMN() {
+      return (bitField1_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @return this
+     */
+    public Gateserver clearNPPCGBIFDMN() {
+      bitField1_ &= ~0x00000020;
+      nPPCGBIFDMN.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @return the nPPCGBIFDMN
+     */
+    public String getNPPCGBIFDMN() {
+      return nPPCGBIFDMN.getString();
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @return internal {@code Utf8String} representation of nPPCGBIFDMN for reading
+     */
+    public Utf8String getNPPCGBIFDMNBytes() {
+      return this.nPPCGBIFDMN;
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @return internal {@code Utf8String} representation of nPPCGBIFDMN for modifications
+     */
+    public Utf8String getMutableNPPCGBIFDMNBytes() {
+      bitField1_ |= 0x00000020;
+      return this.nPPCGBIFDMN;
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @param value the nPPCGBIFDMN to set
+     * @return this
+     */
+    public Gateserver setNPPCGBIFDMN(final CharSequence value) {
+      bitField1_ |= 0x00000020;
+      nPPCGBIFDMN.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string NPPCGBIFDMN = 452;</code>
+     * @param value the nPPCGBIFDMN to set
+     * @return this
+     */
+    public Gateserver setNPPCGBIFDMN(final Utf8String value) {
+      bitField1_ |= 0x00000020;
+      nPPCGBIFDMN.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @return whether the nPIGPBEKEKO field is set
+     */
+    public boolean hasNPIGPBEKEKO() {
+      return (bitField1_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @return this
+     */
+    public Gateserver clearNPIGPBEKEKO() {
+      bitField1_ &= ~0x00000040;
+      nPIGPBEKEKO.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @return the nPIGPBEKEKO
+     */
+    public String getNPIGPBEKEKO() {
+      return nPIGPBEKEKO.getString();
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @return internal {@code Utf8String} representation of nPIGPBEKEKO for reading
+     */
+    public Utf8String getNPIGPBEKEKOBytes() {
+      return this.nPIGPBEKEKO;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @return internal {@code Utf8String} representation of nPIGPBEKEKO for modifications
+     */
+    public Utf8String getMutableNPIGPBEKEKOBytes() {
+      bitField1_ |= 0x00000040;
+      return this.nPIGPBEKEKO;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @param value the nPIGPBEKEKO to set
+     * @return this
+     */
+    public Gateserver setNPIGPBEKEKO(final CharSequence value) {
+      bitField1_ |= 0x00000040;
+      nPIGPBEKEKO.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string NPIGPBEKEKO = 464;</code>
+     * @param value the nPIGPBEKEKO to set
+     * @return this
+     */
+    public Gateserver setNPIGPBEKEKO(final Utf8String value) {
+      bitField1_ |= 0x00000040;
+      nPIGPBEKEKO.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @return whether the aIPNJNLHFBP field is set
+     */
+    public boolean hasAIPNJNLHFBP() {
+      return (bitField1_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @return this
+     */
+    public Gateserver clearAIPNJNLHFBP() {
+      bitField1_ &= ~0x00000080;
+      aIPNJNLHFBP.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @return the aIPNJNLHFBP
+     */
+    public String getAIPNJNLHFBP() {
+      return aIPNJNLHFBP.getString();
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @return internal {@code Utf8String} representation of aIPNJNLHFBP for reading
+     */
+    public Utf8String getAIPNJNLHFBPBytes() {
+      return this.aIPNJNLHFBP;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @return internal {@code Utf8String} representation of aIPNJNLHFBP for modifications
+     */
+    public Utf8String getMutableAIPNJNLHFBPBytes() {
+      bitField1_ |= 0x00000080;
+      return this.aIPNJNLHFBP;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @param value the aIPNJNLHFBP to set
+     * @return this
+     */
+    public Gateserver setAIPNJNLHFBP(final CharSequence value) {
+      bitField1_ |= 0x00000080;
+      aIPNJNLHFBP.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string AIPNJNLHFBP = 569;</code>
+     * @param value the aIPNJNLHFBP to set
+     * @return this
+     */
+    public Gateserver setAIPNJNLHFBP(final Utf8String value) {
+      bitField1_ |= 0x00000080;
+      aIPNJNLHFBP.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @return whether the fHALNCIHMGA field is set
+     */
+    public boolean hasFHALNCIHMGA() {
+      return (bitField1_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @return this
+     */
+    public Gateserver clearFHALNCIHMGA() {
+      bitField1_ &= ~0x00000100;
+      fHALNCIHMGA.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @return the fHALNCIHMGA
+     */
+    public String getFHALNCIHMGA() {
+      return fHALNCIHMGA.getString();
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @return internal {@code Utf8String} representation of fHALNCIHMGA for reading
+     */
+    public Utf8String getFHALNCIHMGABytes() {
+      return this.fHALNCIHMGA;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @return internal {@code Utf8String} representation of fHALNCIHMGA for modifications
+     */
+    public Utf8String getMutableFHALNCIHMGABytes() {
+      bitField1_ |= 0x00000100;
+      return this.fHALNCIHMGA;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @param value the fHALNCIHMGA to set
+     * @return this
+     */
+    public Gateserver setFHALNCIHMGA(final CharSequence value) {
+      bitField1_ |= 0x00000100;
+      fHALNCIHMGA.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string FHALNCIHMGA = 592;</code>
+     * @param value the fHALNCIHMGA to set
+     * @return this
+     */
+    public Gateserver setFHALNCIHMGA(final Utf8String value) {
+      bitField1_ |= 0x00000100;
+      fHALNCIHMGA.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @return whether the lKDFCHNEFBB field is set
+     */
+    public boolean hasLKDFCHNEFBB() {
+      return (bitField1_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @return this
+     */
+    public Gateserver clearLKDFCHNEFBB() {
+      bitField1_ &= ~0x00000200;
+      lKDFCHNEFBB.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @return the lKDFCHNEFBB
+     */
+    public String getLKDFCHNEFBB() {
+      return lKDFCHNEFBB.getString();
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @return internal {@code Utf8String} representation of lKDFCHNEFBB for reading
+     */
+    public Utf8String getLKDFCHNEFBBBytes() {
+      return this.lKDFCHNEFBB;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @return internal {@code Utf8String} representation of lKDFCHNEFBB for modifications
+     */
+    public Utf8String getMutableLKDFCHNEFBBBytes() {
+      bitField1_ |= 0x00000200;
+      return this.lKDFCHNEFBB;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @param value the lKDFCHNEFBB to set
+     * @return this
+     */
+    public Gateserver setLKDFCHNEFBB(final CharSequence value) {
+      bitField1_ |= 0x00000200;
+      lKDFCHNEFBB.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LKDFCHNEFBB = 614;</code>
+     * @param value the lKDFCHNEFBB to set
+     * @return this
+     */
+    public Gateserver setLKDFCHNEFBB(final Utf8String value) {
+      bitField1_ |= 0x00000200;
+      lKDFCHNEFBB.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @return whether the msg2 field is set
+     */
+    public boolean hasMsg2() {
+      return (bitField1_ & 0x00000400) != 0;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @return this
+     */
+    public Gateserver clearMsg2() {
+      bitField1_ &= ~0x00000400;
+      msg2.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @return the msg2
+     */
+    public String getMsg2() {
+      return msg2.getString();
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @return internal {@code Utf8String} representation of msg2 for reading
+     */
+    public Utf8String getMsg2Bytes() {
+      return this.msg2;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @return internal {@code Utf8String} representation of msg2 for modifications
+     */
+    public Utf8String getMutableMsg2Bytes() {
+      bitField1_ |= 0x00000400;
+      return this.msg2;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @param value the msg2 to set
+     * @return this
+     */
+    public Gateserver setMsg2(final CharSequence value) {
+      bitField1_ |= 0x00000400;
+      msg2.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string msg2 = 659;</code>
+     * @param value the msg2 to set
+     * @return this
+     */
+    public Gateserver setMsg2(final Utf8String value) {
+      bitField1_ |= 0x00000400;
+      msg2.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @return whether the lHGKDGDJIHC field is set
+     */
+    public boolean hasLHGKDGDJIHC() {
+      return (bitField1_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @return this
+     */
+    public Gateserver clearLHGKDGDJIHC() {
+      bitField1_ &= ~0x00000800;
+      lHGKDGDJIHC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @return the lHGKDGDJIHC
+     */
+    public String getLHGKDGDJIHC() {
+      return lHGKDGDJIHC.getString();
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @return internal {@code Utf8String} representation of lHGKDGDJIHC for reading
+     */
+    public Utf8String getLHGKDGDJIHCBytes() {
+      return this.lHGKDGDJIHC;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @return internal {@code Utf8String} representation of lHGKDGDJIHC for modifications
+     */
+    public Utf8String getMutableLHGKDGDJIHCBytes() {
+      bitField1_ |= 0x00000800;
+      return this.lHGKDGDJIHC;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @param value the lHGKDGDJIHC to set
+     * @return this
+     */
+    public Gateserver setLHGKDGDJIHC(final CharSequence value) {
+      bitField1_ |= 0x00000800;
+      lHGKDGDJIHC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LHGKDGDJIHC = 784;</code>
+     * @param value the lHGKDGDJIHC to set
+     * @return this
+     */
+    public Gateserver setLHGKDGDJIHC(final Utf8String value) {
+      bitField1_ |= 0x00000800;
+      lHGKDGDJIHC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @return whether the oGJIECMHHHG field is set
+     */
+    public boolean hasOGJIECMHHHG() {
       return (bitField1_ & 0x00001000) != 0;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
+     * <code>optional string OGJIECMHHHG = 962;</code>
      * @return this
      */
-    public Gateserver clearIHGAICFNADN() {
+    public Gateserver clearOGJIECMHHHG() {
       bitField1_ &= ~0x00001000;
-      iHGAICFNADN.clear();
+      oGJIECMHHHG.clear();
       return this;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @return the iHGAICFNADN
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @return the oGJIECMHHHG
      */
-    public String getIHGAICFNADN() {
-      return iHGAICFNADN.getString();
+    public String getOGJIECMHHHG() {
+      return oGJIECMHHHG.getString();
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @return internal {@code Utf8String} representation of iHGAICFNADN for reading
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @return internal {@code Utf8String} representation of oGJIECMHHHG for reading
      */
-    public Utf8String getIHGAICFNADNBytes() {
-      return this.iHGAICFNADN;
+    public Utf8String getOGJIECMHHHGBytes() {
+      return this.oGJIECMHHHG;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @return internal {@code Utf8String} representation of iHGAICFNADN for modifications
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @return internal {@code Utf8String} representation of oGJIECMHHHG for modifications
      */
-    public Utf8String getMutableIHGAICFNADNBytes() {
+    public Utf8String getMutableOGJIECMHHHGBytes() {
       bitField1_ |= 0x00001000;
-      return this.iHGAICFNADN;
+      return this.oGJIECMHHHG;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @param value the iHGAICFNADN to set
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @param value the oGJIECMHHHG to set
      * @return this
      */
-    public Gateserver setIHGAICFNADN(final CharSequence value) {
+    public Gateserver setOGJIECMHHHG(final CharSequence value) {
       bitField1_ |= 0x00001000;
-      iHGAICFNADN.copyFrom(value);
+      oGJIECMHHHG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string IHGAICFNADN = 1132;</code>
-     * @param value the iHGAICFNADN to set
+     * <code>optional string OGJIECMHHHG = 962;</code>
+     * @param value the oGJIECMHHHG to set
      * @return this
      */
-    public Gateserver setIHGAICFNADN(final Utf8String value) {
+    public Gateserver setOGJIECMHHHG(final Utf8String value) {
       bitField1_ |= 0x00001000;
-      iHGAICFNADN.copyFrom(value);
+      oGJIECMHHHG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @return whether the dEGFPDPOIHI field is set
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @return whether the pMABNNEDCCG field is set
      */
-    public boolean hasDEGFPDPOIHI() {
+    public boolean hasPMABNNEDCCG() {
       return (bitField1_ & 0x00002000) != 0;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
+     * <code>optional string PMABNNEDCCG = 1012;</code>
      * @return this
      */
-    public Gateserver clearDEGFPDPOIHI() {
+    public Gateserver clearPMABNNEDCCG() {
       bitField1_ &= ~0x00002000;
-      dEGFPDPOIHI.clear();
+      pMABNNEDCCG.clear();
       return this;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @return the dEGFPDPOIHI
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @return the pMABNNEDCCG
      */
-    public String getDEGFPDPOIHI() {
-      return dEGFPDPOIHI.getString();
+    public String getPMABNNEDCCG() {
+      return pMABNNEDCCG.getString();
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @return internal {@code Utf8String} representation of dEGFPDPOIHI for reading
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @return internal {@code Utf8String} representation of pMABNNEDCCG for reading
      */
-    public Utf8String getDEGFPDPOIHIBytes() {
-      return this.dEGFPDPOIHI;
+    public Utf8String getPMABNNEDCCGBytes() {
+      return this.pMABNNEDCCG;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @return internal {@code Utf8String} representation of dEGFPDPOIHI for modifications
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @return internal {@code Utf8String} representation of pMABNNEDCCG for modifications
      */
-    public Utf8String getMutableDEGFPDPOIHIBytes() {
+    public Utf8String getMutablePMABNNEDCCGBytes() {
       bitField1_ |= 0x00002000;
-      return this.dEGFPDPOIHI;
+      return this.pMABNNEDCCG;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @param value the dEGFPDPOIHI to set
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @param value the pMABNNEDCCG to set
      * @return this
      */
-    public Gateserver setDEGFPDPOIHI(final CharSequence value) {
+    public Gateserver setPMABNNEDCCG(final CharSequence value) {
       bitField1_ |= 0x00002000;
-      dEGFPDPOIHI.copyFrom(value);
+      pMABNNEDCCG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DEGFPDPOIHI = 1192;</code>
-     * @param value the dEGFPDPOIHI to set
+     * <code>optional string PMABNNEDCCG = 1012;</code>
+     * @param value the pMABNNEDCCG to set
      * @return this
      */
-    public Gateserver setDEGFPDPOIHI(final Utf8String value) {
+    public Gateserver setPMABNNEDCCG(final Utf8String value) {
       bitField1_ |= 0x00002000;
-      dEGFPDPOIHI.copyFrom(value);
+      pMABNNEDCCG.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @return whether the lLBOPDMGMLO field is set
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @return whether the nECFMBFGPML field is set
      */
-    public boolean hasLLBOPDMGMLO() {
+    public boolean hasNECFMBFGPML() {
       return (bitField1_ & 0x00004000) != 0;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
+     * <code>optional string NECFMBFGPML = 1035;</code>
      * @return this
      */
-    public Gateserver clearLLBOPDMGMLO() {
+    public Gateserver clearNECFMBFGPML() {
       bitField1_ &= ~0x00004000;
-      lLBOPDMGMLO.clear();
+      nECFMBFGPML.clear();
       return this;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @return the lLBOPDMGMLO
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @return the nECFMBFGPML
      */
-    public String getLLBOPDMGMLO() {
-      return lLBOPDMGMLO.getString();
+    public String getNECFMBFGPML() {
+      return nECFMBFGPML.getString();
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @return internal {@code Utf8String} representation of lLBOPDMGMLO for reading
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @return internal {@code Utf8String} representation of nECFMBFGPML for reading
      */
-    public Utf8String getLLBOPDMGMLOBytes() {
-      return this.lLBOPDMGMLO;
+    public Utf8String getNECFMBFGPMLBytes() {
+      return this.nECFMBFGPML;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @return internal {@code Utf8String} representation of lLBOPDMGMLO for modifications
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @return internal {@code Utf8String} representation of nECFMBFGPML for modifications
      */
-    public Utf8String getMutableLLBOPDMGMLOBytes() {
+    public Utf8String getMutableNECFMBFGPMLBytes() {
       bitField1_ |= 0x00004000;
-      return this.lLBOPDMGMLO;
+      return this.nECFMBFGPML;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @param value the lLBOPDMGMLO to set
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @param value the nECFMBFGPML to set
      * @return this
      */
-    public Gateserver setLLBOPDMGMLO(final CharSequence value) {
+    public Gateserver setNECFMBFGPML(final CharSequence value) {
       bitField1_ |= 0x00004000;
-      lLBOPDMGMLO.copyFrom(value);
+      nECFMBFGPML.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string LLBOPDMGMLO = 1220;</code>
-     * @param value the lLBOPDMGMLO to set
+     * <code>optional string NECFMBFGPML = 1035;</code>
+     * @param value the nECFMBFGPML to set
      * @return this
      */
-    public Gateserver setLLBOPDMGMLO(final Utf8String value) {
+    public Gateserver setNECFMBFGPML(final Utf8String value) {
       bitField1_ |= 0x00004000;
-      lLBOPDMGMLO.copyFrom(value);
+      nECFMBFGPML.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @return whether the bCADOJCHKAE field is set
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @return whether the kDBAGALHEDC field is set
      */
-    public boolean hasBCADOJCHKAE() {
+    public boolean hasKDBAGALHEDC() {
       return (bitField1_ & 0x00008000) != 0;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
+     * <code>optional string KDBAGALHEDC = 1122;</code>
      * @return this
      */
-    public Gateserver clearBCADOJCHKAE() {
+    public Gateserver clearKDBAGALHEDC() {
       bitField1_ &= ~0x00008000;
-      bCADOJCHKAE.clear();
+      kDBAGALHEDC.clear();
       return this;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @return the bCADOJCHKAE
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @return the kDBAGALHEDC
      */
-    public String getBCADOJCHKAE() {
-      return bCADOJCHKAE.getString();
+    public String getKDBAGALHEDC() {
+      return kDBAGALHEDC.getString();
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @return internal {@code Utf8String} representation of bCADOJCHKAE for reading
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @return internal {@code Utf8String} representation of kDBAGALHEDC for reading
      */
-    public Utf8String getBCADOJCHKAEBytes() {
-      return this.bCADOJCHKAE;
+    public Utf8String getKDBAGALHEDCBytes() {
+      return this.kDBAGALHEDC;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @return internal {@code Utf8String} representation of bCADOJCHKAE for modifications
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @return internal {@code Utf8String} representation of kDBAGALHEDC for modifications
      */
-    public Utf8String getMutableBCADOJCHKAEBytes() {
+    public Utf8String getMutableKDBAGALHEDCBytes() {
       bitField1_ |= 0x00008000;
-      return this.bCADOJCHKAE;
+      return this.kDBAGALHEDC;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @param value the bCADOJCHKAE to set
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @param value the kDBAGALHEDC to set
      * @return this
      */
-    public Gateserver setBCADOJCHKAE(final CharSequence value) {
+    public Gateserver setKDBAGALHEDC(final CharSequence value) {
       bitField1_ |= 0x00008000;
-      bCADOJCHKAE.copyFrom(value);
+      kDBAGALHEDC.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BCADOJCHKAE = 1236;</code>
-     * @param value the bCADOJCHKAE to set
+     * <code>optional string KDBAGALHEDC = 1122;</code>
+     * @param value the kDBAGALHEDC to set
      * @return this
      */
-    public Gateserver setBCADOJCHKAE(final Utf8String value) {
+    public Gateserver setKDBAGALHEDC(final Utf8String value) {
       bitField1_ |= 0x00008000;
-      bCADOJCHKAE.copyFrom(value);
+      kDBAGALHEDC.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @return whether the mNEMHHBMKEA field is set
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @return whether the fDGFFCMALPI field is set
      */
-    public boolean hasMNEMHHBMKEA() {
+    public boolean hasFDGFFCMALPI() {
       return (bitField1_ & 0x00010000) != 0;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
+     * <code>optional string FDGFFCMALPI = 1134;</code>
      * @return this
      */
-    public Gateserver clearMNEMHHBMKEA() {
+    public Gateserver clearFDGFFCMALPI() {
       bitField1_ &= ~0x00010000;
-      mNEMHHBMKEA.clear();
+      fDGFFCMALPI.clear();
       return this;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @return the mNEMHHBMKEA
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @return the fDGFFCMALPI
      */
-    public String getMNEMHHBMKEA() {
-      return mNEMHHBMKEA.getString();
+    public String getFDGFFCMALPI() {
+      return fDGFFCMALPI.getString();
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @return internal {@code Utf8String} representation of mNEMHHBMKEA for reading
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @return internal {@code Utf8String} representation of fDGFFCMALPI for reading
      */
-    public Utf8String getMNEMHHBMKEABytes() {
-      return this.mNEMHHBMKEA;
+    public Utf8String getFDGFFCMALPIBytes() {
+      return this.fDGFFCMALPI;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @return internal {@code Utf8String} representation of mNEMHHBMKEA for modifications
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @return internal {@code Utf8String} representation of fDGFFCMALPI for modifications
      */
-    public Utf8String getMutableMNEMHHBMKEABytes() {
+    public Utf8String getMutableFDGFFCMALPIBytes() {
       bitField1_ |= 0x00010000;
-      return this.mNEMHHBMKEA;
+      return this.fDGFFCMALPI;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @param value the mNEMHHBMKEA to set
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @param value the fDGFFCMALPI to set
      * @return this
      */
-    public Gateserver setMNEMHHBMKEA(final CharSequence value) {
+    public Gateserver setFDGFFCMALPI(final CharSequence value) {
       bitField1_ |= 0x00010000;
-      mNEMHHBMKEA.copyFrom(value);
+      fDGFFCMALPI.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string MNEMHHBMKEA = 1370;</code>
-     * @param value the mNEMHHBMKEA to set
+     * <code>optional string FDGFFCMALPI = 1134;</code>
+     * @param value the fDGFFCMALPI to set
      * @return this
      */
-    public Gateserver setMNEMHHBMKEA(final Utf8String value) {
+    public Gateserver setFDGFFCMALPI(final Utf8String value) {
       bitField1_ |= 0x00010000;
-      mNEMHHBMKEA.copyFrom(value);
+      fDGFFCMALPI.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @return whether the eNLGGEEKCJH field is set
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @return whether the kLIAGHGOFML field is set
      */
-    public boolean hasENLGGEEKCJH() {
+    public boolean hasKLIAGHGOFML() {
       return (bitField1_ & 0x00020000) != 0;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
+     * <code>optional string KLIAGHGOFML = 1245;</code>
      * @return this
      */
-    public Gateserver clearENLGGEEKCJH() {
+    public Gateserver clearKLIAGHGOFML() {
       bitField1_ &= ~0x00020000;
-      eNLGGEEKCJH.clear();
+      kLIAGHGOFML.clear();
       return this;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @return the eNLGGEEKCJH
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @return the kLIAGHGOFML
      */
-    public String getENLGGEEKCJH() {
-      return eNLGGEEKCJH.getString();
+    public String getKLIAGHGOFML() {
+      return kLIAGHGOFML.getString();
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @return internal {@code Utf8String} representation of eNLGGEEKCJH for reading
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @return internal {@code Utf8String} representation of kLIAGHGOFML for reading
      */
-    public Utf8String getENLGGEEKCJHBytes() {
-      return this.eNLGGEEKCJH;
+    public Utf8String getKLIAGHGOFMLBytes() {
+      return this.kLIAGHGOFML;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @return internal {@code Utf8String} representation of eNLGGEEKCJH for modifications
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @return internal {@code Utf8String} representation of kLIAGHGOFML for modifications
      */
-    public Utf8String getMutableENLGGEEKCJHBytes() {
+    public Utf8String getMutableKLIAGHGOFMLBytes() {
       bitField1_ |= 0x00020000;
-      return this.eNLGGEEKCJH;
+      return this.kLIAGHGOFML;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @param value the eNLGGEEKCJH to set
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @param value the kLIAGHGOFML to set
      * @return this
      */
-    public Gateserver setENLGGEEKCJH(final CharSequence value) {
+    public Gateserver setKLIAGHGOFML(final CharSequence value) {
       bitField1_ |= 0x00020000;
-      eNLGGEEKCJH.copyFrom(value);
+      kLIAGHGOFML.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string ENLGGEEKCJH = 1420;</code>
-     * @param value the eNLGGEEKCJH to set
+     * <code>optional string KLIAGHGOFML = 1245;</code>
+     * @param value the kLIAGHGOFML to set
      * @return this
      */
-    public Gateserver setENLGGEEKCJH(final Utf8String value) {
+    public Gateserver setKLIAGHGOFML(final Utf8String value) {
       bitField1_ |= 0x00020000;
-      eNLGGEEKCJH.copyFrom(value);
+      kLIAGHGOFML.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
-     * @return whether the ipv6 field is set
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @return whether the pNALJLBMILJ field is set
      */
-    public boolean hasIpv6() {
+    public boolean hasPNALJLBMILJ() {
       return (bitField1_ & 0x00040000) != 0;
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @return this
+     */
+    public Gateserver clearPNALJLBMILJ() {
+      bitField1_ &= ~0x00040000;
+      pNALJLBMILJ.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @return the pNALJLBMILJ
+     */
+    public String getPNALJLBMILJ() {
+      return pNALJLBMILJ.getString();
+    }
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @return internal {@code Utf8String} representation of pNALJLBMILJ for reading
+     */
+    public Utf8String getPNALJLBMILJBytes() {
+      return this.pNALJLBMILJ;
+    }
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @return internal {@code Utf8String} representation of pNALJLBMILJ for modifications
+     */
+    public Utf8String getMutablePNALJLBMILJBytes() {
+      bitField1_ |= 0x00040000;
+      return this.pNALJLBMILJ;
+    }
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @param value the pNALJLBMILJ to set
+     * @return this
+     */
+    public Gateserver setPNALJLBMILJ(final CharSequence value) {
+      bitField1_ |= 0x00040000;
+      pNALJLBMILJ.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string PNALJLBMILJ = 1307;</code>
+     * @param value the pNALJLBMILJ to set
+     * @return this
+     */
+    public Gateserver setPNALJLBMILJ(final Utf8String value) {
+      bitField1_ |= 0x00040000;
+      pNALJLBMILJ.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @return whether the bJOCANIBBKI field is set
+     */
+    public boolean hasBJOCANIBBKI() {
+      return (bitField1_ & 0x00080000) != 0;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @return this
+     */
+    public Gateserver clearBJOCANIBBKI() {
+      bitField1_ &= ~0x00080000;
+      bJOCANIBBKI.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @return the bJOCANIBBKI
+     */
+    public String getBJOCANIBBKI() {
+      return bJOCANIBBKI.getString();
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @return internal {@code Utf8String} representation of bJOCANIBBKI for reading
+     */
+    public Utf8String getBJOCANIBBKIBytes() {
+      return this.bJOCANIBBKI;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @return internal {@code Utf8String} representation of bJOCANIBBKI for modifications
+     */
+    public Utf8String getMutableBJOCANIBBKIBytes() {
+      bitField1_ |= 0x00080000;
+      return this.bJOCANIBBKI;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @param value the bJOCANIBBKI to set
+     * @return this
+     */
+    public Gateserver setBJOCANIBBKI(final CharSequence value) {
+      bitField1_ |= 0x00080000;
+      bJOCANIBBKI.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string BJOCANIBBKI = 1332;</code>
+     * @param value the bJOCANIBBKI to set
+     * @return this
+     */
+    public Gateserver setBJOCANIBBKI(final Utf8String value) {
+      bitField1_ |= 0x00080000;
+      bJOCANIBBKI.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @return whether the eICAECNMDIB field is set
+     */
+    public boolean hasEICAECNMDIB() {
+      return (bitField1_ & 0x00100000) != 0;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @return this
+     */
+    public Gateserver clearEICAECNMDIB() {
+      bitField1_ &= ~0x00100000;
+      eICAECNMDIB.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @return the eICAECNMDIB
+     */
+    public String getEICAECNMDIB() {
+      return eICAECNMDIB.getString();
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @return internal {@code Utf8String} representation of eICAECNMDIB for reading
+     */
+    public Utf8String getEICAECNMDIBBytes() {
+      return this.eICAECNMDIB;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @return internal {@code Utf8String} representation of eICAECNMDIB for modifications
+     */
+    public Utf8String getMutableEICAECNMDIBBytes() {
+      bitField1_ |= 0x00100000;
+      return this.eICAECNMDIB;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @param value the eICAECNMDIB to set
+     * @return this
+     */
+    public Gateserver setEICAECNMDIB(final CharSequence value) {
+      bitField1_ |= 0x00100000;
+      eICAECNMDIB.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string EICAECNMDIB = 1334;</code>
+     * @param value the eICAECNMDIB to set
+     * @return this
+     */
+    public Gateserver setEICAECNMDIB(final Utf8String value) {
+      bitField1_ |= 0x00100000;
+      eICAECNMDIB.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @return whether the lLFDDPLHGBM field is set
+     */
+    public boolean hasLLFDDPLHGBM() {
+      return (bitField1_ & 0x00200000) != 0;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @return this
+     */
+    public Gateserver clearLLFDDPLHGBM() {
+      bitField1_ &= ~0x00200000;
+      lLFDDPLHGBM.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @return the lLFDDPLHGBM
+     */
+    public String getLLFDDPLHGBM() {
+      return lLFDDPLHGBM.getString();
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @return internal {@code Utf8String} representation of lLFDDPLHGBM for reading
+     */
+    public Utf8String getLLFDDPLHGBMBytes() {
+      return this.lLFDDPLHGBM;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @return internal {@code Utf8String} representation of lLFDDPLHGBM for modifications
+     */
+    public Utf8String getMutableLLFDDPLHGBMBytes() {
+      bitField1_ |= 0x00200000;
+      return this.lLFDDPLHGBM;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @param value the lLFDDPLHGBM to set
+     * @return this
+     */
+    public Gateserver setLLFDDPLHGBM(final CharSequence value) {
+      bitField1_ |= 0x00200000;
+      lLFDDPLHGBM.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string LLFDDPLHGBM = 1359;</code>
+     * @param value the lLFDDPLHGBM to set
+     * @return this
+     */
+    public Gateserver setLLFDDPLHGBM(final Utf8String value) {
+      bitField1_ |= 0x00200000;
+      lLFDDPLHGBM.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @return whether the oBOPKJFGDIC field is set
+     */
+    public boolean hasOBOPKJFGDIC() {
+      return (bitField1_ & 0x00400000) != 0;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @return this
+     */
+    public Gateserver clearOBOPKJFGDIC() {
+      bitField1_ &= ~0x00400000;
+      oBOPKJFGDIC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @return the oBOPKJFGDIC
+     */
+    public String getOBOPKJFGDIC() {
+      return oBOPKJFGDIC.getString();
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @return internal {@code Utf8String} representation of oBOPKJFGDIC for reading
+     */
+    public Utf8String getOBOPKJFGDICBytes() {
+      return this.oBOPKJFGDIC;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @return internal {@code Utf8String} representation of oBOPKJFGDIC for modifications
+     */
+    public Utf8String getMutableOBOPKJFGDICBytes() {
+      bitField1_ |= 0x00400000;
+      return this.oBOPKJFGDIC;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @param value the oBOPKJFGDIC to set
+     * @return this
+     */
+    public Gateserver setOBOPKJFGDIC(final CharSequence value) {
+      bitField1_ |= 0x00400000;
+      oBOPKJFGDIC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OBOPKJFGDIC = 1556;</code>
+     * @param value the oBOPKJFGDIC to set
+     * @return this
+     */
+    public Gateserver setOBOPKJFGDIC(final Utf8String value) {
+      bitField1_ |= 0x00400000;
+      oBOPKJFGDIC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @return whether the mDKDJLNHGKN field is set
+     */
+    public boolean hasMDKDJLNHGKN() {
+      return (bitField1_ & 0x00800000) != 0;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @return this
+     */
+    public Gateserver clearMDKDJLNHGKN() {
+      bitField1_ &= ~0x00800000;
+      mDKDJLNHGKN.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @return the mDKDJLNHGKN
+     */
+    public String getMDKDJLNHGKN() {
+      return mDKDJLNHGKN.getString();
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @return internal {@code Utf8String} representation of mDKDJLNHGKN for reading
+     */
+    public Utf8String getMDKDJLNHGKNBytes() {
+      return this.mDKDJLNHGKN;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @return internal {@code Utf8String} representation of mDKDJLNHGKN for modifications
+     */
+    public Utf8String getMutableMDKDJLNHGKNBytes() {
+      bitField1_ |= 0x00800000;
+      return this.mDKDJLNHGKN;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @param value the mDKDJLNHGKN to set
+     * @return this
+     */
+    public Gateserver setMDKDJLNHGKN(final CharSequence value) {
+      bitField1_ |= 0x00800000;
+      mDKDJLNHGKN.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string MDKDJLNHGKN = 1624;</code>
+     * @param value the mDKDJLNHGKN to set
+     * @return this
+     */
+    public Gateserver setMDKDJLNHGKN(final Utf8String value) {
+      bitField1_ |= 0x00800000;
+      mDKDJLNHGKN.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @return whether the eLJIMGJLHBC field is set
+     */
+    public boolean hasELJIMGJLHBC() {
+      return (bitField1_ & 0x01000000) != 0;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @return this
+     */
+    public Gateserver clearELJIMGJLHBC() {
+      bitField1_ &= ~0x01000000;
+      eLJIMGJLHBC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @return the eLJIMGJLHBC
+     */
+    public String getELJIMGJLHBC() {
+      return eLJIMGJLHBC.getString();
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @return internal {@code Utf8String} representation of eLJIMGJLHBC for reading
+     */
+    public Utf8String getELJIMGJLHBCBytes() {
+      return this.eLJIMGJLHBC;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @return internal {@code Utf8String} representation of eLJIMGJLHBC for modifications
+     */
+    public Utf8String getMutableELJIMGJLHBCBytes() {
+      bitField1_ |= 0x01000000;
+      return this.eLJIMGJLHBC;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @param value the eLJIMGJLHBC to set
+     * @return this
+     */
+    public Gateserver setELJIMGJLHBC(final CharSequence value) {
+      bitField1_ |= 0x01000000;
+      eLJIMGJLHBC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string ELJIMGJLHBC = 1779;</code>
+     * @param value the eLJIMGJLHBC to set
+     * @return this
+     */
+    public Gateserver setELJIMGJLHBC(final Utf8String value) {
+      bitField1_ |= 0x01000000;
+      eLJIMGJLHBC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @return whether the gKPLIAPPLCO field is set
+     */
+    public boolean hasGKPLIAPPLCO() {
+      return (bitField1_ & 0x02000000) != 0;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @return this
+     */
+    public Gateserver clearGKPLIAPPLCO() {
+      bitField1_ &= ~0x02000000;
+      gKPLIAPPLCO.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @return the gKPLIAPPLCO
+     */
+    public String getGKPLIAPPLCO() {
+      return gKPLIAPPLCO.getString();
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @return internal {@code Utf8String} representation of gKPLIAPPLCO for reading
+     */
+    public Utf8String getGKPLIAPPLCOBytes() {
+      return this.gKPLIAPPLCO;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @return internal {@code Utf8String} representation of gKPLIAPPLCO for modifications
+     */
+    public Utf8String getMutableGKPLIAPPLCOBytes() {
+      bitField1_ |= 0x02000000;
+      return this.gKPLIAPPLCO;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @param value the gKPLIAPPLCO to set
+     * @return this
+     */
+    public Gateserver setGKPLIAPPLCO(final CharSequence value) {
+      bitField1_ |= 0x02000000;
+      gKPLIAPPLCO.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string GKPLIAPPLCO = 1893;</code>
+     * @param value the gKPLIAPPLCO to set
+     * @return this
+     */
+    public Gateserver setGKPLIAPPLCO(final Utf8String value) {
+      bitField1_ |= 0x02000000;
+      gKPLIAPPLCO.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string ipv6 = 1952;</code>
+     * @return whether the ipv6 field is set
+     */
+    public boolean hasIpv6() {
+      return (bitField1_ & 0x04000000) != 0;
+    }
+
+    /**
+     * <code>optional string ipv6 = 1952;</code>
      * @return this
      */
     public Gateserver clearIpv6() {
-      bitField1_ &= ~0x00040000;
+      bitField1_ &= ~0x04000000;
       ipv6.clear();
       return this;
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string ipv6 = 1952;</code>
      * @return the ipv6
      */
     public String getIpv6() {
@@ -3084,7 +3641,7 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string ipv6 = 1952;</code>
      * @return internal {@code Utf8String} representation of ipv6 for reading
      */
     public Utf8String getIpv6Bytes() {
@@ -3092,525 +3649,70 @@ public final class GateserverOuterClass {
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string ipv6 = 1952;</code>
      * @return internal {@code Utf8String} representation of ipv6 for modifications
      */
     public Utf8String getMutableIpv6Bytes() {
-      bitField1_ |= 0x00040000;
+      bitField1_ |= 0x04000000;
       return this.ipv6;
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string ipv6 = 1952;</code>
      * @param value the ipv6 to set
      * @return this
      */
     public Gateserver setIpv6(final CharSequence value) {
-      bitField1_ |= 0x00040000;
+      bitField1_ |= 0x04000000;
       ipv6.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string ipv6 = 1430;</code>
+     * <code>optional string ipv6 = 1952;</code>
      * @param value the ipv6 to set
      * @return this
      */
     public Gateserver setIpv6(final Utf8String value) {
-      bitField1_ |= 0x00040000;
+      bitField1_ |= 0x04000000;
       ipv6.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @return whether the jCFGJFMGNLF field is set
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
+     * @return whether the gBONLDEMBEN field is set
      */
-    public boolean hasJCFGJFMGNLF() {
-      return (bitField1_ & 0x00080000) != 0;
+    public boolean hasGBONLDEMBEN() {
+      return (bitField1_ & 0x08000000) != 0;
     }
 
     /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
      * @return this
      */
-    public Gateserver clearJCFGJFMGNLF() {
-      bitField1_ &= ~0x00080000;
-      jCFGJFMGNLF.clear();
+    public Gateserver clearGBONLDEMBEN() {
+      bitField1_ &= ~0x08000000;
+      gBONLDEMBEN.clear();
       return this;
     }
 
     /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @return the jCFGJFMGNLF
-     */
-    public String getJCFGJFMGNLF() {
-      return jCFGJFMGNLF.getString();
-    }
-
-    /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @return internal {@code Utf8String} representation of jCFGJFMGNLF for reading
-     */
-    public Utf8String getJCFGJFMGNLFBytes() {
-      return this.jCFGJFMGNLF;
-    }
-
-    /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @return internal {@code Utf8String} representation of jCFGJFMGNLF for modifications
-     */
-    public Utf8String getMutableJCFGJFMGNLFBytes() {
-      bitField1_ |= 0x00080000;
-      return this.jCFGJFMGNLF;
-    }
-
-    /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @param value the jCFGJFMGNLF to set
-     * @return this
-     */
-    public Gateserver setJCFGJFMGNLF(final CharSequence value) {
-      bitField1_ |= 0x00080000;
-      jCFGJFMGNLF.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string JCFGJFMGNLF = 1462;</code>
-     * @param value the jCFGJFMGNLF to set
-     * @return this
-     */
-    public Gateserver setJCFGJFMGNLF(final Utf8String value) {
-      bitField1_ |= 0x00080000;
-      jCFGJFMGNLF.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @return whether the nDAOKPKOLKI field is set
-     */
-    public boolean hasNDAOKPKOLKI() {
-      return (bitField1_ & 0x00100000) != 0;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @return this
-     */
-    public Gateserver clearNDAOKPKOLKI() {
-      bitField1_ &= ~0x00100000;
-      nDAOKPKOLKI.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @return the nDAOKPKOLKI
-     */
-    public String getNDAOKPKOLKI() {
-      return nDAOKPKOLKI.getString();
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @return internal {@code Utf8String} representation of nDAOKPKOLKI for reading
-     */
-    public Utf8String getNDAOKPKOLKIBytes() {
-      return this.nDAOKPKOLKI;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @return internal {@code Utf8String} representation of nDAOKPKOLKI for modifications
-     */
-    public Utf8String getMutableNDAOKPKOLKIBytes() {
-      bitField1_ |= 0x00100000;
-      return this.nDAOKPKOLKI;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @param value the nDAOKPKOLKI to set
-     * @return this
-     */
-    public Gateserver setNDAOKPKOLKI(final CharSequence value) {
-      bitField1_ |= 0x00100000;
-      nDAOKPKOLKI.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NDAOKPKOLKI = 1570;</code>
-     * @param value the nDAOKPKOLKI to set
-     * @return this
-     */
-    public Gateserver setNDAOKPKOLKI(final Utf8String value) {
-      bitField1_ |= 0x00100000;
-      nDAOKPKOLKI.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @return whether the mPDCHMICKGP field is set
-     */
-    public boolean hasMPDCHMICKGP() {
-      return (bitField1_ & 0x00200000) != 0;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @return this
-     */
-    public Gateserver clearMPDCHMICKGP() {
-      bitField1_ &= ~0x00200000;
-      mPDCHMICKGP.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @return the mPDCHMICKGP
-     */
-    public String getMPDCHMICKGP() {
-      return mPDCHMICKGP.getString();
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @return internal {@code Utf8String} representation of mPDCHMICKGP for reading
-     */
-    public Utf8String getMPDCHMICKGPBytes() {
-      return this.mPDCHMICKGP;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @return internal {@code Utf8String} representation of mPDCHMICKGP for modifications
-     */
-    public Utf8String getMutableMPDCHMICKGPBytes() {
-      bitField1_ |= 0x00200000;
-      return this.mPDCHMICKGP;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @param value the mPDCHMICKGP to set
-     * @return this
-     */
-    public Gateserver setMPDCHMICKGP(final CharSequence value) {
-      bitField1_ |= 0x00200000;
-      mPDCHMICKGP.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MPDCHMICKGP = 1583;</code>
-     * @param value the mPDCHMICKGP to set
-     * @return this
-     */
-    public Gateserver setMPDCHMICKGP(final Utf8String value) {
-      bitField1_ |= 0x00200000;
-      mPDCHMICKGP.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @return whether the oHOGINOGEOG field is set
-     */
-    public boolean hasOHOGINOGEOG() {
-      return (bitField1_ & 0x00400000) != 0;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @return this
-     */
-    public Gateserver clearOHOGINOGEOG() {
-      bitField1_ &= ~0x00400000;
-      oHOGINOGEOG.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @return the oHOGINOGEOG
-     */
-    public String getOHOGINOGEOG() {
-      return oHOGINOGEOG.getString();
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @return internal {@code Utf8String} representation of oHOGINOGEOG for reading
-     */
-    public Utf8String getOHOGINOGEOGBytes() {
-      return this.oHOGINOGEOG;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @return internal {@code Utf8String} representation of oHOGINOGEOG for modifications
-     */
-    public Utf8String getMutableOHOGINOGEOGBytes() {
-      bitField1_ |= 0x00400000;
-      return this.oHOGINOGEOG;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @param value the oHOGINOGEOG to set
-     * @return this
-     */
-    public Gateserver setOHOGINOGEOG(final CharSequence value) {
-      bitField1_ |= 0x00400000;
-      oHOGINOGEOG.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string OHOGINOGEOG = 1629;</code>
-     * @param value the oHOGINOGEOG to set
-     * @return this
-     */
-    public Gateserver setOHOGINOGEOG(final Utf8String value) {
-      bitField1_ |= 0x00400000;
-      oHOGINOGEOG.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @return whether the pKDDCFGDDDE field is set
-     */
-    public boolean hasPKDDCFGDDDE() {
-      return (bitField1_ & 0x00800000) != 0;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @return this
-     */
-    public Gateserver clearPKDDCFGDDDE() {
-      bitField1_ &= ~0x00800000;
-      pKDDCFGDDDE.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @return the pKDDCFGDDDE
-     */
-    public String getPKDDCFGDDDE() {
-      return pKDDCFGDDDE.getString();
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @return internal {@code Utf8String} representation of pKDDCFGDDDE for reading
-     */
-    public Utf8String getPKDDCFGDDDEBytes() {
-      return this.pKDDCFGDDDE;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @return internal {@code Utf8String} representation of pKDDCFGDDDE for modifications
-     */
-    public Utf8String getMutablePKDDCFGDDDEBytes() {
-      bitField1_ |= 0x00800000;
-      return this.pKDDCFGDDDE;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @param value the pKDDCFGDDDE to set
-     * @return this
-     */
-    public Gateserver setPKDDCFGDDDE(final CharSequence value) {
-      bitField1_ |= 0x00800000;
-      pKDDCFGDDDE.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string PKDDCFGDDDE = 1750;</code>
-     * @param value the pKDDCFGDDDE to set
-     * @return this
-     */
-    public Gateserver setPKDDCFGDDDE(final Utf8String value) {
-      bitField1_ |= 0x00800000;
-      pKDDCFGDDDE.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @return whether the gMCEHMDOHDL field is set
-     */
-    public boolean hasGMCEHMDOHDL() {
-      return (bitField1_ & 0x01000000) != 0;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @return this
-     */
-    public Gateserver clearGMCEHMDOHDL() {
-      bitField1_ &= ~0x01000000;
-      gMCEHMDOHDL.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @return the gMCEHMDOHDL
-     */
-    public String getGMCEHMDOHDL() {
-      return gMCEHMDOHDL.getString();
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @return internal {@code Utf8String} representation of gMCEHMDOHDL for reading
-     */
-    public Utf8String getGMCEHMDOHDLBytes() {
-      return this.gMCEHMDOHDL;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @return internal {@code Utf8String} representation of gMCEHMDOHDL for modifications
-     */
-    public Utf8String getMutableGMCEHMDOHDLBytes() {
-      bitField1_ |= 0x01000000;
-      return this.gMCEHMDOHDL;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @param value the gMCEHMDOHDL to set
-     * @return this
-     */
-    public Gateserver setGMCEHMDOHDL(final CharSequence value) {
-      bitField1_ |= 0x01000000;
-      gMCEHMDOHDL.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GMCEHMDOHDL = 1773;</code>
-     * @param value the gMCEHMDOHDL to set
-     * @return this
-     */
-    public Gateserver setGMCEHMDOHDL(final Utf8String value) {
-      bitField1_ |= 0x01000000;
-      gMCEHMDOHDL.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @return whether the dALBCELEHGM field is set
-     */
-    public boolean hasDALBCELEHGM() {
-      return (bitField1_ & 0x02000000) != 0;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @return this
-     */
-    public Gateserver clearDALBCELEHGM() {
-      bitField1_ &= ~0x02000000;
-      dALBCELEHGM.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @return the dALBCELEHGM
-     */
-    public String getDALBCELEHGM() {
-      return dALBCELEHGM.getString();
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @return internal {@code Utf8String} representation of dALBCELEHGM for reading
-     */
-    public Utf8String getDALBCELEHGMBytes() {
-      return this.dALBCELEHGM;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @return internal {@code Utf8String} representation of dALBCELEHGM for modifications
-     */
-    public Utf8String getMutableDALBCELEHGMBytes() {
-      bitField1_ |= 0x02000000;
-      return this.dALBCELEHGM;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @param value the dALBCELEHGM to set
-     * @return this
-     */
-    public Gateserver setDALBCELEHGM(final CharSequence value) {
-      bitField1_ |= 0x02000000;
-      dALBCELEHGM.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string DALBCELEHGM = 1808;</code>
-     * @param value the dALBCELEHGM to set
-     * @return this
-     */
-    public Gateserver setDALBCELEHGM(final Utf8String value) {
-      bitField1_ |= 0x02000000;
-      dALBCELEHGM.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
-     * @return whether the gBCBIDAHGJC field is set
-     */
-    public boolean hasGBCBIDAHGJC() {
-      return (bitField1_ & 0x04000000) != 0;
-    }
-
-    /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
-     * @return this
-     */
-    public Gateserver clearGBCBIDAHGJC() {
-      bitField1_ &= ~0x04000000;
-      gBCBIDAHGJC.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGBCBIDAHGJC()} if you want to modify it.
+     * Use {@link #getMutableGBONLDEMBEN()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedString getGBCBIDAHGJC() {
-      return gBCBIDAHGJC;
+    public RepeatedString getGBONLDEMBEN() {
+      return gBONLDEMBEN;
     }
 
     /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -3618,30 +3720,30 @@ public final class GateserverOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedString getMutableGBCBIDAHGJC() {
-      bitField1_ |= 0x04000000;
-      return gBCBIDAHGJC;
+    public RepeatedString getMutableGBONLDEMBEN() {
+      bitField1_ |= 0x08000000;
+      return gBONLDEMBEN;
     }
 
     /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
-     * @param value the gBCBIDAHGJC to add
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
+     * @param value the gBONLDEMBEN to add
      * @return this
      */
-    public Gateserver addGBCBIDAHGJC(final CharSequence value) {
-      bitField1_ |= 0x04000000;
-      gBCBIDAHGJC.add(value);
+    public Gateserver addGBONLDEMBEN(final CharSequence value) {
+      bitField1_ |= 0x08000000;
+      gBONLDEMBEN.add(value);
       return this;
     }
 
     /**
-     * <code>repeated string GBCBIDAHGJC = 663;</code>
-     * @param values the gBCBIDAHGJC to add
+     * <code>repeated string GBONLDEMBEN = 1588;</code>
+     * @param values the gBONLDEMBEN to add
      * @return this
      */
-    public Gateserver addAllGBCBIDAHGJC(final CharSequence... values) {
-      bitField1_ |= 0x04000000;
-      gBCBIDAHGJC.addAll(values);
+    public Gateserver addAllGBONLDEMBEN(final CharSequence... values) {
+      bitField1_ |= 0x08000000;
+      gBONLDEMBEN.addAll(values);
       return this;
     }
 
@@ -3650,68 +3752,69 @@ public final class GateserverOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pOHJHDDOECN = other.pOHJHDDOECN;
-        kICPPAHLGHB = other.kICPPAHLGHB;
-        port = other.port;
-        bAGLOFEACNC = other.bAGLOFEACNC;
+        mDAHNIKKAHI = other.mDAHNIKKAHI;
+        gHENHJPJJLK = other.gHENHJPJJLK;
         retcode = other.retcode;
-        aOMEDACHLJD = other.aOMEDACHLJD;
-        mDAILCAMOAO = other.mDAILCAMOAO;
+        iGKDKFJIDPP = other.iGKDKFJIDPP;
+        port = other.port;
+        hNDPOHGEIPM = other.hNDPOHGEIPM;
+        cLCFLOAMGBL = other.cLCFLOAMGBL;
         unk1 = other.unk1;
         unk2 = other.unk2;
         unk3 = other.unk3;
         unk4 = other.unk4;
         unk5 = other.unk5;
-        unk6 = other.unk6;
-        unk7 = other.unk7;
-        unk8 = other.unk8;
-        unk9 = other.unk9;
-        unk10 = other.unk10;
-        unk11 = other.unk11;
-        unk12 = other.unk12;
-        unk13 = other.unk13;
-        unk14 = other.unk14;
-        unk15 = other.unk15;
-        assetBundleUrl.copyFrom(other.assetBundleUrl);
-        ip.copyFrom(other.ip);
-        regionName.copyFrom(other.regionName);
-        fNCHMFHFMID.copyFrom(other.fNCHMFHFMID);
-        luaUrl.copyFrom(other.luaUrl);
-        msg.copyFrom(other.msg);
+        cNAKLGMDLPE = other.cNAKLGMDLPE;
+        aPJECJMGAKC = other.aPJECJMGAKC;
+        jGCIILJEHHE = other.jGCIILJEHHE;
+        fIOHEKDJNCG = other.fIOHEKDJNCG;
+        mCEIPIBAMDB = other.mCEIPIBAMDB;
+        eBKBNEKCOHI = other.eBKBNEKCOHI;
+        lAABLMNKLLD = other.lAABLMNKLLD;
+        oFJAKNEDMDM = other.oFJAKNEDMDM;
+        nPHDIMJOKNI = other.nPHDIMJOKNI;
+        nNGLEBKCMLA = other.nNGLEBKCMLA;
         exResourceUrl.copyFrom(other.exResourceUrl);
-        pNHBALGFHOH.copyFrom(other.pNHBALGFHOH);
-        nPNBJBCFPNE.copyFrom(other.nPNBJBCFPNE);
-        bFIHFKLMMEK.copyFrom(other.bFIHFKLMMEK);
+        luaUrl.copyFrom(other.luaUrl);
+        ip.copyFrom(other.ip);
+        msg.copyFrom(other.msg);
+        assetBundleUrl.copyFrom(other.assetBundleUrl);
+        regionName.copyFrom(other.regionName);
+        iOKEPIEDBNE.copyFrom(other.iOKEPIEDBNE);
+        fCMMMPKJJIL.copyFrom(other.fCMMMPKJJIL);
+        iPKLAMMKNNG.copyFrom(other.iPKLAMMKNNG);
+        iIJLFILFMDF.copyFrom(other.iIJLFILFMDF);
       }
       if ((bitField1_ | other.bitField1_) != 0) {
         bitField1_ = other.bitField1_;
-        bHDBHBJJPNI.copyFrom(other.bHDBHBJJPNI);
-        lBPFHPCBCKL.copyFrom(other.lBPFHPCBCKL);
-        gBICAMFDFCE.copyFrom(other.gBICAMFDFCE);
-        mEACAGAFHGA.copyFrom(other.mEACAGAFHGA);
-        gDOBHNDOCOJ.copyFrom(other.gDOBHNDOCOJ);
-        nKJBGBOOGFD.copyFrom(other.nKJBGBOOGFD);
-        fPHFAJBCHPG.copyFrom(other.fPHFAJBCHPG);
-        oAONLAKKNIH.copyFrom(other.oAONLAKKNIH);
-        mANDMJOLPHH.copyFrom(other.mANDMJOLPHH);
-        kEICDBEHMDO.copyFrom(other.kEICDBEHMDO);
-        gHCIOIALPMH.copyFrom(other.gHCIOIALPMH);
+        oDOCFCJMBCL.copyFrom(other.oDOCFCJMBCL);
+        bBFOAJGLLBC.copyFrom(other.bBFOAJGLLBC);
+        kKHFKMIKFIB.copyFrom(other.kKHFKMIKFIB);
+        mKCNEFHHAOG.copyFrom(other.mKCNEFHHAOG);
         ifixUrl.copyFrom(other.ifixUrl);
-        iHGAICFNADN.copyFrom(other.iHGAICFNADN);
-        dEGFPDPOIHI.copyFrom(other.dEGFPDPOIHI);
-        lLBOPDMGMLO.copyFrom(other.lLBOPDMGMLO);
-        bCADOJCHKAE.copyFrom(other.bCADOJCHKAE);
-        mNEMHHBMKEA.copyFrom(other.mNEMHHBMKEA);
-        eNLGGEEKCJH.copyFrom(other.eNLGGEEKCJH);
+        nPPCGBIFDMN.copyFrom(other.nPPCGBIFDMN);
+        nPIGPBEKEKO.copyFrom(other.nPIGPBEKEKO);
+        aIPNJNLHFBP.copyFrom(other.aIPNJNLHFBP);
+        fHALNCIHMGA.copyFrom(other.fHALNCIHMGA);
+        lKDFCHNEFBB.copyFrom(other.lKDFCHNEFBB);
+        msg2.copyFrom(other.msg2);
+        lHGKDGDJIHC.copyFrom(other.lHGKDGDJIHC);
+        oGJIECMHHHG.copyFrom(other.oGJIECMHHHG);
+        pMABNNEDCCG.copyFrom(other.pMABNNEDCCG);
+        nECFMBFGPML.copyFrom(other.nECFMBFGPML);
+        kDBAGALHEDC.copyFrom(other.kDBAGALHEDC);
+        fDGFFCMALPI.copyFrom(other.fDGFFCMALPI);
+        kLIAGHGOFML.copyFrom(other.kLIAGHGOFML);
+        pNALJLBMILJ.copyFrom(other.pNALJLBMILJ);
+        bJOCANIBBKI.copyFrom(other.bJOCANIBBKI);
+        eICAECNMDIB.copyFrom(other.eICAECNMDIB);
+        lLFDDPLHGBM.copyFrom(other.lLFDDPLHGBM);
+        oBOPKJFGDIC.copyFrom(other.oBOPKJFGDIC);
+        mDKDJLNHGKN.copyFrom(other.mDKDJLNHGKN);
+        eLJIMGJLHBC.copyFrom(other.eLJIMGJLHBC);
+        gKPLIAPPLCO.copyFrom(other.gKPLIAPPLCO);
         ipv6.copyFrom(other.ipv6);
-        jCFGJFMGNLF.copyFrom(other.jCFGJFMGNLF);
-        nDAOKPKOLKI.copyFrom(other.nDAOKPKOLKI);
-        mPDCHMICKGP.copyFrom(other.mPDCHMICKGP);
-        oHOGINOGEOG.copyFrom(other.oHOGINOGEOG);
-        pKDDCFGDDDE.copyFrom(other.pKDDCFGDDDE);
-        gMCEHMDOHDL.copyFrom(other.gMCEHMDOHDL);
-        dALBCELEHGM.copyFrom(other.dALBCELEHGM);
-        gBCBIDAHGJC.copyFrom(other.gBCBIDAHGJC);
+        gBONLDEMBEN.copyFrom(other.gBONLDEMBEN);
       }
       return this;
     }
@@ -3722,26 +3825,26 @@ public final class GateserverOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPOHJHDDOECN()) {
-        setPOHJHDDOECN(other.pOHJHDDOECN);
+      if (other.hasMDAHNIKKAHI()) {
+        setMDAHNIKKAHI(other.mDAHNIKKAHI);
       }
-      if (other.hasKICPPAHLGHB()) {
-        setKICPPAHLGHB(other.kICPPAHLGHB);
-      }
-      if (other.hasPort()) {
-        setPort(other.port);
-      }
-      if (other.hasBAGLOFEACNC()) {
-        setBAGLOFEACNC(other.bAGLOFEACNC);
+      if (other.hasGHENHJPJJLK()) {
+        setGHENHJPJJLK(other.gHENHJPJJLK);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasAOMEDACHLJD()) {
-        setAOMEDACHLJD(other.aOMEDACHLJD);
+      if (other.hasIGKDKFJIDPP()) {
+        setIGKDKFJIDPP(other.iGKDKFJIDPP);
       }
-      if (other.hasMDAILCAMOAO()) {
-        setMDAILCAMOAO(other.mDAILCAMOAO);
+      if (other.hasPort()) {
+        setPort(other.port);
+      }
+      if (other.hasHNDPOHGEIPM()) {
+        setHNDPOHGEIPM(other.hNDPOHGEIPM);
+      }
+      if (other.hasCLCFLOAMGBL()) {
+        setCLCFLOAMGBL(other.cLCFLOAMGBL);
       }
       if (other.hasUnk1()) {
         setUnk1(other.unk1);
@@ -3758,146 +3861,149 @@ public final class GateserverOuterClass {
       if (other.hasUnk5()) {
         setUnk5(other.unk5);
       }
-      if (other.hasUnk6()) {
-        setUnk6(other.unk6);
+      if (other.hasCNAKLGMDLPE()) {
+        setCNAKLGMDLPE(other.cNAKLGMDLPE);
       }
-      if (other.hasUnk7()) {
-        setUnk7(other.unk7);
+      if (other.hasAPJECJMGAKC()) {
+        setAPJECJMGAKC(other.aPJECJMGAKC);
       }
-      if (other.hasUnk8()) {
-        setUnk8(other.unk8);
+      if (other.hasJGCIILJEHHE()) {
+        setJGCIILJEHHE(other.jGCIILJEHHE);
       }
-      if (other.hasUnk9()) {
-        setUnk9(other.unk9);
+      if (other.hasFIOHEKDJNCG()) {
+        setFIOHEKDJNCG(other.fIOHEKDJNCG);
       }
-      if (other.hasUnk10()) {
-        setUnk10(other.unk10);
+      if (other.hasMCEIPIBAMDB()) {
+        setMCEIPIBAMDB(other.mCEIPIBAMDB);
       }
-      if (other.hasUnk11()) {
-        setUnk11(other.unk11);
+      if (other.hasEBKBNEKCOHI()) {
+        setEBKBNEKCOHI(other.eBKBNEKCOHI);
       }
-      if (other.hasUnk12()) {
-        setUnk12(other.unk12);
+      if (other.hasLAABLMNKLLD()) {
+        setLAABLMNKLLD(other.lAABLMNKLLD);
       }
-      if (other.hasUnk13()) {
-        setUnk13(other.unk13);
+      if (other.hasOFJAKNEDMDM()) {
+        setOFJAKNEDMDM(other.oFJAKNEDMDM);
       }
-      if (other.hasUnk14()) {
-        setUnk14(other.unk14);
+      if (other.hasNPHDIMJOKNI()) {
+        setNPHDIMJOKNI(other.nPHDIMJOKNI);
       }
-      if (other.hasUnk15()) {
-        setUnk15(other.unk15);
-      }
-      if (other.hasAssetBundleUrl()) {
-        getMutableAssetBundleUrlBytes().copyFrom(other.assetBundleUrl);
-      }
-      if (other.hasIp()) {
-        getMutableIpBytes().copyFrom(other.ip);
-      }
-      if (other.hasRegionName()) {
-        getMutableRegionNameBytes().copyFrom(other.regionName);
-      }
-      if (other.hasFNCHMFHFMID()) {
-        getMutableFNCHMFHFMIDBytes().copyFrom(other.fNCHMFHFMID);
-      }
-      if (other.hasLuaUrl()) {
-        getMutableLuaUrlBytes().copyFrom(other.luaUrl);
-      }
-      if (other.hasMsg()) {
-        getMutableMsgBytes().copyFrom(other.msg);
+      if (other.hasNNGLEBKCMLA()) {
+        setNNGLEBKCMLA(other.nNGLEBKCMLA);
       }
       if (other.hasExResourceUrl()) {
         getMutableExResourceUrlBytes().copyFrom(other.exResourceUrl);
       }
-      if (other.hasPNHBALGFHOH()) {
-        getMutablePNHBALGFHOHBytes().copyFrom(other.pNHBALGFHOH);
+      if (other.hasLuaUrl()) {
+        getMutableLuaUrlBytes().copyFrom(other.luaUrl);
       }
-      if (other.hasNPNBJBCFPNE()) {
-        getMutableNPNBJBCFPNEBytes().copyFrom(other.nPNBJBCFPNE);
+      if (other.hasIp()) {
+        getMutableIpBytes().copyFrom(other.ip);
       }
-      if (other.hasBFIHFKLMMEK()) {
-        getMutableBFIHFKLMMEKBytes().copyFrom(other.bFIHFKLMMEK);
+      if (other.hasMsg()) {
+        getMutableMsgBytes().copyFrom(other.msg);
       }
-      if (other.hasBHDBHBJJPNI()) {
-        getMutableBHDBHBJJPNIBytes().copyFrom(other.bHDBHBJJPNI);
+      if (other.hasAssetBundleUrl()) {
+        getMutableAssetBundleUrlBytes().copyFrom(other.assetBundleUrl);
       }
-      if (other.hasLBPFHPCBCKL()) {
-        getMutableLBPFHPCBCKLBytes().copyFrom(other.lBPFHPCBCKL);
+      if (other.hasRegionName()) {
+        getMutableRegionNameBytes().copyFrom(other.regionName);
       }
-      if (other.hasGBICAMFDFCE()) {
-        getMutableGBICAMFDFCEBytes().copyFrom(other.gBICAMFDFCE);
+      if (other.hasIOKEPIEDBNE()) {
+        getMutableIOKEPIEDBNEBytes().copyFrom(other.iOKEPIEDBNE);
       }
-      if (other.hasMEACAGAFHGA()) {
-        getMutableMEACAGAFHGABytes().copyFrom(other.mEACAGAFHGA);
+      if (other.hasFCMMMPKJJIL()) {
+        getMutableFCMMMPKJJILBytes().copyFrom(other.fCMMMPKJJIL);
       }
-      if (other.hasGDOBHNDOCOJ()) {
-        getMutableGDOBHNDOCOJBytes().copyFrom(other.gDOBHNDOCOJ);
+      if (other.hasIPKLAMMKNNG()) {
+        getMutableIPKLAMMKNNGBytes().copyFrom(other.iPKLAMMKNNG);
       }
-      if (other.hasNKJBGBOOGFD()) {
-        getMutableNKJBGBOOGFDBytes().copyFrom(other.nKJBGBOOGFD);
+      if (other.hasIIJLFILFMDF()) {
+        getMutableIIJLFILFMDFBytes().copyFrom(other.iIJLFILFMDF);
       }
-      if (other.hasFPHFAJBCHPG()) {
-        getMutableFPHFAJBCHPGBytes().copyFrom(other.fPHFAJBCHPG);
+      if (other.hasODOCFCJMBCL()) {
+        getMutableODOCFCJMBCLBytes().copyFrom(other.oDOCFCJMBCL);
       }
-      if (other.hasOAONLAKKNIH()) {
-        getMutableOAONLAKKNIHBytes().copyFrom(other.oAONLAKKNIH);
+      if (other.hasBBFOAJGLLBC()) {
+        getMutableBBFOAJGLLBCBytes().copyFrom(other.bBFOAJGLLBC);
       }
-      if (other.hasMANDMJOLPHH()) {
-        getMutableMANDMJOLPHHBytes().copyFrom(other.mANDMJOLPHH);
+      if (other.hasKKHFKMIKFIB()) {
+        getMutableKKHFKMIKFIBBytes().copyFrom(other.kKHFKMIKFIB);
       }
-      if (other.hasKEICDBEHMDO()) {
-        getMutableKEICDBEHMDOBytes().copyFrom(other.kEICDBEHMDO);
-      }
-      if (other.hasGHCIOIALPMH()) {
-        getMutableGHCIOIALPMHBytes().copyFrom(other.gHCIOIALPMH);
+      if (other.hasMKCNEFHHAOG()) {
+        getMutableMKCNEFHHAOGBytes().copyFrom(other.mKCNEFHHAOG);
       }
       if (other.hasIfixUrl()) {
         getMutableIfixUrlBytes().copyFrom(other.ifixUrl);
       }
-      if (other.hasIHGAICFNADN()) {
-        getMutableIHGAICFNADNBytes().copyFrom(other.iHGAICFNADN);
+      if (other.hasNPPCGBIFDMN()) {
+        getMutableNPPCGBIFDMNBytes().copyFrom(other.nPPCGBIFDMN);
       }
-      if (other.hasDEGFPDPOIHI()) {
-        getMutableDEGFPDPOIHIBytes().copyFrom(other.dEGFPDPOIHI);
+      if (other.hasNPIGPBEKEKO()) {
+        getMutableNPIGPBEKEKOBytes().copyFrom(other.nPIGPBEKEKO);
       }
-      if (other.hasLLBOPDMGMLO()) {
-        getMutableLLBOPDMGMLOBytes().copyFrom(other.lLBOPDMGMLO);
+      if (other.hasAIPNJNLHFBP()) {
+        getMutableAIPNJNLHFBPBytes().copyFrom(other.aIPNJNLHFBP);
       }
-      if (other.hasBCADOJCHKAE()) {
-        getMutableBCADOJCHKAEBytes().copyFrom(other.bCADOJCHKAE);
+      if (other.hasFHALNCIHMGA()) {
+        getMutableFHALNCIHMGABytes().copyFrom(other.fHALNCIHMGA);
       }
-      if (other.hasMNEMHHBMKEA()) {
-        getMutableMNEMHHBMKEABytes().copyFrom(other.mNEMHHBMKEA);
+      if (other.hasLKDFCHNEFBB()) {
+        getMutableLKDFCHNEFBBBytes().copyFrom(other.lKDFCHNEFBB);
       }
-      if (other.hasENLGGEEKCJH()) {
-        getMutableENLGGEEKCJHBytes().copyFrom(other.eNLGGEEKCJH);
+      if (other.hasMsg2()) {
+        getMutableMsg2Bytes().copyFrom(other.msg2);
+      }
+      if (other.hasLHGKDGDJIHC()) {
+        getMutableLHGKDGDJIHCBytes().copyFrom(other.lHGKDGDJIHC);
+      }
+      if (other.hasOGJIECMHHHG()) {
+        getMutableOGJIECMHHHGBytes().copyFrom(other.oGJIECMHHHG);
+      }
+      if (other.hasPMABNNEDCCG()) {
+        getMutablePMABNNEDCCGBytes().copyFrom(other.pMABNNEDCCG);
+      }
+      if (other.hasNECFMBFGPML()) {
+        getMutableNECFMBFGPMLBytes().copyFrom(other.nECFMBFGPML);
+      }
+      if (other.hasKDBAGALHEDC()) {
+        getMutableKDBAGALHEDCBytes().copyFrom(other.kDBAGALHEDC);
+      }
+      if (other.hasFDGFFCMALPI()) {
+        getMutableFDGFFCMALPIBytes().copyFrom(other.fDGFFCMALPI);
+      }
+      if (other.hasKLIAGHGOFML()) {
+        getMutableKLIAGHGOFMLBytes().copyFrom(other.kLIAGHGOFML);
+      }
+      if (other.hasPNALJLBMILJ()) {
+        getMutablePNALJLBMILJBytes().copyFrom(other.pNALJLBMILJ);
+      }
+      if (other.hasBJOCANIBBKI()) {
+        getMutableBJOCANIBBKIBytes().copyFrom(other.bJOCANIBBKI);
+      }
+      if (other.hasEICAECNMDIB()) {
+        getMutableEICAECNMDIBBytes().copyFrom(other.eICAECNMDIB);
+      }
+      if (other.hasLLFDDPLHGBM()) {
+        getMutableLLFDDPLHGBMBytes().copyFrom(other.lLFDDPLHGBM);
+      }
+      if (other.hasOBOPKJFGDIC()) {
+        getMutableOBOPKJFGDICBytes().copyFrom(other.oBOPKJFGDIC);
+      }
+      if (other.hasMDKDJLNHGKN()) {
+        getMutableMDKDJLNHGKNBytes().copyFrom(other.mDKDJLNHGKN);
+      }
+      if (other.hasELJIMGJLHBC()) {
+        getMutableELJIMGJLHBCBytes().copyFrom(other.eLJIMGJLHBC);
+      }
+      if (other.hasGKPLIAPPLCO()) {
+        getMutableGKPLIAPPLCOBytes().copyFrom(other.gKPLIAPPLCO);
       }
       if (other.hasIpv6()) {
         getMutableIpv6Bytes().copyFrom(other.ipv6);
       }
-      if (other.hasJCFGJFMGNLF()) {
-        getMutableJCFGJFMGNLFBytes().copyFrom(other.jCFGJFMGNLF);
-      }
-      if (other.hasNDAOKPKOLKI()) {
-        getMutableNDAOKPKOLKIBytes().copyFrom(other.nDAOKPKOLKI);
-      }
-      if (other.hasMPDCHMICKGP()) {
-        getMutableMPDCHMICKGPBytes().copyFrom(other.mPDCHMICKGP);
-      }
-      if (other.hasOHOGINOGEOG()) {
-        getMutableOHOGINOGEOGBytes().copyFrom(other.oHOGINOGEOG);
-      }
-      if (other.hasPKDDCFGDDDE()) {
-        getMutablePKDDCFGDDDEBytes().copyFrom(other.pKDDCFGDDDE);
-      }
-      if (other.hasGMCEHMDOHDL()) {
-        getMutableGMCEHMDOHDLBytes().copyFrom(other.gMCEHMDOHDL);
-      }
-      if (other.hasDALBCELEHGM()) {
-        getMutableDALBCELEHGMBytes().copyFrom(other.dALBCELEHGM);
-      }
-      if (other.hasGBCBIDAHGJC()) {
-        getMutableGBCBIDAHGJC().addAll(other.gBCBIDAHGJC);
+      if (other.hasGBONLDEMBEN()) {
+        getMutableGBONLDEMBEN().addAll(other.gBONLDEMBEN);
       }
       return this;
     }
@@ -3910,65 +4016,66 @@ public final class GateserverOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       bitField1_ = 0;
-      pOHJHDDOECN = 0L;
-      kICPPAHLGHB = 0L;
-      port = 0;
-      bAGLOFEACNC = 0;
+      mDAHNIKKAHI = 0L;
+      gHENHJPJJLK = 0L;
       retcode = 0;
-      aOMEDACHLJD = 0;
-      mDAILCAMOAO = 0;
+      iGKDKFJIDPP = 0;
+      port = 0;
+      hNDPOHGEIPM = 0;
+      cLCFLOAMGBL = 0;
       unk1 = false;
       unk2 = false;
       unk3 = false;
       unk4 = false;
       unk5 = false;
-      unk6 = false;
-      unk7 = false;
-      unk8 = false;
-      unk9 = false;
-      unk10 = false;
-      unk11 = false;
-      unk12 = false;
-      unk13 = false;
-      unk14 = false;
-      unk15 = false;
-      assetBundleUrl.clear();
-      ip.clear();
-      regionName.clear();
-      fNCHMFHFMID.clear();
-      luaUrl.clear();
-      msg.clear();
+      cNAKLGMDLPE = false;
+      aPJECJMGAKC = false;
+      jGCIILJEHHE = false;
+      fIOHEKDJNCG = false;
+      mCEIPIBAMDB = false;
+      eBKBNEKCOHI = false;
+      lAABLMNKLLD = false;
+      oFJAKNEDMDM = false;
+      nPHDIMJOKNI = false;
+      nNGLEBKCMLA = false;
       exResourceUrl.clear();
-      pNHBALGFHOH.clear();
-      nPNBJBCFPNE.clear();
-      bFIHFKLMMEK.clear();
-      bHDBHBJJPNI.clear();
-      lBPFHPCBCKL.clear();
-      gBICAMFDFCE.clear();
-      mEACAGAFHGA.clear();
-      gDOBHNDOCOJ.clear();
-      nKJBGBOOGFD.clear();
-      fPHFAJBCHPG.clear();
-      oAONLAKKNIH.clear();
-      mANDMJOLPHH.clear();
-      kEICDBEHMDO.clear();
-      gHCIOIALPMH.clear();
+      luaUrl.clear();
+      ip.clear();
+      msg.clear();
+      assetBundleUrl.clear();
+      regionName.clear();
+      iOKEPIEDBNE.clear();
+      fCMMMPKJJIL.clear();
+      iPKLAMMKNNG.clear();
+      iIJLFILFMDF.clear();
+      oDOCFCJMBCL.clear();
+      bBFOAJGLLBC.clear();
+      kKHFKMIKFIB.clear();
+      mKCNEFHHAOG.clear();
       ifixUrl.clear();
-      iHGAICFNADN.clear();
-      dEGFPDPOIHI.clear();
-      lLBOPDMGMLO.clear();
-      bCADOJCHKAE.clear();
-      mNEMHHBMKEA.clear();
-      eNLGGEEKCJH.clear();
+      nPPCGBIFDMN.clear();
+      nPIGPBEKEKO.clear();
+      aIPNJNLHFBP.clear();
+      fHALNCIHMGA.clear();
+      lKDFCHNEFBB.clear();
+      msg2.clear();
+      lHGKDGDJIHC.clear();
+      oGJIECMHHHG.clear();
+      pMABNNEDCCG.clear();
+      nECFMBFGPML.clear();
+      kDBAGALHEDC.clear();
+      fDGFFCMALPI.clear();
+      kLIAGHGOFML.clear();
+      pNALJLBMILJ.clear();
+      bJOCANIBBKI.clear();
+      eICAECNMDIB.clear();
+      lLFDDPLHGBM.clear();
+      oBOPKJFGDIC.clear();
+      mDKDJLNHGKN.clear();
+      eLJIMGJLHBC.clear();
+      gKPLIAPPLCO.clear();
       ipv6.clear();
-      jCFGJFMGNLF.clear();
-      nDAOKPKOLKI.clear();
-      mPDCHMICKGP.clear();
-      oHOGINOGEOG.clear();
-      pKDDCFGDDDE.clear();
-      gMCEHMDOHDL.clear();
-      dALBCELEHGM.clear();
-      gBCBIDAHGJC.clear();
+      gBONLDEMBEN.clear();
       return this;
     }
 
@@ -3980,43 +4087,44 @@ public final class GateserverOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       bitField1_ = 0;
-      assetBundleUrl.clear();
-      ip.clear();
-      regionName.clear();
-      fNCHMFHFMID.clear();
-      luaUrl.clear();
-      msg.clear();
       exResourceUrl.clear();
-      pNHBALGFHOH.clear();
-      nPNBJBCFPNE.clear();
-      bFIHFKLMMEK.clear();
-      bHDBHBJJPNI.clear();
-      lBPFHPCBCKL.clear();
-      gBICAMFDFCE.clear();
-      mEACAGAFHGA.clear();
-      gDOBHNDOCOJ.clear();
-      nKJBGBOOGFD.clear();
-      fPHFAJBCHPG.clear();
-      oAONLAKKNIH.clear();
-      mANDMJOLPHH.clear();
-      kEICDBEHMDO.clear();
-      gHCIOIALPMH.clear();
+      luaUrl.clear();
+      ip.clear();
+      msg.clear();
+      assetBundleUrl.clear();
+      regionName.clear();
+      iOKEPIEDBNE.clear();
+      fCMMMPKJJIL.clear();
+      iPKLAMMKNNG.clear();
+      iIJLFILFMDF.clear();
+      oDOCFCJMBCL.clear();
+      bBFOAJGLLBC.clear();
+      kKHFKMIKFIB.clear();
+      mKCNEFHHAOG.clear();
       ifixUrl.clear();
-      iHGAICFNADN.clear();
-      dEGFPDPOIHI.clear();
-      lLBOPDMGMLO.clear();
-      bCADOJCHKAE.clear();
-      mNEMHHBMKEA.clear();
-      eNLGGEEKCJH.clear();
+      nPPCGBIFDMN.clear();
+      nPIGPBEKEKO.clear();
+      aIPNJNLHFBP.clear();
+      fHALNCIHMGA.clear();
+      lKDFCHNEFBB.clear();
+      msg2.clear();
+      lHGKDGDJIHC.clear();
+      oGJIECMHHHG.clear();
+      pMABNNEDCCG.clear();
+      nECFMBFGPML.clear();
+      kDBAGALHEDC.clear();
+      fDGFFCMALPI.clear();
+      kLIAGHGOFML.clear();
+      pNALJLBMILJ.clear();
+      bJOCANIBBKI.clear();
+      eICAECNMDIB.clear();
+      lLFDDPLHGBM.clear();
+      oBOPKJFGDIC.clear();
+      mDKDJLNHGKN.clear();
+      eLJIMGJLHBC.clear();
+      gKPLIAPPLCO.clear();
       ipv6.clear();
-      jCFGJFMGNLF.clear();
-      nDAOKPKOLKI.clear();
-      mPDCHMICKGP.clear();
-      oHOGINOGEOG.clear();
-      pKDDCFGDDDE.clear();
-      gMCEHMDOHDL.clear();
-      dALBCELEHGM.clear();
-      gBCBIDAHGJC.clear();
+      gBONLDEMBEN.clear();
       return this;
     }
 
@@ -4031,305 +4139,310 @@ public final class GateserverOuterClass {
       Gateserver other = (Gateserver) o;
       return bitField0_ == other.bitField0_
         && bitField1_ == other.bitField1_
-        && (!hasPOHJHDDOECN() || pOHJHDDOECN == other.pOHJHDDOECN)
-        && (!hasKICPPAHLGHB() || kICPPAHLGHB == other.kICPPAHLGHB)
-        && (!hasPort() || port == other.port)
-        && (!hasBAGLOFEACNC() || bAGLOFEACNC == other.bAGLOFEACNC)
+        && (!hasMDAHNIKKAHI() || mDAHNIKKAHI == other.mDAHNIKKAHI)
+        && (!hasGHENHJPJJLK() || gHENHJPJJLK == other.gHENHJPJJLK)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasAOMEDACHLJD() || aOMEDACHLJD == other.aOMEDACHLJD)
-        && (!hasMDAILCAMOAO() || mDAILCAMOAO == other.mDAILCAMOAO)
+        && (!hasIGKDKFJIDPP() || iGKDKFJIDPP == other.iGKDKFJIDPP)
+        && (!hasPort() || port == other.port)
+        && (!hasHNDPOHGEIPM() || hNDPOHGEIPM == other.hNDPOHGEIPM)
+        && (!hasCLCFLOAMGBL() || cLCFLOAMGBL == other.cLCFLOAMGBL)
         && (!hasUnk1() || unk1 == other.unk1)
         && (!hasUnk2() || unk2 == other.unk2)
         && (!hasUnk3() || unk3 == other.unk3)
         && (!hasUnk4() || unk4 == other.unk4)
         && (!hasUnk5() || unk5 == other.unk5)
-        && (!hasUnk6() || unk6 == other.unk6)
-        && (!hasUnk7() || unk7 == other.unk7)
-        && (!hasUnk8() || unk8 == other.unk8)
-        && (!hasUnk9() || unk9 == other.unk9)
-        && (!hasUnk10() || unk10 == other.unk10)
-        && (!hasUnk11() || unk11 == other.unk11)
-        && (!hasUnk12() || unk12 == other.unk12)
-        && (!hasUnk13() || unk13 == other.unk13)
-        && (!hasUnk14() || unk14 == other.unk14)
-        && (!hasUnk15() || unk15 == other.unk15)
-        && (!hasAssetBundleUrl() || assetBundleUrl.equals(other.assetBundleUrl))
-        && (!hasIp() || ip.equals(other.ip))
-        && (!hasRegionName() || regionName.equals(other.regionName))
-        && (!hasFNCHMFHFMID() || fNCHMFHFMID.equals(other.fNCHMFHFMID))
-        && (!hasLuaUrl() || luaUrl.equals(other.luaUrl))
-        && (!hasMsg() || msg.equals(other.msg))
+        && (!hasCNAKLGMDLPE() || cNAKLGMDLPE == other.cNAKLGMDLPE)
+        && (!hasAPJECJMGAKC() || aPJECJMGAKC == other.aPJECJMGAKC)
+        && (!hasJGCIILJEHHE() || jGCIILJEHHE == other.jGCIILJEHHE)
+        && (!hasFIOHEKDJNCG() || fIOHEKDJNCG == other.fIOHEKDJNCG)
+        && (!hasMCEIPIBAMDB() || mCEIPIBAMDB == other.mCEIPIBAMDB)
+        && (!hasEBKBNEKCOHI() || eBKBNEKCOHI == other.eBKBNEKCOHI)
+        && (!hasLAABLMNKLLD() || lAABLMNKLLD == other.lAABLMNKLLD)
+        && (!hasOFJAKNEDMDM() || oFJAKNEDMDM == other.oFJAKNEDMDM)
+        && (!hasNPHDIMJOKNI() || nPHDIMJOKNI == other.nPHDIMJOKNI)
+        && (!hasNNGLEBKCMLA() || nNGLEBKCMLA == other.nNGLEBKCMLA)
         && (!hasExResourceUrl() || exResourceUrl.equals(other.exResourceUrl))
-        && (!hasPNHBALGFHOH() || pNHBALGFHOH.equals(other.pNHBALGFHOH))
-        && (!hasNPNBJBCFPNE() || nPNBJBCFPNE.equals(other.nPNBJBCFPNE))
-        && (!hasBFIHFKLMMEK() || bFIHFKLMMEK.equals(other.bFIHFKLMMEK))
-        && (!hasBHDBHBJJPNI() || bHDBHBJJPNI.equals(other.bHDBHBJJPNI))
-        && (!hasLBPFHPCBCKL() || lBPFHPCBCKL.equals(other.lBPFHPCBCKL))
-        && (!hasGBICAMFDFCE() || gBICAMFDFCE.equals(other.gBICAMFDFCE))
-        && (!hasMEACAGAFHGA() || mEACAGAFHGA.equals(other.mEACAGAFHGA))
-        && (!hasGDOBHNDOCOJ() || gDOBHNDOCOJ.equals(other.gDOBHNDOCOJ))
-        && (!hasNKJBGBOOGFD() || nKJBGBOOGFD.equals(other.nKJBGBOOGFD))
-        && (!hasFPHFAJBCHPG() || fPHFAJBCHPG.equals(other.fPHFAJBCHPG))
-        && (!hasOAONLAKKNIH() || oAONLAKKNIH.equals(other.oAONLAKKNIH))
-        && (!hasMANDMJOLPHH() || mANDMJOLPHH.equals(other.mANDMJOLPHH))
-        && (!hasKEICDBEHMDO() || kEICDBEHMDO.equals(other.kEICDBEHMDO))
-        && (!hasGHCIOIALPMH() || gHCIOIALPMH.equals(other.gHCIOIALPMH))
+        && (!hasLuaUrl() || luaUrl.equals(other.luaUrl))
+        && (!hasIp() || ip.equals(other.ip))
+        && (!hasMsg() || msg.equals(other.msg))
+        && (!hasAssetBundleUrl() || assetBundleUrl.equals(other.assetBundleUrl))
+        && (!hasRegionName() || regionName.equals(other.regionName))
+        && (!hasIOKEPIEDBNE() || iOKEPIEDBNE.equals(other.iOKEPIEDBNE))
+        && (!hasFCMMMPKJJIL() || fCMMMPKJJIL.equals(other.fCMMMPKJJIL))
+        && (!hasIPKLAMMKNNG() || iPKLAMMKNNG.equals(other.iPKLAMMKNNG))
+        && (!hasIIJLFILFMDF() || iIJLFILFMDF.equals(other.iIJLFILFMDF))
+        && (!hasODOCFCJMBCL() || oDOCFCJMBCL.equals(other.oDOCFCJMBCL))
+        && (!hasBBFOAJGLLBC() || bBFOAJGLLBC.equals(other.bBFOAJGLLBC))
+        && (!hasKKHFKMIKFIB() || kKHFKMIKFIB.equals(other.kKHFKMIKFIB))
+        && (!hasMKCNEFHHAOG() || mKCNEFHHAOG.equals(other.mKCNEFHHAOG))
         && (!hasIfixUrl() || ifixUrl.equals(other.ifixUrl))
-        && (!hasIHGAICFNADN() || iHGAICFNADN.equals(other.iHGAICFNADN))
-        && (!hasDEGFPDPOIHI() || dEGFPDPOIHI.equals(other.dEGFPDPOIHI))
-        && (!hasLLBOPDMGMLO() || lLBOPDMGMLO.equals(other.lLBOPDMGMLO))
-        && (!hasBCADOJCHKAE() || bCADOJCHKAE.equals(other.bCADOJCHKAE))
-        && (!hasMNEMHHBMKEA() || mNEMHHBMKEA.equals(other.mNEMHHBMKEA))
-        && (!hasENLGGEEKCJH() || eNLGGEEKCJH.equals(other.eNLGGEEKCJH))
+        && (!hasNPPCGBIFDMN() || nPPCGBIFDMN.equals(other.nPPCGBIFDMN))
+        && (!hasNPIGPBEKEKO() || nPIGPBEKEKO.equals(other.nPIGPBEKEKO))
+        && (!hasAIPNJNLHFBP() || aIPNJNLHFBP.equals(other.aIPNJNLHFBP))
+        && (!hasFHALNCIHMGA() || fHALNCIHMGA.equals(other.fHALNCIHMGA))
+        && (!hasLKDFCHNEFBB() || lKDFCHNEFBB.equals(other.lKDFCHNEFBB))
+        && (!hasMsg2() || msg2.equals(other.msg2))
+        && (!hasLHGKDGDJIHC() || lHGKDGDJIHC.equals(other.lHGKDGDJIHC))
+        && (!hasOGJIECMHHHG() || oGJIECMHHHG.equals(other.oGJIECMHHHG))
+        && (!hasPMABNNEDCCG() || pMABNNEDCCG.equals(other.pMABNNEDCCG))
+        && (!hasNECFMBFGPML() || nECFMBFGPML.equals(other.nECFMBFGPML))
+        && (!hasKDBAGALHEDC() || kDBAGALHEDC.equals(other.kDBAGALHEDC))
+        && (!hasFDGFFCMALPI() || fDGFFCMALPI.equals(other.fDGFFCMALPI))
+        && (!hasKLIAGHGOFML() || kLIAGHGOFML.equals(other.kLIAGHGOFML))
+        && (!hasPNALJLBMILJ() || pNALJLBMILJ.equals(other.pNALJLBMILJ))
+        && (!hasBJOCANIBBKI() || bJOCANIBBKI.equals(other.bJOCANIBBKI))
+        && (!hasEICAECNMDIB() || eICAECNMDIB.equals(other.eICAECNMDIB))
+        && (!hasLLFDDPLHGBM() || lLFDDPLHGBM.equals(other.lLFDDPLHGBM))
+        && (!hasOBOPKJFGDIC() || oBOPKJFGDIC.equals(other.oBOPKJFGDIC))
+        && (!hasMDKDJLNHGKN() || mDKDJLNHGKN.equals(other.mDKDJLNHGKN))
+        && (!hasELJIMGJLHBC() || eLJIMGJLHBC.equals(other.eLJIMGJLHBC))
+        && (!hasGKPLIAPPLCO() || gKPLIAPPLCO.equals(other.gKPLIAPPLCO))
         && (!hasIpv6() || ipv6.equals(other.ipv6))
-        && (!hasJCFGJFMGNLF() || jCFGJFMGNLF.equals(other.jCFGJFMGNLF))
-        && (!hasNDAOKPKOLKI() || nDAOKPKOLKI.equals(other.nDAOKPKOLKI))
-        && (!hasMPDCHMICKGP() || mPDCHMICKGP.equals(other.mPDCHMICKGP))
-        && (!hasOHOGINOGEOG() || oHOGINOGEOG.equals(other.oHOGINOGEOG))
-        && (!hasPKDDCFGDDDE() || pKDDCFGDDDE.equals(other.pKDDCFGDDDE))
-        && (!hasGMCEHMDOHDL() || gMCEHMDOHDL.equals(other.gMCEHMDOHDL))
-        && (!hasDALBCELEHGM() || dALBCELEHGM.equals(other.dALBCELEHGM))
-        && (!hasGBCBIDAHGJC() || gBCBIDAHGJC.equals(other.gBCBIDAHGJC));
+        && (!hasGBONLDEMBEN() || gBONLDEMBEN.equals(other.gBONLDEMBEN));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeInt64NoTag(pOHJHDDOECN);
+        output.writeRawByte((byte) 32);
+        output.writeInt64NoTag(mDAHNIKKAHI);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeInt64NoTag(kICPPAHLGHB);
+        output.writeInt64NoTag(gHENHJPJJLK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(port);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(bAGLOFEACNC);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(iGKDKFJIDPP);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(port);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(aOMEDACHLJD);
+        output.writeUInt32NoTag(hNDPOHGEIPM);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawLittleEndian16((short) 27376);
-        output.writeUInt32NoTag(mDAILCAMOAO);
+        output.writeRawLittleEndian16((short) 19928);
+        output.writeUInt32NoTag(cLCFLOAMGBL);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 48);
         output.writeBoolNoTag(unk1);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 80);
         output.writeBoolNoTag(unk2);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRawLittleEndian16((short) 4808);
+        output.writeRawLittleEndian16((short) 1008);
         output.writeBoolNoTag(unk3);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRawLittleEndian16((short) 6640);
+        output.writeRawLittleEndian16((short) 5296);
         output.writeBoolNoTag(unk4);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeRawLittleEndian16((short) 9608);
+        output.writeRawLittleEndian16((short) 5536);
         output.writeBoolNoTag(unk5);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeRawLittleEndian16((short) 13256);
-        output.writeBoolNoTag(unk6);
+        output.writeRawLittleEndian16((short) 6832);
+        output.writeBoolNoTag(cNAKLGMDLPE);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeRawLittleEndian16((short) 16544);
-        output.writeBoolNoTag(unk7);
+        output.writeRawLittleEndian16((short) 9352);
+        output.writeBoolNoTag(aPJECJMGAKC);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeRawLittleEndian16((short) 18880);
-        output.writeBoolNoTag(unk8);
+        output.writeRawLittleEndian16((short) 10888);
+        output.writeBoolNoTag(jGCIILJEHHE);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        output.writeRawLittleEndian16((short) 23432);
-        output.writeBoolNoTag(unk9);
+        output.writeRawLittleEndian16((short) 13480);
+        output.writeBoolNoTag(fIOHEKDJNCG);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        output.writeRawLittleEndian16((short) 23792);
-        output.writeBoolNoTag(unk10);
+        output.writeRawLittleEndian16((short) 25264);
+        output.writeBoolNoTag(mCEIPIBAMDB);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        output.writeRawLittleEndian16((short) 24472);
-        output.writeBoolNoTag(unk11);
+        output.writeRawLittleEndian16((short) 25272);
+        output.writeBoolNoTag(eBKBNEKCOHI);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeRawLittleEndian16((short) 25072);
-        output.writeBoolNoTag(unk12);
+        output.writeRawLittleEndian16((short) 27320);
+        output.writeBoolNoTag(lAABLMNKLLD);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        output.writeRawLittleEndian16((short) 28112);
-        output.writeBoolNoTag(unk13);
+        output.writeRawLittleEndian16((short) 28592);
+        output.writeBoolNoTag(oFJAKNEDMDM);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeRawLittleEndian16((short) 30680);
-        output.writeBoolNoTag(unk14);
+        output.writeRawLittleEndian16((short) 29904);
+        output.writeBoolNoTag(nPHDIMJOKNI);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeRawLittleEndian16((short) 31360);
-        output.writeBoolNoTag(unk15);
+        output.writeRawLittleEndian16((short) 32400);
+        output.writeBoolNoTag(nNGLEBKCMLA);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeRawByte((byte) 26);
-        output.writeStringNoTag(assetBundleUrl);
+        output.writeRawByte((byte) 10);
+        output.writeStringNoTag(exResourceUrl);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        output.writeRawByte((byte) 34);
-        output.writeStringNoTag(ip);
+        output.writeRawByte((byte) 26);
+        output.writeStringNoTag(luaUrl);
       }
       if ((bitField0_ & 0x01000000) != 0) {
         output.writeRawByte((byte) 42);
-        output.writeStringNoTag(regionName);
+        output.writeStringNoTag(ip);
       }
       if ((bitField0_ & 0x02000000) != 0) {
         output.writeRawByte((byte) 66);
-        output.writeStringNoTag(fNCHMFHFMID);
+        output.writeStringNoTag(msg);
       }
       if ((bitField0_ & 0x04000000) != 0) {
-        output.writeRawByte((byte) 82);
-        output.writeStringNoTag(luaUrl);
+        output.writeRawByte((byte) 74);
+        output.writeStringNoTag(assetBundleUrl);
       }
       if ((bitField0_ & 0x08000000) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeStringNoTag(msg);
+        output.writeRawByte((byte) 98);
+        output.writeStringNoTag(regionName);
       }
       if ((bitField0_ & 0x10000000) != 0) {
         output.writeRawByte((byte) 114);
-        output.writeStringNoTag(exResourceUrl);
+        output.writeStringNoTag(iOKEPIEDBNE);
       }
       if ((bitField0_ & 0x20000000) != 0) {
-        output.writeRawLittleEndian16((short) 1466);
-        output.writeStringNoTag(pNHBALGFHOH);
+        output.writeRawLittleEndian16((short) 418);
+        output.writeStringNoTag(fCMMMPKJJIL);
       }
       if ((bitField0_ & 0x40000000) != 0) {
-        output.writeRawLittleEndian16((short) 2466);
-        output.writeStringNoTag(nPNBJBCFPNE);
+        output.writeRawLittleEndian16((short) 1962);
+        output.writeStringNoTag(iPKLAMMKNNG);
       }
       if ((bitField0_ & 0x80000000) != 0) {
-        output.writeRawLittleEndian16((short) 5058);
-        output.writeStringNoTag(bFIHFKLMMEK);
+        output.writeRawLittleEndian16((short) 2258);
+        output.writeStringNoTag(iIJLFILFMDF);
       }
       if ((bitField1_ & 0x00000001) != 0) {
-        output.writeRawLittleEndian16((short) 6570);
-        output.writeStringNoTag(bHDBHBJJPNI);
+        output.writeRawLittleEndian16((short) 5514);
+        output.writeStringNoTag(oDOCFCJMBCL);
       }
       if ((bitField1_ & 0x00000002) != 0) {
-        output.writeRawLittleEndian16((short) 8322);
-        output.writeStringNoTag(lBPFHPCBCKL);
+        output.writeRawLittleEndian16((short) 5786);
+        output.writeStringNoTag(bBFOAJGLLBC);
       }
       if ((bitField1_ & 0x00000004) != 0) {
-        output.writeRawLittleEndian16((short) 9114);
-        output.writeStringNoTag(gBICAMFDFCE);
+        output.writeRawLittleEndian16((short) 5842);
+        output.writeStringNoTag(kKHFKMIKFIB);
       }
       if ((bitField1_ & 0x00000008) != 0) {
-        output.writeRawLittleEndian16((short) 9178);
-        output.writeStringNoTag(mEACAGAFHGA);
+        output.writeRawLittleEndian16((short) 5866);
+        output.writeStringNoTag(mKCNEFHHAOG);
       }
       if ((bitField1_ & 0x00000010) != 0) {
-        output.writeRawLittleEndian16((short) 9906);
-        output.writeStringNoTag(gDOBHNDOCOJ);
-      }
-      if ((bitField1_ & 0x00000020) != 0) {
-        output.writeRawLittleEndian16((short) 10666);
-        output.writeStringNoTag(nKJBGBOOGFD);
-      }
-      if ((bitField1_ & 0x00000040) != 0) {
-        output.writeRawLittleEndian16((short) 10922);
-        output.writeStringNoTag(fPHFAJBCHPG);
-      }
-      if ((bitField1_ & 0x00000080) != 0) {
-        output.writeRawLittleEndian16((short) 11490);
-        output.writeStringNoTag(oAONLAKKNIH);
-      }
-      if ((bitField1_ & 0x00000100) != 0) {
-        output.writeRawLittleEndian16((short) 14026);
-        output.writeStringNoTag(mANDMJOLPHH);
-      }
-      if ((bitField1_ & 0x00000200) != 0) {
-        output.writeRawLittleEndian16((short) 14746);
-        output.writeStringNoTag(kEICDBEHMDO);
-      }
-      if ((bitField1_ & 0x00000400) != 0) {
-        output.writeRawLittleEndian16((short) 16290);
-        output.writeStringNoTag(gHCIOIALPMH);
-      }
-      if ((bitField1_ & 0x00000800) != 0) {
-        output.writeRawLittleEndian16((short) 17866);
+        output.writeRawLittleEndian16((short) 6034);
         output.writeStringNoTag(ifixUrl);
       }
+      if ((bitField1_ & 0x00000020) != 0) {
+        output.writeRawLittleEndian16((short) 7330);
+        output.writeStringNoTag(nPPCGBIFDMN);
+      }
+      if ((bitField1_ & 0x00000040) != 0) {
+        output.writeRawLittleEndian16((short) 7554);
+        output.writeStringNoTag(nPIGPBEKEKO);
+      }
+      if ((bitField1_ & 0x00000080) != 0) {
+        output.writeRawLittleEndian16((short) 9162);
+        output.writeStringNoTag(aIPNJNLHFBP);
+      }
+      if ((bitField1_ & 0x00000100) != 0) {
+        output.writeRawLittleEndian16((short) 9602);
+        output.writeStringNoTag(fHALNCIHMGA);
+      }
+      if ((bitField1_ & 0x00000200) != 0) {
+        output.writeRawLittleEndian16((short) 9906);
+        output.writeStringNoTag(lKDFCHNEFBB);
+      }
+      if ((bitField1_ & 0x00000400) != 0) {
+        output.writeRawLittleEndian16((short) 10650);
+        output.writeStringNoTag(msg2);
+      }
+      if ((bitField1_ & 0x00000800) != 0) {
+        output.writeRawLittleEndian16((short) 12674);
+        output.writeStringNoTag(lHGKDGDJIHC);
+      }
       if ((bitField1_ & 0x00001000) != 0) {
-        output.writeRawLittleEndian16((short) 18146);
-        output.writeStringNoTag(iHGAICFNADN);
+        output.writeRawLittleEndian16((short) 15506);
+        output.writeStringNoTag(oGJIECMHHHG);
       }
       if ((bitField1_ & 0x00002000) != 0) {
-        output.writeRawLittleEndian16((short) 19138);
-        output.writeStringNoTag(dEGFPDPOIHI);
+        output.writeRawLittleEndian16((short) 16290);
+        output.writeStringNoTag(pMABNNEDCCG);
       }
       if ((bitField1_ & 0x00004000) != 0) {
-        output.writeRawLittleEndian16((short) 19618);
-        output.writeStringNoTag(lLBOPDMGMLO);
+        output.writeRawLittleEndian16((short) 16602);
+        output.writeStringNoTag(nECFMBFGPML);
       }
       if ((bitField1_ & 0x00008000) != 0) {
-        output.writeRawLittleEndian16((short) 19874);
-        output.writeStringNoTag(bCADOJCHKAE);
+        output.writeRawLittleEndian16((short) 18066);
+        output.writeStringNoTag(kDBAGALHEDC);
       }
       if ((bitField1_ & 0x00010000) != 0) {
-        output.writeRawLittleEndian16((short) 21970);
-        output.writeStringNoTag(mNEMHHBMKEA);
+        output.writeRawLittleEndian16((short) 18162);
+        output.writeStringNoTag(fDGFFCMALPI);
       }
       if ((bitField1_ & 0x00020000) != 0) {
-        output.writeRawLittleEndian16((short) 22754);
-        output.writeStringNoTag(eNLGGEEKCJH);
+        output.writeRawLittleEndian16((short) 19946);
+        output.writeStringNoTag(kLIAGHGOFML);
       }
       if ((bitField1_ & 0x00040000) != 0) {
-        output.writeRawLittleEndian16((short) 22962);
-        output.writeStringNoTag(ipv6);
+        output.writeRawLittleEndian16((short) 20954);
+        output.writeStringNoTag(pNALJLBMILJ);
       }
       if ((bitField1_ & 0x00080000) != 0) {
-        output.writeRawLittleEndian16((short) 23474);
-        output.writeStringNoTag(jCFGJFMGNLF);
+        output.writeRawLittleEndian16((short) 21410);
+        output.writeStringNoTag(bJOCANIBBKI);
       }
       if ((bitField1_ & 0x00100000) != 0) {
-        output.writeRawLittleEndian16((short) 25234);
-        output.writeStringNoTag(nDAOKPKOLKI);
+        output.writeRawLittleEndian16((short) 21426);
+        output.writeStringNoTag(eICAECNMDIB);
       }
       if ((bitField1_ & 0x00200000) != 0) {
-        output.writeRawLittleEndian16((short) 25338);
-        output.writeStringNoTag(mPDCHMICKGP);
+        output.writeRawLittleEndian16((short) 21754);
+        output.writeStringNoTag(lLFDDPLHGBM);
       }
       if ((bitField1_ & 0x00400000) != 0) {
-        output.writeRawLittleEndian16((short) 26090);
-        output.writeStringNoTag(oHOGINOGEOG);
+        output.writeRawLittleEndian16((short) 24994);
+        output.writeStringNoTag(oBOPKJFGDIC);
       }
       if ((bitField1_ & 0x00800000) != 0) {
-        output.writeRawLittleEndian16((short) 28082);
-        output.writeStringNoTag(pKDDCFGDDDE);
+        output.writeRawLittleEndian16((short) 26050);
+        output.writeStringNoTag(mDKDJLNHGKN);
       }
       if ((bitField1_ & 0x01000000) != 0) {
-        output.writeRawLittleEndian16((short) 28394);
-        output.writeStringNoTag(gMCEHMDOHDL);
+        output.writeRawLittleEndian16((short) 28570);
+        output.writeStringNoTag(eLJIMGJLHBC);
       }
       if ((bitField1_ & 0x02000000) != 0) {
-        output.writeRawLittleEndian16((short) 29058);
-        output.writeStringNoTag(dALBCELEHGM);
+        output.writeRawLittleEndian16((short) 30378);
+        output.writeStringNoTag(gKPLIAPPLCO);
       }
       if ((bitField1_ & 0x04000000) != 0) {
-        for (int i = 0; i < gBCBIDAHGJC.length(); i++) {
-          output.writeRawLittleEndian16((short) 10682);
-          output.writeStringNoTag(gBCBIDAHGJC.get(i));
+        output.writeRawLittleEndian16((short) 31362);
+        output.writeStringNoTag(ipv6);
+      }
+      if ((bitField1_ & 0x08000000) != 0) {
+        for (int i = 0; i < gBONLDEMBEN.length(); i++) {
+          output.writeRawLittleEndian16((short) 25506);
+          output.writeStringNoTag(gBONLDEMBEN.get(i));
         }
       }
     }
@@ -4338,25 +4451,25 @@ public final class GateserverOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(pOHJHDDOECN);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(mDAHNIKKAHI);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(kICPPAHLGHB);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(gHENHJPJJLK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(port);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bAGLOFEACNC);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(iGKDKFJIDPP);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(port);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(aOMEDACHLJD);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(hNDPOHGEIPM);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(mDAILCAMOAO);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(cLCFLOAMGBL);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         size += 2;
@@ -4404,115 +4517,118 @@ public final class GateserverOuterClass {
         size += 3;
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(assetBundleUrl);
-      }
-      if ((bitField0_ & 0x00800000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(ip);
-      }
-      if ((bitField0_ & 0x01000000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(regionName);
-      }
-      if ((bitField0_ & 0x02000000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(fNCHMFHFMID);
-      }
-      if ((bitField0_ & 0x04000000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(luaUrl);
-      }
-      if ((bitField0_ & 0x08000000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(msg);
-      }
-      if ((bitField0_ & 0x10000000) != 0) {
         size += 1 + ProtoSink.computeStringSizeNoTag(exResourceUrl);
       }
+      if ((bitField0_ & 0x00800000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(luaUrl);
+      }
+      if ((bitField0_ & 0x01000000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(ip);
+      }
+      if ((bitField0_ & 0x02000000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(msg);
+      }
+      if ((bitField0_ & 0x04000000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(assetBundleUrl);
+      }
+      if ((bitField0_ & 0x08000000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(regionName);
+      }
+      if ((bitField0_ & 0x10000000) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(iOKEPIEDBNE);
+      }
       if ((bitField0_ & 0x20000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(pNHBALGFHOH);
+        size += 2 + ProtoSink.computeStringSizeNoTag(fCMMMPKJJIL);
       }
       if ((bitField0_ & 0x40000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(nPNBJBCFPNE);
+        size += 2 + ProtoSink.computeStringSizeNoTag(iPKLAMMKNNG);
       }
       if ((bitField0_ & 0x80000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(bFIHFKLMMEK);
+        size += 2 + ProtoSink.computeStringSizeNoTag(iIJLFILFMDF);
       }
       if ((bitField1_ & 0x00000001) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(bHDBHBJJPNI);
+        size += 2 + ProtoSink.computeStringSizeNoTag(oDOCFCJMBCL);
       }
       if ((bitField1_ & 0x00000002) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(lBPFHPCBCKL);
+        size += 2 + ProtoSink.computeStringSizeNoTag(bBFOAJGLLBC);
       }
       if ((bitField1_ & 0x00000004) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(gBICAMFDFCE);
+        size += 2 + ProtoSink.computeStringSizeNoTag(kKHFKMIKFIB);
       }
       if ((bitField1_ & 0x00000008) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(mEACAGAFHGA);
+        size += 2 + ProtoSink.computeStringSizeNoTag(mKCNEFHHAOG);
       }
       if ((bitField1_ & 0x00000010) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(gDOBHNDOCOJ);
-      }
-      if ((bitField1_ & 0x00000020) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(nKJBGBOOGFD);
-      }
-      if ((bitField1_ & 0x00000040) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(fPHFAJBCHPG);
-      }
-      if ((bitField1_ & 0x00000080) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(oAONLAKKNIH);
-      }
-      if ((bitField1_ & 0x00000100) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(mANDMJOLPHH);
-      }
-      if ((bitField1_ & 0x00000200) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(kEICDBEHMDO);
-      }
-      if ((bitField1_ & 0x00000400) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(gHCIOIALPMH);
-      }
-      if ((bitField1_ & 0x00000800) != 0) {
         size += 2 + ProtoSink.computeStringSizeNoTag(ifixUrl);
       }
+      if ((bitField1_ & 0x00000020) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(nPPCGBIFDMN);
+      }
+      if ((bitField1_ & 0x00000040) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(nPIGPBEKEKO);
+      }
+      if ((bitField1_ & 0x00000080) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(aIPNJNLHFBP);
+      }
+      if ((bitField1_ & 0x00000100) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(fHALNCIHMGA);
+      }
+      if ((bitField1_ & 0x00000200) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(lKDFCHNEFBB);
+      }
+      if ((bitField1_ & 0x00000400) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(msg2);
+      }
+      if ((bitField1_ & 0x00000800) != 0) {
+        size += 2 + ProtoSink.computeStringSizeNoTag(lHGKDGDJIHC);
+      }
       if ((bitField1_ & 0x00001000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(iHGAICFNADN);
+        size += 2 + ProtoSink.computeStringSizeNoTag(oGJIECMHHHG);
       }
       if ((bitField1_ & 0x00002000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(dEGFPDPOIHI);
+        size += 2 + ProtoSink.computeStringSizeNoTag(pMABNNEDCCG);
       }
       if ((bitField1_ & 0x00004000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(lLBOPDMGMLO);
+        size += 2 + ProtoSink.computeStringSizeNoTag(nECFMBFGPML);
       }
       if ((bitField1_ & 0x00008000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(bCADOJCHKAE);
+        size += 2 + ProtoSink.computeStringSizeNoTag(kDBAGALHEDC);
       }
       if ((bitField1_ & 0x00010000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(mNEMHHBMKEA);
+        size += 2 + ProtoSink.computeStringSizeNoTag(fDGFFCMALPI);
       }
       if ((bitField1_ & 0x00020000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(eNLGGEEKCJH);
+        size += 2 + ProtoSink.computeStringSizeNoTag(kLIAGHGOFML);
       }
       if ((bitField1_ & 0x00040000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(ipv6);
+        size += 2 + ProtoSink.computeStringSizeNoTag(pNALJLBMILJ);
       }
       if ((bitField1_ & 0x00080000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(jCFGJFMGNLF);
+        size += 2 + ProtoSink.computeStringSizeNoTag(bJOCANIBBKI);
       }
       if ((bitField1_ & 0x00100000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(nDAOKPKOLKI);
+        size += 2 + ProtoSink.computeStringSizeNoTag(eICAECNMDIB);
       }
       if ((bitField1_ & 0x00200000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(mPDCHMICKGP);
+        size += 2 + ProtoSink.computeStringSizeNoTag(lLFDDPLHGBM);
       }
       if ((bitField1_ & 0x00400000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(oHOGINOGEOG);
+        size += 2 + ProtoSink.computeStringSizeNoTag(oBOPKJFGDIC);
       }
       if ((bitField1_ & 0x00800000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(pKDDCFGDDDE);
+        size += 2 + ProtoSink.computeStringSizeNoTag(mDKDJLNHGKN);
       }
       if ((bitField1_ & 0x01000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(gMCEHMDOHDL);
+        size += 2 + ProtoSink.computeStringSizeNoTag(eLJIMGJLHBC);
       }
       if ((bitField1_ & 0x02000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(dALBCELEHGM);
+        size += 2 + ProtoSink.computeStringSizeNoTag(gKPLIAPPLCO);
       }
       if ((bitField1_ & 0x04000000) != 0) {
-        size += (2 * gBCBIDAHGJC.length()) + ProtoSink.computeRepeatedStringSizeNoTag(gBCBIDAHGJC);
+        size += 2 + ProtoSink.computeStringSizeNoTag(ipv6);
+      }
+      if ((bitField1_ & 0x08000000) != 0) {
+        size += (2 * gBONLDEMBEN.length()) + ProtoSink.computeRepeatedStringSizeNoTag(gBONLDEMBEN);
       }
       return size;
     }
@@ -4524,9 +4640,9 @@ public final class GateserverOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
-            // pOHJHDDOECN
-            pOHJHDDOECN = input.readInt64();
+          case 32: {
+            // mDAHNIKKAHI
+            mDAHNIKKAHI = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 120) {
@@ -4534,8 +4650,8 @@ public final class GateserverOuterClass {
             }
           }
           case 120: {
-            // kICPPAHLGHB
-            kICPPAHLGHB = input.readInt64();
+            // gHENHJPJJLK
+            gHENHJPJJLK = input.readInt64();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 16) {
@@ -4543,26 +4659,26 @@ public final class GateserverOuterClass {
             }
           }
           case 16: {
-            // port
-            port = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
-            // bAGLOFEACNC
-            bAGLOFEACNC = input.readUInt32();
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
             // retcode
             retcode = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // iGKDKFJIDPP
+            iGKDKFJIDPP = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 88) {
+              break;
+            }
+          }
+          case 88: {
+            // port
+            port = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 104) {
@@ -4570,170 +4686,170 @@ public final class GateserverOuterClass {
             }
           }
           case 104: {
-            // aOMEDACHLJD
-            aOMEDACHLJD = input.readUInt32();
+            // hNDPOHGEIPM
+            hNDPOHGEIPM = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 13680) {
+            if (tag != 9944) {
               break;
             }
           }
-          case 13680: {
-            // mDAILCAMOAO
-            mDAILCAMOAO = input.readUInt32();
+          case 9944: {
+            // cLCFLOAMGBL
+            cLCFLOAMGBL = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 48) {
               break;
             }
           }
-          case 8: {
+          case 48: {
             // unk1
             unk1 = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 80) {
               break;
             }
           }
-          case 56: {
+          case 80: {
             // unk2
             unk2 = input.readBool();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
-            if (tag != 2376) {
+            if (tag != 496) {
               break;
             }
           }
-          case 2376: {
+          case 496: {
             // unk3
             unk3 = input.readBool();
             bitField0_ |= 0x00000200;
             tag = input.readTag();
-            if (tag != 3312) {
+            if (tag != 2608) {
               break;
             }
           }
-          case 3312: {
+          case 2608: {
             // unk4
             unk4 = input.readBool();
             bitField0_ |= 0x00000400;
             tag = input.readTag();
-            if (tag != 4744) {
+            if (tag != 2720) {
               break;
             }
           }
-          case 4744: {
+          case 2720: {
             // unk5
             unk5 = input.readBool();
             bitField0_ |= 0x00000800;
             tag = input.readTag();
-            if (tag != 6600) {
+            if (tag != 3376) {
               break;
             }
           }
-          case 6600: {
-            // unk6
-            unk6 = input.readBool();
+          case 3376: {
+            // cNAKLGMDLPE
+            cNAKLGMDLPE = input.readBool();
             bitField0_ |= 0x00001000;
             tag = input.readTag();
-            if (tag != 8224) {
+            if (tag != 4616) {
               break;
             }
           }
-          case 8224: {
-            // unk7
-            unk7 = input.readBool();
+          case 4616: {
+            // aPJECJMGAKC
+            aPJECJMGAKC = input.readBool();
             bitField0_ |= 0x00002000;
             tag = input.readTag();
-            if (tag != 9408) {
+            if (tag != 5384) {
               break;
             }
           }
-          case 9408: {
-            // unk8
-            unk8 = input.readBool();
+          case 5384: {
+            // jGCIILJEHHE
+            jGCIILJEHHE = input.readBool();
             bitField0_ |= 0x00004000;
             tag = input.readTag();
-            if (tag != 11656) {
+            if (tag != 6696) {
               break;
             }
           }
-          case 11656: {
-            // unk9
-            unk9 = input.readBool();
+          case 6696: {
+            // fIOHEKDJNCG
+            fIOHEKDJNCG = input.readBool();
             bitField0_ |= 0x00008000;
             tag = input.readTag();
-            if (tag != 11888) {
+            if (tag != 12592) {
               break;
             }
           }
-          case 11888: {
-            // unk10
-            unk10 = input.readBool();
+          case 12592: {
+            // mCEIPIBAMDB
+            mCEIPIBAMDB = input.readBool();
             bitField0_ |= 0x00010000;
             tag = input.readTag();
-            if (tag != 12184) {
+            if (tag != 12600) {
               break;
             }
           }
-          case 12184: {
-            // unk11
-            unk11 = input.readBool();
+          case 12600: {
+            // eBKBNEKCOHI
+            eBKBNEKCOHI = input.readBool();
             bitField0_ |= 0x00020000;
             tag = input.readTag();
-            if (tag != 12528) {
+            if (tag != 13624) {
               break;
             }
           }
-          case 12528: {
-            // unk12
-            unk12 = input.readBool();
+          case 13624: {
+            // lAABLMNKLLD
+            lAABLMNKLLD = input.readBool();
             bitField0_ |= 0x00040000;
             tag = input.readTag();
-            if (tag != 14032) {
+            if (tag != 14256) {
               break;
             }
           }
-          case 14032: {
-            // unk13
-            unk13 = input.readBool();
+          case 14256: {
+            // oFJAKNEDMDM
+            oFJAKNEDMDM = input.readBool();
             bitField0_ |= 0x00080000;
             tag = input.readTag();
-            if (tag != 15320) {
+            if (tag != 14928) {
               break;
             }
           }
-          case 15320: {
-            // unk14
-            unk14 = input.readBool();
+          case 14928: {
+            // nPHDIMJOKNI
+            nPHDIMJOKNI = input.readBool();
             bitField0_ |= 0x00100000;
             tag = input.readTag();
-            if (tag != 15616) {
+            if (tag != 16144) {
               break;
             }
           }
-          case 15616: {
-            // unk15
-            unk15 = input.readBool();
+          case 16144: {
+            // nNGLEBKCMLA
+            nNGLEBKCMLA = input.readBool();
             bitField0_ |= 0x00200000;
+            tag = input.readTag();
+            if (tag != 10) {
+              break;
+            }
+          }
+          case 10: {
+            // exResourceUrl
+            input.readString(exResourceUrl);
+            bitField0_ |= 0x00400000;
             tag = input.readTag();
             if (tag != 26) {
               break;
             }
           }
           case 26: {
-            // assetBundleUrl
-            input.readString(assetBundleUrl);
-            bitField0_ |= 0x00400000;
-            tag = input.readTag();
-            if (tag != 34) {
-              break;
-            }
-          }
-          case 34: {
-            // ip
-            input.readString(ip);
+            // luaUrl
+            input.readString(luaUrl);
             bitField0_ |= 0x00800000;
             tag = input.readTag();
             if (tag != 42) {
@@ -4741,8 +4857,8 @@ public final class GateserverOuterClass {
             }
           }
           case 42: {
-            // regionName
-            input.readString(regionName);
+            // ip
+            input.readString(ip);
             bitField0_ |= 0x01000000;
             tag = input.readTag();
             if (tag != 66) {
@@ -4750,26 +4866,26 @@ public final class GateserverOuterClass {
             }
           }
           case 66: {
-            // fNCHMFHFMID
-            input.readString(fNCHMFHFMID);
-            bitField0_ |= 0x02000000;
-            tag = input.readTag();
-            if (tag != 82) {
-              break;
-            }
-          }
-          case 82: {
-            // luaUrl
-            input.readString(luaUrl);
-            bitField0_ |= 0x04000000;
-            tag = input.readTag();
-            if (tag != 90) {
-              break;
-            }
-          }
-          case 90: {
             // msg
             input.readString(msg);
+            bitField0_ |= 0x02000000;
+            tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
+            // assetBundleUrl
+            input.readString(assetBundleUrl);
+            bitField0_ |= 0x04000000;
+            tag = input.readTag();
+            if (tag != 98) {
+              break;
+            }
+          }
+          case 98: {
+            // regionName
+            input.readString(regionName);
             bitField0_ |= 0x08000000;
             tag = input.readTag();
             if (tag != 114) {
@@ -4777,279 +4893,288 @@ public final class GateserverOuterClass {
             }
           }
           case 114: {
-            // exResourceUrl
-            input.readString(exResourceUrl);
+            // iOKEPIEDBNE
+            input.readString(iOKEPIEDBNE);
             bitField0_ |= 0x10000000;
             tag = input.readTag();
-            if (tag != 698) {
+            if (tag != 162) {
               break;
             }
           }
-          case 698: {
-            // pNHBALGFHOH
-            input.readString(pNHBALGFHOH);
+          case 162: {
+            // fCMMMPKJJIL
+            input.readString(fCMMMPKJJIL);
             bitField0_ |= 0x20000000;
             tag = input.readTag();
-            if (tag != 1186) {
+            if (tag != 938) {
               break;
             }
           }
-          case 1186: {
-            // nPNBJBCFPNE
-            input.readString(nPNBJBCFPNE);
+          case 938: {
+            // iPKLAMMKNNG
+            input.readString(iPKLAMMKNNG);
             bitField0_ |= 0x40000000;
             tag = input.readTag();
-            if (tag != 2498) {
+            if (tag != 1106) {
               break;
             }
           }
-          case 2498: {
-            // bFIHFKLMMEK
-            input.readString(bFIHFKLMMEK);
+          case 1106: {
+            // iIJLFILFMDF
+            input.readString(iIJLFILFMDF);
             bitField0_ |= 0x80000000;
             tag = input.readTag();
-            if (tag != 3242) {
+            if (tag != 2698) {
               break;
             }
           }
-          case 3242: {
-            // bHDBHBJJPNI
-            input.readString(bHDBHBJJPNI);
+          case 2698: {
+            // oDOCFCJMBCL
+            input.readString(oDOCFCJMBCL);
             bitField1_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 4098) {
+            if (tag != 2842) {
               break;
             }
           }
-          case 4098: {
-            // lBPFHPCBCKL
-            input.readString(lBPFHPCBCKL);
+          case 2842: {
+            // bBFOAJGLLBC
+            input.readString(bBFOAJGLLBC);
             bitField1_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 4506) {
+            if (tag != 2898) {
               break;
             }
           }
-          case 4506: {
-            // gBICAMFDFCE
-            input.readString(gBICAMFDFCE);
+          case 2898: {
+            // kKHFKMIKFIB
+            input.readString(kKHFKMIKFIB);
             bitField1_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 4570) {
+            if (tag != 2922) {
               break;
             }
           }
-          case 4570: {
-            // mEACAGAFHGA
-            input.readString(mEACAGAFHGA);
+          case 2922: {
+            // mKCNEFHHAOG
+            input.readString(mKCNEFHHAOG);
             bitField1_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 2962) {
+              break;
+            }
+          }
+          case 2962: {
+            // ifixUrl
+            input.readString(ifixUrl);
+            bitField1_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 3618) {
+              break;
+            }
+          }
+          case 3618: {
+            // nPPCGBIFDMN
+            input.readString(nPPCGBIFDMN);
+            bitField1_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 3714) {
+              break;
+            }
+          }
+          case 3714: {
+            // nPIGPBEKEKO
+            input.readString(nPIGPBEKEKO);
+            bitField1_ |= 0x00000040;
+            tag = input.readTag();
+            if (tag != 4554) {
+              break;
+            }
+          }
+          case 4554: {
+            // aIPNJNLHFBP
+            input.readString(aIPNJNLHFBP);
+            bitField1_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 4738) {
+              break;
+            }
+          }
+          case 4738: {
+            // fHALNCIHMGA
+            input.readString(fHALNCIHMGA);
+            bitField1_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 4914) {
               break;
             }
           }
           case 4914: {
-            // gDOBHNDOCOJ
-            input.readString(gDOBHNDOCOJ);
-            bitField1_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 5290) {
-              break;
-            }
-          }
-          case 5290: {
-            // nKJBGBOOGFD
-            input.readString(nKJBGBOOGFD);
-            bitField1_ |= 0x00000020;
-            tag = input.readTag();
-            if (tag != 5418) {
-              break;
-            }
-          }
-          case 5418: {
-            // fPHFAJBCHPG
-            input.readString(fPHFAJBCHPG);
-            bitField1_ |= 0x00000040;
-            tag = input.readTag();
-            if (tag != 5730) {
-              break;
-            }
-          }
-          case 5730: {
-            // oAONLAKKNIH
-            input.readString(oAONLAKKNIH);
-            bitField1_ |= 0x00000080;
-            tag = input.readTag();
-            if (tag != 6986) {
-              break;
-            }
-          }
-          case 6986: {
-            // mANDMJOLPHH
-            input.readString(mANDMJOLPHH);
-            bitField1_ |= 0x00000100;
-            tag = input.readTag();
-            if (tag != 7322) {
-              break;
-            }
-          }
-          case 7322: {
-            // kEICDBEHMDO
-            input.readString(kEICDBEHMDO);
+            // lKDFCHNEFBB
+            input.readString(lKDFCHNEFBB);
             bitField1_ |= 0x00000200;
+            tag = input.readTag();
+            if (tag != 5274) {
+              break;
+            }
+          }
+          case 5274: {
+            // msg2
+            input.readString(msg2);
+            bitField1_ |= 0x00000400;
+            tag = input.readTag();
+            if (tag != 6274) {
+              break;
+            }
+          }
+          case 6274: {
+            // lHGKDGDJIHC
+            input.readString(lHGKDGDJIHC);
+            bitField1_ |= 0x00000800;
+            tag = input.readTag();
+            if (tag != 7698) {
+              break;
+            }
+          }
+          case 7698: {
+            // oGJIECMHHHG
+            input.readString(oGJIECMHHHG);
+            bitField1_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 8098) {
               break;
             }
           }
           case 8098: {
-            // gHCIOIALPMH
-            input.readString(gHCIOIALPMH);
-            bitField1_ |= 0x00000400;
-            tag = input.readTag();
-            if (tag != 8906) {
-              break;
-            }
-          }
-          case 8906: {
-            // ifixUrl
-            input.readString(ifixUrl);
-            bitField1_ |= 0x00000800;
-            tag = input.readTag();
-            if (tag != 9058) {
-              break;
-            }
-          }
-          case 9058: {
-            // iHGAICFNADN
-            input.readString(iHGAICFNADN);
-            bitField1_ |= 0x00001000;
-            tag = input.readTag();
-            if (tag != 9538) {
-              break;
-            }
-          }
-          case 9538: {
-            // dEGFPDPOIHI
-            input.readString(dEGFPDPOIHI);
+            // pMABNNEDCCG
+            input.readString(pMABNNEDCCG);
             bitField1_ |= 0x00002000;
             tag = input.readTag();
-            if (tag != 9762) {
+            if (tag != 8282) {
               break;
             }
           }
-          case 9762: {
-            // lLBOPDMGMLO
-            input.readString(lLBOPDMGMLO);
+          case 8282: {
+            // nECFMBFGPML
+            input.readString(nECFMBFGPML);
             bitField1_ |= 0x00004000;
             tag = input.readTag();
-            if (tag != 9890) {
+            if (tag != 8978) {
               break;
             }
           }
-          case 9890: {
-            // bCADOJCHKAE
-            input.readString(bCADOJCHKAE);
+          case 8978: {
+            // kDBAGALHEDC
+            input.readString(kDBAGALHEDC);
             bitField1_ |= 0x00008000;
             tag = input.readTag();
-            if (tag != 10962) {
+            if (tag != 9074) {
               break;
             }
           }
-          case 10962: {
-            // mNEMHHBMKEA
-            input.readString(mNEMHHBMKEA);
+          case 9074: {
+            // fDGFFCMALPI
+            input.readString(fDGFFCMALPI);
             bitField1_ |= 0x00010000;
             tag = input.readTag();
-            if (tag != 11362) {
+            if (tag != 9962) {
               break;
             }
           }
-          case 11362: {
-            // eNLGGEEKCJH
-            input.readString(eNLGGEEKCJH);
+          case 9962: {
+            // kLIAGHGOFML
+            input.readString(kLIAGHGOFML);
             bitField1_ |= 0x00020000;
             tag = input.readTag();
-            if (tag != 11442) {
+            if (tag != 10458) {
               break;
             }
           }
-          case 11442: {
-            // ipv6
-            input.readString(ipv6);
+          case 10458: {
+            // pNALJLBMILJ
+            input.readString(pNALJLBMILJ);
             bitField1_ |= 0x00040000;
             tag = input.readTag();
-            if (tag != 11698) {
+            if (tag != 10658) {
               break;
             }
           }
-          case 11698: {
-            // jCFGJFMGNLF
-            input.readString(jCFGJFMGNLF);
+          case 10658: {
+            // bJOCANIBBKI
+            input.readString(bJOCANIBBKI);
             bitField1_ |= 0x00080000;
             tag = input.readTag();
-            if (tag != 12562) {
+            if (tag != 10674) {
               break;
             }
           }
-          case 12562: {
-            // nDAOKPKOLKI
-            input.readString(nDAOKPKOLKI);
+          case 10674: {
+            // eICAECNMDIB
+            input.readString(eICAECNMDIB);
             bitField1_ |= 0x00100000;
             tag = input.readTag();
-            if (tag != 12666) {
+            if (tag != 10874) {
               break;
             }
           }
-          case 12666: {
-            // mPDCHMICKGP
-            input.readString(mPDCHMICKGP);
+          case 10874: {
+            // lLFDDPLHGBM
+            input.readString(lLFDDPLHGBM);
             bitField1_ |= 0x00200000;
             tag = input.readTag();
-            if (tag != 13034) {
+            if (tag != 12450) {
               break;
             }
           }
-          case 13034: {
-            // oHOGINOGEOG
-            input.readString(oHOGINOGEOG);
+          case 12450: {
+            // oBOPKJFGDIC
+            input.readString(oBOPKJFGDIC);
             bitField1_ |= 0x00400000;
             tag = input.readTag();
-            if (tag != 14002) {
+            if (tag != 12994) {
               break;
             }
           }
-          case 14002: {
-            // pKDDCFGDDDE
-            input.readString(pKDDCFGDDDE);
+          case 12994: {
+            // mDKDJLNHGKN
+            input.readString(mDKDJLNHGKN);
             bitField1_ |= 0x00800000;
             tag = input.readTag();
-            if (tag != 14186) {
+            if (tag != 14234) {
               break;
             }
           }
-          case 14186: {
-            // gMCEHMDOHDL
-            input.readString(gMCEHMDOHDL);
+          case 14234: {
+            // eLJIMGJLHBC
+            input.readString(eLJIMGJLHBC);
             bitField1_ |= 0x01000000;
             tag = input.readTag();
-            if (tag != 14466) {
+            if (tag != 15146) {
               break;
             }
           }
-          case 14466: {
-            // dALBCELEHGM
-            input.readString(dALBCELEHGM);
+          case 15146: {
+            // gKPLIAPPLCO
+            input.readString(gKPLIAPPLCO);
             bitField1_ |= 0x02000000;
             tag = input.readTag();
-            if (tag != 5306) {
+            if (tag != 15618) {
               break;
             }
           }
-          case 5306: {
-            // gBCBIDAHGJC
-            tag = input.readRepeatedString(gBCBIDAHGJC, tag);
+          case 15618: {
+            // ipv6
+            input.readString(ipv6);
             bitField1_ |= 0x04000000;
+            tag = input.readTag();
+            if (tag != 12706) {
+              break;
+            }
+          }
+          case 12706: {
+            // gBONLDEMBEN
+            tag = input.readRepeatedString(gBONLDEMBEN, tag);
+            bitField1_ |= 0x08000000;
             if (tag != 0) {
               break;
             }
@@ -5072,25 +5197,25 @@ public final class GateserverOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeInt64(FieldNames.pOHJHDDOECN, pOHJHDDOECN);
+        output.writeInt64(FieldNames.mDAHNIKKAHI, mDAHNIKKAHI);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeInt64(FieldNames.kICPPAHLGHB, kICPPAHLGHB);
+        output.writeInt64(FieldNames.gHENHJPJJLK, gHENHJPJJLK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.port, port);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.bAGLOFEACNC, bAGLOFEACNC);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.iGKDKFJIDPP, iGKDKFJIDPP);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.port, port);
+      }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.aOMEDACHLJD, aOMEDACHLJD);
+        output.writeUInt32(FieldNames.hNDPOHGEIPM, hNDPOHGEIPM);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.mDAILCAMOAO, mDAILCAMOAO);
+        output.writeUInt32(FieldNames.cLCFLOAMGBL, cLCFLOAMGBL);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeBool(FieldNames.unk1, unk1);
@@ -5108,145 +5233,148 @@ public final class GateserverOuterClass {
         output.writeBool(FieldNames.unk5, unk5);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeBool(FieldNames.unk6, unk6);
+        output.writeBool(FieldNames.cNAKLGMDLPE, cNAKLGMDLPE);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeBool(FieldNames.unk7, unk7);
+        output.writeBool(FieldNames.aPJECJMGAKC, aPJECJMGAKC);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeBool(FieldNames.unk8, unk8);
+        output.writeBool(FieldNames.jGCIILJEHHE, jGCIILJEHHE);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        output.writeBool(FieldNames.unk9, unk9);
+        output.writeBool(FieldNames.fIOHEKDJNCG, fIOHEKDJNCG);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        output.writeBool(FieldNames.unk10, unk10);
+        output.writeBool(FieldNames.mCEIPIBAMDB, mCEIPIBAMDB);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        output.writeBool(FieldNames.unk11, unk11);
+        output.writeBool(FieldNames.eBKBNEKCOHI, eBKBNEKCOHI);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeBool(FieldNames.unk12, unk12);
+        output.writeBool(FieldNames.lAABLMNKLLD, lAABLMNKLLD);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        output.writeBool(FieldNames.unk13, unk13);
+        output.writeBool(FieldNames.oFJAKNEDMDM, oFJAKNEDMDM);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeBool(FieldNames.unk14, unk14);
+        output.writeBool(FieldNames.nPHDIMJOKNI, nPHDIMJOKNI);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeBool(FieldNames.unk15, unk15);
+        output.writeBool(FieldNames.nNGLEBKCMLA, nNGLEBKCMLA);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeString(FieldNames.assetBundleUrl, assetBundleUrl);
-      }
-      if ((bitField0_ & 0x00800000) != 0) {
-        output.writeString(FieldNames.ip, ip);
-      }
-      if ((bitField0_ & 0x01000000) != 0) {
-        output.writeString(FieldNames.regionName, regionName);
-      }
-      if ((bitField0_ & 0x02000000) != 0) {
-        output.writeString(FieldNames.fNCHMFHFMID, fNCHMFHFMID);
-      }
-      if ((bitField0_ & 0x04000000) != 0) {
-        output.writeString(FieldNames.luaUrl, luaUrl);
-      }
-      if ((bitField0_ & 0x08000000) != 0) {
-        output.writeString(FieldNames.msg, msg);
-      }
-      if ((bitField0_ & 0x10000000) != 0) {
         output.writeString(FieldNames.exResourceUrl, exResourceUrl);
       }
+      if ((bitField0_ & 0x00800000) != 0) {
+        output.writeString(FieldNames.luaUrl, luaUrl);
+      }
+      if ((bitField0_ & 0x01000000) != 0) {
+        output.writeString(FieldNames.ip, ip);
+      }
+      if ((bitField0_ & 0x02000000) != 0) {
+        output.writeString(FieldNames.msg, msg);
+      }
+      if ((bitField0_ & 0x04000000) != 0) {
+        output.writeString(FieldNames.assetBundleUrl, assetBundleUrl);
+      }
+      if ((bitField0_ & 0x08000000) != 0) {
+        output.writeString(FieldNames.regionName, regionName);
+      }
+      if ((bitField0_ & 0x10000000) != 0) {
+        output.writeString(FieldNames.iOKEPIEDBNE, iOKEPIEDBNE);
+      }
       if ((bitField0_ & 0x20000000) != 0) {
-        output.writeString(FieldNames.pNHBALGFHOH, pNHBALGFHOH);
+        output.writeString(FieldNames.fCMMMPKJJIL, fCMMMPKJJIL);
       }
       if ((bitField0_ & 0x40000000) != 0) {
-        output.writeString(FieldNames.nPNBJBCFPNE, nPNBJBCFPNE);
+        output.writeString(FieldNames.iPKLAMMKNNG, iPKLAMMKNNG);
       }
       if ((bitField0_ & 0x80000000) != 0) {
-        output.writeString(FieldNames.bFIHFKLMMEK, bFIHFKLMMEK);
+        output.writeString(FieldNames.iIJLFILFMDF, iIJLFILFMDF);
       }
       if ((bitField1_ & 0x00000001) != 0) {
-        output.writeString(FieldNames.bHDBHBJJPNI, bHDBHBJJPNI);
+        output.writeString(FieldNames.oDOCFCJMBCL, oDOCFCJMBCL);
       }
       if ((bitField1_ & 0x00000002) != 0) {
-        output.writeString(FieldNames.lBPFHPCBCKL, lBPFHPCBCKL);
+        output.writeString(FieldNames.bBFOAJGLLBC, bBFOAJGLLBC);
       }
       if ((bitField1_ & 0x00000004) != 0) {
-        output.writeString(FieldNames.gBICAMFDFCE, gBICAMFDFCE);
+        output.writeString(FieldNames.kKHFKMIKFIB, kKHFKMIKFIB);
       }
       if ((bitField1_ & 0x00000008) != 0) {
-        output.writeString(FieldNames.mEACAGAFHGA, mEACAGAFHGA);
+        output.writeString(FieldNames.mKCNEFHHAOG, mKCNEFHHAOG);
       }
       if ((bitField1_ & 0x00000010) != 0) {
-        output.writeString(FieldNames.gDOBHNDOCOJ, gDOBHNDOCOJ);
-      }
-      if ((bitField1_ & 0x00000020) != 0) {
-        output.writeString(FieldNames.nKJBGBOOGFD, nKJBGBOOGFD);
-      }
-      if ((bitField1_ & 0x00000040) != 0) {
-        output.writeString(FieldNames.fPHFAJBCHPG, fPHFAJBCHPG);
-      }
-      if ((bitField1_ & 0x00000080) != 0) {
-        output.writeString(FieldNames.oAONLAKKNIH, oAONLAKKNIH);
-      }
-      if ((bitField1_ & 0x00000100) != 0) {
-        output.writeString(FieldNames.mANDMJOLPHH, mANDMJOLPHH);
-      }
-      if ((bitField1_ & 0x00000200) != 0) {
-        output.writeString(FieldNames.kEICDBEHMDO, kEICDBEHMDO);
-      }
-      if ((bitField1_ & 0x00000400) != 0) {
-        output.writeString(FieldNames.gHCIOIALPMH, gHCIOIALPMH);
-      }
-      if ((bitField1_ & 0x00000800) != 0) {
         output.writeString(FieldNames.ifixUrl, ifixUrl);
       }
+      if ((bitField1_ & 0x00000020) != 0) {
+        output.writeString(FieldNames.nPPCGBIFDMN, nPPCGBIFDMN);
+      }
+      if ((bitField1_ & 0x00000040) != 0) {
+        output.writeString(FieldNames.nPIGPBEKEKO, nPIGPBEKEKO);
+      }
+      if ((bitField1_ & 0x00000080) != 0) {
+        output.writeString(FieldNames.aIPNJNLHFBP, aIPNJNLHFBP);
+      }
+      if ((bitField1_ & 0x00000100) != 0) {
+        output.writeString(FieldNames.fHALNCIHMGA, fHALNCIHMGA);
+      }
+      if ((bitField1_ & 0x00000200) != 0) {
+        output.writeString(FieldNames.lKDFCHNEFBB, lKDFCHNEFBB);
+      }
+      if ((bitField1_ & 0x00000400) != 0) {
+        output.writeString(FieldNames.msg2, msg2);
+      }
+      if ((bitField1_ & 0x00000800) != 0) {
+        output.writeString(FieldNames.lHGKDGDJIHC, lHGKDGDJIHC);
+      }
       if ((bitField1_ & 0x00001000) != 0) {
-        output.writeString(FieldNames.iHGAICFNADN, iHGAICFNADN);
+        output.writeString(FieldNames.oGJIECMHHHG, oGJIECMHHHG);
       }
       if ((bitField1_ & 0x00002000) != 0) {
-        output.writeString(FieldNames.dEGFPDPOIHI, dEGFPDPOIHI);
+        output.writeString(FieldNames.pMABNNEDCCG, pMABNNEDCCG);
       }
       if ((bitField1_ & 0x00004000) != 0) {
-        output.writeString(FieldNames.lLBOPDMGMLO, lLBOPDMGMLO);
+        output.writeString(FieldNames.nECFMBFGPML, nECFMBFGPML);
       }
       if ((bitField1_ & 0x00008000) != 0) {
-        output.writeString(FieldNames.bCADOJCHKAE, bCADOJCHKAE);
+        output.writeString(FieldNames.kDBAGALHEDC, kDBAGALHEDC);
       }
       if ((bitField1_ & 0x00010000) != 0) {
-        output.writeString(FieldNames.mNEMHHBMKEA, mNEMHHBMKEA);
+        output.writeString(FieldNames.fDGFFCMALPI, fDGFFCMALPI);
       }
       if ((bitField1_ & 0x00020000) != 0) {
-        output.writeString(FieldNames.eNLGGEEKCJH, eNLGGEEKCJH);
+        output.writeString(FieldNames.kLIAGHGOFML, kLIAGHGOFML);
       }
       if ((bitField1_ & 0x00040000) != 0) {
-        output.writeString(FieldNames.ipv6, ipv6);
+        output.writeString(FieldNames.pNALJLBMILJ, pNALJLBMILJ);
       }
       if ((bitField1_ & 0x00080000) != 0) {
-        output.writeString(FieldNames.jCFGJFMGNLF, jCFGJFMGNLF);
+        output.writeString(FieldNames.bJOCANIBBKI, bJOCANIBBKI);
       }
       if ((bitField1_ & 0x00100000) != 0) {
-        output.writeString(FieldNames.nDAOKPKOLKI, nDAOKPKOLKI);
+        output.writeString(FieldNames.eICAECNMDIB, eICAECNMDIB);
       }
       if ((bitField1_ & 0x00200000) != 0) {
-        output.writeString(FieldNames.mPDCHMICKGP, mPDCHMICKGP);
+        output.writeString(FieldNames.lLFDDPLHGBM, lLFDDPLHGBM);
       }
       if ((bitField1_ & 0x00400000) != 0) {
-        output.writeString(FieldNames.oHOGINOGEOG, oHOGINOGEOG);
+        output.writeString(FieldNames.oBOPKJFGDIC, oBOPKJFGDIC);
       }
       if ((bitField1_ & 0x00800000) != 0) {
-        output.writeString(FieldNames.pKDDCFGDDDE, pKDDCFGDDDE);
+        output.writeString(FieldNames.mDKDJLNHGKN, mDKDJLNHGKN);
       }
       if ((bitField1_ & 0x01000000) != 0) {
-        output.writeString(FieldNames.gMCEHMDOHDL, gMCEHMDOHDL);
+        output.writeString(FieldNames.eLJIMGJLHBC, eLJIMGJLHBC);
       }
       if ((bitField1_ & 0x02000000) != 0) {
-        output.writeString(FieldNames.dALBCELEHGM, dALBCELEHGM);
+        output.writeString(FieldNames.gKPLIAPPLCO, gKPLIAPPLCO);
       }
       if ((bitField1_ & 0x04000000) != 0) {
-        output.writeRepeatedString(FieldNames.gBCBIDAHGJC, gBCBIDAHGJC);
+        output.writeString(FieldNames.ipv6, ipv6);
+      }
+      if ((bitField1_ & 0x08000000) != 0) {
+        output.writeRepeatedString(FieldNames.gBONLDEMBEN, gBONLDEMBEN);
       }
       output.endObject();
     }
@@ -5258,10 +5386,10 @@ public final class GateserverOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -47882968: {
-            if (input.isAtField(FieldNames.pOHJHDDOECN)) {
+          case 670853385: {
+            if (input.isAtField(FieldNames.mDAHNIKKAHI)) {
               if (!input.trySkipNullValue()) {
-                pOHJHDDOECN = input.readInt64();
+                mDAHNIKKAHI = input.readInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -5269,33 +5397,11 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -2026867711: {
-            if (input.isAtField(FieldNames.kICPPAHLGHB)) {
+          case 11820739: {
+            if (input.isAtField(FieldNames.gHENHJPJJLK)) {
               if (!input.trySkipNullValue()) {
-                kICPPAHLGHB = input.readInt64();
+                gHENHJPJJLK = input.readInt64();
                 bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3446913: {
-            if (input.isAtField(FieldNames.port)) {
-              if (!input.trySkipNullValue()) {
-                port = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 769283521: {
-            if (input.isAtField(FieldNames.bAGLOFEACNC)) {
-              if (!input.trySkipNullValue()) {
-                bAGLOFEACNC = input.readUInt32();
-                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -5306,6 +5412,28 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 948790355: {
+            if (input.isAtField(FieldNames.iGKDKFJIDPP)) {
+              if (!input.trySkipNullValue()) {
+                iGKDKFJIDPP = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 3446913: {
+            if (input.isAtField(FieldNames.port)) {
+              if (!input.trySkipNullValue()) {
+                port = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -5313,10 +5441,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1223068830: {
-            if (input.isAtField(FieldNames.aOMEDACHLJD)) {
+          case -114265123: {
+            if (input.isAtField(FieldNames.hNDPOHGEIPM)) {
               if (!input.trySkipNullValue()) {
-                aOMEDACHLJD = input.readUInt32();
+                hNDPOHGEIPM = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -5324,10 +5452,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 457719067: {
-            if (input.isAtField(FieldNames.mDAILCAMOAO)) {
+          case -234607754: {
+            if (input.isAtField(FieldNames.cLCFLOAMGBL)) {
               if (!input.trySkipNullValue()) {
-                mDAILCAMOAO = input.readUInt32();
+                cLCFLOAMGBL = input.readUInt32();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -5390,10 +5518,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 3594628: {
-            if (input.isAtField(FieldNames.unk6)) {
+          case -1401789894: {
+            if (input.isAtField(FieldNames.cNAKLGMDLPE)) {
               if (!input.trySkipNullValue()) {
-                unk6 = input.readBool();
+                cNAKLGMDLPE = input.readBool();
                 bitField0_ |= 0x00001000;
               }
             } else {
@@ -5401,10 +5529,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 3594629: {
-            if (input.isAtField(FieldNames.unk7)) {
+          case 1533304974: {
+            if (input.isAtField(FieldNames.aPJECJMGAKC)) {
               if (!input.trySkipNullValue()) {
-                unk7 = input.readBool();
+                aPJECJMGAKC = input.readBool();
                 bitField0_ |= 0x00002000;
               }
             } else {
@@ -5412,10 +5540,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 3594630: {
-            if (input.isAtField(FieldNames.unk8)) {
+          case -752658140: {
+            if (input.isAtField(FieldNames.jGCIILJEHHE)) {
               if (!input.trySkipNullValue()) {
-                unk8 = input.readBool();
+                jGCIILJEHHE = input.readBool();
                 bitField0_ |= 0x00004000;
               }
             } else {
@@ -5423,10 +5551,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 3594631: {
-            if (input.isAtField(FieldNames.unk9)) {
+          case 500662442: {
+            if (input.isAtField(FieldNames.fIOHEKDJNCG)) {
               if (!input.trySkipNullValue()) {
-                unk9 = input.readBool();
+                fIOHEKDJNCG = input.readBool();
                 bitField0_ |= 0x00008000;
               }
             } else {
@@ -5434,10 +5562,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433361: {
-            if (input.isAtField(FieldNames.unk10)) {
+          case 1441735833: {
+            if (input.isAtField(FieldNames.mCEIPIBAMDB)) {
               if (!input.trySkipNullValue()) {
-                unk10 = input.readBool();
+                mCEIPIBAMDB = input.readBool();
                 bitField0_ |= 0x00010000;
               }
             } else {
@@ -5445,10 +5573,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433362: {
-            if (input.isAtField(FieldNames.unk11)) {
+          case -321754963: {
+            if (input.isAtField(FieldNames.eBKBNEKCOHI)) {
               if (!input.trySkipNullValue()) {
-                unk11 = input.readBool();
+                eBKBNEKCOHI = input.readBool();
                 bitField0_ |= 0x00020000;
               }
             } else {
@@ -5456,10 +5584,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433363: {
-            if (input.isAtField(FieldNames.unk12)) {
+          case -467291664: {
+            if (input.isAtField(FieldNames.lAABLMNKLLD)) {
               if (!input.trySkipNullValue()) {
-                unk12 = input.readBool();
+                lAABLMNKLLD = input.readBool();
                 bitField0_ |= 0x00040000;
               }
             } else {
@@ -5467,10 +5595,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433364: {
-            if (input.isAtField(FieldNames.unk13)) {
+          case 51795974: {
+            if (input.isAtField(FieldNames.oFJAKNEDMDM)) {
               if (!input.trySkipNullValue()) {
-                unk13 = input.readBool();
+                oFJAKNEDMDM = input.readBool();
                 bitField0_ |= 0x00080000;
               }
             } else {
@@ -5478,10 +5606,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433365: {
-            if (input.isAtField(FieldNames.unk14)) {
+          case -1661675201: {
+            if (input.isAtField(FieldNames.nPHDIMJOKNI)) {
               if (!input.trySkipNullValue()) {
-                unk14 = input.readBool();
+                nPHDIMJOKNI = input.readBool();
                 bitField0_ |= 0x00100000;
               }
             } else {
@@ -5489,80 +5617,11 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 111433366: {
-            if (input.isAtField(FieldNames.unk15)) {
+          case 2026986856: {
+            if (input.isAtField(FieldNames.nNGLEBKCMLA)) {
               if (!input.trySkipNullValue()) {
-                unk15 = input.readBool();
+                nNGLEBKCMLA = input.readBool();
                 bitField0_ |= 0x00200000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1116358531:
-          case 1973569761: {
-            if (input.isAtField(FieldNames.assetBundleUrl)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(assetBundleUrl);
-                bitField0_ |= 0x00400000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3367: {
-            if (input.isAtField(FieldNames.ip)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(ip);
-                bitField0_ |= 0x00800000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1990689889:
-          case -1565768458: {
-            if (input.isAtField(FieldNames.regionName)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(regionName);
-                bitField0_ |= 0x01000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1896764764: {
-            if (input.isAtField(FieldNames.fNCHMFHFMID)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(fNCHMFHFMID);
-                bitField0_ |= 0x02000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1091991977:
-          case 508288168: {
-            if (input.isAtField(FieldNames.luaUrl)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(luaUrl);
-                bitField0_ |= 0x04000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 108417: {
-            if (input.isAtField(FieldNames.msg)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(msg);
-                bitField0_ |= 0x08000000;
               }
             } else {
               input.skipUnknownField();
@@ -5574,6 +5633,75 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.exResourceUrl)) {
               if (!input.trySkipNullValue()) {
                 input.readString(exResourceUrl);
+                bitField0_ |= 0x00400000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1091991977:
+          case 508288168: {
+            if (input.isAtField(FieldNames.luaUrl)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(luaUrl);
+                bitField0_ |= 0x00800000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 3367: {
+            if (input.isAtField(FieldNames.ip)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(ip);
+                bitField0_ |= 0x01000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 108417: {
+            if (input.isAtField(FieldNames.msg)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(msg);
+                bitField0_ |= 0x02000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1116358531:
+          case 1973569761: {
+            if (input.isAtField(FieldNames.assetBundleUrl)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(assetBundleUrl);
+                bitField0_ |= 0x04000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1990689889:
+          case -1565768458: {
+            if (input.isAtField(FieldNames.regionName)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(regionName);
+                bitField0_ |= 0x08000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1343162657: {
+            if (input.isAtField(FieldNames.iOKEPIEDBNE)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(iOKEPIEDBNE);
                 bitField0_ |= 0x10000000;
               }
             } else {
@@ -5581,10 +5709,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1699997471: {
-            if (input.isAtField(FieldNames.pNHBALGFHOH)) {
+          case -216496210: {
+            if (input.isAtField(FieldNames.fCMMMPKJJIL)) {
               if (!input.trySkipNullValue()) {
-                input.readString(pNHBALGFHOH);
+                input.readString(fCMMMPKJJIL);
                 bitField0_ |= 0x20000000;
               }
             } else {
@@ -5592,10 +5720,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1753701590: {
-            if (input.isAtField(FieldNames.nPNBJBCFPNE)) {
+          case 155891125: {
+            if (input.isAtField(FieldNames.iPKLAMMKNNG)) {
               if (!input.trySkipNullValue()) {
-                input.readString(nPNBJBCFPNE);
+                input.readString(iPKLAMMKNNG);
                 bitField0_ |= 0x40000000;
               }
             } else {
@@ -5603,10 +5731,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -1457120982: {
-            if (input.isAtField(FieldNames.bFIHFKLMMEK)) {
+          case -929066416: {
+            if (input.isAtField(FieldNames.iIJLFILFMDF)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bFIHFKLMMEK);
+                input.readString(iIJLFILFMDF);
                 bitField0_ |= 0x80000000;
               }
             } else {
@@ -5614,10 +5742,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -1754325939: {
-            if (input.isAtField(FieldNames.bHDBHBJJPNI)) {
+          case -1264458014: {
+            if (input.isAtField(FieldNames.oDOCFCJMBCL)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bHDBHBJJPNI);
+                input.readString(oDOCFCJMBCL);
                 bitField1_ |= 0x00000001;
               }
             } else {
@@ -5625,10 +5753,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1490860209: {
-            if (input.isAtField(FieldNames.lBPFHPCBCKL)) {
+          case -404729130: {
+            if (input.isAtField(FieldNames.bBFOAJGLLBC)) {
               if (!input.trySkipNullValue()) {
-                input.readString(lBPFHPCBCKL);
+                input.readString(bBFOAJGLLBC);
                 bitField1_ |= 0x00000002;
               }
             } else {
@@ -5636,10 +5764,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -1281115095: {
-            if (input.isAtField(FieldNames.gBICAMFDFCE)) {
+          case 1381392189: {
+            if (input.isAtField(FieldNames.kKHFKMIKFIB)) {
               if (!input.trySkipNullValue()) {
-                input.readString(gBICAMFDFCE);
+                input.readString(kKHFKMIKFIB);
                 bitField1_ |= 0x00000004;
               }
             } else {
@@ -5647,88 +5775,11 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1630941053: {
-            if (input.isAtField(FieldNames.mEACAGAFHGA)) {
+          case -1939068369: {
+            if (input.isAtField(FieldNames.mKCNEFHHAOG)) {
               if (!input.trySkipNullValue()) {
-                input.readString(mEACAGAFHGA);
+                input.readString(mKCNEFHHAOG);
                 bitField1_ |= 0x00000008;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 567888445: {
-            if (input.isAtField(FieldNames.gDOBHNDOCOJ)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(gDOBHNDOCOJ);
-                bitField1_ |= 0x00000010;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1275017195: {
-            if (input.isAtField(FieldNames.nKJBGBOOGFD)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(nKJBGBOOGFD);
-                bitField1_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 415956365: {
-            if (input.isAtField(FieldNames.fPHFAJBCHPG)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(fPHFAJBCHPG);
-                bitField1_ |= 0x00000040;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -2005168153: {
-            if (input.isAtField(FieldNames.oAONLAKKNIH)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(oAONLAKKNIH);
-                bitField1_ |= 0x00000080;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1879372: {
-            if (input.isAtField(FieldNames.mANDMJOLPHH)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(mANDMJOLPHH);
-                bitField1_ |= 0x00000100;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1878266339: {
-            if (input.isAtField(FieldNames.kEICDBEHMDO)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(kEICDBEHMDO);
-                bitField1_ |= 0x00000200;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1082787167: {
-            if (input.isAtField(FieldNames.gHCIOIALPMH)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(gHCIOIALPMH);
-                bitField1_ |= 0x00000400;
               }
             } else {
               input.skipUnknownField();
@@ -5740,6 +5791,83 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.ifixUrl)) {
               if (!input.trySkipNullValue()) {
                 input.readString(ifixUrl);
+                bitField1_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1519588824: {
+            if (input.isAtField(FieldNames.nPPCGBIFDMN)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(nPPCGBIFDMN);
+                bitField1_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -937770767: {
+            if (input.isAtField(FieldNames.nPIGPBEKEKO)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(nPIGPBEKEKO);
+                bitField1_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1190717038: {
+            if (input.isAtField(FieldNames.aIPNJNLHFBP)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(aIPNJNLHFBP);
+                bitField1_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 2081131206: {
+            if (input.isAtField(FieldNames.fHALNCIHMGA)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(fHALNCIHMGA);
+                bitField1_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -424477879: {
+            if (input.isAtField(FieldNames.lKDFCHNEFBB)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(lKDFCHNEFBB);
+                bitField1_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 3360977: {
+            if (input.isAtField(FieldNames.msg2)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(msg2);
+                bitField1_ |= 0x00000400;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 11574971: {
+            if (input.isAtField(FieldNames.lHGKDGDJIHC)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(lHGKDGDJIHC);
                 bitField1_ |= 0x00000800;
               }
             } else {
@@ -5747,10 +5875,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 889220496: {
-            if (input.isAtField(FieldNames.iHGAICFNADN)) {
+          case -424609545: {
+            if (input.isAtField(FieldNames.oGJIECMHHHG)) {
               if (!input.trySkipNullValue()) {
-                input.readString(iHGAICFNADN);
+                input.readString(oGJIECMHHHG);
                 bitField1_ |= 0x00001000;
               }
             } else {
@@ -5758,10 +5886,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -341806569: {
-            if (input.isAtField(FieldNames.dEGFPDPOIHI)) {
+          case 371782794: {
+            if (input.isAtField(FieldNames.pMABNNEDCCG)) {
               if (!input.trySkipNullValue()) {
-                input.readString(dEGFPDPOIHI);
+                input.readString(pMABNNEDCCG);
                 bitField1_ |= 0x00002000;
               }
             } else {
@@ -5769,10 +5897,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 36613845: {
-            if (input.isAtField(FieldNames.lLBOPDMGMLO)) {
+          case -925836417: {
+            if (input.isAtField(FieldNames.nECFMBFGPML)) {
               if (!input.trySkipNullValue()) {
-                input.readString(lLBOPDMGMLO);
+                input.readString(nECFMBFGPML);
                 bitField1_ |= 0x00004000;
               }
             } else {
@@ -5780,10 +5908,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case 1686353291: {
-            if (input.isAtField(FieldNames.bCADOJCHKAE)) {
+          case 996777366: {
+            if (input.isAtField(FieldNames.kDBAGALHEDC)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bCADOJCHKAE);
+                input.readString(kDBAGALHEDC);
                 bitField1_ |= 0x00008000;
               }
             } else {
@@ -5791,10 +5919,10 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -876974381: {
-            if (input.isAtField(FieldNames.mNEMHHBMKEA)) {
+          case 238855639: {
+            if (input.isAtField(FieldNames.fDGFFCMALPI)) {
               if (!input.trySkipNullValue()) {
-                input.readString(mNEMHHBMKEA);
+                input.readString(fDGFFCMALPI);
                 bitField1_ |= 0x00010000;
               }
             } else {
@@ -5802,11 +5930,99 @@ public final class GateserverOuterClass {
             }
             break;
           }
-          case -1991159847: {
-            if (input.isAtField(FieldNames.eNLGGEEKCJH)) {
+          case -146613789: {
+            if (input.isAtField(FieldNames.kLIAGHGOFML)) {
               if (!input.trySkipNullValue()) {
-                input.readString(eNLGGEEKCJH);
+                input.readString(kLIAGHGOFML);
                 bitField1_ |= 0x00020000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1108701329: {
+            if (input.isAtField(FieldNames.pNALJLBMILJ)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(pNALJLBMILJ);
+                bitField1_ |= 0x00040000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -386889282: {
+            if (input.isAtField(FieldNames.bJOCANIBBKI)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(bJOCANIBBKI);
+                bitField1_ |= 0x00080000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1317224930: {
+            if (input.isAtField(FieldNames.eICAECNMDIB)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(eICAECNMDIB);
+                bitField1_ |= 0x00100000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1983193804: {
+            if (input.isAtField(FieldNames.lLFDDPLHGBM)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(lLFDDPLHGBM);
+                bitField1_ |= 0x00200000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 649351306: {
+            if (input.isAtField(FieldNames.oBOPKJFGDIC)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(oBOPKJFGDIC);
+                bitField1_ |= 0x00400000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2066569026: {
+            if (input.isAtField(FieldNames.mDKDJLNHGKN)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(mDKDJLNHGKN);
+                bitField1_ |= 0x00800000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1995572793: {
+            if (input.isAtField(FieldNames.eLJIMGJLHBC)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(eLJIMGJLHBC);
+                bitField1_ |= 0x01000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1840481344: {
+            if (input.isAtField(FieldNames.gKPLIAPPLCO)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(gKPLIAPPLCO);
+                bitField1_ |= 0x02000000;
               }
             } else {
               input.skipUnknownField();
@@ -5817,95 +6033,18 @@ public final class GateserverOuterClass {
             if (input.isAtField(FieldNames.ipv6)) {
               if (!input.trySkipNullValue()) {
                 input.readString(ipv6);
-                bitField1_ |= 0x00040000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 433911224: {
-            if (input.isAtField(FieldNames.jCFGJFMGNLF)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(jCFGJFMGNLF);
-                bitField1_ |= 0x00080000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 21662621: {
-            if (input.isAtField(FieldNames.nDAOKPKOLKI)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(nDAOKPKOLKI);
-                bitField1_ |= 0x00100000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 438531475: {
-            if (input.isAtField(FieldNames.mPDCHMICKGP)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(mPDCHMICKGP);
-                bitField1_ |= 0x00200000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -687331473: {
-            if (input.isAtField(FieldNames.oHOGINOGEOG)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(oHOGINOGEOG);
-                bitField1_ |= 0x00400000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1723243306: {
-            if (input.isAtField(FieldNames.pKDDCFGDDDE)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(pKDDCFGDDDE);
-                bitField1_ |= 0x00800000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -81277000: {
-            if (input.isAtField(FieldNames.gMCEHMDOHDL)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(gMCEHMDOHDL);
-                bitField1_ |= 0x01000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1307374112: {
-            if (input.isAtField(FieldNames.dALBCELEHGM)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(dALBCELEHGM);
-                bitField1_ |= 0x02000000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1773769284: {
-            if (input.isAtField(FieldNames.gBCBIDAHGJC)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedString(gBCBIDAHGJC);
                 bitField1_ |= 0x04000000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -630578415: {
+            if (input.isAtField(FieldNames.gBONLDEMBEN)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedString(gBONLDEMBEN);
+                bitField1_ |= 0x08000000;
               }
             } else {
               input.skipUnknownField();
@@ -5964,19 +6103,19 @@ public final class GateserverOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pOHJHDDOECN = FieldName.forField("POHJHDDOECN");
+      static final FieldName mDAHNIKKAHI = FieldName.forField("MDAHNIKKAHI");
 
-      static final FieldName kICPPAHLGHB = FieldName.forField("KICPPAHLGHB");
-
-      static final FieldName port = FieldName.forField("port");
-
-      static final FieldName bAGLOFEACNC = FieldName.forField("BAGLOFEACNC");
+      static final FieldName gHENHJPJJLK = FieldName.forField("GHENHJPJJLK");
 
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName aOMEDACHLJD = FieldName.forField("AOMEDACHLJD");
+      static final FieldName iGKDKFJIDPP = FieldName.forField("IGKDKFJIDPP");
 
-      static final FieldName mDAILCAMOAO = FieldName.forField("MDAILCAMOAO");
+      static final FieldName port = FieldName.forField("port");
+
+      static final FieldName hNDPOHGEIPM = FieldName.forField("HNDPOHGEIPM");
+
+      static final FieldName cLCFLOAMGBL = FieldName.forField("CLCFLOAMGBL");
 
       static final FieldName unk1 = FieldName.forField("unk1");
 
@@ -5988,99 +6127,101 @@ public final class GateserverOuterClass {
 
       static final FieldName unk5 = FieldName.forField("unk5");
 
-      static final FieldName unk6 = FieldName.forField("unk6");
+      static final FieldName cNAKLGMDLPE = FieldName.forField("CNAKLGMDLPE");
 
-      static final FieldName unk7 = FieldName.forField("unk7");
+      static final FieldName aPJECJMGAKC = FieldName.forField("APJECJMGAKC");
 
-      static final FieldName unk8 = FieldName.forField("unk8");
+      static final FieldName jGCIILJEHHE = FieldName.forField("JGCIILJEHHE");
 
-      static final FieldName unk9 = FieldName.forField("unk9");
+      static final FieldName fIOHEKDJNCG = FieldName.forField("FIOHEKDJNCG");
 
-      static final FieldName unk10 = FieldName.forField("unk10");
+      static final FieldName mCEIPIBAMDB = FieldName.forField("MCEIPIBAMDB");
 
-      static final FieldName unk11 = FieldName.forField("unk11");
+      static final FieldName eBKBNEKCOHI = FieldName.forField("EBKBNEKCOHI");
 
-      static final FieldName unk12 = FieldName.forField("unk12");
+      static final FieldName lAABLMNKLLD = FieldName.forField("LAABLMNKLLD");
 
-      static final FieldName unk13 = FieldName.forField("unk13");
+      static final FieldName oFJAKNEDMDM = FieldName.forField("OFJAKNEDMDM");
 
-      static final FieldName unk14 = FieldName.forField("unk14");
+      static final FieldName nPHDIMJOKNI = FieldName.forField("NPHDIMJOKNI");
 
-      static final FieldName unk15 = FieldName.forField("unk15");
-
-      static final FieldName assetBundleUrl = FieldName.forField("assetBundleUrl", "asset_bundle_url");
-
-      static final FieldName ip = FieldName.forField("ip");
-
-      static final FieldName regionName = FieldName.forField("regionName", "region_name");
-
-      static final FieldName fNCHMFHFMID = FieldName.forField("FNCHMFHFMID");
-
-      static final FieldName luaUrl = FieldName.forField("luaUrl", "lua_url");
-
-      static final FieldName msg = FieldName.forField("msg");
+      static final FieldName nNGLEBKCMLA = FieldName.forField("NNGLEBKCMLA");
 
       static final FieldName exResourceUrl = FieldName.forField("exResourceUrl", "ex_resource_url");
 
-      static final FieldName pNHBALGFHOH = FieldName.forField("PNHBALGFHOH");
+      static final FieldName luaUrl = FieldName.forField("luaUrl", "lua_url");
 
-      static final FieldName nPNBJBCFPNE = FieldName.forField("NPNBJBCFPNE");
+      static final FieldName ip = FieldName.forField("ip");
 
-      static final FieldName bFIHFKLMMEK = FieldName.forField("BFIHFKLMMEK");
+      static final FieldName msg = FieldName.forField("msg");
 
-      static final FieldName bHDBHBJJPNI = FieldName.forField("BHDBHBJJPNI");
+      static final FieldName assetBundleUrl = FieldName.forField("assetBundleUrl", "asset_bundle_url");
 
-      static final FieldName lBPFHPCBCKL = FieldName.forField("LBPFHPCBCKL");
+      static final FieldName regionName = FieldName.forField("regionName", "region_name");
 
-      static final FieldName gBICAMFDFCE = FieldName.forField("GBICAMFDFCE");
+      static final FieldName iOKEPIEDBNE = FieldName.forField("IOKEPIEDBNE");
 
-      static final FieldName mEACAGAFHGA = FieldName.forField("MEACAGAFHGA");
+      static final FieldName fCMMMPKJJIL = FieldName.forField("FCMMMPKJJIL");
 
-      static final FieldName gDOBHNDOCOJ = FieldName.forField("GDOBHNDOCOJ");
+      static final FieldName iPKLAMMKNNG = FieldName.forField("IPKLAMMKNNG");
 
-      static final FieldName nKJBGBOOGFD = FieldName.forField("NKJBGBOOGFD");
+      static final FieldName iIJLFILFMDF = FieldName.forField("IIJLFILFMDF");
 
-      static final FieldName fPHFAJBCHPG = FieldName.forField("FPHFAJBCHPG");
+      static final FieldName oDOCFCJMBCL = FieldName.forField("ODOCFCJMBCL");
 
-      static final FieldName oAONLAKKNIH = FieldName.forField("OAONLAKKNIH");
+      static final FieldName bBFOAJGLLBC = FieldName.forField("BBFOAJGLLBC");
 
-      static final FieldName mANDMJOLPHH = FieldName.forField("MANDMJOLPHH");
+      static final FieldName kKHFKMIKFIB = FieldName.forField("KKHFKMIKFIB");
 
-      static final FieldName kEICDBEHMDO = FieldName.forField("KEICDBEHMDO");
-
-      static final FieldName gHCIOIALPMH = FieldName.forField("GHCIOIALPMH");
+      static final FieldName mKCNEFHHAOG = FieldName.forField("MKCNEFHHAOG");
 
       static final FieldName ifixUrl = FieldName.forField("ifixUrl", "ifix_url");
 
-      static final FieldName iHGAICFNADN = FieldName.forField("IHGAICFNADN");
+      static final FieldName nPPCGBIFDMN = FieldName.forField("NPPCGBIFDMN");
 
-      static final FieldName dEGFPDPOIHI = FieldName.forField("DEGFPDPOIHI");
+      static final FieldName nPIGPBEKEKO = FieldName.forField("NPIGPBEKEKO");
 
-      static final FieldName lLBOPDMGMLO = FieldName.forField("LLBOPDMGMLO");
+      static final FieldName aIPNJNLHFBP = FieldName.forField("AIPNJNLHFBP");
 
-      static final FieldName bCADOJCHKAE = FieldName.forField("BCADOJCHKAE");
+      static final FieldName fHALNCIHMGA = FieldName.forField("FHALNCIHMGA");
 
-      static final FieldName mNEMHHBMKEA = FieldName.forField("MNEMHHBMKEA");
+      static final FieldName lKDFCHNEFBB = FieldName.forField("LKDFCHNEFBB");
 
-      static final FieldName eNLGGEEKCJH = FieldName.forField("ENLGGEEKCJH");
+      static final FieldName msg2 = FieldName.forField("msg2");
+
+      static final FieldName lHGKDGDJIHC = FieldName.forField("LHGKDGDJIHC");
+
+      static final FieldName oGJIECMHHHG = FieldName.forField("OGJIECMHHHG");
+
+      static final FieldName pMABNNEDCCG = FieldName.forField("PMABNNEDCCG");
+
+      static final FieldName nECFMBFGPML = FieldName.forField("NECFMBFGPML");
+
+      static final FieldName kDBAGALHEDC = FieldName.forField("KDBAGALHEDC");
+
+      static final FieldName fDGFFCMALPI = FieldName.forField("FDGFFCMALPI");
+
+      static final FieldName kLIAGHGOFML = FieldName.forField("KLIAGHGOFML");
+
+      static final FieldName pNALJLBMILJ = FieldName.forField("PNALJLBMILJ");
+
+      static final FieldName bJOCANIBBKI = FieldName.forField("BJOCANIBBKI");
+
+      static final FieldName eICAECNMDIB = FieldName.forField("EICAECNMDIB");
+
+      static final FieldName lLFDDPLHGBM = FieldName.forField("LLFDDPLHGBM");
+
+      static final FieldName oBOPKJFGDIC = FieldName.forField("OBOPKJFGDIC");
+
+      static final FieldName mDKDJLNHGKN = FieldName.forField("MDKDJLNHGKN");
+
+      static final FieldName eLJIMGJLHBC = FieldName.forField("ELJIMGJLHBC");
+
+      static final FieldName gKPLIAPPLCO = FieldName.forField("GKPLIAPPLCO");
 
       static final FieldName ipv6 = FieldName.forField("ipv6");
 
-      static final FieldName jCFGJFMGNLF = FieldName.forField("JCFGJFMGNLF");
-
-      static final FieldName nDAOKPKOLKI = FieldName.forField("NDAOKPKOLKI");
-
-      static final FieldName mPDCHMICKGP = FieldName.forField("MPDCHMICKGP");
-
-      static final FieldName oHOGINOGEOG = FieldName.forField("OHOGINOGEOG");
-
-      static final FieldName pKDDCFGDDDE = FieldName.forField("PKDDCFGDDDE");
-
-      static final FieldName gMCEHMDOHDL = FieldName.forField("GMCEHMDOHDL");
-
-      static final FieldName dALBCELEHGM = FieldName.forField("DALBCELEHGM");
-
-      static final FieldName gBCBIDAHGJC = FieldName.forField("GBCBIDAHGJC");
+      static final FieldName gBONLDEMBEN = FieldName.forField("GBONLDEMBEN");
     }
   }
 }

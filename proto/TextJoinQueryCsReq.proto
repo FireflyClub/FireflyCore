@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message TextJoinQueryCsReq {
-	repeated uint32 text_join_id_list = 11;
+	repeated uint32 text_join_id_list = 2;
 }

@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RotatorEnergyInfo {
-    uint32 max_num = 14; //?
-    uint32 cur_num = 4; //?
+    uint32 max_num = 3; //?
+    uint32 cur_num = 6; //?
 }

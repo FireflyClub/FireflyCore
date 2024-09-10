@@ -21,17 +21,17 @@ public final class GetSecretKeyInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      */
     private final RepeatedByte rspKey = RepeatedByte.newEmptyInstance();
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      */
     private final RepeatedMessage<SecretKeyInfoOuterClass.SecretKeyInfo> keyInfo = RepeatedMessage.newEmptyInstance(SecretKeyInfoOuterClass.SecretKeyInfo.getFactory());
 
@@ -46,7 +46,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -54,7 +54,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public GetSecretKeyInfoScRsp clearRetcode() {
@@ -64,7 +64,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -72,7 +72,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -83,7 +83,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      * @return whether the rspKey field is set
      */
     public boolean hasRspKey() {
@@ -91,7 +91,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      * @return this
      */
     public GetSecretKeyInfoScRsp clearRspKey() {
@@ -101,7 +101,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -115,7 +115,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -129,7 +129,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      * @param value the rspKey to add
      * @return this
      */
@@ -140,7 +140,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      * @param values the rspKey to add
      * @return this
      */
@@ -151,7 +151,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bytes rsp_key = 8;</code>
+     * <code>optional bytes rsp_key = 7;</code>
      * @param values the rspKey to set
      * @return this
      */
@@ -162,7 +162,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      * @return whether the keyInfo field is set
      */
     public boolean hasKeyInfo() {
@@ -170,7 +170,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      * @return this
      */
     public GetSecretKeyInfoScRsp clearKeyInfo() {
@@ -180,7 +180,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -194,7 +194,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -208,7 +208,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      * @param value the keyInfo to add
      * @return this
      */
@@ -219,7 +219,7 @@ public final class GetSecretKeyInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SecretKeyInfo key_info = 14;</code>
+     * <code>repeated .SecretKeyInfo key_info = 3;</code>
      * @param values the keyInfo to add
      * @return this
      */
@@ -303,16 +303,16 @@ public final class GetSecretKeyInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 58);
         output.writeBytesNoTag(rspKey);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < keyInfo.length(); i++) {
-          output.writeRawByte((byte) 114);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(keyInfo.get(i));
         }
       }
@@ -340,25 +340,25 @@ public final class GetSecretKeyInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 58) {
               break;
             }
           }
-          case 66: {
+          case 58: {
             // rspKey
             input.readBytes(rspKey);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 26) {
               break;
             }
           }
-          case 114: {
+          case 26: {
             // keyInfo
             tag = input.readRepeatedMessage(keyInfo, tag);
             bitField0_ |= 0x00000004;

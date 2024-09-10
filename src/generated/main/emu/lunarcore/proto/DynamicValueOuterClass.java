@@ -21,12 +21,12 @@ public final class DynamicValueOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float value = 3;</code>
+     * <code>optional float value = 13;</code>
      */
     private float value_;
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      */
     private final Utf8String key = Utf8String.newEmptyInstance();
 
@@ -41,7 +41,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 3;</code>
+     * <code>optional float value = 13;</code>
      * @return whether the value_ field is set
      */
     public boolean hasValue() {
@@ -49,7 +49,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 3;</code>
+     * <code>optional float value = 13;</code>
      * @return this
      */
     public DynamicValue clearValue() {
@@ -59,7 +59,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 3;</code>
+     * <code>optional float value = 13;</code>
      * @return the value_
      */
     public float getValue() {
@@ -67,7 +67,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional float value = 3;</code>
+     * <code>optional float value = 13;</code>
      * @param value the value_ to set
      * @return this
      */
@@ -78,7 +78,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @return whether the key field is set
      */
     public boolean hasKey() {
@@ -86,7 +86,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @return this
      */
     public DynamicValue clearKey() {
@@ -96,7 +96,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @return the key
      */
     public String getKey() {
@@ -104,7 +104,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @return internal {@code Utf8String} representation of key for reading
      */
     public Utf8String getKeyBytes() {
@@ -112,7 +112,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @return internal {@code Utf8String} representation of key for modifications
      */
     public Utf8String getMutableKeyBytes() {
@@ -121,7 +121,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @param value the key to set
      * @return this
      */
@@ -132,7 +132,7 @@ public final class DynamicValueOuterClass {
     }
 
     /**
-     * <code>optional string key = 6;</code>
+     * <code>optional string key = 1;</code>
      * @param value the key to set
      * @return this
      */
@@ -208,11 +208,11 @@ public final class DynamicValueOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 29);
+        output.writeRawByte((byte) 109);
         output.writeFloatNoTag(value_);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 10);
         output.writeStringNoTag(key);
       }
     }
@@ -236,16 +236,16 @@ public final class DynamicValueOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 29: {
+          case 109: {
             // value_
             value_ = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 10) {
               break;
             }
           }
-          case 50: {
+          case 10: {
             // key
             input.readString(key);
             bitField0_ |= 0x00000002;

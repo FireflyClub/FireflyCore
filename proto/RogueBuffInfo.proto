@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "RogueBuff.proto";
 
 message RogueBuffInfo {
-	repeated RogueBuff maze_buff_list = 8;
+	repeated RogueBuff maze_buff_list = 15;
 }

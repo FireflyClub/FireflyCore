@@ -6,9 +6,9 @@ import "MultiPathAvatarType.proto";
 import "MultiPathAvatarTypeInfo.proto";
 
 message SetPlayerInfoScRsp {
-	MultiPathAvatarType GPDNDCCLOOD = 2;
-	int64 NCBJIHNAOFG = 14;
-	repeated MultiPathAvatarTypeInfo FJPGCEEAPMO = 9;
+	MultiPathAvatarType MBDOPMGIHJH = 13;
+	bool is_modify = 1;
+	repeated MultiPathAvatarTypeInfo IEEGHOGHKML = 11;
 	uint32 retcode = 4;
-	bool is_modify = 10;
+	int64 DLFJLAJMLHJ = 14;
 }

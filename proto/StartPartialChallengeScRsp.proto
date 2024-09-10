@@ -7,8 +7,8 @@ import "ChallengeInfo.proto";
 import "SceneInfo.proto";
 
 message StartPartialChallengeScRsp {
-	LineupInfo lineup = 5;
-	SceneInfo scene = 6;
+	LineupInfo lineup = 10;
+	SceneInfo scene = 9;
 	uint32 retcode = 8;
-	ChallengeInfo challenge_info = 9;
+	ChallengeInfo challenge_info = 11;
 }

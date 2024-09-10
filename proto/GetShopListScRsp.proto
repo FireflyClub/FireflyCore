@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "Shop.proto";
 
 message GetShopListScRsp {
-	uint32 retcode = 3;
-	repeated Shop shop_list = 15;
-	uint32 shop_type = 13;
+	uint32 Retcode = 10;
+	repeated Shop ShopList = 1;
+	uint32 ShopType = 5;
 }

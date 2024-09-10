@@ -23,44 +23,36 @@ public final class SwapLineupCsReqOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 src_slot = 4;</code>
+     * <code>optional uint32 dst_slot = 4;</code>
      */
-    private int srcSlot;
+    private int dstSlot;
+
+    /**
+     * <code>optional uint32 index = 11;</code>
+     */
+    private int index;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 dst_slot = 5;</code>
+     * <code>optional uint32 src_slot = 14;</code>
      */
-    private int dstSlot;
+    private int srcSlot;
 
     /**
-     * <pre>
-     * uint32 FMFMDKOCIEB = 5;
-     * </pre>
-     *
-     * <code>optional uint32 plane_id = 11;</code>
+     * <code>optional uint32 plane_id = 15;</code>
      */
     private int planeId;
 
     /**
-     * <code>optional uint32 index = 13;</code>
-     */
-    private int index;
-
-    /**
-     * <pre>
-     * uint32 INAAMJIBBBF = 4;
-     * </pre>
-     *
      * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      */
     private int extraLineupType;
 
     /**
-     * <code>optional bool is_virtual = 10;</code>
+     * <code>optional bool is_virtual = 3;</code>
      */
     private boolean isVirtual;
 
@@ -79,10 +71,10 @@ public final class SwapLineupCsReqOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 src_slot = 4;</code>
-     * @return whether the srcSlot field is set
+     * <code>optional uint32 dst_slot = 4;</code>
+     * @return whether the dstSlot field is set
      */
-    public boolean hasSrcSlot() {
+    public boolean hasDstSlot() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
@@ -91,64 +83,11 @@ public final class SwapLineupCsReqOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 src_slot = 4;</code>
-     * @return this
-     */
-    public SwapLineupCsReq clearSrcSlot() {
-      bitField0_ &= ~0x00000001;
-      srcSlot = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 src_slot = 4;</code>
-     * @return the srcSlot
-     */
-    public int getSrcSlot() {
-      return srcSlot;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 src_slot = 4;</code>
-     * @param value the srcSlot to set
-     * @return this
-     */
-    public SwapLineupCsReq setSrcSlot(final int value) {
-      bitField0_ |= 0x00000001;
-      srcSlot = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 dst_slot = 5;</code>
-     * @return whether the dstSlot field is set
-     */
-    public boolean hasDstSlot() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 dst_slot = 5;</code>
+     * <code>optional uint32 dst_slot = 4;</code>
      * @return this
      */
     public SwapLineupCsReq clearDstSlot() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       dstSlot = 0;
       return this;
     }
@@ -158,7 +97,7 @@ public final class SwapLineupCsReqOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 dst_slot = 5;</code>
+     * <code>optional uint32 dst_slot = 4;</code>
      * @return the dstSlot
      */
     public int getDstSlot() {
@@ -170,89 +109,36 @@ public final class SwapLineupCsReqOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 dst_slot = 5;</code>
+     * <code>optional uint32 dst_slot = 4;</code>
      * @param value the dstSlot to set
      * @return this
      */
     public SwapLineupCsReq setDstSlot(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       dstSlot = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 FMFMDKOCIEB = 5;
-     * </pre>
-     *
-     * <code>optional uint32 plane_id = 11;</code>
-     * @return whether the planeId field is set
-     */
-    public boolean hasPlaneId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <pre>
-     * uint32 FMFMDKOCIEB = 5;
-     * </pre>
-     *
-     * <code>optional uint32 plane_id = 11;</code>
-     * @return this
-     */
-    public SwapLineupCsReq clearPlaneId() {
-      bitField0_ &= ~0x00000004;
-      planeId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * uint32 FMFMDKOCIEB = 5;
-     * </pre>
-     *
-     * <code>optional uint32 plane_id = 11;</code>
-     * @return the planeId
-     */
-    public int getPlaneId() {
-      return planeId;
-    }
-
-    /**
-     * <pre>
-     * uint32 FMFMDKOCIEB = 5;
-     * </pre>
-     *
-     * <code>optional uint32 plane_id = 11;</code>
-     * @param value the planeId to set
-     * @return this
-     */
-    public SwapLineupCsReq setPlaneId(final int value) {
-      bitField0_ |= 0x00000004;
-      planeId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 index = 11;</code>
      * @return whether the index field is set
      */
     public boolean hasIndex() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 index = 11;</code>
      * @return this
      */
     public SwapLineupCsReq clearIndex() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000002;
       index = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 index = 11;</code>
      * @return the index
      */
     public int getIndex() {
@@ -260,21 +146,107 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 13;</code>
+     * <code>optional uint32 index = 11;</code>
      * @param value the index to set
      * @return this
      */
     public SwapLineupCsReq setIndex(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       index = value;
       return this;
     }
 
     /**
      * <pre>
-     * uint32 INAAMJIBBBF = 4;
+     * ?
      * </pre>
      *
+     * <code>optional uint32 src_slot = 14;</code>
+     * @return whether the srcSlot field is set
+     */
+    public boolean hasSrcSlot() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 src_slot = 14;</code>
+     * @return this
+     */
+    public SwapLineupCsReq clearSrcSlot() {
+      bitField0_ &= ~0x00000004;
+      srcSlot = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 src_slot = 14;</code>
+     * @return the srcSlot
+     */
+    public int getSrcSlot() {
+      return srcSlot;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 src_slot = 14;</code>
+     * @param value the srcSlot to set
+     * @return this
+     */
+    public SwapLineupCsReq setSrcSlot(final int value) {
+      bitField0_ |= 0x00000004;
+      srcSlot = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 15;</code>
+     * @return whether the planeId field is set
+     */
+    public boolean hasPlaneId() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 15;</code>
+     * @return this
+     */
+    public SwapLineupCsReq clearPlaneId() {
+      bitField0_ &= ~0x00000008;
+      planeId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 15;</code>
+     * @return the planeId
+     */
+    public int getPlaneId() {
+      return planeId;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 15;</code>
+     * @param value the planeId to set
+     * @return this
+     */
+    public SwapLineupCsReq setPlaneId(final int value) {
+      bitField0_ |= 0x00000008;
+      planeId = value;
+      return this;
+    }
+
+    /**
      * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return whether the extraLineupType field is set
      */
@@ -283,10 +255,6 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 INAAMJIBBBF = 4;
-     * </pre>
-     *
      * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return this
      */
@@ -297,10 +265,6 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 INAAMJIBBBF = 4;
-     * </pre>
-     *
      * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @return the extraLineupType
      */
@@ -334,10 +298,6 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 INAAMJIBBBF = 4;
-     * </pre>
-     *
      * <code>optional .ExtraLineupType extra_lineup_type = 9;</code>
      * @param value the extraLineupType to set
      * @return this
@@ -350,7 +310,7 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 10;</code>
+     * <code>optional bool is_virtual = 3;</code>
      * @return whether the isVirtual field is set
      */
     public boolean hasIsVirtual() {
@@ -358,7 +318,7 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 10;</code>
+     * <code>optional bool is_virtual = 3;</code>
      * @return this
      */
     public SwapLineupCsReq clearIsVirtual() {
@@ -368,7 +328,7 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 10;</code>
+     * <code>optional bool is_virtual = 3;</code>
      * @return the isVirtual
      */
     public boolean getIsVirtual() {
@@ -376,7 +336,7 @@ public final class SwapLineupCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_virtual = 10;</code>
+     * <code>optional bool is_virtual = 3;</code>
      * @param value the isVirtual to set
      * @return this
      */
@@ -391,10 +351,10 @@ public final class SwapLineupCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        srcSlot = other.srcSlot;
         dstSlot = other.dstSlot;
-        planeId = other.planeId;
         index = other.index;
+        srcSlot = other.srcSlot;
+        planeId = other.planeId;
         extraLineupType = other.extraLineupType;
         isVirtual = other.isVirtual;
       }
@@ -407,17 +367,17 @@ public final class SwapLineupCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasSrcSlot()) {
-        setSrcSlot(other.srcSlot);
-      }
       if (other.hasDstSlot()) {
         setDstSlot(other.dstSlot);
       }
-      if (other.hasPlaneId()) {
-        setPlaneId(other.planeId);
-      }
       if (other.hasIndex()) {
         setIndex(other.index);
+      }
+      if (other.hasSrcSlot()) {
+        setSrcSlot(other.srcSlot);
+      }
+      if (other.hasPlaneId()) {
+        setPlaneId(other.planeId);
       }
       if (other.hasExtraLineupType()) {
         setExtraLineupTypeValue(other.extraLineupType);
@@ -435,10 +395,10 @@ public final class SwapLineupCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      srcSlot = 0;
       dstSlot = 0;
-      planeId = 0;
       index = 0;
+      srcSlot = 0;
+      planeId = 0;
       extraLineupType = 0;
       isVirtual = false;
       return this;
@@ -464,10 +424,10 @@ public final class SwapLineupCsReqOuterClass {
       }
       SwapLineupCsReq other = (SwapLineupCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasSrcSlot() || srcSlot == other.srcSlot)
         && (!hasDstSlot() || dstSlot == other.dstSlot)
-        && (!hasPlaneId() || planeId == other.planeId)
         && (!hasIndex() || index == other.index)
+        && (!hasSrcSlot() || srcSlot == other.srcSlot)
+        && (!hasPlaneId() || planeId == other.planeId)
         && (!hasExtraLineupType() || extraLineupType == other.extraLineupType)
         && (!hasIsVirtual() || isVirtual == other.isVirtual);
     }
@@ -476,26 +436,26 @@ public final class SwapLineupCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(srcSlot);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(dstSlot);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(planeId);
+        output.writeUInt32NoTag(index);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(srcSlot);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(index);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(planeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 72);
         output.writeEnumNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 24);
         output.writeBoolNoTag(isVirtual);
       }
     }
@@ -504,16 +464,16 @@ public final class SwapLineupCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(srcSlot);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(dstSlot);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(srcSlot);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(extraLineupType);
@@ -532,35 +492,35 @@ public final class SwapLineupCsReqOuterClass {
       while (true) {
         switch (tag) {
           case 32: {
-            // srcSlot
-            srcSlot = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
             // dstSlot
             dstSlot = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 88) {
               break;
             }
           }
           case 88: {
-            // planeId
-            planeId = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            // index
+            index = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 112) {
               break;
             }
           }
-          case 104: {
-            // index
-            index = input.readUInt32();
+          case 112: {
+            // srcSlot
+            srcSlot = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // planeId
+            planeId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 72) {
@@ -575,11 +535,11 @@ public final class SwapLineupCsReqOuterClass {
               bitField0_ |= 0x00000010;
             }
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 24) {
               break;
             }
           }
-          case 80: {
+          case 24: {
             // isVirtual
             isVirtual = input.readBool();
             bitField0_ |= 0x00000020;
@@ -606,16 +566,16 @@ public final class SwapLineupCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.srcSlot, srcSlot);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.dstSlot, dstSlot);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.index, index);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.planeId, planeId);
+        output.writeUInt32(FieldNames.srcSlot, srcSlot);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.index, index);
+        output.writeUInt32(FieldNames.planeId, planeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeEnum(FieldNames.extraLineupType, extraLineupType, ExtraLineupTypeOuterClass.ExtraLineupType.converter());
@@ -633,11 +593,11 @@ public final class SwapLineupCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1953527294:
-          case -418516103: {
-            if (input.isAtField(FieldNames.srcSlot)) {
+          case 1958115683:
+          case 583331896: {
+            if (input.isAtField(FieldNames.dstSlot)) {
               if (!input.trySkipNullValue()) {
-                srcSlot = input.readUInt32();
+                dstSlot = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -645,12 +605,23 @@ public final class SwapLineupCsReqOuterClass {
             }
             break;
           }
-          case 1958115683:
-          case 583331896: {
-            if (input.isAtField(FieldNames.dstSlot)) {
+          case 100346066: {
+            if (input.isAtField(FieldNames.index)) {
               if (!input.trySkipNullValue()) {
-                dstSlot = input.readUInt32();
+                index = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1953527294:
+          case -418516103: {
+            if (input.isAtField(FieldNames.srcSlot)) {
+              if (!input.trySkipNullValue()) {
+                srcSlot = input.readUInt32();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -662,17 +633,6 @@ public final class SwapLineupCsReqOuterClass {
             if (input.isAtField(FieldNames.planeId)) {
               if (!input.trySkipNullValue()) {
                 planeId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 100346066: {
-            if (input.isAtField(FieldNames.index)) {
-              if (!input.trySkipNullValue()) {
-                index = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -762,13 +722,13 @@ public final class SwapLineupCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName srcSlot = FieldName.forField("srcSlot", "src_slot");
-
       static final FieldName dstSlot = FieldName.forField("dstSlot", "dst_slot");
 
-      static final FieldName planeId = FieldName.forField("planeId", "plane_id");
-
       static final FieldName index = FieldName.forField("index");
+
+      static final FieldName srcSlot = FieldName.forField("srcSlot", "src_slot");
+
+      static final FieldName planeId = FieldName.forField("planeId", "plane_id");
 
       static final FieldName extraLineupType = FieldName.forField("extraLineupType", "extra_lineup_type");
 

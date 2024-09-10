@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "FriendApplySource.proto";
 
 message ApplyFriendCsReq {
-	FriendApplySource source = 8;
+	FriendApplySource source = 4;
 	uint32 uid = 7;
 }

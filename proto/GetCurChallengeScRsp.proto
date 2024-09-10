@@ -6,7 +6,7 @@ import "LineupInfo.proto";
 import "ChallengeInfo.proto";
 
 message GetCurChallengeScRsp {
-	ChallengeInfo challenge_info = 3;
-	repeated LineupInfo lineup_list = 4;
-	uint32 retcode = 14;
+	repeated LineupInfo lineup_list = 1;
+	uint32 retcode = 9;
+	ChallengeInfo challenge_info = 11;
 }

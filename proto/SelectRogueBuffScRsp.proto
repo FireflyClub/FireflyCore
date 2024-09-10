@@ -5,6 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "RogueBuffSelectInfo.proto";
 
 message SelectRogueBuffScRsp { 
+
 	uint32 maze_buff_level = 14;
 	RogueBuffSelectInfo buff_select_info = 6;
 	uint32 maze_buff_id = 4;

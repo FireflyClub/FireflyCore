@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetClientPausedCsReq {
-	bool paused = 2;
+	bool is_paused = 15;
 }

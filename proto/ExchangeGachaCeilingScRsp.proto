@@ -6,9 +6,9 @@ import "ItemList.proto";
 import "GachaCeiling.proto";
 
 message ExchangeGachaCeilingScRsp {
-	uint32 retcode = 4;
-	uint32 avatar_id = 1;
-	GachaCeiling gacha_ceiling = 15;
+	GachaCeiling gacha_ceiling = 13;
+	uint32 avatar_id = 6;
+	uint32 retcode = 5;
+	ItemList transfer_item_list = 9;
 	uint32 gacha_type = 14;
-	ItemList transfer_item_list = 10;
 }

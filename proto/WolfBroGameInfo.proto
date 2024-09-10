@@ -2,12 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "Vector.proto";
 import "MotionInfo.proto";
+import "Vector.proto";
 
 message WolfBroGameInfo {
-	repeated Vector FLPJKKCPIOO = 4;
-	MotionInfo motion = 12;
-	bool BOBGLLPPDKE = 5;
-	uint32 NLIAEPNOKAE = 14;
+	MotionInfo motion = 15;
+	uint32 PPINPEHJFAB = 8;
+	repeated Vector JBOFIALLOPI = 4;
+	bool HFNEKMMMFHO = 6;
 }

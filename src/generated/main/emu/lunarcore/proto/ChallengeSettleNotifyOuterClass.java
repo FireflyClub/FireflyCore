@@ -20,48 +20,54 @@ public final class ChallengeSettleNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * DMDFDIAMOAK LEOEJKAKMAN = 11;
-     * </pre>
-     *
-     * <code>optional uint32 score_one = 1;</code>
+     * <code>optional uint32 GGBCPNCDMFA = 1;</code>
      */
-    private int scoreOne;
+    private int gGBCPNCDMFA;
 
     /**
-     * <code>optional uint32 challenge_id = 5;</code>
+     * <code>optional uint32 challenge_id = 7;</code>
      */
     private int challengeId;
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 7;</code>
-     */
-    private int iIJBMNKFMAA;
-
-    /**
-     * <code>optional uint32 score_two = 12;</code>
+     * <code>optional uint32 score_two = 9;</code>
      */
     private int scoreTwo;
 
     /**
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 score_one = 10;</code>
+     */
+    private int scoreOne;
+
+    /**
+     * <code>optional uint32 stars = 13;</code>
      */
     private int stars;
 
     /**
-     * <code>optional bool is_win = 4;</code>
+     * <code>optional bool is_win = 2;</code>
      */
     private boolean isWin;
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      */
     private final ItemListOuterClass.ItemList reward = ItemListOuterClass.ItemList.newInstance();
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
      */
-    private final RepeatedInt dDDLFINIKDB = RepeatedInt.newEmptyInstance();
+    private final ChallengeInfoOuterClass.ChallengeInfo challengeInfo = ChallengeInfoOuterClass.ChallengeInfo.newInstance();
+
+    /**
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
+     */
+    private final ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel maxLevel = ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel.newInstance();
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     */
+    private final RepeatedInt gLBJGILDBAK = RepeatedInt.newEmptyInstance();
 
     private ChallengeSettleNotify() {
     }
@@ -74,60 +80,44 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * DMDFDIAMOAK LEOEJKAKMAN = 11;
-     * </pre>
-     *
-     * <code>optional uint32 score_one = 1;</code>
-     * @return whether the scoreOne field is set
+     * <code>optional uint32 GGBCPNCDMFA = 1;</code>
+     * @return whether the gGBCPNCDMFA field is set
      */
-    public boolean hasScoreOne() {
+    public boolean hasGGBCPNCDMFA() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     * DMDFDIAMOAK LEOEJKAKMAN = 11;
-     * </pre>
-     *
-     * <code>optional uint32 score_one = 1;</code>
+     * <code>optional uint32 GGBCPNCDMFA = 1;</code>
      * @return this
      */
-    public ChallengeSettleNotify clearScoreOne() {
+    public ChallengeSettleNotify clearGGBCPNCDMFA() {
       bitField0_ &= ~0x00000001;
-      scoreOne = 0;
+      gGBCPNCDMFA = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * DMDFDIAMOAK LEOEJKAKMAN = 11;
-     * </pre>
-     *
-     * <code>optional uint32 score_one = 1;</code>
-     * @return the scoreOne
+     * <code>optional uint32 GGBCPNCDMFA = 1;</code>
+     * @return the gGBCPNCDMFA
      */
-    public int getScoreOne() {
-      return scoreOne;
+    public int getGGBCPNCDMFA() {
+      return gGBCPNCDMFA;
     }
 
     /**
-     * <pre>
-     * DMDFDIAMOAK LEOEJKAKMAN = 11;
-     * </pre>
-     *
-     * <code>optional uint32 score_one = 1;</code>
-     * @param value the scoreOne to set
+     * <code>optional uint32 GGBCPNCDMFA = 1;</code>
+     * @param value the gGBCPNCDMFA to set
      * @return this
      */
-    public ChallengeSettleNotify setScoreOne(final int value) {
+    public ChallengeSettleNotify setGGBCPNCDMFA(final int value) {
       bitField0_ |= 0x00000001;
-      scoreOne = value;
+      gGBCPNCDMFA = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 challenge_id = 5;</code>
+     * <code>optional uint32 challenge_id = 7;</code>
      * @return whether the challengeId field is set
      */
     public boolean hasChallengeId() {
@@ -135,7 +125,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 5;</code>
+     * <code>optional uint32 challenge_id = 7;</code>
      * @return this
      */
     public ChallengeSettleNotify clearChallengeId() {
@@ -145,7 +135,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 5;</code>
+     * <code>optional uint32 challenge_id = 7;</code>
      * @return the challengeId
      */
     public int getChallengeId() {
@@ -153,7 +143,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 5;</code>
+     * <code>optional uint32 challenge_id = 7;</code>
      * @param value the challengeId to set
      * @return this
      */
@@ -164,62 +154,25 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 7;</code>
-     * @return whether the iIJBMNKFMAA field is set
+     * <code>optional uint32 score_two = 9;</code>
+     * @return whether the scoreTwo field is set
      */
-    public boolean hasIIJBMNKFMAA() {
+    public boolean hasScoreTwo() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 IIJBMNKFMAA = 7;</code>
-     * @return this
-     */
-    public ChallengeSettleNotify clearIIJBMNKFMAA() {
-      bitField0_ &= ~0x00000004;
-      iIJBMNKFMAA = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 IIJBMNKFMAA = 7;</code>
-     * @return the iIJBMNKFMAA
-     */
-    public int getIIJBMNKFMAA() {
-      return iIJBMNKFMAA;
-    }
-
-    /**
-     * <code>optional uint32 IIJBMNKFMAA = 7;</code>
-     * @param value the iIJBMNKFMAA to set
-     * @return this
-     */
-    public ChallengeSettleNotify setIIJBMNKFMAA(final int value) {
-      bitField0_ |= 0x00000004;
-      iIJBMNKFMAA = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 score_two = 12;</code>
-     * @return whether the scoreTwo field is set
-     */
-    public boolean hasScoreTwo() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 score_two = 12;</code>
+     * <code>optional uint32 score_two = 9;</code>
      * @return this
      */
     public ChallengeSettleNotify clearScoreTwo() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       scoreTwo = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 score_two = 12;</code>
+     * <code>optional uint32 score_two = 9;</code>
      * @return the scoreTwo
      */
     public int getScoreTwo() {
@@ -227,18 +180,55 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 12;</code>
+     * <code>optional uint32 score_two = 9;</code>
      * @param value the scoreTwo to set
      * @return this
      */
     public ChallengeSettleNotify setScoreTwo(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       scoreTwo = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 score_one = 10;</code>
+     * @return whether the scoreOne field is set
+     */
+    public boolean hasScoreOne() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 score_one = 10;</code>
+     * @return this
+     */
+    public ChallengeSettleNotify clearScoreOne() {
+      bitField0_ &= ~0x00000008;
+      scoreOne = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 score_one = 10;</code>
+     * @return the scoreOne
+     */
+    public int getScoreOne() {
+      return scoreOne;
+    }
+
+    /**
+     * <code>optional uint32 score_one = 10;</code>
+     * @param value the scoreOne to set
+     * @return this
+     */
+    public ChallengeSettleNotify setScoreOne(final int value) {
+      bitField0_ |= 0x00000008;
+      scoreOne = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 stars = 13;</code>
      * @return whether the stars field is set
      */
     public boolean hasStars() {
@@ -246,7 +236,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 13;</code>
      * @return this
      */
     public ChallengeSettleNotify clearStars() {
@@ -256,7 +246,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 13;</code>
      * @return the stars
      */
     public int getStars() {
@@ -264,7 +254,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 13;</code>
      * @param value the stars to set
      * @return this
      */
@@ -275,7 +265,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 4;</code>
+     * <code>optional bool is_win = 2;</code>
      * @return whether the isWin field is set
      */
     public boolean hasIsWin() {
@@ -283,7 +273,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 4;</code>
+     * <code>optional bool is_win = 2;</code>
      * @return this
      */
     public ChallengeSettleNotify clearIsWin() {
@@ -293,7 +283,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 4;</code>
+     * <code>optional bool is_win = 2;</code>
      * @return the isWin
      */
     public boolean getIsWin() {
@@ -301,7 +291,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 4;</code>
+     * <code>optional bool is_win = 2;</code>
      * @param value the isWin to set
      * @return this
      */
@@ -312,7 +302,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @return whether the reward field is set
      */
     public boolean hasReward() {
@@ -320,7 +310,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @return this
      */
     public ChallengeSettleNotify clearReward() {
@@ -330,7 +320,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -344,7 +334,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -358,7 +348,7 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 10;</code>
+     * <code>optional .ItemList reward = 3;</code>
      * @param value the reward to set
      * @return this
      */
@@ -369,39 +359,39 @@ public final class ChallengeSettleNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
-     * @return whether the dDDLFINIKDB field is set
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
+     * @return whether the challengeInfo field is set
      */
-    public boolean hasDDDLFINIKDB() {
+    public boolean hasChallengeInfo() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
      * @return this
      */
-    public ChallengeSettleNotify clearDDDLFINIKDB() {
+    public ChallengeSettleNotify clearChallengeInfo() {
       bitField0_ &= ~0x00000080;
-      dDDLFINIKDB.clear();
+      challengeInfo.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableDDDLFINIKDB()} if you want to modify it.
+     * Use {@link #getMutableChallengeInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getDDDLFINIKDB() {
-      return dDDLFINIKDB;
+    public ChallengeInfoOuterClass.ChallengeInfo getChallengeInfo() {
+      return challengeInfo;
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -409,30 +399,146 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableDDDLFINIKDB() {
+    public ChallengeInfoOuterClass.ChallengeInfo getMutableChallengeInfo() {
       bitField0_ |= 0x00000080;
-      return dDDLFINIKDB;
+      return challengeInfo;
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
-     * @param value the dDDLFINIKDB to add
+     * <code>optional .ChallengeInfo challenge_info = 4;</code>
+     * @param value the challengeInfo to set
      * @return this
      */
-    public ChallengeSettleNotify addDDDLFINIKDB(final int value) {
+    public ChallengeSettleNotify setChallengeInfo(
+        final ChallengeInfoOuterClass.ChallengeInfo value) {
       bitField0_ |= 0x00000080;
-      dDDLFINIKDB.add(value);
+      challengeInfo.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 DDDLFINIKDB = 6;</code>
-     * @param values the dDDLFINIKDB to add
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
+     * @return whether the maxLevel field is set
+     */
+    public boolean hasMaxLevel() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
      * @return this
      */
-    public ChallengeSettleNotify addAllDDDLFINIKDB(final int... values) {
-      bitField0_ |= 0x00000080;
-      dDDLFINIKDB.addAll(values);
+    public ChallengeSettleNotify clearMaxLevel() {
+      bitField0_ &= ~0x00000100;
+      maxLevel.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMaxLevel()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel getMaxLevel() {
+      return maxLevel;
+    }
+
+    /**
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel getMutableMaxLevel() {
+      bitField0_ |= 0x00000100;
+      return maxLevel;
+    }
+
+    /**
+     * <code>optional .ChallengeHistoryMaxLevel max_level = 11;</code>
+     * @param value the maxLevel to set
+     * @return this
+     */
+    public ChallengeSettleNotify setMaxLevel(
+        final ChallengeHistoryMaxLevelOuterClass.ChallengeHistoryMaxLevel value) {
+      bitField0_ |= 0x00000100;
+      maxLevel.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     * @return whether the gLBJGILDBAK field is set
+     */
+    public boolean hasGLBJGILDBAK() {
+      return (bitField0_ & 0x00000200) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     * @return this
+     */
+    public ChallengeSettleNotify clearGLBJGILDBAK() {
+      bitField0_ &= ~0x00000200;
+      gLBJGILDBAK.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableGLBJGILDBAK()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getGLBJGILDBAK() {
+      return gLBJGILDBAK;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableGLBJGILDBAK() {
+      bitField0_ |= 0x00000200;
+      return gLBJGILDBAK;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     * @param value the gLBJGILDBAK to add
+     * @return this
+     */
+    public ChallengeSettleNotify addGLBJGILDBAK(final int value) {
+      bitField0_ |= 0x00000200;
+      gLBJGILDBAK.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 GLBJGILDBAK = 15;</code>
+     * @param values the gLBJGILDBAK to add
+     * @return this
+     */
+    public ChallengeSettleNotify addAllGLBJGILDBAK(final int... values) {
+      bitField0_ |= 0x00000200;
+      gLBJGILDBAK.addAll(values);
       return this;
     }
 
@@ -441,14 +547,16 @@ public final class ChallengeSettleNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        scoreOne = other.scoreOne;
+        gGBCPNCDMFA = other.gGBCPNCDMFA;
         challengeId = other.challengeId;
-        iIJBMNKFMAA = other.iIJBMNKFMAA;
         scoreTwo = other.scoreTwo;
+        scoreOne = other.scoreOne;
         stars = other.stars;
         isWin = other.isWin;
         reward.copyFrom(other.reward);
-        dDDLFINIKDB.copyFrom(other.dDDLFINIKDB);
+        challengeInfo.copyFrom(other.challengeInfo);
+        maxLevel.copyFrom(other.maxLevel);
+        gLBJGILDBAK.copyFrom(other.gLBJGILDBAK);
       }
       return this;
     }
@@ -459,17 +567,17 @@ public final class ChallengeSettleNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasScoreOne()) {
-        setScoreOne(other.scoreOne);
+      if (other.hasGGBCPNCDMFA()) {
+        setGGBCPNCDMFA(other.gGBCPNCDMFA);
       }
       if (other.hasChallengeId()) {
         setChallengeId(other.challengeId);
       }
-      if (other.hasIIJBMNKFMAA()) {
-        setIIJBMNKFMAA(other.iIJBMNKFMAA);
-      }
       if (other.hasScoreTwo()) {
         setScoreTwo(other.scoreTwo);
+      }
+      if (other.hasScoreOne()) {
+        setScoreOne(other.scoreOne);
       }
       if (other.hasStars()) {
         setStars(other.stars);
@@ -480,8 +588,14 @@ public final class ChallengeSettleNotifyOuterClass {
       if (other.hasReward()) {
         getMutableReward().mergeFrom(other.reward);
       }
-      if (other.hasDDDLFINIKDB()) {
-        getMutableDDDLFINIKDB().addAll(other.dDDLFINIKDB);
+      if (other.hasChallengeInfo()) {
+        getMutableChallengeInfo().mergeFrom(other.challengeInfo);
+      }
+      if (other.hasMaxLevel()) {
+        getMutableMaxLevel().mergeFrom(other.maxLevel);
+      }
+      if (other.hasGLBJGILDBAK()) {
+        getMutableGLBJGILDBAK().addAll(other.gLBJGILDBAK);
       }
       return this;
     }
@@ -493,14 +607,16 @@ public final class ChallengeSettleNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      scoreOne = 0;
+      gGBCPNCDMFA = 0;
       challengeId = 0;
-      iIJBMNKFMAA = 0;
       scoreTwo = 0;
+      scoreOne = 0;
       stars = 0;
       isWin = false;
       reward.clear();
-      dDDLFINIKDB.clear();
+      challengeInfo.clear();
+      maxLevel.clear();
+      gLBJGILDBAK.clear();
       return this;
     }
 
@@ -512,7 +628,9 @@ public final class ChallengeSettleNotifyOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       reward.clearQuick();
-      dDDLFINIKDB.clear();
+      challengeInfo.clearQuick();
+      maxLevel.clearQuick();
+      gLBJGILDBAK.clear();
       return this;
     }
 
@@ -526,50 +644,60 @@ public final class ChallengeSettleNotifyOuterClass {
       }
       ChallengeSettleNotify other = (ChallengeSettleNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasScoreOne() || scoreOne == other.scoreOne)
+        && (!hasGGBCPNCDMFA() || gGBCPNCDMFA == other.gGBCPNCDMFA)
         && (!hasChallengeId() || challengeId == other.challengeId)
-        && (!hasIIJBMNKFMAA() || iIJBMNKFMAA == other.iIJBMNKFMAA)
         && (!hasScoreTwo() || scoreTwo == other.scoreTwo)
+        && (!hasScoreOne() || scoreOne == other.scoreOne)
         && (!hasStars() || stars == other.stars)
         && (!hasIsWin() || isWin == other.isWin)
         && (!hasReward() || reward.equals(other.reward))
-        && (!hasDDDLFINIKDB() || dDDLFINIKDB.equals(other.dDDLFINIKDB));
+        && (!hasChallengeInfo() || challengeInfo.equals(other.challengeInfo))
+        && (!hasMaxLevel() || maxLevel.equals(other.maxLevel))
+        && (!hasGLBJGILDBAK() || gLBJGILDBAK.equals(other.gLBJGILDBAK));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(scoreOne);
+        output.writeUInt32NoTag(gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(iIJBMNKFMAA);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(scoreTwo);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(scoreOne);
+      }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(stars);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 16);
         output.writeBoolNoTag(isWin);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(reward);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        for (int i = 0; i < dDDLFINIKDB.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeUInt32NoTag(dDDLFINIKDB.array()[i]);
+        output.writeRawByte((byte) 34);
+        output.writeMessageNoTag(challengeInfo);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRawByte((byte) 90);
+        output.writeMessageNoTag(maxLevel);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        for (int i = 0; i < gLBJGILDBAK.length(); i++) {
+          output.writeRawByte((byte) 120);
+          output.writeUInt32NoTag(gLBJGILDBAK.array()[i]);
         }
       }
     }
@@ -578,16 +706,16 @@ public final class ChallengeSettleNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreOne);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(iIJBMNKFMAA);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreOne);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(stars);
@@ -599,7 +727,13 @@ public final class ChallengeSettleNotifyOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(reward);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += (1 * dDDLFINIKDB.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dDDLFINIKDB);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(challengeInfo);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(maxLevel);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        size += (1 * gLBJGILDBAK.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gLBJGILDBAK);
       }
       return size;
     }
@@ -612,72 +746,90 @@ public final class ChallengeSettleNotifyOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // scoreOne
-            scoreOne = input.readUInt32();
+            // gGBCPNCDMFA
+            gGBCPNCDMFA = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // challengeId
-            challengeId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 56) {
               break;
             }
           }
           case 56: {
-            // iIJBMNKFMAA
-            iIJBMNKFMAA = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            // challengeId
+            challengeId = input.readUInt32();
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 72) {
               break;
             }
           }
-          case 96: {
+          case 72: {
             // scoreTwo
             scoreTwo = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 80) {
               break;
             }
           }
-          case 112: {
+          case 80: {
+            // scoreOne
+            scoreOne = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
             // stars
             stars = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 16) {
               break;
             }
           }
-          case 32: {
+          case 16: {
             // isWin
             isWin = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 26) {
               break;
             }
           }
-          case 82: {
+          case 26: {
             // reward
             input.readMessage(reward);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 34) {
               break;
             }
           }
-          case 50: {
-            // dDDLFINIKDB [packed=true]
-            input.readPackedUInt32(dDDLFINIKDB, tag);
+          case 34: {
+            // challengeInfo
+            input.readMessage(challengeInfo);
             bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // maxLevel
+            input.readMessage(maxLevel);
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 122) {
+              break;
+            }
+          }
+          case 122: {
+            // gLBJGILDBAK [packed=true]
+            input.readPackedUInt32(gLBJGILDBAK, tag);
+            bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -693,10 +845,10 @@ public final class ChallengeSettleNotifyOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
-            // dDDLFINIKDB [packed=false]
-            tag = input.readRepeatedUInt32(dDDLFINIKDB, tag);
-            bitField0_ |= 0x00000080;
+          case 120: {
+            // gLBJGILDBAK [packed=false]
+            tag = input.readRepeatedUInt32(gLBJGILDBAK, tag);
+            bitField0_ |= 0x00000200;
             break;
           }
         }
@@ -707,16 +859,16 @@ public final class ChallengeSettleNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.scoreOne, scoreOne);
+        output.writeUInt32(FieldNames.gGBCPNCDMFA, gGBCPNCDMFA);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.challengeId, challengeId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.iIJBMNKFMAA, iIJBMNKFMAA);
+        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
+        output.writeUInt32(FieldNames.scoreOne, scoreOne);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.stars, stars);
@@ -728,7 +880,13 @@ public final class ChallengeSettleNotifyOuterClass {
         output.writeMessage(FieldNames.reward, reward);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRepeatedUInt32(FieldNames.dDDLFINIKDB, dDDLFINIKDB);
+        output.writeMessage(FieldNames.challengeInfo, challengeInfo);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeMessage(FieldNames.maxLevel, maxLevel);
+      }
+      if ((bitField0_ & 0x00000200) != 0) {
+        output.writeRepeatedUInt32(FieldNames.gLBJGILDBAK, gLBJGILDBAK);
       }
       output.endObject();
     }
@@ -740,11 +898,10 @@ public final class ChallengeSettleNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -485517708:
-          case 2129298233: {
-            if (input.isAtField(FieldNames.scoreOne)) {
+          case -2042884536: {
+            if (input.isAtField(FieldNames.gGBCPNCDMFA)) {
               if (!input.trySkipNullValue()) {
-                scoreOne = input.readUInt32();
+                gGBCPNCDMFA = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -764,10 +921,11 @@ public final class ChallengeSettleNotifyOuterClass {
             }
             break;
           }
-          case 882480025: {
-            if (input.isAtField(FieldNames.iIJBMNKFMAA)) {
+          case -485512614:
+          case 2129303327: {
+            if (input.isAtField(FieldNames.scoreTwo)) {
               if (!input.trySkipNullValue()) {
-                iIJBMNKFMAA = input.readUInt32();
+                scoreTwo = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -775,11 +933,11 @@ public final class ChallengeSettleNotifyOuterClass {
             }
             break;
           }
-          case -485512614:
-          case 2129303327: {
-            if (input.isAtField(FieldNames.scoreTwo)) {
+          case -485517708:
+          case 2129298233: {
+            if (input.isAtField(FieldNames.scoreOne)) {
               if (!input.trySkipNullValue()) {
-                scoreTwo = input.readUInt32();
+                scoreOne = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -821,11 +979,35 @@ public final class ChallengeSettleNotifyOuterClass {
             }
             break;
           }
-          case -1589917309: {
-            if (input.isAtField(FieldNames.dDDLFINIKDB)) {
+          case -812487759:
+          case 602859274: {
+            if (input.isAtField(FieldNames.challengeInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(dDDLFINIKDB);
+                input.readMessage(challengeInfo);
                 bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 390120576:
+          case -241235735: {
+            if (input.isAtField(FieldNames.maxLevel)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(maxLevel);
+                bitField0_ |= 0x00000100;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1051842373: {
+            if (input.isAtField(FieldNames.gLBJGILDBAK)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(gLBJGILDBAK);
+                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -885,13 +1067,13 @@ public final class ChallengeSettleNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName scoreOne = FieldName.forField("scoreOne", "score_one");
+      static final FieldName gGBCPNCDMFA = FieldName.forField("GGBCPNCDMFA");
 
       static final FieldName challengeId = FieldName.forField("challengeId", "challenge_id");
 
-      static final FieldName iIJBMNKFMAA = FieldName.forField("IIJBMNKFMAA");
-
       static final FieldName scoreTwo = FieldName.forField("scoreTwo", "score_two");
+
+      static final FieldName scoreOne = FieldName.forField("scoreOne", "score_one");
 
       static final FieldName stars = FieldName.forField("stars");
 
@@ -899,7 +1081,11 @@ public final class ChallengeSettleNotifyOuterClass {
 
       static final FieldName reward = FieldName.forField("reward");
 
-      static final FieldName dDDLFINIKDB = FieldName.forField("DDDLFINIKDB");
+      static final FieldName challengeInfo = FieldName.forField("challengeInfo", "challenge_info");
+
+      static final FieldName maxLevel = FieldName.forField("maxLevel", "max_level");
+
+      static final FieldName gLBJGILDBAK = FieldName.forField("GLBJGILDBAK");
     }
   }
 }

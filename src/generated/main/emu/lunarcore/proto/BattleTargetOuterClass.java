@@ -19,17 +19,17 @@ public final class BattleTargetOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 1;</code>
+     * <code>optional uint32 Id = 1;</code>
      */
     private int id;
 
     /**
-     * <code>optional uint32 progress = 2;</code>
+     * <code>optional uint32 Progress = 2;</code>
      */
     private int progress;
 
     /**
-     * <code>optional uint32 total_progress = 3;</code>
+     * <code>optional uint32 TotalProgress = 3;</code>
      */
     private int totalProgress;
 
@@ -44,7 +44,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 1;</code>
+     * <code>optional uint32 Id = 1;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -52,7 +52,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 1;</code>
+     * <code>optional uint32 Id = 1;</code>
      * @return this
      */
     public BattleTarget clearId() {
@@ -62,7 +62,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 1;</code>
+     * <code>optional uint32 Id = 1;</code>
      * @return the id
      */
     public int getId() {
@@ -70,7 +70,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 1;</code>
+     * <code>optional uint32 Id = 1;</code>
      * @param value the id to set
      * @return this
      */
@@ -81,7 +81,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 2;</code>
+     * <code>optional uint32 Progress = 2;</code>
      * @return whether the progress field is set
      */
     public boolean hasProgress() {
@@ -89,7 +89,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 2;</code>
+     * <code>optional uint32 Progress = 2;</code>
      * @return this
      */
     public BattleTarget clearProgress() {
@@ -99,7 +99,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 2;</code>
+     * <code>optional uint32 Progress = 2;</code>
      * @return the progress
      */
     public int getProgress() {
@@ -107,7 +107,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 2;</code>
+     * <code>optional uint32 Progress = 2;</code>
      * @param value the progress to set
      * @return this
      */
@@ -118,7 +118,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_progress = 3;</code>
+     * <code>optional uint32 TotalProgress = 3;</code>
      * @return whether the totalProgress field is set
      */
     public boolean hasTotalProgress() {
@@ -126,7 +126,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_progress = 3;</code>
+     * <code>optional uint32 TotalProgress = 3;</code>
      * @return this
      */
     public BattleTarget clearTotalProgress() {
@@ -136,7 +136,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_progress = 3;</code>
+     * <code>optional uint32 TotalProgress = 3;</code>
      * @return the totalProgress
      */
     public int getTotalProgress() {
@@ -144,7 +144,7 @@ public final class BattleTargetOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_progress = 3;</code>
+     * <code>optional uint32 TotalProgress = 3;</code>
      * @param value the totalProgress to set
      * @return this
      */
@@ -323,7 +323,7 @@ public final class BattleTargetOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3355: {
+          case 2363: {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
@@ -334,7 +334,7 @@ public final class BattleTargetOuterClass {
             }
             break;
           }
-          case -1001078227: {
+          case -936434099: {
             if (input.isAtField(FieldNames.progress)) {
               if (!input.trySkipNullValue()) {
                 progress = input.readUInt32();
@@ -345,8 +345,7 @@ public final class BattleTargetOuterClass {
             }
             break;
           }
-          case -974619247:
-          case -2094299960: {
+          case -175657615: {
             if (input.isAtField(FieldNames.totalProgress)) {
               if (!input.trySkipNullValue()) {
                 totalProgress = input.readUInt32();
@@ -409,11 +408,11 @@ public final class BattleTargetOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName id = FieldName.forField("id");
+      static final FieldName id = FieldName.forField("Id");
 
-      static final FieldName progress = FieldName.forField("progress");
+      static final FieldName progress = FieldName.forField("Progress");
 
-      static final FieldName totalProgress = FieldName.forField("totalProgress", "total_progress");
+      static final FieldName totalProgress = FieldName.forField("TotalProgress");
     }
   }
 }

@@ -2,40 +2,42 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+import "MissionSync.proto";
+import "WaitDelResource.proto";
+import "BoardDataSync.proto";
 import "Relic.proto";
 import "Equipment.proto";
-import "PlayerBasicInfo.proto";
-import "BoardDataSync.proto";
-import "Material.proto";
-import "AvatarSync.proto";
-import "MultiPathAvatarTypeInfo.proto";
-import "Quest.proto";
-import "WaitDelResource.proto";
 import "ItemList.proto";
-import "MissionSync.proto";
+import "AvatarSync.proto";
+import "PlayerBasicInfo.proto";
+import "Quest.proto";
+import "MultiPathAvatarTypeInfo.proto";
+import "Material.proto";
 
 message PlayerSyncScNotify {
-	PlayerBasicInfo basic_info = 4;
-	repeated Relic relic_list = 7;
-	repeated Equipment equipment_list = 5;
-	repeated WaitDelResource wait_del_resource_list = 2;
-	MissionSync mission_sync = 9;
-	repeated Material GHHACNDFBAE = 345;
-	repeated Quest quest_list = 1;
-	repeated uint32 JGHIMABKAJD = 1546;
-	//ANFLDLLFJHP POKBDGNDPOM = 13;
-	//repeated NFCCNKNGBKE IMCMPALMCCC = 1325;
-	AvatarSync avatar_sync = 10;
-	//repeated SectionStatus MKBPGNGNKFM = 1592;
-	BoardDataSync board_data_sync = 1273;
-	uint32 total_achievement_exp = 1522;
-	//DFILOMFFAFD GHOCFMLGIHN = 3;
-	//repeated GroupStatus HKGBLMADMHC = 1100;
-	repeated Material material_list = 14;
-	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 1834;
-	ItemList HEPOLAAEBGF = 969;
-	//CBPBLOPAOCM FMKEFNEFDAA = 1221;
+	//repeated SectionStatus HJGIEKEPBIH = 214;
+	repeated Material material_list = 11;
+	//IJJMLIFHIKK JNFEDNBGBHN = 2;
+	repeated uint32 HELAAAKOCBB = 1988;
+	repeated Equipment equipment_list = 12;
+	//DEAJGOPAMNB PABLGNBDDCG = 49;
+		//repeated uint32 INDIHGHPJEL = 1;
+	BoardDataSync board_data_sync = 129;
+	repeated Material HNBHLCAKAJG = 1750;
+	MissionSync mission_sync = 14;
+	uint32 total_achievement_exp = 306;
+	//PFIJOKJPNBB AMAHGKEECPN = 4;
+	//repeated IGFLEJNLOMM CEOMDDEJKEF = 1089;
+	//repeated GroupStatus JPLPJDINOAJ = 1147;
+	ItemList IKLEOCENKJG = 1328;
+	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 102;
+	AvatarSync avatar_sync = 8;
+	repeated WaitDelResource wait_del_resource_list = 15;
+	PlayerBasicInfo basic_info = 5;
+	repeated Quest quest_list = 6;
+	repeated Relic relic_list = 3;
+		//repeated uint32 COOKFBPFNJM = 7;
 
-	repeated uint32 del_relic_list = 8;
-	repeated uint32 del_equipment_list = 12;
+	repeated uint32 del_relic_list = 1; //?
+	repeated uint32 del_equipment_list = 7; //?
 }

@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "MotionInfo.proto";
 
 message EntityMotion {
-	uint32 map_layer = 11;
-	MotionInfo motion = 1;
-	uint32 entity_id = 15;
-	bool GCHCPPDDMAD = 8;
+	MotionInfo motion = 14;
+	bool DOOCFNPJGND = 9;
+	uint32 entity_id = 12;
+	uint32 map_layer = 8;
 }

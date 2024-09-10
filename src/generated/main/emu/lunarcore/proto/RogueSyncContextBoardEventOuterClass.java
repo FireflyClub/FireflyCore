@@ -19,12 +19,12 @@ public final class RogueSyncContextBoardEventOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 modifier_effect_type = 7;</code>
+     * <code>optional uint32 ModifierEffectType = 5;</code>
      */
     private int modifierEffectType;
 
     /**
-     * <code>optional uint32 board_event_id = 9;</code>
+     * <code>optional uint32 BoardEventId = 11;</code>
      */
     private int boardEventId;
 
@@ -39,7 +39,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 7;</code>
+     * <code>optional uint32 ModifierEffectType = 5;</code>
      * @return whether the modifierEffectType field is set
      */
     public boolean hasModifierEffectType() {
@@ -47,7 +47,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 7;</code>
+     * <code>optional uint32 ModifierEffectType = 5;</code>
      * @return this
      */
     public RogueSyncContextBoardEvent clearModifierEffectType() {
@@ -57,7 +57,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 7;</code>
+     * <code>optional uint32 ModifierEffectType = 5;</code>
      * @return the modifierEffectType
      */
     public int getModifierEffectType() {
@@ -65,7 +65,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 7;</code>
+     * <code>optional uint32 ModifierEffectType = 5;</code>
      * @param value the modifierEffectType to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 9;</code>
+     * <code>optional uint32 BoardEventId = 11;</code>
      * @return whether the boardEventId field is set
      */
     public boolean hasBoardEventId() {
@@ -84,7 +84,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 9;</code>
+     * <code>optional uint32 BoardEventId = 11;</code>
      * @return this
      */
     public RogueSyncContextBoardEvent clearBoardEventId() {
@@ -94,7 +94,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 9;</code>
+     * <code>optional uint32 BoardEventId = 11;</code>
      * @return the boardEventId
      */
     public int getBoardEventId() {
@@ -102,7 +102,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 9;</code>
+     * <code>optional uint32 BoardEventId = 11;</code>
      * @param value the boardEventId to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class RogueSyncContextBoardEventOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(modifierEffectType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(boardEventId);
       }
     }
@@ -205,16 +205,16 @@ public final class RogueSyncContextBoardEventOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 40: {
             // modifierEffectType
             modifierEffectType = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 88) {
               break;
             }
           }
-          case 72: {
+          case 88: {
             // boardEventId
             boardEventId = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -256,8 +256,7 @@ public final class RogueSyncContextBoardEventOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1445000542:
-          case -145180736: {
+          case 396543682: {
             if (input.isAtField(FieldNames.modifierEffectType)) {
               if (!input.trySkipNullValue()) {
                 modifierEffectType = input.readUInt32();
@@ -268,8 +267,7 @@ public final class RogueSyncContextBoardEventOuterClass {
             }
             break;
           }
-          case -1130727537:
-          case -1668848103: {
+          case -966407249: {
             if (input.isAtField(FieldNames.boardEventId)) {
               if (!input.trySkipNullValue()) {
                 boardEventId = input.readUInt32();
@@ -333,9 +331,9 @@ public final class RogueSyncContextBoardEventOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName modifierEffectType = FieldName.forField("modifierEffectType", "modifier_effect_type");
+      static final FieldName modifierEffectType = FieldName.forField("ModifierEffectType");
 
-      static final FieldName boardEventId = FieldName.forField("boardEventId", "board_event_id");
+      static final FieldName boardEventId = FieldName.forField("BoardEventId");
     }
   }
 }

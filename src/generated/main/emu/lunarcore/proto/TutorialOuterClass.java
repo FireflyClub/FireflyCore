@@ -19,12 +19,12 @@ public final class TutorialOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 Id = 11;</code>
      */
     private int id;
 
     /**
-     * <code>optional .TutorialStatus status = 4;</code>
+     * <code>optional .TutorialStatus Status = 7;</code>
      */
     private int status;
 
@@ -39,7 +39,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 Id = 11;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -47,7 +47,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 Id = 11;</code>
      * @return this
      */
     public Tutorial clearId() {
@@ -57,7 +57,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 Id = 11;</code>
      * @return the id
      */
     public int getId() {
@@ -65,7 +65,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 Id = 11;</code>
      * @param value the id to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional .TutorialStatus status = 4;</code>
+     * <code>optional .TutorialStatus Status = 7;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -84,7 +84,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional .TutorialStatus status = 4;</code>
+     * <code>optional .TutorialStatus Status = 7;</code>
      * @return this
      */
     public Tutorial clearStatus() {
@@ -94,7 +94,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional .TutorialStatus status = 4;</code>
+     * <code>optional .TutorialStatus Status = 7;</code>
      * @return the status
      */
     public TutorialStatusOuterClass.TutorialStatus getStatus() {
@@ -127,7 +127,7 @@ public final class TutorialOuterClass {
     }
 
     /**
-     * <code>optional .TutorialStatus status = 4;</code>
+     * <code>optional .TutorialStatus Status = 7;</code>
      * @param value the status to set
      * @return this
      */
@@ -202,11 +202,11 @@ public final class TutorialOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(status);
       }
     }
@@ -230,16 +230,16 @@ public final class TutorialOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 88: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 56) {
               break;
             }
           }
-          case 32: {
+          case 56: {
             // status
             final int value = input.readInt32();
             if (TutorialStatusOuterClass.TutorialStatus.forNumber(value) != null) {
@@ -284,7 +284,7 @@ public final class TutorialOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3355: {
+          case 2363: {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
@@ -295,7 +295,7 @@ public final class TutorialOuterClass {
             }
             break;
           }
-          case -892481550: {
+          case -1808614382: {
             if (input.isAtField(FieldNames.status)) {
               if (!input.trySkipNullValue()) {
                 final TutorialStatusOuterClass.TutorialStatus value = input.readEnum(TutorialStatusOuterClass.TutorialStatus.converter());
@@ -363,9 +363,9 @@ public final class TutorialOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName id = FieldName.forField("id");
+      static final FieldName id = FieldName.forField("Id");
 
-      static final FieldName status = FieldName.forField("status");
+      static final FieldName status = FieldName.forField("Status");
     }
   }
 }

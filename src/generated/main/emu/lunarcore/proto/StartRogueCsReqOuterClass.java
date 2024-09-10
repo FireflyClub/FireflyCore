@@ -20,34 +20,34 @@ public final class StartRogueCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_aeon_id = 11;</code>
-     */
-    private int buffAeonId;
-
-    /**
-     * <code>optional uint32 area_id = 13;</code>
-     */
-    private int areaId;
-
-    /**
-     * <code>optional uint32 rouge_event_id = 14;</code>
+     * <code>optional uint32 rouge_event_id = 1;</code>
      */
     private int rougeEventId;
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
+     * <code>optional uint32 area_id = 9;</code>
      */
-    private final RepeatedInt dAPLNLIGMOM = RepeatedInt.newEmptyInstance();
+    private int areaId;
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>optional uint32 buff_aeon_id = 15;</code>
+     */
+    private int buffAeonId;
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
+     */
+    private final RepeatedInt nGBFEHEJHHO = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     */
+    private final RepeatedInt mOICCJNMBBI = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      */
     private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     */
-    private final RepeatedInt nBPHDGEOKGN = RepeatedInt.newEmptyInstance();
 
     private StartRogueCsReq() {
     }
@@ -60,44 +60,44 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_aeon_id = 11;</code>
-     * @return whether the buffAeonId field is set
+     * <code>optional uint32 rouge_event_id = 1;</code>
+     * @return whether the rougeEventId field is set
      */
-    public boolean hasBuffAeonId() {
+    public boolean hasRougeEventId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 buff_aeon_id = 11;</code>
+     * <code>optional uint32 rouge_event_id = 1;</code>
      * @return this
      */
-    public StartRogueCsReq clearBuffAeonId() {
+    public StartRogueCsReq clearRougeEventId() {
       bitField0_ &= ~0x00000001;
-      buffAeonId = 0;
+      rougeEventId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 buff_aeon_id = 11;</code>
-     * @return the buffAeonId
+     * <code>optional uint32 rouge_event_id = 1;</code>
+     * @return the rougeEventId
      */
-    public int getBuffAeonId() {
-      return buffAeonId;
+    public int getRougeEventId() {
+      return rougeEventId;
     }
 
     /**
-     * <code>optional uint32 buff_aeon_id = 11;</code>
-     * @param value the buffAeonId to set
+     * <code>optional uint32 rouge_event_id = 1;</code>
+     * @param value the rougeEventId to set
      * @return this
      */
-    public StartRogueCsReq setBuffAeonId(final int value) {
+    public StartRogueCsReq setRougeEventId(final int value) {
       bitField0_ |= 0x00000001;
-      buffAeonId = value;
+      rougeEventId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 area_id = 13;</code>
+     * <code>optional uint32 area_id = 9;</code>
      * @return whether the areaId field is set
      */
     public boolean hasAreaId() {
@@ -105,7 +105,7 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 area_id = 13;</code>
+     * <code>optional uint32 area_id = 9;</code>
      * @return this
      */
     public StartRogueCsReq clearAreaId() {
@@ -115,7 +115,7 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 area_id = 13;</code>
+     * <code>optional uint32 area_id = 9;</code>
      * @return the areaId
      */
     public int getAreaId() {
@@ -123,7 +123,7 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 area_id = 13;</code>
+     * <code>optional uint32 area_id = 9;</code>
      * @param value the areaId to set
      * @return this
      */
@@ -134,76 +134,76 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rouge_event_id = 14;</code>
-     * @return whether the rougeEventId field is set
+     * <code>optional uint32 buff_aeon_id = 15;</code>
+     * @return whether the buffAeonId field is set
      */
-    public boolean hasRougeEventId() {
+    public boolean hasBuffAeonId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 rouge_event_id = 14;</code>
+     * <code>optional uint32 buff_aeon_id = 15;</code>
      * @return this
      */
-    public StartRogueCsReq clearRougeEventId() {
+    public StartRogueCsReq clearBuffAeonId() {
       bitField0_ &= ~0x00000004;
-      rougeEventId = 0;
+      buffAeonId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 rouge_event_id = 14;</code>
-     * @return the rougeEventId
+     * <code>optional uint32 buff_aeon_id = 15;</code>
+     * @return the buffAeonId
      */
-    public int getRougeEventId() {
-      return rougeEventId;
+    public int getBuffAeonId() {
+      return buffAeonId;
     }
 
     /**
-     * <code>optional uint32 rouge_event_id = 14;</code>
-     * @param value the rougeEventId to set
+     * <code>optional uint32 buff_aeon_id = 15;</code>
+     * @param value the buffAeonId to set
      * @return this
      */
-    public StartRogueCsReq setRougeEventId(final int value) {
+    public StartRogueCsReq setBuffAeonId(final int value) {
       bitField0_ |= 0x00000004;
-      rougeEventId = value;
+      buffAeonId = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
-     * @return whether the dAPLNLIGMOM field is set
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
+     * @return whether the nGBFEHEJHHO field is set
      */
-    public boolean hasDAPLNLIGMOM() {
+    public boolean hasNGBFEHEJHHO() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
      * @return this
      */
-    public StartRogueCsReq clearDAPLNLIGMOM() {
+    public StartRogueCsReq clearNGBFEHEJHHO() {
       bitField0_ &= ~0x00000008;
-      dAPLNLIGMOM.clear();
+      nGBFEHEJHHO.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableDAPLNLIGMOM()} if you want to modify it.
+     * Use {@link #getMutableNGBFEHEJHHO()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getDAPLNLIGMOM() {
-      return dAPLNLIGMOM;
+    public RepeatedInt getNGBFEHEJHHO() {
+      return nGBFEHEJHHO;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -211,53 +211,121 @@ public final class StartRogueCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableDAPLNLIGMOM() {
+    public RepeatedInt getMutableNGBFEHEJHHO() {
       bitField0_ |= 0x00000008;
-      return dAPLNLIGMOM;
+      return nGBFEHEJHHO;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
-     * @param value the dAPLNLIGMOM to add
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
+     * @param value the nGBFEHEJHHO to add
      * @return this
      */
-    public StartRogueCsReq addDAPLNLIGMOM(final int value) {
+    public StartRogueCsReq addNGBFEHEJHHO(final int value) {
       bitField0_ |= 0x00000008;
-      dAPLNLIGMOM.add(value);
+      nGBFEHEJHHO.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 5;</code>
-     * @param values the dAPLNLIGMOM to add
+     * <code>repeated uint32 NGBFEHEJHHO = 8;</code>
+     * @param values the nGBFEHEJHHO to add
      * @return this
      */
-    public StartRogueCsReq addAllDAPLNLIGMOM(final int... values) {
+    public StartRogueCsReq addAllNGBFEHEJHHO(final int... values) {
       bitField0_ |= 0x00000008;
-      dAPLNLIGMOM.addAll(values);
+      nGBFEHEJHHO.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
-     * @return whether the baseAvatarIdList field is set
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     * @return whether the mOICCJNMBBI field is set
      */
-    public boolean hasBaseAvatarIdList() {
+    public boolean hasMOICCJNMBBI() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     * @return this
+     */
+    public StartRogueCsReq clearMOICCJNMBBI() {
+      bitField0_ &= ~0x00000010;
+      mOICCJNMBBI.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMOICCJNMBBI()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getMOICCJNMBBI() {
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableMOICCJNMBBI() {
+      bitField0_ |= 0x00000010;
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     * @param value the mOICCJNMBBI to add
+     * @return this
+     */
+    public StartRogueCsReq addMOICCJNMBBI(final int value) {
+      bitField0_ |= 0x00000010;
+      mOICCJNMBBI.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 11;</code>
+     * @param values the mOICCJNMBBI to add
+     * @return this
+     */
+    public StartRogueCsReq addAllMOICCJNMBBI(final int... values) {
+      bitField0_ |= 0x00000010;
+      mOICCJNMBBI.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
+     * @return whether the baseAvatarIdList field is set
+     */
+    public boolean hasBaseAvatarIdList() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      * @return this
      */
     public StartRogueCsReq clearBaseAvatarIdList() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000020;
       baseAvatarIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -271,7 +339,7 @@ public final class StartRogueCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -280,97 +348,29 @@ public final class StartRogueCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableBaseAvatarIdList() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      * @param value the baseAvatarIdList to add
      * @return this
      */
     public StartRogueCsReq addBaseAvatarIdList(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       baseAvatarIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 13;</code>
      * @param values the baseAvatarIdList to add
      * @return this
      */
     public StartRogueCsReq addAllBaseAvatarIdList(final int... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000020;
       baseAvatarIdList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     * @return whether the nBPHDGEOKGN field is set
-     */
-    public boolean hasNBPHDGEOKGN() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     * @return this
-     */
-    public StartRogueCsReq clearNBPHDGEOKGN() {
-      bitField0_ &= ~0x00000020;
-      nBPHDGEOKGN.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableNBPHDGEOKGN()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getNBPHDGEOKGN() {
-      return nBPHDGEOKGN;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableNBPHDGEOKGN() {
-      bitField0_ |= 0x00000020;
-      return nBPHDGEOKGN;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     * @param value the nBPHDGEOKGN to add
-     * @return this
-     */
-    public StartRogueCsReq addNBPHDGEOKGN(final int value) {
-      bitField0_ |= 0x00000020;
-      nBPHDGEOKGN.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 NBPHDGEOKGN = 8;</code>
-     * @param values the nBPHDGEOKGN to add
-     * @return this
-     */
-    public StartRogueCsReq addAllNBPHDGEOKGN(final int... values) {
-      bitField0_ |= 0x00000020;
-      nBPHDGEOKGN.addAll(values);
       return this;
     }
 
@@ -379,12 +379,12 @@ public final class StartRogueCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        buffAeonId = other.buffAeonId;
-        areaId = other.areaId;
         rougeEventId = other.rougeEventId;
-        dAPLNLIGMOM.copyFrom(other.dAPLNLIGMOM);
+        areaId = other.areaId;
+        buffAeonId = other.buffAeonId;
+        nGBFEHEJHHO.copyFrom(other.nGBFEHEJHHO);
+        mOICCJNMBBI.copyFrom(other.mOICCJNMBBI);
         baseAvatarIdList.copyFrom(other.baseAvatarIdList);
-        nBPHDGEOKGN.copyFrom(other.nBPHDGEOKGN);
       }
       return this;
     }
@@ -395,23 +395,23 @@ public final class StartRogueCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBuffAeonId()) {
-        setBuffAeonId(other.buffAeonId);
+      if (other.hasRougeEventId()) {
+        setRougeEventId(other.rougeEventId);
       }
       if (other.hasAreaId()) {
         setAreaId(other.areaId);
       }
-      if (other.hasRougeEventId()) {
-        setRougeEventId(other.rougeEventId);
+      if (other.hasBuffAeonId()) {
+        setBuffAeonId(other.buffAeonId);
       }
-      if (other.hasDAPLNLIGMOM()) {
-        getMutableDAPLNLIGMOM().addAll(other.dAPLNLIGMOM);
+      if (other.hasNGBFEHEJHHO()) {
+        getMutableNGBFEHEJHHO().addAll(other.nGBFEHEJHHO);
+      }
+      if (other.hasMOICCJNMBBI()) {
+        getMutableMOICCJNMBBI().addAll(other.mOICCJNMBBI);
       }
       if (other.hasBaseAvatarIdList()) {
         getMutableBaseAvatarIdList().addAll(other.baseAvatarIdList);
-      }
-      if (other.hasNBPHDGEOKGN()) {
-        getMutableNBPHDGEOKGN().addAll(other.nBPHDGEOKGN);
       }
       return this;
     }
@@ -423,12 +423,12 @@ public final class StartRogueCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      buffAeonId = 0;
-      areaId = 0;
       rougeEventId = 0;
-      dAPLNLIGMOM.clear();
+      areaId = 0;
+      buffAeonId = 0;
+      nGBFEHEJHHO.clear();
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      nBPHDGEOKGN.clear();
       return this;
     }
 
@@ -439,9 +439,9 @@ public final class StartRogueCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dAPLNLIGMOM.clear();
+      nGBFEHEJHHO.clear();
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      nBPHDGEOKGN.clear();
       return this;
     }
 
@@ -455,44 +455,44 @@ public final class StartRogueCsReqOuterClass {
       }
       StartRogueCsReq other = (StartRogueCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasBuffAeonId() || buffAeonId == other.buffAeonId)
-        && (!hasAreaId() || areaId == other.areaId)
         && (!hasRougeEventId() || rougeEventId == other.rougeEventId)
-        && (!hasDAPLNLIGMOM() || dAPLNLIGMOM.equals(other.dAPLNLIGMOM))
-        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList))
-        && (!hasNBPHDGEOKGN() || nBPHDGEOKGN.equals(other.nBPHDGEOKGN));
+        && (!hasAreaId() || areaId == other.areaId)
+        && (!hasBuffAeonId() || buffAeonId == other.buffAeonId)
+        && (!hasNGBFEHEJHHO() || nGBFEHEJHHO.equals(other.nGBFEHEJHHO))
+        && (!hasMOICCJNMBBI() || mOICCJNMBBI.equals(other.mOICCJNMBBI))
+        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(buffAeonId);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(rougeEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(areaId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(rougeEventId);
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(buffAeonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < dAPLNLIGMOM.length(); i++) {
-          output.writeRawByte((byte) 40);
-          output.writeUInt32NoTag(dAPLNLIGMOM.array()[i]);
+        for (int i = 0; i < nGBFEHEJHHO.length(); i++) {
+          output.writeRawByte((byte) 64);
+          output.writeUInt32NoTag(nGBFEHEJHHO.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < baseAvatarIdList.length(); i++) {
-          output.writeRawByte((byte) 56);
-          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
+        for (int i = 0; i < mOICCJNMBBI.length(); i++) {
+          output.writeRawByte((byte) 88);
+          output.writeUInt32NoTag(mOICCJNMBBI.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < nBPHDGEOKGN.length(); i++) {
-          output.writeRawByte((byte) 64);
-          output.writeUInt32NoTag(nBPHDGEOKGN.array()[i]);
+        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+          output.writeRawByte((byte) 104);
+          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
         }
       }
     }
@@ -501,22 +501,22 @@ public final class StartRogueCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffAeonId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rougeEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(areaId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rougeEventId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffAeonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * dAPLNLIGMOM.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dAPLNLIGMOM);
+        size += (1 * nGBFEHEJHHO.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(nGBFEHEJHHO);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
+        size += (1 * mOICCJNMBBI.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * nBPHDGEOKGN.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(nBPHDGEOKGN);
+        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
       }
       return size;
     }
@@ -528,54 +528,54 @@ public final class StartRogueCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 88: {
-            // buffAeonId
-            buffAeonId = input.readUInt32();
+          case 8: {
+            // rougeEventId
+            rougeEventId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 72) {
               break;
             }
           }
-          case 104: {
+          case 72: {
             // areaId
             areaId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 120) {
               break;
             }
           }
-          case 112: {
-            // rougeEventId
-            rougeEventId = input.readUInt32();
+          case 120: {
+            // buffAeonId
+            buffAeonId = input.readUInt32();
             bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 42) {
-              break;
-            }
-          }
-          case 42: {
-            // dAPLNLIGMOM [packed=true]
-            input.readPackedUInt32(dAPLNLIGMOM, tag);
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // baseAvatarIdList [packed=true]
-            input.readPackedUInt32(baseAvatarIdList, tag);
-            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 66) {
               break;
             }
           }
           case 66: {
-            // nBPHDGEOKGN [packed=true]
-            input.readPackedUInt32(nBPHDGEOKGN, tag);
+            // nGBFEHEJHHO [packed=true]
+            input.readPackedUInt32(nGBFEHEJHHO, tag);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // mOICCJNMBBI [packed=true]
+            input.readPackedUInt32(mOICCJNMBBI, tag);
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
+            // baseAvatarIdList [packed=true]
+            input.readPackedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 0) {
@@ -592,21 +592,21 @@ public final class StartRogueCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 40: {
-            // dAPLNLIGMOM [packed=false]
-            tag = input.readRepeatedUInt32(dAPLNLIGMOM, tag);
+          case 64: {
+            // nGBFEHEJHHO [packed=false]
+            tag = input.readRepeatedUInt32(nGBFEHEJHHO, tag);
             bitField0_ |= 0x00000008;
             break;
           }
-          case 56: {
-            // baseAvatarIdList [packed=false]
-            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
+          case 88: {
+            // mOICCJNMBBI [packed=false]
+            tag = input.readRepeatedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000010;
             break;
           }
-          case 64: {
-            // nBPHDGEOKGN [packed=false]
-            tag = input.readRepeatedUInt32(nBPHDGEOKGN, tag);
+          case 104: {
+            // baseAvatarIdList [packed=false]
+            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000020;
             break;
           }
@@ -618,22 +618,22 @@ public final class StartRogueCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.buffAeonId, buffAeonId);
+        output.writeUInt32(FieldNames.rougeEventId, rougeEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.areaId, areaId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.rougeEventId, rougeEventId);
+        output.writeUInt32(FieldNames.buffAeonId, buffAeonId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.dAPLNLIGMOM, dAPLNLIGMOM);
+        output.writeRepeatedUInt32(FieldNames.nGBFEHEJHHO, nGBFEHEJHHO);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
+        output.writeRepeatedUInt32(FieldNames.mOICCJNMBBI, mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedUInt32(FieldNames.nBPHDGEOKGN, nBPHDGEOKGN);
+        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
       }
       output.endObject();
     }
@@ -645,11 +645,11 @@ public final class StartRogueCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 864413617:
-          case -1316781589: {
-            if (input.isAtField(FieldNames.buffAeonId)) {
+          case 1449266111:
+          case -491082167: {
+            if (input.isAtField(FieldNames.rougeEventId)) {
               if (!input.trySkipNullValue()) {
-                buffAeonId = input.readUInt32();
+                rougeEventId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -669,11 +669,11 @@ public final class StartRogueCsReqOuterClass {
             }
             break;
           }
-          case 1449266111:
-          case -491082167: {
-            if (input.isAtField(FieldNames.rougeEventId)) {
+          case 864413617:
+          case -1316781589: {
+            if (input.isAtField(FieldNames.buffAeonId)) {
               if (!input.trySkipNullValue()) {
-                rougeEventId = input.readUInt32();
+                buffAeonId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -681,11 +681,22 @@ public final class StartRogueCsReqOuterClass {
             }
             break;
           }
-          case 1671280822: {
-            if (input.isAtField(FieldNames.dAPLNLIGMOM)) {
+          case -2145538198: {
+            if (input.isAtField(FieldNames.nGBFEHEJHHO)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(dAPLNLIGMOM);
+                input.readRepeatedUInt32(nGBFEHEJHHO);
                 bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -35824601: {
+            if (input.isAtField(FieldNames.mOICCJNMBBI)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(mOICCJNMBBI);
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -697,17 +708,6 @@ public final class StartRogueCsReqOuterClass {
             if (input.isAtField(FieldNames.baseAvatarIdList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(baseAvatarIdList);
-                bitField0_ |= 0x00000010;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1872110265: {
-            if (input.isAtField(FieldNames.nBPHDGEOKGN)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(nBPHDGEOKGN);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -768,17 +768,17 @@ public final class StartRogueCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName buffAeonId = FieldName.forField("buffAeonId", "buff_aeon_id");
+      static final FieldName rougeEventId = FieldName.forField("rougeEventId", "rouge_event_id");
 
       static final FieldName areaId = FieldName.forField("areaId", "area_id");
 
-      static final FieldName rougeEventId = FieldName.forField("rougeEventId", "rouge_event_id");
+      static final FieldName buffAeonId = FieldName.forField("buffAeonId", "buff_aeon_id");
 
-      static final FieldName dAPLNLIGMOM = FieldName.forField("DAPLNLIGMOM");
+      static final FieldName nGBFEHEJHHO = FieldName.forField("NGBFEHEJHHO");
+
+      static final FieldName mOICCJNMBBI = FieldName.forField("MOICCJNMBBI");
 
       static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
-
-      static final FieldName nBPHDGEOKGN = FieldName.forField("NBPHDGEOKGN");
     }
   }
 }

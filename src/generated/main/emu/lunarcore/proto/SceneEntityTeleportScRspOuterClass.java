@@ -19,12 +19,12 @@ public final class SceneEntityTeleportScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 client_pos_version = 7;</code>
+     * <code>optional uint32 client_pos_version = 6;</code>
      */
     private int clientPosVersion;
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
@@ -44,7 +44,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 7;</code>
+     * <code>optional uint32 client_pos_version = 6;</code>
      * @return whether the clientPosVersion field is set
      */
     public boolean hasClientPosVersion() {
@@ -52,7 +52,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 7;</code>
+     * <code>optional uint32 client_pos_version = 6;</code>
      * @return this
      */
     public SceneEntityTeleportScRsp clearClientPosVersion() {
@@ -62,7 +62,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 7;</code>
+     * <code>optional uint32 client_pos_version = 6;</code>
      * @return the clientPosVersion
      */
     public int getClientPosVersion() {
@@ -70,7 +70,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 7;</code>
+     * <code>optional uint32 client_pos_version = 6;</code>
      * @param value the clientPosVersion to set
      * @return this
      */
@@ -81,7 +81,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -89,7 +89,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public SceneEntityTeleportScRsp clearRetcode() {
@@ -99,7 +99,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -107,7 +107,7 @@ public final class SceneEntityTeleportScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -247,11 +247,11 @@ public final class SceneEntityTeleportScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -282,16 +282,16 @@ public final class SceneEntityTeleportScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 48: {
             // clientPosVersion
             clientPosVersion = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 64) {
               break;
             }
           }
-          case 112: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;

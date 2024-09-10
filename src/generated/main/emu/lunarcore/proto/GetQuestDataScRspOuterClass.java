@@ -20,14 +20,14 @@ public final class GetQuestDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
-     */
-    private int retcode;
-
-    /**
-     * <code>optional uint32 total_achievement_exp = 15;</code>
+     * <code>optional uint32 total_achievement_exp = 7;</code>
      */
     private int totalAchievementExp;
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     */
+    private int retcode;
 
     /**
      * <code>repeated .Quest quest_list = 13;</code>
@@ -45,62 +45,25 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 total_achievement_exp = 7;</code>
+     * @return whether the totalAchievementExp field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasTotalAchievementExp() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
-     * @return this
-     */
-    public GetQuestDataScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 1;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 1;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public GetQuestDataScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
-      retcode = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 total_achievement_exp = 15;</code>
-     * @return whether the totalAchievementExp field is set
-     */
-    public boolean hasTotalAchievementExp() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 total_achievement_exp = 15;</code>
+     * <code>optional uint32 total_achievement_exp = 7;</code>
      * @return this
      */
     public GetQuestDataScRsp clearTotalAchievementExp() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       totalAchievementExp = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 15;</code>
+     * <code>optional uint32 total_achievement_exp = 7;</code>
      * @return the totalAchievementExp
      */
     public int getTotalAchievementExp() {
@@ -108,13 +71,50 @@ public final class GetQuestDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 15;</code>
+     * <code>optional uint32 total_achievement_exp = 7;</code>
      * @param value the totalAchievementExp to set
      * @return this
      */
     public GetQuestDataScRsp setTotalAchievementExp(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       totalAchievementExp = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return this
+     */
+    public GetQuestDataScRsp clearRetcode() {
+      bitField0_ &= ~0x00000002;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 15;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public GetQuestDataScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000002;
+      retcode = value;
       return this;
     }
 
@@ -191,8 +191,8 @@ public final class GetQuestDataScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        retcode = other.retcode;
         totalAchievementExp = other.totalAchievementExp;
+        retcode = other.retcode;
         questList.copyFrom(other.questList);
       }
       return this;
@@ -204,11 +204,11 @@ public final class GetQuestDataScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
-      }
       if (other.hasTotalAchievementExp()) {
         setTotalAchievementExp(other.totalAchievementExp);
+      }
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
       if (other.hasQuestList()) {
         getMutableQuestList().addAll(other.questList);
@@ -223,8 +223,8 @@ public final class GetQuestDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      retcode = 0;
       totalAchievementExp = 0;
+      retcode = 0;
       questList.clear();
       return this;
     }
@@ -250,20 +250,20 @@ public final class GetQuestDataScRspOuterClass {
       }
       GetQuestDataScRsp other = (GetQuestDataScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasRetcode() || retcode == other.retcode)
         && (!hasTotalAchievementExp() || totalAchievementExp == other.totalAchievementExp)
+        && (!hasRetcode() || retcode == other.retcode)
         && (!hasQuestList() || questList.equals(other.questList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(totalAchievementExp);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(totalAchievementExp);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < questList.length(); i++) {
@@ -277,10 +277,10 @@ public final class GetQuestDataScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalAchievementExp);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalAchievementExp);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * questList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(questList);
@@ -295,9 +295,9 @@ public final class GetQuestDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // retcode
-            retcode = input.readUInt32();
+          case 56: {
+            // totalAchievementExp
+            totalAchievementExp = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 120) {
@@ -305,8 +305,8 @@ public final class GetQuestDataScRspOuterClass {
             }
           }
           case 120: {
-            // totalAchievementExp
-            totalAchievementExp = input.readUInt32();
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 106) {
@@ -339,10 +339,10 @@ public final class GetQuestDataScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.totalAchievementExp, totalAchievementExp);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.totalAchievementExp, totalAchievementExp);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.questList, questList);
@@ -357,10 +357,11 @@ public final class GetQuestDataScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 255336658:
+          case -1295039982: {
+            if (input.isAtField(FieldNames.totalAchievementExp)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                totalAchievementExp = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -368,11 +369,10 @@ public final class GetQuestDataScRspOuterClass {
             }
             break;
           }
-          case 255336658:
-          case -1295039982: {
-            if (input.isAtField(FieldNames.totalAchievementExp)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                totalAchievementExp = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -445,9 +445,9 @@ public final class GetQuestDataScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
-
       static final FieldName totalAchievementExp = FieldName.forField("totalAchievementExp", "total_achievement_exp");
+
+      static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName questList = FieldName.forField("questList", "quest_list");
     }

@@ -20,12 +20,12 @@ public final class GetTutorialGuideScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 Retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      */
     private final RepeatedMessage<TutorialGuideOuterClass.TutorialGuide> tutorialGuideList = RepeatedMessage.newEmptyInstance(TutorialGuideOuterClass.TutorialGuide.getFactory());
 
@@ -40,7 +40,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 Retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -48,7 +48,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 Retcode = 1;</code>
      * @return this
      */
     public GetTutorialGuideScRsp clearRetcode() {
@@ -58,7 +58,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 Retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -66,7 +66,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 15;</code>
+     * <code>optional uint32 Retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -77,7 +77,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      * @return whether the tutorialGuideList field is set
      */
     public boolean hasTutorialGuideList() {
@@ -85,7 +85,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      * @return this
      */
     public GetTutorialGuideScRsp clearTutorialGuideList() {
@@ -95,7 +95,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +109,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +123,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      * @param value the tutorialGuideList to add
      * @return this
      */
@@ -135,7 +135,7 @@ public final class GetTutorialGuideScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TutorialGuide tutorial_guide_list = 5;</code>
+     * <code>repeated .TutorialGuide TutorialGuideList = 2;</code>
      * @param values the tutorialGuideList to add
      * @return this
      */
@@ -212,12 +212,12 @@ public final class GetTutorialGuideScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < tutorialGuideList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(tutorialGuideList.get(i));
         }
       }
@@ -242,16 +242,16 @@ public final class GetTutorialGuideScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 18) {
               break;
             }
           }
-          case 42: {
+          case 18: {
             // tutorialGuideList
             tag = input.readRepeatedMessage(tutorialGuideList, tag);
             bitField0_ |= 0x00000002;
@@ -292,7 +292,7 @@ public final class GetTutorialGuideScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
+          case -1532377618: {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
@@ -303,8 +303,7 @@ public final class GetTutorialGuideScRspOuterClass {
             }
             break;
           }
-          case 515727356:
-          case -299913342: {
+          case 159490012: {
             if (input.isAtField(FieldNames.tutorialGuideList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(tutorialGuideList);
@@ -368,9 +367,9 @@ public final class GetTutorialGuideScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName retcode = FieldName.forField("Retcode");
 
-      static final FieldName tutorialGuideList = FieldName.forField("tutorialGuideList", "tutorial_guide_list");
+      static final FieldName tutorialGuideList = FieldName.forField("TutorialGuideList");
     }
   }
 }

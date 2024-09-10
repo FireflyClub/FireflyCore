@@ -5,12 +5,12 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeExtInfo.proto";
 
 message Challenge {
-	uint32 score_two = 9;
-	uint32 stars = 1;
-	bool MEJLKOCALFN = 3;
-	uint32 score = 7;
-	uint32 challenge_id = 10;
-	uint32 BJHCADDALBB = 2;
-	ChallengeExtInfo start_info = 5;
-	uint32 taken_reward = 6;
+	bool DFFMIACMHLD = 9;
+	uint32 score_two = 8;
+	uint32 attempts = 10;
+	uint32 stars = 13;
+	ChallengeExtInfo ext_info = 5;
+	uint32 taken_reward = 7;
+	uint32 score = 12;
+	uint32 challenge_id = 3;
 }

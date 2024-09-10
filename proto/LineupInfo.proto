@@ -6,18 +6,18 @@ import "ExtraLineupType.proto";
 import "LineupAvatar.proto";
 
 message LineupInfo {
-	bool KKAPCFFDNCH = 12;
-	repeated LineupAvatar avatar_list = 2;
-	repeated uint32 EOIFBNKPBGE = 11;
-	uint32 FGPALNEPABC = 9;
-	uint32 index = 3;
-	bool is_virtual = 15;
-	uint32 mp = 6;
-	string name = 14;
-	ExtraLineupType extra_lineup_type = 7;
-	uint32 plane_id = 10;
-	repeated uint32 LKLPOOEMOHI = 5;
-	uint32 leader_slot = 13;
-	repeated uint32 OLBHMCHJGKI = 1;
-	uint32 max_mp = 8;
+	bool is_virtual = 13;
+	bool GANLNDBNHLD = 2;
+	repeated uint32 ADHEOOBHKOM = 14;
+	uint32 mp = 15;
+	repeated LineupAvatar avatar_list = 4;
+	uint32 CPGDHGKAHHD = 6;
+	uint32 index = 10;
+	ExtraLineupType extra_lineup_type = 3;
+	uint32 leader_slot = 12;
+	repeated uint32 GGHCBPBEFFJ = 8;
+	string name = 7;
+	repeated uint32 KBEOKEDNENE = 1;
+	uint32 plane_id = 9;
+	uint32 max_mp = 5;
 }

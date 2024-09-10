@@ -13,6 +13,5 @@ message ChessRogueCell {
     uint32 entrance_id = 1;
     uint32 new_room_id = 11;
     uint32 cell_id = 9;
-    //AKNBDONHPPM chess_rogue_info = 14;
     bool PMBLMGDFGAN = 6;
 }

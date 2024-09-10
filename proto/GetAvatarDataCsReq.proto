@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetAvatarDataCsReq {
-	repeated uint32 base_avatar_id_list = 1;
-	bool if_is_get_all = 3;
+	repeated uint32 base_avatar_id_list = 4;
+	bool if_is_get_all = 8;
 }

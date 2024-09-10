@@ -20,19 +20,19 @@ public final class PickRogueAvatarScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
      */
-    private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt mOICCJNMBBI = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      */
-    private final RepeatedInt dAPLNLIGMOM = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
 
     private PickRogueAvatarScRsp() {
     }
@@ -45,7 +45,7 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,7 +53,7 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public PickRogueAvatarScRsp clearRetcode() {
@@ -63,7 +63,7 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,7 +71,7 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -82,25 +82,93 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
-     * @return whether the baseAvatarIdList field is set
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @return whether the mOICCJNMBBI field is set
      */
-    public boolean hasBaseAvatarIdList() {
+    public boolean hasMOICCJNMBBI() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @return this
+     */
+    public PickRogueAvatarScRsp clearMOICCJNMBBI() {
+      bitField0_ &= ~0x00000002;
+      mOICCJNMBBI.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMOICCJNMBBI()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getMOICCJNMBBI() {
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableMOICCJNMBBI() {
+      bitField0_ |= 0x00000002;
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @param value the mOICCJNMBBI to add
+     * @return this
+     */
+    public PickRogueAvatarScRsp addMOICCJNMBBI(final int value) {
+      bitField0_ |= 0x00000002;
+      mOICCJNMBBI.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 2;</code>
+     * @param values the mOICCJNMBBI to add
+     * @return this
+     */
+    public PickRogueAvatarScRsp addAllMOICCJNMBBI(final int... values) {
+      bitField0_ |= 0x00000002;
+      mOICCJNMBBI.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
+     * @return whether the baseAvatarIdList field is set
+     */
+    public boolean hasBaseAvatarIdList() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      * @return this
      */
     public PickRogueAvatarScRsp clearBaseAvatarIdList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       baseAvatarIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -114,7 +182,7 @@ public final class PickRogueAvatarScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,97 +191,29 @@ public final class PickRogueAvatarScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableBaseAvatarIdList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      * @param value the baseAvatarIdList to add
      * @return this
      */
     public PickRogueAvatarScRsp addBaseAvatarIdList(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       baseAvatarIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 7;</code>
+     * <code>repeated uint32 base_avatar_id_list = 4;</code>
      * @param values the baseAvatarIdList to add
      * @return this
      */
     public PickRogueAvatarScRsp addAllBaseAvatarIdList(final int... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       baseAvatarIdList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     * @return whether the dAPLNLIGMOM field is set
-     */
-    public boolean hasDAPLNLIGMOM() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     * @return this
-     */
-    public PickRogueAvatarScRsp clearDAPLNLIGMOM() {
-      bitField0_ &= ~0x00000004;
-      dAPLNLIGMOM.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableDAPLNLIGMOM()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getDAPLNLIGMOM() {
-      return dAPLNLIGMOM;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableDAPLNLIGMOM() {
-      bitField0_ |= 0x00000004;
-      return dAPLNLIGMOM;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     * @param value the dAPLNLIGMOM to add
-     * @return this
-     */
-    public PickRogueAvatarScRsp addDAPLNLIGMOM(final int value) {
-      bitField0_ |= 0x00000004;
-      dAPLNLIGMOM.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DAPLNLIGMOM = 12;</code>
-     * @param values the dAPLNLIGMOM to add
-     * @return this
-     */
-    public PickRogueAvatarScRsp addAllDAPLNLIGMOM(final int... values) {
-      bitField0_ |= 0x00000004;
-      dAPLNLIGMOM.addAll(values);
       return this;
     }
 
@@ -223,8 +223,8 @@ public final class PickRogueAvatarScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
+        mOICCJNMBBI.copyFrom(other.mOICCJNMBBI);
         baseAvatarIdList.copyFrom(other.baseAvatarIdList);
-        dAPLNLIGMOM.copyFrom(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -238,11 +238,11 @@ public final class PickRogueAvatarScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
+      if (other.hasMOICCJNMBBI()) {
+        getMutableMOICCJNMBBI().addAll(other.mOICCJNMBBI);
+      }
       if (other.hasBaseAvatarIdList()) {
         getMutableBaseAvatarIdList().addAll(other.baseAvatarIdList);
-      }
-      if (other.hasDAPLNLIGMOM()) {
-        getMutableDAPLNLIGMOM().addAll(other.dAPLNLIGMOM);
       }
       return this;
     }
@@ -255,8 +255,8 @@ public final class PickRogueAvatarScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -267,8 +267,8 @@ public final class PickRogueAvatarScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      mOICCJNMBBI.clear();
       baseAvatarIdList.clear();
-      dAPLNLIGMOM.clear();
       return this;
     }
 
@@ -283,26 +283,26 @@ public final class PickRogueAvatarScRspOuterClass {
       PickRogueAvatarScRsp other = (PickRogueAvatarScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList))
-        && (!hasDAPLNLIGMOM() || dAPLNLIGMOM.equals(other.dAPLNLIGMOM));
+        && (!hasMOICCJNMBBI() || mOICCJNMBBI.equals(other.mOICCJNMBBI))
+        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < baseAvatarIdList.length(); i++) {
-          output.writeRawByte((byte) 56);
-          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
+        for (int i = 0; i < mOICCJNMBBI.length(); i++) {
+          output.writeRawByte((byte) 16);
+          output.writeUInt32NoTag(mOICCJNMBBI.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < dAPLNLIGMOM.length(); i++) {
-          output.writeRawByte((byte) 96);
-          output.writeUInt32NoTag(dAPLNLIGMOM.array()[i]);
+        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+          output.writeRawByte((byte) 32);
+          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
         }
       }
     }
@@ -314,10 +314,10 @@ public final class PickRogueAvatarScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
+        size += (1 * mOICCJNMBBI.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * dAPLNLIGMOM.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dAPLNLIGMOM);
+        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
       }
       return size;
     }
@@ -329,27 +329,27 @@ public final class PickRogueAvatarScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 18) {
               break;
             }
           }
-          case 58: {
-            // baseAvatarIdList [packed=true]
-            input.readPackedUInt32(baseAvatarIdList, tag);
+          case 18: {
+            // mOICCJNMBBI [packed=true]
+            input.readPackedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 34) {
               break;
             }
           }
-          case 98: {
-            // dAPLNLIGMOM [packed=true]
-            input.readPackedUInt32(dAPLNLIGMOM, tag);
+          case 34: {
+            // baseAvatarIdList [packed=true]
+            input.readPackedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -366,15 +366,15 @@ public final class PickRogueAvatarScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 56: {
-            // baseAvatarIdList [packed=false]
-            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
+          case 16: {
+            // mOICCJNMBBI [packed=false]
+            tag = input.readRepeatedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000002;
             break;
           }
-          case 96: {
-            // dAPLNLIGMOM [packed=false]
-            tag = input.readRepeatedUInt32(dAPLNLIGMOM, tag);
+          case 32: {
+            // baseAvatarIdList [packed=false]
+            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000004;
             break;
           }
@@ -389,10 +389,10 @@ public final class PickRogueAvatarScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
+        output.writeRepeatedUInt32(FieldNames.mOICCJNMBBI, mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedUInt32(FieldNames.dAPLNLIGMOM, dAPLNLIGMOM);
+        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
       }
       output.endObject();
     }
@@ -415,11 +415,10 @@ public final class PickRogueAvatarScRspOuterClass {
             }
             break;
           }
-          case -1212654461:
-          case 914628490: {
-            if (input.isAtField(FieldNames.baseAvatarIdList)) {
+          case -35824601: {
+            if (input.isAtField(FieldNames.mOICCJNMBBI)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(baseAvatarIdList);
+                input.readRepeatedUInt32(mOICCJNMBBI);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -427,10 +426,11 @@ public final class PickRogueAvatarScRspOuterClass {
             }
             break;
           }
-          case 1671280822: {
-            if (input.isAtField(FieldNames.dAPLNLIGMOM)) {
+          case -1212654461:
+          case 914628490: {
+            if (input.isAtField(FieldNames.baseAvatarIdList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(dAPLNLIGMOM);
+                input.readRepeatedUInt32(baseAvatarIdList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -493,9 +493,9 @@ public final class PickRogueAvatarScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
+      static final FieldName mOICCJNMBBI = FieldName.forField("MOICCJNMBBI");
 
-      static final FieldName dAPLNLIGMOM = FieldName.forField("DAPLNLIGMOM");
+      static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
     }
   }
 }

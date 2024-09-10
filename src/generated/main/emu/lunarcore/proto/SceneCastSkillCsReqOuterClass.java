@@ -23,59 +23,59 @@ public final class SceneCastSkillCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 skill_index = 4;</code>
+     * <code>optional uint32 skill_index = 3;</code>
      */
     private int skillIndex;
 
     /**
-     * <code>optional uint32 LLGPELFMACD = 9;</code>
-     */
-    private int lLGPELFMACD;
-
-    /**
-     * <code>optional uint32 caster_id = 14;</code>
+     * <code>optional uint32 caster_id = 4;</code>
      */
     private int casterId;
 
     /**
-     * <code>optional uint32 attacked_group_id = 15;</code>
+     * <code>optional uint32 GOJHHBLMAEB = 11;</code>
+     */
+    private int gOJHHBLMAEB;
+
+    /**
+     * <code>optional uint32 attacked_group_id = 13;</code>
      */
     private int attackedGroupId;
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      */
     private final MotionInfoOuterClass.MotionInfo targetMotion = MotionInfoOuterClass.MotionInfo.newInstance();
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
+     * <code>optional string MFHMICGELNB = 15;</code>
      */
-    private final Utf8String lOBENEFGNNH = Utf8String.newEmptyInstance();
+    private final Utf8String mFHMICGELNB = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     */
-    private final RepeatedInt assistMonsterEntityIdList = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      */
     private final RepeatedInt hitTargetEntityIdList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
      */
-    private final RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> hDKPIJDJDOL = RepeatedEnum.newEmptyInstance(SceneCastSkillOuterClass.SceneCastSkill.converter());
+    private final RepeatedInt assistMonsterEntityIdList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
      */
-    private final RepeatedMessage<DynamicValueOuterClass.DynamicValue> dynamicValues = RepeatedMessage.newEmptyInstance(DynamicValueOuterClass.DynamicValue.getFactory());
+    private final RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> hKJCOIOHFKP = RepeatedEnum.newEmptyInstance(SceneCastSkillOuterClass.SceneCastSkill.converter());
 
     /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      */
     private final RepeatedMessage<AssistMonsterWaveOuterClass.AssistMonsterWave> assistMonsterWaveList = RepeatedMessage.newEmptyInstance(AssistMonsterWaveOuterClass.AssistMonsterWave.getFactory());
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     */
+    private final RepeatedMessage<DynamicValueOuterClass.DynamicValue> dynamicValues = RepeatedMessage.newEmptyInstance(DynamicValueOuterClass.DynamicValue.getFactory());
 
     private SceneCastSkillCsReq() {
     }
@@ -88,7 +88,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 skill_index = 4;</code>
+     * <code>optional uint32 skill_index = 3;</code>
      * @return whether the skillIndex field is set
      */
     public boolean hasSkillIndex() {
@@ -96,7 +96,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 skill_index = 4;</code>
+     * <code>optional uint32 skill_index = 3;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearSkillIndex() {
@@ -106,7 +106,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 skill_index = 4;</code>
+     * <code>optional uint32 skill_index = 3;</code>
      * @return the skillIndex
      */
     public int getSkillIndex() {
@@ -114,7 +114,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 skill_index = 4;</code>
+     * <code>optional uint32 skill_index = 3;</code>
      * @param value the skillIndex to set
      * @return this
      */
@@ -125,62 +125,25 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 LLGPELFMACD = 9;</code>
-     * @return whether the lLGPELFMACD field is set
+     * <code>optional uint32 caster_id = 4;</code>
+     * @return whether the casterId field is set
      */
-    public boolean hasLLGPELFMACD() {
+    public boolean hasCasterId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 LLGPELFMACD = 9;</code>
-     * @return this
-     */
-    public SceneCastSkillCsReq clearLLGPELFMACD() {
-      bitField0_ &= ~0x00000002;
-      lLGPELFMACD = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 LLGPELFMACD = 9;</code>
-     * @return the lLGPELFMACD
-     */
-    public int getLLGPELFMACD() {
-      return lLGPELFMACD;
-    }
-
-    /**
-     * <code>optional uint32 LLGPELFMACD = 9;</code>
-     * @param value the lLGPELFMACD to set
-     * @return this
-     */
-    public SceneCastSkillCsReq setLLGPELFMACD(final int value) {
-      bitField0_ |= 0x00000002;
-      lLGPELFMACD = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 caster_id = 14;</code>
-     * @return whether the casterId field is set
-     */
-    public boolean hasCasterId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 caster_id = 14;</code>
+     * <code>optional uint32 caster_id = 4;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearCasterId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       casterId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 caster_id = 14;</code>
+     * <code>optional uint32 caster_id = 4;</code>
      * @return the casterId
      */
     public int getCasterId() {
@@ -188,18 +151,55 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 caster_id = 14;</code>
+     * <code>optional uint32 caster_id = 4;</code>
      * @param value the casterId to set
      * @return this
      */
     public SceneCastSkillCsReq setCasterId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       casterId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 15;</code>
+     * <code>optional uint32 GOJHHBLMAEB = 11;</code>
+     * @return whether the gOJHHBLMAEB field is set
+     */
+    public boolean hasGOJHHBLMAEB() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 GOJHHBLMAEB = 11;</code>
+     * @return this
+     */
+    public SceneCastSkillCsReq clearGOJHHBLMAEB() {
+      bitField0_ &= ~0x00000004;
+      gOJHHBLMAEB = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GOJHHBLMAEB = 11;</code>
+     * @return the gOJHHBLMAEB
+     */
+    public int getGOJHHBLMAEB() {
+      return gOJHHBLMAEB;
+    }
+
+    /**
+     * <code>optional uint32 GOJHHBLMAEB = 11;</code>
+     * @param value the gOJHHBLMAEB to set
+     * @return this
+     */
+    public SceneCastSkillCsReq setGOJHHBLMAEB(final int value) {
+      bitField0_ |= 0x00000004;
+      gOJHHBLMAEB = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 attacked_group_id = 13;</code>
      * @return whether the attackedGroupId field is set
      */
     public boolean hasAttackedGroupId() {
@@ -207,7 +207,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 15;</code>
+     * <code>optional uint32 attacked_group_id = 13;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearAttackedGroupId() {
@@ -217,7 +217,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 15;</code>
+     * <code>optional uint32 attacked_group_id = 13;</code>
      * @return the attackedGroupId
      */
     public int getAttackedGroupId() {
@@ -225,7 +225,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 attacked_group_id = 15;</code>
+     * <code>optional uint32 attacked_group_id = 13;</code>
      * @param value the attackedGroupId to set
      * @return this
      */
@@ -236,7 +236,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      * @return whether the targetMotion field is set
      */
     public boolean hasTargetMotion() {
@@ -244,7 +244,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearTargetMotion() {
@@ -254,7 +254,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -268,7 +268,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -282,7 +282,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo target_motion = 5;</code>
+     * <code>optional .MotionInfo target_motion = 10;</code>
      * @param value the targetMotion to set
      * @return this
      */
@@ -293,158 +293,90 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @return whether the lOBENEFGNNH field is set
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @return whether the mFHMICGELNB field is set
      */
-    public boolean hasLOBENEFGNNH() {
+    public boolean hasMFHMICGELNB() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
+     * <code>optional string MFHMICGELNB = 15;</code>
      * @return this
      */
-    public SceneCastSkillCsReq clearLOBENEFGNNH() {
+    public SceneCastSkillCsReq clearMFHMICGELNB() {
       bitField0_ &= ~0x00000020;
-      lOBENEFGNNH.clear();
+      mFHMICGELNB.clear();
       return this;
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @return the lOBENEFGNNH
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @return the mFHMICGELNB
      */
-    public String getLOBENEFGNNH() {
-      return lOBENEFGNNH.getString();
+    public String getMFHMICGELNB() {
+      return mFHMICGELNB.getString();
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @return internal {@code Utf8String} representation of lOBENEFGNNH for reading
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @return internal {@code Utf8String} representation of mFHMICGELNB for reading
      */
-    public Utf8String getLOBENEFGNNHBytes() {
-      return this.lOBENEFGNNH;
+    public Utf8String getMFHMICGELNBBytes() {
+      return this.mFHMICGELNB;
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @return internal {@code Utf8String} representation of lOBENEFGNNH for modifications
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @return internal {@code Utf8String} representation of mFHMICGELNB for modifications
      */
-    public Utf8String getMutableLOBENEFGNNHBytes() {
+    public Utf8String getMutableMFHMICGELNBBytes() {
       bitField0_ |= 0x00000020;
-      return this.lOBENEFGNNH;
+      return this.mFHMICGELNB;
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @param value the lOBENEFGNNH to set
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @param value the mFHMICGELNB to set
      * @return this
      */
-    public SceneCastSkillCsReq setLOBENEFGNNH(final CharSequence value) {
+    public SceneCastSkillCsReq setMFHMICGELNB(final CharSequence value) {
       bitField0_ |= 0x00000020;
-      lOBENEFGNNH.copyFrom(value);
+      mFHMICGELNB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string LOBENEFGNNH = 11;</code>
-     * @param value the lOBENEFGNNH to set
+     * <code>optional string MFHMICGELNB = 15;</code>
+     * @param value the mFHMICGELNB to set
      * @return this
      */
-    public SceneCastSkillCsReq setLOBENEFGNNH(final Utf8String value) {
+    public SceneCastSkillCsReq setMFHMICGELNB(final Utf8String value) {
       bitField0_ |= 0x00000020;
-      lOBENEFGNNH.copyFrom(value);
+      mFHMICGELNB.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     * @return whether the assistMonsterEntityIdList field is set
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
+     * @return whether the hitTargetEntityIdList field is set
      */
-    public boolean hasAssistMonsterEntityIdList() {
+    public boolean hasHitTargetEntityIdList() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     * @return this
-     */
-    public SceneCastSkillCsReq clearAssistMonsterEntityIdList() {
-      bitField0_ &= ~0x00000040;
-      assistMonsterEntityIdList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableAssistMonsterEntityIdList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getAssistMonsterEntityIdList() {
-      return assistMonsterEntityIdList;
-    }
-
-    /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableAssistMonsterEntityIdList() {
-      bitField0_ |= 0x00000040;
-      return assistMonsterEntityIdList;
-    }
-
-    /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     * @param value the assistMonsterEntityIdList to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addAssistMonsterEntityIdList(final int value) {
-      bitField0_ |= 0x00000040;
-      assistMonsterEntityIdList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 assist_monster_entity_id_list = 7;</code>
-     * @param values the assistMonsterEntityIdList to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addAllAssistMonsterEntityIdList(final int... values) {
-      bitField0_ |= 0x00000040;
-      assistMonsterEntityIdList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
-     * @return whether the hitTargetEntityIdList field is set
-     */
-    public boolean hasHitTargetEntityIdList() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearHitTargetEntityIdList() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000040;
       hitTargetEntityIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -458,7 +390,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -467,66 +399,134 @@ public final class SceneCastSkillCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableHitTargetEntityIdList() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       return hitTargetEntityIdList;
     }
 
     /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      * @param value the hitTargetEntityIdList to add
      * @return this
      */
     public SceneCastSkillCsReq addHitTargetEntityIdList(final int value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       hitTargetEntityIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 hit_target_entity_id_list = 10;</code>
+     * <code>repeated uint32 hit_target_entity_id_list = 12;</code>
      * @param values the hitTargetEntityIdList to add
      * @return this
      */
     public SceneCastSkillCsReq addAllHitTargetEntityIdList(final int... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       hitTargetEntityIdList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
-     * @return whether the hDKPIJDJDOL field is set
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     * @return whether the assistMonsterEntityIdList field is set
      */
-    public boolean hasHDKPIJDJDOL() {
+    public boolean hasAssistMonsterEntityIdList() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     * @return this
+     */
+    public SceneCastSkillCsReq clearAssistMonsterEntityIdList() {
+      bitField0_ &= ~0x00000080;
+      assistMonsterEntityIdList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableAssistMonsterEntityIdList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getAssistMonsterEntityIdList() {
+      return assistMonsterEntityIdList;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableAssistMonsterEntityIdList() {
+      bitField0_ |= 0x00000080;
+      return assistMonsterEntityIdList;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     * @param value the assistMonsterEntityIdList to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addAssistMonsterEntityIdList(final int value) {
+      bitField0_ |= 0x00000080;
+      assistMonsterEntityIdList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 assist_monster_entity_id_list = 14;</code>
+     * @param values the assistMonsterEntityIdList to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addAllAssistMonsterEntityIdList(final int... values) {
+      bitField0_ |= 0x00000080;
+      assistMonsterEntityIdList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
+     * @return whether the hKJCOIOHFKP field is set
+     */
+    public boolean hasHKJCOIOHFKP() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
      * @return this
      */
-    public SceneCastSkillCsReq clearHDKPIJDJDOL() {
+    public SceneCastSkillCsReq clearHKJCOIOHFKP() {
       bitField0_ &= ~0x00000100;
-      hDKPIJDJDOL.clear();
+      hKJCOIOHFKP.clear();
       return this;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableHDKPIJDJDOL()} if you want to modify it.
+     * Use {@link #getMutableHKJCOIOHFKP()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> getHDKPIJDJDOL() {
-      return hDKPIJDJDOL;
+    public RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> getHKJCOIOHFKP() {
+      return hKJCOIOHFKP;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -534,123 +534,54 @@ public final class SceneCastSkillCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> getMutableHDKPIJDJDOL() {
+    public RepeatedEnum<SceneCastSkillOuterClass.SceneCastSkill> getMutableHKJCOIOHFKP() {
       bitField0_ |= 0x00000100;
-      return hDKPIJDJDOL;
+      return hKJCOIOHFKP;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
-     * @param value the hDKPIJDJDOL to add
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
+     * @param value the hKJCOIOHFKP to add
      * @return this
      */
-    public SceneCastSkillCsReq addHDKPIJDJDOL(final SceneCastSkillOuterClass.SceneCastSkill value) {
+    public SceneCastSkillCsReq addHKJCOIOHFKP(final SceneCastSkillOuterClass.SceneCastSkill value) {
       bitField0_ |= 0x00000100;
-      hDKPIJDJDOL.add(value);
+      hKJCOIOHFKP.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .SceneCastSkill HDKPIJDJDOL = 6;</code>
-     * @param values the hDKPIJDJDOL to add
+     * <code>repeated .SceneCastSkill HKJCOIOHFKP = 7;</code>
+     * @param values the hKJCOIOHFKP to add
      * @return this
      */
-    public SceneCastSkillCsReq addAllHDKPIJDJDOL(
+    public SceneCastSkillCsReq addAllHKJCOIOHFKP(
         final SceneCastSkillOuterClass.SceneCastSkill... values) {
       bitField0_ |= 0x00000100;
-      hDKPIJDJDOL.addAll(values);
+      hKJCOIOHFKP.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     * @return whether the dynamicValues field is set
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
+     * @return whether the assistMonsterWaveList field is set
      */
-    public boolean hasDynamicValues() {
+    public boolean hasAssistMonsterWaveList() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     * @return this
-     */
-    public SceneCastSkillCsReq clearDynamicValues() {
-      bitField0_ &= ~0x00000200;
-      dynamicValues.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableDynamicValues()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<DynamicValueOuterClass.DynamicValue> getDynamicValues() {
-      return dynamicValues;
-    }
-
-    /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<DynamicValueOuterClass.DynamicValue> getMutableDynamicValues() {
-      bitField0_ |= 0x00000200;
-      return dynamicValues;
-    }
-
-    /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     * @param value the dynamicValues to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addDynamicValues(final DynamicValueOuterClass.DynamicValue value) {
-      bitField0_ |= 0x00000200;
-      dynamicValues.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .DynamicValue dynamic_values = 3;</code>
-     * @param values the dynamicValues to add
-     * @return this
-     */
-    public SceneCastSkillCsReq addAllDynamicValues(
-        final DynamicValueOuterClass.DynamicValue... values) {
-      bitField0_ |= 0x00000200;
-      dynamicValues.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
-     * @return whether the assistMonsterWaveList field is set
-     */
-    public boolean hasAssistMonsterWaveList() {
-      return (bitField0_ & 0x00000400) != 0;
-    }
-
-    /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      * @return this
      */
     public SceneCastSkillCsReq clearAssistMonsterWaveList() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00000200;
       assistMonsterWaveList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -665,7 +596,7 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -675,31 +606,100 @@ public final class SceneCastSkillCsReqOuterClass {
      */
     public RepeatedMessage<AssistMonsterWaveOuterClass.AssistMonsterWave> getMutableAssistMonsterWaveList(
         ) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       return assistMonsterWaveList;
     }
 
     /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      * @param value the assistMonsterWaveList to add
      * @return this
      */
     public SceneCastSkillCsReq addAssistMonsterWaveList(
         final AssistMonsterWaveOuterClass.AssistMonsterWave value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       assistMonsterWaveList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 12;</code>
+     * <code>repeated .AssistMonsterWave assist_monster_wave_list = 8;</code>
      * @param values the assistMonsterWaveList to add
      * @return this
      */
     public SceneCastSkillCsReq addAllAssistMonsterWaveList(
         final AssistMonsterWaveOuterClass.AssistMonsterWave... values) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       assistMonsterWaveList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     * @return whether the dynamicValues field is set
+     */
+    public boolean hasDynamicValues() {
+      return (bitField0_ & 0x00000400) != 0;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     * @return this
+     */
+    public SceneCastSkillCsReq clearDynamicValues() {
+      bitField0_ &= ~0x00000400;
+      dynamicValues.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableDynamicValues()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<DynamicValueOuterClass.DynamicValue> getDynamicValues() {
+      return dynamicValues;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<DynamicValueOuterClass.DynamicValue> getMutableDynamicValues() {
+      bitField0_ |= 0x00000400;
+      return dynamicValues;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     * @param value the dynamicValues to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addDynamicValues(final DynamicValueOuterClass.DynamicValue value) {
+      bitField0_ |= 0x00000400;
+      dynamicValues.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .DynamicValue dynamic_values = 9;</code>
+     * @param values the dynamicValues to add
+     * @return this
+     */
+    public SceneCastSkillCsReq addAllDynamicValues(
+        final DynamicValueOuterClass.DynamicValue... values) {
+      bitField0_ |= 0x00000400;
+      dynamicValues.addAll(values);
       return this;
     }
 
@@ -709,16 +709,16 @@ public final class SceneCastSkillCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         skillIndex = other.skillIndex;
-        lLGPELFMACD = other.lLGPELFMACD;
         casterId = other.casterId;
+        gOJHHBLMAEB = other.gOJHHBLMAEB;
         attackedGroupId = other.attackedGroupId;
         targetMotion.copyFrom(other.targetMotion);
-        lOBENEFGNNH.copyFrom(other.lOBENEFGNNH);
-        assistMonsterEntityIdList.copyFrom(other.assistMonsterEntityIdList);
+        mFHMICGELNB.copyFrom(other.mFHMICGELNB);
         hitTargetEntityIdList.copyFrom(other.hitTargetEntityIdList);
-        hDKPIJDJDOL.copyFrom(other.hDKPIJDJDOL);
-        dynamicValues.copyFrom(other.dynamicValues);
+        assistMonsterEntityIdList.copyFrom(other.assistMonsterEntityIdList);
+        hKJCOIOHFKP.copyFrom(other.hKJCOIOHFKP);
         assistMonsterWaveList.copyFrom(other.assistMonsterWaveList);
+        dynamicValues.copyFrom(other.dynamicValues);
       }
       return this;
     }
@@ -732,11 +732,11 @@ public final class SceneCastSkillCsReqOuterClass {
       if (other.hasSkillIndex()) {
         setSkillIndex(other.skillIndex);
       }
-      if (other.hasLLGPELFMACD()) {
-        setLLGPELFMACD(other.lLGPELFMACD);
-      }
       if (other.hasCasterId()) {
         setCasterId(other.casterId);
+      }
+      if (other.hasGOJHHBLMAEB()) {
+        setGOJHHBLMAEB(other.gOJHHBLMAEB);
       }
       if (other.hasAttackedGroupId()) {
         setAttackedGroupId(other.attackedGroupId);
@@ -744,23 +744,23 @@ public final class SceneCastSkillCsReqOuterClass {
       if (other.hasTargetMotion()) {
         getMutableTargetMotion().mergeFrom(other.targetMotion);
       }
-      if (other.hasLOBENEFGNNH()) {
-        getMutableLOBENEFGNNHBytes().copyFrom(other.lOBENEFGNNH);
-      }
-      if (other.hasAssistMonsterEntityIdList()) {
-        getMutableAssistMonsterEntityIdList().addAll(other.assistMonsterEntityIdList);
+      if (other.hasMFHMICGELNB()) {
+        getMutableMFHMICGELNBBytes().copyFrom(other.mFHMICGELNB);
       }
       if (other.hasHitTargetEntityIdList()) {
         getMutableHitTargetEntityIdList().addAll(other.hitTargetEntityIdList);
       }
-      if (other.hasHDKPIJDJDOL()) {
-        getMutableHDKPIJDJDOL().addAll(other.hDKPIJDJDOL);
+      if (other.hasAssistMonsterEntityIdList()) {
+        getMutableAssistMonsterEntityIdList().addAll(other.assistMonsterEntityIdList);
       }
-      if (other.hasDynamicValues()) {
-        getMutableDynamicValues().addAll(other.dynamicValues);
+      if (other.hasHKJCOIOHFKP()) {
+        getMutableHKJCOIOHFKP().addAll(other.hKJCOIOHFKP);
       }
       if (other.hasAssistMonsterWaveList()) {
         getMutableAssistMonsterWaveList().addAll(other.assistMonsterWaveList);
+      }
+      if (other.hasDynamicValues()) {
+        getMutableDynamicValues().addAll(other.dynamicValues);
       }
       return this;
     }
@@ -773,16 +773,16 @@ public final class SceneCastSkillCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       skillIndex = 0;
-      lLGPELFMACD = 0;
       casterId = 0;
+      gOJHHBLMAEB = 0;
       attackedGroupId = 0;
       targetMotion.clear();
-      lOBENEFGNNH.clear();
-      assistMonsterEntityIdList.clear();
+      mFHMICGELNB.clear();
       hitTargetEntityIdList.clear();
-      hDKPIJDJDOL.clear();
-      dynamicValues.clear();
+      assistMonsterEntityIdList.clear();
+      hKJCOIOHFKP.clear();
       assistMonsterWaveList.clear();
+      dynamicValues.clear();
       return this;
     }
 
@@ -794,12 +794,12 @@ public final class SceneCastSkillCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       targetMotion.clearQuick();
-      lOBENEFGNNH.clear();
-      assistMonsterEntityIdList.clear();
+      mFHMICGELNB.clear();
       hitTargetEntityIdList.clear();
-      hDKPIJDJDOL.clear();
-      dynamicValues.clearQuick();
+      assistMonsterEntityIdList.clear();
+      hKJCOIOHFKP.clear();
       assistMonsterWaveList.clearQuick();
+      dynamicValues.clearQuick();
       return this;
     }
 
@@ -814,72 +814,72 @@ public final class SceneCastSkillCsReqOuterClass {
       SceneCastSkillCsReq other = (SceneCastSkillCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasSkillIndex() || skillIndex == other.skillIndex)
-        && (!hasLLGPELFMACD() || lLGPELFMACD == other.lLGPELFMACD)
         && (!hasCasterId() || casterId == other.casterId)
+        && (!hasGOJHHBLMAEB() || gOJHHBLMAEB == other.gOJHHBLMAEB)
         && (!hasAttackedGroupId() || attackedGroupId == other.attackedGroupId)
         && (!hasTargetMotion() || targetMotion.equals(other.targetMotion))
-        && (!hasLOBENEFGNNH() || lOBENEFGNNH.equals(other.lOBENEFGNNH))
-        && (!hasAssistMonsterEntityIdList() || assistMonsterEntityIdList.equals(other.assistMonsterEntityIdList))
+        && (!hasMFHMICGELNB() || mFHMICGELNB.equals(other.mFHMICGELNB))
         && (!hasHitTargetEntityIdList() || hitTargetEntityIdList.equals(other.hitTargetEntityIdList))
-        && (!hasHDKPIJDJDOL() || hDKPIJDJDOL.equals(other.hDKPIJDJDOL))
-        && (!hasDynamicValues() || dynamicValues.equals(other.dynamicValues))
-        && (!hasAssistMonsterWaveList() || assistMonsterWaveList.equals(other.assistMonsterWaveList));
+        && (!hasAssistMonsterEntityIdList() || assistMonsterEntityIdList.equals(other.assistMonsterEntityIdList))
+        && (!hasHKJCOIOHFKP() || hKJCOIOHFKP.equals(other.hKJCOIOHFKP))
+        && (!hasAssistMonsterWaveList() || assistMonsterWaveList.equals(other.assistMonsterWaveList))
+        && (!hasDynamicValues() || dynamicValues.equals(other.dynamicValues));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(skillIndex);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(lLGPELFMACD);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(casterId);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(gOJHHBLMAEB);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(attackedGroupId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 82);
         output.writeMessageNoTag(targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeStringNoTag(lOBENEFGNNH);
+        output.writeRawByte((byte) 122);
+        output.writeStringNoTag(mFHMICGELNB);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < assistMonsterEntityIdList.length(); i++) {
-          output.writeRawByte((byte) 56);
-          output.writeUInt32NoTag(assistMonsterEntityIdList.array()[i]);
-        }
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         for (int i = 0; i < hitTargetEntityIdList.length(); i++) {
-          output.writeRawByte((byte) 80);
+          output.writeRawByte((byte) 96);
           output.writeUInt32NoTag(hitTargetEntityIdList.array()[i]);
         }
       }
+      if ((bitField0_ & 0x00000080) != 0) {
+        for (int i = 0; i < assistMonsterEntityIdList.length(); i++) {
+          output.writeRawByte((byte) 112);
+          output.writeUInt32NoTag(assistMonsterEntityIdList.array()[i]);
+        }
+      }
       if ((bitField0_ & 0x00000100) != 0) {
-        for (int i = 0; i < hDKPIJDJDOL.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeEnumNoTag(hDKPIJDJDOL.array()[i]);
+        for (int i = 0; i < hKJCOIOHFKP.length(); i++) {
+          output.writeRawByte((byte) 56);
+          output.writeEnumNoTag(hKJCOIOHFKP.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        for (int i = 0; i < dynamicValues.length(); i++) {
-          output.writeRawByte((byte) 26);
-          output.writeMessageNoTag(dynamicValues.get(i));
+        for (int i = 0; i < assistMonsterWaveList.length(); i++) {
+          output.writeRawByte((byte) 66);
+          output.writeMessageNoTag(assistMonsterWaveList.get(i));
         }
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        for (int i = 0; i < assistMonsterWaveList.length(); i++) {
-          output.writeRawByte((byte) 98);
-          output.writeMessageNoTag(assistMonsterWaveList.get(i));
+        for (int i = 0; i < dynamicValues.length(); i++) {
+          output.writeRawByte((byte) 74);
+          output.writeMessageNoTag(dynamicValues.get(i));
         }
       }
     }
@@ -891,10 +891,10 @@ public final class SceneCastSkillCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(skillIndex);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(lLGPELFMACD);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(casterId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(casterId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gOJHHBLMAEB);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(attackedGroupId);
@@ -903,22 +903,22 @@ public final class SceneCastSkillCsReqOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(lOBENEFGNNH);
+        size += 1 + ProtoSink.computeStringSizeNoTag(mFHMICGELNB);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * assistMonsterEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(assistMonsterEntityIdList);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         size += (1 * hitTargetEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hitTargetEntityIdList);
       }
+      if ((bitField0_ & 0x00000080) != 0) {
+        size += (1 * assistMonsterEntityIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(assistMonsterEntityIdList);
+      }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += (1 * hDKPIJDJDOL.length()) + ProtoSink.computeRepeatedEnumSizeNoTag(hDKPIJDJDOL);
+        size += (1 * hKJCOIOHFKP.length()) + ProtoSink.computeRepeatedEnumSizeNoTag(hKJCOIOHFKP);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += (1 * dynamicValues.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(dynamicValues);
+        size += (1 * assistMonsterWaveList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(assistMonsterWaveList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += (1 * assistMonsterWaveList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(assistMonsterWaveList);
+        size += (1 * dynamicValues.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(dynamicValues);
       }
       return size;
     }
@@ -930,98 +930,98 @@ public final class SceneCastSkillCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 24: {
             // skillIndex
             skillIndex = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 32) {
               break;
             }
           }
-          case 72: {
-            // lLGPELFMACD
-            lLGPELFMACD = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
+          case 32: {
             // casterId
             casterId = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 88) {
               break;
             }
           }
-          case 120: {
+          case 88: {
+            // gOJHHBLMAEB
+            gOJHHBLMAEB = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
             // attackedGroupId
             attackedGroupId = input.readUInt32();
             bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 42) {
-              break;
-            }
-          }
-          case 42: {
-            // targetMotion
-            input.readMessage(targetMotion);
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 90) {
-              break;
-            }
-          }
-          case 90: {
-            // lOBENEFGNNH
-            input.readString(lOBENEFGNNH);
-            bitField0_ |= 0x00000020;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // assistMonsterEntityIdList [packed=true]
-            input.readPackedUInt32(assistMonsterEntityIdList, tag);
-            bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 82) {
               break;
             }
           }
           case 82: {
-            // hitTargetEntityIdList [packed=true]
-            input.readPackedUInt32(hitTargetEntityIdList, tag);
-            bitField0_ |= 0x00000080;
+            // targetMotion
+            input.readMessage(targetMotion);
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 122) {
               break;
             }
           }
-          case 50: {
-            // hDKPIJDJDOL [packed=true]
-            input.readPackedEnum(hDKPIJDJDOL, tag);
-            bitField0_ |= 0x00000100;
+          case 122: {
+            // mFHMICGELNB
+            input.readString(mFHMICGELNB);
+            bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 26) {
-              break;
-            }
-          }
-          case 26: {
-            // dynamicValues
-            tag = input.readRepeatedMessage(dynamicValues, tag);
-            bitField0_ |= 0x00000200;
             if (tag != 98) {
               break;
             }
           }
           case 98: {
+            // hitTargetEntityIdList [packed=true]
+            input.readPackedUInt32(hitTargetEntityIdList, tag);
+            bitField0_ |= 0x00000040;
+            tag = input.readTag();
+            if (tag != 114) {
+              break;
+            }
+          }
+          case 114: {
+            // assistMonsterEntityIdList [packed=true]
+            input.readPackedUInt32(assistMonsterEntityIdList, tag);
+            bitField0_ |= 0x00000080;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // hKJCOIOHFKP [packed=true]
+            input.readPackedEnum(hKJCOIOHFKP, tag);
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
+            if (tag != 66) {
+              break;
+            }
+          }
+          case 66: {
             // assistMonsterWaveList
             tag = input.readRepeatedMessage(assistMonsterWaveList, tag);
+            bitField0_ |= 0x00000200;
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
+            // dynamicValues
+            tag = input.readRepeatedMessage(dynamicValues, tag);
             bitField0_ |= 0x00000400;
             if (tag != 0) {
               break;
@@ -1037,21 +1037,21 @@ public final class SceneCastSkillCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 56: {
-            // assistMonsterEntityIdList [packed=false]
-            tag = input.readRepeatedUInt32(assistMonsterEntityIdList, tag);
+          case 96: {
+            // hitTargetEntityIdList [packed=false]
+            tag = input.readRepeatedUInt32(hitTargetEntityIdList, tag);
             bitField0_ |= 0x00000040;
             break;
           }
-          case 80: {
-            // hitTargetEntityIdList [packed=false]
-            tag = input.readRepeatedUInt32(hitTargetEntityIdList, tag);
+          case 112: {
+            // assistMonsterEntityIdList [packed=false]
+            tag = input.readRepeatedUInt32(assistMonsterEntityIdList, tag);
             bitField0_ |= 0x00000080;
             break;
           }
-          case 48: {
-            // hDKPIJDJDOL [packed=false]
-            tag = input.readRepeatedEnum(hDKPIJDJDOL, tag);
+          case 56: {
+            // hKJCOIOHFKP [packed=false]
+            tag = input.readRepeatedEnum(hKJCOIOHFKP, tag);
             bitField0_ |= 0x00000100;
             break;
           }
@@ -1066,10 +1066,10 @@ public final class SceneCastSkillCsReqOuterClass {
         output.writeUInt32(FieldNames.skillIndex, skillIndex);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.lLGPELFMACD, lLGPELFMACD);
+        output.writeUInt32(FieldNames.casterId, casterId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.casterId, casterId);
+        output.writeUInt32(FieldNames.gOJHHBLMAEB, gOJHHBLMAEB);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.attackedGroupId, attackedGroupId);
@@ -1078,22 +1078,22 @@ public final class SceneCastSkillCsReqOuterClass {
         output.writeMessage(FieldNames.targetMotion, targetMotion);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeString(FieldNames.lOBENEFGNNH, lOBENEFGNNH);
+        output.writeString(FieldNames.mFHMICGELNB, mFHMICGELNB);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.assistMonsterEntityIdList, assistMonsterEntityIdList);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         output.writeRepeatedUInt32(FieldNames.hitTargetEntityIdList, hitTargetEntityIdList);
       }
+      if ((bitField0_ & 0x00000080) != 0) {
+        output.writeRepeatedUInt32(FieldNames.assistMonsterEntityIdList, assistMonsterEntityIdList);
+      }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRepeatedEnum(FieldNames.hDKPIJDJDOL, hDKPIJDJDOL);
+        output.writeRepeatedEnum(FieldNames.hKJCOIOHFKP, hKJCOIOHFKP);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRepeatedMessage(FieldNames.dynamicValues, dynamicValues);
+        output.writeRepeatedMessage(FieldNames.assistMonsterWaveList, assistMonsterWaveList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRepeatedMessage(FieldNames.assistMonsterWaveList, assistMonsterWaveList);
+        output.writeRepeatedMessage(FieldNames.dynamicValues, dynamicValues);
       }
       output.endObject();
     }
@@ -1117,10 +1117,11 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case 382216043: {
-            if (input.isAtField(FieldNames.lLGPELFMACD)) {
+          case 35676775:
+          case 1106001422: {
+            if (input.isAtField(FieldNames.casterId)) {
               if (!input.trySkipNullValue()) {
-                lLGPELFMACD = input.readUInt32();
+                casterId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -1128,11 +1129,10 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case 35676775:
-          case 1106001422: {
-            if (input.isAtField(FieldNames.casterId)) {
+          case 384281565: {
+            if (input.isAtField(FieldNames.gOJHHBLMAEB)) {
               if (!input.trySkipNullValue()) {
-                casterId = input.readUInt32();
+                gOJHHBLMAEB = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -1164,23 +1164,11 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case 1740964618: {
-            if (input.isAtField(FieldNames.lOBENEFGNNH)) {
+          case 316476010: {
+            if (input.isAtField(FieldNames.mFHMICGELNB)) {
               if (!input.trySkipNullValue()) {
-                input.readString(lOBENEFGNNH);
+                input.readString(mFHMICGELNB);
                 bitField0_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1391993363:
-          case -1507247487: {
-            if (input.isAtField(FieldNames.assistMonsterEntityIdList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(assistMonsterEntityIdList);
-                bitField0_ |= 0x00000040;
               }
             } else {
               input.skipUnknownField();
@@ -1192,6 +1180,18 @@ public final class SceneCastSkillCsReqOuterClass {
             if (input.isAtField(FieldNames.hitTargetEntityIdList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(hitTargetEntityIdList);
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1391993363:
+          case -1507247487: {
+            if (input.isAtField(FieldNames.assistMonsterEntityIdList)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(assistMonsterEntityIdList);
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -1199,23 +1199,11 @@ public final class SceneCastSkillCsReqOuterClass {
             }
             break;
           }
-          case 1108167641: {
-            if (input.isAtField(FieldNames.hDKPIJDJDOL)) {
+          case 1369856284: {
+            if (input.isAtField(FieldNames.hKJCOIOHFKP)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedEnum(hDKPIJDJDOL, SceneCastSkillOuterClass.SceneCastSkill.converter());
+                input.readRepeatedEnum(hKJCOIOHFKP, SceneCastSkillOuterClass.SceneCastSkill.converter());
                 bitField0_ |= 0x00000100;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 571506241:
-          case 525223202: {
-            if (input.isAtField(FieldNames.dynamicValues)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(dynamicValues);
-                bitField0_ |= 0x00000200;
               }
             } else {
               input.skipUnknownField();
@@ -1227,6 +1215,18 @@ public final class SceneCastSkillCsReqOuterClass {
             if (input.isAtField(FieldNames.assistMonsterWaveList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(assistMonsterWaveList);
+                bitField0_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 571506241:
+          case 525223202: {
+            if (input.isAtField(FieldNames.dynamicValues)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(dynamicValues);
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -1289,25 +1289,25 @@ public final class SceneCastSkillCsReqOuterClass {
     static class FieldNames {
       static final FieldName skillIndex = FieldName.forField("skillIndex", "skill_index");
 
-      static final FieldName lLGPELFMACD = FieldName.forField("LLGPELFMACD");
-
       static final FieldName casterId = FieldName.forField("casterId", "caster_id");
+
+      static final FieldName gOJHHBLMAEB = FieldName.forField("GOJHHBLMAEB");
 
       static final FieldName attackedGroupId = FieldName.forField("attackedGroupId", "attacked_group_id");
 
       static final FieldName targetMotion = FieldName.forField("targetMotion", "target_motion");
 
-      static final FieldName lOBENEFGNNH = FieldName.forField("LOBENEFGNNH");
-
-      static final FieldName assistMonsterEntityIdList = FieldName.forField("assistMonsterEntityIdList", "assist_monster_entity_id_list");
+      static final FieldName mFHMICGELNB = FieldName.forField("MFHMICGELNB");
 
       static final FieldName hitTargetEntityIdList = FieldName.forField("hitTargetEntityIdList", "hit_target_entity_id_list");
 
-      static final FieldName hDKPIJDJDOL = FieldName.forField("HDKPIJDJDOL");
+      static final FieldName assistMonsterEntityIdList = FieldName.forField("assistMonsterEntityIdList", "assist_monster_entity_id_list");
 
-      static final FieldName dynamicValues = FieldName.forField("dynamicValues", "dynamic_values");
+      static final FieldName hKJCOIOHFKP = FieldName.forField("HKJCOIOHFKP");
 
       static final FieldName assistMonsterWaveList = FieldName.forField("assistMonsterWaveList", "assist_monster_wave_list");
+
+      static final FieldName dynamicValues = FieldName.forField("dynamicValues", "dynamic_values");
     }
   }
 }

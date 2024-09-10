@@ -3,5 +3,5 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetUnlockTeleportCsReq {
-	repeated uint32 entry_id_list = 12;
+	repeated uint32 entry_id_list = 4;
 }

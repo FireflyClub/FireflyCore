@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message MazeGroup {
-	bool OAHPEFAHPPP = 2;
-	uint32 group_id = 13;
-	int64 modify_time = 9;
-	repeated uint32 FFFFOKHJKEP = 5;
+	uint32 group_id = 5;
+	bool DPIKDBPKAOK = 2;
+	repeated uint32 LFFHDKHBHNN = 15;
+	int64 modify_time = 13;
 }

@@ -5,14 +5,14 @@ option java_package = "emu.lunarcore.proto";
 import "PlayerSettingInfo.proto";
 
 message GetBasicInfoScRsp {
-	uint32 gender = 4;
-	uint32 cur_day = 10;
-	PlayerSettingInfo player_setting_info = 1;
-	int64 next_recover_time = 8;
-	bool is_gender_set = 7;
-	uint32 gameplay_birthday = 2;
-	uint32 retcode = 11;
-	uint32 week_cocoon_finished_count = 5;
-	uint32 exchange_times = 14;
-	int64 last_set_nickname_time = 13;
+    bool is_gender_set = 3;
+    uint32 cur_day = 11;
+    uint32 exchange_times = 14;
+    PlayerSettingInfo player_setting_info = 9;
+    uint32 gameplay_birthday = 1;
+    int64 last_set_nickname_time = 10;
+    uint32 week_cocoon_finished_count = 6;
+    uint32 retcode = 5;
+    uint32 gender = 8;
+    int64 next_recover_time = 12;
 }

@@ -2,28 +2,27 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "SceneMonsterWave.proto";
 import "BattleAvatar.proto";
 import "BattleBuff.proto";
-import "BattleEventBattleInfo.proto";
+import "SceneMonsterWave.proto";
 import "BattleTargetList.proto";
+import "BattleEventBattleInfo.proto";
 
 message SceneBattleInfo {
-	//IEIMEJDOKOC GPNMHCNAODM = 1315;
-	repeated BattleEventBattleInfo event_battle_info_list = 321;
-	//EvolveBuildBattleInfo EHEELOGGFME = 471;
-	repeated SceneMonsterWave monster_wave_list = 14;
-	uint32 world_level = 2;
-	repeated BattleBuff buff_list = 5;
-	bool CIFOOEMCPFJ = 11;
-	repeated BattleAvatar pve_avatar_list = 7;
-	uint32 logic_random_seed = 6;
-	map<uint32, BattleTargetList> battle_target_info = 892;
-	//uint32 IEAKJBAOADF = 4;
-	uint32 stage_id = 1;
-	//uint32 FBGAGKDLCLF = 9;
-	//CBIPMGKDBMJ PGKPLCABCOG = 1394;
-	uint32 battle_id = 12;
-
-    uint32 rounds_limit = 4; //?
+	repeated BattleEventBattleInfo event_battle_info_list = 1354;
+	repeated BattleAvatar pve_avatar_list = 6;
+	bool LKAHLGNIECF = 13;
+	uint32 logic_random_seed = 14;
+	uint32 world_level = 12;
+	//EvolveBuildBattleInfo OAHDOLHBPFK = 869;
+	repeated SceneMonsterWave monster_wave_list = 7;
+	repeated BattleBuff buff_list = 9;
+	uint32 battle_id = 15;
+	uint32 rounds_limit = 5;
+	//NPDPLEMGEFN GIOGKGLBACA = 1420;
+	uint32 stage_id = 8;
+	//LKCBPGELLJJ DDKIAPDKIDO = 206;
+	//GDHEDNKIELE CGOBLNLGCMO = 1517;
+	map<uint32, BattleTargetList> battle_target_info = 129;
+	uint32 AFHKNCHFNLE = 1;
 }

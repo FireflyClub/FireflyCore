@@ -6,10 +6,6 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class BpTierTypeOuterClass {
   /**
-   * <pre>
-   *  OFMFCLIFILH
-   * </pre>
-   *
    * Protobuf enum {@code BpTierType}
    */
   public enum BpTierType implements ProtoEnum<BpTierType> {

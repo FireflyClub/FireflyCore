@@ -19,12 +19,12 @@ public final class AvatarPathChangedNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 base_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 13;</code>
      */
     private int baseAvatarId;
 
     /**
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 4;</code>
      */
     private int multiPathAvatarType;
 
@@ -39,7 +39,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 13;</code>
      * @return whether the baseAvatarId field is set
      */
     public boolean hasBaseAvatarId() {
@@ -47,7 +47,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 13;</code>
      * @return this
      */
     public AvatarPathChangedNotify clearBaseAvatarId() {
@@ -57,7 +57,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 13;</code>
      * @return the baseAvatarId
      */
     public int getBaseAvatarId() {
@@ -65,7 +65,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 3;</code>
+     * <code>optional uint32 base_avatar_id = 13;</code>
      * @param value the baseAvatarId to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 4;</code>
      * @return whether the multiPathAvatarType field is set
      */
     public boolean hasMultiPathAvatarType() {
@@ -84,7 +84,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 4;</code>
      * @return this
      */
     public AvatarPathChangedNotify clearMultiPathAvatarType() {
@@ -94,7 +94,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 4;</code>
      * @return the multiPathAvatarType
      */
     public MultiPathAvatarTypeOuterClass.MultiPathAvatarType getMultiPathAvatarType() {
@@ -127,7 +127,7 @@ public final class AvatarPathChangedNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 8;</code>
+     * <code>optional .MultiPathAvatarType multi_path_avatar_type = 4;</code>
      * @param value the multiPathAvatarType to set
      * @return this
      */
@@ -203,11 +203,11 @@ public final class AvatarPathChangedNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 32);
         output.writeEnumNoTag(multiPathAvatarType);
       }
     }
@@ -231,16 +231,16 @@ public final class AvatarPathChangedNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 104: {
             // baseAvatarId
             baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 32) {
               break;
             }
           }
-          case 64: {
+          case 32: {
             // multiPathAvatarType
             final int value = input.readInt32();
             if (MultiPathAvatarTypeOuterClass.MultiPathAvatarType.forNumber(value) != null) {

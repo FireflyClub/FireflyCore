@@ -19,19 +19,19 @@ public final class ChallengeLineupMemberOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 3;</code>
+     * <code>optional uint32 id = 4;</code>
+     */
+    private int id;
+
+    /**
+     * <code>optional uint32 level = 10;</code>
      */
     private int level;
 
     /**
-     * <code>optional uint32 index = 5;</code>
+     * <code>optional uint32 index = 12;</code>
      */
     private int index;
-
-    /**
-     * <code>optional uint32 id = 7;</code>
-     */
-    private int id;
 
     /**
      * <code>optional .AvatarType avatar_type = 15;</code>
@@ -49,99 +49,25 @@ public final class ChallengeLineupMemberOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 3;</code>
-     * @return whether the level field is set
+     * <code>optional uint32 id = 4;</code>
+     * @return whether the id field is set
      */
-    public boolean hasLevel() {
+    public boolean hasId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 level = 3;</code>
-     * @return this
-     */
-    public ChallengeLineupMember clearLevel() {
-      bitField0_ &= ~0x00000001;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 3;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 3;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public ChallengeLineupMember setLevel(final int value) {
-      bitField0_ |= 0x00000001;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 index = 5;</code>
-     * @return whether the index field is set
-     */
-    public boolean hasIndex() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 index = 5;</code>
-     * @return this
-     */
-    public ChallengeLineupMember clearIndex() {
-      bitField0_ &= ~0x00000002;
-      index = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 index = 5;</code>
-     * @return the index
-     */
-    public int getIndex() {
-      return index;
-    }
-
-    /**
-     * <code>optional uint32 index = 5;</code>
-     * @param value the index to set
-     * @return this
-     */
-    public ChallengeLineupMember setIndex(final int value) {
-      bitField0_ |= 0x00000002;
-      index = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 id = 7;</code>
-     * @return whether the id field is set
-     */
-    public boolean hasId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return this
      */
     public ChallengeLineupMember clearId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return the id
      */
     public int getId() {
@@ -149,13 +75,87 @@ public final class ChallengeLineupMemberOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @param value the id to set
      * @return this
      */
     public ChallengeLineupMember setId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       id = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 10;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 10;</code>
+     * @return this
+     */
+    public ChallengeLineupMember clearLevel() {
+      bitField0_ &= ~0x00000002;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 10;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <code>optional uint32 level = 10;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public ChallengeLineupMember setLevel(final int value) {
+      bitField0_ |= 0x00000002;
+      level = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 index = 12;</code>
+     * @return whether the index field is set
+     */
+    public boolean hasIndex() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 index = 12;</code>
+     * @return this
+     */
+    public ChallengeLineupMember clearIndex() {
+      bitField0_ &= ~0x00000004;
+      index = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 index = 12;</code>
+     * @return the index
+     */
+    public int getIndex() {
+      return index;
+    }
+
+    /**
+     * <code>optional uint32 index = 12;</code>
+     * @param value the index to set
+     * @return this
+     */
+    public ChallengeLineupMember setIndex(final int value) {
+      bitField0_ |= 0x00000004;
+      index = value;
       return this;
     }
 
@@ -226,9 +226,9 @@ public final class ChallengeLineupMemberOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        id = other.id;
         level = other.level;
         index = other.index;
-        id = other.id;
         avatarType = other.avatarType;
       }
       return this;
@@ -240,14 +240,14 @@ public final class ChallengeLineupMemberOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasId()) {
+        setId(other.id);
+      }
       if (other.hasLevel()) {
         setLevel(other.level);
       }
       if (other.hasIndex()) {
         setIndex(other.index);
-      }
-      if (other.hasId()) {
-        setId(other.id);
       }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
@@ -262,9 +262,9 @@ public final class ChallengeLineupMemberOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      id = 0;
       level = 0;
       index = 0;
-      id = 0;
       avatarType = 0;
       return this;
     }
@@ -289,25 +289,25 @@ public final class ChallengeLineupMemberOuterClass {
       }
       ChallengeLineupMember other = (ChallengeLineupMember) o;
       return bitField0_ == other.bitField0_
+        && (!hasId() || id == other.id)
         && (!hasLevel() || level == other.level)
         && (!hasIndex() || index == other.index)
-        && (!hasId() || id == other.id)
         && (!hasAvatarType() || avatarType == other.avatarType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(level);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(index);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(id);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(index);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 120);
@@ -319,13 +319,13 @@ public final class ChallengeLineupMemberOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(index);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
@@ -340,27 +340,27 @@ public final class ChallengeLineupMemberOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // level
-            level = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // index
-            index = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
+          case 32: {
             // id
             id = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // level
+            level = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // index
+            index = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 120) {
@@ -397,13 +397,13 @@ public final class ChallengeLineupMemberOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.level, level);
+        output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.index, index);
+        output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.index, index);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
@@ -418,11 +418,22 @@ public final class ChallengeLineupMemberOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 3355: {
+            if (input.isAtField(FieldNames.id)) {
+              if (!input.trySkipNullValue()) {
+                id = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 102865796: {
             if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
                 level = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -433,17 +444,6 @@ public final class ChallengeLineupMemberOuterClass {
             if (input.isAtField(FieldNames.index)) {
               if (!input.trySkipNullValue()) {
                 index = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3355: {
-            if (input.isAtField(FieldNames.id)) {
-              if (!input.trySkipNullValue()) {
-                id = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -521,11 +521,11 @@ public final class ChallengeLineupMemberOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName id = FieldName.forField("id");
+
       static final FieldName level = FieldName.forField("level");
 
       static final FieldName index = FieldName.forField("index");
-
-      static final FieldName id = FieldName.forField("id");
 
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
     }

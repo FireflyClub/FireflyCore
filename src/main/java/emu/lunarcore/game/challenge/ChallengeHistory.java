@@ -78,7 +78,7 @@ public class ChallengeHistory {
         
         // TODO: only proof of concept, optimize later
         
-        var info = proto.getMutableStartInfo().getMutableBossInfo();
+        var info = proto.getMutableExtInfo().getMutableBossInfo();
         
         if (getFirstNodeData() != null && getSecondNodeData() != null) {
             for (var avatarId: getFirstNodeData().getAvatarIds()) {
@@ -96,14 +96,14 @@ public class ChallengeHistory {
             // set node info
             info.getMutableFirstNode()
                 .setBuffId(getFirstNodeData().getBuffId())
-                .setCCFNICMLEID(true)
+                .setHGIDJHFNCMA(true)
                 .setIsWin(true)
                 .setStageScore(getFirstNodeData().getStageScore());
             
             // set node info
             info.getMutableSecondNode()
                 .setBuffId(getSecondNodeData().getBuffId())
-                .setCCFNICMLEID(true)
+                .setHGIDJHFNCMA(true)
                 .setIsWin(true)
                 .setStageScore(getSecondNodeData().getStageScore());
         } else {

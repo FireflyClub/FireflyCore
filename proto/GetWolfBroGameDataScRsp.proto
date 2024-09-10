@@ -6,5 +6,5 @@ import "WolfBroGameData.proto";
 
 message GetWolfBroGameDataScRsp {
 	uint32 retcode = 11;
-	WolfBroGameData wolf_bro_game_data = 5;
+	WolfBroGameData wolf_bro_game_data = 13;
 }

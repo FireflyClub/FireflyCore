@@ -2,9 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "AvatarBattleInfo.proto";
 import "BattleEndReason.proto";
 import "MonsterBattleInfo.proto";
+import "AvatarBattleInfo.proto";
 import "BattleTargetList.proto";
 import "BattleEventBattleInfo.proto";
 
@@ -23,20 +23,21 @@ message BattleStatistics {
 	uint32 monster_battle_turns = 12;
 	map<string, float> custom_values = 13;
 	uint32 battle_score = 14;
-	repeated BattleEventBattleInfo AIKIGMFOIPD = 16;
+	repeated BattleEventBattleInfo PDCIAMOLIGP = 16;
 	BattleEndReason end_reason = 19;
-	//repeated DLLFNLCJIAA GJLJOKBOMLA = 21;
-	repeated int32 PCEOMHIOFCB = 22;
-	//repeated DBBHAAODPGL ODLMBMOMBIH = 23;
-	//repeated HLLMBJMBIEH CGFLIGMAECA = 26;
-	//repeated NJFHJPMOFKJ FPKCHBLMKCP = 27;
+	//repeated GOFLJKMHPMP BMIIGBIFHHL = 21;
+	repeated int32 PMJLBECBODD = 22;
+	//repeated EHOJLJMGOGL BBPCNIOBIBG = 23;
+	//repeated NGHOLIKIEPB CCMJKDINJDD = 26;
+	//repeated HLOJFCDPGBE DKIBBPJFDOI = 27;
 	map<uint32, BattleTargetList> battle_target_info = 28;
-	//repeated MOFDLJPGDJC LCNPJGHHELM = 29;
-	//EvolveBuildBattleInfo EHEELOGGFME = 30;
-	//JNEGDKNFDFJ PKOFLJLGCFF = 31;
-	bool IOMHFPMGHFC = 32;
-	//repeated GFHLELKFECD KMBFLEMGFLF = 33;
-	//repeated FKDALPNLNPP BBEIBAHJDHP = 34;
-	uint32 LDBJKJFMJDE = 35;
-	//MPCONOKHBFI DIGEGEIFJLE = 37;
+	//repeated EOLOFLGJCIP KIAHIAHPPLE = 29;
+	//EvolveBuildBattleInfo OAHDOLHBPFK = 30;
+	//HJJDFBODGFD DFNGHNEHIIG = 31;
+	bool PIINHCIMOGD = 32;
+	//repeated MKGIECKGJEP LAOJOPBEIBC = 33;
+	//repeated DPHPAMKKMHP LLOEBKKLNOB = 34;
+	uint32 CLNABFDPIKJ = 35;
+	//KFECMKLOBMF NFJKLODFIIL = 36;
+	//KDDJNOPHPJF GCCJOBNNFCA = 37;
 }

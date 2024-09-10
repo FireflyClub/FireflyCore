@@ -20,17 +20,17 @@ public final class SetPlayerInfoCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
+     * <code>optional .Gender GLBIOLFDHOL = 3;</code>
      */
-    private int hJPKBIBBNKN;
+    private int gLBIOLFDHOL;
 
     /**
-     * <code>optional bool is_modify = 10;</code>
+     * <code>optional bool is_modify = 4;</code>
      */
     private boolean isModify;
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
 
@@ -45,69 +45,69 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
-     * @return whether the hJPKBIBBNKN field is set
+     * <code>optional .Gender GLBIOLFDHOL = 3;</code>
+     * @return whether the gLBIOLFDHOL field is set
      */
-    public boolean hasHJPKBIBBNKN() {
+    public boolean hasGLBIOLFDHOL() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
+     * <code>optional .Gender GLBIOLFDHOL = 3;</code>
      * @return this
      */
-    public SetPlayerInfoCsReq clearHJPKBIBBNKN() {
+    public SetPlayerInfoCsReq clearGLBIOLFDHOL() {
       bitField0_ &= ~0x00000001;
-      hJPKBIBBNKN = 0;
+      gLBIOLFDHOL = 0;
       return this;
     }
 
     /**
-     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
-     * @return the hJPKBIBBNKN
+     * <code>optional .Gender GLBIOLFDHOL = 3;</code>
+     * @return the gLBIOLFDHOL
      */
-    public GenderOuterClass.Gender getHJPKBIBBNKN() {
-      return GenderOuterClass.Gender.forNumber(hJPKBIBBNKN);
+    public GenderOuterClass.Gender getGLBIOLFDHOL() {
+      return GenderOuterClass.Gender.forNumber(gLBIOLFDHOL);
     }
 
     /**
      * Gets the value of the internal enum store. The result is
-     * equivalent to {@link SetPlayerInfoCsReq#getHJPKBIBBNKN()}.getNumber().
+     * equivalent to {@link SetPlayerInfoCsReq#getGLBIOLFDHOL()}.getNumber().
      *
      * @return numeric wire representation
      */
-    public int getHJPKBIBBNKNValue() {
-      return hJPKBIBBNKN;
+    public int getGLBIOLFDHOLValue() {
+      return gLBIOLFDHOL;
     }
 
     /**
      * Sets the value of the internal enum store. This does not
      * do any validity checks, so be sure to use appropriate value
      * constants from {@link GenderOuterClass.Gender}. Setting an invalid value
-     * can cause {@link SetPlayerInfoCsReq#getHJPKBIBBNKN()} to return null
+     * can cause {@link SetPlayerInfoCsReq#getGLBIOLFDHOL()} to return null
      *
      * @param value the numeric wire value to set
      * @return this
      */
-    public SetPlayerInfoCsReq setHJPKBIBBNKNValue(final int value) {
+    public SetPlayerInfoCsReq setGLBIOLFDHOLValue(final int value) {
       bitField0_ |= 0x00000001;
-      hJPKBIBBNKN = value;
+      gLBIOLFDHOL = value;
       return this;
     }
 
     /**
-     * <code>optional .Gender HJPKBIBBNKN = 7;</code>
-     * @param value the hJPKBIBBNKN to set
+     * <code>optional .Gender GLBIOLFDHOL = 3;</code>
+     * @param value the gLBIOLFDHOL to set
      * @return this
      */
-    public SetPlayerInfoCsReq setHJPKBIBBNKN(final GenderOuterClass.Gender value) {
+    public SetPlayerInfoCsReq setGLBIOLFDHOL(final GenderOuterClass.Gender value) {
       bitField0_ |= 0x00000001;
-      hJPKBIBBNKN = value.getNumber();
+      gLBIOLFDHOL = value.getNumber();
       return this;
     }
 
     /**
-     * <code>optional bool is_modify = 10;</code>
+     * <code>optional bool is_modify = 4;</code>
      * @return whether the isModify field is set
      */
     public boolean hasIsModify() {
@@ -115,7 +115,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 10;</code>
+     * <code>optional bool is_modify = 4;</code>
      * @return this
      */
     public SetPlayerInfoCsReq clearIsModify() {
@@ -125,7 +125,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 10;</code>
+     * <code>optional bool is_modify = 4;</code>
      * @return the isModify
      */
     public boolean getIsModify() {
@@ -133,7 +133,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_modify = 10;</code>
+     * <code>optional bool is_modify = 4;</code>
      * @param value the isModify to set
      * @return this
      */
@@ -144,7 +144,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @return whether the nickname field is set
      */
     public boolean hasNickname() {
@@ -152,7 +152,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @return this
      */
     public SetPlayerInfoCsReq clearNickname() {
@@ -162,7 +162,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @return the nickname
      */
     public String getNickname() {
@@ -170,7 +170,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @return internal {@code Utf8String} representation of nickname for reading
      */
     public Utf8String getNicknameBytes() {
@@ -178,7 +178,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
     public Utf8String getMutableNicknameBytes() {
@@ -187,7 +187,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -198,7 +198,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 11;</code>
+     * <code>optional string nickname = 8;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -213,7 +213,7 @@ public final class SetPlayerInfoCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        hJPKBIBBNKN = other.hJPKBIBBNKN;
+        gLBIOLFDHOL = other.gLBIOLFDHOL;
         isModify = other.isModify;
         nickname.copyFrom(other.nickname);
       }
@@ -226,8 +226,8 @@ public final class SetPlayerInfoCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasHJPKBIBBNKN()) {
-        setHJPKBIBBNKNValue(other.hJPKBIBBNKN);
+      if (other.hasGLBIOLFDHOL()) {
+        setGLBIOLFDHOLValue(other.gLBIOLFDHOL);
       }
       if (other.hasIsModify()) {
         setIsModify(other.isModify);
@@ -245,7 +245,7 @@ public final class SetPlayerInfoCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      hJPKBIBBNKN = 0;
+      gLBIOLFDHOL = 0;
       isModify = false;
       nickname.clear();
       return this;
@@ -272,7 +272,7 @@ public final class SetPlayerInfoCsReqOuterClass {
       }
       SetPlayerInfoCsReq other = (SetPlayerInfoCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasHJPKBIBBNKN() || hJPKBIBBNKN == other.hJPKBIBBNKN)
+        && (!hasGLBIOLFDHOL() || gLBIOLFDHOL == other.gLBIOLFDHOL)
         && (!hasIsModify() || isModify == other.isModify)
         && (!hasNickname() || nickname.equals(other.nickname));
     }
@@ -280,15 +280,15 @@ public final class SetPlayerInfoCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeEnumNoTag(hJPKBIBBNKN);
+        output.writeRawByte((byte) 24);
+        output.writeEnumNoTag(gLBIOLFDHOL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(isModify);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 66);
         output.writeStringNoTag(nickname);
       }
     }
@@ -297,7 +297,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeEnumSizeNoTag(hJPKBIBBNKN);
+        size += 1 + ProtoSink.computeEnumSizeNoTag(gLBIOLFDHOL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 2;
@@ -315,28 +315,28 @@ public final class SetPlayerInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
-            // hJPKBIBBNKN
+          case 24: {
+            // gLBIOLFDHOL
             final int value = input.readInt32();
             if (GenderOuterClass.Gender.forNumber(value) != null) {
-              hJPKBIBBNKN = value;
+              gLBIOLFDHOL = value;
               bitField0_ |= 0x00000001;
             }
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 32) {
               break;
             }
           }
-          case 80: {
+          case 32: {
             // isModify
             isModify = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 66) {
               break;
             }
           }
-          case 90: {
+          case 66: {
             // nickname
             input.readString(nickname);
             bitField0_ |= 0x00000004;
@@ -363,7 +363,7 @@ public final class SetPlayerInfoCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeEnum(FieldNames.hJPKBIBBNKN, hJPKBIBBNKN, GenderOuterClass.Gender.converter());
+        output.writeEnum(FieldNames.gLBIOLFDHOL, gLBIOLFDHOL, GenderOuterClass.Gender.converter());
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeBool(FieldNames.isModify, isModify);
@@ -381,12 +381,12 @@ public final class SetPlayerInfoCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1704335597: {
-            if (input.isAtField(FieldNames.hJPKBIBBNKN)) {
+          case -2100520578: {
+            if (input.isAtField(FieldNames.gLBIOLFDHOL)) {
               if (!input.trySkipNullValue()) {
                 final GenderOuterClass.Gender value = input.readEnum(GenderOuterClass.Gender.converter());
                 if (value != null) {
-                  hJPKBIBBNKN = value.getNumber();
+                  gLBIOLFDHOL = value.getNumber();
                   bitField0_ |= 0x00000001;
                 } else {
                   input.skipUnknownEnumValue();
@@ -473,7 +473,7 @@ public final class SetPlayerInfoCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName hJPKBIBBNKN = FieldName.forField("HJPKBIBBNKN");
+      static final FieldName gLBIOLFDHOL = FieldName.forField("GLBIOLFDHOL");
 
       static final FieldName isModify = FieldName.forField("isModify", "is_modify");
 

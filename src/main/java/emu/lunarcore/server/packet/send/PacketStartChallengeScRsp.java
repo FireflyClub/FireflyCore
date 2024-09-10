@@ -32,7 +32,7 @@ public class PacketStartChallengeScRsp extends BasePacket {
             data.setChallengeInfo(player.getChallengeInstance().toProto());
             
             if (player.getChallengeInstance().getExcel().getType() == ChallengeType.Boss) {
-                var info = data.getMutableStartInfo().getMutableBossInfo();
+                var info = data.getMutableExtInfo().getMutableBossInfo();
                 info.getMutableFirstNode();
                 info.getMutableSecondNode();
             }

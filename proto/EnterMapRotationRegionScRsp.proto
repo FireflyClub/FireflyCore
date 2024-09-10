@@ -6,10 +6,10 @@ import "MotionInfo.proto";
 import "RotatorEnergyInfo.proto";
 
 message EnterMapRotationRegionScRsp {
-	RotatorEnergyInfo energy_info = 14;
+	uint32 CHJMODIMLDA = 12;
+	MotionInfo motion = 2;
 	uint32 retcode = 15;
-	uint32 BJPBAJECKFO = 8;
-	uint32 client_pos_version = 2;
-	uint32 HDEHHKEMOCD = 12;
-	MotionInfo motion = 6;
+	RotatorEnergyInfo energy_info = 9;
+	uint32 IPFOFHHKJKP = 7;
+	uint32 client_pos_version = 11;
 }

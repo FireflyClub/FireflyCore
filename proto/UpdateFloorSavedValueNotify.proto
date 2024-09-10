@@ -3,5 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message UpdateFloorSavedValueNotify {
-	map<string, int32> saved_value = 5;
+	uint32 floor_id = 15;
+	uint32 plane_id = 2;
+	map<string, int32> saved_value = 10;
+	uint32 dimension_id = 5;
 }

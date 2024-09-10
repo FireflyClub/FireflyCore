@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DynamicValue {
-	float value = 3;
-	string key = 6;
+	float value = 13;
+	string key = 1;
 }

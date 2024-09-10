@@ -2,13 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-//import "ChessRogueQuery.proto";
 
 message ChessRogueNousQueryInfo {
-    //MAKPHMAOCHI talent_info = 1;
-    //OFHBFINPHAG JNAGMIALOII = 6;
-    //CLIDPGPDFGK IKGPADCBBPN = 4;
-    //ChessRogueQuery query_info = 13;
-    //repeated uint32 PHJAFGJHOCO = 7;
-    //repeated uint32 CMNHLKGFKOP = 8;
 }

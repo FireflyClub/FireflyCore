@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "MultiPathAvatarType.proto";
 
 message AvatarPathChangedNotify {
-	uint32 base_avatar_id = 3;
-	MultiPathAvatarType multi_path_avatar_type = 8;
+	uint32 base_avatar_id = 13;
+	MultiPathAvatarType multi_path_avatar_type = 4;
 }

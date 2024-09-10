@@ -20,133 +20,133 @@ public final class PlayerLoginCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 login_random = 8;</code>
+     * <code>optional uint64 login_random = 7;</code>
      */
     private long loginRandom;
 
     /**
-     * <code>optional uint32 client_res_version = 4;</code>
+     * <code>optional uint32 client_res_version = 8;</code>
      */
     private int clientResVersion;
 
     /**
-     * <code>optional uint32 BGCEPHGGMLN = 13;</code>
+     * <code>optional uint32 NMDMJEFOPKB = 12;</code>
      */
-    private int bGCEPHGGMLN;
+    private int nMDMJEFOPKB;
 
     /**
-     * <code>optional uint32 IPOLCNOCFNB = 540;</code>
+     * <code>optional uint32 BINLGCOBEPO = 590;</code>
      */
-    private int iPOLCNOCFNB;
+    private int bINLGCOBEPO;
 
     /**
-     * <code>optional uint32 ICGHCNOBKML = 1253;</code>
+     * <code>optional uint32 ACMBPIIJKFL = 1405;</code>
      */
-    private int iCGHCNOBKML;
+    private int aCMBPIIJKFL;
 
     /**
-     * <code>optional .PlatformType platform_type = 5;</code>
+     * <code>optional .PlatformType platform_type = 13;</code>
      */
     private int platformType;
 
     /**
-     * <code>optional .LanguageType language = 10;</code>
+     * <code>optional .LanguageType language = 15;</code>
      */
     private int language;
 
     /**
-     * <code>optional bool EKJOPHKEIOF = 1358;</code>
+     * <code>optional bool GLNBFFILPNA = 424;</code>
      */
-    private boolean eKJOPHKEIOF;
+    private boolean gLNBFFILPNA;
+
+    /**
+     * <code>optional bool JJDBFAMDEPP = 1467;</code>
+     */
+    private boolean jJDBFAMDEPP;
+
+    /**
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     */
+    private final Utf8String iIAHICGOMKP = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     */
+    private final Utf8String aIEONDBHNDC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     */
+    private final Utf8String fLJNOLCHBBC = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     */
+    private final Utf8String oPNLMMDFFLL = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     */
+    private final Utf8String rogueInfoData = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     */
+    private final Utf8String cEKOLCPLBED = Utf8String.newEmptyInstance();
 
     /**
      * <pre>
-     * ExtraDeviceInfo BCMIKPBAIDP = 1657;
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
      * </pre>
      *
-     * <code>optional bool IFFJDADGAJA = 1976;</code>
+     * <code>optional string OPNBNKJAIKD = 9;</code>
      */
-    private boolean iFFJDADGAJA;
+    private final Utf8String oPNBNKJAIKD = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
+     * <code>optional string EIFPHAMMIEG = 10;</code>
      */
-    private final Utf8String eBLEHHAKCHN = Utf8String.newEmptyInstance();
+    private final Utf8String eIFPHAMMIEG = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      */
     private final Utf8String signature = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
+     * <code>optional string HDPJMCHLGCM = 14;</code>
      */
-    private final Utf8String oPLPLPDDDEP = Utf8String.newEmptyInstance();
+    private final Utf8String hDPJMCHLGCM = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
+     * <code>optional string BMCBOCGEKBF = 342;</code>
      */
-    private final Utf8String nMHJOLNHMDK = Utf8String.newEmptyInstance();
+    private final Utf8String bMCBOCGEKBF = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
+     * <code>optional string FKFJDGCNDII = 350;</code>
      */
-    private final Utf8String mEJHAKLCHFO = Utf8String.newEmptyInstance();
+    private final Utf8String fKFJDGCNDII = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
      */
-    private final Utf8String aDAABGHDEFI = Utf8String.newEmptyInstance();
+    private final Utf8String mJAJBCHKDFP = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
+     * <code>optional string FLFKCIHCENF = 1105;</code>
      */
-    private final Utf8String gCFIHCACEJA = Utf8String.newEmptyInstance();
+    private final Utf8String fLFKCIHCENF = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
      */
-    private final Utf8String bGPJNKCMIMM = Utf8String.newEmptyInstance();
+    private final Utf8String kOGIIKIEJIJ = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
      */
-    private final Utf8String kGLDJEEHOOO = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     */
-    private final Utf8String bHJIONAELAJ = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     */
-    private final Utf8String cDFPLBBIKDI = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     */
-    private final Utf8String bIJCDONDCOE = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     */
-    private final Utf8String jPOIMHPHEIM = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     */
-    private final Utf8String bAPJPOAAEGM = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     */
-    private final Utf8String eMGADLCGDBF = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     */
-    private final Utf8String dJGLMHDKEEO = Utf8String.newEmptyInstance();
+    private final Utf8String hFHGPLMEFGJ = Utf8String.newEmptyInstance();
 
     private PlayerLoginCsReq() {
     }
@@ -159,7 +159,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 8;</code>
+     * <code>optional uint64 login_random = 7;</code>
      * @return whether the loginRandom field is set
      */
     public boolean hasLoginRandom() {
@@ -167,7 +167,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 8;</code>
+     * <code>optional uint64 login_random = 7;</code>
      * @return this
      */
     public PlayerLoginCsReq clearLoginRandom() {
@@ -177,7 +177,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 8;</code>
+     * <code>optional uint64 login_random = 7;</code>
      * @return the loginRandom
      */
     public long getLoginRandom() {
@@ -185,7 +185,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 login_random = 8;</code>
+     * <code>optional uint64 login_random = 7;</code>
      * @param value the loginRandom to set
      * @return this
      */
@@ -196,7 +196,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 4;</code>
+     * <code>optional uint32 client_res_version = 8;</code>
      * @return whether the clientResVersion field is set
      */
     public boolean hasClientResVersion() {
@@ -204,7 +204,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 4;</code>
+     * <code>optional uint32 client_res_version = 8;</code>
      * @return this
      */
     public PlayerLoginCsReq clearClientResVersion() {
@@ -214,7 +214,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 4;</code>
+     * <code>optional uint32 client_res_version = 8;</code>
      * @return the clientResVersion
      */
     public int getClientResVersion() {
@@ -222,7 +222,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 4;</code>
+     * <code>optional uint32 client_res_version = 8;</code>
      * @param value the clientResVersion to set
      * @return this
      */
@@ -233,118 +233,118 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 BGCEPHGGMLN = 13;</code>
-     * @return whether the bGCEPHGGMLN field is set
+     * <code>optional uint32 NMDMJEFOPKB = 12;</code>
+     * @return whether the nMDMJEFOPKB field is set
      */
-    public boolean hasBGCEPHGGMLN() {
+    public boolean hasNMDMJEFOPKB() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 BGCEPHGGMLN = 13;</code>
+     * <code>optional uint32 NMDMJEFOPKB = 12;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearBGCEPHGGMLN() {
+    public PlayerLoginCsReq clearNMDMJEFOPKB() {
       bitField0_ &= ~0x00000004;
-      bGCEPHGGMLN = 0;
+      nMDMJEFOPKB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 BGCEPHGGMLN = 13;</code>
-     * @return the bGCEPHGGMLN
+     * <code>optional uint32 NMDMJEFOPKB = 12;</code>
+     * @return the nMDMJEFOPKB
      */
-    public int getBGCEPHGGMLN() {
-      return bGCEPHGGMLN;
+    public int getNMDMJEFOPKB() {
+      return nMDMJEFOPKB;
     }
 
     /**
-     * <code>optional uint32 BGCEPHGGMLN = 13;</code>
-     * @param value the bGCEPHGGMLN to set
+     * <code>optional uint32 NMDMJEFOPKB = 12;</code>
+     * @param value the nMDMJEFOPKB to set
      * @return this
      */
-    public PlayerLoginCsReq setBGCEPHGGMLN(final int value) {
+    public PlayerLoginCsReq setNMDMJEFOPKB(final int value) {
       bitField0_ |= 0x00000004;
-      bGCEPHGGMLN = value;
+      nMDMJEFOPKB = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 IPOLCNOCFNB = 540;</code>
-     * @return whether the iPOLCNOCFNB field is set
+     * <code>optional uint32 BINLGCOBEPO = 590;</code>
+     * @return whether the bINLGCOBEPO field is set
      */
-    public boolean hasIPOLCNOCFNB() {
+    public boolean hasBINLGCOBEPO() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 IPOLCNOCFNB = 540;</code>
+     * <code>optional uint32 BINLGCOBEPO = 590;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearIPOLCNOCFNB() {
+    public PlayerLoginCsReq clearBINLGCOBEPO() {
       bitField0_ &= ~0x00000008;
-      iPOLCNOCFNB = 0;
+      bINLGCOBEPO = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 IPOLCNOCFNB = 540;</code>
-     * @return the iPOLCNOCFNB
+     * <code>optional uint32 BINLGCOBEPO = 590;</code>
+     * @return the bINLGCOBEPO
      */
-    public int getIPOLCNOCFNB() {
-      return iPOLCNOCFNB;
+    public int getBINLGCOBEPO() {
+      return bINLGCOBEPO;
     }
 
     /**
-     * <code>optional uint32 IPOLCNOCFNB = 540;</code>
-     * @param value the iPOLCNOCFNB to set
+     * <code>optional uint32 BINLGCOBEPO = 590;</code>
+     * @param value the bINLGCOBEPO to set
      * @return this
      */
-    public PlayerLoginCsReq setIPOLCNOCFNB(final int value) {
+    public PlayerLoginCsReq setBINLGCOBEPO(final int value) {
       bitField0_ |= 0x00000008;
-      iPOLCNOCFNB = value;
+      bINLGCOBEPO = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 ICGHCNOBKML = 1253;</code>
-     * @return whether the iCGHCNOBKML field is set
+     * <code>optional uint32 ACMBPIIJKFL = 1405;</code>
+     * @return whether the aCMBPIIJKFL field is set
      */
-    public boolean hasICGHCNOBKML() {
+    public boolean hasACMBPIIJKFL() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional uint32 ICGHCNOBKML = 1253;</code>
+     * <code>optional uint32 ACMBPIIJKFL = 1405;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearICGHCNOBKML() {
+    public PlayerLoginCsReq clearACMBPIIJKFL() {
       bitField0_ &= ~0x00000010;
-      iCGHCNOBKML = 0;
+      aCMBPIIJKFL = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 ICGHCNOBKML = 1253;</code>
-     * @return the iCGHCNOBKML
+     * <code>optional uint32 ACMBPIIJKFL = 1405;</code>
+     * @return the aCMBPIIJKFL
      */
-    public int getICGHCNOBKML() {
-      return iCGHCNOBKML;
+    public int getACMBPIIJKFL() {
+      return aCMBPIIJKFL;
     }
 
     /**
-     * <code>optional uint32 ICGHCNOBKML = 1253;</code>
-     * @param value the iCGHCNOBKML to set
+     * <code>optional uint32 ACMBPIIJKFL = 1405;</code>
+     * @param value the aCMBPIIJKFL to set
      * @return this
      */
-    public PlayerLoginCsReq setICGHCNOBKML(final int value) {
+    public PlayerLoginCsReq setACMBPIIJKFL(final int value) {
       bitField0_ |= 0x00000010;
-      iCGHCNOBKML = value;
+      aCMBPIIJKFL = value;
       return this;
     }
 
     /**
-     * <code>optional .PlatformType platform_type = 5;</code>
+     * <code>optional .PlatformType platform_type = 13;</code>
      * @return whether the platformType field is set
      */
     public boolean hasPlatformType() {
@@ -352,7 +352,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .PlatformType platform_type = 5;</code>
+     * <code>optional .PlatformType platform_type = 13;</code>
      * @return this
      */
     public PlayerLoginCsReq clearPlatformType() {
@@ -362,7 +362,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .PlatformType platform_type = 5;</code>
+     * <code>optional .PlatformType platform_type = 13;</code>
      * @return the platformType
      */
     public PlatformTypeOuterClass.PlatformType getPlatformType() {
@@ -395,7 +395,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .PlatformType platform_type = 5;</code>
+     * <code>optional .PlatformType platform_type = 13;</code>
      * @param value the platformType to set
      * @return this
      */
@@ -406,7 +406,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .LanguageType language = 10;</code>
+     * <code>optional .LanguageType language = 15;</code>
      * @return whether the language field is set
      */
     public boolean hasLanguage() {
@@ -414,7 +414,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .LanguageType language = 10;</code>
+     * <code>optional .LanguageType language = 15;</code>
      * @return this
      */
     public PlayerLoginCsReq clearLanguage() {
@@ -424,7 +424,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .LanguageType language = 10;</code>
+     * <code>optional .LanguageType language = 15;</code>
      * @return the language
      */
     public LanguageTypeOuterClass.LanguageType getLanguage() {
@@ -457,7 +457,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional .LanguageType language = 10;</code>
+     * <code>optional .LanguageType language = 15;</code>
      * @param value the language to set
      * @return this
      */
@@ -468,180 +468,647 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool EKJOPHKEIOF = 1358;</code>
-     * @return whether the eKJOPHKEIOF field is set
+     * <code>optional bool GLNBFFILPNA = 424;</code>
+     * @return whether the gLNBFFILPNA field is set
      */
-    public boolean hasEKJOPHKEIOF() {
+    public boolean hasGLNBFFILPNA() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional bool EKJOPHKEIOF = 1358;</code>
+     * <code>optional bool GLNBFFILPNA = 424;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearEKJOPHKEIOF() {
+    public PlayerLoginCsReq clearGLNBFFILPNA() {
       bitField0_ &= ~0x00000080;
-      eKJOPHKEIOF = false;
+      gLNBFFILPNA = false;
       return this;
     }
 
     /**
-     * <code>optional bool EKJOPHKEIOF = 1358;</code>
-     * @return the eKJOPHKEIOF
+     * <code>optional bool GLNBFFILPNA = 424;</code>
+     * @return the gLNBFFILPNA
      */
-    public boolean getEKJOPHKEIOF() {
-      return eKJOPHKEIOF;
+    public boolean getGLNBFFILPNA() {
+      return gLNBFFILPNA;
     }
 
     /**
-     * <code>optional bool EKJOPHKEIOF = 1358;</code>
-     * @param value the eKJOPHKEIOF to set
+     * <code>optional bool GLNBFFILPNA = 424;</code>
+     * @param value the gLNBFFILPNA to set
      * @return this
      */
-    public PlayerLoginCsReq setEKJOPHKEIOF(final boolean value) {
+    public PlayerLoginCsReq setGLNBFFILPNA(final boolean value) {
       bitField0_ |= 0x00000080;
-      eKJOPHKEIOF = value;
+      gLNBFFILPNA = value;
       return this;
     }
 
     /**
-     * <pre>
-     * ExtraDeviceInfo BCMIKPBAIDP = 1657;
-     * </pre>
-     *
-     * <code>optional bool IFFJDADGAJA = 1976;</code>
-     * @return whether the iFFJDADGAJA field is set
+     * <code>optional bool JJDBFAMDEPP = 1467;</code>
+     * @return whether the jJDBFAMDEPP field is set
      */
-    public boolean hasIFFJDADGAJA() {
+    public boolean hasJJDBFAMDEPP() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <pre>
-     * ExtraDeviceInfo BCMIKPBAIDP = 1657;
-     * </pre>
-     *
-     * <code>optional bool IFFJDADGAJA = 1976;</code>
+     * <code>optional bool JJDBFAMDEPP = 1467;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearIFFJDADGAJA() {
+    public PlayerLoginCsReq clearJJDBFAMDEPP() {
       bitField0_ &= ~0x00000100;
-      iFFJDADGAJA = false;
+      jJDBFAMDEPP = false;
       return this;
     }
 
     /**
-     * <pre>
-     * ExtraDeviceInfo BCMIKPBAIDP = 1657;
-     * </pre>
-     *
-     * <code>optional bool IFFJDADGAJA = 1976;</code>
-     * @return the iFFJDADGAJA
+     * <code>optional bool JJDBFAMDEPP = 1467;</code>
+     * @return the jJDBFAMDEPP
      */
-    public boolean getIFFJDADGAJA() {
-      return iFFJDADGAJA;
+    public boolean getJJDBFAMDEPP() {
+      return jJDBFAMDEPP;
     }
 
     /**
-     * <pre>
-     * ExtraDeviceInfo BCMIKPBAIDP = 1657;
-     * </pre>
-     *
-     * <code>optional bool IFFJDADGAJA = 1976;</code>
-     * @param value the iFFJDADGAJA to set
+     * <code>optional bool JJDBFAMDEPP = 1467;</code>
+     * @param value the jJDBFAMDEPP to set
      * @return this
      */
-    public PlayerLoginCsReq setIFFJDADGAJA(final boolean value) {
+    public PlayerLoginCsReq setJJDBFAMDEPP(final boolean value) {
       bitField0_ |= 0x00000100;
-      iFFJDADGAJA = value;
+      jJDBFAMDEPP = value;
       return this;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @return whether the eBLEHHAKCHN field is set
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @return whether the iIAHICGOMKP field is set
      */
-    public boolean hasEBLEHHAKCHN() {
+    public boolean hasIIAHICGOMKP() {
       return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
+     * <code>optional string IIAHICGOMKP = 1;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearEBLEHHAKCHN() {
+    public PlayerLoginCsReq clearIIAHICGOMKP() {
       bitField0_ &= ~0x00000200;
-      eBLEHHAKCHN.clear();
+      iIAHICGOMKP.clear();
       return this;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @return the eBLEHHAKCHN
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @return the iIAHICGOMKP
      */
-    public String getEBLEHHAKCHN() {
-      return eBLEHHAKCHN.getString();
+    public String getIIAHICGOMKP() {
+      return iIAHICGOMKP.getString();
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @return internal {@code Utf8String} representation of eBLEHHAKCHN for reading
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @return internal {@code Utf8String} representation of iIAHICGOMKP for reading
      */
-    public Utf8String getEBLEHHAKCHNBytes() {
-      return this.eBLEHHAKCHN;
+    public Utf8String getIIAHICGOMKPBytes() {
+      return this.iIAHICGOMKP;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @return internal {@code Utf8String} representation of eBLEHHAKCHN for modifications
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @return internal {@code Utf8String} representation of iIAHICGOMKP for modifications
      */
-    public Utf8String getMutableEBLEHHAKCHNBytes() {
+    public Utf8String getMutableIIAHICGOMKPBytes() {
       bitField0_ |= 0x00000200;
-      return this.eBLEHHAKCHN;
+      return this.iIAHICGOMKP;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @param value the eBLEHHAKCHN to set
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @param value the iIAHICGOMKP to set
      * @return this
      */
-    public PlayerLoginCsReq setEBLEHHAKCHN(final CharSequence value) {
+    public PlayerLoginCsReq setIIAHICGOMKP(final CharSequence value) {
       bitField0_ |= 0x00000200;
-      eBLEHHAKCHN.copyFrom(value);
+      iIAHICGOMKP.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string EBLEHHAKCHN = 1;</code>
-     * @param value the eBLEHHAKCHN to set
+     * <code>optional string IIAHICGOMKP = 1;</code>
+     * @param value the iIAHICGOMKP to set
      * @return this
      */
-    public PlayerLoginCsReq setEBLEHHAKCHN(final Utf8String value) {
+    public PlayerLoginCsReq setIIAHICGOMKP(final Utf8String value) {
       bitField0_ |= 0x00000200;
-      eBLEHHAKCHN.copyFrom(value);
+      iIAHICGOMKP.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string signature = 2;</code>
-     * @return whether the signature field is set
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @return whether the aIEONDBHNDC field is set
      */
-    public boolean hasSignature() {
+    public boolean hasAIEONDBHNDC() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearAIEONDBHNDC() {
+      bitField0_ &= ~0x00000400;
+      aIEONDBHNDC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @return the aIEONDBHNDC
+     */
+    public String getAIEONDBHNDC() {
+      return aIEONDBHNDC.getString();
+    }
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @return internal {@code Utf8String} representation of aIEONDBHNDC for reading
+     */
+    public Utf8String getAIEONDBHNDCBytes() {
+      return this.aIEONDBHNDC;
+    }
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @return internal {@code Utf8String} representation of aIEONDBHNDC for modifications
+     */
+    public Utf8String getMutableAIEONDBHNDCBytes() {
+      bitField0_ |= 0x00000400;
+      return this.aIEONDBHNDC;
+    }
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @param value the aIEONDBHNDC to set
+     * @return this
+     */
+    public PlayerLoginCsReq setAIEONDBHNDC(final CharSequence value) {
+      bitField0_ |= 0x00000400;
+      aIEONDBHNDC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string AIEONDBHNDC = 2;</code>
+     * @param value the aIEONDBHNDC to set
+     * @return this
+     */
+    public PlayerLoginCsReq setAIEONDBHNDC(final Utf8String value) {
+      bitField0_ |= 0x00000400;
+      aIEONDBHNDC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @return whether the fLJNOLCHBBC field is set
+     */
+    public boolean hasFLJNOLCHBBC() {
+      return (bitField0_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearFLJNOLCHBBC() {
+      bitField0_ &= ~0x00000800;
+      fLJNOLCHBBC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @return the fLJNOLCHBBC
+     */
+    public String getFLJNOLCHBBC() {
+      return fLJNOLCHBBC.getString();
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @return internal {@code Utf8String} representation of fLJNOLCHBBC for reading
+     */
+    public Utf8String getFLJNOLCHBBCBytes() {
+      return this.fLJNOLCHBBC;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @return internal {@code Utf8String} representation of fLJNOLCHBBC for modifications
+     */
+    public Utf8String getMutableFLJNOLCHBBCBytes() {
+      bitField0_ |= 0x00000800;
+      return this.fLJNOLCHBBC;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @param value the fLJNOLCHBBC to set
+     * @return this
+     */
+    public PlayerLoginCsReq setFLJNOLCHBBC(final CharSequence value) {
+      bitField0_ |= 0x00000800;
+      fLJNOLCHBBC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string FLJNOLCHBBC = 3;</code>
+     * @param value the fLJNOLCHBBC to set
+     * @return this
+     */
+    public PlayerLoginCsReq setFLJNOLCHBBC(final Utf8String value) {
+      bitField0_ |= 0x00000800;
+      fLJNOLCHBBC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @return whether the oPNLMMDFFLL field is set
+     */
+    public boolean hasOPNLMMDFFLL() {
+      return (bitField0_ & 0x00001000) != 0;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearOPNLMMDFFLL() {
+      bitField0_ &= ~0x00001000;
+      oPNLMMDFFLL.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @return the oPNLMMDFFLL
+     */
+    public String getOPNLMMDFFLL() {
+      return oPNLMMDFFLL.getString();
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @return internal {@code Utf8String} representation of oPNLMMDFFLL for reading
+     */
+    public Utf8String getOPNLMMDFFLLBytes() {
+      return this.oPNLMMDFFLL;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @return internal {@code Utf8String} representation of oPNLMMDFFLL for modifications
+     */
+    public Utf8String getMutableOPNLMMDFFLLBytes() {
+      bitField0_ |= 0x00001000;
+      return this.oPNLMMDFFLL;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @param value the oPNLMMDFFLL to set
+     * @return this
+     */
+    public PlayerLoginCsReq setOPNLMMDFFLL(final CharSequence value) {
+      bitField0_ |= 0x00001000;
+      oPNLMMDFFLL.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string OPNLMMDFFLL = 4;</code>
+     * @param value the oPNLMMDFFLL to set
+     * @return this
+     */
+    public PlayerLoginCsReq setOPNLMMDFFLL(final Utf8String value) {
+      bitField0_ |= 0x00001000;
+      oPNLMMDFFLL.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @return whether the rogueInfoData field is set
+     */
+    public boolean hasRogueInfoData() {
+      return (bitField0_ & 0x00002000) != 0;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearRogueInfoData() {
+      bitField0_ &= ~0x00002000;
+      rogueInfoData.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @return the rogueInfoData
+     */
+    public String getRogueInfoData() {
+      return rogueInfoData.getString();
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @return internal {@code Utf8String} representation of rogueInfoData for reading
+     */
+    public Utf8String getRogueInfoDataBytes() {
+      return this.rogueInfoData;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @return internal {@code Utf8String} representation of rogueInfoData for modifications
+     */
+    public Utf8String getMutableRogueInfoDataBytes() {
+      bitField0_ |= 0x00002000;
+      return this.rogueInfoData;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @param value the rogueInfoData to set
+     * @return this
+     */
+    public PlayerLoginCsReq setRogueInfoData(final CharSequence value) {
+      bitField0_ |= 0x00002000;
+      rogueInfoData.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string rogue_info_data = 5;</code>
+     * @param value the rogueInfoData to set
+     * @return this
+     */
+    public PlayerLoginCsReq setRogueInfoData(final Utf8String value) {
+      bitField0_ |= 0x00002000;
+      rogueInfoData.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @return whether the cEKOLCPLBED field is set
+     */
+    public boolean hasCEKOLCPLBED() {
+      return (bitField0_ & 0x00004000) != 0;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearCEKOLCPLBED() {
+      bitField0_ &= ~0x00004000;
+      cEKOLCPLBED.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @return the cEKOLCPLBED
+     */
+    public String getCEKOLCPLBED() {
+      return cEKOLCPLBED.getString();
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @return internal {@code Utf8String} representation of cEKOLCPLBED for reading
+     */
+    public Utf8String getCEKOLCPLBEDBytes() {
+      return this.cEKOLCPLBED;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @return internal {@code Utf8String} representation of cEKOLCPLBED for modifications
+     */
+    public Utf8String getMutableCEKOLCPLBEDBytes() {
+      bitField0_ |= 0x00004000;
+      return this.cEKOLCPLBED;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @param value the cEKOLCPLBED to set
+     * @return this
+     */
+    public PlayerLoginCsReq setCEKOLCPLBED(final CharSequence value) {
+      bitField0_ |= 0x00004000;
+      cEKOLCPLBED.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string CEKOLCPLBED = 6;</code>
+     * @param value the cEKOLCPLBED to set
+     * @return this
+     */
+    public PlayerLoginCsReq setCEKOLCPLBED(final Utf8String value) {
+      bitField0_ |= 0x00004000;
+      cEKOLCPLBED.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @return whether the oPNBNKJAIKD field is set
+     */
+    public boolean hasOPNBNKJAIKD() {
+      return (bitField0_ & 0x00008000) != 0;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearOPNBNKJAIKD() {
+      bitField0_ &= ~0x00008000;
+      oPNBNKJAIKD.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @return the oPNBNKJAIKD
+     */
+    public String getOPNBNKJAIKD() {
+      return oPNBNKJAIKD.getString();
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @return internal {@code Utf8String} representation of oPNBNKJAIKD for reading
+     */
+    public Utf8String getOPNBNKJAIKDBytes() {
+      return this.oPNBNKJAIKD;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @return internal {@code Utf8String} representation of oPNBNKJAIKD for modifications
+     */
+    public Utf8String getMutableOPNBNKJAIKDBytes() {
+      bitField0_ |= 0x00008000;
+      return this.oPNBNKJAIKD;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @param value the oPNBNKJAIKD to set
+     * @return this
+     */
+    public PlayerLoginCsReq setOPNBNKJAIKD(final CharSequence value) {
+      bitField0_ |= 0x00008000;
+      oPNBNKJAIKD.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ExtraDeviceInfo OGKGOLNAICH = 1285;
+     * </pre>
+     *
+     * <code>optional string OPNBNKJAIKD = 9;</code>
+     * @param value the oPNBNKJAIKD to set
+     * @return this
+     */
+    public PlayerLoginCsReq setOPNBNKJAIKD(final Utf8String value) {
+      bitField0_ |= 0x00008000;
+      oPNBNKJAIKD.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @return whether the eIFPHAMMIEG field is set
+     */
+    public boolean hasEIFPHAMMIEG() {
+      return (bitField0_ & 0x00010000) != 0;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @return this
+     */
+    public PlayerLoginCsReq clearEIFPHAMMIEG() {
+      bitField0_ &= ~0x00010000;
+      eIFPHAMMIEG.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @return the eIFPHAMMIEG
+     */
+    public String getEIFPHAMMIEG() {
+      return eIFPHAMMIEG.getString();
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @return internal {@code Utf8String} representation of eIFPHAMMIEG for reading
+     */
+    public Utf8String getEIFPHAMMIEGBytes() {
+      return this.eIFPHAMMIEG;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @return internal {@code Utf8String} representation of eIFPHAMMIEG for modifications
+     */
+    public Utf8String getMutableEIFPHAMMIEGBytes() {
+      bitField0_ |= 0x00010000;
+      return this.eIFPHAMMIEG;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @param value the eIFPHAMMIEG to set
+     * @return this
+     */
+    public PlayerLoginCsReq setEIFPHAMMIEG(final CharSequence value) {
+      bitField0_ |= 0x00010000;
+      eIFPHAMMIEG.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string EIFPHAMMIEG = 10;</code>
+     * @param value the eIFPHAMMIEG to set
+     * @return this
+     */
+    public PlayerLoginCsReq setEIFPHAMMIEG(final Utf8String value) {
+      bitField0_ |= 0x00010000;
+      eIFPHAMMIEG.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string signature = 11;</code>
+     * @return whether the signature field is set
+     */
+    public boolean hasSignature() {
+      return (bitField0_ & 0x00020000) != 0;
+    }
+
+    /**
+     * <code>optional string signature = 11;</code>
      * @return this
      */
     public PlayerLoginCsReq clearSignature() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00020000;
       signature.clear();
       return this;
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      * @return the signature
      */
     public String getSignature() {
@@ -649,7 +1116,7 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      * @return internal {@code Utf8String} representation of signature for reading
      */
     public Utf8String getSignatureBytes() {
@@ -657,943 +1124,488 @@ public final class PlayerLoginCsReqOuterClass {
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      * @return internal {@code Utf8String} representation of signature for modifications
      */
     public Utf8String getMutableSignatureBytes() {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00020000;
       return this.signature;
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      * @param value the signature to set
      * @return this
      */
     public PlayerLoginCsReq setSignature(final CharSequence value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00020000;
       signature.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string signature = 2;</code>
+     * <code>optional string signature = 11;</code>
      * @param value the signature to set
      * @return this
      */
     public PlayerLoginCsReq setSignature(final Utf8String value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00020000;
       signature.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @return whether the oPLPLPDDDEP field is set
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @return whether the hDPJMCHLGCM field is set
      */
-    public boolean hasOPLPLPDDDEP() {
-      return (bitField0_ & 0x00000800) != 0;
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearOPLPLPDDDEP() {
-      bitField0_ &= ~0x00000800;
-      oPLPLPDDDEP.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @return the oPLPLPDDDEP
-     */
-    public String getOPLPLPDDDEP() {
-      return oPLPLPDDDEP.getString();
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @return internal {@code Utf8String} representation of oPLPLPDDDEP for reading
-     */
-    public Utf8String getOPLPLPDDDEPBytes() {
-      return this.oPLPLPDDDEP;
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @return internal {@code Utf8String} representation of oPLPLPDDDEP for modifications
-     */
-    public Utf8String getMutableOPLPLPDDDEPBytes() {
-      bitField0_ |= 0x00000800;
-      return this.oPLPLPDDDEP;
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @param value the oPLPLPDDDEP to set
-     * @return this
-     */
-    public PlayerLoginCsReq setOPLPLPDDDEP(final CharSequence value) {
-      bitField0_ |= 0x00000800;
-      oPLPLPDDDEP.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string OPLPLPDDDEP = 3;</code>
-     * @param value the oPLPLPDDDEP to set
-     * @return this
-     */
-    public PlayerLoginCsReq setOPLPLPDDDEP(final Utf8String value) {
-      bitField0_ |= 0x00000800;
-      oPLPLPDDDEP.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @return whether the nMHJOLNHMDK field is set
-     */
-    public boolean hasNMHJOLNHMDK() {
-      return (bitField0_ & 0x00001000) != 0;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearNMHJOLNHMDK() {
-      bitField0_ &= ~0x00001000;
-      nMHJOLNHMDK.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @return the nMHJOLNHMDK
-     */
-    public String getNMHJOLNHMDK() {
-      return nMHJOLNHMDK.getString();
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @return internal {@code Utf8String} representation of nMHJOLNHMDK for reading
-     */
-    public Utf8String getNMHJOLNHMDKBytes() {
-      return this.nMHJOLNHMDK;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @return internal {@code Utf8String} representation of nMHJOLNHMDK for modifications
-     */
-    public Utf8String getMutableNMHJOLNHMDKBytes() {
-      bitField0_ |= 0x00001000;
-      return this.nMHJOLNHMDK;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @param value the nMHJOLNHMDK to set
-     * @return this
-     */
-    public PlayerLoginCsReq setNMHJOLNHMDK(final CharSequence value) {
-      bitField0_ |= 0x00001000;
-      nMHJOLNHMDK.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string NMHJOLNHMDK = 6;</code>
-     * @param value the nMHJOLNHMDK to set
-     * @return this
-     */
-    public PlayerLoginCsReq setNMHJOLNHMDK(final Utf8String value) {
-      bitField0_ |= 0x00001000;
-      nMHJOLNHMDK.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @return whether the mEJHAKLCHFO field is set
-     */
-    public boolean hasMEJHAKLCHFO() {
-      return (bitField0_ & 0x00002000) != 0;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearMEJHAKLCHFO() {
-      bitField0_ &= ~0x00002000;
-      mEJHAKLCHFO.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @return the mEJHAKLCHFO
-     */
-    public String getMEJHAKLCHFO() {
-      return mEJHAKLCHFO.getString();
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @return internal {@code Utf8String} representation of mEJHAKLCHFO for reading
-     */
-    public Utf8String getMEJHAKLCHFOBytes() {
-      return this.mEJHAKLCHFO;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @return internal {@code Utf8String} representation of mEJHAKLCHFO for modifications
-     */
-    public Utf8String getMutableMEJHAKLCHFOBytes() {
-      bitField0_ |= 0x00002000;
-      return this.mEJHAKLCHFO;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @param value the mEJHAKLCHFO to set
-     * @return this
-     */
-    public PlayerLoginCsReq setMEJHAKLCHFO(final CharSequence value) {
-      bitField0_ |= 0x00002000;
-      mEJHAKLCHFO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string MEJHAKLCHFO = 7;</code>
-     * @param value the mEJHAKLCHFO to set
-     * @return this
-     */
-    public PlayerLoginCsReq setMEJHAKLCHFO(final Utf8String value) {
-      bitField0_ |= 0x00002000;
-      mEJHAKLCHFO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @return whether the aDAABGHDEFI field is set
-     */
-    public boolean hasADAABGHDEFI() {
-      return (bitField0_ & 0x00004000) != 0;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearADAABGHDEFI() {
-      bitField0_ &= ~0x00004000;
-      aDAABGHDEFI.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @return the aDAABGHDEFI
-     */
-    public String getADAABGHDEFI() {
-      return aDAABGHDEFI.getString();
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @return internal {@code Utf8String} representation of aDAABGHDEFI for reading
-     */
-    public Utf8String getADAABGHDEFIBytes() {
-      return this.aDAABGHDEFI;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @return internal {@code Utf8String} representation of aDAABGHDEFI for modifications
-     */
-    public Utf8String getMutableADAABGHDEFIBytes() {
-      bitField0_ |= 0x00004000;
-      return this.aDAABGHDEFI;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @param value the aDAABGHDEFI to set
-     * @return this
-     */
-    public PlayerLoginCsReq setADAABGHDEFI(final CharSequence value) {
-      bitField0_ |= 0x00004000;
-      aDAABGHDEFI.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string ADAABGHDEFI = 9;</code>
-     * @param value the aDAABGHDEFI to set
-     * @return this
-     */
-    public PlayerLoginCsReq setADAABGHDEFI(final Utf8String value) {
-      bitField0_ |= 0x00004000;
-      aDAABGHDEFI.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @return whether the gCFIHCACEJA field is set
-     */
-    public boolean hasGCFIHCACEJA() {
-      return (bitField0_ & 0x00008000) != 0;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearGCFIHCACEJA() {
-      bitField0_ &= ~0x00008000;
-      gCFIHCACEJA.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @return the gCFIHCACEJA
-     */
-    public String getGCFIHCACEJA() {
-      return gCFIHCACEJA.getString();
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @return internal {@code Utf8String} representation of gCFIHCACEJA for reading
-     */
-    public Utf8String getGCFIHCACEJABytes() {
-      return this.gCFIHCACEJA;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @return internal {@code Utf8String} representation of gCFIHCACEJA for modifications
-     */
-    public Utf8String getMutableGCFIHCACEJABytes() {
-      bitField0_ |= 0x00008000;
-      return this.gCFIHCACEJA;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @param value the gCFIHCACEJA to set
-     * @return this
-     */
-    public PlayerLoginCsReq setGCFIHCACEJA(final CharSequence value) {
-      bitField0_ |= 0x00008000;
-      gCFIHCACEJA.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string GCFIHCACEJA = 11;</code>
-     * @param value the gCFIHCACEJA to set
-     * @return this
-     */
-    public PlayerLoginCsReq setGCFIHCACEJA(final Utf8String value) {
-      bitField0_ |= 0x00008000;
-      gCFIHCACEJA.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @return whether the bGPJNKCMIMM field is set
-     */
-    public boolean hasBGPJNKCMIMM() {
-      return (bitField0_ & 0x00010000) != 0;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearBGPJNKCMIMM() {
-      bitField0_ &= ~0x00010000;
-      bGPJNKCMIMM.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @return the bGPJNKCMIMM
-     */
-    public String getBGPJNKCMIMM() {
-      return bGPJNKCMIMM.getString();
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @return internal {@code Utf8String} representation of bGPJNKCMIMM for reading
-     */
-    public Utf8String getBGPJNKCMIMMBytes() {
-      return this.bGPJNKCMIMM;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @return internal {@code Utf8String} representation of bGPJNKCMIMM for modifications
-     */
-    public Utf8String getMutableBGPJNKCMIMMBytes() {
-      bitField0_ |= 0x00010000;
-      return this.bGPJNKCMIMM;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @param value the bGPJNKCMIMM to set
-     * @return this
-     */
-    public PlayerLoginCsReq setBGPJNKCMIMM(final CharSequence value) {
-      bitField0_ |= 0x00010000;
-      bGPJNKCMIMM.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string BGPJNKCMIMM = 12;</code>
-     * @param value the bGPJNKCMIMM to set
-     * @return this
-     */
-    public PlayerLoginCsReq setBGPJNKCMIMM(final Utf8String value) {
-      bitField0_ |= 0x00010000;
-      bGPJNKCMIMM.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @return whether the kGLDJEEHOOO field is set
-     */
-    public boolean hasKGLDJEEHOOO() {
-      return (bitField0_ & 0x00020000) != 0;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @return this
-     */
-    public PlayerLoginCsReq clearKGLDJEEHOOO() {
-      bitField0_ &= ~0x00020000;
-      kGLDJEEHOOO.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @return the kGLDJEEHOOO
-     */
-    public String getKGLDJEEHOOO() {
-      return kGLDJEEHOOO.getString();
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @return internal {@code Utf8String} representation of kGLDJEEHOOO for reading
-     */
-    public Utf8String getKGLDJEEHOOOBytes() {
-      return this.kGLDJEEHOOO;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @return internal {@code Utf8String} representation of kGLDJEEHOOO for modifications
-     */
-    public Utf8String getMutableKGLDJEEHOOOBytes() {
-      bitField0_ |= 0x00020000;
-      return this.kGLDJEEHOOO;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @param value the kGLDJEEHOOO to set
-     * @return this
-     */
-    public PlayerLoginCsReq setKGLDJEEHOOO(final CharSequence value) {
-      bitField0_ |= 0x00020000;
-      kGLDJEEHOOO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string KGLDJEEHOOO = 14;</code>
-     * @param value the kGLDJEEHOOO to set
-     * @return this
-     */
-    public PlayerLoginCsReq setKGLDJEEHOOO(final Utf8String value) {
-      bitField0_ |= 0x00020000;
-      kGLDJEEHOOO.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @return whether the bHJIONAELAJ field is set
-     */
-    public boolean hasBHJIONAELAJ() {
+    public boolean hasHDPJMCHLGCM() {
       return (bitField0_ & 0x00040000) != 0;
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
+     * <code>optional string HDPJMCHLGCM = 14;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearBHJIONAELAJ() {
+    public PlayerLoginCsReq clearHDPJMCHLGCM() {
       bitField0_ &= ~0x00040000;
-      bHJIONAELAJ.clear();
+      hDPJMCHLGCM.clear();
       return this;
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @return the bHJIONAELAJ
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @return the hDPJMCHLGCM
      */
-    public String getBHJIONAELAJ() {
-      return bHJIONAELAJ.getString();
+    public String getHDPJMCHLGCM() {
+      return hDPJMCHLGCM.getString();
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @return internal {@code Utf8String} representation of bHJIONAELAJ for reading
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @return internal {@code Utf8String} representation of hDPJMCHLGCM for reading
      */
-    public Utf8String getBHJIONAELAJBytes() {
-      return this.bHJIONAELAJ;
+    public Utf8String getHDPJMCHLGCMBytes() {
+      return this.hDPJMCHLGCM;
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @return internal {@code Utf8String} representation of bHJIONAELAJ for modifications
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @return internal {@code Utf8String} representation of hDPJMCHLGCM for modifications
      */
-    public Utf8String getMutableBHJIONAELAJBytes() {
+    public Utf8String getMutableHDPJMCHLGCMBytes() {
       bitField0_ |= 0x00040000;
-      return this.bHJIONAELAJ;
+      return this.hDPJMCHLGCM;
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @param value the bHJIONAELAJ to set
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @param value the hDPJMCHLGCM to set
      * @return this
      */
-    public PlayerLoginCsReq setBHJIONAELAJ(final CharSequence value) {
+    public PlayerLoginCsReq setHDPJMCHLGCM(final CharSequence value) {
       bitField0_ |= 0x00040000;
-      bHJIONAELAJ.copyFrom(value);
+      hDPJMCHLGCM.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BHJIONAELAJ = 15;</code>
-     * @param value the bHJIONAELAJ to set
+     * <code>optional string HDPJMCHLGCM = 14;</code>
+     * @param value the hDPJMCHLGCM to set
      * @return this
      */
-    public PlayerLoginCsReq setBHJIONAELAJ(final Utf8String value) {
+    public PlayerLoginCsReq setHDPJMCHLGCM(final Utf8String value) {
       bitField0_ |= 0x00040000;
-      bHJIONAELAJ.copyFrom(value);
+      hDPJMCHLGCM.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @return whether the cDFPLBBIKDI field is set
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @return whether the bMCBOCGEKBF field is set
      */
-    public boolean hasCDFPLBBIKDI() {
+    public boolean hasBMCBOCGEKBF() {
       return (bitField0_ & 0x00080000) != 0;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
+     * <code>optional string BMCBOCGEKBF = 342;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearCDFPLBBIKDI() {
+    public PlayerLoginCsReq clearBMCBOCGEKBF() {
       bitField0_ &= ~0x00080000;
-      cDFPLBBIKDI.clear();
+      bMCBOCGEKBF.clear();
       return this;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @return the cDFPLBBIKDI
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @return the bMCBOCGEKBF
      */
-    public String getCDFPLBBIKDI() {
-      return cDFPLBBIKDI.getString();
+    public String getBMCBOCGEKBF() {
+      return bMCBOCGEKBF.getString();
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @return internal {@code Utf8String} representation of cDFPLBBIKDI for reading
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @return internal {@code Utf8String} representation of bMCBOCGEKBF for reading
      */
-    public Utf8String getCDFPLBBIKDIBytes() {
-      return this.cDFPLBBIKDI;
+    public Utf8String getBMCBOCGEKBFBytes() {
+      return this.bMCBOCGEKBF;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @return internal {@code Utf8String} representation of cDFPLBBIKDI for modifications
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @return internal {@code Utf8String} representation of bMCBOCGEKBF for modifications
      */
-    public Utf8String getMutableCDFPLBBIKDIBytes() {
+    public Utf8String getMutableBMCBOCGEKBFBytes() {
       bitField0_ |= 0x00080000;
-      return this.cDFPLBBIKDI;
+      return this.bMCBOCGEKBF;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @param value the cDFPLBBIKDI to set
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @param value the bMCBOCGEKBF to set
      * @return this
      */
-    public PlayerLoginCsReq setCDFPLBBIKDI(final CharSequence value) {
+    public PlayerLoginCsReq setBMCBOCGEKBF(final CharSequence value) {
       bitField0_ |= 0x00080000;
-      cDFPLBBIKDI.copyFrom(value);
+      bMCBOCGEKBF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string CDFPLBBIKDI = 354;</code>
-     * @param value the cDFPLBBIKDI to set
+     * <code>optional string BMCBOCGEKBF = 342;</code>
+     * @param value the bMCBOCGEKBF to set
      * @return this
      */
-    public PlayerLoginCsReq setCDFPLBBIKDI(final Utf8String value) {
+    public PlayerLoginCsReq setBMCBOCGEKBF(final Utf8String value) {
       bitField0_ |= 0x00080000;
-      cDFPLBBIKDI.copyFrom(value);
+      bMCBOCGEKBF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @return whether the bIJCDONDCOE field is set
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @return whether the fKFJDGCNDII field is set
      */
-    public boolean hasBIJCDONDCOE() {
+    public boolean hasFKFJDGCNDII() {
       return (bitField0_ & 0x00100000) != 0;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
+     * <code>optional string FKFJDGCNDII = 350;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearBIJCDONDCOE() {
+    public PlayerLoginCsReq clearFKFJDGCNDII() {
       bitField0_ &= ~0x00100000;
-      bIJCDONDCOE.clear();
+      fKFJDGCNDII.clear();
       return this;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @return the bIJCDONDCOE
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @return the fKFJDGCNDII
      */
-    public String getBIJCDONDCOE() {
-      return bIJCDONDCOE.getString();
+    public String getFKFJDGCNDII() {
+      return fKFJDGCNDII.getString();
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @return internal {@code Utf8String} representation of bIJCDONDCOE for reading
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @return internal {@code Utf8String} representation of fKFJDGCNDII for reading
      */
-    public Utf8String getBIJCDONDCOEBytes() {
-      return this.bIJCDONDCOE;
+    public Utf8String getFKFJDGCNDIIBytes() {
+      return this.fKFJDGCNDII;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @return internal {@code Utf8String} representation of bIJCDONDCOE for modifications
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @return internal {@code Utf8String} representation of fKFJDGCNDII for modifications
      */
-    public Utf8String getMutableBIJCDONDCOEBytes() {
+    public Utf8String getMutableFKFJDGCNDIIBytes() {
       bitField0_ |= 0x00100000;
-      return this.bIJCDONDCOE;
+      return this.fKFJDGCNDII;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @param value the bIJCDONDCOE to set
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @param value the fKFJDGCNDII to set
      * @return this
      */
-    public PlayerLoginCsReq setBIJCDONDCOE(final CharSequence value) {
+    public PlayerLoginCsReq setFKFJDGCNDII(final CharSequence value) {
       bitField0_ |= 0x00100000;
-      bIJCDONDCOE.copyFrom(value);
+      fKFJDGCNDII.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BIJCDONDCOE = 624;</code>
-     * @param value the bIJCDONDCOE to set
+     * <code>optional string FKFJDGCNDII = 350;</code>
+     * @param value the fKFJDGCNDII to set
      * @return this
      */
-    public PlayerLoginCsReq setBIJCDONDCOE(final Utf8String value) {
+    public PlayerLoginCsReq setFKFJDGCNDII(final Utf8String value) {
       bitField0_ |= 0x00100000;
-      bIJCDONDCOE.copyFrom(value);
+      fKFJDGCNDII.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @return whether the jPOIMHPHEIM field is set
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @return whether the mJAJBCHKDFP field is set
      */
-    public boolean hasJPOIMHPHEIM() {
+    public boolean hasMJAJBCHKDFP() {
       return (bitField0_ & 0x00200000) != 0;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearJPOIMHPHEIM() {
+    public PlayerLoginCsReq clearMJAJBCHKDFP() {
       bitField0_ &= ~0x00200000;
-      jPOIMHPHEIM.clear();
+      mJAJBCHKDFP.clear();
       return this;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @return the jPOIMHPHEIM
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @return the mJAJBCHKDFP
      */
-    public String getJPOIMHPHEIM() {
-      return jPOIMHPHEIM.getString();
+    public String getMJAJBCHKDFP() {
+      return mJAJBCHKDFP.getString();
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @return internal {@code Utf8String} representation of jPOIMHPHEIM for reading
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @return internal {@code Utf8String} representation of mJAJBCHKDFP for reading
      */
-    public Utf8String getJPOIMHPHEIMBytes() {
-      return this.jPOIMHPHEIM;
+    public Utf8String getMJAJBCHKDFPBytes() {
+      return this.mJAJBCHKDFP;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @return internal {@code Utf8String} representation of jPOIMHPHEIM for modifications
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @return internal {@code Utf8String} representation of mJAJBCHKDFP for modifications
      */
-    public Utf8String getMutableJPOIMHPHEIMBytes() {
+    public Utf8String getMutableMJAJBCHKDFPBytes() {
       bitField0_ |= 0x00200000;
-      return this.jPOIMHPHEIM;
+      return this.mJAJBCHKDFP;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @param value the jPOIMHPHEIM to set
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @param value the mJAJBCHKDFP to set
      * @return this
      */
-    public PlayerLoginCsReq setJPOIMHPHEIM(final CharSequence value) {
+    public PlayerLoginCsReq setMJAJBCHKDFP(final CharSequence value) {
       bitField0_ |= 0x00200000;
-      jPOIMHPHEIM.copyFrom(value);
+      mJAJBCHKDFP.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string JPOIMHPHEIM = 1012;</code>
-     * @param value the jPOIMHPHEIM to set
+     * <code>optional string MJAJBCHKDFP = 1047;</code>
+     * @param value the mJAJBCHKDFP to set
      * @return this
      */
-    public PlayerLoginCsReq setJPOIMHPHEIM(final Utf8String value) {
+    public PlayerLoginCsReq setMJAJBCHKDFP(final Utf8String value) {
       bitField0_ |= 0x00200000;
-      jPOIMHPHEIM.copyFrom(value);
+      mJAJBCHKDFP.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @return whether the bAPJPOAAEGM field is set
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @return whether the fLFKCIHCENF field is set
      */
-    public boolean hasBAPJPOAAEGM() {
+    public boolean hasFLFKCIHCENF() {
       return (bitField0_ & 0x00400000) != 0;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
+     * <code>optional string FLFKCIHCENF = 1105;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearBAPJPOAAEGM() {
+    public PlayerLoginCsReq clearFLFKCIHCENF() {
       bitField0_ &= ~0x00400000;
-      bAPJPOAAEGM.clear();
+      fLFKCIHCENF.clear();
       return this;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @return the bAPJPOAAEGM
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @return the fLFKCIHCENF
      */
-    public String getBAPJPOAAEGM() {
-      return bAPJPOAAEGM.getString();
+    public String getFLFKCIHCENF() {
+      return fLFKCIHCENF.getString();
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @return internal {@code Utf8String} representation of bAPJPOAAEGM for reading
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @return internal {@code Utf8String} representation of fLFKCIHCENF for reading
      */
-    public Utf8String getBAPJPOAAEGMBytes() {
-      return this.bAPJPOAAEGM;
+    public Utf8String getFLFKCIHCENFBytes() {
+      return this.fLFKCIHCENF;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @return internal {@code Utf8String} representation of bAPJPOAAEGM for modifications
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @return internal {@code Utf8String} representation of fLFKCIHCENF for modifications
      */
-    public Utf8String getMutableBAPJPOAAEGMBytes() {
+    public Utf8String getMutableFLFKCIHCENFBytes() {
       bitField0_ |= 0x00400000;
-      return this.bAPJPOAAEGM;
+      return this.fLFKCIHCENF;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @param value the bAPJPOAAEGM to set
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @param value the fLFKCIHCENF to set
      * @return this
      */
-    public PlayerLoginCsReq setBAPJPOAAEGM(final CharSequence value) {
+    public PlayerLoginCsReq setFLFKCIHCENF(final CharSequence value) {
       bitField0_ |= 0x00400000;
-      bAPJPOAAEGM.copyFrom(value);
+      fLFKCIHCENF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BAPJPOAAEGM = 1183;</code>
-     * @param value the bAPJPOAAEGM to set
+     * <code>optional string FLFKCIHCENF = 1105;</code>
+     * @param value the fLFKCIHCENF to set
      * @return this
      */
-    public PlayerLoginCsReq setBAPJPOAAEGM(final Utf8String value) {
+    public PlayerLoginCsReq setFLFKCIHCENF(final Utf8String value) {
       bitField0_ |= 0x00400000;
-      bAPJPOAAEGM.copyFrom(value);
+      fLFKCIHCENF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @return whether the eMGADLCGDBF field is set
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @return whether the kOGIIKIEJIJ field is set
      */
-    public boolean hasEMGADLCGDBF() {
+    public boolean hasKOGIIKIEJIJ() {
       return (bitField0_ & 0x00800000) != 0;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearEMGADLCGDBF() {
+    public PlayerLoginCsReq clearKOGIIKIEJIJ() {
       bitField0_ &= ~0x00800000;
-      eMGADLCGDBF.clear();
+      kOGIIKIEJIJ.clear();
       return this;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @return the eMGADLCGDBF
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @return the kOGIIKIEJIJ
      */
-    public String getEMGADLCGDBF() {
-      return eMGADLCGDBF.getString();
+    public String getKOGIIKIEJIJ() {
+      return kOGIIKIEJIJ.getString();
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @return internal {@code Utf8String} representation of eMGADLCGDBF for reading
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @return internal {@code Utf8String} representation of kOGIIKIEJIJ for reading
      */
-    public Utf8String getEMGADLCGDBFBytes() {
-      return this.eMGADLCGDBF;
+    public Utf8String getKOGIIKIEJIJBytes() {
+      return this.kOGIIKIEJIJ;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @return internal {@code Utf8String} representation of eMGADLCGDBF for modifications
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @return internal {@code Utf8String} representation of kOGIIKIEJIJ for modifications
      */
-    public Utf8String getMutableEMGADLCGDBFBytes() {
+    public Utf8String getMutableKOGIIKIEJIJBytes() {
       bitField0_ |= 0x00800000;
-      return this.eMGADLCGDBF;
+      return this.kOGIIKIEJIJ;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @param value the eMGADLCGDBF to set
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @param value the kOGIIKIEJIJ to set
      * @return this
      */
-    public PlayerLoginCsReq setEMGADLCGDBF(final CharSequence value) {
+    public PlayerLoginCsReq setKOGIIKIEJIJ(final CharSequence value) {
       bitField0_ |= 0x00800000;
-      eMGADLCGDBF.copyFrom(value);
+      kOGIIKIEJIJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string EMGADLCGDBF = 1393;</code>
-     * @param value the eMGADLCGDBF to set
+     * <code>optional string KOGIIKIEJIJ = 1255;</code>
+     * @param value the kOGIIKIEJIJ to set
      * @return this
      */
-    public PlayerLoginCsReq setEMGADLCGDBF(final Utf8String value) {
+    public PlayerLoginCsReq setKOGIIKIEJIJ(final Utf8String value) {
       bitField0_ |= 0x00800000;
-      eMGADLCGDBF.copyFrom(value);
+      kOGIIKIEJIJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @return whether the dJGLMHDKEEO field is set
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @return whether the hFHGPLMEFGJ field is set
      */
-    public boolean hasDJGLMHDKEEO() {
+    public boolean hasHFHGPLMEFGJ() {
       return (bitField0_ & 0x01000000) != 0;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
      * @return this
      */
-    public PlayerLoginCsReq clearDJGLMHDKEEO() {
+    public PlayerLoginCsReq clearHFHGPLMEFGJ() {
       bitField0_ &= ~0x01000000;
-      dJGLMHDKEEO.clear();
+      hFHGPLMEFGJ.clear();
       return this;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @return the dJGLMHDKEEO
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @return the hFHGPLMEFGJ
      */
-    public String getDJGLMHDKEEO() {
-      return dJGLMHDKEEO.getString();
+    public String getHFHGPLMEFGJ() {
+      return hFHGPLMEFGJ.getString();
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @return internal {@code Utf8String} representation of dJGLMHDKEEO for reading
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @return internal {@code Utf8String} representation of hFHGPLMEFGJ for reading
      */
-    public Utf8String getDJGLMHDKEEOBytes() {
-      return this.dJGLMHDKEEO;
+    public Utf8String getHFHGPLMEFGJBytes() {
+      return this.hFHGPLMEFGJ;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @return internal {@code Utf8String} representation of dJGLMHDKEEO for modifications
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @return internal {@code Utf8String} representation of hFHGPLMEFGJ for modifications
      */
-    public Utf8String getMutableDJGLMHDKEEOBytes() {
+    public Utf8String getMutableHFHGPLMEFGJBytes() {
       bitField0_ |= 0x01000000;
-      return this.dJGLMHDKEEO;
+      return this.hFHGPLMEFGJ;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @param value the dJGLMHDKEEO to set
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @param value the hFHGPLMEFGJ to set
      * @return this
      */
-    public PlayerLoginCsReq setDJGLMHDKEEO(final CharSequence value) {
+    public PlayerLoginCsReq setHFHGPLMEFGJ(final CharSequence value) {
       bitField0_ |= 0x01000000;
-      dJGLMHDKEEO.copyFrom(value);
+      hFHGPLMEFGJ.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string DJGLMHDKEEO = 1866;</code>
-     * @param value the dJGLMHDKEEO to set
+     * <code>optional string HFHGPLMEFGJ = 1424;</code>
+     * @param value the hFHGPLMEFGJ to set
      * @return this
      */
-    public PlayerLoginCsReq setDJGLMHDKEEO(final Utf8String value) {
+    public PlayerLoginCsReq setHFHGPLMEFGJ(final Utf8String value) {
       bitField0_ |= 0x01000000;
-      dJGLMHDKEEO.copyFrom(value);
+      hFHGPLMEFGJ.copyFrom(value);
       return this;
     }
 
@@ -1604,29 +1616,29 @@ public final class PlayerLoginCsReqOuterClass {
         bitField0_ = other.bitField0_;
         loginRandom = other.loginRandom;
         clientResVersion = other.clientResVersion;
-        bGCEPHGGMLN = other.bGCEPHGGMLN;
-        iPOLCNOCFNB = other.iPOLCNOCFNB;
-        iCGHCNOBKML = other.iCGHCNOBKML;
+        nMDMJEFOPKB = other.nMDMJEFOPKB;
+        bINLGCOBEPO = other.bINLGCOBEPO;
+        aCMBPIIJKFL = other.aCMBPIIJKFL;
         platformType = other.platformType;
         language = other.language;
-        eKJOPHKEIOF = other.eKJOPHKEIOF;
-        iFFJDADGAJA = other.iFFJDADGAJA;
-        eBLEHHAKCHN.copyFrom(other.eBLEHHAKCHN);
+        gLNBFFILPNA = other.gLNBFFILPNA;
+        jJDBFAMDEPP = other.jJDBFAMDEPP;
+        iIAHICGOMKP.copyFrom(other.iIAHICGOMKP);
+        aIEONDBHNDC.copyFrom(other.aIEONDBHNDC);
+        fLJNOLCHBBC.copyFrom(other.fLJNOLCHBBC);
+        oPNLMMDFFLL.copyFrom(other.oPNLMMDFFLL);
+        rogueInfoData.copyFrom(other.rogueInfoData);
+        cEKOLCPLBED.copyFrom(other.cEKOLCPLBED);
+        oPNBNKJAIKD.copyFrom(other.oPNBNKJAIKD);
+        eIFPHAMMIEG.copyFrom(other.eIFPHAMMIEG);
         signature.copyFrom(other.signature);
-        oPLPLPDDDEP.copyFrom(other.oPLPLPDDDEP);
-        nMHJOLNHMDK.copyFrom(other.nMHJOLNHMDK);
-        mEJHAKLCHFO.copyFrom(other.mEJHAKLCHFO);
-        aDAABGHDEFI.copyFrom(other.aDAABGHDEFI);
-        gCFIHCACEJA.copyFrom(other.gCFIHCACEJA);
-        bGPJNKCMIMM.copyFrom(other.bGPJNKCMIMM);
-        kGLDJEEHOOO.copyFrom(other.kGLDJEEHOOO);
-        bHJIONAELAJ.copyFrom(other.bHJIONAELAJ);
-        cDFPLBBIKDI.copyFrom(other.cDFPLBBIKDI);
-        bIJCDONDCOE.copyFrom(other.bIJCDONDCOE);
-        jPOIMHPHEIM.copyFrom(other.jPOIMHPHEIM);
-        bAPJPOAAEGM.copyFrom(other.bAPJPOAAEGM);
-        eMGADLCGDBF.copyFrom(other.eMGADLCGDBF);
-        dJGLMHDKEEO.copyFrom(other.dJGLMHDKEEO);
+        hDPJMCHLGCM.copyFrom(other.hDPJMCHLGCM);
+        bMCBOCGEKBF.copyFrom(other.bMCBOCGEKBF);
+        fKFJDGCNDII.copyFrom(other.fKFJDGCNDII);
+        mJAJBCHKDFP.copyFrom(other.mJAJBCHKDFP);
+        fLFKCIHCENF.copyFrom(other.fLFKCIHCENF);
+        kOGIIKIEJIJ.copyFrom(other.kOGIIKIEJIJ);
+        hFHGPLMEFGJ.copyFrom(other.hFHGPLMEFGJ);
       }
       return this;
     }
@@ -1643,14 +1655,14 @@ public final class PlayerLoginCsReqOuterClass {
       if (other.hasClientResVersion()) {
         setClientResVersion(other.clientResVersion);
       }
-      if (other.hasBGCEPHGGMLN()) {
-        setBGCEPHGGMLN(other.bGCEPHGGMLN);
+      if (other.hasNMDMJEFOPKB()) {
+        setNMDMJEFOPKB(other.nMDMJEFOPKB);
       }
-      if (other.hasIPOLCNOCFNB()) {
-        setIPOLCNOCFNB(other.iPOLCNOCFNB);
+      if (other.hasBINLGCOBEPO()) {
+        setBINLGCOBEPO(other.bINLGCOBEPO);
       }
-      if (other.hasICGHCNOBKML()) {
-        setICGHCNOBKML(other.iCGHCNOBKML);
+      if (other.hasACMBPIIJKFL()) {
+        setACMBPIIJKFL(other.aCMBPIIJKFL);
       }
       if (other.hasPlatformType()) {
         setPlatformTypeValue(other.platformType);
@@ -1658,59 +1670,59 @@ public final class PlayerLoginCsReqOuterClass {
       if (other.hasLanguage()) {
         setLanguageValue(other.language);
       }
-      if (other.hasEKJOPHKEIOF()) {
-        setEKJOPHKEIOF(other.eKJOPHKEIOF);
+      if (other.hasGLNBFFILPNA()) {
+        setGLNBFFILPNA(other.gLNBFFILPNA);
       }
-      if (other.hasIFFJDADGAJA()) {
-        setIFFJDADGAJA(other.iFFJDADGAJA);
+      if (other.hasJJDBFAMDEPP()) {
+        setJJDBFAMDEPP(other.jJDBFAMDEPP);
       }
-      if (other.hasEBLEHHAKCHN()) {
-        getMutableEBLEHHAKCHNBytes().copyFrom(other.eBLEHHAKCHN);
+      if (other.hasIIAHICGOMKP()) {
+        getMutableIIAHICGOMKPBytes().copyFrom(other.iIAHICGOMKP);
+      }
+      if (other.hasAIEONDBHNDC()) {
+        getMutableAIEONDBHNDCBytes().copyFrom(other.aIEONDBHNDC);
+      }
+      if (other.hasFLJNOLCHBBC()) {
+        getMutableFLJNOLCHBBCBytes().copyFrom(other.fLJNOLCHBBC);
+      }
+      if (other.hasOPNLMMDFFLL()) {
+        getMutableOPNLMMDFFLLBytes().copyFrom(other.oPNLMMDFFLL);
+      }
+      if (other.hasRogueInfoData()) {
+        getMutableRogueInfoDataBytes().copyFrom(other.rogueInfoData);
+      }
+      if (other.hasCEKOLCPLBED()) {
+        getMutableCEKOLCPLBEDBytes().copyFrom(other.cEKOLCPLBED);
+      }
+      if (other.hasOPNBNKJAIKD()) {
+        getMutableOPNBNKJAIKDBytes().copyFrom(other.oPNBNKJAIKD);
+      }
+      if (other.hasEIFPHAMMIEG()) {
+        getMutableEIFPHAMMIEGBytes().copyFrom(other.eIFPHAMMIEG);
       }
       if (other.hasSignature()) {
         getMutableSignatureBytes().copyFrom(other.signature);
       }
-      if (other.hasOPLPLPDDDEP()) {
-        getMutableOPLPLPDDDEPBytes().copyFrom(other.oPLPLPDDDEP);
+      if (other.hasHDPJMCHLGCM()) {
+        getMutableHDPJMCHLGCMBytes().copyFrom(other.hDPJMCHLGCM);
       }
-      if (other.hasNMHJOLNHMDK()) {
-        getMutableNMHJOLNHMDKBytes().copyFrom(other.nMHJOLNHMDK);
+      if (other.hasBMCBOCGEKBF()) {
+        getMutableBMCBOCGEKBFBytes().copyFrom(other.bMCBOCGEKBF);
       }
-      if (other.hasMEJHAKLCHFO()) {
-        getMutableMEJHAKLCHFOBytes().copyFrom(other.mEJHAKLCHFO);
+      if (other.hasFKFJDGCNDII()) {
+        getMutableFKFJDGCNDIIBytes().copyFrom(other.fKFJDGCNDII);
       }
-      if (other.hasADAABGHDEFI()) {
-        getMutableADAABGHDEFIBytes().copyFrom(other.aDAABGHDEFI);
+      if (other.hasMJAJBCHKDFP()) {
+        getMutableMJAJBCHKDFPBytes().copyFrom(other.mJAJBCHKDFP);
       }
-      if (other.hasGCFIHCACEJA()) {
-        getMutableGCFIHCACEJABytes().copyFrom(other.gCFIHCACEJA);
+      if (other.hasFLFKCIHCENF()) {
+        getMutableFLFKCIHCENFBytes().copyFrom(other.fLFKCIHCENF);
       }
-      if (other.hasBGPJNKCMIMM()) {
-        getMutableBGPJNKCMIMMBytes().copyFrom(other.bGPJNKCMIMM);
+      if (other.hasKOGIIKIEJIJ()) {
+        getMutableKOGIIKIEJIJBytes().copyFrom(other.kOGIIKIEJIJ);
       }
-      if (other.hasKGLDJEEHOOO()) {
-        getMutableKGLDJEEHOOOBytes().copyFrom(other.kGLDJEEHOOO);
-      }
-      if (other.hasBHJIONAELAJ()) {
-        getMutableBHJIONAELAJBytes().copyFrom(other.bHJIONAELAJ);
-      }
-      if (other.hasCDFPLBBIKDI()) {
-        getMutableCDFPLBBIKDIBytes().copyFrom(other.cDFPLBBIKDI);
-      }
-      if (other.hasBIJCDONDCOE()) {
-        getMutableBIJCDONDCOEBytes().copyFrom(other.bIJCDONDCOE);
-      }
-      if (other.hasJPOIMHPHEIM()) {
-        getMutableJPOIMHPHEIMBytes().copyFrom(other.jPOIMHPHEIM);
-      }
-      if (other.hasBAPJPOAAEGM()) {
-        getMutableBAPJPOAAEGMBytes().copyFrom(other.bAPJPOAAEGM);
-      }
-      if (other.hasEMGADLCGDBF()) {
-        getMutableEMGADLCGDBFBytes().copyFrom(other.eMGADLCGDBF);
-      }
-      if (other.hasDJGLMHDKEEO()) {
-        getMutableDJGLMHDKEEOBytes().copyFrom(other.dJGLMHDKEEO);
+      if (other.hasHFHGPLMEFGJ()) {
+        getMutableHFHGPLMEFGJBytes().copyFrom(other.hFHGPLMEFGJ);
       }
       return this;
     }
@@ -1724,29 +1736,29 @@ public final class PlayerLoginCsReqOuterClass {
       bitField0_ = 0;
       loginRandom = 0L;
       clientResVersion = 0;
-      bGCEPHGGMLN = 0;
-      iPOLCNOCFNB = 0;
-      iCGHCNOBKML = 0;
+      nMDMJEFOPKB = 0;
+      bINLGCOBEPO = 0;
+      aCMBPIIJKFL = 0;
       platformType = 0;
       language = 0;
-      eKJOPHKEIOF = false;
-      iFFJDADGAJA = false;
-      eBLEHHAKCHN.clear();
+      gLNBFFILPNA = false;
+      jJDBFAMDEPP = false;
+      iIAHICGOMKP.clear();
+      aIEONDBHNDC.clear();
+      fLJNOLCHBBC.clear();
+      oPNLMMDFFLL.clear();
+      rogueInfoData.clear();
+      cEKOLCPLBED.clear();
+      oPNBNKJAIKD.clear();
+      eIFPHAMMIEG.clear();
       signature.clear();
-      oPLPLPDDDEP.clear();
-      nMHJOLNHMDK.clear();
-      mEJHAKLCHFO.clear();
-      aDAABGHDEFI.clear();
-      gCFIHCACEJA.clear();
-      bGPJNKCMIMM.clear();
-      kGLDJEEHOOO.clear();
-      bHJIONAELAJ.clear();
-      cDFPLBBIKDI.clear();
-      bIJCDONDCOE.clear();
-      jPOIMHPHEIM.clear();
-      bAPJPOAAEGM.clear();
-      eMGADLCGDBF.clear();
-      dJGLMHDKEEO.clear();
+      hDPJMCHLGCM.clear();
+      bMCBOCGEKBF.clear();
+      fKFJDGCNDII.clear();
+      mJAJBCHKDFP.clear();
+      fLFKCIHCENF.clear();
+      kOGIIKIEJIJ.clear();
+      hFHGPLMEFGJ.clear();
       return this;
     }
 
@@ -1757,22 +1769,22 @@ public final class PlayerLoginCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      eBLEHHAKCHN.clear();
+      iIAHICGOMKP.clear();
+      aIEONDBHNDC.clear();
+      fLJNOLCHBBC.clear();
+      oPNLMMDFFLL.clear();
+      rogueInfoData.clear();
+      cEKOLCPLBED.clear();
+      oPNBNKJAIKD.clear();
+      eIFPHAMMIEG.clear();
       signature.clear();
-      oPLPLPDDDEP.clear();
-      nMHJOLNHMDK.clear();
-      mEJHAKLCHFO.clear();
-      aDAABGHDEFI.clear();
-      gCFIHCACEJA.clear();
-      bGPJNKCMIMM.clear();
-      kGLDJEEHOOO.clear();
-      bHJIONAELAJ.clear();
-      cDFPLBBIKDI.clear();
-      bIJCDONDCOE.clear();
-      jPOIMHPHEIM.clear();
-      bAPJPOAAEGM.clear();
-      eMGADLCGDBF.clear();
-      dJGLMHDKEEO.clear();
+      hDPJMCHLGCM.clear();
+      bMCBOCGEKBF.clear();
+      fKFJDGCNDII.clear();
+      mJAJBCHKDFP.clear();
+      fLFKCIHCENF.clear();
+      kOGIIKIEJIJ.clear();
+      hFHGPLMEFGJ.clear();
       return this;
     }
 
@@ -1788,132 +1800,132 @@ public final class PlayerLoginCsReqOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasLoginRandom() || loginRandom == other.loginRandom)
         && (!hasClientResVersion() || clientResVersion == other.clientResVersion)
-        && (!hasBGCEPHGGMLN() || bGCEPHGGMLN == other.bGCEPHGGMLN)
-        && (!hasIPOLCNOCFNB() || iPOLCNOCFNB == other.iPOLCNOCFNB)
-        && (!hasICGHCNOBKML() || iCGHCNOBKML == other.iCGHCNOBKML)
+        && (!hasNMDMJEFOPKB() || nMDMJEFOPKB == other.nMDMJEFOPKB)
+        && (!hasBINLGCOBEPO() || bINLGCOBEPO == other.bINLGCOBEPO)
+        && (!hasACMBPIIJKFL() || aCMBPIIJKFL == other.aCMBPIIJKFL)
         && (!hasPlatformType() || platformType == other.platformType)
         && (!hasLanguage() || language == other.language)
-        && (!hasEKJOPHKEIOF() || eKJOPHKEIOF == other.eKJOPHKEIOF)
-        && (!hasIFFJDADGAJA() || iFFJDADGAJA == other.iFFJDADGAJA)
-        && (!hasEBLEHHAKCHN() || eBLEHHAKCHN.equals(other.eBLEHHAKCHN))
+        && (!hasGLNBFFILPNA() || gLNBFFILPNA == other.gLNBFFILPNA)
+        && (!hasJJDBFAMDEPP() || jJDBFAMDEPP == other.jJDBFAMDEPP)
+        && (!hasIIAHICGOMKP() || iIAHICGOMKP.equals(other.iIAHICGOMKP))
+        && (!hasAIEONDBHNDC() || aIEONDBHNDC.equals(other.aIEONDBHNDC))
+        && (!hasFLJNOLCHBBC() || fLJNOLCHBBC.equals(other.fLJNOLCHBBC))
+        && (!hasOPNLMMDFFLL() || oPNLMMDFFLL.equals(other.oPNLMMDFFLL))
+        && (!hasRogueInfoData() || rogueInfoData.equals(other.rogueInfoData))
+        && (!hasCEKOLCPLBED() || cEKOLCPLBED.equals(other.cEKOLCPLBED))
+        && (!hasOPNBNKJAIKD() || oPNBNKJAIKD.equals(other.oPNBNKJAIKD))
+        && (!hasEIFPHAMMIEG() || eIFPHAMMIEG.equals(other.eIFPHAMMIEG))
         && (!hasSignature() || signature.equals(other.signature))
-        && (!hasOPLPLPDDDEP() || oPLPLPDDDEP.equals(other.oPLPLPDDDEP))
-        && (!hasNMHJOLNHMDK() || nMHJOLNHMDK.equals(other.nMHJOLNHMDK))
-        && (!hasMEJHAKLCHFO() || mEJHAKLCHFO.equals(other.mEJHAKLCHFO))
-        && (!hasADAABGHDEFI() || aDAABGHDEFI.equals(other.aDAABGHDEFI))
-        && (!hasGCFIHCACEJA() || gCFIHCACEJA.equals(other.gCFIHCACEJA))
-        && (!hasBGPJNKCMIMM() || bGPJNKCMIMM.equals(other.bGPJNKCMIMM))
-        && (!hasKGLDJEEHOOO() || kGLDJEEHOOO.equals(other.kGLDJEEHOOO))
-        && (!hasBHJIONAELAJ() || bHJIONAELAJ.equals(other.bHJIONAELAJ))
-        && (!hasCDFPLBBIKDI() || cDFPLBBIKDI.equals(other.cDFPLBBIKDI))
-        && (!hasBIJCDONDCOE() || bIJCDONDCOE.equals(other.bIJCDONDCOE))
-        && (!hasJPOIMHPHEIM() || jPOIMHPHEIM.equals(other.jPOIMHPHEIM))
-        && (!hasBAPJPOAAEGM() || bAPJPOAAEGM.equals(other.bAPJPOAAEGM))
-        && (!hasEMGADLCGDBF() || eMGADLCGDBF.equals(other.eMGADLCGDBF))
-        && (!hasDJGLMHDKEEO() || dJGLMHDKEEO.equals(other.dJGLMHDKEEO));
+        && (!hasHDPJMCHLGCM() || hDPJMCHLGCM.equals(other.hDPJMCHLGCM))
+        && (!hasBMCBOCGEKBF() || bMCBOCGEKBF.equals(other.bMCBOCGEKBF))
+        && (!hasFKFJDGCNDII() || fKFJDGCNDII.equals(other.fKFJDGCNDII))
+        && (!hasMJAJBCHKDFP() || mJAJBCHKDFP.equals(other.mJAJBCHKDFP))
+        && (!hasFLFKCIHCENF() || fLFKCIHCENF.equals(other.fLFKCIHCENF))
+        && (!hasKOGIIKIEJIJ() || kOGIIKIEJIJ.equals(other.kOGIIKIEJIJ))
+        && (!hasHFHGPLMEFGJ() || hFHGPLMEFGJ.equals(other.hFHGPLMEFGJ));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 56);
         output.writeUInt64NoTag(loginRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(bGCEPHGGMLN);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(nMDMJEFOPKB);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawLittleEndian16((short) 8672);
-        output.writeUInt32NoTag(iPOLCNOCFNB);
+        output.writeRawLittleEndian16((short) 9456);
+        output.writeUInt32NoTag(bINLGCOBEPO);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawLittleEndian16((short) 20136);
-        output.writeUInt32NoTag(iCGHCNOBKML);
+        output.writeRawLittleEndian16((short) 22504);
+        output.writeUInt32NoTag(aCMBPIIJKFL);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 104);
         output.writeEnumNoTag(platformType);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 120);
         output.writeEnumNoTag(language);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawLittleEndian16((short) 21744);
-        output.writeBoolNoTag(eKJOPHKEIOF);
+        output.writeRawLittleEndian16((short) 6848);
+        output.writeBoolNoTag(gLNBFFILPNA);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawLittleEndian16((short) 31680);
-        output.writeBoolNoTag(iFFJDADGAJA);
+        output.writeRawLittleEndian16((short) 23512);
+        output.writeBoolNoTag(jJDBFAMDEPP);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 10);
-        output.writeStringNoTag(eBLEHHAKCHN);
+        output.writeStringNoTag(iIAHICGOMKP);
       }
       if ((bitField0_ & 0x00000400) != 0) {
         output.writeRawByte((byte) 18);
-        output.writeStringNoTag(signature);
+        output.writeStringNoTag(aIEONDBHNDC);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawByte((byte) 26);
-        output.writeStringNoTag(oPLPLPDDDEP);
+        output.writeStringNoTag(fLJNOLCHBBC);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeRawByte((byte) 50);
-        output.writeStringNoTag(nMHJOLNHMDK);
+        output.writeRawByte((byte) 34);
+        output.writeStringNoTag(oPNLMMDFFLL);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeRawByte((byte) 58);
-        output.writeStringNoTag(mEJHAKLCHFO);
+        output.writeRawByte((byte) 42);
+        output.writeStringNoTag(rogueInfoData);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeRawByte((byte) 74);
-        output.writeStringNoTag(aDAABGHDEFI);
+        output.writeRawByte((byte) 50);
+        output.writeStringNoTag(cEKOLCPLBED);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeStringNoTag(gCFIHCACEJA);
+        output.writeRawByte((byte) 74);
+        output.writeStringNoTag(oPNBNKJAIKD);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        output.writeRawByte((byte) 98);
-        output.writeStringNoTag(bGPJNKCMIMM);
+        output.writeRawByte((byte) 82);
+        output.writeStringNoTag(eIFPHAMMIEG);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeStringNoTag(kGLDJEEHOOO);
+        output.writeRawByte((byte) 90);
+        output.writeStringNoTag(signature);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeRawByte((byte) 122);
-        output.writeStringNoTag(bHJIONAELAJ);
+        output.writeRawByte((byte) 114);
+        output.writeStringNoTag(hDPJMCHLGCM);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        output.writeRawLittleEndian16((short) 5778);
-        output.writeStringNoTag(cDFPLBBIKDI);
+        output.writeRawLittleEndian16((short) 5554);
+        output.writeStringNoTag(bMCBOCGEKBF);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeRawLittleEndian16((short) 10114);
-        output.writeStringNoTag(bIJCDONDCOE);
+        output.writeRawLittleEndian16((short) 5618);
+        output.writeStringNoTag(fKFJDGCNDII);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeRawLittleEndian16((short) 16290);
-        output.writeStringNoTag(jPOIMHPHEIM);
+        output.writeRawLittleEndian16((short) 16826);
+        output.writeStringNoTag(mJAJBCHKDFP);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeRawLittleEndian16((short) 18938);
-        output.writeStringNoTag(bAPJPOAAEGM);
+        output.writeRawLittleEndian16((short) 17802);
+        output.writeStringNoTag(fLFKCIHCENF);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        output.writeRawLittleEndian16((short) 22410);
-        output.writeStringNoTag(eMGADLCGDBF);
+        output.writeRawLittleEndian16((short) 20154);
+        output.writeStringNoTag(kOGIIKIEJIJ);
       }
       if ((bitField0_ & 0x01000000) != 0) {
-        output.writeRawLittleEndian16((short) 29906);
-        output.writeStringNoTag(dJGLMHDKEEO);
+        output.writeRawLittleEndian16((short) 22914);
+        output.writeStringNoTag(hFHGPLMEFGJ);
       }
     }
 
@@ -1927,13 +1939,13 @@ public final class PlayerLoginCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bGCEPHGGMLN);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(nMDMJEFOPKB);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(iPOLCNOCFNB);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(bINLGCOBEPO);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(iCGHCNOBKML);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(aCMBPIIJKFL);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(platformType);
@@ -1948,52 +1960,52 @@ public final class PlayerLoginCsReqOuterClass {
         size += 3;
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(eBLEHHAKCHN);
+        size += 1 + ProtoSink.computeStringSizeNoTag(iIAHICGOMKP);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(signature);
+        size += 1 + ProtoSink.computeStringSizeNoTag(aIEONDBHNDC);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(oPLPLPDDDEP);
+        size += 1 + ProtoSink.computeStringSizeNoTag(fLJNOLCHBBC);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(nMHJOLNHMDK);
+        size += 1 + ProtoSink.computeStringSizeNoTag(oPNLMMDFFLL);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(mEJHAKLCHFO);
+        size += 1 + ProtoSink.computeStringSizeNoTag(rogueInfoData);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(aDAABGHDEFI);
+        size += 1 + ProtoSink.computeStringSizeNoTag(cEKOLCPLBED);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(gCFIHCACEJA);
+        size += 1 + ProtoSink.computeStringSizeNoTag(oPNBNKJAIKD);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(bGPJNKCMIMM);
+        size += 1 + ProtoSink.computeStringSizeNoTag(eIFPHAMMIEG);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(kGLDJEEHOOO);
+        size += 1 + ProtoSink.computeStringSizeNoTag(signature);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(bHJIONAELAJ);
+        size += 1 + ProtoSink.computeStringSizeNoTag(hDPJMCHLGCM);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(cDFPLBBIKDI);
+        size += 2 + ProtoSink.computeStringSizeNoTag(bMCBOCGEKBF);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(bIJCDONDCOE);
+        size += 2 + ProtoSink.computeStringSizeNoTag(fKFJDGCNDII);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(jPOIMHPHEIM);
+        size += 2 + ProtoSink.computeStringSizeNoTag(mJAJBCHKDFP);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(bAPJPOAAEGM);
+        size += 2 + ProtoSink.computeStringSizeNoTag(fLFKCIHCENF);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(eMGADLCGDBF);
+        size += 2 + ProtoSink.computeStringSizeNoTag(kOGIIKIEJIJ);
       }
       if ((bitField0_ & 0x01000000) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(dJGLMHDKEEO);
+        size += 2 + ProtoSink.computeStringSizeNoTag(hFHGPLMEFGJ);
       }
       return size;
     }
@@ -2005,52 +2017,52 @@ public final class PlayerLoginCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 56: {
             // loginRandom
             loginRandom = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 64) {
               break;
             }
           }
-          case 32: {
+          case 64: {
             // clientResVersion
             clientResVersion = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // nMDMJEFOPKB
+            nMDMJEFOPKB = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 4720) {
+              break;
+            }
+          }
+          case 4720: {
+            // bINLGCOBEPO
+            bINLGCOBEPO = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 11240) {
+              break;
+            }
+          }
+          case 11240: {
+            // aCMBPIIJKFL
+            aCMBPIIJKFL = input.readUInt32();
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 104) {
               break;
             }
           }
           case 104: {
-            // bGCEPHGGMLN
-            bGCEPHGGMLN = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 4320) {
-              break;
-            }
-          }
-          case 4320: {
-            // iPOLCNOCFNB
-            iPOLCNOCFNB = input.readUInt32();
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 10024) {
-              break;
-            }
-          }
-          case 10024: {
-            // iCGHCNOBKML
-            iCGHCNOBKML = input.readUInt32();
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
             // platformType
             final int value = input.readInt32();
             if (PlatformTypeOuterClass.PlatformType.forNumber(value) != null) {
@@ -2058,11 +2070,11 @@ public final class PlayerLoginCsReqOuterClass {
               bitField0_ |= 0x00000020;
             }
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 120) {
               break;
             }
           }
-          case 80: {
+          case 120: {
             // language
             final int value = input.readInt32();
             if (LanguageTypeOuterClass.LanguageType.forNumber(value) != null) {
@@ -2070,22 +2082,22 @@ public final class PlayerLoginCsReqOuterClass {
               bitField0_ |= 0x00000040;
             }
             tag = input.readTag();
-            if (tag != 10864) {
+            if (tag != 3392) {
               break;
             }
           }
-          case 10864: {
-            // eKJOPHKEIOF
-            eKJOPHKEIOF = input.readBool();
+          case 3392: {
+            // gLNBFFILPNA
+            gLNBFFILPNA = input.readBool();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 15808) {
+            if (tag != 11736) {
               break;
             }
           }
-          case 15808: {
-            // iFFJDADGAJA
-            iFFJDADGAJA = input.readBool();
+          case 11736: {
+            // jJDBFAMDEPP
+            jJDBFAMDEPP = input.readBool();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 10) {
@@ -2093,8 +2105,8 @@ public final class PlayerLoginCsReqOuterClass {
             }
           }
           case 10: {
-            // eBLEHHAKCHN
-            input.readString(eBLEHHAKCHN);
+            // iIAHICGOMKP
+            input.readString(iIAHICGOMKP);
             bitField0_ |= 0x00000200;
             tag = input.readTag();
             if (tag != 18) {
@@ -2102,8 +2114,8 @@ public final class PlayerLoginCsReqOuterClass {
             }
           }
           case 18: {
-            // signature
-            input.readString(signature);
+            // aIEONDBHNDC
+            input.readString(aIEONDBHNDC);
             bitField0_ |= 0x00000400;
             tag = input.readTag();
             if (tag != 26) {
@@ -2111,125 +2123,125 @@ public final class PlayerLoginCsReqOuterClass {
             }
           }
           case 26: {
-            // oPLPLPDDDEP
-            input.readString(oPLPLPDDDEP);
+            // fLJNOLCHBBC
+            input.readString(fLJNOLCHBBC);
             bitField0_ |= 0x00000800;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
+            // oPNLMMDFFLL
+            input.readString(oPNLMMDFFLL);
+            bitField0_ |= 0x00001000;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
+            // rogueInfoData
+            input.readString(rogueInfoData);
+            bitField0_ |= 0x00002000;
             tag = input.readTag();
             if (tag != 50) {
               break;
             }
           }
           case 50: {
-            // nMHJOLNHMDK
-            input.readString(nMHJOLNHMDK);
-            bitField0_ |= 0x00001000;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // mEJHAKLCHFO
-            input.readString(mEJHAKLCHFO);
-            bitField0_ |= 0x00002000;
+            // cEKOLCPLBED
+            input.readString(cEKOLCPLBED);
+            bitField0_ |= 0x00004000;
             tag = input.readTag();
             if (tag != 74) {
               break;
             }
           }
           case 74: {
-            // aDAABGHDEFI
-            input.readString(aDAABGHDEFI);
-            bitField0_ |= 0x00004000;
+            // oPNBNKJAIKD
+            input.readString(oPNBNKJAIKD);
+            bitField0_ |= 0x00008000;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // eIFPHAMMIEG
+            input.readString(eIFPHAMMIEG);
+            bitField0_ |= 0x00010000;
             tag = input.readTag();
             if (tag != 90) {
               break;
             }
           }
           case 90: {
-            // gCFIHCACEJA
-            input.readString(gCFIHCACEJA);
-            bitField0_ |= 0x00008000;
-            tag = input.readTag();
-            if (tag != 98) {
-              break;
-            }
-          }
-          case 98: {
-            // bGPJNKCMIMM
-            input.readString(bGPJNKCMIMM);
-            bitField0_ |= 0x00010000;
+            // signature
+            input.readString(signature);
+            bitField0_ |= 0x00020000;
             tag = input.readTag();
             if (tag != 114) {
               break;
             }
           }
           case 114: {
-            // kGLDJEEHOOO
-            input.readString(kGLDJEEHOOO);
-            bitField0_ |= 0x00020000;
-            tag = input.readTag();
-            if (tag != 122) {
-              break;
-            }
-          }
-          case 122: {
-            // bHJIONAELAJ
-            input.readString(bHJIONAELAJ);
+            // hDPJMCHLGCM
+            input.readString(hDPJMCHLGCM);
             bitField0_ |= 0x00040000;
             tag = input.readTag();
-            if (tag != 2834) {
+            if (tag != 2738) {
               break;
             }
           }
-          case 2834: {
-            // cDFPLBBIKDI
-            input.readString(cDFPLBBIKDI);
+          case 2738: {
+            // bMCBOCGEKBF
+            input.readString(bMCBOCGEKBF);
             bitField0_ |= 0x00080000;
             tag = input.readTag();
-            if (tag != 4994) {
+            if (tag != 2802) {
               break;
             }
           }
-          case 4994: {
-            // bIJCDONDCOE
-            input.readString(bIJCDONDCOE);
+          case 2802: {
+            // fKFJDGCNDII
+            input.readString(fKFJDGCNDII);
             bitField0_ |= 0x00100000;
             tag = input.readTag();
-            if (tag != 8098) {
+            if (tag != 8378) {
               break;
             }
           }
-          case 8098: {
-            // jPOIMHPHEIM
-            input.readString(jPOIMHPHEIM);
+          case 8378: {
+            // mJAJBCHKDFP
+            input.readString(mJAJBCHKDFP);
             bitField0_ |= 0x00200000;
             tag = input.readTag();
-            if (tag != 9466) {
+            if (tag != 8842) {
               break;
             }
           }
-          case 9466: {
-            // bAPJPOAAEGM
-            input.readString(bAPJPOAAEGM);
+          case 8842: {
+            // fLFKCIHCENF
+            input.readString(fLFKCIHCENF);
             bitField0_ |= 0x00400000;
             tag = input.readTag();
-            if (tag != 11146) {
+            if (tag != 10042) {
               break;
             }
           }
-          case 11146: {
-            // eMGADLCGDBF
-            input.readString(eMGADLCGDBF);
+          case 10042: {
+            // kOGIIKIEJIJ
+            input.readString(kOGIIKIEJIJ);
             bitField0_ |= 0x00800000;
             tag = input.readTag();
-            if (tag != 14930) {
+            if (tag != 11394) {
               break;
             }
           }
-          case 14930: {
-            // dJGLMHDKEEO
-            input.readString(dJGLMHDKEEO);
+          case 11394: {
+            // hFHGPLMEFGJ
+            input.readString(hFHGPLMEFGJ);
             bitField0_ |= 0x01000000;
             tag = input.readTag();
             if (tag != 0) {
@@ -2260,13 +2272,13 @@ public final class PlayerLoginCsReqOuterClass {
         output.writeUInt32(FieldNames.clientResVersion, clientResVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.bGCEPHGGMLN, bGCEPHGGMLN);
+        output.writeUInt32(FieldNames.nMDMJEFOPKB, nMDMJEFOPKB);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.iPOLCNOCFNB, iPOLCNOCFNB);
+        output.writeUInt32(FieldNames.bINLGCOBEPO, bINLGCOBEPO);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.iCGHCNOBKML, iCGHCNOBKML);
+        output.writeUInt32(FieldNames.aCMBPIIJKFL, aCMBPIIJKFL);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeEnum(FieldNames.platformType, platformType, PlatformTypeOuterClass.PlatformType.converter());
@@ -2275,58 +2287,58 @@ public final class PlayerLoginCsReqOuterClass {
         output.writeEnum(FieldNames.language, language, LanguageTypeOuterClass.LanguageType.converter());
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeBool(FieldNames.eKJOPHKEIOF, eKJOPHKEIOF);
+        output.writeBool(FieldNames.gLNBFFILPNA, gLNBFFILPNA);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeBool(FieldNames.iFFJDADGAJA, iFFJDADGAJA);
+        output.writeBool(FieldNames.jJDBFAMDEPP, jJDBFAMDEPP);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeString(FieldNames.eBLEHHAKCHN, eBLEHHAKCHN);
+        output.writeString(FieldNames.iIAHICGOMKP, iIAHICGOMKP);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeString(FieldNames.signature, signature);
+        output.writeString(FieldNames.aIEONDBHNDC, aIEONDBHNDC);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeString(FieldNames.oPLPLPDDDEP, oPLPLPDDDEP);
+        output.writeString(FieldNames.fLJNOLCHBBC, fLJNOLCHBBC);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeString(FieldNames.nMHJOLNHMDK, nMHJOLNHMDK);
+        output.writeString(FieldNames.oPNLMMDFFLL, oPNLMMDFFLL);
       }
       if ((bitField0_ & 0x00002000) != 0) {
-        output.writeString(FieldNames.mEJHAKLCHFO, mEJHAKLCHFO);
+        output.writeString(FieldNames.rogueInfoData, rogueInfoData);
       }
       if ((bitField0_ & 0x00004000) != 0) {
-        output.writeString(FieldNames.aDAABGHDEFI, aDAABGHDEFI);
+        output.writeString(FieldNames.cEKOLCPLBED, cEKOLCPLBED);
       }
       if ((bitField0_ & 0x00008000) != 0) {
-        output.writeString(FieldNames.gCFIHCACEJA, gCFIHCACEJA);
+        output.writeString(FieldNames.oPNBNKJAIKD, oPNBNKJAIKD);
       }
       if ((bitField0_ & 0x00010000) != 0) {
-        output.writeString(FieldNames.bGPJNKCMIMM, bGPJNKCMIMM);
+        output.writeString(FieldNames.eIFPHAMMIEG, eIFPHAMMIEG);
       }
       if ((bitField0_ & 0x00020000) != 0) {
-        output.writeString(FieldNames.kGLDJEEHOOO, kGLDJEEHOOO);
+        output.writeString(FieldNames.signature, signature);
       }
       if ((bitField0_ & 0x00040000) != 0) {
-        output.writeString(FieldNames.bHJIONAELAJ, bHJIONAELAJ);
+        output.writeString(FieldNames.hDPJMCHLGCM, hDPJMCHLGCM);
       }
       if ((bitField0_ & 0x00080000) != 0) {
-        output.writeString(FieldNames.cDFPLBBIKDI, cDFPLBBIKDI);
+        output.writeString(FieldNames.bMCBOCGEKBF, bMCBOCGEKBF);
       }
       if ((bitField0_ & 0x00100000) != 0) {
-        output.writeString(FieldNames.bIJCDONDCOE, bIJCDONDCOE);
+        output.writeString(FieldNames.fKFJDGCNDII, fKFJDGCNDII);
       }
       if ((bitField0_ & 0x00200000) != 0) {
-        output.writeString(FieldNames.jPOIMHPHEIM, jPOIMHPHEIM);
+        output.writeString(FieldNames.mJAJBCHKDFP, mJAJBCHKDFP);
       }
       if ((bitField0_ & 0x00400000) != 0) {
-        output.writeString(FieldNames.bAPJPOAAEGM, bAPJPOAAEGM);
+        output.writeString(FieldNames.fLFKCIHCENF, fLFKCIHCENF);
       }
       if ((bitField0_ & 0x00800000) != 0) {
-        output.writeString(FieldNames.eMGADLCGDBF, eMGADLCGDBF);
+        output.writeString(FieldNames.kOGIIKIEJIJ, kOGIIKIEJIJ);
       }
       if ((bitField0_ & 0x01000000) != 0) {
-        output.writeString(FieldNames.dJGLMHDKEEO, dJGLMHDKEEO);
+        output.writeString(FieldNames.hFHGPLMEFGJ, hFHGPLMEFGJ);
       }
       output.endObject();
     }
@@ -2362,10 +2374,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -137887376: {
-            if (input.isAtField(FieldNames.bGCEPHGGMLN)) {
+          case 1022920795: {
+            if (input.isAtField(FieldNames.nMDMJEFOPKB)) {
               if (!input.trySkipNullValue()) {
-                bGCEPHGGMLN = input.readUInt32();
+                nMDMJEFOPKB = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -2373,10 +2385,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -973721897: {
-            if (input.isAtField(FieldNames.iPOLCNOCFNB)) {
+          case 843180816: {
+            if (input.isAtField(FieldNames.bINLGCOBEPO)) {
               if (!input.trySkipNullValue()) {
-                iPOLCNOCFNB = input.readUInt32();
+                bINLGCOBEPO = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -2384,10 +2396,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 479388433: {
-            if (input.isAtField(FieldNames.iCGHCNOBKML)) {
+          case 647542304: {
+            if (input.isAtField(FieldNames.aCMBPIIJKFL)) {
               if (!input.trySkipNullValue()) {
-                iCGHCNOBKML = input.readUInt32();
+                aCMBPIIJKFL = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -2428,10 +2440,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -1535242621: {
-            if (input.isAtField(FieldNames.eKJOPHKEIOF)) {
+          case -1196265017: {
+            if (input.isAtField(FieldNames.gLNBFFILPNA)) {
               if (!input.trySkipNullValue()) {
-                eKJOPHKEIOF = input.readBool();
+                gLNBFFILPNA = input.readBool();
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -2439,10 +2451,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 1393260983: {
-            if (input.isAtField(FieldNames.iFFJDADGAJA)) {
+          case -1144149835: {
+            if (input.isAtField(FieldNames.jJDBFAMDEPP)) {
               if (!input.trySkipNullValue()) {
-                iFFJDADGAJA = input.readBool();
+                jJDBFAMDEPP = input.readBool();
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -2450,11 +2462,89 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 2146045833: {
-            if (input.isAtField(FieldNames.eBLEHHAKCHN)) {
+          case -2031732599: {
+            if (input.isAtField(FieldNames.iIAHICGOMKP)) {
               if (!input.trySkipNullValue()) {
-                input.readString(eBLEHHAKCHN);
+                input.readString(iIAHICGOMKP);
                 bitField0_ |= 0x00000200;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 300218431: {
+            if (input.isAtField(FieldNames.aIEONDBHNDC)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(aIEONDBHNDC);
+                bitField0_ |= 0x00000400;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1756843529: {
+            if (input.isAtField(FieldNames.fLJNOLCHBBC)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(fLJNOLCHBBC);
+                bitField0_ |= 0x00000800;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1111637339: {
+            if (input.isAtField(FieldNames.oPNLMMDFFLL)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(oPNLMMDFFLL);
+                bitField0_ |= 0x00001000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1486739086:
+          case 480604278: {
+            if (input.isAtField(FieldNames.rogueInfoData)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(rogueInfoData);
+                bitField0_ |= 0x00002000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 2036912584: {
+            if (input.isAtField(FieldNames.cEKOLCPLBED)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(cEKOLCPLBED);
+                bitField0_ |= 0x00004000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -524231111: {
+            if (input.isAtField(FieldNames.oPNBNKJAIKD)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(oPNBNKJAIKD);
+                bitField0_ |= 0x00008000;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 532064132: {
+            if (input.isAtField(FieldNames.eIFPHAMMIEG)) {
+              if (!input.trySkipNullValue()) {
+                input.readString(eIFPHAMMIEG);
+                bitField0_ |= 0x00010000;
               }
             } else {
               input.skipUnknownField();
@@ -2465,83 +2555,6 @@ public final class PlayerLoginCsReqOuterClass {
             if (input.isAtField(FieldNames.signature)) {
               if (!input.trySkipNullValue()) {
                 input.readString(signature);
-                bitField0_ |= 0x00000400;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 82900390: {
-            if (input.isAtField(FieldNames.oPLPLPDDDEP)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(oPLPLPDDDEP);
-                bitField0_ |= 0x00000800;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1799705532: {
-            if (input.isAtField(FieldNames.nMHJOLNHMDK)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(nMHJOLNHMDK);
-                bitField0_ |= 0x00001000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1502544198: {
-            if (input.isAtField(FieldNames.mEJHAKLCHFO)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(mEJHAKLCHFO);
-                bitField0_ |= 0x00002000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -675680444: {
-            if (input.isAtField(FieldNames.aDAABGHDEFI)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(aDAABGHDEFI);
-                bitField0_ |= 0x00004000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1151653568: {
-            if (input.isAtField(FieldNames.gCFIHCACEJA)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(gCFIHCACEJA);
-                bitField0_ |= 0x00008000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 566486403: {
-            if (input.isAtField(FieldNames.bGPJNKCMIMM)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(bGPJNKCMIMM);
-                bitField0_ |= 0x00010000;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1078369219: {
-            if (input.isAtField(FieldNames.kGLDJEEHOOO)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(kGLDJEEHOOO);
                 bitField0_ |= 0x00020000;
               }
             } else {
@@ -2549,10 +2562,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 1853263021: {
-            if (input.isAtField(FieldNames.bHJIONAELAJ)) {
+          case 2147269345: {
+            if (input.isAtField(FieldNames.hDPJMCHLGCM)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bHJIONAELAJ);
+                input.readString(hDPJMCHLGCM);
                 bitField0_ |= 0x00040000;
               }
             } else {
@@ -2560,10 +2573,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 86967656: {
-            if (input.isAtField(FieldNames.cDFPLBBIKDI)) {
+          case 1013823923: {
+            if (input.isAtField(FieldNames.bMCBOCGEKBF)) {
               if (!input.trySkipNullValue()) {
-                input.readString(cDFPLBBIKDI);
+                input.readString(bMCBOCGEKBF);
                 bitField0_ |= 0x00080000;
               }
             } else {
@@ -2571,10 +2584,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -1342186888: {
-            if (input.isAtField(FieldNames.bIJCDONDCOE)) {
+          case 1677643021: {
+            if (input.isAtField(FieldNames.fKFJDGCNDII)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bIJCDONDCOE);
+                input.readString(fKFJDGCNDII);
                 bitField0_ |= 0x00100000;
               }
             } else {
@@ -2582,10 +2595,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case 705229014: {
-            if (input.isAtField(FieldNames.jPOIMHPHEIM)) {
+          case 742740804: {
+            if (input.isAtField(FieldNames.mJAJBCHKDFP)) {
               if (!input.trySkipNullValue()) {
-                input.readString(jPOIMHPHEIM);
+                input.readString(mJAJBCHKDFP);
                 bitField0_ |= 0x00200000;
               }
             } else {
@@ -2593,10 +2606,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -662084461: {
-            if (input.isAtField(FieldNames.bAPJPOAAEGM)) {
+          case -1896981807: {
+            if (input.isAtField(FieldNames.fLFKCIHCENF)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bAPJPOAAEGM);
+                input.readString(fLFKCIHCENF);
                 bitField0_ |= 0x00400000;
               }
             } else {
@@ -2604,10 +2617,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -1383341222: {
-            if (input.isAtField(FieldNames.eMGADLCGDBF)) {
+          case 1503815783: {
+            if (input.isAtField(FieldNames.kOGIIKIEJIJ)) {
               if (!input.trySkipNullValue()) {
-                input.readString(eMGADLCGDBF);
+                input.readString(kOGIIKIEJIJ);
                 bitField0_ |= 0x00800000;
               }
             } else {
@@ -2615,10 +2628,10 @@ public final class PlayerLoginCsReqOuterClass {
             }
             break;
           }
-          case -2016646462: {
-            if (input.isAtField(FieldNames.dJGLMHDKEEO)) {
+          case 1025126776: {
+            if (input.isAtField(FieldNames.hFHGPLMEFGJ)) {
               if (!input.trySkipNullValue()) {
-                input.readString(dJGLMHDKEEO);
+                input.readString(hFHGPLMEFGJ);
                 bitField0_ |= 0x01000000;
               }
             } else {
@@ -2683,51 +2696,51 @@ public final class PlayerLoginCsReqOuterClass {
 
       static final FieldName clientResVersion = FieldName.forField("clientResVersion", "client_res_version");
 
-      static final FieldName bGCEPHGGMLN = FieldName.forField("BGCEPHGGMLN");
+      static final FieldName nMDMJEFOPKB = FieldName.forField("NMDMJEFOPKB");
 
-      static final FieldName iPOLCNOCFNB = FieldName.forField("IPOLCNOCFNB");
+      static final FieldName bINLGCOBEPO = FieldName.forField("BINLGCOBEPO");
 
-      static final FieldName iCGHCNOBKML = FieldName.forField("ICGHCNOBKML");
+      static final FieldName aCMBPIIJKFL = FieldName.forField("ACMBPIIJKFL");
 
       static final FieldName platformType = FieldName.forField("platformType", "platform_type");
 
       static final FieldName language = FieldName.forField("language");
 
-      static final FieldName eKJOPHKEIOF = FieldName.forField("EKJOPHKEIOF");
+      static final FieldName gLNBFFILPNA = FieldName.forField("GLNBFFILPNA");
 
-      static final FieldName iFFJDADGAJA = FieldName.forField("IFFJDADGAJA");
+      static final FieldName jJDBFAMDEPP = FieldName.forField("JJDBFAMDEPP");
 
-      static final FieldName eBLEHHAKCHN = FieldName.forField("EBLEHHAKCHN");
+      static final FieldName iIAHICGOMKP = FieldName.forField("IIAHICGOMKP");
+
+      static final FieldName aIEONDBHNDC = FieldName.forField("AIEONDBHNDC");
+
+      static final FieldName fLJNOLCHBBC = FieldName.forField("FLJNOLCHBBC");
+
+      static final FieldName oPNLMMDFFLL = FieldName.forField("OPNLMMDFFLL");
+
+      static final FieldName rogueInfoData = FieldName.forField("rogueInfoData", "rogue_info_data");
+
+      static final FieldName cEKOLCPLBED = FieldName.forField("CEKOLCPLBED");
+
+      static final FieldName oPNBNKJAIKD = FieldName.forField("OPNBNKJAIKD");
+
+      static final FieldName eIFPHAMMIEG = FieldName.forField("EIFPHAMMIEG");
 
       static final FieldName signature = FieldName.forField("signature");
 
-      static final FieldName oPLPLPDDDEP = FieldName.forField("OPLPLPDDDEP");
+      static final FieldName hDPJMCHLGCM = FieldName.forField("HDPJMCHLGCM");
 
-      static final FieldName nMHJOLNHMDK = FieldName.forField("NMHJOLNHMDK");
+      static final FieldName bMCBOCGEKBF = FieldName.forField("BMCBOCGEKBF");
 
-      static final FieldName mEJHAKLCHFO = FieldName.forField("MEJHAKLCHFO");
+      static final FieldName fKFJDGCNDII = FieldName.forField("FKFJDGCNDII");
 
-      static final FieldName aDAABGHDEFI = FieldName.forField("ADAABGHDEFI");
+      static final FieldName mJAJBCHKDFP = FieldName.forField("MJAJBCHKDFP");
 
-      static final FieldName gCFIHCACEJA = FieldName.forField("GCFIHCACEJA");
+      static final FieldName fLFKCIHCENF = FieldName.forField("FLFKCIHCENF");
 
-      static final FieldName bGPJNKCMIMM = FieldName.forField("BGPJNKCMIMM");
+      static final FieldName kOGIIKIEJIJ = FieldName.forField("KOGIIKIEJIJ");
 
-      static final FieldName kGLDJEEHOOO = FieldName.forField("KGLDJEEHOOO");
-
-      static final FieldName bHJIONAELAJ = FieldName.forField("BHJIONAELAJ");
-
-      static final FieldName cDFPLBBIKDI = FieldName.forField("CDFPLBBIKDI");
-
-      static final FieldName bIJCDONDCOE = FieldName.forField("BIJCDONDCOE");
-
-      static final FieldName jPOIMHPHEIM = FieldName.forField("JPOIMHPHEIM");
-
-      static final FieldName bAPJPOAAEGM = FieldName.forField("BAPJPOAAEGM");
-
-      static final FieldName eMGADLCGDBF = FieldName.forField("EMGADLCGDBF");
-
-      static final FieldName dJGLMHDKEEO = FieldName.forField("DJGLMHDKEEO");
+      static final FieldName hFHGPLMEFGJ = FieldName.forField("HFHGPLMEFGJ");
     }
   }
 }

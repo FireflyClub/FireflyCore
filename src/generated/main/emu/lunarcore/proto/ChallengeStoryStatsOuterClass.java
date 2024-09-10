@@ -19,12 +19,12 @@ public final class ChallengeStoryStatsOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 attempts = 15;</code>
+     * <code>optional uint32 attempts = 4;</code>
      */
     private int attempts;
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      */
     private final ChallengeStoryClearInfoOuterClass.ChallengeStoryClearInfo clearInfo = ChallengeStoryClearInfoOuterClass.ChallengeStoryClearInfo.newInstance();
 
@@ -39,7 +39,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional uint32 attempts = 15;</code>
+     * <code>optional uint32 attempts = 4;</code>
      * @return whether the attempts field is set
      */
     public boolean hasAttempts() {
@@ -47,7 +47,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional uint32 attempts = 15;</code>
+     * <code>optional uint32 attempts = 4;</code>
      * @return this
      */
     public ChallengeStoryStats clearAttempts() {
@@ -57,7 +57,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional uint32 attempts = 15;</code>
+     * <code>optional uint32 attempts = 4;</code>
      * @return the attempts
      */
     public int getAttempts() {
@@ -65,7 +65,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional uint32 attempts = 15;</code>
+     * <code>optional uint32 attempts = 4;</code>
      * @param value the attempts to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      * @return whether the clearInfo field is set
      */
     public boolean hasClearInfo() {
@@ -84,7 +84,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      * @return this
      */
     public ChallengeStoryStats clearClearInfo() {
@@ -94,7 +94,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class ChallengeStoryStatsOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryClearInfo clear_info = 4;</code>
+     * <code>optional .ChallengeStoryClearInfo clear_info = 3;</code>
      * @param value the clearInfo to set
      * @return this
      */
@@ -199,11 +199,11 @@ public final class ChallengeStoryStatsOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(attempts);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(clearInfo);
       }
     }
@@ -227,16 +227,16 @@ public final class ChallengeStoryStatsOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 120: {
+          case 32: {
             // attempts
             attempts = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 26) {
               break;
             }
           }
-          case 34: {
+          case 26: {
             // clearInfo
             input.readMessage(clearInfo);
             bitField0_ |= 0x00000002;

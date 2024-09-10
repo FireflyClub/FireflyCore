@@ -3,9 +3,9 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PlayerDisplaySettings {
-	bool OJNELKIOAOK = 6;
-	bool DAAAIHDPCFE = 14;
-	bool MAJIMDCHNDL = 2;
-	bool MOKMEEDBECL = 3;
-	bool BBJGEGEJJFB = 13;
+	bool PJILEMMBLFG = 2;
+	bool NMJDBOIPFIC = 14;
+	bool NENGEIIJJCB = 8;
+	bool CPEEEPDBBPH = 12;
+	bool GNOHNPJBFJC = 5;
 }

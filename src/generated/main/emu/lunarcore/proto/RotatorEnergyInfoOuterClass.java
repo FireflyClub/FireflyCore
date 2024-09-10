@@ -23,18 +23,18 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 4;</code>
+     * <code>optional uint32 max_num = 3;</code>
      */
-    private int curNum;
+    private int maxNum;
 
     /**
      * <pre>
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_num = 14;</code>
+     * <code>optional uint32 cur_num = 6;</code>
      */
-    private int maxNum;
+    private int curNum;
 
     private RotatorEnergyInfo() {
     }
@@ -51,10 +51,10 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 4;</code>
-     * @return whether the curNum field is set
+     * <code>optional uint32 max_num = 3;</code>
+     * @return whether the maxNum field is set
      */
-    public boolean hasCurNum() {
+    public boolean hasMaxNum() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
@@ -63,64 +63,11 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 cur_num = 4;</code>
-     * @return this
-     */
-    public RotatorEnergyInfo clearCurNum() {
-      bitField0_ &= ~0x00000001;
-      curNum = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 cur_num = 4;</code>
-     * @return the curNum
-     */
-    public int getCurNum() {
-      return curNum;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 cur_num = 4;</code>
-     * @param value the curNum to set
-     * @return this
-     */
-    public RotatorEnergyInfo setCurNum(final int value) {
-      bitField0_ |= 0x00000001;
-      curNum = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_num = 14;</code>
-     * @return whether the maxNum field is set
-     */
-    public boolean hasMaxNum() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_num = 14;</code>
+     * <code>optional uint32 max_num = 3;</code>
      * @return this
      */
     public RotatorEnergyInfo clearMaxNum() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       maxNum = 0;
       return this;
     }
@@ -130,7 +77,7 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_num = 14;</code>
+     * <code>optional uint32 max_num = 3;</code>
      * @return the maxNum
      */
     public int getMaxNum() {
@@ -142,13 +89,66 @@ public final class RotatorEnergyInfoOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional uint32 max_num = 14;</code>
+     * <code>optional uint32 max_num = 3;</code>
      * @param value the maxNum to set
      * @return this
      */
     public RotatorEnergyInfo setMaxNum(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       maxNum = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 cur_num = 6;</code>
+     * @return whether the curNum field is set
+     */
+    public boolean hasCurNum() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 cur_num = 6;</code>
+     * @return this
+     */
+    public RotatorEnergyInfo clearCurNum() {
+      bitField0_ &= ~0x00000002;
+      curNum = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 cur_num = 6;</code>
+     * @return the curNum
+     */
+    public int getCurNum() {
+      return curNum;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>optional uint32 cur_num = 6;</code>
+     * @param value the curNum to set
+     * @return this
+     */
+    public RotatorEnergyInfo setCurNum(final int value) {
+      bitField0_ |= 0x00000002;
+      curNum = value;
       return this;
     }
 
@@ -157,8 +157,8 @@ public final class RotatorEnergyInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        curNum = other.curNum;
         maxNum = other.maxNum;
+        curNum = other.curNum;
       }
       return this;
     }
@@ -169,11 +169,11 @@ public final class RotatorEnergyInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasCurNum()) {
-        setCurNum(other.curNum);
-      }
       if (other.hasMaxNum()) {
         setMaxNum(other.maxNum);
+      }
+      if (other.hasCurNum()) {
+        setCurNum(other.curNum);
       }
       return this;
     }
@@ -185,8 +185,8 @@ public final class RotatorEnergyInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      curNum = 0;
       maxNum = 0;
+      curNum = 0;
       return this;
     }
 
@@ -210,19 +210,19 @@ public final class RotatorEnergyInfoOuterClass {
       }
       RotatorEnergyInfo other = (RotatorEnergyInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasCurNum() || curNum == other.curNum)
-        && (!hasMaxNum() || maxNum == other.maxNum);
+        && (!hasMaxNum() || maxNum == other.maxNum)
+        && (!hasCurNum() || curNum == other.curNum);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(curNum);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(maxNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(maxNum);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(curNum);
       }
     }
 
@@ -230,10 +230,10 @@ public final class RotatorEnergyInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(curNum);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxNum);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curNum);
       }
       return size;
     }
@@ -245,18 +245,18 @@ public final class RotatorEnergyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // curNum
-            curNum = input.readUInt32();
+          case 24: {
+            // maxNum
+            maxNum = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 48) {
               break;
             }
           }
-          case 112: {
-            // maxNum
-            maxNum = input.readUInt32();
+          case 48: {
+            // curNum
+            curNum = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -281,10 +281,10 @@ public final class RotatorEnergyInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.curNum, curNum);
+        output.writeUInt32(FieldNames.maxNum, maxNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.maxNum, maxNum);
+        output.writeUInt32(FieldNames.curNum, curNum);
       }
       output.endObject();
     }
@@ -296,11 +296,11 @@ public final class RotatorEnergyInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1349154522:
-          case 1126382855: {
-            if (input.isAtField(FieldNames.curNum)) {
+          case -1081154686:
+          case 844443179: {
+            if (input.isAtField(FieldNames.maxNum)) {
               if (!input.trySkipNullValue()) {
-                curNum = input.readUInt32();
+                maxNum = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -308,11 +308,11 @@ public final class RotatorEnergyInfoOuterClass {
             }
             break;
           }
-          case -1081154686:
-          case 844443179: {
-            if (input.isAtField(FieldNames.maxNum)) {
+          case -1349154522:
+          case 1126382855: {
+            if (input.isAtField(FieldNames.curNum)) {
               if (!input.trySkipNullValue()) {
-                maxNum = input.readUInt32();
+                curNum = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -373,9 +373,9 @@ public final class RotatorEnergyInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName curNum = FieldName.forField("curNum", "cur_num");
-
       static final FieldName maxNum = FieldName.forField("maxNum", "max_num");
+
+      static final FieldName curNum = FieldName.forField("curNum", "cur_num");
     }
   }
 }

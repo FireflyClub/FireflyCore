@@ -20,24 +20,32 @@ public final class StartChallengeCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 challenge_id = 12;</code>
+     * <code>optional uint32 challenge_id = 4;</code>
      */
     private int challengeId;
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
      */
-    private final StartChallengeStoryInfoOuterClass.StartChallengeStoryInfo startInfo = StartChallengeStoryInfoOuterClass.StartChallengeStoryInfo.newInstance();
+    private final StartChallengeInfoOuterClass.StartChallengeInfo extInfo = StartChallengeInfoOuterClass.StartChallengeInfo.newInstance();
 
     /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     */
-    private final RepeatedInt lineup1 = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
      */
     private final RepeatedInt lineup2 = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     */
+    private final RepeatedInt lineup1 = RepeatedInt.newEmptyInstance();
 
     private StartChallengeCsReq() {
     }
@@ -50,7 +58,7 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 12;</code>
+     * <code>optional uint32 challenge_id = 4;</code>
      * @return whether the challengeId field is set
      */
     public boolean hasChallengeId() {
@@ -58,7 +66,7 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 12;</code>
+     * <code>optional uint32 challenge_id = 4;</code>
      * @return this
      */
     public StartChallengeCsReq clearChallengeId() {
@@ -68,7 +76,7 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 12;</code>
+     * <code>optional uint32 challenge_id = 4;</code>
      * @return the challengeId
      */
     public int getChallengeId() {
@@ -76,7 +84,7 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 12;</code>
+     * <code>optional uint32 challenge_id = 4;</code>
      * @param value the challengeId to set
      * @return this
      */
@@ -87,39 +95,39 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
-     * @return whether the startInfo field is set
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
+     * @return whether the extInfo field is set
      */
-    public boolean hasStartInfo() {
+    public boolean hasExtInfo() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
      * @return this
      */
-    public StartChallengeCsReq clearStartInfo() {
+    public StartChallengeCsReq clearExtInfo() {
       bitField0_ &= ~0x00000002;
-      startInfo.clear();
+      extInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableStartInfo()} if you want to modify it.
+     * Use {@link #getMutableExtInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public StartChallengeStoryInfoOuterClass.StartChallengeStoryInfo getStartInfo() {
-      return startInfo;
+    public StartChallengeInfoOuterClass.StartChallengeInfo getExtInfo() {
+      return extInfo;
     }
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -127,111 +135,55 @@ public final class StartChallengeCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public StartChallengeStoryInfoOuterClass.StartChallengeStoryInfo getMutableStartInfo() {
+    public StartChallengeInfoOuterClass.StartChallengeInfo getMutableExtInfo() {
       bitField0_ |= 0x00000002;
-      return startInfo;
+      return extInfo;
     }
 
     /**
-     * <code>optional .StartChallengeStoryInfo start_info = 2;</code>
-     * @param value the startInfo to set
+     * <code>optional .StartChallengeInfo ext_info = 5;</code>
+     * @param value the extInfo to set
      * @return this
      */
-    public StartChallengeCsReq setStartInfo(
-        final StartChallengeStoryInfoOuterClass.StartChallengeStoryInfo value) {
+    public StartChallengeCsReq setExtInfo(
+        final StartChallengeInfoOuterClass.StartChallengeInfo value) {
       bitField0_ |= 0x00000002;
-      startInfo.copyFrom(value);
+      extInfo.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     * @return whether the lineup1 field is set
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
+     * @return whether the lineup2 field is set
      */
-    public boolean hasLineup1() {
+    public boolean hasLineup2() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     * @return this
-     */
-    public StartChallengeCsReq clearLineup1() {
-      bitField0_ &= ~0x00000004;
-      lineup1.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 lineup1 = 6;</code>
+     * <pre>
+     * ?
+     * </pre>
      *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableLineup1()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getLineup1() {
-      return lineup1;
-    }
-
-    /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableLineup1() {
-      bitField0_ |= 0x00000004;
-      return lineup1;
-    }
-
-    /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     * @param value the lineup1 to add
-     * @return this
-     */
-    public StartChallengeCsReq addLineup1(final int value) {
-      bitField0_ |= 0x00000004;
-      lineup1.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 lineup1 = 6;</code>
-     * @param values the lineup1 to add
-     * @return this
-     */
-    public StartChallengeCsReq addAllLineup1(final int... values) {
-      bitField0_ |= 0x00000004;
-      lineup1.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 lineup2 = 14;</code>
-     * @return whether the lineup2 field is set
-     */
-    public boolean hasLineup2() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <code>repeated uint32 lineup2 = 9;</code>
      * @return this
      */
     public StartChallengeCsReq clearLineup2() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       lineup2.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -245,7 +197,11 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -254,29 +210,129 @@ public final class StartChallengeCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableLineup2() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       return lineup2;
     }
 
     /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
      * @param value the lineup2 to add
      * @return this
      */
     public StartChallengeCsReq addLineup2(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       lineup2.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 lineup2 = 14;</code>
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup2 = 9;</code>
      * @param values the lineup2 to add
      * @return this
      */
     public StartChallengeCsReq addAllLineup2(final int... values) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       lineup2.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     * @return whether the lineup1 field is set
+     */
+    public boolean hasLineup1() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     * @return this
+     */
+    public StartChallengeCsReq clearLineup1() {
+      bitField0_ &= ~0x00000008;
+      lineup1.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableLineup1()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getLineup1() {
+      return lineup1;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableLineup1() {
+      bitField0_ |= 0x00000008;
+      return lineup1;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     * @param value the lineup1 to add
+     * @return this
+     */
+    public StartChallengeCsReq addLineup1(final int value) {
+      bitField0_ |= 0x00000008;
+      lineup1.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * ?
+     * </pre>
+     *
+     * <code>repeated uint32 lineup1 = 12;</code>
+     * @param values the lineup1 to add
+     * @return this
+     */
+    public StartChallengeCsReq addAllLineup1(final int... values) {
+      bitField0_ |= 0x00000008;
+      lineup1.addAll(values);
       return this;
     }
 
@@ -286,9 +342,9 @@ public final class StartChallengeCsReqOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         challengeId = other.challengeId;
-        startInfo.copyFrom(other.startInfo);
-        lineup1.copyFrom(other.lineup1);
+        extInfo.copyFrom(other.extInfo);
         lineup2.copyFrom(other.lineup2);
+        lineup1.copyFrom(other.lineup1);
       }
       return this;
     }
@@ -302,14 +358,14 @@ public final class StartChallengeCsReqOuterClass {
       if (other.hasChallengeId()) {
         setChallengeId(other.challengeId);
       }
-      if (other.hasStartInfo()) {
-        getMutableStartInfo().mergeFrom(other.startInfo);
-      }
-      if (other.hasLineup1()) {
-        getMutableLineup1().addAll(other.lineup1);
+      if (other.hasExtInfo()) {
+        getMutableExtInfo().mergeFrom(other.extInfo);
       }
       if (other.hasLineup2()) {
         getMutableLineup2().addAll(other.lineup2);
+      }
+      if (other.hasLineup1()) {
+        getMutableLineup1().addAll(other.lineup1);
       }
       return this;
     }
@@ -322,9 +378,9 @@ public final class StartChallengeCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       challengeId = 0;
-      startInfo.clear();
-      lineup1.clear();
+      extInfo.clear();
       lineup2.clear();
+      lineup1.clear();
       return this;
     }
 
@@ -335,9 +391,9 @@ public final class StartChallengeCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      startInfo.clearQuick();
-      lineup1.clear();
+      extInfo.clearQuick();
       lineup2.clear();
+      lineup1.clear();
       return this;
     }
 
@@ -352,31 +408,31 @@ public final class StartChallengeCsReqOuterClass {
       StartChallengeCsReq other = (StartChallengeCsReq) o;
       return bitField0_ == other.bitField0_
         && (!hasChallengeId() || challengeId == other.challengeId)
-        && (!hasStartInfo() || startInfo.equals(other.startInfo))
-        && (!hasLineup1() || lineup1.equals(other.lineup1))
-        && (!hasLineup2() || lineup2.equals(other.lineup2));
+        && (!hasExtInfo() || extInfo.equals(other.extInfo))
+        && (!hasLineup2() || lineup2.equals(other.lineup2))
+        && (!hasLineup1() || lineup1.equals(other.lineup1));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 18);
-        output.writeMessageNoTag(startInfo);
+        output.writeRawByte((byte) 42);
+        output.writeMessageNoTag(extInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < lineup1.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeUInt32NoTag(lineup1.array()[i]);
+        for (int i = 0; i < lineup2.length(); i++) {
+          output.writeRawByte((byte) 72);
+          output.writeUInt32NoTag(lineup2.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < lineup2.length(); i++) {
-          output.writeRawByte((byte) 112);
-          output.writeUInt32NoTag(lineup2.array()[i]);
+        for (int i = 0; i < lineup1.length(); i++) {
+          output.writeRawByte((byte) 96);
+          output.writeUInt32NoTag(lineup1.array()[i]);
         }
       }
     }
@@ -388,13 +444,13 @@ public final class StartChallengeCsReqOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(startInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(extInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * lineup1.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup1);
+        size += (1 * lineup2.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup2);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * lineup2.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup2);
+        size += (1 * lineup1.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lineup1);
       }
       return size;
     }
@@ -406,36 +462,36 @@ public final class StartChallengeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 32: {
             // challengeId
             challengeId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 42) {
               break;
             }
           }
-          case 18: {
-            // startInfo
-            input.readMessage(startInfo);
+          case 42: {
+            // extInfo
+            input.readMessage(extInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 74) {
               break;
             }
           }
-          case 50: {
-            // lineup1 [packed=true]
-            input.readPackedUInt32(lineup1, tag);
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 114) {
-              break;
-            }
-          }
-          case 114: {
+          case 74: {
             // lineup2 [packed=true]
             input.readPackedUInt32(lineup2, tag);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 98) {
+              break;
+            }
+          }
+          case 98: {
+            // lineup1 [packed=true]
+            input.readPackedUInt32(lineup1, tag);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -452,15 +508,15 @@ public final class StartChallengeCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
-            // lineup1 [packed=false]
-            tag = input.readRepeatedUInt32(lineup1, tag);
+          case 72: {
+            // lineup2 [packed=false]
+            tag = input.readRepeatedUInt32(lineup2, tag);
             bitField0_ |= 0x00000004;
             break;
           }
-          case 112: {
-            // lineup2 [packed=false]
-            tag = input.readRepeatedUInt32(lineup2, tag);
+          case 96: {
+            // lineup1 [packed=false]
+            tag = input.readRepeatedUInt32(lineup1, tag);
             bitField0_ |= 0x00000008;
             break;
           }
@@ -475,13 +531,13 @@ public final class StartChallengeCsReqOuterClass {
         output.writeUInt32(FieldNames.challengeId, challengeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeMessage(FieldNames.startInfo, startInfo);
+        output.writeMessage(FieldNames.extInfo, extInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lineup1, lineup1);
+        output.writeRepeatedUInt32(FieldNames.lineup2, lineup2);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.lineup2, lineup2);
+        output.writeRepeatedUInt32(FieldNames.lineup1, lineup1);
       }
       output.endObject();
     }
@@ -505,23 +561,12 @@ public final class StartChallengeCsReqOuterClass {
             }
             break;
           }
-          case -2129617872:
-          case -1573468565: {
-            if (input.isAtField(FieldNames.startInfo)) {
+          case -1306498449:
+          case -1826570228: {
+            if (input.isAtField(FieldNames.extInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(startInfo);
+                input.readMessage(extInfo);
                 bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 176922754: {
-            if (input.isAtField(FieldNames.lineup1)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(lineup1);
-                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -532,6 +577,17 @@ public final class StartChallengeCsReqOuterClass {
             if (input.isAtField(FieldNames.lineup2)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(lineup2);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 176922754: {
+            if (input.isAtField(FieldNames.lineup1)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(lineup1);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -594,11 +650,11 @@ public final class StartChallengeCsReqOuterClass {
     static class FieldNames {
       static final FieldName challengeId = FieldName.forField("challengeId", "challenge_id");
 
-      static final FieldName startInfo = FieldName.forField("startInfo", "start_info");
-
-      static final FieldName lineup1 = FieldName.forField("lineup1");
+      static final FieldName extInfo = FieldName.forField("extInfo", "ext_info");
 
       static final FieldName lineup2 = FieldName.forField("lineup2");
+
+      static final FieldName lineup1 = FieldName.forField("lineup1");
     }
   }
 }

@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message GetSceneMapInfoCsReq {
+	repeated uint32 entry_id_list = 15;
+	uint32 PBAMLLJIGEH = 4;
+	bool PNFPBICGDPC = 13;
 	uint32 map_entry_id = 14;
-	uint32 PHHDECMGCBC = 12;
-	bool MFDIBEECLPP = 6;
-	repeated uint32 entry_id_list = 1;
 }

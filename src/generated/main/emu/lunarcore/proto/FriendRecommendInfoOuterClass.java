@@ -19,12 +19,12 @@ public final class FriendRecommendInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool BBEAAGPAIFD = 11;</code>
+     * <code>optional bool NBHIADFEKFF = 11;</code>
      */
-    private boolean bBEAAGPAIFD;
+    private boolean nBHIADFEKFF;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
@@ -39,44 +39,44 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional bool BBEAAGPAIFD = 11;</code>
-     * @return whether the bBEAAGPAIFD field is set
+     * <code>optional bool NBHIADFEKFF = 11;</code>
+     * @return whether the nBHIADFEKFF field is set
      */
-    public boolean hasBBEAAGPAIFD() {
+    public boolean hasNBHIADFEKFF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool BBEAAGPAIFD = 11;</code>
+     * <code>optional bool NBHIADFEKFF = 11;</code>
      * @return this
      */
-    public FriendRecommendInfo clearBBEAAGPAIFD() {
+    public FriendRecommendInfo clearNBHIADFEKFF() {
       bitField0_ &= ~0x00000001;
-      bBEAAGPAIFD = false;
+      nBHIADFEKFF = false;
       return this;
     }
 
     /**
-     * <code>optional bool BBEAAGPAIFD = 11;</code>
-     * @return the bBEAAGPAIFD
+     * <code>optional bool NBHIADFEKFF = 11;</code>
+     * @return the nBHIADFEKFF
      */
-    public boolean getBBEAAGPAIFD() {
-      return bBEAAGPAIFD;
+    public boolean getNBHIADFEKFF() {
+      return nBHIADFEKFF;
     }
 
     /**
-     * <code>optional bool BBEAAGPAIFD = 11;</code>
-     * @param value the bBEAAGPAIFD to set
+     * <code>optional bool NBHIADFEKFF = 11;</code>
+     * @param value the nBHIADFEKFF to set
      * @return this
      */
-    public FriendRecommendInfo setBBEAAGPAIFD(final boolean value) {
+    public FriendRecommendInfo setNBHIADFEKFF(final boolean value) {
       bitField0_ |= 0x00000001;
-      bBEAAGPAIFD = value;
+      nBHIADFEKFF = value;
       return this;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
@@ -84,7 +84,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      * @return this
      */
     public FriendRecommendInfo clearSimpleInfo() {
@@ -94,7 +94,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class FriendRecommendInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 14;</code>
+     * <code>optional .SimpleInfo simple_info = 13;</code>
      * @param value the simpleInfo to set
      * @return this
      */
@@ -137,7 +137,7 @@ public final class FriendRecommendInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        bBEAAGPAIFD = other.bBEAAGPAIFD;
+        nBHIADFEKFF = other.nBHIADFEKFF;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -149,8 +149,8 @@ public final class FriendRecommendInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasBBEAAGPAIFD()) {
-        setBBEAAGPAIFD(other.bBEAAGPAIFD);
+      if (other.hasNBHIADFEKFF()) {
+        setNBHIADFEKFF(other.nBHIADFEKFF);
       }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
@@ -165,7 +165,7 @@ public final class FriendRecommendInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      bBEAAGPAIFD = false;
+      nBHIADFEKFF = false;
       simpleInfo.clear();
       return this;
     }
@@ -191,7 +191,7 @@ public final class FriendRecommendInfoOuterClass {
       }
       FriendRecommendInfo other = (FriendRecommendInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasBBEAAGPAIFD() || bBEAAGPAIFD == other.bBEAAGPAIFD)
+        && (!hasNBHIADFEKFF() || nBHIADFEKFF == other.nBHIADFEKFF)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
@@ -199,10 +199,10 @@ public final class FriendRecommendInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 88);
-        output.writeBoolNoTag(bBEAAGPAIFD);
+        output.writeBoolNoTag(nBHIADFEKFF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 106);
         output.writeMessageNoTag(simpleInfo);
       }
     }
@@ -227,15 +227,15 @@ public final class FriendRecommendInfoOuterClass {
       while (true) {
         switch (tag) {
           case 88: {
-            // bBEAAGPAIFD
-            bBEAAGPAIFD = input.readBool();
+            // nBHIADFEKFF
+            nBHIADFEKFF = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 106) {
               break;
             }
           }
-          case 114: {
+          case 106: {
             // simpleInfo
             input.readMessage(simpleInfo);
             bitField0_ |= 0x00000002;
@@ -262,7 +262,7 @@ public final class FriendRecommendInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.bBEAAGPAIFD, bBEAAGPAIFD);
+        output.writeBool(FieldNames.nBHIADFEKFF, nBHIADFEKFF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
@@ -277,10 +277,10 @@ public final class FriendRecommendInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1599689100: {
-            if (input.isAtField(FieldNames.bBEAAGPAIFD)) {
+          case -1853085804: {
+            if (input.isAtField(FieldNames.nBHIADFEKFF)) {
               if (!input.trySkipNullValue()) {
-                bBEAAGPAIFD = input.readBool();
+                nBHIADFEKFF = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -353,7 +353,7 @@ public final class FriendRecommendInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName bBEAAGPAIFD = FieldName.forField("BBEAAGPAIFD");
+      static final FieldName nBHIADFEKFF = FieldName.forField("NBHIADFEKFF");
 
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }

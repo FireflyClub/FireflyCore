@@ -21,34 +21,34 @@ public final class WolfBroGameDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 8;</code>
+     * <code>optional uint32 PPINPEHJFAB = 1;</code>
+     */
+    private int pPINPEHJFAB;
+
+    /**
+     * <code>optional uint32 id = 4;</code>
      */
     private int id;
 
     /**
-     * <code>optional uint32 NLIAEPNOKAE = 14;</code>
+     * <code>optional bool HFNEKMMMFHO = 9;</code>
      */
-    private int nLIAEPNOKAE;
+    private boolean hFNEKMMMFHO;
 
     /**
-     * <code>optional bool BOBGLLPPDKE = 13;</code>
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
      */
-    private boolean bOBGLLPPDKE;
+    private final WolfBroGameInfoOuterClass.WolfBroGameInfo kPPEHBJLAAA = WolfBroGameInfoOuterClass.WolfBroGameInfo.newInstance();
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
+     * <code>optional string NIEPAOBBFJF = 15;</code>
      */
-    private final WolfBroGameInfoOuterClass.WolfBroGameInfo gGKOINMJHHK = WolfBroGameInfoOuterClass.WolfBroGameInfo.newInstance();
+    private final Utf8String nIEPAOBBFJF = Utf8String.newEmptyInstance();
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
      */
-    private final Utf8String bBFJNPDGLGF = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
-     */
-    private final RepeatedMessage<VectorOuterClass.Vector> fLPJKKCPIOO = RepeatedMessage.newEmptyInstance(VectorOuterClass.Vector.getFactory());
+    private final RepeatedMessage<VectorOuterClass.Vector> jBOFIALLOPI = RepeatedMessage.newEmptyInstance(VectorOuterClass.Vector.getFactory());
 
     private WolfBroGameData() {
     }
@@ -61,25 +61,62 @@ public final class WolfBroGameDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 8;</code>
-     * @return whether the id field is set
+     * <code>optional uint32 PPINPEHJFAB = 1;</code>
+     * @return whether the pPINPEHJFAB field is set
      */
-    public boolean hasId() {
+    public boolean hasPPINPEHJFAB() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 id = 8;</code>
+     * <code>optional uint32 PPINPEHJFAB = 1;</code>
+     * @return this
+     */
+    public WolfBroGameData clearPPINPEHJFAB() {
+      bitField0_ &= ~0x00000001;
+      pPINPEHJFAB = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 PPINPEHJFAB = 1;</code>
+     * @return the pPINPEHJFAB
+     */
+    public int getPPINPEHJFAB() {
+      return pPINPEHJFAB;
+    }
+
+    /**
+     * <code>optional uint32 PPINPEHJFAB = 1;</code>
+     * @param value the pPINPEHJFAB to set
+     * @return this
+     */
+    public WolfBroGameData setPPINPEHJFAB(final int value) {
+      bitField0_ |= 0x00000001;
+      pPINPEHJFAB = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 id = 4;</code>
+     * @return whether the id field is set
+     */
+    public boolean hasId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 id = 4;</code>
      * @return this
      */
     public WolfBroGameData clearId() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 8;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return the id
      */
     public int getId() {
@@ -87,124 +124,87 @@ public final class WolfBroGameDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 8;</code>
+     * <code>optional uint32 id = 4;</code>
      * @param value the id to set
      * @return this
      */
     public WolfBroGameData setId(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       id = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 NLIAEPNOKAE = 14;</code>
-     * @return whether the nLIAEPNOKAE field is set
+     * <code>optional bool HFNEKMMMFHO = 9;</code>
+     * @return whether the hFNEKMMMFHO field is set
      */
-    public boolean hasNLIAEPNOKAE() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 NLIAEPNOKAE = 14;</code>
-     * @return this
-     */
-    public WolfBroGameData clearNLIAEPNOKAE() {
-      bitField0_ &= ~0x00000002;
-      nLIAEPNOKAE = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 NLIAEPNOKAE = 14;</code>
-     * @return the nLIAEPNOKAE
-     */
-    public int getNLIAEPNOKAE() {
-      return nLIAEPNOKAE;
-    }
-
-    /**
-     * <code>optional uint32 NLIAEPNOKAE = 14;</code>
-     * @param value the nLIAEPNOKAE to set
-     * @return this
-     */
-    public WolfBroGameData setNLIAEPNOKAE(final int value) {
-      bitField0_ |= 0x00000002;
-      nLIAEPNOKAE = value;
-      return this;
-    }
-
-    /**
-     * <code>optional bool BOBGLLPPDKE = 13;</code>
-     * @return whether the bOBGLLPPDKE field is set
-     */
-    public boolean hasBOBGLLPPDKE() {
+    public boolean hasHFNEKMMMFHO() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool BOBGLLPPDKE = 13;</code>
+     * <code>optional bool HFNEKMMMFHO = 9;</code>
      * @return this
      */
-    public WolfBroGameData clearBOBGLLPPDKE() {
+    public WolfBroGameData clearHFNEKMMMFHO() {
       bitField0_ &= ~0x00000004;
-      bOBGLLPPDKE = false;
+      hFNEKMMMFHO = false;
       return this;
     }
 
     /**
-     * <code>optional bool BOBGLLPPDKE = 13;</code>
-     * @return the bOBGLLPPDKE
+     * <code>optional bool HFNEKMMMFHO = 9;</code>
+     * @return the hFNEKMMMFHO
      */
-    public boolean getBOBGLLPPDKE() {
-      return bOBGLLPPDKE;
+    public boolean getHFNEKMMMFHO() {
+      return hFNEKMMMFHO;
     }
 
     /**
-     * <code>optional bool BOBGLLPPDKE = 13;</code>
-     * @param value the bOBGLLPPDKE to set
+     * <code>optional bool HFNEKMMMFHO = 9;</code>
+     * @param value the hFNEKMMMFHO to set
      * @return this
      */
-    public WolfBroGameData setBOBGLLPPDKE(final boolean value) {
+    public WolfBroGameData setHFNEKMMMFHO(final boolean value) {
       bitField0_ |= 0x00000004;
-      bOBGLLPPDKE = value;
+      hFNEKMMMFHO = value;
       return this;
     }
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
-     * @return whether the gGKOINMJHHK field is set
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
+     * @return whether the kPPEHBJLAAA field is set
      */
-    public boolean hasGGKOINMJHHK() {
+    public boolean hasKPPEHBJLAAA() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
      * @return this
      */
-    public WolfBroGameData clearGGKOINMJHHK() {
+    public WolfBroGameData clearKPPEHBJLAAA() {
       bitField0_ &= ~0x00000008;
-      gGKOINMJHHK.clear();
+      kPPEHBJLAAA.clear();
       return this;
     }
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGGKOINMJHHK()} if you want to modify it.
+     * Use {@link #getMutableKPPEHBJLAAA()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public WolfBroGameInfoOuterClass.WolfBroGameInfo getGGKOINMJHHK() {
-      return gGKOINMJHHK;
+    public WolfBroGameInfoOuterClass.WolfBroGameInfo getKPPEHBJLAAA() {
+      return kPPEHBJLAAA;
     }
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -212,121 +212,121 @@ public final class WolfBroGameDataOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public WolfBroGameInfoOuterClass.WolfBroGameInfo getMutableGGKOINMJHHK() {
+    public WolfBroGameInfoOuterClass.WolfBroGameInfo getMutableKPPEHBJLAAA() {
       bitField0_ |= 0x00000008;
-      return gGKOINMJHHK;
+      return kPPEHBJLAAA;
     }
 
     /**
-     * <code>optional .WolfBroGameInfo GGKOINMJHHK = 7;</code>
-     * @param value the gGKOINMJHHK to set
+     * <code>optional .WolfBroGameInfo KPPEHBJLAAA = 6;</code>
+     * @param value the kPPEHBJLAAA to set
      * @return this
      */
-    public WolfBroGameData setGGKOINMJHHK(final WolfBroGameInfoOuterClass.WolfBroGameInfo value) {
+    public WolfBroGameData setKPPEHBJLAAA(final WolfBroGameInfoOuterClass.WolfBroGameInfo value) {
       bitField0_ |= 0x00000008;
-      gGKOINMJHHK.copyFrom(value);
+      kPPEHBJLAAA.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @return whether the bBFJNPDGLGF field is set
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @return whether the nIEPAOBBFJF field is set
      */
-    public boolean hasBBFJNPDGLGF() {
+    public boolean hasNIEPAOBBFJF() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
+     * <code>optional string NIEPAOBBFJF = 15;</code>
      * @return this
      */
-    public WolfBroGameData clearBBFJNPDGLGF() {
+    public WolfBroGameData clearNIEPAOBBFJF() {
       bitField0_ &= ~0x00000010;
-      bBFJNPDGLGF.clear();
+      nIEPAOBBFJF.clear();
       return this;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @return the bBFJNPDGLGF
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @return the nIEPAOBBFJF
      */
-    public String getBBFJNPDGLGF() {
-      return bBFJNPDGLGF.getString();
+    public String getNIEPAOBBFJF() {
+      return nIEPAOBBFJF.getString();
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @return internal {@code Utf8String} representation of bBFJNPDGLGF for reading
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @return internal {@code Utf8String} representation of nIEPAOBBFJF for reading
      */
-    public Utf8String getBBFJNPDGLGFBytes() {
-      return this.bBFJNPDGLGF;
+    public Utf8String getNIEPAOBBFJFBytes() {
+      return this.nIEPAOBBFJF;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @return internal {@code Utf8String} representation of bBFJNPDGLGF for modifications
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @return internal {@code Utf8String} representation of nIEPAOBBFJF for modifications
      */
-    public Utf8String getMutableBBFJNPDGLGFBytes() {
+    public Utf8String getMutableNIEPAOBBFJFBytes() {
       bitField0_ |= 0x00000010;
-      return this.bBFJNPDGLGF;
+      return this.nIEPAOBBFJF;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @param value the bBFJNPDGLGF to set
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @param value the nIEPAOBBFJF to set
      * @return this
      */
-    public WolfBroGameData setBBFJNPDGLGF(final CharSequence value) {
+    public WolfBroGameData setNIEPAOBBFJF(final CharSequence value) {
       bitField0_ |= 0x00000010;
-      bBFJNPDGLGF.copyFrom(value);
+      nIEPAOBBFJF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string BBFJNPDGLGF = 5;</code>
-     * @param value the bBFJNPDGLGF to set
+     * <code>optional string NIEPAOBBFJF = 15;</code>
+     * @param value the nIEPAOBBFJF to set
      * @return this
      */
-    public WolfBroGameData setBBFJNPDGLGF(final Utf8String value) {
+    public WolfBroGameData setNIEPAOBBFJF(final Utf8String value) {
       bitField0_ |= 0x00000010;
-      bBFJNPDGLGF.copyFrom(value);
+      nIEPAOBBFJF.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
-     * @return whether the fLPJKKCPIOO field is set
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
+     * @return whether the jBOFIALLOPI field is set
      */
-    public boolean hasFLPJKKCPIOO() {
+    public boolean hasJBOFIALLOPI() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
      * @return this
      */
-    public WolfBroGameData clearFLPJKKCPIOO() {
+    public WolfBroGameData clearJBOFIALLOPI() {
       bitField0_ &= ~0x00000020;
-      fLPJKKCPIOO.clear();
+      jBOFIALLOPI.clear();
       return this;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableFLPJKKCPIOO()} if you want to modify it.
+     * Use {@link #getMutableJBOFIALLOPI()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<VectorOuterClass.Vector> getFLPJKKCPIOO() {
-      return fLPJKKCPIOO;
+    public RepeatedMessage<VectorOuterClass.Vector> getJBOFIALLOPI() {
+      return jBOFIALLOPI;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -334,30 +334,30 @@ public final class WolfBroGameDataOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<VectorOuterClass.Vector> getMutableFLPJKKCPIOO() {
+    public RepeatedMessage<VectorOuterClass.Vector> getMutableJBOFIALLOPI() {
       bitField0_ |= 0x00000020;
-      return fLPJKKCPIOO;
+      return jBOFIALLOPI;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
-     * @param value the fLPJKKCPIOO to add
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
+     * @param value the jBOFIALLOPI to add
      * @return this
      */
-    public WolfBroGameData addFLPJKKCPIOO(final VectorOuterClass.Vector value) {
+    public WolfBroGameData addJBOFIALLOPI(final VectorOuterClass.Vector value) {
       bitField0_ |= 0x00000020;
-      fLPJKKCPIOO.add(value);
+      jBOFIALLOPI.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .Vector FLPJKKCPIOO = 6;</code>
-     * @param values the fLPJKKCPIOO to add
+     * <code>repeated .Vector JBOFIALLOPI = 10;</code>
+     * @param values the jBOFIALLOPI to add
      * @return this
      */
-    public WolfBroGameData addAllFLPJKKCPIOO(final VectorOuterClass.Vector... values) {
+    public WolfBroGameData addAllJBOFIALLOPI(final VectorOuterClass.Vector... values) {
       bitField0_ |= 0x00000020;
-      fLPJKKCPIOO.addAll(values);
+      jBOFIALLOPI.addAll(values);
       return this;
     }
 
@@ -366,12 +366,12 @@ public final class WolfBroGameDataOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        pPINPEHJFAB = other.pPINPEHJFAB;
         id = other.id;
-        nLIAEPNOKAE = other.nLIAEPNOKAE;
-        bOBGLLPPDKE = other.bOBGLLPPDKE;
-        gGKOINMJHHK.copyFrom(other.gGKOINMJHHK);
-        bBFJNPDGLGF.copyFrom(other.bBFJNPDGLGF);
-        fLPJKKCPIOO.copyFrom(other.fLPJKKCPIOO);
+        hFNEKMMMFHO = other.hFNEKMMMFHO;
+        kPPEHBJLAAA.copyFrom(other.kPPEHBJLAAA);
+        nIEPAOBBFJF.copyFrom(other.nIEPAOBBFJF);
+        jBOFIALLOPI.copyFrom(other.jBOFIALLOPI);
       }
       return this;
     }
@@ -382,23 +382,23 @@ public final class WolfBroGameDataOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPPINPEHJFAB()) {
+        setPPINPEHJFAB(other.pPINPEHJFAB);
+      }
       if (other.hasId()) {
         setId(other.id);
       }
-      if (other.hasNLIAEPNOKAE()) {
-        setNLIAEPNOKAE(other.nLIAEPNOKAE);
+      if (other.hasHFNEKMMMFHO()) {
+        setHFNEKMMMFHO(other.hFNEKMMMFHO);
       }
-      if (other.hasBOBGLLPPDKE()) {
-        setBOBGLLPPDKE(other.bOBGLLPPDKE);
+      if (other.hasKPPEHBJLAAA()) {
+        getMutableKPPEHBJLAAA().mergeFrom(other.kPPEHBJLAAA);
       }
-      if (other.hasGGKOINMJHHK()) {
-        getMutableGGKOINMJHHK().mergeFrom(other.gGKOINMJHHK);
+      if (other.hasNIEPAOBBFJF()) {
+        getMutableNIEPAOBBFJFBytes().copyFrom(other.nIEPAOBBFJF);
       }
-      if (other.hasBBFJNPDGLGF()) {
-        getMutableBBFJNPDGLGFBytes().copyFrom(other.bBFJNPDGLGF);
-      }
-      if (other.hasFLPJKKCPIOO()) {
-        getMutableFLPJKKCPIOO().addAll(other.fLPJKKCPIOO);
+      if (other.hasJBOFIALLOPI()) {
+        getMutableJBOFIALLOPI().addAll(other.jBOFIALLOPI);
       }
       return this;
     }
@@ -410,12 +410,12 @@ public final class WolfBroGameDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      pPINPEHJFAB = 0;
       id = 0;
-      nLIAEPNOKAE = 0;
-      bOBGLLPPDKE = false;
-      gGKOINMJHHK.clear();
-      bBFJNPDGLGF.clear();
-      fLPJKKCPIOO.clear();
+      hFNEKMMMFHO = false;
+      kPPEHBJLAAA.clear();
+      nIEPAOBBFJF.clear();
+      jBOFIALLOPI.clear();
       return this;
     }
 
@@ -426,9 +426,9 @@ public final class WolfBroGameDataOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      gGKOINMJHHK.clearQuick();
-      bBFJNPDGLGF.clear();
-      fLPJKKCPIOO.clearQuick();
+      kPPEHBJLAAA.clearQuick();
+      nIEPAOBBFJF.clear();
+      jBOFIALLOPI.clearQuick();
       return this;
     }
 
@@ -442,40 +442,40 @@ public final class WolfBroGameDataOuterClass {
       }
       WolfBroGameData other = (WolfBroGameData) o;
       return bitField0_ == other.bitField0_
+        && (!hasPPINPEHJFAB() || pPINPEHJFAB == other.pPINPEHJFAB)
         && (!hasId() || id == other.id)
-        && (!hasNLIAEPNOKAE() || nLIAEPNOKAE == other.nLIAEPNOKAE)
-        && (!hasBOBGLLPPDKE() || bOBGLLPPDKE == other.bOBGLLPPDKE)
-        && (!hasGGKOINMJHHK() || gGKOINMJHHK.equals(other.gGKOINMJHHK))
-        && (!hasBBFJNPDGLGF() || bBFJNPDGLGF.equals(other.bBFJNPDGLGF))
-        && (!hasFLPJKKCPIOO() || fLPJKKCPIOO.equals(other.fLPJKKCPIOO));
+        && (!hasHFNEKMMMFHO() || hFNEKMMMFHO == other.hFNEKMMMFHO)
+        && (!hasKPPEHBJLAAA() || kPPEHBJLAAA.equals(other.kPPEHBJLAAA))
+        && (!hasNIEPAOBBFJF() || nIEPAOBBFJF.equals(other.nIEPAOBBFJF))
+        && (!hasJBOFIALLOPI() || jBOFIALLOPI.equals(other.jBOFIALLOPI));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(id);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(pPINPEHJFAB);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(nLIAEPNOKAE);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeBoolNoTag(bOBGLLPPDKE);
+        output.writeRawByte((byte) 72);
+        output.writeBoolNoTag(hFNEKMMMFHO);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 58);
-        output.writeMessageNoTag(gGKOINMJHHK);
+        output.writeRawByte((byte) 50);
+        output.writeMessageNoTag(kPPEHBJLAAA);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 42);
-        output.writeStringNoTag(bBFJNPDGLGF);
+        output.writeRawByte((byte) 122);
+        output.writeStringNoTag(nIEPAOBBFJF);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < fLPJKKCPIOO.length(); i++) {
-          output.writeRawByte((byte) 50);
-          output.writeMessageNoTag(fLPJKKCPIOO.get(i));
+        for (int i = 0; i < jBOFIALLOPI.length(); i++) {
+          output.writeRawByte((byte) 82);
+          output.writeMessageNoTag(jBOFIALLOPI.get(i));
         }
       }
     }
@@ -484,22 +484,22 @@ public final class WolfBroGameDataOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pPINPEHJFAB);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(nLIAEPNOKAE);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(gGKOINMJHHK);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(kPPEHBJLAAA);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(bBFJNPDGLGF);
+        size += 1 + ProtoSink.computeStringSizeNoTag(nIEPAOBBFJF);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * fLPJKKCPIOO.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(fLPJKKCPIOO);
+        size += (1 * jBOFIALLOPI.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(jBOFIALLOPI);
       }
       return size;
     }
@@ -511,54 +511,54 @@ public final class WolfBroGameDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
-            // id
-            id = input.readUInt32();
+          case 8: {
+            // pPINPEHJFAB
+            pPINPEHJFAB = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 32) {
               break;
             }
           }
-          case 112: {
-            // nLIAEPNOKAE
-            nLIAEPNOKAE = input.readUInt32();
+          case 32: {
+            // id
+            id = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 72) {
               break;
             }
           }
-          case 104: {
-            // bOBGLLPPDKE
-            bOBGLLPPDKE = input.readBool();
+          case 72: {
+            // hFNEKMMMFHO
+            hFNEKMMMFHO = input.readBool();
             bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
-            // gGKOINMJHHK
-            input.readMessage(gGKOINMJHHK);
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 42) {
-              break;
-            }
-          }
-          case 42: {
-            // bBFJNPDGLGF
-            input.readString(bBFJNPDGLGF);
-            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 50) {
               break;
             }
           }
           case 50: {
-            // fLPJKKCPIOO
-            tag = input.readRepeatedMessage(fLPJKKCPIOO, tag);
+            // kPPEHBJLAAA
+            input.readMessage(kPPEHBJLAAA);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 122) {
+              break;
+            }
+          }
+          case 122: {
+            // nIEPAOBBFJF
+            input.readString(nIEPAOBBFJF);
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // jBOFIALLOPI
+            tag = input.readRepeatedMessage(jBOFIALLOPI, tag);
             bitField0_ |= 0x00000020;
             if (tag != 0) {
               break;
@@ -582,22 +582,22 @@ public final class WolfBroGameDataOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.pPINPEHJFAB, pPINPEHJFAB);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.nLIAEPNOKAE, nLIAEPNOKAE);
+        output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.bOBGLLPPDKE, bOBGLLPPDKE);
+        output.writeBool(FieldNames.hFNEKMMMFHO, hFNEKMMMFHO);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.gGKOINMJHHK, gGKOINMJHHK);
+        output.writeMessage(FieldNames.kPPEHBJLAAA, kPPEHBJLAAA);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeString(FieldNames.bBFJNPDGLGF, bBFJNPDGLGF);
+        output.writeString(FieldNames.nIEPAOBBFJF, nIEPAOBBFJF);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedMessage(FieldNames.fLPJKKCPIOO, fLPJKKCPIOO);
+        output.writeRepeatedMessage(FieldNames.jBOFIALLOPI, jBOFIALLOPI);
       }
       output.endObject();
     }
@@ -609,10 +609,10 @@ public final class WolfBroGameDataOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3355: {
-            if (input.isAtField(FieldNames.id)) {
+          case -833306869: {
+            if (input.isAtField(FieldNames.pPINPEHJFAB)) {
               if (!input.trySkipNullValue()) {
-                id = input.readUInt32();
+                pPINPEHJFAB = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -620,10 +620,10 @@ public final class WolfBroGameDataOuterClass {
             }
             break;
           }
-          case 1512961645: {
-            if (input.isAtField(FieldNames.nLIAEPNOKAE)) {
+          case 3355: {
+            if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
-                nLIAEPNOKAE = input.readUInt32();
+                id = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -631,10 +631,10 @@ public final class WolfBroGameDataOuterClass {
             }
             break;
           }
-          case 156152716: {
-            if (input.isAtField(FieldNames.bOBGLLPPDKE)) {
+          case -534002378: {
+            if (input.isAtField(FieldNames.hFNEKMMMFHO)) {
               if (!input.trySkipNullValue()) {
-                bOBGLLPPDKE = input.readBool();
+                hFNEKMMMFHO = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -642,10 +642,10 @@ public final class WolfBroGameDataOuterClass {
             }
             break;
           }
-          case 695600069: {
-            if (input.isAtField(FieldNames.gGKOINMJHHK)) {
+          case -1600235637: {
+            if (input.isAtField(FieldNames.kPPEHBJLAAA)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(gGKOINMJHHK);
+                input.readMessage(kPPEHBJLAAA);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -653,10 +653,10 @@ public final class WolfBroGameDataOuterClass {
             }
             break;
           }
-          case -1707344702: {
-            if (input.isAtField(FieldNames.bBFJNPDGLGF)) {
+          case 1819586030: {
+            if (input.isAtField(FieldNames.nIEPAOBBFJF)) {
               if (!input.trySkipNullValue()) {
-                input.readString(bBFJNPDGLGF);
+                input.readString(nIEPAOBBFJF);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -664,10 +664,10 @@ public final class WolfBroGameDataOuterClass {
             }
             break;
           }
-          case -1676373572: {
-            if (input.isAtField(FieldNames.fLPJKKCPIOO)) {
+          case -1231029503: {
+            if (input.isAtField(FieldNames.jBOFIALLOPI)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(fLPJKKCPIOO);
+                input.readRepeatedMessage(jBOFIALLOPI);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -728,17 +728,17 @@ public final class WolfBroGameDataOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName pPINPEHJFAB = FieldName.forField("PPINPEHJFAB");
+
       static final FieldName id = FieldName.forField("id");
 
-      static final FieldName nLIAEPNOKAE = FieldName.forField("NLIAEPNOKAE");
+      static final FieldName hFNEKMMMFHO = FieldName.forField("HFNEKMMMFHO");
 
-      static final FieldName bOBGLLPPDKE = FieldName.forField("BOBGLLPPDKE");
+      static final FieldName kPPEHBJLAAA = FieldName.forField("KPPEHBJLAAA");
 
-      static final FieldName gGKOINMJHHK = FieldName.forField("GGKOINMJHHK");
+      static final FieldName nIEPAOBBFJF = FieldName.forField("NIEPAOBBFJF");
 
-      static final FieldName bBFJNPDGLGF = FieldName.forField("BBFJNPDGLGF");
-
-      static final FieldName fLPJKKCPIOO = FieldName.forField("FLPJKKCPIOO");
+      static final FieldName jBOFIALLOPI = FieldName.forField("JBOFIALLOPI");
     }
   }
 }

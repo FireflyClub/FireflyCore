@@ -2,22 +2,22 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "MazeGroup.proto";
-import "MazeChest.proto";
 import "MazeProp.proto";
+import "MazeChest.proto";
+import "MazeGroup.proto";
 
 message MazeMapData {
-	map<string, int32> BOMLAPEJGIJ = 8;
-	repeated uint32 unlocked_teleport_list = 11;
-	repeated MazeGroup maze_group_list = 1;
-	uint32 entry_id = 9;
-	repeated MazeChest unlocked_chest_list = 7;
-	repeated uint32 lighten_section_list = 10;
-	uint32 EOBFHOFKJFM = 4;
-	uint32 PHHDECMGCBC = 3;
-	uint32 retcode = 6;
-	//repeated MDPNLIODAPD DCKLOFCGOMC = 2;
-	uint32 PHPHBMIAOGG = 12;
+	repeated MazeChest unlocked_chest_list = 11;
+	uint32 map_entry_id = 1;
+	repeated uint32 lighten_section_list = 15;
 	repeated MazeProp maze_prop_list = 5;
-	uint32 map_entry_id = 13;
+	uint32 dimension_id = 2;
+	uint32 entry_id = 10;
+	map<string, int32> PBKKPKGOBOK = 8;
+	//repeated BKCEKEKHJCA GCELHDACAJK = 9;
+	repeated uint32 unlocked_teleport_list = 6;
+	uint32 PBAMLLJIGEH = 13;
+	repeated MazeGroup maze_group_list = 3;
+	uint32 retcode = 12;
+	uint32 KPEADJCPCNK = 4;
 }

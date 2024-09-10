@@ -22,7 +22,7 @@ public class PacketStartCocoonStageScRsp extends BasePacket {
         var data = StartCocoonStageScRsp.newInstance()
                 .setBattleInfo(battle.toProto())
                 .setCocoonId(cocoonId)
-                .setMonsterWave(wave);
+                .setWave(wave);
         
         this.setData(data);
     }

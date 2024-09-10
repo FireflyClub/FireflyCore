@@ -19,12 +19,12 @@ public final class MarkReadMailScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 5;</code>
      */
     private int id;
 
@@ -39,7 +39,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public MarkReadMailScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -84,7 +84,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return this
      */
     public MarkReadMailScRsp clearId() {
@@ -94,7 +94,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 5;</code>
      * @return the id
      */
     public int getId() {
@@ -102,7 +102,7 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 13;</code>
+     * <code>optional uint32 id = 5;</code>
      * @param value the id to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class MarkReadMailScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(id);
       }
     }
@@ -205,16 +205,16 @@ public final class MarkReadMailScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 32: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 40) {
               break;
             }
           }
-          case 104: {
+          case 40: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000002;

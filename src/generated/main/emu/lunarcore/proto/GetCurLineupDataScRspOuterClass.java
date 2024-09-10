@@ -24,7 +24,7 @@ public final class GetCurLineupDataScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      */
     private final LineupInfoOuterClass.LineupInfo lineup = LineupInfoOuterClass.LineupInfo.newInstance();
 
@@ -76,7 +76,7 @@ public final class GetCurLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      * @return whether the lineup field is set
      */
     public boolean hasLineup() {
@@ -84,7 +84,7 @@ public final class GetCurLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      * @return this
      */
     public GetCurLineupDataScRsp clearLineup() {
@@ -94,7 +94,7 @@ public final class GetCurLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class GetCurLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class GetCurLineupDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 15;</code>
+     * <code>optional .LineupInfo lineup = 14;</code>
      * @param value the lineup to set
      * @return this
      */
@@ -202,7 +202,7 @@ public final class GetCurLineupDataScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 114);
         output.writeMessageNoTag(lineup);
       }
     }
@@ -231,11 +231,11 @@ public final class GetCurLineupDataScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 114) {
               break;
             }
           }
-          case 122: {
+          case 114: {
             // lineup
             input.readMessage(lineup);
             bitField0_ |= 0x00000002;

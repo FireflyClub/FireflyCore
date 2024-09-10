@@ -3,13 +3,13 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RelicRecommendScRsp {
-    //repeated NJFONLGIGPK LMOGIABFFLA = 14;
-    uint32 retcode = 10;
-    //repeated PENKOAFKHKL NOOCBPMNMAC = 1;
-    //repeated PENKOAFKHKL BOMPHGJMNIB = 6;
-    bool enable = 9;
-    uint32 avatar_id = 2;
-    //repeated NJFONLGIGPK EEKMLEGAHHA = 13;
-    //repeated PENKOAFKHKL MOANGCKPLDG = 4;
-    //repeated PENKOAFKHKL OHDNAJNCKOG = 8;
+	//repeated KICJFOMNINL FICFDEBBFPF = 1;
+	//repeated KICJFOMNINL KOCCBHMJNPB = 7;
+	uint32 retcode = 11;
+	//repeated OPJNIHCPEIL EMOGIHMAKBG = 13;
+	//repeated OPJNIHCPEIL JJNGMADFMKA = 4;
+	//repeated KICJFOMNINL PNAFGFMGOMJ = 15;
+	uint32 avatar_id = 3;
+	bool is_enable = 12;
+	//repeated KICJFOMNINL HLLBBAMOAIA = 2;
 }

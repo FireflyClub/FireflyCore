@@ -19,14 +19,14 @@ public final class ClientMailAttachmentItemOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 item_id = 5;</code>
-     */
-    private int itemId;
-
-    /**
-     * <code>optional uint32 mail_id = 15;</code>
+     * <code>optional uint32 mail_id = 10;</code>
      */
     private int mailId;
+
+    /**
+     * <code>optional uint32 item_id = 11;</code>
+     */
+    private int itemId;
 
     private ClientMailAttachmentItem() {
     }
@@ -39,62 +39,25 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 5;</code>
-     * @return whether the itemId field is set
+     * <code>optional uint32 mail_id = 10;</code>
+     * @return whether the mailId field is set
      */
-    public boolean hasItemId() {
+    public boolean hasMailId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 item_id = 5;</code>
-     * @return this
-     */
-    public ClientMailAttachmentItem clearItemId() {
-      bitField0_ &= ~0x00000001;
-      itemId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 item_id = 5;</code>
-     * @return the itemId
-     */
-    public int getItemId() {
-      return itemId;
-    }
-
-    /**
-     * <code>optional uint32 item_id = 5;</code>
-     * @param value the itemId to set
-     * @return this
-     */
-    public ClientMailAttachmentItem setItemId(final int value) {
-      bitField0_ |= 0x00000001;
-      itemId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 mail_id = 15;</code>
-     * @return whether the mailId field is set
-     */
-    public boolean hasMailId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 mail_id = 15;</code>
+     * <code>optional uint32 mail_id = 10;</code>
      * @return this
      */
     public ClientMailAttachmentItem clearMailId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       mailId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 mail_id = 15;</code>
+     * <code>optional uint32 mail_id = 10;</code>
      * @return the mailId
      */
     public int getMailId() {
@@ -102,13 +65,50 @@ public final class ClientMailAttachmentItemOuterClass {
     }
 
     /**
-     * <code>optional uint32 mail_id = 15;</code>
+     * <code>optional uint32 mail_id = 10;</code>
      * @param value the mailId to set
      * @return this
      */
     public ClientMailAttachmentItem setMailId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       mailId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 11;</code>
+     * @return whether the itemId field is set
+     */
+    public boolean hasItemId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 11;</code>
+     * @return this
+     */
+    public ClientMailAttachmentItem clearItemId() {
+      bitField0_ &= ~0x00000002;
+      itemId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 11;</code>
+     * @return the itemId
+     */
+    public int getItemId() {
+      return itemId;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 11;</code>
+     * @param value the itemId to set
+     * @return this
+     */
+    public ClientMailAttachmentItem setItemId(final int value) {
+      bitField0_ |= 0x00000002;
+      itemId = value;
       return this;
     }
 
@@ -117,8 +117,8 @@ public final class ClientMailAttachmentItemOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        itemId = other.itemId;
         mailId = other.mailId;
+        itemId = other.itemId;
       }
       return this;
     }
@@ -129,11 +129,11 @@ public final class ClientMailAttachmentItemOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasItemId()) {
-        setItemId(other.itemId);
-      }
       if (other.hasMailId()) {
         setMailId(other.mailId);
+      }
+      if (other.hasItemId()) {
+        setItemId(other.itemId);
       }
       return this;
     }
@@ -145,8 +145,8 @@ public final class ClientMailAttachmentItemOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      itemId = 0;
       mailId = 0;
+      itemId = 0;
       return this;
     }
 
@@ -170,19 +170,19 @@ public final class ClientMailAttachmentItemOuterClass {
       }
       ClientMailAttachmentItem other = (ClientMailAttachmentItem) o;
       return bitField0_ == other.bitField0_
-        && (!hasItemId() || itemId == other.itemId)
-        && (!hasMailId() || mailId == other.mailId);
+        && (!hasMailId() || mailId == other.mailId)
+        && (!hasItemId() || itemId == other.itemId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(itemId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(mailId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(mailId);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(itemId);
       }
     }
 
@@ -190,10 +190,10 @@ public final class ClientMailAttachmentItemOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(itemId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mailId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mailId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(itemId);
       }
       return size;
     }
@@ -205,18 +205,18 @@ public final class ClientMailAttachmentItemOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // itemId
-            itemId = input.readUInt32();
+          case 80: {
+            // mailId
+            mailId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 88) {
               break;
             }
           }
-          case 120: {
-            // mailId
-            mailId = input.readUInt32();
+          case 88: {
+            // itemId
+            itemId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +241,10 @@ public final class ClientMailAttachmentItemOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.itemId, itemId);
+        output.writeUInt32(FieldNames.mailId, mailId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.mailId, mailId);
+        output.writeUInt32(FieldNames.itemId, itemId);
       }
       output.endObject();
     }
@@ -256,11 +256,11 @@ public final class ClientMailAttachmentItemOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1178662002:
-          case 2116204999: {
-            if (input.isAtField(FieldNames.itemId)) {
+          case -1081574094:
+          case 830962851: {
+            if (input.isAtField(FieldNames.mailId)) {
               if (!input.trySkipNullValue()) {
-                itemId = input.readUInt32();
+                mailId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -268,11 +268,11 @@ public final class ClientMailAttachmentItemOuterClass {
             }
             break;
           }
-          case -1081574094:
-          case 830962851: {
-            if (input.isAtField(FieldNames.mailId)) {
+          case -1178662002:
+          case 2116204999: {
+            if (input.isAtField(FieldNames.itemId)) {
               if (!input.trySkipNullValue()) {
-                mailId = input.readUInt32();
+                itemId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -333,9 +333,9 @@ public final class ClientMailAttachmentItemOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName itemId = FieldName.forField("itemId", "item_id");
-
       static final FieldName mailId = FieldName.forField("mailId", "mail_id");
+
+      static final FieldName itemId = FieldName.forField("itemId", "item_id");
     }
   }
 }

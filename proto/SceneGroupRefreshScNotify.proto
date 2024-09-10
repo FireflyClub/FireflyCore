@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "SceneGroupRefreshInfo.proto";
 
 message SceneGroupRefreshScNotify {
-	repeated SceneGroupRefreshInfo group_refresh_info = 12;
+	repeated SceneGroupRefreshInfo group_refresh_info = 8;
 }

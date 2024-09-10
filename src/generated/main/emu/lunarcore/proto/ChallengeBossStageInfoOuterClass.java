@@ -19,24 +19,24 @@ public final class ChallengeBossStageInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 buff_id = 3;</code>
+     * <code>optional uint32 buff_id = 9;</code>
      */
     private int buffId;
 
     /**
-     * <code>optional uint32 stage_score = 14;</code>
+     * <code>optional uint32 stage_score = 12;</code>
      */
     private int stageScore;
 
     /**
-     * <code>optional bool is_win = 12;</code>
+     * <code>optional bool is_win = 4;</code>
      */
     private boolean isWin;
 
     /**
-     * <code>optional bool CCFNICMLEID = 13;</code>
+     * <code>optional bool HGIDJHFNCMA = 5;</code>
      */
-    private boolean cCFNICMLEID;
+    private boolean hGIDJHFNCMA;
 
     private ChallengeBossStageInfo() {
     }
@@ -49,7 +49,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 3;</code>
+     * <code>optional uint32 buff_id = 9;</code>
      * @return whether the buffId field is set
      */
     public boolean hasBuffId() {
@@ -57,7 +57,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 3;</code>
+     * <code>optional uint32 buff_id = 9;</code>
      * @return this
      */
     public ChallengeBossStageInfo clearBuffId() {
@@ -67,7 +67,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 3;</code>
+     * <code>optional uint32 buff_id = 9;</code>
      * @return the buffId
      */
     public int getBuffId() {
@@ -75,7 +75,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 3;</code>
+     * <code>optional uint32 buff_id = 9;</code>
      * @param value the buffId to set
      * @return this
      */
@@ -86,7 +86,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_score = 14;</code>
+     * <code>optional uint32 stage_score = 12;</code>
      * @return whether the stageScore field is set
      */
     public boolean hasStageScore() {
@@ -94,7 +94,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_score = 14;</code>
+     * <code>optional uint32 stage_score = 12;</code>
      * @return this
      */
     public ChallengeBossStageInfo clearStageScore() {
@@ -104,7 +104,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_score = 14;</code>
+     * <code>optional uint32 stage_score = 12;</code>
      * @return the stageScore
      */
     public int getStageScore() {
@@ -112,7 +112,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_score = 14;</code>
+     * <code>optional uint32 stage_score = 12;</code>
      * @param value the stageScore to set
      * @return this
      */
@@ -123,7 +123,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 12;</code>
+     * <code>optional bool is_win = 4;</code>
      * @return whether the isWin field is set
      */
     public boolean hasIsWin() {
@@ -131,7 +131,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 12;</code>
+     * <code>optional bool is_win = 4;</code>
      * @return this
      */
     public ChallengeBossStageInfo clearIsWin() {
@@ -141,7 +141,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 12;</code>
+     * <code>optional bool is_win = 4;</code>
      * @return the isWin
      */
     public boolean getIsWin() {
@@ -149,7 +149,7 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_win = 12;</code>
+     * <code>optional bool is_win = 4;</code>
      * @param value the isWin to set
      * @return this
      */
@@ -160,39 +160,39 @@ public final class ChallengeBossStageInfoOuterClass {
     }
 
     /**
-     * <code>optional bool CCFNICMLEID = 13;</code>
-     * @return whether the cCFNICMLEID field is set
+     * <code>optional bool HGIDJHFNCMA = 5;</code>
+     * @return whether the hGIDJHFNCMA field is set
      */
-    public boolean hasCCFNICMLEID() {
+    public boolean hasHGIDJHFNCMA() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional bool CCFNICMLEID = 13;</code>
+     * <code>optional bool HGIDJHFNCMA = 5;</code>
      * @return this
      */
-    public ChallengeBossStageInfo clearCCFNICMLEID() {
+    public ChallengeBossStageInfo clearHGIDJHFNCMA() {
       bitField0_ &= ~0x00000008;
-      cCFNICMLEID = false;
+      hGIDJHFNCMA = false;
       return this;
     }
 
     /**
-     * <code>optional bool CCFNICMLEID = 13;</code>
-     * @return the cCFNICMLEID
+     * <code>optional bool HGIDJHFNCMA = 5;</code>
+     * @return the hGIDJHFNCMA
      */
-    public boolean getCCFNICMLEID() {
-      return cCFNICMLEID;
+    public boolean getHGIDJHFNCMA() {
+      return hGIDJHFNCMA;
     }
 
     /**
-     * <code>optional bool CCFNICMLEID = 13;</code>
-     * @param value the cCFNICMLEID to set
+     * <code>optional bool HGIDJHFNCMA = 5;</code>
+     * @param value the hGIDJHFNCMA to set
      * @return this
      */
-    public ChallengeBossStageInfo setCCFNICMLEID(final boolean value) {
+    public ChallengeBossStageInfo setHGIDJHFNCMA(final boolean value) {
       bitField0_ |= 0x00000008;
-      cCFNICMLEID = value;
+      hGIDJHFNCMA = value;
       return this;
     }
 
@@ -204,7 +204,7 @@ public final class ChallengeBossStageInfoOuterClass {
         buffId = other.buffId;
         stageScore = other.stageScore;
         isWin = other.isWin;
-        cCFNICMLEID = other.cCFNICMLEID;
+        hGIDJHFNCMA = other.hGIDJHFNCMA;
       }
       return this;
     }
@@ -224,8 +224,8 @@ public final class ChallengeBossStageInfoOuterClass {
       if (other.hasIsWin()) {
         setIsWin(other.isWin);
       }
-      if (other.hasCCFNICMLEID()) {
-        setCCFNICMLEID(other.cCFNICMLEID);
+      if (other.hasHGIDJHFNCMA()) {
+        setHGIDJHFNCMA(other.hGIDJHFNCMA);
       }
       return this;
     }
@@ -240,7 +240,7 @@ public final class ChallengeBossStageInfoOuterClass {
       buffId = 0;
       stageScore = 0;
       isWin = false;
-      cCFNICMLEID = false;
+      hGIDJHFNCMA = false;
       return this;
     }
 
@@ -267,26 +267,26 @@ public final class ChallengeBossStageInfoOuterClass {
         && (!hasBuffId() || buffId == other.buffId)
         && (!hasStageScore() || stageScore == other.stageScore)
         && (!hasIsWin() || isWin == other.isWin)
-        && (!hasCCFNICMLEID() || cCFNICMLEID == other.cCFNICMLEID);
+        && (!hasHGIDJHFNCMA() || hGIDJHFNCMA == other.hGIDJHFNCMA);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(buffId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(stageScore);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(isWin);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeBoolNoTag(cCFNICMLEID);
+        output.writeRawByte((byte) 40);
+        output.writeBoolNoTag(hGIDJHFNCMA);
       }
     }
 
@@ -315,36 +315,36 @@ public final class ChallengeBossStageInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 72: {
             // buffId
             buffId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
-            // stageScore
-            stageScore = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
               break;
             }
           }
           case 96: {
+            // stageScore
+            stageScore = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 32) {
+              break;
+            }
+          }
+          case 32: {
             // isWin
             isWin = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 40) {
               break;
             }
           }
-          case 104: {
-            // cCFNICMLEID
-            cCFNICMLEID = input.readBool();
+          case 40: {
+            // hGIDJHFNCMA
+            hGIDJHFNCMA = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -378,7 +378,7 @@ public final class ChallengeBossStageInfoOuterClass {
         output.writeBool(FieldNames.isWin, isWin);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeBool(FieldNames.cCFNICMLEID, cCFNICMLEID);
+        output.writeBool(FieldNames.hGIDJHFNCMA, hGIDJHFNCMA);
       }
       output.endObject();
     }
@@ -426,10 +426,10 @@ public final class ChallengeBossStageInfoOuterClass {
             }
             break;
           }
-          case -1530811617: {
-            if (input.isAtField(FieldNames.cCFNICMLEID)) {
+          case 1231891767: {
+            if (input.isAtField(FieldNames.hGIDJHFNCMA)) {
               if (!input.trySkipNullValue()) {
-                cCFNICMLEID = input.readBool();
+                hGIDJHFNCMA = input.readBool();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -496,7 +496,7 @@ public final class ChallengeBossStageInfoOuterClass {
 
       static final FieldName isWin = FieldName.forField("isWin", "is_win");
 
-      static final FieldName cCFNICMLEID = FieldName.forField("CCFNICMLEID");
+      static final FieldName hGIDJHFNCMA = FieldName.forField("HGIDJHFNCMA");
     }
   }
 }

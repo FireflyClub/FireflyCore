@@ -2,16 +2,16 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "ChallengeBossStageInfo.proto";
-import "ChallengeBossEquipment.proto";
 import "ChallengeBossRelic.proto";
+import "ChallengeBossEquipment.proto";
+import "ChallengeBossStageInfo.proto";
 
 message ChallengeBossInfo {
-	ChallengeBossStageInfo first_node = 15;
+	ChallengeBossStageInfo second_node = 14; //?
 	map<uint32, ChallengeBossEquipment> equipments = 6;
-	map<uint32, ChallengeBossRelic> relics = 11;
-	repeated uint32 lineup1 = 3;
-	ChallengeBossStageInfo second_node = 1;
-	bool LBOJBINABDG = 13;
-	repeated uint32 lineup2 = 12;
+	repeated uint32 lineup2 = 5; //?
+	repeated uint32 lineup1 = 13; //?
+	bool CPNMHNAFDJM = 7;
+	map<uint32, ChallengeBossRelic> relics = 1;
+	ChallengeBossStageInfo first_node = 8; //?
 }

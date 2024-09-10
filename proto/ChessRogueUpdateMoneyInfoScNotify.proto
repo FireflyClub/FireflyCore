@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "ChessRogueMoneyInfo.proto";
+import "RogueVirtualItem.proto";
 
 message ChessRogueUpdateMoneyInfoScNotify {
-    ChessRogueMoneyInfo money_info = 12;
+	RogueVirtualItem CNKNDNIMFFL = 11;
 }

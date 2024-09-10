@@ -20,14 +20,14 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 room_id = 12;</code>
+     * <code>optional uint32 FENMMJNLKMJ = 7;</code>
      */
-    private int roomId;
+    private int fENMMJNLKMJ;
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
      */
-    private final RepeatedInt cellIdList = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt aDAGFCPMIEA = RepeatedInt.newEmptyInstance();
 
     private ChessRogueUpdateAllowedSelectCellScNotify() {
     }
@@ -40,76 +40,76 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 room_id = 12;</code>
-     * @return whether the roomId field is set
+     * <code>optional uint32 FENMMJNLKMJ = 7;</code>
+     * @return whether the fENMMJNLKMJ field is set
      */
-    public boolean hasRoomId() {
+    public boolean hasFENMMJNLKMJ() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 room_id = 12;</code>
+     * <code>optional uint32 FENMMJNLKMJ = 7;</code>
      * @return this
      */
-    public ChessRogueUpdateAllowedSelectCellScNotify clearRoomId() {
+    public ChessRogueUpdateAllowedSelectCellScNotify clearFENMMJNLKMJ() {
       bitField0_ &= ~0x00000001;
-      roomId = 0;
+      fENMMJNLKMJ = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 room_id = 12;</code>
-     * @return the roomId
+     * <code>optional uint32 FENMMJNLKMJ = 7;</code>
+     * @return the fENMMJNLKMJ
      */
-    public int getRoomId() {
-      return roomId;
+    public int getFENMMJNLKMJ() {
+      return fENMMJNLKMJ;
     }
 
     /**
-     * <code>optional uint32 room_id = 12;</code>
-     * @param value the roomId to set
+     * <code>optional uint32 FENMMJNLKMJ = 7;</code>
+     * @param value the fENMMJNLKMJ to set
      * @return this
      */
-    public ChessRogueUpdateAllowedSelectCellScNotify setRoomId(final int value) {
+    public ChessRogueUpdateAllowedSelectCellScNotify setFENMMJNLKMJ(final int value) {
       bitField0_ |= 0x00000001;
-      roomId = value;
+      fENMMJNLKMJ = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
-     * @return whether the cellIdList field is set
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
+     * @return whether the aDAGFCPMIEA field is set
      */
-    public boolean hasCellIdList() {
+    public boolean hasADAGFCPMIEA() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
      * @return this
      */
-    public ChessRogueUpdateAllowedSelectCellScNotify clearCellIdList() {
+    public ChessRogueUpdateAllowedSelectCellScNotify clearADAGFCPMIEA() {
       bitField0_ &= ~0x00000002;
-      cellIdList.clear();
+      aDAGFCPMIEA.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableCellIdList()} if you want to modify it.
+     * Use {@link #getMutableADAGFCPMIEA()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getCellIdList() {
-      return cellIdList;
+    public RepeatedInt getADAGFCPMIEA() {
+      return aDAGFCPMIEA;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -117,30 +117,30 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableCellIdList() {
+    public RepeatedInt getMutableADAGFCPMIEA() {
       bitField0_ |= 0x00000002;
-      return cellIdList;
+      return aDAGFCPMIEA;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
-     * @param value the cellIdList to add
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
+     * @param value the aDAGFCPMIEA to add
      * @return this
      */
-    public ChessRogueUpdateAllowedSelectCellScNotify addCellIdList(final int value) {
+    public ChessRogueUpdateAllowedSelectCellScNotify addADAGFCPMIEA(final int value) {
       bitField0_ |= 0x00000002;
-      cellIdList.add(value);
+      aDAGFCPMIEA.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 cell_id_list = 11;</code>
-     * @param values the cellIdList to add
+     * <code>repeated uint32 ADAGFCPMIEA = 6;</code>
+     * @param values the aDAGFCPMIEA to add
      * @return this
      */
-    public ChessRogueUpdateAllowedSelectCellScNotify addAllCellIdList(final int... values) {
+    public ChessRogueUpdateAllowedSelectCellScNotify addAllADAGFCPMIEA(final int... values) {
       bitField0_ |= 0x00000002;
-      cellIdList.addAll(values);
+      aDAGFCPMIEA.addAll(values);
       return this;
     }
 
@@ -150,8 +150,8 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        roomId = other.roomId;
-        cellIdList.copyFrom(other.cellIdList);
+        fENMMJNLKMJ = other.fENMMJNLKMJ;
+        aDAGFCPMIEA.copyFrom(other.aDAGFCPMIEA);
       }
       return this;
     }
@@ -163,11 +163,11 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRoomId()) {
-        setRoomId(other.roomId);
+      if (other.hasFENMMJNLKMJ()) {
+        setFENMMJNLKMJ(other.fENMMJNLKMJ);
       }
-      if (other.hasCellIdList()) {
-        getMutableCellIdList().addAll(other.cellIdList);
+      if (other.hasADAGFCPMIEA()) {
+        getMutableADAGFCPMIEA().addAll(other.aDAGFCPMIEA);
       }
       return this;
     }
@@ -179,8 +179,8 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      roomId = 0;
-      cellIdList.clear();
+      fENMMJNLKMJ = 0;
+      aDAGFCPMIEA.clear();
       return this;
     }
 
@@ -191,7 +191,7 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      cellIdList.clear();
+      aDAGFCPMIEA.clear();
       return this;
     }
 
@@ -205,20 +205,20 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       }
       ChessRogueUpdateAllowedSelectCellScNotify other = (ChessRogueUpdateAllowedSelectCellScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasRoomId() || roomId == other.roomId)
-        && (!hasCellIdList() || cellIdList.equals(other.cellIdList));
+        && (!hasFENMMJNLKMJ() || fENMMJNLKMJ == other.fENMMJNLKMJ)
+        && (!hasADAGFCPMIEA() || aDAGFCPMIEA.equals(other.aDAGFCPMIEA));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(roomId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(fENMMJNLKMJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < cellIdList.length(); i++) {
-          output.writeRawByte((byte) 88);
-          output.writeUInt32NoTag(cellIdList.array()[i]);
+        for (int i = 0; i < aDAGFCPMIEA.length(); i++) {
+          output.writeRawByte((byte) 48);
+          output.writeUInt32NoTag(aDAGFCPMIEA.array()[i]);
         }
       }
     }
@@ -227,10 +227,10 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(roomId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fENMMJNLKMJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * cellIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(cellIdList);
+        size += (1 * aDAGFCPMIEA.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(aDAGFCPMIEA);
       }
       return size;
     }
@@ -243,18 +243,18 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
-            // roomId
-            roomId = input.readUInt32();
+          case 56: {
+            // fENMMJNLKMJ
+            fENMMJNLKMJ = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 50) {
               break;
             }
           }
-          case 90: {
-            // cellIdList [packed=true]
-            input.readPackedUInt32(cellIdList, tag);
+          case 50: {
+            // aDAGFCPMIEA [packed=true]
+            input.readPackedUInt32(aDAGFCPMIEA, tag);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -271,9 +271,9 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
             tag = input.readTag();
             break;
           }
-          case 88: {
-            // cellIdList [packed=false]
-            tag = input.readRepeatedUInt32(cellIdList, tag);
+          case 48: {
+            // aDAGFCPMIEA [packed=false]
+            tag = input.readRepeatedUInt32(aDAGFCPMIEA, tag);
             bitField0_ |= 0x00000002;
             break;
           }
@@ -285,10 +285,10 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.roomId, roomId);
+        output.writeUInt32(FieldNames.fENMMJNLKMJ, fENMMJNLKMJ);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedUInt32(FieldNames.cellIdList, cellIdList);
+        output.writeRepeatedUInt32(FieldNames.aDAGFCPMIEA, aDAGFCPMIEA);
       }
       output.endObject();
     }
@@ -301,11 +301,10 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -925319338:
-          case 1379892991: {
-            if (input.isAtField(FieldNames.roomId)) {
+          case 1709045935: {
+            if (input.isAtField(FieldNames.fENMMJNLKMJ)) {
               if (!input.trySkipNullValue()) {
-                roomId = input.readUInt32();
+                fENMMJNLKMJ = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -313,11 +312,10 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
             }
             break;
           }
-          case -1648521125:
-          case 1121452901: {
-            if (input.isAtField(FieldNames.cellIdList)) {
+          case 339437890: {
+            if (input.isAtField(FieldNames.aDAGFCPMIEA)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(cellIdList);
+                input.readRepeatedUInt32(aDAGFCPMIEA);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -380,9 +378,9 @@ public final class ChessRogueUpdateAllowedSelectCellScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName roomId = FieldName.forField("roomId", "room_id");
+      static final FieldName fENMMJNLKMJ = FieldName.forField("FENMMJNLKMJ");
 
-      static final FieldName cellIdList = FieldName.forField("cellIdList", "cell_id_list");
+      static final FieldName aDAGFCPMIEA = FieldName.forField("ADAGFCPMIEA");
     }
   }
 }

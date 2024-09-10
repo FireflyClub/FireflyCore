@@ -20,47 +20,47 @@ public final class DoGachaScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 1;</code>
-     */
-    private int pGPHIPBCGAP;
-
-    /**
-     * <code>optional uint32 retcode = 4;</code>
-     */
-    private int retcode;
-
-    /**
-     * <code>optional uint32 gacha_id = 6;</code>
-     */
-    private int gachaId;
-
-    /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      */
     private int ceilingNum;
 
     /**
-     * <code>optional uint32 gacha_num = 8;</code>
+     * <code>optional uint32 PJAFIMMCPDF = 2;</code>
+     */
+    private int pJAFIMMCPDF;
+
+    /**
+     * <code>optional uint32 gacha_id = 5;</code>
+     */
+    private int gachaId;
+
+    /**
+     * <code>optional uint32 retcode = 6;</code>
+     */
+    private int retcode;
+
+    /**
+     * <code>optional uint32 gacha_num = 11;</code>
      */
     private int gachaNum;
 
     /**
-     * <code>optional uint32 MKAAOHEEFBC = 10;</code>
+     * <code>optional uint32 HNPCPDJPGLL = 13;</code>
      */
-    private int mKAAOHEEFBC;
+    private int hNPCPDJPGLL;
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 14;</code>
+     * <code>optional uint32 KEACGMLKBDK = 14;</code>
      */
-    private int eCKOEHMHJBM;
+    private int kEACGMLKBDK;
 
     /**
-     * <code>optional uint32 CPJKHJEAEBM = 15;</code>
+     * <code>optional uint32 LHMBNMIOKHB = 15;</code>
      */
-    private int cPJKHJEAEBM;
+    private int lHMBNMIOKHB;
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      */
     private final RepeatedMessage<GachaItemOuterClass.GachaItem> gachaItemList = RepeatedMessage.newEmptyInstance(GachaItemOuterClass.GachaItem.getFactory());
 
@@ -75,81 +75,81 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 1;</code>
-     * @return whether the pGPHIPBCGAP field is set
+     * <code>optional uint32 ceiling_num = 1;</code>
+     * @return whether the ceilingNum field is set
      */
-    public boolean hasPGPHIPBCGAP() {
+    public boolean hasCeilingNum() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 1;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      * @return this
      */
-    public DoGachaScRsp clearPGPHIPBCGAP() {
+    public DoGachaScRsp clearCeilingNum() {
       bitField0_ &= ~0x00000001;
-      pGPHIPBCGAP = 0;
+      ceilingNum = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 1;</code>
-     * @return the pGPHIPBCGAP
+     * <code>optional uint32 ceiling_num = 1;</code>
+     * @return the ceilingNum
      */
-    public int getPGPHIPBCGAP() {
-      return pGPHIPBCGAP;
+    public int getCeilingNum() {
+      return ceilingNum;
     }
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 1;</code>
-     * @param value the pGPHIPBCGAP to set
+     * <code>optional uint32 ceiling_num = 1;</code>
+     * @param value the ceilingNum to set
      * @return this
      */
-    public DoGachaScRsp setPGPHIPBCGAP(final int value) {
+    public DoGachaScRsp setCeilingNum(final int value) {
       bitField0_ |= 0x00000001;
-      pGPHIPBCGAP = value;
+      ceilingNum = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 PJAFIMMCPDF = 2;</code>
+     * @return whether the pJAFIMMCPDF field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasPJAFIMMCPDF() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 PJAFIMMCPDF = 2;</code>
      * @return this
      */
-    public DoGachaScRsp clearRetcode() {
+    public DoGachaScRsp clearPJAFIMMCPDF() {
       bitField0_ &= ~0x00000002;
-      retcode = 0;
+      pJAFIMMCPDF = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
-     * @return the retcode
+     * <code>optional uint32 PJAFIMMCPDF = 2;</code>
+     * @return the pJAFIMMCPDF
      */
-    public int getRetcode() {
-      return retcode;
+    public int getPJAFIMMCPDF() {
+      return pJAFIMMCPDF;
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
-     * @param value the retcode to set
+     * <code>optional uint32 PJAFIMMCPDF = 2;</code>
+     * @param value the pJAFIMMCPDF to set
      * @return this
      */
-    public DoGachaScRsp setRetcode(final int value) {
+    public DoGachaScRsp setPJAFIMMCPDF(final int value) {
       bitField0_ |= 0x00000002;
-      retcode = value;
+      pJAFIMMCPDF = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 gacha_id = 6;</code>
+     * <code>optional uint32 gacha_id = 5;</code>
      * @return whether the gachaId field is set
      */
     public boolean hasGachaId() {
@@ -157,7 +157,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_id = 6;</code>
+     * <code>optional uint32 gacha_id = 5;</code>
      * @return this
      */
     public DoGachaScRsp clearGachaId() {
@@ -167,7 +167,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_id = 6;</code>
+     * <code>optional uint32 gacha_id = 5;</code>
      * @return the gachaId
      */
     public int getGachaId() {
@@ -175,7 +175,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_id = 6;</code>
+     * <code>optional uint32 gacha_id = 5;</code>
      * @param value the gachaId to set
      * @return this
      */
@@ -186,44 +186,44 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
-     * @return whether the ceilingNum field is set
+     * <code>optional uint32 retcode = 6;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasCeilingNum() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
-    public DoGachaScRsp clearCeilingNum() {
+    public DoGachaScRsp clearRetcode() {
       bitField0_ &= ~0x00000008;
-      ceilingNum = 0;
+      retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
-     * @return the ceilingNum
+     * <code>optional uint32 retcode = 6;</code>
+     * @return the retcode
      */
-    public int getCeilingNum() {
-      return ceilingNum;
+    public int getRetcode() {
+      return retcode;
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
-     * @param value the ceilingNum to set
+     * <code>optional uint32 retcode = 6;</code>
+     * @param value the retcode to set
      * @return this
      */
-    public DoGachaScRsp setCeilingNum(final int value) {
+    public DoGachaScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000008;
-      ceilingNum = value;
+      retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 gacha_num = 8;</code>
+     * <code>optional uint32 gacha_num = 11;</code>
      * @return whether the gachaNum field is set
      */
     public boolean hasGachaNum() {
@@ -231,7 +231,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_num = 8;</code>
+     * <code>optional uint32 gacha_num = 11;</code>
      * @return this
      */
     public DoGachaScRsp clearGachaNum() {
@@ -241,7 +241,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_num = 8;</code>
+     * <code>optional uint32 gacha_num = 11;</code>
      * @return the gachaNum
      */
     public int getGachaNum() {
@@ -249,7 +249,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 gacha_num = 8;</code>
+     * <code>optional uint32 gacha_num = 11;</code>
      * @param value the gachaNum to set
      * @return this
      */
@@ -260,118 +260,118 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 MKAAOHEEFBC = 10;</code>
-     * @return whether the mKAAOHEEFBC field is set
+     * <code>optional uint32 HNPCPDJPGLL = 13;</code>
+     * @return whether the hNPCPDJPGLL field is set
      */
-    public boolean hasMKAAOHEEFBC() {
+    public boolean hasHNPCPDJPGLL() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 MKAAOHEEFBC = 10;</code>
+     * <code>optional uint32 HNPCPDJPGLL = 13;</code>
      * @return this
      */
-    public DoGachaScRsp clearMKAAOHEEFBC() {
+    public DoGachaScRsp clearHNPCPDJPGLL() {
       bitField0_ &= ~0x00000020;
-      mKAAOHEEFBC = 0;
+      hNPCPDJPGLL = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 MKAAOHEEFBC = 10;</code>
-     * @return the mKAAOHEEFBC
+     * <code>optional uint32 HNPCPDJPGLL = 13;</code>
+     * @return the hNPCPDJPGLL
      */
-    public int getMKAAOHEEFBC() {
-      return mKAAOHEEFBC;
+    public int getHNPCPDJPGLL() {
+      return hNPCPDJPGLL;
     }
 
     /**
-     * <code>optional uint32 MKAAOHEEFBC = 10;</code>
-     * @param value the mKAAOHEEFBC to set
+     * <code>optional uint32 HNPCPDJPGLL = 13;</code>
+     * @param value the hNPCPDJPGLL to set
      * @return this
      */
-    public DoGachaScRsp setMKAAOHEEFBC(final int value) {
+    public DoGachaScRsp setHNPCPDJPGLL(final int value) {
       bitField0_ |= 0x00000020;
-      mKAAOHEEFBC = value;
+      hNPCPDJPGLL = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 14;</code>
-     * @return whether the eCKOEHMHJBM field is set
+     * <code>optional uint32 KEACGMLKBDK = 14;</code>
+     * @return whether the kEACGMLKBDK field is set
      */
-    public boolean hasECKOEHMHJBM() {
+    public boolean hasKEACGMLKBDK() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 14;</code>
+     * <code>optional uint32 KEACGMLKBDK = 14;</code>
      * @return this
      */
-    public DoGachaScRsp clearECKOEHMHJBM() {
+    public DoGachaScRsp clearKEACGMLKBDK() {
       bitField0_ &= ~0x00000040;
-      eCKOEHMHJBM = 0;
+      kEACGMLKBDK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 14;</code>
-     * @return the eCKOEHMHJBM
+     * <code>optional uint32 KEACGMLKBDK = 14;</code>
+     * @return the kEACGMLKBDK
      */
-    public int getECKOEHMHJBM() {
-      return eCKOEHMHJBM;
+    public int getKEACGMLKBDK() {
+      return kEACGMLKBDK;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 14;</code>
-     * @param value the eCKOEHMHJBM to set
+     * <code>optional uint32 KEACGMLKBDK = 14;</code>
+     * @param value the kEACGMLKBDK to set
      * @return this
      */
-    public DoGachaScRsp setECKOEHMHJBM(final int value) {
+    public DoGachaScRsp setKEACGMLKBDK(final int value) {
       bitField0_ |= 0x00000040;
-      eCKOEHMHJBM = value;
+      kEACGMLKBDK = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 CPJKHJEAEBM = 15;</code>
-     * @return whether the cPJKHJEAEBM field is set
+     * <code>optional uint32 LHMBNMIOKHB = 15;</code>
+     * @return whether the lHMBNMIOKHB field is set
      */
-    public boolean hasCPJKHJEAEBM() {
+    public boolean hasLHMBNMIOKHB() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <code>optional uint32 CPJKHJEAEBM = 15;</code>
+     * <code>optional uint32 LHMBNMIOKHB = 15;</code>
      * @return this
      */
-    public DoGachaScRsp clearCPJKHJEAEBM() {
+    public DoGachaScRsp clearLHMBNMIOKHB() {
       bitField0_ &= ~0x00000080;
-      cPJKHJEAEBM = 0;
+      lHMBNMIOKHB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 CPJKHJEAEBM = 15;</code>
-     * @return the cPJKHJEAEBM
+     * <code>optional uint32 LHMBNMIOKHB = 15;</code>
+     * @return the lHMBNMIOKHB
      */
-    public int getCPJKHJEAEBM() {
-      return cPJKHJEAEBM;
+    public int getLHMBNMIOKHB() {
+      return lHMBNMIOKHB;
     }
 
     /**
-     * <code>optional uint32 CPJKHJEAEBM = 15;</code>
-     * @param value the cPJKHJEAEBM to set
+     * <code>optional uint32 LHMBNMIOKHB = 15;</code>
+     * @param value the lHMBNMIOKHB to set
      * @return this
      */
-    public DoGachaScRsp setCPJKHJEAEBM(final int value) {
+    public DoGachaScRsp setLHMBNMIOKHB(final int value) {
       bitField0_ |= 0x00000080;
-      cPJKHJEAEBM = value;
+      lHMBNMIOKHB = value;
       return this;
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      * @return whether the gachaItemList field is set
      */
     public boolean hasGachaItemList() {
@@ -379,7 +379,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      * @return this
      */
     public DoGachaScRsp clearGachaItemList() {
@@ -389,7 +389,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -403,7 +403,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -417,7 +417,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      * @param value the gachaItemList to add
      * @return this
      */
@@ -428,7 +428,7 @@ public final class DoGachaScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaItem gacha_item_list = 12;</code>
+     * <code>repeated .GachaItem gacha_item_list = 8;</code>
      * @param values the gachaItemList to add
      * @return this
      */
@@ -443,14 +443,14 @@ public final class DoGachaScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pGPHIPBCGAP = other.pGPHIPBCGAP;
-        retcode = other.retcode;
-        gachaId = other.gachaId;
         ceilingNum = other.ceilingNum;
+        pJAFIMMCPDF = other.pJAFIMMCPDF;
+        gachaId = other.gachaId;
+        retcode = other.retcode;
         gachaNum = other.gachaNum;
-        mKAAOHEEFBC = other.mKAAOHEEFBC;
-        eCKOEHMHJBM = other.eCKOEHMHJBM;
-        cPJKHJEAEBM = other.cPJKHJEAEBM;
+        hNPCPDJPGLL = other.hNPCPDJPGLL;
+        kEACGMLKBDK = other.kEACGMLKBDK;
+        lHMBNMIOKHB = other.lHMBNMIOKHB;
         gachaItemList.copyFrom(other.gachaItemList);
       }
       return this;
@@ -462,29 +462,29 @@ public final class DoGachaScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPGPHIPBCGAP()) {
-        setPGPHIPBCGAP(other.pGPHIPBCGAP);
+      if (other.hasCeilingNum()) {
+        setCeilingNum(other.ceilingNum);
       }
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
+      if (other.hasPJAFIMMCPDF()) {
+        setPJAFIMMCPDF(other.pJAFIMMCPDF);
       }
       if (other.hasGachaId()) {
         setGachaId(other.gachaId);
       }
-      if (other.hasCeilingNum()) {
-        setCeilingNum(other.ceilingNum);
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
       if (other.hasGachaNum()) {
         setGachaNum(other.gachaNum);
       }
-      if (other.hasMKAAOHEEFBC()) {
-        setMKAAOHEEFBC(other.mKAAOHEEFBC);
+      if (other.hasHNPCPDJPGLL()) {
+        setHNPCPDJPGLL(other.hNPCPDJPGLL);
       }
-      if (other.hasECKOEHMHJBM()) {
-        setECKOEHMHJBM(other.eCKOEHMHJBM);
+      if (other.hasKEACGMLKBDK()) {
+        setKEACGMLKBDK(other.kEACGMLKBDK);
       }
-      if (other.hasCPJKHJEAEBM()) {
-        setCPJKHJEAEBM(other.cPJKHJEAEBM);
+      if (other.hasLHMBNMIOKHB()) {
+        setLHMBNMIOKHB(other.lHMBNMIOKHB);
       }
       if (other.hasGachaItemList()) {
         getMutableGachaItemList().addAll(other.gachaItemList);
@@ -499,14 +499,14 @@ public final class DoGachaScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pGPHIPBCGAP = 0;
-      retcode = 0;
-      gachaId = 0;
       ceilingNum = 0;
+      pJAFIMMCPDF = 0;
+      gachaId = 0;
+      retcode = 0;
       gachaNum = 0;
-      mKAAOHEEFBC = 0;
-      eCKOEHMHJBM = 0;
-      cPJKHJEAEBM = 0;
+      hNPCPDJPGLL = 0;
+      kEACGMLKBDK = 0;
+      lHMBNMIOKHB = 0;
       gachaItemList.clear();
       return this;
     }
@@ -532,14 +532,14 @@ public final class DoGachaScRspOuterClass {
       }
       DoGachaScRsp other = (DoGachaScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasPGPHIPBCGAP() || pGPHIPBCGAP == other.pGPHIPBCGAP)
-        && (!hasRetcode() || retcode == other.retcode)
-        && (!hasGachaId() || gachaId == other.gachaId)
         && (!hasCeilingNum() || ceilingNum == other.ceilingNum)
+        && (!hasPJAFIMMCPDF() || pJAFIMMCPDF == other.pJAFIMMCPDF)
+        && (!hasGachaId() || gachaId == other.gachaId)
+        && (!hasRetcode() || retcode == other.retcode)
         && (!hasGachaNum() || gachaNum == other.gachaNum)
-        && (!hasMKAAOHEEFBC() || mKAAOHEEFBC == other.mKAAOHEEFBC)
-        && (!hasECKOEHMHJBM() || eCKOEHMHJBM == other.eCKOEHMHJBM)
-        && (!hasCPJKHJEAEBM() || cPJKHJEAEBM == other.cPJKHJEAEBM)
+        && (!hasHNPCPDJPGLL() || hNPCPDJPGLL == other.hNPCPDJPGLL)
+        && (!hasKEACGMLKBDK() || kEACGMLKBDK == other.kEACGMLKBDK)
+        && (!hasLHMBNMIOKHB() || lHMBNMIOKHB == other.lHMBNMIOKHB)
         && (!hasGachaItemList() || gachaItemList.equals(other.gachaItemList));
     }
 
@@ -547,39 +547,39 @@ public final class DoGachaScRspOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(pGPHIPBCGAP);
+        output.writeUInt32NoTag(ceilingNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(gachaId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(ceilingNum);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(gachaNum);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(mKAAOHEEFBC);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(hNPCPDJPGLL);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(eCKOEHMHJBM);
+        output.writeUInt32NoTag(kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(cPJKHJEAEBM);
+        output.writeUInt32NoTag(lHMBNMIOKHB);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         for (int i = 0; i < gachaItemList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(gachaItemList.get(i));
         }
       }
@@ -589,28 +589,28 @@ public final class DoGachaScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pGPHIPBCGAP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(ceilingNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(gachaId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(ceilingNum);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(gachaNum);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mKAAOHEEFBC);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(hNPCPDJPGLL);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(eCKOEHMHJBM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(cPJKHJEAEBM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lHMBNMIOKHB);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         size += (1 * gachaItemList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(gachaItemList);
@@ -626,53 +626,53 @@ public final class DoGachaScRspOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // pGPHIPBCGAP
-            pGPHIPBCGAP = input.readUInt32();
+            // ceilingNum
+            ceilingNum = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 16) {
               break;
             }
           }
-          case 32: {
-            // retcode
-            retcode = input.readUInt32();
+          case 16: {
+            // pJAFIMMCPDF
+            pJAFIMMCPDF = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
+          case 40: {
+            // gachaId
+            gachaId = input.readUInt32();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 48) {
               break;
             }
           }
           case 48: {
-            // gachaId
-            gachaId = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
-            // ceilingNum
-            ceilingNum = input.readUInt32();
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 88) {
               break;
             }
           }
-          case 64: {
+          case 88: {
             // gachaNum
             gachaNum = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 104) {
               break;
             }
           }
-          case 80: {
-            // mKAAOHEEFBC
-            mKAAOHEEFBC = input.readUInt32();
+          case 104: {
+            // hNPCPDJPGLL
+            hNPCPDJPGLL = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 112) {
@@ -680,8 +680,8 @@ public final class DoGachaScRspOuterClass {
             }
           }
           case 112: {
-            // eCKOEHMHJBM
-            eCKOEHMHJBM = input.readUInt32();
+            // kEACGMLKBDK
+            kEACGMLKBDK = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 120) {
@@ -689,15 +689,15 @@ public final class DoGachaScRspOuterClass {
             }
           }
           case 120: {
-            // cPJKHJEAEBM
-            cPJKHJEAEBM = input.readUInt32();
+            // lHMBNMIOKHB
+            lHMBNMIOKHB = input.readUInt32();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 66) {
               break;
             }
           }
-          case 98: {
+          case 66: {
             // gachaItemList
             tag = input.readRepeatedMessage(gachaItemList, tag);
             bitField0_ |= 0x00000100;
@@ -723,28 +723,28 @@ public final class DoGachaScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.pGPHIPBCGAP, pGPHIPBCGAP);
+        output.writeUInt32(FieldNames.ceilingNum, ceilingNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.pJAFIMMCPDF, pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.gachaId, gachaId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.ceilingNum, ceilingNum);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.gachaNum, gachaNum);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.mKAAOHEEFBC, mKAAOHEEFBC);
+        output.writeUInt32(FieldNames.hNPCPDJPGLL, hNPCPDJPGLL);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.eCKOEHMHJBM, eCKOEHMHJBM);
+        output.writeUInt32(FieldNames.kEACGMLKBDK, kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeUInt32(FieldNames.cPJKHJEAEBM, cPJKHJEAEBM);
+        output.writeUInt32(FieldNames.lHMBNMIOKHB, lHMBNMIOKHB);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRepeatedMessage(FieldNames.gachaItemList, gachaItemList);
@@ -759,10 +759,11 @@ public final class DoGachaScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1987688703: {
-            if (input.isAtField(FieldNames.pGPHIPBCGAP)) {
+          case -1655838327:
+          case 209119492: {
+            if (input.isAtField(FieldNames.ceilingNum)) {
               if (!input.trySkipNullValue()) {
-                pGPHIPBCGAP = input.readUInt32();
+                ceilingNum = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -770,10 +771,10 @@ public final class DoGachaScRspOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case -821179303: {
+            if (input.isAtField(FieldNames.pJAFIMMCPDF)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                pJAFIMMCPDF = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -793,11 +794,10 @@ public final class DoGachaScRspOuterClass {
             }
             break;
           }
-          case -1655838327:
-          case 209119492: {
-            if (input.isAtField(FieldNames.ceilingNum)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                ceilingNum = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -817,10 +817,10 @@ public final class DoGachaScRspOuterClass {
             }
             break;
           }
-          case 833647664: {
-            if (input.isAtField(FieldNames.mKAAOHEEFBC)) {
+          case -734496780: {
+            if (input.isAtField(FieldNames.hNPCPDJPGLL)) {
               if (!input.trySkipNullValue()) {
-                mKAAOHEEFBC = input.readUInt32();
+                hNPCPDJPGLL = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -828,10 +828,10 @@ public final class DoGachaScRspOuterClass {
             }
             break;
           }
-          case 1353709333: {
-            if (input.isAtField(FieldNames.eCKOEHMHJBM)) {
+          case 2142008008: {
+            if (input.isAtField(FieldNames.kEACGMLKBDK)) {
               if (!input.trySkipNullValue()) {
-                eCKOEHMHJBM = input.readUInt32();
+                kEACGMLKBDK = input.readUInt32();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -839,10 +839,10 @@ public final class DoGachaScRspOuterClass {
             }
             break;
           }
-          case -58682556: {
-            if (input.isAtField(FieldNames.cPJKHJEAEBM)) {
+          case -286995441: {
+            if (input.isAtField(FieldNames.lHMBNMIOKHB)) {
               if (!input.trySkipNullValue()) {
-                cPJKHJEAEBM = input.readUInt32();
+                lHMBNMIOKHB = input.readUInt32();
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -914,21 +914,21 @@ public final class DoGachaScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pGPHIPBCGAP = FieldName.forField("PGPHIPBCGAP");
+      static final FieldName ceilingNum = FieldName.forField("ceilingNum", "ceiling_num");
 
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName pJAFIMMCPDF = FieldName.forField("PJAFIMMCPDF");
 
       static final FieldName gachaId = FieldName.forField("gachaId", "gacha_id");
 
-      static final FieldName ceilingNum = FieldName.forField("ceilingNum", "ceiling_num");
+      static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName gachaNum = FieldName.forField("gachaNum", "gacha_num");
 
-      static final FieldName mKAAOHEEFBC = FieldName.forField("MKAAOHEEFBC");
+      static final FieldName hNPCPDJPGLL = FieldName.forField("HNPCPDJPGLL");
 
-      static final FieldName eCKOEHMHJBM = FieldName.forField("ECKOEHMHJBM");
+      static final FieldName kEACGMLKBDK = FieldName.forField("KEACGMLKBDK");
 
-      static final FieldName cPJKHJEAEBM = FieldName.forField("CPJKHJEAEBM");
+      static final FieldName lHMBNMIOKHB = FieldName.forField("LHMBNMIOKHB");
 
       static final FieldName gachaItemList = FieldName.forField("gachaItemList", "gacha_item_list");
     }

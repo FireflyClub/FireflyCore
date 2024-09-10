@@ -19,7 +19,7 @@ public final class RankUpAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 rank = 6;</code>
+     * <code>optional uint32 rank = 11;</code>
      */
     private int rank;
 
@@ -29,7 +29,7 @@ public final class RankUpAvatarCsReqOuterClass {
     private int avatarId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -44,7 +44,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rank = 6;</code>
+     * <code>optional uint32 rank = 11;</code>
      * @return whether the rank field is set
      */
     public boolean hasRank() {
@@ -52,7 +52,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rank = 6;</code>
+     * <code>optional uint32 rank = 11;</code>
      * @return this
      */
     public RankUpAvatarCsReq clearRank() {
@@ -62,7 +62,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rank = 6;</code>
+     * <code>optional uint32 rank = 11;</code>
      * @return the rank
      */
     public int getRank() {
@@ -70,7 +70,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 rank = 6;</code>
+     * <code>optional uint32 rank = 11;</code>
      * @param value the rank to set
      * @return this
      */
@@ -118,7 +118,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -126,7 +126,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      * @return this
      */
     public RankUpAvatarCsReq clearItemCostList() {
@@ -136,7 +136,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -150,7 +150,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -164,7 +164,7 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 8;</code>
+     * <code>optional .ItemCostList item_cost_list = 13;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -246,7 +246,7 @@ public final class RankUpAvatarCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(rank);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -254,7 +254,7 @@ public final class RankUpAvatarCsReqOuterClass {
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 106);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -281,7 +281,7 @@ public final class RankUpAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 88: {
             // rank
             rank = input.readUInt32();
             bitField0_ |= 0x00000001;
@@ -295,11 +295,11 @@ public final class RankUpAvatarCsReqOuterClass {
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 106) {
               break;
             }
           }
-          case 66: {
+          case 106: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000004;

@@ -20,53 +20,32 @@ public final class SceneSummonUnitInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * uint32 IJNGKBCLOPD = 9;
-     * </pre>
-     *
      * <code>optional uint64 create_time_ms = 11;</code>
      */
     private long createTimeMs;
 
     /**
-     * <code>optional int32 life_time_ms = 5;</code>
+     * <code>optional int32 life_time_ms = 1;</code>
      */
     private int lifeTimeMs;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 attach_entity_id = 4;</code>
-     */
-    private int attachEntityId;
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 caster_entity_id = 7;</code>
+     * <code>optional uint32 caster_entity_id = 4;</code>
      */
     private int casterEntityId;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 summon_unit_id = 9;</code>
+     * <code>optional uint32 summon_unit_id = 5;</code>
      */
     private int summonUnitId;
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>optional uint32 attach_entity_id = 12;</code>
+     */
+    private int attachEntityId;
+
+    /**
+     * <code>repeated string trigger_name_list = 2;</code>
      */
     private final RepeatedString triggerNameList = RepeatedString.newEmptyInstance();
 
@@ -81,10 +60,6 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 IJNGKBCLOPD = 9;
-     * </pre>
-     *
      * <code>optional uint64 create_time_ms = 11;</code>
      * @return whether the createTimeMs field is set
      */
@@ -93,10 +68,6 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 IJNGKBCLOPD = 9;
-     * </pre>
-     *
      * <code>optional uint64 create_time_ms = 11;</code>
      * @return this
      */
@@ -107,10 +78,6 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 IJNGKBCLOPD = 9;
-     * </pre>
-     *
      * <code>optional uint64 create_time_ms = 11;</code>
      * @return the createTimeMs
      */
@@ -119,10 +86,6 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 IJNGKBCLOPD = 9;
-     * </pre>
-     *
      * <code>optional uint64 create_time_ms = 11;</code>
      * @param value the createTimeMs to set
      * @return this
@@ -134,7 +97,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <code>optional int32 life_time_ms = 5;</code>
+     * <code>optional int32 life_time_ms = 1;</code>
      * @return whether the lifeTimeMs field is set
      */
     public boolean hasLifeTimeMs() {
@@ -142,7 +105,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <code>optional int32 life_time_ms = 5;</code>
+     * <code>optional int32 life_time_ms = 1;</code>
      * @return this
      */
     public SceneSummonUnitInfo clearLifeTimeMs() {
@@ -152,7 +115,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <code>optional int32 life_time_ms = 5;</code>
+     * <code>optional int32 life_time_ms = 1;</code>
      * @return the lifeTimeMs
      */
     public int getLifeTimeMs() {
@@ -160,7 +123,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <code>optional int32 life_time_ms = 5;</code>
+     * <code>optional int32 life_time_ms = 1;</code>
      * @param value the lifeTimeMs to set
      * @return this
      */
@@ -171,90 +134,25 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 attach_entity_id = 4;</code>
-     * @return whether the attachEntityId field is set
+     * <code>optional uint32 caster_entity_id = 4;</code>
+     * @return whether the casterEntityId field is set
      */
-    public boolean hasAttachEntityId() {
+    public boolean hasCasterEntityId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 attach_entity_id = 4;</code>
-     * @return this
-     */
-    public SceneSummonUnitInfo clearAttachEntityId() {
-      bitField0_ &= ~0x00000004;
-      attachEntityId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 attach_entity_id = 4;</code>
-     * @return the attachEntityId
-     */
-    public int getAttachEntityId() {
-      return attachEntityId;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 attach_entity_id = 4;</code>
-     * @param value the attachEntityId to set
-     * @return this
-     */
-    public SceneSummonUnitInfo setAttachEntityId(final int value) {
-      bitField0_ |= 0x00000004;
-      attachEntityId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 caster_entity_id = 7;</code>
-     * @return whether the casterEntityId field is set
-     */
-    public boolean hasCasterEntityId() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 caster_entity_id = 7;</code>
+     * <code>optional uint32 caster_entity_id = 4;</code>
      * @return this
      */
     public SceneSummonUnitInfo clearCasterEntityId() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       casterEntityId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 caster_entity_id = 7;</code>
+     * <code>optional uint32 caster_entity_id = 4;</code>
      * @return the casterEntityId
      */
     public int getCasterEntityId() {
@@ -262,52 +160,36 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 caster_entity_id = 7;</code>
+     * <code>optional uint32 caster_entity_id = 4;</code>
      * @param value the casterEntityId to set
      * @return this
      */
     public SceneSummonUnitInfo setCasterEntityId(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       casterEntityId = value;
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 summon_unit_id = 9;</code>
+     * <code>optional uint32 summon_unit_id = 5;</code>
      * @return whether the summonUnitId field is set
      */
     public boolean hasSummonUnitId() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 summon_unit_id = 9;</code>
+     * <code>optional uint32 summon_unit_id = 5;</code>
      * @return this
      */
     public SceneSummonUnitInfo clearSummonUnitId() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       summonUnitId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 summon_unit_id = 9;</code>
+     * <code>optional uint32 summon_unit_id = 5;</code>
      * @return the summonUnitId
      */
     public int getSummonUnitId() {
@@ -315,27 +197,55 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 summon_unit_id = 9;</code>
+     * <code>optional uint32 summon_unit_id = 5;</code>
      * @param value the summonUnitId to set
      * @return this
      */
     public SceneSummonUnitInfo setSummonUnitId(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       summonUnitId = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>optional uint32 attach_entity_id = 12;</code>
+     * @return whether the attachEntityId field is set
+     */
+    public boolean hasAttachEntityId() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 attach_entity_id = 12;</code>
+     * @return this
+     */
+    public SceneSummonUnitInfo clearAttachEntityId() {
+      bitField0_ &= ~0x00000010;
+      attachEntityId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 attach_entity_id = 12;</code>
+     * @return the attachEntityId
+     */
+    public int getAttachEntityId() {
+      return attachEntityId;
+    }
+
+    /**
+     * <code>optional uint32 attach_entity_id = 12;</code>
+     * @param value the attachEntityId to set
+     * @return this
+     */
+    public SceneSummonUnitInfo setAttachEntityId(final int value) {
+      bitField0_ |= 0x00000010;
+      attachEntityId = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated string trigger_name_list = 2;</code>
      * @return whether the triggerNameList field is set
      */
     public boolean hasTriggerNameList() {
@@ -343,12 +253,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>repeated string trigger_name_list = 2;</code>
      * @return this
      */
     public SceneSummonUnitInfo clearTriggerNameList() {
@@ -358,12 +263,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>repeated string trigger_name_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -377,12 +277,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>repeated string trigger_name_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -396,12 +291,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>repeated string trigger_name_list = 2;</code>
      * @param value the triggerNameList to add
      * @return this
      */
@@ -412,12 +302,7 @@ public final class SceneSummonUnitInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 AEICMGJPOLC = 7;
-     * uint32 IKANDALODGC = 4;
-     * </pre>
-     *
-     * <code>repeated string trigger_name_list = 6;</code>
+     * <code>repeated string trigger_name_list = 2;</code>
      * @param values the triggerNameList to add
      * @return this
      */
@@ -434,9 +319,9 @@ public final class SceneSummonUnitInfoOuterClass {
         bitField0_ = other.bitField0_;
         createTimeMs = other.createTimeMs;
         lifeTimeMs = other.lifeTimeMs;
-        attachEntityId = other.attachEntityId;
         casterEntityId = other.casterEntityId;
         summonUnitId = other.summonUnitId;
+        attachEntityId = other.attachEntityId;
         triggerNameList.copyFrom(other.triggerNameList);
       }
       return this;
@@ -454,14 +339,14 @@ public final class SceneSummonUnitInfoOuterClass {
       if (other.hasLifeTimeMs()) {
         setLifeTimeMs(other.lifeTimeMs);
       }
-      if (other.hasAttachEntityId()) {
-        setAttachEntityId(other.attachEntityId);
-      }
       if (other.hasCasterEntityId()) {
         setCasterEntityId(other.casterEntityId);
       }
       if (other.hasSummonUnitId()) {
         setSummonUnitId(other.summonUnitId);
+      }
+      if (other.hasAttachEntityId()) {
+        setAttachEntityId(other.attachEntityId);
       }
       if (other.hasTriggerNameList()) {
         getMutableTriggerNameList().addAll(other.triggerNameList);
@@ -478,9 +363,9 @@ public final class SceneSummonUnitInfoOuterClass {
       bitField0_ = 0;
       createTimeMs = 0L;
       lifeTimeMs = 0;
-      attachEntityId = 0;
       casterEntityId = 0;
       summonUnitId = 0;
+      attachEntityId = 0;
       triggerNameList.clear();
       return this;
     }
@@ -508,9 +393,9 @@ public final class SceneSummonUnitInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasCreateTimeMs() || createTimeMs == other.createTimeMs)
         && (!hasLifeTimeMs() || lifeTimeMs == other.lifeTimeMs)
-        && (!hasAttachEntityId() || attachEntityId == other.attachEntityId)
         && (!hasCasterEntityId() || casterEntityId == other.casterEntityId)
         && (!hasSummonUnitId() || summonUnitId == other.summonUnitId)
+        && (!hasAttachEntityId() || attachEntityId == other.attachEntityId)
         && (!hasTriggerNameList() || triggerNameList.equals(other.triggerNameList));
     }
 
@@ -521,24 +406,24 @@ public final class SceneSummonUnitInfoOuterClass {
         output.writeUInt64NoTag(createTimeMs);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 8);
         output.writeInt32NoTag(lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(attachEntityId);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(casterEntityId);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 72);
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(summonUnitId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(attachEntityId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < triggerNameList.length(); i++) {
-          output.writeRawByte((byte) 50);
+          output.writeRawByte((byte) 18);
           output.writeStringNoTag(triggerNameList.get(i));
         }
       }
@@ -554,13 +439,13 @@ public final class SceneSummonUnitInfoOuterClass {
         size += 1 + ProtoSink.computeInt32SizeNoTag(lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(attachEntityId);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(casterEntityId);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(summonUnitId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(attachEntityId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * triggerNameList.length()) + ProtoSink.computeRepeatedStringSizeNoTag(triggerNameList);
@@ -580,11 +465,11 @@ public final class SceneSummonUnitInfoOuterClass {
             createTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 8) {
               break;
             }
           }
-          case 40: {
+          case 8: {
             // lifeTimeMs
             lifeTimeMs = input.readInt32();
             bitField0_ |= 0x00000002;
@@ -594,33 +479,33 @@ public final class SceneSummonUnitInfoOuterClass {
             }
           }
           case 32: {
-            // attachEntityId
-            attachEntityId = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
             // casterEntityId
             casterEntityId = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 40) {
               break;
             }
           }
-          case 72: {
+          case 40: {
             // summonUnitId
             summonUnitId = input.readUInt32();
-            bitField0_ |= 0x00000010;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 96) {
               break;
             }
           }
-          case 50: {
+          case 96: {
+            // attachEntityId
+            attachEntityId = input.readUInt32();
+            bitField0_ |= 0x00000010;
+            tag = input.readTag();
+            if (tag != 18) {
+              break;
+            }
+          }
+          case 18: {
             // triggerNameList
             tag = input.readRepeatedString(triggerNameList, tag);
             bitField0_ |= 0x00000020;
@@ -652,13 +537,13 @@ public final class SceneSummonUnitInfoOuterClass {
         output.writeInt32(FieldNames.lifeTimeMs, lifeTimeMs);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.attachEntityId, attachEntityId);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.casterEntityId, casterEntityId);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.summonUnitId, summonUnitId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.attachEntityId, attachEntityId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedString(FieldNames.triggerNameList, triggerNameList);
@@ -697,24 +582,12 @@ public final class SceneSummonUnitInfoOuterClass {
             }
             break;
           }
-          case -900612669:
-          case -644975235: {
-            if (input.isAtField(FieldNames.attachEntityId)) {
-              if (!input.trySkipNullValue()) {
-                attachEntityId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -1831162710:
           case -1550367068: {
             if (input.isAtField(FieldNames.casterEntityId)) {
               if (!input.trySkipNullValue()) {
                 casterEntityId = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -726,6 +599,18 @@ public final class SceneSummonUnitInfoOuterClass {
             if (input.isAtField(FieldNames.summonUnitId)) {
               if (!input.trySkipNullValue()) {
                 summonUnitId = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -900612669:
+          case -644975235: {
+            if (input.isAtField(FieldNames.attachEntityId)) {
+              if (!input.trySkipNullValue()) {
+                attachEntityId = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -802,11 +687,11 @@ public final class SceneSummonUnitInfoOuterClass {
 
       static final FieldName lifeTimeMs = FieldName.forField("lifeTimeMs", "life_time_ms");
 
-      static final FieldName attachEntityId = FieldName.forField("attachEntityId", "attach_entity_id");
-
       static final FieldName casterEntityId = FieldName.forField("casterEntityId", "caster_entity_id");
 
       static final FieldName summonUnitId = FieldName.forField("summonUnitId", "summon_unit_id");
+
+      static final FieldName attachEntityId = FieldName.forField("attachEntityId", "attach_entity_id");
 
       static final FieldName triggerNameList = FieldName.forField("triggerNameList", "trigger_name_list");
     }

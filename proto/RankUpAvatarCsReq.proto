@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "ItemCostList.proto";
 
 message RankUpAvatarCsReq {
+	uint32 rank = 11;
+	ItemCostList item_cost_list = 13;
 	uint32 avatar_id = 14;
-	uint32 rank = 6;
-	ItemCostList item_cost_list = 8;
 }

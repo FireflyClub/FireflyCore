@@ -19,22 +19,22 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 GIGKNPFCKNB = 4;</code>
+     * <code>optional uint32 BFADHPMMODP = 2;</code>
      */
-    private int gIGKNPFCKNB;
+    private int bFADHPMMODP;
 
     /**
-     * <code>optional uint32 LCPIPJLKGEK = 7;</code>
-     */
-    private int lCPIPJLKGEK;
-
-    /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 8;</code>
      */
     private int id;
 
     /**
-     * <code>optional .FeverTimeActivityType activity_type = 12;</code>
+     * <code>optional uint32 DHFALDJEAAN = 9;</code>
+     */
+    private int dHFALDJEAAN;
+
+    /**
+     * <code>optional .FeverTimeActivityType activity_type = 1;</code>
      */
     private int activityType;
 
@@ -49,99 +49,62 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 GIGKNPFCKNB = 4;</code>
-     * @return whether the gIGKNPFCKNB field is set
+     * <code>optional uint32 BFADHPMMODP = 2;</code>
+     * @return whether the bFADHPMMODP field is set
      */
-    public boolean hasGIGKNPFCKNB() {
+    public boolean hasBFADHPMMODP() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 GIGKNPFCKNB = 4;</code>
+     * <code>optional uint32 BFADHPMMODP = 2;</code>
      * @return this
      */
-    public FeverTimeActivityBattleEndScNotify clearGIGKNPFCKNB() {
+    public FeverTimeActivityBattleEndScNotify clearBFADHPMMODP() {
       bitField0_ &= ~0x00000001;
-      gIGKNPFCKNB = 0;
+      bFADHPMMODP = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 GIGKNPFCKNB = 4;</code>
-     * @return the gIGKNPFCKNB
+     * <code>optional uint32 BFADHPMMODP = 2;</code>
+     * @return the bFADHPMMODP
      */
-    public int getGIGKNPFCKNB() {
-      return gIGKNPFCKNB;
+    public int getBFADHPMMODP() {
+      return bFADHPMMODP;
     }
 
     /**
-     * <code>optional uint32 GIGKNPFCKNB = 4;</code>
-     * @param value the gIGKNPFCKNB to set
+     * <code>optional uint32 BFADHPMMODP = 2;</code>
+     * @param value the bFADHPMMODP to set
      * @return this
      */
-    public FeverTimeActivityBattleEndScNotify setGIGKNPFCKNB(final int value) {
+    public FeverTimeActivityBattleEndScNotify setBFADHPMMODP(final int value) {
       bitField0_ |= 0x00000001;
-      gIGKNPFCKNB = value;
+      bFADHPMMODP = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 LCPIPJLKGEK = 7;</code>
-     * @return whether the lCPIPJLKGEK field is set
+     * <code>optional uint32 id = 8;</code>
+     * @return whether the id field is set
      */
-    public boolean hasLCPIPJLKGEK() {
+    public boolean hasId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 LCPIPJLKGEK = 7;</code>
-     * @return this
-     */
-    public FeverTimeActivityBattleEndScNotify clearLCPIPJLKGEK() {
-      bitField0_ &= ~0x00000002;
-      lCPIPJLKGEK = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 LCPIPJLKGEK = 7;</code>
-     * @return the lCPIPJLKGEK
-     */
-    public int getLCPIPJLKGEK() {
-      return lCPIPJLKGEK;
-    }
-
-    /**
-     * <code>optional uint32 LCPIPJLKGEK = 7;</code>
-     * @param value the lCPIPJLKGEK to set
-     * @return this
-     */
-    public FeverTimeActivityBattleEndScNotify setLCPIPJLKGEK(final int value) {
-      bitField0_ |= 0x00000002;
-      lCPIPJLKGEK = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 id = 11;</code>
-     * @return whether the id field is set
-     */
-    public boolean hasId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 8;</code>
      * @return this
      */
     public FeverTimeActivityBattleEndScNotify clearId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 8;</code>
      * @return the id
      */
     public int getId() {
@@ -149,18 +112,55 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 11;</code>
+     * <code>optional uint32 id = 8;</code>
      * @param value the id to set
      * @return this
      */
     public FeverTimeActivityBattleEndScNotify setId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       id = value;
       return this;
     }
 
     /**
-     * <code>optional .FeverTimeActivityType activity_type = 12;</code>
+     * <code>optional uint32 DHFALDJEAAN = 9;</code>
+     * @return whether the dHFALDJEAAN field is set
+     */
+    public boolean hasDHFALDJEAAN() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 DHFALDJEAAN = 9;</code>
+     * @return this
+     */
+    public FeverTimeActivityBattleEndScNotify clearDHFALDJEAAN() {
+      bitField0_ &= ~0x00000004;
+      dHFALDJEAAN = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 DHFALDJEAAN = 9;</code>
+     * @return the dHFALDJEAAN
+     */
+    public int getDHFALDJEAAN() {
+      return dHFALDJEAAN;
+    }
+
+    /**
+     * <code>optional uint32 DHFALDJEAAN = 9;</code>
+     * @param value the dHFALDJEAAN to set
+     * @return this
+     */
+    public FeverTimeActivityBattleEndScNotify setDHFALDJEAAN(final int value) {
+      bitField0_ |= 0x00000004;
+      dHFALDJEAAN = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .FeverTimeActivityType activity_type = 1;</code>
      * @return whether the activityType field is set
      */
     public boolean hasActivityType() {
@@ -168,7 +168,7 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .FeverTimeActivityType activity_type = 12;</code>
+     * <code>optional .FeverTimeActivityType activity_type = 1;</code>
      * @return this
      */
     public FeverTimeActivityBattleEndScNotify clearActivityType() {
@@ -178,7 +178,7 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .FeverTimeActivityType activity_type = 12;</code>
+     * <code>optional .FeverTimeActivityType activity_type = 1;</code>
      * @return the activityType
      */
     public FeverTimeActivityTypeOuterClass.FeverTimeActivityType getActivityType() {
@@ -211,7 +211,7 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .FeverTimeActivityType activity_type = 12;</code>
+     * <code>optional .FeverTimeActivityType activity_type = 1;</code>
      * @param value the activityType to set
      * @return this
      */
@@ -228,9 +228,9 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        gIGKNPFCKNB = other.gIGKNPFCKNB;
-        lCPIPJLKGEK = other.lCPIPJLKGEK;
+        bFADHPMMODP = other.bFADHPMMODP;
         id = other.id;
+        dHFALDJEAAN = other.dHFALDJEAAN;
         activityType = other.activityType;
       }
       return this;
@@ -243,14 +243,14 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasGIGKNPFCKNB()) {
-        setGIGKNPFCKNB(other.gIGKNPFCKNB);
-      }
-      if (other.hasLCPIPJLKGEK()) {
-        setLCPIPJLKGEK(other.lCPIPJLKGEK);
+      if (other.hasBFADHPMMODP()) {
+        setBFADHPMMODP(other.bFADHPMMODP);
       }
       if (other.hasId()) {
         setId(other.id);
+      }
+      if (other.hasDHFALDJEAAN()) {
+        setDHFALDJEAAN(other.dHFALDJEAAN);
       }
       if (other.hasActivityType()) {
         setActivityTypeValue(other.activityType);
@@ -265,9 +265,9 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      gIGKNPFCKNB = 0;
-      lCPIPJLKGEK = 0;
+      bFADHPMMODP = 0;
       id = 0;
+      dHFALDJEAAN = 0;
       activityType = 0;
       return this;
     }
@@ -292,28 +292,28 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
       }
       FeverTimeActivityBattleEndScNotify other = (FeverTimeActivityBattleEndScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasGIGKNPFCKNB() || gIGKNPFCKNB == other.gIGKNPFCKNB)
-        && (!hasLCPIPJLKGEK() || lCPIPJLKGEK == other.lCPIPJLKGEK)
+        && (!hasBFADHPMMODP() || bFADHPMMODP == other.bFADHPMMODP)
         && (!hasId() || id == other.id)
+        && (!hasDHFALDJEAAN() || dHFALDJEAAN == other.dHFALDJEAAN)
         && (!hasActivityType() || activityType == other.activityType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(gIGKNPFCKNB);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(bFADHPMMODP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(lCPIPJLKGEK);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(id);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(dHFALDJEAAN);
+      }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 8);
         output.writeEnumNoTag(activityType);
       }
     }
@@ -322,13 +322,13 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(gIGKNPFCKNB);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(bFADHPMMODP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(lCPIPJLKGEK);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dHFALDJEAAN);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(activityType);
@@ -344,34 +344,34 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // gIGKNPFCKNB
-            gIGKNPFCKNB = input.readUInt32();
+          case 16: {
+            // bFADHPMMODP
+            bFADHPMMODP = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 64) {
               break;
             }
           }
-          case 56: {
-            // lCPIPJLKGEK
-            lCPIPJLKGEK = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 88) {
-              break;
-            }
-          }
-          case 88: {
+          case 64: {
             // id
             id = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 72) {
               break;
             }
           }
-          case 96: {
+          case 72: {
+            // dHFALDJEAAN
+            dHFALDJEAAN = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 8) {
+              break;
+            }
+          }
+          case 8: {
             // activityType
             final int value = input.readInt32();
             if (FeverTimeActivityTypeOuterClass.FeverTimeActivityType.forNumber(value) != null) {
@@ -401,13 +401,13 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.gIGKNPFCKNB, gIGKNPFCKNB);
+        output.writeUInt32(FieldNames.bFADHPMMODP, bFADHPMMODP);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.lCPIPJLKGEK, lCPIPJLKGEK);
+        output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.dHFALDJEAAN, dHFALDJEAAN);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.activityType, activityType, FeverTimeActivityTypeOuterClass.FeverTimeActivityType.converter());
@@ -422,22 +422,11 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 754288858: {
-            if (input.isAtField(FieldNames.gIGKNPFCKNB)) {
+          case -639582676: {
+            if (input.isAtField(FieldNames.bFADHPMMODP)) {
               if (!input.trySkipNullValue()) {
-                gIGKNPFCKNB = input.readUInt32();
+                bFADHPMMODP = input.readUInt32();
                 bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 574713828: {
-            if (input.isAtField(FieldNames.lCPIPJLKGEK)) {
-              if (!input.trySkipNullValue()) {
-                lCPIPJLKGEK = input.readUInt32();
-                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -448,6 +437,17 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
             if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1491095932: {
+            if (input.isAtField(FieldNames.dHFALDJEAAN)) {
+              if (!input.trySkipNullValue()) {
+                dHFALDJEAAN = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -527,11 +527,11 @@ public final class FeverTimeActivityBattleEndScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName gIGKNPFCKNB = FieldName.forField("GIGKNPFCKNB");
-
-      static final FieldName lCPIPJLKGEK = FieldName.forField("LCPIPJLKGEK");
+      static final FieldName bFADHPMMODP = FieldName.forField("BFADHPMMODP");
 
       static final FieldName id = FieldName.forField("id");
+
+      static final FieldName dHFALDJEAAN = FieldName.forField("DHFALDJEAAN");
 
       static final FieldName activityType = FieldName.forField("activityType", "activity_type");
     }

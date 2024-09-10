@@ -14,27 +14,23 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class RogueBuffEnhanceInfoOuterClass {
   /**
-   * <pre>
-   *  Bpgoffdcaen
-   * </pre>
-   *
    * Protobuf type {@code RogueBuffEnhanceInfo}
    */
   public static final class RogueBuffEnhanceInfo extends ProtoMessage<RogueBuffEnhanceInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional float unk_float = 4;</code>
+     * <code>optional float unk_float = 3;</code>
      */
     private float unkFloat;
 
     /**
-     * <code>optional uint32 buff_id = 14;</code>
+     * <code>optional uint32 buff_id = 5;</code>
      */
     private int buffId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -42,10 +38,6 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  Bpgoffdcaen
-     * </pre>
-     *
      * @return a new empty instance of {@code RogueBuffEnhanceInfo}
      */
     public static RogueBuffEnhanceInfo newInstance() {
@@ -53,7 +45,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional float unk_float = 4;</code>
+     * <code>optional float unk_float = 3;</code>
      * @return whether the unkFloat field is set
      */
     public boolean hasUnkFloat() {
@@ -61,7 +53,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional float unk_float = 4;</code>
+     * <code>optional float unk_float = 3;</code>
      * @return this
      */
     public RogueBuffEnhanceInfo clearUnkFloat() {
@@ -71,7 +63,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional float unk_float = 4;</code>
+     * <code>optional float unk_float = 3;</code>
      * @return the unkFloat
      */
     public float getUnkFloat() {
@@ -79,7 +71,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional float unk_float = 4;</code>
+     * <code>optional float unk_float = 3;</code>
      * @param value the unkFloat to set
      * @return this
      */
@@ -90,7 +82,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 14;</code>
+     * <code>optional uint32 buff_id = 5;</code>
      * @return whether the buffId field is set
      */
     public boolean hasBuffId() {
@@ -98,7 +90,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 14;</code>
+     * <code>optional uint32 buff_id = 5;</code>
      * @return this
      */
     public RogueBuffEnhanceInfo clearBuffId() {
@@ -108,7 +100,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 14;</code>
+     * <code>optional uint32 buff_id = 5;</code>
      * @return the buffId
      */
     public int getBuffId() {
@@ -116,7 +108,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 14;</code>
+     * <code>optional uint32 buff_id = 5;</code>
      * @param value the buffId to set
      * @return this
      */
@@ -127,7 +119,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -135,7 +127,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return this
      */
     public RogueBuffEnhanceInfo clearItemCostList() {
@@ -145,7 +137,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -159,7 +151,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -173,7 +165,7 @@ public final class RogueBuffEnhanceInfoOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 1;</code>
+     * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -255,15 +247,15 @@ public final class RogueBuffEnhanceInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 37);
+        output.writeRawByte((byte) 29);
         output.writeFloatNoTag(unkFloat);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(buffId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 10);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -290,25 +282,25 @@ public final class RogueBuffEnhanceInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 37: {
+          case 29: {
             // unkFloat
             unkFloat = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 40) {
               break;
             }
           }
-          case 112: {
+          case 40: {
             // buffId
             buffId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 34) {
               break;
             }
           }
-          case 10: {
+          case 34: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000004;

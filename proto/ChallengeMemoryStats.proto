@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeMemoryClearInfo.proto";
 
 message ChallengeMemoryStats {
-	uint32 attempts = 3;
-	ChallengeMemoryClearInfo clear_info = 4;
+	ChallengeMemoryClearInfo clear_info = 5;
+	uint32 attempts = 13;
 }

@@ -19,7 +19,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      */
     private final ContentPackageDataOuterClass.ContentPackageData data = ContentPackageDataOuterClass.ContentPackageData.newInstance();
 
@@ -34,7 +34,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      * @return whether the data field is set
      */
     public boolean hasData() {
@@ -42,7 +42,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      * @return this
      */
     public ContentPackageSyncDataScNotify clearData() {
@@ -52,7 +52,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +66,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +80,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ContentPackageData data = 5;</code>
+     * <code>optional .ContentPackageData data = 1;</code>
      * @param value the data to set
      * @return this
      */
@@ -151,7 +151,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(data);
       }
     }
@@ -172,7 +172,7 @@ public final class ContentPackageSyncDataScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
+          case 10: {
             // data
             input.readMessage(data);
             bitField0_ |= 0x00000001;

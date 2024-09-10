@@ -24,7 +24,7 @@ public final class VideoKeyInfoOuterClass {
     private long videoKey;
 
     /**
-     * <code>optional uint32 id = 10;</code>
+     * <code>optional uint32 id = 8;</code>
      */
     private int id;
 
@@ -76,7 +76,7 @@ public final class VideoKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 10;</code>
+     * <code>optional uint32 id = 8;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -84,7 +84,7 @@ public final class VideoKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 10;</code>
+     * <code>optional uint32 id = 8;</code>
      * @return this
      */
     public VideoKeyInfo clearId() {
@@ -94,7 +94,7 @@ public final class VideoKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 10;</code>
+     * <code>optional uint32 id = 8;</code>
      * @return the id
      */
     public int getId() {
@@ -102,7 +102,7 @@ public final class VideoKeyInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 10;</code>
+     * <code>optional uint32 id = 8;</code>
      * @param value the id to set
      * @return this
      */
@@ -181,7 +181,7 @@ public final class VideoKeyInfoOuterClass {
         output.writeUInt64NoTag(videoKey);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(id);
       }
     }
@@ -210,11 +210,11 @@ public final class VideoKeyInfoOuterClass {
             videoKey = input.readUInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 64) {
               break;
             }
           }
-          case 80: {
+          case 64: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000002;

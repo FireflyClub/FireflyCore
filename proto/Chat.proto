@@ -5,10 +5,10 @@ option java_package = "emu.lunarcore.proto";
 import "MsgType.proto";
 
 message Chat {
-	uint32 sender_chat = 2;
-	//KICJPJALBBH IGNEAJDPAPE = 8;
-	string word = 11;
-	uint64 sent_time = 12;
-	uint32 emote = 3;
-	MsgType msg_type = 10;
+	//LFCKPPDLIJI BNABNCCMILM = 3;
+	uint32 emote = 13;
+	uint32 sender_chat = 7;
+	string word = 4;
+	uint64 sent_time = 14;
+	MsgType msg_type = 11;
 }

@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ServerPrefs {
-	uint32 server_prefs_id = 15;
-	bytes data = 5;
+	uint32 server_prefs_id = 12;
+	bytes data = 9;
 }

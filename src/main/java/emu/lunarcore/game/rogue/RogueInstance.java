@@ -711,7 +711,7 @@ public class RogueInstance {
             for (int i = 0; i < lineup.getAvatars().size(); i++) {
                 var recordAvatar = RogueRecordAvatar.newInstance()
                         .setId(lineup.getAvatars().get(i))
-                        .setSlot(i)
+                        .setSlotType(i)
                         .setAvatarType(AvatarType.AVATAR_FORMAL_TYPE);
                 
                 recordInfo.addAvatarList(recordAvatar);

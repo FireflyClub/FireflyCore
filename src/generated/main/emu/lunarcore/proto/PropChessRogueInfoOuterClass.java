@@ -19,14 +19,14 @@ public final class PropChessRogueInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool DMKAAFFGLOM = 9;</code>
+     * <code>optional bool AOJBLAEOBHA = 2;</code>
      */
-    private boolean dMKAAFFGLOM;
+    private boolean aOJBLAEOBHA;
 
     /**
-     * <code>optional bool DGJKFKNPNLF = 14;</code>
+     * <code>optional bool EHBHBAGPAHB = 11;</code>
      */
-    private boolean dGJKFKNPNLF;
+    private boolean eHBHBAGPAHB;
 
     private PropChessRogueInfo() {
     }
@@ -39,76 +39,76 @@ public final class PropChessRogueInfoOuterClass {
     }
 
     /**
-     * <code>optional bool DMKAAFFGLOM = 9;</code>
-     * @return whether the dMKAAFFGLOM field is set
+     * <code>optional bool AOJBLAEOBHA = 2;</code>
+     * @return whether the aOJBLAEOBHA field is set
      */
-    public boolean hasDMKAAFFGLOM() {
+    public boolean hasAOJBLAEOBHA() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool DMKAAFFGLOM = 9;</code>
+     * <code>optional bool AOJBLAEOBHA = 2;</code>
      * @return this
      */
-    public PropChessRogueInfo clearDMKAAFFGLOM() {
+    public PropChessRogueInfo clearAOJBLAEOBHA() {
       bitField0_ &= ~0x00000001;
-      dMKAAFFGLOM = false;
+      aOJBLAEOBHA = false;
       return this;
     }
 
     /**
-     * <code>optional bool DMKAAFFGLOM = 9;</code>
-     * @return the dMKAAFFGLOM
+     * <code>optional bool AOJBLAEOBHA = 2;</code>
+     * @return the aOJBLAEOBHA
      */
-    public boolean getDMKAAFFGLOM() {
-      return dMKAAFFGLOM;
+    public boolean getAOJBLAEOBHA() {
+      return aOJBLAEOBHA;
     }
 
     /**
-     * <code>optional bool DMKAAFFGLOM = 9;</code>
-     * @param value the dMKAAFFGLOM to set
+     * <code>optional bool AOJBLAEOBHA = 2;</code>
+     * @param value the aOJBLAEOBHA to set
      * @return this
      */
-    public PropChessRogueInfo setDMKAAFFGLOM(final boolean value) {
+    public PropChessRogueInfo setAOJBLAEOBHA(final boolean value) {
       bitField0_ |= 0x00000001;
-      dMKAAFFGLOM = value;
+      aOJBLAEOBHA = value;
       return this;
     }
 
     /**
-     * <code>optional bool DGJKFKNPNLF = 14;</code>
-     * @return whether the dGJKFKNPNLF field is set
+     * <code>optional bool EHBHBAGPAHB = 11;</code>
+     * @return whether the eHBHBAGPAHB field is set
      */
-    public boolean hasDGJKFKNPNLF() {
+    public boolean hasEHBHBAGPAHB() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool DGJKFKNPNLF = 14;</code>
+     * <code>optional bool EHBHBAGPAHB = 11;</code>
      * @return this
      */
-    public PropChessRogueInfo clearDGJKFKNPNLF() {
+    public PropChessRogueInfo clearEHBHBAGPAHB() {
       bitField0_ &= ~0x00000002;
-      dGJKFKNPNLF = false;
+      eHBHBAGPAHB = false;
       return this;
     }
 
     /**
-     * <code>optional bool DGJKFKNPNLF = 14;</code>
-     * @return the dGJKFKNPNLF
+     * <code>optional bool EHBHBAGPAHB = 11;</code>
+     * @return the eHBHBAGPAHB
      */
-    public boolean getDGJKFKNPNLF() {
-      return dGJKFKNPNLF;
+    public boolean getEHBHBAGPAHB() {
+      return eHBHBAGPAHB;
     }
 
     /**
-     * <code>optional bool DGJKFKNPNLF = 14;</code>
-     * @param value the dGJKFKNPNLF to set
+     * <code>optional bool EHBHBAGPAHB = 11;</code>
+     * @param value the eHBHBAGPAHB to set
      * @return this
      */
-    public PropChessRogueInfo setDGJKFKNPNLF(final boolean value) {
+    public PropChessRogueInfo setEHBHBAGPAHB(final boolean value) {
       bitField0_ |= 0x00000002;
-      dGJKFKNPNLF = value;
+      eHBHBAGPAHB = value;
       return this;
     }
 
@@ -117,8 +117,8 @@ public final class PropChessRogueInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        dMKAAFFGLOM = other.dMKAAFFGLOM;
-        dGJKFKNPNLF = other.dGJKFKNPNLF;
+        aOJBLAEOBHA = other.aOJBLAEOBHA;
+        eHBHBAGPAHB = other.eHBHBAGPAHB;
       }
       return this;
     }
@@ -129,11 +129,11 @@ public final class PropChessRogueInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasDMKAAFFGLOM()) {
-        setDMKAAFFGLOM(other.dMKAAFFGLOM);
+      if (other.hasAOJBLAEOBHA()) {
+        setAOJBLAEOBHA(other.aOJBLAEOBHA);
       }
-      if (other.hasDGJKFKNPNLF()) {
-        setDGJKFKNPNLF(other.dGJKFKNPNLF);
+      if (other.hasEHBHBAGPAHB()) {
+        setEHBHBAGPAHB(other.eHBHBAGPAHB);
       }
       return this;
     }
@@ -145,8 +145,8 @@ public final class PropChessRogueInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dMKAAFFGLOM = false;
-      dGJKFKNPNLF = false;
+      aOJBLAEOBHA = false;
+      eHBHBAGPAHB = false;
       return this;
     }
 
@@ -170,19 +170,19 @@ public final class PropChessRogueInfoOuterClass {
       }
       PropChessRogueInfo other = (PropChessRogueInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasDMKAAFFGLOM() || dMKAAFFGLOM == other.dMKAAFFGLOM)
-        && (!hasDGJKFKNPNLF() || dGJKFKNPNLF == other.dGJKFKNPNLF);
+        && (!hasAOJBLAEOBHA() || aOJBLAEOBHA == other.aOJBLAEOBHA)
+        && (!hasEHBHBAGPAHB() || eHBHBAGPAHB == other.eHBHBAGPAHB);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeBoolNoTag(dMKAAFFGLOM);
+        output.writeRawByte((byte) 16);
+        output.writeBoolNoTag(aOJBLAEOBHA);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeBoolNoTag(dGJKFKNPNLF);
+        output.writeRawByte((byte) 88);
+        output.writeBoolNoTag(eHBHBAGPAHB);
       }
     }
 
@@ -205,18 +205,18 @@ public final class PropChessRogueInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
-            // dMKAAFFGLOM
-            dMKAAFFGLOM = input.readBool();
+          case 16: {
+            // aOJBLAEOBHA
+            aOJBLAEOBHA = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 88) {
               break;
             }
           }
-          case 112: {
-            // dGJKFKNPNLF
-            dGJKFKNPNLF = input.readBool();
+          case 88: {
+            // eHBHBAGPAHB
+            eHBHBAGPAHB = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +241,10 @@ public final class PropChessRogueInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.dMKAAFFGLOM, dMKAAFFGLOM);
+        output.writeBool(FieldNames.aOJBLAEOBHA, aOJBLAEOBHA);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.dGJKFKNPNLF, dGJKFKNPNLF);
+        output.writeBool(FieldNames.eHBHBAGPAHB, eHBHBAGPAHB);
       }
       output.endObject();
     }
@@ -256,10 +256,10 @@ public final class PropChessRogueInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1057780411: {
-            if (input.isAtField(FieldNames.dMKAAFFGLOM)) {
+          case -70858026: {
+            if (input.isAtField(FieldNames.aOJBLAEOBHA)) {
               if (!input.trySkipNullValue()) {
-                dMKAAFFGLOM = input.readBool();
+                aOJBLAEOBHA = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -267,10 +267,10 @@ public final class PropChessRogueInfoOuterClass {
             }
             break;
           }
-          case -1824623075: {
-            if (input.isAtField(FieldNames.dGJKFKNPNLF)) {
+          case 1570333258: {
+            if (input.isAtField(FieldNames.eHBHBAGPAHB)) {
               if (!input.trySkipNullValue()) {
-                dGJKFKNPNLF = input.readBool();
+                eHBHBAGPAHB = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -331,9 +331,9 @@ public final class PropChessRogueInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName dMKAAFFGLOM = FieldName.forField("DMKAAFFGLOM");
+      static final FieldName aOJBLAEOBHA = FieldName.forField("AOJBLAEOBHA");
 
-      static final FieldName dGJKFKNPNLF = FieldName.forField("DGJKFKNPNLF");
+      static final FieldName eHBHBAGPAHB = FieldName.forField("EHBHBAGPAHB");
     }
   }
 }

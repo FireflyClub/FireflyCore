@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PickRogueAvatarCsReq {
-	repeated uint32 DAPLNLIGMOM = 4;
-	repeated uint32 base_avatar_id_list = 2;
-	uint32 prop_entity_id = 1;
+	uint32 prop_entity_id = 3;
+	repeated uint32 MOICCJNMBBI = 2;
+	repeated uint32 base_avatar_id_list = 8;
 }

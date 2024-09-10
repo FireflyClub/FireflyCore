@@ -24,7 +24,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      */
     private final WolfBroGameDataOuterClass.WolfBroGameData wolfBroGameData = WolfBroGameDataOuterClass.WolfBroGameData.newInstance();
 
@@ -76,7 +76,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      * @return whether the wolfBroGameData field is set
      */
     public boolean hasWolfBroGameData() {
@@ -84,7 +84,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      * @return this
      */
     public GetWolfBroGameDataScRsp clearWolfBroGameData() {
@@ -94,7 +94,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .WolfBroGameData wolf_bro_game_data = 5;</code>
+     * <code>optional .WolfBroGameData wolf_bro_game_data = 13;</code>
      * @param value the wolfBroGameData to set
      * @return this
      */
@@ -203,7 +203,7 @@ public final class GetWolfBroGameDataScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 106);
         output.writeMessageNoTag(wolfBroGameData);
       }
     }
@@ -232,11 +232,11 @@ public final class GetWolfBroGameDataScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 106) {
               break;
             }
           }
-          case 42: {
+          case 106: {
             // wolfBroGameData
             input.readMessage(wolfBroGameData);
             bitField0_ |= 0x00000002;

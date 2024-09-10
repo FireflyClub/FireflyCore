@@ -19,16 +19,17 @@ public final class SceneEntityRefreshInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * </pre>
-     *
-     * <code>optional uint32 del_entity = 14;</code>
+     * <code>optional uint32 FIFLLOGPNMC = 10;</code>
+     */
+    private int fIFLLOGPNMC;
+
+    /**
+     * <code>optional uint32 del_entity = 11;</code>
      */
     private int delEntity;
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      */
     private final SceneEntityInfoOuterClass.SceneEntityInfo addEntity = SceneEntityInfoOuterClass.SceneEntityInfo.newInstance();
 
@@ -42,38 +43,98 @@ public final class SceneEntityRefreshInfoOuterClass {
       return new SceneEntityRefreshInfo();
     }
 
+    public boolean hasKMIFGOLFIDP() {
+      return (((bitField0_ & 0x00000007)) != 0);
+    }
+
+    public SceneEntityRefreshInfo clearKMIFGOLFIDP() {
+      if (hasKMIFGOLFIDP()) {
+        clearFIFLLOGPNMC();
+        clearDelEntity();
+        clearAddEntity();
+      }
+      return this;
+    }
+
+    private void clearKMIFGOLFIDPOtherFIFLLOGPNMC() {
+      if ((((bitField0_ & 0x00000006)) != 0)) {
+        clearDelEntity();
+        clearAddEntity();
+      }
+    }
+
+    private void clearKMIFGOLFIDPOtherDelEntity() {
+      if ((((bitField0_ & 0x00000005)) != 0)) {
+        clearFIFLLOGPNMC();
+        clearAddEntity();
+      }
+    }
+
+    private void clearKMIFGOLFIDPOtherAddEntity() {
+      if ((((bitField0_ & 0x00000003)) != 0)) {
+        clearFIFLLOGPNMC();
+        clearDelEntity();
+      }
+    }
+
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * </pre>
-     *
-     * <code>optional uint32 del_entity = 14;</code>
-     * @return whether the delEntity field is set
+     * <code>optional uint32 FIFLLOGPNMC = 10;</code>
+     * @return whether the fIFLLOGPNMC field is set
      */
-    public boolean hasDelEntity() {
+    public boolean hasFIFLLOGPNMC() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * </pre>
-     *
-     * <code>optional uint32 del_entity = 14;</code>
+     * <code>optional uint32 FIFLLOGPNMC = 10;</code>
+     * @return this
+     */
+    public SceneEntityRefreshInfo clearFIFLLOGPNMC() {
+      bitField0_ &= ~0x00000001;
+      fIFLLOGPNMC = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 FIFLLOGPNMC = 10;</code>
+     * @return the fIFLLOGPNMC
+     */
+    public int getFIFLLOGPNMC() {
+      return fIFLLOGPNMC;
+    }
+
+    /**
+     * <code>optional uint32 FIFLLOGPNMC = 10;</code>
+     * @param value the fIFLLOGPNMC to set
+     * @return this
+     */
+    public SceneEntityRefreshInfo setFIFLLOGPNMC(final int value) {
+      clearKMIFGOLFIDPOtherFIFLLOGPNMC();
+      bitField0_ |= 0x00000001;
+      fIFLLOGPNMC = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 del_entity = 11;</code>
+     * @return whether the delEntity field is set
+     */
+    public boolean hasDelEntity() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 del_entity = 11;</code>
      * @return this
      */
     public SceneEntityRefreshInfo clearDelEntity() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       delEntity = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * </pre>
-     *
-     * <code>optional uint32 del_entity = 14;</code>
+     * <code>optional uint32 del_entity = 11;</code>
      * @return the delEntity
      */
     public int getDelEntity() {
@@ -81,40 +142,37 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 NHMLENKIPMO = 3;
-     * </pre>
-     *
-     * <code>optional uint32 del_entity = 14;</code>
+     * <code>optional uint32 del_entity = 11;</code>
      * @param value the delEntity to set
      * @return this
      */
     public SceneEntityRefreshInfo setDelEntity(final int value) {
-      bitField0_ |= 0x00000001;
+      clearKMIFGOLFIDPOtherDelEntity();
+      bitField0_ |= 0x00000002;
       delEntity = value;
       return this;
     }
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      * @return whether the addEntity field is set
      */
     public boolean hasAddEntity() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      * @return this
      */
     public SceneEntityRefreshInfo clearAddEntity() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       addEntity.clear();
       return this;
     }
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -128,7 +186,7 @@ public final class SceneEntityRefreshInfoOuterClass {
     }
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -137,18 +195,20 @@ public final class SceneEntityRefreshInfoOuterClass {
      * @return internal storage object for modifications
      */
     public SceneEntityInfoOuterClass.SceneEntityInfo getMutableAddEntity() {
-      bitField0_ |= 0x00000002;
+      clearKMIFGOLFIDPOtherAddEntity();
+      bitField0_ |= 0x00000004;
       return addEntity;
     }
 
     /**
-     * <code>optional .SceneEntityInfo add_entity = 5;</code>
+     * <code>optional .SceneEntityInfo add_entity = 4;</code>
      * @param value the addEntity to set
      * @return this
      */
     public SceneEntityRefreshInfo setAddEntity(
         final SceneEntityInfoOuterClass.SceneEntityInfo value) {
-      bitField0_ |= 0x00000002;
+      clearKMIFGOLFIDPOtherAddEntity();
+      bitField0_ |= 0x00000004;
       addEntity.copyFrom(value);
       return this;
     }
@@ -158,6 +218,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        fIFLLOGPNMC = other.fIFLLOGPNMC;
         delEntity = other.delEntity;
         addEntity.copyFrom(other.addEntity);
       }
@@ -170,6 +231,9 @@ public final class SceneEntityRefreshInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasFIFLLOGPNMC()) {
+        setFIFLLOGPNMC(other.fIFLLOGPNMC);
+      }
       if (other.hasDelEntity()) {
         setDelEntity(other.delEntity);
       }
@@ -186,6 +250,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      fIFLLOGPNMC = 0;
       delEntity = 0;
       addEntity.clear();
       return this;
@@ -212,6 +277,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       }
       SceneEntityRefreshInfo other = (SceneEntityRefreshInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasFIFLLOGPNMC() || fIFLLOGPNMC == other.fIFLLOGPNMC)
         && (!hasDelEntity() || delEntity == other.delEntity)
         && (!hasAddEntity() || addEntity.equals(other.addEntity));
     }
@@ -219,11 +285,15 @@ public final class SceneEntityRefreshInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(delEntity);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(fIFLLOGPNMC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 88);
+        output.writeUInt32NoTag(delEntity);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(addEntity);
       }
     }
@@ -232,9 +302,12 @@ public final class SceneEntityRefreshInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(delEntity);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(fIFLLOGPNMC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(delEntity);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(addEntity);
       }
       return size;
@@ -247,19 +320,31 @@ public final class SceneEntityRefreshInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
-            // delEntity
-            delEntity = input.readUInt32();
+          case 80: {
+            // fIFLLOGPNMC
+            clearKMIFGOLFIDPOtherFIFLLOGPNMC();
+            fIFLLOGPNMC = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 88) {
               break;
             }
           }
-          case 42: {
-            // addEntity
-            input.readMessage(addEntity);
+          case 88: {
+            // delEntity
+            clearKMIFGOLFIDPOtherDelEntity();
+            delEntity = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
+            // addEntity
+            clearKMIFGOLFIDPOtherAddEntity();
+            input.readMessage(addEntity);
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -283,9 +368,12 @@ public final class SceneEntityRefreshInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.delEntity, delEntity);
+        output.writeUInt32(FieldNames.fIFLLOGPNMC, fIFLLOGPNMC);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.delEntity, delEntity);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.addEntity, addEntity);
       }
       output.endObject();
@@ -298,12 +386,25 @@ public final class SceneEntityRefreshInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 4214863: {
+            if (input.isAtField(FieldNames.fIFLLOGPNMC)) {
+              if (!input.trySkipNullValue()) {
+                clearKMIFGOLFIDPOtherFIFLLOGPNMC();
+                fIFLLOGPNMC = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1279926322:
           case 314362519: {
             if (input.isAtField(FieldNames.delEntity)) {
               if (!input.trySkipNullValue()) {
+                clearKMIFGOLFIDPOtherDelEntity();
                 delEntity = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -314,8 +415,9 @@ public final class SceneEntityRefreshInfoOuterClass {
           case 1653776705: {
             if (input.isAtField(FieldNames.addEntity)) {
               if (!input.trySkipNullValue()) {
+                clearKMIFGOLFIDPOtherAddEntity();
                 input.readMessage(addEntity);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -375,6 +477,8 @@ public final class SceneEntityRefreshInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName fIFLLOGPNMC = FieldName.forField("FIFLLOGPNMC");
+
       static final FieldName delEntity = FieldName.forField("delEntity", "del_entity");
 
       static final FieldName addEntity = FieldName.forField("addEntity", "add_entity");

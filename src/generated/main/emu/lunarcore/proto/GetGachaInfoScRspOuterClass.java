@@ -25,27 +25,27 @@ public final class GetGachaInfoScRspOuterClass {
     private int gachaRandom;
 
     /**
-     * <code>optional uint32 GHJDKHPBGNN = 6;</code>
+     * <code>optional uint32 HDFMNLHCOME = 5;</code>
      */
-    private int gHJDKHPBGNN;
+    private int hDFMNLHCOME;
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 PJAFIMMCPDF = 6;</code>
+     */
+    private int pJAFIMMCPDF;
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 FMMILADAHFF = 12;</code>
+     * <code>optional uint32 HJFLGCNEKKK = 12;</code>
      */
-    private int fMMILADAHFF;
+    private int hJFLGCNEKKK;
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 15;</code>
-     */
-    private int eCKOEHMHJBM;
-
-    /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      */
     private final RepeatedMessage<GachaInfoOuterClass.GachaInfo> gachaInfoList = RepeatedMessage.newEmptyInstance(GachaInfoOuterClass.GachaInfo.getFactory());
 
@@ -97,62 +97,99 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 GHJDKHPBGNN = 6;</code>
-     * @return whether the gHJDKHPBGNN field is set
+     * <code>optional uint32 HDFMNLHCOME = 5;</code>
+     * @return whether the hDFMNLHCOME field is set
      */
-    public boolean hasGHJDKHPBGNN() {
+    public boolean hasHDFMNLHCOME() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 GHJDKHPBGNN = 6;</code>
+     * <code>optional uint32 HDFMNLHCOME = 5;</code>
      * @return this
      */
-    public GetGachaInfoScRsp clearGHJDKHPBGNN() {
+    public GetGachaInfoScRsp clearHDFMNLHCOME() {
       bitField0_ &= ~0x00000002;
-      gHJDKHPBGNN = 0;
+      hDFMNLHCOME = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 GHJDKHPBGNN = 6;</code>
-     * @return the gHJDKHPBGNN
+     * <code>optional uint32 HDFMNLHCOME = 5;</code>
+     * @return the hDFMNLHCOME
      */
-    public int getGHJDKHPBGNN() {
-      return gHJDKHPBGNN;
+    public int getHDFMNLHCOME() {
+      return hDFMNLHCOME;
     }
 
     /**
-     * <code>optional uint32 GHJDKHPBGNN = 6;</code>
-     * @param value the gHJDKHPBGNN to set
+     * <code>optional uint32 HDFMNLHCOME = 5;</code>
+     * @param value the hDFMNLHCOME to set
      * @return this
      */
-    public GetGachaInfoScRsp setGHJDKHPBGNN(final int value) {
+    public GetGachaInfoScRsp setHDFMNLHCOME(final int value) {
       bitField0_ |= 0x00000002;
-      gHJDKHPBGNN = value;
+      hDFMNLHCOME = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 PJAFIMMCPDF = 6;</code>
+     * @return whether the pJAFIMMCPDF field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasPJAFIMMCPDF() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 PJAFIMMCPDF = 6;</code>
+     * @return this
+     */
+    public GetGachaInfoScRsp clearPJAFIMMCPDF() {
+      bitField0_ &= ~0x00000004;
+      pJAFIMMCPDF = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 PJAFIMMCPDF = 6;</code>
+     * @return the pJAFIMMCPDF
+     */
+    public int getPJAFIMMCPDF() {
+      return pJAFIMMCPDF;
+    }
+
+    /**
+     * <code>optional uint32 PJAFIMMCPDF = 6;</code>
+     * @param value the pJAFIMMCPDF to set
+     * @return this
+     */
+    public GetGachaInfoScRsp setPJAFIMMCPDF(final int value) {
+      bitField0_ |= 0x00000004;
+      pJAFIMMCPDF = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
     public GetGachaInfoScRsp clearRetcode() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -160,92 +197,55 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
     public GetGachaInfoScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 FMMILADAHFF = 12;</code>
-     * @return whether the fMMILADAHFF field is set
+     * <code>optional uint32 HJFLGCNEKKK = 12;</code>
+     * @return whether the hJFLGCNEKKK field is set
      */
-    public boolean hasFMMILADAHFF() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 FMMILADAHFF = 12;</code>
-     * @return this
-     */
-    public GetGachaInfoScRsp clearFMMILADAHFF() {
-      bitField0_ &= ~0x00000008;
-      fMMILADAHFF = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 FMMILADAHFF = 12;</code>
-     * @return the fMMILADAHFF
-     */
-    public int getFMMILADAHFF() {
-      return fMMILADAHFF;
-    }
-
-    /**
-     * <code>optional uint32 FMMILADAHFF = 12;</code>
-     * @param value the fMMILADAHFF to set
-     * @return this
-     */
-    public GetGachaInfoScRsp setFMMILADAHFF(final int value) {
-      bitField0_ |= 0x00000008;
-      fMMILADAHFF = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 ECKOEHMHJBM = 15;</code>
-     * @return whether the eCKOEHMHJBM field is set
-     */
-    public boolean hasECKOEHMHJBM() {
+    public boolean hasHJFLGCNEKKK() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 15;</code>
+     * <code>optional uint32 HJFLGCNEKKK = 12;</code>
      * @return this
      */
-    public GetGachaInfoScRsp clearECKOEHMHJBM() {
+    public GetGachaInfoScRsp clearHJFLGCNEKKK() {
       bitField0_ &= ~0x00000010;
-      eCKOEHMHJBM = 0;
+      hJFLGCNEKKK = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 15;</code>
-     * @return the eCKOEHMHJBM
+     * <code>optional uint32 HJFLGCNEKKK = 12;</code>
+     * @return the hJFLGCNEKKK
      */
-    public int getECKOEHMHJBM() {
-      return eCKOEHMHJBM;
+    public int getHJFLGCNEKKK() {
+      return hJFLGCNEKKK;
     }
 
     /**
-     * <code>optional uint32 ECKOEHMHJBM = 15;</code>
-     * @param value the eCKOEHMHJBM to set
+     * <code>optional uint32 HJFLGCNEKKK = 12;</code>
+     * @param value the hJFLGCNEKKK to set
      * @return this
      */
-    public GetGachaInfoScRsp setECKOEHMHJBM(final int value) {
+    public GetGachaInfoScRsp setHJFLGCNEKKK(final int value) {
       bitField0_ |= 0x00000010;
-      eCKOEHMHJBM = value;
+      hJFLGCNEKKK = value;
       return this;
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      * @return whether the gachaInfoList field is set
      */
     public boolean hasGachaInfoList() {
@@ -253,7 +253,7 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      * @return this
      */
     public GetGachaInfoScRsp clearGachaInfoList() {
@@ -263,7 +263,7 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -277,7 +277,7 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -291,7 +291,7 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      * @param value the gachaInfoList to add
      * @return this
      */
@@ -302,7 +302,7 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 3;</code>
+     * <code>repeated .GachaInfo gacha_info_list = 8;</code>
      * @param values the gachaInfoList to add
      * @return this
      */
@@ -318,10 +318,10 @@ public final class GetGachaInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         gachaRandom = other.gachaRandom;
-        gHJDKHPBGNN = other.gHJDKHPBGNN;
+        hDFMNLHCOME = other.hDFMNLHCOME;
+        pJAFIMMCPDF = other.pJAFIMMCPDF;
         retcode = other.retcode;
-        fMMILADAHFF = other.fMMILADAHFF;
-        eCKOEHMHJBM = other.eCKOEHMHJBM;
+        hJFLGCNEKKK = other.hJFLGCNEKKK;
         gachaInfoList.copyFrom(other.gachaInfoList);
       }
       return this;
@@ -336,17 +336,17 @@ public final class GetGachaInfoScRspOuterClass {
       if (other.hasGachaRandom()) {
         setGachaRandom(other.gachaRandom);
       }
-      if (other.hasGHJDKHPBGNN()) {
-        setGHJDKHPBGNN(other.gHJDKHPBGNN);
+      if (other.hasHDFMNLHCOME()) {
+        setHDFMNLHCOME(other.hDFMNLHCOME);
+      }
+      if (other.hasPJAFIMMCPDF()) {
+        setPJAFIMMCPDF(other.pJAFIMMCPDF);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasFMMILADAHFF()) {
-        setFMMILADAHFF(other.fMMILADAHFF);
-      }
-      if (other.hasECKOEHMHJBM()) {
-        setECKOEHMHJBM(other.eCKOEHMHJBM);
+      if (other.hasHJFLGCNEKKK()) {
+        setHJFLGCNEKKK(other.hJFLGCNEKKK);
       }
       if (other.hasGachaInfoList()) {
         getMutableGachaInfoList().addAll(other.gachaInfoList);
@@ -362,10 +362,10 @@ public final class GetGachaInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       gachaRandom = 0;
-      gHJDKHPBGNN = 0;
+      hDFMNLHCOME = 0;
+      pJAFIMMCPDF = 0;
       retcode = 0;
-      fMMILADAHFF = 0;
-      eCKOEHMHJBM = 0;
+      hJFLGCNEKKK = 0;
       gachaInfoList.clear();
       return this;
     }
@@ -392,10 +392,10 @@ public final class GetGachaInfoScRspOuterClass {
       GetGachaInfoScRsp other = (GetGachaInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasGachaRandom() || gachaRandom == other.gachaRandom)
-        && (!hasGHJDKHPBGNN() || gHJDKHPBGNN == other.gHJDKHPBGNN)
+        && (!hasHDFMNLHCOME() || hDFMNLHCOME == other.hDFMNLHCOME)
+        && (!hasPJAFIMMCPDF() || pJAFIMMCPDF == other.pJAFIMMCPDF)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasFMMILADAHFF() || fMMILADAHFF == other.fMMILADAHFF)
-        && (!hasECKOEHMHJBM() || eCKOEHMHJBM == other.eCKOEHMHJBM)
+        && (!hasHJFLGCNEKKK() || hJFLGCNEKKK == other.hJFLGCNEKKK)
         && (!hasGachaInfoList() || gachaInfoList.equals(other.gachaInfoList));
     }
 
@@ -406,24 +406,24 @@ public final class GetGachaInfoScRspOuterClass {
         output.writeUInt32NoTag(gachaRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(gHJDKHPBGNN);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(hDFMNLHCOME);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(fMMILADAHFF);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(eCKOEHMHJBM);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(hJFLGCNEKKK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < gachaInfoList.length(); i++) {
-          output.writeRawByte((byte) 26);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(gachaInfoList.get(i));
         }
       }
@@ -436,16 +436,16 @@ public final class GetGachaInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(gachaRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(gHJDKHPBGNN);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(hDFMNLHCOME);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(fMMILADAHFF);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(eCKOEHMHJBM);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(hJFLGCNEKKK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * gachaInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(gachaInfoList);
@@ -465,47 +465,47 @@ public final class GetGachaInfoScRspOuterClass {
             gachaRandom = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
+          case 40: {
+            // hDFMNLHCOME
+            hDFMNLHCOME = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
             if (tag != 48) {
               break;
             }
           }
           case 48: {
-            // gHJDKHPBGNN
-            gHJDKHPBGNN = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            // pJAFIMMCPDF
+            pJAFIMMCPDF = input.readUInt32();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 72) {
               break;
             }
           }
-          case 56: {
+          case 72: {
             // retcode
             retcode = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 96) {
               break;
             }
           }
           case 96: {
-            // fMMILADAHFF
-            fMMILADAHFF = input.readUInt32();
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 120) {
-              break;
-            }
-          }
-          case 120: {
-            // eCKOEHMHJBM
-            eCKOEHMHJBM = input.readUInt32();
+            // hJFLGCNEKKK
+            hJFLGCNEKKK = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 66) {
               break;
             }
           }
-          case 26: {
+          case 66: {
             // gachaInfoList
             tag = input.readRepeatedMessage(gachaInfoList, tag);
             bitField0_ |= 0x00000020;
@@ -534,16 +534,16 @@ public final class GetGachaInfoScRspOuterClass {
         output.writeUInt32(FieldNames.gachaRandom, gachaRandom);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.gHJDKHPBGNN, gHJDKHPBGNN);
+        output.writeUInt32(FieldNames.hDFMNLHCOME, hDFMNLHCOME);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.pJAFIMMCPDF, pJAFIMMCPDF);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.fMMILADAHFF, fMMILADAHFF);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.eCKOEHMHJBM, eCKOEHMHJBM);
+        output.writeUInt32(FieldNames.hJFLGCNEKKK, hJFLGCNEKKK);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRepeatedMessage(FieldNames.gachaInfoList, gachaInfoList);
@@ -570,11 +570,22 @@ public final class GetGachaInfoScRspOuterClass {
             }
             break;
           }
-          case 1921260445: {
-            if (input.isAtField(FieldNames.gHJDKHPBGNN)) {
+          case 825347115: {
+            if (input.isAtField(FieldNames.hDFMNLHCOME)) {
               if (!input.trySkipNullValue()) {
-                gHJDKHPBGNN = input.readUInt32();
+                hDFMNLHCOME = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -821179303: {
+            if (input.isAtField(FieldNames.pJAFIMMCPDF)) {
+              if (!input.trySkipNullValue()) {
+                pJAFIMMCPDF = input.readUInt32();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -585,17 +596,6 @@ public final class GetGachaInfoScRspOuterClass {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1886613741: {
-            if (input.isAtField(FieldNames.fMMILADAHFF)) {
-              if (!input.trySkipNullValue()) {
-                fMMILADAHFF = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -603,10 +603,10 @@ public final class GetGachaInfoScRspOuterClass {
             }
             break;
           }
-          case 1353709333: {
-            if (input.isAtField(FieldNames.eCKOEHMHJBM)) {
+          case 28799024: {
+            if (input.isAtField(FieldNames.hJFLGCNEKKK)) {
               if (!input.trySkipNullValue()) {
-                eCKOEHMHJBM = input.readUInt32();
+                hJFLGCNEKKK = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -681,13 +681,13 @@ public final class GetGachaInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName gachaRandom = FieldName.forField("gachaRandom", "gacha_random");
 
-      static final FieldName gHJDKHPBGNN = FieldName.forField("GHJDKHPBGNN");
+      static final FieldName hDFMNLHCOME = FieldName.forField("HDFMNLHCOME");
+
+      static final FieldName pJAFIMMCPDF = FieldName.forField("PJAFIMMCPDF");
 
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName fMMILADAHFF = FieldName.forField("FMMILADAHFF");
-
-      static final FieldName eCKOEHMHJBM = FieldName.forField("ECKOEHMHJBM");
+      static final FieldName hJFLGCNEKKK = FieldName.forField("HJFLGCNEKKK");
 
       static final FieldName gachaInfoList = FieldName.forField("gachaInfoList", "gacha_info_list");
     }

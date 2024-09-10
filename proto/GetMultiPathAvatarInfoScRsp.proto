@@ -2,12 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "MultiPathAvatarTypeInfo.proto";
 import "MultiPathAvatarType.proto";
+import "MultiPathAvatarTypeInfo.proto";
 
 message GetMultiPathAvatarInfoScRsp {
-	uint32 retcode = 3;
-	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 2;
-	repeated uint32 multi_avatar_type_id_list = 4;
-	map<uint32, MultiPathAvatarType> current_multi_avatar_id = 13;
+	repeated uint32 multi_avatar_type_id_list = 2;
+	repeated MultiPathAvatarTypeInfo multi_path_avatar_info_list = 7;
+	uint32 retcode = 8;
+	map<uint32, MultiPathAvatarType> current_multi_avatar_id = 5;
 }

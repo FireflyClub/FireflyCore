@@ -20,29 +20,33 @@ public final class GetFightActivityDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
-     */
-    private int retcode;
-
-    /**
-     * <code>optional uint32 world_level = 7;</code>
+     * <pre>
+     * FMAEHNJNGIG extra_info = 4;
+     * </pre>
+     *
+     * <code>optional uint32 world_level = 5;</code>
      */
     private int worldLevel;
 
     /**
-     * <code>optional bool GPPPBKHMHPM = 1;</code>
+     * <code>optional uint32 retcode = 14;</code>
      */
-    private boolean gPPPBKHMHPM;
+    private int retcode;
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
+     * <code>optional bool AGGMHDOKDPM = 2;</code>
      */
-    private final RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> jDDCJCNPCDN = RepeatedMessage.newEmptyInstance(FightActivityGroupOuterClass.FightActivityGroup.getFactory());
+    private boolean aGGMHDOKDPM;
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
      */
-    private final RepeatedMessage<BAHHEJPGIAHEntry> bAHHEJPGIAH = RepeatedMessage.newEmptyInstance(BAHHEJPGIAHEntry.getFactory());
+    private final RepeatedMessage<JDNHCNHAMMLEntry> jDNHCNHAMML = RepeatedMessage.newEmptyInstance(JDNHCNHAMMLEntry.getFactory());
+
+    /**
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
+     */
+    private final RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> dPFKPKDKONP = RepeatedMessage.newEmptyInstance(FightActivityGroupOuterClass.FightActivityGroup.getFactory());
 
     private GetFightActivityDataScRsp() {
     }
@@ -55,62 +59,37 @@ public final class GetFightActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
-     * @return whether the retcode field is set
+     * <pre>
+     * FMAEHNJNGIG extra_info = 4;
+     * </pre>
+     *
+     * <code>optional uint32 world_level = 5;</code>
+     * @return whether the worldLevel field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasWorldLevel() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 2;</code>
-     * @return this
-     */
-    public GetFightActivityDataScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 2;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 2;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public GetFightActivityDataScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
-      retcode = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 world_level = 7;</code>
-     * @return whether the worldLevel field is set
-     */
-    public boolean hasWorldLevel() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 world_level = 7;</code>
+     * <pre>
+     * FMAEHNJNGIG extra_info = 4;
+     * </pre>
+     *
+     * <code>optional uint32 world_level = 5;</code>
      * @return this
      */
     public GetFightActivityDataScRsp clearWorldLevel() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       worldLevel = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 world_level = 7;</code>
+     * <pre>
+     * FMAEHNJNGIG extra_info = 4;
+     * </pre>
+     *
+     * <code>optional uint32 world_level = 5;</code>
      * @return the worldLevel
      */
     public int getWorldLevel() {
@@ -118,87 +97,128 @@ public final class GetFightActivityDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 world_level = 7;</code>
+     * <pre>
+     * FMAEHNJNGIG extra_info = 4;
+     * </pre>
+     *
+     * <code>optional uint32 world_level = 5;</code>
      * @param value the worldLevel to set
      * @return this
      */
     public GetFightActivityDataScRsp setWorldLevel(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       worldLevel = value;
       return this;
     }
 
     /**
-     * <code>optional bool GPPPBKHMHPM = 1;</code>
-     * @return whether the gPPPBKHMHPM field is set
+     * <code>optional uint32 retcode = 14;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasGPPPBKHMHPM() {
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 14;</code>
+     * @return this
+     */
+    public GetFightActivityDataScRsp clearRetcode() {
+      bitField0_ &= ~0x00000002;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 14;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 14;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public GetFightActivityDataScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000002;
+      retcode = value;
+      return this;
+    }
+
+    /**
+     * <code>optional bool AGGMHDOKDPM = 2;</code>
+     * @return whether the aGGMHDOKDPM field is set
+     */
+    public boolean hasAGGMHDOKDPM() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional bool GPPPBKHMHPM = 1;</code>
+     * <code>optional bool AGGMHDOKDPM = 2;</code>
      * @return this
      */
-    public GetFightActivityDataScRsp clearGPPPBKHMHPM() {
+    public GetFightActivityDataScRsp clearAGGMHDOKDPM() {
       bitField0_ &= ~0x00000004;
-      gPPPBKHMHPM = false;
+      aGGMHDOKDPM = false;
       return this;
     }
 
     /**
-     * <code>optional bool GPPPBKHMHPM = 1;</code>
-     * @return the gPPPBKHMHPM
+     * <code>optional bool AGGMHDOKDPM = 2;</code>
+     * @return the aGGMHDOKDPM
      */
-    public boolean getGPPPBKHMHPM() {
-      return gPPPBKHMHPM;
+    public boolean getAGGMHDOKDPM() {
+      return aGGMHDOKDPM;
     }
 
     /**
-     * <code>optional bool GPPPBKHMHPM = 1;</code>
-     * @param value the gPPPBKHMHPM to set
+     * <code>optional bool AGGMHDOKDPM = 2;</code>
+     * @param value the aGGMHDOKDPM to set
      * @return this
      */
-    public GetFightActivityDataScRsp setGPPPBKHMHPM(final boolean value) {
+    public GetFightActivityDataScRsp setAGGMHDOKDPM(final boolean value) {
       bitField0_ |= 0x00000004;
-      gPPPBKHMHPM = value;
+      aGGMHDOKDPM = value;
       return this;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
-     * @return whether the jDDCJCNPCDN field is set
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
+     * @return whether the jDNHCNHAMML field is set
      */
-    public boolean hasJDDCJCNPCDN() {
+    public boolean hasJDNHCNHAMML() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
      * @return this
      */
-    public GetFightActivityDataScRsp clearJDDCJCNPCDN() {
+    public GetFightActivityDataScRsp clearJDNHCNHAMML() {
       bitField0_ &= ~0x00000008;
-      jDDCJCNPCDN.clear();
+      jDNHCNHAMML.clear();
       return this;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableJDDCJCNPCDN()} if you want to modify it.
+     * Use {@link #getMutableJDNHCNHAMML()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> getJDDCJCNPCDN() {
-      return jDDCJCNPCDN;
+    public RepeatedMessage<JDNHCNHAMMLEntry> getJDNHCNHAMML() {
+      return jDNHCNHAMML;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -206,70 +226,67 @@ public final class GetFightActivityDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> getMutableJDDCJCNPCDN(
-        ) {
+    public RepeatedMessage<JDNHCNHAMMLEntry> getMutableJDNHCNHAMML() {
       bitField0_ |= 0x00000008;
-      return jDDCJCNPCDN;
+      return jDNHCNHAMML;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
-     * @param value the jDDCJCNPCDN to add
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
+     * @param value the jDNHCNHAMML to add
      * @return this
      */
-    public GetFightActivityDataScRsp addJDDCJCNPCDN(
-        final FightActivityGroupOuterClass.FightActivityGroup value) {
+    public GetFightActivityDataScRsp addJDNHCNHAMML(final JDNHCNHAMMLEntry value) {
       bitField0_ |= 0x00000008;
-      jDDCJCNPCDN.add(value);
+      jDNHCNHAMML.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .FightActivityGroup JDDCJCNPCDN = 10;</code>
-     * @param values the jDDCJCNPCDN to add
+     * <code>repeated .GetFightActivityDataScRsp.JDNHCNHAMMLEntry JDNHCNHAMML = 7;</code>
+     * @param values the jDNHCNHAMML to add
      * @return this
      */
-    public GetFightActivityDataScRsp addAllJDDCJCNPCDN(
-        final FightActivityGroupOuterClass.FightActivityGroup... values) {
+    public GetFightActivityDataScRsp addAllJDNHCNHAMML(final JDNHCNHAMMLEntry... values) {
       bitField0_ |= 0x00000008;
-      jDDCJCNPCDN.addAll(values);
+      jDNHCNHAMML.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
-     * @return whether the bAHHEJPGIAH field is set
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
+     * @return whether the dPFKPKDKONP field is set
      */
-    public boolean hasBAHHEJPGIAH() {
+    public boolean hasDPFKPKDKONP() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
      * @return this
      */
-    public GetFightActivityDataScRsp clearBAHHEJPGIAH() {
+    public GetFightActivityDataScRsp clearDPFKPKDKONP() {
       bitField0_ &= ~0x00000010;
-      bAHHEJPGIAH.clear();
+      dPFKPKDKONP.clear();
       return this;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableBAHHEJPGIAH()} if you want to modify it.
+     * Use {@link #getMutableDPFKPKDKONP()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<BAHHEJPGIAHEntry> getBAHHEJPGIAH() {
-      return bAHHEJPGIAH;
+    public RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> getDPFKPKDKONP() {
+      return dPFKPKDKONP;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -277,30 +294,33 @@ public final class GetFightActivityDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<BAHHEJPGIAHEntry> getMutableBAHHEJPGIAH() {
+    public RepeatedMessage<FightActivityGroupOuterClass.FightActivityGroup> getMutableDPFKPKDKONP(
+        ) {
       bitField0_ |= 0x00000010;
-      return bAHHEJPGIAH;
+      return dPFKPKDKONP;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
-     * @param value the bAHHEJPGIAH to add
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
+     * @param value the dPFKPKDKONP to add
      * @return this
      */
-    public GetFightActivityDataScRsp addBAHHEJPGIAH(final BAHHEJPGIAHEntry value) {
+    public GetFightActivityDataScRsp addDPFKPKDKONP(
+        final FightActivityGroupOuterClass.FightActivityGroup value) {
       bitField0_ |= 0x00000010;
-      bAHHEJPGIAH.add(value);
+      dPFKPKDKONP.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .GetFightActivityDataScRsp.BAHHEJPGIAHEntry BAHHEJPGIAH = 13;</code>
-     * @param values the bAHHEJPGIAH to add
+     * <code>repeated .FightActivityGroup DPFKPKDKONP = 8;</code>
+     * @param values the dPFKPKDKONP to add
      * @return this
      */
-    public GetFightActivityDataScRsp addAllBAHHEJPGIAH(final BAHHEJPGIAHEntry... values) {
+    public GetFightActivityDataScRsp addAllDPFKPKDKONP(
+        final FightActivityGroupOuterClass.FightActivityGroup... values) {
       bitField0_ |= 0x00000010;
-      bAHHEJPGIAH.addAll(values);
+      dPFKPKDKONP.addAll(values);
       return this;
     }
 
@@ -309,11 +329,11 @@ public final class GetFightActivityDataScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        retcode = other.retcode;
         worldLevel = other.worldLevel;
-        gPPPBKHMHPM = other.gPPPBKHMHPM;
-        jDDCJCNPCDN.copyFrom(other.jDDCJCNPCDN);
-        bAHHEJPGIAH.copyFrom(other.bAHHEJPGIAH);
+        retcode = other.retcode;
+        aGGMHDOKDPM = other.aGGMHDOKDPM;
+        jDNHCNHAMML.copyFrom(other.jDNHCNHAMML);
+        dPFKPKDKONP.copyFrom(other.dPFKPKDKONP);
       }
       return this;
     }
@@ -324,20 +344,20 @@ public final class GetFightActivityDataScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
-      }
       if (other.hasWorldLevel()) {
         setWorldLevel(other.worldLevel);
       }
-      if (other.hasGPPPBKHMHPM()) {
-        setGPPPBKHMHPM(other.gPPPBKHMHPM);
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
-      if (other.hasJDDCJCNPCDN()) {
-        getMutableJDDCJCNPCDN().addAll(other.jDDCJCNPCDN);
+      if (other.hasAGGMHDOKDPM()) {
+        setAGGMHDOKDPM(other.aGGMHDOKDPM);
       }
-      if (other.hasBAHHEJPGIAH()) {
-        getMutableBAHHEJPGIAH().addAll(other.bAHHEJPGIAH);
+      if (other.hasJDNHCNHAMML()) {
+        getMutableJDNHCNHAMML().addAll(other.jDNHCNHAMML);
+      }
+      if (other.hasDPFKPKDKONP()) {
+        getMutableDPFKPKDKONP().addAll(other.dPFKPKDKONP);
       }
       return this;
     }
@@ -349,11 +369,11 @@ public final class GetFightActivityDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      retcode = 0;
       worldLevel = 0;
-      gPPPBKHMHPM = false;
-      jDDCJCNPCDN.clear();
-      bAHHEJPGIAH.clear();
+      retcode = 0;
+      aGGMHDOKDPM = false;
+      jDNHCNHAMML.clear();
+      dPFKPKDKONP.clear();
       return this;
     }
 
@@ -364,8 +384,8 @@ public final class GetFightActivityDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      jDDCJCNPCDN.clearQuick();
-      bAHHEJPGIAH.clearQuick();
+      jDNHCNHAMML.clearQuick();
+      dPFKPKDKONP.clearQuick();
       return this;
     }
 
@@ -379,37 +399,37 @@ public final class GetFightActivityDataScRspOuterClass {
       }
       GetFightActivityDataScRsp other = (GetFightActivityDataScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasRetcode() || retcode == other.retcode)
         && (!hasWorldLevel() || worldLevel == other.worldLevel)
-        && (!hasGPPPBKHMHPM() || gPPPBKHMHPM == other.gPPPBKHMHPM)
-        && (!hasJDDCJCNPCDN() || jDDCJCNPCDN.equals(other.jDDCJCNPCDN))
-        && (!hasBAHHEJPGIAH() || bAHHEJPGIAH.equals(other.bAHHEJPGIAH));
+        && (!hasRetcode() || retcode == other.retcode)
+        && (!hasAGGMHDOKDPM() || aGGMHDOKDPM == other.aGGMHDOKDPM)
+        && (!hasJDNHCNHAMML() || jDNHCNHAMML.equals(other.jDNHCNHAMML))
+        && (!hasDPFKPKDKONP() || dPFKPKDKONP.equals(other.dPFKPKDKONP));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(retcode);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(worldLevel);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(retcode);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeBoolNoTag(gPPPBKHMHPM);
+        output.writeRawByte((byte) 16);
+        output.writeBoolNoTag(aGGMHDOKDPM);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < jDDCJCNPCDN.length(); i++) {
-          output.writeRawByte((byte) 82);
-          output.writeMessageNoTag(jDDCJCNPCDN.get(i));
+        for (int i = 0; i < jDNHCNHAMML.length(); i++) {
+          output.writeRawByte((byte) 58);
+          output.writeMessageNoTag(jDNHCNHAMML.get(i));
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < bAHHEJPGIAH.length(); i++) {
-          output.writeRawByte((byte) 106);
-          output.writeMessageNoTag(bAHHEJPGIAH.get(i));
+        for (int i = 0; i < dPFKPKDKONP.length(); i++) {
+          output.writeRawByte((byte) 66);
+          output.writeMessageNoTag(dPFKPKDKONP.get(i));
         }
       }
     }
@@ -418,19 +438,19 @@ public final class GetFightActivityDataScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldLevel);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldLevel);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 2;
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * jDDCJCNPCDN.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(jDDCJCNPCDN);
+        size += (1 * jDNHCNHAMML.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(jDNHCNHAMML);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * bAHHEJPGIAH.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(bAHHEJPGIAH);
+        size += (1 * dPFKPKDKONP.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(dPFKPKDKONP);
       }
       return size;
     }
@@ -442,44 +462,44 @@ public final class GetFightActivityDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
+          case 40: {
             // worldLevel
             worldLevel = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 8) {
+            if (tag != 16) {
               break;
             }
           }
-          case 8: {
-            // gPPPBKHMHPM
-            gPPPBKHMHPM = input.readBool();
+          case 16: {
+            // aGGMHDOKDPM
+            aGGMHDOKDPM = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 82) {
+            if (tag != 58) {
               break;
             }
           }
-          case 82: {
-            // jDDCJCNPCDN
-            tag = input.readRepeatedMessage(jDDCJCNPCDN, tag);
+          case 58: {
+            // jDNHCNHAMML
+            tag = input.readRepeatedMessage(jDNHCNHAMML, tag);
             bitField0_ |= 0x00000008;
-            if (tag != 106) {
+            if (tag != 66) {
               break;
             }
           }
-          case 106: {
-            // bAHHEJPGIAH
-            tag = input.readRepeatedMessage(bAHHEJPGIAH, tag);
+          case 66: {
+            // dPFKPKDKONP
+            tag = input.readRepeatedMessage(dPFKPKDKONP, tag);
             bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
@@ -503,19 +523,19 @@ public final class GetFightActivityDataScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.worldLevel, worldLevel);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.retcode, retcode);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.gPPPBKHMHPM, gPPPBKHMHPM);
+        output.writeBool(FieldNames.aGGMHDOKDPM, aGGMHDOKDPM);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.jDDCJCNPCDN, jDDCJCNPCDN);
+        output.writeRepeatedMessage(FieldNames.jDNHCNHAMML, jDNHCNHAMML);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedMessage(FieldNames.bAHHEJPGIAH, bAHHEJPGIAH);
+        output.writeRepeatedMessage(FieldNames.dPFKPKDKONP, dPFKPKDKONP);
       }
       output.endObject();
     }
@@ -527,10 +547,11 @@ public final class GetFightActivityDataScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 440007442:
+          case 1305257111: {
+            if (input.isAtField(FieldNames.worldLevel)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                worldLevel = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -538,11 +559,10 @@ public final class GetFightActivityDataScRspOuterClass {
             }
             break;
           }
-          case 440007442:
-          case 1305257111: {
-            if (input.isAtField(FieldNames.worldLevel)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                worldLevel = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -550,10 +570,10 @@ public final class GetFightActivityDataScRspOuterClass {
             }
             break;
           }
-          case -1785522770: {
-            if (input.isAtField(FieldNames.gPPPBKHMHPM)) {
+          case 1164681565: {
+            if (input.isAtField(FieldNames.aGGMHDOKDPM)) {
               if (!input.trySkipNullValue()) {
-                gPPPBKHMHPM = input.readBool();
+                aGGMHDOKDPM = input.readBool();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -561,10 +581,10 @@ public final class GetFightActivityDataScRspOuterClass {
             }
             break;
           }
-          case 1091325977: {
-            if (input.isAtField(FieldNames.jDDCJCNPCDN)) {
+          case -1287848300: {
+            if (input.isAtField(FieldNames.jDNHCNHAMML)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(jDDCJCNPCDN);
+                input.readRepeatedMessage(jDNHCNHAMML);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -572,10 +592,10 @@ public final class GetFightActivityDataScRspOuterClass {
             }
             break;
           }
-          case 420279541: {
-            if (input.isAtField(FieldNames.bAHHEJPGIAH)) {
+          case -382674978: {
+            if (input.isAtField(FieldNames.dPFKPKDKONP)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(bAHHEJPGIAH);
+                input.readRepeatedMessage(dPFKPKDKONP);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -624,9 +644,9 @@ public final class GetFightActivityDataScRspOuterClass {
     }
 
     /**
-     * Protobuf type {@code BAHHEJPGIAHEntry}
+     * Protobuf type {@code JDNHCNHAMMLEntry}
      */
-    public static final class BAHHEJPGIAHEntry extends ProtoMessage<BAHHEJPGIAHEntry> implements Cloneable {
+    public static final class JDNHCNHAMMLEntry extends ProtoMessage<JDNHCNHAMMLEntry> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -639,14 +659,14 @@ public final class GetFightActivityDataScRspOuterClass {
        */
       private int value_;
 
-      private BAHHEJPGIAHEntry() {
+      private JDNHCNHAMMLEntry() {
       }
 
       /**
-       * @return a new empty instance of {@code BAHHEJPGIAHEntry}
+       * @return a new empty instance of {@code JDNHCNHAMMLEntry}
        */
-      public static BAHHEJPGIAHEntry newInstance() {
-        return new BAHHEJPGIAHEntry();
+      public static JDNHCNHAMMLEntry newInstance() {
+        return new JDNHCNHAMMLEntry();
       }
 
       /**
@@ -661,7 +681,7 @@ public final class GetFightActivityDataScRspOuterClass {
        * <code>optional uint32 key = 1;</code>
        * @return this
        */
-      public BAHHEJPGIAHEntry clearKey() {
+      public JDNHCNHAMMLEntry clearKey() {
         bitField0_ &= ~0x00000001;
         key = 0;
         return this;
@@ -680,7 +700,7 @@ public final class GetFightActivityDataScRspOuterClass {
        * @param value the key to set
        * @return this
        */
-      public BAHHEJPGIAHEntry setKey(final int value) {
+      public JDNHCNHAMMLEntry setKey(final int value) {
         bitField0_ |= 0x00000001;
         key = value;
         return this;
@@ -698,7 +718,7 @@ public final class GetFightActivityDataScRspOuterClass {
        * <code>optional uint32 value = 2;</code>
        * @return this
        */
-      public BAHHEJPGIAHEntry clearValue() {
+      public JDNHCNHAMMLEntry clearValue() {
         bitField0_ &= ~0x00000002;
         value_ = 0;
         return this;
@@ -717,14 +737,14 @@ public final class GetFightActivityDataScRspOuterClass {
        * @param value the value_ to set
        * @return this
        */
-      public BAHHEJPGIAHEntry setValue(final int value) {
+      public JDNHCNHAMMLEntry setValue(final int value) {
         bitField0_ |= 0x00000002;
         value_ = value;
         return this;
       }
 
       @Override
-      public BAHHEJPGIAHEntry copyFrom(final BAHHEJPGIAHEntry other) {
+      public JDNHCNHAMMLEntry copyFrom(final JDNHCNHAMMLEntry other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
@@ -735,7 +755,7 @@ public final class GetFightActivityDataScRspOuterClass {
       }
 
       @Override
-      public BAHHEJPGIAHEntry mergeFrom(final BAHHEJPGIAHEntry other) {
+      public JDNHCNHAMMLEntry mergeFrom(final JDNHCNHAMMLEntry other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -750,7 +770,7 @@ public final class GetFightActivityDataScRspOuterClass {
       }
 
       @Override
-      public BAHHEJPGIAHEntry clear() {
+      public JDNHCNHAMMLEntry clear() {
         if (isEmpty()) {
           return this;
         }
@@ -762,7 +782,7 @@ public final class GetFightActivityDataScRspOuterClass {
       }
 
       @Override
-      public BAHHEJPGIAHEntry clearQuick() {
+      public JDNHCNHAMMLEntry clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -776,10 +796,10 @@ public final class GetFightActivityDataScRspOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof BAHHEJPGIAHEntry)) {
+        if (!(o instanceof JDNHCNHAMMLEntry)) {
           return false;
         }
-        BAHHEJPGIAHEntry other = (BAHHEJPGIAHEntry) o;
+        JDNHCNHAMMLEntry other = (JDNHCNHAMMLEntry) o;
         return bitField0_ == other.bitField0_
           && (!hasKey() || key == other.key)
           && (!hasValue() || value_ == other.value_);
@@ -811,7 +831,7 @@ public final class GetFightActivityDataScRspOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public BAHHEJPGIAHEntry mergeFrom(final ProtoSource input) throws IOException {
+      public JDNHCNHAMMLEntry mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -861,7 +881,7 @@ public final class GetFightActivityDataScRspOuterClass {
       }
 
       @Override
-      public BAHHEJPGIAHEntry mergeFrom(final JsonSource input) throws IOException {
+      public JDNHCNHAMMLEntry mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -900,8 +920,8 @@ public final class GetFightActivityDataScRspOuterClass {
       }
 
       @Override
-      public BAHHEJPGIAHEntry clone() {
-        return new BAHHEJPGIAHEntry().copyFrom(this);
+      public JDNHCNHAMMLEntry clone() {
+        return new JDNHCNHAMMLEntry().copyFrom(this);
       }
 
       @Override
@@ -909,32 +929,32 @@ public final class GetFightActivityDataScRspOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static BAHHEJPGIAHEntry parseFrom(final byte[] data) throws
+      public static JDNHCNHAMMLEntry parseFrom(final byte[] data) throws
           InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new BAHHEJPGIAHEntry(), data).checkInitialized();
+        return ProtoMessage.mergeFrom(new JDNHCNHAMMLEntry(), data).checkInitialized();
       }
 
-      public static BAHHEJPGIAHEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new BAHHEJPGIAHEntry(), input).checkInitialized();
+      public static JDNHCNHAMMLEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new JDNHCNHAMMLEntry(), input).checkInitialized();
       }
 
-      public static BAHHEJPGIAHEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new BAHHEJPGIAHEntry(), input).checkInitialized();
+      public static JDNHCNHAMMLEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new JDNHCNHAMMLEntry(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating BAHHEJPGIAHEntry messages
+       * @return factory for creating JDNHCNHAMMLEntry messages
        */
-      public static MessageFactory<BAHHEJPGIAHEntry> getFactory() {
-        return BAHHEJPGIAHEntryFactory.INSTANCE;
+      public static MessageFactory<JDNHCNHAMMLEntry> getFactory() {
+        return JDNHCNHAMMLEntryFactory.INSTANCE;
       }
 
-      private enum BAHHEJPGIAHEntryFactory implements MessageFactory<BAHHEJPGIAHEntry> {
+      private enum JDNHCNHAMMLEntryFactory implements MessageFactory<JDNHCNHAMMLEntry> {
         INSTANCE;
 
         @Override
-        public BAHHEJPGIAHEntry create() {
-          return BAHHEJPGIAHEntry.newInstance();
+        public JDNHCNHAMMLEntry create() {
+          return JDNHCNHAMMLEntry.newInstance();
         }
       }
 
@@ -961,15 +981,15 @@ public final class GetFightActivityDataScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
-
       static final FieldName worldLevel = FieldName.forField("worldLevel", "world_level");
 
-      static final FieldName gPPPBKHMHPM = FieldName.forField("GPPPBKHMHPM");
+      static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName jDDCJCNPCDN = FieldName.forField("JDDCJCNPCDN");
+      static final FieldName aGGMHDOKDPM = FieldName.forField("AGGMHDOKDPM");
 
-      static final FieldName bAHHEJPGIAH = FieldName.forField("BAHHEJPGIAH");
+      static final FieldName jDNHCNHAMML = FieldName.forField("JDNHCNHAMML");
+
+      static final FieldName dPFKPKDKONP = FieldName.forField("DPFKPKDKONP");
     }
   }
 }

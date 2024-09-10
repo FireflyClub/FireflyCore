@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+import "SpAddSource.proto";
+import "AvatarSkillTree.proto";
+import "BattleRelic.proto";
 import "AvatarProperty.proto";
 import "AvatarType.proto";
-import "AvatarSkillTree.proto";
-import "SpAddSource.proto";
-import "BattleRelic.proto";
 
 message AvatarBattleInfo {
 	AvatarType avatar_type = 1;
@@ -44,12 +44,13 @@ message AvatarBattleInfo {
 	AvatarProperty initial_status = 33;
 	repeated BattleRelic battle_relic_list = 34;
 	uint32 assist_uid = 35;
-	//repeated AttackDamageProperty MPMGIACFGOA = 36;
-	double GPHGHLGHNJF = 37;
-	double HNMAEDKEMEO = 38;
-	double KOKGBDEJBHL = 39;
-	double FIICHEILPCF = 40;
-	//repeated AbilityUseStt EAONALFPOGL = 41;
-	uint32 EINCNMLBFJD = 42;
-	uint32 JMOJBLEELFJ = 43;
+	//repeated AttackDamageProperty ELJGKKANLDI = 36;
+	double CALNPMADJBG = 37;
+	double NBNJMLLGFIL = 38;
+	double OLADIJEDBPJ = 39;
+	double HHJFDGDHLOP = 40;
+	//repeated AbilityUseStt PPAPOLPPKBH = 41;
+	uint32 PADBNMLAGMM = 42;
+	uint32 KDFLCJLALEH = 43;
+	double NIHFBGGIKIM = 44;
 }

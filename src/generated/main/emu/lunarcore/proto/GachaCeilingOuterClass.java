@@ -20,17 +20,17 @@ public final class GachaCeilingOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      */
     private int ceilingNum;
 
     /**
-     * <code>optional bool is_claimed = 15;</code>
+     * <code>optional bool is_claimed = 6;</code>
      */
     private boolean isClaimed;
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      */
     private final RepeatedMessage<GachaCeilingAvatarOuterClass.GachaCeilingAvatar> avatarList = RepeatedMessage.newEmptyInstance(GachaCeilingAvatarOuterClass.GachaCeilingAvatar.getFactory());
 
@@ -45,7 +45,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      * @return whether the ceilingNum field is set
      */
     public boolean hasCeilingNum() {
@@ -53,7 +53,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      * @return this
      */
     public GachaCeiling clearCeilingNum() {
@@ -63,7 +63,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      * @return the ceilingNum
      */
     public int getCeilingNum() {
@@ -71,7 +71,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional uint32 ceiling_num = 7;</code>
+     * <code>optional uint32 ceiling_num = 1;</code>
      * @param value the ceilingNum to set
      * @return this
      */
@@ -82,7 +82,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional bool is_claimed = 15;</code>
+     * <code>optional bool is_claimed = 6;</code>
      * @return whether the isClaimed field is set
      */
     public boolean hasIsClaimed() {
@@ -90,7 +90,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional bool is_claimed = 15;</code>
+     * <code>optional bool is_claimed = 6;</code>
      * @return this
      */
     public GachaCeiling clearIsClaimed() {
@@ -100,7 +100,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional bool is_claimed = 15;</code>
+     * <code>optional bool is_claimed = 6;</code>
      * @return the isClaimed
      */
     public boolean getIsClaimed() {
@@ -108,7 +108,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>optional bool is_claimed = 15;</code>
+     * <code>optional bool is_claimed = 6;</code>
      * @param value the isClaimed to set
      * @return this
      */
@@ -119,7 +119,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      * @return whether the avatarList field is set
      */
     public boolean hasAvatarList() {
@@ -127,7 +127,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      * @return this
      */
     public GachaCeiling clearAvatarList() {
@@ -137,7 +137,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +151,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +165,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      * @param value the avatarList to add
      * @return this
      */
@@ -176,7 +176,7 @@ public final class GachaCeilingOuterClass {
     }
 
     /**
-     * <code>repeated .GachaCeilingAvatar avatar_list = 3;</code>
+     * <code>repeated .GachaCeilingAvatar avatar_list = 15;</code>
      * @param values the avatarList to add
      * @return this
      */
@@ -259,16 +259,16 @@ public final class GachaCeilingOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(ceilingNum);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 48);
         output.writeBoolNoTag(isClaimed);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < avatarList.length(); i++) {
-          output.writeRawByte((byte) 26);
+          output.writeRawByte((byte) 122);
           output.writeMessageNoTag(avatarList.get(i));
         }
       }
@@ -296,25 +296,25 @@ public final class GachaCeilingOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 8: {
             // ceilingNum
             ceilingNum = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 48) {
               break;
             }
           }
-          case 120: {
+          case 48: {
             // isClaimed
             isClaimed = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 122) {
               break;
             }
           }
-          case 26: {
+          case 122: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
             bitField0_ |= 0x00000004;

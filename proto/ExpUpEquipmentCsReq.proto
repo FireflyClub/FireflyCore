@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "ItemCostList.proto";
 
 message ExpUpEquipmentCsReq {
-	ItemCostList item_cost_list = 12;
-	uint32 equipment_unique_id = 8;
+	uint32 equipment_unique_id = 1;
+	ItemCostList item_cost_list = 14;
 }

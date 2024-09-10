@@ -2,6 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
+import "GroupStateInfo.proto";
+import "MotionInfo.proto";
+
 message StartWolfBroGameCsReq {
-	uint32 id = 7;
+	MotionInfo motion = 10;
+	uint32 id = 4;
+	GroupStateInfo group_state_info = 5;
+	bool JMAPEPGLENN = 8;
 }

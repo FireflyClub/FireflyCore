@@ -2,22 +2,22 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "AssistSimpleInfo.proto";
-import "FriendOnlineStatus.proto";
 import "PlatformType.proto";
+import "FriendOnlineStatus.proto";
+import "AssistSimpleInfo.proto";
 
 message SimpleInfo {
-	uint32 chat_bubble_id = 5;
-	string signature = 6;
 	repeated AssistSimpleInfo assist_simple_info = 1;
-	string CDFPLBBIKDI = 10;
-	PlatformType platform_type = 3;
-	int64 last_active_time = 11;
-	uint32 head_icon = 8;
-	uint32 uid = 15;
-	bool is_banned = 4;
-	string nickname = 7;
-	FriendOnlineStatus online_status = 14;
-	uint32 level = 12;
-	string EMGADLCGDBF = 2;
+	FriendOnlineStatus online_status = 3;
+	uint32 head_icon = 2;
+	PlatformType platform_type = 4;
+	string signature = 7;
+	bool is_banned = 13;
+	uint32 level = 10;
+	string nickname = 6;
+	int64 last_active_time = 12;
+	uint32 uid = 14;
+	string FLFKCIHCENF = 5;
+	uint32 chat_bubble_id = 8;
+	string HFHGPLMEFGJ = 11;
 }

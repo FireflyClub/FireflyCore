@@ -19,19 +19,19 @@ public final class MaterialOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 expire_time = 9;</code>
+     * <code>optional uint64 expire_time = 6;</code>
      */
     private long expireTime;
-
-    /**
-     * <code>optional uint32 tid = 6;</code>
-     */
-    private int tid;
 
     /**
      * <code>optional uint32 num = 10;</code>
      */
     private int num;
+
+    /**
+     * <code>optional uint32 tid = 15;</code>
+     */
+    private int tid;
 
     private Material() {
     }
@@ -44,7 +44,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint64 expire_time = 9;</code>
+     * <code>optional uint64 expire_time = 6;</code>
      * @return whether the expireTime field is set
      */
     public boolean hasExpireTime() {
@@ -52,7 +52,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint64 expire_time = 9;</code>
+     * <code>optional uint64 expire_time = 6;</code>
      * @return this
      */
     public Material clearExpireTime() {
@@ -62,7 +62,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint64 expire_time = 9;</code>
+     * <code>optional uint64 expire_time = 6;</code>
      * @return the expireTime
      */
     public long getExpireTime() {
@@ -70,7 +70,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint64 expire_time = 9;</code>
+     * <code>optional uint64 expire_time = 6;</code>
      * @param value the expireTime to set
      * @return this
      */
@@ -81,48 +81,11 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint32 tid = 6;</code>
-     * @return whether the tid field is set
-     */
-    public boolean hasTid() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 tid = 6;</code>
-     * @return this
-     */
-    public Material clearTid() {
-      bitField0_ &= ~0x00000002;
-      tid = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 tid = 6;</code>
-     * @return the tid
-     */
-    public int getTid() {
-      return tid;
-    }
-
-    /**
-     * <code>optional uint32 tid = 6;</code>
-     * @param value the tid to set
-     * @return this
-     */
-    public Material setTid(final int value) {
-      bitField0_ |= 0x00000002;
-      tid = value;
-      return this;
-    }
-
-    /**
      * <code>optional uint32 num = 10;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -130,7 +93,7 @@ public final class MaterialOuterClass {
      * @return this
      */
     public Material clearNum() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       num = 0;
       return this;
     }
@@ -149,8 +112,45 @@ public final class MaterialOuterClass {
      * @return this
      */
     public Material setNum(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       num = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 tid = 15;</code>
+     * @return whether the tid field is set
+     */
+    public boolean hasTid() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 tid = 15;</code>
+     * @return this
+     */
+    public Material clearTid() {
+      bitField0_ &= ~0x00000004;
+      tid = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 tid = 15;</code>
+     * @return the tid
+     */
+    public int getTid() {
+      return tid;
+    }
+
+    /**
+     * <code>optional uint32 tid = 15;</code>
+     * @param value the tid to set
+     * @return this
+     */
+    public Material setTid(final int value) {
+      bitField0_ |= 0x00000004;
+      tid = value;
       return this;
     }
 
@@ -160,8 +160,8 @@ public final class MaterialOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         expireTime = other.expireTime;
-        tid = other.tid;
         num = other.num;
+        tid = other.tid;
       }
       return this;
     }
@@ -175,11 +175,11 @@ public final class MaterialOuterClass {
       if (other.hasExpireTime()) {
         setExpireTime(other.expireTime);
       }
-      if (other.hasTid()) {
-        setTid(other.tid);
-      }
       if (other.hasNum()) {
         setNum(other.num);
+      }
+      if (other.hasTid()) {
+        setTid(other.tid);
       }
       return this;
     }
@@ -192,8 +192,8 @@ public final class MaterialOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       expireTime = 0L;
-      tid = 0;
       num = 0;
+      tid = 0;
       return this;
     }
 
@@ -218,23 +218,23 @@ public final class MaterialOuterClass {
       Material other = (Material) o;
       return bitField0_ == other.bitField0_
         && (!hasExpireTime() || expireTime == other.expireTime)
-        && (!hasTid() || tid == other.tid)
-        && (!hasNum() || num == other.num);
+        && (!hasNum() || num == other.num)
+        && (!hasTid() || tid == other.tid);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 48);
         output.writeUInt64NoTag(expireTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(tid);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(num);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(tid);
       }
     }
 
@@ -245,10 +245,10 @@ public final class MaterialOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(expireTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
       }
       return size;
     }
@@ -260,19 +260,10 @@ public final class MaterialOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 48: {
             // expireTime
             expireTime = input.readUInt64();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
-            // tid
-            tid = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 80) {
               break;
@@ -281,6 +272,15 @@ public final class MaterialOuterClass {
           case 80: {
             // num
             num = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // tid
+            tid = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -308,10 +308,10 @@ public final class MaterialOuterClass {
         output.writeUInt64(FieldNames.expireTime, expireTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.tid, tid);
+        output.writeUInt32(FieldNames.num, num);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.num, num);
+        output.writeUInt32(FieldNames.tid, tid);
       }
       output.endObject();
     }
@@ -335,10 +335,10 @@ public final class MaterialOuterClass {
             }
             break;
           }
-          case 114831: {
-            if (input.isAtField(FieldNames.tid)) {
+          case 109446: {
+            if (input.isAtField(FieldNames.num)) {
               if (!input.trySkipNullValue()) {
-                tid = input.readUInt32();
+                num = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -346,10 +346,10 @@ public final class MaterialOuterClass {
             }
             break;
           }
-          case 109446: {
-            if (input.isAtField(FieldNames.num)) {
+          case 114831: {
+            if (input.isAtField(FieldNames.tid)) {
               if (!input.trySkipNullValue()) {
-                num = input.readUInt32();
+                tid = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -411,9 +411,9 @@ public final class MaterialOuterClass {
     static class FieldNames {
       static final FieldName expireTime = FieldName.forField("expireTime", "expire_time");
 
-      static final FieldName tid = FieldName.forField("tid");
-
       static final FieldName num = FieldName.forField("num");
+
+      static final FieldName tid = FieldName.forField("tid");
     }
   }
 }

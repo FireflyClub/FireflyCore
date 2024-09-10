@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DisplayAvatar {
-	uint32 pos = 13;
-	uint32 avatar_id = 11;
+	uint32 avatar_id = 5;
+	uint32 pos = 8;
 }

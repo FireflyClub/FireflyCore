@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "HeadIcon.proto";
 
 message BoardDataSync {
-	repeated HeadIcon unlocked_head_icon_list = 14;
-	string signature = 13;
-	bool EDEAJOIAFMO = 7;
+	repeated HeadIcon unlocked_head_icon_list = 2;
+	bool KOIMGBMLOPB = 9;
+	string signature = 4;
 }

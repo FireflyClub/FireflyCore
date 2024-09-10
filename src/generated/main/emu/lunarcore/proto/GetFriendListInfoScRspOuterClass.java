@@ -20,19 +20,19 @@ public final class GetFriendListInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 3;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     */
-    private final RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> simpleInfoList = RepeatedMessage.newEmptyInstance(SimpleInfoOuterClass.SimpleInfo.getFactory());
-
-    /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      */
     private final RepeatedMessage<FriendListInfoOuterClass.FriendListInfo> friendList = RepeatedMessage.newEmptyInstance(FriendListInfoOuterClass.FriendListInfo.getFactory());
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     */
+    private final RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> simpleInfoList = RepeatedMessage.newEmptyInstance(SimpleInfoOuterClass.SimpleInfo.getFactory());
 
     private GetFriendListInfoScRsp() {
     }
@@ -45,7 +45,7 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,7 +53,7 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return this
      */
     public GetFriendListInfoScRsp clearRetcode() {
@@ -63,7 +63,7 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,7 +71,7 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 10;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -82,94 +82,25 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     * @return whether the simpleInfoList field is set
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
+     * @return whether the friendList field is set
      */
-    public boolean hasSimpleInfoList() {
+    public boolean hasFriendList() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     * @return this
-     */
-    public GetFriendListInfoScRsp clearSimpleInfoList() {
-      bitField0_ &= ~0x00000002;
-      simpleInfoList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableSimpleInfoList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> getSimpleInfoList() {
-      return simpleInfoList;
-    }
-
-    /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> getMutableSimpleInfoList() {
-      bitField0_ |= 0x00000002;
-      return simpleInfoList;
-    }
-
-    /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     * @param value the simpleInfoList to add
-     * @return this
-     */
-    public GetFriendListInfoScRsp addSimpleInfoList(final SimpleInfoOuterClass.SimpleInfo value) {
-      bitField0_ |= 0x00000002;
-      simpleInfoList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .SimpleInfo simple_info_list = 1;</code>
-     * @param values the simpleInfoList to add
-     * @return this
-     */
-    public GetFriendListInfoScRsp addAllSimpleInfoList(
-        final SimpleInfoOuterClass.SimpleInfo... values) {
-      bitField0_ |= 0x00000002;
-      simpleInfoList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
-     * @return whether the friendList field is set
-     */
-    public boolean hasFriendList() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      * @return this
      */
     public GetFriendListInfoScRsp clearFriendList() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       friendList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -183,7 +114,7 @@ public final class GetFriendListInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -192,31 +123,100 @@ public final class GetFriendListInfoScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<FriendListInfoOuterClass.FriendListInfo> getMutableFriendList() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       return friendList;
     }
 
     /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      * @param value the friendList to add
      * @return this
      */
     public GetFriendListInfoScRsp addFriendList(
         final FriendListInfoOuterClass.FriendListInfo value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       friendList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .FriendListInfo friend_list = 3;</code>
+     * <code>repeated .FriendListInfo friend_list = 2;</code>
      * @param values the friendList to add
      * @return this
      */
     public GetFriendListInfoScRsp addAllFriendList(
         final FriendListInfoOuterClass.FriendListInfo... values) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       friendList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     * @return whether the simpleInfoList field is set
+     */
+    public boolean hasSimpleInfoList() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     * @return this
+     */
+    public GetFriendListInfoScRsp clearSimpleInfoList() {
+      bitField0_ &= ~0x00000004;
+      simpleInfoList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableSimpleInfoList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> getSimpleInfoList() {
+      return simpleInfoList;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<SimpleInfoOuterClass.SimpleInfo> getMutableSimpleInfoList() {
+      bitField0_ |= 0x00000004;
+      return simpleInfoList;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     * @param value the simpleInfoList to add
+     * @return this
+     */
+    public GetFriendListInfoScRsp addSimpleInfoList(final SimpleInfoOuterClass.SimpleInfo value) {
+      bitField0_ |= 0x00000004;
+      simpleInfoList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .SimpleInfo simple_info_list = 11;</code>
+     * @param values the simpleInfoList to add
+     * @return this
+     */
+    public GetFriendListInfoScRsp addAllSimpleInfoList(
+        final SimpleInfoOuterClass.SimpleInfo... values) {
+      bitField0_ |= 0x00000004;
+      simpleInfoList.addAll(values);
       return this;
     }
 
@@ -226,8 +226,8 @@ public final class GetFriendListInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        simpleInfoList.copyFrom(other.simpleInfoList);
         friendList.copyFrom(other.friendList);
+        simpleInfoList.copyFrom(other.simpleInfoList);
       }
       return this;
     }
@@ -241,11 +241,11 @@ public final class GetFriendListInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasSimpleInfoList()) {
-        getMutableSimpleInfoList().addAll(other.simpleInfoList);
-      }
       if (other.hasFriendList()) {
         getMutableFriendList().addAll(other.friendList);
+      }
+      if (other.hasSimpleInfoList()) {
+        getMutableSimpleInfoList().addAll(other.simpleInfoList);
       }
       return this;
     }
@@ -258,8 +258,8 @@ public final class GetFriendListInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      simpleInfoList.clear();
       friendList.clear();
+      simpleInfoList.clear();
       return this;
     }
 
@@ -270,8 +270,8 @@ public final class GetFriendListInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      simpleInfoList.clearQuick();
       friendList.clearQuick();
+      simpleInfoList.clearQuick();
       return this;
     }
 
@@ -286,26 +286,26 @@ public final class GetFriendListInfoScRspOuterClass {
       GetFriendListInfoScRsp other = (GetFriendListInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasSimpleInfoList() || simpleInfoList.equals(other.simpleInfoList))
-        && (!hasFriendList() || friendList.equals(other.friendList));
+        && (!hasFriendList() || friendList.equals(other.friendList))
+        && (!hasSimpleInfoList() || simpleInfoList.equals(other.simpleInfoList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < simpleInfoList.length(); i++) {
-          output.writeRawByte((byte) 10);
-          output.writeMessageNoTag(simpleInfoList.get(i));
+        for (int i = 0; i < friendList.length(); i++) {
+          output.writeRawByte((byte) 18);
+          output.writeMessageNoTag(friendList.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < friendList.length(); i++) {
-          output.writeRawByte((byte) 26);
-          output.writeMessageNoTag(friendList.get(i));
+        for (int i = 0; i < simpleInfoList.length(); i++) {
+          output.writeRawByte((byte) 90);
+          output.writeMessageNoTag(simpleInfoList.get(i));
         }
       }
     }
@@ -317,10 +317,10 @@ public final class GetFriendListInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * simpleInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(simpleInfoList);
+        size += (1 * friendList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(friendList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * friendList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(friendList);
+        size += (1 * simpleInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(simpleInfoList);
       }
       return size;
     }
@@ -332,26 +332,26 @@ public final class GetFriendListInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 24: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 18) {
               break;
             }
           }
-          case 10: {
-            // simpleInfoList
-            tag = input.readRepeatedMessage(simpleInfoList, tag);
-            bitField0_ |= 0x00000002;
-            if (tag != 26) {
-              break;
-            }
-          }
-          case 26: {
+          case 18: {
             // friendList
             tag = input.readRepeatedMessage(friendList, tag);
+            bitField0_ |= 0x00000002;
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // simpleInfoList
+            tag = input.readRepeatedMessage(simpleInfoList, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -378,10 +378,10 @@ public final class GetFriendListInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedMessage(FieldNames.simpleInfoList, simpleInfoList);
+        output.writeRepeatedMessage(FieldNames.friendList, friendList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.friendList, friendList);
+        output.writeRepeatedMessage(FieldNames.simpleInfoList, simpleInfoList);
       }
       output.endObject();
     }
@@ -404,11 +404,11 @@ public final class GetFriendListInfoScRspOuterClass {
             }
             break;
           }
-          case 1367230014:
-          case -1575356606: {
-            if (input.isAtField(FieldNames.simpleInfoList)) {
+          case -1756909476:
+          case 1388007839: {
+            if (input.isAtField(FieldNames.friendList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(simpleInfoList);
+                input.readRepeatedMessage(friendList);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -416,11 +416,11 @@ public final class GetFriendListInfoScRspOuterClass {
             }
             break;
           }
-          case -1756909476:
-          case 1388007839: {
-            if (input.isAtField(FieldNames.friendList)) {
+          case 1367230014:
+          case -1575356606: {
+            if (input.isAtField(FieldNames.simpleInfoList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(friendList);
+                input.readRepeatedMessage(simpleInfoList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -483,9 +483,9 @@ public final class GetFriendListInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName simpleInfoList = FieldName.forField("simpleInfoList", "simple_info_list");
-
       static final FieldName friendList = FieldName.forField("friendList", "friend_list");
+
+      static final FieldName simpleInfoList = FieldName.forField("simpleInfoList", "simple_info_list");
     }
   }
 }

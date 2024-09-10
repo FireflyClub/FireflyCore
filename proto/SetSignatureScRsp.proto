@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetSignatureScRsp {
-	string signature = 10;
-	uint32 retcode = 15;
+	string signature = 15;
+	uint32 retcode = 4;
 }

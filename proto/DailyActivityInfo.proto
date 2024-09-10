@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DailyActivityInfo {
-	bool is_has_taken = 2;
-	uint32 level = 1;
-	uint32 world_level = 3;
-	uint32 daily_active_point = 13;
+	uint32 world_level = 15;
+	uint32 daily_active_point = 3;
+	bool is_has_taken = 4;
+	uint32 level = 11;
 }

@@ -21,9 +21,9 @@ public final class BattleSkillInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional double FNKEHCJDKDP = 2;</code>
+     * <code>optional double NLMOBJCCDEL = 2;</code>
      */
-    private double fNKEHCJDKDP;
+    private double nLMOBJCCDEL;
 
     /**
      * <code>optional double damage = 4;</code>
@@ -51,39 +51,39 @@ public final class BattleSkillInfoOuterClass {
     }
 
     /**
-     * <code>optional double FNKEHCJDKDP = 2;</code>
-     * @return whether the fNKEHCJDKDP field is set
+     * <code>optional double NLMOBJCCDEL = 2;</code>
+     * @return whether the nLMOBJCCDEL field is set
      */
-    public boolean hasFNKEHCJDKDP() {
+    public boolean hasNLMOBJCCDEL() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional double FNKEHCJDKDP = 2;</code>
+     * <code>optional double NLMOBJCCDEL = 2;</code>
      * @return this
      */
-    public BattleSkillInfo clearFNKEHCJDKDP() {
+    public BattleSkillInfo clearNLMOBJCCDEL() {
       bitField0_ &= ~0x00000001;
-      fNKEHCJDKDP = 0D;
+      nLMOBJCCDEL = 0D;
       return this;
     }
 
     /**
-     * <code>optional double FNKEHCJDKDP = 2;</code>
-     * @return the fNKEHCJDKDP
+     * <code>optional double NLMOBJCCDEL = 2;</code>
+     * @return the nLMOBJCCDEL
      */
-    public double getFNKEHCJDKDP() {
-      return fNKEHCJDKDP;
+    public double getNLMOBJCCDEL() {
+      return nLMOBJCCDEL;
     }
 
     /**
-     * <code>optional double FNKEHCJDKDP = 2;</code>
-     * @param value the fNKEHCJDKDP to set
+     * <code>optional double NLMOBJCCDEL = 2;</code>
+     * @param value the nLMOBJCCDEL to set
      * @return this
      */
-    public BattleSkillInfo setFNKEHCJDKDP(final double value) {
+    public BattleSkillInfo setNLMOBJCCDEL(final double value) {
       bitField0_ |= 0x00000001;
-      fNKEHCJDKDP = value;
+      nLMOBJCCDEL = value;
       return this;
     }
 
@@ -234,7 +234,7 @@ public final class BattleSkillInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        fNKEHCJDKDP = other.fNKEHCJDKDP;
+        nLMOBJCCDEL = other.nLMOBJCCDEL;
         damage = other.damage;
         skillId = other.skillId;
         battleTargetList.copyFrom(other.battleTargetList);
@@ -248,8 +248,8 @@ public final class BattleSkillInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasFNKEHCJDKDP()) {
-        setFNKEHCJDKDP(other.fNKEHCJDKDP);
+      if (other.hasNLMOBJCCDEL()) {
+        setNLMOBJCCDEL(other.nLMOBJCCDEL);
       }
       if (other.hasDamage()) {
         setDamage(other.damage);
@@ -270,7 +270,7 @@ public final class BattleSkillInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      fNKEHCJDKDP = 0D;
+      nLMOBJCCDEL = 0D;
       damage = 0D;
       skillId = 0;
       battleTargetList.clear();
@@ -298,7 +298,7 @@ public final class BattleSkillInfoOuterClass {
       }
       BattleSkillInfo other = (BattleSkillInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasFNKEHCJDKDP() || ProtoUtil.isEqual(fNKEHCJDKDP, other.fNKEHCJDKDP))
+        && (!hasNLMOBJCCDEL() || ProtoUtil.isEqual(nLMOBJCCDEL, other.nLMOBJCCDEL))
         && (!hasDamage() || ProtoUtil.isEqual(damage, other.damage))
         && (!hasSkillId() || skillId == other.skillId)
         && (!hasBattleTargetList() || battleTargetList.equals(other.battleTargetList));
@@ -308,7 +308,7 @@ public final class BattleSkillInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 17);
-        output.writeDoubleNoTag(fNKEHCJDKDP);
+        output.writeDoubleNoTag(nLMOBJCCDEL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 33);
@@ -352,8 +352,8 @@ public final class BattleSkillInfoOuterClass {
       while (true) {
         switch (tag) {
           case 17: {
-            // fNKEHCJDKDP
-            fNKEHCJDKDP = input.readDouble();
+            // nLMOBJCCDEL
+            nLMOBJCCDEL = input.readDouble();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 33) {
@@ -411,7 +411,7 @@ public final class BattleSkillInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeDouble(FieldNames.fNKEHCJDKDP, fNKEHCJDKDP);
+        output.writeDouble(FieldNames.nLMOBJCCDEL, nLMOBJCCDEL);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeDouble(FieldNames.damage, damage);
@@ -432,10 +432,10 @@ public final class BattleSkillInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -336648160: {
-            if (input.isAtField(FieldNames.fNKEHCJDKDP)) {
+          case -1342189469: {
+            if (input.isAtField(FieldNames.nLMOBJCCDEL)) {
               if (!input.trySkipNullValue()) {
-                fNKEHCJDKDP = input.readDouble();
+                nLMOBJCCDEL = input.readDouble();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -531,7 +531,7 @@ public final class BattleSkillInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName fNKEHCJDKDP = FieldName.forField("FNKEHCJDKDP");
+      static final FieldName nLMOBJCCDEL = FieldName.forField("NLMOBJCCDEL");
 
       static final FieldName damage = FieldName.forField("damage");
 

@@ -24,24 +24,24 @@ public final class ChallengeBossEquipmentOuterClass {
     private int tid;
 
     /**
-     * <code>optional uint32 promotion = 4;</code>
+     * <code>optional uint32 unique_id = 2;</code>
      */
-    private int promotion;
+    private int uniqueId;
 
     /**
-     * <code>optional uint32 rank = 7;</code>
-     */
-    private int rank;
-
-    /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 4;</code>
      */
     private int level;
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 promotion = 10;</code>
      */
-    private int uniqueId;
+    private int promotion;
+
+    /**
+     * <code>optional uint32 rank = 14;</code>
+     */
+    private int rank;
 
     private ChallengeBossEquipment() {
     }
@@ -91,136 +91,25 @@ public final class ChallengeBossEquipmentOuterClass {
     }
 
     /**
-     * <code>optional uint32 promotion = 4;</code>
-     * @return whether the promotion field is set
+     * <code>optional uint32 unique_id = 2;</code>
+     * @return whether the uniqueId field is set
      */
-    public boolean hasPromotion() {
+    public boolean hasUniqueId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 promotion = 4;</code>
-     * @return this
-     */
-    public ChallengeBossEquipment clearPromotion() {
-      bitField0_ &= ~0x00000002;
-      promotion = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 promotion = 4;</code>
-     * @return the promotion
-     */
-    public int getPromotion() {
-      return promotion;
-    }
-
-    /**
-     * <code>optional uint32 promotion = 4;</code>
-     * @param value the promotion to set
-     * @return this
-     */
-    public ChallengeBossEquipment setPromotion(final int value) {
-      bitField0_ |= 0x00000002;
-      promotion = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return whether the rank field is set
-     */
-    public boolean hasRank() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return this
-     */
-    public ChallengeBossEquipment clearRank() {
-      bitField0_ &= ~0x00000004;
-      rank = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return the rank
-     */
-    public int getRank() {
-      return rank;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @param value the rank to set
-     * @return this
-     */
-    public ChallengeBossEquipment setRank(final int value) {
-      bitField0_ |= 0x00000004;
-      rank = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 8;</code>
-     * @return whether the level field is set
-     */
-    public boolean hasLevel() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 level = 8;</code>
-     * @return this
-     */
-    public ChallengeBossEquipment clearLevel() {
-      bitField0_ &= ~0x00000008;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 8;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 8;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public ChallengeBossEquipment setLevel(final int value) {
-      bitField0_ |= 0x00000008;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 unique_id = 9;</code>
-     * @return whether the uniqueId field is set
-     */
-    public boolean hasUniqueId() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 unique_id = 2;</code>
      * @return this
      */
     public ChallengeBossEquipment clearUniqueId() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000002;
       uniqueId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 unique_id = 2;</code>
      * @return the uniqueId
      */
     public int getUniqueId() {
@@ -228,13 +117,124 @@ public final class ChallengeBossEquipmentOuterClass {
     }
 
     /**
-     * <code>optional uint32 unique_id = 9;</code>
+     * <code>optional uint32 unique_id = 2;</code>
      * @param value the uniqueId to set
      * @return this
      */
     public ChallengeBossEquipment setUniqueId(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000002;
       uniqueId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
+     * @return this
+     */
+    public ChallengeBossEquipment clearLevel() {
+      bitField0_ &= ~0x00000004;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <code>optional uint32 level = 4;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public ChallengeBossEquipment setLevel(final int value) {
+      bitField0_ |= 0x00000004;
+      level = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 promotion = 10;</code>
+     * @return whether the promotion field is set
+     */
+    public boolean hasPromotion() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 promotion = 10;</code>
+     * @return this
+     */
+    public ChallengeBossEquipment clearPromotion() {
+      bitField0_ &= ~0x00000008;
+      promotion = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 promotion = 10;</code>
+     * @return the promotion
+     */
+    public int getPromotion() {
+      return promotion;
+    }
+
+    /**
+     * <code>optional uint32 promotion = 10;</code>
+     * @param value the promotion to set
+     * @return this
+     */
+    public ChallengeBossEquipment setPromotion(final int value) {
+      bitField0_ |= 0x00000008;
+      promotion = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rank = 14;</code>
+     * @return whether the rank field is set
+     */
+    public boolean hasRank() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 rank = 14;</code>
+     * @return this
+     */
+    public ChallengeBossEquipment clearRank() {
+      bitField0_ &= ~0x00000010;
+      rank = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rank = 14;</code>
+     * @return the rank
+     */
+    public int getRank() {
+      return rank;
+    }
+
+    /**
+     * <code>optional uint32 rank = 14;</code>
+     * @param value the rank to set
+     * @return this
+     */
+    public ChallengeBossEquipment setRank(final int value) {
+      bitField0_ |= 0x00000010;
+      rank = value;
       return this;
     }
 
@@ -244,10 +244,10 @@ public final class ChallengeBossEquipmentOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         tid = other.tid;
+        uniqueId = other.uniqueId;
+        level = other.level;
         promotion = other.promotion;
         rank = other.rank;
-        level = other.level;
-        uniqueId = other.uniqueId;
       }
       return this;
     }
@@ -261,17 +261,17 @@ public final class ChallengeBossEquipmentOuterClass {
       if (other.hasTid()) {
         setTid(other.tid);
       }
+      if (other.hasUniqueId()) {
+        setUniqueId(other.uniqueId);
+      }
+      if (other.hasLevel()) {
+        setLevel(other.level);
+      }
       if (other.hasPromotion()) {
         setPromotion(other.promotion);
       }
       if (other.hasRank()) {
         setRank(other.rank);
-      }
-      if (other.hasLevel()) {
-        setLevel(other.level);
-      }
-      if (other.hasUniqueId()) {
-        setUniqueId(other.uniqueId);
       }
       return this;
     }
@@ -284,10 +284,10 @@ public final class ChallengeBossEquipmentOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       tid = 0;
+      uniqueId = 0;
+      level = 0;
       promotion = 0;
       rank = 0;
-      level = 0;
-      uniqueId = 0;
       return this;
     }
 
@@ -312,10 +312,10 @@ public final class ChallengeBossEquipmentOuterClass {
       ChallengeBossEquipment other = (ChallengeBossEquipment) o;
       return bitField0_ == other.bitField0_
         && (!hasTid() || tid == other.tid)
-        && (!hasPromotion() || promotion == other.promotion)
-        && (!hasRank() || rank == other.rank)
+        && (!hasUniqueId() || uniqueId == other.uniqueId)
         && (!hasLevel() || level == other.level)
-        && (!hasUniqueId() || uniqueId == other.uniqueId);
+        && (!hasPromotion() || promotion == other.promotion)
+        && (!hasRank() || rank == other.rank);
     }
 
     @Override
@@ -325,20 +325,20 @@ public final class ChallengeBossEquipmentOuterClass {
         output.writeUInt32NoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(promotion);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(uniqueId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(rank);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(level);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(promotion);
+      }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(uniqueId);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(rank);
       }
     }
 
@@ -349,16 +349,16 @@ public final class ChallengeBossEquipmentOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(promotion);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(uniqueId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(promotion);
+      }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(uniqueId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
       }
       return size;
     }
@@ -375,40 +375,40 @@ public final class ChallengeBossEquipmentOuterClass {
             tid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 16) {
+              break;
+            }
+          }
+          case 16: {
+            // uniqueId
+            uniqueId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
             if (tag != 32) {
               break;
             }
           }
           case 32: {
-            // promotion
-            promotion = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
-            // rank
-            rank = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 64) {
-              break;
-            }
-          }
-          case 64: {
             // level
             level = input.readUInt32();
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 80) {
               break;
             }
           }
-          case 72: {
-            // uniqueId
-            uniqueId = input.readUInt32();
+          case 80: {
+            // promotion
+            promotion = input.readUInt32();
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // rank
+            rank = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
@@ -436,16 +436,16 @@ public final class ChallengeBossEquipmentOuterClass {
         output.writeUInt32(FieldNames.tid, tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.promotion, promotion);
+        output.writeUInt32(FieldNames.uniqueId, uniqueId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.rank, rank);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.level, level);
       }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.promotion, promotion);
+      }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.uniqueId, uniqueId);
+        output.writeUInt32(FieldNames.rank, rank);
       }
       output.endObject();
     }
@@ -468,22 +468,12 @@ public final class ChallengeBossEquipmentOuterClass {
             }
             break;
           }
-          case -799212381: {
-            if (input.isAtField(FieldNames.promotion)) {
+          case -294460212:
+          case -538310583: {
+            if (input.isAtField(FieldNames.uniqueId)) {
               if (!input.trySkipNullValue()) {
-                promotion = input.readUInt32();
+                uniqueId = input.readUInt32();
                 bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3492908: {
-            if (input.isAtField(FieldNames.rank)) {
-              if (!input.trySkipNullValue()) {
-                rank = input.readUInt32();
-                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -494,6 +484,17 @@ public final class ChallengeBossEquipmentOuterClass {
             if (input.isAtField(FieldNames.level)) {
               if (!input.trySkipNullValue()) {
                 level = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -799212381: {
+            if (input.isAtField(FieldNames.promotion)) {
+              if (!input.trySkipNullValue()) {
+                promotion = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -501,11 +502,10 @@ public final class ChallengeBossEquipmentOuterClass {
             }
             break;
           }
-          case -294460212:
-          case -538310583: {
-            if (input.isAtField(FieldNames.uniqueId)) {
+          case 3492908: {
+            if (input.isAtField(FieldNames.rank)) {
               if (!input.trySkipNullValue()) {
-                uniqueId = input.readUInt32();
+                rank = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -568,13 +568,13 @@ public final class ChallengeBossEquipmentOuterClass {
     static class FieldNames {
       static final FieldName tid = FieldName.forField("tid");
 
-      static final FieldName promotion = FieldName.forField("promotion");
-
-      static final FieldName rank = FieldName.forField("rank");
+      static final FieldName uniqueId = FieldName.forField("uniqueId", "unique_id");
 
       static final FieldName level = FieldName.forField("level");
 
-      static final FieldName uniqueId = FieldName.forField("uniqueId", "unique_id");
+      static final FieldName promotion = FieldName.forField("promotion");
+
+      static final FieldName rank = FieldName.forField("rank");
     }
   }
 }

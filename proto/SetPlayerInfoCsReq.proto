@@ -5,7 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "Gender.proto";
 
 message SetPlayerInfoCsReq {
-	Gender HJPKBIBBNKN = 7;
-	string nickname = 11;
-	bool is_modify = 10;
+	bool is_modify = 4;
+	Gender GLBIOLFDHOL = 3;
+	string nickname = 8;
 }

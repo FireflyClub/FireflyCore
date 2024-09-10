@@ -20,12 +20,12 @@ public final class SyncLineupNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      */
     private final LineupInfoOuterClass.LineupInfo lineup = LineupInfoOuterClass.LineupInfo.newInstance();
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      */
     private final RepeatedEnum<SyncReasonOuterClass.SyncReason> reasonList = RepeatedEnum.newEmptyInstance(SyncReasonOuterClass.SyncReason.converter());
 
@@ -40,7 +40,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      * @return whether the lineup field is set
      */
     public boolean hasLineup() {
@@ -48,7 +48,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      * @return this
      */
     public SyncLineupNotify clearLineup() {
@@ -58,7 +58,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -72,7 +72,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -86,7 +86,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 14;</code>
+     * <code>optional .LineupInfo Lineup = 14;</code>
      * @param value the lineup to set
      * @return this
      */
@@ -97,7 +97,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      * @return whether the reasonList field is set
      */
     public boolean hasReasonList() {
@@ -105,7 +105,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      * @return this
      */
     public SyncLineupNotify clearReasonList() {
@@ -115,7 +115,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -129,7 +129,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,7 +143,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      * @param value the reasonList to add
      * @return this
      */
@@ -154,7 +154,7 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 3;</code>
+     * <code>repeated .SyncReason ReasonList = 1;</code>
      * @param values the reasonList to add
      * @return this
      */
@@ -236,7 +236,7 @@ public final class SyncLineupNotifyOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < reasonList.length(); i++) {
-          output.writeRawByte((byte) 24);
+          output.writeRawByte((byte) 8);
           output.writeEnumNoTag(reasonList.array()[i]);
         }
       }
@@ -266,11 +266,11 @@ public final class SyncLineupNotifyOuterClass {
             input.readMessage(lineup);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 10) {
               break;
             }
           }
-          case 26: {
+          case 10: {
             // reasonList [packed=true]
             input.readPackedEnum(reasonList, tag);
             bitField0_ |= 0x00000002;
@@ -289,7 +289,7 @@ public final class SyncLineupNotifyOuterClass {
             tag = input.readTag();
             break;
           }
-          case 24: {
+          case 8: {
             // reasonList [packed=false]
             tag = input.readRepeatedEnum(reasonList, tag);
             bitField0_ |= 0x00000002;
@@ -318,7 +318,7 @@ public final class SyncLineupNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1102671473: {
+          case -2018804305: {
             if (input.isAtField(FieldNames.lineup)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(lineup);
@@ -329,8 +329,7 @@ public final class SyncLineupNotifyOuterClass {
             }
             break;
           }
-          case 722400514:
-          case 937206201: {
+          case -1579101918: {
             if (input.isAtField(FieldNames.reasonList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedEnum(reasonList, SyncReasonOuterClass.SyncReason.converter());
@@ -394,9 +393,9 @@ public final class SyncLineupNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName lineup = FieldName.forField("lineup");
+      static final FieldName lineup = FieldName.forField("Lineup");
 
-      static final FieldName reasonList = FieldName.forField("reasonList", "reason_list");
+      static final FieldName reasonList = FieldName.forField("ReasonList");
     }
   }
 }

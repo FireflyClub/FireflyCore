@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message DeleteFriendCsReq {
-	uint32 uid = 12;
-	uint32 IJDJCHIAJGP = 3;
+	uint32 uid = 3;
+	uint32 LEJFPAJNHDD = 11;
 }

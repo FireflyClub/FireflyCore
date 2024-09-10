@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "GroupStateInfo.proto";
 
 message GroupStateChangeScNotify {
-	GroupStateInfo group_state_info = 9;
+	GroupStateInfo group_state_info = 7;
 }

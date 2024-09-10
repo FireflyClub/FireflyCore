@@ -4,9 +4,8 @@ option java_package = "emu.lunarcore.proto";
 
 import "ItemCostList.proto";
 
-// Bpgoffdcaen
 message RogueBuffEnhanceInfo {
-    ItemCostList item_cost_list = 1;
-    float unk_float = 4;
-    uint32 buff_id = 14;
+	uint32 buff_id = 5;
+	ItemCostList item_cost_list = 4;
+	float unk_float = 3;
 }

@@ -60,9 +60,9 @@ public final class BattleAvatarOuterClass {
     private int assistUid;
 
     /**
-     * <code>optional uint32 MPFLNIIKEIC = 17;</code>
+     * <code>optional uint32 MKJKMMIOCHB = 17;</code>
      */
-    private int mPFLNIIKEIC;
+    private int mKJKMMIOCHB;
 
     /**
      * <code>optional .AvatarType avatar_type = 1;</code>
@@ -71,7 +71,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -400,39 +400,39 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
-     * <code>optional uint32 MPFLNIIKEIC = 17;</code>
-     * @return whether the mPFLNIIKEIC field is set
+     * <code>optional uint32 MKJKMMIOCHB = 17;</code>
+     * @return whether the mKJKMMIOCHB field is set
      */
-    public boolean hasMPFLNIIKEIC() {
+    public boolean hasMKJKMMIOCHB() {
       return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
-     * <code>optional uint32 MPFLNIIKEIC = 17;</code>
+     * <code>optional uint32 MKJKMMIOCHB = 17;</code>
      * @return this
      */
-    public BattleAvatar clearMPFLNIIKEIC() {
+    public BattleAvatar clearMKJKMMIOCHB() {
       bitField0_ &= ~0x00000100;
-      mPFLNIIKEIC = 0;
+      mKJKMMIOCHB = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 MPFLNIIKEIC = 17;</code>
-     * @return the mPFLNIIKEIC
+     * <code>optional uint32 MKJKMMIOCHB = 17;</code>
+     * @return the mKJKMMIOCHB
      */
-    public int getMPFLNIIKEIC() {
-      return mPFLNIIKEIC;
+    public int getMKJKMMIOCHB() {
+      return mKJKMMIOCHB;
     }
 
     /**
-     * <code>optional uint32 MPFLNIIKEIC = 17;</code>
-     * @param value the mPFLNIIKEIC to set
+     * <code>optional uint32 MKJKMMIOCHB = 17;</code>
+     * @param value the mKJKMMIOCHB to set
      * @return this
      */
-    public BattleAvatar setMPFLNIIKEIC(final int value) {
+    public BattleAvatar setMKJKMMIOCHB(final int value) {
       bitField0_ |= 0x00000100;
-      mPFLNIIKEIC = value;
+      mKJKMMIOCHB = value;
       return this;
     }
 
@@ -500,7 +500,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -512,7 +512,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -526,7 +526,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -544,7 +544,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -562,7 +562,7 @@ public final class BattleAvatarOuterClass {
 
     /**
      * <pre>
-     * GNOMPBKAHNM KPDLPCJHGHL = 15;
+     * CDCPBIAPMBM MBPNICPIMHH = 15;
      * </pre>
      *
      * <code>optional .SpBarInfo sp_bar = 16;</code>
@@ -794,7 +794,7 @@ public final class BattleAvatarOuterClass {
         promotion = other.promotion;
         worldLevel = other.worldLevel;
         assistUid = other.assistUid;
-        mPFLNIIKEIC = other.mPFLNIIKEIC;
+        mKJKMMIOCHB = other.mKJKMMIOCHB;
         avatarType = other.avatarType;
         spBar.copyFrom(other.spBar);
         skilltreeList.copyFrom(other.skilltreeList);
@@ -834,8 +834,8 @@ public final class BattleAvatarOuterClass {
       if (other.hasAssistUid()) {
         setAssistUid(other.assistUid);
       }
-      if (other.hasMPFLNIIKEIC()) {
-        setMPFLNIIKEIC(other.mPFLNIIKEIC);
+      if (other.hasMKJKMMIOCHB()) {
+        setMKJKMMIOCHB(other.mKJKMMIOCHB);
       }
       if (other.hasAvatarType()) {
         setAvatarTypeValue(other.avatarType);
@@ -870,7 +870,7 @@ public final class BattleAvatarOuterClass {
       promotion = 0;
       worldLevel = 0;
       assistUid = 0;
-      mPFLNIIKEIC = 0;
+      mKJKMMIOCHB = 0;
       avatarType = 0;
       spBar.clear();
       skilltreeList.clear();
@@ -911,7 +911,7 @@ public final class BattleAvatarOuterClass {
         && (!hasPromotion() || promotion == other.promotion)
         && (!hasWorldLevel() || worldLevel == other.worldLevel)
         && (!hasAssistUid() || assistUid == other.assistUid)
-        && (!hasMPFLNIIKEIC() || mPFLNIIKEIC == other.mPFLNIIKEIC)
+        && (!hasMKJKMMIOCHB() || mKJKMMIOCHB == other.mKJKMMIOCHB)
         && (!hasAvatarType() || avatarType == other.avatarType)
         && (!hasSpBar() || spBar.equals(other.spBar))
         && (!hasSkilltreeList() || skilltreeList.equals(other.skilltreeList))
@@ -955,7 +955,7 @@ public final class BattleAvatarOuterClass {
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawLittleEndian16((short) 392);
-        output.writeUInt32NoTag(mPFLNIIKEIC);
+        output.writeUInt32NoTag(mKJKMMIOCHB);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeRawByte((byte) 8);
@@ -1013,7 +1013,7 @@ public final class BattleAvatarOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(assistUid);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += 2 + ProtoSink.computeUInt32SizeNoTag(mPFLNIIKEIC);
+        size += 2 + ProtoSink.computeUInt32SizeNoTag(mKJKMMIOCHB);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(avatarType);
@@ -1113,8 +1113,8 @@ public final class BattleAvatarOuterClass {
             }
           }
           case 136: {
-            // mPFLNIIKEIC
-            mPFLNIIKEIC = input.readUInt32();
+            // mKJKMMIOCHB
+            mKJKMMIOCHB = input.readUInt32();
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 8) {
@@ -1208,7 +1208,7 @@ public final class BattleAvatarOuterClass {
         output.writeUInt32(FieldNames.assistUid, assistUid);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeUInt32(FieldNames.mPFLNIIKEIC, mPFLNIIKEIC);
+        output.writeUInt32(FieldNames.mKJKMMIOCHB, mKJKMMIOCHB);
       }
       if ((bitField0_ & 0x00000200) != 0) {
         output.writeEnum(FieldNames.avatarType, avatarType, AvatarTypeOuterClass.AvatarType.converter());
@@ -1325,10 +1325,10 @@ public final class BattleAvatarOuterClass {
             }
             break;
           }
-          case 539784473: {
-            if (input.isAtField(FieldNames.mPFLNIIKEIC)) {
+          case 366788536: {
+            if (input.isAtField(FieldNames.mKJKMMIOCHB)) {
               if (!input.trySkipNullValue()) {
-                mPFLNIIKEIC = input.readUInt32();
+                mKJKMMIOCHB = input.readUInt32();
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1469,7 +1469,7 @@ public final class BattleAvatarOuterClass {
 
       static final FieldName assistUid = FieldName.forField("assistUid", "assist_uid");
 
-      static final FieldName mPFLNIIKEIC = FieldName.forField("MPFLNIIKEIC");
+      static final FieldName mKJKMMIOCHB = FieldName.forField("MKJKMMIOCHB");
 
       static final FieldName avatarType = FieldName.forField("avatarType", "avatar_type");
 

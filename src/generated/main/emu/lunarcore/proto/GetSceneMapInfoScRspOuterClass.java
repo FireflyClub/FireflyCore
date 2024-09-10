@@ -25,12 +25,12 @@ public final class GetSceneMapInfoScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional bool MFDIBEECLPP = 10;</code>
+     * <code>optional bool PNFPBICGDPC = 5;</code>
      */
-    private boolean mFDIBEECLPP;
+    private boolean pNFPBICGDPC;
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      */
     private final RepeatedMessage<MazeMapDataOuterClass.MazeMapData> mapList = RepeatedMessage.newEmptyInstance(MazeMapDataOuterClass.MazeMapData.getFactory());
 
@@ -82,44 +82,44 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional bool MFDIBEECLPP = 10;</code>
-     * @return whether the mFDIBEECLPP field is set
+     * <code>optional bool PNFPBICGDPC = 5;</code>
+     * @return whether the pNFPBICGDPC field is set
      */
-    public boolean hasMFDIBEECLPP() {
+    public boolean hasPNFPBICGDPC() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool MFDIBEECLPP = 10;</code>
+     * <code>optional bool PNFPBICGDPC = 5;</code>
      * @return this
      */
-    public GetSceneMapInfoScRsp clearMFDIBEECLPP() {
+    public GetSceneMapInfoScRsp clearPNFPBICGDPC() {
       bitField0_ &= ~0x00000002;
-      mFDIBEECLPP = false;
+      pNFPBICGDPC = false;
       return this;
     }
 
     /**
-     * <code>optional bool MFDIBEECLPP = 10;</code>
-     * @return the mFDIBEECLPP
+     * <code>optional bool PNFPBICGDPC = 5;</code>
+     * @return the pNFPBICGDPC
      */
-    public boolean getMFDIBEECLPP() {
-      return mFDIBEECLPP;
+    public boolean getPNFPBICGDPC() {
+      return pNFPBICGDPC;
     }
 
     /**
-     * <code>optional bool MFDIBEECLPP = 10;</code>
-     * @param value the mFDIBEECLPP to set
+     * <code>optional bool PNFPBICGDPC = 5;</code>
+     * @param value the pNFPBICGDPC to set
      * @return this
      */
-    public GetSceneMapInfoScRsp setMFDIBEECLPP(final boolean value) {
+    public GetSceneMapInfoScRsp setPNFPBICGDPC(final boolean value) {
       bitField0_ |= 0x00000002;
-      mFDIBEECLPP = value;
+      pNFPBICGDPC = value;
       return this;
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      * @return whether the mapList field is set
      */
     public boolean hasMapList() {
@@ -127,7 +127,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      * @return this
      */
     public GetSceneMapInfoScRsp clearMapList() {
@@ -137,7 +137,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +151,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +165,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      * @param value the mapList to add
      * @return this
      */
@@ -176,7 +176,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 5;</code>
+     * <code>repeated .MazeMapData map_list = 8;</code>
      * @param values the mapList to add
      * @return this
      */
@@ -192,7 +192,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        mFDIBEECLPP = other.mFDIBEECLPP;
+        pNFPBICGDPC = other.pNFPBICGDPC;
         mapList.copyFrom(other.mapList);
       }
       return this;
@@ -207,8 +207,8 @@ public final class GetSceneMapInfoScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasMFDIBEECLPP()) {
-        setMFDIBEECLPP(other.mFDIBEECLPP);
+      if (other.hasPNFPBICGDPC()) {
+        setPNFPBICGDPC(other.pNFPBICGDPC);
       }
       if (other.hasMapList()) {
         getMutableMapList().addAll(other.mapList);
@@ -224,7 +224,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      mFDIBEECLPP = false;
+      pNFPBICGDPC = false;
       mapList.clear();
       return this;
     }
@@ -251,7 +251,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       GetSceneMapInfoScRsp other = (GetSceneMapInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasMFDIBEECLPP() || mFDIBEECLPP == other.mFDIBEECLPP)
+        && (!hasPNFPBICGDPC() || pNFPBICGDPC == other.pNFPBICGDPC)
         && (!hasMapList() || mapList.equals(other.mapList));
     }
 
@@ -262,12 +262,12 @@ public final class GetSceneMapInfoScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeBoolNoTag(mFDIBEECLPP);
+        output.writeRawByte((byte) 40);
+        output.writeBoolNoTag(pNFPBICGDPC);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < mapList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(mapList.get(i));
         }
       }
@@ -300,20 +300,20 @@ public final class GetSceneMapInfoScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 40) {
               break;
             }
           }
-          case 80: {
-            // mFDIBEECLPP
-            mFDIBEECLPP = input.readBool();
+          case 40: {
+            // pNFPBICGDPC
+            pNFPBICGDPC = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 66) {
               break;
             }
           }
-          case 42: {
+          case 66: {
             // mapList
             tag = input.readRepeatedMessage(mapList, tag);
             bitField0_ |= 0x00000004;
@@ -342,7 +342,7 @@ public final class GetSceneMapInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.mFDIBEECLPP, mFDIBEECLPP);
+        output.writeBool(FieldNames.pNFPBICGDPC, pNFPBICGDPC);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.mapList, mapList);
@@ -368,10 +368,10 @@ public final class GetSceneMapInfoScRspOuterClass {
             }
             break;
           }
-          case -1287154195: {
-            if (input.isAtField(FieldNames.mFDIBEECLPP)) {
+          case 447428132: {
+            if (input.isAtField(FieldNames.pNFPBICGDPC)) {
               if (!input.trySkipNullValue()) {
-                mFDIBEECLPP = input.readBool();
+                pNFPBICGDPC = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -446,7 +446,7 @@ public final class GetSceneMapInfoScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName mFDIBEECLPP = FieldName.forField("MFDIBEECLPP");
+      static final FieldName pNFPBICGDPC = FieldName.forField("PNFPBICGDPC");
 
       static final FieldName mapList = FieldName.forField("mapList", "map_list");
     }

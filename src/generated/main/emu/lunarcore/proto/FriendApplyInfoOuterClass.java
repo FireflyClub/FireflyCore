@@ -19,12 +19,12 @@ public final class FriendApplyInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 GCEHCPPAIFF = 14;</code>
+     * <code>optional int64 JJIKIPPCOIH = 15;</code>
      */
-    private long gCEHCPPAIFF;
+    private long jJIKIPPCOIH;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
@@ -39,44 +39,44 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 GCEHCPPAIFF = 14;</code>
-     * @return whether the gCEHCPPAIFF field is set
+     * <code>optional int64 JJIKIPPCOIH = 15;</code>
+     * @return whether the jJIKIPPCOIH field is set
      */
-    public boolean hasGCEHCPPAIFF() {
+    public boolean hasJJIKIPPCOIH() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional int64 GCEHCPPAIFF = 14;</code>
+     * <code>optional int64 JJIKIPPCOIH = 15;</code>
      * @return this
      */
-    public FriendApplyInfo clearGCEHCPPAIFF() {
+    public FriendApplyInfo clearJJIKIPPCOIH() {
       bitField0_ &= ~0x00000001;
-      gCEHCPPAIFF = 0L;
+      jJIKIPPCOIH = 0L;
       return this;
     }
 
     /**
-     * <code>optional int64 GCEHCPPAIFF = 14;</code>
-     * @return the gCEHCPPAIFF
+     * <code>optional int64 JJIKIPPCOIH = 15;</code>
+     * @return the jJIKIPPCOIH
      */
-    public long getGCEHCPPAIFF() {
-      return gCEHCPPAIFF;
+    public long getJJIKIPPCOIH() {
+      return jJIKIPPCOIH;
     }
 
     /**
-     * <code>optional int64 GCEHCPPAIFF = 14;</code>
-     * @param value the gCEHCPPAIFF to set
+     * <code>optional int64 JJIKIPPCOIH = 15;</code>
+     * @param value the jJIKIPPCOIH to set
      * @return this
      */
-    public FriendApplyInfo setGCEHCPPAIFF(final long value) {
+    public FriendApplyInfo setJJIKIPPCOIH(final long value) {
       bitField0_ |= 0x00000001;
-      gCEHCPPAIFF = value;
+      jJIKIPPCOIH = value;
       return this;
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
@@ -84,7 +84,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      * @return this
      */
     public FriendApplyInfo clearSimpleInfo() {
@@ -94,7 +94,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class FriendApplyInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 7;</code>
+     * <code>optional .SimpleInfo simple_info = 9;</code>
      * @param value the simpleInfo to set
      * @return this
      */
@@ -137,7 +137,7 @@ public final class FriendApplyInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        gCEHCPPAIFF = other.gCEHCPPAIFF;
+        jJIKIPPCOIH = other.jJIKIPPCOIH;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -149,8 +149,8 @@ public final class FriendApplyInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasGCEHCPPAIFF()) {
-        setGCEHCPPAIFF(other.gCEHCPPAIFF);
+      if (other.hasJJIKIPPCOIH()) {
+        setJJIKIPPCOIH(other.jJIKIPPCOIH);
       }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
@@ -165,7 +165,7 @@ public final class FriendApplyInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      gCEHCPPAIFF = 0L;
+      jJIKIPPCOIH = 0L;
       simpleInfo.clear();
       return this;
     }
@@ -191,18 +191,18 @@ public final class FriendApplyInfoOuterClass {
       }
       FriendApplyInfo other = (FriendApplyInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasGCEHCPPAIFF() || gCEHCPPAIFF == other.gCEHCPPAIFF)
+        && (!hasJJIKIPPCOIH() || jJIKIPPCOIH == other.jJIKIPPCOIH)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeInt64NoTag(gCEHCPPAIFF);
+        output.writeRawByte((byte) 120);
+        output.writeInt64NoTag(jJIKIPPCOIH);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 58);
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(simpleInfo);
       }
     }
@@ -211,7 +211,7 @@ public final class FriendApplyInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeInt64SizeNoTag(gCEHCPPAIFF);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(jJIKIPPCOIH);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(simpleInfo);
@@ -226,16 +226,16 @@ public final class FriendApplyInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
-            // gCEHCPPAIFF
-            gCEHCPPAIFF = input.readInt64();
+          case 120: {
+            // jJIKIPPCOIH
+            jJIKIPPCOIH = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 74) {
               break;
             }
           }
-          case 58: {
+          case 74: {
             // simpleInfo
             input.readMessage(simpleInfo);
             bitField0_ |= 0x00000002;
@@ -262,7 +262,7 @@ public final class FriendApplyInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeInt64(FieldNames.gCEHCPPAIFF, gCEHCPPAIFF);
+        output.writeInt64(FieldNames.jJIKIPPCOIH, jJIKIPPCOIH);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
@@ -277,10 +277,10 @@ public final class FriendApplyInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -843584628: {
-            if (input.isAtField(FieldNames.gCEHCPPAIFF)) {
+          case 8634738: {
+            if (input.isAtField(FieldNames.jJIKIPPCOIH)) {
               if (!input.trySkipNullValue()) {
-                gCEHCPPAIFF = input.readInt64();
+                jJIKIPPCOIH = input.readInt64();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -353,7 +353,7 @@ public final class FriendApplyInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName gCEHCPPAIFF = FieldName.forField("GCEHCPPAIFF");
+      static final FieldName jJIKIPPCOIH = FieldName.forField("JJIKIPPCOIH");
 
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }

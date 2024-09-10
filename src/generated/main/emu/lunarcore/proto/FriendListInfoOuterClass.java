@@ -20,33 +20,33 @@ public final class FriendListInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 sent_time = 8;</code>
+     * <pre>
+     * NAAJKLMNIJI EFAEALKEIPD = 13;
+     * </pre>
+     *
+     * <code>optional int64 sent_time = 6;</code>
      */
     private long sentTime;
 
     /**
-     * <pre>
-     * CBNKEMLBLEN MMOKBDKKIKB = 7;
-     * </pre>
-     *
-     * <code>optional .PlayingState playing_state = 3;</code>
+     * <code>optional .PlayingState playing_state = 7;</code>
      */
     private int playingState;
 
     /**
-     * <code>optional bool is_marked = 4;</code>
+     * <code>optional bool is_marked = 11;</code>
      */
     private boolean isMarked;
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
+     * <code>optional string KDLEHAPNACL = 12;</code>
      */
-    private final Utf8String cADMAIGKMOI = Utf8String.newEmptyInstance();
+    private final Utf8String kDLEHAPNACL = Utf8String.newEmptyInstance();
 
     private FriendListInfo() {
     }
@@ -59,7 +59,11 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 sent_time = 8;</code>
+     * <pre>
+     * NAAJKLMNIJI EFAEALKEIPD = 13;
+     * </pre>
+     *
+     * <code>optional int64 sent_time = 6;</code>
      * @return whether the sentTime field is set
      */
     public boolean hasSentTime() {
@@ -67,7 +71,11 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 sent_time = 8;</code>
+     * <pre>
+     * NAAJKLMNIJI EFAEALKEIPD = 13;
+     * </pre>
+     *
+     * <code>optional int64 sent_time = 6;</code>
      * @return this
      */
     public FriendListInfo clearSentTime() {
@@ -77,7 +85,11 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 sent_time = 8;</code>
+     * <pre>
+     * NAAJKLMNIJI EFAEALKEIPD = 13;
+     * </pre>
+     *
+     * <code>optional int64 sent_time = 6;</code>
      * @return the sentTime
      */
     public long getSentTime() {
@@ -85,7 +97,11 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional int64 sent_time = 8;</code>
+     * <pre>
+     * NAAJKLMNIJI EFAEALKEIPD = 13;
+     * </pre>
+     *
+     * <code>optional int64 sent_time = 6;</code>
      * @param value the sentTime to set
      * @return this
      */
@@ -96,11 +112,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * CBNKEMLBLEN MMOKBDKKIKB = 7;
-     * </pre>
-     *
-     * <code>optional .PlayingState playing_state = 3;</code>
+     * <code>optional .PlayingState playing_state = 7;</code>
      * @return whether the playingState field is set
      */
     public boolean hasPlayingState() {
@@ -108,11 +120,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * CBNKEMLBLEN MMOKBDKKIKB = 7;
-     * </pre>
-     *
-     * <code>optional .PlayingState playing_state = 3;</code>
+     * <code>optional .PlayingState playing_state = 7;</code>
      * @return this
      */
     public FriendListInfo clearPlayingState() {
@@ -122,11 +130,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * CBNKEMLBLEN MMOKBDKKIKB = 7;
-     * </pre>
-     *
-     * <code>optional .PlayingState playing_state = 3;</code>
+     * <code>optional .PlayingState playing_state = 7;</code>
      * @return the playingState
      */
     public PlayingStateOuterClass.PlayingState getPlayingState() {
@@ -159,11 +163,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * CBNKEMLBLEN MMOKBDKKIKB = 7;
-     * </pre>
-     *
-     * <code>optional .PlayingState playing_state = 3;</code>
+     * <code>optional .PlayingState playing_state = 7;</code>
      * @param value the playingState to set
      * @return this
      */
@@ -174,7 +174,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 4;</code>
+     * <code>optional bool is_marked = 11;</code>
      * @return whether the isMarked field is set
      */
     public boolean hasIsMarked() {
@@ -182,7 +182,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 4;</code>
+     * <code>optional bool is_marked = 11;</code>
      * @return this
      */
     public FriendListInfo clearIsMarked() {
@@ -192,7 +192,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 4;</code>
+     * <code>optional bool is_marked = 11;</code>
      * @return the isMarked
      */
     public boolean getIsMarked() {
@@ -200,7 +200,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional bool is_marked = 4;</code>
+     * <code>optional bool is_marked = 11;</code>
      * @param value the isMarked to set
      * @return this
      */
@@ -211,7 +211,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
@@ -219,7 +219,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      * @return this
      */
     public FriendListInfo clearSimpleInfo() {
@@ -229,7 +229,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -243,7 +243,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -257,7 +257,7 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional .SimpleInfo simple_info = 2;</code>
+     * <code>optional .SimpleInfo simple_info = 8;</code>
      * @param value the simpleInfo to set
      * @return this
      */
@@ -268,67 +268,67 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @return whether the cADMAIGKMOI field is set
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @return whether the kDLEHAPNACL field is set
      */
-    public boolean hasCADMAIGKMOI() {
+    public boolean hasKDLEHAPNACL() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
+     * <code>optional string KDLEHAPNACL = 12;</code>
      * @return this
      */
-    public FriendListInfo clearCADMAIGKMOI() {
+    public FriendListInfo clearKDLEHAPNACL() {
       bitField0_ &= ~0x00000010;
-      cADMAIGKMOI.clear();
+      kDLEHAPNACL.clear();
       return this;
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @return the cADMAIGKMOI
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @return the kDLEHAPNACL
      */
-    public String getCADMAIGKMOI() {
-      return cADMAIGKMOI.getString();
+    public String getKDLEHAPNACL() {
+      return kDLEHAPNACL.getString();
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @return internal {@code Utf8String} representation of cADMAIGKMOI for reading
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @return internal {@code Utf8String} representation of kDLEHAPNACL for reading
      */
-    public Utf8String getCADMAIGKMOIBytes() {
-      return this.cADMAIGKMOI;
+    public Utf8String getKDLEHAPNACLBytes() {
+      return this.kDLEHAPNACL;
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @return internal {@code Utf8String} representation of cADMAIGKMOI for modifications
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @return internal {@code Utf8String} representation of kDLEHAPNACL for modifications
      */
-    public Utf8String getMutableCADMAIGKMOIBytes() {
+    public Utf8String getMutableKDLEHAPNACLBytes() {
       bitField0_ |= 0x00000010;
-      return this.cADMAIGKMOI;
+      return this.kDLEHAPNACL;
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @param value the cADMAIGKMOI to set
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @param value the kDLEHAPNACL to set
      * @return this
      */
-    public FriendListInfo setCADMAIGKMOI(final CharSequence value) {
+    public FriendListInfo setKDLEHAPNACL(final CharSequence value) {
       bitField0_ |= 0x00000010;
-      cADMAIGKMOI.copyFrom(value);
+      kDLEHAPNACL.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string CADMAIGKMOI = 13;</code>
-     * @param value the cADMAIGKMOI to set
+     * <code>optional string KDLEHAPNACL = 12;</code>
+     * @param value the kDLEHAPNACL to set
      * @return this
      */
-    public FriendListInfo setCADMAIGKMOI(final Utf8String value) {
+    public FriendListInfo setKDLEHAPNACL(final Utf8String value) {
       bitField0_ |= 0x00000010;
-      cADMAIGKMOI.copyFrom(value);
+      kDLEHAPNACL.copyFrom(value);
       return this;
     }
 
@@ -341,7 +341,7 @@ public final class FriendListInfoOuterClass {
         playingState = other.playingState;
         isMarked = other.isMarked;
         simpleInfo.copyFrom(other.simpleInfo);
-        cADMAIGKMOI.copyFrom(other.cADMAIGKMOI);
+        kDLEHAPNACL.copyFrom(other.kDLEHAPNACL);
       }
       return this;
     }
@@ -364,8 +364,8 @@ public final class FriendListInfoOuterClass {
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
       }
-      if (other.hasCADMAIGKMOI()) {
-        getMutableCADMAIGKMOIBytes().copyFrom(other.cADMAIGKMOI);
+      if (other.hasKDLEHAPNACL()) {
+        getMutableKDLEHAPNACLBytes().copyFrom(other.kDLEHAPNACL);
       }
       return this;
     }
@@ -381,7 +381,7 @@ public final class FriendListInfoOuterClass {
       playingState = 0;
       isMarked = false;
       simpleInfo.clear();
-      cADMAIGKMOI.clear();
+      kDLEHAPNACL.clear();
       return this;
     }
 
@@ -393,7 +393,7 @@ public final class FriendListInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       simpleInfo.clearQuick();
-      cADMAIGKMOI.clear();
+      kDLEHAPNACL.clear();
       return this;
     }
 
@@ -411,30 +411,30 @@ public final class FriendListInfoOuterClass {
         && (!hasPlayingState() || playingState == other.playingState)
         && (!hasIsMarked() || isMarked == other.isMarked)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo))
-        && (!hasCADMAIGKMOI() || cADMAIGKMOI.equals(other.cADMAIGKMOI));
+        && (!hasKDLEHAPNACL() || kDLEHAPNACL.equals(other.kDLEHAPNACL));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 48);
         output.writeInt64NoTag(sentTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(playingState);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 88);
         output.writeBoolNoTag(isMarked);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(simpleInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 106);
-        output.writeStringNoTag(cADMAIGKMOI);
+        output.writeRawByte((byte) 98);
+        output.writeStringNoTag(kDLEHAPNACL);
       }
     }
 
@@ -454,7 +454,7 @@ public final class FriendListInfoOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(simpleInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(cADMAIGKMOI);
+        size += 1 + ProtoSink.computeStringSizeNoTag(kDLEHAPNACL);
       }
       return size;
     }
@@ -466,16 +466,16 @@ public final class FriendListInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 48: {
             // sentTime
             sentTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 56) {
               break;
             }
           }
-          case 24: {
+          case 56: {
             // playingState
             final int value = input.readInt32();
             if (PlayingStateOuterClass.PlayingState.forNumber(value) != null) {
@@ -483,31 +483,31 @@ public final class FriendListInfoOuterClass {
               bitField0_ |= 0x00000002;
             }
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 88) {
               break;
             }
           }
-          case 32: {
+          case 88: {
             // isMarked
             isMarked = input.readBool();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 66) {
               break;
             }
           }
-          case 18: {
+          case 66: {
             // simpleInfo
             input.readMessage(simpleInfo);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 98) {
               break;
             }
           }
-          case 106: {
-            // cADMAIGKMOI
-            input.readString(cADMAIGKMOI);
+          case 98: {
+            // kDLEHAPNACL
+            input.readString(kDLEHAPNACL);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
@@ -544,7 +544,7 @@ public final class FriendListInfoOuterClass {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeString(FieldNames.cADMAIGKMOI, cADMAIGKMOI);
+        output.writeString(FieldNames.kDLEHAPNACL, kDLEHAPNACL);
       }
       output.endObject();
     }
@@ -609,10 +609,10 @@ public final class FriendListInfoOuterClass {
             }
             break;
           }
-          case -1904536300: {
-            if (input.isAtField(FieldNames.cADMAIGKMOI)) {
+          case -625218687: {
+            if (input.isAtField(FieldNames.kDLEHAPNACL)) {
               if (!input.trySkipNullValue()) {
-                input.readString(cADMAIGKMOI);
+                input.readString(kDLEHAPNACL);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -681,7 +681,7 @@ public final class FriendListInfoOuterClass {
 
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
 
-      static final FieldName cADMAIGKMOI = FieldName.forField("CADMAIGKMOI");
+      static final FieldName kDLEHAPNACL = FieldName.forField("KDLEHAPNACL");
     }
   }
 }

@@ -5,13 +5,11 @@ option java_package = "emu.lunarcore.proto";
 import "Mission.proto";
 
 message MissionSync {
-	//repeated DLOMPNOBMJA JBAAJBAEBCH = 7;
-	repeated Mission mission_list = 12;
-	//repeated IHGEEANGIFC KJJMJMONPDB = 5;
-	//repeated uint32 FKFOHOPMOHO = 9;
-
-	//repeated uint32 LIGLNAIGDNH = 10;
-	//repeated uint32 HMBHDBNBHKI = 6;
-	//repeated uint32 IBAIJPGBICF = 1;
-    repeated uint32 sync_mission_id = 1;
+	repeated Mission mission_list = 7;
+	//repeated LFNIHOHMNPN EGKMFDANDLN = 4;
+	//repeated OBEPIHAHMDF LGGFKNGGBJD = 10;
+	repeated uint32 DJOBGKDFLBI = 12;
+	repeated uint32 EKOKENIBLND = 3;
+	repeated uint32 ANJMGEHLOHE = 5;
+	repeated uint32 FHJPGKOKIMP = 11;
 }

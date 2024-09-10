@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SetNicknameCsReq {
-	bool is_modify = 13;
-	string nickname = 2;
+	bool is_modify = 2;
+	string nickname = 4;
 }

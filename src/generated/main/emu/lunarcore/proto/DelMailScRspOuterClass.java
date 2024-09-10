@@ -20,12 +20,12 @@ public final class DelMailScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      */
     private final RepeatedInt idList = RepeatedInt.newEmptyInstance();
 
@@ -40,7 +40,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -48,7 +48,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return this
      */
     public DelMailScRsp clearRetcode() {
@@ -58,7 +58,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -66,7 +66,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 Retcode = 3;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -77,7 +77,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      * @return whether the idList field is set
      */
     public boolean hasIdList() {
@@ -85,7 +85,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      * @return this
      */
     public DelMailScRsp clearIdList() {
@@ -95,7 +95,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +109,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +123,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      * @param value the idList to add
      * @return this
      */
@@ -134,7 +134,7 @@ public final class DelMailScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 id_list = 15;</code>
+     * <code>repeated uint32 IdList = 11;</code>
      * @param values the idList to add
      * @return this
      */
@@ -210,12 +210,12 @@ public final class DelMailScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < idList.length(); i++) {
-          output.writeRawByte((byte) 120);
+          output.writeRawByte((byte) 88);
           output.writeUInt32NoTag(idList.array()[i]);
         }
       }
@@ -240,16 +240,16 @@ public final class DelMailScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 24: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 90) {
               break;
             }
           }
-          case 122: {
+          case 90: {
             // idList [packed=true]
             input.readPackedUInt32(idList, tag);
             bitField0_ |= 0x00000002;
@@ -268,7 +268,7 @@ public final class DelMailScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 120: {
+          case 88: {
             // idList [packed=false]
             tag = input.readRepeatedUInt32(idList, tag);
             bitField0_ |= 0x00000002;
@@ -297,7 +297,7 @@ public final class DelMailScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
+          case -1532377618: {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
@@ -308,8 +308,7 @@ public final class DelMailScRspOuterClass {
             }
             break;
           }
-          case -1194185639:
-          case 1652577602: {
+          case -2110318471: {
             if (input.isAtField(FieldNames.idList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(idList);
@@ -372,9 +371,9 @@ public final class DelMailScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
+      static final FieldName retcode = FieldName.forField("Retcode");
 
-      static final FieldName idList = FieldName.forField("idList", "id_list");
+      static final FieldName idList = FieldName.forField("IdList");
     }
   }
 }

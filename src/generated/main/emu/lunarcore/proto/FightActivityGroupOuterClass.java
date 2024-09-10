@@ -20,22 +20,22 @@ public final class FightActivityGroupOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
-     */
-    private int passedMaxDifficultyLevel;
-
-    /**
-     * <code>optional uint32 endless_max_wave = 5;</code>
+     * <code>optional uint32 EndlessMaxWave = 3;</code>
      */
     private int endlessMaxWave;
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 PassedMaxDifficultyLevel = 9;</code>
+     */
+    private int passedMaxDifficultyLevel;
+
+    /**
+     * <code>optional uint32 GroupId = 15;</code>
      */
     private int groupId;
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      */
     private final RepeatedInt takenDifficultyLevelRewardList = RepeatedInt.newEmptyInstance();
 
@@ -50,62 +50,25 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
-     * @return whether the passedMaxDifficultyLevel field is set
+     * <code>optional uint32 EndlessMaxWave = 3;</code>
+     * @return whether the endlessMaxWave field is set
      */
-    public boolean hasPassedMaxDifficultyLevel() {
+    public boolean hasEndlessMaxWave() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
-     * @return this
-     */
-    public FightActivityGroup clearPassedMaxDifficultyLevel() {
-      bitField0_ &= ~0x00000001;
-      passedMaxDifficultyLevel = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
-     * @return the passedMaxDifficultyLevel
-     */
-    public int getPassedMaxDifficultyLevel() {
-      return passedMaxDifficultyLevel;
-    }
-
-    /**
-     * <code>optional uint32 passed_max_difficulty_level = 2;</code>
-     * @param value the passedMaxDifficultyLevel to set
-     * @return this
-     */
-    public FightActivityGroup setPassedMaxDifficultyLevel(final int value) {
-      bitField0_ |= 0x00000001;
-      passedMaxDifficultyLevel = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 endless_max_wave = 5;</code>
-     * @return whether the endlessMaxWave field is set
-     */
-    public boolean hasEndlessMaxWave() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 endless_max_wave = 5;</code>
+     * <code>optional uint32 EndlessMaxWave = 3;</code>
      * @return this
      */
     public FightActivityGroup clearEndlessMaxWave() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       endlessMaxWave = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 endless_max_wave = 5;</code>
+     * <code>optional uint32 EndlessMaxWave = 3;</code>
      * @return the endlessMaxWave
      */
     public int getEndlessMaxWave() {
@@ -113,18 +76,55 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 endless_max_wave = 5;</code>
+     * <code>optional uint32 EndlessMaxWave = 3;</code>
      * @param value the endlessMaxWave to set
      * @return this
      */
     public FightActivityGroup setEndlessMaxWave(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       endlessMaxWave = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 PassedMaxDifficultyLevel = 9;</code>
+     * @return whether the passedMaxDifficultyLevel field is set
+     */
+    public boolean hasPassedMaxDifficultyLevel() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 PassedMaxDifficultyLevel = 9;</code>
+     * @return this
+     */
+    public FightActivityGroup clearPassedMaxDifficultyLevel() {
+      bitField0_ &= ~0x00000002;
+      passedMaxDifficultyLevel = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 PassedMaxDifficultyLevel = 9;</code>
+     * @return the passedMaxDifficultyLevel
+     */
+    public int getPassedMaxDifficultyLevel() {
+      return passedMaxDifficultyLevel;
+    }
+
+    /**
+     * <code>optional uint32 PassedMaxDifficultyLevel = 9;</code>
+     * @param value the passedMaxDifficultyLevel to set
+     * @return this
+     */
+    public FightActivityGroup setPassedMaxDifficultyLevel(final int value) {
+      bitField0_ |= 0x00000002;
+      passedMaxDifficultyLevel = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 GroupId = 15;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -132,7 +132,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 GroupId = 15;</code>
      * @return this
      */
     public FightActivityGroup clearGroupId() {
@@ -142,7 +142,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 GroupId = 15;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -150,7 +150,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <code>optional uint32 GroupId = 15;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -161,7 +161,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      * @return whether the takenDifficultyLevelRewardList field is set
      */
     public boolean hasTakenDifficultyLevelRewardList() {
@@ -169,7 +169,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      * @return this
      */
     public FightActivityGroup clearTakenDifficultyLevelRewardList() {
@@ -179,7 +179,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -193,7 +193,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -207,7 +207,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      * @param value the takenDifficultyLevelRewardList to add
      * @return this
      */
@@ -218,7 +218,7 @@ public final class FightActivityGroupOuterClass {
     }
 
     /**
-     * <code>repeated uint32 taken_difficulty_level_reward_list = 11;</code>
+     * <code>repeated uint32 TakenDifficultyLevelRewardList = 4;</code>
      * @param values the takenDifficultyLevelRewardList to add
      * @return this
      */
@@ -233,8 +233,8 @@ public final class FightActivityGroupOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        passedMaxDifficultyLevel = other.passedMaxDifficultyLevel;
         endlessMaxWave = other.endlessMaxWave;
+        passedMaxDifficultyLevel = other.passedMaxDifficultyLevel;
         groupId = other.groupId;
         takenDifficultyLevelRewardList.copyFrom(other.takenDifficultyLevelRewardList);
       }
@@ -247,11 +247,11 @@ public final class FightActivityGroupOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPassedMaxDifficultyLevel()) {
-        setPassedMaxDifficultyLevel(other.passedMaxDifficultyLevel);
-      }
       if (other.hasEndlessMaxWave()) {
         setEndlessMaxWave(other.endlessMaxWave);
+      }
+      if (other.hasPassedMaxDifficultyLevel()) {
+        setPassedMaxDifficultyLevel(other.passedMaxDifficultyLevel);
       }
       if (other.hasGroupId()) {
         setGroupId(other.groupId);
@@ -269,8 +269,8 @@ public final class FightActivityGroupOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      passedMaxDifficultyLevel = 0;
       endlessMaxWave = 0;
+      passedMaxDifficultyLevel = 0;
       groupId = 0;
       takenDifficultyLevelRewardList.clear();
       return this;
@@ -297,8 +297,8 @@ public final class FightActivityGroupOuterClass {
       }
       FightActivityGroup other = (FightActivityGroup) o;
       return bitField0_ == other.bitField0_
-        && (!hasPassedMaxDifficultyLevel() || passedMaxDifficultyLevel == other.passedMaxDifficultyLevel)
         && (!hasEndlessMaxWave() || endlessMaxWave == other.endlessMaxWave)
+        && (!hasPassedMaxDifficultyLevel() || passedMaxDifficultyLevel == other.passedMaxDifficultyLevel)
         && (!hasGroupId() || groupId == other.groupId)
         && (!hasTakenDifficultyLevelRewardList() || takenDifficultyLevelRewardList.equals(other.takenDifficultyLevelRewardList));
     }
@@ -306,20 +306,20 @@ public final class FightActivityGroupOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(passedMaxDifficultyLevel);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(endlessMaxWave);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(passedMaxDifficultyLevel);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < takenDifficultyLevelRewardList.length(); i++) {
-          output.writeRawByte((byte) 88);
+          output.writeRawByte((byte) 32);
           output.writeUInt32NoTag(takenDifficultyLevelRewardList.array()[i]);
         }
       }
@@ -329,10 +329,10 @@ public final class FightActivityGroupOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(passedMaxDifficultyLevel);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(endlessMaxWave);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(endlessMaxWave);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(passedMaxDifficultyLevel);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(groupId);
@@ -350,34 +350,34 @@ public final class FightActivityGroupOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // passedMaxDifficultyLevel
-            passedMaxDifficultyLevel = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
+          case 24: {
             // endlessMaxWave
             endlessMaxWave = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 72) {
               break;
             }
           }
-          case 64: {
+          case 72: {
+            // passedMaxDifficultyLevel
+            passedMaxDifficultyLevel = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 34) {
               break;
             }
           }
-          case 90: {
+          case 34: {
             // takenDifficultyLevelRewardList [packed=true]
             input.readPackedUInt32(takenDifficultyLevelRewardList, tag);
             bitField0_ |= 0x00000008;
@@ -396,7 +396,7 @@ public final class FightActivityGroupOuterClass {
             tag = input.readTag();
             break;
           }
-          case 88: {
+          case 32: {
             // takenDifficultyLevelRewardList [packed=false]
             tag = input.readRepeatedUInt32(takenDifficultyLevelRewardList, tag);
             bitField0_ |= 0x00000008;
@@ -410,10 +410,10 @@ public final class FightActivityGroupOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.passedMaxDifficultyLevel, passedMaxDifficultyLevel);
+        output.writeUInt32(FieldNames.endlessMaxWave, endlessMaxWave);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.endlessMaxWave, endlessMaxWave);
+        output.writeUInt32(FieldNames.passedMaxDifficultyLevel, passedMaxDifficultyLevel);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.groupId, groupId);
@@ -431,11 +431,10 @@ public final class FightActivityGroupOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 556441365:
-          case 621527018: {
-            if (input.isAtField(FieldNames.passedMaxDifficultyLevel)) {
+          case 1784463113: {
+            if (input.isAtField(FieldNames.endlessMaxWave)) {
               if (!input.trySkipNullValue()) {
-                passedMaxDifficultyLevel = input.readUInt32();
+                endlessMaxWave = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -443,11 +442,10 @@ public final class FightActivityGroupOuterClass {
             }
             break;
           }
-          case -1508510999:
-          case 994550751: {
-            if (input.isAtField(FieldNames.endlessMaxWave)) {
+          case -1594309835: {
+            if (input.isAtField(FieldNames.passedMaxDifficultyLevel)) {
               if (!input.trySkipNullValue()) {
-                endlessMaxWave = input.readUInt32();
+                passedMaxDifficultyLevel = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -455,8 +453,7 @@ public final class FightActivityGroupOuterClass {
             }
             break;
           }
-          case 293428218:
-          case 506361563: {
+          case 1958081498: {
             if (input.isAtField(FieldNames.groupId)) {
               if (!input.trySkipNullValue()) {
                 groupId = input.readUInt32();
@@ -467,8 +464,7 @@ public final class FightActivityGroupOuterClass {
             }
             break;
           }
-          case -325043505:
-          case 1539896423: {
+          case -687159569: {
             if (input.isAtField(FieldNames.takenDifficultyLevelRewardList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(takenDifficultyLevelRewardList);
@@ -532,13 +528,13 @@ public final class FightActivityGroupOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName passedMaxDifficultyLevel = FieldName.forField("passedMaxDifficultyLevel", "passed_max_difficulty_level");
+      static final FieldName endlessMaxWave = FieldName.forField("EndlessMaxWave");
 
-      static final FieldName endlessMaxWave = FieldName.forField("endlessMaxWave", "endless_max_wave");
+      static final FieldName passedMaxDifficultyLevel = FieldName.forField("PassedMaxDifficultyLevel");
 
-      static final FieldName groupId = FieldName.forField("groupId", "group_id");
+      static final FieldName groupId = FieldName.forField("GroupId");
 
-      static final FieldName takenDifficultyLevelRewardList = FieldName.forField("takenDifficultyLevelRewardList", "taken_difficulty_level_reward_list");
+      static final FieldName takenDifficultyLevelRewardList = FieldName.forField("TakenDifficultyLevelRewardList");
     }
   }
 }

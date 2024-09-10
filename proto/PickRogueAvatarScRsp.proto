@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message PickRogueAvatarScRsp {
-	uint32 retcode = 6;
-	repeated uint32 DAPLNLIGMOM = 12;
-	repeated uint32 base_avatar_id_list = 7;
+	repeated uint32 MOICCJNMBBI = 2;
+	repeated uint32 base_avatar_id_list = 4;
+	uint32 retcode = 8;
 }

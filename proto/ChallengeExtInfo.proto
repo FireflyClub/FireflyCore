@@ -5,5 +5,7 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeBossInfo.proto";
 
 message ChallengeExtInfo {
-	ChallengeBossInfo boss_info = 4;
+	oneof challenge_info_case {
+		ChallengeBossInfo boss_info = 7;
+	}
 }

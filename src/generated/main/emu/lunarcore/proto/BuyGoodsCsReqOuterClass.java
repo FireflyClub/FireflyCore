@@ -19,29 +19,29 @@ public final class BuyGoodsCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 ALLILIAJFJF = 1;</code>
-     */
-    private int aLLILIAJFJF;
-
-    /**
-     * <code>optional uint32 goods_id = 3;</code>
-     */
-    private int goodsId;
-
-    /**
-     * <code>optional uint32 shop_id = 8;</code>
+     * <code>optional uint32 shop_id = 2;</code>
      */
     private int shopId;
 
     /**
-     * <code>optional uint32 goods_num = 13;</code>
+     * <code>optional uint32 goods_num = 3;</code>
      */
     private int goodsNum;
 
     /**
-     * <code>optional uint32 item_id = 15;</code>
+     * <code>optional uint32 goods_id = 10;</code>
+     */
+    private int goodsId;
+
+    /**
+     * <code>optional uint32 item_id = 12;</code>
      */
     private int itemId;
+
+    /**
+     * <code>optional uint32 rouge_event_id = 15;</code>
+     */
+    private int rougeEventId;
 
     private BuyGoodsCsReq() {
     }
@@ -54,99 +54,25 @@ public final class BuyGoodsCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 ALLILIAJFJF = 1;</code>
-     * @return whether the aLLILIAJFJF field is set
+     * <code>optional uint32 shop_id = 2;</code>
+     * @return whether the shopId field is set
      */
-    public boolean hasALLILIAJFJF() {
+    public boolean hasShopId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 ALLILIAJFJF = 1;</code>
-     * @return this
-     */
-    public BuyGoodsCsReq clearALLILIAJFJF() {
-      bitField0_ &= ~0x00000001;
-      aLLILIAJFJF = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 ALLILIAJFJF = 1;</code>
-     * @return the aLLILIAJFJF
-     */
-    public int getALLILIAJFJF() {
-      return aLLILIAJFJF;
-    }
-
-    /**
-     * <code>optional uint32 ALLILIAJFJF = 1;</code>
-     * @param value the aLLILIAJFJF to set
-     * @return this
-     */
-    public BuyGoodsCsReq setALLILIAJFJF(final int value) {
-      bitField0_ |= 0x00000001;
-      aLLILIAJFJF = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 goods_id = 3;</code>
-     * @return whether the goodsId field is set
-     */
-    public boolean hasGoodsId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 goods_id = 3;</code>
-     * @return this
-     */
-    public BuyGoodsCsReq clearGoodsId() {
-      bitField0_ &= ~0x00000002;
-      goodsId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 goods_id = 3;</code>
-     * @return the goodsId
-     */
-    public int getGoodsId() {
-      return goodsId;
-    }
-
-    /**
-     * <code>optional uint32 goods_id = 3;</code>
-     * @param value the goodsId to set
-     * @return this
-     */
-    public BuyGoodsCsReq setGoodsId(final int value) {
-      bitField0_ |= 0x00000002;
-      goodsId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 shop_id = 8;</code>
-     * @return whether the shopId field is set
-     */
-    public boolean hasShopId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 shop_id = 8;</code>
+     * <code>optional uint32 shop_id = 2;</code>
      * @return this
      */
     public BuyGoodsCsReq clearShopId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000001;
       shopId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 shop_id = 8;</code>
+     * <code>optional uint32 shop_id = 2;</code>
      * @return the shopId
      */
     public int getShopId() {
@@ -154,36 +80,36 @@ public final class BuyGoodsCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 shop_id = 8;</code>
+     * <code>optional uint32 shop_id = 2;</code>
      * @param value the shopId to set
      * @return this
      */
     public BuyGoodsCsReq setShopId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000001;
       shopId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 goods_num = 13;</code>
+     * <code>optional uint32 goods_num = 3;</code>
      * @return whether the goodsNum field is set
      */
     public boolean hasGoodsNum() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 goods_num = 13;</code>
+     * <code>optional uint32 goods_num = 3;</code>
      * @return this
      */
     public BuyGoodsCsReq clearGoodsNum() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000002;
       goodsNum = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 goods_num = 13;</code>
+     * <code>optional uint32 goods_num = 3;</code>
      * @return the goodsNum
      */
     public int getGoodsNum() {
@@ -191,36 +117,73 @@ public final class BuyGoodsCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 goods_num = 13;</code>
+     * <code>optional uint32 goods_num = 3;</code>
      * @param value the goodsNum to set
      * @return this
      */
     public BuyGoodsCsReq setGoodsNum(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       goodsNum = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 item_id = 15;</code>
-     * @return whether the itemId field is set
+     * <code>optional uint32 goods_id = 10;</code>
+     * @return whether the goodsId field is set
      */
-    public boolean hasItemId() {
-      return (bitField0_ & 0x00000010) != 0;
+    public boolean hasGoodsId() {
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 item_id = 15;</code>
+     * <code>optional uint32 goods_id = 10;</code>
+     * @return this
+     */
+    public BuyGoodsCsReq clearGoodsId() {
+      bitField0_ &= ~0x00000004;
+      goodsId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 goods_id = 10;</code>
+     * @return the goodsId
+     */
+    public int getGoodsId() {
+      return goodsId;
+    }
+
+    /**
+     * <code>optional uint32 goods_id = 10;</code>
+     * @param value the goodsId to set
+     * @return this
+     */
+    public BuyGoodsCsReq setGoodsId(final int value) {
+      bitField0_ |= 0x00000004;
+      goodsId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 12;</code>
+     * @return whether the itemId field is set
+     */
+    public boolean hasItemId() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional uint32 item_id = 12;</code>
      * @return this
      */
     public BuyGoodsCsReq clearItemId() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000008;
       itemId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 item_id = 15;</code>
+     * <code>optional uint32 item_id = 12;</code>
      * @return the itemId
      */
     public int getItemId() {
@@ -228,13 +191,50 @@ public final class BuyGoodsCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 15;</code>
+     * <code>optional uint32 item_id = 12;</code>
      * @param value the itemId to set
      * @return this
      */
     public BuyGoodsCsReq setItemId(final int value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       itemId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rouge_event_id = 15;</code>
+     * @return whether the rougeEventId field is set
+     */
+    public boolean hasRougeEventId() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional uint32 rouge_event_id = 15;</code>
+     * @return this
+     */
+    public BuyGoodsCsReq clearRougeEventId() {
+      bitField0_ &= ~0x00000010;
+      rougeEventId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 rouge_event_id = 15;</code>
+     * @return the rougeEventId
+     */
+    public int getRougeEventId() {
+      return rougeEventId;
+    }
+
+    /**
+     * <code>optional uint32 rouge_event_id = 15;</code>
+     * @param value the rougeEventId to set
+     * @return this
+     */
+    public BuyGoodsCsReq setRougeEventId(final int value) {
+      bitField0_ |= 0x00000010;
+      rougeEventId = value;
       return this;
     }
 
@@ -243,11 +243,11 @@ public final class BuyGoodsCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        aLLILIAJFJF = other.aLLILIAJFJF;
-        goodsId = other.goodsId;
         shopId = other.shopId;
         goodsNum = other.goodsNum;
+        goodsId = other.goodsId;
         itemId = other.itemId;
+        rougeEventId = other.rougeEventId;
       }
       return this;
     }
@@ -258,20 +258,20 @@ public final class BuyGoodsCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasALLILIAJFJF()) {
-        setALLILIAJFJF(other.aLLILIAJFJF);
-      }
-      if (other.hasGoodsId()) {
-        setGoodsId(other.goodsId);
-      }
       if (other.hasShopId()) {
         setShopId(other.shopId);
       }
       if (other.hasGoodsNum()) {
         setGoodsNum(other.goodsNum);
       }
+      if (other.hasGoodsId()) {
+        setGoodsId(other.goodsId);
+      }
       if (other.hasItemId()) {
         setItemId(other.itemId);
+      }
+      if (other.hasRougeEventId()) {
+        setRougeEventId(other.rougeEventId);
       }
       return this;
     }
@@ -283,11 +283,11 @@ public final class BuyGoodsCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      aLLILIAJFJF = 0;
-      goodsId = 0;
       shopId = 0;
       goodsNum = 0;
+      goodsId = 0;
       itemId = 0;
+      rougeEventId = 0;
       return this;
     }
 
@@ -311,34 +311,34 @@ public final class BuyGoodsCsReqOuterClass {
       }
       BuyGoodsCsReq other = (BuyGoodsCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasALLILIAJFJF() || aLLILIAJFJF == other.aLLILIAJFJF)
-        && (!hasGoodsId() || goodsId == other.goodsId)
         && (!hasShopId() || shopId == other.shopId)
         && (!hasGoodsNum() || goodsNum == other.goodsNum)
-        && (!hasItemId() || itemId == other.itemId);
+        && (!hasGoodsId() || goodsId == other.goodsId)
+        && (!hasItemId() || itemId == other.itemId)
+        && (!hasRougeEventId() || rougeEventId == other.rougeEventId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(aLLILIAJFJF);
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(shopId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(goodsId);
+        output.writeUInt32NoTag(goodsNum);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(shopId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(goodsId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 104);
-        output.writeUInt32NoTag(goodsNum);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(itemId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 120);
-        output.writeUInt32NoTag(itemId);
+        output.writeUInt32NoTag(rougeEventId);
       }
     }
 
@@ -346,19 +346,19 @@ public final class BuyGoodsCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(aLLILIAJFJF);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(goodsId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(shopId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(goodsNum);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(goodsId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(itemId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rougeEventId);
       }
       return size;
     }
@@ -370,9 +370,9 @@ public final class BuyGoodsCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // aLLILIAJFJF
-            aLLILIAJFJF = input.readUInt32();
+          case 16: {
+            // shopId
+            shopId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 24) {
@@ -380,26 +380,26 @@ public final class BuyGoodsCsReqOuterClass {
             }
           }
           case 24: {
-            // goodsId
-            goodsId = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 64) {
-              break;
-            }
-          }
-          case 64: {
-            // shopId
-            shopId = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 104) {
-              break;
-            }
-          }
-          case 104: {
             // goodsNum
             goodsNum = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // goodsId
+            goodsId = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // itemId
+            itemId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 120) {
@@ -407,8 +407,8 @@ public final class BuyGoodsCsReqOuterClass {
             }
           }
           case 120: {
-            // itemId
-            itemId = input.readUInt32();
+            // rougeEventId
+            rougeEventId = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
@@ -433,19 +433,19 @@ public final class BuyGoodsCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.aLLILIAJFJF, aLLILIAJFJF);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.goodsId, goodsId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.shopId, shopId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.goodsNum, goodsNum);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.goodsId, goodsId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.itemId, itemId);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.rougeEventId, rougeEventId);
       }
       output.endObject();
     }
@@ -457,35 +457,12 @@ public final class BuyGoodsCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 738705396: {
-            if (input.isAtField(FieldNames.aLLILIAJFJF)) {
-              if (!input.trySkipNullValue()) {
-                aLLILIAJFJF = input.readUInt32();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 207037201:
-          case 2123207332: {
-            if (input.isAtField(FieldNames.goodsId)) {
-              if (!input.trySkipNullValue()) {
-                goodsId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -903151951:
           case 2067081988: {
             if (input.isAtField(FieldNames.shopId)) {
               if (!input.trySkipNullValue()) {
                 shopId = input.readUInt32();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -497,7 +474,19 @@ public final class BuyGoodsCsReqOuterClass {
             if (input.isAtField(FieldNames.goodsNum)) {
               if (!input.trySkipNullValue()) {
                 goodsNum = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 207037201:
+          case 2123207332: {
+            if (input.isAtField(FieldNames.goodsId)) {
+              if (!input.trySkipNullValue()) {
+                goodsId = input.readUInt32();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -509,6 +498,18 @@ public final class BuyGoodsCsReqOuterClass {
             if (input.isAtField(FieldNames.itemId)) {
               if (!input.trySkipNullValue()) {
                 itemId = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1449266111:
+          case -491082167: {
+            if (input.isAtField(FieldNames.rougeEventId)) {
+              if (!input.trySkipNullValue()) {
+                rougeEventId = input.readUInt32();
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -568,15 +569,15 @@ public final class BuyGoodsCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName aLLILIAJFJF = FieldName.forField("ALLILIAJFJF");
-
-      static final FieldName goodsId = FieldName.forField("goodsId", "goods_id");
-
       static final FieldName shopId = FieldName.forField("shopId", "shop_id");
 
       static final FieldName goodsNum = FieldName.forField("goodsNum", "goods_num");
 
+      static final FieldName goodsId = FieldName.forField("goodsId", "goods_id");
+
       static final FieldName itemId = FieldName.forField("itemId", "item_id");
+
+      static final FieldName rougeEventId = FieldName.forField("rougeEventId", "rouge_event_id");
     }
   }
 }

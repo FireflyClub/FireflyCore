@@ -11,7 +11,7 @@ public class PacketSetClientPausedScRsp extends BasePacket {
         super(CmdId.SetClientPausedScRsp);
         
         var data = SetClientPausedScRsp.newInstance()
-                .setPaused(player.isPaused());
+                .setIsPaused(player.isPaused());
         
         this.setData(data);
     }

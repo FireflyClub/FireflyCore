@@ -20,43 +20,39 @@ public final class ChessRogueStartCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  guess this is the difficulty level
-     * </pre>
-     *
-     * <code>optional uint32 KOLEFJKMFLF = 1;</code>
+     * <code>optional uint32 buff_aeon_id = 7;</code>
      */
-    private int kOLEFJKMFLF;
+    private int buffAeonId;
 
     /**
-     * <code>optional uint32 area_id = 5;</code>
+     * <code>optional uint32 LKCKPCJECJO = 9;</code>
      */
-    private int areaId;
+    private int lKCKPCJECJO;
 
     /**
-     * <code>optional uint32 dice_branch_id = 9;</code>
+     * <code>optional uint32 id = 10;</code>
      */
-    private int diceBranchId;
+    private int id;
 
     /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     */
-    private final RepeatedInt dDDICOEFHPM = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     */
-    private final RepeatedInt jDCMGPJHGLG = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     */
-    private final RepeatedInt disableAeonId = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      */
     private final RepeatedInt baseAvatarIdList = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     */
+    private final RepeatedInt mOICCJNMBBI = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     */
+    private final RepeatedInt nGBFEHEJHHO = RepeatedInt.newEmptyInstance();
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     */
+    private final RepeatedInt cCONMCFLBKG = RepeatedInt.newEmptyInstance();
 
     private ChessRogueStartCsReq() {
     }
@@ -69,356 +65,136 @@ public final class ChessRogueStartCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  guess this is the difficulty level
-     * </pre>
-     *
-     * <code>optional uint32 KOLEFJKMFLF = 1;</code>
-     * @return whether the kOLEFJKMFLF field is set
+     * <code>optional uint32 buff_aeon_id = 7;</code>
+     * @return whether the buffAeonId field is set
      */
-    public boolean hasKOLEFJKMFLF() {
+    public boolean hasBuffAeonId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <pre>
-     *  guess this is the difficulty level
-     * </pre>
-     *
-     * <code>optional uint32 KOLEFJKMFLF = 1;</code>
+     * <code>optional uint32 buff_aeon_id = 7;</code>
      * @return this
      */
-    public ChessRogueStartCsReq clearKOLEFJKMFLF() {
+    public ChessRogueStartCsReq clearBuffAeonId() {
       bitField0_ &= ~0x00000001;
-      kOLEFJKMFLF = 0;
+      buffAeonId = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  guess this is the difficulty level
-     * </pre>
-     *
-     * <code>optional uint32 KOLEFJKMFLF = 1;</code>
-     * @return the kOLEFJKMFLF
+     * <code>optional uint32 buff_aeon_id = 7;</code>
+     * @return the buffAeonId
      */
-    public int getKOLEFJKMFLF() {
-      return kOLEFJKMFLF;
+    public int getBuffAeonId() {
+      return buffAeonId;
     }
 
     /**
-     * <pre>
-     *  guess this is the difficulty level
-     * </pre>
-     *
-     * <code>optional uint32 KOLEFJKMFLF = 1;</code>
-     * @param value the kOLEFJKMFLF to set
+     * <code>optional uint32 buff_aeon_id = 7;</code>
+     * @param value the buffAeonId to set
      * @return this
      */
-    public ChessRogueStartCsReq setKOLEFJKMFLF(final int value) {
+    public ChessRogueStartCsReq setBuffAeonId(final int value) {
       bitField0_ |= 0x00000001;
-      kOLEFJKMFLF = value;
+      buffAeonId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 area_id = 5;</code>
-     * @return whether the areaId field is set
+     * <code>optional uint32 LKCKPCJECJO = 9;</code>
+     * @return whether the lKCKPCJECJO field is set
      */
-    public boolean hasAreaId() {
+    public boolean hasLKCKPCJECJO() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 area_id = 5;</code>
+     * <code>optional uint32 LKCKPCJECJO = 9;</code>
      * @return this
      */
-    public ChessRogueStartCsReq clearAreaId() {
+    public ChessRogueStartCsReq clearLKCKPCJECJO() {
       bitField0_ &= ~0x00000002;
-      areaId = 0;
+      lKCKPCJECJO = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 area_id = 5;</code>
-     * @return the areaId
+     * <code>optional uint32 LKCKPCJECJO = 9;</code>
+     * @return the lKCKPCJECJO
      */
-    public int getAreaId() {
-      return areaId;
+    public int getLKCKPCJECJO() {
+      return lKCKPCJECJO;
     }
 
     /**
-     * <code>optional uint32 area_id = 5;</code>
-     * @param value the areaId to set
+     * <code>optional uint32 LKCKPCJECJO = 9;</code>
+     * @param value the lKCKPCJECJO to set
      * @return this
      */
-    public ChessRogueStartCsReq setAreaId(final int value) {
+    public ChessRogueStartCsReq setLKCKPCJECJO(final int value) {
       bitField0_ |= 0x00000002;
-      areaId = value;
+      lKCKPCJECJO = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 dice_branch_id = 9;</code>
-     * @return whether the diceBranchId field is set
+     * <code>optional uint32 id = 10;</code>
+     * @return whether the id field is set
      */
-    public boolean hasDiceBranchId() {
+    public boolean hasId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 dice_branch_id = 9;</code>
+     * <code>optional uint32 id = 10;</code>
      * @return this
      */
-    public ChessRogueStartCsReq clearDiceBranchId() {
+    public ChessRogueStartCsReq clearId() {
       bitField0_ &= ~0x00000004;
-      diceBranchId = 0;
+      id = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 dice_branch_id = 9;</code>
-     * @return the diceBranchId
+     * <code>optional uint32 id = 10;</code>
+     * @return the id
      */
-    public int getDiceBranchId() {
-      return diceBranchId;
+    public int getId() {
+      return id;
     }
 
     /**
-     * <code>optional uint32 dice_branch_id = 9;</code>
-     * @param value the diceBranchId to set
+     * <code>optional uint32 id = 10;</code>
+     * @param value the id to set
      * @return this
      */
-    public ChessRogueStartCsReq setDiceBranchId(final int value) {
+    public ChessRogueStartCsReq setId(final int value) {
       bitField0_ |= 0x00000004;
-      diceBranchId = value;
+      id = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     * @return whether the dDDICOEFHPM field is set
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
+     * @return whether the baseAvatarIdList field is set
      */
-    public boolean hasDDDICOEFHPM() {
+    public boolean hasBaseAvatarIdList() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     * @return this
-     */
-    public ChessRogueStartCsReq clearDDDICOEFHPM() {
-      bitField0_ &= ~0x00000008;
-      dDDICOEFHPM.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableDDDICOEFHPM()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getDDDICOEFHPM() {
-      return dDDICOEFHPM;
-    }
-
-    /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableDDDICOEFHPM() {
-      bitField0_ |= 0x00000008;
-      return dDDICOEFHPM;
-    }
-
-    /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     * @param value the dDDICOEFHPM to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addDDDICOEFHPM(final int value) {
-      bitField0_ |= 0x00000008;
-      dDDICOEFHPM.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 DDDICOEFHPM = 6;</code>
-     * @param values the dDDICOEFHPM to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addAllDDDICOEFHPM(final int... values) {
-      bitField0_ |= 0x00000008;
-      dDDICOEFHPM.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     * @return whether the jDCMGPJHGLG field is set
-     */
-    public boolean hasJDCMGPJHGLG() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     * @return this
-     */
-    public ChessRogueStartCsReq clearJDCMGPJHGLG() {
-      bitField0_ &= ~0x00000010;
-      jDCMGPJHGLG.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableJDCMGPJHGLG()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getJDCMGPJHGLG() {
-      return jDCMGPJHGLG;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableJDCMGPJHGLG() {
-      bitField0_ |= 0x00000010;
-      return jDCMGPJHGLG;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     * @param value the jDCMGPJHGLG to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addJDCMGPJHGLG(final int value) {
-      bitField0_ |= 0x00000010;
-      jDCMGPJHGLG.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 JDCMGPJHGLG = 8;</code>
-     * @param values the jDCMGPJHGLG to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addAllJDCMGPJHGLG(final int... values) {
-      bitField0_ |= 0x00000010;
-      jDCMGPJHGLG.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     * @return whether the disableAeonId field is set
-     */
-    public boolean hasDisableAeonId() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     * @return this
-     */
-    public ChessRogueStartCsReq clearDisableAeonId() {
-      bitField0_ &= ~0x00000020;
-      disableAeonId.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableDisableAeonId()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getDisableAeonId() {
-      return disableAeonId;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableDisableAeonId() {
-      bitField0_ |= 0x00000020;
-      return disableAeonId;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     * @param value the disableAeonId to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addDisableAeonId(final int value) {
-      bitField0_ |= 0x00000020;
-      disableAeonId.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 disable_aeon_id = 13;</code>
-     * @param values the disableAeonId to add
-     * @return this
-     */
-    public ChessRogueStartCsReq addAllDisableAeonId(final int... values) {
-      bitField0_ |= 0x00000020;
-      disableAeonId.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
-     * @return whether the baseAvatarIdList field is set
-     */
-    public boolean hasBaseAvatarIdList() {
-      return (bitField0_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      * @return this
      */
     public ChessRogueStartCsReq clearBaseAvatarIdList() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000008;
       baseAvatarIdList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -432,7 +208,7 @@ public final class ChessRogueStartCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -441,29 +217,233 @@ public final class ChessRogueStartCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableBaseAvatarIdList() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       return baseAvatarIdList;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      * @param value the baseAvatarIdList to add
      * @return this
      */
     public ChessRogueStartCsReq addBaseAvatarIdList(final int value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       baseAvatarIdList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 base_avatar_id_list = 15;</code>
+     * <code>repeated uint32 base_avatar_id_list = 1;</code>
      * @param values the baseAvatarIdList to add
      * @return this
      */
     public ChessRogueStartCsReq addAllBaseAvatarIdList(final int... values) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       baseAvatarIdList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     * @return whether the mOICCJNMBBI field is set
+     */
+    public boolean hasMOICCJNMBBI() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     * @return this
+     */
+    public ChessRogueStartCsReq clearMOICCJNMBBI() {
+      bitField0_ &= ~0x00000010;
+      mOICCJNMBBI.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMOICCJNMBBI()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getMOICCJNMBBI() {
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableMOICCJNMBBI() {
+      bitField0_ |= 0x00000010;
+      return mOICCJNMBBI;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     * @param value the mOICCJNMBBI to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addMOICCJNMBBI(final int value) {
+      bitField0_ |= 0x00000010;
+      mOICCJNMBBI.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 MOICCJNMBBI = 4;</code>
+     * @param values the mOICCJNMBBI to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addAllMOICCJNMBBI(final int... values) {
+      bitField0_ |= 0x00000010;
+      mOICCJNMBBI.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     * @return whether the nGBFEHEJHHO field is set
+     */
+    public boolean hasNGBFEHEJHHO() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     * @return this
+     */
+    public ChessRogueStartCsReq clearNGBFEHEJHHO() {
+      bitField0_ &= ~0x00000020;
+      nGBFEHEJHHO.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableNGBFEHEJHHO()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getNGBFEHEJHHO() {
+      return nGBFEHEJHHO;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableNGBFEHEJHHO() {
+      bitField0_ |= 0x00000020;
+      return nGBFEHEJHHO;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     * @param value the nGBFEHEJHHO to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addNGBFEHEJHHO(final int value) {
+      bitField0_ |= 0x00000020;
+      nGBFEHEJHHO.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 NGBFEHEJHHO = 6;</code>
+     * @param values the nGBFEHEJHHO to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addAllNGBFEHEJHHO(final int... values) {
+      bitField0_ |= 0x00000020;
+      nGBFEHEJHHO.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     * @return whether the cCONMCFLBKG field is set
+     */
+    public boolean hasCCONMCFLBKG() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     * @return this
+     */
+    public ChessRogueStartCsReq clearCCONMCFLBKG() {
+      bitField0_ &= ~0x00000040;
+      cCONMCFLBKG.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableCCONMCFLBKG()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedInt getCCONMCFLBKG() {
+      return cCONMCFLBKG;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedInt getMutableCCONMCFLBKG() {
+      bitField0_ |= 0x00000040;
+      return cCONMCFLBKG;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     * @param value the cCONMCFLBKG to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addCCONMCFLBKG(final int value) {
+      bitField0_ |= 0x00000040;
+      cCONMCFLBKG.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 CCONMCFLBKG = 15;</code>
+     * @param values the cCONMCFLBKG to add
+     * @return this
+     */
+    public ChessRogueStartCsReq addAllCCONMCFLBKG(final int... values) {
+      bitField0_ |= 0x00000040;
+      cCONMCFLBKG.addAll(values);
       return this;
     }
 
@@ -472,13 +452,13 @@ public final class ChessRogueStartCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        kOLEFJKMFLF = other.kOLEFJKMFLF;
-        areaId = other.areaId;
-        diceBranchId = other.diceBranchId;
-        dDDICOEFHPM.copyFrom(other.dDDICOEFHPM);
-        jDCMGPJHGLG.copyFrom(other.jDCMGPJHGLG);
-        disableAeonId.copyFrom(other.disableAeonId);
+        buffAeonId = other.buffAeonId;
+        lKCKPCJECJO = other.lKCKPCJECJO;
+        id = other.id;
         baseAvatarIdList.copyFrom(other.baseAvatarIdList);
+        mOICCJNMBBI.copyFrom(other.mOICCJNMBBI);
+        nGBFEHEJHHO.copyFrom(other.nGBFEHEJHHO);
+        cCONMCFLBKG.copyFrom(other.cCONMCFLBKG);
       }
       return this;
     }
@@ -489,26 +469,26 @@ public final class ChessRogueStartCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasKOLEFJKMFLF()) {
-        setKOLEFJKMFLF(other.kOLEFJKMFLF);
+      if (other.hasBuffAeonId()) {
+        setBuffAeonId(other.buffAeonId);
       }
-      if (other.hasAreaId()) {
-        setAreaId(other.areaId);
+      if (other.hasLKCKPCJECJO()) {
+        setLKCKPCJECJO(other.lKCKPCJECJO);
       }
-      if (other.hasDiceBranchId()) {
-        setDiceBranchId(other.diceBranchId);
-      }
-      if (other.hasDDDICOEFHPM()) {
-        getMutableDDDICOEFHPM().addAll(other.dDDICOEFHPM);
-      }
-      if (other.hasJDCMGPJHGLG()) {
-        getMutableJDCMGPJHGLG().addAll(other.jDCMGPJHGLG);
-      }
-      if (other.hasDisableAeonId()) {
-        getMutableDisableAeonId().addAll(other.disableAeonId);
+      if (other.hasId()) {
+        setId(other.id);
       }
       if (other.hasBaseAvatarIdList()) {
         getMutableBaseAvatarIdList().addAll(other.baseAvatarIdList);
+      }
+      if (other.hasMOICCJNMBBI()) {
+        getMutableMOICCJNMBBI().addAll(other.mOICCJNMBBI);
+      }
+      if (other.hasNGBFEHEJHHO()) {
+        getMutableNGBFEHEJHHO().addAll(other.nGBFEHEJHHO);
+      }
+      if (other.hasCCONMCFLBKG()) {
+        getMutableCCONMCFLBKG().addAll(other.cCONMCFLBKG);
       }
       return this;
     }
@@ -520,13 +500,13 @@ public final class ChessRogueStartCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      kOLEFJKMFLF = 0;
-      areaId = 0;
-      diceBranchId = 0;
-      dDDICOEFHPM.clear();
-      jDCMGPJHGLG.clear();
-      disableAeonId.clear();
+      buffAeonId = 0;
+      lKCKPCJECJO = 0;
+      id = 0;
       baseAvatarIdList.clear();
+      mOICCJNMBBI.clear();
+      nGBFEHEJHHO.clear();
+      cCONMCFLBKG.clear();
       return this;
     }
 
@@ -537,10 +517,10 @@ public final class ChessRogueStartCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dDDICOEFHPM.clear();
-      jDCMGPJHGLG.clear();
-      disableAeonId.clear();
       baseAvatarIdList.clear();
+      mOICCJNMBBI.clear();
+      nGBFEHEJHHO.clear();
+      cCONMCFLBKG.clear();
       return this;
     }
 
@@ -554,51 +534,51 @@ public final class ChessRogueStartCsReqOuterClass {
       }
       ChessRogueStartCsReq other = (ChessRogueStartCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasKOLEFJKMFLF() || kOLEFJKMFLF == other.kOLEFJKMFLF)
-        && (!hasAreaId() || areaId == other.areaId)
-        && (!hasDiceBranchId() || diceBranchId == other.diceBranchId)
-        && (!hasDDDICOEFHPM() || dDDICOEFHPM.equals(other.dDDICOEFHPM))
-        && (!hasJDCMGPJHGLG() || jDCMGPJHGLG.equals(other.jDCMGPJHGLG))
-        && (!hasDisableAeonId() || disableAeonId.equals(other.disableAeonId))
-        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList));
+        && (!hasBuffAeonId() || buffAeonId == other.buffAeonId)
+        && (!hasLKCKPCJECJO() || lKCKPCJECJO == other.lKCKPCJECJO)
+        && (!hasId() || id == other.id)
+        && (!hasBaseAvatarIdList() || baseAvatarIdList.equals(other.baseAvatarIdList))
+        && (!hasMOICCJNMBBI() || mOICCJNMBBI.equals(other.mOICCJNMBBI))
+        && (!hasNGBFEHEJHHO() || nGBFEHEJHHO.equals(other.nGBFEHEJHHO))
+        && (!hasCCONMCFLBKG() || cCONMCFLBKG.equals(other.cCONMCFLBKG));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(kOLEFJKMFLF);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(buffAeonId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(areaId);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(lKCKPCJECJO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(diceBranchId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < dDDICOEFHPM.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeUInt32NoTag(dDDICOEFHPM.array()[i]);
+        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+          output.writeRawByte((byte) 8);
+          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < jDCMGPJHGLG.length(); i++) {
-          output.writeRawByte((byte) 64);
-          output.writeUInt32NoTag(jDCMGPJHGLG.array()[i]);
+        for (int i = 0; i < mOICCJNMBBI.length(); i++) {
+          output.writeRawByte((byte) 32);
+          output.writeUInt32NoTag(mOICCJNMBBI.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < disableAeonId.length(); i++) {
-          output.writeRawByte((byte) 104);
-          output.writeUInt32NoTag(disableAeonId.array()[i]);
+        for (int i = 0; i < nGBFEHEJHHO.length(); i++) {
+          output.writeRawByte((byte) 48);
+          output.writeUInt32NoTag(nGBFEHEJHHO.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < baseAvatarIdList.length(); i++) {
+        for (int i = 0; i < cCONMCFLBKG.length(); i++) {
           output.writeRawByte((byte) 120);
-          output.writeUInt32NoTag(baseAvatarIdList.array()[i]);
+          output.writeUInt32NoTag(cCONMCFLBKG.array()[i]);
         }
       }
     }
@@ -607,25 +587,25 @@ public final class ChessRogueStartCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(kOLEFJKMFLF);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(buffAeonId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(areaId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lKCKPCJECJO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(diceBranchId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * dDDICOEFHPM.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(dDDICOEFHPM);
+        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * jDCMGPJHGLG.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(jDCMGPJHGLG);
+        size += (1 * mOICCJNMBBI.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * disableAeonId.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(disableAeonId);
+        size += (1 * nGBFEHEJHHO.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(nGBFEHEJHHO);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * baseAvatarIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(baseAvatarIdList);
+        size += (1 * cCONMCFLBKG.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(cCONMCFLBKG);
       }
       return size;
     }
@@ -637,54 +617,54 @@ public final class ChessRogueStartCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
-            // kOLEFJKMFLF
-            kOLEFJKMFLF = input.readUInt32();
+          case 56: {
+            // buffAeonId
+            buffAeonId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // areaId
-            areaId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 72) {
               break;
             }
           }
           case 72: {
-            // diceBranchId
-            diceBranchId = input.readUInt32();
+            // lKCKPCJECJO
+            lKCKPCJECJO = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // id
+            id = input.readUInt32();
             bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 10) {
+              break;
+            }
+          }
+          case 10: {
+            // baseAvatarIdList [packed=true]
+            input.readPackedUInt32(baseAvatarIdList, tag);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 34) {
+              break;
+            }
+          }
+          case 34: {
+            // mOICCJNMBBI [packed=true]
+            input.readPackedUInt32(mOICCJNMBBI, tag);
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 50) {
               break;
             }
           }
           case 50: {
-            // dDDICOEFHPM [packed=true]
-            input.readPackedUInt32(dDDICOEFHPM, tag);
-            bitField0_ |= 0x00000008;
-            tag = input.readTag();
-            if (tag != 66) {
-              break;
-            }
-          }
-          case 66: {
-            // jDCMGPJHGLG [packed=true]
-            input.readPackedUInt32(jDCMGPJHGLG, tag);
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 106) {
-              break;
-            }
-          }
-          case 106: {
-            // disableAeonId [packed=true]
-            input.readPackedUInt32(disableAeonId, tag);
+            // nGBFEHEJHHO [packed=true]
+            input.readPackedUInt32(nGBFEHEJHHO, tag);
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 122) {
@@ -692,8 +672,8 @@ public final class ChessRogueStartCsReqOuterClass {
             }
           }
           case 122: {
-            // baseAvatarIdList [packed=true]
-            input.readPackedUInt32(baseAvatarIdList, tag);
+            // cCONMCFLBKG [packed=true]
+            input.readPackedUInt32(cCONMCFLBKG, tag);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 0) {
@@ -710,27 +690,27 @@ public final class ChessRogueStartCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
-            // dDDICOEFHPM [packed=false]
-            tag = input.readRepeatedUInt32(dDDICOEFHPM, tag);
+          case 8: {
+            // baseAvatarIdList [packed=false]
+            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
             bitField0_ |= 0x00000008;
             break;
           }
-          case 64: {
-            // jDCMGPJHGLG [packed=false]
-            tag = input.readRepeatedUInt32(jDCMGPJHGLG, tag);
+          case 32: {
+            // mOICCJNMBBI [packed=false]
+            tag = input.readRepeatedUInt32(mOICCJNMBBI, tag);
             bitField0_ |= 0x00000010;
             break;
           }
-          case 104: {
-            // disableAeonId [packed=false]
-            tag = input.readRepeatedUInt32(disableAeonId, tag);
+          case 48: {
+            // nGBFEHEJHHO [packed=false]
+            tag = input.readRepeatedUInt32(nGBFEHEJHHO, tag);
             bitField0_ |= 0x00000020;
             break;
           }
           case 120: {
-            // baseAvatarIdList [packed=false]
-            tag = input.readRepeatedUInt32(baseAvatarIdList, tag);
+            // cCONMCFLBKG [packed=false]
+            tag = input.readRepeatedUInt32(cCONMCFLBKG, tag);
             bitField0_ |= 0x00000040;
             break;
           }
@@ -742,25 +722,25 @@ public final class ChessRogueStartCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.kOLEFJKMFLF, kOLEFJKMFLF);
+        output.writeUInt32(FieldNames.buffAeonId, buffAeonId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.areaId, areaId);
+        output.writeUInt32(FieldNames.lKCKPCJECJO, lKCKPCJECJO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.diceBranchId, diceBranchId);
+        output.writeUInt32(FieldNames.id, id);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedUInt32(FieldNames.dDDICOEFHPM, dDDICOEFHPM);
+        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.jDCMGPJHGLG, jDCMGPJHGLG);
+        output.writeRepeatedUInt32(FieldNames.mOICCJNMBBI, mOICCJNMBBI);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedUInt32(FieldNames.disableAeonId, disableAeonId);
+        output.writeRepeatedUInt32(FieldNames.nGBFEHEJHHO, nGBFEHEJHHO);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.baseAvatarIdList, baseAvatarIdList);
+        output.writeRepeatedUInt32(FieldNames.cCONMCFLBKG, cCONMCFLBKG);
       }
       output.endObject();
     }
@@ -772,10 +752,11 @@ public final class ChessRogueStartCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -13887267: {
-            if (input.isAtField(FieldNames.kOLEFJKMFLF)) {
+          case 864413617:
+          case -1316781589: {
+            if (input.isAtField(FieldNames.buffAeonId)) {
               if (!input.trySkipNullValue()) {
-                kOLEFJKMFLF = input.readUInt32();
+                buffAeonId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -783,11 +764,10 @@ public final class ChessRogueStartCsReqOuterClass {
             }
             break;
           }
-          case -1409553784:
-          case -746472947: {
-            if (input.isAtField(FieldNames.areaId)) {
+          case 12897171: {
+            if (input.isAtField(FieldNames.lKCKPCJECJO)) {
               if (!input.trySkipNullValue()) {
-                areaId = input.readUInt32();
+                lKCKPCJECJO = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -795,46 +775,11 @@ public final class ChessRogueStartCsReqOuterClass {
             }
             break;
           }
-          case 216999716:
-          case 1050456640: {
-            if (input.isAtField(FieldNames.diceBranchId)) {
+          case 3355: {
+            if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
-                diceBranchId = input.readUInt32();
+                id = input.readUInt32();
                 bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -727553421: {
-            if (input.isAtField(FieldNames.dDDICOEFHPM)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(dDDICOEFHPM);
-                bitField0_ |= 0x00000008;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 852754199: {
-            if (input.isAtField(FieldNames.jDCMGPJHGLG)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(jDCMGPJHGLG);
-                bitField0_ |= 0x00000010;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1370442106:
-          case -1529483392: {
-            if (input.isAtField(FieldNames.disableAeonId)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(disableAeonId);
-                bitField0_ |= 0x00000020;
               }
             } else {
               input.skipUnknownField();
@@ -846,6 +791,39 @@ public final class ChessRogueStartCsReqOuterClass {
             if (input.isAtField(FieldNames.baseAvatarIdList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(baseAvatarIdList);
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -35824601: {
+            if (input.isAtField(FieldNames.mOICCJNMBBI)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(mOICCJNMBBI);
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -2145538198: {
+            if (input.isAtField(FieldNames.nGBFEHEJHHO)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(nGBFEHEJHHO);
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1369452637: {
+            if (input.isAtField(FieldNames.cCONMCFLBKG)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedUInt32(cCONMCFLBKG);
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -906,19 +884,19 @@ public final class ChessRogueStartCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName kOLEFJKMFLF = FieldName.forField("KOLEFJKMFLF");
+      static final FieldName buffAeonId = FieldName.forField("buffAeonId", "buff_aeon_id");
 
-      static final FieldName areaId = FieldName.forField("areaId", "area_id");
+      static final FieldName lKCKPCJECJO = FieldName.forField("LKCKPCJECJO");
 
-      static final FieldName diceBranchId = FieldName.forField("diceBranchId", "dice_branch_id");
-
-      static final FieldName dDDICOEFHPM = FieldName.forField("DDDICOEFHPM");
-
-      static final FieldName jDCMGPJHGLG = FieldName.forField("JDCMGPJHGLG");
-
-      static final FieldName disableAeonId = FieldName.forField("disableAeonId", "disable_aeon_id");
+      static final FieldName id = FieldName.forField("id");
 
       static final FieldName baseAvatarIdList = FieldName.forField("baseAvatarIdList", "base_avatar_id_list");
+
+      static final FieldName mOICCJNMBBI = FieldName.forField("MOICCJNMBBI");
+
+      static final FieldName nGBFEHEJHHO = FieldName.forField("NGBFEHEJHHO");
+
+      static final FieldName cCONMCFLBKG = FieldName.forField("CCONMCFLBKG");
     }
   }
 }

@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message RelicParam {
-	uint32 relic_type = 6;
-	uint32 relic_unique_id = 5;
+	uint32 relic_unique_id = 11;
+	uint32 relic_type = 3;
 }

@@ -21,7 +21,22 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>optional uint32 plane_id = 2;</code>
+     */
+    private int planeId;
+
+    /**
+     * <code>optional uint32 dimension_id = 5;</code>
+     */
+    private int dimensionId;
+
+    /**
+     * <code>optional uint32 floor_id = 15;</code>
+     */
+    private int floorId;
+
+    /**
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      */
     private final RepeatedMessage<SavedValueEntry> savedValue = RepeatedMessage.newEmptyInstance(SavedValueEntry.getFactory());
 
@@ -36,25 +51,136 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
-     * @return whether the savedValue field is set
+     * <code>optional uint32 plane_id = 2;</code>
+     * @return whether the planeId field is set
      */
-    public boolean hasSavedValue() {
+    public boolean hasPlaneId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>optional uint32 plane_id = 2;</code>
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify clearPlaneId() {
+      bitField0_ &= ~0x00000001;
+      planeId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 2;</code>
+     * @return the planeId
+     */
+    public int getPlaneId() {
+      return planeId;
+    }
+
+    /**
+     * <code>optional uint32 plane_id = 2;</code>
+     * @param value the planeId to set
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify setPlaneId(final int value) {
+      bitField0_ |= 0x00000001;
+      planeId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 dimension_id = 5;</code>
+     * @return whether the dimensionId field is set
+     */
+    public boolean hasDimensionId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 dimension_id = 5;</code>
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify clearDimensionId() {
+      bitField0_ &= ~0x00000002;
+      dimensionId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 dimension_id = 5;</code>
+     * @return the dimensionId
+     */
+    public int getDimensionId() {
+      return dimensionId;
+    }
+
+    /**
+     * <code>optional uint32 dimension_id = 5;</code>
+     * @param value the dimensionId to set
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify setDimensionId(final int value) {
+      bitField0_ |= 0x00000002;
+      dimensionId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 floor_id = 15;</code>
+     * @return whether the floorId field is set
+     */
+    public boolean hasFloorId() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 floor_id = 15;</code>
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify clearFloorId() {
+      bitField0_ &= ~0x00000004;
+      floorId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 floor_id = 15;</code>
+     * @return the floorId
+     */
+    public int getFloorId() {
+      return floorId;
+    }
+
+    /**
+     * <code>optional uint32 floor_id = 15;</code>
+     * @param value the floorId to set
+     * @return this
+     */
+    public UpdateFloorSavedValueNotify setFloorId(final int value) {
+      bitField0_ |= 0x00000004;
+      floorId = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
+     * @return whether the savedValue field is set
+     */
+    public boolean hasSavedValue() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      * @return this
      */
     public UpdateFloorSavedValueNotify clearSavedValue() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000008;
       savedValue.clear();
       return this;
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -68,7 +194,7 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -77,28 +203,28 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<SavedValueEntry> getMutableSavedValue() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       return savedValue;
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      * @param value the savedValue to add
      * @return this
      */
     public UpdateFloorSavedValueNotify addSavedValue(final SavedValueEntry value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       savedValue.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 5;</code>
+     * <code>repeated .UpdateFloorSavedValueNotify.SavedValueEntry saved_value = 10;</code>
      * @param values the savedValue to add
      * @return this
      */
     public UpdateFloorSavedValueNotify addAllSavedValue(final SavedValueEntry... values) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       savedValue.addAll(values);
       return this;
     }
@@ -108,6 +234,9 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        planeId = other.planeId;
+        dimensionId = other.dimensionId;
+        floorId = other.floorId;
         savedValue.copyFrom(other.savedValue);
       }
       return this;
@@ -119,6 +248,15 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPlaneId()) {
+        setPlaneId(other.planeId);
+      }
+      if (other.hasDimensionId()) {
+        setDimensionId(other.dimensionId);
+      }
+      if (other.hasFloorId()) {
+        setFloorId(other.floorId);
+      }
       if (other.hasSavedValue()) {
         getMutableSavedValue().addAll(other.savedValue);
       }
@@ -132,6 +270,9 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      planeId = 0;
+      dimensionId = 0;
+      floorId = 0;
       savedValue.clear();
       return this;
     }
@@ -157,14 +298,29 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       }
       UpdateFloorSavedValueNotify other = (UpdateFloorSavedValueNotify) o;
       return bitField0_ == other.bitField0_
+        && (!hasPlaneId() || planeId == other.planeId)
+        && (!hasDimensionId() || dimensionId == other.dimensionId)
+        && (!hasFloorId() || floorId == other.floorId)
         && (!hasSavedValue() || savedValue.equals(other.savedValue));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(planeId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(dimensionId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 120);
+        output.writeUInt32NoTag(floorId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < savedValue.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(savedValue.get(i));
         }
       }
@@ -174,6 +330,15 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dimensionId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(floorId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * savedValue.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(savedValue);
       }
       return size;
@@ -186,10 +351,37 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 42: {
+          case 16: {
+            // planeId
+            planeId = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
+          case 40: {
+            // dimensionId
+            dimensionId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
+            // floorId
+            floorId = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
             // savedValue
             tag = input.readRepeatedMessage(savedValue, tag);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
             }
@@ -212,6 +404,15 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeUInt32(FieldNames.planeId, planeId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.dimensionId, dimensionId);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.floorId, floorId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.savedValue, savedValue);
       }
       output.endObject();
@@ -224,12 +425,48 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -493896553:
+          case 1869097438: {
+            if (input.isAtField(FieldNames.planeId)) {
+              if (!input.trySkipNullValue()) {
+                planeId = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -40520415:
+          case -1256111468: {
+            if (input.isAtField(FieldNames.dimensionId)) {
+              if (!input.trySkipNullValue()) {
+                dimensionId = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -766027193:
+          case 2022982190: {
+            if (input.isAtField(FieldNames.floorId)) {
+              if (!input.trySkipNullValue()) {
+                floorId = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1528442666:
           case 413802937: {
             if (input.isAtField(FieldNames.savedValue)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(savedValue);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -644,6 +881,12 @@ public final class UpdateFloorSavedValueNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName planeId = FieldName.forField("planeId", "plane_id");
+
+      static final FieldName dimensionId = FieldName.forField("dimensionId", "dimension_id");
+
+      static final FieldName floorId = FieldName.forField("floorId", "floor_id");
+
       static final FieldName savedValue = FieldName.forField("savedValue", "saved_value");
     }
   }

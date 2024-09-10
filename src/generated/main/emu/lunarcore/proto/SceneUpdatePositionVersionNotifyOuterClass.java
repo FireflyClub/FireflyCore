@@ -19,7 +19,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 pos_version = 6;</code>
+     * <code>optional uint32 pos_version = 14;</code>
      */
     private int posVersion;
 
@@ -34,7 +34,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 pos_version = 6;</code>
+     * <code>optional uint32 pos_version = 14;</code>
      * @return whether the posVersion field is set
      */
     public boolean hasPosVersion() {
@@ -42,7 +42,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 pos_version = 6;</code>
+     * <code>optional uint32 pos_version = 14;</code>
      * @return this
      */
     public SceneUpdatePositionVersionNotify clearPosVersion() {
@@ -52,7 +52,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 pos_version = 6;</code>
+     * <code>optional uint32 pos_version = 14;</code>
      * @return the posVersion
      */
     public int getPosVersion() {
@@ -60,7 +60,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 pos_version = 6;</code>
+     * <code>optional uint32 pos_version = 14;</code>
      * @param value the posVersion to set
      * @return this
      */
@@ -130,7 +130,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(posVersion);
       }
     }
@@ -151,7 +151,7 @@ public final class SceneUpdatePositionVersionNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 112: {
             // posVersion
             posVersion = input.readUInt32();
             bitField0_ |= 0x00000001;

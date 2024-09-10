@@ -19,14 +19,14 @@ public final class SetClientPausedScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool paused = 10;</code>
+     * <code>optional bool is_paused = 9;</code>
      */
-    private boolean paused;
+    private boolean isPaused;
 
     private SetClientPausedScRsp() {
     }
@@ -39,7 +39,7 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public SetClientPausedScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,39 +76,39 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 10;</code>
-     * @return whether the paused field is set
+     * <code>optional bool is_paused = 9;</code>
+     * @return whether the isPaused field is set
      */
-    public boolean hasPaused() {
+    public boolean hasIsPaused() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional bool paused = 10;</code>
+     * <code>optional bool is_paused = 9;</code>
      * @return this
      */
-    public SetClientPausedScRsp clearPaused() {
+    public SetClientPausedScRsp clearIsPaused() {
       bitField0_ &= ~0x00000002;
-      paused = false;
+      isPaused = false;
       return this;
     }
 
     /**
-     * <code>optional bool paused = 10;</code>
-     * @return the paused
+     * <code>optional bool is_paused = 9;</code>
+     * @return the isPaused
      */
-    public boolean getPaused() {
-      return paused;
+    public boolean getIsPaused() {
+      return isPaused;
     }
 
     /**
-     * <code>optional bool paused = 10;</code>
-     * @param value the paused to set
+     * <code>optional bool is_paused = 9;</code>
+     * @param value the isPaused to set
      * @return this
      */
-    public SetClientPausedScRsp setPaused(final boolean value) {
+    public SetClientPausedScRsp setIsPaused(final boolean value) {
       bitField0_ |= 0x00000002;
-      paused = value;
+      isPaused = value;
       return this;
     }
 
@@ -118,7 +118,7 @@ public final class SetClientPausedScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        paused = other.paused;
+        isPaused = other.isPaused;
       }
       return this;
     }
@@ -132,8 +132,8 @@ public final class SetClientPausedScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasPaused()) {
-        setPaused(other.paused);
+      if (other.hasIsPaused()) {
+        setIsPaused(other.isPaused);
       }
       return this;
     }
@@ -146,7 +146,7 @@ public final class SetClientPausedScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      paused = false;
+      isPaused = false;
       return this;
     }
 
@@ -171,18 +171,18 @@ public final class SetClientPausedScRspOuterClass {
       SetClientPausedScRsp other = (SetClientPausedScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasPaused() || paused == other.paused);
+        && (!hasIsPaused() || isPaused == other.isPaused);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
-        output.writeBoolNoTag(paused);
+        output.writeRawByte((byte) 72);
+        output.writeBoolNoTag(isPaused);
       }
     }
 
@@ -205,18 +205,18 @@ public final class SetClientPausedScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 72) {
               break;
             }
           }
-          case 80: {
-            // paused
-            paused = input.readBool();
+          case 72: {
+            // isPaused
+            isPaused = input.readBool();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -244,7 +244,7 @@ public final class SetClientPausedScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeBool(FieldNames.paused, paused);
+        output.writeBool(FieldNames.isPaused, isPaused);
       }
       output.endObject();
     }
@@ -267,10 +267,11 @@ public final class SetClientPausedScRspOuterClass {
             }
             break;
           }
-          case -995321554: {
-            if (input.isAtField(FieldNames.paused)) {
+          case -321287432:
+          case -531282461: {
+            if (input.isAtField(FieldNames.isPaused)) {
               if (!input.trySkipNullValue()) {
-                paused = input.readBool();
+                isPaused = input.readBool();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -333,7 +334,7 @@ public final class SetClientPausedScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName paused = FieldName.forField("paused");
+      static final FieldName isPaused = FieldName.forField("isPaused", "is_paused");
     }
   }
 }

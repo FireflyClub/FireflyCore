@@ -7,16 +7,16 @@ import "RogueCommonBuffSelectSource.proto";
 import "RogueCommonBuff.proto";
 
 message RogueCommonBuffSelectInfo {
-	ItemCostList roll_buffs_cost = 14;
-	uint32 select_buff_source_hint = 10;
-	uint32 source_cur_count = 7;
-	uint32 roll_buff_max_times = 2;
-	uint32 source_total_count = 5;
-	bool can_roll = 6;
-	repeated uint32 first_buff_type_list = 4;
-	uint32 roll_buff_times = 11;
-	uint32 roll_buff_free_count = 3;
-	repeated RogueCommonBuff maze_buff_list = 12;
-	RogueCommonBuffSelectSource source_type = 13;
-	repeated uint32 handbook_unlock_buff_id_list = 8;
+	ItemCostList roll_buffs_cost = 5;
+	uint32 select_buff_source_hint = 8;
+	uint32 source_cur_count = 6;
+	uint32 roll_buff_max_times = 1;
+	uint32 source_total_count = 14;
+	bool can_roll = 11;
+	repeated uint32 first_buff_type_list = 7;
+	uint32 roll_buff_times = 4;
+	uint32 roll_buff_free_count = 13;
+	repeated RogueCommonBuff maze_buff_list = 3;
+	RogueCommonBuffSelectSource source_type = 12;
+	repeated uint32 handbook_unlock_buff_id_list = 15;
 }

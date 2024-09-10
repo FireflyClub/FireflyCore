@@ -20,17 +20,17 @@ public final class GetNpcTakenRewardScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
-     */
-    private int retcode;
-
-    /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <code>optional uint32 npc_id = 3;</code>
      */
     private int npcId;
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>optional uint32 retcode = 6;</code>
+     */
+    private int retcode;
+
+    /**
+     * <code>repeated uint32 talk_event_list = 11;</code>
      */
     private final RepeatedInt talkEventList = RepeatedInt.newEmptyInstance();
 
@@ -45,62 +45,25 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 npc_id = 3;</code>
+     * @return whether the npcId field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasNpcId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return this
-     */
-    public GetNpcTakenRewardScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 5;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public GetNpcTakenRewardScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
-      retcode = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 npc_id = 14;</code>
-     * @return whether the npcId field is set
-     */
-    public boolean hasNpcId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <code>optional uint32 npc_id = 3;</code>
      * @return this
      */
     public GetNpcTakenRewardScRsp clearNpcId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       npcId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <code>optional uint32 npc_id = 3;</code>
      * @return the npcId
      */
     public int getNpcId() {
@@ -108,18 +71,55 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_id = 14;</code>
+     * <code>optional uint32 npc_id = 3;</code>
      * @param value the npcId to set
      * @return this
      */
     public GetNpcTakenRewardScRsp setNpcId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       npcId = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>optional uint32 retcode = 6;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 6;</code>
+     * @return this
+     */
+    public GetNpcTakenRewardScRsp clearRetcode() {
+      bitField0_ &= ~0x00000002;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 6;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 6;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public GetNpcTakenRewardScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000002;
+      retcode = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated uint32 talk_event_list = 11;</code>
      * @return whether the talkEventList field is set
      */
     public boolean hasTalkEventList() {
@@ -127,7 +127,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>repeated uint32 talk_event_list = 11;</code>
      * @return this
      */
     public GetNpcTakenRewardScRsp clearTalkEventList() {
@@ -137,7 +137,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>repeated uint32 talk_event_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +151,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>repeated uint32 talk_event_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +165,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>repeated uint32 talk_event_list = 11;</code>
      * @param value the talkEventList to add
      * @return this
      */
@@ -176,7 +176,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
     }
 
     /**
-     * <code>repeated uint32 talk_event_list = 4;</code>
+     * <code>repeated uint32 talk_event_list = 11;</code>
      * @param values the talkEventList to add
      * @return this
      */
@@ -191,8 +191,8 @@ public final class GetNpcTakenRewardScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        retcode = other.retcode;
         npcId = other.npcId;
+        retcode = other.retcode;
         talkEventList.copyFrom(other.talkEventList);
       }
       return this;
@@ -204,11 +204,11 @@ public final class GetNpcTakenRewardScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
-      }
       if (other.hasNpcId()) {
         setNpcId(other.npcId);
+      }
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
       if (other.hasTalkEventList()) {
         getMutableTalkEventList().addAll(other.talkEventList);
@@ -223,8 +223,8 @@ public final class GetNpcTakenRewardScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      retcode = 0;
       npcId = 0;
+      retcode = 0;
       talkEventList.clear();
       return this;
     }
@@ -250,24 +250,24 @@ public final class GetNpcTakenRewardScRspOuterClass {
       }
       GetNpcTakenRewardScRsp other = (GetNpcTakenRewardScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasRetcode() || retcode == other.retcode)
         && (!hasNpcId() || npcId == other.npcId)
+        && (!hasRetcode() || retcode == other.retcode)
         && (!hasTalkEventList() || talkEventList.equals(other.talkEventList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 24);
+        output.writeUInt32NoTag(npcId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(npcId);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < talkEventList.length(); i++) {
-          output.writeRawByte((byte) 32);
+          output.writeRawByte((byte) 88);
           output.writeUInt32NoTag(talkEventList.array()[i]);
         }
       }
@@ -277,10 +277,10 @@ public final class GetNpcTakenRewardScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(npcId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(npcId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * talkEventList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(talkEventList);
@@ -295,25 +295,25 @@ public final class GetNpcTakenRewardScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 112) {
-              break;
-            }
-          }
-          case 112: {
+          case 24: {
             // npcId
             npcId = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 48) {
               break;
             }
           }
-          case 34: {
+          case 48: {
+            // retcode
+            retcode = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
             // talkEventList [packed=true]
             input.readPackedUInt32(talkEventList, tag);
             bitField0_ |= 0x00000004;
@@ -332,7 +332,7 @@ public final class GetNpcTakenRewardScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 32: {
+          case 88: {
             // talkEventList [packed=false]
             tag = input.readRepeatedUInt32(talkEventList, tag);
             bitField0_ |= 0x00000004;
@@ -346,10 +346,10 @@ public final class GetNpcTakenRewardScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.npcId, npcId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.npcId, npcId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedUInt32(FieldNames.talkEventList, talkEventList);
@@ -364,10 +364,11 @@ public final class GetNpcTakenRewardScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 105021404:
+          case -1039282375: {
+            if (input.isAtField(FieldNames.npcId)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                npcId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -375,11 +376,10 @@ public final class GetNpcTakenRewardScRspOuterClass {
             }
             break;
           }
-          case 105021404:
-          case -1039282375: {
-            if (input.isAtField(FieldNames.npcId)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                npcId = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -452,9 +452,9 @@ public final class GetNpcTakenRewardScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
-
       static final FieldName npcId = FieldName.forField("npcId", "npc_id");
+
+      static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName talkEventList = FieldName.forField("talkEventList", "talk_event_list");
     }

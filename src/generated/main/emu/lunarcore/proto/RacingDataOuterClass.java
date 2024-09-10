@@ -24,20 +24,17 @@ public final class RacingDataOuterClass {
     private int level;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_score = 11;</code>
+     * <code>optional uint32 LFNCPMMHLCO = 9;</code>
+     */
+    private int lFNCPMMHLCO;
+
+    /**
+     * <code>optional uint32 max_score = 10;</code>
      */
     private int maxScore;
 
     /**
-     * <pre>
-     * uint32 PNBNMHJNLJF = 11;
-     * </pre>
-     *
-     * <code>optional .MovieRacingType slot = 13;</code>
+     * <code>optional .MovieRacingType slot = 14;</code>
      */
     private int slot;
 
@@ -89,37 +86,62 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_score = 11;</code>
-     * @return whether the maxScore field is set
+     * <code>optional uint32 LFNCPMMHLCO = 9;</code>
+     * @return whether the lFNCPMMHLCO field is set
      */
-    public boolean hasMaxScore() {
+    public boolean hasLFNCPMMHLCO() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_score = 11;</code>
+     * <code>optional uint32 LFNCPMMHLCO = 9;</code>
+     * @return this
+     */
+    public RacingData clearLFNCPMMHLCO() {
+      bitField0_ &= ~0x00000002;
+      lFNCPMMHLCO = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 LFNCPMMHLCO = 9;</code>
+     * @return the lFNCPMMHLCO
+     */
+    public int getLFNCPMMHLCO() {
+      return lFNCPMMHLCO;
+    }
+
+    /**
+     * <code>optional uint32 LFNCPMMHLCO = 9;</code>
+     * @param value the lFNCPMMHLCO to set
+     * @return this
+     */
+    public RacingData setLFNCPMMHLCO(final int value) {
+      bitField0_ |= 0x00000002;
+      lFNCPMMHLCO = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 max_score = 10;</code>
+     * @return whether the maxScore field is set
+     */
+    public boolean hasMaxScore() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 max_score = 10;</code>
      * @return this
      */
     public RacingData clearMaxScore() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       maxScore = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_score = 11;</code>
+     * <code>optional uint32 max_score = 10;</code>
      * @return the maxScore
      */
     public int getMaxScore() {
@@ -127,52 +149,36 @@ public final class RacingDataOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>optional uint32 max_score = 11;</code>
+     * <code>optional uint32 max_score = 10;</code>
      * @param value the maxScore to set
      * @return this
      */
     public RacingData setMaxScore(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       maxScore = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 PNBNMHJNLJF = 11;
-     * </pre>
-     *
-     * <code>optional .MovieRacingType slot = 13;</code>
+     * <code>optional .MovieRacingType slot = 14;</code>
      * @return whether the slot field is set
      */
     public boolean hasSlot() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <pre>
-     * uint32 PNBNMHJNLJF = 11;
-     * </pre>
-     *
-     * <code>optional .MovieRacingType slot = 13;</code>
+     * <code>optional .MovieRacingType slot = 14;</code>
      * @return this
      */
     public RacingData clearSlot() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       slot = 0;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 PNBNMHJNLJF = 11;
-     * </pre>
-     *
-     * <code>optional .MovieRacingType slot = 13;</code>
+     * <code>optional .MovieRacingType slot = 14;</code>
      * @return the slot
      */
     public MovieRacingTypeOuterClass.MovieRacingType getSlot() {
@@ -199,22 +205,18 @@ public final class RacingDataOuterClass {
      * @return this
      */
     public RacingData setSlotValue(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       slot = value;
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 PNBNMHJNLJF = 11;
-     * </pre>
-     *
-     * <code>optional .MovieRacingType slot = 13;</code>
+     * <code>optional .MovieRacingType slot = 14;</code>
      * @param value the slot to set
      * @return this
      */
     public RacingData setSlot(final MovieRacingTypeOuterClass.MovieRacingType value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       slot = value.getNumber();
       return this;
     }
@@ -225,6 +227,7 @@ public final class RacingDataOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         level = other.level;
+        lFNCPMMHLCO = other.lFNCPMMHLCO;
         maxScore = other.maxScore;
         slot = other.slot;
       }
@@ -239,6 +242,9 @@ public final class RacingDataOuterClass {
       cachedSize = -1;
       if (other.hasLevel()) {
         setLevel(other.level);
+      }
+      if (other.hasLFNCPMMHLCO()) {
+        setLFNCPMMHLCO(other.lFNCPMMHLCO);
       }
       if (other.hasMaxScore()) {
         setMaxScore(other.maxScore);
@@ -257,6 +263,7 @@ public final class RacingDataOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       level = 0;
+      lFNCPMMHLCO = 0;
       maxScore = 0;
       slot = 0;
       return this;
@@ -283,6 +290,7 @@ public final class RacingDataOuterClass {
       RacingData other = (RacingData) o;
       return bitField0_ == other.bitField0_
         && (!hasLevel() || level == other.level)
+        && (!hasLFNCPMMHLCO() || lFNCPMMHLCO == other.lFNCPMMHLCO)
         && (!hasMaxScore() || maxScore == other.maxScore)
         && (!hasSlot() || slot == other.slot);
     }
@@ -294,11 +302,15 @@ public final class RacingDataOuterClass {
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
-        output.writeUInt32NoTag(maxScore);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(lFNCPMMHLCO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(maxScore);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 112);
         output.writeEnumNoTag(slot);
       }
     }
@@ -310,9 +322,12 @@ public final class RacingDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxScore);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(lFNCPMMHLCO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(maxScore);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(slot);
       }
       return size;
@@ -330,25 +345,34 @@ public final class RacingDataOuterClass {
             level = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 72) {
               break;
             }
           }
-          case 88: {
-            // maxScore
-            maxScore = input.readUInt32();
+          case 72: {
+            // lFNCPMMHLCO
+            lFNCPMMHLCO = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 80) {
               break;
             }
           }
-          case 104: {
+          case 80: {
+            // maxScore
+            maxScore = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
             // slot
             final int value = input.readInt32();
             if (MovieRacingTypeOuterClass.MovieRacingType.forNumber(value) != null) {
               slot = value;
-              bitField0_ |= 0x00000004;
+              bitField0_ |= 0x00000008;
             }
             tag = input.readTag();
             if (tag != 0) {
@@ -376,9 +400,12 @@ public final class RacingDataOuterClass {
         output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.maxScore, maxScore);
+        output.writeUInt32(FieldNames.lFNCPMMHLCO, lFNCPMMHLCO);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.maxScore, maxScore);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.slot, slot, MovieRacingTypeOuterClass.MovieRacingType.converter());
       }
       output.endObject();
@@ -402,12 +429,23 @@ public final class RacingDataOuterClass {
             }
             break;
           }
+          case 1819881169: {
+            if (input.isAtField(FieldNames.lFNCPMMHLCO)) {
+              if (!input.trySkipNullValue()) {
+                lFNCPMMHLCO = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 396519310:
           case -234837001: {
             if (input.isAtField(FieldNames.maxScore)) {
               if (!input.trySkipNullValue()) {
                 maxScore = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -420,7 +458,7 @@ public final class RacingDataOuterClass {
                 final MovieRacingTypeOuterClass.MovieRacingType value = input.readEnum(MovieRacingTypeOuterClass.MovieRacingType.converter());
                 if (value != null) {
                   slot = value.getNumber();
-                  bitField0_ |= 0x00000004;
+                  bitField0_ |= 0x00000008;
                 } else {
                   input.skipUnknownEnumValue();
                 }
@@ -483,6 +521,8 @@ public final class RacingDataOuterClass {
      */
     static class FieldNames {
       static final FieldName level = FieldName.forField("level");
+
+      static final FieldName lFNCPMMHLCO = FieldName.forField("LFNCPMMHLCO");
 
       static final FieldName maxScore = FieldName.forField("maxScore", "max_score");
 

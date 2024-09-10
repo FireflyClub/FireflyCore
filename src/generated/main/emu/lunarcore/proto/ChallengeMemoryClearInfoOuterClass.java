@@ -20,22 +20,22 @@ public final class ChallengeMemoryClearInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <code>optional uint32 level = 7;</code>
      */
     private int level;
 
     /**
-     * <code>optional uint32 highest_difficulty = 2;</code>
-     */
-    private int highestDifficulty;
-
-    /**
-     * <code>optional uint32 round_count = 4;</code>
+     * <code>optional uint32 round_count = 12;</code>
      */
     private int roundCount;
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>optional uint32 highest_difficulty = 14;</code>
+     */
+    private int highestDifficulty;
+
+    /**
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      */
     private final RepeatedMessage<ChallengeLineupOuterClass.ChallengeLineup> lineupList = RepeatedMessage.newEmptyInstance(ChallengeLineupOuterClass.ChallengeLineup.getFactory());
 
@@ -50,7 +50,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <code>optional uint32 level = 7;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -58,7 +58,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <code>optional uint32 level = 7;</code>
      * @return this
      */
     public ChallengeMemoryClearInfo clearLevel() {
@@ -68,7 +68,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <code>optional uint32 level = 7;</code>
      * @return the level
      */
     public int getLevel() {
@@ -76,7 +76,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 1;</code>
+     * <code>optional uint32 level = 7;</code>
      * @param value the level to set
      * @return this
      */
@@ -87,62 +87,25 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 highest_difficulty = 2;</code>
-     * @return whether the highestDifficulty field is set
+     * <code>optional uint32 round_count = 12;</code>
+     * @return whether the roundCount field is set
      */
-    public boolean hasHighestDifficulty() {
+    public boolean hasRoundCount() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 highest_difficulty = 2;</code>
-     * @return this
-     */
-    public ChallengeMemoryClearInfo clearHighestDifficulty() {
-      bitField0_ &= ~0x00000002;
-      highestDifficulty = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 2;</code>
-     * @return the highestDifficulty
-     */
-    public int getHighestDifficulty() {
-      return highestDifficulty;
-    }
-
-    /**
-     * <code>optional uint32 highest_difficulty = 2;</code>
-     * @param value the highestDifficulty to set
-     * @return this
-     */
-    public ChallengeMemoryClearInfo setHighestDifficulty(final int value) {
-      bitField0_ |= 0x00000002;
-      highestDifficulty = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 round_count = 4;</code>
-     * @return whether the roundCount field is set
-     */
-    public boolean hasRoundCount() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 round_count = 4;</code>
+     * <code>optional uint32 round_count = 12;</code>
      * @return this
      */
     public ChallengeMemoryClearInfo clearRoundCount() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       roundCount = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 round_count = 4;</code>
+     * <code>optional uint32 round_count = 12;</code>
      * @return the roundCount
      */
     public int getRoundCount() {
@@ -150,18 +113,55 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 round_count = 4;</code>
+     * <code>optional uint32 round_count = 12;</code>
      * @param value the roundCount to set
      * @return this
      */
     public ChallengeMemoryClearInfo setRoundCount(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       roundCount = value;
       return this;
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>optional uint32 highest_difficulty = 14;</code>
+     * @return whether the highestDifficulty field is set
+     */
+    public boolean hasHighestDifficulty() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 14;</code>
+     * @return this
+     */
+    public ChallengeMemoryClearInfo clearHighestDifficulty() {
+      bitField0_ &= ~0x00000004;
+      highestDifficulty = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 14;</code>
+     * @return the highestDifficulty
+     */
+    public int getHighestDifficulty() {
+      return highestDifficulty;
+    }
+
+    /**
+     * <code>optional uint32 highest_difficulty = 14;</code>
+     * @param value the highestDifficulty to set
+     * @return this
+     */
+    public ChallengeMemoryClearInfo setHighestDifficulty(final int value) {
+      bitField0_ |= 0x00000004;
+      highestDifficulty = value;
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      * @return whether the lineupList field is set
      */
     public boolean hasLineupList() {
@@ -169,7 +169,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      * @return this
      */
     public ChallengeMemoryClearInfo clearLineupList() {
@@ -179,7 +179,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -193,7 +193,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -207,7 +207,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      * @param value the lineupList to add
      * @return this
      */
@@ -219,7 +219,7 @@ public final class ChallengeMemoryClearInfoOuterClass {
     }
 
     /**
-     * <code>repeated .ChallengeLineup lineup_list = 12;</code>
+     * <code>repeated .ChallengeLineup lineup_list = 11;</code>
      * @param values the lineupList to add
      * @return this
      */
@@ -236,8 +236,8 @@ public final class ChallengeMemoryClearInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         level = other.level;
-        highestDifficulty = other.highestDifficulty;
         roundCount = other.roundCount;
+        highestDifficulty = other.highestDifficulty;
         lineupList.copyFrom(other.lineupList);
       }
       return this;
@@ -252,11 +252,11 @@ public final class ChallengeMemoryClearInfoOuterClass {
       if (other.hasLevel()) {
         setLevel(other.level);
       }
-      if (other.hasHighestDifficulty()) {
-        setHighestDifficulty(other.highestDifficulty);
-      }
       if (other.hasRoundCount()) {
         setRoundCount(other.roundCount);
+      }
+      if (other.hasHighestDifficulty()) {
+        setHighestDifficulty(other.highestDifficulty);
       }
       if (other.hasLineupList()) {
         getMutableLineupList().addAll(other.lineupList);
@@ -272,8 +272,8 @@ public final class ChallengeMemoryClearInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       level = 0;
-      highestDifficulty = 0;
       roundCount = 0;
+      highestDifficulty = 0;
       lineupList.clear();
       return this;
     }
@@ -300,28 +300,28 @@ public final class ChallengeMemoryClearInfoOuterClass {
       ChallengeMemoryClearInfo other = (ChallengeMemoryClearInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasLevel() || level == other.level)
-        && (!hasHighestDifficulty() || highestDifficulty == other.highestDifficulty)
         && (!hasRoundCount() || roundCount == other.roundCount)
+        && (!hasHighestDifficulty() || highestDifficulty == other.highestDifficulty)
         && (!hasLineupList() || lineupList.equals(other.lineupList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(highestDifficulty);
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(roundCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(roundCount);
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(highestDifficulty);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < lineupList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 90);
           output.writeMessageNoTag(lineupList.get(i));
         }
       }
@@ -334,10 +334,10 @@ public final class ChallengeMemoryClearInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(highestDifficulty);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(roundCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(roundCount);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(highestDifficulty);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * lineupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(lineupList);
@@ -352,34 +352,34 @@ public final class ChallengeMemoryClearInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 56: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 96) {
               break;
             }
           }
-          case 16: {
-            // highestDifficulty
-            highestDifficulty = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 32) {
-              break;
-            }
-          }
-          case 32: {
+          case 96: {
             // roundCount
             roundCount = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 112) {
               break;
             }
           }
-          case 98: {
+          case 112: {
+            // highestDifficulty
+            highestDifficulty = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
             // lineupList
             tag = input.readRepeatedMessage(lineupList, tag);
             bitField0_ |= 0x00000008;
@@ -408,10 +408,10 @@ public final class ChallengeMemoryClearInfoOuterClass {
         output.writeUInt32(FieldNames.level, level);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.highestDifficulty, highestDifficulty);
+        output.writeUInt32(FieldNames.roundCount, roundCount);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.roundCount, roundCount);
+        output.writeUInt32(FieldNames.highestDifficulty, highestDifficulty);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.lineupList, lineupList);
@@ -437,11 +437,11 @@ public final class ChallengeMemoryClearInfoOuterClass {
             }
             break;
           }
-          case 490047359:
-          case -1618407882: {
-            if (input.isAtField(FieldNames.highestDifficulty)) {
+          case -171935711:
+          case -244677858: {
+            if (input.isAtField(FieldNames.roundCount)) {
               if (!input.trySkipNullValue()) {
-                highestDifficulty = input.readUInt32();
+                roundCount = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -449,11 +449,11 @@ public final class ChallengeMemoryClearInfoOuterClass {
             }
             break;
           }
-          case -171935711:
-          case -244677858: {
-            if (input.isAtField(FieldNames.roundCount)) {
+          case 490047359:
+          case -1618407882: {
+            if (input.isAtField(FieldNames.highestDifficulty)) {
               if (!input.trySkipNullValue()) {
-                roundCount = input.readUInt32();
+                highestDifficulty = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -528,9 +528,9 @@ public final class ChallengeMemoryClearInfoOuterClass {
     static class FieldNames {
       static final FieldName level = FieldName.forField("level");
 
-      static final FieldName highestDifficulty = FieldName.forField("highestDifficulty", "highest_difficulty");
-
       static final FieldName roundCount = FieldName.forField("roundCount", "round_count");
+
+      static final FieldName highestDifficulty = FieldName.forField("highestDifficulty", "highest_difficulty");
 
       static final FieldName lineupList = FieldName.forField("lineupList", "lineup_list");
     }

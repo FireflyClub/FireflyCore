@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message LockRelicCsReq {
-	bool KIJKPEPDDEL = 1;
-	repeated uint32 IPNGFAIPDDE = 4;
-	bool is_locked = 5;
+	bool is_locked = 13;
+	repeated uint32 EAMLKLABFBO = 8;
+	bool OKKJFIBNGCE = 2;
 }

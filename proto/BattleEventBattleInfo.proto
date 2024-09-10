@@ -2,11 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "BattleEventInitedData.proto";
 import "BattleSkillInfo.proto";
+import "BattleEventInitedData.proto";
 
 message BattleEventBattleInfo {
 	uint32 battle_event_id = 1;
 	BattleEventInitedData status = 2;
-	repeated BattleSkillInfo IGIEFPANAEL = 3;
+	repeated BattleSkillInfo FFLNPGHOJDD = 3;
 }

@@ -23,25 +23,22 @@ public final class StaminaInfoScNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional int64 next_recover_time = 5;</code>
+     * <code>optional int64 next_recover_time = 6;</code>
      */
     private long nextRecoverTime;
 
     /**
-     * <pre>
-     * int64 EOBDIFFPPKC = 7;
-     * </pre>
-     *
-     * <code>optional uint32 reserve_stamina = 2;</code>
+     * <code>optional uint32 reserve_stamina = 8;</code>
      */
     private int reserveStamina;
 
     /**
      * <pre>
-     * int64 GAGGFFAGACN = 5;
+     * int64 LNBLCOHNANF = 6;
+     * int64 JAHDLPMMDPF = 3;
      * </pre>
      *
-     * <code>optional uint32 stamina = 13;</code>
+     * <code>optional uint32 stamina = 15;</code>
      */
     private int stamina;
 
@@ -60,7 +57,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional int64 next_recover_time = 5;</code>
+     * <code>optional int64 next_recover_time = 6;</code>
      * @return whether the nextRecoverTime field is set
      */
     public boolean hasNextRecoverTime() {
@@ -72,7 +69,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional int64 next_recover_time = 5;</code>
+     * <code>optional int64 next_recover_time = 6;</code>
      * @return this
      */
     public StaminaInfoScNotify clearNextRecoverTime() {
@@ -86,7 +83,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional int64 next_recover_time = 5;</code>
+     * <code>optional int64 next_recover_time = 6;</code>
      * @return the nextRecoverTime
      */
     public long getNextRecoverTime() {
@@ -98,7 +95,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * ?
      * </pre>
      *
-     * <code>optional int64 next_recover_time = 5;</code>
+     * <code>optional int64 next_recover_time = 6;</code>
      * @param value the nextRecoverTime to set
      * @return this
      */
@@ -109,11 +106,7 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * int64 EOBDIFFPPKC = 7;
-     * </pre>
-     *
-     * <code>optional uint32 reserve_stamina = 2;</code>
+     * <code>optional uint32 reserve_stamina = 8;</code>
      * @return whether the reserveStamina field is set
      */
     public boolean hasReserveStamina() {
@@ -121,11 +114,7 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * int64 EOBDIFFPPKC = 7;
-     * </pre>
-     *
-     * <code>optional uint32 reserve_stamina = 2;</code>
+     * <code>optional uint32 reserve_stamina = 8;</code>
      * @return this
      */
     public StaminaInfoScNotify clearReserveStamina() {
@@ -135,11 +124,7 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * int64 EOBDIFFPPKC = 7;
-     * </pre>
-     *
-     * <code>optional uint32 reserve_stamina = 2;</code>
+     * <code>optional uint32 reserve_stamina = 8;</code>
      * @return the reserveStamina
      */
     public int getReserveStamina() {
@@ -147,11 +132,7 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * int64 EOBDIFFPPKC = 7;
-     * </pre>
-     *
-     * <code>optional uint32 reserve_stamina = 2;</code>
+     * <code>optional uint32 reserve_stamina = 8;</code>
      * @param value the reserveStamina to set
      * @return this
      */
@@ -163,10 +144,11 @@ public final class StaminaInfoScNotifyOuterClass {
 
     /**
      * <pre>
-     * int64 GAGGFFAGACN = 5;
+     * int64 LNBLCOHNANF = 6;
+     * int64 JAHDLPMMDPF = 3;
      * </pre>
      *
-     * <code>optional uint32 stamina = 13;</code>
+     * <code>optional uint32 stamina = 15;</code>
      * @return whether the stamina field is set
      */
     public boolean hasStamina() {
@@ -175,10 +157,11 @@ public final class StaminaInfoScNotifyOuterClass {
 
     /**
      * <pre>
-     * int64 GAGGFFAGACN = 5;
+     * int64 LNBLCOHNANF = 6;
+     * int64 JAHDLPMMDPF = 3;
      * </pre>
      *
-     * <code>optional uint32 stamina = 13;</code>
+     * <code>optional uint32 stamina = 15;</code>
      * @return this
      */
     public StaminaInfoScNotify clearStamina() {
@@ -189,10 +172,11 @@ public final class StaminaInfoScNotifyOuterClass {
 
     /**
      * <pre>
-     * int64 GAGGFFAGACN = 5;
+     * int64 LNBLCOHNANF = 6;
+     * int64 JAHDLPMMDPF = 3;
      * </pre>
      *
-     * <code>optional uint32 stamina = 13;</code>
+     * <code>optional uint32 stamina = 15;</code>
      * @return the stamina
      */
     public int getStamina() {
@@ -201,10 +185,11 @@ public final class StaminaInfoScNotifyOuterClass {
 
     /**
      * <pre>
-     * int64 GAGGFFAGACN = 5;
+     * int64 LNBLCOHNANF = 6;
+     * int64 JAHDLPMMDPF = 3;
      * </pre>
      *
-     * <code>optional uint32 stamina = 13;</code>
+     * <code>optional uint32 stamina = 15;</code>
      * @param value the stamina to set
      * @return this
      */
@@ -285,15 +270,15 @@ public final class StaminaInfoScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 48);
         output.writeInt64NoTag(nextRecoverTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(reserveStamina);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(stamina);
       }
     }
@@ -320,25 +305,25 @@ public final class StaminaInfoScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 48: {
             // nextRecoverTime
             nextRecoverTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 16) {
+            if (tag != 64) {
               break;
             }
           }
-          case 16: {
+          case 64: {
             // reserveStamina
             reserveStamina = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 120) {
               break;
             }
           }
-          case 104: {
+          case 120: {
             // stamina
             stamina = input.readUInt32();
             bitField0_ |= 0x00000004;

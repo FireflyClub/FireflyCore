@@ -3,12 +3,13 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 import "Challenge.proto";
+import "ChallengeHistoryMaxLevel.proto";
 import "ChallengeReward.proto";
 
 message GetChallengeScRsp {
-	uint32 retcode = 10;
-	uint32 IIJBMNKFMAA = 12;
-	//repeated DMDFDIAMOAK CJFGMKBLPLN = 2;
-	repeated Challenge challenge_list = 1;
-	repeated ChallengeReward challenge_reward_list = 14;
+	uint32 GGBCPNCDMFA = 12;
+	uint32 retcode = 5;
+	repeated ChallengeHistoryMaxLevel max_level_list = 13;
+	repeated ChallengeReward challenge_reward_list = 9;
+	repeated Challenge challenge_list = 15;
 }

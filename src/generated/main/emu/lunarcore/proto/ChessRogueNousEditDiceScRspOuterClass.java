@@ -24,7 +24,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      */
     private final ChessRogueNousDiceInfoOuterClass.ChessRogueNousDiceInfo diceInfo = ChessRogueNousDiceInfoOuterClass.ChessRogueNousDiceInfo.newInstance();
 
@@ -76,7 +76,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      * @return whether the diceInfo field is set
      */
     public boolean hasDiceInfo() {
@@ -84,7 +84,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      * @return this
      */
     public ChessRogueNousEditDiceScRsp clearDiceInfo() {
@@ -94,7 +94,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +108,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +122,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChessRogueNousDiceInfo dice_info = 13;</code>
+     * <code>optional .ChessRogueNousDiceInfo dice_info = 4;</code>
      * @param value the diceInfo to set
      * @return this
      */
@@ -203,7 +203,7 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(diceInfo);
       }
     }
@@ -232,11 +232,11 @@ public final class ChessRogueNousEditDiceScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 34) {
               break;
             }
           }
-          case 106: {
+          case 34: {
             // diceInfo
             input.readMessage(diceInfo);
             bitField0_ |= 0x00000002;

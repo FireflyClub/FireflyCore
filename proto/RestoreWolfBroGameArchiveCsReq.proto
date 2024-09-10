@@ -2,12 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "GroupStateInfo.proto";
-import "MotionInfo.proto";
-
 message RestoreWolfBroGameArchiveCsReq {
-	GroupStateInfo group_state_info = 10;
-	MotionInfo motion = 4;
-	bool PECAGANEKGI = 3;
-	uint32 id = 1;
+	uint32 id = 10;
 }

@@ -6,6 +6,6 @@ import "Vector.proto";
 import "Vector4.proto";
 
 message NewMapRot {
-	Vector4 vector4 = 3;
-	Vector vector3 = 6;
+	Vector vector3 = 11;
+	Vector4 vector4 = 14;
 }

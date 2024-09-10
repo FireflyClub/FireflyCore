@@ -20,17 +20,17 @@ public final class GetCurChallengeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      */
     private final ChallengeInfoOuterClass.ChallengeInfo challengeInfo = ChallengeInfoOuterClass.ChallengeInfo.newInstance();
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      */
     private final RepeatedMessage<LineupInfoOuterClass.LineupInfo> lineupList = RepeatedMessage.newEmptyInstance(LineupInfoOuterClass.LineupInfo.getFactory());
 
@@ -45,7 +45,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,7 +53,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
     public GetCurChallengeScRsp clearRetcode() {
@@ -63,7 +63,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,7 +71,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 14;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -82,7 +82,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      * @return whether the challengeInfo field is set
      */
     public boolean hasChallengeInfo() {
@@ -90,7 +90,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      * @return this
      */
     public GetCurChallengeScRsp clearChallengeInfo() {
@@ -100,7 +100,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -114,7 +114,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -128,7 +128,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeInfo challenge_info = 3;</code>
+     * <code>optional .ChallengeInfo challenge_info = 11;</code>
      * @param value the challengeInfo to set
      * @return this
      */
@@ -140,7 +140,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      * @return whether the lineupList field is set
      */
     public boolean hasLineupList() {
@@ -148,7 +148,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      * @return this
      */
     public GetCurChallengeScRsp clearLineupList() {
@@ -158,7 +158,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -172,7 +172,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -186,7 +186,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      * @param value the lineupList to add
      * @return this
      */
@@ -197,7 +197,7 @@ public final class GetCurChallengeScRspOuterClass {
     }
 
     /**
-     * <code>repeated .LineupInfo lineup_list = 4;</code>
+     * <code>repeated .LineupInfo lineup_list = 1;</code>
      * @param values the lineupList to add
      * @return this
      */
@@ -280,16 +280,16 @@ public final class GetCurChallengeScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 26);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(challengeInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < lineupList.length(); i++) {
-          output.writeRawByte((byte) 34);
+          output.writeRawByte((byte) 10);
           output.writeMessageNoTag(lineupList.get(i));
         }
       }
@@ -317,25 +317,25 @@ public final class GetCurChallengeScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 72: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 90) {
               break;
             }
           }
-          case 26: {
+          case 90: {
             // challengeInfo
             input.readMessage(challengeInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 10) {
               break;
             }
           }
-          case 34: {
+          case 10: {
             // lineupList
             tag = input.readRepeatedMessage(lineupList, tag);
             bitField0_ |= 0x00000004;

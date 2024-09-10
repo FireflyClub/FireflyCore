@@ -19,9 +19,9 @@ public final class SetClientPausedCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool paused = 2;</code>
+     * <code>optional bool is_paused = 15;</code>
      */
-    private boolean paused;
+    private boolean isPaused;
 
     private SetClientPausedCsReq() {
     }
@@ -34,39 +34,39 @@ public final class SetClientPausedCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 2;</code>
-     * @return whether the paused field is set
+     * <code>optional bool is_paused = 15;</code>
+     * @return whether the isPaused field is set
      */
-    public boolean hasPaused() {
+    public boolean hasIsPaused() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional bool paused = 2;</code>
+     * <code>optional bool is_paused = 15;</code>
      * @return this
      */
-    public SetClientPausedCsReq clearPaused() {
+    public SetClientPausedCsReq clearIsPaused() {
       bitField0_ &= ~0x00000001;
-      paused = false;
+      isPaused = false;
       return this;
     }
 
     /**
-     * <code>optional bool paused = 2;</code>
-     * @return the paused
+     * <code>optional bool is_paused = 15;</code>
+     * @return the isPaused
      */
-    public boolean getPaused() {
-      return paused;
+    public boolean getIsPaused() {
+      return isPaused;
     }
 
     /**
-     * <code>optional bool paused = 2;</code>
-     * @param value the paused to set
+     * <code>optional bool is_paused = 15;</code>
+     * @param value the isPaused to set
      * @return this
      */
-    public SetClientPausedCsReq setPaused(final boolean value) {
+    public SetClientPausedCsReq setIsPaused(final boolean value) {
       bitField0_ |= 0x00000001;
-      paused = value;
+      isPaused = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class SetClientPausedCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        paused = other.paused;
+        isPaused = other.isPaused;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class SetClientPausedCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPaused()) {
-        setPaused(other.paused);
+      if (other.hasIsPaused()) {
+        setIsPaused(other.isPaused);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class SetClientPausedCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      paused = false;
+      isPaused = false;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class SetClientPausedCsReqOuterClass {
       }
       SetClientPausedCsReq other = (SetClientPausedCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasPaused() || paused == other.paused);
+        && (!hasIsPaused() || isPaused == other.isPaused);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
-        output.writeBoolNoTag(paused);
+        output.writeRawByte((byte) 120);
+        output.writeBoolNoTag(isPaused);
       }
     }
 
@@ -150,9 +150,9 @@ public final class SetClientPausedCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
-            // paused
-            paused = input.readBool();
+          case 120: {
+            // isPaused
+            isPaused = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class SetClientPausedCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.paused, paused);
+        output.writeBool(FieldNames.isPaused, isPaused);
       }
       output.endObject();
     }
@@ -189,10 +189,11 @@ public final class SetClientPausedCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -995321554: {
-            if (input.isAtField(FieldNames.paused)) {
+          case -321287432:
+          case -531282461: {
+            if (input.isAtField(FieldNames.isPaused)) {
               if (!input.trySkipNullValue()) {
-                paused = input.readBool();
+                isPaused = input.readBool();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -253,7 +254,7 @@ public final class SetClientPausedCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName paused = FieldName.forField("paused");
+      static final FieldName isPaused = FieldName.forField("isPaused", "is_paused");
     }
   }
 }

@@ -19,9 +19,24 @@ public final class StartWolfBroGameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      */
     private int id;
+
+    /**
+     * <code>optional bool JMAPEPGLENN = 8;</code>
+     */
+    private boolean jMAPEPGLENN;
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     */
+    private final GroupStateInfoOuterClass.GroupStateInfo groupStateInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     */
+    private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
     private StartWolfBroGameCsReq() {
     }
@@ -34,7 +49,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -42,7 +57,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return this
      */
     public StartWolfBroGameCsReq clearId() {
@@ -52,7 +67,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @return the id
      */
     public int getId() {
@@ -60,7 +75,7 @@ public final class StartWolfBroGameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 7;</code>
+     * <code>optional uint32 id = 4;</code>
      * @param value the id to set
      * @return this
      */
@@ -70,12 +85,167 @@ public final class StartWolfBroGameCsReqOuterClass {
       return this;
     }
 
+    /**
+     * <code>optional bool JMAPEPGLENN = 8;</code>
+     * @return whether the jMAPEPGLENN field is set
+     */
+    public boolean hasJMAPEPGLENN() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional bool JMAPEPGLENN = 8;</code>
+     * @return this
+     */
+    public StartWolfBroGameCsReq clearJMAPEPGLENN() {
+      bitField0_ &= ~0x00000002;
+      jMAPEPGLENN = false;
+      return this;
+    }
+
+    /**
+     * <code>optional bool JMAPEPGLENN = 8;</code>
+     * @return the jMAPEPGLENN
+     */
+    public boolean getJMAPEPGLENN() {
+      return jMAPEPGLENN;
+    }
+
+    /**
+     * <code>optional bool JMAPEPGLENN = 8;</code>
+     * @param value the jMAPEPGLENN to set
+     * @return this
+     */
+    public StartWolfBroGameCsReq setJMAPEPGLENN(final boolean value) {
+      bitField0_ |= 0x00000002;
+      jMAPEPGLENN = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     * @return whether the groupStateInfo field is set
+     */
+    public boolean hasGroupStateInfo() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     * @return this
+     */
+    public StartWolfBroGameCsReq clearGroupStateInfo() {
+      bitField0_ &= ~0x00000004;
+      groupStateInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableGroupStateInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public GroupStateInfoOuterClass.GroupStateInfo getGroupStateInfo() {
+      return groupStateInfo;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public GroupStateInfoOuterClass.GroupStateInfo getMutableGroupStateInfo() {
+      bitField0_ |= 0x00000004;
+      return groupStateInfo;
+    }
+
+    /**
+     * <code>optional .GroupStateInfo group_state_info = 5;</code>
+     * @param value the groupStateInfo to set
+     * @return this
+     */
+    public StartWolfBroGameCsReq setGroupStateInfo(
+        final GroupStateInfoOuterClass.GroupStateInfo value) {
+      bitField0_ |= 0x00000004;
+      groupStateInfo.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     * @return whether the motion field is set
+     */
+    public boolean hasMotion() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     * @return this
+     */
+    public StartWolfBroGameCsReq clearMotion() {
+      bitField0_ &= ~0x00000008;
+      motion.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMotion()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public MotionInfoOuterClass.MotionInfo getMotion() {
+      return motion;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public MotionInfoOuterClass.MotionInfo getMutableMotion() {
+      bitField0_ |= 0x00000008;
+      return motion;
+    }
+
+    /**
+     * <code>optional .MotionInfo motion = 10;</code>
+     * @param value the motion to set
+     * @return this
+     */
+    public StartWolfBroGameCsReq setMotion(final MotionInfoOuterClass.MotionInfo value) {
+      bitField0_ |= 0x00000008;
+      motion.copyFrom(value);
+      return this;
+    }
+
     @Override
     public StartWolfBroGameCsReq copyFrom(final StartWolfBroGameCsReq other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         id = other.id;
+        jMAPEPGLENN = other.jMAPEPGLENN;
+        groupStateInfo.copyFrom(other.groupStateInfo);
+        motion.copyFrom(other.motion);
       }
       return this;
     }
@@ -89,6 +259,15 @@ public final class StartWolfBroGameCsReqOuterClass {
       if (other.hasId()) {
         setId(other.id);
       }
+      if (other.hasJMAPEPGLENN()) {
+        setJMAPEPGLENN(other.jMAPEPGLENN);
+      }
+      if (other.hasGroupStateInfo()) {
+        getMutableGroupStateInfo().mergeFrom(other.groupStateInfo);
+      }
+      if (other.hasMotion()) {
+        getMutableMotion().mergeFrom(other.motion);
+      }
       return this;
     }
 
@@ -100,6 +279,9 @@ public final class StartWolfBroGameCsReqOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       id = 0;
+      jMAPEPGLENN = false;
+      groupStateInfo.clear();
+      motion.clear();
       return this;
     }
 
@@ -110,6 +292,8 @@ public final class StartWolfBroGameCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      groupStateInfo.clearQuick();
+      motion.clearQuick();
       return this;
     }
 
@@ -123,14 +307,29 @@ public final class StartWolfBroGameCsReqOuterClass {
       }
       StartWolfBroGameCsReq other = (StartWolfBroGameCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasId() || id == other.id);
+        && (!hasId() || id == other.id)
+        && (!hasJMAPEPGLENN() || jMAPEPGLENN == other.jMAPEPGLENN)
+        && (!hasGroupStateInfo() || groupStateInfo.equals(other.groupStateInfo))
+        && (!hasMotion() || motion.equals(other.motion));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(id);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 64);
+        output.writeBoolNoTag(jMAPEPGLENN);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 42);
+        output.writeMessageNoTag(groupStateInfo);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 82);
+        output.writeMessageNoTag(motion);
       }
     }
 
@@ -139,6 +338,15 @@ public final class StartWolfBroGameCsReqOuterClass {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 2;
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(groupStateInfo);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
       }
       return size;
     }
@@ -150,10 +358,37 @@ public final class StartWolfBroGameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 32: {
             // id
             id = input.readUInt32();
             bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 64) {
+              break;
+            }
+          }
+          case 64: {
+            // jMAPEPGLENN
+            jMAPEPGLENN = input.readBool();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
+            // groupStateInfo
+            input.readMessage(groupStateInfo);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // motion
+            input.readMessage(motion);
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -179,6 +414,15 @@ public final class StartWolfBroGameCsReqOuterClass {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeUInt32(FieldNames.id, id);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeBool(FieldNames.jMAPEPGLENN, jMAPEPGLENN);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeMessage(FieldNames.groupStateInfo, groupStateInfo);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeMessage(FieldNames.motion, motion);
+      }
       output.endObject();
     }
 
@@ -194,6 +438,40 @@ public final class StartWolfBroGameCsReqOuterClass {
               if (!input.trySkipNullValue()) {
                 id = input.readUInt32();
                 bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1854844675: {
+            if (input.isAtField(FieldNames.jMAPEPGLENN)) {
+              if (!input.trySkipNullValue()) {
+                jMAPEPGLENN = input.readBool();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1415312672:
+          case 1198732636: {
+            if (input.isAtField(FieldNames.groupStateInfo)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(groupStateInfo);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1068318794: {
+            if (input.isAtField(FieldNames.motion)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(motion);
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -254,6 +532,12 @@ public final class StartWolfBroGameCsReqOuterClass {
      */
     static class FieldNames {
       static final FieldName id = FieldName.forField("id");
+
+      static final FieldName jMAPEPGLENN = FieldName.forField("JMAPEPGLENN");
+
+      static final FieldName groupStateInfo = FieldName.forField("groupStateInfo", "group_state_info");
+
+      static final FieldName motion = FieldName.forField("motion");
     }
   }
 }

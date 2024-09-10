@@ -5,6 +5,6 @@ option java_package = "emu.lunarcore.proto";
 import "TextJoinInfo.proto";
 
 message TextJoinQueryScRsp {
-	uint32 retcode = 10;
-	repeated TextJoinInfo text_join_list = 1;
+	repeated TextJoinInfo text_join_list = 3;
+	uint32 retcode = 7;
 }

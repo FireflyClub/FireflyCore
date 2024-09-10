@@ -5,8 +5,8 @@ option java_package = "emu.lunarcore.proto";
 import "ChallengeLineup.proto";
 
 message ChallengeMemoryClearInfo {
-	repeated ChallengeLineup lineup_list = 12;
-	uint32 level = 1;
-	uint32 round_count = 4;
-	uint32 highest_difficulty = 2;
+	uint32 highest_difficulty = 14;
+	repeated ChallengeLineup lineup_list = 11;
+	uint32 level = 7;
+	uint32 round_count = 12;
 }

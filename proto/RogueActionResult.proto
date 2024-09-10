@@ -6,6 +6,6 @@ import "RogueBuffSource.proto";
 import "RogueActionResultData.proto";
 
 message RogueActionResult {
-    RogueBuffSource source = 10;
-    RogueActionResultData rogue_action = 5;
+	RogueBuffSource source = 9;
+	RogueActionResultData rogue_action = 1;
 }

@@ -19,9 +19,9 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 action_point = 9;</code>
+     * <code>optional int32 PMJMDJEAGAF = 15;</code>
      */
-    private int actionPoint;
+    private int pMJMDJEAGAF;
 
     private ChessRogueUpdateActionPointScNotify() {
     }
@@ -34,39 +34,39 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 action_point = 9;</code>
-     * @return whether the actionPoint field is set
+     * <code>optional int32 PMJMDJEAGAF = 15;</code>
+     * @return whether the pMJMDJEAGAF field is set
      */
-    public boolean hasActionPoint() {
+    public boolean hasPMJMDJEAGAF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 action_point = 9;</code>
+     * <code>optional int32 PMJMDJEAGAF = 15;</code>
      * @return this
      */
-    public ChessRogueUpdateActionPointScNotify clearActionPoint() {
+    public ChessRogueUpdateActionPointScNotify clearPMJMDJEAGAF() {
       bitField0_ &= ~0x00000001;
-      actionPoint = 0;
+      pMJMDJEAGAF = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 action_point = 9;</code>
-     * @return the actionPoint
+     * <code>optional int32 PMJMDJEAGAF = 15;</code>
+     * @return the pMJMDJEAGAF
      */
-    public int getActionPoint() {
-      return actionPoint;
+    public int getPMJMDJEAGAF() {
+      return pMJMDJEAGAF;
     }
 
     /**
-     * <code>optional uint32 action_point = 9;</code>
-     * @param value the actionPoint to set
+     * <code>optional int32 PMJMDJEAGAF = 15;</code>
+     * @param value the pMJMDJEAGAF to set
      * @return this
      */
-    public ChessRogueUpdateActionPointScNotify setActionPoint(final int value) {
+    public ChessRogueUpdateActionPointScNotify setPMJMDJEAGAF(final int value) {
       bitField0_ |= 0x00000001;
-      actionPoint = value;
+      pMJMDJEAGAF = value;
       return this;
     }
 
@@ -76,7 +76,7 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        actionPoint = other.actionPoint;
+        pMJMDJEAGAF = other.pMJMDJEAGAF;
       }
       return this;
     }
@@ -88,8 +88,8 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasActionPoint()) {
-        setActionPoint(other.actionPoint);
+      if (other.hasPMJMDJEAGAF()) {
+        setPMJMDJEAGAF(other.pMJMDJEAGAF);
       }
       return this;
     }
@@ -101,7 +101,7 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      actionPoint = 0;
+      pMJMDJEAGAF = 0;
       return this;
     }
 
@@ -125,14 +125,14 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
       }
       ChessRogueUpdateActionPointScNotify other = (ChessRogueUpdateActionPointScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasActionPoint() || actionPoint == other.actionPoint);
+        && (!hasPMJMDJEAGAF() || pMJMDJEAGAF == other.pMJMDJEAGAF);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(actionPoint);
+        output.writeRawByte((byte) 120);
+        output.writeInt32NoTag(pMJMDJEAGAF);
       }
     }
 
@@ -140,7 +140,7 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(actionPoint);
+        size += 1 + ProtoSink.computeInt32SizeNoTag(pMJMDJEAGAF);
       }
       return size;
     }
@@ -153,9 +153,9 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
-            // actionPoint
-            actionPoint = input.readUInt32();
+          case 120: {
+            // pMJMDJEAGAF
+            pMJMDJEAGAF = input.readInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -180,7 +180,7 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.actionPoint, actionPoint);
+        output.writeInt32(FieldNames.pMJMDJEAGAF, pMJMDJEAGAF);
       }
       output.endObject();
     }
@@ -193,11 +193,10 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1569741050:
-          case 1847866951: {
-            if (input.isAtField(FieldNames.actionPoint)) {
+          case -1419065398: {
+            if (input.isAtField(FieldNames.pMJMDJEAGAF)) {
               if (!input.trySkipNullValue()) {
-                actionPoint = input.readUInt32();
+                pMJMDJEAGAF = input.readInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -260,7 +259,7 @@ public final class ChessRogueUpdateActionPointScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName actionPoint = FieldName.forField("actionPoint", "action_point");
+      static final FieldName pMJMDJEAGAF = FieldName.forField("PMJMDJEAGAF");
     }
   }
 }

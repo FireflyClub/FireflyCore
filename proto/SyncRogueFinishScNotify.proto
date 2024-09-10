@@ -5,5 +5,5 @@ option java_package = "emu.lunarcore.proto";
 import "RogueFinishInfo.proto";
 
 message SyncRogueFinishScNotify {
-	RogueFinishInfo finish_info = 2;
+	RogueFinishInfo finish_info = 7;
 }

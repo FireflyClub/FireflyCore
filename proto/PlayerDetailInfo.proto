@@ -3,27 +3,27 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 import "PlatformType.proto";
-import "PlayerRecordInfo.proto";
-import "PlayerDisplaySettings.proto";
 import "DisplayAvatarDetailInfo.proto";
+import "PlayerDisplaySettings.proto";
+import "PlayerRecordInfo.proto";
 
 message PlayerDetailInfo {
-	string nickname = 4;
-	uint32 level = 15;
-	uint32 head_icon = 8;
-	PlatformType platform_type = 3;
-	uint32 world_level = 5;
-	PlayerDisplaySettings display_settings = 1743;
-	repeated DisplayAvatarDetailInfo display_avatar_list = 11;
-	string CDFPLBBIKDI = 6;
-	uint32 FLHDCJECCPN = 9;
-	uint32 uid = 13;
-	//MBNDAJPEAGO OBPJHEDCNJM = 1297;
-	string signature = 14;
-	bool show_display_avatars = 1;
-	bool is_banned = 12;
-	repeated DisplayAvatarDetailInfo assist_avatar_list = 1700;
-	uint32 CHFANJMIPKA = 2;
-	string EMGADLCGDBF = 10;
-	PlayerRecordInfo record_info = 7;
+	uint32 world_level = 8;
+	bool is_banned = 15;
+	uint32 level = 13;
+	string signature = 4;
+	//HDJHPMHHIIG PLCLJEFAHIM = 1680;
+	uint32 MEODGCCAPLF = 7;
+	PlatformType platform_type = 10;
+	uint32 head_icon = 2;
+	uint32 uid = 5;
+	repeated DisplayAvatarDetailInfo display_avatar_list = 14;
+	string FLFKCIHCENF = 6;
+	PlayerDisplaySettings display_settings = 507;
+	repeated DisplayAvatarDetailInfo assist_avatar_list = 340;
+	string HFHGPLMEFGJ = 12;
+	bool show_display_avatars = 3;
+	PlayerRecordInfo record_info = 11;
+	string nickname = 1;
+	uint32 EJHPPHPCIEM = 9;
 }

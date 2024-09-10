@@ -14,8 +14,8 @@ public class HandlerStartChallengeCsReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = StartChallengeCsReq.parseFrom(data);
-        var storyBuffs = req.getStartInfo().getStoryBuffInfo();
-        var bossBuffs = req.getStartInfo().getBossInfo();
+        var storyBuffs = req.getExtInfo().getStoryBuffInfo();
+        var bossBuffs = req.getExtInfo().getBossInfo();
         if (bossBuffs != null && bossBuffs.getBuffOne() == 0) {
             bossBuffs = null;
         }

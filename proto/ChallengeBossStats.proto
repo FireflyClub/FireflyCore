@@ -6,5 +6,5 @@ import "ChallengeBossClearInfo.proto";
 
 message ChallengeBossStats {
 	ChallengeBossClearInfo clear_info = 7;
-	uint32 attempts = 12;
+	uint32 attempts = 2;
 }

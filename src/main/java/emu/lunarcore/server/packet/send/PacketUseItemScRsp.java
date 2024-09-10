@@ -20,7 +20,7 @@ public class PacketUseItemScRsp extends BasePacket {
                 itemList.addItemList(item.toProto());
             }
         }
-        
+
         var data = UseItemScRsp.newInstance()
                 .setUseItemId(itemId)
                 .setUseItemCount(itemCount)

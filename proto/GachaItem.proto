@@ -2,12 +2,12 @@ syntax = "proto3";
 
 option java_package = "emu.lunarcore.proto";
 
-import "Item.proto";
 import "ItemList.proto";
+import "Item.proto";
 
 message GachaItem {
-	bool is_new = 13;
-	ItemList transfer_item_list = 4;
-	Item gacha_item = 1;
-	ItemList token_item = 9;
+	ItemList transfer_item_list = 12;
+	Item gacha_item = 3;
+	bool is_new = 9;
+	ItemList token_item = 14;
 }

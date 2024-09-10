@@ -10,5 +10,5 @@ message BattleOp {
 	uint32 op_type = 5;
 	uint32 skill_index = 6;
 	uint32 operation_counter = 7;
-	string KBHJIPPKAJJ = 8;
+	string GPBKOBEPMCA = 8;
 }

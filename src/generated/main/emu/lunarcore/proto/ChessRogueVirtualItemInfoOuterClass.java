@@ -29,11 +29,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     private final ChessRogueMiracleInfoOuterClass.ChessRogueMiracleInfo miracleInfo = ChessRogueMiracleInfoOuterClass.ChessRogueMiracleInfo.newInstance();
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      */
     private final ChessRogueItemInfoOuterClass.ChessRogueItemInfo itemInfo = ChessRogueItemInfoOuterClass.ChessRogueItemInfo.newInstance();
@@ -165,11 +160,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      * @return whether the itemInfo field is set
      */
@@ -178,11 +168,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      * @return this
      */
@@ -193,11 +178,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -212,11 +192,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -231,11 +206,6 @@ public final class ChessRogueVirtualItemInfoOuterClass {
     }
 
     /**
-     * <pre>
-     *  HMLCJCGOEHI rogue_aeon_info = 3;
-     *  MBGNHFBIIHJ GEOIJKDCIOI = 12;
-     * </pre>
-     *
      * <code>optional .ChessRogueItemInfo item_info = 11;</code>
      * @param value the itemInfo to set
      * @return this

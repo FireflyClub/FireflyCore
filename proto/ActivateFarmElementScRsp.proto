@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message ActivateFarmElementScRsp {
-	uint32 entity_id = 2;
-	uint32 retcode = 11;
-	uint32 world_level = 8;
+	uint32 retcode = 15;
+	uint32 entity_id = 14;
+	uint32 world_level = 10;
 }

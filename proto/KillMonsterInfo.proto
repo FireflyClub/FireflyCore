@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message KillMonsterInfo {
+  uint32 monster_id = 8;
+  uint32 kill_num = 13;
+}

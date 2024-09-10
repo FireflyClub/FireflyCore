@@ -19,7 +19,22 @@ public final class ScenePlaneEventScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     */
+    private final ItemListOuterClass.ItemList dFOMENDHKLM = ItemListOuterClass.ItemList.newInstance();
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     */
+    private final ItemListOuterClass.ItemList iBDCNJHEHHH = ItemListOuterClass.ItemList.newInstance();
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     */
+    private final ItemListOuterClass.ItemList hGKMPLEMCKC = ItemListOuterClass.ItemList.newInstance();
+
+    /**
+     * <code>optional .ItemList get_item_list = 13;</code>
      */
     private final ItemListOuterClass.ItemList getItemList = ItemListOuterClass.ItemList.newInstance();
 
@@ -34,25 +49,196 @@ public final class ScenePlaneEventScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
-     * @return whether the getItemList field is set
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     * @return whether the dFOMENDHKLM field is set
      */
-    public boolean hasGetItemList() {
+    public boolean hasDFOMENDHKLM() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     * @return this
+     */
+    public ScenePlaneEventScNotify clearDFOMENDHKLM() {
+      bitField0_ &= ~0x00000001;
+      dFOMENDHKLM.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableDFOMENDHKLM()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ItemListOuterClass.ItemList getDFOMENDHKLM() {
+      return dFOMENDHKLM;
+    }
+
+    /**
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ItemListOuterClass.ItemList getMutableDFOMENDHKLM() {
+      bitField0_ |= 0x00000001;
+      return dFOMENDHKLM;
+    }
+
+    /**
+     * <code>optional .ItemList DFOMENDHKLM = 2;</code>
+     * @param value the dFOMENDHKLM to set
+     * @return this
+     */
+    public ScenePlaneEventScNotify setDFOMENDHKLM(final ItemListOuterClass.ItemList value) {
+      bitField0_ |= 0x00000001;
+      dFOMENDHKLM.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     * @return whether the iBDCNJHEHHH field is set
+     */
+    public boolean hasIBDCNJHEHHH() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     * @return this
+     */
+    public ScenePlaneEventScNotify clearIBDCNJHEHHH() {
+      bitField0_ &= ~0x00000002;
+      iBDCNJHEHHH.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableIBDCNJHEHHH()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ItemListOuterClass.ItemList getIBDCNJHEHHH() {
+      return iBDCNJHEHHH;
+    }
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ItemListOuterClass.ItemList getMutableIBDCNJHEHHH() {
+      bitField0_ |= 0x00000002;
+      return iBDCNJHEHHH;
+    }
+
+    /**
+     * <code>optional .ItemList IBDCNJHEHHH = 5;</code>
+     * @param value the iBDCNJHEHHH to set
+     * @return this
+     */
+    public ScenePlaneEventScNotify setIBDCNJHEHHH(final ItemListOuterClass.ItemList value) {
+      bitField0_ |= 0x00000002;
+      iBDCNJHEHHH.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     * @return whether the hGKMPLEMCKC field is set
+     */
+    public boolean hasHGKMPLEMCKC() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     * @return this
+     */
+    public ScenePlaneEventScNotify clearHGKMPLEMCKC() {
+      bitField0_ &= ~0x00000004;
+      hGKMPLEMCKC.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableHGKMPLEMCKC()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ItemListOuterClass.ItemList getHGKMPLEMCKC() {
+      return hGKMPLEMCKC;
+    }
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ItemListOuterClass.ItemList getMutableHGKMPLEMCKC() {
+      bitField0_ |= 0x00000004;
+      return hGKMPLEMCKC;
+    }
+
+    /**
+     * <code>optional .ItemList HGKMPLEMCKC = 6;</code>
+     * @param value the hGKMPLEMCKC to set
+     * @return this
+     */
+    public ScenePlaneEventScNotify setHGKMPLEMCKC(final ItemListOuterClass.ItemList value) {
+      bitField0_ |= 0x00000004;
+      hGKMPLEMCKC.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .ItemList get_item_list = 13;</code>
+     * @return whether the getItemList field is set
+     */
+    public boolean hasGetItemList() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional .ItemList get_item_list = 13;</code>
      * @return this
      */
     public ScenePlaneEventScNotify clearGetItemList() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000008;
       getItemList.clear();
       return this;
     }
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
+     * <code>optional .ItemList get_item_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +252,7 @@ public final class ScenePlaneEventScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
+     * <code>optional .ItemList get_item_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -75,17 +261,17 @@ public final class ScenePlaneEventScNotifyOuterClass {
      * @return internal storage object for modifications
      */
     public ItemListOuterClass.ItemList getMutableGetItemList() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       return getItemList;
     }
 
     /**
-     * <code>optional .ItemList get_item_list = 9;</code>
+     * <code>optional .ItemList get_item_list = 13;</code>
      * @param value the getItemList to set
      * @return this
      */
     public ScenePlaneEventScNotify setGetItemList(final ItemListOuterClass.ItemList value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000008;
       getItemList.copyFrom(value);
       return this;
     }
@@ -95,6 +281,9 @@ public final class ScenePlaneEventScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        dFOMENDHKLM.copyFrom(other.dFOMENDHKLM);
+        iBDCNJHEHHH.copyFrom(other.iBDCNJHEHHH);
+        hGKMPLEMCKC.copyFrom(other.hGKMPLEMCKC);
         getItemList.copyFrom(other.getItemList);
       }
       return this;
@@ -106,6 +295,15 @@ public final class ScenePlaneEventScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasDFOMENDHKLM()) {
+        getMutableDFOMENDHKLM().mergeFrom(other.dFOMENDHKLM);
+      }
+      if (other.hasIBDCNJHEHHH()) {
+        getMutableIBDCNJHEHHH().mergeFrom(other.iBDCNJHEHHH);
+      }
+      if (other.hasHGKMPLEMCKC()) {
+        getMutableHGKMPLEMCKC().mergeFrom(other.hGKMPLEMCKC);
+      }
       if (other.hasGetItemList()) {
         getMutableGetItemList().mergeFrom(other.getItemList);
       }
@@ -119,6 +317,9 @@ public final class ScenePlaneEventScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      dFOMENDHKLM.clear();
+      iBDCNJHEHHH.clear();
+      hGKMPLEMCKC.clear();
       getItemList.clear();
       return this;
     }
@@ -130,6 +331,9 @@ public final class ScenePlaneEventScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      dFOMENDHKLM.clearQuick();
+      iBDCNJHEHHH.clearQuick();
+      hGKMPLEMCKC.clearQuick();
       getItemList.clearQuick();
       return this;
     }
@@ -144,13 +348,28 @@ public final class ScenePlaneEventScNotifyOuterClass {
       }
       ScenePlaneEventScNotify other = (ScenePlaneEventScNotify) o;
       return bitField0_ == other.bitField0_
+        && (!hasDFOMENDHKLM() || dFOMENDHKLM.equals(other.dFOMENDHKLM))
+        && (!hasIBDCNJHEHHH() || iBDCNJHEHHH.equals(other.iBDCNJHEHHH))
+        && (!hasHGKMPLEMCKC() || hGKMPLEMCKC.equals(other.hGKMPLEMCKC))
         && (!hasGetItemList() || getItemList.equals(other.getItemList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 18);
+        output.writeMessageNoTag(dFOMENDHKLM);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 42);
+        output.writeMessageNoTag(iBDCNJHEHHH);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 50);
+        output.writeMessageNoTag(hGKMPLEMCKC);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 106);
         output.writeMessageNoTag(getItemList);
       }
     }
@@ -159,6 +378,15 @@ public final class ScenePlaneEventScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(dFOMENDHKLM);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(iBDCNJHEHHH);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(hGKMPLEMCKC);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(getItemList);
       }
       return size;
@@ -171,10 +399,37 @@ public final class ScenePlaneEventScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 74: {
+          case 18: {
+            // dFOMENDHKLM
+            input.readMessage(dFOMENDHKLM);
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 42) {
+              break;
+            }
+          }
+          case 42: {
+            // iBDCNJHEHHH
+            input.readMessage(iBDCNJHEHHH);
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 50) {
+              break;
+            }
+          }
+          case 50: {
+            // hGKMPLEMCKC
+            input.readMessage(hGKMPLEMCKC);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
             // getItemList
             input.readMessage(getItemList);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -198,6 +453,15 @@ public final class ScenePlaneEventScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeMessage(FieldNames.dFOMENDHKLM, dFOMENDHKLM);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeMessage(FieldNames.iBDCNJHEHHH, iBDCNJHEHHH);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeMessage(FieldNames.hGKMPLEMCKC, hGKMPLEMCKC);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeMessage(FieldNames.getItemList, getItemList);
       }
       output.endObject();
@@ -210,12 +474,45 @@ public final class ScenePlaneEventScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 599080735: {
+            if (input.isAtField(FieldNames.dFOMENDHKLM)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(dFOMENDHKLM);
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1564075369: {
+            if (input.isAtField(FieldNames.iBDCNJHEHHH)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(iBDCNJHEHHH);
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1560991990: {
+            if (input.isAtField(FieldNames.hGKMPLEMCKC)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(hGKMPLEMCKC);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1039787065:
           case -1626556255: {
             if (input.isAtField(FieldNames.getItemList)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(getItemList);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -275,6 +572,12 @@ public final class ScenePlaneEventScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName dFOMENDHKLM = FieldName.forField("DFOMENDHKLM");
+
+      static final FieldName iBDCNJHEHHH = FieldName.forField("IBDCNJHEHHH");
+
+      static final FieldName hGKMPLEMCKC = FieldName.forField("HGKMPLEMCKC");
+
       static final FieldName getItemList = FieldName.forField("getItemList", "get_item_list");
     }
   }

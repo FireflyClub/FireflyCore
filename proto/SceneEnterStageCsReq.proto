@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message SceneEnterStageCsReq {
-	bool NNNCABEMAEB = 3;
-	uint32 scene_event_id = 14;
-	//CAMLHBEGNMO HADHNDGJFGL = 2;
+	bool GJBOOFHBEOP = 13;
+	//LEGPPEPEACF CFDONPMLJDP = 8;
+	uint32 scene_event_id = 12;
 }

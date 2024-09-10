@@ -19,27 +19,27 @@ public final class DoGachaInRollShopScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 KEACGMLKBDK = 1;</code>
+     */
+    private int kEACGMLKBDK;
+
+    /**
+     * <code>optional uint32 CLAPDDHKGKK = 4;</code>
+     */
+    private int cLAPDDHKGKK;
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 6;</code>
-     */
-    private int pGPHIPBCGAP;
-
-    /**
-     * <code>optional uint32 roll_shop_id = 7;</code>
+     * <code>optional uint32 roll_shop_id = 13;</code>
      */
     private int rollShopId;
 
     /**
-     * <code>optional uint32 BHPEBOKFCDB = 14;</code>
-     */
-    private int bHPEBOKFCDB;
-
-    /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      */
     private final ItemListOuterClass.ItemList reward = ItemListOuterClass.ItemList.newInstance();
 
@@ -54,25 +54,99 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 KEACGMLKBDK = 1;</code>
+     * @return whether the kEACGMLKBDK field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasKEACGMLKBDK() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 KEACGMLKBDK = 1;</code>
+     * @return this
+     */
+    public DoGachaInRollShopScRsp clearKEACGMLKBDK() {
+      bitField0_ &= ~0x00000001;
+      kEACGMLKBDK = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 KEACGMLKBDK = 1;</code>
+     * @return the kEACGMLKBDK
+     */
+    public int getKEACGMLKBDK() {
+      return kEACGMLKBDK;
+    }
+
+    /**
+     * <code>optional uint32 KEACGMLKBDK = 1;</code>
+     * @param value the kEACGMLKBDK to set
+     * @return this
+     */
+    public DoGachaInRollShopScRsp setKEACGMLKBDK(final int value) {
+      bitField0_ |= 0x00000001;
+      kEACGMLKBDK = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 CLAPDDHKGKK = 4;</code>
+     * @return whether the cLAPDDHKGKK field is set
+     */
+    public boolean hasCLAPDDHKGKK() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 CLAPDDHKGKK = 4;</code>
+     * @return this
+     */
+    public DoGachaInRollShopScRsp clearCLAPDDHKGKK() {
+      bitField0_ &= ~0x00000002;
+      cLAPDDHKGKK = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 CLAPDDHKGKK = 4;</code>
+     * @return the cLAPDDHKGKK
+     */
+    public int getCLAPDDHKGKK() {
+      return cLAPDDHKGKK;
+    }
+
+    /**
+     * <code>optional uint32 CLAPDDHKGKK = 4;</code>
+     * @param value the cLAPDDHKGKK to set
+     * @return this
+     */
+    public DoGachaInRollShopScRsp setCLAPDDHKGKK(final int value) {
+      bitField0_ |= 0x00000002;
+      cLAPDDHKGKK = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
     public DoGachaInRollShopScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000004;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -80,73 +154,36 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
      */
     public DoGachaInRollShopScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000004;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 PGPHIPBCGAP = 6;</code>
-     * @return whether the pGPHIPBCGAP field is set
-     */
-    public boolean hasPGPHIPBCGAP() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 PGPHIPBCGAP = 6;</code>
-     * @return this
-     */
-    public DoGachaInRollShopScRsp clearPGPHIPBCGAP() {
-      bitField0_ &= ~0x00000002;
-      pGPHIPBCGAP = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 PGPHIPBCGAP = 6;</code>
-     * @return the pGPHIPBCGAP
-     */
-    public int getPGPHIPBCGAP() {
-      return pGPHIPBCGAP;
-    }
-
-    /**
-     * <code>optional uint32 PGPHIPBCGAP = 6;</code>
-     * @param value the pGPHIPBCGAP to set
-     * @return this
-     */
-    public DoGachaInRollShopScRsp setPGPHIPBCGAP(final int value) {
-      bitField0_ |= 0x00000002;
-      pGPHIPBCGAP = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 roll_shop_id = 7;</code>
+     * <code>optional uint32 roll_shop_id = 13;</code>
      * @return whether the rollShopId field is set
      */
     public boolean hasRollShopId() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 7;</code>
+     * <code>optional uint32 roll_shop_id = 13;</code>
      * @return this
      */
     public DoGachaInRollShopScRsp clearRollShopId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       rollShopId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 7;</code>
+     * <code>optional uint32 roll_shop_id = 13;</code>
      * @return the rollShopId
      */
     public int getRollShopId() {
@@ -154,55 +191,18 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 roll_shop_id = 7;</code>
+     * <code>optional uint32 roll_shop_id = 13;</code>
      * @param value the rollShopId to set
      * @return this
      */
     public DoGachaInRollShopScRsp setRollShopId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       rollShopId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 BHPEBOKFCDB = 14;</code>
-     * @return whether the bHPEBOKFCDB field is set
-     */
-    public boolean hasBHPEBOKFCDB() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 BHPEBOKFCDB = 14;</code>
-     * @return this
-     */
-    public DoGachaInRollShopScRsp clearBHPEBOKFCDB() {
-      bitField0_ &= ~0x00000008;
-      bHPEBOKFCDB = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 BHPEBOKFCDB = 14;</code>
-     * @return the bHPEBOKFCDB
-     */
-    public int getBHPEBOKFCDB() {
-      return bHPEBOKFCDB;
-    }
-
-    /**
-     * <code>optional uint32 BHPEBOKFCDB = 14;</code>
-     * @param value the bHPEBOKFCDB to set
-     * @return this
-     */
-    public DoGachaInRollShopScRsp setBHPEBOKFCDB(final int value) {
-      bitField0_ |= 0x00000008;
-      bHPEBOKFCDB = value;
-      return this;
-    }
-
-    /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      * @return whether the reward field is set
      */
     public boolean hasReward() {
@@ -210,7 +210,7 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      * @return this
      */
     public DoGachaInRollShopScRsp clearReward() {
@@ -220,7 +220,7 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -234,7 +234,7 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -248,7 +248,7 @@ public final class DoGachaInRollShopScRspOuterClass {
     }
 
     /**
-     * <code>optional .ItemList reward = 11;</code>
+     * <code>optional .ItemList reward = 15;</code>
      * @param value the reward to set
      * @return this
      */
@@ -263,10 +263,10 @@ public final class DoGachaInRollShopScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        kEACGMLKBDK = other.kEACGMLKBDK;
+        cLAPDDHKGKK = other.cLAPDDHKGKK;
         retcode = other.retcode;
-        pGPHIPBCGAP = other.pGPHIPBCGAP;
         rollShopId = other.rollShopId;
-        bHPEBOKFCDB = other.bHPEBOKFCDB;
         reward.copyFrom(other.reward);
       }
       return this;
@@ -278,17 +278,17 @@ public final class DoGachaInRollShopScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasKEACGMLKBDK()) {
+        setKEACGMLKBDK(other.kEACGMLKBDK);
+      }
+      if (other.hasCLAPDDHKGKK()) {
+        setCLAPDDHKGKK(other.cLAPDDHKGKK);
+      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasPGPHIPBCGAP()) {
-        setPGPHIPBCGAP(other.pGPHIPBCGAP);
-      }
       if (other.hasRollShopId()) {
         setRollShopId(other.rollShopId);
-      }
-      if (other.hasBHPEBOKFCDB()) {
-        setBHPEBOKFCDB(other.bHPEBOKFCDB);
       }
       if (other.hasReward()) {
         getMutableReward().mergeFrom(other.reward);
@@ -303,10 +303,10 @@ public final class DoGachaInRollShopScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      kEACGMLKBDK = 0;
+      cLAPDDHKGKK = 0;
       retcode = 0;
-      pGPHIPBCGAP = 0;
       rollShopId = 0;
-      bHPEBOKFCDB = 0;
       reward.clear();
       return this;
     }
@@ -332,33 +332,33 @@ public final class DoGachaInRollShopScRspOuterClass {
       }
       DoGachaInRollShopScRsp other = (DoGachaInRollShopScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasKEACGMLKBDK() || kEACGMLKBDK == other.kEACGMLKBDK)
+        && (!hasCLAPDDHKGKK() || cLAPDDHKGKK == other.cLAPDDHKGKK)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasPGPHIPBCGAP() || pGPHIPBCGAP == other.pGPHIPBCGAP)
         && (!hasRollShopId() || rollShopId == other.rollShopId)
-        && (!hasBHPEBOKFCDB() || bHPEBOKFCDB == other.bHPEBOKFCDB)
         && (!hasReward() || reward.equals(other.reward));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(pGPHIPBCGAP);
+        output.writeRawByte((byte) 32);
+        output.writeUInt32NoTag(cLAPDDHKGKK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(rollShopId);
+        output.writeRawByte((byte) 72);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(bHPEBOKFCDB);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(rollShopId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(reward);
       }
     }
@@ -367,16 +367,16 @@ public final class DoGachaInRollShopScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pGPHIPBCGAP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(cLAPDDHKGKK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rollShopId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bHPEBOKFCDB);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rollShopId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(reward);
@@ -391,43 +391,43 @@ public final class DoGachaInRollShopScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // retcode
-            retcode = input.readUInt32();
+          case 8: {
+            // kEACGMLKBDK
+            kEACGMLKBDK = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 32) {
               break;
             }
           }
-          case 48: {
-            // pGPHIPBCGAP
-            pGPHIPBCGAP = input.readUInt32();
+          case 32: {
+            // cLAPDDHKGKK
+            cLAPDDHKGKK = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 72) {
               break;
             }
           }
-          case 56: {
-            // rollShopId
-            rollShopId = input.readUInt32();
+          case 72: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 104) {
               break;
             }
           }
-          case 112: {
-            // bHPEBOKFCDB
-            bHPEBOKFCDB = input.readUInt32();
+          case 104: {
+            // rollShopId
+            rollShopId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 122) {
               break;
             }
           }
-          case 90: {
+          case 122: {
             // reward
             input.readMessage(reward);
             bitField0_ |= 0x00000010;
@@ -454,16 +454,16 @@ public final class DoGachaInRollShopScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.kEACGMLKBDK, kEACGMLKBDK);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.pGPHIPBCGAP, pGPHIPBCGAP);
+        output.writeUInt32(FieldNames.cLAPDDHKGKK, cLAPDDHKGKK);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.rollShopId, rollShopId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.bHPEBOKFCDB, bHPEBOKFCDB);
+        output.writeUInt32(FieldNames.rollShopId, rollShopId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeMessage(FieldNames.reward, reward);
@@ -478,10 +478,10 @@ public final class DoGachaInRollShopScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 2142008008: {
+            if (input.isAtField(FieldNames.kEACGMLKBDK)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                kEACGMLKBDK = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -489,11 +489,22 @@ public final class DoGachaInRollShopScRspOuterClass {
             }
             break;
           }
-          case 1987688703: {
-            if (input.isAtField(FieldNames.pGPHIPBCGAP)) {
+          case 514957868: {
+            if (input.isAtField(FieldNames.cLAPDDHKGKK)) {
               if (!input.trySkipNullValue()) {
-                pGPHIPBCGAP = input.readUInt32();
+                cLAPDDHKGKK = input.readUInt32();
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
+              if (!input.trySkipNullValue()) {
+                retcode = input.readUInt32();
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -505,17 +516,6 @@ public final class DoGachaInRollShopScRspOuterClass {
             if (input.isAtField(FieldNames.rollShopId)) {
               if (!input.trySkipNullValue()) {
                 rollShopId = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -1692563586: {
-            if (input.isAtField(FieldNames.bHPEBOKFCDB)) {
-              if (!input.trySkipNullValue()) {
-                bHPEBOKFCDB = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -587,13 +587,13 @@ public final class DoGachaInRollShopScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName kEACGMLKBDK = FieldName.forField("KEACGMLKBDK");
+
+      static final FieldName cLAPDDHKGKK = FieldName.forField("CLAPDDHKGKK");
+
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName pGPHIPBCGAP = FieldName.forField("PGPHIPBCGAP");
-
       static final FieldName rollShopId = FieldName.forField("rollShopId", "roll_shop_id");
-
-      static final FieldName bHPEBOKFCDB = FieldName.forField("BHPEBOKFCDB");
 
       static final FieldName reward = FieldName.forField("reward");
     }

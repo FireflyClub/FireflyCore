@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ClientDownloadData.proto";
+
+message PlayerHeartBeatScRsp {
+	uint64 server_time_ms = 4;
+	uint32 retcode = 12;
+	ClientDownloadData download_data = 7;
+	uint64 client_time_ms = 1;
+}

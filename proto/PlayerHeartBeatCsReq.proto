@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ClientUploadData.proto";
+
+message PlayerHeartBeatCsReq {
+	uint64 client_time_ms = 6;
+	uint32 CANDPJMDEAD = 1;
+	ClientUploadData upload_data = 11;
+}

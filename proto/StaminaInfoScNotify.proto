@@ -8,5 +8,5 @@ message StaminaInfoScNotify {
 	uint32 stamina = 15;
 	uint32 reserve_stamina = 8;
 
-    int64 next_recover_time = 6; //?
+    int64 next_recover_time = 6;
 }

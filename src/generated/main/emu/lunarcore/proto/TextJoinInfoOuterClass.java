@@ -38,12 +38,11 @@ public final class TextJoinInfoOuterClass {
     private int textItemConfigId;
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
+     * <code>optional uint32 PPPJDALAKIG = 12;</code>
+     */
+    private int pPPJDALAKIG;
+
+    /**
      * <code>optional string DLCKGEKDBON = 10;</code>
      */
     private final Utf8String dLCKGEKDBON = Utf8String.newEmptyInstance();
@@ -170,42 +169,61 @@ public final class TextJoinInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
-     * <code>optional string DLCKGEKDBON = 10;</code>
-     * @return whether the dLCKGEKDBON field is set
+     * <code>optional uint32 PPPJDALAKIG = 12;</code>
+     * @return whether the pPPJDALAKIG field is set
      */
-    public boolean hasDLCKGEKDBON() {
+    public boolean hasPPPJDALAKIG() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
+     * <code>optional uint32 PPPJDALAKIG = 12;</code>
+     * @return this
+     */
+    public TextJoinInfo clearPPPJDALAKIG() {
+      bitField0_ &= ~0x00000004;
+      pPPJDALAKIG = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 PPPJDALAKIG = 12;</code>
+     * @return the pPPJDALAKIG
+     */
+    public int getPPPJDALAKIG() {
+      return pPPJDALAKIG;
+    }
+
+    /**
+     * <code>optional uint32 PPPJDALAKIG = 12;</code>
+     * @param value the pPPJDALAKIG to set
+     * @return this
+     */
+    public TextJoinInfo setPPPJDALAKIG(final int value) {
+      bitField0_ |= 0x00000004;
+      pPPJDALAKIG = value;
+      return this;
+    }
+
+    /**
+     * <code>optional string DLCKGEKDBON = 10;</code>
+     * @return whether the dLCKGEKDBON field is set
+     */
+    public boolean hasDLCKGEKDBON() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @return this
      */
     public TextJoinInfo clearDLCKGEKDBON() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       dLCKGEKDBON.clear();
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @return the dLCKGEKDBON
      */
@@ -214,12 +232,6 @@ public final class TextJoinInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @return internal {@code Utf8String} representation of dLCKGEKDBON for reading
      */
@@ -228,50 +240,32 @@ public final class TextJoinInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @return internal {@code Utf8String} representation of dLCKGEKDBON for modifications
      */
     public Utf8String getMutableDLCKGEKDBONBytes() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       return this.dLCKGEKDBON;
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @param value the dLCKGEKDBON to set
      * @return this
      */
     public TextJoinInfo setDLCKGEKDBON(final CharSequence value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       dLCKGEKDBON.copyFrom(value);
       return this;
     }
 
     /**
-     * <pre>
-     * uint32 CDCBKNOGNIH = 2;
-     * uint32 OCIJJOLCNBE = 11;
-     * uint32 PPPJDALAKIG = 12;
-     * </pre>
-     *
      * <code>optional string DLCKGEKDBON = 10;</code>
      * @param value the dLCKGEKDBON to set
      * @return this
      */
     public TextJoinInfo setDLCKGEKDBON(final Utf8String value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       dLCKGEKDBON.copyFrom(value);
       return this;
     }
@@ -281,7 +275,7 @@ public final class TextJoinInfoOuterClass {
      * @return whether the aINAOENMOME field is set
      */
     public boolean hasAINAOENMOME() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
@@ -289,7 +283,7 @@ public final class TextJoinInfoOuterClass {
      * @return this
      */
     public TextJoinInfo clearAINAOENMOME() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000010;
       aINAOENMOME.clear();
       return this;
     }
@@ -315,7 +309,7 @@ public final class TextJoinInfoOuterClass {
      * @return internal {@code Utf8String} representation of aINAOENMOME for modifications
      */
     public Utf8String getMutableAINAOENMOMEBytes() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       return this.aINAOENMOME;
     }
 
@@ -325,7 +319,7 @@ public final class TextJoinInfoOuterClass {
      * @return this
      */
     public TextJoinInfo setAINAOENMOME(final CharSequence value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       aINAOENMOME.copyFrom(value);
       return this;
     }
@@ -336,7 +330,7 @@ public final class TextJoinInfoOuterClass {
      * @return this
      */
     public TextJoinInfo setAINAOENMOME(final Utf8String value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000010;
       aINAOENMOME.copyFrom(value);
       return this;
     }
@@ -348,6 +342,7 @@ public final class TextJoinInfoOuterClass {
         bitField0_ = other.bitField0_;
         textItemId = other.textItemId;
         textItemConfigId = other.textItemConfigId;
+        pPPJDALAKIG = other.pPPJDALAKIG;
         dLCKGEKDBON.copyFrom(other.dLCKGEKDBON);
         aINAOENMOME.copyFrom(other.aINAOENMOME);
       }
@@ -365,6 +360,9 @@ public final class TextJoinInfoOuterClass {
       }
       if (other.hasTextItemConfigId()) {
         setTextItemConfigId(other.textItemConfigId);
+      }
+      if (other.hasPPPJDALAKIG()) {
+        setPPPJDALAKIG(other.pPPJDALAKIG);
       }
       if (other.hasDLCKGEKDBON()) {
         getMutableDLCKGEKDBONBytes().copyFrom(other.dLCKGEKDBON);
@@ -384,6 +382,7 @@ public final class TextJoinInfoOuterClass {
       bitField0_ = 0;
       textItemId = 0;
       textItemConfigId = 0;
+      pPPJDALAKIG = 0;
       dLCKGEKDBON.clear();
       aINAOENMOME.clear();
       return this;
@@ -413,6 +412,7 @@ public final class TextJoinInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasTextItemId() || textItemId == other.textItemId)
         && (!hasTextItemConfigId() || textItemConfigId == other.textItemConfigId)
+        && (!hasPPPJDALAKIG() || pPPJDALAKIG == other.pPPJDALAKIG)
         && (!hasDLCKGEKDBON() || dLCKGEKDBON.equals(other.dLCKGEKDBON))
         && (!hasAINAOENMOME() || aINAOENMOME.equals(other.aINAOENMOME));
     }
@@ -428,10 +428,14 @@ public final class TextJoinInfoOuterClass {
         output.writeUInt32NoTag(textItemConfigId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 96);
+        output.writeUInt32NoTag(pPPJDALAKIG);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 82);
         output.writeStringNoTag(dLCKGEKDBON);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 114);
         output.writeStringNoTag(aINAOENMOME);
       }
@@ -447,9 +451,12 @@ public final class TextJoinInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(textItemConfigId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(dLCKGEKDBON);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(pPPJDALAKIG);
       }
       if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeStringSizeNoTag(dLCKGEKDBON);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeStringSizeNoTag(aINAOENMOME);
       }
       return size;
@@ -476,6 +483,15 @@ public final class TextJoinInfoOuterClass {
             textItemConfigId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
+            if (tag != 96) {
+              break;
+            }
+          }
+          case 96: {
+            // pPPJDALAKIG
+            pPPJDALAKIG = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
             if (tag != 82) {
               break;
             }
@@ -483,7 +499,7 @@ public final class TextJoinInfoOuterClass {
           case 82: {
             // dLCKGEKDBON
             input.readString(dLCKGEKDBON);
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 114) {
               break;
@@ -492,7 +508,7 @@ public final class TextJoinInfoOuterClass {
           case 114: {
             // aINAOENMOME
             input.readString(aINAOENMOME);
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -522,9 +538,12 @@ public final class TextJoinInfoOuterClass {
         output.writeUInt32(FieldNames.textItemConfigId, textItemConfigId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeString(FieldNames.dLCKGEKDBON, dLCKGEKDBON);
+        output.writeUInt32(FieldNames.pPPJDALAKIG, pPPJDALAKIG);
       }
       if ((bitField0_ & 0x00000008) != 0) {
+        output.writeString(FieldNames.dLCKGEKDBON, dLCKGEKDBON);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
         output.writeString(FieldNames.aINAOENMOME, aINAOENMOME);
       }
       output.endObject();
@@ -561,11 +580,22 @@ public final class TextJoinInfoOuterClass {
             }
             break;
           }
+          case -1153088131: {
+            if (input.isAtField(FieldNames.pPPJDALAKIG)) {
+              if (!input.trySkipNullValue()) {
+                pPPJDALAKIG = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1967645338: {
             if (input.isAtField(FieldNames.dLCKGEKDBON)) {
               if (!input.trySkipNullValue()) {
                 input.readString(dLCKGEKDBON);
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -576,7 +606,7 @@ public final class TextJoinInfoOuterClass {
             if (input.isAtField(FieldNames.aINAOENMOME)) {
               if (!input.trySkipNullValue()) {
                 input.readString(aINAOENMOME);
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -638,6 +668,8 @@ public final class TextJoinInfoOuterClass {
       static final FieldName textItemId = FieldName.forField("textItemId", "text_item_id");
 
       static final FieldName textItemConfigId = FieldName.forField("textItemConfigId", "text_item_config_id");
+
+      static final FieldName pPPJDALAKIG = FieldName.forField("PPPJDALAKIG");
 
       static final FieldName dLCKGEKDBON = FieldName.forField("DLCKGEKDBON");
 

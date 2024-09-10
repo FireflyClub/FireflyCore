@@ -7,9 +7,8 @@ import "ExtraLineupType.proto";
 message SwapLineupCsReq {
 	uint32 index = 11;
 	uint32 plane_id = 15;
+	uint32 src_slot = 14; //?
 	ExtraLineupType extra_lineup_type = 9;
 	bool is_virtual = 3;
-
-	uint32 src_slot = 14; //?
 	uint32 dst_slot = 4; //?
 }

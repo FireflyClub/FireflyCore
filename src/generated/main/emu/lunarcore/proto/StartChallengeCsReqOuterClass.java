@@ -30,19 +30,11 @@ public final class StartChallengeCsReqOuterClass {
     private final StartChallengeInfoOuterClass.StartChallengeInfo extInfo = StartChallengeInfoOuterClass.StartChallengeInfo.newInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      */
     private final RepeatedInt lineup1 = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      */
     private final RepeatedInt lineup2 = RepeatedInt.newEmptyInstance();
@@ -153,10 +145,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      * @return whether the lineup1 field is set
      */
@@ -165,10 +153,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      * @return this
      */
@@ -179,10 +163,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -197,10 +177,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -215,10 +191,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      * @param value the lineup1 to add
      * @return this
@@ -230,10 +202,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 9;</code>
      * @param values the lineup1 to add
      * @return this
@@ -245,10 +213,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      * @return whether the lineup2 field is set
      */
@@ -257,10 +221,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      * @return this
      */
@@ -271,10 +231,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -289,10 +245,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -307,10 +259,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      * @param value the lineup2 to add
      * @return this
@@ -322,10 +270,6 @@ public final class StartChallengeCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 12;</code>
      * @param values the lineup2 to add
      * @return this

@@ -4,10 +4,9 @@ option java_package = "emu.lunarcore.proto";
 
 message GetFriendLoginInfoScRsp {
 	uint32 retcode = 2;
-	//repeated uint32 ADBCKDJMODH = 11;
+	repeated uint32 friend_uid_list = 11;
 	bool AIHPMJLCBCH = 12;
 	bool EAPDPOACPMO = 9;
 	//repeated uint32 JNOHFKLKNHO = 8;
 
-	repeated uint32 friend_uid_list = 11; //?
 }

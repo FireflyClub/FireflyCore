@@ -37,11 +37,6 @@ public final class GroupStateInfoOuterClass {
     private int groupState;
 
     /**
-     * <pre>
-     * uint32 BKGMCGJIHGO = 1;
-     * uint32 PLDKBCPIPIJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 entry_id = 14;</code>
      */
     private int entryId;
@@ -168,11 +163,6 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 BKGMCGJIHGO = 1;
-     * uint32 PLDKBCPIPIJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 entry_id = 14;</code>
      * @return whether the entryId field is set
      */
@@ -181,11 +171,6 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 BKGMCGJIHGO = 1;
-     * uint32 PLDKBCPIPIJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 entry_id = 14;</code>
      * @return this
      */
@@ -196,11 +181,6 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 BKGMCGJIHGO = 1;
-     * uint32 PLDKBCPIPIJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 entry_id = 14;</code>
      * @return the entryId
      */
@@ -209,11 +189,6 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * uint32 BKGMCGJIHGO = 1;
-     * uint32 PLDKBCPIPIJ = 11;
-     * </pre>
-     *
      * <code>optional uint32 entry_id = 14;</code>
      * @param value the entryId to set
      * @return this

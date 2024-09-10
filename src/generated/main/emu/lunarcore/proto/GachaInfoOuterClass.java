@@ -56,29 +56,16 @@ public final class GachaInfoOuterClass {
     private final Utf8String detailUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      */
     private final Utf8String historyUrl = Utf8String.newEmptyInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      */
     private final RepeatedInt upInfo = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      */
     private final RepeatedInt featured = RepeatedInt.newEmptyInstance();
@@ -401,11 +388,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @return whether the historyUrl field is set
      */
@@ -414,11 +396,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @return this
      */
@@ -429,11 +406,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @return the historyUrl
      */
@@ -442,11 +414,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @return internal {@code Utf8String} representation of historyUrl for reading
      */
@@ -455,11 +422,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @return internal {@code Utf8String} representation of historyUrl for modifications
      */
@@ -469,11 +431,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @param value the historyUrl to set
      * @return this
@@ -485,11 +442,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 OIOBBBDKPFE = 6;
-     * repeated uint32 IIHHOHFLKMO = 8;
-     * </pre>
-     *
      * <code>optional string history_url = 7;</code>
      * @param value the historyUrl to set
      * @return this
@@ -501,10 +453,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      * @return whether the upInfo field is set
      */
@@ -513,10 +461,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      * @return this
      */
@@ -527,10 +471,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -545,10 +485,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -563,10 +499,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      * @param value the upInfo to add
      * @return this
@@ -578,10 +510,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 up_info = 6;</code>
      * @param values the upInfo to add
      * @return this
@@ -593,10 +521,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      * @return whether the featured field is set
      */
@@ -605,10 +529,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      * @return this
      */
@@ -619,10 +539,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -637,10 +553,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -655,10 +567,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      * @param value the featured to add
      * @return this
@@ -670,10 +578,6 @@ public final class GachaInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 featured = 8;</code>
      * @param values the featured to add
      * @return this

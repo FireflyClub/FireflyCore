@@ -3,12 +3,10 @@ syntax = "proto3";
 option java_package = "emu.lunarcore.proto";
 
 message TextJoinInfo {
-	//uint32 CDCBKNOGNIH = 2;
-	//uint32 OCIJJOLCNBE = 11;
-	//uint32 PPPJDALAKIG = 12;
+	uint32 text_item_id = 2; //?
+	uint32 text_item_config_id = 11; //?
+	uint32 PPPJDALAKIG = 12;
 	string DLCKGEKDBON = 10;
 	string AINAOENMOME = 14;
 
-	uint32 text_item_id = 2; //?
-	uint32 text_item_config_id = 11; //?
 }

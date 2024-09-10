@@ -20,7 +20,7 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 127
+     *  All 127
      * </pre>
      *
      * <code>optional uint64 taken_premium_extended_reward = 1;</code>
@@ -39,7 +39,8 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ?
+     *  All 0xFFFFFFFFFFFFFFFFL
      * </pre>
      *
      * <code>optional uint64 taken_free_reward = 12;</code>
@@ -57,10 +58,6 @@ public final class BattlePassInfoNotifyOuterClass {
     private long takenPremiumReward2;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_bp_id = 3;</code>
      */
     private int curBpId;
@@ -71,10 +68,6 @@ public final class BattlePassInfoNotifyOuterClass {
     private int level;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      */
     private int curWeekAddExpSum;
@@ -101,7 +94,7 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 127
+     *  All 127
      * </pre>
      *
      * <code>optional uint64 taken_premium_extended_reward = 1;</code>
@@ -113,7 +106,7 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 127
+     *  All 127
      * </pre>
      *
      * <code>optional uint64 taken_premium_extended_reward = 1;</code>
@@ -127,7 +120,7 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 127
+     *  All 127
      * </pre>
      *
      * <code>optional uint64 taken_premium_extended_reward = 1;</code>
@@ -139,7 +132,7 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 127
+     *  All 127
      * </pre>
      *
      * <code>optional uint64 taken_premium_extended_reward = 1;</code>
@@ -228,7 +221,8 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ?
+     *  All 0xFFFFFFFFFFFFFFFFL
      * </pre>
      *
      * <code>optional uint64 taken_free_reward = 12;</code>
@@ -240,7 +234,8 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ?
+     *  All 0xFFFFFFFFFFFFFFFFL
      * </pre>
      *
      * <code>optional uint64 taken_free_reward = 12;</code>
@@ -254,7 +249,8 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ?
+     *  All 0xFFFFFFFFFFFFFFFFL
      * </pre>
      *
      * <code>optional uint64 taken_free_reward = 12;</code>
@@ -266,7 +262,8 @@ public final class BattlePassInfoNotifyOuterClass {
 
     /**
      * <pre>
-     * ? All 0xFFFFFFFFFFFFFFFFL
+     * ?
+     *  All 0xFFFFFFFFFFFFFFFFL
      * </pre>
      *
      * <code>optional uint64 taken_free_reward = 12;</code>
@@ -354,10 +351,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_bp_id = 3;</code>
      * @return whether the curBpId field is set
      */
@@ -366,10 +359,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_bp_id = 3;</code>
      * @return this
      */
@@ -380,10 +369,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_bp_id = 3;</code>
      * @return the curBpId
      */
@@ -392,10 +377,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_bp_id = 3;</code>
      * @param value the curBpId to set
      * @return this
@@ -444,10 +425,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return whether the curWeekAddExpSum field is set
      */
@@ -456,10 +433,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return this
      */
@@ -470,10 +443,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @return the curWeekAddExpSum
      */
@@ -482,10 +451,6 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 cur_week_add_exp_sum = 9;</code>
      * @param value the curWeekAddExpSum to set
      * @return this

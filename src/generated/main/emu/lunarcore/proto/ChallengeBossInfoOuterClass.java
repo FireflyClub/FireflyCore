@@ -26,37 +26,21 @@ public final class ChallengeBossInfoOuterClass {
     private boolean cPNMHNAFDJM;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      */
     private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo secondNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      */
     private final ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo firstNode = ChallengeBossStageInfoOuterClass.ChallengeBossStageInfo.newInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      */
     private final RepeatedInt lineup1 = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      */
     private final RepeatedInt lineup2 = RepeatedInt.newEmptyInstance();
@@ -119,10 +103,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      * @return whether the secondNode field is set
      */
@@ -131,10 +111,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      * @return this
      */
@@ -145,10 +121,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -163,10 +135,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -181,10 +149,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo second_node = 8;</code>
      * @param value the secondNode to set
      * @return this
@@ -197,10 +161,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      * @return whether the firstNode field is set
      */
@@ -209,10 +169,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      * @return this
      */
@@ -223,10 +179,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -241,10 +193,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -259,10 +207,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional .ChallengeBossStageInfo first_node = 14;</code>
      * @param value the firstNode to set
      * @return this
@@ -275,10 +219,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      * @return whether the lineup1 field is set
      */
@@ -287,10 +227,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      * @return this
      */
@@ -301,10 +237,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -319,10 +251,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -337,10 +265,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      * @param value the lineup1 to add
      * @return this
@@ -352,10 +276,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup1 = 5;</code>
      * @param values the lineup1 to add
      * @return this
@@ -367,10 +287,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      * @return whether the lineup2 field is set
      */
@@ -379,10 +295,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      * @return this
      */
@@ -393,10 +305,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -411,10 +319,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -429,10 +333,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      * @param value the lineup2 to add
      * @return this
@@ -444,10 +344,6 @@ public final class ChallengeBossInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 lineup2 = 13;</code>
      * @param values the lineup2 to add
      * @return this

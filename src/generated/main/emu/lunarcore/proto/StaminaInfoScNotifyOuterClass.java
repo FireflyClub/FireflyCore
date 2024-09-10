@@ -19,10 +19,6 @@ public final class StaminaInfoScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 next_recover_time = 6;</code>
      */
     private long nextRecoverTime;
@@ -53,10 +49,6 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 next_recover_time = 6;</code>
      * @return whether the nextRecoverTime field is set
      */
@@ -65,10 +57,6 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 next_recover_time = 6;</code>
      * @return this
      */
@@ -79,10 +67,6 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 next_recover_time = 6;</code>
      * @return the nextRecoverTime
      */
@@ -91,10 +75,6 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional int64 next_recover_time = 6;</code>
      * @param value the nextRecoverTime to set
      * @return this

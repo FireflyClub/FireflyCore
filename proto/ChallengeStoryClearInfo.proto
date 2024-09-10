@@ -8,7 +8,7 @@ message ChallengeStoryClearInfo {
 	repeated ChallengeLineup lineup_list = 4;
 	uint32 highest_difficulty = 7;
 	uint32 score = 9;
-	uint32 buff_two = 13; //?
-	uint32 buff_one = 1; //?
+	uint32 buff_one = 13;
+	uint32 buff_two = 1;
 	uint32 level = 15;
 }

@@ -5,19 +5,20 @@ option java_package = "emu.lunarcore.proto";
 import "BpTierType.proto";
 
 message BattlePassInfoNotify {
-    //? All 0xFFFFFFFFFFFFFFFFL
-    uint64 taken_free_reward = 12;
-    uint64 taken_premium_reward1 = 10;
-    uint64 taken_premium_reward2 = 14;
-    uint64 taken_premium_optional_reward = 13;
-    //? All 127
-    uint64 taken_premium_extended_reward = 1;
-    uint64 taken_free_extended_reward = 8;
-
     BpTierType bp_tier_type = 15;
     uint32 exp = 11;
     uint32 level = 6;
 
-    uint32 cur_bp_id = 3; //?
-    uint32 cur_week_add_exp_sum = 9; //?
+    //?
+    // All 0xFFFFFFFFFFFFFFFFL
+    uint64 taken_free_reward = 12;
+    uint64 taken_premium_reward1 = 10;
+    uint64 taken_premium_reward2 = 14;
+    uint64 taken_premium_optional_reward = 13;
+    // All 127
+    uint64 taken_premium_extended_reward = 1;
+    uint64 taken_free_extended_reward = 8;
+
+    uint32 cur_bp_id = 3; 
+    uint32 cur_week_add_exp_sum = 9; 
 }

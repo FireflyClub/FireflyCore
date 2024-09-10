@@ -11,11 +11,9 @@ message GachaInfo {
 	GachaCeiling gacha_ceiling = 9;
 	uint32 LHMBNMIOKHB = 12;
 	uint32 gacha_id = 13;
-	//repeated uint32 OIOBBBDKPFE = 6;
-	//repeated uint32 IIHHOHFLKMO = 8;
+	repeated uint32 up_info = 6;
+	repeated uint32 featured = 8;
 	string history_url = 7;
 	string detail_url = 4;
 
-	repeated uint32 up_info = 6; //?
-	repeated uint32 featured = 8; //?
 }

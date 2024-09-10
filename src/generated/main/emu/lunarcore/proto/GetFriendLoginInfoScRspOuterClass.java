@@ -34,19 +34,11 @@ public final class GetFriendLoginInfoScRspOuterClass {
     private boolean eAPDPOACPMO;
 
     /**
-     * <pre>
-     * repeated uint32 ADBCKDJMODH = 11;
-     * </pre>
-     *
      * <code>optional bool AIHPMJLCBCH = 12;</code>
      */
     private boolean aIHPMJLCBCH;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      */
     private final RepeatedInt friendUidList = RepeatedInt.newEmptyInstance();
@@ -152,10 +144,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 ADBCKDJMODH = 11;
-     * </pre>
-     *
      * <code>optional bool AIHPMJLCBCH = 12;</code>
      * @return whether the aIHPMJLCBCH field is set
      */
@@ -164,10 +152,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 ADBCKDJMODH = 11;
-     * </pre>
-     *
      * <code>optional bool AIHPMJLCBCH = 12;</code>
      * @return this
      */
@@ -178,10 +162,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 ADBCKDJMODH = 11;
-     * </pre>
-     *
      * <code>optional bool AIHPMJLCBCH = 12;</code>
      * @return the aIHPMJLCBCH
      */
@@ -190,10 +170,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * repeated uint32 ADBCKDJMODH = 11;
-     * </pre>
-     *
      * <code>optional bool AIHPMJLCBCH = 12;</code>
      * @param value the aIHPMJLCBCH to set
      * @return this
@@ -205,10 +181,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      * @return whether the friendUidList field is set
      */
@@ -217,10 +189,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      * @return this
      */
@@ -231,10 +199,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -249,10 +213,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -267,10 +227,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      * @param value the friendUidList to add
      * @return this
@@ -282,10 +238,6 @@ public final class GetFriendLoginInfoScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>repeated uint32 friend_uid_list = 11;</code>
      * @param values the friendUidList to add
      * @return this

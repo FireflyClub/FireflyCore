@@ -25,28 +25,16 @@ public final class RogueMiracleDataInfoOuterClass {
     private int miracleId;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 MMFONFFPNJM = 8;</code>
      */
     private int mMFONFFPNJM;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 NKBEHFHLPEF = 11;</code>
      */
     private int nKBEHFHLPEF;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 DCLABPANBJG = 12;</code>
      */
     private int dCLABPANBJG;
@@ -104,10 +92,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 MMFONFFPNJM = 8;</code>
      * @return whether the mMFONFFPNJM field is set
      */
@@ -116,10 +100,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 MMFONFFPNJM = 8;</code>
      * @return this
      */
@@ -130,10 +110,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 MMFONFFPNJM = 8;</code>
      * @return the mMFONFFPNJM
      */
@@ -142,10 +118,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 MMFONFFPNJM = 8;</code>
      * @param value the mMFONFFPNJM to set
      * @return this
@@ -157,10 +129,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 NKBEHFHLPEF = 11;</code>
      * @return whether the nKBEHFHLPEF field is set
      */
@@ -169,10 +137,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 NKBEHFHLPEF = 11;</code>
      * @return this
      */
@@ -183,10 +147,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 NKBEHFHLPEF = 11;</code>
      * @return the nKBEHFHLPEF
      */
@@ -195,10 +155,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 NKBEHFHLPEF = 11;</code>
      * @param value the nKBEHFHLPEF to set
      * @return this
@@ -210,10 +166,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 DCLABPANBJG = 12;</code>
      * @return whether the dCLABPANBJG field is set
      */
@@ -222,10 +174,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 DCLABPANBJG = 12;</code>
      * @return this
      */
@@ -236,10 +184,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 DCLABPANBJG = 12;</code>
      * @return the dCLABPANBJG
      */
@@ -248,10 +192,6 @@ public final class RogueMiracleDataInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 DCLABPANBJG = 12;</code>
      * @param value the dCLABPANBJG to set
      * @return this

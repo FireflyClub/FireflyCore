@@ -19,19 +19,11 @@ public final class NpcRogueInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 dialogue_group_id = 3;</code>
      */
     private int dialogueGroupId;
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 rogue_npc_id = 9;</code>
      */
     private int rogueNpcId;
@@ -52,10 +44,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 dialogue_group_id = 3;</code>
      * @return whether the dialogueGroupId field is set
      */
@@ -64,10 +52,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 dialogue_group_id = 3;</code>
      * @return this
      */
@@ -78,10 +62,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 dialogue_group_id = 3;</code>
      * @return the dialogueGroupId
      */
@@ -90,10 +70,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 dialogue_group_id = 3;</code>
      * @param value the dialogueGroupId to set
      * @return this
@@ -105,10 +81,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 rogue_npc_id = 9;</code>
      * @return whether the rogueNpcId field is set
      */
@@ -117,10 +89,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 rogue_npc_id = 9;</code>
      * @return this
      */
@@ -131,10 +99,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 rogue_npc_id = 9;</code>
      * @return the rogueNpcId
      */
@@ -143,10 +107,6 @@ public final class NpcRogueInfoOuterClass {
     }
 
     /**
-     * <pre>
-     * ?
-     * </pre>
-     *
      * <code>optional uint32 rogue_npc_id = 9;</code>
      * @param value the rogueNpcId to set
      * @return this

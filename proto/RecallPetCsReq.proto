@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message RecallPetCsReq {
+	uint32 summoned_pet_id = 9;
+}

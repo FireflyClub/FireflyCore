@@ -10,42 +10,41 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.RepeatedInt;
 
-public final class GetPetDataScRspOuterClass {
+public final class RecallPetScRspOuterClass {
   /**
-   * Protobuf type {@code GetPetDataScRsp}
+   * Protobuf type {@code RecallPetScRsp}
    */
-  public static final class GetPetDataScRsp extends ProtoMessage<GetPetDataScRsp> implements Cloneable {
+  public static final class RecallPetScRsp extends ProtoMessage<RecallPetScRsp> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 2;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 cur_pet_id = 10;</code>
+     * <code>optional uint32 cur_pet_id = 6;</code>
      */
     private int curPetId;
 
     /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
+     * <code>optional uint32 new_pet_id = 8;</code>
      */
-    private final RepeatedInt petIdList = RepeatedInt.newEmptyInstance();
+    private int newPetId;
 
-    private GetPetDataScRsp() {
+    private RecallPetScRsp() {
     }
 
     /**
-     * @return a new empty instance of {@code GetPetDataScRsp}
+     * @return a new empty instance of {@code RecallPetScRsp}
      */
-    public static GetPetDataScRsp newInstance() {
-      return new GetPetDataScRsp();
+    public static RecallPetScRsp newInstance() {
+      return new RecallPetScRsp();
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,17 +52,17 @@ public final class GetPetDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return this
      */
-    public GetPetDataScRsp clearRetcode() {
+    public RecallPetScRsp clearRetcode() {
       bitField0_ &= ~0x00000001;
       retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,18 +70,18 @@ public final class GetPetDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @param value the retcode to set
      * @return this
      */
-    public GetPetDataScRsp setRetcode(final int value) {
+    public RecallPetScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000001;
       retcode = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 cur_pet_id = 10;</code>
+     * <code>optional uint32 cur_pet_id = 6;</code>
      * @return whether the curPetId field is set
      */
     public boolean hasCurPetId() {
@@ -90,17 +89,17 @@ public final class GetPetDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_pet_id = 10;</code>
+     * <code>optional uint32 cur_pet_id = 6;</code>
      * @return this
      */
-    public GetPetDataScRsp clearCurPetId() {
+    public RecallPetScRsp clearCurPetId() {
       bitField0_ &= ~0x00000002;
       curPetId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 cur_pet_id = 10;</code>
+     * <code>optional uint32 cur_pet_id = 6;</code>
      * @return the curPetId
      */
     public int getCurPetId() {
@@ -108,98 +107,67 @@ public final class GetPetDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_pet_id = 10;</code>
+     * <code>optional uint32 cur_pet_id = 6;</code>
      * @param value the curPetId to set
      * @return this
      */
-    public GetPetDataScRsp setCurPetId(final int value) {
+    public RecallPetScRsp setCurPetId(final int value) {
       bitField0_ |= 0x00000002;
       curPetId = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
-     * @return whether the petIdList field is set
+     * <code>optional uint32 new_pet_id = 8;</code>
+     * @return whether the newPetId field is set
      */
-    public boolean hasPetIdList() {
+    public boolean hasNewPetId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
+     * <code>optional uint32 new_pet_id = 8;</code>
      * @return this
      */
-    public GetPetDataScRsp clearPetIdList() {
+    public RecallPetScRsp clearNewPetId() {
       bitField0_ &= ~0x00000004;
-      petIdList.clear();
+      newPetId = 0;
       return this;
     }
 
     /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutablePetIdList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
+     * <code>optional uint32 new_pet_id = 8;</code>
+     * @return the newPetId
      */
-    public RepeatedInt getPetIdList() {
-      return petIdList;
+    public int getNewPetId() {
+      return newPetId;
     }
 
     /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutablePetIdList() {
-      bitField0_ |= 0x00000004;
-      return petIdList;
-    }
-
-    /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
-     * @param value the petIdList to add
+     * <code>optional uint32 new_pet_id = 8;</code>
+     * @param value the newPetId to set
      * @return this
      */
-    public GetPetDataScRsp addPetIdList(final int value) {
+    public RecallPetScRsp setNewPetId(final int value) {
       bitField0_ |= 0x00000004;
-      petIdList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 pet_id_list = 6;</code>
-     * @param values the petIdList to add
-     * @return this
-     */
-    public GetPetDataScRsp addAllPetIdList(final int... values) {
-      bitField0_ |= 0x00000004;
-      petIdList.addAll(values);
+      newPetId = value;
       return this;
     }
 
     @Override
-    public GetPetDataScRsp copyFrom(final GetPetDataScRsp other) {
+    public RecallPetScRsp copyFrom(final RecallPetScRsp other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
         curPetId = other.curPetId;
-        petIdList.copyFrom(other.petIdList);
+        newPetId = other.newPetId;
       }
       return this;
     }
 
     @Override
-    public GetPetDataScRsp mergeFrom(final GetPetDataScRsp other) {
+    public RecallPetScRsp mergeFrom(final RecallPetScRsp other) {
       if (other.isEmpty()) {
         return this;
       }
@@ -210,14 +178,14 @@ public final class GetPetDataScRspOuterClass {
       if (other.hasCurPetId()) {
         setCurPetId(other.curPetId);
       }
-      if (other.hasPetIdList()) {
-        getMutablePetIdList().addAll(other.petIdList);
+      if (other.hasNewPetId()) {
+        setNewPetId(other.newPetId);
       }
       return this;
     }
 
     @Override
-    public GetPetDataScRsp clear() {
+    public RecallPetScRsp clear() {
       if (isEmpty()) {
         return this;
       }
@@ -225,18 +193,17 @@ public final class GetPetDataScRspOuterClass {
       bitField0_ = 0;
       retcode = 0;
       curPetId = 0;
-      petIdList.clear();
+      newPetId = 0;
       return this;
     }
 
     @Override
-    public GetPetDataScRsp clearQuick() {
+    public RecallPetScRsp clearQuick() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
-      petIdList.clear();
       return this;
     }
 
@@ -245,31 +212,29 @@ public final class GetPetDataScRspOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof GetPetDataScRsp)) {
+      if (!(o instanceof RecallPetScRsp)) {
         return false;
       }
-      GetPetDataScRsp other = (GetPetDataScRsp) o;
+      RecallPetScRsp other = (RecallPetScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasCurPetId() || curPetId == other.curPetId)
-        && (!hasPetIdList() || petIdList.equals(other.petIdList));
+        && (!hasNewPetId() || newPetId == other.newPetId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(curPetId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < petIdList.length(); i++) {
-          output.writeRawByte((byte) 48);
-          output.writeUInt32NoTag(petIdList.array()[i]);
-        }
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(newPetId);
       }
     }
 
@@ -283,39 +248,39 @@ public final class GetPetDataScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(curPetId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * petIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(petIdList);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(newPetId);
       }
       return size;
     }
 
     @Override
     @SuppressWarnings("fallthrough")
-    public GetPetDataScRsp mergeFrom(final ProtoSource input) throws IOException {
+    public RecallPetScRsp mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 16: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 48) {
               break;
             }
           }
-          case 80: {
+          case 48: {
             // curPetId
             curPetId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 64) {
               break;
             }
           }
-          case 50: {
-            // petIdList [packed=true]
-            input.readPackedUInt32(petIdList, tag);
+          case 64: {
+            // newPetId
+            newPetId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 0) {
@@ -332,12 +297,6 @@ public final class GetPetDataScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
-            // petIdList [packed=false]
-            tag = input.readRepeatedUInt32(petIdList, tag);
-            bitField0_ |= 0x00000004;
-            break;
-          }
         }
       }
     }
@@ -352,13 +311,13 @@ public final class GetPetDataScRspOuterClass {
         output.writeUInt32(FieldNames.curPetId, curPetId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedUInt32(FieldNames.petIdList, petIdList);
+        output.writeUInt32(FieldNames.newPetId, newPetId);
       }
       output.endObject();
     }
 
     @Override
-    public GetPetDataScRsp mergeFrom(final JsonSource input) throws IOException {
+    public RecallPetScRsp mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
@@ -387,11 +346,11 @@ public final class GetPetDataScRspOuterClass {
             }
             break;
           }
-          case 1414608472:
-          case -1558569438: {
-            if (input.isAtField(FieldNames.petIdList)) {
+          case 1363040474:
+          case 646870970: {
+            if (input.isAtField(FieldNames.newPetId)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(petIdList);
+                newPetId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -410,8 +369,8 @@ public final class GetPetDataScRspOuterClass {
     }
 
     @Override
-    public GetPetDataScRsp clone() {
-      return new GetPetDataScRsp().copyFrom(this);
+    public RecallPetScRsp clone() {
+      return new RecallPetScRsp().copyFrom(this);
     }
 
     @Override
@@ -419,32 +378,32 @@ public final class GetPetDataScRspOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static GetPetDataScRsp parseFrom(final byte[] data) throws
+    public static RecallPetScRsp parseFrom(final byte[] data) throws
         InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new GetPetDataScRsp(), data).checkInitialized();
+      return ProtoMessage.mergeFrom(new RecallPetScRsp(), data).checkInitialized();
     }
 
-    public static GetPetDataScRsp parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new GetPetDataScRsp(), input).checkInitialized();
+    public static RecallPetScRsp parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new RecallPetScRsp(), input).checkInitialized();
     }
 
-    public static GetPetDataScRsp parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new GetPetDataScRsp(), input).checkInitialized();
+    public static RecallPetScRsp parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new RecallPetScRsp(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating GetPetDataScRsp messages
+     * @return factory for creating RecallPetScRsp messages
      */
-    public static MessageFactory<GetPetDataScRsp> getFactory() {
-      return GetPetDataScRspFactory.INSTANCE;
+    public static MessageFactory<RecallPetScRsp> getFactory() {
+      return RecallPetScRspFactory.INSTANCE;
     }
 
-    private enum GetPetDataScRspFactory implements MessageFactory<GetPetDataScRsp> {
+    private enum RecallPetScRspFactory implements MessageFactory<RecallPetScRsp> {
       INSTANCE;
 
       @Override
-      public GetPetDataScRsp create() {
-        return GetPetDataScRsp.newInstance();
+      public RecallPetScRsp create() {
+        return RecallPetScRsp.newInstance();
       }
     }
 
@@ -456,7 +415,7 @@ public final class GetPetDataScRspOuterClass {
 
       static final FieldName curPetId = FieldName.forField("curPetId", "cur_pet_id");
 
-      static final FieldName petIdList = FieldName.forField("petIdList", "pet_id_list");
+      static final FieldName newPetId = FieldName.forField("newPetId", "new_pet_id");
     }
   }
 }

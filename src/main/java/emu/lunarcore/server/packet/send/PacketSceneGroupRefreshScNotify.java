@@ -17,14 +17,12 @@ public class PacketSceneGroupRefreshScNotify extends BasePacket {
 
         var group = SceneGroupRefreshInfo.newInstance();
         
-        // TODO: Maybe properly handle the refresh type?
-        group.setGroupRefreshType(SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_LOADED);
-
         if (toAdd != null) {
             group.setGroupId(toAdd.getGroupId());
             group.addRefreshEntity(SceneEntityRefreshInfo.newInstance().setAddEntity(toAdd.toSceneEntityProto()));
         } else if (toRemove != null) {
             group.setGroupId(toRemove.getGroupId());
+            group.setGroupRefreshType(SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_UNLOAD);
             group.addRefreshEntity(SceneEntityRefreshInfo.newInstance().setDelEntity(toRemove.getEntityId()));
         }
 

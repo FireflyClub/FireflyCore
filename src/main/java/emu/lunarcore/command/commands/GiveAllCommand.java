@@ -20,7 +20,7 @@ import emu.lunarcore.game.player.Player;
         aliases = {"ga"},
         permission = {"support"},
         requireTargetOnline = true,
-        desc = "/giveall {materials | avatars | lightcones | relics | usables} lv(level). Gives the targeted player items."
+        desc = "/giveall {materials | avatars | lightcones | relics | usables | pets} lv(level). Gives the targeted player items."
 )
 public class GiveAllCommand implements CommandHandler {
 
@@ -44,9 +44,6 @@ public class GiveAllCommand implements CommandHandler {
 
                 // Credits
                 items.add(new GameItem(2, 100_000_000));
-
-                // Pet
-                items.add(new GameItem(251001, 1));
 
                 // Add to target's inventory
                 target.getInventory().addItems(items, true);
@@ -184,6 +181,20 @@ public class GiveAllCommand implements CommandHandler {
 
                 // Send message
                 args.sendMessage("Added all consumables to " + target.getName());
+            }
+            case "p", "pet", "pets" -> {
+                // Get pets
+                List<GameItem> items = GameData.getItemExcelMap().values()
+                        .stream()
+                        .filter(excel -> excel.getItemMainType() == ItemMainType.Pet)
+                        .map(excel -> new GameItem(excel, 1))
+                        .toList();
+
+                // Add to target's inventory
+                target.getInventory().addItems(items, true);
+
+                // Send message
+                args.sendMessage("Added all pets to " + target.getName());
             }
         }
     }

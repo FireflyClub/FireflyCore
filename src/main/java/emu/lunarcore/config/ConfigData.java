@@ -155,6 +155,7 @@ public class ConfigData {
         public boolean adminLoginSkip = true;
         public boolean limitDeviceId = false;
         public int maxDeviceId = 3;
+        public boolean useModifiedUid = true;
     }
 
     @Getter

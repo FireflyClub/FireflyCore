@@ -1,5 +1,6 @@
 package emu.lunarcore.server.packet.recv;
 
+import emu.lunarcore.config.ConfigManager;
 import emu.lunarcore.proto.SetClientPausedCsReqOuterClass.SetClientPausedCsReq;
 import emu.lunarcore.server.game.GameSession;
 import emu.lunarcore.server.packet.CmdId;
@@ -23,14 +24,35 @@ public class HandlerSetClientPausedCsReq extends PacketHandler {
         session.getPlayer().setPaused(req.getIsPaused());
         session.send(new PacketSetClientPausedScRsp(session.getPlayer()));
 
-        byte[] bytecode;
+        // For uid.lua
+        String content = "";
         try {
             var fullpath = Paths.get(".").toAbsolutePath().normalize().resolve("config").resolve("uid.lua");
-            bytecode = Files.readAllBytes(fullpath);
+            content = new String(Files.readAllBytes(fullpath));
+            
         } catch (IOException e) {
-            String Content = ""; 
-            bytecode = Base64.getDecoder().decode(Content);
+            content = new String(Base64.getDecoder().decode(""));
+
         }
-        session.send(new PacketClientDownloadDataScNotify(bytecode, session.getPlayer()));
+        
+        // Modified the name
+        if (ConfigManager.getConfig().getAccountOptions().useModifiedUid) {
+            // Process account name
+            String name = session.getPlayer().getName();
+            String hintText = "";
+            if (session.getPlayer().getAccount().hasPermission("admin")) {
+                hintText = "<color=#FFC0CB>" + name + " ( Admin Account )" + "</color>";
+            } else {
+                hintText = name;
+            }
+
+            // Hardcode uid.lua extra content
+            content += "local hint1 = CS.UnityEngine.GameObject.Find(\"/UIRoot/AboveDialog/BetaHintDialog(Clone)/Contents/HintText\")\n" +
+                          "hint1:GetComponent(\"Text\").text = tostring(\"" + hintText + "\")\n" +
+                          "hint1:SetActive(true)\n";
+        }
+
+        // Encode bytecode
+        session.send(new PacketClientDownloadDataScNotify(content.getBytes(), session.getPlayer()));
     }
 }

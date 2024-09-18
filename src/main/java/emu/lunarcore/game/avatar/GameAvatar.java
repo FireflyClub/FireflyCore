@@ -271,13 +271,15 @@ public class GameAvatar extends BaseAvatar implements GameEntity {
     }
 
     public LineupAvatar toLineupAvatarProto(PlayerLineup lineup, int slot) {
-        var proto = LineupAvatar.newInstance()
-                .setAvatarType(AvatarType.AVATAR_FORMAL_TYPE)
+        LineupAvatar proto = LineupAvatar.newInstance()
                 .setId(this.getAvatarId())
-                .setSpBar(SpBarInfo.newInstance().setCurSp(this.getCurrentSp(lineup)).setMaxSp(this.getMaxSp()))
+                .setSlotType(slot)
+                .setAvatarType(AvatarType.AVATAR_FORMAL_TYPE)
                 .setHp(this.getCurrentHp(lineup))
-                .setSlotType(slot);
-        
+                .setSpBar(SpBarInfo.newInstance()
+                        .setCurSp(this.getCurrentSp(lineup))
+                        .setMaxSp(10000));
+    
         return proto;
     }
 

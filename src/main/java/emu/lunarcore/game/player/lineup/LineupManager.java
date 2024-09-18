@@ -1,39 +1,43 @@
 package emu.lunarcore.game.player.lineup;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+import javax.sound.sampled.Line;
 
 import dev.morphia.annotations.Entity;
 import emu.lunarcore.GameConstants;
 import emu.lunarcore.LunarCore;
+import emu.lunarcore.data.GameData;
+import emu.lunarcore.data.excel.SpecialAvatarExcel;
 import emu.lunarcore.game.avatar.GameAvatar;
 import emu.lunarcore.game.player.Player;
 import emu.lunarcore.proto.ExtraLineupTypeOuterClass.ExtraLineupType;
+import emu.lunarcore.proto.LineupInfoOuterClass.LineupInfo;
+import emu.lunarcore.server.packet.send.PacketSceneCastSkillMpUpdateScNotify;
 import emu.lunarcore.server.packet.send.PacketSyncLineupNotify;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity(useDiscriminator = false) @Getter
 public class LineupManager {
     private transient Player player;
     
-    private int currentIndex; // Team index
-    private int mp;
-    
-    private transient int currentExtraIndex;
+    @Setter private int currentIndex;
+    @Setter private int currentExtraIndex;
     
     private transient PlayerLineup[] lineups;
-    private transient PlayerExtraLineup[] extraLineups;
 
     @Deprecated // Morphia only!
     public LineupManager() {
         this.lineups = new PlayerLineup[GameConstants.DEFAULT_TEAMS];
-        this.extraLineups = new PlayerExtraLineup[ExtraLineupType.values().length];
     }
 
     public LineupManager(Player player) {
         this();
         this.player = player;
-        this.mp = 5;
         
         this.validate();
     }
@@ -41,64 +45,7 @@ public class LineupManager {
     public void setPlayer(Player player) {
         this.player = player;
     }
-    
-    protected void addMp(int i) {
-        this.mp = Math.min(this.mp + i, GameConstants.MAX_MP);
-        this.getPlayer().sendPacket(new PacketSyncLineupNotify(player.getCurrentLineup()));
-    }
-    
-    protected void setMp(int i) {
-        this.mp = i;
-    }
-    
-    protected void removeMp(int i) {
-        this.mp = Math.max(this.mp - i, 0);
-    }
-    
-    /**
-     * Sets the player's current extra lineup type.
-     * @param type Extra lineup type
-     * @param sync Whether or not to sync lineup with scene. Not needed when changing scenes.
-     */
-    public void setCurrentExtraLineup(int type, boolean sync) {
-        this.currentExtraIndex = type;
-        this.getPlayer().save();
 
-        if (sync) {
-            // Sync with scene entities
-            this.getPlayer().getScene().syncLineup();
-            // Sync lineup data with client
-            player.sendPacket(new PacketSyncLineupNotify(this.getExtraLineupByType(type)));
-        }
-    }
-    
-    /**
-     * Sets the player's current extra lineup type.
-     * @param type Extra lineup type
-     * @param sync Whether or not to sync lineup with scene. Not needed when changing scenes.
-     */
-    public void setCurrentExtraLineup(ExtraLineupType type, boolean sync) {
-        this.setCurrentExtraLineup(type.getNumber(), sync);
-    }
-    
-    /**
-     * Returns a lineup by the type
-     * @param index Regular lineup index
-     * @param extraLineup
-     * @return
-     */
-    public PlayerLineup getLineupByIndex(int index, int extraLineupType) {
-        // Sanity
-        if (extraLineupType > 0) {
-            return getExtraLineupByType(extraLineupType);
-        } else {
-            return getLineupByIndex(index);
-        }
-    }
-    
-    /**
-     * Gets a regular player lineup by index. Only normal lineups are returned
-     */
     public PlayerLineup getLineupByIndex(int index) {
         // Sanity check
         if (index < 0 || index >= this.lineups.length) {
@@ -108,10 +55,152 @@ public class LineupManager {
         return this.lineups[index];
     }
     
-    /**
-     * Returns a lineup by ExtraLineupType. Creates a lineup for the player if it doesnt exist.
-     * @param type ExtraLineupType
-     */
+    public PlayerLineup getExtraLineupByIndex(int extraLineupTypeValue) {
+        int index = extraLineupTypeValue + 10;
+        return getLineupByIndex(index);
+    }
+    
+    public int getCurrentLineupIndex() {
+        return (currentExtraIndex == -1) ? currentIndex : currentExtraIndex;
+    }
+    
+    public PlayerLineup getCurrentLineup() {
+        return getLineupByIndex(getCurrentLineupIndex());
+    }
+
+    public boolean setLineupByIndex(int index) {
+        if (index < 0 || index >= this.lineups.length) {
+            return false;
+        }
+        PlayerLineup lineup = this.getLineupByIndex(index);
+        if (lineup == null || lineup.getBaseAvatars().isEmpty()) {
+            return false;
+        }
+    
+        this.setCurrentIndex(index);
+        this.setCurrentExtraIndex(-1);
+    
+        if (this.getPlayer().getScene() != null) {
+            this.getPlayer().getScene().syncLineup();
+        }
+
+        this.getPlayer().sendPacket(new PacketSyncLineupNotify(getCurrentLineup()));
+        return true;
+    }
+
+    public void setExtraLineupByIndex(int index, List<Integer> baseAvatarIds) {
+        if (index == 0) {
+            this.setCurrentExtraIndex(-1);
+            return;
+        }
+
+        int extraIndex = index + 10;
+        this.lineups[extraIndex] = null;
+
+        PlayerLineup lineup = new PlayerLineup(this.getPlayer());
+        lineup.setName("");
+        lineup.setLineupType(extraIndex);
+        lineup.setBaseAvatars(new ArrayList<>());
+
+        // LINEUP_STAGE_TRIAL = 6
+        int worldLevel = (index == 6) ? 0 : this.getPlayer().getWorldLevel();
+
+        for (int avatarId : baseAvatarIds) {
+            SpecialAvatarExcel specialAvatar = GameData.getSpecialAvatarExcelMap().get(avatarId * 10 + worldLevel);
+            if (specialAvatar != null) {
+                lineup.getBaseAvatars().add(new LineupAvatarInfo(specialAvatar.getAvatarID(), specialAvatar.getId()));
+            } else {
+                lineup.getBaseAvatars().add(new LineupAvatarInfo(avatarId));
+            }
+        }
+
+        this.lineups[extraIndex] = lineup;
+        this.setCurrentExtraIndex(extraIndex);
+    }
+
+    public void addAvatar(int index, int avatarId, boolean sync) {
+        if (index < 0) return;
+        
+        PlayerLineup lineup = this.getLineupByIndex(index);
+
+        if (lineup == null) {
+            int baseAvatarId = avatarId;
+            int specialAvatarId = avatarId * 10 + this.getPlayer().getWorldLevel();
+            SpecialAvatarExcel specialAvatar = GameData.getSpecialAvatarExcelMap().get(specialAvatarId);
+            if (specialAvatar != null) {
+                baseAvatarId = specialAvatar.getAvatarID();
+            } else {
+                specialAvatarId = 0;
+                if (baseAvatarId > 8000) baseAvatarId = 8001;
+            }
+
+            lineup = new PlayerLineup(this.getPlayer());
+            lineup.setName("");
+            lineup.setLineupType(0);
+            lineup.setBaseAvatars(List.of(new LineupAvatarInfo(baseAvatarId, specialAvatarId)));
+
+            this.lineups[index] = lineup;
+        } else {
+            if (lineup.getBaseAvatars().size() >= 4) return;
+
+            int baseAvatarId = avatarId;
+            int specialAvatarId = avatarId * 10 + this.getPlayer().getWorldLevel();
+            SpecialAvatarExcel specialAvatar = GameData.getSpecialAvatarExcelMap().get(specialAvatarId);
+            if (specialAvatar != null) {
+                baseAvatarId = specialAvatar.getAvatarID();
+            } else {
+                specialAvatarId = 0;
+                if (baseAvatarId > 8000) baseAvatarId = 8001;
+            }
+
+            lineup.getBaseAvatars().add(new LineupAvatarInfo(baseAvatarId, specialAvatarId));
+            this.lineups[index] = lineup;
+        }
+
+        if (sync) {
+            if (index == this.getCurrentLineupIndex()) {
+                this.getPlayer().getScene().syncLineup();
+            }
+            this.getPlayer().sendPacket(new PacketSyncLineupNotify(lineup));
+        }
+        return;
+    }
+
+    public void addAvatarToCurrentLineup(int avatarId, boolean sync) {
+        addAvatar(this.getCurrentLineupIndex(), avatarId, sync);
+    }
+
+    public void addSpecialAvatarToCurrentLineup(int specialAvatarId, boolean sync) {
+        PlayerLineup lineup = this.getCurrentLineup();
+
+        SpecialAvatarExcel specialAvatar = GameData.getSpecialAvatarExcelMap().get(specialAvatarId);
+        if (specialAvatar == null) return;
+        
+        if (lineup == null) {
+            lineup = new PlayerLineup(player, );
+            lineup.setName("");
+            lineup.setLineupType(0);
+            lineup.setBaseAvatars(new ArrayList<>());
+            lineup.getBaseAvatars().add(new LineupAvatarInfo(specialAvatar.getAvatarID(), specialAvatarId));
+            lineup.setLineupData(LineupData);
+            lineup.setAvatarData(Player.getAvatarManager().getAvatarData());
+            LineupData.getLineups().put(LineupData.getCurLineupIndex(), lineup);
+        } else {
+            if (lineup.getBaseAvatars().size() >= 4) {
+                lineup.getBaseAvatars().remove(lineup.getBaseAvatars().size() - 1); // remove last avatar
+            }
+            lineup.getBaseAvatars().add(new LineupAvatarInfo(specialAvatar.getAvatarID(), specialAvatarId));
+            LineupData.getLineups().put(LineupData.getCurLineupIndex(), lineup);
+        }
+
+        if (sendPacket) {
+            Player.getSceneInstance().syncLineup();
+            return Player.sendPacket(new PacketSyncLineupNotify(lineup));
+        }
+        
+        return CompletableFuture.completedFuture(null);
+    }
+
     public PlayerLineup getExtraLineupByType(int type) {
         // Sanity check to make sure the extra lineup type actually exists
         if (type <= 0 || type >= this.extraLineups.length) {
@@ -127,13 +216,6 @@ public class LineupManager {
         }
         
         return lineup;
-    }
-    
-    /**
-     * Returns the current lineup that the player is using.
-     */
-    public PlayerLineup getCurrentLineup() {
-        return this.getLineupByIndex(this.currentIndex, this.currentExtraIndex);
     }
     
     /**
@@ -389,7 +471,28 @@ public class LineupManager {
         
         return true;
     }
+
+    public void gainMp(int count, boolean sendPacket, int reason) {
+        PlayerLineup curLineup = getCurrentLineup();
+        if (curLineup != null) {
+            curLineup.setMp(Math.min(curLineup.getMp() + count, GameConstants.MAX_MP));
     
+            if (sendPacket) {
+                this.getPlayer().sendPacket(new PacketSyncLineupNotify(curLineup, reason));
+            }
+        }
+    }
+
+    public void costMp(int count, int castEntityId) {
+        PlayerLineup curLineup = getCurrentLineup();
+        if (curLineup != null) {
+            curLineup.setMp(Math.max(curLineup.getMp() - count, 0));
+            curLineup.setMp(Math.min(curLineup.getMp(), 5));
+
+            this.getPlayer().sendPacket(new PacketSceneCastSkillMpUpdateScNotify(castEntityId, curLineup.getMp()));
+        }
+    }
+
     // Database
     
     public void loadFromDatabase() {

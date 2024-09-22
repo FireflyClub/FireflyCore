@@ -4,6 +4,6 @@ option java_package = "emu.lunarcore.proto";
 
 message MusicRhythmStartLevelScRsp {
 	uint32 retcode = 6;
-	uint32 music_id = 3;
+	uint32 level_id = 3;
 	string NJOONPFKHGE = 8;
 }

@@ -13,7 +13,7 @@ public class HandlerMusicRhythmStartLevelCsReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = MusicRhythmStartLevelCsReq.parseFrom(data);
-        int musicId = req.getMusicId();
+        int musicId = req.getLevelId();
         session.getPlayer().setCurMusicId(musicId);
         session.send(new PacketMusicRhythmStartLevelScRsp(musicId));
     }

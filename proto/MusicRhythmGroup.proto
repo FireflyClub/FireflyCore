@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message MusicRhythmGroup {
+	uint32 music_group_phase = 10;
+	repeated uint32 MPCFOJALNHN = 3;
+	repeated uint32 OALLJLKBIOJ = 6;
+	uint32 music_group_id = 5;
+}

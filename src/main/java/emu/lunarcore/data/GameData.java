@@ -75,6 +75,8 @@ public class GameData {
 
     // Music
     @Getter private static Int2ObjectMap<MusicRhythmLevelExcel> musicRhythmLevelExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MusicRhythmGroupExcel> musicRhythmGroupExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MusicRhythmPhaseExcel> musicRhythmPhaseExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<MusicRhythmSongExcel> musicRhythmSongExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<MusicRhythmSoundEffectExcel> musicRhythmSoundEffectExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<MusicRhythmTrackExcel> musicRhythmTrackExcelMap = new Int2ObjectOpenHashMap<>();

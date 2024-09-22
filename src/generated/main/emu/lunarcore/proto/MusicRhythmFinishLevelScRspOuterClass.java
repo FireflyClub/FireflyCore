@@ -19,9 +19,9 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 music_id = 4;</code>
+     * <code>optional uint32 level_id = 4;</code>
      */
-    private int musicId;
+    private int levelId;
 
     /**
      * <code>optional uint32 retcode = 9;</code>
@@ -39,39 +39,39 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 music_id = 4;</code>
-     * @return whether the musicId field is set
+     * <code>optional uint32 level_id = 4;</code>
+     * @return whether the levelId field is set
      */
-    public boolean hasMusicId() {
+    public boolean hasLevelId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 music_id = 4;</code>
+     * <code>optional uint32 level_id = 4;</code>
      * @return this
      */
-    public MusicRhythmFinishLevelScRsp clearMusicId() {
+    public MusicRhythmFinishLevelScRsp clearLevelId() {
       bitField0_ &= ~0x00000001;
-      musicId = 0;
+      levelId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 music_id = 4;</code>
-     * @return the musicId
+     * <code>optional uint32 level_id = 4;</code>
+     * @return the levelId
      */
-    public int getMusicId() {
-      return musicId;
+    public int getLevelId() {
+      return levelId;
     }
 
     /**
-     * <code>optional uint32 music_id = 4;</code>
-     * @param value the musicId to set
+     * <code>optional uint32 level_id = 4;</code>
+     * @param value the levelId to set
      * @return this
      */
-    public MusicRhythmFinishLevelScRsp setMusicId(final int value) {
+    public MusicRhythmFinishLevelScRsp setLevelId(final int value) {
       bitField0_ |= 0x00000001;
-      musicId = value;
+      levelId = value;
       return this;
     }
 
@@ -117,7 +117,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        musicId = other.musicId;
+        levelId = other.levelId;
         retcode = other.retcode;
       }
       return this;
@@ -129,8 +129,8 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMusicId()) {
-        setMusicId(other.musicId);
+      if (other.hasLevelId()) {
+        setLevelId(other.levelId);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
@@ -145,7 +145,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      musicId = 0;
+      levelId = 0;
       retcode = 0;
       return this;
     }
@@ -170,7 +170,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
       }
       MusicRhythmFinishLevelScRsp other = (MusicRhythmFinishLevelScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasMusicId() || musicId == other.musicId)
+        && (!hasLevelId() || levelId == other.levelId)
         && (!hasRetcode() || retcode == other.retcode);
     }
 
@@ -178,7 +178,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(musicId);
+        output.writeUInt32NoTag(levelId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 72);
@@ -190,7 +190,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(musicId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(levelId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -206,8 +206,8 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
       while (true) {
         switch (tag) {
           case 32: {
-            // musicId
-            musicId = input.readUInt32();
+            // levelId
+            levelId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 72) {
@@ -241,7 +241,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.musicId, musicId);
+        output.writeUInt32(FieldNames.levelId, levelId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
@@ -256,11 +256,11 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1412694560:
-          case 843879797: {
-            if (input.isAtField(FieldNames.musicId)) {
+          case 69784511:
+          case -2131626058: {
+            if (input.isAtField(FieldNames.levelId)) {
               if (!input.trySkipNullValue()) {
-                musicId = input.readUInt32();
+                levelId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -333,7 +333,7 @@ public final class MusicRhythmFinishLevelScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName musicId = FieldName.forField("musicId", "music_id");
+      static final FieldName levelId = FieldName.forField("levelId", "level_id");
 
       static final FieldName retcode = FieldName.forField("retcode");
     }

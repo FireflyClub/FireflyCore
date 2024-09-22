@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message MusicRhythmLevel {
+	uint32 unlock_level = 13;
+	bool is_full_combo = 8;
+	uint32 level_id = 5;
+}

@@ -1,9 +1,9 @@
 package emu.lunarcore.server.packet.send;
 
 import emu.lunarcore.server.packet.CmdId;
-
-// import emu.lunarcore.data.GameData;
-// import emu.lunarcore.proto.HEKPICHLMENOuterClass.HEKPICHLMEN;
+import emu.lunarcore.data.GameData;
+import emu.lunarcore.proto.MusicRhythmLevelOuterClass.MusicRhythmLevel;
+import emu.lunarcore.proto.MusicRhythmGroupOuterClass.MusicRhythmGroup;
 import emu.lunarcore.proto.MusicRhythmDataScRspOuterClass.MusicRhythmDataScRsp;
 import emu.lunarcore.server.packet.BasePacket;
 
@@ -13,23 +13,40 @@ public class PacketMusicRhythmDataScRsp extends BasePacket {
         super(CmdId.MusicRhythmDataScRsp);
 
         var data = MusicRhythmDataScRsp.newInstance()
-            .setFCLINCKMILK(true) // Main music archive tag
-            .setPEFCBMODPOI(1)
-            .setBMJGCIILHCA(1);
-
-        // for (var excel : GameData.getMusicRhythmSongExcelMap().values()) {
-        //     var unlockLevelData = HEKPICHLMEN.newInstance();
-        //     for (var level : GameData.getMusicRhythmLevelExcelMap().values()) {
-        //         unlockLevelData.setMusicId(level.getId())
-        //             .setAEEMPPOFGBN(1);
-        //     }
-
-        //     data.addAllMFIFEBCDIMM(unlockLevelData)
-        //         .addGBMLNHOCJMO(excel.getId())
-        //         .addOPFOILFDBKG(excel.getId())
-        //         .addFEAHHAMLDFB(excel.getId());
-        // }
+            .setShowHint(true);
         
+        var levels = data.getMutableMusicLevel();
+        for (var level: GameData.getMusicRhythmLevelExcelMap().values()) {
+            levels.add(
+                MusicRhythmLevel
+                    .newInstance()
+                    .setLevelId(level.getId())
+                    .setIsFullCombo(true)
+                    .setUnlockLevel(3)
+            );
+        }
+        
+        var groups = data.getMutableMusicGroup();
+        for (var group: GameData.getMusicRhythmGroupExcelMap().values()) {
+            groups.add(
+                MusicRhythmGroup.newInstance()
+                    .setMusicGroupId(group.getId())
+                    .setMusicGroupPhase(group.getPhase())
+            );
+        }
+
+        for (var songs: GameData.getMusicRhythmSongExcelMap().values()) {
+            data.addUnlockSongList(songs.getId());
+        }
+
+        for (var tracks: GameData.getMusicRhythmTrackExcelMap().values()) {
+            data.addUnlockTrackList(tracks.getId());
+        }
+
+        for (var phases: GameData.getMusicRhythmPhaseExcelMap().values()) {
+            data.addUnlockPhaseList(phases.getId());
+        }
+
         this.setData(data);
     }
 }

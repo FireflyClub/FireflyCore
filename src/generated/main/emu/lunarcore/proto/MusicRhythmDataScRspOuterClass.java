@@ -21,14 +21,14 @@ public final class MusicRhythmDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 PEFCBMODPOI = 2;</code>
+     * <code>optional uint32 cur_song_id = 2;</code>
      */
-    private int pEFCBMODPOI;
+    private int curSongId;
 
     /**
-     * <code>optional uint32 BMJGCIILHCA = 10;</code>
+     * <code>optional uint32 cur_level_id = 10;</code>
      */
-    private int bMJGCIILHCA;
+    private int curLevelId;
 
     /**
      * <code>optional uint32 retcode = 12;</code>
@@ -36,33 +36,34 @@ public final class MusicRhythmDataScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional bool FCLINCKMILK = 6;</code>
+     * <code>optional bool show_hint = 6;</code>
      */
-    private boolean fCLINCKMILK;
+    private boolean showHint;
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
      */
-    private final RepeatedInt fEAHHAMLDFB = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt unlockPhaseList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
+     * <code>repeated uint32 unlock_track_list = 8;</code>
      */
-    private final RepeatedInt oPFOILFDBKG = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt unlockTrackList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
+     * <code>repeated uint32 unlock_song_list = 15;</code>
      */
-    private final RepeatedInt gBMLNHOCJMO = RepeatedInt.newEmptyInstance();
+    private final RepeatedInt unlockSongList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
      */
-    private final RepeatedMessage<HEKPICHLMENOuterClass.HEKPICHLMEN> mFIFEBCDIMM = RepeatedMessage.newEmptyInstance(HEKPICHLMENOuterClass.HEKPICHLMEN.getFactory());
+    private final RepeatedMessage<MusicRhythmGroupOuterClass.MusicRhythmGroup> musicGroup = RepeatedMessage.newEmptyInstance(MusicRhythmGroupOuterClass.MusicRhythmGroup.getFactory());
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     */
+    private final RepeatedMessage<MusicRhythmLevelOuterClass.MusicRhythmLevel> musicLevel = RepeatedMessage.newEmptyInstance(MusicRhythmLevelOuterClass.MusicRhythmLevel.getFactory());
 
     private MusicRhythmDataScRsp() {
     }
@@ -75,76 +76,76 @@ public final class MusicRhythmDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 PEFCBMODPOI = 2;</code>
-     * @return whether the pEFCBMODPOI field is set
+     * <code>optional uint32 cur_song_id = 2;</code>
+     * @return whether the curSongId field is set
      */
-    public boolean hasPEFCBMODPOI() {
+    public boolean hasCurSongId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 PEFCBMODPOI = 2;</code>
+     * <code>optional uint32 cur_song_id = 2;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearPEFCBMODPOI() {
+    public MusicRhythmDataScRsp clearCurSongId() {
       bitField0_ &= ~0x00000001;
-      pEFCBMODPOI = 0;
+      curSongId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 PEFCBMODPOI = 2;</code>
-     * @return the pEFCBMODPOI
+     * <code>optional uint32 cur_song_id = 2;</code>
+     * @return the curSongId
      */
-    public int getPEFCBMODPOI() {
-      return pEFCBMODPOI;
+    public int getCurSongId() {
+      return curSongId;
     }
 
     /**
-     * <code>optional uint32 PEFCBMODPOI = 2;</code>
-     * @param value the pEFCBMODPOI to set
+     * <code>optional uint32 cur_song_id = 2;</code>
+     * @param value the curSongId to set
      * @return this
      */
-    public MusicRhythmDataScRsp setPEFCBMODPOI(final int value) {
+    public MusicRhythmDataScRsp setCurSongId(final int value) {
       bitField0_ |= 0x00000001;
-      pEFCBMODPOI = value;
+      curSongId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 BMJGCIILHCA = 10;</code>
-     * @return whether the bMJGCIILHCA field is set
+     * <code>optional uint32 cur_level_id = 10;</code>
+     * @return whether the curLevelId field is set
      */
-    public boolean hasBMJGCIILHCA() {
+    public boolean hasCurLevelId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 BMJGCIILHCA = 10;</code>
+     * <code>optional uint32 cur_level_id = 10;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearBMJGCIILHCA() {
+    public MusicRhythmDataScRsp clearCurLevelId() {
       bitField0_ &= ~0x00000002;
-      bMJGCIILHCA = 0;
+      curLevelId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 BMJGCIILHCA = 10;</code>
-     * @return the bMJGCIILHCA
+     * <code>optional uint32 cur_level_id = 10;</code>
+     * @return the curLevelId
      */
-    public int getBMJGCIILHCA() {
-      return bMJGCIILHCA;
+    public int getCurLevelId() {
+      return curLevelId;
     }
 
     /**
-     * <code>optional uint32 BMJGCIILHCA = 10;</code>
-     * @param value the bMJGCIILHCA to set
+     * <code>optional uint32 cur_level_id = 10;</code>
+     * @param value the curLevelId to set
      * @return this
      */
-    public MusicRhythmDataScRsp setBMJGCIILHCA(final int value) {
+    public MusicRhythmDataScRsp setCurLevelId(final int value) {
       bitField0_ |= 0x00000002;
-      bMJGCIILHCA = value;
+      curLevelId = value;
       return this;
     }
 
@@ -186,76 +187,76 @@ public final class MusicRhythmDataScRspOuterClass {
     }
 
     /**
-     * <code>optional bool FCLINCKMILK = 6;</code>
-     * @return whether the fCLINCKMILK field is set
+     * <code>optional bool show_hint = 6;</code>
+     * @return whether the showHint field is set
      */
-    public boolean hasFCLINCKMILK() {
+    public boolean hasShowHint() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional bool FCLINCKMILK = 6;</code>
+     * <code>optional bool show_hint = 6;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearFCLINCKMILK() {
+    public MusicRhythmDataScRsp clearShowHint() {
       bitField0_ &= ~0x00000008;
-      fCLINCKMILK = false;
+      showHint = false;
       return this;
     }
 
     /**
-     * <code>optional bool FCLINCKMILK = 6;</code>
-     * @return the fCLINCKMILK
+     * <code>optional bool show_hint = 6;</code>
+     * @return the showHint
      */
-    public boolean getFCLINCKMILK() {
-      return fCLINCKMILK;
+    public boolean getShowHint() {
+      return showHint;
     }
 
     /**
-     * <code>optional bool FCLINCKMILK = 6;</code>
-     * @param value the fCLINCKMILK to set
+     * <code>optional bool show_hint = 6;</code>
+     * @param value the showHint to set
      * @return this
      */
-    public MusicRhythmDataScRsp setFCLINCKMILK(final boolean value) {
+    public MusicRhythmDataScRsp setShowHint(final boolean value) {
       bitField0_ |= 0x00000008;
-      fCLINCKMILK = value;
+      showHint = value;
       return this;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
-     * @return whether the fEAHHAMLDFB field is set
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
+     * @return whether the unlockPhaseList field is set
      */
-    public boolean hasFEAHHAMLDFB() {
+    public boolean hasUnlockPhaseList() {
       return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearFEAHHAMLDFB() {
+    public MusicRhythmDataScRsp clearUnlockPhaseList() {
       bitField0_ &= ~0x00000010;
-      fEAHHAMLDFB.clear();
+      unlockPhaseList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableFEAHHAMLDFB()} if you want to modify it.
+     * Use {@link #getMutableUnlockPhaseList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getFEAHHAMLDFB() {
-      return fEAHHAMLDFB;
+    public RepeatedInt getUnlockPhaseList() {
+      return unlockPhaseList;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -263,67 +264,67 @@ public final class MusicRhythmDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableFEAHHAMLDFB() {
+    public RepeatedInt getMutableUnlockPhaseList() {
       bitField0_ |= 0x00000010;
-      return fEAHHAMLDFB;
+      return unlockPhaseList;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
-     * @param value the fEAHHAMLDFB to add
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
+     * @param value the unlockPhaseList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addFEAHHAMLDFB(final int value) {
+    public MusicRhythmDataScRsp addUnlockPhaseList(final int value) {
       bitField0_ |= 0x00000010;
-      fEAHHAMLDFB.add(value);
+      unlockPhaseList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 FEAHHAMLDFB = 5;</code>
-     * @param values the fEAHHAMLDFB to add
+     * <code>repeated uint32 unlock_phase_list = 5;</code>
+     * @param values the unlockPhaseList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addAllFEAHHAMLDFB(final int... values) {
+    public MusicRhythmDataScRsp addAllUnlockPhaseList(final int... values) {
       bitField0_ |= 0x00000010;
-      fEAHHAMLDFB.addAll(values);
+      unlockPhaseList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
-     * @return whether the oPFOILFDBKG field is set
+     * <code>repeated uint32 unlock_track_list = 8;</code>
+     * @return whether the unlockTrackList field is set
      */
-    public boolean hasOPFOILFDBKG() {
+    public boolean hasUnlockTrackList() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
+     * <code>repeated uint32 unlock_track_list = 8;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearOPFOILFDBKG() {
+    public MusicRhythmDataScRsp clearUnlockTrackList() {
       bitField0_ &= ~0x00000020;
-      oPFOILFDBKG.clear();
+      unlockTrackList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
+     * <code>repeated uint32 unlock_track_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableOPFOILFDBKG()} if you want to modify it.
+     * Use {@link #getMutableUnlockTrackList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getOPFOILFDBKG() {
-      return oPFOILFDBKG;
+    public RepeatedInt getUnlockTrackList() {
+      return unlockTrackList;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
+     * <code>repeated uint32 unlock_track_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -331,67 +332,67 @@ public final class MusicRhythmDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableOPFOILFDBKG() {
+    public RepeatedInt getMutableUnlockTrackList() {
       bitField0_ |= 0x00000020;
-      return oPFOILFDBKG;
+      return unlockTrackList;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
-     * @param value the oPFOILFDBKG to add
+     * <code>repeated uint32 unlock_track_list = 8;</code>
+     * @param value the unlockTrackList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addOPFOILFDBKG(final int value) {
+    public MusicRhythmDataScRsp addUnlockTrackList(final int value) {
       bitField0_ |= 0x00000020;
-      oPFOILFDBKG.add(value);
+      unlockTrackList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 OPFOILFDBKG = 8;</code>
-     * @param values the oPFOILFDBKG to add
+     * <code>repeated uint32 unlock_track_list = 8;</code>
+     * @param values the unlockTrackList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addAllOPFOILFDBKG(final int... values) {
+    public MusicRhythmDataScRsp addAllUnlockTrackList(final int... values) {
       bitField0_ |= 0x00000020;
-      oPFOILFDBKG.addAll(values);
+      unlockTrackList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
-     * @return whether the gBMLNHOCJMO field is set
+     * <code>repeated uint32 unlock_song_list = 15;</code>
+     * @return whether the unlockSongList field is set
      */
-    public boolean hasGBMLNHOCJMO() {
+    public boolean hasUnlockSongList() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
+     * <code>repeated uint32 unlock_song_list = 15;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearGBMLNHOCJMO() {
+    public MusicRhythmDataScRsp clearUnlockSongList() {
       bitField0_ &= ~0x00000040;
-      gBMLNHOCJMO.clear();
+      unlockSongList.clear();
       return this;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
+     * <code>repeated uint32 unlock_song_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableGBMLNHOCJMO()} if you want to modify it.
+     * Use {@link #getMutableUnlockSongList()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedInt getGBMLNHOCJMO() {
-      return gBMLNHOCJMO;
+    public RepeatedInt getUnlockSongList() {
+      return unlockSongList;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
+     * <code>repeated uint32 unlock_song_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -399,83 +400,67 @@ public final class MusicRhythmDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedInt getMutableGBMLNHOCJMO() {
+    public RepeatedInt getMutableUnlockSongList() {
       bitField0_ |= 0x00000040;
-      return gBMLNHOCJMO;
+      return unlockSongList;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
-     * @param value the gBMLNHOCJMO to add
+     * <code>repeated uint32 unlock_song_list = 15;</code>
+     * @param value the unlockSongList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addGBMLNHOCJMO(final int value) {
+    public MusicRhythmDataScRsp addUnlockSongList(final int value) {
       bitField0_ |= 0x00000040;
-      gBMLNHOCJMO.add(value);
+      unlockSongList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated uint32 GBMLNHOCJMO = 15;</code>
-     * @param values the gBMLNHOCJMO to add
+     * <code>repeated uint32 unlock_song_list = 15;</code>
+     * @param values the unlockSongList to add
      * @return this
      */
-    public MusicRhythmDataScRsp addAllGBMLNHOCJMO(final int... values) {
+    public MusicRhythmDataScRsp addAllUnlockSongList(final int... values) {
       bitField0_ |= 0x00000040;
-      gBMLNHOCJMO.addAll(values);
+      unlockSongList.addAll(values);
       return this;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
-     * @return whether the mFIFEBCDIMM field is set
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
+     * @return whether the musicGroup field is set
      */
-    public boolean hasMFIFEBCDIMM() {
+    public boolean hasMusicGroup() {
       return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
      * @return this
      */
-    public MusicRhythmDataScRsp clearMFIFEBCDIMM() {
+    public MusicRhythmDataScRsp clearMusicGroup() {
       bitField0_ &= ~0x00000080;
-      mFIFEBCDIMM.clear();
+      musicGroup.clear();
       return this;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableMFIFEBCDIMM()} if you want to modify it.
+     * Use {@link #getMutableMusicGroup()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<HEKPICHLMENOuterClass.HEKPICHLMEN> getMFIFEBCDIMM() {
-      return mFIFEBCDIMM;
+    public RepeatedMessage<MusicRhythmGroupOuterClass.MusicRhythmGroup> getMusicGroup() {
+      return musicGroup;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -483,39 +468,102 @@ public final class MusicRhythmDataScRspOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<HEKPICHLMENOuterClass.HEKPICHLMEN> getMutableMFIFEBCDIMM() {
+    public RepeatedMessage<MusicRhythmGroupOuterClass.MusicRhythmGroup> getMutableMusicGroup() {
       bitField0_ |= 0x00000080;
-      return mFIFEBCDIMM;
+      return musicGroup;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
-     * @param value the mFIFEBCDIMM to add
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
+     * @param value the musicGroup to add
      * @return this
      */
-    public MusicRhythmDataScRsp addMFIFEBCDIMM(final HEKPICHLMENOuterClass.HEKPICHLMEN value) {
+    public MusicRhythmDataScRsp addMusicGroup(
+        final MusicRhythmGroupOuterClass.MusicRhythmGroup value) {
       bitField0_ |= 0x00000080;
-      mFIFEBCDIMM.add(value);
+      musicGroup.add(value);
       return this;
     }
 
     /**
-     * <pre>
-     * repeated MDHHFJGOJNG MEHKJJFJAPK = 1;
-     * </pre>
-     *
-     * <code>repeated .HEKPICHLMEN MFIFEBCDIMM = 13;</code>
-     * @param values the mFIFEBCDIMM to add
+     * <code>repeated .MusicRhythmGroup music_group = 1;</code>
+     * @param values the musicGroup to add
      * @return this
      */
-    public MusicRhythmDataScRsp addAllMFIFEBCDIMM(
-        final HEKPICHLMENOuterClass.HEKPICHLMEN... values) {
+    public MusicRhythmDataScRsp addAllMusicGroup(
+        final MusicRhythmGroupOuterClass.MusicRhythmGroup... values) {
       bitField0_ |= 0x00000080;
-      mFIFEBCDIMM.addAll(values);
+      musicGroup.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     * @return whether the musicLevel field is set
+     */
+    public boolean hasMusicLevel() {
+      return (bitField0_ & 0x00000100) != 0;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     * @return this
+     */
+    public MusicRhythmDataScRsp clearMusicLevel() {
+      bitField0_ &= ~0x00000100;
+      musicLevel.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableMusicLevel()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<MusicRhythmLevelOuterClass.MusicRhythmLevel> getMusicLevel() {
+      return musicLevel;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<MusicRhythmLevelOuterClass.MusicRhythmLevel> getMutableMusicLevel() {
+      bitField0_ |= 0x00000100;
+      return musicLevel;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     * @param value the musicLevel to add
+     * @return this
+     */
+    public MusicRhythmDataScRsp addMusicLevel(
+        final MusicRhythmLevelOuterClass.MusicRhythmLevel value) {
+      bitField0_ |= 0x00000100;
+      musicLevel.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .MusicRhythmLevel music_level = 13;</code>
+     * @param values the musicLevel to add
+     * @return this
+     */
+    public MusicRhythmDataScRsp addAllMusicLevel(
+        final MusicRhythmLevelOuterClass.MusicRhythmLevel... values) {
+      bitField0_ |= 0x00000100;
+      musicLevel.addAll(values);
       return this;
     }
 
@@ -524,14 +572,15 @@ public final class MusicRhythmDataScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        pEFCBMODPOI = other.pEFCBMODPOI;
-        bMJGCIILHCA = other.bMJGCIILHCA;
+        curSongId = other.curSongId;
+        curLevelId = other.curLevelId;
         retcode = other.retcode;
-        fCLINCKMILK = other.fCLINCKMILK;
-        fEAHHAMLDFB.copyFrom(other.fEAHHAMLDFB);
-        oPFOILFDBKG.copyFrom(other.oPFOILFDBKG);
-        gBMLNHOCJMO.copyFrom(other.gBMLNHOCJMO);
-        mFIFEBCDIMM.copyFrom(other.mFIFEBCDIMM);
+        showHint = other.showHint;
+        unlockPhaseList.copyFrom(other.unlockPhaseList);
+        unlockTrackList.copyFrom(other.unlockTrackList);
+        unlockSongList.copyFrom(other.unlockSongList);
+        musicGroup.copyFrom(other.musicGroup);
+        musicLevel.copyFrom(other.musicLevel);
       }
       return this;
     }
@@ -542,29 +591,32 @@ public final class MusicRhythmDataScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasPEFCBMODPOI()) {
-        setPEFCBMODPOI(other.pEFCBMODPOI);
+      if (other.hasCurSongId()) {
+        setCurSongId(other.curSongId);
       }
-      if (other.hasBMJGCIILHCA()) {
-        setBMJGCIILHCA(other.bMJGCIILHCA);
+      if (other.hasCurLevelId()) {
+        setCurLevelId(other.curLevelId);
       }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasFCLINCKMILK()) {
-        setFCLINCKMILK(other.fCLINCKMILK);
+      if (other.hasShowHint()) {
+        setShowHint(other.showHint);
       }
-      if (other.hasFEAHHAMLDFB()) {
-        getMutableFEAHHAMLDFB().addAll(other.fEAHHAMLDFB);
+      if (other.hasUnlockPhaseList()) {
+        getMutableUnlockPhaseList().addAll(other.unlockPhaseList);
       }
-      if (other.hasOPFOILFDBKG()) {
-        getMutableOPFOILFDBKG().addAll(other.oPFOILFDBKG);
+      if (other.hasUnlockTrackList()) {
+        getMutableUnlockTrackList().addAll(other.unlockTrackList);
       }
-      if (other.hasGBMLNHOCJMO()) {
-        getMutableGBMLNHOCJMO().addAll(other.gBMLNHOCJMO);
+      if (other.hasUnlockSongList()) {
+        getMutableUnlockSongList().addAll(other.unlockSongList);
       }
-      if (other.hasMFIFEBCDIMM()) {
-        getMutableMFIFEBCDIMM().addAll(other.mFIFEBCDIMM);
+      if (other.hasMusicGroup()) {
+        getMutableMusicGroup().addAll(other.musicGroup);
+      }
+      if (other.hasMusicLevel()) {
+        getMutableMusicLevel().addAll(other.musicLevel);
       }
       return this;
     }
@@ -576,14 +628,15 @@ public final class MusicRhythmDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      pEFCBMODPOI = 0;
-      bMJGCIILHCA = 0;
+      curSongId = 0;
+      curLevelId = 0;
       retcode = 0;
-      fCLINCKMILK = false;
-      fEAHHAMLDFB.clear();
-      oPFOILFDBKG.clear();
-      gBMLNHOCJMO.clear();
-      mFIFEBCDIMM.clear();
+      showHint = false;
+      unlockPhaseList.clear();
+      unlockTrackList.clear();
+      unlockSongList.clear();
+      musicGroup.clear();
+      musicLevel.clear();
       return this;
     }
 
@@ -594,10 +647,11 @@ public final class MusicRhythmDataScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      fEAHHAMLDFB.clear();
-      oPFOILFDBKG.clear();
-      gBMLNHOCJMO.clear();
-      mFIFEBCDIMM.clearQuick();
+      unlockPhaseList.clear();
+      unlockTrackList.clear();
+      unlockSongList.clear();
+      musicGroup.clearQuick();
+      musicLevel.clearQuick();
       return this;
     }
 
@@ -611,25 +665,26 @@ public final class MusicRhythmDataScRspOuterClass {
       }
       MusicRhythmDataScRsp other = (MusicRhythmDataScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasPEFCBMODPOI() || pEFCBMODPOI == other.pEFCBMODPOI)
-        && (!hasBMJGCIILHCA() || bMJGCIILHCA == other.bMJGCIILHCA)
+        && (!hasCurSongId() || curSongId == other.curSongId)
+        && (!hasCurLevelId() || curLevelId == other.curLevelId)
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasFCLINCKMILK() || fCLINCKMILK == other.fCLINCKMILK)
-        && (!hasFEAHHAMLDFB() || fEAHHAMLDFB.equals(other.fEAHHAMLDFB))
-        && (!hasOPFOILFDBKG() || oPFOILFDBKG.equals(other.oPFOILFDBKG))
-        && (!hasGBMLNHOCJMO() || gBMLNHOCJMO.equals(other.gBMLNHOCJMO))
-        && (!hasMFIFEBCDIMM() || mFIFEBCDIMM.equals(other.mFIFEBCDIMM));
+        && (!hasShowHint() || showHint == other.showHint)
+        && (!hasUnlockPhaseList() || unlockPhaseList.equals(other.unlockPhaseList))
+        && (!hasUnlockTrackList() || unlockTrackList.equals(other.unlockTrackList))
+        && (!hasUnlockSongList() || unlockSongList.equals(other.unlockSongList))
+        && (!hasMusicGroup() || musicGroup.equals(other.musicGroup))
+        && (!hasMusicLevel() || musicLevel.equals(other.musicLevel));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(pEFCBMODPOI);
+        output.writeUInt32NoTag(curSongId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(bMJGCIILHCA);
+        output.writeUInt32NoTag(curLevelId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 96);
@@ -637,30 +692,36 @@ public final class MusicRhythmDataScRspOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 48);
-        output.writeBoolNoTag(fCLINCKMILK);
+        output.writeBoolNoTag(showHint);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < fEAHHAMLDFB.length(); i++) {
+        for (int i = 0; i < unlockPhaseList.length(); i++) {
           output.writeRawByte((byte) 40);
-          output.writeUInt32NoTag(fEAHHAMLDFB.array()[i]);
+          output.writeUInt32NoTag(unlockPhaseList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < oPFOILFDBKG.length(); i++) {
+        for (int i = 0; i < unlockTrackList.length(); i++) {
           output.writeRawByte((byte) 64);
-          output.writeUInt32NoTag(oPFOILFDBKG.array()[i]);
+          output.writeUInt32NoTag(unlockTrackList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < gBMLNHOCJMO.length(); i++) {
+        for (int i = 0; i < unlockSongList.length(); i++) {
           output.writeRawByte((byte) 120);
-          output.writeUInt32NoTag(gBMLNHOCJMO.array()[i]);
+          output.writeUInt32NoTag(unlockSongList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        for (int i = 0; i < mFIFEBCDIMM.length(); i++) {
+        for (int i = 0; i < musicGroup.length(); i++) {
+          output.writeRawByte((byte) 10);
+          output.writeMessageNoTag(musicGroup.get(i));
+        }
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        for (int i = 0; i < musicLevel.length(); i++) {
           output.writeRawByte((byte) 106);
-          output.writeMessageNoTag(mFIFEBCDIMM.get(i));
+          output.writeMessageNoTag(musicLevel.get(i));
         }
       }
     }
@@ -669,10 +730,10 @@ public final class MusicRhythmDataScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(pEFCBMODPOI);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curSongId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(bMJGCIILHCA);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curLevelId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
@@ -681,16 +742,19 @@ public final class MusicRhythmDataScRspOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * fEAHHAMLDFB.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(fEAHHAMLDFB);
+        size += (1 * unlockPhaseList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockPhaseList);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * oPFOILFDBKG.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(oPFOILFDBKG);
+        size += (1 * unlockTrackList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockTrackList);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * gBMLNHOCJMO.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(gBMLNHOCJMO);
+        size += (1 * unlockSongList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(unlockSongList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += (1 * mFIFEBCDIMM.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(mFIFEBCDIMM);
+        size += (1 * musicGroup.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(musicGroup);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        size += (1 * musicLevel.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(musicLevel);
       }
       return size;
     }
@@ -703,8 +767,8 @@ public final class MusicRhythmDataScRspOuterClass {
       while (true) {
         switch (tag) {
           case 16: {
-            // pEFCBMODPOI
-            pEFCBMODPOI = input.readUInt32();
+            // curSongId
+            curSongId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 80) {
@@ -712,8 +776,8 @@ public final class MusicRhythmDataScRspOuterClass {
             }
           }
           case 80: {
-            // bMJGCIILHCA
-            bMJGCIILHCA = input.readUInt32();
+            // curLevelId
+            curLevelId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
@@ -730,8 +794,8 @@ public final class MusicRhythmDataScRspOuterClass {
             }
           }
           case 48: {
-            // fCLINCKMILK
-            fCLINCKMILK = input.readBool();
+            // showHint
+            showHint = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 42) {
@@ -739,8 +803,8 @@ public final class MusicRhythmDataScRspOuterClass {
             }
           }
           case 42: {
-            // fEAHHAMLDFB [packed=true]
-            input.readPackedUInt32(fEAHHAMLDFB, tag);
+            // unlockPhaseList [packed=true]
+            input.readPackedUInt32(unlockPhaseList, tag);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 66) {
@@ -748,8 +812,8 @@ public final class MusicRhythmDataScRspOuterClass {
             }
           }
           case 66: {
-            // oPFOILFDBKG [packed=true]
-            input.readPackedUInt32(oPFOILFDBKG, tag);
+            // unlockTrackList [packed=true]
+            input.readPackedUInt32(unlockTrackList, tag);
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 122) {
@@ -757,18 +821,26 @@ public final class MusicRhythmDataScRspOuterClass {
             }
           }
           case 122: {
-            // gBMLNHOCJMO [packed=true]
-            input.readPackedUInt32(gBMLNHOCJMO, tag);
+            // unlockSongList [packed=true]
+            input.readPackedUInt32(unlockSongList, tag);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
+            if (tag != 10) {
+              break;
+            }
+          }
+          case 10: {
+            // musicGroup
+            tag = input.readRepeatedMessage(musicGroup, tag);
+            bitField0_ |= 0x00000080;
             if (tag != 106) {
               break;
             }
           }
           case 106: {
-            // mFIFEBCDIMM
-            tag = input.readRepeatedMessage(mFIFEBCDIMM, tag);
-            bitField0_ |= 0x00000080;
+            // musicLevel
+            tag = input.readRepeatedMessage(musicLevel, tag);
+            bitField0_ |= 0x00000100;
             if (tag != 0) {
               break;
             }
@@ -784,20 +856,20 @@ public final class MusicRhythmDataScRspOuterClass {
             break;
           }
           case 40: {
-            // fEAHHAMLDFB [packed=false]
-            tag = input.readRepeatedUInt32(fEAHHAMLDFB, tag);
+            // unlockPhaseList [packed=false]
+            tag = input.readRepeatedUInt32(unlockPhaseList, tag);
             bitField0_ |= 0x00000010;
             break;
           }
           case 64: {
-            // oPFOILFDBKG [packed=false]
-            tag = input.readRepeatedUInt32(oPFOILFDBKG, tag);
+            // unlockTrackList [packed=false]
+            tag = input.readRepeatedUInt32(unlockTrackList, tag);
             bitField0_ |= 0x00000020;
             break;
           }
           case 120: {
-            // gBMLNHOCJMO [packed=false]
-            tag = input.readRepeatedUInt32(gBMLNHOCJMO, tag);
+            // unlockSongList [packed=false]
+            tag = input.readRepeatedUInt32(unlockSongList, tag);
             bitField0_ |= 0x00000040;
             break;
           }
@@ -809,28 +881,31 @@ public final class MusicRhythmDataScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.pEFCBMODPOI, pEFCBMODPOI);
+        output.writeUInt32(FieldNames.curSongId, curSongId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.bMJGCIILHCA, bMJGCIILHCA);
+        output.writeUInt32(FieldNames.curLevelId, curLevelId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeBool(FieldNames.fCLINCKMILK, fCLINCKMILK);
+        output.writeBool(FieldNames.showHint, showHint);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.fEAHHAMLDFB, fEAHHAMLDFB);
+        output.writeRepeatedUInt32(FieldNames.unlockPhaseList, unlockPhaseList);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedUInt32(FieldNames.oPFOILFDBKG, oPFOILFDBKG);
+        output.writeRepeatedUInt32(FieldNames.unlockTrackList, unlockTrackList);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedUInt32(FieldNames.gBMLNHOCJMO, gBMLNHOCJMO);
+        output.writeRepeatedUInt32(FieldNames.unlockSongList, unlockSongList);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRepeatedMessage(FieldNames.mFIFEBCDIMM, mFIFEBCDIMM);
+        output.writeRepeatedMessage(FieldNames.musicGroup, musicGroup);
+      }
+      if ((bitField0_ & 0x00000100) != 0) {
+        output.writeRepeatedMessage(FieldNames.musicLevel, musicLevel);
       }
       output.endObject();
     }
@@ -842,10 +917,11 @@ public final class MusicRhythmDataScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1159872792: {
-            if (input.isAtField(FieldNames.pEFCBMODPOI)) {
+          case -220673168:
+          case 1411371398: {
+            if (input.isAtField(FieldNames.curSongId)) {
               if (!input.trySkipNullValue()) {
-                pEFCBMODPOI = input.readUInt32();
+                curSongId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -853,10 +929,11 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case -515620299: {
-            if (input.isAtField(FieldNames.bMJGCIILHCA)) {
+          case -447422113:
+          case 1430531797: {
+            if (input.isAtField(FieldNames.curLevelId)) {
               if (!input.trySkipNullValue()) {
-                bMJGCIILHCA = input.readUInt32();
+                curLevelId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -875,10 +952,11 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case -569902569: {
-            if (input.isAtField(FieldNames.fCLINCKMILK)) {
+          case -339187932:
+          case -1903684983: {
+            if (input.isAtField(FieldNames.showHint)) {
               if (!input.trySkipNullValue()) {
-                fCLINCKMILK = input.readBool();
+                showHint = input.readBool();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -886,10 +964,11 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case -1089110846: {
-            if (input.isAtField(FieldNames.fEAHHAMLDFB)) {
+          case 554640853:
+          case 1145641149: {
+            if (input.isAtField(FieldNames.unlockPhaseList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(fEAHHAMLDFB);
+                input.readRepeatedUInt32(unlockPhaseList);
                 bitField0_ |= 0x00000010;
               }
             } else {
@@ -897,10 +976,11 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case 2114667187: {
-            if (input.isAtField(FieldNames.oPFOILFDBKG)) {
+          case 1710466469:
+          case -1678470419: {
+            if (input.isAtField(FieldNames.unlockTrackList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(oPFOILFDBKG);
+                input.readRepeatedUInt32(unlockTrackList);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -908,10 +988,11 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case 1397179044: {
-            if (input.isAtField(FieldNames.gBMLNHOCJMO)) {
+          case 1428178615:
+          case 1515974221: {
+            if (input.isAtField(FieldNames.unlockSongList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(gBMLNHOCJMO);
+                input.readRepeatedUInt32(unlockSongList);
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -919,11 +1000,24 @@ public final class MusicRhythmDataScRspOuterClass {
             }
             break;
           }
-          case -93152267: {
-            if (input.isAtField(FieldNames.mFIFEBCDIMM)) {
+          case -802216102:
+          case 1578129381: {
+            if (input.isAtField(FieldNames.musicGroup)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(mFIFEBCDIMM);
+                input.readRepeatedMessage(musicGroup);
                 bitField0_ |= 0x00000080;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -797979553:
+          case 1582365930: {
+            if (input.isAtField(FieldNames.musicLevel)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(musicLevel);
+                bitField0_ |= 0x00000100;
               }
             } else {
               input.skipUnknownField();
@@ -983,21 +1077,23 @@ public final class MusicRhythmDataScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName pEFCBMODPOI = FieldName.forField("PEFCBMODPOI");
+      static final FieldName curSongId = FieldName.forField("curSongId", "cur_song_id");
 
-      static final FieldName bMJGCIILHCA = FieldName.forField("BMJGCIILHCA");
+      static final FieldName curLevelId = FieldName.forField("curLevelId", "cur_level_id");
 
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName fCLINCKMILK = FieldName.forField("FCLINCKMILK");
+      static final FieldName showHint = FieldName.forField("showHint", "show_hint");
 
-      static final FieldName fEAHHAMLDFB = FieldName.forField("FEAHHAMLDFB");
+      static final FieldName unlockPhaseList = FieldName.forField("unlockPhaseList", "unlock_phase_list");
 
-      static final FieldName oPFOILFDBKG = FieldName.forField("OPFOILFDBKG");
+      static final FieldName unlockTrackList = FieldName.forField("unlockTrackList", "unlock_track_list");
 
-      static final FieldName gBMLNHOCJMO = FieldName.forField("GBMLNHOCJMO");
+      static final FieldName unlockSongList = FieldName.forField("unlockSongList", "unlock_song_list");
 
-      static final FieldName mFIFEBCDIMM = FieldName.forField("MFIFEBCDIMM");
+      static final FieldName musicGroup = FieldName.forField("musicGroup", "music_group");
+
+      static final FieldName musicLevel = FieldName.forField("musicLevel", "music_level");
     }
   }
 }

@@ -19,9 +19,9 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 music_id = 3;</code>
+     * <code>optional uint32 level_id = 3;</code>
      */
-    private int musicId;
+    private int levelId;
 
     private MusicRhythmStartLevelCsReq() {
     }
@@ -34,39 +34,39 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 music_id = 3;</code>
-     * @return whether the musicId field is set
+     * <code>optional uint32 level_id = 3;</code>
+     * @return whether the levelId field is set
      */
-    public boolean hasMusicId() {
+    public boolean hasLevelId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 music_id = 3;</code>
+     * <code>optional uint32 level_id = 3;</code>
      * @return this
      */
-    public MusicRhythmStartLevelCsReq clearMusicId() {
+    public MusicRhythmStartLevelCsReq clearLevelId() {
       bitField0_ &= ~0x00000001;
-      musicId = 0;
+      levelId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 music_id = 3;</code>
-     * @return the musicId
+     * <code>optional uint32 level_id = 3;</code>
+     * @return the levelId
      */
-    public int getMusicId() {
-      return musicId;
+    public int getLevelId() {
+      return levelId;
     }
 
     /**
-     * <code>optional uint32 music_id = 3;</code>
-     * @param value the musicId to set
+     * <code>optional uint32 level_id = 3;</code>
+     * @param value the levelId to set
      * @return this
      */
-    public MusicRhythmStartLevelCsReq setMusicId(final int value) {
+    public MusicRhythmStartLevelCsReq setLevelId(final int value) {
       bitField0_ |= 0x00000001;
-      musicId = value;
+      levelId = value;
       return this;
     }
 
@@ -75,7 +75,7 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        musicId = other.musicId;
+        levelId = other.levelId;
       }
       return this;
     }
@@ -86,8 +86,8 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasMusicId()) {
-        setMusicId(other.musicId);
+      if (other.hasLevelId()) {
+        setLevelId(other.levelId);
       }
       return this;
     }
@@ -99,7 +99,7 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      musicId = 0;
+      levelId = 0;
       return this;
     }
 
@@ -123,14 +123,14 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
       }
       MusicRhythmStartLevelCsReq other = (MusicRhythmStartLevelCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasMusicId() || musicId == other.musicId);
+        && (!hasLevelId() || levelId == other.levelId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(musicId);
+        output.writeUInt32NoTag(levelId);
       }
     }
 
@@ -138,7 +138,7 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(musicId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(levelId);
       }
       return size;
     }
@@ -151,8 +151,8 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
       while (true) {
         switch (tag) {
           case 24: {
-            // musicId
-            musicId = input.readUInt32();
+            // levelId
+            levelId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -177,7 +177,7 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.musicId, musicId);
+        output.writeUInt32(FieldNames.levelId, levelId);
       }
       output.endObject();
     }
@@ -189,11 +189,11 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1412694560:
-          case 843879797: {
-            if (input.isAtField(FieldNames.musicId)) {
+          case 69784511:
+          case -2131626058: {
+            if (input.isAtField(FieldNames.levelId)) {
               if (!input.trySkipNullValue()) {
-                musicId = input.readUInt32();
+                levelId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -254,7 +254,7 @@ public final class MusicRhythmStartLevelCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName musicId = FieldName.forField("musicId", "music_id");
+      static final FieldName levelId = FieldName.forField("levelId", "level_id");
     }
   }
 }

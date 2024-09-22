@@ -6,11 +6,11 @@ import emu.lunarcore.proto.MusicRhythmStartLevelScRspOuterClass.MusicRhythmStart
 
 public class PacketMusicRhythmStartLevelScRsp extends BasePacket {
 
-    public PacketMusicRhythmStartLevelScRsp(int musicId) {
+    public PacketMusicRhythmStartLevelScRsp(int startLevel) {
         super(CmdId.MusicRhythmStartLevelScRsp);
 
         var proto = MusicRhythmStartLevelScRsp.newInstance()
-            .setMusicId(musicId);
+            .setLevelId(startLevel);
         
         this.setData(proto);
     }

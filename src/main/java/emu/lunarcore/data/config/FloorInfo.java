@@ -105,6 +105,8 @@ public class FloorInfo {
                         prop.setTrigger(new TriggerOpenTreasureWhenMonsterDie(group.getId()));
                     } else if (json.contains("Common_Console")) {
                         prop.setCommonConsole(true);
+                    } else if (prop.getInitLevelGraph().contains("DeployPuzzle_Board")) {
+                        prop.setIsClientOnly(true);
                     }
                     
                     // Clear for garbage collection

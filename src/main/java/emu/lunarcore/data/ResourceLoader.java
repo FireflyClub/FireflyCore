@@ -246,7 +246,7 @@ public class ResourceLoader {
 
         // Load group infos
         for (FloorInfo floor : GameData.getFloorInfos().values()) {
-            for (FloorGroupSimpleInfo simpleGroup : floor.getSimpleGroupList()) {
+            for (FloorGroupSimpleInfo simpleGroup : floor.getGroupInstanceList()) {
                 // Dont load "deprecated" groups
                 if (simpleGroup.isIsDelete()) {
                     continue;

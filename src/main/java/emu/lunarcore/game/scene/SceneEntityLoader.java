@@ -19,7 +19,12 @@ public class SceneEntityLoader {
     
     public void onSceneLoad(Scene scene) {
         
-        for (GroupInfo group : scene.getFloorInfo().getGroups().values()) {
+        for (int groupId : scene.getFloorInfo().getLoadedGroups()) {
+            var group = scene.getFloorInfo().getGroups().get(groupId);
+            if (group == null) {
+                continue;
+            }
+            
             var isEventMission = false;
             
             // Skip non-server & non-event groups

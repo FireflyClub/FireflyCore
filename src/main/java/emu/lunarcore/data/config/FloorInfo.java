@@ -9,7 +9,10 @@ import emu.lunarcore.game.enums.PropState;
 import emu.lunarcore.game.scene.triggers.TriggerOpenTreasureWhenMonsterDie;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
-
+import it.unimi.dsi.fastutil.ints.IntArrayList;
+import it.unimi.dsi.fastutil.ints.IntList;
+import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
+import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
 
 /**
@@ -25,7 +28,9 @@ public class FloorInfo {
     private List<ExtraDataInfo> savedValues;
     
     @SerializedName(value = "GroupInstanceList")
-    private List<FloorGroupSimpleInfo> SimpleGroupList;
+    private List<FloorGroupSimpleInfo> GroupInstanceList;
+    
+    private List<RtLevelDimensionInfo> DimensionList;
 
     // Cached data
     private transient boolean loaded;
@@ -109,7 +114,25 @@ public class FloorInfo {
             }
         }
         
+        if (DimensionList != null) {
+            for (var dimension: DimensionList) {
+                dimension.onLoad(this);
+            }
+        }
+
         this.loaded = true;
+    }
+
+    public IntList getLoadedGroups() {
+        IntList ret = new IntArrayList();
+        
+        for (var dim: DimensionList) {
+            if(dim.ID == 0) {
+                ret.addAll(dim.groupIdList);
+            }
+        }
+        
+        return ret;
     }
 
     @Getter
@@ -127,5 +150,24 @@ public class FloorInfo {
         private String GroupPath;
         private boolean IsDelete;
         private int ID;
+    }
+
+    @Getter
+    public static class RtLevelDimensionInfo {
+        private int ID;
+        private int[] GroupIndexList;
+        
+        private IntSet groupIdList;
+        
+        public RtLevelDimensionInfo() {
+            this.groupIdList = new IntOpenHashSet();
+        }
+        
+        public void onLoad(FloorInfo floor) {
+            for (var id: GroupIndexList) {
+                var groupId = floor.getGroupInstanceList().get(id).getID();
+                getGroupIdList().add(groupId);
+            }
+        }
     }
 }

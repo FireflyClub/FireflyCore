@@ -5,7 +5,7 @@ import emu.lunarcore.data.ResourceType;
 import lombok.Getter;
 
 @Getter
-@ResourceType(name = {"MusicRhythmTrack.json"})
+@ResourceType(name = {"MusicRhythmSoundEffect.json"})
 public class MusicRhythmSoundEffectExcel extends GameResource {
     private int ID;
 

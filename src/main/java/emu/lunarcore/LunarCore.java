@@ -61,7 +61,7 @@ public class LunarCore {
 
     public static void main(String[] args) {
         // Start Server
-        LunarCore.getLogger().info("Starting FireflyCore " + getJarVersion());
+        LunarCore.getLogger().info("Starting " + GameConstants.NAME + getJarVersion());
         LunarCore.getLogger().info("Git hash: " + getGitHash());
         LunarCore.getLogger().info("Game version: " + GameConstants.VERSION);
         boolean generateHandbook = true;
@@ -249,7 +249,7 @@ public class LunarCore {
         var isLastInterrupted = false;
         while (true) {
             try {
-                String input = reader.readLine("\u001B[38;2;255;192;203m[FireflyCore]\u001B[0m" + " > ");
+                String input = reader.readLine("\u001B[38;2;255;192;203m[" + GameConstants.NAME + "]\u001B[0m" + " > ");
                 if (input == null || input.length() == 0) continue;
                 LunarCore.getCommandManager().invoke(null, input, null);
 

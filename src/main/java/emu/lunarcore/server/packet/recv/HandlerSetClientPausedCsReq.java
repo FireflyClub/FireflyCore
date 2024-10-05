@@ -34,13 +34,13 @@ public class HandlerSetClientPausedCsReq extends PacketHandler {
             }
 
             // Hardcode content
-            content += "local function main()\nCS.UnityEngine.QualitySettings.vSyncCount = 0";
+            content += "CS.UnityEngine.QualitySettings.vSyncCount = 0";
             content += "local hint2 = CS.UnityEngine.GameObject.Find(\"/UIRoot/AboveDialog/BetaHintDialog(Clone)/Contents/VersionText\")\n" +
                        "hint2:GetComponent(\"Text\").text = tostring(\"<color=#FFC0CB>" + GameConstants.NAME + "</color>\")\n" +
                        "hint2:SetActive(true)";
             content += "local hint1 = CS.UnityEngine.GameObject.Find(\"/UIRoot/AboveDialog/BetaHintDialog(Clone)/Contents/HintText\")\n" +
-                          "hint1:GetComponent(\"Text\").text = tostring(\"" + hintText + "\")\n" +
-                          "hint1:SetActive(true)\n";
+                       "hint1:GetComponent(\"Text\").text = tostring(\"" + hintText + "\")\n" +
+                       "hint1:SetActive(true)\n";
         }
 
         // Encode bytecode
